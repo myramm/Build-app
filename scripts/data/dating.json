@@ -1,0 +1,21 @@
+{
+    "roxxy": {
+        "activities": {
+            "movies": 5,
+            "eating": 3,
+            "swimming": 1
+        },
+        "gifts": {
+            "crystal_necklace": 5,
+            "pearl_necklace": 4,
+            "heart_necklace": 3,
+            "plush_*": 2,
+            "flower_*": 1
+        },
+        "dialogues": {
+        },
+        "thresholds": {
+            "sex": 30
+        }
+    }
+}

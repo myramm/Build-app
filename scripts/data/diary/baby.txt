@@ -1,0 +1,11 @@
+{pen=indigo}{size=-3}So I can't believe I'm saying this but,{/size}{/pen} {pen=neonpink}I love being a mom!{/pen}
+
+{pen=orange}It's so hard to describe how {pen=red}{size=+2}good{/size}{/pen} it makes me feel...{/pen}
+{space=30}{pen=orange}I mean, my child really {pen=yellow}{size=+3}{i}{u}needs{/u}{/i}{/size}{/pen} me, you know?{/pen}
+
+{pen=aqua}{size=-1}This adorable {pen=yellow}little creature{/pen} that's part {pen=neonpink}{size=+4}me{/size}{/pen} and part {pen=purple}{b}[firstname]{/b}{/pen}.{/size}{/pen}
+
+{pen=maroon}{size=-2}The weirdest part is that {pen=red}I never liked kids{/pen}... I was completely{/size}{/pen}
+{pen=maroon}blindsided. I've heard the term {pen=pink}{size=+2}unconditional love{/size}{/pen} before{/pen}
+{pen=maroon}but I never really understood what it meant until I held {/pen}{space=10}
+{pen=maroon}{size=+4}my {pen=orange}{b}child{/b}{/pen} in my arms for the first time...{/size}{/pen}{space=80}{rt}{pen=silver}{size=-6}being this happy is {u}so{/u} weird!{/size}{/pen}{/rt}

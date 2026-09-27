@@ -1,0 +1,172 @@
+{
+    "judith01": {
+        "sender": "Judith",
+        "preview": "I'm in the washroom...",
+        "content": "If you want to meet me...",
+        "image": "cellphone/phone_texts_from_judith.png"
+    },
+    "mia01": {
+        "sender": "Mia",
+        "preview": "HELP!",
+        "image": "cellphone/phone_texts_from_mia.png"
+    },
+    "mia02": {
+        "sender": "Mia",
+        "preview": "We can't find my dad...",
+        "content": "Can you come help us please?",
+        "image": "cellphone/phone_texts_from_mia.png"
+    },
+    "ode02_hint": {
+        "sender": "Odette",
+        "preview": "Showtime, big fella!",
+        "content": "The moon is hitting its peak. See you in the graveyard at midnight! ;)",
+        "image": "cellphone/phone_texts_from_odette.png"
+    },
+    "ode02_preg": {
+        "sender": "Odette",
+        "preview": "We're missing it! :(",
+        "content": "It's a full moon tonight, but I can't go anywhere in this state. Let's try again once the baby is born.",
+        "image": "cellphone/phone_texts_from_odette.png"
+    },
+    "ode02_baby": {
+        "sender": "Odette",
+        "preview": "So tired...",
+        "content": "It's a full moon tonight, but I can't keep my eyes open. Babies are a lot of work! Maybe next time... :(",
+        "image": "cellphone/phone_texts_from_odette.png"
+    },
+    "diane_pregnancy" : {
+        "sender": "Diane",
+        "preview": "I need to speak with you urgently!",
+        "content": "I think you did good work! Can you come see me?",
+        "image": "cellphone/phone_texts_from_diane.png"
+    },
+    "diane_pregnancy_labor" : {
+        "sender": "Diane",
+        "preview": "The baby is coming!",
+        "content": "Meet me at the hospital!",
+        "image": "cellphone/phone_texts_from_diane.png"
+    },
+    "daisy_pregnancy" : {
+        "sender": "Diane",
+        "preview": "I need to speak with you urgently!",
+        "content": "It's about Daisy... Can you come see us at the barn?",
+        "image": "cellphone/phone_texts_from_diane.png"
+    },
+    "daisy_pregnancy_labor" : {
+        "sender": "Diane",
+        "preview": "Daisy gave birth last night.",
+        "content": "You should come and see the baby!",
+        "image": "cellphone/phone_texts_from_diane.png"
+    },
+    "jenny_pregnancy" : {
+        "sender": "[jen_name]",
+        "preview": "My room, NOW!",
+        "image": "cellphone/phone_texts_from_jenny.png"
+    },
+    "jenny_pregnancy_labor" : {
+        "sender": "[deb_name]",
+        "preview": "[jen_name] went into labor last night, sweetie.",
+        "content": "Come find us at the clinic when you wake up.",
+        "image": "cellphone/phone_texts_from_debbie.png"
+    },
+    "grace_pregnancy_first": {
+        "sender": "Grace",
+        "preview": "Hey, it's Grace.",
+        "content": "I got your number from my sister. I need to speak with you ASAP.",
+        "image": "cellphone/phone_texts_from_grace.png"
+    },
+    "grace_pregnancy": {
+        "sender": "Grace",
+        "preview": "Grace again.",
+        "content": "Can we talk?",
+        "image": "cellphone/phone_texts_from_grace.png"
+    },
+    "grace_pregnancy_labor": {
+        "sender": "Eve",
+        "preview": "Grace went into labor last night!",
+        "content": "Odette took her to the hospital.",
+        "image": "cellphone/phone_texts_from_eve.png"
+    },
+    "odette_pregnancy_first": {
+        "sender": "Eve",
+        "preview": "OMG, you're not going to believe this!",
+        "content": "Odette is pregnant! I just overheard her and my sister talking about it. I wonder who the father is?",
+        "image": "cellphone/phone_texts_from_eve.png"
+    },
+    "odette_pregnancy": {
+        "sender": "Eve",
+        "preview": "Odette is pregnant, again!",
+        "content": "I wonder if she used a donor this time too?",
+        "image": "cellphone/phone_texts_from_eve.png"
+    },
+    "odette_pregnancy_labor": {
+        "sender": "Eve",
+        "preview": "Odette went into labor last night!",
+        "content": "Grace took her to the clinic.",
+        "image": "cellphone/phone_texts_from_eve.png"
+    },
+    "eve_pregnancy" : {
+        "sender": "Eve",
+        "preview": "Hey, are you free today?",
+        "content": "Something really important has come up and I need to speak with you ASAP.",
+        "image": "cellphone/phone_texts_from_eve.png"
+    },
+    "eve_pregnancy_labor" : {
+        "sender": "Eve",
+        "preview": "[firstname]! The baby is coming!",
+        "content": "Grace is taking me to the clinic now!",
+        "image": "cellphone/phone_texts_from_eve.png"
+    },
+    "consuela_pregnancy" : {
+        "sender": "Consuela",
+        "preview": "!!!!!!!!!!",
+        "image": "cellphone/phone_texts_from_consuela.png"
+    },
+    "consuela_pregnancy_labor" : {
+        "sender": "Consuela",
+        "preview": "!!!!!!!!!!!!!!!!!!!",
+        "image": "cellphone/phone_texts_from_consuela.png"
+    },
+    "tina_pregnancy_labor" : {
+        "sender": "Tina",
+        "preview": "Had the baby last night.",
+        "content": "We're at the clinic if you'd like to visit.",
+        "image": "cellphone/phone_texts_from_tina.png"
+    },
+    "josie_pregnancy_labor" : {
+        "sender": "Josie",
+        "preview": "[firstname], the baby is coming!",
+        "content": "My dad is taking me to the clinic now!",
+        "image": "cellphone/phone_texts_from_josephine.png"
+    },
+    "maria_pregnancy_labor" : {
+        "sender": "Tony",
+        "preview": "[firstname], the baby is coming!",
+        "content": "Taking Maria to the hospital now!",
+        "image": "cellphone/phone_texts_from_tony.png"
+    },
+    "iwanka_pregnancy_labor" : {
+        "sender": "Iwanka",
+        "preview": "[firstname], the baby is coming!",
+        "content": "I'm on my way to the clinic now!",
+        "image": "cellphone/phone_texts_from_iwanka.png"
+    },
+    "melonia_pregnancy_labor" : {
+        "sender": "Iwanka",
+        "preview": "Mom went into labor.",
+        "content": "The security guys took her to the clinic.",
+        "image": "cellphone/phone_texts_from_iwanka.png"
+    },
+    "liu_pregnancy_labor" : {
+        "sender": "Liu",
+        "preview": "The baby is coming, [firstname]!",
+        "content": "Tina is giving me a ride to the hospital.",
+        "image": "cellphone/phone_texts_from_liu.png"
+    },
+    "nadya_pregnancy_labor" : {
+        "sender": "Nadya",
+        "preview": "Baby come.",
+        "content": "I go hospital.",
+        "image": "cellphone/phone_texts_from_nadya.png"
+    }
+}

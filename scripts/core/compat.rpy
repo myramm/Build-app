@@ -27,6 +27,10 @@ init python early hide:
         import math
         math.inf = float('inf')
         
-        import copyreg, weakref
+        try:
+            import copyreg
+        except ImportError:
+            import copy_reg as copyreg
+        import weakref
         copyreg.pickle(weakref.ReferenceType, lambda r: (print, ()))
 # Decompiled by unrpyc: https://github.com/CensoredUsername/unrpyc

@@ -79,7 +79,8 @@ init -20 python:
         return isinstance(variable, str) or isinstance(variable, unicode)
 
 
-    pick = renpy.compat.pickle.dumps
+    import pickle
+    pick = pickle.dumps
 
     def test(obj, prt=True):
         def tstlst(lst, prt):

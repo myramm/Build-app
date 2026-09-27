@@ -1,0 +1,1973 @@
+{
+    "homework": {
+        "id": "1",
+        "name": "Homework",
+        "cost": "0",
+        "image": "objects/item_homework1.png",
+        "description": "Use your desk at home to complete your homework and improve your grades!",
+        "closeup": "",
+        "dialogue_label": ""
+    },
+    "panties": {
+        "id": "2",
+        "name": "Panties",
+        "cost": "0",
+        "image": "objects/item_panties1.png",
+        "description": "{b}[jen_name]{/b}'s used panties.",
+        "closeup": "",
+        "dialogue_label": ""
+    },
+    "parts": {
+        "id": "3",
+        "name": "Computer Parts",
+        "cost": "200",
+        "image": "objects/item_parts1.png",
+        "description": "New computer parts for sweet graphics.",
+        "closeup": "",
+        "dialogue_label": ""
+    },
+    "swimsuit": {
+        "id": "4",
+        "name": "Swimsuit",
+        "cost": "100",
+        "image": "objects/item_swimsuit1.png",
+        "description": "A slick speedo for swimming.",
+        "closeup": "",
+        "dialogue_label": ""
+    },
+    "breeding_guide": {
+        "id": "5",
+        "name": "Lactation and Me",
+        "cost": "0",
+        "image": "objects/item_book1.png",
+        "description": "A very \"in-depth\" guide on how to breed like a bull!",
+        "closeup": "",
+        "dialogue_label": ""
+    },
+    "french_dictionary": {
+        "id": "6",
+        "name": "Dictionnaire Francais",
+        "cost": "0",
+        "image": "objects/item_book3.png",
+        "description": "Omelet au fromage!",
+        "closeup": "",
+        "dialogue_label": ""
+    },
+    "oedipuss": {
+        "id": "7",
+        "name": "Oedipuss",
+        "cost": "0",
+        "image": "objects/item_book4.png",
+        "description": "Doin' it the ancient way.",
+        "closeup": "",
+        "dialogue_label": ""
+    },
+    "quick_mafs": {
+        "id": "8",
+        "name": "Quick Mafs!",
+        "cost": "0",
+        "image": "objects/item_book5.png",
+        "description": "2 + 2 = 4. A special children's guide to math.",
+        "closeup": "",
+        "dialogue_label": ""
+    },
+    "cholas_tricks": {
+        "id": "9",
+        "name": "Chola's Tricks",
+        "cost": "0",
+        "image": "objects/item_book6.png",
+        "description": "A comprehensive guide to eyebrow makeovers, bandanas, piercings, and putting down skank ass hoes.",
+        "closeup": "",
+        "dialogue_label": ""
+    },
+    "french_love": {
+        "id": "10",
+        "name": "French Love",
+        "cost": "0",
+        "image": "objects/item_book7.png",
+        "description": "A graphic depiction about the ways of French Love.",
+        "closeup": "",
+        "dialogue_label": ""
+    },
+    "bike": {
+        "id": "11",
+        "name": "Delivery Road Bike",
+        "cost": "200",
+        "image": "objects/item_bike1.png",
+        "description": "The perfect way to start delivering pizza!",
+        "closeup": "",
+        "dialogue_label": ""
+    },
+    "pump": {
+        "id": "12",
+        "name": "Breast Pump",
+        "cost": "0",
+        "image": "objects/item_pump2.png",
+        "description": "A cone-shaped pump meant to collect breast milk.",
+        "closeup": "",
+        "dialogue_label": ""
+    },
+    "milkjug": {
+        "id": "13",
+        "name": "Stainless Milk Jug",
+        "cost": "300",
+        "image": "objects/item_jug1.png",
+        "description": "A thermal milk jug. Keep your fresh milk nice and cool!",
+        "closeup": "",
+        "dialogue_label": ""
+    },
+    "exterminator": {
+        "id": "14",
+        "name": "Bug Exterminator",
+        "cost": "100",
+        "image": "objects/item_spray1.png",
+        "description": "Nothing can survive the exterminator!",
+        "closeup": "",
+        "dialogue_label": ""
+    },
+    "eradicator": {
+        "id": "15",
+        "name": "Bug Eradicator",
+        "cost": "100",
+        "image": "objects/item_spray2.png",
+        "description": "Nothing can survive the eradicator!",
+        "closeup": "",
+        "dialogue_label": ""
+    },
+    "annihilator": {
+        "id": "16",
+        "name": "Bug Annihilator",
+        "cost": "100",
+        "image": "objects/item_spray3.png",
+        "description": "Nothing can survive the annihilator!",
+        "closeup": "",
+        "dialogue_label": ""
+    },
+    "milk_carton": {
+        "id": "17",
+        "name": "Fresh Milk Cartons",
+        "cost": "0",
+        "image": "objects/item_milk1.png",
+        "description": "A delivery of fresh milk cartons!",
+        "closeup": "",
+        "dialogue_label": ""
+    },
+    "package": {
+        "id": "18",
+        "name": "Pink package",
+        "cost": "0",
+        "image": "objects/item_package1.png",
+        "description": "A purchased item from Pink.",
+        "closeup": "",
+        "dialogue_label": ""
+    },
+    "gas_can": {
+        "id": "19",
+        "name": "Gas Tank",
+        "cost": "100",
+        "image": "objects/item_gas1.png",
+        "description": "A safe container for flammable fluids containing gasoline.",
+        "closeup": "",
+        "dialogue_label": ""
+    },
+    "wrench": {
+        "id": "20",
+        "name": "Wrench",
+        "cost": "50",
+        "image": "objects/item_wrench1.png",
+        "description": "A metal tool used to provide grip and tighten bolts.",
+        "closeup": "",
+        "dialogue_label": ""
+    },
+    "seatrout": {
+        "id": "21",
+        "name": "Seatrout",
+        "cost": "0",
+        "image": "objects/item_fish1.png",
+        "description": "A fresh fish! A bit smelly...",
+        "closeup": "",
+        "dialogue_label": ""
+    },
+    "snapper": {
+        "id": "22",
+        "name": "Snapper",
+        "cost": "0",
+        "image": "objects/item_fish2.png",
+        "description": "A fresh fish! A bit smelly...",
+        "closeup": "",
+        "dialogue_label": ""
+    },
+    "mackerel": {
+        "id": "23",
+        "name": "Mackerel",
+        "cost": "0",
+        "image": "objects/item_fish3.png",
+        "description": "A fresh fish! A bit smelly...",
+        "closeup": "",
+        "dialogue_label": ""
+    },
+    "cookies": {
+        "id": "24",
+        "name": "Cookie box",
+        "cost": "0",
+        "image": "objects/item_cookies1.png",
+        "description": "A box of cookies. Everybody loves cookies.",
+        "closeup": "",
+        "dialogue_label": ""
+    },
+    "condom": {
+        "id": "25",
+        "name": "Condom",
+        "cost": "0",
+        "image": "objects/item_condom1.png",
+        "description": "An extra, extra, extra large Hungdom condom.",
+        "closeup": "",
+        "dialogue_label": ""
+    },
+    "attic_key": {
+        "id": "26",
+        "name": "Small key",
+        "cost": "0",
+        "image": "objects/item_key1.png",
+        "description": "A small key.",
+        "closeup": "",
+        "dialogue_label": ""
+    },
+    "shovel": {
+        "id": "27",
+        "name": "Shovel",
+        "cost": "0",
+        "image": "objects/item_shovel1.png",
+        "description": "A used metal shovel.",
+        "closeup": "",
+        "dialogue_label": ""
+    },
+    "stool": {
+        "id": "28",
+        "name": "Stool",
+        "cost": "0",
+        "image": "objects/item_stool1.png",
+        "description": "A small stool.",
+        "closeup": "",
+        "dialogue_label": ""
+    },
+    "fishing_rod": {
+        "id": "29",
+        "name": "Fishing Rod",
+        "cost": "0",
+        "image": "objects/item_rod1.png",
+        "description": "An old fishing rod.",
+        "closeup": "",
+        "dialogue_label": ""
+    },
+    "ring": {
+        "id": "30",
+        "name": "Diamond Ring",
+        "cost": "0",
+        "image": "objects/item_ring1.png",
+        "description": "A tiny ring with a large stone fixed to it.",
+        "closeup": "",
+        "dialogue_label": ""
+    },
+    "cheerleader_outfit": {
+        "id": "31",
+        "name": "Cheerleader Outfit",
+        "cost": "0",
+        "image": "objects/item_outfit1.png",
+        "description": "It's the cheerleader outfit that {b}[jen_name]{/b} used to wear during college.",
+        "closeup": "",
+        "dialogue_label": ""
+    },
+    "dog": {
+        "id": "32",
+        "name": "Awesomo",
+        "cost": "0",
+        "image": "objects/item_dog1.png",
+        "description": "A small pug.",
+        "closeup": "",
+        "dialogue_label": ""
+    },
+    "worm": {
+        "id": "33",
+        "name": "Worm",
+        "cost": "0",
+        "image": "objects/item_bait1.png",
+        "description": "A fresh worm.",
+        "closeup": "objects/closeup_bait01.png",
+        "dialogue_label": ""
+    },
+    "buttplug": {
+        "id": "34",
+        "name": "Glow in the Dark Buttplug",
+        "cost": "100",
+        "image": "objects/item_sex1.png",
+        "description": "A cone-shaped dildo for anal insertion that glows in the dark.",
+        "closeup": "",
+        "dialogue_label": ""
+    },
+    "drilldo": {
+        "id": "35",
+        "name": "The Drilldo \"Fuck-Hammer\"",
+        "cost": "400",
+        "image": "objects/item_sex2.png",
+        "description": "A power drill dildo.",
+        "closeup": "",
+        "dialogue_label": ""
+    },
+    "darthmoan": {
+        "id": "36",
+        "name": "DarthMoan",
+        "cost": "300",
+        "image": "objects/item_sex3.png",
+        "description": "A double bladed dildo, for double the fun!",
+        "closeup": "",
+        "dialogue_label": ""
+    },
+    "badmonster": {
+        "id": "37",
+        "name": "Bad Monster",
+        "cost": "500",
+        "image": "objects/item_sex4.png",
+        "description": "A very bad monster dildo.",
+        "closeup": "",
+        "dialogue_label": ""
+    },
+    "sybian": {
+        "id": "38",
+        "name": "Dual Sybian",
+        "cost": "500",
+        "image": "objects/item_sex5.png",
+        "description": "A double dildo-mounted sybian.",
+        "closeup": "",
+        "dialogue_label": ""
+    },
+    "fleshtube": {
+        "id": "40",
+        "name": "The Flesh Tube",
+        "cost": "100",
+        "image": "objects/item_sex7.png",
+        "description": "A strange tube with soft rubber lining.",
+        "closeup": "",
+        "dialogue_label": ""
+    },
+    "electroclit": {
+        "id": "41",
+        "name": "Electro Clit",
+        "cost": "100",
+        "image": "objects/item_sex8.png",
+        "description": "A battery-powered vibrating clit stimulator.",
+        "closeup": "",
+        "dialogue_label": ""
+    },
+    "ultravibrato": {
+        "id": "42",
+        "name": "UltraVibe 2000",
+        "cost": "200",
+        "image": "objects/item_sex9.png",
+        "description": "A battery-powered vibrating dildo with ribbed lining.",
+        "closeup": "",
+        "dialogue_label": ""
+    },
+    "doomdong": {
+        "id": "43",
+        "name": "The Doom Dong",
+        "cost": "300",
+        "image": "objects/item_sex10.png",
+        "description": "A very large, black, dildo.",
+        "closeup": "",
+        "dialogue_label": ""
+    },
+    "virtualsaga": {
+        "id": "44",
+        "name": "Virtual Saga X",
+        "cost": "600",
+        "image": "objects/item_vr1.png",
+        "description": "A virtual reality headset.",
+        "closeup": "",
+        "dialogue_label": ""
+    },
+    "sexdoll": {
+        "id": "45",
+        "name": "Sex Doll \"Dirty Harold\"",
+        "cost": "800",
+        "image": "objects/item_sex12.png",
+        "description": "A strange sex doll of a man with a moustache.",
+        "closeup": "",
+        "dialogue_label": ""
+    },
+    "lingerie": {
+        "id": "46",
+        "name": "Pink Lingerie",
+        "cost": "400",
+        "image": "objects/item_sex13.png",
+        "description": "A sexy women's undergarment.",
+        "closeup": "",
+        "dialogue_label": ""
+    },
+    "handcuffs": {
+        "id": "47",
+        "name": "Steel Handcuffs",
+        "cost": "50",
+        "image": "objects/item_sex14.png",
+        "description": "Sturdy metal handcuffs.",
+        "closeup": "",
+        "dialogue_label": ""
+    },
+    "strapon": {
+        "id": "48",
+        "name": "Strap-On \"Crusader\"",
+        "cost": "500",
+        "image": "objects/item_sex15.png",
+        "description": "A rubber dick fit to be wielded by a warrior.",
+        "closeup": "",
+        "dialogue_label": ""
+    },
+    "strapon_drawing": {
+        "id": "49",
+        "name": "Drawing",
+        "cost": "0",
+        "image": "objects/item_note1.png",
+        "description": "A drawing from {b}Sister Angelica{/b} of the final item she requires.",
+        "closeup": "",
+        "dialogue_label": ""
+    },
+    "whip": {
+        "id": "50",
+        "name": "Whip \"The Penance\"",
+        "cost": "500",
+        "image": "objects/item_sex16.png",
+        "description": "A whip to punish sinners.",
+        "closeup": "",
+        "dialogue_label": ""
+    },
+    "aviators": {
+        "id": "51",
+        "name": "Aviators",
+        "cost": "0",
+        "image": "objects/item_glasses1.png",
+        "description": "A sweet pair of badass aviators.",
+        "closeup": "",
+        "dialogue_label": ""
+    },
+    "lure01": {
+        "id": "52",
+        "name": "Lure",
+        "cost": "0",
+        "image": "objects/item_bait2.png",
+        "description": "This lure looks very familiar.",
+        "closeup": "objects/closeup_bait02.png",
+        "dialogue_label": ""
+    },
+    "card03": {
+        "id": "53",
+        "name": "Trading Card - Orcette - The Whoremonger",
+        "cost": "0",
+        "image": "objects/item_card3.png",
+        "description": "The Fappening card for Orcette - The Whoremonger.",
+        "closeup": "objects/closeup_card03.png",
+        "dialogue_label": ""
+    },
+    "card04": {
+        "id": "54",
+        "name": "Trading Card - Dillon",
+        "cost": "0",
+        "image": "objects/item_card5.png",
+        "description": "The Fappening card for Dillon.",
+        "closeup": "objects/closeup_card04.png",
+        "dialogue_label": ""
+    },
+    "eriks_cards": {
+        "id": "55",
+        "name": "Erik's Fappening Trading Cards",
+        "cost": "0",
+        "image": "objects/item_box1.png",
+        "description": "This box contains the Fappening cards that {b}Erik{/b} lost.",
+        "closeup": "objects/closeup_box.png",
+        "dialogue_label": ""
+    },
+    "orcette": {
+        "id": "56",
+        "name": "Orcette",
+        "cost": "0",
+        "image": "objects/item_orcette1.png",
+        "description": "ZUG! ZUG! It's an Orcette.",
+        "closeup": "",
+        "dialogue_label": ""
+    },
+    "instructions1": {
+        "id": "57",
+        "name": "Yoga Instructions",
+        "cost": "0",
+        "image": "objects/item_instructions1.png",
+        "description": "Is this really how yoga works?",
+        "closeup": "objects/closeup_instructions_01.png",
+        "dialogue_label": ""
+    },
+    "kamasutra": {
+        "id": "58",
+        "name": "Kama Sutra",
+        "cost": "0",
+        "image": "objects/item_book2.png",
+        "description": "A book about the art of sex.",
+        "closeup": "objects/closeup_book_02.png",
+        "dialogue_label": ""
+    },
+    "birth_control_pills": {
+        "id": "59",
+        "name": "Birth Control Pills",
+        "cost": "0",
+        "image": "objects/item_pills1.png",
+        "description": "Prevents pregnancy when taken regularly by a woman, aka the pill.",
+        "closeup": "",
+        "dialogue_label": ""
+    },
+    "hospital_access_card": {
+        "id": "60",
+        "name": "Hospital Storage Card",
+        "cost": "0",
+        "image": "objects/item_card4.png",
+        "description": "The access card for the hospital storage room.",
+        "closeup": "",
+        "dialogue_label": ""
+    },
+    "stolen_goods": {
+        "id": "61",
+        "name": "Stolen Goods",
+        "cost": "0",
+        "image": "objects/item_goods1.png",
+        "description": "The goods that were stolen by a recent serial thief.",
+        "closeup": "",
+        "dialogue_label": ""
+    },
+    "donuts_fail": {
+        "id": "62",
+        "name": "DOH-nuts",
+        "cost": "50",
+        "image": "objects/item_donut1.png",
+        "description": "Some delicious tasting holes of the finest caliber.",
+        "closeup": "",
+        "dialogue_label": ""
+    },
+    "donuts_correct": {
+        "id": "63",
+        "name": "DOH-nuts",
+        "cost": "50",
+        "image": "objects/item_donut1.png",
+        "description": "Some delicious tasting holes of the finest caliber.",
+        "closeup": "",
+        "dialogue_label": ""
+    },
+    "pearl_necklace": {
+        "id": "64",
+        "name": "Pearl Necklace",
+        "cost": "100",
+        "image": "objects/item_necklace3.png",
+        "description": "A pearl necklace fit for a beauty.",
+        "closeup": "",
+        "dialogue_label": ""
+    },
+    "towel": {
+        "id": "65",
+        "name": "Towel",
+        "cost": "0",
+        "image": "objects/item_towel1.png",
+        "description": "It's a towel.",
+        "closeup": "",
+        "dialogue_label": ""
+    },
+    "lotion": {
+        "id": "66",
+        "name": "Lotion",
+        "cost": "0",
+        "image": "objects/item_lotion1.png",
+        "description": "It's a lotion used for \"massages\"!",
+        "closeup": "",
+        "dialogue_label": ""
+    },
+    "cat_food": {
+        "id": "67",
+        "name": "Cat Food",
+        "cost": "100",
+        "image": "objects/item_catfood1.png",
+        "description": "It's a special brand of food for cats, the best type of animal in the world!",
+        "closeup": "",
+        "dialogue_label": ""
+    },
+    "tattoo_butterfly": {
+        "id": "68",
+        "name": "Tattoo Drawing",
+        "cost": "0",
+        "image": "objects/item_tattoo_drawing1.png",
+        "description": "Your drawing of a butterfly tattoo.",
+        "closeup": "",
+        "dialogue_label": ""
+    },
+    "tattoo_dolphin": {
+        "id": "69",
+        "name": "Tattoo Drawing",
+        "cost": "0",
+        "image": "objects/item_tattoo_drawing2.png",
+        "description": "Your drawing of a dolphin tattoo.",
+        "closeup": "",
+        "dialogue_label": ""
+    },
+    "tattoo_stars": {
+        "id": "70",
+        "name": "Tattoo Drawing",
+        "cost": "0",
+        "image": "objects/item_tattoo_drawing3.png",
+        "description": "Your drawing of a tattoo of stars.",
+        "closeup": "",
+        "dialogue_label": ""
+    },
+    "tattoo_flowers": {
+        "id": "71",
+        "name": "Tattoo Drawing",
+        "cost": "0",
+        "image": "objects/item_tattoo_drawing4.png",
+        "description": "Your drawing of a tattoo of flowers.",
+        "closeup": "",
+        "dialogue_label": ""
+    },
+    "tattoo_skull": {
+        "id": "72",
+        "name": "Tattoo Drawing",
+        "cost": "0",
+        "image": "objects/item_tattoo_drawing5.png",
+        "description": "Your drawing of a skull tattoo.",
+        "closeup": "",
+        "dialogue_label": ""
+    },
+    "tattoo_cookie": {
+        "id": "73",
+        "name": "Tattoo Drawing",
+        "cost": "0",
+        "image": "objects/item_tattoo_drawing6.png",
+        "description": "Your drawing of a cookie tattoo.",
+        "closeup": "",
+        "dialogue_label": ""
+    },
+    "key03": {
+        "id": "74",
+        "name": "Helen's Secret Key",
+        "cost": "0",
+        "image": "objects/item_key3.png",
+        "description": "The key secretly hidden by the statue of Virgin Mary.",
+        "closeup": "",
+        "dialogue_label": ""
+    },
+    "obituary_records": {
+        "id": "75",
+        "name": "Obituary Records",
+        "cost": "0",
+        "image": "objects/item_records1.png",
+        "description": "The obituary records that contains the name of the shipwright.",
+        "closeup": "objects/closeup_records_01.png",
+        "dialogue_label": "obituary_records"
+    },
+    "scroll": {
+        "id": "76",
+        "name": "Scroll",
+        "cost": "0",
+        "image": "objects/item_scroll1.png",
+        "description": "A mysterious scroll you found hidden in a tree on Raven Hill.",
+        "closeup": "objects/closeup_scroll_01.png",
+        "dialogue_label": "scroll"
+    },
+    "treasure_key": {
+        "id": "77",
+        "name": "Mystery Key",
+        "cost": "0",
+        "image": "objects/item_key2.png",
+        "description": "A mysterious key.",
+        "closeup": "",
+        "dialogue_label": ""
+    },
+    "weird_coin": {
+        "id": "78",
+        "name": "Weird Coin",
+        "cost": "0",
+        "image": "objects/item_coin1.png",
+        "description": "A coin with weird engravings that you found in the park fountain.",
+        "closeup": "objects/closeup_coin_01.png",
+        "dialogue_label": "weird_coin"
+    },
+    "old_book": {
+        "id": "79",
+        "name": "Old Book",
+        "cost": "0",
+        "image": "objects/item_book9.png",
+        "description": "An old book from the library that looks like it can decipher something.",
+        "closeup": "objects/closeup_book_09.png",
+        "dialogue_label": "old_book"
+    },
+    "treasure_map": {
+        "id": "80",
+        "name": "Treasure Map",
+        "cost": "0",
+        "image": "objects/item_map1.png",
+        "description": "A treasure map acquired after solving a difficult puzzle.",
+        "closeup": "objects/closeup_map_01.png",
+        "dialogue_label": "treasure_map"
+    },
+    "golden_compass": {
+        "id": "81",
+        "name": "Golden Compass",
+        "cost": "0",
+        "image": "objects/item_compass1.png",
+        "description": "The golden compass that is said to lead you to your greatest desire.",
+        "closeup": "objects/closeup_compass_01.png",
+        "dialogue_label": "golden_compass"
+    },
+    "special_lure": {
+        "id": "82",
+        "name": "Special Lure",
+        "cost": "0",
+        "image": "objects/item_bait4.png",
+        "description": "A lure said to be able to catch anything and everything.",
+        "closeup": "objects/closeup_bait04.png",
+        "dialogue_label": ""
+    },
+    "tigger": {
+        "id": "83",
+        "name": "Demon Spawn Tigger",
+        "cost": "0",
+        "image": "objects/item_tigger1.png",
+        "description": "Once a man's sworn enemy, but no longer will any more piggies go to the market.",
+        "closeup": "objects/closeup_tigger_01.png",
+        "dialogue_label": "tigger"
+    },
+    "mushroom": {
+        "id": "84",
+        "name": "Mushroom",
+        "cost": "0",
+        "image": "objects/item_mushroom1.png",
+        "description": "Shrooms for days bois.",
+        "closeup": "objects/closeup_mushroom_01.png",
+        "dialogue_label": ""
+    },
+    "report_card": {
+        "id": "85",
+        "name": "Report Card",
+        "cost": "0",
+        "image": "objects/item_report1.png",
+        "description": "My school report card.",
+        "closeup": "report_card_closeup",
+        "dialogue_label": ""
+    },
+    "master_key": {
+        "id": "86",
+        "name": "Locker Master Key",
+        "cost": "0",
+        "image": "objects/item_key4.png",
+        "description": "This key can open all the lockers in the school.",
+        "closeup": "",
+        "dialogue_label": ""
+    },
+    "pompoms": {
+        "id": "87",
+        "name": "Pom-poms",
+        "cost": "0",
+        "image": "objects/item_pompom1.png",
+        "description": "{b}Roxxy{/b}'s pom-poms retrieved from {b}Coach Bridget{/b}'s locker.",
+        "closeup": "",
+        "dialogue_label": ""
+    },
+    "blueprints_ocular": {
+        "id": "88",
+        "name": "Blueprints",
+        "cost": "0",
+        "image": "objects/item_blueprints1.png",
+        "description": "Blueprints for the Okitatron Ocular device.",
+        "closeup": "objects/closeup_blueprint01.png",
+        "dialogue_label": ""
+    },
+    "blueprints_belt": {
+        "id": "89",
+        "name": "Blueprints",
+        "cost": "0",
+        "image": "objects/item_blueprints1.png",
+        "description": "Blueprints for the Okitatron Belt.",
+        "closeup": "objects/closeup_blueprint02.png",
+        "dialogue_label": ""
+    },
+    "judith_glasses": {
+        "id": "90",
+        "name": "Glasses",
+        "cost": "0",
+        "image": "objects/item_glasses2.png",
+        "description": "A pair of varifocal glasses.",
+        "closeup": "",
+        "dialogue_label": ""
+    },
+    "labcoat": {
+        "id": "91",
+        "name": "Labcoat",
+        "cost": "0",
+        "image": "objects/item_coat1.png",
+        "description": "Wearing this makes you look a lot smarter.",
+        "closeup": "",
+        "dialogue_label": ""
+    },
+    "goggles": {
+        "id": "92",
+        "name": "Goggles",
+        "cost": "0",
+        "image": "objects/item_goggles1.png",
+        "description": "Your eyes deserve protection, make sure you wear these when conducting dangerous experiments.",
+        "closeup": "",
+        "dialogue_label": ""
+    },
+    "toad": {
+        "id": "93",
+        "name": "Toad",
+        "cost": "0",
+        "image": "objects/item_toad1.png",
+        "description": "Seems that both witches and scientists have a use for essence of toad.",
+        "closeup": "",
+        "dialogue_label": ""
+    },
+    "game": {
+        "id": "94",
+        "name": "Sea Dogs SAGA",
+        "cost": "100",
+        "image": "transform-game_1",
+        "description": "The latest video game sensation from DarkCookie!",
+        "closeup": "",
+        "dialogue_label": ""
+    },
+    "game02": {
+        "id": "95",
+        "name": "World of Orcette",
+        "cost": "100",
+        "image": "transform-game_2",
+        "description": "The latest video game sensation from DarkCookie!",
+        "closeup": "",
+        "dialogue_label": ""
+    },
+    "card01": {
+        "id": "96",
+        "name": "Trading Card - The Flying Cock Goblin",
+        "cost": "50",
+        "image": "objects/item_card1.png",
+        "description": "The Fappening card for The Flying Cock Goblin.",
+        "closeup": "objects/closeup_card01.png",
+        "dialogue_label": ""
+    },
+    "card02": {
+        "id": "97",
+        "name": "Trading Card - Cock Crown of Thorns",
+        "cost": "50",
+        "image": "transform-card_2",
+        "description": "The Fappening card for Cock Crown of Thorns.",
+        "closeup": "objects/closeup_card02.png",
+        "dialogue_label": ""
+    },
+    "orcette_cosplay": {
+        "id": "98",
+        "name": "Orcette Queen Garments",
+        "cost": "300",
+        "image": "transform-cosplay_1",
+        "description": "The outfit befit for an Orcette Queen made from the battle scarred skin of her enemies.",
+        "closeup": "",
+        "dialogue_label": ""
+    },
+    "red_corset": {
+        "id": "99",
+        "name": "The Ruby Corset",
+        "cost": "300",
+        "image": "transform-sex_17",
+        "description": "A nice sexy lingerie set in a dashing blood red color.",
+        "closeup": "",
+        "dialogue_label": ""
+    },
+    "cow_outfit": {
+        "id": "100",
+        "name": "The Milk Slave",
+        "cost": "300",
+        "image": "transform-sex_6",
+        "description": "A black-and-white-spotted bikini accompanied with bell, tail plug and ear headband.",
+        "closeup": "",
+        "dialogue_label": ""
+    },
+    "m_magazine": {
+        "id": "101",
+        "name": "Mrs. Johnson's Magazine",
+        "cost": "0",
+        "image": "objects/object_mailbox_item01.png",
+        "description": "",
+        "closeup": "",
+        "dialogue_label": ""
+    },
+    "m_erik_package": {
+        "id": "102",
+        "name": "Erik's Package",
+        "cost": "0",
+        "image": "objects/object_mailbox_item04.png",
+        "description": "",
+        "closeup": "",
+        "dialogue_label": ""
+    },
+    "m_dad_letter": {
+        "id": "103",
+        "name": "Dad's Letter",
+        "cost": "0",
+        "image": "objects/object_mailbox_item03.png",
+        "description": "A letter written by {b}Erik{/b}'s dad for his son.",
+        "closeup": "",
+        "dialogue_label": ""
+    },
+    "m_pizza_pamphlet": {
+        "id": "104",
+        "name": "Pizza Pamphlet",
+        "cost": "0",
+        "image": "objects/object_mailbox_item02.png",
+        "description": "",
+        "closeup": "",
+        "dialogue_label": ""
+    },
+    "m_newspaper": {
+        "id": "105",
+        "name": "Newspaper",
+        "cost": "0",
+        "image": "objects/object_mailbox_item05.png",
+        "description": "",
+        "closeup": "",
+        "dialogue_label": ""
+    },
+    "supersaga_webcam": {
+        "id": "106",
+        "name": "Supersaga Digital Webcam",
+        "cost": "300",
+        "image": "objects/item_cam1.png",
+        "description": "The next gen webcam with high definition!",
+        "closeup": "",
+        "dialogue_label": ""
+    },
+    "homework1": {
+        "id": "107",
+        "name": "Completed Homework",
+        "cost": "0",
+        "image": "objects/item_homework1c.png",
+        "description": "A completed homework. It needs to be returned to {b}Miss Bissette{/b}.",
+        "closeup": "",
+        "dialogue_label": ""
+    },
+    "homework2": {
+        "id": "108",
+        "name": "New Homework",
+        "cost": "0",
+        "image": "objects/item_homework2.png",
+        "description": "Use your desk at home to complete your new homework and improve your grades!",
+        "closeup": "",
+        "dialogue_label": ""
+    },
+    "homework3": {
+        "id": "109",
+        "name": "New Homework",
+        "cost": "0",
+        "image": "objects/item_homework3.png",
+        "description": "Use your desk at home to complete your new homework and improve your grades!",
+        "closeup": "",
+        "dialogue_label": ""
+    },
+    "textbook1": {
+        "id": "110",
+        "name": "French Grammar Volume 1",
+        "cost": "400",
+        "image": "objects/item_volume1.png",
+        "description": "The latest textbook edition on how to speak French! En Français!",
+        "closeup": "",
+        "dialogue_label": ""
+    },
+    "textbook2": {
+        "id": "111",
+        "name": "French Grammar Volume 2",
+        "cost": "400",
+        "image": "objects/item_volume2.png",
+        "description": "The latest textbook edition on how to speak French! En Français!",
+        "closeup": "",
+        "dialogue_label": ""
+    },
+    "textbook3": {
+        "id": "112",
+        "name": "French Grammar Volume 3",
+        "cost": "400",
+        "image": "objects/item_volume3.png",
+        "description": "The latest textbook edition on how to speak French! En Français!",
+        "closeup": "",
+        "dialogue_label": ""
+    },
+    "keycode_note": {
+        "id": "113",
+        "name": "Keycode to Miss Okita's office",
+        "cost": "0",
+        "image": "objects/item_note2.png",
+        "description": "This is the code to {b}Miss Okita{/b}'s office. {b}6219{/b}.",
+        "closeup": "objects/closeup_note02.png",
+        "dialogue_label": "keycode_note_closeup"
+    },
+    "blueprints": {
+        "id": "114",
+        "name": "Miss Okita's blueprints",
+        "cost": "0",
+        "image": "objects/item_blueprints1.png",
+        "description": "{b}Miss Okita{/b}'s blueprints. I can't understand what she's working on...",
+        "closeup": "",
+        "dialogue_label": ""
+    },
+    "controller": {
+        "id": "115",
+        "name": "A Master Blaster controller",
+        "cost": "0",
+        "image": "objects/item_controller1.png",
+        "description": "{b}Erik{/b}'s Master Blaster controller. It should contain a faptic engine.",
+        "closeup": "",
+        "dialogue_label": ""
+    },
+    "faptic_engine": {
+        "id": "116",
+        "name": "Faptic Engine",
+        "cost": "0",
+        "image": "objects/item_faptic1.png",
+        "description": "A faptic engine extracted from a controller.",
+        "closeup": "",
+        "dialogue_label": ""
+    },
+    "chicken_stock": {
+        "id": "117",
+        "name": "Chicken Stock",
+        "cost": "50",
+        "image": "objects/item_chicken1.png",
+        "description": "I hope chicken stock is okay. The store was sold out of vegetable stock.",
+        "closeup": "",
+        "dialogue_label": ""
+    },
+    "caveflower": {
+        "id": "118",
+        "name": "Psychotropic Euphorbia",
+        "cost": "0",
+        "image": "objects/item_flower8.png",
+        "description": "A luminescent flower.",
+        "closeup": "",
+        "dialogue_label": ""
+    },
+    "tissue": {
+        "id": "119",
+        "name": "Used Tissue",
+        "cost": "0",
+        "image": "objects/item_tissue1.png",
+        "description": "Uggh. I can't believe I'm carrying this around, it's gross.",
+        "closeup": "",
+        "dialogue_label": ""
+    },
+    "eve_backpack": {
+        "id": "120",
+        "name": "Eve's backpack",
+        "cost": "0",
+        "image": "objects/item_backpack1.png",
+        "description": "{b}Eve{/b}'s lost backpack. Her art pad isn't in there though.",
+        "closeup": "",
+        "dialogue_label": ""
+    },
+    "eve_drawing": {
+        "id": "121",
+        "name": "Drawing",
+        "cost": "0",
+        "image": "objects/item_drawing1.png",
+        "description": "{b}Chad{/b} wanted this drawing, better look at it now before it's all sticky.",
+        "closeup": "",
+        "dialogue_label": ""
+    },
+    "art_pad": {
+        "id": "122",
+        "name": "Art Pad",
+        "cost": "0",
+        "image": "objects/item_artpad1.png",
+        "description": "An art pad, for {b}Mia{/b}.",
+        "closeup": "",
+        "dialogue_label": ""
+    },
+    "flute": {
+        "id": "123",
+        "name": "Flute",
+        "cost": "0",
+        "image": "objects/item_flute1.png",
+        "description": "A flute that is perfect for oral practice.",
+        "closeup": "",
+        "dialogue_label": ""
+    },
+    "broken_flute": {
+        "id": "124",
+        "name": "Broken Flute",
+        "cost": "0",
+        "image": "objects/item_flute2.png",
+        "description": "A broken flute that has a weird smell to it.",
+        "closeup": "",
+        "dialogue_label": ""
+    },
+    "drill": {
+        "id": "125",
+        "name": "Drill",
+        "cost": "0",
+        "image": "objects/item_drill1.png",
+        "description": "A drill used for drilling things. *Wink* *Wink*",
+        "closeup": "",
+        "dialogue_label": ""
+    },
+    "stick": {
+        "id": "126",
+        "name": "Stick",
+        "cost": "0",
+        "image": "objects/item_stick1.png",
+        "description": "It's a f***ing stick. Poke it with another stick.",
+        "closeup": "",
+        "dialogue_label": ""
+    },
+    "magazines": {
+        "id": "127",
+        "name": "Huge stack of Magazines",
+        "cost": "0",
+        "image": "objects/item_magazines3.png",
+        "description": "A huge stack of magazines. Those porno mags sure look interesting...",
+        "closeup": "",
+        "dialogue_label": ""
+    },
+    "beach_house_key": {
+        "id": "128",
+        "name": "Beach House Key",
+        "cost": "5000",
+        "image": "objects/item_key5.png",
+        "description": "The key to your very own home.",
+        "closeup": "",
+        "dialogue_label": ""
+    },
+    "wood_pile": {
+        "id": "129",
+        "name": "Wood Planks",
+        "cost": "0",
+        "image": "objects/item_wood1.png",
+        "description": "A big stack of planks you found at the treehouse.",
+        "closeup": "",
+        "dialogue_label": ""
+    },
+    "easels": {
+        "id": "130",
+        "name": "Easels",
+        "cost": "0",
+        "image": "objects/item_easel2.png",
+        "description": "Some handmade easels for {b}Miss Ross{/b}.",
+        "closeup": "",
+        "dialogue_label": ""
+    },
+    "paint": {
+        "id": "131",
+        "name": "Paint",
+        "cost": "0",
+        "image": "objects/item_paint1.png",
+        "description": "Just like watching paint dry.",
+        "closeup": "",
+        "dialogue_label": ""
+    },
+    "fake_guitar": {
+        "id": "132",
+        "name": "Fake Guitar",
+        "cost": "0",
+        "image": "objects/item_guitar2.png",
+        "description": "A perfect replication of a custom Fender guitar.",
+        "closeup": "",
+        "dialogue_label": ""
+    },
+    "guitar": {
+        "id": "133",
+        "name": "Guitar",
+        "cost": "0",
+        "image": "objects/item_guitar1.png",
+        "description": "A custom Fender guitar.",
+        "closeup": "",
+        "dialogue_label": ""
+    },
+    "beer": {
+        "id": "134",
+        "name": "Beer",
+        "cost": "0",
+        "image": "objects/item_beer1.png",
+        "description": "It's liquid bread, guys.",
+        "closeup": "",
+        "dialogue_label": ""
+    },
+    "linens": {
+        "id": "135",
+        "name": "Linens",
+        "cost": "0",
+        "image": "objects/item_linen1.png",
+        "description": "Some old rags you can make a canvas out of.",
+        "closeup": "",
+        "dialogue_label": ""
+    },
+    "sticky_tape": {
+        "id": "136",
+        "name": "Sticky Tape",
+        "cost": "0",
+        "image": "objects/item_sticky1.png",
+        "description": "This stuff is so strong that you wouldn't want to get yourself stuck to certain things... Or would you?",
+        "closeup": "",
+        "dialogue_label": ""
+    },
+    "magazines1": {
+        "id": "137",
+        "name": " Small stack of Magazines",
+        "cost": "0",
+        "image": "objects/item_magazines1.png",
+        "description": "A small stack of magazines, need a couple more...",
+        "closeup": "",
+        "dialogue_label": ""
+    },
+    "magazines2": {
+        "id": "138",
+        "name": "Stack of Magazines",
+        "cost": "0",
+        "image": "objects/item_magazines2.png",
+        "description": "A stack of magazines, some more left, and that should be enough...",
+        "closeup": "",
+        "dialogue_label": ""
+    },
+    "roxxy_homework": {
+        "id": "139",
+        "name": "French Homework",
+        "cost": "0",
+        "image": "objects/item_homework5.png",
+        "description": "My French homework. I should probably get that to {b}Roxxy{/b}.",
+        "closeup": "",
+        "dialogue_label": ""
+    },
+    "roxxy_uniform": {
+        "id": "140",
+        "name": "Dirty Uniform",
+        "cost": "0",
+        "image": "objects/item_uniform1.png",
+        "description": "{b}Roxxy{/b}'s dirty uniform. It smells bad.",
+        "closeup": "",
+        "dialogue_label": ""
+    },
+    "roxxy_picture": {
+        "id": "141",
+        "name": "Roxxy and [firstname]'s picture",
+        "cost": "0",
+        "image": "objects/item_picture1.png",
+        "description": "{b}Roxxy{/b}'s boobs are so soft...",
+        "closeup": "objects/closeup_picture1b.png",
+        "dialogue_label": ""
+    },
+    "goldschwagger": {
+        "id": "142",
+        "name": "GoldSchwagger Vodka",
+        "cost": "0",
+        "image": "objects/item_goldschwagger1.png",
+        "description": "{b}Becca{/b} seems to be very fond of that stuff, it has little golden flakes in it...",
+        "closeup": "",
+        "dialogue_label": ""
+    },
+    "smith_painting_key": {
+        "id": "143",
+        "name": "A small key",
+        "cost": "0",
+        "image": "objects/item_key6.png",
+        "description": "A small key that was taped to the back of a painting in {b}Mrs Smith{/b}'s bedroom.",
+        "closeup": "",
+        "dialogue_label": ""
+    },
+    "smith_exams": {
+        "id": "144",
+        "name": "Exams",
+        "cost": "0",
+        "image": "objects/item_exams1.png",
+        "description": "The finals. It is prime material to study, if you lack morals.",
+        "closeup": "",
+        "dialogue_label": ""
+    },
+    "sara_bikini": {
+        "id": "145",
+        "name": "Sara's Bikini",
+        "cost": "0",
+        "image": "objects/item_bikini_01.png",
+        "description": "{b}Miss Sara{/b}'s bikini, comes in a pitch when {b}Roxxy{/b}'s just broke...",
+        "closeup": "",
+        "dialogue_label": ""
+    },
+    "massage_oil": {
+        "id": "146",
+        "name": "Massage Oil",
+        "cost": "0",
+        "image": "objects/item_lotion2.png",
+        "description": "Some massage oil to lather someone's body...",
+        "closeup": "",
+        "dialogue_label": ""
+    },
+    "hammer": {
+        "id": "147",
+        "name": "Hammer",
+        "cost": "0",
+        "image": "objects/item_hammer1.png",
+        "description": "Now I can hammer all over this land.",
+        "closeup": "",
+        "dialogue_label": ""
+    },
+    "handsaw": {
+        "id": "148",
+        "name": "Handsaw",
+        "cost": "0",
+        "image": "objects/item_saw1.png",
+        "description": "A saw, used to cut things with.",
+        "closeup": "",
+        "dialogue_label": ""
+    },
+    "pregnax_pills": {
+        "id": "149",
+        "name": "Pregnax Pills",
+        "cost": "0",
+        "image": "objects/item_pills2.png",
+        "description": "The experimental temporary male fertility medication.\nIncreases the likelihood of pregnancy.",
+        "closeup": "",
+        "dialogue_label": "pregnax_pills"
+    },
+    "mysterious_statue_1": {
+        "id": "150",
+        "name": "Mysterious Statue (Legs)",
+        "cost": "0",
+        "image": "objects/item_statue1.png",
+        "description": "A mysterious statue piece that {b}Richard{/b} found when building the barn.",
+        "closeup": "objects/closeup_statue_01.png",
+        "dialogue_label": "mysterious_statue_1"
+    },
+    "mysterious_statue_2": {
+        "id": "151",
+        "name": "Mysterious Statue (Torso)",
+        "cost": "0",
+        "image": "objects/item_statue2.png",
+        "description": "A mysterious statue piece that {b}Clyde{/b} gave to me in exchange for a pink beaver plush.",
+        "closeup": "",
+        "dialogue_label": ""
+    },
+    "mysterious_statue_3": {
+        "id": "152",
+        "name": "Mysterious Statue (Head)",
+        "cost": "0",
+        "image": "objects/item_statue3.png",
+        "description": "A mysterious statue piece that {b}Consuela{/b} found in the beach house.",
+        "closeup": "",
+        "dialogue_label": ""
+    },
+    "plush_1": {
+        "id": "153",
+        "name": "Stuffed Doll",
+        "cost": "100",
+        "image": "objects/item_plush1.png",
+        "description": "I bought this at Cupid.",
+        "closeup": "",
+        "dialogue_label": ""
+    },
+    "plush_2": {
+        "id": "154",
+        "name": "Stuffed Doll",
+        "cost": "100",
+        "image": "objects/item_plush2.png",
+        "description": "I bought this at Cupid.",
+        "closeup": "",
+        "dialogue_label": ""
+    },
+    "plush_3": {
+        "id": "155",
+        "name": "Stuffed Doll",
+        "cost": "100",
+        "image": "objects/item_plush3.png",
+        "description": "I bought this at Cupid.",
+        "closeup": "",
+        "dialogue_label": ""
+    },
+    "plush_4": {
+        "id": "155",
+        "name": "Stuffed Doll",
+        "cost": "100",
+        "image": "objects/item_plush4.png",
+        "description": "I bought this at Cupid.",
+        "closeup": "",
+        "dialogue_label": ""
+    },
+    "plush_5": {
+        "id": "156",
+        "name": "Stuffed Doll",
+        "cost": "100",
+        "image": "objects/item_plush5.png",
+        "description": "I bought this at Cupid.",
+        "closeup": "",
+        "dialogue_label": ""
+    },
+    "plush_6": {
+        "id": "157",
+        "name": "Stuffed Doll",
+        "cost": "100",
+        "image": "objects/item_plush6.png",
+        "description": "I bought this at Cupid.",
+        "closeup": "",
+        "dialogue_label": ""
+    },
+    "plush_7": {
+        "id": "158",
+        "name": "Stuffed Doll",
+        "cost": "100",
+        "image": "objects/item_plush7.png",
+        "description": "I bought this at Cupid.",
+        "closeup": "",
+        "dialogue_label": ""
+    },
+    "plush_8": {
+        "id": "159",
+        "name": "Stuffed Doll",
+        "cost": "100",
+        "image": "objects/item_plush8.png",
+        "description": "I bought this at Cupid.",
+        "closeup": "",
+        "dialogue_label": ""
+    },
+    "plush_9": {
+        "id": "160",
+        "name": "Stuffed Doll",
+        "cost": "100",
+        "image": "objects/item_plush9.png",
+        "description": "I bought this at Cupid.",
+        "closeup": "",
+        "dialogue_label": ""
+    },
+    "plush_10": {
+        "id": "161",
+        "name": "Stuffed Doll",
+        "cost": "100",
+        "image": "objects/item_plush10.png",
+        "description": "I bought this at Cupid.",
+        "closeup": "",
+        "dialogue_label": ""
+    },
+    "plush_11": {
+        "id": "162",
+        "name": "Stuffed Doll",
+        "cost": "200",
+        "image": "objects/item_plush11.png",
+        "description": "I bought this at Cupid.",
+        "closeup": "",
+        "dialogue_label": ""
+    },
+    "plush_12": {
+        "id": "163",
+        "name": "Stuffed Doll",
+        "cost": "100",
+        "image": "objects/item_plush12.png",
+        "description": "I bought this at Cupid.",
+        "closeup": "",
+        "dialogue_label": ""
+    },
+    "flower_1": {
+        "id": "164",
+        "name": "Flowers",
+        "cost": "50",
+        "image": "objects/item_flower1.png",
+        "description": "I bought this at Cupid.",
+        "closeup": "",
+        "dialogue_label": ""
+    },
+    "flower_2": {
+        "id": "165",
+        "name": "Flowers",
+        "cost": "50",
+        "image": "objects/item_flower2.png",
+        "description": "I bought this at Cupid.",
+        "closeup": "",
+        "dialogue_label": ""
+    },
+    "flower_3": {
+        "id": "166",
+        "name": "Flowers",
+        "cost": "50",
+        "image": "objects/item_flower3.png",
+        "description": "I bought this at Cupid.",
+        "closeup": "",
+        "dialogue_label": ""
+    },
+    "flower_4": {
+        "id": "167",
+        "name": "Flowers",
+        "cost": "50",
+        "image": "objects/item_flower4.png",
+        "description": "I bought this at Cupid.",
+        "closeup": "",
+        "dialogue_label": ""
+    },
+    "flower_5": {
+        "id": "168",
+        "name": "Flowers",
+        "cost": "50",
+        "image": "objects/item_flower5.png",
+        "description": "I bought this at Cupid.",
+        "closeup": "",
+        "dialogue_label": ""
+    },
+    "flower_6": {
+        "id": "169",
+        "name": "Flowers",
+        "cost": "50",
+        "image": "objects/item_flower6.png",
+        "description": "I bought this at Cupid.",
+        "closeup": "",
+        "dialogue_label": ""
+    },
+    "flower_7": {
+        "id": "170",
+        "name": "Flowers",
+        "cost": "50",
+        "image": "objects/item_flower7.png",
+        "description": "I bought this at Cupid.",
+        "closeup": "",
+        "dialogue_label": ""
+    },
+    "milk_sample": {
+        "id": "171",
+        "name": "Milk",
+        "cost": "0",
+        "image": "objects/item_jar1.png",
+        "description": "Diane gave me this sample of her delicious milk!",
+        "closeup": "",
+        "dialogue_label": ""
+    },
+    "veggie_pizza": {
+        "id": "172",
+        "name": "Vegetarian Pizza",
+        "cost": "20",
+        "image": "objects/item_pizza1.png",
+        "description": "Daisy sure seems to enjoy these pizzas!",
+        "closeup": "",
+        "dialogue_label": ""
+    },
+    "cumdoom_pills": {
+        "id": "173",
+        "name": "Cumdoom Pills",
+        "cost": "0",
+        "image": "objects/item_pills3.png",
+        "description": "The experimental temporary male sterility medication.\nPrevents the chance of pregnancy.",
+        "closeup": "",
+        "dialogue_label": "cumdoom_pills"
+    },
+    "jenny_panties": {
+        "id": "174",
+        "name": "[jen_name]'s Panties",
+        "cost": "0",
+        "image": "objects/item_panties1.png",
+        "description": "{b}[jen_name]{/b}'s panties. {b}Master Somrak{/b} might be interested in them.",
+        "closeup": "",
+        "dialogue_label": ""
+    },
+    "debbie_panties": {
+        "id": "175",
+        "name": "[deb_name]'s Panties",
+        "cost": "0",
+        "image": "objects/item_panties2.png",
+        "description": "{b}[deb_name]{/b}'s panties. {b}Master Somrak{/b} might be interested in them.",
+        "closeup": "",
+        "dialogue_label": ""
+    },
+    "roxxy_panties": {
+        "id": "176",
+        "name": "Roxxy's Panties",
+        "cost": "0",
+        "image": "objects/item_panties3.png",
+        "description": "{b}Roxxy{/b}'s panties. {b}Master Somrak{/b} might be interested in them.",
+        "closeup": "",
+        "dialogue_label": ""
+    },
+    "mia_panties": {
+        "id": "177",
+        "name": "Mia's Panties",
+        "cost": "0",
+        "image": "objects/item_panties4.png",
+        "description": "{b}Mia{/b}'s panties. {b}Master Somrak{/b} might be interested in them.",
+        "closeup": "",
+        "dialogue_label": ""
+    },
+    "cyclone_mask": {
+        "id": "178",
+        "name": "Pink Cyclone Mask",
+        "cost": "100",
+        "image": "objects/item_mask1.png",
+        "description": "A pink wrestler mask. Ideal to hide one's identity.",
+        "closeup": "",
+        "dialogue_label": ""
+    },
+    "heart_necklace": {
+        "id": "179",
+        "name": "Heart Necklace",
+        "cost": "200",
+        "image": "objects/item_necklace2.png",
+        "description": "A heart-shaped necklace fit for a tramp.",
+        "closeup": "",
+        "dialogue_label": ""
+    },
+    "crystal_necklace": {
+        "id": "180",
+        "name": "Crystal Necklace",
+        "cost": "300",
+        "image": "objects/item_necklace1.png",
+        "description": "A crystal necklace fit for a ho.",
+        "closeup": "",
+        "dialogue_label": ""
+    },
+    "eve_panties": {
+        "id": "181",
+        "name": "Eve's Panties",
+        "cost": "0",
+        "image": "objects/item_panties7.png",
+        "description": "{b}Eve{/b}'s panties. {b}Master Somrak{/b} might be interested in them.",
+        "closeup": "",
+        "dialogue_label": ""
+    },
+    "grace_panties": {
+        "id": "182",
+        "name": "Grace's Panties",
+        "cost": "0",
+        "image": "objects/item_panties5.png",
+        "description": "{b}Grace{/b}'s panties. {b}Master Somrak{/b} might be interested in them.",
+        "closeup": "",
+        "dialogue_label": ""
+    },
+    "odette_panties": {
+        "id": "183",
+        "name": "Odette's Panties",
+        "cost": "0",
+        "image": "objects/item_panties8.png",
+        "description": "{b}Odette{/b}'s panties. {b}Master Somrak{/b} might be interested in them.",
+        "closeup": "",
+        "dialogue_label": ""
+    },
+    "bridget_panties": {
+        "id": "184",
+        "name": "Bridget's Panties",
+        "cost": "0",
+        "image": "objects/item_panties6.png",
+        "description": "{b}Bridget{/b}'s panties. {b}Master Somrak{/b} might be interested in them.",
+        "closeup": "",
+        "dialogue_label": ""
+    },
+    "lasagna": {
+        "id": "185",
+        "name": "Lasagna",
+        "cost": "20",
+        "image": "objects/item_lasagna.png",
+        "description": "Piping hot lasagna. It smells delicious.",
+        "closeup": "",
+        "dialogue_label": ""
+    },
+    "candle": {
+        "id": "186",
+        "name": "Candle",
+        "cost": "20",
+        "image": "objects/item_candle.png",
+        "description": "A candle, fit for romantic evenings, picnics, and lighting the path to the fuse box.",
+        "closeup": "",
+        "dialogue_label": ""
+    },
+    "chocolates": {
+        "id": "187",
+        "name": "Box of Chocolates",
+        "cost": "50",
+        "image": "objects/item_chocolat.png",
+        "description": "A box of delicious chocolates, to give to your loved ones.",
+        "closeup": "",
+        "dialogue_label": ""
+    },
+    "milk_2x2z1y": {
+        "id": "188",
+        "name": "Fresh Milk Cartons",
+        "cost": "0",
+        "image": "objects/item_milk2.png",
+        "description": "A small delivery of fresh milk cartons!",
+        "closeup": "",
+        "dialogue_label": ""
+    },
+    "milk_2x3z1y": {
+        "id": "189",
+        "name": "Fresh Milk Cartons",
+        "cost": "0",
+        "image": "objects/item_milk3.png",
+        "description": "A delivery of fresh milk cartons!",
+        "closeup": "",
+        "dialogue_label": ""
+    },
+    "milk_9x9z2y": {
+        "id": "190",
+        "name": "Fresh Milk Cartons",
+        "cost": "0",
+        "image": "objects/item_milk4.png",
+        "description": "A huge delivery of fresh milk cartons!",
+        "closeup": "",
+        "dialogue_label": ""
+    },
+    "water_glass": {
+        "id": "191",
+        "name": "A Glass of Water",
+        "cost": "0",
+        "image": "objects/item_water.png",
+        "description": "It's a good job that my backpack has a top-of-the-line cup-holder built-in!",
+        "closeup": "",
+        "dialogue_label": ""
+    },
+    "staff_badge": {
+        "id": "192",
+        "name": "Rump Estate Staff Badge",
+        "cost": "0",
+        "image": "objects/item_badge1.png",
+        "description": "I can't believe the mayor's wife just handed me this. So handy though!",
+        "closeup": "",
+        "dialogue_label": ""
+    },
+    "thotbot": {
+        "id": "193",
+        "name": "Thotbot",
+        "cost": "0",
+        "image": "objects/item_thotbot.png",
+        "description": "The cleaning solution for lonely men! With realistic genitalia!",
+        "closeup": "",
+        "dialogue_label": ""
+    },
+    "ink": {
+        "id": "131",
+        "name": "Ink",
+        "cost": "0",
+        "image": "objects/item_paint2.png",
+        "description": "Tattoo inks from {b}Grace{/b}. These should work nicely in art class!",
+        "closeup": "",
+        "dialogue_label": ""
+    },
+    "atm_card": {
+        "id": "132",
+        "name": "ATM Card",
+        "cost": "0",
+        "image": "objects/item_atm_card.png",
+        "description": "The ATM card for my deposit account at Saga Financial.",
+        "closeup": "",
+        "dialogue_label": ""
+    },
+    "josie_phone": {
+        "id": "133",
+        "name": "Josie's Cellphone",
+        "cost": "0",
+        "image": "objects/item_phone.png",
+        "description": "The cellphone belonging Josephine.",
+        "closeup": "",
+        "dialogue_label": ""
+    },
+    "scooter_key": {
+        "id": "134",
+        "name": "SL-700 Crotch Rocket key",
+        "cost": 1100,
+        "image": "objects/item_car_key1.png",
+        "description": "The ignition key to the most badass electric scooter there is!",
+        "closeup": "",
+        "dialogue_label": ""
+    },
+    "compact_key": {
+        "id": "135",
+        "name": "Mini Vulva key",
+        "cost": 4500,
+        "image": "objects/item_car_key2.png",
+        "description": "The ignition key to the only vehicle that screams to the world \"I know I'm fabulous, and you should too!\"",
+        "closeup": "",
+        "dialogue_label": ""
+    },
+    "toolbag": {
+        "id": "136",
+        "name": "Jiang's Lucky Tool Bag",
+        "cost": "0",
+        "image": "objects/item_toolbag.png",
+        "description": "I wonder what could be so lucky about it, if he was so distracted that he forgot to pick it up...",
+        "closeup": "",
+        "dialogue_label": ""
+    },
+    "vest": {
+        "id": "137",
+        "name": "A SAGA dealership vest",
+        "cost": "0",
+        "image": "objects/item_jacket.png",
+        "description": "Ladies love a man in uniform, right? Even if it screams box-store?\nWhat do you mean, \"it had sleeves\"? It's summertime, much too hot for sleeves!",
+        "closeup": "",
+        "dialogue_label": ""
+    },
+    "coupe_key": {
+        "id": "138",
+        "name": "Overcompensator key",
+        "cost": 10000,
+        "image": "objects/item_car_key3.png",
+        "description": "The ignition key to the car that never skips leg day, and makes enough noise to make sure you never forget it.",
+        "closeup": "",
+        "dialogue_label": ""
+    },
+    "binoculars": {
+        "id": "139",
+        "name": "Binoculars",
+        "cost": "0",
+        "image": "objects/item_binoculars.png",
+        "description": "A pair of binoculars, reclaimed from the box of shame.",
+        "closeup": "",
+        "dialogue_label": ""
+    },
+    "card06": {
+        "id": "140",
+        "name": "Rodman Trading Card",
+        "cost": "0",
+        "image": "objects/item_card6.png",
+        "description": "A vintage pumpkin-hoop trading card from 1996!",
+        "closeup": "objects/closeup_card_rodman.png",
+        "dialogue_label": ""
+    },
+    "picture2": {
+        "id": "141",
+        "name": "Old Photograph",
+        "cost": "0",
+        "image": "objects/item_picture2.png",
+        "description": "An old picture of Dad with [jen_name]. Maybe she'd like to have it?",
+        "closeup": "objects/closeup_picture2.png",
+        "dialogue_label": ""
+    },
+    "safe_deposit_key": {
+        "id": "142",
+        "name": "Small Hidden Key",
+        "cost": "0",
+        "image": "objects/item_key7.png",
+        "description": "The key found stuck to Dad's old photograph of him and the mayor.",
+        "closeup": "",
+        "dialogue_label": ""
+    },
+    "picture4": {
+        "id": "143",
+        "name": "Hidden Photograph",
+        "cost": "0",
+        "image": "objects/item_picture4.png",
+        "description": "A picture of Dad, the mayor and... A house-elf? I wonder what the note could mean...",
+        "closeup": "objects/closeup_picture4.png",
+        "dialogue_label": ""
+    },
+    "picture4_alt": {
+        "id": "144",
+        "name": "Hidden Photograph Note",
+        "cost": "0",
+        "image": "objects/item_picture4_alt.png",
+        "description": "A copy of the code I found scribbled on Dad's old photograph.\nIt seemed important to not forget when {b}Harold{/b} took the original.",
+        "closeup": "",
+        "dialogue_label": ""
+    },
+    "maid_uniform": {
+        "id": "145",
+        "name": "Maid Uniform",
+        "cost": "0",
+        "image": "objects/item_uniform2.png",
+        "description": "A staff uniform from the Rump estate. Hopefully it'll make a good disguise for {b}Iwanka{/b}.",
+        "closeup": "",
+        "dialogue_label": ""
+    },
+    "leaf_skimmer": {
+        "id": "146",
+        "name": "Leaf Skimmer",
+        "cost": "0",
+        "image": "objects/item_net.png",
+        "description": "Used for collecting leaves (and worse!) from the surface of pools and hot tubs.",
+        "closeup": "",
+        "dialogue_label": ""
+    },
+    "evidence": {
+        "id": "147",
+        "name": "Incriminating Evidence",
+        "cost": "0",
+        "image": "objects/item_evidence.png",
+        "description": "The contents of the mayor's safe. There's no way {b}Harold{/b} can't move on him with all this!",
+        "closeup": "",
+        "dialogue_label": ""
+    },
+    "grocery_bags": {
+        "id": "147",
+        "name": "Grocery Bags",
+        "cost": "0",
+        "image": "objects/item_groceries.png",
+        "description": "{b}Maria{/b}'s grocery bags. I'm helping take them up to her apartment. Number 302.",
+        "closeup": "",
+        "dialogue_label": ""
+    },
+    "poem": {
+        "id": "148",
+        "name": "Poem",
+        "cost": "0",
+        "image": "objects/item_poem1.png",
+        "description": "My French poem for {b}Ms. Bissette{/b}'s class!",
+        "closeup": "objects/closeup_poem_01.png",
+        "dialogue_label": "poem"
+    },
+    "usb": {
+        "id": "149",
+        "name": "USB",
+        "cost": "0",
+        "image": "objects/item_usb1.png",
+        "description": "My trusty USB. I should be able to use the computer lab printer to print my French poem.",
+        "closeup": "",
+        "dialogue_label": ""
+    },
+    "french_scans": {
+        "id": "149",
+        "name": "Scanned French Pages",
+        "cost": "0",
+        "image": "objects/item_scanned_01.png",
+        "description": "A collection of missing pages from my French Dictionary.",
+        "closeup": "objects/closeup_scanned_01.png",
+        "dialogue_label": "french_scans"
+    },
+    "cheese_book": {
+        "id": "150",
+        "name": "Mon fromage et moi!",
+        "cost": "0",
+        "image": "objects/item_book8.png",
+        "description": "A thrilling romp though 101 French cheeses. \"It's easy as one, two, brie!\"",
+        "closeup": "",
+        "dialogue_label": ""
+    },
+    "judith_dictionary": {
+        "id": "151",
+        "name": "Judith's French Dictionary",
+        "cost": "0",
+        "image": "objects/item_book3_full.png",
+        "description": "An undamaged copy of the French dictionary that I borrowed from {b}Judith{/b}.",
+        "closeup": "",
+        "dialogue_label": ""
+    },
+    "duffel": {
+        "id": "152",
+        "name": "Tony's Heist Gear",
+        "cost": "0",
+        "image": "objects/item_duffel.png",
+        "description": "This is the bag of stuff {b}Tony{/b} asked me to fetch for the bank heist.",
+        "closeup": "",
+        "dialogue_label": ""
+    },
+    "case": {
+        "id": "153",
+        "name": "MacGuffin's Case",
+        "cost": "0",
+        "image": "objects/item_suitcase_01.png",
+        "description": "Is it - could it be - maybe - you never know - if it's not - but then the question is - what?",
+        "closeup": "",
+        "dialogue_label": ""
+    },
+    "money_bag": {
+        "id": "154",
+        "name": "Stolen Cash",
+        "cost": "0",
+        "image": "objects/item_money_bag.png",
+        "description": "All the money Dad stole from the Russians!",
+        "closeup": "",
+        "dialogue_label": ""
+    }
+}

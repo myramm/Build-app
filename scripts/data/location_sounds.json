@@ -1,0 +1,28 @@
+{
+    "default": {
+        "ambience": "",
+        "ambience_night": ""
+    },
+    "town_map": {
+        "ambience": "ambience_suburb.ogg",
+        "ambience_night": "ambience_suburb_night.ogg"
+    },
+    "school_hall": {
+        "ambience": "ambience_school_hallway.ogg"
+    },
+    "school_courtyard": {
+        "ambience": "ambience_school_hallway.ogg"
+    },
+    "school_left_hallway": {
+        "ambience": "ambience_school_hallway.ogg"
+    },
+    "school_second_floor": {
+        "ambience": "ambience_school_hallway.ogg"
+    },
+    "school_right_hallway": {
+        "ambience": "ambience_school_hallway.ogg"
+    },
+    "school_locker": {
+        "ambience": "ambience_school_hallway.ogg"
+    }
+}
