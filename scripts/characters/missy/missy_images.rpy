@@ -1,0 +1,118 @@
+
+image old_missy 1 = "characters/missy/char_missy_01.png"
+image old_missy 1b = "characters/missy/char_missy_01b.png"
+image old_missy 2 = "characters/missy/char_missy_02.png"
+image old_missy 2b = "characters/missy/char_missy_02b.png"
+image old_missy 3 = "characters/missy/char_missy_03.png"
+image old_missy 3f = im.Flip("characters/missy/char_missy_03.png", horizontal=True)
+image old_missy 4 = "characters/missy/char_missy_04.png"
+image old_missy 4b = "characters/missy/char_missy_04b.png"
+image old_missy 4c = "characters/missy/char_missy_04c.png"
+image old_missy 4d = "characters/missy/char_missy_04d.png"
+image old_missy 5 = "characters/missy/char_missy_05.png"
+image old_missy 6 = "characters/missy/char_missy_06.png"
+image old_missy 7 = "characters/missy/char_missy_07.png"
+image old_missy 7b = "characters/missy/char_missy_07b.png"
+image old_missy 8 = "characters/missy/char_missy_08.png"
+image old_missy 9 = "characters/missy/char_missy_09.png"
+image old_missy 10 = "characters/missy/char_missy_10.png"
+image old_missy 11 = "characters/missy/char_missy_11.png"
+image old_missy 11b = "characters/missy/char_missy_11b.png"
+image old_missy 11c = "characters/missy/char_missy_11c.png"
+image old_missy_outfit cheer = Image("characters/missy/char_missy_uniform_01.png", xoffset=4)
+
+image old_missy bikini 1 = "characters/missy/char_missy_bikini_01.png"
+image old_missy bikini 1b = "characters/missy/char_missy_bikini_01b.png"
+image old_missy bikini 2 = "characters/missy/char_missy_bikini_02.png"
+image old_missy bikini 2b = "characters/missy/char_missy_bikini_02b.png"
+image old_missy bikini 3 = "characters/missy/char_missy_bikini_03.png"
+image old_missy bikini 4 = "characters/missy/char_missy_bikini_04.png"
+image old_missy bikini 4b = "characters/missy/char_missy_bikini_04b.png"
+image old_missy bikini 5 = "characters/missy/char_missy_bikini_05.png"
+image old_missy bikini 6 = "characters/missy/char_missy_bikini_06.png"
+image old_missy bikini 7 = "characters/missy/char_missy_bikini_07.png"
+image old_missy bikini 7b = "characters/missy/char_missy_bikini_07b.png"
+image old_missy bikini 8 = "characters/missy/char_missy_bikini_08.png"
+image old_missy bikini 9 = Image("characters/missy/char_missy_bikini_09.png",xoffset=-23)
+image old_missy bikini 10 = "characters/missy/char_missy_bikini_10.png"
+image old_missy bikini 11 = "characters/missy/char_missy_bikini_11.png"
+image old_missy bikini 12 = "characters/missy/char_missy_bikini_12.png"
+image old_missy bikini 13 = "characters/missy/char_missy_bikini_13.png"
+image old_missy bikini 14 = "characters/missy/char_missy_bikini_14.png"
+image old_missy bikini 15 = "characters/missy/char_missy_bikini_15.png"
+image old_missy bikini 16 = "characters/missy/char_missy_bikini_16.png"
+image old_missy bikini 17 = Image("characters/missy/char_missy_bikini_17.png",xoffset=-64)
+image old_missy bikini 18 = "characters/missy/char_missy_bikini_18.png"
+image old_missy bikini 18b = "characters/missy/char_missy_bikini_18b.png"
+image old_missy bikini 19 = "characters/missy/char_missy_bikini_19.png"
+image old_missy bikini 19b = "characters/missy/char_missy_bikini_19b.png"
+
+image old_missy naked 1 = "characters/missy/char_missy_naked_01.png"
+image old_missy naked 2 = "characters/missy/char_missy_naked_02.png"
+image old_missy naked 3 = Image("characters/missy/char_missy_naked_03.png",xoffset=-5)
+image old_missy naked 4 = "characters/missy/char_missy_naked_04.png"
+image old_missy naked 5 = "characters/missy/char_missy_naked_05.png"
+image old_missy naked 8 = "characters/missy/char_missy_naked_08.png"
+image old_missy naked 9 = "characters/missy/char_missy_naked_09.png"
+image old_missy naked 10 = "characters/missy/char_missy_naked_10.png"
+
+image missys_solo 1 = "characters/missy/char_missy_sex_solo_01.png"
+image missys_solo 2 = "characters/missy/char_missy_sex_solo_02.png"
+image missys_solo 3 = "characters/missy/char_missy_sex_solo_03.png"
+image missys_solo 4 = "characters/missy/char_missy_sex_solo_04.png"
+image missys_solo 5 = "characters/missy/char_missy_sex_solo_05.png"
+image missys_solo 6 = "characters/missy/char_missy_sex_solo_06.png"
+image missys_solo 7 = "characters/missy/char_missy_sex_solo_07.png"
+image missys_solo 8 = "characters/missy/char_missy_sex_solo_08.png"
+image missys_solo 9 = "characters/missy/char_missy_sex_solo_09.png"
+image missys_solo 10 = "characters/missy/char_missy_sex_solo_10.png"
+image missys_solo 11 = "characters/missy/char_missy_sex_solo_11.png"
+image missys_solo 12 = "characters/missy/char_missy_sex_solo_12.png"
+image missys_solo 13 = "characters/missy/char_missy_sex_solo_13.png"
+image missys_solo 14 = "characters/missy/char_missy_sex_solo_14.png"
+image missys_solo 15 = "characters/missy/char_missy_sex_solo_15.png"
+image missys_solo 16 = "characters/missy/char_missy_sex_solo_16.png"
+image missys_solo 17 = "characters/missy/char_missy_sex_solo_17.png"
+image missys_solo 18 = "characters/missy/char_missy_sex_solo_18.png"
+
+image missys_beach 1 = "characters/missy/char_missy_sex_foursome_01.png"
+image missys_beach 2 = "characters/missy/char_missy_sex_foursome_02.png"
+image missys_beach 3 = "characters/missy/char_missy_sex_foursome_03.png"
+image missys_beach 4 = "characters/missy/char_missy_sex_foursome_04.png"
+image missys_beach 5 = "characters/missy/char_missy_sex_foursome_05.png"
+image missys_beach 6 = "characters/missy/char_missy_sex_foursome_06.png"
+image missys_beach 7 = "characters/missy/char_missy_sex_foursome_07.png"
+image missys_beach 8 = "characters/missy/char_missy_sex_foursome_08.png"
+image missys_beach 9 = "characters/missy/char_missy_sex_foursome_09.png"
+image missys_beach 10 = "characters/missy/char_missy_sex_foursome_10.png"
+image missys_beach 11 = "characters/missy/char_missy_sex_foursome_11.png"
+image missys_beach 12 = "characters/missy/char_missy_sex_foursome_12.png"
+image missys_beach 13 = "characters/missy/char_missy_sex_foursome_13.png"
+image missys_beach 14 = "characters/missy/char_missy_sex_foursome_14.png"
+image missys_beach 15 = "characters/missy/char_missy_sex_foursome_15.png"
+image missys_beach 16 = "characters/missy/char_missy_sex_foursome_16.png"
+image missys_beach 17 = "characters/missy/char_missy_sex_foursome_17.png"
+image missys_beach 18 = "characters/missy/char_missy_sex_foursome_18.png"
+
+image old_missy sitting 1 = "characters/missy/char_missy_sitting_01.png"
+image old_missy sitting 2 = "characters/missy/char_missy_sitting_02.png"
+image old_missy sitting 3 = "characters/missy/char_missy_sitting_03.png"
+image old_missy sitting 4 = "characters/missy/char_missy_sitting_04.png"
+image old_missy sitting 5 = "characters/missy/char_missy_sitting_05.png"
+image old_missy sitting 6 = "characters/missy/char_missy_sitting_06.png"
+image old_missy sitting 6b = "characters/missy/char_missy_sitting_06b.png"
+image old_missy sitting 7 = "characters/missy/char_missy_sitting_07.png"
+image old_missy sitting 8 = "characters/missy/char_missy_sitting_08.png"
+image old_missy sitting 9 = "characters/missy/char_missy_sitting_09.png"
+
+image old_missy front sitting 1 = Image("characters/missy/char_missy_front_01.png",xoffset=205)
+image old_missy front sitting 2 = Image("characters/missy/char_missy_front_02.png",xoffset=205)
+image old_missy front sitting 3 = Image("characters/missy/char_missy_front_03.png",xoffset=165)
+image old_missy front sitting 3b = Image("characters/missy/char_missy_front_03b.png",xoffset=165)
+
+image old_missy_arm front sitting 1 = Image("characters/missy/char_missy_front_arms_01.png",xoffset=180,yoffset=-375)
+image old_missy_arm front sitting 2 = Image("characters/missy/char_missy_front_arms_02.png",xoffset=16,yoffset=-315)
+image old_missy_arm front sitting 2b = Image("characters/missy/char_missy_front_arms_02b.png",xoffset=8,yoffset=-318)
+
+image missys_beach_side = "characters/missy/char_missy_sex_foursome_side.png"
+# Decompiled by unrpyc: https://github.com/CensoredUsername/unrpyc

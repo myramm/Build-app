@@ -1,0 +1,21 @@
+
+label tony_button_eve_make_up_pick_up_lasagna:
+label tony_button_eve_make_up_pick_up_lasagna_nevermind:
+label tony_button_eve_make_up_pick_up_lasagna_of_course:
+label tony_button_eve_make_up_pick_up_lasagna_of_course_has_money:
+label tony_button_eve_make_up_pick_up_lasagna_of_course_no_money:
+label tony_dialogue_default:
+label tony_dialogue_deliver_pizzas_first:
+label tony_dialogue_deliver_pizzas_repeat:
+label tony_dialogue_nevermind_pizza_order:
+label tony_dialogue_pizza_order:
+label tony_dialogue_pre:
+label tony_dialogue_veggie_pizza_first:
+label tony_dialogue_veggie_pizza_has_money_first:
+label tony_dialogue_veggie_pizza_has_money_repeat:
+label tony_dialogue_veggie_pizza_no_money_first:
+label tony_dialogue_veggie_pizza_no_money_repeat:
+label tony_dialogue_veggie_pizza_repeat:
+    $ game.main()
+    return
+# Decompiled by unrpyc: https://github.com/CensoredUsername/unrpyc

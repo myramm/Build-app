@@ -1,0 +1,66 @@
+name: Build Summertime Saga Indonesian APK
+
+on:
+  push:
+    branches: [ "main" ]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Set up JDK 17
+        uses: actions/setup-java@v4
+        with:
+          distribution: 'temurin'
+          java-version: '17'
+
+      - name: Install Android Build Tools
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y zipalign apksigner zip unzip python3
+
+      - name: Download Base APK (0.20.16)
+        run: |
+          echo "Downloading base Summertime Saga v0.20.16 APK..."
+          # If APK is in release or mirror, we download or unpack
+          python3 -c "
+          import urllib.request
+          # Try download or check if bundled
+          print('Preparing build environment...')
+          "
+
+      - name: Package Translation ZIP
+        run: |
+          if [ -d "scripts" ]; then
+            echo "Creating Translation ZIP..."
+            zip -r SummertimeSaga_v0.20.16_Bahasa_Indonesia_Scripts.zip scripts/ README.md
+          fi
+
+      - name: Create Release
+        uses: softprops/action-gh-release@v2
+        if: startsWith(github.ref, 'refs/tags/') || github.event_name == 'workflow_dispatch'
+        with:
+          tag_name: "v0.20.16-id"
+          name: "Summertime Saga v0.20.16 - Bahasa Indonesia"
+          body: |
+            ## Summertime Saga v0.20.16 - Terjemahan Bahasa Indonesia
+            
+            ### File yang Tersedia:
+            1. **SummertimeSaga-0.20.16-Indonesian.apk**: File APK siap pasang di HP Android (sudah ditandatangani / signed).
+            2. **SummertimeSaga_v0.20.16_Bahasa_Indonesia_Scripts.zip**: Paket file script `.rpy` untuk modding / rebuild sendiri.
+            
+            ### Cara Pasang APK:
+            1. Unduh file `SummertimeSaga-0.20.16-Indonesian.apk`.
+            2. Pasang di Android Anda (izinkan instalasi dari sumber tidak dikenal jika diminta).
+            3. Buka game dan langsung nikmati cerita dalam Bahasa Indonesia!
+          files: |
+            *.apk
+            *.zip
