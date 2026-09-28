@@ -2,67 +2,52 @@ label button_okita_ingredients_mushroom:
     scene location_school_science_closeup
     show anon f_worried
     show okita 2 at right
-    okita "{b}Jamur falicum tumbuh di hutan{/b} di sini di Summerville."
-
+    okita "{b}Falicum mushrooms grow in the forest{/b} here in Summerville."
     show okita 3
-    okita "Mereka mudah dikenali karena bentuknya yang falus."
-
+    okita "They are easy to spot because of their phallic shape."
     show okita 1
-    anon @ f_sad_down "... Bruto."
-
+    anon @ f_sad_down "... Gross."
     return
 
 label button_okita_ingredients_toad:
     scene location_school_science_closeup
     show anon f_worried
     show okita 2 at right
-    okita "Ini musim kawin {b}Horny Toad{/b}. Jadi carilah {b}kolam atau sungai{/b}."
-
-    okita "Mereka seharusnya mudah dikenali dari bagian belakangnya yang berwarna ungu dan menggumpal."
-
+    okita "It's breeding season for the {b}Horny Toad{/b}. So look for a {b}pond or stream{/b}."
+    okita "They should be easily identifiable by their lumpy purple backsides."
     show okita 1
-    anon "Kedengarannya seperti seekor katak jelek..."
-
+    anon "Sounds like one ugly frog..."
     return
 
 label button_okita_ingredients_flower:
     scene location_school_science_closeup
     show anon f_worried
     show okita 2 at right
-    okita "{b}Euphorbia Psikotropika{/b} adalah bunga bercahaya yang hanya tumbuh di tempat gelap."
-
-    okita "Taruhan terbaik Anda adalah {b}gua{/b}."
-
+    okita "The {b}Psychotropic Euphorbia{/b} is a luminescent flower that grows only in dark places."
+    okita "Your best bet would be a {b}cave{/b}."
     show okita 1
-    anon @ f_thinking a_thinking "Hmm, {b}gua{/b}..."
-
+    anon @ f_thinking a_thinking "Hmm, a {b}cave{/b}..."
     return
 
 label button_okita_ingredients_stock:
     scene location_school_science_closeup
     show anon f_worried
     show okita 2 at right
-    okita "Kita memerlukan sesuatu yang ringan sebagai bahan dasar serum. Kaldu sayur akan bekerja paling baik."
-
-    okita "Anda seharusnya bisa membelinya di Consum-R."
-
+    okita "We'll need something mild to act as a base for the serum. Vegetable stock would work best."
+    okita "You should be able to pick some up at Consum-R."
     show okita 1
-    anon "... Setidaknya salah satu bahannya sederhana."
-
+    anon "... At least one of the ingredients is simple."
     return
 
 label button_okita_ingredients_tissue:
     scene location_school_science_closeup
     show anon f_worried
     show okita 2 at right
-    okita "Sampel rambut atau air liur adalah pilihan terbaik."
-
+    okita "A hair or saliva sample would work best."
     show okita 1
-    anon @ f_skeptical "Ya, oke, tapi bagaimana aku bisa mendapatkannya?"
-
+    anon @ f_skeptical "Yeah, okay, but how am I supposed to get that?"
     show okita 9
-    okita "... Saya yakin Anda akan memikirkan sesuatu."
-
+    okita "... I'm sure you'll think of something."
     show okita 4
     anon @ f_sad_down -m_talk "..."
     return
@@ -72,66 +57,50 @@ label button_okita_got_all_ingredients:
     show anon
     show okita 1 at right
     with dissolve
-    anon "Baiklah Bu, saya rasa saya sudah mendapatkan segalanya."
-
+    anon "Alright ma'am, I think I've got everything."
     show okita 3
-    okita "... Menurutmu?"
-
+    okita "... You think?"
     show okita 1
     hide anon
     show player 533 at left
     with dissolve
-    anon "Nah, ada satu masalah kecil..."
-
+    anon "Well, there is one little issue..."
     show okita 3
     show player 532
-    okita "... Apakah itu kaldu ayam?"
-
+    okita "... Is that chicken stock?"
     show player 533
     show okita 1
-    anon "Ya. Hanya itu yang dimiliki Consum-R..."
-
-    anon "Saya pikir, mungkin kaldu ayam masih bisa digunakan?"
-
+    anon "Yeah. It's all Consum-R had..."
+    anon "I thought, maybe chicken stock would still work?"
     show player 532
     show okita 2b
-    okita "Hah, ya. Itu seharusnya baik-baik saja..."
-
+    okita "Hah, yeah. That should be fine..."
     hide player
     show anon f_worried
     with dissolve
     show okita 6
     anon @ -m_talk "..."
     show okita 7
-    okita "Sepertinya semuanya beres."
-
-    okita "Temui aku di kantorku malam ini, dan kita akan mulai mixing."
-
+    okita "Looks like everything else is in order."
+    okita "Meet me in my office this evening, and we'll start mixing."
     show okita 6
-    anon "Malam ini?"
-
+    anon "Tonight?"
     show okita 3
-    okita "Masalah?"
-
+    okita "Problem?"
     show okita 4
-    anon "TIDAK! ... Tidak. Sampai jumpa nanti."
-
+    anon "No! ... No. I'll see you then."
     return
 
 label button_okita_extract_cum:
     scene location_school_science_closeup
     show anon f_worried
     show okita 4 at right
-    anon "Jadi, kami punya semua yang kami perlukan untuk membuat serum Anda?"
-
+    anon "So, we have everything we need to make your serum?"
     show okita 5
-    okita "... Uhh, ya. Bukankah itu yang baru saja kukatakan padamu?!"
-
-    okita "{b}Temui saya di kantor saya malam ini{/b}, agar kita dapat mengerjakannya."
-
+    okita "... Uhh, yeah. Isn't that what I just told you?!"
+    okita "{b}Meet me in my office this evening{/b}, and so we can work on it."
     show okita 4
-    anon "... O-oke."
-
+    anon "... O-okay."
     return
 
 label button_okita_dose_smith:
@@ -139,49 +108,36 @@ label button_okita_dose_smith:
     show anon
     show okita 5 at right
     with dissolve
-    okita "Anda masih belum memberi dosis {b}Ny. Smith{/b}?!"
-
+    okita "You still haven't dosed {b}Mrs. Smith{/b}?!"
     show okita 4
     anon f_sad_down @ -m_talk "..."
     show okita 5
-    okita "Apa yang kamu tunggu?"
-
+    okita "What are you waiting for?"
     show okita 4
-    anon f_worried "Ini tidak mudah lho!"
-
-    anon "Tidak bisakah kamu memberiku nasihat atau semacamnya?!"
-
+    anon f_worried "This isn't exactly easy you know!"
+    anon "Can't you give me some advice or something?!"
     show okita 3
-    okita "Berikut beberapa sarannya: cepatlah dan lakukanlah!"
-
+    okita "Here's some advice: hurry up and do it already!"
     show okita 5
-    okita "Yang harus kamu lakukan hanyalah {b}menyelipkannya ke dalam makanannya atau apalah{/b}."
-
+    okita "All you have to do is {b}slip it into her food or something{/b}."
     show okita 4
-    anon @ f_skeptical "Baiklah baiklah. Saya akan kembali."
-
+    anon @ f_skeptical "Alright, alright. I'll be back."
     return
 
 label button_okita_wait_for_smith_serum:
     scene location_school_science_closeup
     show anon
     show okita 6 at right
-    anon "Baiklah, {b}Nona Okita{/b}. Sudah selesai."
-
+    anon "Alright, {b}Miss Okita{/b}. It's done."
     show okita 7
-    okita "Luar biasa!"
-
-    okita "Sekarang kita tunggu saja efeknya..."
-
+    okita "Wonderful!"
+    okita "Now we just wait to see the effects..."
     show okita 6
-    anon "Berapa lama waktu yang dibutuhkan?"
-
+    anon "How long should it take?"
     show okita 7
-    okita "Ini akan bekerja dengan cepat. Mengapa kamu tidak tinggal di sini saja, dan kita akan memeriksanya setelah kelas selesai?"
-
+    okita "It'll work fast. Why don't you stick around, and we'll check on her after class?"
     show okita 6
-    anon "Tentu."
-
+    anon "Sure."
     pause 1
     scene black with dissolve
     scene location_school_lounge_day_blur
@@ -190,221 +146,152 @@ label button_okita_wait_for_smith_serum:
         xoffset -100
     show principal 33 at right
     with dissolve
-    okita "{i}*Ehem*{/i}"
-
+    okita "{i}*Ahem*{/i}"
     show okita 4f
     show principal 32 with dissolve
-    smith "Hmm? Oh, halo {b}Tori{/b}..."
-
-    smith "Bagaimana kabar Nona Tahu Segalanya hari ini?"
-
+    smith "Hmm? Oh, hello there {b}Tori{/b}..."
+    smith "How's little Miss Know-it-all today?"
     show principal 31
-    okita "... Hmm."
-
+    okita "... Hmmph."
     show okita 3f
-    okita "Saya baru saja memeriksa status kantor saya?"
-
+    okita "I was just checking on the status of my office?"
     show okita 4f
     show principal 32
-    smith "Kantor Anda?"
-
+    smith "Your office?"
     show okita 5f
     show principal 31
-    okita "Nah, suatu hari Anda tampak bersikeras untuk mengganti kunci."
-
+    okita "Well, the other day you seemed pretty adamant about changing the locks."
     show okita 4f
     show principal 32
-    smith "Apakah saya?"
-
-    smith "Itu lucu... Saya tidak ingat."
-
+    smith "Was I?"
+    smith "That's funny... I don't recall."
     show okita 3f
     show principal 31
-    okita "Ah, benarkah?"
-
+    okita "Oh, really?"
     smith "..."
     show principal 30b at Position(xpos=0.95, ypos=1.0) with dissolve
     smith "Bawk bawk."
-
     show principal 31 at right with dissolve
     show okita 8f
     okita "..."
     show okita 3f
-    okita "... Apakah kamu baik-baik saja?"
-
+    okita "... Are you alright?"
     show okita 4f
     show principal 32
-    smith "... Hah?"
-
-    smith "Aku baik-baik saja, kenapa?"
-
+    smith "... Huh?"
+    smith "I'm fine, why?"
     show okita 5f
     show principal 31
-    okita "Anda mengatakan sesuatu tentang kunci di kantor saya?"
-
+    okita "You were saying something, regarding the lock on my office?"
     show okita 4f
     show principal 32
-    smith "Apakah saya?"
-
-    smith "Itu lucu... Aku tidak-"
-
+    smith "Was I?"
+    smith "That's funny... I don't-"
     show principal 30b at Position(xpos=0.95, ypos=1.0) with dissolve
     smith "BAWK!!! Bawk bawk bawk..."
-
     show principal 31 at right with dissolve
     show okita 6f
     anon "Uhh..."
-
     show okita 9f
-    okita "Ssst!"
-
+    okita "Shh!"
     show principal 33 with dissolve
-    okita "Jangan ganggu kami {b}[firstname]{/b}."
-
+    okita "Don't interrupt us {b}[firstname]{/b}."
     show okita 4f
     show principal 32 with dissolve
-    smith "... Kopi ini rasanya lucu."
-
+    smith "... This coffee tastes funny."
     show principal 31
     anon @ -m_talk "..."
     show okita 7f
-    okita "Sudahkah saya memberi tahu Anda tentang penemuan baru yang sedang saya kerjakan?"
-
+    okita "Did I tell you about the new invention I was working on?"
     show okita 6f
     show principal 32
-    smith "Penemuan?"
-
-    smith "Tidak, menurutku kamu tidak-"
-
+    smith "Invention?"
+    smith "No, I don't think yo-"
     show principal 30b at Position(xpos=0.95, ypos=1.0) with dissolve
     smith "Bawk bawk..."
-
     smith "Bawk bawk BAWK!!"
-
     show principal 31 at right with dissolve
     show okita 7f
-    okita "Aku harus membawanya ke kantormu kapan-kapan. Sungguh menarik!"
-
+    okita "I'll have to bring it by your office sometime. It's really fascinating!"
     show principal 32
     show okita 6f
-    smith "Tentu oke!"
-
+    smith "Sure, okay!"
     show okita 7f
     show principal 31
-    okita "Ya ampun, lihat jamnya."
-
-    okita "Kita harus benar-benar pergi."
-
+    okita "Oh my, look at the time."
+    okita "We should really be going."
     show okita 7 at Position(xpos=0.05, ypos=1.0) with dissolve
-    okita "Ayo, {b}[firstname]{/b}."
-
+    okita "Come along, {b}[firstname]{/b}."
     hide okita with dissolve
     anon @ -m_talk "..."
     show principal 32
     hide anon with dissolve
-    smith "... Kopi ini rasanya lucu."
-
+    smith "... This coffee tastes funny."
     scene black with dissolve
     scene location_school_science_closeup
     show anon f_worried
     show okita 7 at right
-    okita "Jadi, menurutku {b}kaldu ayam{/b} menimbulkan sedikit efek samping..."
-
+    okita "So, I guess that {b}chicken stock{/b} created a bit of a side effect after all..."
     show okita 2b
     okita "Pffft, hahaha!!"
-
     show okita 6
-    anon @ f_skeptical "Bagaimana ini lucu?!"
-
-    anon "Kami mengacaukan kepalanya, dan dia di sana berkotek seperti ayam!"
-
+    anon @ f_skeptical "How is this funny?!"
+    anon "We screwed with her head, and she's in there clucking like a chicken!"
     show okita 2b
-    okita "Ya, benar! Ha ha ha!"
-
+    okita "Yeah she is! Hahaha!"
     show okita 7
-    okita "Oh, maukah kamu bersantai?"
-
-    okita "Itu hanya sementara."
-
+    okita "Oh, would you relax?"
+    okita "It's only temporary."
     show okita 9
-    okita "... menurutku."
-
+    okita "... I think."
     show okita 6
-    anon f_surprised "Menurutmu?!"
-
+    anon f_surprised "You think?!"
     show okita 9
-    okita "Maksudku, aku cukup yakin."
-
+    okita "I mean, I'm pretty sure."
     show okita 7
-    okita "Lihat yang penting disini serumnya berhasil!"
-
-    okita "Dia benar-benar tidak memihak pada eksperimenku sekarang!"
-
-    okita "... Dan dia bahkan tidak ingat ingin mengunci saya di luar kantor!"
-
+    okita "Look the important thing here is that the serum worked!"
+    okita "She's completely impartial to my experiments now!"
+    okita "... And she didn't even remember wanting to lock me out of my office!"
     show okita 6
-    anon f_worried "Ya, tapi dia berkotek seperti ayam!"
-
+    anon f_worried "Yeah, but she's clucking like a chicken!"
     show okita 2b
     okita "Pffftt, hahahaaaah!"
-
-    anon @ f_skeptical "Yah, aku senang kamu menganggapnya lucu..."
-
+    anon @ f_skeptical "Well, I'm glad you think it's so funny..."
     show okita 6
-    anon "Jadi bagaimana sekarang?"
-
+    anon "So, what now?"
     show okita 7
-    okita "Sekarang, saya perlu waktu untuk mempelajari efek serum lainnya."
-
+    okita "Now, I need some time to study the effects of the other serum."
     show okita 6
-    anon "Oh, aku benar-benar lupa tentang serum lainnya!"
-
-    anon "Apakah kamu merasa ada yang berbeda?"
-
+    anon "Oh, I completely forgot about the other serum!"
+    anon "Are you feeling any different?"
     show okita 7
-    okita "Mmm, mungkin..."
-
+    okita "Mmm, maybe..."
     show okita 2b
     okita "Hehehe!"
-
-    anon "Kamu memang tampak agak berbeda."
-
+    anon "You do seem kinda, different."
     show okita 7
-    okita "Bagaimana bisa?"
-
+    okita "How so?"
     show okita 6
-    anon f_skeptical "Kamu seperti... Pusing."
-
+    anon f_skeptical "You're like... Giddy."
     show okita 2b
-    okita "Hehehe! Saya hanya senang."
-
-    anon f_worried "Sejujurnya itu membuatku takut."
-
+    okita "Hehehe! I'm just happy."
+    anon f_worried "It's kinda freaking me out to be honest."
     show okita 7
-    okita "... Dan panas."
-
+    okita "... And hot."
     show okita 3
-    okita "Apakah kamu seksi? Di sini panas!"
-
+    okita "Are you hot? It's hot in here!"
     show okita 6
-    anon "Tidak, aku baik-baik saja."
-
+    anon "No, I'm fine."
     show okita 7
-    okita "Baiklah, baiklah, aku akan pergi ke kantorku dan menyelesaikan beberapa pekerjaan."
-
-    okita "Ayo temui aku beberapa hari lagi."
-
+    okita "Alright, well, I'm gonna head up to my office and get some work done."
+    okita "Come see me in a few days."
     show okita 6
-    anon "Hmm, oke."
-
+    anon "Umm, okay."
     show okita 2b
-    okita "Sampai jumpa, {b}[firstname]{/b}!"
-
+    okita "Byeee, {b}[firstname]{/b}!"
     okita "Hehehehe..."
-
     hide okita with dissolve
-    anon "Aku harap dia akan baik-baik saja..."
-
+    anon "I hope she's gonna be okay..."
     return
 
 label button_okita_wait_for_okita_serum:
@@ -412,44 +299,31 @@ label button_okita_wait_for_okita_serum:
     show anon f_worried
     show okita 6 at right
     with dissolve
-    anon "Anda baik-baik saja, Bu?"
-
-    anon "Sudah tahukah ada efek samping dari serum Anda?"
-
+    anon "You doing okay, ma'am?"
+    anon "Notice any side effects with your serum yet?"
     show okita 7
-    okita "Saya masih menguji."
-
-    okita "... Saya menghargai Anda menghubungi saya."
-
+    okita "I'm still testing."
+    okita "... I appreciate you checking in with me though."
     show okita 6
-    anon "... iya kan?"
-
+    anon "... You do?"
     show okita 7
-    okita "Tentu saja!"
-
+    okita "Of course!"
     show okita 2b
-    okita "Itu membuatku merasa hangat dan tidak jelas!"
-
+    okita "It makes me feel all warm and fuzzy!"
     show okita 6
     anon @ -m_talk "..."
-    anon f_skeptical "Oke, serius! Kamu bertingkah sangat aneh!"
-
+    anon f_skeptical "Okay, seriously! You are acting really weird!"
     show okita 7
-    okita "Apakah saya?"
-
+    okita "Am I?"
     show okita 2b
-    okita "Aku tidak tahu apa yang harus kukatakan padamu. Saya merasa luar biasa!"
-
+    okita "I don't know what to tell you. I feel great!"
     show okita 6
-    anon f_worried "Oke, baiklah, hati-hati saja, menurutku."
-
+    anon f_worried "Okay, well, just be careful, I guess."
     show okita 7
-    okita "Bisa, ganteng!"
-
+    okita "Will do, handsome!"
     show anon f_surprised
     show okita 2b
     okita "Hehehe!"
-
     anon f_worried @ f_sad_down a_behind_head "..."
     return
 
@@ -458,61 +332,41 @@ label button_okita_serum_effects:
     show anon f_worried
     show okita 6 at right
     with dissolve
-    anon "Sudah ada hasil dari serumnya?"
-
+    anon "Any results from the serum yet?"
     show okita 7
-    okita "Sebenarnya, {b}[firstname]{/b}, saya berharap Anda dapat membantu saya menguji penemuan terbaru saya?"
-
+    okita "Actually, {b}[firstname]{/b}, I was hoping you could help me test my newest invention?"
     show okita 6
-    anon "Ya ampun, kamu ingin aku membuat yang lain?"
-
+    anon "Oh man, you want me to build something else?"
     show okita 3
-    okita "Hmm? Tidak, tidak!"
-
+    okita "Hmm? No, no!"
     show okita 7
-    okita "Saya membuat yang ini sendiri. Ini revolusioner!"
-
+    okita "I built this one myself. It's revolutionary!"
     show okita 6
-    anon "Anda membangunnya?"
-
-    anon "Tapi membangun adalah pekerjaan monyet. Saya pikir kamu tidak melakukan pekerjaan monyet?"
-
+    anon "You built it?"
+    anon "But building is monkey work. I thought you didn't do monkey work?"
     show okita 7
-    okita "Saya membuat pengecualian kali ini karena..."
-
-    okita "Ya, saya membuat penemuan ini untuk Anda, sebagai kejutan."
-
+    okita "I made an exception this time because..."
+    okita "Well, I made this invention for you, as a surprise."
     show okita 6
-    anon "Untukku?"
-
+    anon "For me?"
     show okita 7
-    okita "Ya, datanglah ke kantorku malam ini sepulang sekolah dan aku akan menunjukkannya padamu."
-
+    okita "Yeah, come to my office this evening after school and I'll show you."
     show okita 7
-    anon "Ini mulai membuatku khawatir..."
-
-    anon "Lagi sibuk apa?"
-
+    anon "This is starting to worry me..."
+    anon "What are you up to?"
     show okita 2b
-    okita "Jangan jadi bayi! Anda harus datang dan melihat!"
-
+    okita "Don't be a baby! You have to come and see!"
     show okita 6
-    anon "Bagus."
-
+    anon "Fine."
     show okita 7
-    okita "Anda berjanji?"
-
+    okita "You promise?"
     show okita 6
-    anon f_skeptical "Uhh, ya."
-
-    anon "... aku berjanji."
-
+    anon f_skeptical "Uhh, yeah."
+    anon "... I promise."
     show okita 2b
-    okita "Hore!"
-
+    okita "Yay!"
     show okita 7
-    okita "Sampai jumpa lagi, {b}[firstname]{/b}!"
-
+    okita "See you soon, {b}[firstname]{/b}!"
     hide okita with dissolve
     anon f_worried @ f_sad_down "..."
     return
@@ -520,9 +374,9 @@ label button_okita_serum_effects:
 label button_okita_generic_after_q3:
     call expression game.dialog_select("button_okita_generic_after_q3_intro")
     menu:
-        "Penemuan baru." if M_okita.is_state(S_okita_is_hypersexual):
+        "New invention." if M_okita.is_state(S_okita_is_hypersexual):
             call expression game.dialog_select("button_okita_generic_after_q3_new_invention")
-        "Tidak ada apa-apa.":
+        "Nothing.":
 
             call expression game.dialog_select("button_okita_generic_after_q3_leave")
     return
@@ -532,13 +386,10 @@ label button_okita_generic_before_q3:
     show anon
     show okita 4 at right
     with dissolve
-    anon "Hai, {b}Nona Okita{/b}."
-
+    anon "Hey, {b}Miss Okita{/b}."
     show okita 5
-    okita "Apa itu, {b}[firstname]{/b}?"
-
-    okita "Saya sangat sibuk..."
-
+    okita "What is it, {b}[firstname]{/b}?"
+    okita "I'm very busy..."
     show okita 4
     return
 
@@ -547,55 +398,40 @@ label button_okita_generic_after_q3_intro:
     show anon
     show okita 6 at right
     with dissolve
-    anon "Hai, {b}Nona Okita{/b}."
-
+    anon "Hey, {b}Miss Okita{/b}."
     show okita 2b
     okita "{b}[firstname]{/b}!"
-
     show okita 7
-    okita "Senang sekali Anda berkunjung!"
-
-    okita "Apa yang bisa saya bantu?"
-
+    okita "How nice of you to visit!"
+    okita "What can I help you with?"
     show okita 6
     return
 
 label button_okita_generic_after_q3_new_invention:
     show anon f_normal
-    anon "Jadi, Anda sedang mengerjakan penemuan baru, ya?"
-
+    anon "So, you've been working on a new invention, huh?"
     show okita 7
-    okita "Oh ya!"
-
-    okita "Ini revolusioner! Anda benar-benar harus datang dan melihatnya!"
-
+    okita "Oh, yes!"
+    okita "It's revolutionary! You absolutely have to come and see it!"
     show okita 6
-    anon "Hehe, oke! Saya akan {b}menemui Anda di kantor Anda malam ini{/b}."
-
+    anon "Heh, okay! I'll {b}meet you in your office this evening{/b}."
     show okita 2b
-    okita "Anda harus berjanji akan datang dan melihat!"
-
+    okita "You have to promise you'll come and see!"
     show okita 6
     anon f_skeptical @ -m_talk "..."
-    anon "... Ya. Saya berjanji."
-
+    anon "... Yeah. I promise."
     show okita 2b
     show anon f_worried
-    okita "Saya tidak sabar!"
-
+    okita "I can't wait!"
     return
 
 label button_okita_generic_after_q3_leave:
     show anon f_normal
-    anon "Tidak ada, aku hanya ingin menyapa!"
-
+    anon "Nothing, I just wanted to say hi!"
     show okita 5
-    okita "Kamu baik sekali."
-
-    okita "Meskipun begitu, saya sedang sibuk mengerjakan beberapa desain baru saat ini."
-
+    okita "That's nice of you."
+    okita "Although, I'm busy working on some new designs at the moment."
     show okita 7
-    okita "Temui saya di {b}kelas{/b} saya jika Anda ingin membantu saya."
-
+    okita "Come see me in my {b}classroom{/b} if you want to help me."
     return
 # Decompiled by unrpyc: https://github.com/CensoredUsername/unrpyc

@@ -1,55 +1,39 @@
 label gra01_init_grace:
-    anon f_shy "Saya berharap Anda bisa memberi saya pijatan lagi?"
-
+    anon f_shy "I was hoping you could give me another massage?"
     grace f_surprised "O-oh?"
-
-    anon "Tahukah kamu, tanpa {b}Odette{/b} kali ini."
-
-    grace f_uneasy "J-hanya kamu dan aku?"
-
-    anon "Ya, jika tidak apa-apa?"
-
-    grace "Mmm, entahlah {b}[firstname]{/b}..."
-
+    anon "You know, without {b}Odette{/b} this time."
+    grace f_uneasy "J-just you and I?"
+    anon "Yeah, if that's okay?"
+    grace "Mmm, I dunno {b}[firstname]{/b}..."
     show anon f_worried
     pause
-    anon "Saya hanya berpikir, Anda mungkin ingin berlatih..."
-
-    anon f_shy "... Dan rasanya sangat menyenangkan terakhir kali..."
-
+    anon "I just thought, you might wanna practice..."
+    anon f_shy "... And it felt so good last time..."
     show grace a_cover f_uneasy_back
     with {'master': dissolve}
-    grace "{i}*Gulp*{/i} Y-ya, aku tahu."
-
+    grace "{i}*Gulp*{/i} Y-yeah, I know."
     show anon a_give_me f_brag
     with {'master': dissolve}
-    anon "Dan dengan {b}Odette{/b} di bawah, itu tidak akan bersifat seksual."
-
+    anon "And with {b}Odette{/b} downstairs, it won't get sexual."
     show anon a_sides
     with {'master': dissolve}
     grace @ -m_talk "..."
     show grace a_idle f_embarrassed
     with {'master': dissolve}
-    grace "Mungkin sedikit saja tidak ada salahnya..."
-
-    grace f_uneasy "... Untuk latihan."
-
-    anon f_shy "Ya, hanya untuk latihan."
-
+    grace "Maybe just a little one wouldn't hurt..."
+    grace f_uneasy "... For practice."
+    anon f_shy "Yeah, just for practice."
     show anon:
         xoffset -500
         xzoom -1
     hide grace
     with {'master': dissolve}
-    grace "Mengapa kamu tidak membuka baju dan berbaring sementara aku akan menyiapkan minyaknya."
-
-    anon f_normal "Oke!"
-
+    grace "Why don't you undress and lay down while I'll get the oil ready."
+    anon f_normal "Okay!"
     pause
     show anon a_cheering f_grin
     with {'master': dissolve}
-    anon "(Manis!)"
-
+    anon "( Sweet! )"
 
     scene location_tattoo_apartment_oil
     show anon grace_massage_apt roll
@@ -63,30 +47,20 @@ label gra01_init_grace:
     pause
     show anon rub pause
     with {'master': dissolve}
-    anon "Oh, hangat sekali!"
-
-    grace "Hehe, ya..."
-
+    anon "Oh, that's really warm!"
+    grace "Heh, yeah..."
     show anon -pause
     with {'master': dissolve}
-    grace "... Saya memanaskan minyak kali ini."
-
-    anon "Mmm, baunya juga enak."
-
-    grace "Saya tahu, kan?"
-
-    grace "Lavender dan almond adalah favorit saya!"
-
+    grace "... I heated the oil this time."
+    anon "Mmm, it smells great too."
+    grace "I know, right?"
+    grace "Lavender and almond is my absolute favorite!"
     show anon grind
     with {'master': dissolve}
-    anon "Oke, fiuh..."
-
-    anon "... Itu sangat bagus."
-
-    grace "Santai saja dan biarkan diri Anda lemas."
-
-    anon "O-oke, aku akan mencobanya."
-
+    anon "Okay, phew..."
+    anon "... That's really nice."
+    grace "Just relax and let yourself go limp."
+    anon "O-okay, I'll try."
     pause
     show anon firm
     with {'master': dissolve}
@@ -97,268 +71,175 @@ label gra01_init_grace:
     show anon pause
     with {'master': dissolve}
     grace @ -m_talk "!!!"
-    grace "Hmm, {b}[firstname]{/b}?"
-
-    anon "Ya?"
-
+    grace "Umm, {b}[firstname]{/b}?"
+    anon "Yeah?"
     show anon boing
     show grace massage_apt back worried
     with dissolve
     show grace surprised
     grace @ -m_talk "!!!" with hpunch
     show grace worried
-    grace "Itu kebalikan dari lemas..."
-
-    anon "Maaf."
-
-    anon "Aku berusaha untuk tidak melakukannya, tapi ini hanya-"
-
+    grace "That's the opposite of limp..."
+    anon "Sorry."
+    anon "I'm trying not to, but this is just-"
     pause
     hide grace
     show anon rub pause
     with {'master': dissolve}
-    grace "Hehe, tidak apa-apa..."
-
+    grace "Heh, it's alright..."
     pause
-    grace "... Uhh, kenapa kita tidak membicarakan sesuatu dan mengalihkan pikiranmu?"
-
-    anon "Seperti apa?"
-
+    grace "... Uhh, why don't we talk about something and get your mind off it?"
+    anon "Like what?"
     show anon -pause
     with {'master': dissolve}
-    grace "Seperti, bagaimana kabarmu dan adikku?"
-
-    anon "Oh, umm... kami hebat..."
-
-    anon "... Dia hebat!"
-
+    grace "Well, like, how you and my sister doing?"
+    anon "Oh, umm... we're great..."
+    anon "... She's great!"
     pause
-    anon "Kita bersenang-senang bersama..."
-
-    anon "... Aku tidak percaya betapa beruntungnya aku bisa bersamanya."
-
-    grace "Heh, aku cukup yakin {b}Eve{/b}-lah yang beruntung."
-
+    anon "We have so much fun together..."
+    anon "... I can't believe how lucky I am to be with her."
+    grace "Heh, I'm pretty sure {b}Eve{/b}'s the lucky one."
     pause
-    anon "Aku sedang berpikir untuk segera mengajaknya menonton konser."
-
+    anon "I've been thinking about taking her to see a concert soon."
     grace "Oh?"
-
-    grace "Dia akan menyukainya!"
-
+    grace "She'll love that!"
     show anon firm
     with {'master': dissolve}
-    anon "Ya, menurutku juga begitu."
-
+    anon "Yeah, I think so too."
     pause
-    grace "Siapa yang akan kamu temui?"
-
-    anon "Oh, entahlah."
-
-    anon "Siapa pun yang dia inginkan, kurasa?"
-
-    grace "Aww, kamu pria yang baik, {b}[firstname]{/b}!"
-
+    grace "Who are you gonna see?"
+    anon "Oh, I dunno."
+    anon "Whoever she wants, I guess?"
+    grace "Aww, you're such a good guy, {b}[firstname]{/b}!"
     show anon soft
     with {'master': dissolve}
     pause
-    anon "Mungkin kamu dan {b}Odette{/b} bisa ikut juga?"
-
-    grace "Oh, uhh... ya, mungkin..."
-
-    grace "... Jika jadwal kita sedikit terbuka."
-
-    anon "Pekerjaan masih sibuk?"
-
-    grace "Ya, {i}sangat{/i} sibuk."
-
+    anon "Maybe you and {b}Odette{/b} could come too?"
+    grace "Oh, uhh... yeah, maybe..."
+    grace "... If our schedule opens up a little."
+    anon "Work's still busy?"
+    grace "Yeah, {i}really{/i} busy."
     pause
-    grace "Tapi sibuk itu bagus!"
-
-    grace "Kami sudah melunasi semua tagihan kami dan saya sebenarnya punya sejumlah uang yang ditabung untuk pertama kalinya di..."
-
-    grace "...Yah, sejak sebelum aku membeli tempat ini!"
-
-    anon "Bagus sekali, {b}Grace{/b}!"
-
-    grace "Hehe, ya."
-
+    grace "But busy is good!"
+    grace "We're caught up on all our bills and I've actually got some money saved up for the first time in..."
+    grace "... Well, since before I bought this place!"
+    anon "That's great, {b}Grace{/b}!"
+    grace "Heh, yeah."
     pause
-    grace "Senang rasanya memiliki ruang bernapas untuk sekali ini."
-
-    anon "Jadi, bisnis Anda akhirnya berkembang, Anda memiliki pendapatan yang dapat dibelanjakan untuk pertama kalinya dalam hidup Anda..."
-
-    anon "... Dan Anda berada dalam hubungan yang penuh perhatian dan berkomitmen dengan sahabat Anda."
-
+    grace "It feels good to have some breathing room for once."
+    anon "So, your business is finally flourishing, you have disposable income for the first time in your life..."
+    anon "... And you're in a caring and committed relationship with your best friend."
     show anon pause
     with {'master': dissolve}
-    grace "Y-ya, menurutku."
-
-    anon "Sepertinya semuanya berjalan sesuai keinginan Anda."
-
+    grace "Y-yeah, I suppose."
+    anon "Sounds like everything's going your way."
     pause
-    anon "Anda harus membeli tiket lotre atau sesuatu selagi keberuntungan Anda habis."
-
+    anon "You should buy a lottery ticket or something while your luck is up."
     pause
     show anon sad
     with {'master': dissolve}
     grace "..."
-    anon "Kenapa kamu berhenti?"
-
-    grace "saya-"
-
+    anon "Why'd you stop?"
+    grace "I-"
     show anon peek confused
     with {'master': dissolve}
-    anon "Apakah ada yang salah?"
-
+    anon "Is something wrong?"
     pause
     show anon side
     with {'master': dissolve}
-    grace "T-tidak, tidak apa-apa."
-
-    anon "Apa kamu yakin?"
-
+    grace "N-no, it's nothing."
+    anon "Are you sure?"
     show anon push
     with {'master': dissolve}
     pause
     show anon back rub normal pause
     with {'master': dissolve}
     pause
-    anon "Anda dapat berbicara dengan saya, Anda tahu?"
-
-    grace "Yah, aku-"
-
+    anon "You can talk to me, you know?"
+    grace "Well, I-"
     pause
     show anon -pause
     with {'master': dissolve}
     pause
-    grace "Hanya saja-"
-
-    grace "{i}*Sigh*{/i} Kamu benar, aku seharusnya bahagia."
-
-    anon "Tapi kamu tidak?"
-
-    grace "Tidak."
-
-    grace "Eh, maksudku, aku tidak tahu..."
-
+    grace "It's just-"
+    grace "{i}*Sigh*{/i} You're right, I should be happy."
+    anon "But you're not?"
+    grace "No."
+    grace "Err, I mean, I don't know..."
     pause
-    grace "... Dengar, jangan salah paham, {b}Odette{/b} dan aku-"
-
+    grace "... Look, don't get me wrong, {b}Odette{/b} and I-"
     pause
-    grace "{i}*Sigh*{/i} Dia adalah sahabat terbaikku di seluruh dunia... dan aku mencintainya, sungguh..."
-
-    grace "... Dia benar-benar berusaha keras akhir-akhir ini dan aku bersyukur untuk itu, tapi itu-"
-
+    grace "{i}*Sigh*{/i} She's my best friend in the whole world... and I love her, I do..."
+    grace "... She's really trying hard lately and I'm thankful for that, but it's-"
     pause
-    anon "Itu apa?"
-
-    grace "{b}Odette{/b} tidak-"
-
+    anon "It's what?"
+    grace "{b}Odette{/b} isn't-"
     pause
-    grace "{i}*Sigh*{/i} Sepertinya, aku khawatir dia akan bosan dengan semua ini..."
-
+    grace "{i}*Sigh*{/i} I guess, I'm worried she's going to grow bored of all this..."
     anon "Hmm?"
-
-    grace "... Dengan pekerjaan... dan apartemen mungil..."
-
-    grace "... Dan denganku."
-
-    anon "Apa?!"
-
-    anon "Tidak, eh..."
-
-    anon "... Dia tergila-gila padamu, {b}Grace{/b}!"
-
-    grace "{i}*Mendengus*{/i} Ya, dia mengatakan itu sekarang..."
-
-    grace "... Tapi komitmen bukanlah keunggulannya."
-
+    grace "... With the job... and the tiny apartment..."
+    grace "... And with me."
+    anon "What?!"
+    anon "Nuh uh..."
+    anon "... She's crazy about you, {b}Grace{/b}!"
+    grace "{i}*Snort*{/i} Yeah, she says that now..."
+    grace "... But commitment has never been her strong suit."
     pause
-    grace "Dan, kami bukan lesbian, lho?!"
-
-    grace "Aku rasa aku tidak bisa menjalani sisa hidupku tanpa laki-laki..."
-
-    grace "... Dan aku tahu pasti dia tidak bisa!"
-
-    anon "aku salah-"
-
+    grace "And, it's not like we're lesbians, you know?!"
+    grace "I don't think I can go the rest of my life without men..."
+    grace "... And I know for damn sure she can't!"
+    anon "I err-"
     pause
-    anon "Maksudku, bukan berarti kalian tidak bisa menemukan pria... lho, ketika keinginan untuk bersama seseorang datang."
-
+    anon "I mean, it's not like you guys can't find a guy... you know, when the urge to be with one comes."
     show anon pause
     with {'master': dissolve}
-    grace "Ugh, itulah yang akan {b}Odette{/b} katakan..."
-
-    grace "... Tapi bagaimana cara kerjanya?!"
-
-    grace "Kita hanya pergi keluar dan menjemput orang asing di bar sleezeball atau semacamnya?"
-
+    grace "Ugh, that's exactly what {b}Odette{/b} is going to say..."
+    grace "... But how is that going to work?!"
+    grace "We just go out and pick up some random stranger at some sleezeball bar or something?"
     anon @ -m_talk "..."
-    grace "Saya tidak ingin melakukan itu!"
-
+    grace "I don't wanna do that!"
     show anon -pause
     with {'master': dissolve}
     pause
-    grace "{b}Odette{/b} mungkin baik-baik saja dengan orang asing, tapi aku tidak terikat seperti itu!"
-
-    grace "Maaf, tapi menurutku aku tidak bisa melakukannya!"
-
+    grace "{b}Odette{/b} might be perfectly fine with fucking strangers but I'm just not wired that way!"
+    grace "I'm sorry, but I just don't think I can do it!"
     pause
-    grace "Saya perlu merasakan koneksi."
-
-    grace "Jika tidak, yang akan saya lakukan hanyalah memberi saya banyak kecemasan yang tidak saya perlukan."
-
+    grace "I need to feel a connection."
+    grace "Otherwise, all it's going to do is give me a bunch of anxiety that I don't need."
     pause
-    anon "Anda tidak perlu merasa menyesal karena itu..."
-
-    anon "... Anda adalah orang yang sangat cerdas dan bertanggung jawab, {b}Grace{/b}."
-
-    anon "Anda tahu siapa Anda."
-
-    anon "Itu salah satu hal yang paling aku sukai darimu."
-
+    anon "You shouldn't feel sorry because of that..."
+    anon "... You're a very intelligent and responsible person, {b}Grace{/b}."
+    anon "You know who you are."
+    anon "It's one of the things I like most about you."
     show anon pause
     with {'master': dissolve}
     pause
-    anon "Maksudku, kamu juga bersemangat... dan penuh perhatian..."
-
-    anon "... Dan {i}luar biasa{/i} cantik..."
-
+    anon "I mean, you're also driven... and caring..."
+    anon "... And {i}insanely{/i} beautiful..."
     show anon sad
     with {'master': dissolve}
     pause
-    anon "Tapi orang sepertimu... Jika kamu merasa butuh koneksi, maka kamu perlu!"
-
+    anon "But a person like you... If you feel like you need a connection, then you do!"
     show anon wipe
     with {'master': dissolve}
     pause
-    anon "{b}Rahmat{/b}?"
-
-    grace "{i}*Mengendus*{/i}"
-
+    anon "{b}Grace{/b}?"
+    grace "{i}*Sniff*{/i}"
     show anon peek worried
     with {'master': dissolve}
-    anon "Kamu baik-baik saja?"
-
+    anon "You okay?"
     show anon side
     with {'master': dissolve}
-    grace "Y-ya, aku minta maaf."
-
+    grace "Y-yeah, I'm sorry."
     pause
-    grace "Hanya saja... sungguh menyenangkan membicarakan hal ini dengan seseorang..."
-
-    grace "... Dan aku-"
-
+    grace "It's just... really nice to talk to someone about this..."
+    grace "... And I-"
     show anon wipe
     with {'master': dissolve}
-    grace "{i}*Mengendus*{/i}"
-
+    grace "{i}*Sniff*{/i}"
     pause
-    grace "{b}Eve{/b} sangat beruntung dia menemukanmu."
-
-    grace "{i}*Mengendus*{/i}"
-
+    grace "{b}Eve{/b}'s so lucky she found you."
+    grace "{i}*Sniff*{/i}"
     pause
     show anon kiss surprised
     with {'master': fastdissolve}
@@ -366,8 +247,7 @@ label gra01_init_grace:
     pause
     show anon grip
     with {'master': dissolve}
-    grace "MM."
-
+    grace "Mmm."
     show anon flip
     with dissolve
     show anon snog
@@ -376,45 +256,30 @@ label gra01_init_grace:
     show anon over
     show grace massage_apt over
     with {'master': dissolve}
-    anon "Ahh, kawan..."
-
-    anon "...Aku benar-benar minta maaf, aku seharusnya tidak-"
-
-    anon "Kita harus berhenti."
-
-    grace "T-tidak, kumohon... Jangan berhenti."
-
-    anon "Benar-benar?"
-
+    anon "Ahh, man..."
+    anon "... I'm really sorry, I shouldn't have-"
+    anon "We should stop."
+    grace "N-no, please... Don't stop."
+    anon "Really?"
     hide grace
     show anon snog
     with {'master': dissolve}
     pause
-    grace "MM."
-
+    grace "Mmm."
     pause
     show anon over
     show grace massage_apt over
     with {'master': dissolve}
-    anon "H-hei, bolehkah aku menanyakan sesuatu padamu?"
-
+    anon "H-hey, can I ask you something?"
     grace "Hmm?"
-
-    anon "Apakah kamu... merasakan hubungan denganku?"
-
+    anon "Did you... feel a connection with me?"
     pause
-    anon "Anda tahu, ketika kita-"
-
-    anon "Suatu hari, kamu dan aku..."
-
-    anon "... Dengan {b}Odette{/b}, kami-"
-
-    grace "Ya."
-
-    anon "Kamu melakukannya?!"
-
+    anon "You know, when we-"
+    anon "The other day, you and I..."
+    anon "... With {b}Odette{/b}, we-"
+    grace "Yes."
+    anon "You did?!"
     grace "Mhmm."
-
     pause
     hide grace
     show anon snog
@@ -426,8 +291,7 @@ label gra01_init_grace:
 
     scene expression background(o=1) as stage
     with fade
-    anon "H-hei, tunggu!"
-
+    anon "H-hey, hold on!"
     show grace a_vulnerable b_naked f_sad_down:
         xoffset 500
         xzoom -1
@@ -437,47 +301,37 @@ label gra01_init_grace:
         xoffset 0
         xzoom 1
     with {'master': dissolve}
-    grace "Kita tidak bisa terus melakukan ini, {b}[firstname]{/b}!"
-
-    grace "Ini sangat salah, aku-"
-
+    grace "We can't keep doing this, {b}[firstname]{/b}!"
+    grace "This is so wrong, I-"
     show anon b_dressed_changing
     with {'master': dissolve}
     pause
     show anon a_sides b_dressed f_worried
     show grace a_facepalm f_weary
     with {'master': dissolve}
-    grace "{i}*Huh*{/i} Kita harus memberitahunya... kamu tahu itu, kan?"
-
+    grace "{i}*Sigh*{/i} We have to tell her... you know that, right?"
     show anon a_surprised f_surprised
     with {'master': dissolve}
-    anon "Apa, seperti sekarang?!"
-
+    anon "What, like now?!"
     show anon a_sides
     show grace a_hip f_sad
     with {'master': dissolve}
-    grace "T-tidak, tidak... sial, aku tidak tahu!"
-
+    grace "N-no, not... fuck, I don't know!"
     show grace f_sad_down
     pause
     show anon f_worried
-    grace f_uneasy "Dengar, kamu harus pergi..."
-
-    anon @ f_confused "Apakah Anda yakin, karena kita bisa membicarakan hal ini jika-"
-
+    grace f_uneasy "Look, you should go..."
+    anon @ f_confused "Are you sure, because we can talk about this if-"
     show grace a_defensive f_sad
     with {'master': dissolve}
-    grace "Tidak, {b}[firstname]{/b}... Saya hanya-"
-
+    grace "No, {b}[firstname]{/b}... I just-"
     show anon f_worried_down
     show grace a_vulnerable f_sad_down
     with {'master': dissolve}
     pause
-    grace "Aku butuh waktu sendiri untuk memproses semua ini."
-
+    grace "I need time alone to process all this."
     pause
-    anon f_worried "Y-ya, baiklah."
-
+    anon f_worried "Y-yeah, alright."
     show anon:
         xoffset -500
         xzoom -1
@@ -486,8 +340,7 @@ label gra01_init_grace:
     pause
     show anon a_facepalm f_disgusted_wince
     with {'master': dissolve}
-    anon "(Sial...)"
-
+    anon "( Crap... )"
     show anon a_sides f_sad:
         xoffset 0
         xzoom 1
@@ -498,20 +351,14 @@ label gra01_init_grace:
     scene expression background(l=L_tattooparlor_fire_escape, o=1) as stage
     with fade
     show anon f_sad with dissolve
-    anon @ -m_talk "(Yah, itu tidak berakhir seperti yang kuinginkan...)"
-
-    anon @ -m_talk "(...Kuharap aku tidak membuat kesalahan besar.)"
-
+    anon @ -m_talk "( Well, that didn't end the way I wanted it to... )"
+    anon @ -m_talk "( ... I hope I didn't just make a big mistake. )"
     pause
-    anon f_sad_down "{i}*Huh*{/i}"
-
-    anon @ -m_talk "(Saya kira, tidak ada apa-apa untuk itu sekarang...)"
-
-    anon @ -m_talk "(...Aku hanya perlu menunggu dan melihat bagaimana keadaannya.)"
-
+    anon f_sad_down "{i}*Sigh*{/i}"
+    anon @ -m_talk "( I guess, there's nothing for it now... )"
+    anon @ -m_talk "( ... I'll just have to wait and see how things play out. )"
     pause
-    anon f_sad @ -m_talk "(Ini sudah larut, aku harus pulang.)"
-
+    anon f_sad @ -m_talk "( It's getting late, I should get home. )"
     hide anon with dissolve
     return
 # Decompiled by unrpyc: https://github.com/CensoredUsername/unrpyc

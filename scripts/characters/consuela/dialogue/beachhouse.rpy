@@ -2,140 +2,98 @@ label consuela_button_beachhouse:
     show anon with dissolve
     if game.timer.is_morning():
         if M_consuela.finished_state(S_con03_done):
-            consuela "Buenos dias, ayah."
-
+            consuela "Buenos días, papi."
         else:
-            consuela "Buenos días, {b}Tuan [firstname]{/b}."
-
-        anon "Selamat pagi, {b}Consuela{/b}."
-
+            consuela "Buenos días, {b}Mister [firstname]{/b}."
+        anon "Good morning, {b}Consuela{/b}."
     else:
         if M_consuela.finished_state(S_con03_done):
-            consuela "Buenas tardes, ayah."
-
+            consuela "Buenas tardes, papi."
         else:
-            consuela "Buenas tardes, {b}Tuan [firstname]{/b}."
-
-        anon "Halo, {b}Consuela{/b}."
-
+            consuela "Buenas tardes, {b}Mister [firstname]{/b}."
+        anon "Hello, {b}Consuela{/b}."
 
     menu consuela_button_beachhouse.choice:
-        "Bagaimana kabarmu?":
+        "How are you?":
             jump consuela_button_beachhouse.check
-        "Rumahnya terlihat bagus!":
+        "The house looks great!":
 
             jump consuela_button_beachhouse.praise
 
-        "Pakaian pelayan." if M_consuela.finished_state(S_con04_hint):
+        "Maid outfit." if M_consuela.finished_state(S_con04_hint):
             if M_consuela.outfit.is_naked:
                 jump consuela_button_beachhouse.dress
             else:
                 jump consuela_button_beachhouse.strip
 
-        "Seks oral." if M_consuela.finished_state(S_con03_done):
+        "Blowjob." if M_consuela.finished_state(S_con03_done):
             jump consuela_button_beachhouse.blowjob
 
-        "Seks." if M_consuela.finished_state(S_con04_hint):
+        "Sex." if M_consuela.finished_state(S_con04_hint):
             if L_beachhouse_kitchen.is_here(M_consuela):
                 jump consuela_button_beachhouse.sex_kitchen
             else:
                 jump consuela_button_beachhouse.sex_entrance
-        "Sampai jumpa.":
+        "See you around.":
 
             pass
 
-    anon @ a_wave "Sampai jumpa."
-
-    consuela "Ya, {b}Pak [firstname]{/b}."
-
-    consuela "Aku beritahu {b}Camila{/b} \"hai\", untukmu."
-
-    anon "Hehe, baiklah."
-
+    anon @ a_wave "See you around."
+    consuela "Si, {b}Mister [firstname]{/b}."
+    consuela "I tell {b}Camila{/b} \"hi\", for you."
+    anon "Heh, alright."
     hide anon with dissolve
     return
 
 
 label consuela_button_beachhouse.check:
-    anon "Bagaimana kabarmu?"
-
-    consuela "saya baik."
-
-    consuela "Bagaimana kabarmu?"
-
-    anon "Saya melakukannya dengan sangat baik, terima kasih."
-
-    consuela "Uhh, {b}Pak [firstname]{/b}?"
-
+    anon "How are you?"
+    consuela "I good."
+    consuela "How you?"
+    anon "I'm doing very well, thank you."
+    consuela "Uhh, {b}Mister [firstname]{/b}?"
     anon @ -m_talk "Hmm?"
-
-    consuela "Putriku, {b}Camila{/b}... Kamu berkencan?"
-
-    anon f_worried "Tanggal?"
-
-    anon "Ehh, menurutku putrimu tidak akan begitu menyukainya..."
-
-    consuela "Tidak, dia melakukannya!"
-
-    consuela "{b}Camila{/b}, istri yang baik."
-
-    consuela "saya mengajar."
-
-    anon f_normal "Hehe, kalau kamu bilang begitu..."
-
+    consuela "My daughter, {b}Camila{/b}... You date?"
+    anon f_worried "Date?"
+    anon "Ehh, I don't think your daughter would like that very much..."
+    consuela "No, she do!"
+    consuela "{b}Camila{/b}, good wife."
+    consuela "I teach."
+    anon f_normal "Heh, if you say so..."
     jump consuela_button_beachhouse.choice
 
 
 label consuela_button_beachhouse.praise:
-    anon "Rumahnya terlihat bagus!"
-
-    consuela "Ya, aku bersih-bersih dengan baik."
-
-    anon "Heh, kamu bersih-bersih dengan baik... Bagus sekali."
-
+    anon "The house looks great!"
+    consuela "Si, I clean good."
+    anon "Heh, you do clean good... Very good."
     pause
-    anon "Apakah kamu yakin aku tidak bisa membayarmu untuk ini?"
-
+    anon "Are you sure I can't pay you for this?"
     consuela @ -m_talk "Hmm?"
-
-    consuela "Oh, tidak... {b}Pak [firstname]{/b}!"
-
-    consuela "Anda menemukan pekerjaan."
-
-    consuela "Tidak ada bayaran."
-
-    consuela "Aku membersihkannya untukmu!"
-
-    anon "Baiklah, jika kamu bersikeras..."
-
-    consuela "Ya, bersikeras."
-
+    consuela "Oh, no... {b}Mister [firstname]{/b}!"
+    consuela "You find job."
+    consuela "No pay."
+    consuela "I clean for you!"
+    anon "Alright, if you insist..."
+    consuela "Si, insist."
     consuela "I have to make sure you marry my daughter..." (show_native="Debo asegurarme de que te cases con mi hija...")
     jump consuela_button_beachhouse.choice
 
 
 label consuela_button_beachhouse.dress:
-    anon f_flirt "Kamu bisa memakai kembali seragam pelayanmu, jika kamu mau."
-
+    anon f_flirt "You can put your maid uniform back on, if you want."
     consuela @ -m_talk "Hmm?"
-
-    anon @ f_confused "Anda tidak perlu telanjang lagi."
-
-    consuela f_sad "Tidak telanjang?"
-
-    anon "Ya, kamu tahu... Kecuali kamu hanya ingin telanjang?"
-
+    anon @ f_confused "You don't have to be naked anymore."
+    consuela f_sad "No naked?"
+    anon "Yeah, you know... Unless you just want to be naked?"
     consuela f_smirk "I don't mind being naked for you, {b}Mister [firstname]{/b}." (show_native="No me importa estar desunda para ti, {b}Mister [firstname]{/b}.")
     consuela "But if you want me to get dressed, I will." (show_native="Pero si quieres que me vista, lo haré.")
     anon @ -m_talk "..."
-    consuela "Oke, aku berpakaian."
-
-    anon "Dingin."
-
+    consuela "Okay, I dress."
+    anon "Cool."
     consuela "Probably better this way." (show_native="Probablemente mejor de esta manera.")
     consuela "{b}Camila{/b} would be upset if she saw me here naked..." (show_native="{b}Camila{/b} estaría molesta si me viera aquí desnuda...")
-    anon @ a_point "Saya tidak mengerti apa yang Anda katakan..."
-
+    anon @ a_point "I have no idea what you're saying..."
     show consuela b_naked_blank a_remove_bra2 f_normal_down with dissolve
     pause
     show consuela b_naked_blank a_remove_bra1 with dissolve
@@ -147,16 +105,11 @@ label consuela_button_beachhouse.dress:
     show consuela b_dressed a_idle f_smirk with dissolve
     $ M_consuela.outfit.is_naked = 0
     $ M_consuela.outfit.set_default_outfit_schedule([["dressed", "dressed", "hospital", "hospital"]])
-    consuela "kamu suka?"
-
-    anon @ f_laugh "Ya, pakaian pelayan itu sangat seksi untukmu!"
-
-    consuela "Seksi?"
-
-    anon "Sangat seksi!"
-
-    consuela @ f_laugh "hehe!"
-
+    consuela "You like?"
+    anon @ f_laugh "Yeah, that maid outfit is so sexy on you!"
+    consuela "Sexy?"
+    anon "Very sexy!"
+    consuela @ f_laugh "Hehe!"
     consuela "You make me feel young again!" (show_native="¡Me haces sentir joven otra vez!")
     show consuela b_kiss
     hide anon
@@ -167,46 +120,29 @@ label consuela_button_beachhouse.dress:
     show consuela b_magic a_hips:
         xoffset 0
     with dissolve
-    anon "Untuk apa itu?"
-
-    consuela "Kamu anak baik."
-
-    anon @ f_laugh "Hehe, baiklah."
-
+    anon "What was that for?"
+    consuela "You good boy."
+    anon @ f_laugh "Heh, alright."
     jump consuela_button_beachhouse.choice
 
 
 label consuela_button_beachhouse.strip:
-    anon f_shy "Hei, aku bertanya-tanya..."
-
+    anon f_shy "Hey, I was wondering..."
     consuela @ -m_talk "Hmm?"
-
-    anon "Jika saya meminta Anda untuk membersihkan rumah saya dalam keadaan telanjang, apakah Anda akan melakukannya?"
-
-    consuela f_sad "Telanjang?"
-
-    anon a_behind_head "Ya, kamu tahu... Tidak ada pakaian?"
-
+    anon "If I asked you to clean my house naked, would you do it?"
+    consuela f_sad "Naked?"
+    anon a_behind_head "Yeah, you know... No clothes?"
     consuela f_smirk "Ahh, you want me to undress for you?" (show_native="¿Ahh, Quieres que me desnude por ti?")
-    consuela "Ya, benar."
-
-    anon f_surprised a_idle "Anda akan melakukannya?"
-
-    consuela "Ya, untukmu, aku bersedia."
-
+    consuela "Si, I do."
+    anon f_surprised a_idle "You will?"
+    consuela "Si, for you, I do."
     show anon f_flirt
-    consuela "Kamu anak baik."
-
-    consuela "Tanggal {b}Camila{/b} ya?"
-
-    anon f_worried "Maksudku, aku akan mencoba..."
-
-    consuela "Bagus."
-
-    consuela "Aku telanjang untukmu."
-
-    anon f_flirt @ f_laugh "Luar biasa!"
-
+    consuela "You good boy."
+    consuela "Date {b}Camila{/b}, yes?"
+    anon f_worried "I mean, I'll try..."
+    consuela "Good."
+    consuela "I strip for you."
+    anon f_flirt @ f_laugh "Awesome!"
     show consuela b_lift with dissolve
     pause
     show consuela b_lift2 with dissolve
@@ -216,13 +152,10 @@ label consuela_button_beachhouse.strip:
     show consuela b_naked_blank a_remove_bra2 with dissolve
     pause
     show consuela b_naked f_smirk a_idle with dissolve
-    consuela "kamu suka?"
-
-    anon f_flirt_low "{i}*Gulp*{/i} Y-ya, aku suka."
-
+    consuela "You like?"
+    anon f_flirt_low "{i}*Gulp*{/i} Y-yes, I like."
     show consuela b_naked_blank f_laugh a_boob1 with dissolve
-    consuela "Hehe, bagus!"
-
+    consuela "Hehe, good!"
     consuela f_smirk a_boob2 "You make me feel young again!" (show_native="¡Me haces sentir joven otra vez!")
     pause
     show consuela a_boob1 with dissolve
@@ -232,46 +165,33 @@ label consuela_button_beachhouse.strip:
 
 
 label consuela_button_beachhouse.blowjob:
-    anon f_flirt "Apakah kamu pikir kamu bisa um..."
-
+    anon f_flirt "Do you think you could umm..."
     consuela @ -m_talk "Hmm?"
-
-    anon f_worried "Ingat ketika Anda berlutut dan-"
-
+    anon f_worried "Remember when you got down on your knees and-"
     consuela a_idle f_smirk @ a_dick_big "Do you want me to suck your cock again?" (show_native="¿Quieres que te chupe la verga otra vez?")
-    anon f_shy @ a_behind_head "Y-ya, itu."
-
-    consuela "Hehe, oke."
-
-    consuela "aku melakukannya untukmu."
-
-    anon "Benar-benar?"
-
+    anon f_shy @ a_behind_head "Y-yeah, that."
+    consuela "Hehe, okay."
+    consuela "I do for you."
+    anon "Really?"
     show anon b_shirt od_dick1 f_shy_down behind consuela
     show consuela b_bend f_normal_up a_pull1
     with dissolve
-    consuela "Ya."
-
-    consuela a_pull2 f_unsure_down "saya suka."
-
+    consuela "Si."
+    consuela a_pull2 f_unsure_down "I like."
     pause
-    consuela a_poke "Seperti, umm... Lolipop."
-
+    consuela a_poke "Es like, umm... Lollipop."
     show consuela f_normal_up a_idle with dissolve
-    anon "L-lolipop?"
-
+    anon "L-lollipop?"
     show anon od_dick2 with dissolve
     pause .25
     show consuela f_unsure_down
     show anon od_dick3 with dissolve
     show anon od_dick4
-    consuela "Ya, lolipop!"
-
+    consuela "Si, lollipop!"
     show consuela b_bend_jerk f_normal_down
     show anon od_empty
     with dissolve
-    consuela @ f_laugh "hehe!"
-
+    consuela @ f_laugh "Hehe!"
     consuela "I'll suck your dick anytime, {b}Mister [firstname]{/b}!" (show_native="¡Te la voy a chupar cuando quieras, {b}Mister [firstname]{/b}!")
 
     call scene_consuela_blowjob.repeat from consuela_button_beachhouse.blowjob_resume
@@ -281,28 +201,19 @@ label consuela_button_beachhouse.blowjob:
     show anon b_shirt a_sides od_dick1 f_tired_happy
     with fade
     consuela "Mmm, you have a wonderful taste!" (show_native="¡Mmm, sabes bien rico!")
-    anon "Fiuh."
-
-    consuela "kamu suka?"
-
-    anon "Ya saya suka!"
-
+    anon "Phew."
+    consuela "You like?"
+    anon "Yes, I like!"
     consuela "Me too, daddy." (show_native="Yo también, papi.")
     pause
     consuela "I should go back to work now." (show_native="Debería volver a trabajar ahora.")
     anon "Hmm?"
-
-    consuela "Saya membersihkan sekarang."
-
-    anon "O-oh, oke."
-
-    anon "Umm, terima kasih untuk uh..."
-
+    consuela "I clean now."
+    anon "O-oh, okay."
+    anon "Umm, thanks for the uh..."
     consuela @ a_dick_big "Sucking your cock?" (show_native="¿Chuparte la verga?")
-    anon "Ya."
-
-    consuela "Tidak apa-apa, ayah."
-
+    anon "Yeah."
+    consuela "De nada, papi."
     show anon b_empty f_flirt_low
     show consuela b_kiss10
     with dissolve
@@ -310,8 +221,7 @@ label consuela_button_beachhouse.blowjob:
     show anon b_shirt f_flirt
     show consuela b_magic
     with dissolve
-    consuela "{b}Camila{/b}, gadis yang beruntung..."
-
+    consuela "{b}Camila{/b}, lucky girl..."
     anon @ -m_talk "..."
     hide anon with dissolve
 
@@ -320,22 +230,15 @@ label consuela_button_beachhouse.blowjob:
 
 
 label consuela_button_beachhouse.sex_entrance:
-    anon f_flirt "Saya kira Anda tidak ingin melakukannya, umm..."
-
+    anon f_flirt "I don't suppose you'd like to, umm..."
     consuela f_sad "What?" (show_native="¿Qué?")
-    anon "Seks?"
-
-    consuela f_smirk "Oh, seks..."
-
-    consuela "Oke, benar."
-
-    anon "Ya?"
-
-    consuela "Ya."
-
+    anon "Sex?"
+    consuela f_smirk "Oh, sexo..."
+    consuela "Okay, I do."
+    anon "Yeah?"
+    consuela "Si."
     consuela "Take off your clothes." (show_native="Quitate la ropa.")
-    anon @ f_laugh "Manis!"
-
+    anon @ f_laugh "Sweet!"
 
     call scene_consuela_sex_stairs.repeat from consuela_button_beachhouse.sex_entrance_resume
     python:
@@ -347,24 +250,16 @@ label consuela_button_beachhouse.sex_entrance:
 
 
 label consuela_button_beachhouse.sex_kitchen:
-    anon f_flirt "Aku bisa melihatmu membersihkan lantai itu sepanjang hari..."
-
-    consuela f_smirk "kamu suka?"
-
-    anon "Ya, sangat banyak!"
-
+    anon f_flirt "I could watch you clean that floor all day..."
+    consuela f_smirk "You like?"
+    anon "Yes, very much!"
     pause
-    consuela "Anda ingin berhubungan seks sekarang?"
-
-    anon "Ya ampun, ayo kita lakukan di sini!"
-
-    consuela "hehe!"
-
+    consuela "You want make sex now?"
+    anon "Si, let's do it here!"
+    consuela "Hehe!"
     consuela "Take off your clothes." (show_native="Quitate la ropa.")
-    anon "Kemarilah."
-
-    consuela "Ya, ayah."
-
+    anon "Come here."
+    consuela "Si, papi."
 
     call scene_consuela_sex_counter.repeat from consuela_button_beachhouse.sex_kitchen_resume
 
@@ -376,12 +271,9 @@ label consuela_button_beachhouse.sex:
     show anon f_flirt
     show consuela f_smirk a_hips
     with fade
-    anon "Saya harap itu bagus?"
-
-    consuela "Ya, bagus sekali!"
-
-    consuela "saya suka!"
-
+    anon "I hope that was good?"
+    consuela "Si, very good!"
+    consuela "I like!"
     show consuela b_kiss
     hide anon
     with dissolve
@@ -390,28 +282,18 @@ label consuela_button_beachhouse.sex:
     show consuela b_magic:
         xoffset -200
     with dissolve
-    consuela "Anak baik."
-
-    consuela "Kamu ingin aku memasak untukmu?"
-
+    consuela "Good boy."
+    consuela "You want I cook for you?"
     anon @ -m_talk "Hmm?"
-
-    anon "Oh tidak."
-
-    anon "Tidak apa-apa."
-
-    consuela @ f_laugh "Hehe, oke."
-
-    consuela "Saya memasak untuk saya."
-
+    anon "Oh, no."
+    anon "That's okay."
+    consuela @ f_laugh "Hehe, okay."
+    consuela "I cook for me."
     consuela "Sex always makes me hungry." (show_native="El sexo siempre me da hambre.")
-    anon "Baiklah."
-
+    anon "Alright."
     pause
-    anon @ a_wave "Terima kasih, {b}Consuela{/b}."
-
-    consuela "Tidak apa-apa, ayah."
-
+    anon @ a_wave "Thanks, {b}Consuela{/b}."
+    consuela "De nada, papi."
     hide anon with dissolve
 
     $ game.timer.tick()

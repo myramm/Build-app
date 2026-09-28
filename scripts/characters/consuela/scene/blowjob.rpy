@@ -3,8 +3,7 @@ label scene_consuela_blowjob:
     call scene_consuela_blowjob.animate
     with fade
     pause
-    anon "Anda tahu, ini tidak ada dalam deskripsi pekerjaan ketika saya bilang Anda bisa bekerja di sini..."
-
+    anon "You know, this wasn't in the job description when I said you could work here..."
     call scene_consuela_blowjob.loop
     if _return:
         call scene_consuela_blowjob.inside
@@ -62,35 +61,25 @@ label scene_consuela_blowjob.loop:
 
 label scene_consuela_blowjob.dialogue:
     if animcounter == 0 and randomizer() < 20:
-        anon "Oh, bagus sekali.{p=1}{nw}"
-
+        anon "Oh, that's nice.{p=1}{nw}"
     if animcounter == 1 and randomizer() < 20:
-        anon "Oh, wah!{p=1}{nw}"
-
+        anon "Oh, wow!{p=1}{nw}"
         consuela "{i}*Sluuuuuuurp*{/i}{p=1}{nw}"
-
     elif animcounter == 1 and randomizer() < 50:
-        consuela "{i}*Gllllcck*{/i}{p=1}{nw}"
-
-        consuela "Hmm.{p=1}{nw}"
-
+        consuela "{i}*Glllcck*{/i}{p=1}{nw}"
+        consuela "Mmm.{p=1}{nw}"
     if animcounter == 2 and randomizer() < 20:
-        anon "Kamu adalah pelayan terbaik yang pernah ada, {b}Consuela{/b}!{p=2}{nw}"
-
+        anon "You are the best maid ever, {b}Consuela{/b}!{p=2}{nw}"
     if animcounter == 3 and randomizer() < 20:
-        anon "Oh iya, bersihkan {b}Consuela{/b}.{p=1.5}{nw}"
-
+        anon "Oh yeah, clean it {b}Consuela{/b}.{p=1.5}{nw}"
         consuela "Hehe!{p=1}{nw}"
-
     return
 
 
 label scene_consuela_blowjob.inside:
-    anon "Saya tidak bisa menahannya!"
-
+    anon "I can't hold it!"
     pause
-    anon "{b}Consuela{/b}, saya tidak bisa-"
-
+    anon "{b}Consuela{/b}, I can't-"
     pause
     hide consuela_bj
     show consuela b_bj_cum
@@ -98,11 +87,9 @@ label scene_consuela_blowjob.inside:
     pause
     show consuela b_bj_talking with dissolve
     consuela "Oh, {b}Mister [firstname]{/b}!" (show_native="¡Ay {b}Mister [firstname]{/b}!")
-    anon "Fiuh..."
-
+    anon "Phew..."
     consuela "That was a lot!" (show_native="¡Eso fue mucho!")
     consuela "Hehehe!"
-
     return
 
 

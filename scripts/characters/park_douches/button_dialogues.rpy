@@ -4,119 +4,85 @@ label park_dewitt_douches_meet_up:
         xoffset -400
     show player 12 at left
     with dissolve
-    player_name "Baiklah, aku di sini. Apa ide yang kamu punya?"
-
+    player_name "Alright, I'm here. What's this idea you had?"
     show player 5
-    eve "Ya, kita butuh bantuan untuk membersihkan auditorium pertunjukan bakat, bukan?"
-
+    eve "Well, we need help to clean the auditorium for the talent show, right?"
     show player 10
-    player_name "Ya."
-
+    player_name "Yeah."
     show player 5
-    eve "Ucapkan salam pada bantuannya."
-
+    eve "Say hello to the help."
     show tyrone:
         xoffset -50
     show chad:
         xoffset 100
     with dissolve
-    tyrone "Ada apa, crackajack?"
-
+    tyrone "What up, crackajack?"
     show player 12
-    player_name "Wah. Maksudmu orang-orang ini akan membantu kita bersih-bersih?"
-
+    player_name "Whoa. You mean these guys are gonna help us clean?"
     show player 5
-    chad @ a_open "Itu benar! Apa, menurutmu hanya karena kita gangster, kita tidak bisa melakukan sedikit kegiatan amal dari waktu ke waktu?"
-
+    chad @ a_open "That's right! What, you think just 'cause we gangsta, we can't do a little charity work from time to time?"
     show player 10
-    player_name "Yah tidak, aku tidak bermaksud-"
-
+    player_name "Well no, I didn't mean-"
     show player 11
-    tyrone "Bagus, karena kamu benar! Ha ha ha!"
-
+    tyrone "Good, 'cause you'd be right! Hahaha!"
     show player 12
-    player_name "Oke, saya secara resmi bingung."
-
+    player_name "Okay, I'm officially confused."
     show player 5
-    eve "Heh, mereka akan membantu kita."
-
-    eve "... Tapi kita juga harus melakukan sesuatu untuk mereka."
-
+    eve "Heh, they're gonna help us."
+    eve "... But we'll have to do something for them too."
     show player 14
-    player_name "Oh, begitu."
-
+    player_name "Oh, I see."
     show player 12
-    player_name "Apa yang mereka inginkan?"
-
+    player_name "What do they want?"
     show player 5
-    chad "Kamu harus {b}memberi kami uang empat puluhan{/b}, yo!"
-
+    chad "You gotta {b}get us some forties{/b}, yo!"
     show player 10
-    player_name "Eh, empat puluhan?"
-
+    player_name "Eh, forties?"
     show player 5 with None
     show eve f_angry:
         flip
         xoffset 250
     with dissolve
-    eve "Tidak ada empat puluhan! Sudah kubilang, kaleng!"
-
-    chad "Ssst, baiklah! Apa pun."
-
+    eve "No forties! I told you cans!"
+    chad "Pssh, fine! Whatever."
     show eve f_happy:
         unflip
         xoffset -400
     with dissolve
-    eve "Mereka hanya ingin kita {b}membuat mereka bir{/b}."
-
+    eve "They just want us to {b}get them some beer{/b}."
     show player 10
-    player_name "Apa?! Saya belum cukup umur untuk membeli bir!"
-
+    player_name "What?! I'm not old enough to buy beer!"
     show player 5
-    eve @ f_eyeroll "Ya, ya. Saya tahu itu!"
-
-    eve "Apakah temanmu tidak punya?"
-
+    eve @ f_eyeroll "Well, yeah. I know that!"
+    eve "Doesn't your buddy have some?"
     show player 12
-    player_name "Hah?"
-
+    player_name "Huh?"
     show player 5
-    eve f_confused "Pria dengan mesin karaoke itu! {b}Evan{/b}?"
-
+    eve f_confused "That guy with the karaoke machine! {b}Evan{/b}?"
     show player 12
-    player_name "Maksudmu {b}Erik{/b}?"
-
+    player_name "You mean {b}Erik{/b}?"
     show player 5
-    eve f_happy @ f_laugh "Ya, pria itu!"
-
-    eve "{b}Dia minum banyak bir di tempatnya{/b}!"
-
+    eve f_happy @ f_laugh "Yeah, that guy!"
+    eve "{b}He had a bunch of beer there at his place{/b}!"
     show player 37 with dissolve
-    player_name "Ah, kawan."
-
+    player_name "Ah, man."
     show player 38 with dissolve
-    player_name "... Mereka akan membantu kita membersihkan semuanya, kan?"
-
+    player_name "... They're gonna help us clean the entire thing, right?"
     show player 5 with dissolve
-    tyrone "Itu idenya, bodoh."
-
+    tyrone "That's the idea, dummy."
     show player 4 with dissolve
     player_name "..."
     show player 12 with dissolve
-    player_name "Baiklah, saya akan lihat apa yang bisa saya lakukan."
-
-    player_name "Saya akan {b}menemui kalian di auditorium besok{/b} untuk pembersihan!"
-
+    player_name "Fine, I'll see what I can do."
+    player_name "I'll {b}meet you guys in the auditorium tomorrow{/b} for the cleanup!"
     show player 5
-    eve "Aku akan memastikan mereka mempertahankan tujuan mereka."
-
+    eve "I'll make sure they hold up their end."
     hide eve
     hide chad
     hide tyrone
     with dissolve
     show player 10
-    player_name "Saya harus berbicara dengan {b}Erik{/b} tentang {b}minum bir Tuan Johnson{/b}."
-
+    player_name "I should talk to {b}Erik{/b} about {b}taking some of Mr. Johnson's beer{/b}."
     return
 
 label park_douches_intro:
@@ -129,81 +95,48 @@ label park_douches_intro:
         flip
         xoffset 200
     with dissolve
-    tyrone "Sobat, kamu hanya memikirkan mereka yang bodoh, bukan?"
-
-    chico "Apa yang bisa saya katakan, saya orang yang sederhana."
-
-    tyrone "Seorang pria sederhana yang akan mendapat tepuk tangan..."
-
+    tyrone "Man, you just all about them sleazy ass chickenheads, ain't ya?"
+    chico "What can I say, I'm a simple man."
+    tyrone "A simple man that's about to get the clap..."
     show chico f_normal
     chad @ f_laugh "Haha!!"
-
-    chico "Tidak, kawan. Dia bersih."
-
-    tyrone "Silakan."
-
-    tyrone "Aku kenal perempuan jalang itu dan dia sama sekali tidak bersih!"
-
+    chico "Nah, homie. She's clean."
+    tyrone "Please."
+    tyrone "I know that bitch and she's anything but clean!"
     chico @ -m_talk "..."
-    tyrone "Aku tidak akan menidurinya dengan penis {b}Chad{/b}..."
-
-    chad @ f_laugh "Haha, ya!"
-
-    chad "Dia bahkan tidak mau menidurinya dengan penisku!"
-
-    tyrone @ f_angry "Diam, {b}Chad{/b}!"
-
+    tyrone "I wouldn't fuck her with {b}Chad{/b}'s dick..."
+    chad @ f_laugh "Haha, yeah!"
+    chad "He wouldn't even fuck her with my dick!"
+    tyrone @ f_angry "Shut up, {b}Chad{/b}!"
     chad f_normal_down @ -m_talk "..."
-    chico f_cocky "Maksudku, gadis itu berbakat."
-
-    chico @ f_laugh "Dia membuatku keluar dalam waktu tiga puluh detik!"
-
+    chico f_cocky "I'm just saying, the girl is talented."
+    chico @ f_laugh "She had me cumming in like thirty seconds!"
     show chad f_happy
-    tyrone "Heh, itu tidak ada hubungannya dengan bakat... Itulah pengalaman, itulah apa adanya!"
-
-    tyrone "Dia tidak mengisap setengah penisnya di kota, kawan!"
-
-    chico "Ck, terserah..."
-
+    tyrone "Heh, it ain't got nothin' to do with talent... That's experience, is what that is!"
+    tyrone "She dun sucked half the dicks in town, man!"
+    chico "Tsk, whatever..."
     pause
-    anon @ a_wave "{i}*Ehem*{/i}"
-
+    anon @ a_wave "{i}*Ahem*{/i}"
     show tyrone f_angry with dissolve:
         unflip
         tyrone_front
-    chico f_angry "Cih, kamu mau apa, brengsek?"
-
-    chad f_normal "Ya, apa yang kamu inginkan?!"
-
-    tyrone "Anda datang untuk bergaul dengan anak-anak keren?"
-
+    chico f_angry "Tch, what do you want, punk?"
+    chad f_normal "Yeah, what do you want?!"
+    tyrone "You come to hang out with the cool kids?"
     show tyrone f_smirk
-    anon "Tidak."
-
-    anon "Aku ingin kalian berhenti menyusahkan {b}Eve{/b}."
-
-    tyrone "Ah, benarkah?"
-
-    chico f_cocky "Hah, lihat dia berusaha sekuat tenaga."
-
+    anon "No."
+    anon "I want you guys to stop giving {b}Eve{/b} a hard time."
+    tyrone "Oh, really?"
+    chico f_cocky "Hah, look at him trying to be all hard."
     chad f_happy @ f_laugh "Haha!"
-
-    anon f_tired "{i}*Sigh*{/i} Serius, apa yang perlu dilakukan agar kalian mundur?"
-
-    tyrone @ f_normal "Kamu ingin kami meninggalkan pacar kecilmu sendirian?"
-
-    tyrone @ a_point "Anda harus mengalahkan kami dalam pertempuran."
-
-    anon f_worried a_up "Sobat, aku tidak mencoba untuk melawan kalian..."
-
-    tyrone "Saya tidak berbicara tentang tidak adanya pertarungan!"
-
-    tyrone @ f_laugh "Pertarungan rap, astaga!"
-
-    anon a_idle f_surprised @ a_behind_head "Pertarungan rap?!"
-
-    tyrone "Ya itu benar!"
-
+    anon f_tired "{i}*Sigh*{/i} Seriously, what's it gonna take to get you guys to back off?"
+    tyrone @ f_normal "You want us to leave your little girlfriend alone?"
+    tyrone @ a_point "You gotta beat us in a battle."
+    anon f_worried a_up "Man, I'm not trying to fight you guys..."
+    tyrone "I ain't talking about no fight!"
+    tyrone @ f_laugh "Rap battles, beotch!"
+    anon a_idle f_surprised @ a_behind_head "Rap battle?!"
+    tyrone "Yeah, that's right!"
     show tyrone a_mic_throw
     show anon b_dressed_blocking
     with dissolve
@@ -213,53 +146,35 @@ label park_douches_intro:
     with dissolve
     anon "!!!"
     show anon f_worried
-    anon "Uhh, entahlah..."
-
-    chico f_normal "Yo, ayolah kawan, orang bodoh ini tidak tahu apa-apa tentang sajak!"
-
-    chad "Beneran dawg, scrub ini gak bisa rap."
-
-    tyrone "Tunggu sebentar, dia tidak mau masuk ke sini seperti dia punya bola kuningan besar... Aku ingin melihatnya mendukungnya!"
-
+    anon "Uhh, I dunno..."
+    chico f_normal "Yo, c'mon homie, this fool don't know nothing about spittin' rhymes!"
+    chad "For real dawg, this scrub can't rap."
+    tyrone "Hold on now, he dun walked up in here like he's got big brass balls... I wanna see him back it up!"
     anon @ -m_talk "..."
-    tyrone @ a_point "Kamu tidak akan marah sekarang, kan?"
-
-    anon f_skeptical "Baiklah, aku akan bertarung denganmu."
-
+    tyrone @ a_point "You ain't gonna puss out now, are ya?"
+    anon f_skeptical "Fine, I'll battle you."
     show anon b_dressed_pickup with dissolve
     show chad f_happy
-    chico @ f_eyeroll -m_talk "Cih."
-
+    chico @ f_eyeroll -m_talk "Tch."
     show anon f_worried b_dressed a_mic with dissolve
-    tyrone "Heh, nah kawan... Kamu tidak berhak melawanku!"
-
-    tyrone "Kamu harus melewati anak-anakku dulu."
-
-    tyrone a_hands_rub @ a_point "Aku adalah King Kong di jalang ini!"
-
-    chad "Hah ya, Raja Kong sialan!"
-
-    tyrone a_idle f_angry "Bung, tutup mulutmu, {b}Chad{/b}."
-
+    tyrone "Heh, nah man... You ain't earned the right to battle me!"
+    tyrone "You gotta get through my boys first."
+    tyrone a_hands_rub @ a_point "I'm King Kong up in this bitch!"
+    chad "Hah yeah, King fuckin' Kong!"
+    tyrone a_idle f_angry "Man, shut the fuck up, {b}Chad{/b}."
     show chad f_normal_down
-    tyrone "Sial."
-
-    chad "Ya ampun, sial."
-
-    anon @ f_skeptical "Baiklah, siapa yang pertama?"
-
+    tyrone "Shit."
+    chad "Oh, my bad, dawg."
+    anon @ f_skeptical "Alright then, who's first?"
     show chad f_happy
     show chico:
         chico_front
     show tyrone f_smirk behind chico:
         tyrone_back
     with dissolve
-    chico f_angry @ a_signs "Yo, aku akan mengurus bajingan maaf ini."
-
-    tyrone "Haaaah, sekarang itu yang aku bicarakan!"
-
-    chico a_mic "Perhatikan, jalang!"
-
+    chico f_angry @ a_signs "Yo, I'ma take care of this sorry motherfucker."
+    tyrone "Haaaah, now that's what I'm talking about!"
+    chico a_mic "Pay attention, bitch!"
     return
 
 label park_douches_greet:
@@ -271,100 +186,67 @@ label park_douches_greet:
     show tyrone:
         tyrone_front
     with dissolve
-    tyrone "Hei, lihat siapa yang kembali."
-
+    tyrone "Hey, look who's back."
     if player.stats.chr() > 6:
-        tyrone "Anda siap menghadapi tantangan besar?"
-
-        chad "Kau akan terpanggang, kawan."
-
-        anon "saya siap."
-
+        tyrone "You ready to take on the big dawg?"
+        chad "You're 'bout to get roasted, homie."
+        anon "I'm ready."
     elif player.stats.chr() > 3:
-        chad "Sup, sial?"
-
-        chad f_happy "Anda siap bertempur?"
-
+        chad "Sup, dawg?"
+        chad f_happy "You ready to battle?"
     else:
-        chico "Astaga, jangan sebodoh ini lagi..."
-
-        chad "Kamu membuang-buang waktumu, sial!"
-
+        chico "Man, not this fool again..."
+        chad "You're wasting your time, dawg!"
     return
 
 label park_douches_rematch_1:
-    anon f_normal "Saya memilih untuk Rap Battle!"
-
-    tyrone f_smirk "Itu yang aku bicarakan!"
-
-    tyrone "Anda siap untuk pertandingan ulang, {b}Chico{/b}?"
-
+    anon f_normal "I choose to Rap Battle!"
+    tyrone f_smirk "That's what I'm talking 'bout!"
+    tyrone "You ready for the rematch, {b}Chico{/b}?"
     show chico f_cocky:
         chico_front
     show tyrone behind chico:
         tyrone_back
     with dissolve
-    chico a_mic "Sepotong kue, kawan."
-
-    chico @ a_signs "Cracker ini tidak akan bisa melewatiku!"
-
-    tyrone "Putar itu!"
-
+    chico a_mic "Piece of cake, homie."
+    chico @ a_signs "This cracker ain't getting past me!"
+    tyrone "Spin it!"
     return
 
 label park_douches_rematch_2:
-    anon "Saya memilih untuk melakukan pertarungan rap!"
-
-    tyrone f_smirk "Anda akan melawan {b}Chad{/b} sekarang."
-
+    anon "I choose to rap battle!"
+    tyrone f_smirk "You're going up against {b}Chad{/b} now."
     show chad:
         chad_front
     show tyrone behind chad:
         tyrone_middle
     show chico behind chad
     with dissolve
-    chad @ a_open "Benar sekali, sial!"
-
-    chad "Bersiaplah untuk merasakan kemarahan {b}Chad{/b}!"
-
-    chico @ f_eyeroll "Eugh, anak laki-laki kulit putih sialan..."
-
-    tyrone @ f_laugh "Ha ha ha!"
-
-    chad f_angry a_mic "Pukul itu!"
-
+    chad @ a_open "That's right, dawg!"
+    chad "Prepare to feel the wrath of {b}Chad{/b}!"
+    chico @ f_eyeroll "Eugh, fuckin' white boys..."
+    tyrone @ f_laugh "Hahaha!"
+    chad f_angry a_mic "Hit it!"
     return
 
 label park_douches_rematch_3:
-    anon "Saya memilih untuk melakukan pertarungan rap!"
-
-    tyrone f_smirk "Mari kita mulai omong kosong ini!"
-
-    tyrone "Anda mungkin ingin membuat catatan..."
-
-    chad "Tangkap dia, {b}Tyrone{/b}!"
-
-    tyrone a_mic "Putar itu!"
-
+    anon "I choose to rap battle!"
+    tyrone f_smirk "Let's get this shit started then!"
+    tyrone "You might wanna take notes..."
+    chad "Get him, {b}Tyrone{/b}!"
+    tyrone a_mic "Spin it up!"
     return
 
 label park_douches_rematch_4:
-    anon "Saya memilih untuk melakukan pertarungan rap!"
-
-    tyrone f_smirk "Mari kita mulai omong kosong ini!"
-
-    tyrone "Anda mungkin ingin-"
-
+    anon "I choose to rap battle!"
+    tyrone f_smirk "Let's get this shit started then!"
+    tyrone "You might wanna-"
     show tyrone f_surprised
-    anon "Aku pergi duluan kali ini."
-
+    anon "I'm going first this time."
     show tyrone f_smirk
-    chad f_happy @ f_laugh a_open "Oh sial!"
-
-    tyrone "Baiklah, jika itu yang kamu inginkan."
-
-    tyrone "Mari kita dengar apa yang Anda punya."
-
+    chad f_happy @ f_laugh a_open "Oh snap!"
+    tyrone "Alright, if that's the way you want it."
+    tyrone "Let's hear what you got."
     return
 
 label park_douches_respect:
@@ -376,71 +258,46 @@ label park_douches_respect:
     show tyrone:
         tyrone_front
     with dissolve
-    tyrone "Yo, ada apa?"
-
-    chico "Sup, kawan?"
-
-    tyrone f_smirk @ a_point "Anda di sini untuk berperang?"
-
-    anon @ f_laugh "Hehe, tidak."
-
-    chad "Aww, ayolah... Kamu harus mempertahankan gelar itu!"
-
-    anon "Mungkin lain kali."
-
-    tyrone "Sesuaikan dirimu."
-
+    tyrone "Yo, what up?"
+    chico "Sup, homie?"
+    tyrone f_smirk @ a_point "You here to battle?"
+    anon @ f_laugh "Heh, nah."
+    chad "Aww, c'mon dawg... You gotta defend that title!"
+    anon "Maybe some other time."
+    tyrone "Suit yourself."
     return
 
 label park_douches_dismiss:
     if player.stats.chr() < 10:
-        anon "Sudahlah."
-
+        anon "Never mind."
         show tyrone f_normal
-        chico f_angry "Itulah yang saya pikirkan!"
-
-        chico @ a_signs "Tersesat, puta!"
-
-        chad f_angry "Ya, tersesat!"
-
+        chico f_angry "That's what I thought!"
+        chico @ a_signs "Get lost, puta!"
+        chad f_angry "Yeah, get lost!"
         hide anon with dissolve
     else:
-        anon @ a_wave "Aku akan menangkap kalian nanti."
-
-        tyrone "Baiklah, sial."
-
-        tyrone "Perdamaian."
-
+        anon @ a_wave "I'll catch you guys later."
+        tyrone "Alright, dawg."
+        tyrone "Peace."
     return
 
 label park_douches_battle_1:
-    chico f_angry a_mic_speak "{i}Kamu pikir kamu bisa melawanku dengan roti putih?{/i}"
-
-    chico "{i}Kami bahkan belum memulai dan kamu sudah mati!{/i}"
-
-    chico "{i}Kamu datang ke sini, mengira kamu tangguh;{/i}"
-
-    chico "{i}Mari kita dengarkan, jalang, aku hanya menggertakmu!{/i}"
-
-    chico f_cocky "{i}Kamu tidak punya sajak dan sekarang pantatmu tergoreng;{/i}"
-
-    chico "{i}Aku akan mengirimmu pulang ke mamamu sambil menangis!{/i}"
-
+    chico f_angry a_mic_speak "{i}You think you can stand up to me white bread?{/i}"
+    chico "{i}We ain't even started and you already dead!{/i}"
+    chico "{i}You come up in here, thinking you tough;{/i}"
+    chico "{i}Let's hear it then, bitch, I'm calling your bluff!{/i}"
+    chico f_cocky "{i}You ain't got no rhymes and now your ass is frying;{/i}"
+    chico "{i}I'ma send you back home to yo mamma, crying!{/i}"
     show anon f_worried
     show tyrone f_smirk
     show chad f_happy
     show chico a_mic
     with dissolve
-    chad "Oooh, harium!"
-
-    tyrone "Baiklah, baiklah... Cukup bagus, sebagai permulaan."
-
-    tyrone "Anda harus mengatasinya sekarang, Anda siap?"
-
-    anon "Y-ya, oke."
-
-    tyrone "Putar omong kosong itu!"
-
+    chad "Oooh, dayum!"
+    tyrone "Alright, alright... Pretty good, for a start."
+    tyrone "You gotta top it now, you ready?"
+    anon "Y-yeah, okay."
+    tyrone "Spin that shit up!"
     return
 
 label park_douches_battle_1_pass:
@@ -449,72 +306,45 @@ label park_douches_battle_1_pass:
     show chico f_cocky
     show tyrone f_normal
     with fade
-    anon "{i}Hanya itu yang kamu punya {b}Chico{/b}, mengolok-olok balapanku?{/i}"
-
-    anon "{i}Ini bukan pertarungan bagiku, kamu bahkan tidak bisa mengimbanginya!{/i}"
-
-    anon "{i}Sulit mendengarkan kata-katamu, ketika kamu berpakaian seperti badut...{/i}"
-
-    anon "{i}... Dan roti putih ini akan membakar pantatmu.{/i}"
-
-    anon "{i}Jadi berlarilah pulang sekarang, dasar skater brengsek...{/i}"
-
-    anon "{i}... Dan beritahu ibumu untuk tidak khawatir, aku akan datang nanti.{/i}"
-
+    anon "{i}Is that all you got {b}Chico{/b}, making fun of my race?{/i}"
+    anon "{i}This ain't a battle for me, you can't even keep pace!{/i}"
+    anon "{i}It's hard to listen to your words, when you dressed like a clown...{/i}"
+    anon "{i}... And white bread here's 'bout to burn your ass down.{/i}"
+    anon "{i}So run along home now, you sorry-ass skater...{/i}"
+    anon "{i}... And tell your momma not to worry, I'll be coming 'round later.{/i}"
     show chad f_happy
     show chico f_angry
     show tyrone f_smirk
     show anon f_normal a_mic with dissolve
-    chad @ f_laugh "HAHAHAH!"
-
-    tyrone "Lumayan, boi putih."
-
-    chad "Dia benar-benar menangkapmu, dawg!"
-
-    chico "Astaga, diamlah, {b}Chad{/b}!"
-
-    chico "Dia hanya beruntung, itu saja..."
-
-    tyrone "Nah, itu sah!"
-
-    anon "Terima kasih kawan."
-
-    tyrone "Jalanmu masih panjang jika ingin menantangku, tetapi ini adalah permulaan."
-
-    tyrone "{b}Mampirlah satu malam lagi dan kita akan pergi lagi{/b}."
-
-    anon "Baiklah."
-
+    chad @ f_laugh "HAHAHAAH!"
+    tyrone "Not bad, white boi."
+    chad "He totally got you, dawg!"
+    chico "Man, shut up, {b}Chad{/b}!"
+    chico "He just got lucky, is all..."
+    tyrone "Nah, that was legit!"
+    anon "Thanks man."
+    tyrone "You still got a long way to go if you wanna challenge me but it's a start."
+    tyrone "{b}Swing by another night and we'll go again{/b}."
+    anon "Alright."
     hide anon with dissolve
     return
 
 label park_douches_battle_2:
-    chico f_angry a_mic_speak "{i}Apa yang kamu lakukan di sini, jalang? Bukankah pantatmu sudah cukup?{/i}"
-
-    chico "{i}Lebih baik berpegang pada sesuatu, ini akan menjadi sulit.{/i}"
-
-    chico "{i}Ini wilayah kami, bodoh dan Anda tidak bisa bergaul dengan merek kami.{/i}"
-
-    chico "{i}Sajakku mengiris begitu dalam, hingga kau tak sanggup berdiri.{/i}"
-
-    chico "{i}Entah apa yang ada di pikiranmu, jauh di luar jangkauan pikiranmu.{/i}"
-
-    chico f_cocky "{i}Celanamu penuh dengan kotoran, kawan, menurutku sudah waktunya kamu melarikan diri.{/i}"
-
+    chico f_angry a_mic_speak "{i}What you doing here, bitch? Ain't your ass had enough?{/i}"
+    chico "{i}Better hold on to something, shit's 'bout to get rough.{/i}"
+    chico "{i}This is our turf, fool and you can't hang with our brand.{/i}"
+    chico "{i}My rhymes slicing so deep, that you can't even stand.{/i}"
+    chico "{i}Dunno whatchu were thinking, in way over your head.{/i}"
+    chico f_cocky "{i}Your pants filling with shit, man, I think it's time that you fled.{/i}"
     show anon f_worried
     show tyrone f_smirk
     show chad f_happy
     show chico a_mic with dissolve
-    chad "Oooh, harium!"
-
-    tyrone "Baiklah, baiklah... Cukup bagus, sebagai permulaan."
-
-    tyrone "Anda harus mengatasinya sekarang, Anda siap?"
-
-    anon "Y-ya, oke."
-
-    tyrone "Putar omong kosong itu!"
-
+    chad "Oooh, dayum!"
+    tyrone "Alright, alright... Pretty good, for a start."
+    tyrone "You gotta top it now, you ready?"
+    anon "Y-yeah, okay."
+    tyrone "Spin that shit up!"
     return
 
 label park_douches_battle_2_pass:
@@ -523,67 +353,42 @@ label park_douches_battle_2_pass:
     show chico f_cocky
     show tyrone f_normal
     with fade
-    anon "{i}Aku benci membocorkannya padamu, sial, tapi aku akan tetap di sini.{/i}"
-
-    anon "{i}Jadi belajarlah menerimanya atau menyingkirlah!{/i}"
-
-    anon "{i}Kamu terus mencoba melontarkan sajak-sajak yang sangat menusuk ini...{/i}"
-
-    anon "{i}... Tapi semua kata-katamu keluar dengan sederhana dan murahan.{/i}"
-
-    anon "{i}Pelajari tempatmu, {b}Chico{/b} cepat dan ingatlah untuk membungkuk.{/i}"
-
+    anon "{i}Hate to break it to you, dawg, but I'm here to stay.{/i}"
+    anon "{i}So either learn to accept it or get out of my way!{/i}"
+    anon "{i}You keep trying to spit these rhymes that cut deep...{/i}"
+    anon "{i}... But all of your words come out simple and cheap.{/i}"
+    anon "{i}Learn your place, {b}Chico{/b} quick and remember to bow.{/i}"
     show chad f_happy
-    anon "{i}Kenali keahlian saya, inilah taman saya sekarang.{/i}"
-
+    anon "{i}Recognize my skills, this is my park now.{/i}"
     show tyrone f_smirk
     show chico f_angry
     show anon f_normal a_mic with dissolve
-    chad "Yo, itu menyala!"
-
-    tyrone "Lumayan, boi putih."
-
-    chico "Tidak apa-apa."
-
-    tyrone "Nah, itu sah!"
-
-    anon "Terima kasih kawan."
-
-    tyrone "Jalanmu masih panjang jika ingin menantangku, tapi kamu semakin dekat."
-
-    tyrone "{b}Mampirlah satu malam lagi dan kita akan pergi lagi{/b}."
-
-    anon "Baiklah."
-
+    chad "Yo, that was lit!"
+    tyrone "Not bad, white boi."
+    chico "It was alright."
+    tyrone "Nah, that was legit!"
+    anon "Thanks man."
+    tyrone "You still got a long way to go if you wanna challenge me but you're getting closer."
+    tyrone "{b}Swing by another night and we'll go again{/b}."
+    anon "Alright."
     hide anon with dissolve
     return
 
 label park_douches_battle_3:
-    chico f_angry a_mic_speak "{i}Oh, kamu pikir kamu keren, karena kamu mengalahkanku dua kali?{/i}"
-
-    chico "{i}Apa yang tidak kamu sadari adalah, aku hanya bersikap baik.{/i}"
-
-    chico "{i}Tapi sarung tangannya sudah dilepas sekarang dan saya siap bergemuruh.{/i}"
-
-    chico "{i}Saat aku memberi tekanan, kamu hanya akan hancur.{/i}"
-
-    chico "{i}Jadi, angkat adipatimu, jalang, dan cobalah untuk tidak menolak keras.{/i}"
-
-    chico f_cocky "{i}Saat aku selesai, gadismu akan menghisap penisku.{/i}"
-
+    chico f_angry a_mic_speak "{i}Oh, you think you're hot shit, 'cause you beat me twice?{/i}"
+    chico "{i}What you don't realize is, I was just being nice.{/i}"
+    chico "{i}But the gloves are off now and I'm ready to rumble.{/i}"
+    chico "{i}When I put on some pressure, you'll do nothing but crumble.{/i}"
+    chico "{i}So put up your dukes, bitch, and try not to balk.{/i}"
+    chico f_cocky "{i}By the time I'm finished, your girl will be sucking my cock.{/i}"
     show anon f_worried
     show tyrone f_smirk
     show chico a_mic with dissolve
-    chad f_happy @ f_laugh "Oooh, harium!"
-
-    tyrone "Baiklah, baiklah... Cukup bagus, sebagai permulaan."
-
-    tyrone "Anda harus mengatasinya sekarang, Anda siap?"
-
-    anon "Y-ya, oke."
-
-    tyrone "Putar omong kosong itu!"
-
+    chad f_happy @ f_laugh "Oooh, dayum!"
+    tyrone "Alright, alright... Pretty good, for a start."
+    tyrone "You gotta top it now, you ready?"
+    anon "Y-yeah, okay."
+    tyrone "Spin that shit up!"
     return
 
 label park_douches_battle_3_pass:
@@ -592,69 +397,43 @@ label park_douches_battle_3_pass:
     show chico f_cocky
     show tyrone f_normal
     with fade
-    anon "{i}Aku tidak hanya mengalahkanmu, aku membuatmu berantakan.{/i}"
-
-    anon "{i}Meludah sajak yang tidak bisa Anda tangani.{/i}"
-
-    anon "{i}Kamu pikir kamu bisa membuatku takut, jalang? Cobalah.{/i}"
-
-    anon "{i}Teruslah mencoba melawanku, tapi maaf, aku tidak memukul perempuan.{/i}"
-
-    anon "{i}Sekarang lihat dirimu meringkuk, terlepas dari jahitannya...{/i}"
-
-    anon "{i}Kamu tidak bisa bersama gadisku, bahkan dalam mimpi basahmu!{/i}"
-
+    anon "{i}I didn't just beat you, I left you in shambles.{/i}"
+    anon "{i}Spitting these rhymes that you just can't handle.{/i}"
+    anon "{i}You think that you can scare me, bitch? Give it a whirl.{/i}"
+    anon "{i}Keep on trying to fight me, but sorry, I don't hit girls.{/i}"
+    anon "{i}Now look at you cower, coming undone at the seams...{/i}"
+    anon "{i}You couldn't get with my girl, even in your wet dreams!{/i}"
     show chad f_happy
     show chico f_angry
     show tyrone f_smirk
     show anon f_normal a_mic with dissolve
-    chad @ f_laugh "HAHAHAH!"
-
-    chico "sial..."
-
-    tyrone "Heh, sepertinya dia punya nomor teleponmu {b}Chico{/b}."
-
-    chico "Tidak, sial,..."
-
-    chico "Aku akan mendapatkan pengecut ini lain kali!"
-
-    tyrone "Pfft, kalau kamu bilang begitu..."
-
-    tyrone "Jalanmu masih panjang jika ingin menantangku, tapi kamu semakin dekat."
-
-    tyrone "{b}Mampirlah satu malam lagi dan kita akan pergi lagi{/b}."
-
-    anon "Baiklah."
-
+    chad @ f_laugh "HAHAHAAH!"
+    chico "Goddamnit..."
+    tyrone "Heh, I think he's got your number {b}Chico{/b}."
+    chico "Nah man, fuck that..."
+    chico "I'ma get this coward next time!"
+    tyrone "Pfft, if you say so..."
+    tyrone "You still got a long way to go if you wanna challenge me but you're getting closer."
+    tyrone "{b}Swing by another night and we'll go again{/b}."
+    anon "Alright."
     hide anon with dissolve
     return
 
 label park_douches_battle_4:
-    chico f_angry a_mic_speak "{i}Aku muak denganmu, kawan... Aku akan merokok kamu malam ini!{/i}"
-
-    chico "{i}Gulung kamu dengan kertas dan bakar kamu!{/i}"
-
-    chico "{i}Lirik ini sangat tajam dan rapku sangat berdarah!{/i}"
-
-    chico "{i}Lari kecilmu di sini lucu tapi ini adalah akhir dari cerita itu.{/i}"
-
-    chico "{i}Kau tidak akan bisa melewatiku, jalang! Singkirkan itu dari kepalamu.{/i}"
-
-    chico "{i}Sebaiknya kamu pulang sekarang, sebelum kamu mati.{/i}"
-
+    chico f_angry a_mic_speak "{i}I'm sick of you, homie... I'ma smoke you tonight!{/i}"
+    chico "{i}Roll you up with papers and set you alight!{/i}"
+    chico "{i}These lyrics cut deep and my rap is 'bout to get gory!{/i}"
+    chico "{i}Your little run here was cute but this is the end of that story.{/i}"
+    chico "{i}You ain't getting past me, bitch! Put it out of your head.{/i}"
+    chico "{i}Best you get on home now, before you wind up dead.{/i}"
     show anon f_worried
     show tyrone f_smirk
     show chico a_mic with dissolve
-    chad f_happy "Oooh, harium!"
-
-    tyrone "Baiklah, baiklah... Cukup bagus, sebagai permulaan."
-
-    tyrone "Anda harus mengatasinya sekarang, Anda siap?"
-
-    anon "Y-ya, oke."
-
-    tyrone "Putar omong kosong itu!"
-
+    chad f_happy "Oooh, dayum!"
+    tyrone "Alright, alright... Pretty good, for a start."
+    tyrone "You gotta top it now, you ready?"
+    anon "Y-yeah, okay."
+    tyrone "Spin that shit up!"
     return
 
 label park_douches_battle_4_pass:
@@ -663,78 +442,50 @@ label park_douches_battle_4_pass:
     show chico f_cocky
     show tyrone f_normal
     with fade
-    anon "{i}Lagi dengan ancamannya? Tampaknya semua yang ingin Anda lakukan adalah memo...{/i}"
-
-    anon "{i}Tapi menurutku itu masuk akal, karena jelas kamu tidak bisa nge-rap.{/i}"
-
-    anon "{i}Aku senang ini sudah berakhir, aku tidak bisa mengintipnya lagi...{/i}"
-
-    anon "{i}Sajakmu jelek sekali hingga membuatku tertidur!{/i}"
-
-    anon "{i}Kamu seharusnya malu, dawg. Itu saja yang ingin saya katakan...{/i}"
-
-    anon "{i}Ini bukan pertarungan, ini permainan anak-anak.{/i}"
-
+    anon "{i}Again with the threats? Seems all you want to do scrap...{/i}"
+    anon "{i}But I guess that makes sense, because clearly you can't rap.{/i}"
+    anon "{i}I'm glad this is over, I can't take one more peep...{/i}"
+    anon "{i}Your rhymes are so bad that they put me to sleep!{/i}"
+    anon "{i}You should be embarrassed, dawg. That's all I'm gonna say...{/i}"
+    anon "{i}This wasn't a battle, it was child's play.{/i}"
     show chico f_angry
     show tyrone f_smirk
     show anon f_normal a_mic with dissolve
-    chad f_happy @ f_laugh "HAHAHAH!"
-
-    chico "Yo, persetan denganmu yang berkulit putih!"
-
-    tyrone f_normal "Hei, jangan seperti itu..."
-
-    tyrone "Ambil L-mu dengan bermartabat, kawan."
-
-    chico "Cih, terserah..."
-
-    tyrone f_smirk "{b}[firstname]{/b} siap naik peringkat!"
-
-    tyrone "Anda masih harus melewati {b}Chad{/b} sebelum Anda dapat menghadapi saya..."
-
-    chad "Ya, selanjutnya kamu harus melewatiku, dawg!"
-
-    tyrone "{b}Mampirlah satu malam lagi dan kita akan pergi lagi{/b}."
-
-    anon "Baiklah."
-
+    chad f_happy @ f_laugh "HAHAHAAH!"
+    chico "Yo, fuck you whitey!"
+    tyrone f_normal "Hey, don't be like that..."
+    tyrone "Take your L with some fucking dignity, man."
+    chico "Tch, whatever..."
+    tyrone f_smirk "{b}[firstname]{/b} is ready to move up the ranks!"
+    tyrone "You still gotta get through {b}Chad{/b} before you can take me on..."
+    chad "Yeah, you gotta get through me next, dawg!"
+    tyrone "{b}Swing by another night and we'll go again{/b}."
+    anon "Alright."
     hide anon with dissolve
     return
 
 label park_douches_battle_5:
-    chad f_angry a_mic_speak "{i}Saya tahu kita baru saja bertemu, dan Anda akan mendapatkan perhatian saya,{/i}"
-
-    chad "{i}Tapi tolong tunggu dulu, sementara saya melanggar konvensi.{/i}"
-
+    chad f_angry a_mic_speak "{i}I know we just met, and you'll have my attention,{/i}"
+    chad "{i}But please hold the line, while I break with convention.{/i}"
     show chad with dissolve:
         flip
         xoffset 260
-    chad "{i}Apa yang terjadi {b}Chico{/b}? Kamu harus mengakhiri orang ini,{/i}"
-
+    chad "{i}What happened {b}Chico{/b}? You oughta ended this dude,{/i}"
     show chico f_angry
-    chad "{i}Tahu apa? Sudahlah. Duduk, dengarkan, dapatkan petunjuk.{/i}"
-
+    chad "{i}Know what? Never mind. Sit back, listen, get clued.{/i}"
     show chad with dissolve:
         unflip
         chad_front
-    chad "{i}Terima kasih sudah menunggu, sekarang tolong cepat?{/i}"
-
-    chad a_open "{i}Tunggu, apa yang aku katakan? Tidak tertarik. *Klik!*{/i}"
-
+    chad "{i}Thank you for holding, now please make it quick?{/i}"
+    chad a_open "{i}Wait, what am I saying? Not interested. *Click!*{/i}"
     show tyrone f_smirk
     show chad f_happy a_idle with dissolve
-    chico f_normal "Sobat, aku tidak tahu betapa pandainya kamu dalam berima, tapi kamu tidak bisa membuang sampah sembarangan..."
-
-    tyrone "Tenang, {b}Chico{/b}... Dia baru saja memulai."
-
-    chico f_cocky "Pfft, terserah homie."
-
-    tyrone f_normal "Anda harus mengatasinya sekarang, Anda siap?"
-
-    anon "Y-ya, oke."
-
-    tyrone f_smirk "Putar omong kosong itu!"
-
+    chico f_normal "Man, I dunno how you so good at rhymin', but you can't trash talk for shit..."
+    tyrone "Relax, {b}Chico{/b}... He's just getting started."
+    chico f_cocky "Pfft, whatever homie."
+    tyrone f_normal "You gotta top it now, you ready?"
+    anon "Y-yeah, okay."
+    tyrone f_smirk "Spin that shit up!"
     return
 
 label park_douches_battle_5_pass:
@@ -743,69 +494,41 @@ label park_douches_battle_5_pass:
     show chico f_cocky
     show tyrone f_smirk
     with fade
-    anon "{i}Ada apa dengan sandiwara itu? Anda perwakilan pusat panggilan?{/i}"
-
-    anon "{i}Kamu tahu kamu sedang melawanku, kan? Oke? Ya?{/i}"
-
-    anon "{i}Tidak akan berusaha menyangkalnya, permainan rimamu kuat,{/i}"
-
-    anon "{i}Aku hampir mengerti bagaimana orang bodoh ini menganggapmu.{/i}"
-
-    anon "{i}Tapi pembicaraan sampah tingkat sampah itu, saya tidak bisa memaafkannya.{/i}"
-
-    anon "{i}Punya teguran? Simpan itu. Biarkan setelah nada.{/i}"
-
+    anon "{i}What's up with that skit? You a call center rep?{/i}"
+    anon "{i}You know you're battling me, right? Okay? Yep?{/i}"
+    anon "{i}Won't try to deny it, your rhyme game is strong,{/i}"
+    anon "{i}I almost understand how these fools thought you belong.{/i}"
+    anon "{i}But that trash-tier trash talk, I just can't condone.{/i}"
+    anon "{i}Got a rebuke? Save it. Leave it after the tone.{/i}"
     show chico f_cocky
     show anon f_normal a_mic with dissolve
-    chad a_crossed "Sial."
-
-    tyrone "Baiklah baiklah."
-
-    chico "Dia menangkapmu, {b}Chad{/b}."
-
-    tyrone "Ya, jaraknya cukup dekat tetapi saya harus memberikan kemenangan kepada darah baru."
-
-    chad f_normal_down a_idle @ a_open "Astaga, itu buruk!"
-
-    chico "Kamu seharusnya mengelap lantai bersamanya, kawan..."
-
-    chad "Ya, saya tahu..."
-
-    chad "Cih, sial!"
-
-    tyrone "{b}Mampirlah satu malam lagi dan kita akan pergi lagi{/b}."
-
-    anon "Baiklah."
-
+    chad a_crossed "Damn."
+    tyrone "Alright, alright."
+    chico "He got you, {b}Chad{/b}."
+    tyrone "Yeah, it's pretty close but I'ma have to give the win to the new blood."
+    chad f_normal_down a_idle @ a_open "Man, that's wack!"
+    chico "You should be wiping the floor with him, homie..."
+    chad "Yeah, I know..."
+    chad "Tch, shit!"
+    tyrone "{b}Swing by another night and we'll go again{/b}."
+    anon "Alright."
     hide anon with dissolve
     return
 
 label park_douches_battle_6:
-    chad f_angry a_mic_speak "{i}Sekolah kembali aktif, sekarang bawa ke kelas,{/i}"
-
-    chad "{i}Kamu gagal lebih keras dariku, dan aku berada jauh di atas rumput!{/i}"
-
-    chad "{i}Apa yang mencuri fokus Anda? Apa yang ada di pikiranmu?{/i}"
-
-    chad "{i}Kerudung kecil berwarna biru dan bagian belakangnya yang mengecewakan?{/i}"
-
-    chad "{i}Tarik napas, lihat sekeliling, saya pikir Anda mungkin menemukannya,{/i}"
-
-    chad "{i}Tanganmu terkunci, dan kamu mulai menjadi buta!{/i}"
-
+    chad f_angry a_mic_speak "{i}School's back in session, now haul it to class,{/i}"
+    chad "{i}You failin' harder than me, and I'm high on grass!{/i}"
+    chad "{i}What's stolen your focus? What's on your mind?{/i}"
+    chad "{i}Little blue riding hood and her disappointing behind?{/i}"
+    chad "{i}Take a breath, look around, I think you might find,{/i}"
+    chad "{i}Your hand's lockin' up, and you're startin' t' go blind!{/i}"
     show chad f_happy a_mic with dissolve
-    chico f_cocky "Sobat, aku tidak tahu betapa pandainya kamu dalam bersajak, tetapi kamu tidak bisa membuang sampah sembarangan..."
-
-    tyrone "Tenang, {b}Chico{/b}... Dia baru saja memulai."
-
-    chico "Pfft, terserah homie."
-
-    tyrone f_normal "Anda harus mengatasinya sekarang, Anda siap?"
-
-    anon "Y-ya, oke."
-
-    tyrone f_smirk "Putar omong kosong itu!"
-
+    chico f_cocky "Man, I dunno how you so good at rhymin' but you can't trash talk for shit..."
+    tyrone "Relax, {b}Chico{/b}... He's just getting started."
+    chico "Pfft, whatever homie."
+    tyrone f_normal "You gotta top it now, you ready?"
+    anon "Y-yeah, okay."
+    tyrone f_smirk "Spin that shit up!"
     return
 
 label park_douches_battle_6_pass:
@@ -814,72 +537,43 @@ label park_douches_battle_6_pass:
     show chico f_cocky
     show tyrone f_smirk
     with fade
-    anon "{i}Mendengar itu, saya tidak yakin, saya yang tunanetra,{/i}"
-
-    anon "{i}Tapi mungkin Anda juga tidak, dengan cara Anda menatap.{/i}"
-
-    anon "{i}Perkataan dan tindakan yang bertentangan, pikiranmu kacau balau,{/i}"
-
-    anon "{i}Bagaimana Anda berhasil sejauh ini dalam hidup, tidak ada yang bisa menebaknya.{/i}"
-
-    anon "{i}Dan jangan khawatir {b}Chad{/b}, tentang sel otak, saya punya banyak,{/i}"
-
-    anon "{i}Aduh, kamu akan terlambat, ini hampir jam 4:20!{/i}"
-
+    anon "{i}Hearing that, I'm not sure, I'm the visually impaired,{/i}"
+    anon "{i}But maybe neither are you, with the way that you stared.{/i}"
+    anon "{i}Conflicting words and actions, your mind's a hot mess,{/i}"
+    anon "{i}How you've made it this far in life, is anyone's guess.{/i}"
+    anon "{i}And don't worry {b}Chad{/b}, of brain cells, I've plenty,{/i}"
+    anon "{i}Oh shit, you're gonna be late, it's almost 4:20!{/i}"
     show chico f_cocky
     show anon f_normal a_mic with dissolve
-    chad f_normal_down a_crossed "Sial."
-
-    tyrone "Baiklah baiklah."
-
-    chico "Keduanya menyebalkan... Kalau boleh jujur."
-
+    chad f_normal_down a_crossed "Damn."
+    tyrone "Alright, alright."
+    chico "Those were both shitty... If I'm being honest."
     show chad f_angry
-    tyrone "Ya, itu cukup dekat."
-
-    tyrone "Saya akan memberikan kemenangan kepada darah baru."
-
-    chad f_normal a_idle @ a_open "Astaga, itu buruk!"
-
-    chico "Kamu seharusnya mengelap lantai bersamanya, kawan..."
-
-    chad f_normal_down "Ya, saya tahu..."
-
-    chad "Cih, sial!"
-
-    tyrone "{b}Mampirlah satu malam lagi dan kita akan pergi lagi{/b}."
-
-    anon "Baiklah."
-
+    tyrone "Yeah, it's pretty close."
+    tyrone "I'ma give the win to the new blood."
+    chad f_normal a_idle @ a_open "Man, that's wack!"
+    chico "You should be wiping the floor with him, homie..."
+    chad f_normal_down "Yeah, I know..."
+    chad "Tch, shit!"
+    tyrone "{b}Swing by another night and we'll go again{/b}."
+    anon "Alright."
     hide anon with dissolve
     return
 
 label park_douches_battle_7:
-    chad f_angry a_mic_speak "{i}Aku meningkatkan rapnya, kamu tidak bisa memegang lilin,{/i}"
-
-    chad "{i}Lihat orang bodoh ini, berdiri di sana dengan sandalnya.{/i}"
-
-    chad "{i}Sungguh menyedihkan, kamu terlihat terjebak dalam kebiasaan,{/i}"
-
-    chad "{i}Sendiri, tragisnya merindukan, mengejar pantat Blue.{/i}"
-
-    chad "{i}Jika wajahmu tidak terlalu serius, mungkin malah lucu,{/i}"
-
-    chad "{i}Saat ini ini tidak menyenangkan, rasanya seperti menendang kelinci.{/i}"
-
+    chad f_angry a_mic_speak "{i}I'm steppin' up the raps, you can't hold a candle,{/i}"
+    chad "{i}Look at this fool, standin' there in his sandals.{/i}"
+    chad "{i}It's proper depressing, you look stuck in a rut,{/i}"
+    chad "{i}Alone, tragically pining, after Blue's butt.{/i}"
+    chad "{i}If your face was less serious it might even be funny,{/i}"
+    chad "{i}Right now this ain't fun, feels like kicking a bunny.{/i}"
     show chad f_happy a_mic with dissolve
-    chico f_cocky "Sobat, aku tidak tahu betapa pandainya kamu dalam bersajak, tetapi kamu tidak bisa membuang sampah sembarangan..."
-
-    tyrone @ f_laugh "Ha ha ha!"
-
-    chico "Sungguh menyakitkan melihat omong kosong ini..."
-
-    tyrone f_normal "Anda harus mengatasinya sekarang, Anda siap?"
-
-    anon "Y-ya, oke."
-
-    tyrone f_smirk "Putar omong kosong itu!"
-
+    chico f_cocky "Man, I dunno how you so good at rhymin' but you can't trash talk for shit..."
+    tyrone @ f_laugh "Hahaha!"
+    chico "It's painful to watch this shit..."
+    tyrone f_normal "You gotta top it now, you ready?"
+    anon "Y-yeah, okay."
+    tyrone f_smirk "Spin that shit up!"
     return
 
 label park_douches_battle_7_pass:
@@ -888,68 +582,41 @@ label park_douches_battle_7_pass:
     show chico f_cocky
     show tyrone f_smirk
     with fade
-    anon "{i}{b}Chad{/b}, tolong. Demi kebaikan kita semua, berhentilah.{/i}"
-
-    anon "{i}Di sini, izinkan saya menghibur Anda: hop, hop-hop.{/i}"
-
-    anon "{i}Aku merasa tidak enak karena kamu tidak bisa bersantai, jadilah lebih laissez-faire,{/i}"
-
-    anon "{i}Dan hilangkan obsesi aneh ini dengan bokong {b}Eve{/b}.{/i}"
-
-    anon "{i}Dan sandalku? Benar-benar? Saya pikir Anda akan membidik lebih tinggi,{/i}"
-
-    anon "{i}Daripada serangan terakhir yang putus asa pada pakaian musimanku.{/i}"
-
-    anon "{i}Jadi kelasmu menyenangkan, sayangnya rapmu jelek,{/i}"
-
-    anon "{i}Saya lulus sekolah ini, sudah berakhir, selamat tinggal {b}Chad{/b}.{/i}"
-
+    anon "{i}{b}Chad{/b}, please. For all our sakes stop.{/i}"
+    anon "{i}Here, let me humor you: hop, hop-hop.{/i}"
+    anon "{i}I feel bad you can't chill, be more laissez-faire,{/i}"
+    anon "{i}And drop this weird obsession with {b}Eve{/b}'s derrière.{/i}"
+    anon "{i}And my sandals? Really? I thought you'd aim higher,{/i}"
+    anon "{i}Than a desperate last stab at my seasonal attire.{/i}"
+    anon "{i}So it's been fun in your class, shame your raps were bad,{/i}"
+    anon "{i}I graduated this school, it's over, goodbye {b}Chad{/b}.{/i}"
     show chico f_cocky
     show anon f_normal a_mic with dissolve
-    chad f_normal_down "Sial."
-
-    tyrone "Baiklah baiklah."
-
-    chico "Saya tidak tahan lagi dengan hal ini."
-
-    tyrone "Ya, saya pikir ini saatnya mengeluarkan senjata besar."
-
-    tyrone "Kamu akan menghadapiku lain kali, gosok!"
-
-    chad f_happy @ a_open "Wah, kamu dalam masalah sekarang {b}[firstname]{/b}..."
-
-    tyrone "{b}Datanglah satu malam lagi, dan kita akan memulainya{/b}!"
-
-    anon "Baiklah."
-
+    chad f_normal_down "Damn."
+    tyrone "Alright, alright."
+    chico "I can't take much more of this."
+    tyrone "Yeah, I think it's time to bring out the big guns."
+    tyrone "You're facing me next time, scrub!"
+    chad f_happy @ a_open "Whoo, you in trouble now {b}[firstname]{/b}..."
+    tyrone "{b}Swing by another night, and we'll get it started{/b}!"
+    anon "Alright."
     hide anon with dissolve
     return
 
 label park_douches_battle_8:
-    tyrone f_angry a_mic_speak "{i}Berhenti di tempat Anda berada! Hei, bekukan! Ambil posisi!{/i}"
-
-    tyrone "{i}Anda akan ditangkap, dituduh memiliki ambisi yang tidak semestinya!{/i}"
-
-    tyrone "{i}Kamu ingin bergabung, mengunyah kruku?{/i}"
-
-    tyrone @ f_smirk "{i}Dan semua yang kamu lakukan, jadi kita berhenti mengganggu Blue?{/i}"
-
-    tyrone "{i}Rasa hormat yang luar biasa, tapi hal itu tidak akan terjadi,{/i}"
-
-    tyrone "{i}Ini taman kami, dan Anda tidak sanggup bertempur.{/i}"
-
+    tyrone f_angry a_mic_speak "{i}Stop where you are! Yo, freeze! Assume the position!{/i}"
+    tyrone "{i}You bein' arrested, charged with undue ambition!{/i}"
+    tyrone "{i}You lookin' to roll up, to chew through my crew?{/i}"
+    tyrone @ f_smirk "{i}And all this you're doing, so we stop hasslin' Blue?{/i}"
+    tyrone "{i}Mad respect dawg, but that shit ain't happ'nin',{/i}"
+    tyrone "{i}This our park, and you not up to battlin'.{/i}"
     show chad f_happy
     show tyrone f_smirk a_mic with dissolve
     chico f_cocky "Dayum!"
-
-    chad @ a_open "Itu mematikan, sial!"
-
-    tyrone "Anda pikir Anda bisa mengatasinya?"
-
-    anon "Y-ya, oke."
-
-    tyrone "Mari kita dengarkan!"
-
+    chad @ a_open "That was killer, dawg!"
+    tyrone "You think you can top it?"
+    anon "Y-yeah, okay."
+    tyrone "Let's hear it!"
     return
 
 label park_douches_battle_8_pass:
@@ -958,65 +625,40 @@ label park_douches_battle_8_pass:
     show chico f_normal
     show tyrone f_smirk
     with fade
-    anon "{i}Saya mengharapkan yang terburuk, berharap yang terbaik,{/i}"
-
-    anon "{i}Tapi itu hanya lelucon, warnai aku: tidak terkesan.{/i}"
-
-    anon "{i}{b}Chico{/b}? {b}Anak{/b}? Ada apa? Orang ini pemimpinmu?{/i}"
-
-    anon "{i}Apa saja persyaratannya? Pemberi dan penerima?{/i}"
-
-    anon "{i}Taman ini sudah menjadi milikku, pertarungan ini sangat seru,{/i}"
-
-    anon "{i}Saya akan meninggalkan kalian sendirian untuk pertandingan tiga arah berikutnya!{/i}"
-
+    anon "{i}I was expectin' the worst, hopin' for the best,{/i}"
+    anon "{i}But that shit was a joke, color me: unimpressed.{/i}"
+    anon "{i}{b}Chico{/b}? {b}Chad{/b}? What up? This guy's your leader?{/i}"
+    anon "{i}What was the requirement? Giver and receiver?{/i}"
+    anon "{i}This park's already mine, this battle's a stomp,{/i}"
+    anon "{i}I'll leave you guys alone for your next three-way romp!{/i}"
     show chico f_cocky
     show chad f_happy
     show anon f_normal a_mic with dissolve
-    chad @ a_open "Wah!"
-
-    chico "Baiklah, itu cukup bagus..."
-
-    tyrone "Ya, tidak buruk sama sekali, Nak!"
-
-    tyrone "Saya ingin mendengar lebih banyak!"
-
-    tyrone "{b}Mampirlah satu malam lagi dan kita akan pergi lagi{/b}."
-
-    anon "Baiklah."
-
+    chad @ a_open "Whoo!"
+    chico "Alright, that was pretty good..."
+    tyrone "Yeah, not bad at all, kid!"
+    tyrone "I wanna hear more!"
+    tyrone "{b}Swing by another night and we'll go again{/b}."
+    anon "Alright."
     hide anon with dissolve
     return
 
 label park_douches_battle_9:
-    tyrone a_mic_speak "{i}Sial, kawan. aku salah menilai kamu. Saya akan memberikan konsesi itu,{/i}"
-
-    tyrone f_angry "{i}Tapi kamu sudah keluar dari kemampuanmu, ini bukan sesi membanting puisi.{/i}"
-
-    tyrone "{i}Pemilik rumah itu cukup menarik, tapi sepertinya dia sendirian,{/i}"
-
-    tyrone f_smirk "{i}Menurutmu dia akan tergoda untuk merendahkanku?{/i}"
-
-    tyrone "{i}Dan cewek yang tinggal bersamamu itu? Ya, dia memiliki penampilan seperti itu,{/i}"
-
-    tyrone "{i}Kamu tahu yang satu itu. Anda bisa menjadi orang yang tidak berguna bagi diri kita sendiri.{/i}"
-
-    tyrone "{i}Goreng kami sesuatu yang enak, di Sabtu pagi yang cerah,{/i}"
-
-    tyrone "{i}Kalau begitu duduklah di pojok, dan saksikan kami membuat film porno.{/i}"
-
+    tyrone a_mic_speak "{i}Well shit, man. I misjudged you. I'll grant that concession,{/i}"
+    tyrone f_angry "{i}But you out of your league, this ain't no poetry slam session.{/i}"
+    tyrone "{i}That landlady's quite somethin', but she seems so alone,{/i}"
+    tyrone f_smirk "{i}Think she'd be tempted to go down my bone?{/i}"
+    tyrone "{i}And that chick that you live with? Yeah, she's got that look,{/i}"
+    tyrone "{i}You know the one. You can be our own personal cuck.{/i}"
+    tyrone "{i}Fry us up something nice, on a bright Saturday morn,{/i}"
+    tyrone "{i}Then sit in the corner, and watch us make porn.{/i}"
     show chad f_happy
     show tyrone a_mic with dissolve
     chico f_cocky "Dayum!"
-
-    chad "Itu mematikan, sial!"
-
-    tyrone f_normal "Anda pikir Anda bisa mengatasinya?"
-
-    anon "Y-ya, oke."
-
-    tyrone f_smirk "Mari kita dengarkan!"
-
+    chad "That was killer, dawg!"
+    tyrone f_normal "You think you can top it?"
+    anon "Y-yeah, okay."
+    tyrone f_smirk "Let's hear it!"
     return
 
 label park_douches_battle_9_pass:
@@ -1025,61 +667,35 @@ label park_douches_battle_9_pass:
     show chico f_normal
     show tyrone f_smirk
     with fade
-    anon "{i}Rasakan baja dinginku, kamu membuatku terpicu secara lirik,{/i}"
-
-    anon "{i}Apa pun yang Anda harapkan, itu tidak seperti yang Anda bayangkan.{/i}"
-
-    anon "{i}Perasaan itu sendirian? Tidak, sial, itu kamu. Anda memproyeksikan,{/i}"
-
-    anon "{i}Sangat tidak ingin merasakan apa yang Anda curigai.{/i}"
-
-    anon "{i}Bahwa kamu duduk di sini, di taman ini, hari demi hari,{/i}"
-
-    anon "{i}Berjuang sekuat tenaga, untuk mengusir kebosanan.{/i}"
-
-    anon "{i}Mencoba untuk tidak menyerah pada ketakutan eksistensial itu,{/i}"
-
-    anon "{i}Bahwa kamu sendirian, tidak ada yang peduli, lebih baik kamu mati saja.{/i}"
-
-    anon "{i}Kamu berharap ada satu orang saja yang peduli,{/i}"
-
-    anon "{i}Tapi apakah mengherankan jika kamu bertingkah seperti ini?{/i}"
-
-    anon "{i}Kecemburuan itu terlihat jelas, sungguh menyesakkan,{/i}"
-
-    anon "{i}Namun kamu membongkar barang-barang kesayanganmu seperti barang sepele berisi jeli.{/i}"
-
-    anon "{i}Trio kecil yang menyedihkan ini, mengejek orang lain,{/i}"
-
-    anon "{i}Terjebak dalam keadaan statis, sendirian; kelompok yang paling tragis.{/i}"
-
-    anon "{i}Tidak pernah melakukan apa pun selain nongkrong di taman ini,{/i}"
-
-    anon "{i}Bertanya-tanya apa yang harus dilakukan dengan masa depan yang begitu sulit.{/i}"
-
+    anon "{i}Feel my cold steel, you've left me lyrically triggered,{/i}"
+    anon "{i}Whatever you were expectin', it ain't what you figured.{/i}"
+    anon "{i}That feeling alone? Naw, dawg, that's you. You projectin',{/i}"
+    anon "{i}Desperately not wantin' to feel what you're suspectin'.{/i}"
+    anon "{i}That you sit here, in this park, day after day,{/i}"
+    anon "{i}Fightin' ever so hard, to keep boredom at bay.{/i}"
+    anon "{i}Tryin' not to succumb to that existential dread,{/i}"
+    anon "{i}That you're alone, no one cares, that you're better off dead.{/i}"
+    anon "{i}You wish you had even one person give a shit,{/i}"
+    anon "{i}But is it any wonder when you act like this dick?{/i}"
+    anon "{i}The jealously is palpable, hell it's goddamn stiflin',{/i}"
+    anon "{i}Yet you unload at loved ones like it's jelly-filled triflin'.{/i}"
+    anon "{i}This sad little trio, taunting others for kicks,{/i}"
+    anon "{i}Stuck in stasis, all alone; the most tragic of cliques.{/i}"
+    anon "{i}Never doing anything but hanging out in this park,{/i}"
+    anon "{i}Wondering whatever to do with a future so stark.{/i}"
     pause
-    anon "{i}Lampu padam, pikiranmu jurang menganga,{/i}"
-
-    anon "{i}Berdiri di sana, tegak tak dapat membayangkan.{/i}"
-
-    anon "{i}Izinkan saya membantu dengan sederhana, \"Oh ya, benar!\"{/i}"
-
-    anon "{i}Tapi hei, tenang saja, tidak ada personel{#sic}, Nak.{/i}"
-
+    anon "{i}The light's gone out, your mind's a gaping chasm,{/i}"
+    anon "{i}Stood there, straight up unable to fathom.{/i}"
+    anon "{i}Allow me to assist with a simple, \"Oh yes he did!\"{/i}"
+    anon "{i}But hey, take it easy, nothin' personnel{#sic}, kid.{/i}"
     show chico f_cocky
     show anon f_normal a_mic with dissolve
-    chad f_happy @ f_laugh "Wah!"
-
-    chico "Baiklah, itu cukup bagus..."
-
-    tyrone "Ya, tidak buruk sama sekali, Nak!"
-
-    tyrone "Saya ingin mendengar lebih banyak!"
-
-    tyrone "{b}Mampirlah satu malam lagi dan kita akan pergi lagi{/b}."
-
-    anon "Baiklah."
-
+    chad f_happy @ f_laugh "Whoo!"
+    chico "Alright, that was pretty good..."
+    tyrone "Yeah, not bad at all, kid!"
+    tyrone "I wanna hear more!"
+    tyrone "{b}Swing by another night and we'll go again{/b}."
+    anon "Alright."
     hide anon with dissolve
     return
 
@@ -1093,56 +709,33 @@ label park_douches_battle_10_pass:
     show chico
     show tyrone f_smirk
     with fade
-    anon "{i}Saya akan menghentikan Anda sampai di situ, sudah jelas bahwa Anda sudah selesai.{/i}"
-
-    anon "{i}Kamu langsung keluar dari rap, dan aku mendapat banyak sekali.{/i}"
-
-    anon "{i}Jadi aku akan naik perahumu dan berlayar ke laut rap.{/i}"
-
-    anon "{i}Tak terkalahkan dan tak terbantahkan, MC terbaik.{/i}"
-
-    anon "{i}Saya telah mengalahkan kru Anda dan sekarang Anda tunduk,{/i}"
-
-    anon "{i}Lihat aku jalang, aku kaptennya sekarang.{/i}"
-
+    anon "{i}I'ma stop you right there, it's clear that you're done.{/i}"
+    anon "{i}You're straight outta raps, and I got a ton.{/i}"
+    anon "{i}So I'll take your boat and sail to rap sea.{/i}"
+    anon "{i}Undefeated and undisputed, the best MC.{/i}"
+    anon "{i}I've defeated your crew and now you bow,{/i}"
+    anon "{i}Look at me bitch, I'm the captain now.{/i}"
     show chad f_happy
     show chico f_cocky
     show anon f_normal a_mic with dissolve
-    tyrone @ f_laugh "Ha ha ha!"
-
-    tyrone "Baiklah, baiklah, kamu menang..."
-
-    chad "Itu obat bius!"
-
-    tyrone "Benar?"
-
-    tyrone "Saya suka anak ini."
-
-    chico @ f_eyeroll "Astaga, dia baik-baik saja..."
-
-    tyrone "Kamu bisa jalan-jalan bersama kami kapan saja kamu mau, kamu mengerti?"
-
-    anon "Apakah itu berarti kalian akan meninggalkan temanku sendirian?"
-
-    tyrone f_normal "Siapa?"
-
+    tyrone @ f_laugh "Hahaha!"
+    tyrone "Alright, alright, you win..."
+    chad "That was dope!"
+    tyrone "Right?"
+    tyrone "I like this kid."
+    chico @ f_eyeroll "Man, he's aight..."
+    tyrone "You can hang out with us whenever you want, you feel me?"
+    anon "Do that mean you guys gonna leave my friend alone?"
+    tyrone f_normal "Who?"
     pause
-    tyrone a_hands_rub "Berkerudung biru kecil?"
-
+    tyrone a_hands_rub "Little blue riding hood?"
     chad @ f_laugh "Haha!"
-
-    anon "Namanya {b}Hawa{/b}..."
-
-    tyrone f_smirk a_idle "Ya, siapa pun itu."
-
-    tyrone "Kami akan meninggalkan gadismu sendirian."
-
-    anon "Bagus."
-
-    tyrone "Datang saja dan sampaikan sajak bersama kami lagi kapan-kapan, oke?"
-
-    anon "Kita lihat saja nanti."
-
+    anon "Her name is {b}Eve{/b}..."
+    tyrone f_smirk a_idle "Yeah, whatever man."
+    tyrone "We'll leave your girl alone."
+    anon "Good."
+    tyrone "Just come by and spit some rhymes with us again sometime, alright?"
+    anon "We'll see."
     hide anon with dissolve
     return
 
@@ -1152,13 +745,10 @@ label park_douches_battle_fail:
     show chico f_cocky
     show tyrone f_smirk
     with fade
-    anon "Omong kosong."
-
-    chico "Hehe, menyedihkan."
-
+    anon "Crap."
+    chico "Heh, pathetic."
     show anon f_worried
-    chad "Lihat, aku tahu ini hanya membuang-buang waktu!"
-
+    chad "See, I knew this was a waste of time!"
     if player.stats.chr() < 7:
         show tyrone:
             tyrone_front
@@ -1167,21 +757,14 @@ label park_douches_battle_fail:
         show chico behind tyrone:
             chico_back
         with dissolve
-    tyrone @ a_point "Itu omong kosong yang lemah, kawan..."
-
-    tyrone "Kamu harus segera keluar dari sini!"
-
-    anon @ a_point_self "Tidak, tunggu... Biarkan saya coba lagi!"
-
-    chico f_angry "Anda tidak akan mendapatkan pengulangan dalam pertarungan rap."
-
-    chico "Tersesat!"
-
+    tyrone @ a_point "That was some weak shit, man..."
+    tyrone "You need to get up on out of here!"
+    anon @ a_point_self "No, wait... Let me try again!"
+    chico f_angry "You don't get no fucking redos in a rap battle man."
+    chico "Get lost!"
     anon f_sad_down @ -m_talk "..."
-    anon f_worried "Baiklah, tapi aku akan kembali lagi besok!"
-
-    tyrone f_normal "Cih, siapa pun pria..."
-
+    anon f_worried "Fine, but I'm coming back tomorrow!"
+    tyrone f_normal "Tch, whatever man..."
     hide anon with dissolve
     return
 
@@ -1198,26 +781,16 @@ label park_douches_eve_tuuku_with_douches_repeat:
         flip
         xoffset 100
     with dissolve
-    tuuku "Roti Domba?"
-
-    tuuku "Sangat asam?"
-
-    tuuku "Putri Ungu?"
-
-    tuuku "LA Rahasia?"
-
-    chad "Yo, dia pasti mengada-ada!"
-
-    tuuku "Permen Mars?"
-
-    tuuku "Platina Jack?"
-
-    tuuku "Berlian Putih?"
-
-    anon @ -m_talk "(Saya mungkin harus fokus pada peran saya dalam lelucon ini.)"
-
-    anon @ -m_talk "(Sekarang di mana {b}ransel mereka{/b} berada? )"
-
+    tuuku "Lambs Bread?"
+    tuuku "Super Sour?"
+    tuuku "Purple Princess?"
+    tuuku "L.A. Confidential?"
+    chad "Yo, he's gotta be making this shit up!"
+    tuuku "Martian Candy?"
+    tuuku "Platinum Jack?"
+    tuuku "White Diamond?"
+    anon @ -m_talk "( I should probably focus on my part in this prank. )"
+    anon @ -m_talk "( Now where are {b}their backpacks{/b} at? )"
     hide anon with dissolve
     return
 
@@ -1234,81 +807,49 @@ label park_douches_eve_tuuku_with_douches_first:
         flip
         xoffset 100
     with dissolve
-    tuuku "Anda benar-benar perlu mengembangkan lebih banyak teman..."
-
-    tyrone "Ck, nah kawan."
-
-    tyrone "Anda tahu saya hanya merokok OG Kryptonite itu!"
-
-    chico "Ya, itu bomnya!!!"
-
-    tuuku "Namun, ada begitu banyak strain lainnya, dan semuanya memberi Anda sensasi yang berbeda!"
-
-    tuuku "Apakah kamu tidak ingin mencoba Cherry Kush atau Blue Haze?"
-
-    chad "Beneran biru?"
-
+    tuuku "You really need to branch out more fellas..."
+    tyrone "Tsk, nah man."
+    tyrone "You know I only smoke that Kryptonite OG!"
+    chico "Yeah, that shit's the bomb!!!"
+    tuuku "There's so many other strains though, and they all give you a different high!"
+    tuuku "Don't you wanna try some Cherry Kush or Blue Haze?"
+    chad "Is it really blue?"
     tuuku f_confused @ -m_talk "Hmm?"
-
-    chad "Kamu bilang Blue Haze... Apakah itu benar-benar biru?"
-
-    tuuku "Apa, suka warnanya?"
-
-    chad "Ya?"
-
+    chad "You said Blue Haze... Is it really blue?"
+    tuuku "What, like the color?"
+    chad "Yeah?"
     show tyrone f_angry:
         flip
         xoffset 300
     with dissolve
     show tuuku f_happy
-    tyrone @ a_point "Ya ampun, tentu saja warnanya bukan biru!"
-
-    tyrone "Apa yang salah denganmu?!"
-
-    chad f_angry "Astaga, bagaimana aku bisa tahu?!"
-
+    tyrone @ a_point "Man, of course it ain't blue!"
+    tyrone "The fuck is wrong with you?!"
+    chad f_angry "Man, how am I supposed to know?!"
     show tyrone:
         unflip
         xoffset -150
-    tyrone "Apa lagi yang kamu punya?"
-
+    tyrone "What else you got?"
     show chad f_normal
-    tuuku "Hmm, Cali Emas?"
-
-    tyrone "Ahh, tidak."
-
-    tyrone "Sialan itu membuatku muncrat terakhir kali."
-
+    tuuku "Hmm, Cali Gold?"
+    tyrone "Ahh, hell no."
+    tyrone "That shit gave me the squirts last time."
     show tuuku f_laugh
-    chad @ f_normal_down "Pfft, aku yakin itu burrito yang kamu dapat di pom bensin, dawg."
-
-    tyrone "Bung, diamlah!"
-
-    tuuku f_confused "Pengendara banteng?"
-
-    tyrone f_normal "Tidak."
-
-    tuuku "Keluaran?"
-
-    tyrone "Tidak uh."
-
+    chad @ f_normal_down "Pfft, I'm pretty sure that was the burrito you got at the gas station, dawg."
+    tyrone "Man, shut up!"
+    tuuku f_confused "Bullrider?"
+    tyrone f_normal "Nah."
+    tuuku "Exodus?"
+    tyrone "Nuh uh."
     show anon f_surprised
-    tuuku "Fantasi Asia?"
-
-    chico "Astaga, berapa banyak strain yang kamu punya?!"
-
-    tuuku "Kera Anggur?"
-
-    tuuku "Naga Menyala?"
-
-    tuuku "sigung lemon?"
-
-    chad @ f_laugh "Ha ha ha!"
-
-    anon f_worried @ -m_talk "(Saya mungkin harus fokus pada peran saya dalam lelucon ini.)"
-
-    anon @ -m_talk "(Sekarang di mana {b}ransel mereka{/b} berada? )"
-
+    tuuku "Asian Fantasy?"
+    chico "Jesus, how many strains you got?!"
+    tuuku "Grape Ape?"
+    tuuku "Flaming Dragon?"
+    tuuku "Lemon Skunk?"
+    chad @ f_laugh "Hahaha!"
+    anon f_worried @ -m_talk "( I should probably focus on my part in this prank. )"
+    anon @ -m_talk "( Now where are {b}their backpacks{/b} at? )"
     hide anon with dissolve
     return
 # Decompiled by unrpyc: https://github.com/CensoredUsername/unrpyc

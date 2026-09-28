@@ -26,7 +26,7 @@ init python hide in diary:
             with open(fn, encoding='utf8') as f:
                 extra[key + fn[offset:-4]] = parse(f)
 
-    data = extra.pop(key + 'default')
+    data = extra.pop(key + 'default', ())
 
 
     def pages():

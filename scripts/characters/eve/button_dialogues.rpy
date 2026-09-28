@@ -1,17 +1,13 @@
 label button_eve_sexy_time:
     scene expression player.location.background_blur with None
     show anon with dissolve
-    anon "Hei kamu."
-
+    anon "Hey, you."
     eve "!!!"
     show eve b_undies f_happy
     with dissolve
-    eve "Aku sudah menunggumu!"
-
+    eve "I've been waiting for you!"
     anon "Oh?"
-
-    anon "Apa yang terjadi-"
-
+    anon "What's goin-"
     hide anon
     show eve b_undies_kiss
     with dissolve
@@ -20,15 +16,11 @@ label button_eve_sexy_time:
     show anon
     show eve b_undies f_happy
     with dissolve
-    anon "Heh, kamu hanya ingin langsung membahasnya, ya?"
-
-    eve f_sexy "Ya!"
-
+    anon "Heh, you just wanna get right into it, huh?"
+    eve f_sexy "Yes!"
     pause
-    eve "Naiklah ke tempat tidur."
-
-    anon @ a_behind_head "O-oke."
-
+    eve "Get on the bed."
+    anon @ a_behind_head "O-okay."
     scene expression player.location.background_closeup with None
     show anon b_onbed_sit f_flirt
     show eve f_sexy b_onbed_top_remove3 with dissolve
@@ -43,178 +35,109 @@ label button_eve_sexy_time:
     hide anon
     show eve b_onbed_cuddle_naked_kiss o_dick
     with dissolve
-    eve "MM."
-
+    eve "Mmm."
     show eve b_onbed_cuddle_naked f_happy
     show anon b_empty_eve_onbed_cuddle f_flirt_low zorder 1
     with dissolve
     pause
-    anon "Wow, kamu agresif sekali malam ini!"
-
-    eve "Hehe, maaf."
-
+    anon "Wow, you are really aggressive tonight!"
+    eve "Hehe, sorry."
     pause
-    eve "Anda tahu, {b}[firstname]{/b}, saya sedang berpikir..."
-
+    eve "You know, {b}[firstname]{/b}, I've been thinking..."
     pause
-    eve "... Kamu seperti, orang yang paling menakjubkan di dunia."
-
-    anon "Aku tidak tahu tentang itu..."
-
-    eve "Tidak, aku serius!"
-
-    eve "Kamu pintar, lucu, baik hati, bijaksana..."
-
+    eve "... You're like, the most amazing person in the world."
+    anon "I dunno about that..."
+    eve "No, I'm serious!"
+    eve "You're smart, funny, kind, thoughtful..."
     pause
-    eve "Dan sungguh, BENAR-BENAR, panas!"
-
-    anon "Haha, kamu pikir aku seksi?"
-
+    eve "And really, REALLY, hot!"
+    anon "Haha, you think I'm hot?"
     eve "Duh!"
-
     pause
-    eve "A-dan aku ingin kamu menjadi yang pertama bagiku..."
-
-    anon f_worried_low "Yang pertama?"
-
+    eve "A-and I want you to be my first..."
+    anon f_worried_low "Your first?"
     pause
-    anon "Pertamamu apa?"
-
-    eve @ f_thinking_down "Cih."
-
-    eve "Saya bertanya apakah Anda ingin berhubungan seks dengan saya, {b}[firstname]{/b}..."
-
+    anon "Your first what?"
+    eve @ f_thinking_down "Tch."
+    eve "I'm asking if you wanna have sex with me, {b}[firstname]{/b}..."
     anon @ f_surprised "!!!" with hpunch
-    anon "Benar-benar?!"
-
-    eve f_thinking_down "Maksudku, kita tidak perlu... Aku hanya berpikir-"
-
-    anon f_flirt_low "Tentu saja aku tahu!"
-
-    eve f_happy "Ya?"
-
-    anon "Tentu saja."
-
-    eve "Hehe, bagus!"
-
+    anon "Really?!"
+    eve f_thinking_down "I mean, we don't have to... I just thought-"
+    anon f_flirt_low "Of course I do!"
+    eve f_happy "Yeah?"
+    anon "Definitely."
+    eve "Hehe, good!"
     $ M_eve.set('sex speed', .4)
     show eve a_jerk o_empty with dissolve
     pause
-    anon "Sekarang?"
-
-    eve "Sekarang."
-
-    anon "{i}*Gulp*{/i} Oke."
-
+    anon "Right now?"
+    eve "Right now."
+    anon "{i}*Gulp*{/i} Okay."
     jump eve_sex_back_first_intro
 
 label button_eve_maybe_another_time:
-    anon f_worried "Aku ingin sekali, tapi kelasku tertinggal jauh... Itu mungkin ide yang buruk."
-
-    eve f_sad_down "Ya, saya mengerti."
-
+    anon f_worried "I'd love to but I'm so far behind in my classes... It's probably a bad idea."
+    eve f_sad_down "Yeah, I understand."
     pause
-    eve f_happy "Kami akan melakukannya lain kali."
-
-    anon f_normal "Untuk ya."
-
+    eve f_happy "We'll do it another time."
+    anon f_normal "For sure."
     return
 
 label button_eve_nevermind_roof:
-    anon f_worried "Aku mungkin harus pulang."
-
-    eve f_normal "Senang bertemu denganmu, {b}[firstname]{/b}."
-
-    anon "Ya, kamu juga."
-
-    eve "Nanti."
-
-    anon @ a_wave "Sampai jumpa, {b}Malam{/b}."
-
+    anon f_worried "I should probably get home."
+    eve f_normal "It was nice seeing you, {b}[firstname]{/b}."
+    anon "Yeah, you too."
+    eve "Later."
+    anon @ a_wave "Bye, {b}Eve{/b}."
     hide anon with dissolve
     return
 
 label button_eve_ill_be_there:
-    anon "Saya akan berada di sana."
-
-    eve @ f_laugh "Ya, hehe!"
-
-    eve f_sexy "Kita bisa masuk ke kamarku dan {i}waktu sendirian{/i}, jika kamu mengerti maksudku?"
-
-    anon f_flirt "Waktunya sendiri, ya?"
-
+    anon "I'll be there."
+    eve @ f_laugh "Yay, hehe!"
+    eve f_sexy "We can go into my room and have some {i}alone time{/i}, if you know what I mean?"
+    anon f_flirt "Alone time, huh?"
     eve @ -m_talk "Mmhmm."
-
-    anon "Saya suka suaranya."
-
-    eve "Saya pikir Anda mungkin melakukannya."
-
+    anon "I like the sound of that."
+    eve "I thought you might."
     return
 
 label button_eve_how_are_odette_and_grace:
-    anon "Bagaimana {b}Odette{/b} dan {b}Grace{/b}?"
-
-    eve "Oh, mereka baik-baik saja!"
-
-    eve "{b}Grace{/b} memiliki lebih banyak waktu luang sejak {b}Odette{/b} mulai membantu, dan kami sebenarnya menghabiskan waktu bersama {b}di malam hari{/b}."
-
-    anon @ f_laugh "Itu luar biasa!"
-
-    eve "Ya, benar."
-
-    eve @ f_eyeroll "Sekarang jika saya bisa membuat mereka berhenti berhubungan seks di seluruh rumah, segalanya akan menjadi sempurna."
-
-    anon f_surprised "S-seks?"
-
-    eve @ f_eyeroll "Ya, maksudku, di mana-mana... Dan mereka tidak punya rasa malu!"
-
-    eve f_angry "Kemarin aku berjalan masuk saat adikku sedang menjilati benda kotor {b}Odette{/b} di dapur kami!"
-
-    anon f_flirt "B-benarkah?"
-
-    eve "Dia telanjang bulat di atas meja dan segalanya!"
-
-    anon "{i}*Gulp*{/i} Kedengarannya... Umm... Menjengkelkan?"
-
-    eve "Ini sangat menjengkelkan."
-
-    eve "Saya biasa makan pop-tart saya di sana!"
-
-    eve f_sad "{i}*Huh*{/i}"
-
-    eve "Tidak lagi..."
-
+    anon "How are {b}Odette{/b} and {b}Grace{/b}?"
+    eve "Oh, they're doing great!"
+    eve "{b}Grace{/b} has a lot more free time since {b}Odette{/b} started helping out, and we've actually been spending time together {b}in the evenings{/b}."
+    anon @ f_laugh "That's wonderful!"
+    eve "Yeah, it is."
+    eve @ f_eyeroll "Now if I could just get them to stop having sex all over the house, things would be perfect."
+    anon f_surprised "S-sex?"
+    eve @ f_eyeroll "Yeah, I mean, literally everywhere... And they have no shame!"
+    eve f_angry "Yesterday I walked in on my sister licking {b}Odette{/b}'s dirty snatch in our kitchen!"
+    anon f_flirt "R-really?"
+    eve "She had her bare ass up on the counter and everything!"
+    anon "{i}*Gulp*{/i} That sounds... Umm... Annoying?"
+    eve "It's super annoying."
+    eve "I used to eat my pop-tarts there!"
+    eve f_sad "{i}*Sigh*{/i}"
+    eve "Not anymore..."
     show anon f_flirt_grin
     pause .5
     show anon f_normal
     return
 
 label button_eve_nah_i_like_to_watch_you:
-    anon f_worried "Tidak, aku suka memperhatikanmu."
-
-    eve f_surprised "Anda suka memperhatikan saya, ya?"
-
-    anon f_normal "Itu menyenangkan."
-
-    eve f_sexy "Anda tahu, di luar konteks, kedengarannya sangat kotor..."
-
+    anon f_worried "Nah, I like to watch you."
+    eve f_surprised "You like to watch me, huh?"
+    anon f_normal "It's fun."
+    eve f_sexy "You know, out of context, that sounds really dirty..."
     anon f_confused @ -m_talk "Hmm?"
-
-    eve @ f_laugh "Hehe, sudahlah."
-
-    eve "Ayo duduk."
-
+    eve @ f_laugh "Hehe, never mind."
+    eve "Come sit down."
     show anon f_normal
-    eve "Aku akan menaikkan peringkat {b}Cindel{/b}ku."
-
-    anon @ f_confused "Apa itu gadis bertangan empat?"
-
-    eve "Bukan, dialah yang berteriak dan memiliki rambut seperti {b}Odette{/b}."
-
-    anon "Oh benar."
-
-    anon @ f_laugh "Dingin!"
-
+    eve "I'm about to rank up my {b}Cindel{/b}."
+    anon @ f_confused "Is that the girl with the four arms?"
+    eve "No, it's the one who screams and has hair like {b}Odette{/b}."
+    anon "Oh, right."
+    anon @ f_laugh "Cool!"
 
     scene location_tattoo_bedroom_cutscene06
     show text _ ("It was fun watching {b}Eve{/b} beat up on someone else for a change...\nShe almost never lost a match.") as caption
@@ -228,32 +151,19 @@ label button_eve_nah_i_like_to_watch_you:
     show anon
     show eve b_undies f_happy
     with fade
-    eve "Sedang apa aku sekarang?"
-
-    anon "Lima puluh tiga kemenangan dan dua kekalahan..."
-
-    eve f_surprised "Lima puluh tiga?!"
-
-    eve f_normal "Ya Tuhan, jam berapa sekarang?"
-
-    anon "Sekarang jam setengah sepuluh."
-
-    eve f_happy @ f_eyeroll "Aduh, kawan... Aku benar-benar lupa waktu!"
-
-    anon "Ya, aku mungkin harus mulai pulang."
-
-    eve f_sad_down "Maaf kami tidak melakukan sesuatu yang nakal..."
-
-    anon "Tidak apa-apa."
-
-    anon "Saya senang melihat Anda memukuli orang secara online!"
-
-    eve f_sad "Aku akan menebusnya lain kali, oke?"
-
-    anon @ f_laugh "Tentu, tidak sabar!"
-
-    eve f_happy @ f_laugh "hehe!"
-
+    eve "What am I at now?"
+    anon "Fifty-three wins and two loses..."
+    eve f_surprised "Fifty-three?!"
+    eve f_normal "Oh my god, what time is it?"
+    anon "It's half past ten."
+    eve f_happy @ f_eyeroll "Aww, man... I completely lost track of time!"
+    anon "Yeah, I should probably start heading home."
+    eve f_sad_down "I'm sorry we didn't do anything naughty..."
+    anon "That's okay."
+    anon "I had fun watching you beat up people online!"
+    eve f_sad "I'll make it up to you next time, okay?"
+    anon @ f_laugh "Sure, can't wait!"
+    eve f_happy @ f_laugh "Hehe!"
     hide anon
     show eve b_undies_kiss1
     with dissolve
@@ -261,34 +171,22 @@ label button_eve_nah_i_like_to_watch_you:
     show eve b_undies
     show anon
     with dissolve
-    eve "Sampai jumpa besok?"
-
-    anon "Tentu saja."
-
-    eve "Selamat malam, {b}[firstname]{/b}."
-
-    anon @ a_wave "Selamat malam, {b}Malam{/b}."
-
+    eve "I'll see you tomorrow?"
+    anon "Of course."
+    eve "Goodnight, {b}[firstname]{/b}."
+    anon @ a_wave "Goodnight, {b}Eve{/b}."
     hide anon with dissolve
     return
 
 label button_eve_i_should_go:
-    anon f_worried "Sial, aku baru ingat."
-
+    anon f_worried "Crap, I just remembered."
     eve @ -m_talk "Hmm?"
-
-    anon "Aku seharusnya berada di suatu tempat."
-
-    eve f_sad "Anda akan pergi?"
-
-    anon "Ya maaf."
-
-    anon "Pemeriksaan hujan saat sendirian?"
-
-    eve f_sad_down "Y-ya, oke."
-
-    anon "Terima kasih."
-
+    anon "I'm supposed to be somewhere."
+    eve f_sad "You're leaving?"
+    anon "Yeah, sorry."
+    anon "Rain check on the alone time?"
+    eve f_sad_down "Y-yeah, okay."
+    anon "Thanks."
     hide anon
     show eve b_undies_kiss1
     with dissolve
@@ -296,46 +194,30 @@ label button_eve_i_should_go:
     show eve b_undies
     show anon
     with dissolve
-    anon "Ngomong-ngomong, kamu terlihat luar biasa!"
-
-    eve f_happy @ f_laugh "Hehe, terima kasih!"
-
-    anon @ a_wave "Aku akan menemuimu nanti, oke?"
-
-    eve "Sampai jumpa, {b}[firstname]{/b}."
-
+    anon "You look amazing by the way!"
+    eve f_happy @ f_laugh "Hehe, thanks!"
+    anon @ a_wave "I'll catch you later, okay?"
+    eve "See ya, {b}[firstname]{/b}."
     hide anon with dissolve
     return
 
 label button_eve_how_come_not_at_the_park:
-    anon "Kenapa kamu tidak ada di taman?"
-
-    eve f_sad_down @ f_eyeroll "{b}Grace{/b} tidak ingin aku berada di sana lagi setelah gelap."
-
+    anon "How come you're not at the park?"
+    eve f_sad_down @ f_eyeroll "{b}Grace{/b} doesn't want me there after dark anymore."
     anon f_worried "Oh."
-
-    anon "Masalah narkoba?"
-
-    eve "Ya."
-
+    anon "The drug thing?"
+    eve "Yeah."
     pause
-    eve f_normal @ a_point "Sisi baiknya, saya tidak perlu khawatir tentang {b}Tyrone{/b} dan teman-teman bajingannya yang mengganggu saya di sini."
-
-    anon @ f_laugh "Hehe, itu benar."
-
-    eve "Mungkin saya benar-benar bisa menyelesaikan beberapa gambar."
-
+    eve f_normal @ a_point "On the bright side, I don't have to worry about {b}Tyrone{/b} and his douchebag friends annoying me here."
+    anon @ f_laugh "Heh, that's true."
+    eve "Maybe I can actually get some drawings done."
     return
 
 label button_eve_business_doing_any_better:
-    anon "Bisnis menjadi lebih baik?"
-
-    eve f_happy "Ya, selebaran itu sukses besar!"
-
-    eve "Kami memiliki lebih banyak pelanggan yang datang sejak Anda membagikannya."
-
-    anon "Itu luar biasa!"
-
+    anon "Business doing any better?"
+    eve f_happy "Yeah, those flyers were a huge hit!"
+    eve "We've had a lot more customers coming in since you handed them out."
+    anon "That's wonderful!"
     return
 
 label eve_dialogue_intro_roof:
@@ -343,10 +225,8 @@ label eve_dialogue_intro_roof:
     show anon
     show eve
     with dissolve
-    anon "{b}Malam{/b}?"
-
-    eve @ f_laugh "Hai, {b}[firstname]{/b}!"
-
+    anon "{b}Eve{/b}?"
+    eve @ f_laugh "Hey, {b}[firstname]{/b}!"
     hide eve
     show anon b_hug_eve f_shy_down
     with dissolve
@@ -354,234 +234,148 @@ label eve_dialogue_intro_roof:
     show anon b_dressed f_normal
     show eve f_happy
     with dissolve
-    anon "Apa yang kamu lakukan di sini?"
-
-    eve "Oh, hanya orang-orang yang menonton..."
-
-    anon "Temukan sesuatu yang menarik?"
-
-    eve f_normal @ f_eyeroll "Tidak, tidak juga."
-
-    eve "Ugh, kota ini terkadang sangat membosankan..."
-
+    anon "What are you doing up here?"
+    eve "Oh, just people watching..."
+    anon "Find anything interesting?"
+    eve f_normal @ f_eyeroll "No, not really."
+    eve "Ugh, this town is so boring sometimes..."
     return
 
 label button_eve_art_project:
-    anon "Jadi {b}Nona Ross{/b} senang dengan gambar yang kita buat bersama?"
-
-    eve f_happy @ f_laugh "Yup, dia menyukainya!"
-
-    eve "Memberiku pidato panjang tentang betapa bangganya dia telah membantuku menemukan kecantikan batinku..."
-
-    anon @ f_confused "Itu umm... Hebat?"
-
-    eve "Saya senang akhirnya selesai dan saya bisa menggambar sesuatu selain potret diri untuk sementara waktu!"
-
-    eve @ f_eyeroll "Sumpah, wanita itu lebih gila dari kotoran tupai!"
-
-    anon @ f_laugh "{i}*Mendengus*{/i} Haha!"
-
+    anon "So {b}Miss Ross{/b} was happy with the drawing we made together?"
+    eve f_happy @ f_laugh "Yup, she loved it!"
+    eve "Gave me this long speech about how proud she was to have helped me find my inner beauty..."
+    anon @ f_confused "That's umm... Great?"
+    eve "I'm just glad it's finally over and I can draw something other than self-portraits for a while!"
+    eve @ f_eyeroll "I swear, that woman is nuttier than squirrel poop!"
+    anon @ f_laugh "{i}*Snort*{/i} Haha!"
     return
 
 label button_eve_hows_everyone_at_home:
-    anon "Bagaimana kabar semua orang di rumah?"
-
-    eve f_normal "Oh, tahukah Anda... Sama saja, sama lamanya."
-
-    eve "{b}Grace{/b} bekerja terlalu keras dan khawatir dengan tagihan."
-
-    eve "{b}Tuuku{/b} melakukan yang terbaik untuk memastikan semua kepala pot di Summerville mendapatkan perbaikannya."
-
-    eve "Dan {b}Odette{/b} membeli seluruh seri {i}False Blood{/i}, dan menontonnya secara berlebihan di toko setiap hari."
-
-    anon f_surprised "{i}Darah Palsu{/i}?"
-
-    eve @ f_eyeroll "Ya, itu acara tentang vampir seksi."
-
-    eve "BANYAK ketelanjangan jadi, tentu saja, dia menyukainya."
-
-    anon f_flirt "Ya, itu masuk akal."
-
+    anon "How's everyone at home?"
+    eve f_normal "Oh, you know... Same old, same old."
+    eve "{b}Grace{/b} is working herself too hard and freaking out about bills."
+    eve "{b}Tuuku{/b} is doing his best to make sure all the pot heads in Summerville are getting their fix."
+    eve "And {b}Odette{/b} bought the entire series of {i}False Blood{/i}, and has been binge-watching it in the shop every day."
+    anon f_surprised "{i}False Blood{/i}?"
+    eve @ f_eyeroll "Yeah, it's some show about sexy vampires."
+    eve "TONS of nudity so, of course, she loves it."
+    anon f_flirt "Yeah, that makes sense."
     show anon f_normal
     return
 
 label button_eve_something_simple:
-    anon @ f_confused "Sesuatu yang sederhana?"
-
-    eve "Terakhir kali dia menyuruh kami melukis hanya dengan menggunakan kaki kami."
-
-    anon f_surprised "Dengan serius?"
-
-    eve @ f_eyeroll "Ya, katanya itu akan membuka cakra kita dan membawa keseimbangan pada jiwa kita atau semacam omong kosong..."
-
-    eve "Saya pikir dia hanya memiliki fetish kaki."
-
+    anon @ f_confused "Something simple?"
+    eve "Last time she made us paint a picture using only our feet."
+    anon f_surprised "Seriously?"
+    eve @ f_eyeroll "Yeah, she said it would open our chakras and bring balance to our souls or some nonsense..."
+    eve "I think she just has a foot fetish."
     anon f_normal @ f_laugh "Haha!"
-
     return
 
 label button_eve_you_look_nice_today:
-    anon f_flirt "Kamu terlihat cantik hari ini!"
-
-    eve @ f_eyeroll "Diam."
-
-    anon f_normal "aku serius!"
-
-    eve "Tapi aku memakai pakaian yang sama persis dengan yang selalu kupakai..."
-
-    anon "Ya, dan kamu selalu terlihat cantik!"
-
-    eve f_nervous_down "Ayo, hentikan..."
-
-    anon "Itu kebenarannya!"
-
+    anon f_flirt "You look nice today!"
+    eve @ f_eyeroll "Shut up."
+    anon f_normal "I'm serious!"
+    eve "But I'm wearing the exact same thing I always wear..."
+    anon "Yeah, and you always look nice!"
+    eve f_nervous_down "Come on, stop it..."
+    anon "It's the truth!"
     return
 
 label button_eve_nevermind_park:
-    anon f_worried "Aku mungkin harus pulang."
-
-    eve f_normal "Ya, saya sendiri akan segera melakukan hal yang sama."
-
-    anon "Hati-hati di sini, oke?"
-
-    eve "Aku akan menjadi."
-
-    anon @ a_wave "Nanti."
-
+    anon f_worried "I should probably get home."
+    eve f_normal "Yeah, I'll be doing the same myself, shortly."
+    anon "Be careful out here, okay?"
+    eve "I will be."
+    anon @ a_wave "Later."
     hide anon with dissolve
     return
 
 label button_eve_should_find_a_new_spot:
-    anon f_confused "Sudahkah Anda mempertimbangkan untuk mencari tempat baru untuk nongkrong?"
-
-    eve f_angry "Kenapa aku yang harus pergi?"
-
-    eve f_angry_right "Aku di sini dulu!"
-
+    anon f_confused "Have you considered finding a new spot to hang out?"
+    eve f_angry "Why should I be the one that leaves?"
+    eve f_angry_right "I was here first!"
     show anon f_worried
-    chico "Sekarang dia semua marah..."
-
+    chico "Now she all mad..."
     chad "Haha!"
-
-    tyrone "Mengapa kamu tidak membawa pantatmu ke sini dan berbagi doobie dengan kami?"
-
-    eve "Persetan denganmu!"
-
-    tyrone "Ya, saya yakin Anda akan menyukainya, ya?"
-
-    tyrone "Kami bisa menjalankan kereta untukmu sepanjang malam."
-
+    tyrone "Why don't you bring your fine ass over here and split a doobie with us?"
+    eve "Fuck you!"
+    tyrone "Yeah, I bet you'd like that, huh?"
+    tyrone "We can run a train on you all night long."
     show anon f_shock
-    eve @ f_disgusted_wince_down "Ya."
-
-    eve "Kamu menjijikkan!"
-
+    eve @ f_disgusted_wince_down "Eugh."
+    eve "You're disgusting!"
     show eve f_angry
     anon @ -m_talk "..."
     show anon f_worried
     return
 
 label button_eve_hallway_really:
-    anon f_worried "Benar-benar?"
-
-    eve "Ya, aku ingin tapi kakakku akan membunuhku jika dia tahu, jadi..."
-
-    eve f_nervous "... Mungkin bukan ide yang bagus."
-
-    anon f_normal @ a_behind_head "Hehe, ya... Mungkin tidak."
-
+    anon f_worried "Really?"
+    eve "Yeah, I'd like to but my sister will kill me if she finds out, so..."
+    eve f_nervous "... Probably not a good idea."
+    anon f_normal @ a_behind_head "Hehe, yeah... Probably not."
     return
 
 label button_eve_nevermind_school:
-    anon f_normal "Saya mungkin harus bersiap-siap untuk kelas."
-
-    eve f_normal "Ya, aku juga."
-
-    anon "Aku akan bicara denganmu nanti, oke?"
-
-    eve "Ya, nanti."
-
+    anon f_normal "I should probably get ready for class."
+    eve f_normal "Yeah, me too."
+    anon "I'll talk to you later, okay?"
+    eve "Yup, later."
     hide anon with dissolve
     return
 
 label button_eve_how_are_things_at_the_shop:
-    anon f_normal "Bagaimana keadaan di toko?"
-
-    eve "Mm, semuanya baik-baik saja, menurutku..."
-
+    anon f_normal "How are things at the shop?"
+    eve "Mm, things are good, I guess..."
     pause
-    eve f_nervous_down "Saya berharap {b}Grace{/b} tidak perlu bekerja terlalu keras tetapi tidak ada yang bisa dilakukan."
-
+    eve f_nervous_down "I wish {b}Grace{/b} didn't have to work so much but there's nothing to be done."
     show anon f_worried
-    eve "Kami tidak mampu mempekerjakan siapa pun, dan dia menolak membiarkan saya membantu!"
-
-    anon "Ya, itu menyebalkan."
-
+    eve "We can't afford to hire anybody, and she refuses to let me help out!"
+    anon "Yeah, that sucks."
     return
 
 label button_eve_street_kombat_rematch:
-    anon f_snarky "Saya masih menginginkan pertandingan ulang itu!"
-
-    eve f_normal "Hei, aku siap menendang pantatmu kapan saja kamu mau..."
-
-    anon "Nah, aku pasti akan menemuimu lain kali!"
-
-    eve @ f_laugh "Hehe, tentu saja."
-
+    anon f_snarky "I still want that rematch!"
+    eve f_normal "Hey, I'm down to kick your butt anytime you want..."
+    anon "Nah, I'll definitely get you next time!"
+    eve @ f_laugh "Hehe, sure you will."
     return
 
 label button_eve_you_still_drawing:
-    anon f_normal "Kamu masih menggambar?"
-
-    eve @ f_eyeroll "Ugh, aku lebih banyak fokus pada proyek bodoh ini untuk {b}Nona Ross{/b}..."
-
-    anon "Oh ya?"
-
-    eve "Aku sudah menyerahkan enam gambar berbeda, dan dia terus memaksaku mengulanginya!"
-
-    anon f_surprised "Dengan serius?"
-
-    eve "Ya, wanita itu gila!"
-
+    anon f_normal "You still drawing?"
+    eve @ f_eyeroll "Ugh, I've mostly been focusing on this stupid project for {b}Miss Ross{/b}..."
+    anon "Oh, yeah?"
+    eve "I've turned in like six different drawings, and she keeps making me redo it!"
+    anon f_surprised "Seriously?"
+    eve "Yeah, that woman is nuts!"
     pause
-    anon f_normal "Apakah ada yang bisa saya lakukan untuk membantu?"
-
-    eve "Nah, saya menghargai tawaran itu tetapi tidak ada yang bisa dilakukan."
-
-    eve f_sad_down "Aku mungkin akan meninggalkan kelasnya..."
-
-    anon f_shock "Apa?!"
-
-    anon f_worried "Tapi menurutku kamu suka menggambar?"
-
-    eve "Ya, tapi dia menghilangkan semua kesenangannya..."
-
+    anon f_normal "Is there anything I could do to help?"
+    eve "Nah, I appreciate the offer but there's nothing to be done."
+    eve f_sad_down "I might just drop her class..."
+    anon f_shock "What?!"
+    anon f_worried "But I thought you loved drawing?"
+    eve "I do, but she's taking all the fun out of it..."
     anon @ -m_talk "..."
     return
 
 label button_eve_love_the_hair:
-    anon f_normal "Sudahkah aku menyebutkan aku menyukai rambut barumu?"
-
-    eve a_hair f_nervous_down "Hehe, ya... Ya, pernah."
-
-    anon "Itu terlihat sangat bagus untukmu!"
-
-    eve "Terima kasih, {b}[firstname]{/b}."
-
-    eve f_normal a_idle @ f_happy_right "Senang rasanya mendengarnya!"
-
+    anon f_normal "Have I mentioned I love your new hair?"
+    eve a_hair f_nervous_down "Hehe, yes... Yes, you have."
+    anon "It looks so good on you!"
+    eve "Thanks, {b}[firstname]{/b}."
+    eve f_normal a_idle @ f_happy_right "It feels really good to hear that!"
     return
 
 label eve_dialogue_intro_bedroom:
     scene expression player.location.background_closeup with None
     show anon
     with dissolve
-    anon "{b}Malam{/b}?"
-
+    anon "{b}Eve{/b}?"
     show eve b_undies f_happy
     with dissolve
-    eve "{i}*Terkesiap*{/i} Anda di sini!"
-
+    eve "{i}*Gasp*{/i} You're here!"
     hide anon
     show eve b_undies_kiss
     with dissolve
@@ -589,20 +383,13 @@ label eve_dialogue_intro_bedroom:
     show eve b_undies
     show anon
     with dissolve
-    anon "Hehe, aku di sini."
-
-    anon "Anda sedang bermain game?"
-
+    anon "Heh, I'm here."
+    anon "You playing games?"
     eve @ -m_talk "Hmm?"
-
-    eve "Oh, saya baru saja melakukan beberapa pertandingan online {i}Street Kombat{/i}."
-
-    anon "Bisakah saya menonton?"
-
-    eve @ f_eyeroll "Umm, ya... kurasa."
-
-    eve f_sexy "Bukankah Anda lebih suka melakukan hal lain?"
-
+    eve "Oh, I was just doing some {i}Street Kombat{/i} online matches."
+    anon "Can I watch?"
+    eve @ f_eyeroll "Umm, yeah... I guess."
+    eve f_sexy "Wouldn't you rather do something else?"
     return
 
 label eve_dialogue_intro_classroom_e1e12:
@@ -611,16 +398,11 @@ label eve_dialogue_intro_classroom_e1e12:
         xoffset 500
     show anon b_desk
     with dissolve
-    anon "Pagi, {b}Malam{/b}."
-
-    eve "Hai, {b}[firstname]{/b}."
-
-    anon "Bekerja keras?"
-
-    eve "Hehe, ya benar..."
-
-    eve @ f_eyeroll "Kelas ini SANGAT membosankan!"
-
+    anon "Morning, {b}Eve{/b}."
+    eve "Hey, {b}[firstname]{/b}."
+    anon "Working hard?"
+    eve "Heh, yea right..."
+    eve @ f_eyeroll "This class is SO boring!"
     return
 
 label eve_dialogue_intro_classroom_e13e20:
@@ -629,18 +411,12 @@ label eve_dialogue_intro_classroom_e13e20:
         xoffset 500
     show anon b_desk
     with dissolve
-    anon "Pagi, {b}Malam{/b}."
-
-    eve "Hai, {b}[firstname]{/b}!"
-
-    anon "Siap untuk hari sekolah yang menyenangkan lainnya?"
-
-    eve @ f_eyeroll "Heh, ya... \"Menyenangkan.\""
-
-    eve "Aku harap kita bisa melewatkannya dan nongkrong di tempatku."
-
-    anon "Ya, aku juga."
-
+    anon "Morning, {b}Eve{/b}."
+    eve "Hey, {b}[firstname]{/b}!"
+    anon "Ready for another fun day of school?"
+    eve @ f_eyeroll "Heh, yeah... \"Fun.\""
+    eve "I wish we could just skip and hang out at my place."
+    anon "Yeah, me too."
     return
 
 label eve_dialogue_intro_classroom_e21:
@@ -649,10 +425,8 @@ label eve_dialogue_intro_classroom_e21:
         xoffset 500
     show anon b_desk
     with dissolve
-    anon "Pagi, {b}Malam{/b}."
-
-    eve "Hai, {b}[firstname]{/b}!"
-
+    anon "Morning, {b}Eve{/b}."
+    eve "Hey, {b}[firstname]{/b}!"
     hide anon
     show eve b_dressed_kiss:
         xoffset -300
@@ -666,8 +440,7 @@ label eve_dialogue_intro_classroom_e21:
         xpos 0
     with dissolve
     pause
-    eve "MM."
-
+    eve "Mmm."
     hide eve
     hide anon_desk
     hide anon_chair
@@ -677,20 +450,13 @@ label eve_dialogue_intro_classroom_e21:
         xoffset 500
     show anon b_desk f_flirt
     with dissolve
-    anon "Hmm, itu bagus."
-
-    eve @ f_laugh "hehe!"
-
-    eve @ f_eyeroll "Ugh, aku sedang tidak mood untuk mengikuti kelas hari ini."
-
-    eve "Anda ingin melewatkan dengan saya?"
-
-    anon f_worried "Entahlah, mungkin."
-
-    eve "Aww, ayolah... Tolong?"
-
-    eve "Membosankan sekali kalau kamu tidak ada!"
-
+    anon "Mmm, that was nice."
+    eve @ f_laugh "Hehe!"
+    eve @ f_eyeroll "Ugh, I'm so not in the mood for class today."
+    eve "You wanna skip with me?"
+    anon f_worried "I dunno, maybe."
+    eve "Aww, c'mon... Please?"
+    eve "It's so boring when you're not around!"
     return
 
 label eve_dialogue_intro_hallway_e1e12:
@@ -698,16 +464,11 @@ label eve_dialogue_intro_hallway_e1e12:
     show anon
     show eve
     with dissolve
-    anon @ a_wave "Sore, {b}Malam{/b}."
-
-    eve @ a_wave "Hai, {b}[firstname]{/b}."
-
-    anon "Apa yang terjadi?"
-
-    eve f_nervous_down "Eh, tidak banyak."
-
-    eve "Hanya berpikir untuk melewatkan kelas {b}Nona Ross{/b}'..."
-
+    anon @ a_wave "Afternoon, {b}Eve{/b}."
+    eve @ a_wave "Hey, {b}[firstname]{/b}."
+    anon "What's going on?"
+    eve f_nervous_down "Ehh, not much."
+    eve "Just thinking about skipping {b}Miss Ross{/b}' class..."
     return
 
 label eve_dialogue_intro_hallway_e13e20:
@@ -715,10 +476,8 @@ label eve_dialogue_intro_hallway_e13e20:
     show anon
     show eve
     with dissolve
-    anon @ a_wave "Sore, {b}Malam{/b}."
-
-    eve "Hai, {b}[firstname]{/b}!"
-
+    anon @ a_wave "Afternoon, {b}Eve{/b}."
+    eve "Hey, {b}[firstname]{/b}!"
     hide eve
     show anon b_hug_eve f_shy_down
     with dissolve
@@ -726,12 +485,9 @@ label eve_dialogue_intro_hallway_e13e20:
     show anon b_dressed f_normal
     show eve f_happy
     with dissolve
-    anon "Anda menuju ke kelas {b}Miss Ross{/b}'?"
-
-    eve f_normal "Sayangnya ya."
-
-    eve "Sobat, kuharap dia merencanakan sesuatu yang sederhana hari ini..."
-
+    anon "You heading to {b}Miss Ross{/b}' class?"
+    eve f_normal "Unfortunately, yes."
+    eve "Man, I hope she has something simple planned today..."
     return
 
 label eve_dialogue_intro_hallway_e21:
@@ -739,10 +495,8 @@ label eve_dialogue_intro_hallway_e21:
     show anon
     show eve f_happy
     with dissolve
-    anon @ a_wave "Sore, {b}Malam{/b}."
-
-    eve "Hai, {b}[firstname]{/b}!"
-
+    anon @ a_wave "Afternoon, {b}Eve{/b}."
+    eve "Hey, {b}[firstname]{/b}!"
     hide anon
     show eve b_dressed_kiss:
         xoffset -400
@@ -752,71 +506,49 @@ label eve_dialogue_intro_hallway_e21:
         xoffset 0
     show anon
     with dissolve
-    anon "Hmm, itu bagus."
-
-    eve @ f_laugh "hehe!"
-
-    eve "Apakah kamu akan datang malam ini?"
-
-    anon "Entahlah, mungkin."
-
-    eve @ f_eyeroll "Aww, ayolah... Tolong?"
-
-    eve "Membosankan sekali kalau kamu tidak ada!"
-
+    anon "Mmm, that was nice."
+    eve @ f_laugh "Hehe!"
+    eve "Are you coming over tonight?"
+    anon "I dunno, maybe."
+    eve @ f_eyeroll "Aww, c'mon... Please?"
+    eve "It's so boring when you're not around!"
     return
 
 label eve_dialogue_intro_park_e1e12:
     scene expression player.location.background_closeup with None
     show anon f_worried with dissolve
-    anon "{b}Malam{/b}?"
-
+    anon "{b}Eve{/b}?"
     pause
-    anon f_angry "Bisakah kamu mendengarku?!"
-
+    anon f_angry "Can you hear me?!"
     eve "Hmm?"
-
-    eve "Oh, hai {b}[firstname]{/b}!"
-
+    eve "Oh, hey {b}[firstname]{/b}!"
     show anon f_shock
     show eve b_dressed_headphones_up with dissolve
     show anon f_normal
     pause
     show eve b_dressed_hoodless a_hoodless_remove_headphones with dissolve
-    eve "Maaf."
-
+    eve "Sorry."
     show eve b_dressed_headphones_down a_idle with dissolve
-    anon "Apa aku mengganggumu?"
-
-    eve "Tidak, tidak sama sekali."
-
-    eve @ f_eyeroll "Aku hanya mencoba meredam musik rap jelek ini!"
-
-    tyrone "Psh, jangan main-main cewek... Kamu tahu kamu menyukainya!"
-
-    eve f_angry_right "Brengsek sialan..."
-
-    eve f_normal "Jadi, ada apa?"
-
+    anon "Am I interrupting you?"
+    eve "No, not at all."
+    eve @ f_eyeroll "I'm just trying to drown out this shitty rap music!"
+    tyrone "Psh, don't play girl... You know you love it!"
+    eve f_angry_right "Fucking assholes..."
+    eve f_normal "So, what's up?"
     return
 
 label eve_button_eve_six6nine9_time:
     scene expression player.location.background_closeup with None
     show anon with dissolve
-    anon "Hei kamu."
-
+    anon "Hey, you."
     eve "!!!"
     show eve b_undies f_happy
     with dissolve
-    eve "Hai, {b}[firstname]{/b}!"
-
-    anon "Anda sedang bermain game?"
-
-    eve "Ya."
-
+    eve "Hey, {b}[firstname]{/b}!"
+    anon "You playing games?"
+    eve "Yeah."
     pause
-    eve f_sexy "Tapi sekarang kamu di sini..."
-
+    eve f_sexy "But now that you're here..."
     hide anon
     show eve b_undies_kiss
     with dissolve
@@ -825,73 +557,49 @@ label eve_button_eve_six6nine9_time:
     show anon
     show eve b_undies f_happy
     with dissolve
-    eve "Apakah kamu ingat malam itu di tenda... Saat kamu, umm-"
-
-    eve "... Membuatku cum?"
-
-    anon f_flirt "Ya?"
-
-    eve "Bisakah kita, mungkin... Lakukan itu lagi?"
-
+    eve "Do you remember that night in the tent... When you, umm-"
+    eve "... Made me cum?"
+    anon f_flirt "Yeah?"
+    eve "Could we, maybe... Do that again?"
     menu:
-        "Tentu saja.":
-            anon a_thinking f_thinking "Hmm, biarkan aku memikirkannya."
-
+        "Sure, I guess.":
+            anon a_thinking f_thinking "Hmm, let me think about it."
             eve f_nervous @ -m_talk "..."
             show anon f_flirt_grin a_idle with dissolve
             pause
-            anon f_flirt @ a_point "Tentu saja kita bisa!"
+            anon f_flirt @ a_point "Of course we can!"
+            eve f_sexy @ f_laugh "Hehe!"
+            eve "Get on the bed, {b}[firstname]{/b}."
+        "HELL YES!":
 
-            eve f_sexy @ f_laugh "hehe!"
-
-            eve "Naiklah ke tempat tidur, {b}[firstname]{/b}."
-
-        "NERAKA YA!":
-
-            anon @ f_laugh "Oh, kami bisa melakukan apapun yang kamu mau {b}Eve{/b}!"
-
-            eve "Hehe, baiklah."
-
+            anon @ f_laugh "Oh, we can do whatever you want {b}Eve{/b}!"
+            eve "Hehe, alright."
             eve f_thinking_down "Hmm."
-
             pause
-            eve f_sexy "Mengapa saya tidak mengambil sedikit minyak pijat saudara perempuan saya, dan kita lihat berapa banyak minyak yang bisa muat di pantat Anda?"
-
+            eve f_sexy "Why don't I grab some of my sister's massage oil, and we'll see how much stuff we can fit up your butt?"
             anon f_shock "!!!"
-            anon f_worried "I-itu bukan-"
-
-            anon "aku tidak bermaksud-"
-
+            anon f_worried "T-that's not-"
+            anon "I didn't mean-"
             eve @ f_laugh "Hahaha!!"
+            eve "I was just joking... Man, you should have seen your face!"
+            anon f_shy @ a_behind_head "Very funny."
+            eve "Get on the bed, {b}[firstname]{/b}."
 
-            eve "Aku hanya bercanda... Sobat, kamu seharusnya melihat wajahmu!"
-
-            anon f_shy @ a_behind_head "Sangat lucu."
-
-            eve "Naiklah ke tempat tidur, {b}[firstname]{/b}."
-
-
-    anon "Baiklah."
-
+    anon "Alright."
     scene expression player.location.background_closeup with None
     show anon b_onbed_sit f_flirt
     show eve b_onbed_tanktop f_sexy
     with dissolve
-    eve "Saya rasa saya tidak membutuhkan pakaian ini lagi, bukan?"
-
-    anon "Tidak uh."
-
-    eve @ f_laugh "hehe."
-
+    eve "I don't think I need these clothes anymore, do you?"
+    anon "Nuh uh."
+    eve @ f_laugh "Hehe."
     show eve b_onbed_top_remove3 with dissolve
     pause
     show eve b_onbed_top_remove4 with dissolve
     pause
     show eve f_sexy b_onbed_nude with dissolve
-    eve "Di sana."
-
-    eve "Giliranmu."
-
+    eve "There."
+    eve "Your turn."
     show anon b_onbed_sit_changing3 with fastdissolve
     pause
     hide anon
@@ -901,48 +609,31 @@ label eve_button_eve_six6nine9_time:
     show eve b_onbed_cuddle_naked f_happy
     show anon b_empty_eve_onbed_cuddle f_flirt_low zorder 1
     with dissolve
-    eve "Mmm, aku suka menciummu!"
-
-    anon "Y-ya, juga."
-
+    eve "Mmm, I love kissing you!"
+    anon "Y-yeah, likewise."
     pause
     $ M_eve.set('sex speed', .4)
     show eve a_jerk o_empty with dissolve
-    eve f_thinking_down "Aku bahkan tidak bisa menyentuh penismu dengan jariku!"
-
-    anon "Sudah kubilang, itu hanya tangan kecilmu."
-
-    eve f_happy "Hehehe, entahlah.."
-
+    eve f_thinking_down "I can't even get my fingers all the way around your dick!"
+    anon "I'm telling you, it's just your small hands."
+    eve f_happy "Hehehe, I dunno about that..."
     pause
-    eve "Bisakah kita mencoba sesuatu?"
-
-    anon "Um, entahlah..."
-
-    anon "Menurutku itu tergantung pada apa itu?"
-
+    eve "Can we try something?"
+    anon "Umm, I dunno..."
+    anon "I guess it depends on what it is?"
     show eve a_jerk1
-    eve "Tenang saja, tidak ada yang aneh..."
-
-    anon "B-benarkah?"
-
-    eve "Pernahkah Anda mendengar tentang posisi enam puluh sembilan?"
-
+    eve "Don't worry, it's nothing weird..."
+    anon "A-aright?"
+    eve "Have you ever heard of the sixty-nine position?"
     if M_eve.get("biggus_dickus"):
-        eve "Aku akan menindihmu dan kita berdua akan menggunakan mulut kita."
-
-        anon "Kamu ingin memasukkan penismu ke dalam mulutku?"
-
+        eve "I'll get on top of you and we'll both use our mouths."
+        anon "You wanna put your dick in my mouth?"
     else:
-        eve "Aku akan menindihmu dan memasukkanmu ke dalam mulutku, sementara kamu menggunakan lidahmu padaku."
-
-        anon "Anda ingin saya menjilat vagina Anda?"
-
-    eve "Ya, hanya jika Anda mau?"
-
+        eve "I would get on top of you and take you in my mouth, while you use your tongue on me."
+        anon "You want me to lick your pussy?"
+    eve "Well, only if you want to?"
     anon @ -m_talk "..."
-    eve "Jika itu membuatmu takut, aku bisa merendahkanmu seperti biasa?"
-
+    eve "If it freaks you out, I can just go down on you like normal?"
     return
 
 label eve_button_party_start:
@@ -955,16 +646,11 @@ label eve_button_party_start:
             xoffset 500
         show anon b_desk
     with dissolve
-    eve "Anda masih datang ke pesta {b}Sabtu malam ini{/b}, kan?"
-
-    anon "Ya, aku akan berada di sana."
-
-    eve "Ini akan menjadi sangat luar biasa!"
-
-    eve "Adikku dan {b}Odette{/b} mengadakan pesta terbaik!"
-
-    anon @ f_laugh "Hehe, tidak sabar!"
-
+    eve "You're still coming to the party {b}this Saturday evening{/b}, right?"
+    anon "Yeah, I'll be there."
+    eve "It's going to be so awesome!"
+    eve "My sister and {b}Odette{/b} throw the best parties!"
+    anon @ f_laugh "Hehe, can't wait!"
     return
 
 label eve_button_talked_to_eve:
@@ -972,28 +658,22 @@ label eve_button_talked_to_eve:
     show anon a_beer
     show eve a_beer_hold
     with dissolve
-    eve "Aku penasaran kenapa {b}Odette{/b} lama sekali?"
-
-    anon "Dia bilang dia akan menutup tokonya, kan?"
-
+    eve "I wonder what's taking {b}Odette{/b} so long?"
+    anon "She said she was closing up shop, right?"
     show anon a_beer_drink f_smoke with dissolve
-    eve "Ya, tapi {b}Grace{/b} hanya memiliki dua pelanggan hari ini..."
-
+    eve "Yeah, but {b}Grace{/b} only had like two customers today..."
     show anon a_beer f_normal with dissolve
-    eve "Seharusnya dia tidak membutuhkan waktu selama ini."
-
+    eve "It shouldn't take her this long."
     hide anon with dissolve
     return
 
 label eve_button_eve_talked_to_both_girls:
-    odette "Baiklah, jalang..."
-
+    odette "Alright, bitches..."
     scene expression player.location.background_blur
     show odette a_whiskey_yay f_laugh zorder 1:
         xoffset 100
     with fade
-    odette "Siapa yang siap berpesta?!"
-
+    odette "Who's ready to party?!"
     show anon a_beer zorder 1:
         xoffset -150
     show eve f_happy a_beer_hold zorder 0:
@@ -1002,287 +682,183 @@ label eve_button_eve_talked_to_both_girls:
     show grace a_beer f_normal_back zorder 0:
         xoffset -150
     with dissolve
-    odette f_moo "WOOOOOO!!!"
-
-    eve f_happy @ f_moo "WOOOOOO!!!"
-
+    odette f_moo "WOOOOO!!!"
+    eve f_happy @ f_moo "WOOOOO!!!"
     show odette f_smirk a_whiskey with dissolve
-    grace "Tolong jangan terlalu gila..."
-
-    odette "Uh oh, sepertinya seseorang butuh tembakan bola api!"
-
-    grace f_sad @ f_surprised_back "Sama sekali tidak!"
-
-    eve f_sad "Aduh, ayolah {b}Grace{/b}..."
-
+    grace "Just don't go too crazy, please..."
+    odette "Uh oh, sounds like somebody needs a shot of fireball!"
+    grace f_sad @ f_surprised_back "Absolutely not!"
+    eve f_sad "Aww, c'mon {b}Grace{/b}..."
     show grace f_sad_back
-    odette "Ya, ayolah {b}Grace{/b}!"
-
-    odette "Jangan menjadi pengacau pesta!"
-
-    grace "{i}*Huh*{/i} Baiklah, berikan di sini..."
-
+    odette "Yeah, c'mon {b}Grace{/b}!"
+    odette "Don't be a party pooper!"
+    grace "{i}*Sigh*{/i} Fine, give it here..."
     show eve f_happy
     show odette a_whiskey_pour with dissolve
-    odette "Itu gadisku!"
-
+    odette "That's my girl!"
     show odette a_whiskey
     show grace a_shot_drink f_proud m_talk
     with dissolve
-    odette "Minumlah obatmu."
-
+    odette "Drink your medicine."
     show grace a_shot f_disgusted_wince -m_talk with dissolve
-    grace "Ya Tuhan..."
-
-    grace "{i}*Batuk* *Batuk*{/i}"
-
-    grace f_happy "Sudah lama sejak saya mengalami semua itu!"
-
-    odette "Sialan, ya?"
-
-    eve "Bolehkah saya mencobanya?!"
-
-    grace f_normal "Tidak, menurutku sebaiknya kamu tetap minum bir-"
-
-    odette "Tentu saja, Anda dapat memilikinya!"
-
+    grace "Eugh, god..."
+    grace "{i}*Cough* *Cough*{/i}"
+    grace f_happy "Been a while since I've had any of that!"
+    odette "Good shit, huh?"
+    eve "Can I try some?!"
+    grace f_normal "No, I think you had better stick to beer-"
+    odette "Of course, you can have some!"
     grace f_sad_back @ f_surprised_back "{b}Odette{/b}!"
-
     show odette a_whiskey_pour with dissolve
-    odette "Apa?!"
-
+    odette "What?!"
     show eve a_shot
     show odette a_whiskey
     with dissolve
-    odette "Kami lebih muda darinya ketika kami mulai meminum minuman ini..."
-
-    odette "... Dan hanya kami yang ada di sini."
-
+    odette "We were younger than her when we started drinking this stuff..."
+    odette "... And it's just us here."
     show eve a_shot_drink f_drink with dissolve
-    odette "Hal terburuk apa yang bisa terjadi?"
-
+    odette "What's the worse that can happen?"
     show eve a_shot f_disgusted with dissolve
     show grace f_surprised
-    eve "{i}*Batuk* *Batuk*{/i}"
-
+    eve "{i}*Cough* *Cough*{/i}"
     show grace f_sad
     show eve f_sexy
-    eve "H-sialan..."
-
-    eve "Benda itu benar-benar terbakar!"
-
-    odette "Mmhmm, begitulah cara Anda mengetahui itu berhasil."
-
-    odette "Kamu mau, kawan?"
-
+    eve "H-holy shit..."
+    eve "That stuff really burns!"
+    odette "Mmhmm, that's how you know it's working."
+    odette "You want some, stud?"
     show anon f_worried
-    eve f_happy_right "Oh, dia ingin beberapa!"
-
-    anon "Ehh, t-tentu... kurasa."
-
+    eve f_happy_right "Oh, he wants some!"
+    anon "Ehh, s-sure... I guess."
     show odette a_whiskey_pour with dissolve
     show eve f_happy
     show grace f_sad_back
-    odette "Segera hadir, baiklah Pak!"
-
+    odette "Coming right up, fine sir!"
     show grace f_sad
     show anon a_shot
     show odette a_whiskey
     with dissolve
     eve f_happy_right @ f_laugh "Haha!"
-
     show anon a_shot_drink f_smoke with dissolve
     pause
     anon a_shot f_disgusted_down @ f_cough "!!!"
-    grace "Anda baik-baik saja, {b}[firstname]{/b}?"
-
-    anon "Eugh, tuan yang baik!"
-
-    anon "Apa itu?"
-
+    grace "You alright, {b}[firstname]{/b}?"
+    anon "Eugh, good lord!"
+    anon "What is that?"
     show anon f_worried
     show eve f_happy
-    odette "Wiski kayu manis."
-
+    odette "Cinnamon whiskey."
     show eve f_happy_right
-    anon "Ini mengerikan!"
-
+    anon "It's awful!"
     show eve f_happy
     odette @ f_laugh "Haha!"
-
-    grace @ f_sad_back "Apakah kamu mengunci semuanya di bawah?"
-
-    eve f_sad "Maukah kamu berhenti khawatir dan bersenang-senang?!"
-
-    grace f_sad "Aku hanya ingin memastikan-"
-
+    grace @ f_sad_back "Did you get everything locked up downstairs?"
+    eve f_sad "Would you stop worrying and have some fun?!"
+    grace f_sad "I just want to make sure-"
     show grace f_sad_back
-    odette "Ya, semuanya terkunci... Tenang."
-
-    odette "Mengapa kita tidak bermain game atau apalah?"
-
+    odette "Yes, everything is locked up... Relax."
+    odette "Why don't we play a game or something?"
     show eve f_happy
-    grace f_sad @ f_surprised_back "Sebuah permainan?"
-
+    grace f_sad @ f_surprised_back "A game?"
     show anon f_normal
-    eve "Ya, ya, ya!"
-
-    eve @ f_confused "Kebenaran atau Tantangan?"
-
+    eve "Yes, yes, yes!"
+    eve @ f_confused "Truth or Dare?"
     show grace f_sad_back
-    odette @ f_eyeroll "Bukan, bukan Kebenaran atau Tantangan... Itu omong kosong!"
-
+    odette @ f_eyeroll "No, not Truth or Dare... That's kiddie shit!"
     show grace f_sad
-    eve @ f_nervous_down "Uhh, aku tidak tahu banyak permainan minum..."
-
-    grace f_normal "Saya Belum Pernah?"
-
+    eve @ f_nervous_down "Uhh, I don't know many drinking games..."
+    grace f_normal "Never Have I Ever?"
     odette @ f_laugh a_whiskey_yay "Bingo!"
-
-    anon @ f_confused "Hah?"
-
-    grace f_happy "Hehe, ini permainan minum."
-
-    eve "Bagaimana cara kerjanya?"
-
+    anon @ f_confused "Huh?"
+    grace f_happy "Hehe, it's a drinking game."
+    eve "How does it work?"
     show grace f_happy_back
-    odette "Ini sangat mudah."
-
-    odette "Yang harus Anda lakukan adalah mengakui sesuatu yang belum pernah Anda lakukan."
-
-    odette "Misalnya:"
-
-    odette "{i}*Ahem*{/i} Belum pernah..."
-
-    odette @ f_laugh a_whiskey_yay "Melakukan masturbasi dengan sisir rambut!"
-
+    odette "It's really easy."
+    odette "All you have to do is admit to something that you've never done."
+    odette "For instance:"
+    odette "{i}*Ahem*{/i} Never have I ever..."
+    odette @ f_laugh a_whiskey_yay "Masturbated with a hairbrush!"
     show grace f_weary
     anon f_worried @ f_shock "!!!"
-    eve @ f_laugh "APA?!"
-
-    odette "Sekarang, siapa pun di sini yang TELAH melakukan masturbasi dengan sisir rambut, minumlah sedikit."
-
-    grace f_tired_back "Kamu menyebalkan, kamu tahu itu?"
-
-    odette @ f_laugh "Ha ha ha!"
-
-    grace "Kamu suka mengungkit hal ini..."
-
+    eve @ f_laugh "WHAT?!"
+    odette "Now, anyone here that HAS masturbated with a hairbrush, drinks a shot."
+    grace f_tired_back "You're a bitch, you know that?"
+    odette @ f_laugh "Hahaha!"
+    grace "You just love bringing this shit up..."
     show grace a_shot_drink f_proud m_talk with dissolve
-    eve @ f_surprised "Jadi tunggu sebentar, itu berarti-"
-
+    eve @ f_surprised "So wait a second, that means-"
     show grace a_shot f_eyeroll -m_talk with dissolve
-    grace "{i}*Sigh*{/i} Ya, saya melakukan masturbasi dengan sikat rambut beberapa kali, dulu ketika saya tinggal di rumah bersama {b}Ibu{/b} dan {b}Ayah{/b}."
-
+    grace "{i}*Sigh*{/i} Yes, I masturbated with a hairbrush a couple times, back when I lived at home with {b}Mom{/b} and {b}Dad{/b}."
     show grace f_normal
     anon f_surprised_teeth "!!!"
-    eve @ f_laugh "Haha, kenapa?!"
-
-    grace f_sad @ f_eyeroll "Uhh, karena aku terangsang dan tidak punya apa-apa lagi?"
-
+    eve @ f_laugh "Haha, why?!"
+    grace f_sad @ f_eyeroll "Uhh, because I was horny and didn't have anything else?"
     show anon f_flirt_grin
     show grace f_normal_back
-    odette @ f_confused "Mengapa kamu tidak membelikan dirimu sendiri sebuah penis buatan?"
-
+    odette @ f_confused "Why didn't you just buy yourself a dildo?"
     show anon f_normal
-    grace "Umm, kamu memang bertemu orang tua kami, kan?"
-
-    odette "Ya."
-
-    grace f_sad_down "{b}Ayah{/b} tidak mengizinkan kami bekerja, jadi saya tidak punya uang untuk membelinya..."
-
-    grace "... Dan jika itu belum cukup, {b}Ibu{/b} selalu mengintip di kamar kami."
-
+    grace "Umm, you did meet our parents, right?"
+    odette "Yes."
+    grace f_sad_down "{b}Dad{/b} wouldn't let us work, so I had no money to buy one..."
+    grace "... And if that wasn't enough, {b}Mom{/b} was always snooping around in our rooms."
     show grace f_normal
-    eve "Ya Tuhan, bisakah Anda bayangkan jika dia menemukan penis buatan di kamar Anda?"
-
-    grace f_happy "Dia pasti akan sial!"
-
-    eve @ f_laugh "Benar sekali!"
-
+    eve "Oh my god, could you imagine if she had found a dildo in your room?"
+    grace f_happy "She would have shit a brick!"
+    eve @ f_laugh "Totally!"
     pause
     show grace f_normal_back
-    odette "Tapi tetap saja, sisir rambut?"
-
-    grace @ f_eyeroll "Hanya pegangannya..."
-
+    odette "Still though, a hairbrush?"
+    grace @ f_eyeroll "Just the handle..."
     show anon f_laugh
     odette @ f_laugh "Pfft, hahaha!"
-
     show anon f_normal
-    grace f_tired_back "Baiklah kalau begitu, jalang... Giliranku!"
-
-    grace "Belum pernah saya melakukan permainan tiga arah di meja biliar di depan ruangan yang penuh dengan orang."
-
+    grace f_tired_back "Alright then, bitch... My turn!"
+    grace "Never have I ever had a three-way on a pool table in front of a room full of people."
     show eve f_surprised
     show anon f_shock
     odette @ f_eyeroll "..."
-    anon f_normal "Wah, itu spesifik sekali.."
-
+    anon f_normal "Wow, that is really specific..."
     show odette f_yawn a_whiskey_drink with dissolve
     show anon f_surprised
     show grace f_happy
-    eve f_disgusted @ f_surprised "K-kamu benar-benar melakukan itu?"
-
+    eve f_disgusted @ f_surprised "Y-you really did that?"
     show grace f_happy_back
-    odette f_smirk a_whiskey "Itu sudah lama sekali."
-
+    odette f_smirk a_whiskey "It was a long time ago."
     show anon f_grin
-    eve "Aduh!"
-
+    eve "Ewww!"
     show anon f_normal
-    odette "Kamu hanya hidup sekali, {b}Evie{/b}..."
-
-    grace "Saat itulah orang-orang mulai menjulukimu jebakan jari Tiongkok, kamu tahu?"
-
+    odette "You only live once, {b}Evie{/b}..."
+    grace "That's when people started calling you the Chinese finger trap, you know?"
     show anon f_confused
     show eve f_confused
-    odette "Ugh, jangan bahas itu."
-
-    grace f_happy @ f_laugh "Ha ha ha!"
-
-    anon "Saya tidak mengerti..."
-
-    eve "Saya juga tidak."
-
-    grace a_fingers "Pikirkan tentang hal ini."
-
+    odette "Ugh, don't bring that up."
+    grace f_happy @ f_laugh "Hahaha!"
+    anon "I don't get it..."
+    eve "Me neither."
+    grace a_fingers "Think about it."
     anon f_thinking a_thinking "..."
     eve f_thinking_down "..."
-    grace a_shot @ f_eyeroll "Ehh, sudahlah."
-
+    grace a_shot @ f_eyeroll "Ehh, never mind."
     show eve f_happy
     show grace f_normal_back
-    odette "Baiklah, bolehkah kita mengajukan pertanyaan yang tidak secara spesifik menargetkan satu sama lain sekarang?"
-
+    odette "Alright, can we ask questions that aren't specifically targeting each other now?"
     show anon f_normal a_shot with dissolve
-    grace "Hei, kamu yang memulainya!"
-
-    odette "Ya, ya..."
-
+    grace "Hey, you started it!"
+    odette "Yeah, yeah..."
     pause
-    odette "Mengapa kamu tidak pergi, {b}[firstname]{/b}?"
-
+    odette "Why don't you go, {b}[firstname]{/b}?"
     show grace f_normal
     show eve f_happy_right
-    anon f_worried "A-aku?"
-
-    eve "Apakah Anda memahami aturannya?"
-
-    anon "Saya kira demikian."
-
-    anon f_thinking "Hmm, mari kita lihat..."
-
-    anon "Belum pernah aku..."
-
-    anon f_snarky "Dicuri."
-
+    anon f_worried "M-me?"
+    eve "Do you understand the rules?"
+    anon "I think so."
+    anon f_thinking "Mmm, let's see..."
+    anon "Never have I ever..."
+    anon f_snarky "Shoplifted."
     show eve f_happy
-    grace @ f_uneasy "Anda belum pernah mencuri apa pun sepanjang hidup Anda?!"
-
+    grace @ f_uneasy "You've never stolen anything in your entire life?!"
     show eve f_happy_right
-    anon "Tidak."
-
+    anon "Nope."
     show odette f_yawn a_whiskey_drink
     show grace a_shot_drink f_proud m_talk
     with dissolve
@@ -1293,46 +869,30 @@ label eve_button_eve_talked_to_both_girls:
     show grace a_shot f_happy -m_talk
     with dissolve
     eve "Eugh!"
-
-    eve "Saya pikir Anda seharusnya mengajukan pertanyaan nakal, {b}[firstname]{/b}..."
-
+    eve "I think you're supposed to ask naughty questions, {b}[firstname]{/b}..."
     show anon f_depressed
     show eve f_happy
     show grace f_normal_back
-    odette "Tidak, pertanyaan itu sempurna!"
-
+    odette "No, that question was perfect!"
     show grace f_normal
     show anon f_worried
     eve f_confused @ -m_talk "Hmm?"
-
     show grace f_normal_back
-    odette "Itu membuat kita semua minum, bukan?"
-
-    eve "Ya, ya?"
-
-    odette "Itulah keseluruhan tujuan dari permainan ini, {b}Evie{/b}!"
-
-    odette "Kerja bagus, {b}[firstname]{/b}."
-
+    odette "It got us all drinking, didn't it?"
+    eve "Well, yeah?"
+    odette "That's the entire purpose of the game, {b}Evie{/b}!"
+    odette "Nice job, {b}[firstname]{/b}."
     show eve f_happy_right
     show grace f_normal
-    anon f_normal @ f_laugh "Terima kasih."
-
-    grace "Giliranmu, {b}Kak{/b}."
-
+    anon f_normal @ f_laugh "Thanks."
+    grace "Your turn, {b}Sis{/b}."
     show eve f_happy
-    eve "Oke."
-
-    eve "Aku punya satu yang pasti akan membuat kalian bertiga!"
-
-    odette "Baiklah, mari kita dengarkan."
-
-    eve "Belum pernah aku..."
-
-    eve "Mencium seorang gadis."
-
-    odette "Uh, terlalu mudah!"
-
+    eve "Okay."
+    eve "I've got one that will get all three of you for sure!"
+    odette "Alright, let's hear it."
+    eve "Never have I ever..."
+    eve "Kissed a girl."
+    odette "Ugh, too easy!"
     show grace a_shot_drink f_proud m_talk
     show odette f_yawn a_whiskey_drink
     show anon a_shot_drink f_smoke
@@ -1343,42 +903,27 @@ label eve_button_eve_talked_to_both_girls:
     show odette f_smirk a_whiskey
     with dissolve
     anon "Gaah!"
-
     show anon f_worried
-    eve "Berapa banyak gadis yang telah kamu cium, {b}Odette{/b}?"
-
+    eve "How many girls have you kissed, {b}Odette{/b}?"
     show grace f_normal_back
-    odette "Saya tidak tahu, empat atau lima?"
-
+    odette "I don't know, four or five?"
     show grace f_normal
     show anon f_normal
-    eve "{b}Rahmat{/b}?"
-
-    grace "Dua."
-
-    eve "Saya pikir pasti akan lebih, {b}Kak{/b}..."
-
-    grace "Tidak, hanya {b}Odette{/b} dan seorang gadis acak di sebuah pesta di sekolah menengah."
-
-    odette "Aku tidak percaya kamu tidak pernah mencium seorang gadis, {b}Evie{/b}."
-
+    eve "{b}Grace{/b}?"
+    grace "Two."
+    eve "I thought for sure it would be more, {b}Sis{/b}..."
+    grace "Nope, just {b}Odette{/b} and one random girl at a party in high school."
+    odette "I can't believe you never kissed a girl, {b}Evie{/b}."
     show eve f_nervous_down
-    eve "Aku belum pernah mencium siapa pun sebelumnya {b}[firstname]{/b}..."
-
-    grace "Aduh, aku tidak tahu itu..."
-
-    grace @ f_laugh "Kalian berdua manis sekali!"
-
-    odette "Manis?"
-
+    eve "I hadn't ever kissed anybody, before {b}[firstname]{/b}..."
+    grace "Aww, I didn't know that..."
+    grace @ f_laugh "You two are so sweet!"
+    odette "Sweet?"
     show grace f_normal_back
-    odette @ f_laugh "Sungguh tragis!"
-
-    odette a_shrug "Di Sini."
-
+    odette @ f_laugh "It's tragic is what it is!"
+    odette a_shrug "Here."
     show grace f_surprised
-    eve f_surprised "A-apa yang kamu-"
-
+    eve f_surprised "W-what are you-"
     show odette b_kiss_eve:
         xoffset -400
     hide eve
@@ -1386,12 +931,10 @@ label eve_button_eve_talked_to_both_girls:
     show anon f_surprised
     eve "!!!"
     grace f_angry "{b}Odette{/b}!"
-
     anon "!!!"
     show anon f_flirt_grin
     pause
     odette "Muuah!"
-
     hide odette
     show odette a_whiskey f_smirk zorder 1:
         xoffset 100
@@ -1399,47 +942,31 @@ label eve_button_eve_talked_to_both_girls:
         flip
         xoffset 100
     with dissolve
-    eve "A-apa itu tadi?!"
-
+    eve "W-what the hell was that?!"
     show grace f_tired_back
-    odette "Sekarang Anda bisa mengatakan Anda telah mencium seorang gadis!"
-
-    grace "Sudah kubilang jangan terlalu gila..."
-
-    grace "Kami bahkan baru saja memulai dan-"
-
-    odette "Maukah kamu bersantai?!"
-
-    odette "Itu hanya ciuman..."
-
+    odette "Now you can say you've kissed a girl!"
+    grace "I told you not to get too crazy..."
+    grace "We've barely even started and-"
+    odette "Would you relax?!"
+    odette "It was just a kiss..."
     grace @ -m_talk "Hmph."
-
     show eve f_normal
-    odette "Giliran siapa?"
-
+    odette "Who's turn is it?"
     show grace f_normal
-    anon f_normal "Milikmu, menurutku."
-
+    anon f_normal "Yours, I think."
     show grace f_normal_back
-    odette "Baiklah."
-
+    odette "Alright."
     show odette f_thinking
     pause
-    odette "Belum pernah aku..."
-
-    odette f_smirk "Keluar dari rumah orang tuaku."
-
+    odette "Never have I ever..."
+    odette f_smirk "Snuck out of my parent's house."
     show grace f_normal
-    eve @ f_eyeroll "Saya merasa itu sulit dipercaya."
-
+    eve @ f_eyeroll "I find that hard to believe."
     show grace f_normal_back
-    odette "Mengapa Anda mengatakan itu?"
-
-    grace "Ayahnya membiarkan dia melakukan apa pun yang dia inginkan, ingat?"
-
+    odette "Why do you say that?"
+    grace "Her dad lets her do whatever she wants, remember?"
     show grace f_normal
-    eve f_happy "Oh benar..."
-
+    eve f_happy "Oh, right..."
     show grace a_shot_drink f_proud m_talk
     show eve a_shot_drink f_drink
     show anon a_shot_drink f_smoke
@@ -1449,54 +976,36 @@ label eve_button_eve_talked_to_both_girls:
     show eve a_shot f_disgusted_wince_down
     show grace a_shot f_disgusted_wince -m_talk
     with dissolve
-    eve "Fiuh!"
-
+    eve "Phew!"
     show grace f_normal
-    eve "Oke, hal ini benar-benar mengejutkanku..."
-
-    anon f_worried "Ya, sepenuhnya."
-
+    eve "Okay, this stuff is really kicking my ass..."
+    anon f_worried "Yeah, totally."
     odette @ f_laugh "Haha!"
-
-    grace "Mungkin kita harus memperlambat sedikit..."
-
-    eve f_surprised "Tidak!"
-
+    grace "Maybe we should slow down a bit..."
+    eve f_surprised "No!"
     show grace f_normal_back
-    odette "Kami tidak melambat."
-
+    odette "We're not slowing down."
     show eve f_happy
-    odette "Sekarang giliranmu!"
-
-    grace f_sad_back "{i}*Huh*{/i} Baik."
-
+    odette "It's your turn!"
+    grace f_sad_back "{i}*Sigh*{/i} Fine."
     grace f_thinking @ -m_talk "Hmm."
-
     pause
     show grace f_happy
-    grace "Belum pernah aku..."
-
-    grace "Selesai anal."
-
+    grace "Never have I ever..."
+    grace "Done anal."
     show odette f_surprised
     show eve f_surprised
     show anon f_surprised_teeth
     show grace f_normal_back
-    odette "Wah, benarkah?"
-
+    odette "Whoa, really?"
     show anon f_flirt_grin
     show eve f_nervous_right
-    odette f_smirk "Bertahun-tahun dan Anda tidak pernah membiarkan siapa pun memarkirnya di garasi belakang Anda?"
-
+    odette f_smirk "All these years and you've never let anyone park it in your rear garage?"
     show eve f_nervous_down
-    grace "Tidak."
-
-    grace "Banyak yang telah mencoba tetapi saya tidak pernah membiarkannya."
-
-    grace f_happy_back "Harus menyimpan sesuatu untuk pernikahan, kau tahu?"
-
-    odette "Psh, ya benar..."
-
+    grace "Nope."
+    grace "Plenty have tried but I never let them."
+    grace f_happy_back "Gotta save something for marriage, you know?"
+    odette "Psh, yeah right..."
     show odette f_yawn a_whiskey_drink with dissolve
     show grace f_normal
     show eve a_shot_drink f_drink with dissolve
@@ -1506,204 +1015,132 @@ label eve_button_eve_talked_to_both_girls:
     with dissolve
     show grace f_surprised
     anon f_shock "!!!"
-    grace "{b}Hawa{/b} apa-apaan ini?!"
-
+    grace "{b}Eve{/b} what the fuck?!"
     show eve f_nervous
     show anon f_surprised_teeth
-    grace "Anda belum pernah berhubungan seks sebelumnya!"
-
-    eve "Anda tidak mengatakan seks, Anda hanya mengatakan anal."
-
-    eve f_nervous_down "Aku pernah menempelkan barang di sana sebelumnya..."
-
+    grace "You've never had sex before!"
+    eve "You didn't say sex, you just said anal."
+    eve f_nervous_down "I've stuck stuff up there before..."
     show anon f_disgusted_wince
     show grace f_surprised_back
     show eve f_nervous_right
-    odette "Oh sial, dia benar!"
-
+    odette "Oh shit, she's right!"
     show eve f_nervous_down
     show anon f_flirt_grin
-    odette "Anda tidak mengatakan seks."
-
+    odette "You didn't say sex."
     show grace f_sad_down
-    grace "Y-ya, tapi..."
-
-    odette "Siapa sangka, {b}Evie{/b} kecil telah melakukan sesuatu yang belum Anda lakukan!"
-
+    grace "Y-yeah, but..."
+    odette "Who would have guessed, little {b}Evie{/b}'s done something you haven't!"
     odette "Haha!"
-
-    grace f_sad "Mengapa kamu-"
-
-    eve "Aku penasaran dan... Rasanya sungguh menyenangkan..."
-
-    odette "Saya tidak pernah begitu bangga!"
-
-    grace "Ugh, alasan utama aku pergi ke sana adalah agar kamu tidak perlu minum!"
-
+    grace f_sad "Why would you-"
+    eve "I was curious and... It actually feels really nice..."
+    odette "I've never been so proud!"
+    grace "Ugh, the whole reason I went there was so you wouldn't have to drink!"
     show grace f_tired_back
-    odette "Saya bisa memberi Anda beberapa petunjuk nanti, jika Anda mau?"
-
-    grace "Diam, {b}Odette{/b}!"
-
-    odette @ f_laugh "Ha ha ha!"
-
+    odette "I can give you some pointers later, if you want?"
+    grace "Shut up, {b}Odette{/b}!"
+    odette @ f_laugh "Hahaha!"
     show grace f_sad
-    eve f_sad_right "M-maaf, {b}[firstname]{/b}..."
-
-    eve "Saya harap Anda tidak menganggap saya menjijikkan?"
-
-    anon f_normal @ f_laugh "Tentu saja tidak."
-
+    eve f_sad_right "S-sorry, {b}[firstname]{/b}..."
+    eve "I hope you don't think I'm gross?"
+    anon f_normal @ f_laugh "Of course not."
     show eve f_nervous
     show grace f_sad_back
-    odette "Oh, sialnya!"
-
-    odette "Tidak ada yang perlu disesali tentang {b}Evie{/b}!"
-
-    odette "Hanya karena adikmu pemalu-"
-
+    odette "Oh, good grief!"
+    odette "There's nothing to be sorry about {b}Evie{/b}!"
+    odette "Just because your sister is a prude-"
     show eve f_happy
-    grace f_tired_back "Saya bukan orang yang pemalu!"
-
-    odette @ f_laugh "Ha ha ha!"
-
+    grace f_tired_back "I am not a prude!"
+    odette @ f_laugh "Hahaha!"
     pause
     show grace f_sad_back
-    odette "Tapi serius, bereksperimen dengan hal-hal semacam itu adalah hal yang wajar..."
-
-    odette "... Dan sebagai catatan, dia benar... Rasanya sungguh menyenangkan!"
-
-    grace f_normal @ f_eyeroll "Uh, selanjutnya!"
-
+    odette "Seriously though, it's perfectly natural to experiment with that sort of stuff..."
+    odette "... And for the record, she's right... It does feel really nice!"
+    grace f_normal @ f_eyeroll "Ugh, next!"
     show grace f_sad
-    eve f_happy_right "Saya pikir sekarang giliran {b}[firstname]{/b}."
-
-    anon "Apakah itu?"
-
+    eve f_happy_right "I think it's {b}[firstname]{/b}'s turn."
+    anon "Is it?"
     eve @ -m_talk "Mmhmm."
-
-    anon "O-oke."
-
-    anon f_thinking "Hmm."
-
+    anon "O-okay."
+    anon f_thinking "Umm."
     pause
-    anon "Belum pernah aku..."
-
-    anon f_snarky "Melakukan masturbasi di depan umum."
-
+    anon "Never have I ever..."
+    anon f_snarky "Masturbated in public."
     show eve f_happy
     show grace f_surprised
-    odette @ f_laugh "Hah, dia menangkapku..."
-
+    odette @ f_laugh "Hah, he's got me..."
     show grace f_sad_back
     show odette f_yawn a_whiskey_drink with dissolve
     pause
     show odette f_smirk a_whiskey with dissolve
-    grace f_sad_down "{i}*Huh*{/i}"
-
+    grace f_sad_down "{i}*Sigh*{/i}"
     show grace a_shot_drink f_proud m_talk with dissolve
     show anon f_flirt_grin
     pause
     show grace a_shot f_sad_back -m_talk with dissolve
-    odette f_surprised "Beneran, kapan?!"
-
-    grace f_sad_down "Bukan urusanmu..."
-
-    odette "Hei, itu aturan mainnya!"
-
-    odette "Anda harus menumpahkannya!"
-
+    odette f_surprised "Really, when?!"
+    grace f_sad_down "None of your business..."
+    odette "Hey, it's the rules of the game!"
+    odette "You gotta spill!"
     show odette f_smirk
     grace @ f_eyeroll "..."
-    eve @ f_laugh "Ayo, Kak..."
-
-    grace f_normal "Uh, baiklah."
-
+    eve @ f_laugh "C'mon, sis..."
+    grace f_normal "Ugh, fine."
     show anon f_normal
-    grace f_normal_back "Anda ingat Tuan Frampton?"
-
-    odette "Guru IPS kita di sekolah menengah?"
-
-    grace "Ya."
-
-    grace "Yah, aku selalu mengira dia seksi dan suatu hari di kelas... Aku agak..."
-
-    odette "Kamu melakukan masturbasi di kelas?!"
-
-    grace "Ya, sedikit... Di bawah mejaku."
-
-    odette @ f_laugh "Ya Tuhan!"
-
-    grace "Tidak ada yang tahu, saya sangat berhati-hati!"
-
+    grace f_normal_back "You remember Mr. Frampton?"
+    odette "Our social studies teacher in high school?"
+    grace "Yeah."
+    grace "Well, I always thought he was hot and one day in class... I kinda..."
+    odette "You masturbated in class?!"
+    grace "Yeah, a little... Under my desk."
+    odette @ f_laugh "Oh my god!"
+    grace "Nobody knew, I was really discreet!"
     show anon f_laugh
-    odette "Kamu gadis nakal..."
-
+    odette "You naughty girl..."
     show anon f_normal
-    grace f_sad_down @ f_tired_back "Diam!"
-
-    odette @ f_laugh "Ha ha ha!"
-
+    grace f_sad_down @ f_tired_back "Shut up!"
+    odette @ f_laugh "Hahaha!"
     show eve a_shot_drink f_drink with dissolve
     show grace f_surprised
     pause
     show eve a_shot f_disgusted_wince_down with dissolve
     anon f_surprised "!!!"
-    grace "Serius, kamu juga?!"
-
+    grace "Seriously, you too?!"
     show anon f_normal
     show eve f_happy
-    eve "Y-ya, suatu saat..."
-
+    eve "Y-yeah, one time..."
     show grace f_sad
-    eve "Di kamar mandi di sekolah."
-
-    odette "Apa yang memicunya?"
-
+    eve "In the bathroom at school."
+    odette "What set that off?"
     show eve f_nervous_right
-    eve "Uhh... T-tidak ada."
-
+    eve "Uhh... N-nothing."
     show eve f_nervous_down
     odette @ -m_talk "Hmm?"
-
-    eve "Saya tidak ingat."
-
-    odette "Psh, ayolah!"
-
-    odette "Apakah itu melibatkan {b}[firstname]{/b} atau semacamnya?"
-
+    eve "I don't remember."
+    odette "Psh, c'mon!"
+    odette "Did it involve {b}[firstname]{/b} or something?"
     show eve f_hood_remove
     grace f_tired_back "{b}Odette{/b}!"
-
-    grace f_sad "Dia tidak perlu mengatakan jika dia tidak mau..."
-
+    grace f_sad "She doesn't have to say if she doesn't want to..."
     show eve f_nervous_down
-    odette "{i}*Huh*{/i} Ya, oke."
-
-    grace "Saya pikir sebaiknya kita hentikan permainan ini di sini, saya tidak ingin ada yang sakit..."
-
+    odette "{i}*Sigh*{/i} Yeah, okay."
+    grace "I think we'd better stop the game here, I don't want anyone getting sick..."
     show grace f_surprised
     show anon f_grumpy
-    eve f_surprised "TIDAK!"
-
+    eve f_surprised "NO!"
     show anon f_surprised
     pause
-    eve f_nervous "Maksudku, satu lagi..."
-
+    eve f_nervous "I mean, just one more..."
     show grace f_sad
     show anon f_normal
-    eve "Sekarang giliranku."
-
+    eve "It's my turn."
     grace f_thinking @ -m_talk "..."
-    grace f_normal @ f_eyeroll "Baiklah, satu lagi."
-
-    eve f_nervous_right "Saya belum pernah berhubungan seks."
-
+    grace f_normal @ f_eyeroll "Alright, one more."
+    eve f_nervous_right "Never have I ever had sex."
     show anon f_surprised_teeth
     show grace f_eyeroll
     show eve f_nervous
-    odette "Ya, itu hal yang mudah."
-
+    odette "Well, that's an easy one."
     show odette f_yawn a_whiskey_drink
     show grace a_shot_drink f_proud m_talk
     with dissolve
@@ -1718,239 +1155,153 @@ label eve_button_eve_talked_to_both_girls:
         show anon f_disgusted_wince a_shot with dissolve
         show eve f_sad_down
         show grace f_sad
-        odette "Benar-benar?"
-
+        odette "Really?"
         show anon f_worried
-        odette "Siapa gadis yang beruntung itu?"
-
+        odette "Who was the lucky gal?"
         grace @ f_sad_back "{b}Odette{/b}..."
-
-        anon "Ehh, aku lebih suka tidak bilang... Kalau tidak apa-apa?"
-
-        eve "Ya, tidak apa-apa."
-
-        odette "Ah, tapi aku ingin-"
-
+        anon "Ehh, I'd rather not say... If that's alright?"
+        eve "Yeah, it's fine."
+        odette "Aww, but I wanted to-"
     else:
         show anon f_grin
         show eve f_nervous_right
         pause
         show eve f_happy_right
         show grace f_happy
-        odette f_tired "Benar-benar?"
-
-        odette "Kamu masih perawan?"
-
+        odette f_tired "Really?"
+        odette "You're a virgin?"
         show anon f_surprised
         grace @ f_tired_back "{b}Odette{/b}..."
-
-        anon f_worried "Y-ya."
-
-        anon "Saya sedang menunggu untuk menemukan orang yang tepat."
-
-        eve "Manis sekali, {b}[firstname]{/b}!"
-
+        anon f_worried "Y-yeah."
+        anon "I was waiting to find the right person."
+        eve "That's so sweet, {b}[firstname]{/b}!"
         show anon f_normal
-        grace @ f_laugh "Memang benar!"
-
-        odette f_smirk @ f_eyeroll "Laaaaaa."
-
+        grace @ f_laugh "It really is!"
+        odette f_smirk @ f_eyeroll "Laaaaame."
     show eve f_normal
     grace f_tired_back "{b}Odette{/b}!"
-
-    odette f_tired "Apa?!"
-
+    odette f_tired "What?!"
     show grace f_surprised
     pause
     show grace f_surprised_back
     pause
     odette f_smirk @ f_surprised "Oh."
-
     show grace f_normal
     pause
-    grace "Baiklah, menurutku cukup permainan untuk malam ini."
-
-    odette "Baiklah, aku akan terus minum..."
-
+    grace "Alright, I think that's enough games for the night."
+    odette "Well, I'm going to keep drinking..."
     show odette f_yawn a_whiskey_drink
     anon @ f_surprised "!!!" with hpunch
     show odette f_smirk a_whiskey with dissolve
     show grace f_normal_back
     pause
     odette @ f_burp "{i}*Buuuurp*{/i}"
-
-    odette "Jika tidak apa-apa bagi kalian bertiga?"
-
+    odette "If that's alright with you three?"
     show eve f_happy
-    grace "Hancurkan dirimu sendiri."
-
-    odette "Jadi..."
-
+    grace "Knock yourself out."
+    odette "So..."
     show grace f_surprised_back
-    odette f_shy "Apakah kalian berdua berkencan sekarang atau bagaimana?"
-
+    odette f_shy "Are you two dating now or what?"
     show eve f_surprised_right
     show grace f_surprised
     anon f_worried "Uhh..."
-
-    eve "Saya rasa kami belum siap untuk memberi labelnya."
-
-    odette "Tapi kamu menyukainya, kan?"
-
+    eve "I don't think we're ready to label it yet."
+    odette "But you like him, right?"
     eve f_nervous_down @ -m_talk "Mmhmm."
-
-    odette f_smirk "aku tahu dia menyukaimu..."
-
+    odette f_smirk "I know he likes you..."
     show grace f_normal
-    anon f_flirt "Ya."
-
+    anon f_flirt "Yes."
     if M_eve.biggus_dickus:
-        odette "... Dan Anda telah melihat gadis itu."
-
+        odette "... And you've seen the girldick."
         show anon f_surprised
     else:
-        odette "... Dan Anda telah melihat bekas lukanya."
-
+        odette "... And you've seen the scar."
     show grace f_tired
     show odette f_laugh
     eve f_surprised "!!!"
     show odette f_smirk
     grace f_angry_back "{b}Odette{/b}!"
-
     show anon f_worried
-    odette "Apa?!"
-
-    odette "Dia sudah melakukannya, bukan?"
-
+    odette "What?!"
+    odette "He has, hasn't he?"
     show eve f_nervous_right
-    anon f_normal "Saya memiliki."
-
-    odette "Bisakah kita menyelesaikan semua kerahasiaan ini?"
-
+    anon f_normal "I have."
+    odette "Can we be done with all the secrecy then, please?"
     show eve f_nervous
     grace f_sad @ -m_talk "..."
-    odette "{b}Evie{/b} tidak perlu malu... Dia patut bangga!"
-
-    eve f_sad_down "Entahlah tentang bangga..."
-
+    odette "{b}Evie{/b} has nothing to be ashamed of... She should be proud!"
+    eve f_sad_down "I dunno about proud..."
     if M_eve.biggus_dickus:
-        odette "Kamu gadis seksi dengan penis... Luar biasa!"
-
+        odette "You're a hot girl with a dick... It's awesome!"
         eve f_sad "Ehh-"
-
-        odette "Sungguh!"
-
+        odette "For real!"
     else:
-        odette "Bekas luka itu sangat seksi, Nak."
-
+        odette "Scars are wicked sexy, girl."
         eve f_sad "Ehh-"
-
-        odette "aku serius!"
-
-    odette "Bukankah itu seksi, {b}[firstname]{/b}?"
-
-    anon f_grin @ f_normal "Saya bersedia."
-
-    eve f_surprised_right "K-kamu yakin?"
-
-    grace f_normal @ f_uneasy "Aduh."
-
-    eve f_nervous_down "T-tapi bagaimana dengan diriku yang lain?"
-
+        odette "I'm serious!"
+    odette "Don't you think it's sexy, {b}[firstname]{/b}?"
+    anon f_grin @ f_normal "I do."
+    eve f_surprised_right "Y-you do?"
+    grace f_normal @ f_uneasy "Aww."
+    eve f_nervous_down "B-but what about the rest of me?"
     show anon f_normal
-    odette f_shy "Apa yang kamu bicarakan?!"
-
-    eve "K-kau tahu, payudara kecilku..."
-
+    odette f_shy "What are you talking about?!"
+    eve "Y-you know, my tiny tits..."
     show anon f_worried
-    eve "... Dan pantatku yang rata."
-
-    odette f_normal @ f_eyeroll "Oh, astaga!"
-
+    eve "... And my flat butt."
+    odette f_normal @ f_eyeroll "Oh, for fuck's sake!"
     show grace f_normal_back
-    odette "Itu yang membuatmu malu sepanjang waktu?!"
-
+    odette "That's what has you so shy all the time?!"
     eve @ -m_talk "..."
-    odette "Kamu harus bangun, Nak!"
-
-    odette "Katakan padanya {b}[firstname]{/b}..."
-
+    odette "You've got to wake up, girl!"
+    odette "Tell her {b}[firstname]{/b}..."
     show grace f_normal
     show eve f_nervous_right
-    anon f_normal "Aku suka tubuhmu."
-
+    anon f_normal "I like your body."
     show eve f_happy_right
-    odette f_shy "MELIHAT!"
-
+    odette f_shy "SEE!"
     show grace f_normal_back
     show eve f_happy
-    odette f_smirk "Aku yakin kamu punya tunas-tunas kecil yang lezat di bawah sana dan para pria menyukainya... Percayalah!"
-
+    odette f_smirk "I bet you've got delicious little perky buds under there and guys love that shit... Trust me!"
     show grace f_eyeroll
-    eve "B-benarkah?"
-
+    eve "R-really?"
     show grace f_normal_back
-    odette @ f_laugh "Ya, ya!"
-
-    odette @ f_eyeroll "Maksudku, lihat adikmu... Payudaranya bukanlah sesuatu yang perlu dituliskan di rumah."
-
+    odette @ f_laugh "Hell yeah!"
+    odette @ f_eyeroll "I mean, look at your sister... Her tits aren't anything to write home about."
     show anon f_worried
-    grace f_sad_down @ f_eyeroll "Ya ampun, terima kasih..."
-
-    odette f_surprised "Apa-"
-
-    odette f_confused "Itu bukan-"
-
+    grace f_sad_down @ f_eyeroll "Jeez, thanks..."
+    odette f_surprised "What-"
+    odette f_confused "That's not-"
     pause
-    odette f_sad "Kau tahu, menurutku milikmu cantik, tapi ternyata tidak..."
-
-    odette f_tired "Sialan, kamu tahu maksudku!"
-
+    odette f_sad "You know, I think yours are beautiful, but they aren't..."
+    odette f_tired "Goddamnit, you know what I mean!"
     grace f_happy @ f_laugh "Haha!"
-
     show anon f_normal
-    eve "Maksudmu, dia tidak bertumpuk sepertimu..."
-
+    eve "You mean, she isn't stacked like you..."
     show grace f_happy_back
-    odette f_normal "Ya, tepatnya!"
-
-    odette f_shy "Dia tidak bertumpuk seperti saya, dan dia masih mendapat banyak perhatian, bukan?"
-
-    eve "Ya."
-
-    odette f_smirk "Pria menyukai segala bentuk dan ukuran..."
-
-    odette "... Dan kamu lucu sekali!"
-
+    odette f_normal "Yes, exactly!"
+    odette f_shy "She's not stacked like me, and she still gets plenty of attention, right?"
+    eve "Yeah."
+    odette f_smirk "Men like all shapes and sizes..."
+    odette "... And you're cute as hell!"
     pause
-    odette "Aku akan menidurimu dalam sekejap."
-
+    odette "I'd fuck you in an instant."
     show eve f_eyeroll
     show anon f_flirt
     grace f_surprised_back "{b}Odette{/b}!!!"
-
     show eve f_happy
-    odette f_confused "Apa?!"
-
-    odette "saya akan melakukannya."
-
-    grace f_sad_back @ f_eyeroll "Yesus."
-
-    odette "Mengapa kamu tidak melepas hoodie itu dan biarkan kami menemuimu?"
-
+    odette f_confused "What?!"
+    odette "I would."
+    grace f_sad_back @ f_eyeroll "Jesus."
+    odette "Why don't you take that hoodie off and let us see you?"
     show anon f_surprised
     show grace f_sad
-    eve f_nervous "Benar-benar?"
-
+    eve f_nervous "Really?"
     show anon f_flirt_grin
-    odette "Ya!"
-
-    grace "Anda tidak perlu melakukan itu {b}Malam{/b}..."
-
-    odette f_normal "Diam, pemalu!"
-
-    grace f_angry_back "Berhenti memanggilku seperti itu!"
-
+    odette "Yeah!"
+    grace "You don't have to do that {b}Eve{/b}..."
+    odette f_normal "Shush, prude!"
+    grace f_angry_back "Stop calling me that!"
     show odette f_laugh
     show eve f_nervous_right
     show grace f_sad
@@ -1959,8 +1310,7 @@ label eve_button_eve_talked_to_both_girls:
     pause
     show eve f_nervous_down
     show grace f_sad_back
-    odette @ f_eyeroll "Ya Tuhan dengan hal rasa malu ini..."
-
+    odette @ f_eyeroll "Oh my god with this shyness stuff..."
     show odette f_yawn a_whiskey_drink with dissolve
     show eve f_nervous
     pause
@@ -1977,86 +1327,57 @@ label eve_button_eve_talked_to_both_girls:
     anon f_shock "!!!" with hpunch
     show anon f_flirt_grin
     show grace f_weary a_facepalm with dissolve
-    odette "Di sana, lihat..."
-
-    odette "Itu tidak terlalu menakutkan."
-
+    odette "There, see..."
+    odette "It's not that scary."
     show eve f_nervous_down a_hoodless_remove2 with dissolve
     show grace f_normal_back a_shot with dissolve
     pause
     show odette b_skirtblank a_idle with dissolve
     show eve f_nervous a_shot with dissolve
-    odette f_tired_down "Hal-hal sialan ini sangat menyebalkan, lebih dari segalanya..."
-
-    grace @ f_tired_back "Kamu penuh omong kosong."
-
-    odette f_normal "aku serius!"
-
+    odette f_tired_down "These damn things are a pain in the ass, more than anything..."
+    grace @ f_tired_back "You're full of shit."
+    odette f_normal "I'm serious!"
     show odette b_skirt a_whiskey with dissolve
-    odette "Beratnya satu ton!"
-
-    odette @ f_eyeroll "Punggungku selalu sakit!"
-
-    odette "Mereka selalu menghalangi jalanku..."
-
-    odette "... Dan pernahkah kamu melihatku mencoba lari?"
-
+    odette "They weigh a ton!"
+    odette @ f_eyeroll "My back is always hurting!"
+    odette "They are constantly getting in my way..."
+    odette "... And have you seen me try and run?"
     grace @ f_weary "Ehh."
-
-    odette "Ingat konser yang kita ikuti beberapa tahun lalu?"
-
-    odette "Di mana kami harus berlari melewati keamanan?"
-
-    grace "Oh ya!"
-
-    odette "Dadaku melambung dan memaku tepat di wajahku!"
-
-    grace f_happy_back @ f_laugh "Haha, omong kosong itu lucu!"
-
-    odette f_shy "Tidak, bukan itu!"
-
-    odette "Saya praktis membuat mata saya hitam!"
-
+    odette "Remember that concert we snuck into a few years back?"
+    odette "Where we had to sprint past security?"
+    grace "Oh yeah!"
+    odette "My tit bounced up and nailed me right in the face!"
+    grace f_happy_back @ f_laugh "Haha, that shit was funny!"
+    odette f_shy "No it wasn't!"
+    odette "I practically gave myself a black eye!"
     show grace f_laugh
     show odette f_laugh
     show anon f_laugh
     eve f_laugh "Haha!"
-
     anon "Haha!"
-
     show grace f_happy_back
     show eve f_happy
     show anon f_flirt_grin
-    odette f_smirk "Jadi, tahukah Anda, payudara besar bukanlah segalanya yang mereka inginkan..."
-
-    eve "Y-ya, menurutku."
-
-    odette "Lepaskan hoodienya, saya ingin melihat apa yang sedang Anda kerjakan!"
-
+    odette f_smirk "So you see, big tits aren't all they're cracked up to be..."
+    eve "Y-yeah, I guess."
+    odette "Take off the hoodie, I wanna see what you're working with!"
     show grace f_normal
-    eve f_nervous_down "{i}*Huh*{/i} Baiklah."
-
+    eve f_nervous_down "{i}*Sigh*{/i} Alright."
     show eve b_topless a_remove with dissolve
     pause .25
     show eve b_pants a_dressup with dissolve
     pause
     show eve a_shot with dissolve
-    odette f_smirk @ f_moo a_whiskey_yay "Wooooo!!!"
-
-    eve f_nervous @ f_eyeroll "Diam..."
-
-    odette "Lihat, aku benar!"
-
-    odette "Itu menggemaskan!"
-
+    odette f_smirk @ f_moo a_whiskey_yay "Woooo!!!"
+    eve f_nervous @ f_eyeroll "Shut up..."
+    odette "See, I was right!"
+    odette "Those are adorable!"
     show eve f_nervous_right
     eve @ -m_talk "..."
     show eve f_nervous
     show grace f_normal_back
-    odette "Anda pria yang beruntung, {b}[firstname]{/b}!"
-
-    odette @ f_laugh "Saya akan memakannya segera!"
-
+    odette "You're a lucky guy, {b}[firstname]{/b}!"
+    odette @ f_laugh "I would eat her right up!"
     show grace f_normal
     show eve f_nervous_right
     show odette f_tired_down a_remove5 with dissolve
@@ -2066,116 +1387,81 @@ label eve_button_eve_talked_to_both_girls:
     show odette b_panties f_smirk a_whiskey with dissolve
     show anon f_surprised
     show eve f_surprised
-    grace f_surprised_back "Maukah kamu berhenti?!"
-
+    grace f_surprised_back "Would you stop?!"
     show anon f_grin
     show eve f_nervous
-    grace "Anda sudah melangkah cukup jauh!"
-
+    grace "You've gone far enough!"
     show anon f_flirt
     show grace f_tired_back
-    odette f_tired "Ya Tuhan, apa urusanmu, {b}Grace{/b}?!"
-
-    odette "Kapan kamu menjadi pemalu?"
-
-    grace f_angry_back "Aku bukan orang yang pemalu!"
-
-    odette @ f_eyeroll "Ya benar."
-
-    odette "Kapan terakhir kali kamu bercinta?"
-
-    grace f_sad_down "Itu bukan-"
-
-    odette "Karena aku belum pernah melihatmu bersama siapa pun di... Entahlah... Bagaimana menurutmu, {b}Evie{/b}?"
-
-    eve "Tidak sejak kecelakaan {b}Ibu{/b} dan {b}Ayah{/b}."
-
-    grace f_sad "Itu tidak ada hubungannya dengan itu."
-
+    odette f_tired "Oh my god, what is your deal, {b}Grace{/b}?!"
+    odette "When did you become such a prude?"
+    grace f_angry_back "I'm not a prude!"
+    odette @ f_eyeroll "Yeah, right."
+    odette "When's the last time you got laid?"
+    grace f_sad_down "That's not-"
+    odette "'Cause I haven't seen you with anyone in... I dunno... What do you think, {b}Evie{/b}?"
+    eve "Not since {b}Mom{/b} and {b}Dad{/b}'s accident."
+    grace f_sad "That has nothing to do with it."
     odette @ -m_talk "Mmhmm."
-
-    odette f_normal "Dulu kamu menyenangkan, tahu?"
-
-    grace f_sad_back "Saya masih menyenangkan!"
-
-    odette f_smirk @ f_laugh "Kalau begitu buktikan, yuk kita lihat skinnya!"
-
+    odette f_normal "You used to be fun, you know?"
+    grace f_sad_back "I'm still fun!"
+    odette f_smirk @ f_laugh "Then prove it, let's see some skin!"
     show eve f_happy
-    grace f_sad_down @ f_eyeroll "{i}*Huh*{/i}"
-
+    grace f_sad_down @ f_eyeroll "{i}*Sigh*{/i}"
     pause
-    grace f_normal_down "Bagus. Persetan!"
-
+    grace f_normal_down "Fine. Fuck it!"
     show grace a_remove1 with dissolve
     pause
     show grace b_shorts a_remove2 with dissolve
     pause
     show grace f_normal a_hip with dissolve
     show anon f_flirt
-    eve @ f_moo a_shot_yay "Wooooo!!!"
-
-    odette @ f_laugh "Haha, itulah semangatnya!"
-
+    eve @ f_moo a_shot_yay "Woooo!!!"
+    odette @ f_laugh "Haha, that's the spirit!"
     show grace f_proud a_remove3 with dissolve
     pause
     show grace b_remove4 with dissolve
     pause
     show grace f_normal_back b_underwear a_shot with dissolve
-    grace "Di sana."
-
-    grace "Puas?"
-
-    odette "Tidak, tapi ini sebuah permulaan."
-
+    grace "There."
+    grace "Satisfied?"
+    odette "No, but it's a start."
     grace @ -m_talk "..."
-    odette "Di sini, Anda memerlukan lebih banyak lagi!"
-
+    odette "Here, you need more of this!"
     show odette a_idle
     show grace a_whiskey
     with dissolve
-    grace f_sad_down "{i}*Huh*{/i}"
-
+    grace f_sad_down "{i}*Sigh*{/i}"
     show grace a_whiskey_drink f_proud m_talk with dissolve
     pause
     show grace a_whiskey f_normal -m_talk with dissolve
-    odette "Bagaimana menurut Anda, {b}[firstname]{/b}?"
-
-    odette "Apakah ini wanita jalang seksi atau apa?!"
-
+    odette "What do you think, {b}[firstname]{/b}?"
+    odette "Are these some sexy bitches or what?!"
     show eve f_happy_right
-    anon "Sangat seksi."
-
+    anon "Very sexy."
     pause
     show odette f_surprised
     pause
     show grace f_happy_back
     show eve f_happy
-    odette f_smirk_back @ f_laugh "Oh sial, ini selaiku!"
-
+    odette f_smirk_back @ f_laugh "Oh shit, this is my jam!"
     show grace b_lead f_happy zorder 2
     show odette b_empty zorder 3:
         xoffset -545
     with dissolve
-    odette "Ayo berdansa denganku!"
-
-    grace @ f_laugh "hehe!"
-
+    odette "Come dance with me!"
+    grace @ f_laugh "Hehe!"
     hide grace
     hide odette
     with dissolve
-    eve f_happy_right "Anda ingin menari?"
-
-    anon f_worried "Ehh, mungkin sebentar lagi."
-
-    anon f_flirt "Saya hanya akan menontonnya untuk saat ini."
-
-    eve f_laugh "Hehe, oke!"
-
+    eve f_happy_right "You wanna dance?"
+    anon f_worried "Ehh, maybe in a bit."
+    anon f_flirt "I'll just watch for now."
+    eve f_laugh "Hehe, okay!"
     hide eve with dissolve
     show anon f_flirt_grin
     pause
-    eve "Tunggu aku!"
-
+    eve "Wait for me!"
 
     scene location_tattoo_rooftop_cutscene01
     show text _ ("The moment had me completely frozen in place.\nMesmerized by beautiful bodies of the girls dancing before me in the firelight.") as caption
@@ -2189,27 +1475,22 @@ label eve_button_eve_talked_to_both_girls:
     with fade
     anon @ -m_talk "..."
     show eve b_pants f_laugh a_hip at flip with {'master': dissolve}
-    eve "hehe!"
-
+    eve "Hehe!"
     show eve b_empty:
         xoffset -530
         xzoom 1
     show anon b_pulling4 f_grin
     with {'master': dissolve}
-    eve f_happy_right "Ayo, {b}[firstname]{/b}... Ayo berdansa denganku!"
-
-    anon f_flirt "O-oke."
-
+    eve f_happy_right "C'mon, {b}[firstname]{/b}... Come dance with me!"
+    anon f_flirt "O-okay."
     show anon:
         xoffset -188
     show eve f_happy:
         xoffset -718
     with dissolve
     pause
-    anon f_surprised "Wah..."
-
+    anon f_surprised "Whoa..."
     eve f_happy_right @ -m_talk "Hmm?"
-
 
     scene expression background(512, 400, 2.4) as stage
     show odette b_kiss_grace:
@@ -2222,39 +1503,29 @@ label eve_button_eve_talked_to_both_girls:
     show eve f_happy b_pants a_hip:
         xoffset -100
     with dissolve
-    anon "Sepertinya {b}Odette{/b} akhirnya sampai di suatu tempat bersama adikmu..."
-
-    eve "Y-ya, mungkin."
-
+    anon "Looks like {b}Odette{/b} is finally getting somewhere with your sister..."
+    eve "Y-yeah, maybe."
     pause
     show eve a_belly_sick f_disgusted_wince_down:
         xoffset 450
         xzoom -1
     with {'master': dissolve}
-    eve "Ya."
-
-    anon f_worried "Kamu baik-baik saja?"
-
-    eve "Ya, aku hanya-"
-
+    eve "Eugh."
+    anon f_worried "You alright?"
+    eve "Yeah, I just-"
     pause
-    eve "Merasa sedikit pusing... Tiba-tiba..."
-
-    anon "Bolehkah aku mengambilkanmu beberapa-"
-
-    eve f_surprised a_puke "Astaga!"
-
+    eve "Feel a little dizzy... All of a sudden..."
+    anon "Can I get you some-"
+    eve f_surprised a_puke "Oh shit!"
     hide eve
     show anon a_surprised f_surprised:
         xzoom 1
         xoffset 600
     with dissolve
-    anon "{b}Malam{/b}?!"
-
+    anon "{b}Eve{/b}?!"
     show anon a_surprised_up f_surprised_teeth
     with {'master': dissolve}
     eve "{i}*BLLEEAARRGHHH*{/i}"
-
     show anon a_sides f_worried
     show odette b_panties f_confused:
         xoffset 100
@@ -2263,235 +1534,170 @@ label eve_button_eve_talked_to_both_girls:
         xoffset -100
         xzoom -1
     with dissolve
-    grace "Apakah dia muntah?"
-
+    grace "Is she puking?"
     show anon:
         xoffset 50
         xzoom -1
     with {'master': dissolve}
-    anon "Y-ya, menurutku begitu..."
-
-    grace "Sial!"
-
-    grace f_angry "Sudah kubilang ini keterlaluan!"
-
+    anon "Y-yeah, I think so..."
+    grace "Shit!"
+    grace f_angry "I told you this was going too far!"
     show odette f_sad
     hide grace
     show anon:
         xzoom 1
         xoffset 550
     with dissolve
-    grace "Ayo {b}Kak{/b}. Ayo kuantar kau ke bawah dan minum air..."
-
+    grace "Come on, {b}Sis{/b}. Let's get you downstairs and drinking some water..."
     odette @ -m_talk "..."
-    odette "Sial!"
-
+    odette "Fuck!"
     show anon f_worried:
         xoffset 0
         xzoom -1
     with dissolve
-    odette "Bicara tentang waktu yang buruk!"
-
-    anon "Apakah {b}Eve{/b} akan baik-baik saja?"
-
-    odette f_tired "Oh, dia akan baik-baik saja..."
-
+    odette "Talk about bad timing!"
+    anon "Is {b}Eve{/b} going to be alright?"
+    odette f_tired "Oh, she'll be fine..."
     show anon:
         xoffset 500
         xzoom 1
     with {'master': dissolve}
-    odette "Terlalu banyak dan terlalu cepat."
-
+    odette "Just a bit too much too quickly."
     pause
-    odette f_smirk "Cukup malam, ya?"
-
-    anon "Ya, cukup gila."
-
-    odette "Saya yakin itu semua cukup menarik bagi Anda?"
-
+    odette f_smirk "Quite the night, huh?"
+    anon "Yeah, pretty crazy."
+    odette "I bet it was all pretty exciting for you?"
     show anon a_behind_head f_surprised:
         xoffset 0
         xzoom -1
     with dissolve
     pause
-    anon f_worried "Ehh, y-ya..."
-
-    odette @ f_laugh "Hehe, ada apa?"
-
-    odette "Kamu tampak sedikit malu..."
-
+    anon f_worried "Ehh, y-yes..."
+    odette @ f_laugh "Hehe, what's the matter?"
+    odette "You seem a little embarrassed..."
     anon @ -m_talk "..."
     show odette b_pantiesblank with dissolve
-    odette "Kamu menyukai payudaraku, {b}[firstname]{/b}?"
-
+    odette "You like my tits, {b}[firstname]{/b}?"
     show odette f_smirk_down
     anon f_surprised_teeth_down o_boner "!!!" with hpunch
-    anon f_depressed "M-maaf, aku tidak bermaksud-"
-
+    anon f_depressed "S-sorry, I didn't mean-"
     odette f_smirk @ f_laugh "Haha!"
-
-    odette "Tidak apa-apa, {b}[firstname]{/b}... Anda bisa melihatnya."
-
+    odette "It's fine, {b}[firstname]{/b}... You can look."
     anon a_sides f_flirt @ -m_talk "..."
-    odette "Anda ingin menyentuhnya?"
-
+    odette "You wanna touch them?"
     anon f_worried "Oh, uhh..."
-
-    anon "... Menurutku itu bukan ide yang bagus."
-
+    anon "... I don't think that's a good idea."
     show odette b_panties
     with {'master': dissolve}
-    odette "Kenapa tidak?"
-
-    odette "{b}Evie{/b} tidak akan keberatan jika kita bersenang-senang sedikit..."
-
+    odette "Why not?"
+    odette "{b}Evie{/b} won't mind if we have a little fun..."
     anon @ -m_talk "..."
     show anon f_surprised behind odette
     show odette a_grope:
         xoffset 250
     with {'master': dissolve}
-    odette "... aku berjanji!"
-
+    odette "... I promise!"
     show anon f_surprised_down
     with {'master': dissolve}
     anon @ -m_talk "!!!"
-    odette a_idle f_surprised_down "Wow, {b}Tuuku{/b} tidak bercanda!"
-
+    odette a_idle f_surprised_down "Wow, {b}Tuuku{/b} wasn't joking!"
     show anon a_sides f_surprised
     with {'master': dissolve}
-    odette f_smirk "Kamu besar!"
-
-    anon f_worried "Menurutku kita tidak seharusnya-"
-
-    odette "Aww, jangan malu kawan."
-
+    odette f_smirk "You are big!"
+    anon f_worried "I don't think we should be-"
+    odette "Aww, don't be shy big fella."
     show anon a_up f_surprised_low -o_boner
     show odette a_anon_pants1 f_smirk_lip_down:
         offset (237, 207)
     with {'master': dissolve}
-    anon "A-wah, {b}Odette{/b}!!"
-
+    anon "W-whoa, {b}Odette{/b}!!"
     pause
-    odette f_smirk_up "Kamu pasti sangat terangsang setelah malam yang baru saja kamu alami..."
-
-    odette "... Heh, aku tahu, tentu saja!"
-
+    odette f_smirk_up "You must be horny as hell after the night you just had..."
+    odette "... Heh, I know I certainly am!"
 
     menu:
-        "Saya tidak bisa melakukan ini!":
+        "I can't do this!":
             show odette a_anon_pants2 f_confused
             show anon a_cover_boner o_boner f_worried_low
             with {'master': dissolve}
-            anon "Hentikan itu, {b}Odette{/b}."
-
+            anon "Cut it out, {b}Odette{/b}."
             odette f_thinking @ -m_talk "Hmm?"
-
             show odette a_sides
             with {'master': dissolve}
-            anon "{b}Eve{/b} dan {b}Grace{/b} ada di bawah!"
-
+            anon "{b}Eve{/b} and {b}Grace{/b} are right downstairs!"
             show anon a_sides
             show odette f_smirk_up
             with {'master': dissolve}
-            odette "Oh, santai saja... mereka akan sibuk untuk sementara waktu."
-
+            odette "Oh, relax... they're going to be busy for a while."
             show anon -o_boner
             show odette a_anon_pants1 f_smirk_lip_down
             with {'master': dissolve}
-            anon "Bukan itu intinya, aku-"
-
+            anon "That's not the point, I-"
             show odette a_anon_pants2 f_sad
             show anon a_cover_boner o_boner f_surprised_low
             with {'master': dissolve}
-            anon "{b}Odette{/b}, berhenti!"
-
+            anon "{b}Odette{/b}, stop!"
             show odette a_sides f_annoyed_up
             with {'master': dissolve}
-            odette "Tunggu, serius?"
-
-            anon "Ya!"
-
-            odette f_thinking "Umm, kamu paham aku menawarkan untuk menghisap penismu sekarang... kan?"
-
-            anon f_worried_low "Ya, menurutku... hanya saja-"
-
+            odette "Wait, seriously?"
+            anon "Yes!"
+            odette f_thinking "Umm, you understand I'm offering to suck your dick right now... right?"
+            anon f_worried_low "Yeah, I kinda figured that... it's just-"
             show anon a_sides -o_boner
             with {'master': dissolve}
-            anon "{i}*Sigh*{/i} Bisakah Anda berdiri?"
-
+            anon "{i}*Sigh*{/i} Could you stand up, please?"
             pause
             show odette b_remove6:
                 offset (200, 50)
             with {'master': dissolve}
-            anon "Lihat, kamu seperti, sangat seksi dan sebagainya..."
-
+            anon "Look, you're like, super hot and all..."
             show anon f_worried of_blush
             show odette b_panties f_confused:
                 offset (200, 0)
             with {'master': dissolve}
-            anon "... Dan sangat, SANGAT telanjang..."
-
+            anon "... And very, VERY naked..."
             show odette f_laugh
             with {'master': dissolve}
-            odette "hehe!"
-
+            odette "Hehe!"
             show odette f_smirk
             with {'master': dissolve}
-            odette "Eh ya?"
-
+            odette "Uh huh?"
             show anon f_shy_left
             with {'master': dissolve}
-            anon "... Tapi {b}Eve{/b} dan aku... yah, aku masih yakin kita seperti apa."
-
+            anon "... But {b}Eve{/b} and I are... well, I'm exactly sure what we are yet."
             show anon f_shy
             show odette f_confused
             with {'master': dissolve}
-            anon "T-tapi aku ingin sekali mengetahuinya!"
-
-            odette "Oh oke?"
-
-            anon f_worried "Dan aku benar-benar tidak ingin mengambil risiko mengacaukan segalanya... kau tahu?"
-
-            anon "Jadi, sama seperti aku menikmati... uhh..."
-
-            odette f_smirk "Seks oral?"
-
-            anon "... Y-ya, itu!"
-
-            odette f_laugh "{i}*Mendengus*{/i}"
-
+            anon "B-but I'm eager to find out!"
+            odette "Oh kay?"
+            anon f_worried "And I really don't want to risk screwing things up... ya know?"
+            anon "So, much as I would enjoy the... uhh..."
+            odette f_smirk "Blowjob?"
+            anon "... Y-yes, that!"
+            odette f_laugh "{i}*Snort*{/i}"
             show anon a_cover_boner
             with {'master': dissolve}
-            anon "Saya khawatir saya harus menolaknya dengan hormat."
-
-            odette f_smirk "Wow, menurutku belum pernah ada orang yang menolakku sebelumnya..."
-
+            anon "I'm afraid I must respectfully, decline."
+            odette f_smirk "Wow, I don't think anybody has ever turned me down before..."
             show anon f_surprised_low
             show odette a_excited f_shy:
                 xoffset 275
             with {'master': dissolve}
-            odette "... itu membuatku semakin bersemangat."
-
-            anon f_shy "{i}*Gulp*{/i} B-benarkah?"
-
+            odette "... it's kinda turning me on even more."
+            anon f_shy "{i}*Gulp*{/i} R-really?"
             odette @ -m_talk "Mhmm."
-
             grace "{b}Odette{/b}!"
-
             show anon a_sides f_worried_left -of_blush
             show odette f_confused
             with {'master': dissolve}
-            grace "Saya butuh bantuan Anda!"
-
-            odette f_sad "Ck, sepertinya kesenangan kita dipersingkat..."
-
+            grace "I need your help!"
+            odette f_sad "Tsk, looks like our fun's getting cut short..."
             show anon f_worried
             show odette a_sides:
                 xoffset 200
             with {'master': dissolve}
-            odette f_smirk "Kamu sebaiknya pulang... Kami akan menjaga {b}Evie{/b}."
-
-        "Sekarang apa?":
+            odette f_smirk "You should head on home... We'll take good care of {b}Evie{/b}."
+        "Now what?":
 
             show odette a_sides f_smirk_lip_down
             show anon b_shirt od_dick2
@@ -2501,12 +1707,10 @@ label eve_button_eve_talked_to_both_girls:
             show odette a_excited f_smirk_down
             show anon od_dick4
             with fastdissolve
-            odette "Halo!"
-
+            odette "Hell-O!"
             show odette a_anon_pants2 f_smirk_lip_down
             with {'master': dissolve}
-            anon "Uhh, apa sebenarnya yang kamu-"
-
+            anon "Uhh, what exactly are you-"
 
             call scene_odette_blowjob
             $ unlock_scene('Odette', '04_unlocked', variant='roof')
@@ -2521,42 +1725,30 @@ label eve_button_eve_talked_to_both_girls:
             pause
             show odette a_sides
             with {'master': dissolve}
-            odette "Sial, sebaiknya aku pergi..."
-
-            anon f_confused "Tunggu, kamu pergi?!"
-
-            odette f_smirk "Panggilan tugas, aku takut..."
-
-            odette "... Tapi jangan khawatir, kawan..."
-
+            odette "Shit, I'd better go..."
+            anon f_confused "Wait, you're leaving?!"
+            odette f_smirk "Duty calls I'm afraid..."
+            odette "... But don't worry, big fella..."
 
     show anon f_surprised
     show odette a_kiss f_moo
     with dissolve
     pause
-    odette a_idle f_smirk "Untuk dilanjutkan."
-
-    anon @ -m_talk "{i}*Meneguk*{/i}"
-
+    odette a_idle f_smirk "To be continued."
+    anon @ -m_talk "{i}*Gulp*{/i}"
     show anon f_shy:
         xoffset 500
         xzoom 1
     hide odette
     with {'master': dissolve}
-    odette "hehe!"
-
+    odette "Hehe!"
     pause
-    anon f_flirt_grin @ -m_talk "(Sial!)"
-
-    anon @ -m_talk "(Gadis itu adalah masalah besar...)"
-
+    anon f_flirt_grin @ -m_talk "( Holy crap! )"
+    anon @ -m_talk "( That girl is big trouble... )"
     pause
-    anon @ f_laugh -m_talk "(... Malam yang luar biasa!)"
-
-    anon @ -m_talk "(Saya pikir {b}Eve{/b} dan saya mungkin benar-benar membangun sesuatu yang sangat istimewa di sini! )"
-
-    anon @ -m_talk "(Saya harus memastikannya dan {b}memeriksanya besok{/b}. )"
-
+    anon @ f_laugh -m_talk "( ... What a night though! )"
+    anon @ -m_talk "( I think {b}Eve{/b} and I might really be building towards something really special here! )"
+    anon @ -m_talk "( I'll have to be sure and {b}check on her tomorrow{/b}. )"
     hide anon with dissolve
     return
 
@@ -2565,73 +1757,44 @@ label eve_button_eve_talk_to_girls:
     show anon a_beer
     show eve f_happy a_ipod
     with dissolve
-    anon "Ini dia."
-
+    anon "Here you go."
     show eve a_beer_ipod
     show anon b_dressed_pickup
     with dissolve
-    eve "Terima kasih, {b}[firstname]{/b}!"
-
+    eve "Thanks, {b}[firstname]{/b}!"
     show anon b_dressed f_worried a_beer with dissolve
-    anon "Maaf, saya tidak bisa menemukan yang hangat dan sigung; sudah lewat tanggal kadaluarsanya..."
-
+    anon "Sorry, I couldn't find any warm, skunky ones; past their expiration date..."
     show eve f_confused
-    anon f_snarky "Tahukah Anda, karena biasanya Anda meminumnya seperti itu?"
-
-    eve f_happy @ f_laugh "Oh, hah hah, lucu sekali."
-
-    anon f_normal @ f_laugh "Ha ha ha!"
-
-    eve f_normal_down "Anda punya preferensi musik?"
-
-    anon "Tidak, semuanya baik-baik saja."
-
-    eve "Saya pikir saya akan memulai kita dengan musik rock klasik."
-
-    eve "Itu favorit {b}Grace{/b}."
-
-    anon "Bekerja untuk saya!"
-
+    anon f_snarky "You know, since that's the way you usually drink them?"
+    eve f_happy @ f_laugh "Oh, hah hah, very funny."
+    anon f_normal @ f_laugh "Hahaha!"
+    eve f_normal_down "You got any music preference?"
+    anon "Nah, anything is fine."
+    eve "I think I'll start us off with some classic rock."
+    eve "That's {b}Grace{/b}'s favorite."
+    anon "Works for me!"
     pause
-    eve f_sad a_beer_hold "{i}*Sigh*{/i} Saya sangat berharap {b}Grace{/b} menghentikannya malam ini."
-
-    eve "Anda tidak akan percaya betapa menyenangkannya dia dulu!"
-
-    anon f_worried "Menurutku dia cukup menyenangkan sekarang, {b}Eve{/b}."
-
-    eve "Y-ya, tapi tidak seperti sebelum kecelakaan itu..."
-
-    anon "Anda benar-benar berpikir kecelakaan itu penyebabnya?"
-
-    eve "Saya harap begitu."
-
-    eve f_sad_down "Kalau tidak, ini salahku."
-
-    anon f_skeptical "Bagaimana itu bisa menjadi kesalahanmu?"
-
-    eve "K-kamu tahu, karena dia terjebak menjagaku..."
-
-    anon "Bukankah mungkin dia tumbuh begitu saja dari suasana pesta?"
-
-    anon "Maksudku, orang-orang melakukan itu..."
-
-    anon "Mereka bertambah tua dan prioritas mereka berubah."
-
-    eve "Ya, menurutku."
-
-    anon "Jangan terlalu khawatir tentang hal itu."
-
-    anon f_worried "Mari kita fokus bersenang-senang malam ini, ya?"
-
-    eve "Anda benar."
-
+    eve f_sad a_beer_hold "{i}*Sigh*{/i} I really hope {b}Grace{/b} cuts it loose tonight."
+    eve "You wouldn't believe how much fun she used to be!"
+    anon f_worried "I think she's pretty fun now, {b}Eve{/b}."
+    eve "Y-yeah, but nothing like before the accident..."
+    anon "You really think the accident is to blame?"
+    eve "I hope so."
+    eve f_sad_down "Otherwise, it's my fault."
+    anon f_skeptical "How could it be your fault?"
+    eve "Y-you know, because she's stuck taking care of me..."
+    anon "Isn't it possible she just grew out of the whole party scene?"
+    anon "I mean, people do that..."
+    anon "They get older and their priorities change."
+    eve "Yeah, I guess."
+    anon "Don't worry about it so much."
+    anon f_worried "Let's just focus on having fun tonight, huh?"
+    eve "You're right."
     show anon b_hug_eve f_shy_down
     hide eve
     with dissolve
-    eve "Kamu selalu membuatku merasa lebih baik, {b}[firstname]{/b}."
-
-    eve "Terima kasih!"
-
+    eve "You always make me feel better, {b}[firstname]{/b}."
+    eve "Thank you!"
     return
 
 
@@ -2645,26 +1808,20 @@ label eve_button_bike_breakdown_started:
             xoffset 500
         show anon b_desk
     with dissolve
-    eve "Hai, {b}[firstname]{/b}!"
-
+    eve "Hey, {b}[firstname]{/b}!"
     if player.location != L_school_frenchclassroom:
         hide eve
         show anon b_hug_eve f_shy_down
         with dissolve
-    anon "Halo."
-
+    anon "Hello."
     if player.location != L_school_frenchclassroom:
         show anon b_dressed f_normal
         show eve f_happy
         with dissolve
-    eve "Apakah Anda masih {b}akan datang akhir pekan ini{/b}?"
-
-    anon "Tentu saja."
-
-    eve "Saya sangat berharap {b}Grace{/b} memperbaiki sepedanya dan mengizinkan kami mengajaknya berkeliling!"
-
-    anon "Ya, itu akan luar biasa!"
-
+    eve "Are you still {b}coming over this weekend{/b}?"
+    anon "Of course."
+    eve "I really hope {b}Grace{/b} gets the bike fixed and lets us take her for a spin!"
+    anon "Yeah, that would be awesome!"
     return
 
 label eve_button_bike_breakdown_start:
@@ -2677,47 +1834,31 @@ label eve_button_bike_breakdown_start:
             xoffset 500
         show anon b_desk
     with dissolve
-    eve "Hai, {b}[firstname]{/b}!"
-
+    eve "Hey, {b}[firstname]{/b}!"
     if player.location != L_school_frenchclassroom:
         hide eve
         show anon b_hug_eve f_shy_down
         with dissolve
-    anon "Halo."
-
+    anon "Hello."
     if player.location != L_school_frenchclassroom:
         show anon b_dressed f_normal
         show eve f_happy
         with dissolve
-    anon "Kamu ingin jalan-jalan sepulang sekolah?"
-
-    eve f_sad "Ah, kuharap aku bisa..."
-
-    eve "Aku mendapat detensi, ingat?"
-
-    anon f_worried "Oh benar."
-
-    eve "Maaf."
-
-    anon "Tidak masalah."
-
-    eve f_happy "Kamu harus {b}datang ke rumahku akhir pekan ini{/b}!"
-
+    anon "You wanna hang out after school?"
+    eve f_sad "Aww, I wish I could..."
+    eve "I've got detention, remember?"
+    anon f_worried "Oh, right."
+    eve "Sorry."
+    anon "It's no problem."
+    eve f_happy "You should {b}come over to my house this weekend{/b}!"
     show anon f_normal
-    eve "{b}Grace{/b} mendapatkan suku cadang pengganti untuk sepedanya, jadi dia akan mencoba memperbaikinya."
-
-    anon "Oh ya?"
-
-    eve "Siapa tahu, jika dia berhasil, dia mungkin akan membiarkan kita mencobanya."
-
-    anon @ f_laugh "Itu akan sangat luar biasa!"
-
-    eve "Jadi kamu akan berada di sana?"
-
-    anon "Anda yakin saya akan melakukannya."
-
-    eve @ f_laugh "Hehe, aku tidak sabar!"
-
+    eve "{b}Grace{/b} got the replacement part for her bike, so she'll be trying to fix it."
+    anon "Oh, yeah?"
+    eve "Who knows, if she gets it working, she might even let us take it for a spin."
+    anon @ f_laugh "That would be so awesome!"
+    eve "So you'll be there?"
+    anon "You bet I will."
+    eve @ f_laugh "Hehe, I can't wait!"
     hide anon with dissolve
     return
 
@@ -2727,31 +1868,21 @@ label eve_button_detention:
     show eve f_happy
     with dissolve
     eve "{b}[firstname]{/b}!"
-
     hide eve
     show anon b_hug_eve f_laugh
     with dissolve
-    anon "Heh, hei {b}Hawa{/b}."
-
-    anon f_shy_down "Bagaimana kabarmu?"
-
+    anon "Heh, hey {b}Eve{/b}."
+    anon f_shy_down "How are you?"
     show anon b_dressed f_normal
     show eve f_happy
     with dissolve
-    eve "Luar biasa, terima kasih!"
-
-    anon "Apa maksudmu?"
-
-    eve "Saya menyerahkan sketsa Anda kepada {b}Nona Ross{/b}, dan dia menyukainya!"
-
-    anon "Benar-benar?"
-
-    eve "Ya!"
-
-    eve "Anda benar-benar menyelamatkan saya dari banyak masalah."
-
-    anon "Ah, ayolah... Bukan apa-apa."
-
+    eve "Fantastic, thanks to you!"
+    anon "What do you mean?"
+    eve "I handed in your sketch to {b}Miss Ross{/b}, and she loved it!"
+    anon "Really?"
+    eve "Yeah!"
+    eve "You really saved me a lot of trouble."
+    anon "Aww, c'mon... It was nothing."
     hide anon
     show eve b_dressed_kiss:
         xoffset -400
@@ -2762,144 +1893,82 @@ label eve_button_detention:
         xoffset 0
     show anon f_flirt
     with dissolve
-    eve "Ups!"
-
+    eve "Oops!"
     show eve f_nervous a_rossed
-    eve "M-maaf, aku lupa dimana kita berada..."
-
-    anon "T-tidak, tidak apa-apa."
-
-    anon "Aku suka menciummu."
-
-    eve @ f_surprised "Anda melakukannya?"
-
-    anon "Tentu saja."
-
-    eve a_idle "Hehe, aku juga suka menciummu."
-
+    eve "S-sorry, I forgot where we are..."
+    anon "N-no, it's okay."
+    anon "I like kissing you."
+    eve @ f_surprised "You do?"
+    anon "Of course."
+    eve a_idle "Hehe, I like kissing you too."
     show anon f_grin
     show eve f_nervous_down
     pause
-    eve "Tapi aku melakukannya... Agak... Berjanji {b}Grace{/b} bahwa kita akan melakukannya perlahan..."
-
+    eve "But I did... Kinda... Promise {b}Grace{/b} that we'd take it slow..."
     anon f_worried "Oh?"
-
-    eve "Y-ya."
-
-    eve f_nervous "Dia memainkan peran sebagai kakak perempuan yang peduli lagi."
-
-    anon f_grin @ f_unimpressed "Hehe, tidak apa-apa."
-
-    eve "Ya?"
-
-    anon f_normal "Kita bisa melakukannya pelan-pelan, tidak masalah."
-
+    eve "Y-yeah."
+    eve f_nervous "She's playing the role of the concerned big sister again."
+    anon f_grin @ f_unimpressed "Heh, that's okay."
+    eve "Yeah?"
+    anon f_normal "We can take it slow, it's no problem."
     hide eve
     show anon b_hug_eve f_shy_down
     with dissolve
-    eve "Ya Tuhan, kamu yang terbaik, {b}[firstname]{/b}!"
-
-    eve "Terima kasih!"
-
-    anon "Terima kasih kembali."
-
+    eve "Oh my god, you are the best, {b}[firstname]{/b}!"
+    eve "Thank you!"
+    anon "You're welcome."
     pause
     show anon b_dressed f_normal
     show eve f_happy
     with dissolve
-    anon "Jadi, bagaimana hubungan adikmu dan {b}Odette{/b} malam itu?"
-
+    anon "So, how did things go between your sister and {b}Odette{/b} the other night?"
     eve @ -m_talk "Hmm?"
-
-    anon f_flirt "Tahukah mereka?"
-
-    eve "Oh, kamu bertanya apakah mereka sudah terhubung?"
-
+    anon f_flirt "Did they, you know?"
+    eve "Oh, you're asking if they hooked up?"
     anon f_flirt_grin @ -m_talk "Mmhmm."
-
-    eve "Tidak, mereka tidak melakukannya."
-
-    eve @ f_eyeroll "Rupanya, adikku tertidur tak lama setelah mereka memutar filmnya."
-
-    anon f_normal @ f_laugh "Dia tertidur?"
-
-    eve "Ya."
-
-    anon "Selama film horor?"
-
+    eve "No, they didn't."
+    eve @ f_eyeroll "Apparently, my sister fell asleep shortly after they put the movie in."
+    anon f_normal @ f_laugh "She fell asleep?"
+    eve "Yeah."
+    anon "During a horror movie?"
     eve @ f_laugh "Haha!"
-
-    eve "Aku tahu, gila kan?!"
-
-    eve "Itu karena dia sendiri yang bekerja terlalu keras."
-
-    eve "Dia kelelahan, sepanjang waktu!"
-
-    anon "Ya, saya bisa membayangkannya."
-
-    eve f_sad_down "Saya berharap dia mengizinkan saya membantunya."
-
+    eve "I know, crazy right?!"
+    eve "It's because she's overworking herself."
+    eve "She's exhausted, like, all the time!"
+    anon "Yeah, I can imagine."
+    eve f_sad_down "I wish she would let me help her."
     pause
-    anon "Mengapa {b}Odette{/b} tidak membantunya?"
-
-    eve f_normal "Apa?"
-
-    anon "Maksudku, dia ada di tempatmu sepanjang waktu..."
-
-    anon "Jika dia menawarkan bantuan {b}Grace{/b} dengan pekerjaan di toko, mungkin {b}Grace{/b} akan lebih menerima ajakannya?"
-
+    anon "Why doesn't {b}Odette{/b} help her?"
+    eve f_normal "What?"
+    anon "I mean, she's at your place all the time anyways..."
+    anon "If she offered to help {b}Grace{/b} with work in the shop, maybe {b}Grace{/b} would be more receptive to her advances?"
     eve f_thinking_down @ -m_talk "Hmm."
-
-    anon "Menurutmu tidak?"
-
-    eve f_normal "Tidak, itu sebenarnya ide yang bagus."
-
-    eve a_hip @ f_eyeroll "Bahkan mungkin berhasil... JIKA {b}Odette{/b} tidak terlalu malas!"
-
+    anon "You don't think so?"
+    eve f_normal "No, it's actually a good idea."
+    eve a_hip @ f_eyeroll "It might even work... IF {b}Odette{/b} wasn't so freaking lazy!"
     anon @ f_laugh "Haha!"
-
-    eve "Gadis itu belum pernah bekerja sehari pun sepanjang hidupnya."
-
-    anon "Anda harus memberitahunya."
-
-    eve "Yaaah, tidak."
-
-    anon "Kenapa tidak?"
-
-    eve "Karena, aku tidak akan membantu {b}Odette{/b} merayu adikku!"
-
-    eve "Itu akan menjadi aneh."
-
-    anon "Mengapa itu aneh?"
-
-    anon "Anda ingin {b}Grace{/b} bahagia, bukan?"
-
-    eve "Tentu saja aku tahu!"
-
-    eve "Tapi, itu {b}Odette{/b}... Dan adikku..."
-
-    anon "Jadi?"
-
-    eve f_sad_down a_idle "{i}*Huh*{/i} Entahlah, mungkin kamu benar."
-
+    eve "That girl hasn't worked a day in her entire life."
+    anon "You should tell her."
+    eve "Yeaaah, no."
+    anon "Why not?"
+    eve "Because, I'm not going to help {b}Odette{/b} seduce my sister!"
+    eve "That would be weird."
+    anon "Why is that weird?"
+    anon "You want {b}Grace{/b} to be happy, don't you?"
+    eve "Of course I do!"
+    eve "But, it's {b}Odette{/b}... And my sister..."
+    anon "So?"
+    eve f_sad_down a_idle "{i}*Sigh*{/i} I dunno, maybe you're right."
     pause
-    eve f_normal "Saya rasa tidak ada salahnya untuk mencoba."
-
-    anon @ f_laugh "Tepat."
-
+    eve f_normal "I guess it wouldn't hurt to try."
+    anon @ f_laugh "Exactly."
     pause
-    eve f_happy "Anda harus datang malam ini, dan kita akan membicarakannya dengan {b}Odette{/b}."
-
-    anon @ f_flirt "Saya bisa melakukan itu."
-
-    eve @ f_laugh "Luar biasa!"
-
-    eve "Setelah itu, saya akan bersorak lagi di {i}Street Kombat{/i}!"
-
-    anon @ f_snarky a_point "Oh, kamu sangat terpuruk kali ini!"
-
+    eve f_happy "You should come over tonight, and we'll talk to {b}Odette{/b} about it."
+    anon @ f_flirt "I can do that."
+    eve @ f_laugh "Awesome!"
+    eve "Afterwards, I'll whoop your butt in {i}Street Kombat{/i} again!"
+    anon @ f_snarky a_point "Oh, you're so going down this time!"
     eve @ f_laugh "Haha!"
-
     roxxy "Hey, freak!" with hpunch
     show eve f_surprised:
         flip
@@ -2914,42 +1983,28 @@ label eve_button_detention:
         xoffset -175
     with dissolve
     anon "{b}Roxxy{/b}?"
-
     show roxxy m_talk
     if M_roxxy.finished_state(S_roxxy_picnic_done):
-        roxxy "Minggir, {b}[firstname]{/b}!"
-
+        roxxy "Out of my way, {b}[firstname]{/b}!"
     else:
-        roxxy "Minggir, pecundang!"
-
+        roxxy "Out of my way, loser!"
     show anon f_surprised_teeth
     show roxxy b_dressed_toes with dissolve
-    roxxy "Menurutmu itu lucu, mengolok-olok orang?!"
-
+    roxxy "You think it's funny, pulling pranks on people?!"
     show roxxy b_dressed -m_talk with dissolve
-    eve f_confused "Hah?"
-
-    roxxy "Aku tahu kaulah yang mengacak-acak rambutku!"
-
-    becca "Dan kulitku!"
-
-    eve a_hip f_normal @ f_eyeroll "Aku tidak tahu apa yang kamu bicarakan..."
-
-    roxxy "Jangan mencoba dan menyangkalnya!"
-
-    missy "Kamu menggambar penis di dahiku!"
-
-    eve f_happy @ f_laugh "Ha ha ha!"
-
+    eve f_confused "Huh?"
+    roxxy "I know you're the one who fucked up my hair!"
+    becca "And my skin!"
+    eve a_hip f_normal @ f_eyeroll "I dunno what you're talking about..."
+    roxxy "Don't try and deny it!"
+    missy "You drew a dick on my forehead!"
+    eve f_happy @ f_laugh "Hahaha!"
     missy @ -m_talk "..."
-    becca "Kami tahu itu kamu!"
-
+    becca "We know it was you!"
     show anon f_surprised_left
-    eve "Bisakah Anda membuktikannya?"
-
+    eve "Can you prove it?"
     show anon f_surprised
-    roxxy "Saya tidak perlu membuktikannya!"
-
+    roxxy "I don't need to prove it!"
     if M_roxxy.finished_state(S_roxxy_picnic_done):
         show roxxy b_empty zorder 2:
             xoffset -125
@@ -2962,93 +2017,63 @@ label eve_button_detention:
             xoffset 20
         with dissolve
         show eve f_surprised
-        roxxy "Ayo, {b}[firstname]{/b}!"
-
-        roxxy "Aku tidak ingin kamu bergaul dengan wanita jalang jelek ini lagi!"
-
-        eve f_angry "H-hei!"
-
+        roxxy "C'mon, {b}[firstname]{/b}!"
+        roxxy "I don't want you hanging out with this fugly bitch anymore!"
+        eve f_angry "H-hey!"
         show eve b_empty zorder 2:
             xoffset -118
         show anon b_pulling2 f_surprised_left
         with dissolve
-        eve "Anda tidak bisa mengendalikannya!"
-
+        eve "You don't get to control him!"
         show anon f_surprised b_pulling3 with dissolve
-        roxxy "Lepaskan!"
-
+        roxxy "Let go!"
         show anon b_pulling2 f_surprised_left with dissolve
-        eve "TIDAK!"
-
+        eve "NO!"
         show anon b_pulling3 f_surprised with dissolve
         pause
-        anon "Oke, kalian berdua harus tenang..."
-
+        anon "Okay, you two need to calm down..."
         show missy f_normal
         show anon b_pulling2 with dissolve
-        eve "Dia bisa bergaul dengan siapa pun yang dia mau!"
-
+        eve "He can hang out with whoever he wants!"
         show anon f_hurt
-        missy "Ini agak panas."
-
-        becca @ f_eyeroll "Diam, {b}Nona{/b}..."
-
+        missy "This is kinda hot."
+        becca @ f_eyeroll "Shut up, {b}Missy{/b}..."
         show anon b_pulling3 with dissolve
-        roxxy "Sebaiknya kau mundur saja, jalang!"
-
+        roxxy "You better back the fuck off, bitch!"
         show anon b_pulling2 with dissolve
-        eve "Atau apa?!"
-
+        eve "Or what?!"
         show anon b_pulling3 with dissolve
         roxxy "Grr!"
-
         show anon b_pulling2 with dissolve
-        eve "Aku tidak takut padamu!"
-
+        eve "I'm not scared of you!"
         show anon b_dressed a_up f_angry:
             xoffset 100
         show eve b_dressed f_surprised
         show roxxy b_dressed
         with dissolve
-        anon "Itu sudah cukup!"
-
+        anon "That's enough!"
         show anon a_surprised
-        roxxy "Kamu sudah mati..."
-
+        roxxy "You are so dead..."
     else:
-        roxxy "Tahukah kamu berapa lama waktu yang aku perlukan untuk membersihkan kotoran itu?!"
-
-        eve "Saya harap sudah lama sekali!"
-
-        roxxy "Jadi kamu mengakuinya?!"
-
+        roxxy "Do you know how long it took me to wash that shit out?!"
+        eve "A long time, I hope!"
+        roxxy "So you admit it?!"
         show anon f_surprised_left
-        eve "Tidak, aku tidak mengakui apa-apa..."
-
-        eve @ f_laugh "... Tapi Anda pasti pantas mendapatkannya!"
-
+        eve "No, I'm not admitting shit..."
+        eve @ f_laugh "... But you definitely deserved it!"
         show anon f_worried
-        anon "Oke, semua orang harus tenang..."
-
-        roxxy "Diam, {b}[firstname]{/b}!"
-
-        eve "Hei, jangan bicara seperti itu padanya!"
-
-        roxxy "Atau apa?!"
-
+        anon "Okay, everybody needs to calm down..."
+        roxxy "Shut up, {b}[firstname]{/b}!"
+        eve "Hey, don't talk to him like that!"
+        roxxy "Or what?!"
         pause
         show anon f_surprised
-        roxxy "Mungkin aku harus mengacak-acak rambutmu?"
-
+        roxxy "Maybe I should fuck up YOUR hair?"
         show anon f_surprised_left
-        eve "Aku tidak takut padamu!"
-
-        anon f_angry "Itu sudah cukup!"
-
-        roxxy "Sebaiknya kau dengarkan temanmu, aneh!"
-
-    eve f_angry "Persetan, trailer sampah Barbie!"
-
+        eve "I'm not scared of you!"
+        anon f_angry "That's enough!"
+        roxxy "You better listen to your friend, freak!"
+    eve f_angry "Fuck you, trailer trash Barbie!"
     roxxy f_glaring @ -m_talk "!!!"
     show roxxy b_jump with dissolve
     show missy f_surprised
@@ -3056,41 +2081,29 @@ label eve_button_detention:
     show anon f_shock
     show eve f_surprised a_arrest
     roxxy "Raaaah!"
-
     show anon f_surprised_left
     hide eve
     hide roxxy
     eve "!!!" with hpunch
-    becca "Sialan!"
-
-    anon "{b}Roxxy{/b} berhenti!"
-
+    becca "Holy shit!"
+    anon "{b}Roxxy{/b} stop!"
 
     scene location_school_right_hall_cutscene_02
     with fade
     eve "Aaahh!!"
-
-    roxxy "Inilah yang terjadi!"
-
-    eve "Lepaskan aku!"
-
-    roxxy "Saat kamu macam-macam denganku!"
-
+    roxxy "This is what happens!"
+    eve "Get off of me!"
+    roxxy "When you mess with me!"
     eve "Aaahh!!"
-
 
     scene location_school_right_hall_cutscene_03
     with fade
     eve "{i}*Chomp*{/i}" with hpunch
     roxxy "!!!"
     roxxy "OOOWWWW!!!"
-
-    anon "{b}Malam{/b}!"
-
-    roxxy "Dasar jalang!"
-
+    anon "{b}Eve{/b}!"
+    roxxy "You fucking bitch!"
     roxxy "AAAHHHH!!!"
-
 
     scene expression player.location.background_closeup
     show anon f_surprised
@@ -3099,56 +2112,37 @@ label eve_button_detention:
         xoffset -100
     show roxxy a_ouch f_glaring
     with fade
-    roxxy "Kamu menggigitku!"
-
-    eve "Benar sekali!"
-
-    smith "Apa yang terjadi di sini?!"
-
+    roxxy "You bit me!"
+    eve "Damn right!"
+    smith "What is going on in here?!"
     show anon f_sad_down
-    anon "Oh, sial..."
-
+    anon "Oh, crap..."
     show smith f_angry
     show roxxy:
         flip
         xoffset 250
     with dissolve
     show anon f_hurt
-    smith "Apakah kalian sudah kehilangan akal sehat?"
-
-    roxxy f_angry "Dia memulainya!"
-
+    smith "Have you girls lost your minds?"
+    roxxy f_angry "She started it!"
     show anon f_tired
-    eve "APA?!"
-
-    eve "Kaulah yang memulainya!"
-
+    eve "WHAT?!"
+    eve "You're the one who started it!"
     smith "That's enough!" with hpunch
-    smith "Saya tidak akan mentolerir perilaku seperti ini di sekolah saya!"
-
-    smith "Penahanan untuk kalian semua!"
-
+    smith "I will not tolerate this type of behavior in my school!"
+    smith "Detention for all of you!"
     show anon f_depressed
-    roxxy f_glaring "Dengan serius?"
-
-    eve "Aduh, ayolah!"
-
-    missy "Itu tidak adil!"
-
-    becca "Ya, kami bahkan tidak melakukan apa pun!"
-
+    roxxy f_glaring "Seriously?"
+    eve "Aww, come on!"
+    missy "That's not fair!"
+    becca "Yeah, we didn't even do anything!"
     smith "Silence!" with hpunch
-    smith "Aku tidak mau berdebat dengan sekelompok bocah ingusan!"
-
-    smith "Itu tugas {b}Annie{/b}."
-
+    smith "I'm not about to argue with a bunch of snot nosed brats!"
+    smith "That's {b}Annie{/b}'s job."
     pause
-    smith "Sekarang, ayo pergi!"
-
-    roxxy f_angry_right "Bagus sekali, jalang..."
-
-    eve "{i}*Huh*{/i} Diam, {b}Roxxy{/b}."
-
+    smith "Now, let's go!"
+    roxxy f_angry_right "Nice going, bitch..."
+    eve "{i}*Sigh*{/i} Shut up, {b}Roxxy{/b}."
     show roxxy f_surprised
     show anon f_surprised_teeth
     show eve f_surprised
@@ -3166,95 +2160,57 @@ label eve_button_detention:
         xoffset 250
     show annie f_annoyed
     with dissolve
-    annie "Baiklah pembuat masalah, Anda tahu caranya."
-
-    annie "Tidak boleh bicara, tidak boleh ada ponsel, tidak boleh makan atau minum-"
-
-    roxxy @ f_eyeroll a_cross "Oh bagus, kita bisa menghabiskan empat jam berikutnya dengan orang bodoh ini..."
-
-    eve f_happy @ f_laugh "Heh, iya... Dia satu-satunya orang di sekolah ini yang lebih kubenci daripada kamu..."
-
-    roxxy @ f_laugh "Ha ha ha!"
-
-    annie @ f_angry "Hei, aku bilang jangan bicara!"
-
+    annie "Alright trouble makers, you know the drill."
+    annie "No talking, no cell phones, no food or drinks-"
+    roxxy @ f_eyeroll a_cross "Oh great, we get to spend the next four hours with this stupid suck up..."
+    eve f_happy @ f_laugh "Heh, yeah... She's the only person in this school I hate more than you..."
+    roxxy @ f_laugh "Hahaha!"
+    annie @ f_angry "Hey, I said no talking!"
     roxxy @ f_pouting_hair "Psh."
-
-    eve f_disgusted "Hidung coklat yang aneh."
-
-    annie "Apa yang kamu katakan?"
-
-    eve f_sexy "Bukankah sebaiknya kamu pergi berciuman {b}Ny. Kaki Smith{/b} atau apalah?"
-
-    roxxy @ f_laugh "Ha ha ha!"
-
-    annie f_angry a_note @ a_note_write "Kalian berdua baru saja membeli penahanan lagi!"
-
-    eve @ f_eyeroll "Ugh, kita hancur..."
-
-    annie @ a_note_write "Anda baru saja membeli satu lagi, di sana!"
-
+    eve f_disgusted "Freaking brown noser."
+    annie "What did you say?"
+    eve f_sexy "Shouldn't you be off kissing {b}Mrs. Smith{/b}'s feet or something?"
+    roxxy @ f_laugh "Hahaha!"
+    annie f_angry a_note @ a_note_write "You two just bought yourselves another detention!"
+    eve @ f_eyeroll "Ugh, we're crushed..."
+    annie @ a_note_write "You just bought one more, right there!"
     show anon f_depressed
-    roxxy "Yah, aku juga bebas lusa."
-
-    roxxy "Selain itu, saya harus memeriksa kalender saya!"
-
-    eve @ f_laugh "Ha ha ha!"
-
-    annie "Bagus, karena akan diisi dengan penahanan!"
-
+    roxxy "Well, I'm free the day after too."
+    roxxy "Beyond that, I'm going to have to check my calendar!"
+    eve @ f_laugh "Hahaha!"
+    annie "Good, because it's going to be filled with detentions!"
     show eve f_angry
     roxxy f_pouting @ -m_talk "..."
-    annie "Apakah kamu sudah selesai?"
-
-    roxxy f_normal "Tidak."
-
+    annie "Are you through?"
+    roxxy f_normal "No."
     show eve f_sexy
-    annie @ a_note_write "Itu satu lagi!"
-
+    annie @ a_note_write "That's another one!"
     pause
-    annie "Saya bisa melakukan ini sepanjang hari."
-
+    annie "I can do this all day."
     show anon f_worried
-    eve "Jadi?"
-
-    annie @ a_note_write "Itu satu lagi!"
-
+    eve "So?"
+    annie @ a_note_write "That's another one!"
     eve @ -m_talk "..."
-    annie f_annoyed "Kami akan terus berjalan..."
-
-    annie "Katakan saja."
-
-    roxxy "Pergi."
-
-    eve @ f_laugh "Ha ha ha!"
-
-    annie @ a_note_write "Anda baru saja membeli satu lagi!"
-
-    annie "Kamu pikir aku punya sesuatu yang lebih baik untuk dilakukan?"
-
-    eve "Kami tahu Anda tidak punya hal lain yang lebih baik untuk dilakukan..."
-
+    annie f_annoyed "We'll keep going..."
+    annie "Just say the word."
+    roxxy "Go."
+    eve @ f_laugh "Hahaha!"
+    annie @ a_note_write "You just bought one more!"
+    annie "You think I've got something better to do?"
+    eve "We know you don't have anything better to do..."
     roxxy @ f_laugh "Haha!"
-
-    annie "Apa itu tadi?"
-
+    annie "What was that?"
     eve @ -m_talk "..."
-    anon "Teman-teman, hentikan!"
-
-    annie "Saya akan menemui Anda berdua di sini setiap hari selama sisa hidup alami Anda jika Anda tidak berhati-hati!"
-
+    anon "Guys, cut it out!"
+    annie "I'll see you both in here every day for the rest of your natural-born lives if you aren't careful!"
     roxxy f_pouting @ -m_talk "..."
     eve f_angry @ -m_talk "..."
-    annie "Itulah yang saya pikirkan..."
-
-    annie f_angry a_idle @ a_point1 "Sekarang, duduklah!"
-
+    annie "That's what I thought..."
+    annie f_angry a_idle @ a_point1 "Now, take your seats!"
     hide eve
     hide roxxy
     with dissolve
-    anon f_tired "Astaga."
-
+    anon f_tired "Sheesh."
     scene black with fade
     pause
     scene expression player.location.background_blur
@@ -3270,39 +2226,25 @@ label eve_button_detention:
     pause
     show eve f_nervous_right
     pause
-    eve "Hai, {b}Roxxy{/b}."
-
+    eve "Hey, {b}Roxxy{/b}."
     show anon f_worried_left
-    eve "Ssst."
-
-    roxxy f_worried "Apa?"
-
-    eve f_happy_right "Akan sangat disayangkan jika orang iseng yang membuatmu mengejar {b}Annie{/b} selanjutnya, bukan begitu?"
-
+    eve "Psst."
+    roxxy f_worried "What?"
+    eve f_happy_right "It would be a shame if that prankster who got you went after {b}Annie{/b} next, don't you think?"
     show roxxy b_desk_normal with dissolve
-    roxxy f_normal "Hah?"
-
+    roxxy f_normal "Huh?"
     pause
     roxxy @ f_surprised "Oh."
-
-    roxxy f_sexy @ f_laugh "Haha, ya!"
-
-    roxxy "Wanita jalang itu benar-benar siap melakukannya!"
-
+    roxxy f_sexy @ f_laugh "Haha, yeah!"
+    roxxy "That bitch totally has it coming!"
     eve @ f_laugh "Haha!"
-
     show anon f_normal_left
-    roxxy "Pastikan saja itu sesuatu yang benar-benar memalukan..."
-
-    eve "Benar sekali."
-
+    roxxy "Just make sure it's something really humiliating..."
+    eve "Totally."
     pause
-    anon f_thinking @ -m_talk "(Hah.)"
-
-    anon @ -m_talk "(Tiba-tiba mereka bertingkah sangat ramah...)"
-
-    anon f_normal_left @ -m_talk "(Apakah mereka benar-benar terikat karena kebencian yang sama terhadap {b}Annie{/b}? )"
-
+    anon f_thinking @ -m_talk "( Huh. )"
+    anon @ -m_talk "( They're acting pretty friendly all of a sudden... )"
+    anon f_normal_left @ -m_talk "( Did they actually bond over a shared hatred of {b}Annie{/b}? )"
     pause
 
     scene location_school_french_cutscene16
@@ -3319,77 +2261,50 @@ label eve_button_detention:
     show eve f_eyeroll
     show anon f_depressed
     with fade
-    eve "Ugh, empat jam terlama, PERNAH!"
-
+    eve "Ugh, longest four hours, EVER!"
     show eve f_normal
-    anon f_tired "Ya, ceritakan padaku tentang hal itu..."
-
+    anon f_tired "Yeah, tell me about it..."
     pause
-    eve @ f_sad_down "Maaf aku membuatmu ditahan."
-
-    anon f_worried "Tidak apa-apa."
-
+    eve @ f_sad_down "Sorry I got you detention."
+    anon f_worried "It's okay."
     show eve f_nervous
     pause
-    anon "Maaf {b}Roxxy{/b} mencoba memenggal kepalamu."
-
-    eve "Ya."
-
+    anon "Sorry {b}Roxxy{/b} tried to rip your head off."
+    eve "Yeah."
     pause
-    anon f_normal @ f_laugh "Aku tidak percaya kamu menggigit payudaranya!"
-
-    eve f_laugh "Yah, aku harus melakukan sesuatu..."
-
-    eve "Dia mencoba membekapku dengan benda raksasa itu!"
-
-    anon @ f_laugh "Ha ha ha!"
-
-    eve @ f_laugh "Ha ha ha!"
-
+    anon f_normal @ f_laugh "I can't believe you bit her boob!"
+    eve f_laugh "Well, I had to do something..."
+    eve "She was trying to smother me with those giant things!"
+    anon @ f_laugh "Hahaha!"
+    eve @ f_laugh "Hahaha!"
     show eve f_normal
     pause
-    eve f_sad_down "Sobat, {b}Grace{/b} akan marah ketika dia mendengar aku ditahan selama seminggu berturut-turut!"
-
-    anon "Setidaknya kamu dan {b}Roxxy{/b} meninggalkan hubungan yang baik..."
-
-    eve "Ya, menurutku."
-
+    eve f_sad_down "Man, {b}Grace{/b} is going to flip out when she hears I got detention for a week straight!"
+    anon "At least you and {b}Roxxy{/b} left things on good terms..."
+    eve "Yeah, I guess."
     pause
-    eve f_sad "{i}*Sigh*{/i} Aku mungkin harus pulang."
-
-    anon "Ya, aku juga."
-
-    eve "Sayang sekali rencana kita hancur..."
-
-    anon "Hehe, jangan khawatir."
-
-    anon f_snarky "Saya hanya perlu menendang pantat Anda di {i}Street Kombat{/i} di lain hari."
-
-    eve f_happy @ f_laugh "Hehe, ya benar!"
-
-    eve "Dalam mimpimu."
-
-    anon f_normal @ f_laugh "hehe!"
-
+    eve f_sad "{i}*Sigh*{/i} I should probably get home."
+    anon "Yeah, me too."
+    eve "It sucks our plans got ruined..."
+    anon "Heh, no worries."
+    anon f_snarky "I'll just have to kick your butt in {i}Street Kombat{/i} another day."
+    eve f_happy @ f_laugh "Hehe, yeah right!"
+    eve "In your dreams."
+    anon f_normal @ f_laugh "Hehe!"
     hide eve
     show anon b_hug_eve f_shy_down
     with dissolve
     pause
-    eve "Sampai jumpa besok?"
-
-    anon "Tentu saja."
-
+    eve "See you tomorrow?"
+    anon "Of course."
     pause
     show eve f_happy
     show anon b_dressed f_normal
     with dissolve
-    eve "Oke."
-
+    eve "Okay."
     pause
-    eve @ a_wave "Sampai jumpa."
-
-    anon @ a_wave "Nanti, {b}Malam{/b}."
-
+    eve @ a_wave "See ya."
+    anon @ a_wave "Later, {b}Eve{/b}."
     hide anon with dissolve
     return
 
@@ -3398,323 +2313,193 @@ label eve_button_voyeurism_follow_roof:
     show anon
     show eve
     with dissolve
-    anon "Wah, ini luar biasa!"
-
-    eve f_happy "Hehe, menurutmu begitu?"
-
-    anon "Tentu saja!"
-
+    anon "Wow, this is awesome!"
+    eve f_happy "Hehe, you think so?"
+    anon "Definitely!"
     pause
-    anon "Ini semua milik {b}Tuuku{/b}?"
-
-    eve "Sebagian besar, ya."
-
-    eve "Dia kadang-kadang membutuhkan tempat untuk tidur atau bersembunyi dan {b}Grace{/b} tidak mengizinkannya masuk ke apartemen."
-
-    eve "Jadi dia membangun semua ini."
-
-    anon "Apakah speaker itu berfungsi?"
-
-    eve "Jika kita mencolokkannya, tentu saja."
-
-    eve "{b}Tuuku{/b} terkadang suka memutar musik untuk tanamannya."
-
-    anon f_worried "Dia memainkan musik untuk tanaman ganjanya?"
-
-    eve @ f_laugh "Hehe, ya."
-
-    eve "Dia mengatakan itu membantu mereka tumbuh."
-
-    anon f_normal @ f_confused "Apakah itu benar-benar berhasil?"
-
-    eve @ f_eyeroll "Tidak tahu."
-
+    anon "This all belongs to {b}Tuuku{/b}?"
+    eve "Most of it, yeah."
+    eve "He occasionally needs a place to crash or hideout and {b}Grace{/b} won't let him in the apartment."
+    eve "So he built all of this."
+    anon "Do those speakers work?"
+    eve "If we plug them in, sure."
+    eve "{b}Tuuku{/b} likes to play music for his plants sometimes."
+    anon f_worried "He plays music for his marijuana plants?"
+    eve @ f_laugh "Hehe, yeah."
+    eve "He says it helps them grow."
+    anon f_normal @ f_confused "Does that really work?"
+    eve @ f_eyeroll "No idea."
     pause
-    anon @ f_laugh "Ini sangat keren!"
-
-    eve "Mengapa kamu tidak duduk di sana dan aku akan mengambilkan kita bir."
-
-    anon f_worried "Y-maksudmu di pinggir atap?"
-
-    eve "Ya."
-
+    anon @ f_laugh "It's so cool!"
+    eve "Why don't you go sit down over there and I'll grab us some beers."
+    anon f_worried "Y-you mean on the edge of the roof?"
+    eve "Yeah."
     pause
-    eve "Anda tidak takut ketinggian, bukan?"
-
-    anon "T-tidak, aku tidak takut ketinggian..."
-
+    eve "You're not afraid of heights, are you?"
+    anon "N-no, I'm not scared of heights..."
     hide eve with dissolve
-    eve "hehe!"
-
-    anon f_sad_down "Aku takut terjatuh."
-
+    eve "Hehe!"
+    anon f_sad_down "I'm scared of falling."
     hide anon with dissolve
     scene expression "backgrounds/location_tattoo_rooftop_ledge.jpg" with None
     show eve b_sidebed f_disgusted a_beer_hold
     show anon b_sit:
         yoffset 20
     with dissolve
-    eve "Aduh, mereka seksi."
-
+    eve "Aww man, they're hot."
     pause
-    eve f_happy "Anda menginginkannya?"
-
-    anon f_unimpressed "Anda bertanya apakah saya ingin bir panas?"
-
-    eve @ f_laugh "Hehe, ya."
-
+    eve f_happy "You want one?"
+    anon f_unimpressed "You're asking me if I want hot beer?"
+    eve @ f_laugh "Hehe, yeah."
     pause
-    anon "Sudah berapa lama di sini lagi?"
-
-    eve "Tidak tahu."
-
+    anon "How long has it been up here again?"
+    eve "No idea."
     pause
-    anon "Saya pikir saya akan lulus."
-
+    anon "I think I'll pass."
     show anon f_normal
-    eve "Mungkin langkah yang cerdas..."
-
+    eve "Probably a smart move..."
     show eve f_drink a_beer_drink with dissolve
     pause
-    eve a_beer_hold f_disgusted_wince_down "UEGH!!"
-
-    eve f_disgusted "Oke, jelas merupakan langkah yang cerdas."
-
-    eve "Itu mengerikan!"
-
+    eve a_beer_hold f_disgusted_wince_down "EUGH!!"
+    eve f_disgusted "Okay, definitely a smart move."
+    eve "That's awful!"
     anon @ f_laugh "Haha!"
-
     pause
-    eve f_happy "Pemandangannya bagus sekali, bukan?"
-
-    anon "Ya, Anda dapat melihat hampir seluruh kota dari sini..."
-
-    eve "Ya, cukup banyak."
-
+    eve f_happy "Quite the view, isn't it?"
+    anon "Yeah, you can pretty much see the entire town from up here..."
+    eve "Yeah, pretty much."
     pause
-    anon "Jadi ceritakan lebih banyak tentang {b}Odette{/b} dan {b}Grace{/b}."
-
+    anon "So tell me more about {b}Odette{/b} and {b}Grace{/b}."
     eve @ f_confused -m_talk "Hmm?"
-
-    eve f_nervous "Oh benar."
-
-    eve "Sebenarnya tidak banyak yang perlu dibicarakan."
-
-    eve @ f_eyeroll "{b}Odette{/b} naksir {b}Grace{/b} selamanya."
-
-    anon @ f_confused "Saya pikir mereka hanya berteman?"
-
-    eve "Ya, itulah yang saya katakan."
-
-    eve "Mereka hanya berteman dan sudah berteman sejak mereka masih kecil tapi..."
-
-    eve "... {b}Odette{/b} ingin menjadi lebih."
-
-    anon "Dan adikmu tidak?"
-
-    eve @ f_eyeroll "Adikku tidak tahu {b}Odette{/b} menyukainya..."
-
-    anon @ f_surprised "Benar-benar?"
-
-    eve "Ya."
-
-    eve "Itu hal yang paling aneh."
-
-    eve "{b}Odette{/b} selalu mampu merayu pria mana pun yang diinginkannya dengan mudah..."
-
-    anon "Eh ya."
-
-    eve "Ini seperti, mudah sekali baginya."
-
-    eve "... Tapi jika menyangkut adikku, dia berubah menjadi orang yang sama sekali berbeda."
-
-    eve "Dia menjadi sangat canggung dan kikuk, selalu mengatakan hal yang salah..."
-
-    eve "Agak lucu, kalau boleh jujur."
-
-    anon "Sepertinya dia sedang jatuh cinta."
-
-    eve f_laugh "Haha, ya benar!"
-
-    eve "{b}Odette{/b} sedang jatuh cinta."
-
-    eve f_happy "Bagus."
-
+    eve f_nervous "Oh, right."
+    eve "There really isn't much to talk about."
+    eve @ f_eyeroll "{b}Odette{/b} has had a crush on {b}Grace{/b} like, forever."
+    anon @ f_confused "I thought they were just friends?"
+    eve "Well, that's kinda what I'm saying."
+    eve "They are just friends and have been since they were little kids but..."
+    eve "... {b}Odette{/b} wants to be more."
+    anon "And your sister doesn't?"
+    eve @ f_eyeroll "My sister has no idea {b}Odette{/b} likes her..."
+    anon @ f_surprised "Really?"
+    eve "Yeah."
+    eve "It's the weirdest thing."
+    eve "{b}Odette{/b} has always been able to seduce any guy she wants at the drop of a hat..."
+    anon "Uh huh."
+    eve "It's like, easy as pie for her."
+    eve "... But when it comes to my sister, she turns into a totally different person."
+    eve "She gets super awkward and clumsy, always saying the wrong thing..."
+    eve "It's kinda hilarious, if I'm being honest."
+    anon "Sounds like she's in love."
+    eve f_laugh "Haha, yeah right!"
+    eve "{b}Odette{/b} in love."
+    eve f_happy "Good one."
     show eve f_drink a_beer_drink with dissolve
     pause
-    eve a_beer_hold f_disgusted_wince_down "Ya."
-
-    anon @ f_confused "Kenapa kamu masih meminum minuman itu?"
-
-    eve @ f_burp "{i}*Bersendawa*{/i}"
-
-    eve f_nervous_down "Saya punya perasaan sebelum malam berakhir, saya akan membutuhkannya..."
-
-    anon f_worried "Maksudnya itu apa?"
-
-    eve f_nervous @ f_laugh "Hehe, sudahlah."
-
+    eve a_beer_hold f_disgusted_wince_down "Eugh."
+    anon @ f_confused "Why are you still drinking that stuff?"
+    eve @ f_burp "{i}*Burp*{/i}"
+    eve f_nervous_down "I have a feeling before the night is over, I'm going to need it..."
+    anon f_worried "What does that mean?"
+    eve f_nervous @ f_laugh "Hehe, never mind."
     show anon f_thinking
     pause
-    anon f_normal @ f_confused "Jadi, {b}Odette{/b} itu bi?"
-
-    eve "Sepertinya begitu."
-
-    anon "Dan adikmu tidak?"
-
-    eve "Sejauh yang saya tahu, dia tidak."
-
+    anon f_normal @ f_confused "So, {b}Odette{/b} is bi?"
+    eve "Guess so."
+    anon "And your sister isn't?"
+    eve "As far as I know, she isn't."
     anon @ -m_talk "Mmhmm."
-
     pause
-    anon f_skeptical "Bagaimana denganmu?"
-
-    eve f_nervous_down "A-aku?"
-
-    anon f_flirt "Ya kamu."
-
+    anon f_skeptical "What about you?"
+    eve f_nervous_down "M-me?"
+    anon f_flirt "Yeah, you."
     show eve f_drink a_beer_drink with dissolve
     pause
-    eve a_beer_hold f_disgusted_wince_down "Ya."
-
-    eve f_nervous_down "Entahlah..."
-
-    anon f_normal "Anda tidak tahu?"
-
-    eve "Aku tidak pernah benar-benar memikirkannya."
-
+    eve a_beer_hold f_disgusted_wince_down "Eugh."
+    eve f_nervous_down "I dunno..."
+    anon f_normal "You don't know?"
+    eve "I've never really thought about it."
     pause
-    anon @ f_laugh "Hehe, baiklah, pikirkanlah!"
-
+    anon @ f_laugh "Heh, well, think about it!"
     pause
-    eve "Saya kira saya bisa saja menjadi seperti itu."
-
-    anon @ f_surprised "Benar-benar?"
-
-    eve f_nervous "Maksudku, ya, dengan gadis yang tepat..."
-
-    eve "Gender tidak sepenting kepribadian... Setidaknya, itulah yang saya pikirkan."
-
-    anon f_flirt "Menarik."
-
+    eve "I guess I could be."
+    anon @ f_surprised "Really?"
+    eve f_nervous "I mean, yeah, with the right girl..."
+    eve "Gender isn't as important as personality... At least, that's what I think."
+    anon f_flirt "Interesting."
     show eve f_nervous_down
     pause
-    eve f_nervous "Bagaimana denganmu?"
-
+    eve f_nervous "What about you?"
     anon f_surprised @ -m_talk "Hmm?"
-
-    eve "Bisakah Anda membayangkan diri Anda bersama pria lain?"
-
+    eve "Could you see yourself being with another guy?"
     show anon f_thinking
     menu:
-        "Mustahil.":
-            anon f_unimpressed "Cowok itu menjijikkan!"
-
-            eve f_happy @ f_disgusted "Jadi, maksudmu... Kamu menjijikkan?"
-
-            anon f_normal @ f_laugh "Oh, tentu saja!"
-
-            anon "Aku tidak tahu bagaimana kamu bisa bertahan denganku..."
-
-            anon "... aku menjijikkan!"
-
-            eve @ f_laugh "Ha ha ha!"
-
-            eve "Kamu selalu tahu cara membuatku tertawa!"
-
-            anon "Itu hal yang bagus, ya?"
-
-            eve "Ya, sangat bagus."
-
+        "No way.":
+            anon f_unimpressed "Guys are gross!"
+            eve f_happy @ f_disgusted "So, you're saying... You're gross?"
+            anon f_normal @ f_laugh "Oh, totally!"
+            anon "I don't know how you put up with me..."
+            anon "... I'm disgusting!"
+            eve @ f_laugh "Hahaha!"
+            eve "You always know how to make me laugh!"
+            anon "That's a good thing, yeah?"
+            eve "Yes, very good."
             $ M_eve.set("biggus_dickus", "")
-        "Mungkin.":
+        "Maybe.":
 
-            anon f_shy "Aku tidak tahu."
-
-            anon "Saya tidak pernah memikirkannya."
-
+            anon f_shy "I don't know."
+            anon "I've never thought about it."
             pause
-            eve f_happy @ f_laugh "Ha ha ha!"
-
-            anon f_normal "Apa?"
-
-            eve "Nah, pikirkanlah!"
-
-            anon "Hehe, baiklah."
-
+            eve f_happy @ f_laugh "Hahaha!"
+            anon f_normal "What?"
+            eve "Well, think about it!"
+            anon "Hehe, alright."
             show anon f_thinking
             show eve f_drink a_beer_drink with dissolve
             pause
             show eve f_disgusted a_beer_hold with dissolve
             anon @ -m_talk "Hmm."
-
             pause
-            eve f_happy "Dengan baik?!"
-
-            anon "saya sedang berpikir!"
-
-            eve @ f_laugh "Ha ha ha!"
-
+            eve f_happy "Well?!"
+            anon "I'm thinking!"
+            eve @ f_laugh "Hahaha!"
             pause
-            anon f_shy "Saya kira saya setuju dengan Anda..."
-
-            anon f_normal @ f_brag_closed "Kepribadian lebih penting daripada gender."
-
-            eve f_surprised "Benar-benar?"
-
-            anon "Ya."
-
-            eve f_nervous_down "Saya tidak mengharapkan itu."
-
+            anon f_shy "I suppose I agree with you..."
+            anon f_normal @ f_brag_closed "Personality is more important than gender."
+            eve f_surprised "Really?"
+            anon "Yup."
+            eve f_nervous_down "I wasn't expecting that."
 
     show eve f_drink a_beer_drink with dissolve
     pause
-    eve a_beer_hold f_disgusted_wince_down "Eugh, aku tidak akan pernah terbiasa dengan hal ini."
-
-    anon "Berhenti meminumnya!"
-
-    eve f_disgusted "Tidak, tidak, tidak... Percayalah, aku membutuhkannya."
-
-    anon f_confused "Untuk apa?"
-
-    eve "Hanya-"
-
+    eve a_beer_hold f_disgusted_wince_down "Eugh, I'm never gonna get used to this stuff."
+    anon "Stop drinking it!"
+    eve f_disgusted "No, no, no... Trust me, I need it."
+    anon f_confused "For what?"
+    eve "Just-"
     pause
-    eve f_nervous "Diam saja!"
-
-    anon f_normal "Oke..."
-
-    eve f_nervous_down a_idle "Di Sini."
-
+    eve f_nervous "Just shut up!"
+    anon f_normal "Okay..."
+    eve f_nervous_down a_idle "Here."
     show eve f_nervous a_paper
     show expression "characters/eve/eve_arms_sidebed_a_paper.png"
     with dissolve
-    anon "Apa ini?"
-
-    eve "Ini untukmu."
-
-    eve f_nervous_down "Aku uhh... Agak... Dibuat untukmu."
-
+    anon "What's this?"
+    eve "It's for you."
+    eve f_nervous_down "I uhh... Kinda... Made it for you."
     hide expression "characters/eve/eve_arms_sidebed_a_paper.png"
     show eve a_idle
     show anon f_surprised a_paper
     with dissolve
-    anon "Benar-benar?"
-
+    anon "Really?"
     scene expression player.location.background_blur
     show expression "objects/closeup_drawing_02.png" as drawing with fade
-    anon "Wah!"
-
+    anon "Whoa!"
     pause
-    anon "Anda menggambar ini?"
-
-    eve "Y-ya."
-
+    anon "You drew this?"
+    eve "Y-yeah."
     pause
-    eve "Anda menyukainya?"
-
-    anon "Saya menyukainya!"
-
+    eve "You like it?"
+    anon "I love it!"
     pause
     hide drawing
     scene expression "backgrounds/location_tattoo_rooftop_ledge.jpg"
@@ -3722,148 +2507,95 @@ label eve_button_voyeurism_follow_roof:
     show anon b_sit a_paper zorder 1:
         yoffset 20
     with fade
-    anon "Aku tidak percaya kamu membuatkan ini untukku!"
-
-    eve "Y-yah, kemarin kamu bilang kamu menyukai semua hal tentang Bonnie dan Clyde..."
-
-    anon "Ya, saya ingat!"
-
-    eve f_nervous_down "... Dan aku memikirkanmu dan mencoret-coret, dan... Itu hanya... Agaknya, terjadi."
-
-    anon "Keren banget, {b}Eve{/b}!"
-
-    anon "Terima kasih!"
-
-    eve f_happy @ f_laugh "Hehe, sama-sama."
-
+    anon "I can't believe you made this for me!"
+    eve "W-well, the other day you said you liked the whole Bonnie and Clyde thing..."
+    anon "Yeah, I remember!"
+    eve f_nervous_down "... And I was thinking of you and doodling, and... It just... Sorta, happened."
+    anon "This is really cool, {b}Eve{/b}!"
+    anon "Thank you!"
+    eve f_happy @ f_laugh "Hehe, you're welcome."
     pause
-    anon @ f_laugh "Wow, lihat dirimu mengenakan gaun itu!"
-
-    eve f_nervous_down "K-kamu suka itu?"
-
-    anon "Tentu saja!"
-
-    anon f_flirt "Kamu terlihat seksi!"
-
-    eve f_happy @ f_laugh "Diam!"
-
-    anon "Apa?!"
-
-    anon f_normal "Anda melakukannya!"
-
+    anon @ f_laugh "Wow, look at you in that dress!"
+    eve f_nervous_down "Y-you like that?"
+    anon "Of course!"
+    anon f_flirt "You look hot!"
+    eve f_happy @ f_laugh "Shut up!"
+    anon "What?!"
+    anon f_normal "You do!"
     pause
     show anon a_idle with dissolve
     pause
     show eve f_nervous_down
     pause
-    eve "Terima kasih, ngomong-ngomong..."
-
+    eve "Thank you, by the way..."
     anon @ -m_talk "Hmm?"
-
-    eve f_nervous "Untuk menyemangatiku beberapa hari yang lalu!"
-
-    anon "Tentu saja."
-
+    eve f_nervous "For cheering me up the other day!"
+    anon "Of course."
     pause
     show eve f_nervous_down
     pause
-    anon f_flirt "Jadi, kamu memikirkanku, ya?"
-
+    anon f_flirt "So, you were thinking about me, huh?"
     eve f_surprised @ -m_talk "!!!"
-    eve "Hehe, uhh..."
-
-    eve f_nervous @ f_laugh "Subjek baru!"
-
-    anon f_normal "Ah, ayolah!"
-
-    eve "Oh, aku punya ide!"
-
+    eve "Heh, uhh..."
+    eve f_nervous @ f_laugh "New subject!"
+    anon f_normal "Aww, c'mon!"
+    eve "Oh, I've got an idea!"
     hide eve with dissolve
-    anon @ f_worried "Kemana kamu pergi?"
-
-    eve "Tunggu sebentar."
-
+    anon @ f_worried "Where are you going?"
+    eve "Just hold on."
     pause
-    eve "Aku tahu mereka ada di sini, di suatu tempat..."
-
+    eve "I know they're here somewhere..."
     pause
-    anon "Apakah Anda memerlukan bantuan?"
-
-    eve "Tidak, aku mengerti."
-
+    anon "Do you need help?"
+    eve "No, I've got it."
     pause
     eve "Ah hah!"
-
     pause
     show eve b_sidebed f_happy a_binocular zorder 0 with dissolve
-    eve "Menemukannya."
-
-    anon @ f_confused "Teropong?"
-
-    eve "Ya."
-
-    eve "Seperti yang Anda katakan, kita bisa melihat seluruh kota dari sini."
-
-    eve @ f_laugh "Jadi, mari kita ajak beberapa orang menonton!"
-
-    anon "Anda ingin memata-matai orang?"
-
-    eve f_confused "Anda belum pernah melakukan itu sebelumnya?"
-
-    anon f_worried_low "T-tidak..."
-
-    eve f_happy @ f_eyeroll "Ya benar."
-
-    anon "Oke, mungkin sedikit..."
-
-    eve "Pembohong!"
-
+    eve "Found em."
+    anon @ f_confused "Binoculars?"
+    eve "Yeah."
+    eve "Like you said, we can pretty much see the entire town from up here."
+    eve @ f_laugh "So, let's do some people watching!"
+    anon "You wanna spy on people?"
+    eve f_confused "You've never done that, before?"
+    anon f_worried_low "N-no..."
+    eve f_happy @ f_eyeroll "Yeah, right."
+    anon "Okay, maybe a little..."
+    eve "Liar!"
     show eve f_normal_out a_binocular_look with dissolve
     show anon f_normal
     pause
     eve @ -m_talk "Hmm."
-
-    anon "Anda melihat sesuatu?"
-
-    eve "Belum."
-
+    anon "You see anything?"
+    eve "Not yet."
     pause
-    eve "Sepertinya {b}Tyrone{/b} dan anak buahnya tidak ada di taman malam ini."
-
-    anon @ f_laugh "Heh, ya... Mereka mungkin di rumah masih mencoba membersihkan bom bau itu!"
-
+    eve "Looks like {b}Tyrone{/b} and his goons aren't in the park tonight."
+    anon @ f_laugh "Heh, yeah... They're probably at home still trying to scrub those stink bombs off!"
     show eve a_binocular with dissolve
-    eve @ f_laugh "Ha ha ha!"
-
+    eve @ f_laugh "Hahaha!"
     pause
     show eve f_normal_out a_binocular_look with dissolve
     pause
-    eve "Ya Tuhan..."
-
+    eve "Oh my god..."
     anon @ -m_talk "Hmm?"
-
-    eve "Ada dua wanita bertelanjang dada sedang jogging di taman!"
-
+    eve "There's two topless ladies jogging in the park!"
     show anon f_shock:
         flip
         xoffset -350
     with fastdissolve
     anon "T-topless?"
-
-    anon f_normal_out "Anda berbohong."
-
+    anon f_normal_out "You're lying."
     show eve a_binocular_give
     show expression "characters/eve/eve_arms_sidebed_a_binocular_give.png" zorder 2
     with dissolve
-    eve "Tidak serius!"
-
+    eve "No seriously!"
     show anon a_binocular
     show eve f_normal_out a_point
     hide expression "characters/eve/eve_arms_sidebed_a_binocular_give.png"
     show expression "characters/eve/eve_arms_sidebed_a_point.png" zorder 2
     with dissolve
-    eve "Coba lihat!"
-
+    eve "Check it out!"
     show eve a_idle
     hide expression "characters/eve/eve_arms_sidebed_a_point.png"
     show anon a_binocular_look
@@ -3872,16 +2604,11 @@ label eve_button_voyeurism_follow_roof:
     anon "!!!"
     scene expression "backgrounds/location_tattoo_rooftop_spy01.jpg" with fade
     pause
-    anon "{b}M-Nyonya. Johnson{/b}?"
-
-    eve "Apakah Anda kenal mereka?"
-
-    anon "Eh, ya..."
-
-    anon "Si rambut merah adalah induk semang temanku."
-
-    eve "Wah, benarkah?"
-
+    anon "{b}M-Mrs. Johnson{/b}?"
+    eve "Do you know them?"
+    anon "Ehh, yeah..."
+    anon "The redhead is my friend's landlady."
+    eve "Whoa, really?"
     scene expression "backgrounds/location_tattoo_rooftop_ledge.jpg"
     show eve b_sidebed
     show anon b_sit a_binocular_give:
@@ -3889,76 +2616,54 @@ label eve_button_voyeurism_follow_roof:
         xoffset -350
         yoffset 20
     with fade
-    anon "Anda tahu {b}Erik{/b}?"
-
+    anon "You know {b}Erik{/b}?"
     show anon a_idle
     show eve a_binocular f_confused
     with dissolve
-    eve "Anak gendut dengan semua bintik-bintiknya?"
-
-    anon "Y-ya."
-
+    eve "The fat kid with all the freckles?"
+    anon "Y-yeah."
     show eve f_normal_out a_binocular_look with dissolve
-    eve "Itu induk semangnya?!"
-
-    anon "Ya."
-
-    eve "Wow, dia sangat seksi..."
-
-    anon f_flirt "... Ya."
-
+    eve "That's his landlady?!"
+    anon "Yeah."
+    eve "Wow, she's really hot..."
+    anon f_flirt "... Yeah."
     pause
-    eve "Aku ingin tahu siapa gadis lainnya?"
-
-    anon f_normal @ f_skeptical "Salah satu temannya dari kelas yoga, menurutku..."
-
+    eve "I wonder who the other girl is?"
+    anon f_normal @ f_skeptical "One of her friends from yoga class, I think..."
     pause
-    eve "Mengapa mereka bertelanjang dada?"
-
-    anon "Tidak tahu."
-
+    eve "Why are they topless?"
+    anon "No idea."
     pause
-    eve "Hmm, keriting."
-
+    eve "Hmm, kinky."
     pause
     eve "!!!"
     pause
-    eve "Hehe lagi?"
-
+    eve "Heh, again?"
     show eve f_sexy a_binocular_give
     show expression "characters/eve/eve_arms_sidebed_a_binocular_give.png"
     with dissolve
-    eve "Anda akan menyukai yang ini..."
-
+    eve "You're going to like this one..."
     anon f_normal_left @ -m_talk "Hmm?"
-
     show anon a_binocular
     show eve f_normal_out a_point
     hide expression "characters/eve/eve_arms_sidebed_a_binocular_give.png"
     show expression "characters/eve/eve_arms_sidebed_a_point.png"
     with dissolve
-    eve "Gedung apartemen di sana, lantai dua, jendela paling kiri."
-
+    eve "The apartment building over there, second floor, left most window."
     hide expression "characters/eve/eve_arms_sidebed_a_point.png"
     show eve a_idle f_sexy
     show anon f_normal_out a_binocular_look
     with dissolve
-    anon "O-oke."
-
+    anon "O-okay."
     pause
     anon "!!!"
     scene expression "backgrounds/location_tattoo_rooftop_spy02.jpg" with fade
-    anon "Apakah itu-"
-
-    eve "Itu {b}Ny. Kim{/b}."
-
-    eve "Dia bekerja di konter di bank..."
-
-    anon "Y-ya, aku pernah melihatnya di sana sebelumnya."
-
+    anon "Is that-"
+    eve "That's {b}Mrs. Kim{/b}."
+    eve "She works the counter down at the bank..."
+    anon "Y-yeah, I've seen her there before."
     pause
-    anon "Dia sedang melakukan masturbasi..."
-
+    anon "She's masturbating..."
     pause
     scene expression "backgrounds/location_tattoo_rooftop_ledge.jpg"
     show eve b_sidebed f_sexy
@@ -3967,97 +2672,67 @@ label eve_button_voyeurism_follow_roof:
         xoffset -350
         yoffset 20
     with fade
-    anon "Apakah itu suaminya yang berbaring di sebelahnya?"
-
-    eve "Ya, yang gemuk dan jelek."
-
+    anon "Is that her husband lying next to her?"
+    eve "Yeah, the fat ugly one."
     pause
     show anon f_normal_left a_binocular with dissolve
-    eve "Dia sering melakukan ini."
-
+    eve "She does this a lot."
     show eve a_binocular
     show anon a_idle
     with dissolve
-    anon "Maksudmu, kamu pernah memata-matainya sebelumnya?"
-
-    eve "Ya, {b}Tuuku{/b} menemukannya suatu hari ketika kami semua ada di sini."
-
+    anon "You mean, you've spied on her before?"
+    eve "Yeah, {b}Tuuku{/b} found her one day when we were all up here."
     show eve f_normal_out a_binocular_look with dissolve
-    eve "Dia mengawasinya sepanjang waktu."
-
-    anon "Agak menyeramkan, bukan?"
-
-    eve "Yah, dialah yang melakukan masturbasi di depan jendela..."
-
-    eve "Jika dia tidak ingin orang lain melihatnya, dia harus membeli tirai!"
-
+    eve "He watches her all the time."
+    anon "That's kinda creepy, isn't it?"
+    eve "Well, she's the one masturbating in front of a window..."
+    eve "If she doesn't want people to see, she should buy some curtains!"
     pause
-    anon "Ya, saya kira itu benar."
-
-    eve "Aku hanya merasa kasihan padanya."
-
-    eve "Anda tahu suaminya mungkin tidak dapat memenuhi kebutuhannya..."
-
+    anon "Yeah, I suppose that's true."
+    eve "I just feel sorry for her."
+    eve "You know her husband probably can't satisfy her needs..."
     anon f_surprised_left @ -m_talk "..."
     pause
-    eve "Hmm, tidak ada yang terjadi di perpustakaan malam ini."
-
+    eve "Hmm, nothing going on at the library tonight."
     show anon f_normal_out
-    eve "Itu tidak biasa."
-
-    anon "Apakah itu?"
-
+    eve "That's unusual."
+    anon "Is it?"
     show eve f_happy a_binocular with dissolve
-    eve "Benar sekali."
-
-    eve "Sejak mereka mulai mengadakan pertemuan pecandu seks di sana, banyak orang yang bercinta di mana-mana."
-
+    eve "Totally."
+    eve "Ever since they started holding sex addicts meetings there, people have been fucking all over the place."
     show eve f_normal_out a_binocular_look with dissolve
-    anon f_normal @ f_normal_left "Benar-benar?"
-
-    eve "Hehe, ya."
-
+    anon f_normal @ f_normal_left "Really?"
+    eve "Hehe, yup."
     pause
     eve "!!!"
     pause
-    eve "Aduh."
-
-    anon f_normal_left "Apakah Anda menemukan sesuatu?"
-
-    eve "Ya."
-
+    eve "Aww."
+    anon f_normal_left "Did you find something?"
+    eve "Yeah."
     show eve a_binocular_give f_happy
     show expression "characters/eve/eve_arms_sidebed_a_binocular_give.png"
     with dissolve
-    eve "Anda ingin melihat di sepanjang garis pantai untuk mencari dermaga."
-
+    eve "You wanna look along the shoreline for a pier."
     show anon f_normal_out a_binocular
     show eve a_point f_normal_out
     hide expression "characters/eve/eve_arms_sidebed_a_binocular_give.png"
     show expression "characters/eve/eve_arms_sidebed_a_point.png"
     with dissolve
-    eve "Di sebelah sana."
-
+    eve "Right over there."
     show anon a_binocular_look
     hide expression "characters/eve/eve_arms_sidebed_a_point.png"
     show eve a_idle
     with dissolve
-    anon "Oke."
-
+    anon "Okay."
     pause
     anon "!!!"
     scene expression "backgrounds/location_tattoo_rooftop_spy03.jpg" with fade
-    anon "Saya melihat mereka."
-
-    eve "Mereka menyaksikan matahari terbenam bersama."
-
-    eve "Bukankah itu romantis?"
-
-    anon "Y-ya, menurutku."
-
+    anon "I see them."
+    eve "They're watching the sunset together."
+    eve "Isn't it romantic?"
+    anon "Y-yeah, I suppose."
     pause
-    anon "Menurutku dia telanjang."
-
+    anon "I think she's naked."
     pause
     scene expression "backgrounds/location_tattoo_rooftop_ledge.jpg"
     show eve b_sidebed f_eyeroll
@@ -4066,61 +2741,42 @@ label eve_button_voyeurism_follow_roof:
         xoffset -350
         yoffset 20
     with fade
-    eve "Tipikal pria..."
-
-    eve f_happy "Dua orang berbagi momen indah bersama dan yang Anda pedulikan hanyalah dia telanjang."
-
+    eve "Typical guy..."
+    eve f_happy "Two people sharing a beautiful moment together and all you care about is that she's naked."
     show anon f_normal_left a_binocular with dissolve
     pause
     show anon a_idle
     show eve a_binocular
     with dissolve
-    anon "Hehe, maaf."
-
+    anon "Heh, sorry."
     show eve f_normal_out a_binocular_look with dissolve
-    eve "Tidak, tidak apa-apa... Aku mengerti."
-
+    eve "No, it's okay... I get it."
     pause
-    eve "Dia sangat cantik."
-
+    eve "She is really pretty."
     pause
     eve @ -m_talk "Hmm."
-
     pause
-    eve "Saya rasa itu saja."
-
+    eve "I guess that's it."
     show eve a_idle f_happy
     hide anon
     show anon b_sit:
         yoffset 20
     with dissolve
     pause
-    anon "Jadi..."
-
+    anon "So..."
     pause
-    anon "Sekarang apa?"
-
-    eve f_nervous_down a_cover "Di sini agak dingin, bukan?"
-
-    anon "Sedikit."
-
-    eve "Mengapa kita tidak memeriksa tendanya?"
-
-    eve "Mungkin di sana lebih hangat."
-
-    anon "Apakah kamu yakin {b}Tuuku{/b} tidak keberatan?"
-
-    eve f_happy @ f_laugh "Ya, selama kita tidak merusak barangnya."
-
-    eve "Ayo, aku akan balapan denganmu!"
-
+    anon "Now what?"
+    eve f_nervous_down a_cover "It's kinda cold out here, don't you think?"
+    anon "A little bit."
+    eve "Why don't we go check out the tent?"
+    eve "It might be warmer in there."
+    anon "Are you sure {b}Tuuku{/b} won't mind?"
+    eve f_happy @ f_laugh "Yeah, so long as we don't break any of his stuff."
+    eve "C'mon, I'll race you!"
     hide eve with dissolve
-    anon f_unimpressed @ f_worried "Hei, tidak adil!"
-
-    eve "Ha ha ha!"
-
-    anon "Penipu."
-
+    anon f_unimpressed @ f_worried "Hey, no fair!"
+    eve "Hahaha!"
+    anon "Cheater."
     return
 
 label eve_button_voyeurism_meetup:
@@ -4128,20 +2784,13 @@ label eve_button_voyeurism_meetup:
     show anon
     show eve f_happy
     with dissolve
-    anon "Hai."
-
-    eve "Hai, {b}[firstname]{/b}."
-
-    eve "Anda masih {b}datang malam ini{/b}?"
-
-    anon @ f_laugh "Ya, aku akan ke sana."
-
-    eve "Saya akan mencarikan kita sesuatu yang SANGAT menakutkan untuk ditonton!"
-
-    anon "Hehe, tidak sabar."
-
-    eve "Ya, aku juga tidak!"
-
+    anon "Hi."
+    eve "Hey, {b}[firstname]{/b}."
+    eve "You still {b}coming over tonight{/b}?"
+    anon @ f_laugh "Yup, I'll be there."
+    eve "I'm going to find us something REALLY scary to watch!"
+    anon "Heh, can't wait."
+    eve "Yeah, me neither!"
     hide anon with dissolve
     return
 
@@ -4150,55 +2799,34 @@ label eve_button_voyeurism_start:
     show anon
     show eve f_happy
     with dissolve
-    anon @ a_wave "H-hei."
-
+    anon @ a_wave "H-hey."
     eve "{b}[firstname]{/b}!"
-
     hide eve
     show anon b_hug_eve f_shy_down
     with dissolve
-    eve "Senang bertemu denganmu!"
-
-    anon "Heh, suasana hatimu sedang bagus hari ini..."
-
-    eve "Terima kasih!"
-
+    eve "It's good to see you!"
+    anon "Heh, you're in a good mood today..."
+    eve "Thanks to you!"
     show anon b_dressed f_normal a_behind_head
     show eve f_happy
     with dissolve
-    anon "Aku senang kamu merasa lebih baik."
-
-    eve @ f_laugh "Ya, jauh lebih baik."
-
+    anon "I'm just glad you're feeling better."
+    eve @ f_laugh "Yes, much better."
     pause
-    eve "Katakan, apakah kamu sibuk malam ini?"
-
+    eve "Say, are you busy this evening?"
     anon a_idle @ -m_talk "Hmm?"
-
-    anon "Saya masih belum yakin, kenapa?"
-
-    eve "Anda ingin datang dan jalan-jalan?"
-
-    anon "Ya baiklah."
-
-    eve "{b}Grace{/b} dan {b}Odette{/b} sedang menuju ke kota untuk mengambil senjata tato bekas yang {b}Grace{/b} temukan secara online."
-
-    eve "Jadi, kita harus memiliki rumah untuk diri kita sendiri untuk sementara waktu."
-
+    anon "I'm not sure yet, why?"
+    eve "You wanna come over and hang out?"
+    anon "Yeah, okay."
+    eve "{b}Grace{/b} and {b}Odette{/b} are heading into the city to pick up some second hand tattoo gun that {b}Grace{/b} found online."
+    eve "So, we should have the house to ourselves for a while."
     anon "Oh?"
-
-    eve "Ya, kupikir kita bisa mengeluarkan beberapa bir {b}Odette{/b} dari lemari es dan menonton film seram atau semacamnya?"
-
-    anon @ f_laugh "Aku kecewa karena itu!"
-
-    eve @ f_laugh "Luar biasa!"
-
-    eve "Saya sangat bersemangat!"
-
-    anon @ a_wave "{b}Sampai jumpa malam ini{/b}."
-
-    eve @ a_wave "Sampai jumpa, {b}[firstname]{/b}."
-
+    eve "Yeah, I figured we could sneak a couple of {b}Odette{/b}'s beers out of the fridge and watch a scary movie or something?"
+    anon @ f_laugh "I'm down for that!"
+    eve @ f_laugh "Awesome!"
+    eve "I'm super excited!"
+    anon @ a_wave "{b}I'll see you tonight then{/b}."
+    eve @ a_wave "See you, {b}[firstname]{/b}."
     hide anon with dissolve
     return
 
@@ -4208,55 +2836,36 @@ label eve_button_police_trouble:
     show eve f_sad_down:
         flip
     with fade
-    grace "Ya, bagus sekali... Bolehkah aku menggunakan permintaan maafmu untuk membayar denda ini?!"
-
+    grace "Yeah, that's great... Can I use your sorries to pay this fine?!"
     eve @ -m_talk "..."
-    grace "Tiga ribu dolar, {b}Malam{/b}!"
-
-    grace "Anda tahu, kita hampir tidak bisa bertahan seperti sekarang!"
-
-    eve f_sad_down @ a_wipe_tears "{i}*Mengendus*{/i} Saya tahu..."
-
-    grace f_weary a_facepalm "Aku tidak percaya kamu melakukan ini..."
-
+    grace "Three thousand dollars, {b}Eve{/b}!"
+    grace "You know, we're barely getting by as it is!"
+    eve f_sad_down @ a_wipe_tears "{i}*Sniff*{/i} I know..."
+    grace f_weary a_facepalm "I can't believe you did this..."
     pause
-    eve f_sad "Ini tidak adil, semua orang melakukannya!"
-
-    grace f_angry a_hips_mad "Tidak, mereka tidak melakukannya."
-
-    eve f_sad_down "{i}*Sniff*{/i} Kamu dan {b}Odette{/b} melakukan..."
-
-    grace @ a_idea "{b}Malam{/b}, ada perbedaan besar antara sesekali merokok di rumah dan berjalan-jalan di depan umum dengan setengah pon ganja di saku Anda!"
-
+    eve f_sad "It's not fair, everyone does it!"
+    grace f_angry a_hips_mad "No, they don't."
+    eve f_sad_down "{i}*Sniff*{/i} You and {b}Odette{/b} do..."
+    grace @ a_idea "{b}Eve{/b}, there's a big fucking difference between smoking the occasional joint in our home and walking around in public with half a pound of weed in your pocket!"
     eve @ -m_talk "..."
-    grace "Menurutmu apa yang akan terjadi?!"
-
-    eve "{i}*Mengendus*{/i} Maaf..."
-
-    grace @ f_angry_yelling_closed a_upset "Aku akan membunuh {b}Tuuku{/b} saat kita sampai di rumah!"
-
-    eve f_surprised "Dia tidak terlibat dalam hal ini!"
-
-    grace "Pfft, ya benar... Aku tidak percaya itu sedetik pun."
-
-    eve "Dia tidak!"
-
+    grace "What did you think was going to happen?!"
+    eve "{i}*Sniff*{/i} I'm sorry..."
+    grace @ f_angry_yelling_closed a_upset "I'm going to kill {b}Tuuku{/b} when we get home!"
+    eve f_surprised "He wasn't involved in this!"
+    grace "Pfft, yeah right... I don't believe that for a second."
+    eve "He wasn't!"
     show grace f_eyeroll
     pause
     show eve f_cry_down a_wipe_tears with dissolve
-    grace f_weary a_facepalm "Naik saja sepedanya dan ayo keluar dari sini..."
-
+    grace f_weary a_facepalm "Just get on the bike and let's get out of here..."
     hide eve with dissolve
-    grace f_angry_yelling_closed a_upset "Grr, aku tidak tahu apa yang akan kita lakukan!"
-
+    grace f_angry_yelling_closed a_upset "Grr, I dunno what the hell we're gonna do!"
     hide grace with dissolve
     scene expression player.location.background_blur
     show anon f_worried
     with fade
-    anon @ -m_talk "(Kedengarannya buruk.)"
-
-    anon @ -m_talk "( Kasihan {b}Malam{/b}... )"
-
+    anon @ -m_talk "( That sounded bad. )"
+    anon @ -m_talk "( Poor {b}Eve{/b}... )"
     hide anon with dissolve
     return
 
@@ -4270,277 +2879,163 @@ label eve_button_prank_douches_park:
     show tuuku:
         xoffset 50
     with dissolve
-    anon "{b}Malam{/b}?"
-
+    anon "{b}Eve{/b}?"
     show anon f_normal
-    eve f_happy a_hip "Lihat, sudah kubilang dia akan datang."
-
-    eve f_happy_right "Hai, {b}[firstname]{/b}!"
-
-    anon "Apa yang terjadi?"
-
-    eve "Tidak banyak."
-
+    eve f_happy a_hip "See, I told you he would come."
+    eve f_happy_right "Hey, {b}[firstname]{/b}!"
+    anon "What's going on?"
+    eve "Not much."
     show eve f_happy
-    tuuku "Ahh, aku ingat orang ini..."
-
-    tuuku "Anda berada di toko tato beberapa hari yang lalu!"
-
-    anon "Ya, itu aku."
-
-    tuuku f_happy "Kalian berdua bercinta?"
-
+    tuuku "Ahh, I remember this guy..."
+    tuuku "You were at the tattoo shop the other day!"
+    anon "Yup, that was me."
+    tuuku f_happy "You two banging then?"
     anon f_surprised "!!!"
-    eve f_surprised a_rossed "APA?!"
-
+    eve f_surprised a_rossed "WHAT?!"
     anon f_worried a_behind_head "Uhh..."
-
-    eve f_angry "Jangan jawab itu {b}[firstname]{/b}!"
-
-    eve "Dia hanya menjadi bajingan..."
-
-    tuuku "Bajingan?!"
-
-    tuuku f_laugh @ f_confused "Untuk menanyakan sedikit pertanyaan?"
-
-    eve "Itu bukanlah pertanyaan kecil!"
-
+    eve f_angry "Don't answer that {b}[firstname]{/b}!"
+    eve "He's just being an asshole..."
+    tuuku "An asshole?!"
+    tuuku f_laugh @ f_confused "For asking little a question?"
+    eve "That is not a little question!"
     show tuuku f_happy
-    eve @ f_eyeroll "... Dan selain itu, aku sudah bilang padamu, {b}[firstname]{/b} tidak tertarik padaku!"
-
+    eve @ f_eyeroll "... And besides, I already told you, {b}[firstname]{/b} isn't interested in me!"
     menu:
-        "Ya, benar!":
-            anon a_rub f_shy_left "Um, sebenarnya..."
-
+        "Yes, I am!":
+            anon a_rub f_shy_left "Umm, actually..."
             show tuuku f_laugh
             eve f_surprised "!!!"
-            eve f_nervous_down "Itu tidak lucu, {b}[firstname]{/b}!"
-
-            anon a_idle f_worried "Saya tidak bercanda."
-
-            tuuku f_happy @ a_thumb "Aku mengetahuinya!"
-
-            tuuku "Kamu sangat bodoh dalam hal ini..."
-
-            eve "I-itu bukan-"
-
-            eve a_idle "Maksudku, dia tidak-"
-
+            eve f_nervous_down "That's not funny, {b}[firstname]{/b}!"
+            anon a_idle f_worried "I'm not joking."
+            tuuku f_happy @ a_thumb "I knew it!"
+            tuuku "You are so clueless when it comes to this stuff..."
+            eve "T-that's not-"
+            eve a_idle "I mean, he doesn't-"
             pause
-            tuuku @ f_eyeroll a_point "Tsk, maukah kamu bersantai... Bagus sekali, {b}Evie{/b}!"
-
+            tuuku @ f_eyeroll a_point "Tsk, would you chill out... It's a good thing, {b}Evie{/b}!"
             eve f_angry @ -m_talk "..."
-            tuuku @ f_laugh "Bukankah dia menggemaskan saat dia malu?"
-
+            tuuku @ f_laugh "Isn't she adorable when she's embarrassed?"
             show eve a_flip with dissolve
             pause
-            tuuku @ f_laugh "Ha ha ha!"
-
+            tuuku @ f_laugh "Hahaha!"
             show eve a_idle with dissolve
         "...":
 
             anon a_rub f_worried_left "..."
-            tuuku f_confused "Ya, tapi {b}Odette{/b} berkata-"
-
-            eve f_angry "Aku tidak ingin mendengarnya!"
-
-            eve "Itu bukan urusannya..."
-
-            tuuku f_annoyed @ a_point "Kamu tidak perlu bersikap defensif, aku hanya-"
-
-            eve "... Dan kamu juga harus ikut campur!"
-
+            tuuku f_confused "Yeah, but {b}Odette{/b} said-"
+            eve f_angry "I don't wanna hear it!"
+            eve "It's none of her fucking business..."
+            tuuku f_annoyed @ a_point "You don't have to get all defensive, I'm just-"
+            eve "... And you should butt out too!"
             show anon f_worried a_idle with dissolve
 
-    tuuku a_arrest "Baiklah, baiklah... Astaga!"
-
-    tuuku f_happy "Aku hanya bilang kalian berdua serasi..."
-
+    tuuku a_arrest "Alright, alright... Sheesh!"
+    tuuku f_happy "I'm just saying you two are cute together..."
     show tuuku a_idle with dissolve
-    eve "YA TUHAN, JATUHKAN!!!"
-
-    tuuku @ f_laugh "Ha ha ha!"
-
+    eve "OH MY GOD, DROP IT!!!"
+    tuuku @ f_laugh "Hahaha!"
     pause
-    tuuku @ a_thumb "Ngomong-ngomong, aku {b}Tuuku{/b}."
-
-    anon f_confused "kamu apa?"
-
+    tuuku @ a_thumb "I'm {b}Tuuku{/b}, by the way."
+    anon f_confused "You're what?"
     tuuku f_normal @ a_thumb "{b}Tuuku{/b}."
-
     anon @ -m_talk "..."
-    anon "Maksudnya itu apa?"
-
-    eve f_normal_right "Itu namanya..."
-
+    anon "What does that mean?"
+    eve f_normal_right "It's his name..."
     anon f_worried @ f_surprised a_behind_head "Oh."
-
     show eve f_normal
-    tuuku f_happy "Nama panggilan sebenarnya..."
-
-    tuuku "Agak aneh, saya tahu, tapi para wanita menyukainya!"
-
-    eve @ f_eyeroll a_facepalm "{i}*Mendengus*{/i} Anda ingin."
-
-    anon "Apakah ada cerita di baliknya?"
-
-    tuuku @ f_wink "Ya, tapi aku tidak bisa memberitahumu."
-
-    anon "Kenapa?"
-
-    tuuku f_angry @ a_point "... Karena kalau begitu aku harus membunuhmu."
-
+    tuuku f_happy "Nickname, actually..."
+    tuuku "A bit strange, I know, but the ladies love it!"
+    eve @ f_eyeroll a_facepalm "{i}*Snort*{/i} You wish."
+    anon "Is there a story behind it?"
+    tuuku @ f_wink "Yup, but I can't tell you."
+    anon "How come?"
+    tuuku f_angry @ a_point "... Because then I'd have to kill you."
     show anon f_surprised_teeth
-    eve f_normal_right @ f_laugh "Pfft, ya benar!"
-
-    eve "Jangan dengarkan dia, {b}[firstname]{/b}... Dia hanya berusaha bersikap keren."
-
+    eve f_normal_right @ f_laugh "Pfft, yeah right!"
+    eve "Don't listen to him, {b}[firstname]{/b}... He's just trying to act cool."
     show anon f_worried
     show eve f_normal
-    tuuku f_happy @ a_thumb "Hei, aku keren!"
-
-    eve @ f_eyeroll "Heh, dengan rambut itu?"
-
-    eve "Sepertinya seseorang menyerah di tengah jalan saat memotongnya!"
-
+    tuuku f_happy @ a_thumb "Hey, I am cool!"
+    eve @ f_eyeroll "Heh, with that hair?"
+    eve "It looks like someone gave up halfway through cutting it!"
     show anon f_normal
-    tuuku "Aduh, tidak keren {b}Evie{/b}."
-
-    tuuku a_rub "Jangan pernah mengolok-olok doo!"
-
+    tuuku "Aww, not cool {b}Evie{/b}."
+    tuuku a_rub "Never make fun of the doo!"
     eve @ f_laugh "Hahahaah!"
-
-    tuuku @ f_laugh "hehe!"
-
+    tuuku @ f_laugh "Hehe!"
     show tuuku a_idle
     pause
-    tuuku "Jadi, apakah Anda sudah memberi tahu dia tentang rencananya?"
-
+    tuuku "So, did you fill him in on the plan yet?"
     show eve f_normal_right
-    anon "Yang aku tahu hanyalah kami sedang mengerjai {b}Tyrone{/b} dan teman-temannya..."
-
+    anon "All I know is that we're pulling a prank on {b}Tyrone{/b} and his buddies..."
     show eve f_normal
-    tuuku f_normal @ a_point "Itu benar, kita akan memberi pelajaran pada bajingan itu malam ini!"
-
-    tuuku "Tidak ada yang main-main dengan {b}Evie{/b} dan lolos begitu saja!"
-
-    anon @ f_laugh "Heh, baiklah... Jadi bagaimana caranya?"
-
-    eve f_normal_right "Kita akan menyabotase barang-barang mereka!"
-
-    anon f_worried @ f_confused "Apa maksudmu?"
-
-    eve f_normal "Apakah kamu membawa barangnya?"
-
-    tuuku f_happy "Tentu saja."
-
+    tuuku f_normal @ a_point "That's right, we're going to teach those assholes a lesson tonight!"
+    tuuku "Nobody messes with {b}Evie{/b} and gets away with it!"
+    anon @ f_laugh "Heh, alright... So how do we do that?"
+    eve f_normal_right "We're gonna sabotage their stuff!"
+    anon f_worried @ f_confused "What do you mean?"
+    eve f_normal "Did you bring the goodies?"
+    tuuku f_happy "Of course."
     show tuuku a_vials with dissolve
     show eve f_nervous_down
-    anon f_worried_low "Apa sajakah itu?"
-
-    eve f_happy_right "Bom bau."
-
-    anon @ f_surprised "Bom bau?!"
-
-    eve @ f_laugh "Hehe, ya!"
-
-    eve "Pada dasarnya, {b}Tuuku{/b} akan mengalihkan perhatian mereka saat Anda dan saya menyelundupkan ini ke dalam tas mereka."
-
-    anon f_confused "Bagaimana cara kerjanya?"
-
+    anon f_worried_low "What are those things?"
+    eve f_happy_right "Stink bombs."
+    anon @ f_surprised "Stink bombs?!"
+    eve @ f_laugh "Hehe, yup!"
+    eve "Basically, {b}Tuuku{/b} is going to distract them while you and I sneak these into their bags."
+    anon f_confused "How do they work?"
     show eve f_normal
-    tuuku "Oh, sederhana sekali... Yang harus Anda lakukan hanyalah memasukkannya ke dalam sana, menutupnya, dan memukulnya."
-
+    tuuku "Oh, it's really simple... All you have to do is drop it in there, seal it up, and give it a whack."
     show tuuku a_hips
     show anon a_vials f_worried_low
     with dissolve
-    tuuku "Botol-botol ini sangat mudah pecah dan baunya meresap ke dalam semuanya!"
-
-    eve f_normal_right "Berhati-hatilah, {b}[firstname]{/b}... Hal-hal ini SANGAT ampuh."
-
-    anon f_worried "Y-ya, oke."
-
+    tuuku "These vials shatter super easy and the stinky stuff soaks into everything!"
+    eve f_normal_right "Just be really careful, {b}[firstname]{/b}... These things are SUPER powerful."
+    anon f_worried "Y-yeah, okay."
     show eve f_happy
-    tuuku "Jika kita beruntung, mereka bahkan tidak akan menyadari apa yang terjadi sampai mereka tiba di rumah."
-
-    eve "Oh, itu akan luar biasa!"
-
-    tuuku "Hehe, begitu mereka membuka ransel itu, baunya akan keluar!"
-
+    tuuku "If we're lucky, they won't even realize what's happened until they get home."
+    eve "Oh, that would be awesome!"
+    tuuku "Hehe, the second they open those backpacks, it's going to unleash smellageddon!"
     eve @ f_laugh "Haha!"
-
-    anon "T-tapi bagaimana kamu akan mengalihkan perhatian mereka?"
-
-    tuuku "Oh, itu bagian yang mudah."
-
-    tuuku @ f_laugh a_thumb "Saya dealer mereka."
-
-    anon f_confused "Hah?"
-
-    eve @ f_laugh "Dia menjual obat-obatan kepada mereka sepanjang waktu."
-
-    anon f_surprised "Anda melakukannya?"
-
-    tuuku @ a_shrug "Hei, seorang pria harus mencari nafkah, kan?"
-
-    eve f_confused "Saya masih tidak mengerti mengapa tidak apa-apa menjual kepada mereka dan bukan kepada saya?!"
-
-    eve "Kami seumuran!"
-
-    tuuku f_normal "Umm, karena mereka tidak punya {b}kakak perempuan{/b} yang mengancam akan menghancurkan bolaku jika mereka ketahuan membawa barang-barangku!"
-
+    anon "B-but how are you going to distract them?"
+    tuuku "Oh, that's the easy part."
+    tuuku @ f_laugh a_thumb "I'm their dealer."
+    anon f_confused "Huh?"
+    eve @ f_laugh "He sells them drugs all the time."
+    anon f_surprised "You do?"
+    tuuku @ a_shrug "Hey, a man's gotta make a living, right?"
+    eve f_confused "I still don't understand why it's okay to sell to them and not me?!"
+    eve "We're the exact same age!"
+    tuuku f_normal "Umm, because they don't have an {b}older sister{/b} threatening to smash my balls if they get caught with my stuff!"
     show eve f_normal
-    anon f_worried @ f_skeptical "eh..."
-
-    tuuku "Benar?!"
-
-    tuuku f_happy @ a_point "Lihat, {b}[firstname]{/b} mengerti!"
-
-    eve @ f_eyeroll "Ugh, terserah... Ayo kita lanjutkan saja!"
-
+    anon f_worried @ f_skeptical "Eww..."
+    tuuku "Right?!"
+    tuuku f_happy @ a_point "See, {b}[firstname]{/b} gets it!"
+    eve @ f_eyeroll "Ugh, whatever... Let's just get on with this!"
     show anon f_normal
-    tuuku "Hehe, dengan senang hati."
-
-    tuuku "Saya akan memberi sinyal kepada Anda ketika saya sudah mendapatkan perhatian mereka."
-
-    tuuku @ a_thumb "Beri aku waktu beberapa menit untuk melakukan keajaibanku!"
-
+    tuuku "Heh, gladly."
+    tuuku "I'll signal you when I've got their attention."
+    tuuku @ a_thumb "Just give me a few minutes to work my magic!"
     hide tuuku with dissolve
     pause
-    tuuku "Heeey, apa kabar teman-temanku?!"
-
+    tuuku "Heeey, what's up my homies?!"
     pause
-    anon "Dia tampak baik."
-
-    anon f_worried "K-kamu tahu, untuk pengedar narkoba."
-
-    eve @ f_laugh "Itu hanya pot, {b}[firstname]{/b}..."
-
-    eve f_happy_right "Dia sebenarnya bukan pengedar narkoba."
-
-    anon f_shy @ a_behind_head "Hehe, aku tahu."
-
+    anon "He seems nice."
+    anon f_worried "Y-you know, for a drug dealer."
+    eve @ f_laugh "It's just pot, {b}[firstname]{/b}..."
+    eve f_happy_right "He's not an actual drug dealer."
+    anon f_shy @ a_behind_head "Heh, I know."
     pause
-    anon f_normal a_idle "Bagaimana kalian berdua saling kenal?"
-
+    anon f_normal a_idle "How do you two know each other?"
     eve @ -m_talk "Hmm?"
-
-    eve "Oh, adikku berkencan dengannya sebentar saat SMP."
-
-    eve "Dia telah bergaul dengannya dan {b}Odette{/b} sejak saat itu."
-
-    anon f_surprised "Dia berkencan dengan {b}Grace{/b}?"
-
-    eve @ f_eyeroll "Ya, selama sebulan..."
-
-    anon "Jadi apakah mereka seperti, berteman dengan keuntungan atau semacamnya?"
-
-    eve f_surprised "Apa?!"
-
-    eve f_happy_right @ f_laugh "Haha, tentu saja tidak!"
-
-    eve "{b}Tuuku{/b} menjadi lebih seperti saudara bagi kami..."
-
+    eve "Oh, my sister dated him for a little while back in middle school."
+    eve "He's been palling around with her and {b}Odette{/b} ever since."
+    anon f_surprised "He dated {b}Grace{/b}?"
+    eve @ f_eyeroll "Yeah, for like a month..."
+    anon "So are they like, friends with benefits or something?"
+    eve f_surprised "What?!"
+    eve f_happy_right @ f_laugh "Haha, of course not!"
+    eve "{b}Tuuku{/b}'s become more like a brother to us..."
     show eve f_happy
     show anon f_brag_closed a_facepalm with dissolve
     pause
@@ -4548,35 +3043,23 @@ label eve_button_prank_douches_park:
     show eve f_sad_thinking
     with dissolve
     pause
-    eve f_happy "... Atau mungkin seperti sepupu norak, heh."
-
-    eve f_happy_right "Bagaimanapun, aku cukup yakin mereka bahkan tidak pernah berciuman."
-
+    eve f_happy "... Or maybe like a dorky cousin, heh."
+    eve f_happy_right "Either way, I'm pretty sure they never even kissed."
     anon "Oh."
-
     pause
-    eve @ f_eyeroll "Menurutku {b}Odette{/b} menidurinya beberapa kali, tapi dia sering tidur dengan semua orang, jadi..."
-
+    eve @ f_eyeroll "I think {b}Odette{/b} fucked him a couple times, but she pretty much sleeps with everybody, so..."
     anon f_surprised "!!!"
-    anon f_flirt "B-dia melakukannya?"
-
-    eve f_happy "Benar sekali."
-
-    anon f_surprised_down a_cover_boner "{i}*Meneguk*{/i}"
-
+    anon f_flirt "S-she does?"
+    eve f_happy "Totally."
+    anon f_surprised_down a_cover_boner "{i}*Gulp*{/i}"
     pause
-    eve "Itu sinyalnya."
-
+    eve "There's the signal."
     show anon f_surprised
-    eve "Anda siap?"
-
-    anon f_worried "Siap semampu saya..."
-
-    eve "Hehe, ayolah!"
-
+    eve "You ready?"
+    anon f_worried "As ready as I'll ever be..."
+    eve "Hehe, c'mon!"
     hide eve with dissolve
-    anon f_worried_low a_vials "{i}*Huh*{/i} Tidak ada apa-apa..."
-
+    anon f_worried_low a_vials "{i}*Sigh*{/i} Here goes nothing..."
     hide anon with dissolve
     return
 
@@ -4590,20 +3073,13 @@ label eve_button_prank_douches_school:
             xoffset 500
         show anon b_desk zorder 3
     with dissolve
-    eve "Jangan lupa, {b}kita akan bertemu di taman malam ini{/b} untuk membalas para bajingan yang menyemprotku!"
-
-    anon f_worried "Maukah kamu memberitahuku apa yang kamu rencanakan?"
-
-    eve "Mustahil!"
-
-    eve "Aku tidak ingin merusak kejutannya!"
-
-    anon f_tired "Uh, baiklah."
-
-    anon "Saya akan berada di sana."
-
-    eve "Itu akan menyenangkan, aku janji."
-
+    eve "Don't forget, {b}we're meeting at the park tonight{/b} to get back at those assholes for spraying me!"
+    anon f_worried "Will you just tell me what you're planning?"
+    eve "No way!"
+    eve "I don't wanna ruin the surprise!"
+    anon f_tired "Ugh, fine."
+    anon "I'll be there."
+    eve "It'll be fun, I promise."
     if player.location == L_school_frenchclassroom:
         show expression "characters/eve/eve_overlay_o_chair.png" zorder 1:
             xpos 450
@@ -4612,14 +3088,11 @@ label eve_button_prank_douches_school:
     hide eve
     with dissolve
     pause
-    anon f_surprised_teeth "( Sobat, aku benar-benar tidak ingin memulai perang iseng dengan {b}Tyrone{/b} dan teman-temannya... )"
-
-    anon @ -m_talk "( ... Tapi aku tidak bisa membiarkan {b}Eve{/b} melakukan ini sendirian. )"
-
+    anon f_surprised_teeth "( Man, I really don't wanna start a prank war with {b}Tyrone{/b} and his friends... )"
+    anon @ -m_talk "( ... But I can't just leave {b}Eve{/b} to do this on her own. )"
     if player.location != L_school_frenchclassroom:
         show anon f_tired a_facepalm with dissolve
-    anon "(Saya harap dia tidak merencanakan sesuatu yang terlalu gila.)"
-
+    anon "( I hope she isn't planning anything too crazy. )"
     hide anon
     if player.location == L_school_frenchclassroom:
         show expression "characters/eve/eve_overlay_o_chair.png" as anon_chair zorder 1:
@@ -4634,54 +3107,33 @@ label eve_button_prank_roxxy:
     show anon f_worried
     show eve f_happy
     with dissolve
-    anon "{b}Malam{/b}?"
-
-    eve "Oh, hai {b}[firstname]{/b}!"
-
-    anon f_confused "Mengapa Anda nongkrong di dekat ruang ganti?"
-
-    eve "aku menunggu..."
-
-    anon "Menunggu?"
-
-    anon "Menunggu apa?"
-
+    anon "{b}Eve{/b}?"
+    eve "Oh, hey {b}[firstname]{/b}!"
+    anon f_confused "Why are you hanging out near the locker rooms?"
+    eve "I'm waiting..."
+    anon "Waiting?"
+    anon "Waiting for what?"
     show anon f_worried
-    eve "Tetaplah di sini dan Anda akan mengetahuinya..."
-
+    eve "Stick around and you'll find out..."
     anon @ -m_talk "..."
-    anon "Um, oke..."
-
+    anon "Umm, okay..."
     pause
-    anon @ f_sad_down "Aku merasa aku harus meminta maaf kepadamu lagi atas apa yang terjadi di rumahmu..."
-
-    eve @ f_laugh "Heh, maksudmu saat kamu menyerbuku dan berganti pakaian dengan ular piton yang mengamuk di celanamu?"
-
-    anon f_tired a_behind_head "Uhh, y-ya."
-
-    eve "Tenang, {b}[firstname]{/b}... Ini bukan masalah besar."
-
-    anon f_worried a_idle "Kamu tidak marah?"
-
-    eve f_happy a_hip_angry @ f_laugh "Apakah saya terlihat gila?"
-
-    anon "Tidak."
-
+    anon @ f_sad_down "I feel like I should apologize to you again for what happened at your house..."
+    eve @ f_laugh "Heh, you mean when you burst in on me changing with a raging python in your pants?"
+    anon f_tired a_behind_head "Uhh, y-yeah."
+    eve "Relax, {b}[firstname]{/b}... It's not that big a deal."
+    anon f_worried a_idle "You're not mad?"
+    eve f_happy a_hip_angry @ f_laugh "Do I look mad?"
+    anon "No."
     pause
-    anon f_skeptical "Kamu terlihat sangat bahagia."
-
-    eve "Sangat senang!"
-
-    anon f_worried "Kenapa kamu-"
-
+    anon f_skeptical "You look really happy."
+    eve "Very happy!"
+    anon f_worried "Why are you-"
     roxxy "AHHHH!!" with hpunch
     eve @ f_laugh "Hehehe!"
-
-    anon "Apa yang-"
-
+    anon "What the-"
     hide anon with dissolve
-    eve "Ini akan bagus!"
-
+    eve "This is going to be good!"
     scene black with fade
     pause
     $ player.go_to(L_school_boysroom)
@@ -4694,96 +3146,67 @@ label eve_button_prank_roxxy:
         xoffset -200
     with dissolve
     pause
-    roxxy f_angry "YA TUHAN!!"
-
+    roxxy f_angry "OH MY GOD!!"
     anon f_shock "!!!"
     show anon f_surprised_teeth
-    roxxy "ITU CAT SEMPROT!"
-
-    roxxy f_worried "TIDAK TIDAK NONONO!!"
-
+    roxxy "IT'S SPRAY PAINT!"
+    roxxy f_worried "NO NO NONONONO!!"
     show missy o_doodles f_yawn a_yawn zorder 1:
         xoffset 50
     with dissolve
-    missy "{i}*Menguap*{/i}"
-
+    missy "{i}*Yawn*{/i}"
     show missy f_tired a_idle
-    missy "Apa yang kamu teriakkan?!"
-
-    roxxy f_angry "LIHAT RAMBUT SAYA, KAU IDIOT!!!"
-
-    missy f_normal "Wah, bagaimana itu bisa terjadi?!"
-
-    roxxy "Seseorang mengganti hairsprayku dengan cat!"
-
+    missy "What are you yelling about?!"
+    roxxy f_angry "LOOK AT MY FUCKING HAIR, YOU IDIOT!!!"
+    missy f_normal "Whoa, how did that happen?!"
+    roxxy "Somebody replaced my hairspray with paint!"
     show roxxy f_pouting_hair with None
     show becca b_towel:
         flip
         xoffset 200
     with dissolve
-    becca "Siapa yang berteriak?!"
-
-    missy a_point f_surprised "Sialan!"
-
-    missy f_laugh "Ha ha ha ha!"
-
+    becca "Who is screaming?!"
+    missy a_point f_surprised "Holy crap!"
+    missy f_laugh "Hahahaha!"
     show missy a_idle
-    becca "Apa?!"
-
-    missy f_normal @ f_laugh "Kamu berwarna oranye!"
-
-    becca f_confused "Oranye?"
-
+    becca "What?!"
+    missy f_normal @ f_laugh "You are orange!"
+    becca f_confused "Orange?"
     show becca a_look f_shocked_down
     becca "!!!" with hpunch
-    becca f_upset "OH, APA-APAAN?!"
-
+    becca f_upset "OH, WHAT THE HELL?!"
     hide becca with dissolve
     missy f_laugh "Hahahaah!"
-
-    missy "Kenapa kamu berwarna oranye?"
-
-    becca "AKU TIDAK TAHU!!"
-
+    missy "Why are you orange?"
+    becca "I DON'T KNOW!!"
     missy f_normal @ f_laugh "Hahahaah!"
-
     pause
-    becca "Oh sial!"
-
+    becca "Oh, shit!"
     pause
     show becca b_towel a_bottle f_upset zorder 1:
         flip
         xoffset 200
-    becca "Seseorang memasukkan sunless tanner ke dalam sabun mandiku!"
-
-    missy "Dengan serius?!"
-
+    becca "Somebody put sunless tanner in my body wash!"
+    missy "Seriously?!"
     show becca a_hip
     hide roxxy
     show roxxy b_undies a_hair f_angry zorder 0:
         xoffset -200
     with dissolve
-    roxxy "Maukah kalian diam?!"
-
-    roxxy "Apa yang akan saya lakukan dengan rambut saya?"
-
-    becca "Siapa yang peduli dengan rambut bodohmu?!"
-
-    becca "Saya ORANGE!"
-
+    roxxy "Would you guys shut up?!"
+    roxxy "What am I gonna do about my hair?"
+    becca "Who cares about your stupid hair?!"
+    becca "I'm ORANGE!"
     missy @ f_laugh "PFFFT, HAHAHAHA!!!"
-
     show roxxy b_undies a_hair f_glaring:
         flip
         xoffset 400
     with dissolve
     show becca f_glaring
-    missy "Kalian terlihat sangat konyol!"
-
+    missy "You guys look so ridiculous!"
     roxxy @ -m_talk "..."
     becca @ -m_talk "..."
-    missy "A-apa?"
-
+    missy "W-what?"
     show becca f_upset a_mirror with dissolve
     pause
     missy f_surprised "!!!"
@@ -4791,49 +3214,32 @@ label eve_button_prank_roxxy:
     show missy a_mirror f_confused
     with dissolve
     show roxxy f_angry
-    missy "Oh, wah..."
-
+    missy "Oh, wow..."
     pause
-    missy "Ada penis di wajahku!"
-
-    becca "Tidak apa-apa?"
-
+    missy "There's a dick on my face!"
+    becca "No shit?"
     pause
-    missy f_surprised "Oh, kawan... Ini sangat berurat..."
-
-    becca "Bagaimana itu bisa terjadi?"
-
-    missy f_normal a_idle @ a_yawn f_yawn "Aku tidak tahu... Aku sedang tidur."
-
-    becca "Kamu sedang tidur... Di ruang ganti?"
-
-    missy "Ya?"
-
+    missy f_surprised "Oh, man... It's so veiny..."
+    becca "How did that even happen?"
+    missy f_normal a_idle @ a_yawn f_yawn "I don't know... I was sleeping."
+    becca "You were sleeping... In the locker room?"
+    missy "Yeah?"
     becca @ -m_talk "..."
-    missy "Saya bosan!"
-
-    missy "Kalian berdua butuh waktu lama untuk bersiap..."
-
-    becca "Menurut Anda siapa yang melakukan ini?"
-
+    missy "I was bored!"
+    missy "You two take forever to get ready..."
+    becca "Who do you think did this?"
     show missy a_think f_thinking with dissolve
-    roxxy "Aku tidak tahu tapi siapa pun orangnya, mereka sudah mati!"
-
+    roxxy "I don't know but whoever it was, they're fucking dead!"
     show anon f_surprised_teeth:
         xoffset -250
     with dissolve
     hide anon with dissolve
-    roxxy "aku serius!"
-
+    roxxy "I'm serious!"
     show roxxy f_pouting_hair
-    missy a_idle f_normal @ a_point "Aku yakin itu adalah para pemandu sorak nakal dari regu B..."
-
-    becca "Pelacur tingkat dua itu?"
-
-    missy "Ya, kamu tahu mereka sangat iri pada kita, kan?"
-
-    becca @ f_eyeroll "Mereka tidak punya nyali untuk melakukan hal seperti ini!"
-
+    missy a_idle f_normal @ a_point "I bet it was those skanky cheerleaders from the B squad..."
+    becca "Those sophomore sluts?"
+    missy "Yeah, you know they're super jealous of us, right?"
+    becca @ f_eyeroll "They don't have the balls to pull something like this!"
     roxxy @ -m_talk "..."
     show missy a_yawn f_yawn with dissolve
     scene black with fade
@@ -4843,81 +3249,46 @@ label eve_button_prank_roxxy:
     scene expression player.location.background_blur with None
     show anon f_surprised
     show eve f_happy
-    eve "Hmm, sepertinya {b}Roxxy{/b} dan si kembar bodoh sedang mengalami hari yang berat..."
-
-    anon "Anda melakukan itu?"
-
-    eve @ f_laugh "Ha ha ha ha!"
-
+    eve "Hmm, it sounds like {b}Roxxy{/b} and the moron twins are having a rough day..."
+    anon "You did that?"
+    eve @ f_laugh "Hahahaha!"
     if M_roxxy.finished_inclusive(S_roxxy_end):
-        anon f_worried a_rub "Tidakkah menurut Anda itu sedikit ekstrem?"
-
-        eve @ a_wtf "Psh, santai {b}[firstname]{/b}..."
-
-        eve "Semuanya akan hilang."
-
-        anon "Y-ya, tapi-"
-
-        eve f_eyeroll @ a_up "Sejujurnya, aku tidak tahu apa yang kamu lihat pada perempuan jalang itu..."
-
-        anon a_idle "Ayolah, dia tidak seburuk itu."
-
-        eve f_angry @ a_wtf "Dia selalu menindasku!"
-
-        anon "Ya, saya tahu..."
-
-        anon "Dia hanya marah karena kehidupan rumah tangganya buruk."
-
-        eve "Ya baiklah, bagaimanapun juga... Dia sudah menduga hal ini akan terjadi."
-
+        anon f_worried a_rub "Don't you think that was a little extreme?"
+        eve @ a_wtf "Psh, relax {b}[firstname]{/b}..."
+        eve "It'll all wash out."
+        anon "Y-yeah, but-"
+        eve f_eyeroll @ a_up "Honestly, I don't know what you see in that bitch..."
+        anon a_idle "C'mon, she's not that bad."
+        eve f_angry @ a_wtf "She bullies me like, all the time!"
+        anon "Yeah, I know..."
+        anon "She's just lashing out because her home life sucks."
+        eve "Yeah well, regardless... She had this coming."
     else:
-        anon f_normal "Bagaimana kamu bisa melakukan semua itu?!"
-
-        eve @ a_wtf "Oh, aku punya caraku..."
-
-        eve "Cukup bagus, ya?"
-
-        anon "Hehe, ya..."
-
-        eve @ f_laugh "Ha ha ha ha!"
-
-        anon "Saya pikir Anda mungkin bereaksi sedikit berlebihan..."
-
-        eve f_eyeroll "Bisa aja."
-
-        eve "Itulah yang mereka dapatkan karena menindas saya!"
-
-    eve f_happy @ f_laugh a_point "Dan mereka bukanlah satu-satunya targetku!"
-
+        anon f_normal "How did you manage to do all of that?!"
+        eve @ a_wtf "Oh, I've got my ways..."
+        eve "Pretty good, huh?"
+        anon "Heh, yeah..."
+        eve @ f_laugh "Hahahaha!"
+        anon "I think you may have overreacted a little bit..."
+        eve f_eyeroll "Oh, please."
+        eve "That's what they get for bullying me!"
+    eve f_happy @ f_laugh a_point "And they aren't my only targets!"
     anon f_worried @ -m_talk "Hmm?"
-
-    eve "Aku membalas {b}Tyrone{/b} dan teman-teman bajingannya juga!"
-
-    anon a_behind_head "Oh, kawan... Apakah kamu serius?"
-
-    eve "Anda ingin membantu?"
-
-    anon a_idle "Ehh, entahlah... Apa sebenarnya yang kamu rencanakan?"
-
-    eve @ f_laugh "Hehe, kamu akan lihat."
-
-    eve "{b}temui aku di taman malam ini{/b}, oke?"
-
-    anon "Y-ya, oke."
-
-    eve "Jangan lupa!"
-
+    eve "I'm getting back at {b}Tyrone{/b} and his douchebag friends too!"
+    anon a_behind_head "Oh, man... Are you serious?"
+    eve "You wanna help?"
+    anon a_idle "Ehh, I dunno... What exactly are you planning?"
+    eve @ f_laugh "Hehe, you'll see."
+    eve "Just {b}meet me in the park tonight{/b}, alright?"
+    anon "Y-yeah, okay."
+    eve "Don't forget!"
     hide eve with dissolve
-    anon "saya tidak akan..."
-
+    anon "I won't..."
     pause
-    anon f_surprised_teeth "( Sobat, aku benar-benar tidak ingin memulai perang iseng dengan {b}Tyrone{/b} dan teman-temannya... )"
-
-    anon @ -m_talk "( ... Tapi aku tidak bisa membiarkan {b}Eve{/b} melakukan ini sendirian. )"
-
+    anon f_surprised_teeth "( Man, I really don't wanna start a prank war with {b}Tyrone{/b} and his friends... )"
+    anon @ -m_talk "( ... But I can't just leave {b}Eve{/b} to do this on her own. )"
     show anon f_tired a_facepalm with dissolve
-    anon "(Saya harap dia tidak merencanakan sesuatu yang terlalu gila.)"
-
+    anon "( I hope she isn't planning anything too crazy. )"
     hide anon with dissolve
     return
 
@@ -4931,25 +3302,16 @@ label eve_button_bridgets_help:
             xoffset 500
         show anon b_desk
     with dissolve
-    anon "{b}Malam{/b}!"
-
-    eve f_sad "Hai, {b}[firstname]{/b}."
-
-    anon "Anda tidak akan percaya apa yang terjadi!"
-
+    anon "{b}Eve{/b}!"
+    eve f_sad "Hey, {b}[firstname]{/b}."
+    anon "You're not going to believe what happened!"
     eve @ -m_talk "Hmm?"
-
-    anon "Saya meminta {b}Pelatih Bridget{/b} untuk berbicara dengan {b}Ny. Smith{/b} tentang aturan berpakaian, dan dia membuang semuanya!"
-
+    anon "I asked {b}Coach Bridget{/b} to speak with {b}Mrs. Smith{/b} about the dress code, and she got the entire thing thrown out!"
     eve f_surprised "!!!"
-    eve f_nervous "Benar-benar?!"
-
-    anon "Ya, bukankah itu bagus?"
-
-    anon "Anda dapat menjaga rambut biru Anda sesuai keinginan Anda!"
-
-    eve @ f_laugh "Luar biasa sekali, {b}[firstname]{/b}!"
-
+    eve f_nervous "Really?!"
+    anon "Yeah, isn't that great?"
+    anon "You can keep your blue hair just the way you like it!"
+    eve @ f_laugh "That's so awesome, {b}[firstname]{/b}!"
     if player.location == L_school_frenchclassroom:
         show expression "characters/eve/eve_overlay_o_chair.png" zorder 2:
             xpos 450
@@ -4963,25 +3325,17 @@ label eve_button_bridgets_help:
     show anon b_hug_eve f_surprised_low zorder 2
     with dissolve
     anon "!!!"
-    eve "Kamu yang terbaik!"
-
-    anon f_shy_low "Hehe, terima kasih!"
-
+    eve "You're the best!"
+    anon f_shy_low "Heh, thanks!"
     show eve b_dressed f_nervous_down
     show anon f_shy b_dressed
     with dissolve
-    eve "Oh, ehh... Maaf."
-
-    eve f_nervous "Aku tidak bermaksud-"
-
-    anon "Tidak apa-apa."
-
-    anon "Itu bagus."
-
-    eve "Y-ya, itu-"
-
-    tyrone "Ada apa, jalang?!"
-
+    eve "Oh, ehh... Sorry."
+    eve f_nervous "I didn't mean to-"
+    anon "It's alright."
+    anon "That was nice."
+    eve "Y-yeah, it was-"
+    tyrone "What up, bitches?!"
     if player.location == L_school_frenchclassroom:
         show expression "characters/eve/eve_overlay_o_chair.png" zorder 0
         show anon f_worried zorder 1:
@@ -4999,36 +3353,22 @@ label eve_button_bridgets_help:
         xoffset 200
     with dissolve
     eve "!!!"
-    chad "Apa yang kalian berdua bicarakan?"
-
-    anon "Tidak ada, kami hanya ngobrol."
-
-    eve f_angry "Apa yang kamu inginkan?"
-
-    tyrone "Sekali lagi dengan semua sikap itu..."
-
-    tyrone "Anda tahu Anda menangkap lebih banyak lalat dengan madu, bukan?"
-
-    eve @ f_eyeroll "Psh, seolah-olah..."
-
-    eve "Meskipun pantas jika dalam metaforamu ini, kalian adalah serangga yang menghisap serangga!"
-
-    chad @ f_angry "Meta-ya?"
-
-    tyrone "Ck, gadis sialan... Kenapa kamu harus seperti itu?!"
-
-    anon "Bisakah kami membantu kalian dengan sesuatu?"
-
-    tyrone "Heh, iya sebenarnya, menurutku kamu bisa!"
-
-    tyrone "Soalnya, anakku {b}Chico{/b} di sini ingin melakukan latihan target..."
-
+    chad "What are you two lovebirds talking about?"
+    anon "Nothing, we're just chatting."
+    eve f_angry "What the fuck do you cumstains want?"
+    tyrone "Again with all that attitude..."
+    tyrone "You know you catch more flies with honey, right?"
+    eve @ f_eyeroll "Psh, as if..."
+    eve "Though it is fitting, that in this metaphor of yours, you guys are shit sipping insects!"
+    chad @ f_angry "Meta-huh?"
+    tyrone "Tsk, damn girl... Why you gotta be like that?!"
+    anon "Can we help you guys with something?"
+    tyrone "Heh, yeah actually, I think you can!"
+    tyrone "You see, my boy {b}Chico{/b} here was looking to get in some target practice..."
     show eve f_confused
-    anon f_confused "Latihan sasaran?"
-
+    anon f_confused "Target practice?"
     show chico f_cocky a_gun_down zorder 2 with dissolve
-    chico "Sampaikan salamku pada teman kecilku!"
-
+    chico "Say hello to my little friend!"
     show chico a_gun_shoot
     show eve f_surprised a_wtf
     show anon b_dressed_blocking
@@ -5038,59 +3378,36 @@ label eve_button_bridgets_help:
     show eve f_sad_down b_dressed_wet
     with dissolve
     eve "Ahh!!!"
-
     show eve f_angry
-    anon f_angry "Bung, apa-apaan ini?!"
-
-    tyrone f_laugh "Ha ha ha!"
-
-    chad @ f_laugh "Ha ha ha!"
-
-    eve "Dasar brengsek!!!"
-
-    tyrone f_smirk "Sial, kamu membuatnya baik, yo!"
-
-    eve "Euh, apakah ini bir?!"
-
-    eve "Kamu menyemprotku dengan bir?!"
-
-    tyrone "Daww, jangan marah sayang..."
-
-    tyrone "Kenapa kamu tidak minta pacarmu mengambilkan handuk sementara kami membantumu melepaskan pakaian basah itu, ya?"
-
+    anon f_angry "Dude, what the hell?!"
+    tyrone f_laugh "Hahaha!"
+    chad @ f_laugh "Hahaha!"
+    eve "You fucking assholes!!!"
+    tyrone f_smirk "Damn, you got her good yo!"
+    eve "Eugh, is this beer?!"
+    eve "You sprayed me with fucking beer?!"
+    tyrone "Daww, don't get all upset baby..."
+    tyrone "Why don't you have your boyfriend there get you a towel while we help you outta those wet clothes, eh?"
     show eve a_sides:
         xoffset 0
     show anon a_point zorder 3:
         xoffset 150
     with dissolve
-    anon "Kalian harus pergi."
-
+    anon "You guys need to leave."
     show anon a_sides with dissolve
-    chad "Psh, lihat dia, bertingkah keras sekarang."
-
+    chad "Psh, look at him, actin' all tough now."
     chico @ f_laugh "Haha!"
-
-    tyrone "Sungguh, santai saja, Opie..."
-
-    tyrone "Kami hanya mempermainkanmu."
-
-    anon "Yah, itu tidak lucu!"
-
-    eve f_sad_down "Adikku akan membunuhku!"
-
-    tyrone "Saudari?"
-
+    tyrone "For real, chill out, Opie..."
+    tyrone "We're just messing with ya."
+    anon "Well, it's not funny!"
+    eve f_sad_down "My sister is gonna kill me!"
+    tyrone "Sister?"
     show eve f_angry
-    tyrone "Mm, aku yakin dia baik-baik saja, sama sepertimu."
-
-    eve "Persetan!"
-
-    anon "Serius teman-teman, berangkat!"
-
-    tyrone "Ya, ya... Kami berangkat."
-
-    tyrone f_laugh "Beritahu adikmu kami menyapa!"
-
+    tyrone "Mm, I bet she's fine as hell, just like you."
+    eve "Fuck off!"
+    anon "Seriously guys, go!"
+    tyrone "Yeah, yeah... We're leaving."
+    tyrone f_laugh "Tell your sister we said hi!"
     show eve zorder 3
     eve @ a_flip -m_talk "..."
     hide chico
@@ -5101,42 +3418,25 @@ label eve_button_bridgets_help:
     hide eve
     show eve b_dressed_wet a_wtf f_sad
     show anon f_worried
-    eve "{i}*Huh*{/i} Apa yang harus aku lakukan?"
-
-    eve "Kalau aku pulang dengan bau bir, adikku akan panik."
-
+    eve "{i}*Sigh*{/i} What the hell am I going to do?"
+    eve "If I go home reeking of beer, my sister will freak out."
     show eve a_idle
-    anon "Tidak bisakah kamu menyelinap masuk?"
-
-    eve "Hmm, mungkin tidak..."
-
-    eve "Dia biasanya mengatur waktu istirahatnya sehingga dia bisa bertanya padaku tentang hariku."
-
-    anon "Hmm, kamu bisa datang ke tempatku dan mandi jika kamu mau."
-
-    anon "Teman sekamarku bisa meminjamkanmu satu set pakaian bersih..."
-
-    eve f_sad_down "T-tidak, menurutku itu bukan ide yang bagus."
-
+    anon "Can't you sneak in?"
+    eve "Mmm, probably not..."
+    eve "She usually times her break so she can ask me about my day."
+    anon "Hmm, you could come to my place and have a shower if you want."
+    anon "My roommate could loan you a set of clean clothes..."
+    eve f_sad_down "N-no, I don't think that's a good idea."
     pause
-    eve f_sad "Mungkin kamu bisa ikut denganku dan mengalihkan perhatian {b}Grace{/b} selagi aku berganti pakaian?"
-
-    anon f_confused @ a_thinking "Mengalihkan perhatiannya?"
-
-    eve "Ya, tanyakan saja padanya beberapa pertanyaan atau sesuatu..."
-
-    anon "Ehh, maksudku... aku bisa mencobanya."
-
-    eve "Silakan?!"
-
-    anon f_worried "Y-ya, oke."
-
-    eve "Terima kasih, {b}[firstname]{/b}!"
-
-    anon "Ini, aku akan mengambil tasmu."
-
-    eve f_sad_down a_wtf "Eh, ini menjijikkan!"
-
+    eve f_sad "Maybe you could come with me and distract {b}Grace{/b} while I change?"
+    anon f_confused @ a_thinking "Distract her?"
+    eve "Yeah, just ask her some questions or something..."
+    anon "Ehh, I mean... I can try."
+    eve "Please?!"
+    anon f_worried "Y-yeah, okay."
+    eve "Thanks, {b}[firstname]{/b}!"
+    anon "Here, I'll take your bag."
+    eve f_sad_down a_wtf "Eugh, this is disgusting!"
     hide anon
     hide eve
     with dissolve
@@ -5147,28 +3447,18 @@ label eve_button_dress_code_ask_teachers:
     show anon
     show eve f_sad_down
     with dissolve
-    anon @ a_wave "Hai, {b}Hawa{/b}."
-
-    eve f_sad "Hai, {b}[firstname]{/b}."
-
-    anon "Kamu ingin jalan-jalan nanti?"
-
-    eve "Nah, mungkin lain kali..."
-
-    eve "Aku hanya ingin sendiri hari ini."
-
-    anon f_worried "Oh, oke... Tentu."
-
-    eve "Sampai jumpa."
-
-    anon "Sampai jumpa."
-
+    anon @ a_wave "Hey, {b}Eve{/b}."
+    eve f_sad "Hey, {b}[firstname]{/b}."
+    anon "You wanna hang out later?"
+    eve "Nah, maybe some other time..."
+    eve "I just wanna be alone today."
+    anon f_worried "Oh, okay... Sure."
+    eve "I'll see you around."
+    anon "See ya."
     hide eve with dissolve
     pause
-    anon @ -m_talk "(Kasihan {b}Eve{/b}, dia tidak bisa istirahat. )"
-
-    anon f_angry @ -m_talk "( {b}Saya harus berbicara dengan guru{/b} di sekitar sekolah tentang perubahan aturan berpakaian baru ini. )"
-
+    anon @ -m_talk "( Poor {b}Eve{/b}, she just can't catch a break. )"
+    anon f_angry @ -m_talk "( {b}I should speak with the teachers{/b} around school about changing this new dress code. )"
     hide anon with dissolve
     return
 
@@ -5182,30 +3472,20 @@ label eve_button_school_dress_code:
             xoffset 500
         show anon b_desk f_worried
     with dissolve
-    anon "Hai, {b}Hawa{/b}."
-
-    eve "Hai, {b}[firstname]{/b}."
-
-    anon "Kamu ingin jalan-jalan nanti?"
-
-    eve f_sad "Nah, mungkin lain kali..."
-
+    anon "Hey, {b}Eve{/b}."
+    eve "Hey, {b}[firstname]{/b}."
+    anon "You wanna hang out later?"
+    eve f_sad "Nah, maybe some other time..."
     if player.location != L_school_frenchclassroom:
         show eve a_rossed with dissolve
-    eve f_sad_down "Aku hanya ingin sendiri hari ini."
-
-    anon f_tired "Oh, oke... Tentu."
-
-    eve "Sampai jumpa."
-
-    anon "Sampai jumpa."
-
+    eve f_sad_down "I just wanna be alone today."
+    anon f_tired "Oh, okay... Sure."
+    eve "I'll see you around."
+    anon "See ya."
     hide eve with dissolve
     pause
-    anon @ -m_talk "(Kasihan {b}Eve{/b}, dia tidak bisa istirahat. )"
-
-    anon f_angry @ -m_talk "( {b}Saya harus berbicara dengan Ny. Smith{/b} tentang perubahan aturan berpakaian baru ini. )"
-
+    anon @ -m_talk "( Poor {b}Eve{/b}, she just can't catch a break. )"
+    anon f_angry @ -m_talk "( {b}I should speak with Mrs. Smith{/b} about changing this new dress code. )"
     hide anon with dissolve
     return
 
@@ -5213,183 +3493,111 @@ label eve_button_roxxy_bullying_upset:
     scene school_assembly_hall_closeup_floor
     show eve b_sidebed f_sad_down
     show anon b_sit f_worried with dissolve
-    anon "H-hei."
-
-    eve "Hai."
-
+    anon "H-hey."
+    eve "Hey."
     pause
-    anon "Apa yang telah terjadi?"
-
-    eve "Tidak ada yang luar biasa."
-
-    eve "Hanya {b}Roxxy dan teman-teman idiotnya{/b} menjadi pelacur..."
-
+    anon "What happened?"
+    eve "Nothing out of the ordinary."
+    eve "Just {b}Roxxy and her idiot friends{/b} being bitches..."
     anon "Oh."
-
     pause
-    anon "Apakah kamu baik-baik saja?"
-
-    eve "Ya, aku akan baik-baik saja."
-
-    eve "{i}*Huh*{/i} S.S.D.D."
-
-    anon f_confused "SDD?"
-
-    eve f_nervous "Anda belum pernah mendengarnya?"
-
-    anon f_worried "Tidak?"
-
-    eve @ f_laugh "Hehe, artinya, \"Sama saja, di hari yang berbeda\"."
-
-    anon f_laugh "Oh, saya mengerti!"
-
-    anon "Hehe."
-
+    anon "Are you alright?"
+    eve "Yeah, I'll be fine."
+    eve "{i}*Sigh*{/i} S.S.D.D."
+    anon f_confused "S.S.D.D.?"
+    eve f_nervous "You've never heard of that?"
+    anon f_worried "No?"
+    eve @ f_laugh "Hehe, it means, \"Same shit, different day\"."
+    anon f_laugh "Oh, I get it!"
+    anon "Heh."
     show anon f_normal
     show eve f_sad_down
     pause
-    anon f_worried "Apakah mereka sangat mengganggumu?"
-
-    eve "Nah, biasanya aku hanya menjauhi mereka, dan mereka mengabaikanku."
-
+    anon f_worried "Do they bother you a lot?"
+    eve "Nah, I usually just stay out of their way, and they ignore me."
     pause
-    eve f_nervous a_hair "{b}[firstname]{/b}, bolehkah saya menanyakan sesuatu?"
-
-    anon f_normal "Tentu!"
-
-    eve "Haruskah aku mengganti rambutku?"
-
-    anon f_worried "Apa?!"
-
-    eve "Itu adalah ide {b}Grace{/b} untuk mewarnainya menjadi biru."
-
-    eve "Saya tidak begitu yakin tetapi sekarang setelah selesai, saya sangat menyukainya."
-
+    eve f_nervous a_hair "{b}[firstname]{/b}, can I ask you something?"
+    anon f_normal "Sure!"
+    eve "Should I change my hair?"
+    anon f_worried "What?!"
+    eve "It was {b}Grace{/b}'s idea to dye it blue."
+    eve "I wasn't so sure but now that it's done, I really like it."
     pause
-    anon "Itukah yang {b}Roxxy{/b} menggodamu?"
-
-    eve a_down f_sad_down "Y-ya, mereka menyebutku menjijikkan..."
-
-    anon f_skeptical "Itu konyol!"
-
+    anon "Is that what {b}Roxxy{/b} was teasing you about?"
+    eve a_down f_sad_down "Y-yeah, they called me gross..."
+    anon f_skeptical "That's ridiculous!"
     eve @ -m_talk "..."
-    anon "Anda seperti, kebalikan dari menjijikkan!"
-
-    eve f_confused "Sebaliknya?"
-
+    anon "You're like, the opposite of gross!"
+    eve f_confused "The opposite?"
     show anon f_normal
-    eve f_nervous "Heh, aku tidak yakin apa itu-"
-
-    anon "Kamu cantik!"
-
+    eve f_nervous "Heh, I'm not sure what that-"
+    anon "You're beautiful!"
     eve f_surprised "!!!"
     show eve f_nervous_down
-    anon "... Dan rambutnya sangat cocok untukmu!"
-
-    eve @ f_eyeroll "Cih, kamu hanya bersikap baik..."
-
-    anon "Tidak, aku serius!"
-
-    anon "Kamu cantik, {b}Hawa{/b}."
-
-    eve f_happy "Heh, kamu terdengar seperti adikku dan {b}Odette{/b}."
-
+    anon "... And the hair really suits you!"
+    eve @ f_eyeroll "Tch, you're just being nice..."
+    anon "No, I'm serious!"
+    anon "You're beautiful, {b}Eve{/b}."
+    eve f_happy "Heh, you sound just like my sister and {b}Odette{/b}."
     show eve f_sad_down
     pause
-    eve "Jika Anda benar-benar mengenal saya, Anda tidak akan berpikir bahwa..."
-
-    anon f_worried "Apa maksudmu?"
-
+    eve "If you really got to know me, you wouldn't think that..."
+    anon f_worried "What do you mean?"
     eve @ -m_talk "..."
-    eve "Sudahlah."
-
+    eve "Never mind."
     pause
-    eve f_nervous "Kita mungkin harus ke kelas, ya?"
-
-    anon f_shy "Ya, mungkin..."
-
-    eve "Terima kasih telah membuatku merasa lebih baik, {b}[firstname]{/b}."
-
-    anon "Tidak masalah-"
-
+    eve f_nervous "We should probably get to class, huh?"
+    anon f_shy "Yeah, probably..."
+    eve "Thanks for making me feel better, {b}[firstname]{/b}."
+    anon "It's no prob-"
     annie "Ah hah!"
-
     show anon f_surprised_left
     eve f_surprised @ -m_talk "!!!"
-    annie "Aku tahu aku akan menemukan kalian berdua melakukan hal yang tidak baik!"
-
+    annie "I knew I'd find you two up to no good!"
     show eve b_dressed f_sad a_idle
     show anon b_dressed f_surprised behind eve:
         flip
         xoffset -150
     with dissolve
     show annie at flip with dissolve
-    annie "Melewatkan kelas, kan?!"
-
-    anon f_worried "T-tidak, kami baru saja menuju ke sana sekarang..."
-
-    annie "Ya benar."
-
-    annie a_note "Aku menulis surat kepada kalian berdua untuk ini."
-
-    eve "Apakah kamu bercanda?!"
-
-    annie "Tidak, saya tidak."
-
+    annie "Skipping class, are we?!"
+    anon f_worried "N-no, we were just heading there now..."
+    annie "Yeah, right."
+    annie a_note "I'm writing both of you up for this."
+    eve "Are you kidding me?!"
+    annie "No, I am not."
     pause
-    annie a_note_write @ f_smirk a_note "Hmm, sepertinya satu teguran lagi untukmu pembuat onar dan kamu mendapat detensi!"
-
-    eve f_angry @ a_wtf "Demi Tuhan..."
-
-    eve "Apa kau tidak punya hal lain yang lebih baik untuk dilakukan selain merepotkanku sepanjang hari?!"
-
-    annie f_angry a_note "Hei, jaga mulutmu!"
-
+    annie a_note_write @ f_smirk a_note "Hmm, looks like one more strike for you trouble maker and you're getting detention!"
+    eve f_angry @ a_wtf "For fuck's sake..."
+    eve "Don't you have anything better to do than hassle me all day?!"
+    annie f_angry a_note "Hey, watch your mouth!"
     pause
-    annie "Saya hanya melakukan pekerjaan saya dan menegakkan kebijakan sekolah."
-
-    annie f_smirk "Ah, itu mengingatkanku..."
-
-    annie "{b}Ny. Smith{/b} menerapkan beberapa aturan berpakaian baru di sekolah ini."
-
-    annie "Pewarna rambut sekarang dilarang, jadi nikmatilah warna biru itu selagi masih ada..."
-
+    annie "I'm simply doing my job and enforcing school policy."
+    annie f_smirk "Oh, that reminds me..."
+    annie "{b}Mrs. Smith{/b} is instituting some new dress codes here in the school."
+    annie "Hair dye is now prohibited, so enjoy that blue color while it lasts..."
     eve f_surprised @ -m_talk "!!!"
-    annie "Setelah hilang, itu hilang untuk selamanya."
-
-    annie "Kalau tidak, itu pengusiran!"
-
-    anon "Dia tidak bisa melakukan itu, ini sekolah umum..."
-
-    anon "Sekolah umum tidak memiliki aturan berpakaian!"
-
-    annie "Ini sudah selesai."
-
+    annie "Once it's gone, it's gone for good."
+    annie "Otherwise, it's expulsion!"
+    anon "She can't do that, this is a public school..."
+    anon "Public schools don't have dress codes!"
+    annie "It's already done."
     show eve f_sad_down a_rossed with dissolve
-    annie "Jangan ragu untuk membawanya jika Anda memiliki masalah."
-
+    annie "Feel free to take it up with her if you have a problem."
     eve @ -m_talk "..."
-    annie f_angry a_point1 "Sekarang bersiaplah ke kelas!!"
-
+    annie f_angry a_point1 "Now get your butts to class!!"
     hide annie with dissolve
-    eve "Hari ini tidak bisa lebih buruk lagi..."
-
+    eve "This day can't get any worse..."
     hide anon
     show anon f_worried
     with dissolve
-    anon "Serius, dia tidak bisa melakukan itu."
-
-    anon "Ayo pergi dan bicara dengan {b}Nyonya. Smith{/b}."
-
-    eve "{i}*Huh*{/i} Apa gunanya?"
-
-    eve "Dia hanya akan mengatakan tidak dan jika beruntung, aku hanya akan memperburuk keadaan..."
-
+    anon "Seriously, she can't do that."
+    anon "Let's go and talk to {b}Mrs. Smith{/b}."
+    eve "{i}*Sigh*{/i} What's the point?"
+    eve "She's just gonna say no and with my luck I'll just make things worse..."
     hide eve with dissolve
-    anon @ -m_talk "(Kasihan {b}Eve{/b}, dia tidak bisa istirahat. )"
-
-    anon f_angry @ -m_talk "( {b}Saya harus berbicara dengan Ny. Smith{/b} tentang perubahan aturan berpakaian baru ini. )"
-
+    anon @ -m_talk "( Poor {b}Eve{/b}, she just can't catch a break. )"
+    anon f_angry @ -m_talk "( {b}I should speak with Mrs. Smith{/b} about changing this new dress code. )"
     hide anon with dissolve
     return
 
@@ -5398,196 +3606,117 @@ label eve_button_auditorium_bummed:
     show eve b_sidebed f_sad_down
     pause
     show anon f_worried with dissolve
-    anon "{b}Malam{/b}?"
-
+    anon "{b}Eve{/b}?"
     show eve a_startled f_surprised with hpunch
     eve "!!!"
-    eve "Apa yang-"
-
+    eve "What the-"
     eve "{b}[firstname]{/b}?!"
-
     show eve a_down with dissolve
-    eve "Sheesh, kamu membuatku takut!"
-
-    anon "Maaf."
-
-    eve f_nervous "Fiuh, jantungku berdebar kencang!"
-
+    eve "Sheesh, you scared the crap out of me!"
+    anon "Sorry."
+    eve f_nervous "Phew, my heart's pounding!"
     pause
-    eve "Lagi pula, apa yang kamu lakukan di sini?!"
-
-    anon "Baiklah, saya melihat Anda berdebat dengan {b}Nona Ross{/b} dan kemudian Anda menyelinap ke sini..."
-
-    eve f_confused "Mengawasiku, ya?"
-
-    anon "T-tidak, tidak seperti itu."
-
-    anon "Hanya memastikan kamu baik-baik saja, itu saja..."
-
-    eve f_nervous "Anda khawatir tentang saya?"
-
-    anon f_normal "Yah, kita berteman, kan?"
-
-    eve "Ya, menurutku begitu."
-
-    anon "Teman saling menjaga satu sama lain."
-
-    eve f_laugh "Heh, itu menyedihkan sekali..."
-
+    eve "What are you doing in here anyways?!"
+    anon "Well, I saw you arguing with {b}Miss Ross{/b} and then you snuck in here..."
+    eve f_confused "Keeping tabs on me, huh?"
+    anon "N-no, nothing like that."
+    anon "Just making sure you're okay, is all..."
+    eve f_nervous "You're worried about me?"
+    anon f_normal "Well, we're friends, right?"
+    eve "Yeah, I suppose so."
+    anon "Friends look after one another."
+    eve f_laugh "Heh, that's sappy as hell..."
     anon f_worried "..."
-    eve f_wink "... Tapi aku agak menyukainya."
-
+    eve f_wink "... But I kinda like it."
     show anon f_normal
-    eve f_happy "Terima kasih, {b}[firstname]{/b}."
-
-    anon "Terima kasih kembali."
-
+    eve f_happy "Thanks, {b}[firstname]{/b}."
+    anon "You're welcome."
     pause
     show eve f_nervous_down
     pause
-    anon f_worried "Jadi..."
-
-    anon "Anda ingin membicarakannya?"
-
-    eve "Tidak, itu bodoh."
-
-    anon "Oke, cukup adil."
-
-    anon "Kami hanya akan membicarakan hal lain."
-
+    anon f_worried "So..."
+    anon "You wanna talk about it?"
+    eve "Nah, it's stupid."
+    anon "Okay, fair enough."
+    anon "We'll just talk about something else."
     show eve f_nervous
-    anon f_normal "Misalnya, mengapa Anda nongkrong di auditorium yang gelap sendirian?"
-
-    eve f_laugh "Heh, aku hanya ingin mengeluarkan tenaga."
-
+    anon f_normal "For instance, why you're hanging out in a dark auditorium, all by yourself?"
+    eve f_laugh "Heh, I just wanted to blow off some steam."
     show eve f_nervous_down
     anon "Oh?"
-
     show eve a_idle with dissolve
     pause
     show eve f_nervous a_joint_show with dissolve
     anon f_shock "!!!"
-    anon "Darimana kamu mendapatkan itu?!"
-
+    anon "Where did you get that?!"
     show anon f_worried
     show eve f_nervous_down a_joint with dissolve
-    eve "Saudariku."
-
-    anon f_skeptical "Kakakmu memberimu satu porsi?"
-
-    eve f_laugh "Ya Tuhan, tidak!"
-
-    eve f_happy "Aku mengambilnya dari simpanannya pagi ini."
-
-    anon "Benar-benar?"
-
-    anon f_worried "Bukankah dia akan marah?"
-
-    eve @ f_eyeroll "Psh, dia mungkin tidak akan menyadarinya..."
-
+    eve "My sister."
+    anon f_skeptical "Your sister gave you a joint?"
+    eve f_laugh "Oh, god no!"
+    eve f_happy "I swiped it from her stash this morning."
+    anon "Really?"
+    anon f_worried "Won't she be mad?"
+    eve @ f_eyeroll "Psh, she probably won't even notice..."
     show eve f_nervous_down a_idle with dissolve
     pause
     show eve a_down with dissolve
-    eve @ f_nervous "... Dan bahkan jika dia melakukannya, dia akan menganggap salah satu temannya merokok."
-
-    anon f_normal "Oh, begitu."
-
+    eve @ f_nervous "... And even if she does, she'll just assume one of her friends smoked it."
+    anon f_normal "Oh, I see."
     pause
-    anon "Kalian berdua rukun?"
-
+    anon "You two get along pretty good?"
     eve f_confused @ -m_talk "Hmm?"
-
-    anon "Kamu dan adikmu."
-
+    anon "You and your sister."
     eve f_nervous "Oh."
-
     pause
-    eve "Ya, sebagian besar."
-
-    eve @ f_laugh "Heh, saat dia tidak melakukan {i}kesan sebagai ibu{/i}."
-
-    anon f_confused "{i}Kesan ibu{/i}?"
-
-    eve "Ya, dia seperti, mencoba memberikan contoh yang baik untukku atau semacamnya..."
-
+    eve "Yeah, for the most part."
+    eve @ f_laugh "Heh, when she's not doing her {i}mom impression{/i}."
+    anon f_confused "{i}Mom impression{/i}?"
+    eve "Yeah, she's like, trying to set a good example for me or something..."
     pause
-    anon f_worried "... Dan itu hal yang buruk?"
-
-    eve @ f_eyeroll "Itu menjengkelkan!"
-
-    eve f_happy "Maksudku, dia dulu sangat menyenangkan!"
-
-    eve "Saya berbicara tentang pesta, setiap malam!"
-
-    eve "Seperti, benar-benar menjalani kehidupan liar..."
-
-    eve f_disgusted "... Dan sekarang, dia berpura-pura tidak ingin berurusan dengan hal itu."
-
-    eve "Meski begitu, semua orang tahu, dia sangat merindukannya!"
-
-    eve f_sad "Itu hanya membuatku merasa seperti aku menghalanginya dan-"
-
-    eve f_laugh "Hehe."
-
+    anon f_worried "... And that's a bad thing?"
+    eve @ f_eyeroll "It's annoying!"
+    eve f_happy "I mean, she used to be so much fun!"
+    eve "I'm talking parties, every night!"
+    eve "Like, totally living the wild life..."
+    eve f_disgusted "... And now, she pretends she doesn't want anything to do with that stuff."
+    eve "Even though, everyone can tell, she totally misses it!"
+    eve f_sad "It just makes me feel like I'm in the way and-"
+    eve f_laugh "Heh."
     show eve f_nervous
-    eve "Maaf, aku bodoh."
-
-    anon "Tidak, kamu tidak."
-
-    anon "Saya mengerti."
-
-    eve "Adikku sebenarnya sangat hebat!"
-
-    eve "Saya beruntung memilikinya."
-
+    eve "Sorry, I'm being dumb."
+    anon "Nah, you're not."
+    anon "I get it."
+    eve "My sister is actually really awesome!"
+    eve "I'm lucky to have her."
     show eve f_normal_up
     pause
-    eve f_happy "Kamu tahu apa?!"
-
+    eve f_happy "You know what?!"
     anon f_normal @ -m_talk "Hmm?"
-
-    eve "Anda harus datang dan menemuinya kapan-kapan!"
-
-    anon f_worried "T-ke rumahmu?"
-
-    eve "Ya!"
-
-    eve f_nervous "Maksudku, jika kamu mau..."
-
+    eve "You should come over and meet her sometime!"
+    anon f_worried "T-to your house?"
+    eve "Yeah!"
+    eve f_nervous "I mean, if you want..."
     anon f_confused "Ehh."
-
-    eve "Saya bisa memperkenalkan kalian berdua."
-
-    anon "B-tentu saja, menurutku."
-
+    eve "I can introduce you two."
+    anon "S-sure, I guess."
     show anon f_surprised_forward
     show eve f_normal_up
-    "{i}*Bel berbunyi*{/i}"
-
+    "{i}*Bell rings*{/i}"
     show anon f_unimpressed a_behind_head with dissolve
-    anon "Oh sial."
-
-    anon "Apakah itu belnya?"
-
+    anon "Oh, crap."
+    anon "Was that the bell?"
     show anon a_idle with dissolve
-    eve f_nervous_down "Heh, kurasa kesenangannya sudah berakhir..."
-
-    eve f_nervous "Kamu bisa {b}mampir ke tempatku malam ini{/b}, jika kamu mau..."
-
+    eve f_nervous_down "Heh, I guess the fun is over..."
+    eve f_nervous "You can {b}swing by my place tonight{/b}, if you want..."
     show anon f_normal
-    eve "... Atau {b}malam lainnya{/b}, dalam hal ini."
-
-    anon "Oke."
-
-    anon "Saya akan segera datang."
-
-    eve f_laugh "Luar biasa!"
-
+    eve "... Or {b}any other evening{/b}, for that matter."
+    anon "Okay."
+    anon "I'll come by soon."
+    eve f_laugh "Awesome!"
     show eve a_wave with dissolve
-    eve f_happy "Nanti, {b}[firstname]{/b}!"
-
-    anon "Sampai jumpa, {b}Malam{/b}."
-
+    eve f_happy "Later, {b}[firstname]{/b}!"
+    anon "See ya, {b}Eve{/b}."
     hide eve
     hide anon
     with dissolve
@@ -5601,115 +3730,76 @@ label eve_button_ross_argument:
         flip
         xoffset 220
     with dissolve
-    ross "Kamu harus mencobanya, sayang..."
-
+    ross "You have to try, sweetie..."
     eve @ f_eyeroll "..."
     show eve f_sad
-    ross "Seorang seniman hebat harus bisa melihat keindahan dalam segala hal, terutama dirinya sendiri."
-
-    eve "{i}*Huh*{/i} Saya mencoba, hanya saja..."
-
-    eve f_sad_down "... Rumit."
-
-    ross "Saya hanya tidak mengerti mengapa proyek ini memberi Anda begitu banyak masalah..."
-
+    ross "A great artist should be able to spot beauty in anything, especially themselves."
+    eve "{i}*Sigh*{/i} I'm trying, it's just..."
+    eve f_sad_down "... Complicated."
+    ross "I just don't understand why this project is giving you so much trouble..."
     show ross a_touch_comfort with dissolve
-    ross "Mungkin sebaiknya kamu datang ke ruang seni sepulang sekolah, dan kita akan mengerjakannya bersama?"
-
+    ross "Perhaps you should come by the art room after school, and we'll work on it together?"
     show ross a_sides
     show eve f_sad a_up
     with dissolve
     pause
-    eve "T-tidak, tidak apa-apa."
-
+    eve "N-no, that's okay."
     show eve a_cover f_sad_down with dissolve
-    eve "Saya lebih suka melakukan ini sendirian."
-
-    ross "Baiklah."
-
+    eve "I'd prefer to do this alone."
+    ross "Alright."
     pause
-    eve f_nervous "Aku harus benar-benar masuk kelas, {b}Nona Bissette{/b} akan marah kalau aku terlambat lagi..."
-
+    eve f_nervous "I should really get to class, {b}Miss Bissette{/b} will get angry if I'm late again..."
     show ross a_hip with dissolve
-    ross f_normal "Oh, mewah sekali!"
-
+    ross f_normal "Oh, pish posh!"
     show eve f_sad_down
-    ross "Saya belum pernah melihat {b}Vivienne{/b} marah pada siapa pun."
-
-    ross "Apalagi salah satu murid terbaiknya!"
-
+    ross "I've never seen {b}Vivienne{/b} get angry with anyone."
+    ross "Much less one of her best students!"
     eve @ -m_talk "..."
     show ross f_confused a_hip_angry with dissolve
-    ross "Cih, baiklah."
-
-    ross "Kamu boleh pergi, segera setelah kamu berjanji padaku, kamu akan terus mengerjakannya."
-
-    eve "Y-ya, aku akan melakukannya."
-
-    ross f_normal "Anak yang baik."
-
-    ross "Kita akan menaklukkan hal ini pada akhir semester, oke sayang?"
-
-    eve f_eyeroll "Eh ya."
-
+    ross "Tsk, fine."
+    ross "You can go, just as soon as you promise me you'll keep working at it."
+    eve "Y-yeah, I will."
+    ross f_normal "Good girl."
+    ross "We're going to conquer this thing by the end of the semester, okay sweetie?"
+    eve f_eyeroll "Uh huh."
     hide eve with dissolve
     pause
     show ross a_yell with dissolve:
         xoffset 600
-    ross "Datang dan temui aku sepulang sekolah jika kamu butuh bantuan!"
-
+    ross "Come and see me after school if you need any help!"
     show ross f_sad a_hip with dissolve
     pause
-    ross "Kasihan..."
-
+    ross "Poor thing..."
     hide ross
     show anon
     show ross f_sad
     with dissolve
     ross "Oh!"
-
     if not M_ross.is_state(S_ross_end):
-        ross f_normal "Halo, {b}[firstname]{/b}."
-
-        anon f_normal "Halo, {b}Nona Ross{/b}."
-
-        ross "Bukankah kamu seharusnya berada di kelas?"
-
-        anon "Y-ya, Bu."
-
-        anon "Aku sedang dalam perjalanan ke sana sekarang."
-
-        ross "Bagus, bagus."
-
-        ross "Ingatlah untuk segera datang dan {b}berbicara dengan saya{/b} di {b}ruang seni{/b}, oke?"
-
-        ross "Jika kami ingin menaikkan nilaimu, kami perlu-"
-
+        ross f_normal "Hey there, {b}[firstname]{/b}."
+        anon f_normal "Hello, {b}Miss Ross{/b}."
+        ross "Shouldn't you be in class?"
+        anon "Y-yes, ma'am."
+        anon "I'm on my way there now."
+        ross "Good, good."
+        ross "Remember to come and {b}speak with me{/b} in the {b}art room{/b} soon, okay?"
+        ross "If we're going to get those grades of yours up, we'll nee-"
     else:
-        ross f_sexy "Hai, tampan!"
-
-        anon f_flirt "Heh, hai {b}Nona Ross{/b}."
-
+        ross f_sexy "Hey there, handsome!"
+        anon f_flirt "Heh, hi {b}Miss Ross{/b}."
         show ross a_touch_sexy:
             xoffset -200
         with dissolve
-        ross "Apa yang kamu lakukan di sini, berkeliaran di aula?"
-
-        anon "Heh, aku hanya... Uhh..."
-
-        ross "Kamu tidak berencana membolos kelas {b}Nona Bissette{/b} kan, bocah nakal?"
-
-        ross "Karena aku baru saja hendak berangkat ke kantorku dan aku tidak keberatan sedikit pun."
-
+        ross "What are you doing out here wandering the halls?"
+        anon "Heh, I was just... Uhh..."
+        ross "You're not planning on skipping {b}Miss Bissette{/b}'s class are you, naughty boy?"
+        ross "Because I was just about to head up to my office and I wouldn't mind a litt-"
 
     scene location_school_right_hall_cutscene_01
     with fade
-    anon "(Hmm?)"
-
-    anon "( Kemana {b}Eve{/b} pergi?! )"
-
-    anon "( Itu bukan {b}ruang kelas Bissette{/b}. )"
-
+    anon "( Hmm? )"
+    anon "( Where's {b}Eve{/b} going?! )"
+    anon "( That's not {b}Bissette's classroom{/b}. )"
     pause
 
     scene expression player.location.background_blur
@@ -5718,34 +3808,20 @@ label eve_button_ross_argument:
         xoffset -200
     with fade
     ross "{b}[firstname]{/b}?"
-
-    ross "Apakah Anda mendengar apa yang saya katakan?"
-
-    anon "Oh, aku umm... M-maaf, apa tadi tadi?"
-
-    ross "Kamu merasa baik-baik saja?"
-
-    anon "Y-ya, benar-benar... Aku uhh... Maksudku, tidak... Aku-"
-
-    anon "Sebenarnya aku merasa kurang enak badan hari ini..."
-
+    ross "Did you hear what I said?"
+    anon "Oh, I umm... S-sorry, what were you saying?"
+    ross "You feeling alright?"
+    anon "Y-yeah, totally... I uhh... I mean, no... I-"
+    anon "Actually, I am feeling a bit under the weather today..."
     ross "Oh?"
-
-    anon "Ya, aku hanya perlu duduk, menurutku..."
-
-    ross f_sad "Baiklah, baiklah, merasa lebih baik."
-
-    anon f_normal "Ya, cukup!"
-
-    anon "Terima kasih, {b}Nona Ross{/b}."
-
+    anon "Yeah, I just need to go sit down, I think..."
+    ross f_sad "Alright, well, feel better."
+    anon f_normal "Yup, will do!"
+    anon "Thanks, {b}Miss Ross{/b}."
     hide ross with dissolve
-    anon f_worried @ -m_talk "(Hmm, itu agak canggung...)"
-
-    anon @ -m_talk "( Oh baiklah, setidaknya aku bebas {b}memeriksa Eve{/b} sekarang. )"
-
-    anon @ -m_talk "( Apa yang dia lakukan {b}di Auditorium{/b}? )"
-
+    anon f_worried @ -m_talk "( Hmm, that was a bit awkward... )"
+    anon @ -m_talk "( Oh well, at least I'm free to {b}check up on Eve{/b} now. )"
+    anon @ -m_talk "( What could she be doing {b}in the Auditorium{/b}? )"
     hide anon with dissolve
     return
 
@@ -5754,100 +3830,60 @@ label eve_button_park_hangout:
     show eve a_artpad f_happy
     show anon
     with dissolve
-    eve "Hei, kamu muncul!"
-
-    anon f_snarky "Aku bilang aku akan melakukannya, bukan?"
-
-    anon f_normal "Apakah ini tempat yang kamu bicarakan?"
-
-    eve @ f_laugh "Ya!"
-
+    eve "Hey, you showed up!"
+    anon f_snarky "I said I would, didn't I?"
+    anon f_normal "Is this the spot you were talking about?"
+    eve @ f_laugh "Yup!"
     show anon f_normal_left
     pause
-    anon f_normal "Hmm, ini bagus..."
-
-    eve "Hehe, kan?!"
-
-    eve "Saya suka di sini!"
-
-    eve "Entah kenapa, tapi air mancur itu benar-benar membuatku rileks."
-
-    anon "Ya, itu masuk akal."
-
-    anon @ f_brag_closed "Suara gemericik air, menenangkan."
-
-    eve @ f_laugh "Tepat!"
-
-    anon "Anda tahu, jika Anda menyukai air, kami memiliki beberapa pantai indah di sekitar sini."
-
-    anon "Anda bisa menjejakkan kaki di pasir dan mendengarkan deburan ombak di bibir pantai."
-
-    eve "Y-ya?"
-
-    anon "Beberapa matahari terbenam yang sangat indah juga."
-
-    eve f_nervous "Kedengarannya bagus tapi bukankah ada banyak orang di sana?"
-
-    anon "Ya, mungkin ada... Terutama pada saat ini."
-
-    eve @ f_laugh "Heh, terima kasih, tapi aku akan tetap menggunakan air mancurku yang bagus, tenang, dan terpencil..."
-
-    anon @ f_laugh "Hehe, cukup adil."
-
+    anon f_normal "Hmm, this is nice..."
+    eve "Hehe, right?!"
+    eve "I love it here!"
+    eve "I dunno why, but the fountain totally relaxes me."
+    anon "Yeah, it makes sense."
+    anon @ f_brag_closed "The sound of flowing water, it's soothing."
+    eve @ f_laugh "Exactly!"
+    anon "You know, if you have a thing for water, we have some great beaches around here."
+    anon "You can stick your toes in the sand and listen to the waves lapping against the shoreline."
+    eve "Y-yeah?"
+    anon "Some really beautiful sunsets too."
+    eve f_nervous "Sounds great but isn't there loads of people there?"
+    anon "Well, there can be... Especially this time of year."
+    eve @ f_laugh "Heh, thanks but I'll just stick to my nice, quiet, secluded fountain..."
+    anon @ f_laugh "Heh, fair enough."
     pause
     show eve f_nervous_down
     pause
-    anon f_shy "J-jadi, kamu sudah tahu kotanya?"
-
-    eve f_nervous "Ya, menurutku begitu."
-
-    eve "Maksudku, tidak banyak, sungguh..."
-
-    anon "Hehe, benar."
-
-    anon "Apakah Anda rindu kota besar?"
-
-    eve f_nervous_down "Mm, sebenarnya bukan kotanya..."
-
+    anon f_shy "S-so, you got the town figured out yet?"
+    eve f_nervous "Yeah, I think so."
+    eve "I mean, there's not much to it, really..."
+    anon "Heh, true."
+    anon "Do you miss the big city?"
+    eve f_nervous_down "Mm, not really the city so much..."
     pause
-    eve f_nervous "Aku rindu makanannya."
-
-    anon f_confused "Makanannya?"
-
-    eve "Ya, ada begitu banyak restoran, dan mereka tetap buka seperti, dua puluh empat tujuh."
-
-    eve "Ada tempat Cina yang bagus di dekat rumah kami."
-
-    eve "Aku bersumpah, aku akan membunuh demi perintah lo-mein mereka!"
-
-    anon f_normal "Hah, aku bahkan tidak tahu apa itu..."
-
-    eve f_surprised "Dengan serius?"
-
-    eve f_sad "Sungguh tragis, {b}[firstname]{/b}..."
-
-    anon f_snarky "Tragis, ya?"
-
+    eve f_nervous "I miss the food."
+    anon f_confused "The food?"
+    eve "Yeah, there were so many restaurants, and they stayed open like, twenty-four seven."
+    eve "There was this great Chinese place near our house."
+    eve "I swear, I would kill for an order of their lo-mein!"
+    anon f_normal "Hah, I don't even know what that is..."
+    eve f_surprised "Seriously?"
+    eve f_sad "That's tragic, {b}[firstname]{/b}..."
+    anon f_snarky "Tragic, huh?"
     show anon f_grin
-    eve f_laugh "Haha, sepenuhnya."
-
+    eve f_laugh "Haha, totally."
     show eve f_happy
     pause
     show anon f_normal
     show eve f_nervous_down
     pause
     show anon a_point with dissolve
-    anon "Jadi, apa yang kamu gambar?"
-
+    anon "So, what are you drawing?"
     show anon a_idle with dissolve
     eve f_confused "Hmm?"
-
-    eve f_normal "Oh, bukan apa-apa... Hanya coretan-coretan."
-
-    anon "Dapatkah saya melihat?"
-
-    eve f_nervous_down "Ehh, ya... kurasa."
-
+    eve f_normal "Oh, it's nothing... Just doodles."
+    anon "Can I see?"
+    eve f_nervous_down "Ehh, yeah... I guess."
     show eve a_artpad_show
     pause
     show eve a_crossed f_nervous
@@ -5878,50 +3914,33 @@ label eve_button_park_hangout:
         xoffset -250
     show anon a_artpad_catch
     with fade
-    anon "Wah, ini bukan coretan..."
-
-    anon "Ini luar biasa!"
-
-    eve "K-menurutmu?"
-
-    anon "Tentu saja!"
-
-    anon "Siapa itu?"
-
-    eve "Itu umm... Adikku..."
-
-    anon f_shock "Benar-benar?"
-
-    eve f_nervous_down "Y-ya."
-
-    anon f_normal "Ini sangat bagus!"
-
-    anon "Ini seperti, barang-barang yang dibayar mahal oleh orang-orang, tahu?!"
-
-    eve f_eyeroll "Psh, ya benar..."
-
+    anon "Whoa, this isn't a doodle..."
+    anon "This is awesome!"
+    eve "Y-you think?"
+    anon "Definitely!"
+    anon "Who is it?"
+    eve "It's umm... My sister..."
+    anon f_shock "Really?"
+    eve f_nervous_down "Y-yeah."
+    anon f_normal "It's so good!"
+    anon "This is like, the kinda stuff people pay good money for, you know?!"
+    eve f_eyeroll "Psh, yeah right..."
     show eve f_nervous
-    anon "aku serius!"
-
-    anon "Anda harus melakukan ini untuk mencari nafkah."
-
+    anon "I'm serious!"
+    anon "You should do this for a liv-"
     show anon f_surprised_forward
     show expression "characters/anon/anon_overlay_o_can_hit.png":
         flip
         xoffset -500
     with dissolve
     "Tink!"
-
     show anon a_artpad_rub
     hide expression "characters/anon/anon_overlay_o_can_hit.png"
     with dissolve
-    anon f_skeptical "Aduh!"
-
+    anon f_skeptical "Ow!"
     show eve f_surprised
-    anon "Apa yang-"
-
-    chico "Pfft, hahahaha!!"
-
+    anon "What the-"
+    chico "Pfft, haHAAH!!"
     show anon f_surprised_teeth a_artpad_catch:
         xoffset -100
     show eve f_disgusted:
@@ -5933,28 +3952,18 @@ label eve_button_park_hangout:
     show tyrone f_smirk:
         xoffset -125
     with dissolve
-    tyrone @ f_laugh "Yo, apakah kamu melihat benda itu memantul dari kepalanya?!"
-
+    tyrone @ f_laugh "Yo, did you see that thing bounce off his head?!"
     show anon f_depressed
-    chad "Ha ha ha!"
-
-    chico "Ya, itu menamparnya tepat pada potongan rambut bodohnya..."
-
-    tyrone @ f_laugh "Hahahah!!"
-
+    chad "Hahaha!"
+    chico "Yeah, it smacked him right in his dumb ass haircut..."
+    tyrone @ f_laugh "Hahahaah!!"
     show anon a_artpad_catch with dissolve
-    anon f_worried "Kenapa kalian melemparkan barang ke arahku?!"
-
-    eve "Uh, jangan ini lagi..."
-
-    eve "Berapa kali aku harus memberitahumu ASSHOLES untuk meninggalkanku sendirian?!"
-
-    chico "Cih, sial... Dia bersemangat malam ini!"
-
-    tyrone "Apa yang kalian berdua lihat di sini?"
-
-    eve "Bukan urusanmu!"
-
+    anon f_worried "Why are you guys throwing stuff at me?!"
+    eve "Ugh, not this again..."
+    eve "How many times do I have to tell you ASSHOLES to leave me alone?!"
+    chico "Tch, damn dawg... She's feisty tonight!"
+    tyrone "What are you two lovebirds over here lookin' at?"
+    eve "None of your business!"
     show anon f_surprised a_surprised_up_both
     show tyrone a_artpad_steal
     with dissolve
@@ -5962,77 +3971,53 @@ label eve_button_park_hangout:
     show anon f_angry a_sides
     show eve a_hip_angry f_angry
     with dissolve
-    eve "Hai!!"
-
+    eve "Hey!!"
     show tyrone a_artpad f_surprised_down with dissolve
     pause
     show tyrone f_uneasy_down
     pause
     show tyrone a_artpad with dissolve
     tyrone f_smirk "Ohoho, DAYUM!!"
-
-    tyrone "Siapa wanita jalang ini? Dia baik-baik saja!"
-
-    anon "Kembalikan itu!"
-
-    tyrone "Yo, santai saja Opie..."
-
-    tyrone "Bukannya aku akan mencurinya..."
-
+    tyrone "Who's this bitch supposed to be? She's fine as hell!"
+    anon "Give that back!"
+    tyrone "Yo, chill out Opie..."
+    tyrone "It ain't like I'm gonna steal it..."
     show tyrone a_artpad_throw with dissolve
-    tyrone "Di Sini."
-
+    tyrone "Here."
     show anon a_artpad_catch
     show tyrone a_sides
     pause
     show anon a_artpad_sides
-    eve "Persetan denganmu, {b}Tyrone{/b}!"
-
-    tyrone "Ayolah, jangan sampai tubuhmu bengkok..."
-
+    eve "Fuck you, {b}Tyrone{/b}!"
+    tyrone "C'mon girl, don't get all bent outta shape..."
     show tyrone a_hands_rub with dissolve
-    tyrone "Kamu tahu, kamu adalah wanita jalang utamaku!"
-
+    tyrone "You know you're my main bitch!"
     chad "Haha!"
-
-    eve f_eyeroll "Eugh, dalam mimpi sialanmu..."
-
-    tyrone "Mengapa kamu tidak ikut sajak bersama kami malam ini?"
-
+    eve f_eyeroll "Eugh, in your fucking dreams..."
+    tyrone "Why don't you come spit rhymes with us tonight?"
     show eve f_angry
-    tyrone "Aku akan menghubungkanmu dengan lebih banyak kine bud itu, kamu suka."
-
-    eve "Tidak mungkin!"
-
+    tyrone "I'll hook you up with more of that kine bud, you like."
+    eve "No fucking way!"
     show tyrone a_sides with dissolve
-    tyrone "Cih, baiklah... Jadilah seperti itu."
-
+    tyrone "Tch, fine... Be that way."
     pause
     show tyrone a_point with dissolve
-    tyrone "Bagaimana denganmu?"
-
+    tyrone "What about you?"
     show tyrone a_sides with dissolve
     anon f_worried @ -m_talk "Hmm?"
-
-    tyrone "Kau ingin bersenang-senang atau kau hanya akan duduk di sini bersama nona kecil sepanjang malam?"
-
+    tyrone "You wanna come have some fun or you just gonna sit here with little miss flat-ass all night?"
     show eve f_surprised
     pause
     show eve a_cover f_sad_down with dissolve
     eve @ -m_talk "..."
-    anon f_angry "Tidak, aku baik-baik saja di sini."
-
-    tyrone "Cih, terserah dirimu sendiri."
-
-    tyrone "{b}Kami akan segera ke sana jika Anda sadar{/b}..."
-
+    anon f_angry "Nah, I'm good right here."
+    tyrone "Tch, suit yourself."
+    tyrone "{b}We'll be right over there if you come to your senses{/b}..."
     show tyrone f_kiss_drink
     pause
-    tyrone f_smirk "Sampai jumpa, Boo..."
-
+    tyrone f_smirk "Bye, Boo..."
     show eve f_angry a_flip with dissolve
     tyrone f_laugh "Hahahaah!"
-
     hide tyrone
     hide chico
     hide chad
@@ -6045,50 +4030,36 @@ label eve_button_park_hangout:
     with dissolve
     pause
     show anon a_artpad_give with dissolve
-    anon "Kamu baik-baik saja?"
-
+    anon "You alright?"
     show anon a_idle
     show eve a_artpad
     with dissolve
-    eve f_sad_down "Y-ya."
-
-    anon "Anda yakin?"
-
+    eve f_sad_down "Y-yeah."
+    anon "You sure?"
     show eve a_crossed with dissolve
-    eve f_sad "Ya, aku baik-baik saja..."
-
+    eve f_sad "Yeah, I'm fine..."
     pause
-    eve "Aku mungkin harus pulang, sebelum adikku khawatir."
-
-    anon "Ya baiklah..."
-
-    eve "Maaf tentang mereka."
-
-    anon "Itu bukan salahmu."
-
+    eve "I should probably be getting home, before my sister gets worried."
+    anon "Yeah, okay..."
+    eve "Sorry about them."
+    anon "It's not your fault."
     show eve:
         flip
         xoffset 650
     with dissolve
     pause
-    anon "Hai, {b}Malam{/b}..."
-
+    anon "Hey, {b}Eve{/b}..."
     hide eve
     show eve f_sad with dissolve
     eve @ -m_talk "Hmm?"
-
-    anon "Serius, jangan dengarkan orang-orang itu... Mereka idiot."
-
-    eve f_nervous "Hehe, aku tahu..."
-
+    anon "Seriously, don't listen to those guys... They're idiots."
+    eve f_nervous "Heh, I know..."
     show eve f_nervous_down
     pause
-    eve f_nervous "Terima kasih, {b}[firstname]{/b}."
-
+    eve f_nervous "Thanks, {b}[firstname]{/b}."
     show anon f_grin
     pause
-    anon f_shy "Kapan saja."
-
+    anon f_shy "Anytime."
     hide eve
     hide anon
     with dissolve
@@ -6099,63 +4070,39 @@ label eve_button_heisenberg:
     show player 90
     show player_outfit bb 638e
     with dissolve
-    anon "(Sebaiknya aku tidak melakukannya. Tidak ingin membuka penyamaranku!)"
-
+    anon "( I better not. Don't want to blow my cover! )"
     hide player
     hide player_outfit
     with dissolve
     return
 
 label eve_button_crypt:
-    anon f_worried "Aku sedang berpikir untuk {b}mengunjungi Odette di ruang bawah tanah pada bulan purnama berikutnya{/b}..."
-
+    anon f_worried "I was thinking of {b}visiting Odette in the crypt next full moon{/b}..."
     show eve f_sad
-    anon "... Maukah kamu... Mau... Ikut denganku?"
-
-    eve "Apakah kamu serius?"
-
-    anon "Ya, menurutku itu akan sangat membantuku memahami semua ini."
-
-    eve "Aku tidak... Menurutku itu ide yang bagus."
-
+    anon "... Would you maybe... Wanna... Come with me?"
+    eve "Are you being serious?"
+    anon "Yeah, I think it would really help me figure this whole thing out."
+    eve "I don't... Think that's a good idea."
     anon @ -m_talk "Hmm?"
-
-    eve "Jika aku beruntung, beberapa hantu akan mengikutiku pulang."
-
-    eve "Atau setan akan merasukiku atau semacamnya."
-
-    anon f_shy "Itu tidak akan terjadi."
-
-    anon @ f_laugh "aku akan melindungimu!"
-
-    eve f_normal "Anda akan melakukannya?"
-
-    anon "Tentu saja."
-
-    anon "Kamu gadisku, ingat?"
-
+    eve "With my luck, some ghost will follow me home."
+    eve "Or a demon will possess me or something."
+    anon f_shy "That won't happen."
+    anon @ f_laugh "I'll protect you!"
+    eve f_normal "You will?"
+    anon "Of course."
+    anon "You're my girl, remember?"
     show eve f_happy
     pause
-    eve "Aku sangat senang ketika kamu mengatakan hal seperti itu..."
-
-    anon f_normal "Jadi kamu akan pergi?"
-
-    eve f_nervous "Hmm..."
-
+    eve "It makes me really happy when you say things like that..."
+    anon f_normal "So you'll go?"
+    eve f_nervous "Umm..."
     pause
-    eve f_sad "... Tidak."
-
-    eve "Saya tidak bisa melakukannya."
-
-    anon f_worried "Tidak?"
-
-    eve "Maaf, {b}[firstname]{/b}..."
-
-    eve "Mungkin lain kali."
-
-    anon f_normal "Tidak apa-apa, {b}Hawa{/b}."
-
-    anon "Jika Anda belum siap, maka Anda belum siap."
-
+    eve f_sad "... No."
+    eve "I can't do it."
+    anon f_worried "No?"
+    eve "I'm sorry, {b}[firstname]{/b}..."
+    eve "Maybe another time."
+    anon f_normal "It's alright, {b}Eve{/b}."
+    anon "If you're not ready, then you're not ready."
     return
 # Decompiled by unrpyc: https://github.com/CensoredUsername/unrpyc

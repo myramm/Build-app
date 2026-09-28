@@ -2,68 +2,40 @@ label scene_daisy_sex_yard:
     call scene_daisy_sex_yard.stage
     with fade
     anon "You know, I think I like pink flowers the best."
-
     daisy "Oh?"
-
-    daisy "Kenapa?"
-
+    daisy "How come?"
     anon "Well, because they're pretty..."
-
     call scene_daisy_sex_yard.insert
     anon "... Mmm, and wet..."
-
     call scene_daisy_sex_yard.animate
-    daisy "Ahhh!"
-
+    daisy "Ahh!"
     daisy "W-wet?!"
-
     anon "... and warm."
-
     daisy "{b}[firstname]{/b}!!"
-
     daisy "Flowers don't get warm!"
-
-    anon "Apa kamu yakin?"
-
+    anon "Are you sure?"
     daisy "I'm pretty-"
-
-    daisy "Tidak!!"
-
+    daisy "Ngh!!"
     daisy "P-pretty sure."
-
     pause
     daisy "Oh, wowzers!!"
-
     daisy "This feels even better out here in the sunlight!"
-
-    anon "Benar-benar?"
-
+    anon "Really?"
     daisy "Mhmm!"
-
     pause
     daisy "Careful you don't knock me over, {b}[firstname]{/b}!"
-
     anon "Don't worry, {b}Daisy{/b}... I've got you."
-
-    daisy "Ahhh!"
-
+    daisy "Ahh!"
     pause
     daisy "{i}*Gasp*{/i} I think my floogina's gonna do that orgasm thing again!"
-
     anon "That's good."
-
-    daisy "Ya!"
-
+    daisy "Yes!"
     daisy "Very, {i}very{/i} good!!"
-
     pause
     daisy "Oh, wowzers!!"
-
     daisy "NGH!!!" with flash
     anon "That's it, good girl."
-
     daisy "{b}[firstname]{/b}!!!"
-
     pause
     call scene_daisy_sex_yard.loop
     call scene_daisy_sex_yard.cum
@@ -129,34 +101,23 @@ label scene_daisy_sex_yard.loop:
 label scene_daisy_sex_yard.dialogue:
     if animcounter == 0 and randomizer() > 75:
         daisy "Careful you don't knock me over, {b}[firstname]{/b}!{p=2}{nw}"
-
         anon "Don't worry, {b}Daisy{/b}... I've got you.{p=1.5}{nw}"
-
         daisy "Ahh!{p=1}{nw}"
-
     if animcounter == 1 and randomizer() > 75:
         daisy "I love having sex out here in the sunlight...{p=2}{nw}"
-
         daisy "... With all the pretty flowers!{p=1.5}{nw}"
-
         anon "Yeah, me too.{p=1}{nw}"
-
     if animcounter == 2 and randomizer() > 75:
         daisy "Haah! Your weasel is so big, {b}[firstname]{/b}!{p=1.5}{nw}"
-
     return
 
 
 label scene_daisy_sex_yard.cum:
-    anon "Aku semakin dekat!"
-
+    anon "I'm getting close!"
     daisy "Haah... Haah..."
-
     pause
-    anon "Anda siap?"
-
-    daisy "Ya!!"
-
+    anon "You ready?"
+    daisy "Yes!!"
     show daisy_sex_stand_cum as animation
     anon "HNNGGG!!!" with flash
     show xray_front_under as xray with fastdissolve:
@@ -173,15 +134,10 @@ label scene_daisy_sex_yard.cum:
     show daisy_sex_stand_after
     with {'master': dissolve}
     daisy "Oh, wowzers!"
-
-    anon "Fiuh..."
-
+    anon "Phew..."
     anon "... That was a big one."
-
     daisy "Hehe, your weasel must have really needed it."
-
     anon "Y-yeah, I guess so."
-
     pause
 
     call call_pregnancy_minigame (None, M_daisy)
@@ -192,84 +148,50 @@ label scene_daisy_sex_yard.repeat:
     call scene_daisy_sex_yard.stage
     with fade
     anon "Here's my favorite pink flower."
-
     daisy @ -m_talk "Hmm?"
-
     daisy "Where?!"
-
     call scene_daisy_sex_yard.insert
     daisy "Oh, wowzers!!"
-
     call scene_daisy_sex_yard.animate
     pause
-    anon "Apakah itu terasa oke?"
-
+    anon "Does that feel okay?"
     daisy "Yeah, it feels good!"
-
     pause
     daisy "{b}[firstname]{/b}, I think you might be feeding your weasel too much..."
-
     anon "Hmm?"
-
     daisy "... Seems like he gets bigger and bigger every day."
-
     anon "Heh, You think I should put him on a diet?"
-
-    daisy "Ya, menurutku begitu."
-
+    daisy "Yeah, I think so."
     pause
     daisy "Careful you don't knock me over, {b}[firstname]{/b}!"
-
     anon "Don't worry, {b}Daisy{/b}... I've got you."
-
-    daisy "Ahhh!"
-
+    daisy "Ahh!"
     pause
     daisy "Oh, I love having sex out here in the sunlight..."
-
     daisy "... With all the pretty flowers!"
-
-    anon "Ya, aku juga."
-
+    anon "Yeah, me too."
     pause
     daisy "So when are you gonna show me this pink flower that you love so much?"
-
     anon "You wanna see it?"
-
-    daisy "Tentu saja!"
-
+    daisy "Of course!"
     pause
     daisy "{b}[firstname]{/b}, you know I love flowers!"
-
     daisy "And if it's your favorite, it must be {i}really{/i} pretty."
-
     anon "Oh, it is."
-
     anon "The most beautiful flower in the world."
-
     daisy "{i}*Gasp*{/i} Show me, show me!!"
-
     anon "Hehe, maybe later... if you're good."
-
-    daisy "Aduh."
-
+    daisy "Aww."
     pause
     daisy "{i}*Gasp*{/i} I think my floogina's gonna do that orgasm thing again!"
-
     anon "That's good."
-
-    daisy "Ya!"
-
+    daisy "Yes!"
     daisy "Very, {i}very{/i} good!!"
-
     pause
     daisy "Oh, wowzers!!"
-
     daisy "NGH!!!" with flash
     anon "That's it, good girl."
-
     daisy "{b}[firstname]{/b}!!!"
-
     pause
     call scene_daisy_sex_yard.loop
     call scene_daisy_sex_yard.cum

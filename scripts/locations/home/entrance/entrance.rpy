@@ -151,10 +151,10 @@ label entrance_dialogue:
     elif M_debbie.is_state(S_debbie_hang_out) and not game.timer.is_dark():
         call expression game.dialog_select("entrance_mom_hang_out")
         menu:
-            "Ya.":
+            "Yes.":
                 call expression game.dialog_select("entrance_mom_hang_out_yes")
                 $ M_debbie.trigger(T_debbie_hang_out_accept)
-            "Tidak.":
+            "No.":
 
 
                 call expression game.dialog_select("entrance_mom_hang_out_no")

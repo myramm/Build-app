@@ -214,7 +214,7 @@ label jerking_off_dialogue:
                     scene black with dissolve
                     $ game.timer.tick()
 
-                "{b}Diana{/b}." if M_player.is_set("jerk diane"):
+                "{b}Diane{/b}." if M_player.is_set("jerk diane"):
                     call expression game.dialog_select("bedroom_sleeping_jerk_off_diane")
                     scene black with dissolve
                     $ game.timer.tick()
@@ -223,10 +223,10 @@ label jerking_off_dialogue:
                     call expression game.dialog_select("bedroom_sleeping_jerk_off_jenny")
                     scene black with dissolve
                     $ game.timer.tick()
-                "Sudahlah.":
+                "Never mind.":
 
                     pass
-        "Pergi.":
+        "Leave.":
 
             pass
 
@@ -236,81 +236,60 @@ label diane_masturbatory_fantasy_d17:
     call expression game.dialog_select("bedroom_sleeping_jerk_off_diane")
     pause
     player_name "Mmm, {b}Diane{/b}!"
-
     scene expression "backgrounds/location_home_hallway_night_blur.jpg"
     show diane b_nightgown f_scared
     with dissolve
     diane @ -m_talk "( ... )"
     diane @ -m_talk "( Oh, what am I doing? )"
-
     pause
     diane @ -m_talk "( Am I really considering this?! )"
-
     pause
     player_name "Mmm, {b}Diane{/b}!"
-
     show diane f_surprised
     diane @ -m_talk "( !!! )" with hpunch
     diane @ -m_talk "( {b}[firstname]{/b}? )"
-
     scene expression "backgrounds/location_home_bedroom_cutscene11.jpg" with fade
     diane "( Is he- )"
-
     pause
     diane "( !!! )"
     pause
     diane "( Oh my goodness... )"
-
     pause
     diane "( It's so big! )"
-
     pause
     player_name "Haah, here it comes!"
-
     scene expression "backgrounds/location_home_bedroom_cutscene11b.jpg" with fade
     pause
     player_name "HNNGGG!!!"
-
     diane "( !!! )" with hpunch
     pause
     diane "( Look at all that cum! )"
-
     pause
     player_name "Ahh, {b}Diane{/b}!"
-
     pause
     scene expression "backgrounds/location_home_bedroom_cutscene12.jpg" with fade
     diane "( All of that... Was for me? )"
-
     pause
     player_name "Haah... Haah..."
-
     scene black with fade
     diane "{b}[firstname]{/b}?"
-
     scene expression "backgrounds/location_home_bedroom_sex03.jpg"
     show player afterjerk 1
     show diane b_nightgown f_smirk
     player_name "!!!" with hpunch
     player_name "{b}Diane{/b}?"
-
-    player_name "Apa yang kamu-"
-
+    player_name "What are you-"
     show player afterjerk 2
     show diane f_reading_intrigued
-    diane "Ssst."
-
+    diane "Shh."
     show diane b_nightgown_sit f_smirk_fardown with dissolve
     diane "I had no idea you-"
-
     show diane b_nightgown_sit_stroke1
     pause
     show diane b_nightgown_sit_stroke2
     diane "T-there's so much..."
-
     show player afterjerk 1
-    player_name "Y-ya."
-
+    player_name "Y-yeah."
     show diane b_nightgown_sit_kiss
     player_name "!!!" with hpunch
     show player afterjerk 3
@@ -318,64 +297,46 @@ label diane_masturbatory_fantasy_d17:
     show player afterjerk 2
     show diane b_nightgown_sit_stroke
     diane "Mmm, I think I want to do this {b}[firstname]{/b}..."
-
     diane "I want you to breed me."
-
     show player afterjerk 1
-    player_name "K-kamu yakin?"
-
+    player_name "Y-you do?"
     show player afterjerk 2
     diane "Mmmhmm!"
-
     show player afterjerk 1
     player_name "What about {b}[deb_name]{/b}?"
-
     show player afterjerk 2
     diane "When the time comes, I'll speak with her."
-
     diane "I'll just have to hope she can forgive me..."
-
     show player afterjerk 1
     player_name "I think she'll understand, {b}Diane{/b}."
-
     show player afterjerk 3
     show diane b_nightgown_sit_kiss
     with dissolve
-    diane "MM."
-
+    diane "Mmm."
     pause
     show player afterjerk 2
     show diane b_nightgown_sit_stroke
     with dissolve
     diane "Oh, I want you inside me so bad!"
-
     diane "... But not yet!"
-
     player_name "Hmm?"
-
     diane "I want our first time to be special."
-
     diane "{b}Come see me tomorrow at the barn{/b}."
-
     show player afterjerk 1
-    player_name "O-oke."
-
+    player_name "O-okay."
     show player afterjerk 3
     show diane b_nightgown_sit_kiss
     with dissolve
     pause
     show diane b_nightgown_sit
     show player afterjerk 2
-    diane "Selamat malam, kawan."
-
+    diane "Goodnight, stud."
     show player afterjerk 1
     player_name "Goodnight, {b}Diane{/b}..."
-
     hide diane with dissolve
     pause
     show player afterjerk 1
     player_name "( Yeah, like I'm really gonna be able to sleep after that... )"
-
     hide player with dissolve
     $ M_diane.trigger(T_diane_learns_your_secret)
     $ game.timer.tick()

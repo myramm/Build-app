@@ -76,11 +76,11 @@ label dianes_barn_interior_dialogue:
         call expression game.dialog_select("barn_daisy_caught_breeding_aftermath")
         $ M_daisy.trigger(T_daisy_end)
         menu:
-            "Ya.":
+            "Yes.":
                 call expression game.dialog_select("barn_daisy_caught_breeding_aftermath_yes")
                 $ M_daisy.trigger(T_daisy_sex)
                 jump first_time_dialogue_daisy_sex
-            "Tidak.":
+            "No.":
 
                 call expression game.dialog_select("barn_daisy_caught_breeding_aftermath_no")
                 $ game.main()

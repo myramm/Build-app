@@ -62,20 +62,14 @@ label scene_maria_sex_kitchen.loop(pregnant=False):
 label scene_maria_sex_kitchen.dialogue:
     if animcounter == 0 and randomizer() > 50:
         maria "Oh, gawd!!{p=1}{nw}"
-
         maria "OH MY GAWD!!!{p=1}{nw}"
-
     if animcounter == 1 and randomizer() > 50:
-        anon "Saya semakin dekat!{p=1}{nw}"
-
+        anon "I'm getting close!{p=1}{nw}"
     if animcounter == 2 and randomizer() > 50:
-        anon "Aku akan keluar!{p=1}{nw}"
-
+        anon "I'm gonna cum!{p=1}{nw}"
         maria "Ngh, me too!{p=1}{nw}"
-
     elif randomizer() > 50:
-        maria "Jangan berhenti!{p=1}{nw}"
-
+        maria "Don't stop!{p=1}{nw}"
     return
 
 
@@ -88,12 +82,9 @@ label scene_maria_sex_kitchen.cum(where, pregnant=False):
 label scene_maria_sex_kitchen.inside:
     if randomizer() > 50:
         anon "Should I cum inside you?"
-
-        maria "YA!!!"
-
+        maria "YES!!!"
     else:
-        anon "Ini dia!"
-
+        anon "Here it comes!"
     pause
     hide animation
     if pregnant:
@@ -104,7 +95,6 @@ label scene_maria_sex_kitchen.inside:
     show xray_maria_kitchen with fastdissolve:
         align (0, 0)
     maria "NGGHHH!!!"
-
     hide xray_maria_kitchen
     if pregnant:
         show maria b_sex_kitchen_talk_pregnant_belly f_shy_lipbite
@@ -114,16 +104,12 @@ label scene_maria_sex_kitchen.inside:
     show maria_sex_kitchen_mc_insert_cum_overlay
     with dissolve
     anon "Haah... Haah..."
-
     pause
     if randomizer() > 50:
         maria f_normal "Mmm, I love it when you finish inside me, {b}[firstname]{/b}..."
-
     else:
         maria f_normal "Oh, gawd... That was just what I needed!"
-
     anon "Heh, happy to oblige."
-
 
     call call_pregnancy_minigame (None, M_maria)
     return
@@ -131,7 +117,6 @@ label scene_maria_sex_kitchen.inside:
 
 label scene_maria_sex_kitchen.outside:
     maria "NGGHHH!!!"
-
     hide animation
     if pregnant:
         show maria b_sex_kitchen_base_pregnant_belly
@@ -155,23 +140,16 @@ label scene_maria_sex_kitchen.outside:
         xoffset 0
         yoffset 4
     anon "Haah... Haah..."
-
     if randomizer() > 50:
         maria f_normal "Mmm, that was incredible, {b}[firstname]{/b}!"
-
     else:
         maria f_normal "Oh, gawd... That was just what I needed!"
-
     if pregnant:
         anon "Sorry I came all over you..."
-
     else:
         anon "Sorry about your dress..."
-
-    maria "Tidak, tidak apa-apa."
-
-    maria "Saya tidak keberatan."
-
+    maria "No, that's okay."
+    maria "I don't mind."
     return
 
 
@@ -180,29 +158,22 @@ label scene_maria_sex_kitchen.normal:
     show maria b_sex_kitchen_talk
     with fade
     maria "Just make it quick, okay?"
-
     maria "I don't want some customer walkin' in and seein' us."
-
-    anon "Luar biasa."
-
+    anon "Awesome."
     show anon_maria_sex_kitchen pre with dissolve
     maria f_shy "I can't believe I'm doin' this."
-
     show maria b_sex_kitchen_mc_remove_panties1 f_shy_lipbite
     hide anon_maria_sex_kitchen
     with dissolve
     pause
     show maria b_sex_kitchen_mc_remove_panties2 with dissolve
     anon "I love this job!"
-
     show maria b_sex_kitchen_mc_remove_panties3 f_normal with dissolve
-    maria "hehe!"
-
+    maria "Hehe!"
     show maria b_sex_kitchen_talk_uncovered
     show anon_maria_sex_kitchen pre
     with dissolve
     maria "You're such a naughty boy..."
-
     show maria b_sex_kitchen_base
     show anon_maria_sex_kitchen insert
     with dissolve
@@ -211,23 +182,16 @@ label scene_maria_sex_kitchen.normal:
     hide anon_maria_sex_kitchen
     with dissolve
     maria "Ahh!!"
-
     call scene_maria_sex_kitchen.animate
     pause
     maria "Oh, {b}[firstname]{/b}!"
-
-    maria "Kamu sangat besar!"
-
+    maria "You're so big!"
     pause
     maria "Oh, gawd!"
-
-    maria "Ya!!"
-
+    maria "Yes!!"
     pause
-    maria "Persetan denganku, {b}[firstname]{/b}!"
-
+    maria "Fuck me, {b}[firstname]{/b}!"
     maria "Ahh!!"
-
     pause
     call scene_maria_sex_kitchen.loop
     call scene_maria_sex_kitchen.cum (_return)
@@ -239,38 +203,28 @@ label scene_maria_sex_kitchen.pregnant:
     show maria b_sex_kitchen_talk_pregnant_belly
     with fade
     maria "Get over here quick, handsome..."
-
-    anon "Ya, Bu!"
-
+    anon "Yes, ma'am!"
     show anon_maria_sex_kitchen pre with dissolve
     pause
     show maria b_sex_kitchen_base_pregnant_belly
     show anon_maria_sex_kitchen insert
     with dissolve
     maria "Hurry, {b}[firstname]{/b}!"
-
     show maria b_sex_kitchen_cum_pregnant_belly
     hide anon_maria_sex_kitchen
     with dissolve
     maria "!!!"
     maria "Ahh!!"
-
     call scene_maria_sex_kitchen.animate (pregnant=True)
     pause
     maria "Oh, {b}[firstname]{/b}!"
-
     maria "I needed this so bad!"
-
     pause
     maria "Oh, gawd!"
-
-    maria "Ya!!"
-
+    maria "Yes!!"
     pause
-    maria "Persetan denganku, {b}[firstname]{/b}!"
-
+    maria "Fuck me, {b}[firstname]{/b}!"
     maria "Ahh!!"
-
     pause
     call scene_maria_sex_kitchen.loop (pregnant=True)
     call scene_maria_sex_kitchen.cum (_return, pregnant=True)
@@ -283,7 +237,7 @@ label scene_maria_sex_kitchen.replay:
     if len(variants) > 1:
         scene expression background(l=L_pizzeria_kitchen) with fade
         menu:
-            "Biasa" if 'normal' in variants:
+            "Normal" if 'normal' in variants:
                 jump scene_maria_sex_kitchen.normal
 
             "Pregnant" if 'pregnant' in variants:

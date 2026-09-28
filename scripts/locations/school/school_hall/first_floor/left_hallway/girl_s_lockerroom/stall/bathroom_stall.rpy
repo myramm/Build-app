@@ -14,25 +14,25 @@ label judith_toilet:
                         "Ok.":
                             call expression game.dialog_select("girls_lockerroom_judith_toilet_first_ok")
                             menu:
-                                "Tentu.":
+                                "Sure.":
                                     call expression game.dialog_select("girls_lockerroom_judith_toilet_first_sure")
                                     menu:
-                                        "Ya.":
+                                        "Yes.":
                                             $ M_judith.trigger(T_judith_comfort_her)
                                             $ M_judith.set("sex sequence locked", False)
                                             call expression game.dialog_select("girls_lockerroom_judith_toilet_first_yes")
                                             $ M_judith.set("in bathroom", False)
                                             $ M_judith.unforce()
-                                        "Kita harus berhenti.":
+                                        "We should stop.":
 
                                             call expression game.dialog_select("girls_lockerroom_judith_toilet_first_should_stop")
-                                "saya tidak bisa.":
+                                "I can't.":
 
                                     call expression game.dialog_select("girls_lockerroom_judith_toilet_first_cant")
                         "We should leave.":
 
                             call expression game.dialog_select("girls_lockerroom_judith_toilet_should_leave")
-                "saya tahu...":
+                "I know...":
 
                     call expression game.dialog_select("girls_lockerroom_judith_toilet_first_ugly")
             hide player

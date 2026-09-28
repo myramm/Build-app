@@ -19,23 +19,22 @@ label park_douches_button_dialogue:
             call park_douches_respect
 
         menu park_douches_menu:
-            "Pertarungan rap." if player.stats.chr() < 10:
+            "Rap battle." if player.stats.chr() < 10:
                 call expression 'park_douches_rematch_{}'.format(
                     bisect.bisect((4, 7, 9), player.stats.chr()) + 1)
                 call park_douches_battle_dialogue
 
-            "Reset status {color=e66f05}{b}CHR{/b}{/color} untuk memainkan pertarungan rap. (Menipu)" if game.cheat_mode and player.stats.chr() > 9:
+            "Reset {color=e66f05}{b}CHR{/b}{/color} stat to play rap battles. (Cheat)" if game.cheat_mode and player.stats.chr() > 9:
                 menu:
-                    "Ini akan mengatur ulang status {color=e66f05}{b}karisma{/b}{/color} ke nol untuk memungkinkan pertarungan rap dimainkan. {b}Apakah Anda yakin?{/b}"
-
-                    "Ya, saya yakin, hilangkan {color=e66f05}{b}karisma{/b}{/color} saya.":
+                    "This will reset the {color=e66f05}{b}charisma{/b}{/color} stat to zero to allow the rap battles to be played. {b}Are you sure?{/b}"
+                    "Yes, I'm sure, take away my {color=e66f05}{b}charisma{/b}{/color}.":
 
                         $ player.stats._chr = 0
                         jump park_douches_button_dialogue
-                    "Berhenti! Ini bukan yang saya inginkan!":
+                    "Stop! This is not what I want!":
 
                         pass
-            "Sudahlah.":
+            "Never mind.":
 
                 call park_douches_dismiss
 

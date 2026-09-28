@@ -124,11 +124,8 @@ label consumr_chicken_stock_dialogue:
     with dissolve
     if M_okita.is_state(S_okita_get_ingredients):
         player_name "Hmm, {b}Miss Okita said vegetable stock{/b}, but they only have chicken..."
-
         player_name "Maybe the clerk can help me?"
-
     else:
         player_name "I don't see why I would need chicken stock right now..."
-
     $ game.main()
 # Decompiled by unrpyc: https://github.com/CensoredUsername/unrpyc

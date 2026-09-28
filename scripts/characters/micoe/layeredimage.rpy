@@ -34,7 +34,6 @@ layeredimage micoe:
         attribute b_jerk "micoe_body_b_jerk"
 
 
-
     group mouth prefix 'm':
         attribute talk null
 

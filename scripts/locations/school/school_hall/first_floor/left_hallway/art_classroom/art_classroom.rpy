@@ -19,7 +19,6 @@ label easel_dialogue:
 
         show player 35 with dissolve
         player_name "( What should I draw today? )"
-
         menu:
             "Tattoo ideas.":
                 call expression game.dialog_select("easel_dialogue_mia_draw_tattoo_intro")

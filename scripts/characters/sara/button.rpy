@@ -8,8 +8,7 @@ label sara_button_dialogue:
             call sara_button_lobby
     else:
 
-        sara "Oh tidak! Apakah para pengembang juga lupa menghubungkan dialog ini?!"
-
+        sara "Oh no! Did the devs forget to link up this dialogue too?!"
 
     $ game.main()
     return

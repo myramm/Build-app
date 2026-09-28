@@ -79,18 +79,13 @@ label scene_consuela_sex_floor.loop:
 
 label scene_consuela_sex_floor.dialogue:
     if animcounter == 0 and randomizer() < 50:
-        anon "Anda menyukainya?{p=1}{nw}"
-
-        consuela "Ya, ayah!{p=1}{nw}"
-
-        consuela "Saya suka!{p=1}{nw}"
-
+        anon "You like that?{p=1}{nw}"
+        consuela "Si, papi!{p=1}{nw}"
+        consuela "I like!{p=1}{nw}"
         pause 1
-        consuela "OH, SAYA SUKA!!!{p=1}{nw}"
-
+        consuela "OH, I LIKE!!!{p=1}{nw}"
     if animcounter == 1 and randomizer() > 50:
-        consuela "¡Aduh ayah!{p=1}{nw}"
-
+        consuela "¡Oh papi!{p=1}{nw}"
     if animcounter == 2 and randomizer() < 50:
         consuela "Fuck me!{p=1}{nw}" (show_native="¡Que me jodan!")
         consuela "Fuck your dirty little maid!{p=2}{nw}" (show_native="¡A la mierda con tu criada sucia!")
@@ -104,40 +99,30 @@ label scene_consuela_sex_floor.inside:
     show xray_consuela floor with fastdissolve:
         align (0,0)
     consuela "NGGHHH!!!"
-
     hide xray_consuela
     show consuela b_floor_base
     show consuela_mc_body_floor insert_pullout
     with dissolve
     pause
     anon "Haah... Haah..."
-
     show consuela b_floor f_normal_down
     show consuela_mc_body_floor base
     show consuela_mc_dick_floor after
     show consuela o_floor_after_cum_drip
     with dissolve
-    anon "Wah!"
-
+    anon "Wow!"
     consuela "My god!" (show_native="¡Santo cielo!")
     consuela "That was amazing!" (show_native="¡Eso fue increíble!")
-    consuela "hehe!"
-
-    anon "aku masuk ke dalam dirimu..."
-
+    consuela "Hehe!"
+    anon "I came inside you..."
     consuela "Hmm?"
-
-    consuela "Oh, baiklah."
-
-    anon "Tapi kamu bisa hamil..."
-
+    consuela "Oh, es okay."
+    anon "But you could get pregnant..."
     consuela "I doubt we conceive." (show_native="Dudo que concibamos.")
     consuela "Very unlikely at my age." (show_native="Muy poco probable a mi edad.")
     anon "..."
-    consuela "Jangan khawatir, oke?"
-
-    anon "O-oke."
-
+    consuela "No worry, okay?"
+    anon "O-okay."
 
     call call_pregnancy_minigame (None, M_consuela)
     return
@@ -150,20 +135,16 @@ label scene_consuela_sex_floor.outside:
     show consuela_mc_dick_floor cumshot
     anon "HNNGGG!!!" with flash
     consuela "NGGHHH!!!"
-
     show consuela b_floor f_normal_down
     show consuela o_floor_after_cumshot
     show consuela_mc_dick_floor after
     with dissolve
     pause
     anon "Haah... Haah..."
-
-    anon "Itu luar biasa!"
-
+    anon "That was awesome!"
     consuela "My god!" (show_native="¡Santo cielo!")
     consuela "I'm a mess..." (show_native="Soy un desastre...")
-    consuela "hehe!"
-
+    consuela "Hehe!"
     return
 
 
@@ -178,10 +159,8 @@ label scene_consuela_sex_floor.repeat:
     consuela "Like an animal?" (show_native="¿Como un animal?")
     call scene_consuela_sex_floor.pre
     with dissolve
-    anon "Sebaiknya kamu bertahan..."
-
-    consuela "Apa?"
-
+    anon "You'd better hold on..."
+    consuela "¿Qué?"
     call scene_consuela_sex_floor.insert
     with fastdissolve
     consuela "!!!"
@@ -189,17 +168,14 @@ label scene_consuela_sex_floor.repeat:
     with dissolve
     consuela "Oh my god!" (show_native="¡Ay dios mío!")
     consuela "Ahh!!"
-
     label scene_consuela_sex_floor.resume:
     call scene_consuela_sex_floor.loop
     if _return == 'switch':
         jump scene_consuela_sex_floor_anal.switch
-    anon "Aku semakin dekat!"
-
+    anon "I'm getting close!"
     consuela "I'm coming!" (show_native="¡Me vengo!")
     pause
-    consuela "¡Gracia!!"
-
+    consuela "¡Gracias!!"
     if _return == 'inside':
         call scene_consuela_sex_floor.inside
     else:
@@ -218,8 +194,7 @@ label scene_consuela_sex_floor.switch:
     hide consuela_floor
     call scene_consuela_sex_floor.pre
     with dissolve
-    consuela "Ya!!!"
-
+    consuela "Ay!!!"
     call scene_consuela_sex_floor.insert
     with fastdissolve
     consuela "!!!"
@@ -227,15 +202,11 @@ label scene_consuela_sex_floor.switch:
     with dissolve
     consuela "My pussy again?" (show_native="¿Mi coño de nuevo?")
     consuela "Mmm, you're driving me wild, {b}Mister [firstname]{/b}!" (show_native="¡Mmm, me estás volviendo loca, {b}Mister [firstname]{/b}!")
-    anon "Kamu adalah pelayan terbaik yang pernah ada, {b}Consuela{/b}!"
-
-    consuela "Si, pelayan terbaik!"
-
-    consuela "Sialan bagus!"
-
+    anon "You are the best maid ever, {b}Consuela{/b}!"
+    consuela "Si, best maid!"
+    consuela "Fuck good!"
     pause
     consuela "Ahh!!!"
-
     jump scene_consuela_sex_floor.resume
 
 

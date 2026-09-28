@@ -4,7 +4,6 @@ label maria_bedroom_duffel_dialogue:
         flip
         xoffset -500
     anon @ -m_talk "( There's no way I'm randomly rummaging though their belongings! )"
-
     hide anon with dissolve
     return
 # Decompiled by unrpyc: https://github.com/CensoredUsername/unrpyc

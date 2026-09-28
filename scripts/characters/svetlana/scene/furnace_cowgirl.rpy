@@ -5,17 +5,13 @@ label scene_svetlana_furnace_cowgirl:
     call scene_svetlana_furnace_cowgirl.stage
     with fade
     anon @ -m_talk "!!!"
-    anon "Ya Tuhan..."
-
-    anon "... Ini benar-benar akan terjadi, ya?"
-
-    svetlana "Ya."
-
+    anon "Oh, god..."
+    anon "... This is really gonna happen, huh?"
+    svetlana "Da."
     call scene_svetlana_furnace_cowgirl.insert
     with {'master': dissolve}
     svetlana "Mmm, a perfect fit." (show_native="Mmm, ideal'no podkhodit.")
-    anon "Ya Tuhan, ya Tuhan, ya Tuhan!"
-
+    anon "Oh my god, oh my god, oh my god!"
     call scene_svetlana_furnace_cowgirl.animate
     with {'master': dissolve}
     pause
@@ -38,37 +34,26 @@ label scene_svetlana_furnace_cowgirl:
     if _return == 'switch':
         jump scene_svetlana_furnace_doggy.switch
 
-    svetlana "Selesaikan di dalam!"
-
-    anon "Benar-benar?"
-
-    svetlana "Ya!"
-
+    svetlana "Finish inside!"
+    anon "Really?"
+    svetlana "Da!"
 
     if variant == 'first':
-        anon "A-bagaimana jika kamu ?!"
-
-        svetlana "Saya tidak bisa!"
-
-        anon "Kamu tidak bisa?!"
-
+        anon "W-what if you get pregnant?!"
+        svetlana "I cannot!"
+        anon "You cannot?!"
 
     svetlana "Cum in me!" (show_native="Konchi v menya!!")
 
     if variant == 'first':
-        anon "Bagaimana Anda bisa yakin-"
-
+        anon "How can you be sure-"
     else:
         pause
 
-    svetlana "aku keluar!"
-
-    svetlana "Oh, aku keluar!!!"
-
-    anon "Sialan!"
-
+    svetlana "I'm cumming!"
+    svetlana "Oh, I'm cumming!!!"
+    anon "Holy shit!"
     svetlana "NGGHHH!!!"
-
     hide anim
     show svetlana furnace_cowgirl b_cum
     anon "HNNGGG!!!" with flash
@@ -90,30 +75,20 @@ label scene_svetlana_furnace_cowgirl:
     with {'master': dissolve}
     svetlana "What a torrent!" (show_native="Kakoy torrent!")
     anon "Haah... Haah..."
-
     pause
-    anon "... Yesus Kristus."
-
+    anon "... Jesus Christ."
     svetlana "Haah... Haah..."
-
-    anon "Itu sangat intens!"
-
-    svetlana "Ya."
-
+    anon "That was intense!"
+    svetlana "Da."
 
     if variant == 'repeat':
         return
 
-    svetlana "Sudah lama sekali sejak seorang pria membuatku cum jadi..."
-
+    svetlana "It has been a very long time since a man made me cum so..."
     anon "Oh?"
-
-    svetlana "... Aku butuh waktu sebentar."
-
-    anon "Ya, tentu saja!"
-
-    anon "T-luangkan waktumu."
-
+    svetlana "... I need a moment."
+    anon "Yeah, of course!"
+    anon "T-take your time."
     return
 
 
@@ -161,8 +136,7 @@ label scene_svetlana_furnace_cowgirl.loop:
 label scene_svetlana_furnace_cowgirl.dialogue(opt, rng=-1):
 
     if opt == 1:
-        anon "Haaaa!!!"
-
+        anon "Haaaaah!!!"
 
         if variant == 'first':
             svetlana "Are all Americans this malleable?" (show_native="Vse li Amerikantsy takiye podatlivyye?")
@@ -173,95 +147,68 @@ label scene_svetlana_furnace_cowgirl.dialogue(opt, rng=-1):
 
 
         anon "Hmm?"
-
-        anon "Saya tidak tahu apa yang Anda katakan-"
-
-        svetlana "Diam!"
-
-        anon "{i}*Gulp*{/i} Y-iya, Bu."
-
+        anon "I don't know what you're say-"
+        svetlana "Shut up!"
+        anon "{i}*Gulp*{/i} Y-yes, ma'am."
 
     elif opt == 2:
-        svetlana "Anda suka ini?"
-
+        svetlana "You like this?"
         anon "..."
 
         if rng < .15:
-            svetlana "Anda suka saat saya menunggangi ayam Amerika Anda yang besar dan gemuk?"
+            svetlana "You like it when I ride your big, fat American cock?"
+            anon "D-do you want me to answer, or-"
 
-            anon "A-apa kamu ingin aku menjawabnya, atau-"
-
-
-        svetlana "Katakan!!"
-
-        anon "Ah, ya!"
-
+        svetlana "Say it!!"
+        anon "Ahh, yes!"
 
         if rng < .15:
-            anon "Ya, aku suka saat kamu menunggangi ayam Amerikaku yang besar dan gemuk!!"
-
+            anon "Yes, I love it when you ride my big, fat American cock!!"
 
     elif opt == 3:
         svetlana "{b}Nadya{/b} is a fortunate woman..." (show_native="{b}Nadya{/b} schastlivaya zhenshchina...")
         svetlana "... To have claimed such a man." (show_native="... Zavoyevat' takogo muzhchinu.")
 
     elif opt == 4:
-        anon "Ya Tuhan... Kamu seksi sekali!"
-
+        anon "Oh, Jesus... You're so sexy!"
 
         if rng < .4:
-            svetlana "Kamu suka vaginaku?"
-
-            anon "Ya, saya menyukainya!!"
-
+            svetlana "You like my pussy?"
+            anon "Yes, I love it!!"
 
     elif opt == 5:
         if rng < .3:
             svetlana "Mmm, you're going to make me cum!" (show_native="Mmm, ty zastavish' menya konchit'!")
-            anon "Apa?"
+            anon "What?"
 
-
-        svetlana "Aku akan segera keluar!"
-
-        anon "Ngh, ya... aku juga!"
-
+        svetlana "I cum soon!"
+        anon "Ngh, yeah... me too!"
 
     elif opt == 6:
         svetlana "So fucking good!" (show_native="Tak chertovski khorosho!")
-        svetlana "Ahhh!"
-
+        svetlana "Ahh!"
 
     return
 
 
 label scene_svetlana_furnace_cowgirl.switch:
     anon "Haah... Haah..."
-
-    anon "Aku kehabisan asap di sini."
-
+    anon "I'm running on fumes here."
     svetlana "Hmm?"
-
     call scene_svetlana_furnace_doggy.stage
     with {'master': dissolve}
-    anon "Bisakah Anda kembali ke puncak untuk sementara waktu?"
-
-    svetlana "Ya."
-
-    svetlana "saya akan berkendara."
-
-    anon "Terima kasih."
-
+    anon "Can you get back on top for a while?"
+    svetlana "Da."
+    svetlana "I will ride."
+    anon "Thanks."
 
     call scene_svetlana_furnace_cowgirl.stage
     with fade
-    anon "Tubuhmu luar biasa!"
-
+    anon "Your body is incredible!"
     call scene_svetlana_furnace_cowgirl.insert
     with {'master': dissolve}
     svetlana @ -m_talk "Mmmm."
-
-    anon "Ya Tuhan!"
-
+    anon "Oh my god!"
     call scene_svetlana_furnace_cowgirl.animate
     with {'master': dissolve}
     jump scene_svetlana_furnace_cowgirl.resume
@@ -277,17 +224,13 @@ label scene_svetlana_furnace_cowgirl.repeat:
 
     call scene_svetlana_furnace_cowgirl.stage
     with fade
-    anon "Ya Tuhan..."
-
-    anon "... Tubuhmu luar biasa!"
-
-    svetlana "Ya."
-
+    anon "Oh, god..."
+    anon "... Your body is incredible!"
+    svetlana "Da."
     call scene_svetlana_furnace_cowgirl.insert
     with {'master': dissolve}
     svetlana "Mmm, your penis is the best." (show_native="Mmm, tvoy penis samyy luchshiy.")
-    anon "Ya Tuhan, ya Tuhan, ya Tuhan!"
-
+    anon "Oh my god, oh my god, oh my god!"
     call scene_svetlana_furnace_cowgirl.animate
     with {'master': dissolve}
     pause
@@ -312,10 +255,10 @@ label scene_svetlana_furnace_cowgirl.replay:
     if len(variants) > 1:
         scene expression background(l=L_warehouse_furnace) with fade
         menu:
-            "Pertama" if 'first' in variants:
+            "First" if 'first' in variants:
                 jump scene_svetlana_furnace_cowgirl.first
 
-            "Ulangi" if 'repeat' in variants:
+            "Repeat" if 'repeat' in variants:
                 jump scene_svetlana_furnace_cowgirl.repeat
 
     jump expression 'scene_svetlana_furnace_cowgirl.{}'.format(next(iter(variants)))

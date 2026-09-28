@@ -3,39 +3,29 @@ label kassy_first_visit:
     show kassy:
         flip
     with dissolve
-    kassy "Selamat datang di {b}Dewa Asmara{/b}. Nama saya {b}Kassy{/b}, adakah yang bisa saya bantu temukan hari ini?"
-
+    kassy "Welcome to {b}Cupid{/b}. My name is {b}Kassy{/b}, is there anything I can help you find today?"
     show player 2f
-    player_name "Tidak, terima kasih, aku hanya melihat sekeliling."
-
+    player_name "No thanks, I'm just looking around."
     show player 1f
-    kassy "Baiklah. Baiklah, beri tahu saya jika Anda memerlukan bantuan."
-
+    kassy "Alright. Well, let me know if you need any help."
     show player 2f
-    player_name "Akan berhasil! Terima kasih, {b}Kassy{/b}."
-
+    player_name "Will do! Thanks, {b}Kassy{/b}."
     show player 1f
-    kassy "Dengan senang hati!"
-
+    kassy "My pleasure!"
     return
 
 label kassy_repeat:
     show player 2f at right
     show kassy at flip
     with dissolve
-    player_name "Hai {b}Kassy{/b}!"
-
+    player_name "Hey {b}Kassy{/b}!"
     show player 1f
-    kassy "Halo, ada yang bisa saya bantu?"
-
+    kassy "Hello there, what can I help you with?"
     show player 2f
-    player_name "Tidak ada apa-apa saat ini, hanya browsing."
-
+    player_name "Nothing right now, just browsing."
     show player 1f
-    kassy "Baiklah. Baiklah, hubungi aku jika kamu butuh sesuatu."
-
+    kassy "Alright. Well, give me a shout if you need something."
     show player 2f
-    player_name "Akan berhasil! Terima kasih, {b}Kassy{/b}."
-
+    player_name "Will do! Thanks, {b}Kassy{/b}."
     return
 # Decompiled by unrpyc: https://github.com/CensoredUsername/unrpyc

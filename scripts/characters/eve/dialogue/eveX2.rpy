@@ -22,8 +22,7 @@ label eveX2_bath_eve:
     show anon_arms_naked_a_hips_eve as anon_arms behind eve_arms:
         xoffset 90
     with {'master': dissolve}
-    anon "Hai, cantik-{w=.25{nw}"
-
+    anon "Hey there, beautifu-{w=.25}{nw}"
     hide eve_arms
     show eve a_surprised f_surprised_right m_talk
     extend "" with hpunch
@@ -33,19 +32,14 @@ label eveX2_bath_eve:
         xzoom 1
     hide anon_arms
     with {'master': dissolve}
-    anon "A-wah, santai saja..."
-
+    anon "W-whoa, relax..."
     show eve f_confused
     show anon a_sides f_happy
     with {'master': dissolve}
-    anon "... Ini hanya aku."
-
-    eve f_angry "Ya Tuhan, kamu membuatku takut!"
-
-    anon f_brag "Ya, aku memperhatikan..."
-
-    anon "... Heh, kamu hampir melompat keluar dari kulitmu."
-
+    anon "... It's just me."
+    eve f_angry "Jesus, you scared me!"
+    anon f_brag "Yeah, I noticed..."
+    anon "... Heh, you about jumped out of your skin."
     show anon f_laugh
     pause
     show anon a_sides_nervous f_hurt
@@ -57,34 +51,25 @@ label eveX2_bath_eve:
     show eve a_cover:
         xoffset -250
     with {'master': dissolve}
-    anon "Aduh, aku minta maaf!"
-
-    eve f_concerned "Apakah kamu mencoba memberiku serangan jantung?!"
-
-    anon "T-tidak."
-
+    anon "Ouch, I'm sorry!"
+    eve f_concerned "Are you trying to give me a heart attack?!"
+    anon "N-no."
     show anon a_sides
     with {'master': dissolve}
-    anon "Aku tidak bermaksud menakutimu, jujur..."
-
-    anon "... Aku hanya ingin bergabung denganmu."
-
-    eve "Baiklah, tidak apa-apa... hanya saja, mungkin lain kali jangan menyelinap ke arahku!"
-
-    anon "Baiklah, catat."
-
+    anon "I didn't mean to scare you, honest..."
+    anon "... I just wanted to join you."
+    eve "Well, that's fine... just, maybe don't sneak up on me next time!"
+    anon "Alright, noted."
     pause
     show eve a_crossed f_thinking_down
     with {'master': dissolve}
-    eve "Cih, sekarang sabunnya turun ke mana?"
-
+    eve "Tch, now where did the soap get off to?"
     pause
     show eve behind anon
     show anon a_point_down_other f_normal_low:
         xoffset 80
     with {'master': dissolve}
-    anon "Saya pikir itu jatuh di sana."
-
+    anon "I think it fell over there."
     show anon a_sides behind eve
     show eve a_hip:
         xoffset 350
@@ -92,7 +77,6 @@ label eveX2_bath_eve:
     with {'master': dissolve}
     pause
     eve "Ah."
-
     show anon a_surprised f_surprised_down
     show eve b_naked_shower_pickup02:
         xoffset 150
@@ -101,93 +85,72 @@ label eveX2_bath_eve:
     show anon a_sides f_flirt_down
     show eve b_naked_shower_pickup
     with {'master': dissolve}
-    eve "Ya ampun licin banget.."
-
+    eve "Geez, it's really slippery..."
     show anon od_naked_dick_grow
     with {'master': dissolve}
     pause
     show eve a_scrub b_naked_shower f_normal_down:
         xoffset 350
     with {'master': dissolve}
-    eve "... Jadi, hei, bagaimana perasaanmu saat keluar untuk sarapan atau apalah?"
-
+    eve "... So hey, how would you feel about going out for breakfast or something?"
     pause
     eve "{b}[firstname]{/b}?"
-
     show eve a_scrub02 f_confused_right
     pause
     show eve a_crossed_soap f_confused:
         xoffset -250
         xzoom 1
     with {'master': dissolve}
-    eve "Apakah kamu mendengarkanku?"
-
+    eve "Are you listening to me?"
     pause
     show eve a_hip f_nervous_down
     with {'master': dissolve}
-    eve "Ya Tuhan, lagi?!"
-
+    eve "Oh my god, again?!"
     show anon a_defensive f_surprised od_naked_dick3
     with {'master': dissolve}
-    anon "Hah?!"
-
-    eve f_sexy "Kamu susah lagi!"
-
+    anon "Huh?!"
+    eve f_sexy "You're hard again!"
     anon f_confused_down "Oh, uhh..."
-
-    anon "... Ya."
-
+    anon "... Yeah."
     show anon a_rub f_happy of_blush
     with {'master': dissolve}
-    anon "Maaf, menurutku... kamu hanya memberikan efek seperti itu padaku."
-
+    anon "Sorry, I guess... you just have that effect on me."
     show eve a_crossed f_happy
     with {'master': dissolve}
-    eve "Aduh."
-
+    eve "Aww."
     pause
-    eve f_nervous_right "Baiklah, kita bisa melakukannya lagi."
-
+    eve f_nervous_right "Alright, we can do it again."
     show anon a_sides f_surprised -of_blush
     with {'master': dissolve}
-    anon "Benar-benar?"
-
+    anon "Really?"
     eve f_drawing_look_anon @ -m_talk "Mhmm."
-
     show anon f_happy
     show eve f_nervous_right:
         xoffset 350
         xzoom -1
     with {'master': dissolve}
-    eve "Bersikaplah lembut saja, oke?"
-
-    eve "Aku masih cukup sakit sejak pagi ini."
-
-    anon "Luar biasa."
-
+    eve "Just be gentle, okay?"
+    eve "I'm still pretty sore from this morning."
+    anon "Awesome."
     hide anon
     show eve b_naked_shower_kiss f_thinking_lip:
         xoffset 59
     with {'master': dissolve}
-    eve @ -m_talk "MM."
-
+    eve @ -m_talk "Mmm."
     show eve f_happy_closed
     with {'master': dissolve}
-    eve "Ya Tuhan, kamu pandai dalam hal itu!"
-
+    eve "God, you're good at that!"
 
     if M_eve.get('biggus_dickus'):
         show eve od_dick_grow
         pause 1.5
         show eve od_dick03
         eve f_confused_low "Haah!"
-
     else:
 
         pause
 
-    eve f_nervous "Masukkan ke dalam diriku, {b}[firstname]{/b}!"
-
+    eve f_nervous "Put it in me, {b}[firstname]{/b}!"
 
     $ renpy.dynamic(gender='trans' if M_eve.get('biggus_dickus') else 'cis')
     call scene_eve_sex_shower.repeat (gender)
@@ -212,133 +175,92 @@ label eveX2_bath_eve:
     pause
     show anon a_sides b_dressed f_happy
     with {'master': dissolve}
-    anon "Ya, itu menyenangkan!"
-
+    anon "Well, that was fun!"
     show eve f_nervous:
         xoffset -250
         xzoom 1
     with {'master': dissolve}
-    eve "Ya, benar."
-
+    eve "Yeah, it was."
     pause
-    eve "Aku mungkin harus memeriksa hujan untuk sarapan itu..."
-
+    eve "I might have to take a raincheck on that breakfast though..."
     show eve a_towel_wrap01 b_naked
     with {'master': dissolve}
-    eve f_normal "... Heh, sepertinya aku tidak bisa duduk di bilik saat ini."
-
+    eve f_normal "... Heh, I don't think I could sit in a booth right now."
     show eve a_towel_wrap02
     with {'master': dissolve}
-    anon "Ah, tidak apa-apa."
-
+    anon "Ah, that's okay."
     show eve a_sides b_towel
     with {'master': dissolve}
-    anon "Aku ragu kita akan menemukan tempat yang masih menyajikan sarapan selarut ini..."
-
-    anon "... Kami tidur sampai hampir jam satu!"
-
+    anon "I doubt we'd find any places still serving breakfast this late anyways..."
+    anon "... We slept 'til almost one!"
     eve f_sad "Oh."
-
     show anon f_worried
     show eve f_pouting
     pause
-    anon f_normal "Tapi, aku bisa keluar dan membelikan kami burger atau apalah!"
-
-    eve f_surprised "Benar-benar?"
-
-    anon "Ya."
-
-    anon "Ini bisa jadi seperti sarapan di tempat tidur..."
-
-    anon "... Anda tahu, hanya saja ini akan menjadi makan siang."
-
-    eve f_happy "Hehe, kedengarannya luar biasa!"
-
-    anon "Dingin."
-
-    anon "Kamu mau kentang goreng atau nah?"
-
+    anon f_normal "But, I could run out and grab us burgers or something!"
+    eve f_surprised "Really?"
+    anon "Yeah."
+    anon "It could be like a breakfast in bed kinda thing..."
+    anon "... You know, only it'll be lunch."
+    eve f_happy "Heh, that sounds amazing!"
+    anon "Cool."
+    anon "You want fries or nah?"
     eve f_thinking_down "Ehh..."
-
-    eve f_normal "... Tidak. Hanya burgernya untukku."
-
-    anon f_confused @ f_skeptical "Anda yakin?"
-
+    eve f_normal "... Nah. Just the burger for me."
+    anon f_confused @ f_skeptical "You're sure?"
     eve f_happy @ -m_talk "Mhmm."
-
-    anon f_normal "Baiklah kalau begitu."
-
-    anon "Santai saja... dan saya akan segera kembali membawa kudapan!"
-
-    eve f_sexy "Oh, jangan khawatir... Aku pasti akan bersantai."
-
-    eve "Di tempat tidur..."
-
+    anon f_normal "Alright then."
+    anon "You just go relax... and I'll be back in a jiff with the munchies!"
+    eve f_sexy "Oh, don't worry... I'll definitely be relaxing."
+    eve "In bed..."
     show eve f_confused_low
 
     if gender == 'trans':
-        eve "... Dengan sekantong es di bajinganku."
-
+        eve "... With a bag of ice on my asshole."
     else:
-        eve "... Dengan sekantong es di antara kedua kakiku."
-
+        eve "... With a bag of ice between my legs."
 
     show eve f_nervous
-    anon f_happy "Hehe!"
-
-    eve "Ini hari yang sibuk, tahu?"
-
-    anon f_flirt "Mmm, hari ini belum berakhir..."
-
-    eve f_surprised "Oh ya, benar!"
-
+    anon f_happy "Heh!"
+    eve "It's been a busy day, you know?"
+    anon f_flirt "Mmm, well the day isn't over yet..."
+    eve f_surprised "Oh, yes it is!"
     show eve a_finger f_concerned
     with {'master': dissolve}
-    eve "Jangan pernah memikirkannya, {b}[firstname]{/b}..."
-
-    eve "... Aku akan menutup toko hari ini!"
-
-    anon f_happy "Aduh."
-
+    eve "Don't even think about it, {b}[firstname]{/b}..."
+    eve "... I'm closing shop for the day!"
+    anon f_happy "Aww."
     show eve a_hip f_happy
     with {'master': dissolve}
-    eve "Heh, ambil saja makanannya, Harimau!"
-
+    eve "Heh, just go get the food, tiger!"
     show anon a_salute
     with {'master': dissolve}
-    anon "Ya, Bu!"
-
-    eve f_laugh "hehe!"
-
+    anon "Yes, ma'am!"
+    eve f_laugh "Hehe!"
     show anon a_sides:
         xoffset 600
     show eve a_sides f_happy:
         xoffset 375
         xzoom -1
     with {'master': dissolve}
-    eve "Hai, {b}[firstname]{/b}?"
-
+    eve "Hey, {b}[firstname]{/b}?"
     show anon f_normal:
         xoffset 100
         xzoom -1
     with {'master': dissolve}
     anon @ -m_talk "Hmm?"
-
-    eve f_nervous "Kamu adalah pacar terbaik yang bisa diminta oleh seorang gadis, tahu?!"
-
+    eve f_nervous "You're the best boyfriend a girl could ask for, you know?!"
     show anon f_happy
 
     menu:
-        "Dan kamu adalah pacar terbaik!":
-            anon "Segera kembali padamu, cantik!"
-
+        "And you're the best girlfriend!":
+            anon "Right back at you, beautiful!"
             show eve f_nervous_right o_blush
         "Duh.":
 
             show anon a_frustrated
             with {'master': dissolve}
-            anon "Saya tahu, kan?"
-
+            anon "I know, right?"
             show eve f_normal_up
 
     hide anon
@@ -372,15 +294,11 @@ label eveX2_bath_eve:
     show anon
     show eve b_undies f_happy
     with fade
-    eve "aku berharap kamu bisa tinggal..."
-
-    anon "Ya, aku juga."
-
+    eve "I wish you could stay..."
+    anon "Yeah, me too."
     pause
-    anon "Sampai jumpa besok, oke?"
-
-    eve "Y-ya, oke."
-
+    anon "I'll see you tomorrow, okay?"
+    eve "Y-yeah, okay."
     hide anon
     show eve b_undies_kiss:
         xoffset -250
@@ -391,10 +309,8 @@ label eveX2_bath_eve:
     show eve b_undies f_happy:
         xoffset -100
     with dissolve
-    eve "Selamat malam, {b}[firstname]{/b}."
-
-    anon a_wave "Selamat malam, {b}Malam{/b}."
-
+    eve "Good night, {b}[firstname]{/b}."
+    anon a_wave "Good night, {b}Eve{/b}."
     hide anon with dissolve
     return
 
@@ -403,63 +319,47 @@ label eveX2_post_eve:
     show anon f_worried
 
     if game.timer.is_afternoon():
-        anon @ f_worried_left "Aku berpikir, mungkin kita bisa turun ke bawah dan eh..."
-
+        anon @ f_worried_left "I was thinking, maybe we could go downstairs and eh..."
     else:
-        anon @ f_worried_left "Aku berpikir, mungkin kita bisa, eh..."
-
+        anon @ f_worried_left "I was thinking, maybe we could eh..."
 
     show eve f_confused
     pause
 
     if game.timer.is_afternoon():
-        eve "Dan apa?"
-
+        eve "And what?"
     else:
-        eve "Apa?"
+        eve "What?"
 
-
-    anon f_normal "... Yah, aku tidak tahu tentangmu tapi aku bisa mandi."
-
-    eve f_sexy "Oh, kamu mau mandi ya?"
-
+    anon f_normal "... Well, I dunno about you but I could go for a shower."
+    eve f_sexy "Oh, you want a shower, huh?"
     anon f_flirt @ -m_talk "Mhmm."
-
-    eve f_confused "Atau mungkin akulah yang kamu inginkan..."
-
+    eve f_confused "Or maybe it's me that you want..."
     show anon f_flirt_grin
     show eve a_thinking_sexy f_pouting
     with {'master': dissolve}
-    eve "... telanjang dan basah?"
-
+    eve "... naked and wet?"
     show anon a_point f_surprised
     show eve a_hip f_laugh
     with {'master': dissolve}
-    anon "Ya itu!"
-
-    anon f_happy "Pastinya itu!"
-
+    anon "Yes, that!"
+    anon f_happy "Definitely that!"
     show anon a_sides
     with {'master': dissolve}
-    eve "hehe!"
-
-    eve f_sexy "Baiklah, ayo pergi."
-
+    eve "Hehe!"
+    eve f_sexy "Alright, let's go."
     show anon a_surprised f_surprised
     with {'master': dissolve}
-    anon "Benar-benar?"
-
+    anon "Really?"
     hide eve
     with {'master': dissolve}
-    eve "Ya!"
-
+    eve "Yup!"
     show anon a_cheering f_grin
     with {'master': dissolve}
     pause
     hide anon
     with {'master': dissolve}
     anon "Wooo!"
-
 
     if game.timer.is_afternoon() and not M_eve.once('shower_grace'):
         jump eveX2_post_eve.grace
@@ -478,23 +378,19 @@ label eveX2_post_eve:
     show anon a_towel b_shorts f_shy_down:
         xzoom -1
     with {'master': dissolve}
-    anon "Ini luar biasa!"
-
+    anon "This is awesome!"
     show anon a_sides
     with {'master': dissolve}
     show anon f_flirt_grin
     show eve a_hip b_naked f_happy:
         xoffset 100
         xzoom -1
-    eve "hehe!"
-
+    eve "Hehe!"
     pause
     hide eve
     with {'master': dissolve}
-    eve "Ayo, {b}[firstname]{/b}!"
-
-    anon f_worried_surprised "aku datang!"
-
+    eve "C'mon, {b}[firstname]{/b}!"
+    anon f_worried_surprised "I'm coming!"
     show anon b_naked_undress_bottom
     with {'master': dissolve}
     pause
@@ -530,29 +426,25 @@ label eveX2_post_eve:
     show eve f_surprised_right
     show eve_arms_naked_shower_a_scrub02 as eve_arms
     with {'master': dissolve}
-    eve "{i}*Terkesiap*{/i}"
-
+    eve "{i}*Gasp*{/i}"
     hide anon
     hide anon_arms
     show eve b_naked_shower_kiss f_happy_closed:
         xoffset -41
     hide eve_arms
     with {'master': dissolve}
-    eve "Ya Tuhan, kamu pandai dalam hal itu!"
-
+    eve "God, you're good at that!"
 
     if M_eve.get('biggus_dickus'):
         show eve od_dick_grow
         pause 1.5
         show eve od_dick03
         eve f_confused_low "Haah!"
-
     else:
 
         pause
 
-    eve f_nervous "Masukkan ke dalam diriku, {b}[firstname]{/b}!"
-
+    eve f_nervous "Put it in me, {b}[firstname]{/b}!"
 
     $ renpy.dynamic(gender='trans' if M_eve.get('biggus_dickus') else 'cis')
     call scene_eve_sex_shower.repeat (gender)
@@ -577,62 +469,49 @@ label eveX2_post_eve:
     pause
     show anon a_sides b_dressed f_happy
     with {'master': dissolve}
-    anon "Ya, itu menyenangkan!"
-
+    anon "Well, that was fun!"
     show eve f_nervous:
         xoffset -250
         xzoom 1
     with {'master': dissolve}
-    eve "Ya, benar."
-
+    eve "Yeah, it was."
     pause
-    anon "Kita harus melakukannya lagi suatu saat nanti."
-
+    anon "We'll have to do it again sometime."
     show eve a_towel_wrap01 b_naked f_normal
     with {'master': dissolve}
-    eve "Hehe, benar sekali!"
-
+    eve "Heh, totally!"
     show eve a_towel_wrap02
     with {'master': dissolve}
     pause
     show eve a_sides b_towel f_sexy
     with {'master': dissolve}
-    eve "Kemarilah."
-
+    eve "Come here."
     hide anon
     show eve b_towel_kiss:
         xoffset -350
     with {'master': dissolve}
-    eve "MM."
-
+    eve "Mmm."
     pause
     show anon a_sides f_shy:
         xoffset -75
     show eve b_towel f_confused:
         xoffset -250
     with {'master': dissolve}
-    anon "Sebaiknya kau hentikan itu..."
-
-    anon f_happy "... Atau kita mungkin akan kembali mandi lagi."
-
-    eve f_happy @ f_laugh "hehe!"
-
+    anon "You'd better cut that out..."
+    anon f_happy "... Or we might just end up back in the shower again."
+    eve f_happy @ f_laugh "Hehe!"
     pause
-    eve "Kurasa, sampai jumpa nanti?"
-
+    eve "I guess, I'll see you later then?"
     show anon a_wave
     with {'master': dissolve}
-    anon "Anda yakin."
-
+    anon "You betcha."
     hide anon
     show eve a_hip:
         xoffset 375
         xzoom -1
     with {'master': dissolve}
-    eve "Nanti, {b}[firstname]{/b}."
-
-    anon "Sampai jumpa, {b}Malam{/b}."
-
+    eve "Later, {b}[firstname]{/b}."
+    anon "See ya, {b}Eve{/b}."
     return
 
 
@@ -654,8 +533,7 @@ label eveX2_post_eve.grace:
     show eve b_dressed_scared f_laugh:
         xoffset 52
     with {'master': dissolve}
-    eve "hehe!"
-
+    eve "Hehe!"
     hide anon
     show eve b_dressed_kiss:
         xoffset -25
@@ -664,8 +542,7 @@ label eveX2_post_eve.grace:
     show grace a_cover b_naked f_surprised:
         xzoom -1
     with {'master': dissolve}
-    grace "{b}Malam{/b}!!"
-
+    grace "{b}Eve{/b}!!"
     show anon a_surprised_up_both f_surprised behind eve:
         xoffset -150
         xzoom -1
@@ -673,79 +550,61 @@ label eveX2_post_eve.grace:
         xoffset 0
         xzoom 1
     with {'master': fastdissolve}
-    eve "Oh sial!"
-
+    eve "Oh, crap!"
     show eve f_nervous_right o_blush
     show grace f_uneasy
     with {'master': dissolve}
-    eve @ -m_talk "Hmm..."
-
+    eve @ -m_talk "Umm..."
     show anon a_sides f_surprised_low
     show eve f_nervous
     with {'master': dissolve}
-    eve "... Ups."
-
+    eve "... Whoops."
     show anon f_surprised_down o_boner
     with {'master': dissolve}
-    eve "Maaf, Kak."
-
+    eve "Sorry, sis."
     show anon a_cover_boner f_surprised_teeth_down of_blush:
         xoffset -100
     with {'master': dissolve}
-    eve "Saya lupa Anda berada di sini bermeditasi."
-
+    eve "I forgot you were in here meditating."
     show anon f_surprised_left
     show eve a_hoodless_remove1 b_dressed_hoodless
     with {'master': dissolve}
-    grace "T-tidak, tidak apa-apa..."
-
+    grace "N-no, it's okay..."
     show anon f_surprised_down
     show eve a_idle
     with {'master': dissolve}
-    grace "... lagipula ini rumahmu juga."
-
+    grace "... this is your house too after all."
     show anon f_surprised
-    grace f_embarrassed "Biarkan aku saja, umm-"
-
+    grace f_embarrassed "Let me just, umm-"
     show anon f_surprised_down
-    grace "Aku akan memakai beberapa pakaian dan kita bisa-"
-
+    grace "I'll throw some clothes on and we can-"
     show anon f_worried_left
     show eve f_normal -o_blush
     with {'master': dissolve}
-    eve "{i}*Ahem*{/i} Tidak apa-apa, {b}Grace{/b}."
-
-    eve f_happy "Kami hanya... melewatinya..."
-
+    eve "{i}*Ahem*{/i} It's fine, {b}Grace{/b}."
+    eve f_happy "We're just... passing through anyways..."
     show anon f_shy_left
     show grace f_suspicious
     show eve f_nervous_right o_blush
     with {'master': dissolve}
-    eve "... Dalam perjalanan ke... kamar mandi."
-
+    eve "... On our way to... the bathroom."
     grace f_sad_down "Oh."
-
     eve f_nervous_down "Yeeeeeah."
-
     show anon f_surprised_left
     pause
     show anon f_surprised_teeth_left
     eve f_surprised_down @ -m_talk "!!!"
     show anon f_worried_left
     show eve f_worried_back_down
-    grace f_uneasy "Baiklah kalau begitu..."
-
+    grace f_uneasy "Well, okay then..."
     show anon f_worried
-    grace "...Hanya, umm... hati-hati."
-
+    grace "... Just, umm... be safe."
     eve @ -m_talk "Mhmm."
-
     show anon f_worried_left
     show eve a_up f_concerned behind anon:
         xoffset 50
     with {'master': dissolve}
-    eve "Ayo, {b}[firstname]{/b}!"
-
+    eve "C'mon, {b}[firstname]{/b}!"
     anon f_worried @ -m_talk "..."
     hide anon
     hide eve
@@ -767,26 +626,20 @@ label eveX2_post_eve.grace:
     pause
     show anon a_towel b_shorts f_shy_low
     with {'master': dissolve}
-    anon "Ya, itu aneh."
-
+    anon "Well, that was awkward."
     show eve b_naked_shower_pickup02
     with {'master': dissolve}
-    eve "Ya."
-
+    eve "Yeah."
     show anon a_sides f_worried_low
     with {'master': dissolve}
     pause
-    anon "Kamu baik-baik saja?"
-
+    anon "You okay?"
     show eve b_naked_shower_pickup01
     with {'master': dissolve}
-    eve "Ya."
-
+    eve "Yeah."
     pause
-    anon f_confused_low "Apa kamu yakin?"
-
-    anon "Karena sepertinya tidak-"
-
+    anon f_confused_low "Are you sure?"
+    anon "Because it doesn't seem-"
     show anon a_surprised f_surprised
     show eve b_naked f_concerned:
         xoffset 0
@@ -798,19 +651,15 @@ label eveX2_post_eve.grace:
         show eve od_scar
 
     with {'master': dissolve}
-    eve "Saya bilang, saya baik-baik saja, {b}[firstname]{/b}!"
-
+    eve "I said, I'm fine, {b}[firstname]{/b}!"
     pause
     show anon a_sides f_worried
     with {'master': dissolve}
-    anon "Oh oke..."
-
+    anon "Oh kay..."
     hide eve
     with {'master': dissolve}
-    eve "Cepat buka celanamu."
-
-    anon f_shy "Baiklah."
-
+    eve "Hurry up and get your pants off."
+    anon f_shy "Alright."
     show anon b_dressed_changing2
     with {'master': dissolve}
     pause

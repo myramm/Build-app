@@ -48,30 +48,22 @@ label scene_maria_blowjob.loop:
 
 label scene_maria_blowjob.dialogue:
     if animcounter == 0 and randomizer() > 75:
-        anon "Oh, rasanya menyenangkan...{p=2}{nw}"
-
+        anon "Oh, that feels good...{p=2}{nw}"
     if animcounter == 1 and randomizer() > 75:
-        anon "Saya suka cara Anda menggunakan tangan Anda.{p=2}{nw}"
-
+        anon "I like the way you use your hand.{p=2}{nw}"
     elif animcounter == 1 and randomizer() > 75:
-        anon "Oh ya.{p=1}{nw}"
-
+        anon "Oh, yeah.{p=1}{nw}"
     if animcounter == 2 and randomizer() > 75:
         maria "Mmhmm.{p=1}{nw}"
-
     elif animcounter == 2 and randomizer() > 75:
         anon "Haah, your tongue feels amazing!{p=2}{nw}"
-
         maria "{i}*Sluuuuuuurp*{/i}{p=1}{nw}"
-
     return
 
 
 label scene_maria_blowjob.cum:
-    anon "Ini dia!"
-
-    maria "Hmm!"
-
+    anon "Here it comes!"
+    maria "Mmm!"
     pause
     hide animation
     show maria b_sex_bj_base f_cumshot
@@ -84,8 +76,7 @@ label scene_maria_blowjob.cum:
     pause 1
     show maria f_swallow2
     anon "!!!"
-    maria f_swallow_after "Hmm, enak!"
-
+    maria f_swallow_after "Mmm, delicious!"
     show maria f_swallow2
     pause .01
     return

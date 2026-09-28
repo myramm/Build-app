@@ -38,11 +38,9 @@ label annies_house_get_hammer:
     scene expression L_annie_livingroom.background_blur
     show player 687 with dissolve
     player_name "Yeah, this will do."
-
     if player.has_item("handsaw"):
         show player 14 with dissolve
         player_name "Alright, now I just need to head outside and build those toys for {b}Lucy{/b}."
-
         $ M_diane.trigger(T_diane_find_tools)
     hide player with dissolve
     $ player.get_item("hammer")
@@ -53,11 +51,9 @@ label annies_house_get_saw:
     scene expression L_annie_livingroom.background_blur
     show player 686 with dissolve
     player_name "Oh, this is nice and sharp!"
-
     if player.has_item("hammer"):
         show player 14 with dissolve
         player_name "Alright, now I just need to head outside and build those toys for {b}Lucy{/b}."
-
         $ M_diane.trigger(T_diane_find_tools)
     hide player with dissolve
     $ player.get_item("handsaw")

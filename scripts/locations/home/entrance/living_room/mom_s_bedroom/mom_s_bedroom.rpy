@@ -7,7 +7,6 @@ label mom_bed:
         scene expression player.location.background_blur
         show anon with dissolve
         anon @ -m_talk "( I feel like sleeping in my own bed tonight... )"
-
         hide anon with dissolve
 
     elif M_debbie.is_set("panties taken"):
@@ -26,11 +25,10 @@ label mom_bed:
             if store._in_replay == None and not M_debbie.is_state(S_debbie_panties_masturbation_again):
                 jump expression game.dialog_select("mom_jerk_repeat")
             debbie "You promised you wouldn't do this in my room!"
-
             if not store._in_replay == None:
                 jump expression game.dialog_select("replay_mom_panties_2")
             menu:
-                "Saya tidak dapat menahannya!":
+                "I can't help it!":
                     label replay_mom_panties_2:
                         call expression game.dialog_select("mom_bed_panties_masturbation_cant_help_it")
                     if not store._in_replay == None:
@@ -51,10 +49,10 @@ label mom_bed:
                             $ persistent.cookie_jar["Debbie"]["unlocked"] = True
                             $ persistent.cookie_jar["Debbie"]["gallery"]["02_unlocked"] = True
                             $ M_debbie.trigger(T_debbie_caught_masturbating)
-                        "Tidak juga.":
+                        "Not really.":
 
                             call expression game.dialog_select("mom_bed_panties_masturbation_not_really")
-                "Maaf.":
+                "Sorry.":
 
                     call expression game.dialog_select("mom_bed_panties_masturbation_sorry")
         $ M_debbie.set("panties taken", False)
@@ -88,7 +86,7 @@ label mom_bed:
 
                     call expression game.dialog_select("mom_bed_sleep_together_cuddle")
                 menu mom_bed_sleep_together_cuddle_options:
-                    "Terus berlanjut.":
+                    "Keep going.":
                         call expression game.dialog_select("mom_bed_sleep_together_cuddle_keep_going")
                         jump expression game.dialog_select("mom_bed_sleep_together_cuddle_options")
                     "Stop.":
@@ -103,7 +101,7 @@ label mom_bed:
 
                     call expression game.dialog_select("mom_bed_sleep_together_kiss")
                 menu mom_bed_sleep_together_kiss_options:
-                    "Terus berlanjut.":
+                    "Keep going.":
                         call expression game.dialog_select("mom_bed_sleep_together_kiss_keep_going")
                         jump expression game.dialog_select("mom_bed_sleep_together_kiss_options")
                     "Stop.":
@@ -111,14 +109,14 @@ label mom_bed:
                         call expression game.dialog_select("mom_bed_sleep_together_stop")
                         jump expression game.dialog_select("mom_sleep_options")
 
-            "Menyusui." if M_debbie.finished_state(S_debbie_movie_night_two) or store._in_replay is not None:
+            "Breastfeed." if M_debbie.finished_state(S_debbie_movie_night_two) or store._in_replay is not None:
                 if M_debbie.is_set("sex available"):
                     call expression game.dialog_select("mom_bed_sleep_together_breastfeed_sex_available")
                 else:
 
                     call expression game.dialog_select("mom_bed_sleep_together_breastfeed")
                 menu mom_bed_sleep_together_breastfeed_options:
-                    "Terus berlanjut.":
+                    "Keep going.":
                         call expression game.dialog_select("mom_bed_sleep_together_breastfeed_keep_going")
                         jump expression game.dialog_select("mom_bed_sleep_together_breastfeed_options")
                     "Stop.":
@@ -133,7 +131,7 @@ label mom_bed:
 
                     call expression game.dialog_select("mom_bed_sleep_together_rub")
                 menu mom_bed_sleep_together_rub_options:
-                    "Terus berlanjut.":
+                    "Keep going.":
                         call expression game.dialog_select("mom_bed_sleep_together_rub_keep_going")
                         jump expression game.dialog_select("mom_bed_sleep_together_rub_options")
                     "Stop.":
@@ -147,7 +145,7 @@ label mom_bed:
                 $ xray = False
                 call expression game.dialog_select("mom_bed_sleep_together_fuck")
                 menu mom_bed_sleep_together_fuck_options:
-                    "Terus berlanjut.":
+                    "Keep going.":
                         call expression game.dialog_select("mom_bed_sleep_together_fuck_keep_going")
                         jump expression game.dialog_select("mom_bed_sleep_together_fuck_options")
                     "Cum.":
@@ -160,7 +158,7 @@ label mom_bed:
                             "Stay.":
                                 call expression game.dialog_select("mom_bed_sleep_together_fuck_cum_stay")
                                 jump expression game.dialog_select("mom_sleeping")
-                            "Pergi.":
+                            "Leave.":
 
                                 call expression game.dialog_select("mom_bed_sleep_together_fuck_cum_leave")
                                 $ player.go_to(L_home_livingroom)

@@ -4,7 +4,7 @@ label bubbles_button_dialogue:
         "See a movie.":
             call expression game.dialog_select("bubbles_movie_select_pre")
             call screen movie_options
-        "Sudahlah.":
+        "Never mind.":
 
             call expression game.dialog_select("bubbles_button_nevermind")
 

@@ -2,9 +2,7 @@ label consuela_pregnant_announcement_1:
     scene expression player.location.background_blur
     show anon f_looking_down a_phone with dissolve
     anon @ -m_talk "Hmm?"
-
-    anon f_shock_down @ -m_talk "(Saya mendapat SMS dari {b}Consuela{/b}?! )"
-
+    anon f_shock_down @ -m_talk "( I've got a text from {b}Consuela{/b}?! )"
     hide anon with dissolve
     return
 
@@ -12,10 +10,8 @@ label consuela_pregnant_announcement_2:
     scene expression player.location.background_blur
     if player.location != L_map:
         show anon f_worried a_phone with dissolve
-    anon "Apa yang sedang terjadi?"
-
-    anon "{b}Saya mungkin harus pergi dan memeriksanya{/b}."
-
+    anon "What the heck is going on?"
+    anon "{b}I should probably go and check on her{/b}."
     if player.location != L_map:
         hide anon with dissolve
     return
@@ -23,8 +19,7 @@ label consuela_pregnant_announcement_2:
 label consuela_pregnant_labor_1:
     scene expression player.location.background_blur
     show anon f_normal with dissolve
-    anon "Sepertinya aku mendapat pesan teks."
-
+    anon "Looks like I got a text."
     hide anon with dissolve
     return
 
@@ -32,10 +27,8 @@ label consuela_pregnant_labor_2:
     scene expression player.location.background_blur
     if player.location != L_map:
         show anon f_shock a_phone with dissolve
-    anon "Itu pasti bayinya!"
-
-    anon "{b}Saya harus pergi ke klinik dan memeriksanya{/b}."
-
+    anon "It has to be the baby!"
+    anon "{b}I should head to the clinic and check on her{/b}."
     if player.location != L_map:
         hide anon with dissolve
     return

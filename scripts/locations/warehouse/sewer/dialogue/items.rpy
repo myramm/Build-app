@@ -22,16 +22,12 @@ label warehouse_sewer_pipe_dialogue:
         anon @ -m_talk "..."
     elif count == 2:
         anon @ -m_talk "( Nope. )"
-
     elif count == 3:
         anon @ -m_talk "( Y-you can't make me! )"
-
     elif count == 4:
         anon @ -m_talk "( Nuh, uh! )"
-
     elif count == 5:
         anon @ -m_talk "( You know there's a word for players like you... )"
-
         $ M_player.set('sewer', 1)
 
     hide anon with dissolve

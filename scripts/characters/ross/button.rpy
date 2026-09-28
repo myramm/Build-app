@@ -3,13 +3,12 @@ label ross_button_dialogue:
 
     if M_eve.is_state(S_eve_dress_code_ask_teachers):
         show anon f_thinking at flip with dissolve
-        anon @ -m_talk "( Hmmm... Apa yang harus saya bicarakan dengan {b}Nona Ross{/b}? )"
-
+        anon @ -m_talk "( Hmmm... What should I talk to {b}Miss Ross{/b} about? )"
         menu ross_button_menu:
-            "Kode berpakaian.":
+            "The dress code.":
                 call expression game.dialog_select("ross_button_dress_code")
                 $ game.main()
-            "Sesuatu yang lain.":
+            "Something else.":
                 pass
 
     if M_ross.is_state(S_ross_grab_clay):
@@ -110,9 +109,9 @@ label ross_button_dialogue:
     elif M_ross.is_state(S_ross_end):
         call expression game.dialog_select("button_ross_end_intro")
         menu:
-            "Ya.":
+            "Yes.":
                 call expression game.dialog_select("button_ross_end_yes")
-            "Tidak.":
+            "No.":
 
                 call expression game.dialog_select("button_ross_end_no")
     $ game.main()

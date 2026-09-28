@@ -1,72 +1,53 @@
 label tony_dialogue_order:
-    anon "Tolong, saya ambil satu pizza besar."
-
-    tony f_normal "Sekarang kita bicara!"
-
-    tony "Kue apa yang sedang kamu cari?"
-
+    anon "I'll take one large pizza, please."
+    tony f_normal "Now we're talkin'!"
+    tony "What kinda pie are you lookin' for?"
 
     menu:
-        "Pizza vegetarian ($20)." if M_daisy.is_state(S_daisy_get_pizza) and not player.has_item('veggie_pizza'):
+        "Veggie pizza ($20)." if M_daisy.is_state(S_daisy_get_pizza) and not player.has_item('veggie_pizza'):
             jump dai02_tony_veggie
 
-        "Pizza vegetarian ($20)." if M_daisy.get('veggie pizza') and not player.has_item('veggie_pizza'):
+        "Veggie pizza ($20)." if M_daisy.get('veggie pizza') and not player.has_item('veggie_pizza'):
             jump tony_dialogue_order.veggie
-        "Sudahlah.":
+        "Never mind.":
 
             pass
 
-    anon "Uhh, sebenarnya... Sudahlah."
-
-    anon "Lagipula aku tidak menginginkannya."
-
-    tony "Tidak?"
-
-    tony "Baiklah, Nak."
-
+    anon "Uhh, actually... Never mind."
+    anon "I don't want one after all."
+    tony "No?"
+    tony "Alright, kiddo."
     pause
-    tony "Kembalilah jika Anda berubah pikiran."
-
+    tony "Come back if you change your mind."
     hide anon with dissolve
     return
 
 
 label tony_dialogue_order.veggie:
-    anon "Bolehkah saya pesan {b}pizza vegetarian{/b} lagi?"
-
-    tony "Tentu saja, Nak."
-
-    tony "Itu akan menjadi $20."
-
+    anon "Could I get another {b}veggie pizza{/b}?"
+    tony "Sure thing, kiddo."
+    tony "That'll be $20."
 
     if player.has_money(20):
         jump tony_dialogue_order.pizza
 
-    anon f_worried "Oh sial."
-
-    anon "Saya tidak punya cukup uang."
-
+    anon f_worried "Oh, crap."
+    anon "I don't have enough money on me."
     show tony f_question
-    tony "Ya, Anda tidak bisa mendapatkan pizza tanpa uang."
-
-    tony "Apa yang kamu pikirkan, orang bodoh?"
-
+    tony "Well, you can't get no pizza without money."
+    tony "What are you thinkin' knucklehead?"
     show tony f_suspicious
-    anon f_shy @ a_behind_head "Hehe, maaf."
-
+    anon f_shy @ a_behind_head "Heh, sorry."
     show tony f_question
-    tony "Kembalilah ketika kamu punya uang tunai, oke?"
-
+    tony "Just come back when you got some cash on ya, alright?"
     show tony f_suspicious
-    anon f_worried "Akan dilakukan."
-
+    anon f_worried "Will do."
     hide anon with dissolve
     return
 
 
 label tony_dialogue_order.pizza:
-    anon "Ini dia."
-
+    anon "Here ya go."
     show anon a_money with dissolve
     pause
     show anon a_idle
@@ -74,31 +55,22 @@ label tony_dialogue_order.pizza:
         unflip
         xoffset -400
     with dissolve
-    tony "'Eh, {b}Maria{/b}!"
-
-    tony "Satu sayuran dengan jamur dan nanas, siap disajikan."
-
-    maria "Ya, ya..."
-
+    tony "'Ey, {b}Maria{/b}!"
+    tony "One vegetable with mushrooms and pineapple, to go."
+    maria "Yeah, yeah..."
     hide tony with dissolve
-    maria "Kau tahu, ibuku akan membakar tempat ini hingga rata dengan tanah sebelum dia menaruh nanas di atas pizza..."
-
-    maria "... Itu tidak benar."
-
-    tony "Ya, untung saja aku menikahimu dan bukan ibumu, bukan?"
-
+    maria "You know, my mother would burn this place to the ground before she'd put pineapple on a pizza..."
+    maria "... It just ain't right."
+    tony "Yeah well, it's a good thing I married you and not your mother then, ain't it?"
     maria "Haha!"
-
     pause
     show tony a_pizza behind counter with dissolve:
         flip
-    tony "Ini kuemu, Nak."
-
+    tony "Here's your pie, kiddo."
     show tony a_idle
     show anon a_pizza
     with dissolve
-    anon "Terima kasih, {b}Tony{/b}."
-
+    anon "Thanks, {b}Tony{/b}."
     hide anon with dissolve
     return 'veggie_pizza'
 # Decompiled by unrpyc: https://github.com/CensoredUsername/unrpyc

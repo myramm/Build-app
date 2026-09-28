@@ -37,90 +37,62 @@ label scene_iwanka_bed_tiger.loop:
 
 label scene_iwanka_bed_tiger.dialogue(opt, rng=-1):
     if opt == 1:
-        iwanka "Ya, kamu suka itu?"
-
-        anon "Saya bersedia!"
-
+        iwanka "Yeah, you like that?"
+        anon "I do!"
 
     elif opt == 2:
         if rng < 0:
-            iwanka "Jauh lebih baik daripada ibuku yang bodoh, ya?"
+            iwanka "Way better than my stupid mother, huh?"
+            anon "Huh?!"
 
-            anon "Hah?!"
-
-
-        iwanka "Katakan padaku aku lebih baik!"
-
+        iwanka "Tell me I'm better!"
 
         if rng < 0 and not M_melonia.finished_state(S_mel05_init):
-            anon "Entahlah, aku belum-"
-
-            iwanka "KATAKAN!!"
-
+            anon "I dunno, I haven't-"
+            iwanka "SAY IT!!"
 
         if rng < .3:
-            anon "Gah, kamu lebih baik!"
+            anon "Gah, you're better!"
+            iwanka "Yeah?"
 
-            iwanka "Ya?"
-
-
-        anon "Jauh lebih baik!"
-
-        iwanka "Ngh, aku tahu itu!!"
-
+        anon "Way, way better!"
+        iwanka "Ngh, I knew it!!"
 
     elif opt == 3:
-        anon "Sobat, {b}Iwanka{/b}, payudaramu luar biasa!"
-
-        iwanka "Hehe, sebaiknya mereka..."
-
-        iwanka "... Ayahku membayar mahal untuk itu!"
-
+        anon "Man, {b}Iwanka{/b}, your tits are incredible!"
+        iwanka "Heh, they'd better be..."
+        iwanka "... My daddy payed a lot for them!"
 
     elif opt == 4:
-        anon "Fiuh, ini luar biasa!"
-
-        iwanka "Eh ya!"
-
+        anon "Phew, this is awesome!"
+        iwanka "Uh huh!"
 
     elif opt == 5:
         if rng < .6:
-            iwanka "Ahhh, sial!!"
+            iwanka "Ahh, fuck!!"
 
-
-        iwanka "Kamu pasti yang terbesar..."
-
-        iwanka "... aku pernah..."
-
-        iwanka "... Selesaikan ini dengan."
-
+        iwanka "You're definitely the biggest..."
+        iwanka "... I've ever..."
+        iwanka "... Done this with."
 
     elif opt == 6:
-        anon "Oh ya..."
-
-        anon "... Persis seperti itu!"
-
+        anon "Oh, yeah..."
+        anon "... Just like that!"
         iwanka "Mhmm!"
-
 
     return
 
 
 label scene_iwanka_bed_tiger.switch:
-    iwanka "Ini, bergulinglah."
-
+    iwanka "Here, roll over."
     call scene_iwanka_sex.insert
     with {'master': dissolve}
     anon "Hmm?"
-
-    iwanka "Heh, supaya aku bisa mendahuluimu..."
-
+    iwanka "Heh, so I can get on top of you..."
     anon "Oh."
-
     call scene_iwanka_sex.pre
     with {'master': dissolve}
-    anon "Baiklah, keren!"
-
+    anon "Alright, cool!"
     show iwanka_overlay_o_sex_dick_pre as iwanka
     with {'master': dissolve}
     pause
@@ -132,18 +104,14 @@ label scene_iwanka_bed_tiger.switch:
     hide iwanka
     show iwanka_body_b_sex_ride_anon as anon
     with {'master': dissolve}
-    iwanka "... Aku ingin mengajakmu jalan-jalan."
-
+    iwanka "... I wanna take you for a ride."
     call scene_iwanka_bed_tiger.insert
     with {'master': dissolve}
-    anon "Bersiaplah!"
-
+    anon "Saddle up!"
     show iwanka_bed_tiger 4 as anim
     with {'master': dissolve}
-    iwanka "Oof, harium!"
-
+    iwanka "Oof, dayum!"
     anon "Haah!!"
-
     call scene_iwanka_bed_tiger.animate
     with {'master': dissolve}
     pause

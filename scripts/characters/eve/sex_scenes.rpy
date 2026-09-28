@@ -17,13 +17,12 @@ label eve_sex_front_intro:
             $ M_eve.set('biggus_dickus', '')
     show eve b_front_pre
     show eve_sex_front_face_mc normal_talk
-    anon "Kemarilah!"
-
+    anon "Come here!"
     show eve_sex_front_face_mc normal_down
     eve "!!!"
     if (not M_eve.get("sex_front_1st_time") or _in_replay) and not M_eve.get("biggus_dickus"):
         menu:
-            "vagina!":
+            "Vaginal!":
                 label eve_girl_vag_front:
                 $ M_eve.set("sex_front_anal", False)
                 show eve b_front_insert
@@ -31,8 +30,7 @@ label eve_sex_front_intro:
                 with dissolve
                 eve "!!!"
                 pause
-                eve "Sial!"
-
+                eve "Fuuuuck!"
                 pause
                 $ anim_toggle = True
                 $ animated = True
@@ -42,19 +40,14 @@ label eve_sex_front_intro:
                 show expression AnimatedImage("eve_sex_front", [1,2,3,4,5,6], M_eve) as eve_sex_front at Position(xalign = 0.0, yoffset = 0)
                 with dissolve
                 pause
-                eve "Ya Tuhan!"
-
-                eve "Kamu begitu jauh di dalam diriku!"
-
+                eve "Oh my god!"
+                eve "You're so deep inside me!"
                 pause
-                eve "Lebih sulit {b}[firstname]{/b}!"
-
+                eve "Harder {b}[firstname]{/b}!"
                 anon "Hmm?"
-
-                eve "Persetan aku lebih keras!"
-
+                eve "Fuck me harder!"
                 jump eve_sex_front_loop
-            "Dubur!":
+            "Anal!":
 
                 pass
 
@@ -62,8 +55,7 @@ label eve_sex_front_intro:
     jump eve_anal_front
 
 label eve_sex_back_intro:
-    eve "Hehe, oke."
-
+    eve "Hehe, okay."
     label eve_sex_back_intro_replay:
     if player.location == L_tattooparlor_tent:
         scene expression "backgrounds/location_tattoo_tent_sex_back.jpg" with None
@@ -86,17 +78,14 @@ label eve_sex_back_intro:
         show eve_overlay_sex_back o_pre_alt
     with dissolve
     pause
-    anon "Anda siap?"
-
-    eve "Y-ya, menurutku begitu."
-
+    anon "You ready?"
+    eve "Y-yeah, I think so."
     show eve b_back_insert
     hide eve_overlay_sex_back
     with dissolve
     eve "!!!"
     pause
-    eve "Sial!"
-
+    eve "Fuuuuck!"
     pause
     hide eve
     hide eve_overlay_sex_back
@@ -106,38 +95,29 @@ label eve_sex_back_intro:
     else:
         show expression AnimatedImage("eve_sex_back", [1,2,3,4,5,6,7,8,9], M_eve) as eve_sex_back at Position(xalign = 0.0, yoffset = 0)
     pause
-    anon "Mmm, kamu sangat ketat..."
-
-    eve "{i}* Merengek*{/i}"
-
+    anon "Mmm, you are so tight..."
+    eve "{i}*Whimper*{/i}"
     pause
-    eve "Lebih sulit, {b}[firstname]{/b}..."
-
+    eve "Harder, {b}[firstname]{/b}..."
     anon "Hmm?"
-
     if M_eve.get("biggus_dickus"):
-        eve "Persetan dengan pantatku lebih keras!"
-
+        eve "Fuck my ass harder!"
     else:
-        eve "Persetan aku lebih keras!"
-
+        eve "Fuck me harder!"
     $ anim_toggle = True
     $ animated = True
     jump eve_sex_back_loop
 
 label eve_anal_front:
-    eve "hehe!"
-
+    eve "Hehe!"
     pause
     if M_eve.get("sex_front_1st_time"):
         if M_eve.get("biggus_dickus"):
-            eve "Mmm, berikan padaku {b}[firstname]{/b}..."
-
+            eve "Mmm, give it to me {b}[firstname]{/b}..."
             show eve b_front_insert
             show eve_sex_front_face_mc normal_down
             eve "{i}*Gasp*{/i}" with hpunch
-            eve "Sial!"
-
+            eve "Fuuuuck!"
             $ anim_toggle = True
             $ animated = True
             $ M_eve.set('sex speed', .12)
@@ -146,51 +126,34 @@ label eve_anal_front:
             show expression AnimatedImage("eve_sex_front_alt", [1,2,3,4,5,6], M_eve) as eve_sex_front at Position(xalign = 0.0, yoffset = 0)
             with dissolve
             pause
-            eve "Astaga-"
-
+            eve "Holy shi-"
             pause
-            eve "Haah, persetan denganku!"
-
-            eve "Persetan, {b}[firstname]{/b}!"
-
+            eve "Haah, fuck me!"
+            eve "Fuck my ass, {b}[firstname]{/b}!"
             pause
             eve "Ahhhh!"
-
-            anon "Kamu sangat ketat!"
-
+            anon "You're so tight!"
         else:
-            eve "Mmm, persetan denganku, {b}[firstname]{/b}!"
-
+            eve "Mmm, fuck me, {b}[firstname]{/b}!"
             show eve b_front_insert_anal
             show eve_sex_front_face_mc normal_down
             with dissolve
-            eve "T-tunggu, itu bukan-"
-
+            eve "W-wait, that's not-"
             hide eve
             hide eve_sex_front_face_mc
             show eve_sex_front_anal 1
             eve "{i}*Gasp*{/i}" with hpunch
             pause
-            anon "{b}Malam{/b}?"
-
-            anon "Ada apa?"
-
-            eve "K-kamu berada di pantatku sekarang..."
-
-            anon "Oh, sial... maafkan aku!"
-
-            anon "aku tidak-"
-
-            eve "Tidak apa-apa."
-
-            eve "Terus berlanjut."
-
-            anon "Anda yakin?"
-
-            eve "Y-ya, aku ingin mencobanya."
-
-            anon "Baiklah."
-
+            anon "{b}Eve{/b}?"
+            anon "What's wrong?"
+            eve "Y-you're in my ass right now..."
+            anon "Oh, crap... I'm sorry!"
+            anon "I didn't-"
+            eve "It's okay."
+            eve "Keep going."
+            anon "You're sure?"
+            eve "Y-yeah, I wanna try it."
+            anon "Alright."
             pause
             $ anim_toggle = True
             $ animated = True
@@ -199,28 +162,19 @@ label eve_anal_front:
             show expression AnimatedImage("eve_sex_front_anal", [1,2,3,4,5,6], M_eve) as eve_sex_front at Position(xalign = 0.0, yoffset = 0)
             with dissolve
             eve "!!!"
-            eve "Aduh, aduh!"
-
-            anon "Haruskah saya berhenti?"
-
-            eve "Tidak, jangan berhenti!"
-
+            eve "Ow, ow, ow!"
+            anon "Should I stop?"
+            eve "No, don't stop!"
             pause
-            eve "Sangat dalam, {b}[firstname]{/b}!"
-
+            eve "It's so deep, {b}[firstname]{/b}!"
             pause
-            anon "Apakah sudah mulai terasa enak?"
-
-            eve "Y-ya, menurutku begitu."
-
+            anon "Is it starting to feel good?"
+            eve "Y-yes, I think so."
             pause
-            eve "Cobalah lebih cepat."
-
-            anon "Oke."
-
+            eve "Try going faster."
+            anon "Okay."
             $ M_eve.set('sex speed', .09)
-            eve "Astaga-"
-
+            eve "Holy shi-"
     else:
         label eve_girl_anal_front:
         if M_eve.get("biggus_dickus"):
@@ -231,8 +185,7 @@ label eve_anal_front:
         with dissolve
         eve "!!!"
         pause
-        eve "{i}* Merengek*{/i}"
-
+        eve "{i}*Whimper*{/i}"
         pause
         $ anim_toggle = True
         $ animated = True
@@ -245,17 +198,12 @@ label eve_anal_front:
             show expression AnimatedImage("eve_sex_front_anal", [1,2,3,4,5,6], M_eve) as eve_sex_front at Position(xalign = 0.0, yoffset = 0)
         with dissolve
         pause
-        eve "Sial!"
-
-        eve "Kamu begitu jauh di dalam pantatku!"
-
+        eve "Fuuuuck!"
+        eve "You're so deep inside my ass!"
         pause
-        eve "Lebih sulit {b}[firstname]{/b}!"
-
+        eve "Harder {b}[firstname]{/b}!"
         anon "Hmm?"
-
-        eve "Persetan aku lebih keras!"
-
+        eve "Fuck me harder!"
     jump eve_sex_front_loop
 
 label eve_sex_back_first_intro:
@@ -264,38 +212,25 @@ label eve_sex_back_first_intro:
     if M_eve.get("biggus_dickus"):
         show eve_overlay_sex_back o_pre_alt
     with dissolve
-    eve "Pelan-pelan saja, oke?"
-
-    anon "Y-ya, oke."
-
+    eve "Just go slow, okay?"
+    anon "Y-yeah, okay."
     show eve b_back_insert
     hide eve_overlay_sex_back
     with dissolve
     eve "!!!"
-    eve "Astaga-"
-
-    anon "Apakah kamu baik-baik saja?"
-
-    eve "Ya, itu hanya-"
-
-    eve "Kamu sangat besar!"
-
-    anon "Maaf."
-
-    anon "Aku bisa berhenti jika kamu-"
-
-    eve "TIDAK!"
-
-    eve "... Beri aku waktu sebentar."
-
+    eve "Holy sh-"
+    anon "Are you alright?"
+    eve "Yeah, it's just-"
+    eve "You're so big!"
+    anon "Sorry."
+    anon "I can stop if you-"
+    eve "NO!"
+    eve "... Just give me a second."
     pause
-    eve "Fiuh."
-
+    eve "Phew."
     pause
-    eve "Oke, kamu bisa mulai bergerak... Perlahan."
-
-    anon "Baiklah."
-
+    eve "Okay, you can start moving... Slowly."
+    anon "Alright."
     hide eve
     hide eve_overlay_sex_back
     $ M_eve.set('sex speed', .08)
@@ -305,44 +240,30 @@ label eve_sex_back_first_intro:
         show expression AnimatedImage("eve_sex_back", [1,2,3,4,5,6,7,8,9], M_eve) as eve_sex_back at Position(xalign = 0.0, yoffset = 0)
     with dissolve
     pause
-    eve "{i}* Merengek*{/i}"
-
+    eve "{i}*Whimper*{/i}"
     pause
-    anon "{b}Malam{/b}?"
-
-    eve "saya baik-baik saja."
-
+    anon "{b}Eve{/b}?"
+    eve "I'm okay."
     if M_eve.get("biggus_dickus"):
-        eve "Persetan, ini menyakitkan!"
-
-        eve "Ooooowww!"
-
+        eve "Fuck this hurts!"
+        eve "Oooowww!"
     else:
-        eve "Anda sangat meregangkan saya!"
-
+        eve "You're stretching me so much!"
         eve "Ngghhh!"
-
-    eve "Cobalah lebih cepat."
-
+    eve "Try going faster."
     $ M_eve.set('sex speed', .06)
     pause
-    eve "{i}* Merengek*{/i}"
-
+    eve "{i}*Whimper*{/i}"
     pause
-    anon "Apakah rasanya lebih baik?"
-
-    eve "Y-ya, menurutku begitu."
-
+    anon "Is it feeling any better?"
+    eve "Y-yeah, I think so."
     if M_eve.get("biggus_dickus"):
-        eve "Pantatku terbakar!"
-
+        eve "My ass is on fire!"
     else:
-        eve "Ini sangat dalam!"
-
+        eve "It's so deep!"
     $ M_eve.set('sex speed', .04)
     eve "!!!"
-    anon "Kamu sangat ketat!"
-
+    anon "You're so tight!"
     pause
     $ anim_toggle = True
     $ animated = True
@@ -387,34 +308,24 @@ label eve_sex_front_loop:
 
 label eve_sex_front_hscene_dialog:
     if animcounter == 0 and randomizer() < 50:
-        eve "Haah, persetan denganku!{p=1}{nw}"
-
+        eve "Haah, fuck me!{p=1}{nw}"
     if animcounter == 1 and randomizer() > 50 and (M_eve.get("sex_front_anal") or M_eve.get("biggus_dickus")):
-        eve "Persetan, {b}[firstname]{/b}!{p=2}{nw}"
-
+        eve "Fuck my ass, {b}[firstname]{/b}!{p=2}{nw}"
     if animcounter == 2 and randomizer() < 50:
         eve "Ahhhh!{p=1}{nw}"
-
     if animcounter == 3 and randomizer() > 50:
-        eve "Saya semakin dekat...{p=2}{nw}"
-
+        eve "I'm getting close...{p=2}{nw}"
     return
 
 label eve_sex_front_cum_inside:
-    eve "Jangan berhenti!"
-
-    anon "aku tidak bisa-"
-
+    eve "Don't stop!"
+    anon "I can't-"
     pause
-    eve "Aku akan keluar!"
-
-    anon "Saya juga!"
-
+    eve "I'm going to cum!"
+    anon "Me too!"
     pause
     eve "{b}[firstname]{/b}!"
-
-    eve "Jangan-"
-
+    eve "Don't-"
     hide eve_sex_front
     show eve b_front_cum
     if M_eve.get("biggus_dickus"):
@@ -444,19 +355,13 @@ label eve_sex_front_cum_inside:
     jump eve_sex_front_cum_end
 
 label eve_sex_front_cum_outside:
-    eve "Jangan berhenti!"
-
-    anon "aku tidak bisa-"
-
+    eve "Don't stop!"
+    anon "I can't-"
     pause
-    eve "Aku akan keluar!"
-
-    anon "Saya juga!"
-
+    eve "I'm going to cum!"
+    anon "Me too!"
     eve "{b}[firstname]{/b}!"
-
-    eve "Jangan-"
-
+    eve "Don't-"
     hide eve_sex_front
     if M_eve.get("sex_front_anal"):
         show eve b_front_after_anal
@@ -468,67 +373,49 @@ label eve_sex_front_cum_outside:
     anon "HNNGGG!!!" with flash
     show eve_overlay_sex_front o_cumshot3
     eve "NGGHHH!!!"
-
     pause
     jump eve_sex_front_cum_end
 
 label eve_sex_front_cum_end:
     show eve_sex_front_face_mc normal_talk
     anon "Haah... Haah..."
-
     pause
-    anon "Kamu baik-baik saja?"
-
+    anon "You alright?"
     show eve_sex_front_face_mc normal
     eve "Hehehe!"
-
     if M_eve.get("biggus_dickus"):
-        eve "aku berantakan!"
-
+        eve "I'm a mess!"
         show eve_sex_front_face_mc normal_talk
-        anon "hehe!"
-
+        anon "Hehe!"
         show eve_sex_front_face_mc normal
     else:
-        eve "Itu luar biasa!"
-
+        eve "That was incredible!"
         show eve_sex_front_face_mc normal_talk
-        anon "Y-ya, benar."
-
+        anon "Y-yeah, it was."
         show eve_sex_front_face_mc normal
         if M_eve.get("sex_front_1st_time"):
-            eve "Kami pasti harus melakukannya lagi!"
-
+            eve "We'll have to do that again, for sure!"
     scene expression player.location.background_closeup
     show eve b_onbed_cuddle_naked f_happy_closed o_dick
     show anon b_empty_eve_onbed_cuddle f_flirt_low zorder 1
     with fade
     pause
     if M_eve.get("sex_front_1st_time"):
-        eve "Aku tidak percaya betapa nikmatnya rasanya saat kau meniduriku seperti itu..."
-
-        anon "Saya senang Anda menyukainya."
-
-        eve "Hehe, aku yakin begitu!"
-
+        eve "I can't believe how good it feels when you fuck my ass like that..."
+        anon "I'm glad you like it."
+        eve "Hehe, I bet you are!"
         $ M_eve.set("sex_front_1st_time", False)
     else:
-        eve "Mmm, kami sudah cukup mahir dalam hal itu."
-
-        anon "Ya, menurutku begitu."
-
-        eve "hehe!"
-
+        eve "Mmm, we are getting pretty good at that."
+        anon "Yeah, I'd say so."
+        eve "Hehe!"
     pause
     if randomizer() > 50:
-        eve "Hmm, aku tidak mau bergerak."
-
+        eve "Mmm, I don't wanna move."
         anon "..."
     else:
-        eve "Mmm, ini terasa luar biasa."
-
-        anon "Memang benar."
-
+        eve "Mmm, this feels wonderful."
+        anon "It does."
     pause
     $ renpy.end_replay()
     $ persistent.cookie_jar["Eve"]["unlocked"] = True
@@ -578,40 +465,27 @@ label eve_sex_back_loop:
 
 label eve_sex_back_hscene_dialog:
     if animcounter == 0 and randomizer() > 50:
-        eve "Ya Tuhan!{p=1}{nw}"
-
+        eve "Oh my god!{p=1}{nw}"
     if animcounter == 1 and randomizer() > 50:
-        eve "{b}[firstname]{/b}, jangan berhenti!{p=2}{nw}"
-
+        eve "{b}[firstname]{/b}, don't stop!{p=2}{nw}"
     if animcounter == 2 and randomizer() > 50:
-        eve "Haah, enak rasanya!{p=1}{nw}"
-
-        eve "Jangan berhenti!{p=1}{nw}"
-
+        eve "Haah, it feels good!{p=1}{nw}"
+        eve "Don't stop!{p=1}{nw}"
     if animcounter == 3 and randomizer() > 50:
-        eve "Persetan denganku!{p=1}{nw}"
-
-        eve "Persetan denganku, {b}[firstname]{/b}!{p=1}{nw}"
-
+        eve "Fuck me!{p=1}{nw}"
+        eve "Fuck me, {b}[firstname]{/b}!{p=1}{nw}"
     return
 
 label eve_sex_back_cum_inside:
     if randomizer() > 50:
-        eve "Jangan berhenti!"
-
-        anon "aku tidak bisa-"
-
+        eve "Don't stop!"
+        anon "I can't-"
         pause
-    eve "Aku akan keluar!"
-
-    anon "Saya juga!"
-
-    eve "Jangan berhenti!"
-
-    eve "Jangan-"
-
+    eve "I'm going to cum!"
+    anon "Me too!"
+    eve "Don't stop!"
+    eve "Don't-"
     eve "NGGHHH!!!"
-
     pause
     hide eve_sex_back
     show eve b_back_cum
@@ -634,16 +508,11 @@ label eve_sex_back_cum_inside:
     jump eve_sex_back_end
 
 label eve_sex_back_cum_outside:
-    eve "Aku akan keluar!"
-
-    anon "Saya juga!"
-
-    eve "Jangan berhenti!"
-
-    eve "Jangan-"
-
+    eve "I'm going to cum!"
+    anon "Me too!"
+    eve "Don't stop!"
+    eve "Don't-"
     eve "NGGHHH!!!"
-
     pause
     hide eve_sex_back
     show eve b_back_cumshot
@@ -657,84 +526,52 @@ label eve_sex_back_cum_outside:
 
 label eve_sex_back_end:
     anon "Haah... Haah..."
-
     pause
-    anon "Kamu baik-baik saja?"
-
+    anon "You alright?"
     eve "Hehehe!"
-
     if M_eve.get("biggus_dickus"):
-        eve "Butthole kecilku yang malang..."
-
+        eve "My poor little butthole..."
     else:
-        eve "Itu luar biasa!"
-
-    anon "hehe!"
-
+        eve "That was awesome!"
+    anon "Hehe!"
     scene expression player.location.background_closeup
     show eve b_onbed_cuddle_naked f_happy_closed o_dick
     show anon b_empty_eve_onbed_cuddle f_flirt_low zorder 1
     with fade
     if M_eve.get("sex_back_1st_time"):
-        eve "Mmm, kami pasti melakukannya lagi!"
-
-        anon "Hehe, oke."
-
+        eve "Mmm, we are definitely doing that again!"
+        anon "Heh, okay."
         pause
         if M_eve.get("biggus_dickus"):
-            eve f_happy "Saya pikir saya akan berjalan-jalan dengan lucu besok..."
-
-            anon "Heh, kupikir kamu menikmatinya?"
-
-            eve "Oh, aku menyukainya!"
-
-            eve "... Tapi kau benar-benar meniduriku dengan keras, dasar kasar!"
-
-            anon "Baiklah, lain kali aku akan lebih berhati-hati."
-
-            eve "Psh, kuharap tidak!"
-
+            eve f_happy "I think I'm going to be walking funny tomorrow..."
+            anon "Heh, I thought you enjoyed it?"
+            eve "Oh, I loved it!"
+            eve "... But you did fuck my ass really hard, you big brute!"
+            anon "Well, I'll be more careful next time."
+            eve "Psh, I hope not!"
             anon "Hmm?"
-
-            eve "Rasanya luar biasa!"
-
+            eve "It felt wonderful!"
         else:
-            anon "Saya pikir seharusnya ada darah untuk pertama kalinya?"
-
+            anon "I thought there was supposed to be blood your first time?"
             eve "Hmm?"
-
-            anon "Kau tahu, di bawah sana..."
-
-            eve "Oh benar."
-
-            eve "Selaput dara saya pecah karena kecelakaan mobil orang tua saya."
-
-            anon "Jadi begitu."
-
-            eve f_happy "Maaf."
-
-            anon "T-tidak, tidak ada yang perlu disesali!"
-
-            anon "Aku hanya terkejut, itu saja..."
-
+            anon "You know, down there..."
+            eve "Oh, right."
+            eve "My hymen broke in my parents car accident."
+            anon "I see."
+            eve f_happy "Sorry."
+            anon "N-no, there's nothing to be sorry about!"
+            anon "I was just surprised, that's all..."
     else:
-        eve "Mmm, kami sudah cukup mahir dalam hal itu."
-
-        anon "Ya, menurutku begitu."
-
-        eve "hehe!"
-
+        eve "Mmm, we are getting pretty good at that."
+        anon "Yeah, I'd say so."
+        eve "Hehe!"
     show eve f_happy_closed
-    eve "Mmm, ini terasa luar biasa."
-
-    anon "Memang benar."
-
+    eve "Mmm, this feels wonderful."
+    anon "It does."
     pause
     if M_eve.get("sex_back_1st_time"):
-        eve "Terima kasih telah menjadi yang pertama bagi saya, {b}[firstname]{/b}."
-
-        anon "Hehe, tidak masalah."
-
+        eve "Thank you, for being my first, {b}[firstname]{/b}."
+        anon "Hehe, no problem."
         pause
         $ M_eve.set("sex_back_1st_time", False)
     $ renpy.end_replay()
@@ -747,15 +584,11 @@ label eve_sex_true_end:
     show eve b_undies f_happy
     show anon
     with dissolve
-    eve "Saya berharap kamu bisa tinggal."
-
-    anon "Ya, aku juga."
-
+    eve "I wish you could stay."
+    anon "Yeah, me too."
     pause
-    anon "Sampai jumpa besok, oke?"
-
-    eve "Y-ya, oke."
-
+    anon "I'll see you tomorrow, okay?"
+    eve "Y-yeah, okay."
     hide anon
     show eve b_undies_kiss
     with dissolve
@@ -763,10 +596,8 @@ label eve_sex_true_end:
     show anon
     show eve b_undies f_happy
     with dissolve
-    eve "Selamat malam, {b}[firstname]{/b}."
-
-    anon @ a_wave "Selamat malam, {b}Malam{/b}."
-
+    eve "Good night, {b}[firstname]{/b}."
+    anon @ a_wave "Good night, {b}Eve{/b}."
     hide anon with dissolve
     $ game.timer.tick()
     $ player.go_to(L_map)
@@ -798,19 +629,13 @@ label eve_69:
     with fade
     pause
     if randomizer() > 50:
-        eve "Anda yakin Anda siap untuk ini?"
-
-        anon "Saya selalu siap!"
-
+        eve "You sure you're ready for this?"
+        anon "As ready as I'll ever be!"
     else:
-        eve "Apakah kamu siap?"
-
-        anon "Ya!"
-
-    eve "Hehe, oke."
-
-    eve "Ini aku datang."
-
+        eve "Are you ready?"
+        anon "Yup!"
+    eve "Hehe, okay."
+    eve "Here I come."
     show eve b_sex_bj_talking o_empty
     hide eve_sex_bj_mc_body
     hide eve_sex_bj_mc_face
@@ -818,24 +643,17 @@ label eve_69:
     pause
     eve "!!!"
     if M_eve.get("biggus_dickus") and M_eve.get("69_1st_time"):
-        eve "Wow, kamu mengambil semuanya!"
-
+        eve "Wow, you took it all!"
         anon "{b}Glllkkch{/b}!"
-
     elif M_eve.get("69_1st_time"):
-        eve "Ya Tuhan, rasanya luar biasa!"
-
-        anon "Dddthh entahlah?"
-
+        eve "Oh my god, that feels amazing!"
+        anon "Ddddthh iddd?"
     else:
         eve "!!!"
-        eve "{i}*Terkesiap*{/i}"
-
+        eve "{i}*Gasp*{/i}"
         pause
-        eve "Kamu sangat pandai dalam hal ini!"
-
-    eve "Ahhh!"
-
+        eve "You are so good at this!"
+    eve "Ahh!"
     $ anim_toggle = True
     $ animated = True
     $ M_eve.set('sex speed', .12)
@@ -873,43 +691,30 @@ label eve_sex_bj_loop:
 
 label eve_sex_bj_hscene_dialog:
     if animcounter == 0 and randomizer() < 50:
-        eve "Hmm.{p=1}{nw}"
-
+        eve "Mmm.{p=1}{nw}"
     if animcounter == 1 and randomizer() > 50:
-        anon "{i}*Menyeruput*{/i}{p=1}{nw}"
-
+        anon "{i}*Slurp*{/i}{p=1}{nw}"
     if animcounter == 2 and randomizer() < 50:
-        eve "{i}*Gluulggh*{/i}{p=1}{nw}"
-
+        eve "{i}*Gluullggh*{/i}{p=1}{nw}"
     if animcounter == 3 and randomizer() > 50:
         eve "{i}*Sluuurrp*{/i}{p=1}{nw}"
-
     return
 
 label eve_sex_bj_cum:
     if M_eve.get("biggus_dickus"):
-        anon "Hmm!"
-
-        eve "MM."
-
+        anon "Mmm!"
+        eve "Mmm."
         pause
-        anon "Hmm!!"
-
+        anon "Mmmm!!"
         eve "Mmhmm."
-
     else:
-        anon "Ya ampun!"
-
+        anon "Eervve!"
         anon "Mmy grrn krrrwwws!!"
-
         pause
-        anon "Ya ampun!!!"
-
+        anon "Eervve!!!"
     pause
     anon "MMMMM!!!"
-
-    eve "Hmm?"
-
+    eve "Mmm?"
     anon "HrrrNNGGG!!!" with flash
     hide eve_sex_bj
     show eve b_sex_bj_cum
@@ -920,22 +725,16 @@ label eve_sex_bj_cum:
     hide eve_sex_bj_mc_face
     with dissolve
     pause
-    eve f_swallow_after @ f_swallow -m_talk "{i}*Meneguk*{/i}"
-
-    eve "Sial!"
-
+    eve f_swallow_after @ f_swallow -m_talk "{i}*Gulp*{/i}"
+    eve "Fuuuuuck!"
     eve "NGGHHH!!!" with flash
     pause
     show eve f_normal
-    eve "Haah... Itu tadi-"
-
-    eve "Ya Tuhan..."
-
-    anon "Hmm!!"
-
+    eve "Haah... That was-"
+    eve "Oh my god..."
+    anon "Mmmm!!"
     pause
-    eve f_after "Oh sial!"
-
+    eve f_after "Oh, crap!"
     show eve_sex_bj_mc_body
     if M_eve.get("biggus_dickus"):
         show eve_sex_bj_mc_face after_alt
@@ -946,29 +745,19 @@ label eve_sex_bj_cum:
         show eve_sex_bj_mc_face after
         show eve b_sex_bj_pre zorder 1
         with dissolve
-        anon "{i}*Terkesiap*{/i}"
-
-    eve "Maafkan aku!"
-
-    anon "{i}*Meneguk*{/i}"
-
+        anon "{i}*GASP*{/i}"
+    eve "Oh, I'm sorry!"
+    anon "{i}*Gulp*{/i}"
     show eve_sex_bj_mc_face after
     anon "Haaah... Haaah..."
-
-    eve "Apakah kamu baik-baik saja?!"
-
-    anon "Saya kira demikian."
-
+    eve "Are you alright?!"
+    anon "I think so."
     if M_eve.get("biggus_dickus"):
-        eve "Hehe, kamu sering datang!"
-
-        anon "Y-ya, kamu juga melakukannya!"
-
+        eve "Hehe, you came a lot!"
+        anon "Y-yeah, you did too!"
     else:
-        eve "Hehe, kamu berantakan!"
-
-        anon "Y-ya, kamu juga!"
-
+        eve "Hehe, you're a mess!"
+        anon "Y-yeah, you too!"
 
     if player.location == L_tattooparlor_tent:
         scene expression player.location.background_blur
@@ -978,44 +767,29 @@ label eve_sex_bj_cum:
     show anon b_empty_eve_onbed_cuddle f_flirt_low zorder 1
     with fade
     if M_eve.get("69_1st_time"):
-        eve "Mm, aku tidak percaya kita baru saja melakukan itu..."
-
+        eve "Mm, I can't believe we just did that..."
     else:
-        eve "Mm, itu luar biasa!"
-
+        eve "Mm, that was wonderful!"
     pause
-    eve f_happy "Apakah kamu menyukainya?"
-
+    eve f_happy "Did you like it?"
     if randomizer() > 50:
-        anon "Ya, benarkah?"
-
-        eve "Oh, aku menyukainya!"
-
+        anon "Yeah, did you?"
+        eve "Oh, I loved it!"
     else:
-        anon "Tentu saja!"
-
-        eve f_happy_closed "hehe!"
-
+        anon "Of course!"
+        eve f_happy_closed "Hehe!"
     pause
     if M_eve.get("69_1st_time"):
-        eve f_happy_closed "Kita harus melakukannya lagi suatu saat nanti..."
-
+        eve f_happy_closed "We'll have to do it again sometime..."
         $ M_eve.set("69_1st_time", False)
     pause
-    anon "Ini sudah larut."
-
-    anon "Aku harus segera pulang."
-
-    eve f_happy @ f_thinking_down "Ah, aku belum mau bangun!"
-
-    eve "Tidak bisakah kamu tinggal sedikit lebih lama lagi?"
-
-    anon "Y-ya, oke, tapi sedikit saja."
-
-    eve f_happy_closed "MM."
-
-    eve "Aku suka saat kamu memelukku seperti ini..."
-
+    anon "It's getting late."
+    anon "I'll need to head home soon."
+    eve f_happy @ f_thinking_down "Aww, I don't want to get up yet!"
+    eve "Can't you stay just a little bit longer?"
+    anon "Y-yeah, okay, but just a little bit."
+    eve f_happy_closed "Mmm."
+    eve "I love it when you hold me like this..."
     pause
     $ renpy.end_replay()
     $ persistent.cookie_jar["Eve"]["unlocked"] = True
@@ -1042,153 +816,100 @@ label eve_sex_jerk_intro:
     show eve b_onbed_dressed f_nervous
     with dissolve
     pause
-    eve "Jadi..."
-
-    eve f_sexy "Di sinilah kita, di tenda {b}Tuuku{/b} lagi..."
-
+    eve "So..."
+    eve f_sexy "Here we are, in {b}Tuuku{/b}'s tent again..."
     anon f_normal @ -m_talk "Mmhmm."
-
     pause
-    eve f_happy @ f_laugh "Saya sangat berharap {b}Odette{/b} menyelesaikan kesepakatan kali ini!"
-
-    anon f_confused "Anda melakukannya?"
-
-    eve "Ya."
-
+    eve f_happy @ f_laugh "I really hope {b}Odette{/b} seals the deal this time!"
+    anon f_confused "You do?"
+    eve "Yeah."
     pause
-    eve "Hehe, menurutku itu hal yang aneh untuk dikatakan, ya?"
-
-    eve @ f_eyeroll "Astaga, aku sangat berharap {b}Odette{/b} berhasil memaku adikku malam ini..."
-
+    eve "Hehe, I suppose that is a weird thing to say, huh?"
+    eve @ f_eyeroll "Jeez, I really hope {b}Odette{/b} nails my sister tonight..."
     anon @ f_laugh "Haha!"
-
-    anon "Tidak, tidak apa-apa... Aku mengerti maksudmu."
-
-    anon "Anda hanya ingin {b}Grace{/b} bahagia."
-
-    eve "Ya, itu..."
-
+    anon "No, it's okay... I get what you mean."
+    anon "You just want {b}Grace{/b} to be happy."
+    eve "Yeah, that..."
     pause
-    eve @ f_laugh "... Tapi juga, akhir dari semua ini diasingkan ke atap omong kosong!"
-
-    anon "Hehe, tidak terlalu buruk..."
-
-    eve "Pfft, akan jauh lebih baik di bawah, dengan TV dan tempat tidur..."
-
+    eve @ f_laugh "... But also, an end to this whole being exiled to the roof bullshit!"
+    anon "Hehe, it's not so bad..."
+    eve "Pfft, it would be so much better downstairs, with a TV and a bed..."
     pause
-    eve "... Dan panas."
-
-    anon f_flirt "Saya dapat memikirkan beberapa cara untuk menghangatkan Anda..."
-
-    eve f_sexy "Oh ya?"
-
-    anon "Ya."
-
-    eve f_sexy @ f_laugh "Hmm, hehe!"
-
+    eve "... And heat."
+    anon f_flirt "I can think of a few ways to warm you up..."
+    eve f_sexy "Oh, yeah?"
+    anon "Yeah."
+    eve f_sexy @ f_laugh "Mmm, hehe!"
     pause
-    eve a_remove1 "Kau tahu, itu sungguh manis, caramu membantu {b}Odette{/b} dan adikku hari ini..."
-
-    anon "Y-ya?"
-
+    eve a_remove1 "You know, it was really sweet, the way you helped {b}Odette{/b} and my sister today..."
+    anon "Y-yeah?"
     show eve f_normal_down b_onbed_topless a_remove2 with dissolve
     eve @ -m_talk "Mmhmm."
-
     show eve f_sexy b_onbed_topless a_idle with dissolve
-    eve "menurutku..."
-
-    eve "Bahwa kamu, pantas mendapatkan hadiah."
-
-    anon "{i}*Gulp*{/i} O-oke."
-
+    eve "I think..."
+    eve "That you, deserve a reward."
+    anon "{i}*Gulp*{/i} O-okay."
     show eve f_normal_down b_onbed_tanktop_remove1 with dissolve
     pause
     show eve b_onbed_tanktop_remove2 with dissolve
     show anon f_surprised
     pause
     show eve f_sexy b_onbed_tanktop with dissolve
-    eve @ f_laugh "Kamu tahu, ini JAUH lebih menyenangkan sekarang karena aku tahu kamu baik-baik saja dengan semuanya."
-
-    anon f_flirt "Uh-hah."
-
-    anon "D-pastinya bersenang-senang..."
-
+    eve @ f_laugh "You know, this is A LOT more fun now that I know you're okay with everything."
+    anon f_flirt "Uh-huh."
+    anon "D-definitely having fun..."
     eve @ f_laugh "Hehehe!"
-
-    eve @ f_sexy "Haruskah saya melanjutkan?"
-
+    eve @ f_sexy "Shall I continue?"
     menu:
-        "Ya.":
-            anon "Ya, tolong."
-
-        "NERAKA YA!":
-            anon f_skeptical "Apakah itu pertanyaan yang serius?"
-
-            eve @ f_eyeroll "Tidak."
-
+        "Yes.":
+            anon "Yes, please."
+        "HELL YES!":
+            anon f_skeptical "Was that a serious question?"
+            eve @ f_eyeroll "No."
     show eve b_onbed_top_remove3 with dissolve
     pause
     show eve f_sexy b_onbed_panties with dissolve
     anon "!!!"
-    eve "kamu suka?"
-
-    anon "Oh, aku suka."
-
-    anon "Saya sangat menyukainya!"
-
-    eve @ f_laugh "hehe!"
-
+    eve "You like?"
+    anon "Oh, me like."
+    anon "Me like very much!"
+    eve @ f_laugh "Hehe!"
     pause
-    eve "Hmm, mungkin aku juga tidak membutuhkan celana dalam ini ya?"
-
+    eve "Hmm, I probably don't need these panties either, huh?"
     anon "Nuh-uh."
-
-    eve "hehe!"
-
+    eve "Hehe!"
     show eve b_onbed_top_remove4 with dissolve
     pause
     show eve f_sexy b_onbed_nude with dissolve
 
     if M_eve.biggus_dickus:
-        anon "Hmm, apakah itu untukku?"
-
-        eve "Ya."
-
-        eve "Ini semua untukmu, {b}[firstname]{/b}!"
-
+        anon "Mmm, is that for me?"
+        eve "Yes."
+        eve "It's all for you, {b}[firstname]{/b}!"
     else:
-        anon "Mmm, bekas luka itu seksi sekali!"
-
-        eve "Ya?"
-
-        eve "Mungkin Anda harus melihat lebih dekat?"
-
+        anon "Mmm, that scar is so sexy!"
+        eve "Yeah?"
+        eve "Maybe you should come take a closer look?"
     anon "!!!"
-    anon "Beri aku waktu sebentar!"
-
+    anon "Give me a second!"
     show anon b_onbed_sit_changing3 with fastdissolve
     pause .5
     show eve b_onbed_cuddle_naked f_happy o_dick
     show anon b_empty_eve_onbed_cuddle f_flirt_low zorder 1
     with dissolve
-    eve "Itu tadi cepat!"
-
+    eve "That was quick!"
     show anon f_laugh
     pause
     hide anon
     show eve b_onbed_cuddle_naked_kiss
     with dissolve
-    eve "MM."
-
+    eve "Mmm."
     show eve b_onbed_cuddle_naked f_happy
     show anon b_empty_eve_onbed_cuddle f_flirt_low zorder 1
     with dissolve
-    eve "Ya Tuhan, aku suka menciummu!"
-
-    anon "Juga."
-
-    eve "hehe!"
-
+    eve "God I love kissing you!"
+    anon "Likewise."
+    eve "Hehe!"
     show eve b_onbed_cuddle_naked_kiss
     hide anon
     with dissolve
@@ -1197,36 +918,24 @@ label eve_sex_jerk_intro:
     show eve b_onbed_cuddle_naked
     show anon b_empty_eve_onbed_cuddle f_flirt_low zorder 1
     with dissolve
-    eve "Anda benar."
-
-    eve "Aku merasa jauh lebih hangat sekarang."
-
-    anon "hehe."
-
-    eve f_thinking_down "Hmm, saya pikir seseorang ingin keluar dan bermain..."
-
+    eve "You were right."
+    eve "I'm feeling much warmer now."
+    anon "Hehe."
+    eve f_thinking_down "Hmm, I think somebody wants to come out and play..."
     anon @ -m_talk "Mmhmm."
-
     show eve a_jerk1 o_empty with dissolve
-    eve "Besar sekali, {b}[firstname]{/b}..."
-
+    eve "It's so big, {b}[firstname]{/b}..."
     pause
-    anon "Anda masih takut akan hal itu?"
-
-    eve "Sedikit."
-
+    anon "You still scared of it?"
+    eve "A little."
     pause
-    anon "Tidak apa-apa."
-
-    anon "Mengapa kamu tidak membiarkan aku menjagamu saja?"
-
+    anon "That's okay."
+    anon "Why don't you let me take care of you instead?"
     eve f_happy @ -m_talk "Hmm?"
-
     jump eve_handjob
 
 label eve_handjob:
-    anon "Kemarilah."
-
+    anon "Come here."
 
     if player.location == L_tattooparlor_tent:
         scene location_tattoo_tent_sex_front
@@ -1237,21 +946,15 @@ label eve_handjob:
     with fade
     eve "!!!"
     if M_eve.get("HJ_1st_time"):
-        eve "A-apa yang kamu-"
-
-        eve "Tidak ada seorang pun yang pernah-"
-
+        eve "W-what are you-"
+        eve "Nobodies ever-"
     else:
-        eve "A-apa kamu yakin-"
-
+        eve "A-are you sure-"
     show eve_sex_front_face_mc normal_talk
-    anon "Ssst."
-
-    anon "Tidak apa-apa."
-
+    anon "Shh."
+    anon "It's alright."
     show eve_sex_front_face_mc normal_down
-    eve "{i}*Meneguk*{/i}"
-
+    eve "{i}*Gulp*{/i}"
     $ anim_toggle = True
     $ animated = True
     if M_eve.biggus_dickus:
@@ -1262,22 +965,17 @@ label eve_handjob:
         $ M_eve.set('sex speed', .09)
         show eve b_sex_jerk
         show expression AnimatedImage("eve_sex_jerk", [1,2,3,4,5,6], M_eve) as eve_sex_jerk at Position(xalign = 0.0, yoffset = 0)
-    eve "{i}*Terkesiap*{/i}"
-
+    eve "{i}*Gasp*{/i}"
     pause
     show eve_sex_front_face_mc normal_talk
-    anon "Apakah itu terasa oke?"
-
+    anon "Does that feel okay?"
     if M_eve.get("HJ_1st_time"):
-        anon "Haruskah saya melanjutkan?"
-
+        anon "Should I keep going?"
         show eve_sex_front_face_mc normal
-        eve "Y-ya!"
-
+        eve "Y-yes!"
     else:
         show eve_sex_front_face_mc normal
-        eve "S-bagus sekali!"
-
+        eve "S-so good!"
     show eve_sex_front_face_mc normal_down
     jump eve_sex_jerk_loop
 
@@ -1323,37 +1021,27 @@ label eve_sex_jerk_loop:
 
 label eve_sex_jerk_hscene_dialog:
     if animcounter == 0 and randomizer() > 75:
-        eve "Nnngghh, lebih cepat!{p=1}{nw}"
-
+        eve "Nnngghh, faster!{p=1}{nw}"
     elif animcounter == 0 and randomizer() > 50:
-        eve "Ya Tuhan, lebih cepat!{p=1}{nw}"
-
+        eve "Oh god, faster!{p=1}{nw}"
     if animcounter == 1 and randomizer() > 50:
-        eve "Ya Tuhan...{p=1}{nw}"
-
+        eve "Oh my god...{p=1}{nw}"
     if animcounter == 2 and randomizer() < 50:
-        eve "Rasanya enak sekali, {b}[firstname]{/b}!{p=2}{nw}"
-
+        eve "This feels so good, {b}[firstname]{/b}!{p=2}{nw}"
     if animcounter == 3 and randomizer() < 50:
         eve "Ahh!{p=1}{nw}"
-
     if animcounter == 4 and randomizer() < 50:
-        eve "Nnngghh, jangan berhenti!!"
-
+        eve "Nnngghh, don't stop!!"
     return
 
 label eve_sex_jerk_cum:
-    eve "Astaga!"
-
-    eve "Aku semakin dekat!"
-
+    eve "Oh, fuck!"
+    eve "I'm getting close!"
     show eve_sex_front_face_mc normal
-    anon "Sperma untukku!"
-
+    anon "Cum for me!"
     show eve_sex_front_face_mc normal_down
     pause
     eve "{b}[firstname]{/b}!!!"
-
     pause
     hide eve_sex_jerk
     if M_eve.biggus_dickus:
@@ -1364,9 +1052,7 @@ label eve_sex_jerk_cum:
     eve "NNGGGHHH!!!" with flash
     pause
     eve "Haah... Haah..."
-
-    eve "Sialan."
-
+    eve "Holy shit."
     pause
     if player.location == L_tattooparlor_bedroom:
         scene expression player.location.background_closeup
@@ -1381,105 +1067,70 @@ label eve_sex_jerk_cum:
     with fade
     if M_eve.biggus_dickus:
         if M_eve.get("HJ_1st_time"):
-            eve "aku membuat kekacauan..."
-
+            eve "I made a mess..."
         else:
-            eve "aku membuat kekacauan lagi..."
-
-        anon "Hehe, tidak apa-apa."
-
-        eve "hehe!"
-
+            eve "I made another mess..."
+        anon "Heh, that's okay."
+        eve "Hehe!"
     else:
         if M_eve.get("HJ_1st_time"):
-            eve "aku belum pernah-"
-
+            eve "I've never-"
             pause
-            eve "Sperma sekeras itu sebelumnya..."
-
+            eve "Cum that hard before..."
         else:
-            eve "I-itu tadi-"
-
+            eve "T-that was-"
             pause
-            eve "Luar biasa..."
-
+            eve "Amazing..."
     show eve f_happy a_jerk1 o_empty with dissolve
-    eve "Sekarang giliranku."
-
+    eve "Now it's my turn."
 
     if M_eve.get("HJ_1st_time") and not _in_replay:
-        anon "Anda tidak perlu..."
-
-        eve "T-tidak, aku ingin!"
-
+        anon "You don't have to..."
+        eve "N-no, I want to!"
 
         label eve_jerk_me_off_scotty:
         show eve a_jerk
-        anon @ -m_talk "MM."
-
+        anon @ -m_talk "Mmm."
         pause
-        eve "Apakah itu terasa enak?"
-
-        anon "Rasanya sangat enak!"
-
-        eve "hehe!"
-
+        eve "Does that feel good?"
+        anon "It feels really good!"
+        eve "Hehe!"
         pause
         if M_eve.get("HJ_1st_time"):
-            anon "Tanganmu begitu lembut dan mungil..."
-
-            eve "Tidak, penismu sangat besar!"
-
-            eve "Bagaimana Anda berjalan-jalan dengan benda ini?"
-
+            anon "Your hands are so soft and tiny..."
+            eve "No, your dick is just fucking huge!"
+            eve "How do you walk around with this thing?"
             pause
         else:
-            eve "Aku suka bermain-main dengan penismu, {b}[firstname]{/b}."
-
-            anon "K-kamu yakin?"
-
-            eve "Ya, sangat banyak!"
-
+            eve "I love playing with your dick, {b}[firstname]{/b}."
+            anon "Y-you do?"
+            eve "Yes, very much!"
             pause
-            anon "Heh, menurutku dia juga menyukainya."
-
-            eve "hehe!"
-
+            anon "Heh, I think he likes it too."
+            eve "Hehe!"
         show anon f_hurt
-        eve "Apakah kamu semakin dekat?"
-
-        anon @ f_disgusted_wince "Y-ya."
-
+        eve "Are you getting close?"
+        anon @ f_disgusted_wince "Y-yes."
         pause
-        eve "Sperma untukku, {b}[firstname]{/b}!"
-
-        eve "Saya ingin melihatnya!"
-
+        eve "Cum for me, {b}[firstname]{/b}!"
+        eve "I wanna see it!"
         pause
         jump eve_sex_mc_jerk_loop
     else:
 
         menu:
-            "Ya, tolong.":
+            "Yes, please.":
                 jump eve_jerk_me_off_scotty
-            "Tidak, terima kasih.":
+            "No, thanks.":
 
-                anon "Anda tidak perlu..."
-
-                eve "Tidak?"
-
-                anon "Mari berpelukan sebentar."
-
-                eve "K-kamu yakin?"
-
-                eve "Saya suka melakukannya."
-
-                anon "Ya, tidak apa-apa."
-
-                anon "Hanya berbaring di sini bersamamu tidak masalah."
-
-                eve f_happy_closed "Hmm, oke."
-
+                anon "You don't have to..."
+                eve "No?"
+                anon "Let's cuddle for a while."
+                eve "Y-you're sure?"
+                eve "I like to do it."
+                anon "Yeah, it's alright."
+                anon "Just laying here with you is fine."
+                eve f_happy_closed "Mmm, okay."
                 jump eve_HJ_end
 
 label eve_sex_mc_jerk_loop:
@@ -1504,38 +1155,28 @@ label eve_sex_mc_jerk_loop:
 
 label eve_sex_mc_jerk_hscene_dialog:
     if animcounter == 0 and randomizer() < 50:
-        anon @ f_disgusted_wince "Ya Tuhan, ini terasa luar biasa!{p=2}{nw}"
-
+        anon @ f_disgusted_wince "Oh my god, this feels amazing!{p=2}{nw}"
     if animcounter == 1 and randomizer() > 50:
         anon @ f_disgusted_wince "Ahh!!{p=1}{nw}"
-
     if animcounter == 2 and randomizer() < 50:
-        anon @ f_disgusted_wince "Saya semakin dekat...{p=1}{nw}"
-
+        anon @ f_disgusted_wince "I'm getting close...{p=1}{nw}"
     return
 
 label eve_sex_mc_jerk_cum:
-    anon @ f_disgusted_wince "aku akan-"
-
+    anon @ f_disgusted_wince "I'm gonna-"
     pause
-    anon f_cough "Ini dia!"
-
+    anon f_cough "Here it comes!"
     pause
     show eve a_jerk1 f_surprised o_cum
     anon f_disgusted_wince "HNNGGG!!!" with flash
     show anon f_flirt_low
     show eve f_happy o_cum3
     pause
-    eve "Astaga..."
-
+    eve "Holy shit..."
     anon "Haah... Haah..."
-
-    eve "Itu air mani yang banyak..."
-
-    anon "M-maaf."
-
-    eve "Tidak, tidak apa-apa."
-
+    eve "That's a lot of cum..."
+    anon "S-sorry."
+    eve "No, it's fine."
     pause
     show eve a_taste o_dick
     show expression "characters/eve/eve_overlay_onbed_cuddle_naked_o_cum3.png"
@@ -1543,72 +1184,45 @@ label eve_sex_mc_jerk_cum:
     anon @ f_surprised_low "!!!"
     show eve a_chest with dissolve
     if M_eve.get("HJ_1st_time"):
-        anon "A-apa kamu baru saja-"
-
-        eve "hehe!"
-
-        eve "Saya penasaran."
-
-        anon "Dan?"
-
+        anon "D-did you just-"
+        eve "Hehe!"
+        eve "I was curious."
+        anon "And?"
         show eve f_thinking_lip
         pause
-        eve f_thinking_down "Ini sangat... Asin."
-
+        eve f_thinking_down "It's very... Salty."
         anon @ f_laugh "Haha!"
-
         eve f_happy_closed "Haha!"
-
         pause
         show eve f_happy
-        anon "Aku harus segera berangkat."
-
-        eve "Mmm, kuharap kamu bisa tinggal."
-
-        anon "Aku tahu, aku juga."
-
-        anon "Tapi ini sudah larut."
-
+        anon "I'm going to have to get going soon."
+        eve "Mmm, I wish you could stay."
+        anon "I know, me too."
+        anon "It's getting late though."
         pause
-        anon "Aku ingin tahu bagaimana kabar {b}Odette{/b} dan adikmu?"
-
-        eve "Siapa yang peduli?"
-
-        anon @ f_laugh "hehe!"
-
-        anon "Oh, kamu tahu kamu penasaran!"
-
-        eve "Mungkin sedikit..."
-
+        anon "I wonder how {b}Odette{/b} and your sister are getting on?"
+        eve "Who cares?"
+        anon @ f_laugh "Hehe!"
+        anon "Oh, you know you're curious!"
+        eve "Maybe a little..."
         pause
-        eve "Tapi aku tidak mau bergerak!"
-
-        anon @ f_laugh "hehe!"
-
-        eve @ f_happy_closed "hehe!"
-
+        eve "I don't wanna move though!"
+        anon @ f_laugh "Hehe!"
+        eve @ f_happy_closed "Hehe!"
         pause
-        eve f_thinking_down "{i}*Sigh*{/i} Saya kira semua hal baik harus diakhiri."
-
-        anon "Selalu ada waktu berikutnya."
-
-        eve f_happy "Aku menahanmu untuk itu!"
-
-        anon "Tidak masalah."
-
-        eve "Baiklah, ayo berpakaian dan periksa {b}Odette{/b} dan {b}Grace{/b}."
-
-        eve "Lalu aku akan mengantarmu keluar."
-
-        anon "Oke."
-
+        eve f_thinking_down "{i}*Sigh*{/i} I suppose all good things must come to an end."
+        anon "There's always next time."
+        eve f_happy "I'm holding you to that!"
+        anon "No problem."
+        eve "Alright, let's get dressed and check on {b}Odette{/b} and {b}Grace{/b}."
+        eve "Then I'll walk you out."
+        anon "Okay."
         scene black with fade
         pause
         $ M_eve.set("HJ_1st_time",False)
     else:
         anon "!!!"
-        eve "hehe!"
-
+        eve "Hehe!"
         show eve f_thinking_lip
 
         label eve_HJ_end:
@@ -1623,20 +1237,13 @@ label eve_sex_mc_jerk_cum:
             show eve b_pajamas
         show anon
         with dissolve
-        anon "Itu bagus."
-
-        eve "Sangat bagus!"
-
-        eve "Aku berharap kamu bisa tinggal lebih lama, aku tidur seperti bayi ketika aku dalam pelukanmu."
-
-        anon "Hehe, aku menyadarinya."
-
-        eve @ f_laugh "hehe!"
-
-        anon "Bagaimanapun, aku mungkin harus pergi."
-
-        eve "Ya baiklah."
-
+        anon "That was nice."
+        eve "Really nice!"
+        eve "I wish you could stay longer, I sleep like a baby when I'm in your arms."
+        anon "Heh, I noticed."
+        eve @ f_laugh "Hehe!"
+        anon "Anyways, I should probably get going."
+        eve "Yeah, okay."
         hide anon
         if player.location == L_tattooparlor_bedroom and game.timer.is_dark():
             show eve b_pajamas_kiss:
@@ -1654,10 +1261,8 @@ label eve_sex_mc_jerk_cum:
                 xoffset -200
         show anon
         with dissolve
-        eve "Kembalilah dan temui aku segera, oke?"
-
-        anon "Saya akan."
-
+        eve "Come back and see me soon, okay?"
+        anon "I will."
         hide anon with dissolve
         $ renpy.end_replay()
         $ game.timer.tick()
@@ -1677,13 +1282,10 @@ label eve_sex_mc_jerk_cum_continued:
     show anon
     show eve f_happy
     with dissolve
-    eve "Kuharap mereka tidak sedang bercinta di tempat tidurku atau semacamnya..."
-
+    eve "I hope they're not fucking in my bed or something..."
     anon @ f_surprised a_salute "!!!"
-    anon "T-tidak."
-
-    anon "Bukan di tempat tidurmu."
-
+    anon "N-nope."
+    anon "Not in your bed."
     eve @ f_surprised "!!!"
 
     scene location_tattoo_apartment_cutscene02
@@ -1704,41 +1306,24 @@ label eve_sex_mc_jerk_cum_continued:
     anon @ -m_talk "..."
     eve @ -m_talk "..."
     pause
-    anon f_flirt "Jadi, uhh..."
-
-    eve f_normal "Y-ya."
-
-    anon "Kita mungkin tidak seharusnya menonton ini, ya?"
-
-    eve f_sexy "Anda benar-benar berpikir mereka akan peduli?"
-
-    anon @ a_thinking f_thinking "Y-yah, {b}Odette{/b} mungkin tidak akan..."
-
-    eve @ f_eyeroll "Ya, adikku juga tidak akan melakukannya, percayalah."
-
-    anon "Apakah ini berarti kamu tidur di tenda malam ini?"
-
-    eve f_angry a_hip "Persetan!"
-
-    eve f_normal "Aku akan menyelinap ke sana dan pergi ke kamarku."
-
-    eve "Maksudku, lihat mereka... Mereka mungkin bahkan tidak akan memperhatikanku."
-
-    anon "Y-ya."
-
-    anon "... Lihatlah mereka."
-
+    anon f_flirt "So, uhh..."
+    eve f_normal "Y-yeah."
+    anon "We probably shouldn't be watching this, huh?"
+    eve f_sexy "You really think they'd care?"
+    anon @ a_thinking f_thinking "W-well, {b}Odette{/b} probably wouldn't..."
+    eve @ f_eyeroll "Yeah, my sister wouldn't either, trust me."
+    anon "Does this mean you're sleeping in the tent tonight?"
+    eve f_angry a_hip "Fuck that!"
+    eve f_normal "I'll just sneak in there and go to my room."
+    eve "I mean, look at them... They probably won't even notice me."
+    anon "Y-yeah."
+    anon "... Look at them."
     pause
-    eve "mesum!"
-
+    eve "Perv!"
     anon @ -m_talk "Hmm?"
-
     eve @ f_laugh "Haha!"
-
-    anon "M-maaf."
-
-    eve "Tidak apa-apa."
-
+    anon "S-sorry."
+    eve "It's okay."
     hide anon
     show eve b_dressed_kiss:
         xoffset -400
@@ -1747,38 +1332,25 @@ label eve_sex_mc_jerk_cum_continued:
         xoffset 0
     show anon a_behind_head
     with dissolve
-    eve "Sekali lagi terima kasih untuk semuanya hari ini."
-
-    anon "Tidak masalah."
-
-    eve "Sampai jumpa lagi, oke?"
-
-    anon a_idle "Ya."
-
-    eve f_sexy "Jangan berdiri di sini sepanjang malam sambil memperhatikan mereka juga!"
-
-    anon "T-tidak, aku tidak akan melakukannya."
-
-    anon "aku pergi."
-
-    eve @ f_laugh "hehe!"
-
-    anon @ a_wave "Selamat malam, {b}Malam{/b}."
-
-    eve @ a_wave "Selamat malam."
-
+    eve "Thanks again for everything today."
+    anon "It's no problem."
+    eve "I'll see you soon, okay?"
+    anon a_idle "Yeah."
+    eve f_sexy "Don't stand out here all night watching them either!"
+    anon "N-no, I won't."
+    anon "I'm leaving."
+    eve @ f_laugh "Hehe!"
+    anon @ a_wave "Good night, {b}Eve{/b}."
+    eve @ a_wave "Good night."
     scene black with fade
     pause
     $ player.go_to(L_tattooparlor)
     scene expression player.location.background_blur with None
     show anon f_flirt with dissolve
-    anon @ -m_talk "(Wow, malam yang luar biasa!)"
-
-    anon @ -m_talk "( Begitu banyak yang terjadi dan sepertinya segalanya akan berubah menjadi lebih baik di sini. )"
-
+    anon @ -m_talk "( Wow, what a night! )"
+    anon @ -m_talk "( So much happened and it sounds like things are definitely going to change for the better around here. )"
     pause
-    anon @ -m_talk "(Aku terlalu lelah untuk memikirkan hal itu sekarang, aku harus pulang.)"
-
+    anon @ -m_talk "( I'm too tired to think about that now though, I should get home. )"
     hide anon with dissolve
     $ M_eve.trigger(T_eve_dressed_table)
     $ game.timer.tick(3)

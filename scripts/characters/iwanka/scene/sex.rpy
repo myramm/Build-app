@@ -4,26 +4,20 @@ label scene_iwanka_sex(venue='yacht'):
 
     call scene_iwanka_sex.prelude
     with fade
-    iwanka "Bagaimana pemandangannya bagus ya?"
-
-    anon "{i}*Gulp*{/i} Y-ya, enak sekali!"
-
+    iwanka "How's this for a nice view, huh?"
+    anon "{i}*Gulp*{/i} Y-yeah, it's very nice!"
     call scene_iwanka_sex.stage
     with {'master': dissolve}
-    iwanka "Nah, tunggu apa lagi?"
-
+    iwanka "Well, what are you waiting for?"
     call scene_iwanka_sex.pre
     with {'master': dissolve}
-    iwanka "Persetan denganku, {b}[firstname]{/b}!"
-
+    iwanka "Fuck me, {b}[firstname]{/b}!"
     call scene_iwanka_sex.insert
     with {'master': dissolve}
-    iwanka "Hmm, itu dia!"
-
+    iwanka "Mmm, that's it!"
     call scene_iwanka_sex.slam
     iwanka "Ngh!!" with hpunch
-    iwanka "Ya ampun, itu penis yang besar!"
-
+    iwanka "Oh em gee, that's a big fucking dick!"
     jump scene_iwanka_sex.merge
 
 
@@ -94,55 +88,41 @@ label scene_iwanka_sex.loop:
 
 label scene_iwanka_sex.dialogue(opt, rng=-1):
     if opt == 1:
-        iwanka "Wah!"
-
+        iwanka "Oh, wow!"
 
     elif opt == 2:
-        iwanka "Ya, itu dia!"
-
+        iwanka "Yeah, that's it!"
 
     elif opt == 3:
-        iwanka "Anda menyukainya, {b}[firstname]{/b}?"
-
-        anon "Ya!{p=1}{nw}"
-
+        iwanka "You like that, {b}[firstname]{/b}?"
+        anon "Yes!{p=1}{nw}"
 
     elif opt == 4:
-        iwanka "Kamu suka melihatku melompat-lompat di atas ayam berdaging besar itu?!"
-
-        anon "Ah, ya!"
-
+        iwanka "You like watching me bounce on that big meaty cock?!"
+        anon "Ahh, yes!"
 
         if rng < .4:
-            iwanka "Katakan padaku betapa kamu menyukainya!"
+            iwanka "Tell me how much you like it!"
 
-
-        anon "Sangat banyak!!"
-
+        anon "So much!!"
 
         if rng < .4:
-            anon "Ahh, aku sangat menyukainya!!"
-
+            anon "Ahh, I like it so much!!"
 
     return
 
 
 label scene_iwanka_sex.switch:
     iwanka "Haah... Haah..."
-
-    iwanka "... Oke, aku perlu istirahat."
-
+    iwanka "... Okay, I need a break."
     anon "Oh?"
-
     call scene_iwanka_bed_tiger.insert
     with {'master': dissolve}
-    iwanka "Anda ingin beralih kembali ke doggy?"
-
+    iwanka "You wanna switch back to doggy?"
     hide anim
     show iwanka_body_b_sex_ride_anon as anon_body
     with {'master': dissolve}
-    anon "Ya tentu saja!"
-
+    anon "Yeah, sure!"
 
     $ M_iwanka.set('sex speed', 1. / 8)
 
@@ -152,15 +132,13 @@ label scene_iwanka_sex.switch:
     pause
     call scene_iwanka_sex.pre
     with {'master': dissolve}
-    iwanka "Ya, ini jauh lebih baik."
-
+    iwanka "Yeah, this is much better."
     call scene_iwanka_sex.insert
     with {'master': dissolve}
     pause
     call scene_iwanka_sex.animate
     with {'master': dissolve}
-    iwanka "Tidak!!"
-
+    iwanka "Ngh!!"
     pause
     jump scene_iwanka_sex.resume
 
@@ -171,26 +149,19 @@ label scene_iwanka_sex.repeat(venue):
 
     call scene_iwanka_sex.prelude
     with fade
-    iwanka "Umm, ada apa?"
-
-    anon "Tidak ada apa-apa, aku hanya mengagumi pemandangannya..."
-
-    iwanka "Nah, lakukan itu nanti!"
-
+    iwanka "Umm, what's the hold up?"
+    anon "Nothing, I was just admiring the view..."
+    iwanka "Well, do that later!"
     call scene_iwanka_sex.stage
     with {'master': dissolve}
-    iwanka "Saat ini, aku hanya ingin kamu meniduriku."
-
-    anon "Ya baiklah."
-
+    iwanka "Right now, I just want you to fuck me."
+    anon "Yeah, alright."
     call scene_iwanka_sex.pre
     with {'master': dissolve}
-    iwanka "Oh, aku sangat menginginkan ini."
-
+    iwanka "Oh, I have so been craving this."
     call scene_iwanka_sex.insert
     with {'master': dissolve}
-    anon "Wow, kamu benar-benar basah!"
-
+    anon "Wow, you're really wet!"
     call scene_iwanka_sex.slam
     iwanka "Haah!" with hpunch
     label scene_iwanka_sex.merge:
@@ -210,19 +181,13 @@ label scene_iwanka_sex.repeat(venue):
     if _return == 'switch':
         jump scene_iwanka_bed_tiger.switch
 
-    iwanka "aku akan keluar!"
-
-    anon "Saya juga!"
-
+    iwanka "I'm gonna cum!"
+    anon "Me too!"
     pause
     iwanka "OH!!"
-
     iwanka "EM!!"
-
-    iwanka "Aduh!!!"
-
+    iwanka "GEEEE!!!"
     iwanka "NGGHHH!!!"
-
     hide anim
 
     if _return == 'inside':
@@ -244,7 +209,6 @@ label scene_iwanka_sex.repeat(venue):
     with {'master': dissolve}
     anon "Haah... Haah..."
 
-
     if _return == 'inside':
         show iwanka b_sex_insert_pullout o_insert_pullout
         with {'master': dissolve}
@@ -257,24 +221,18 @@ label scene_iwanka_sex.repeat(venue):
         show iwanka_body_b_sex_pre_after_anon_leg as anon_leg
         with {'master': dissolve}
 
-    anon "Itu luar biasa!"
-
-    iwanka "Benar, bukan?"
-
+    anon "That was awesome!"
+    iwanka "It was, wasn't it?"
     pause
-    iwanka "Umm, bisakah kamu mengambilkanku handuk?"
-
+    iwanka "Umm, can you get me a towel?"
     anon "Hmm?"
 
-
     if _return == 'inside':
-        iwanka "Air manimu bocor keluar dari tubuhku ke seprai..."
-
+        iwanka "Your cum is leaking out of me onto the sheets..."
         call call_pregnancy_minigame (None, M_iwanka)
     else:
 
-        iwanka "Aku seperti, tercakup dalam air manimu..."
-
+        iwanka "I'm like, covered in your cum..."
 
     return
 
@@ -300,13 +258,13 @@ label scene_iwanka_sex.replay:
     if len(variants) > 1:
         scene expression background(l=L_boat_bridge) with fade
         menu:
-            "Kapal Pesiar (Pertama)" if 'first' in variants:
+            "Yacht (First)" if 'first' in variants:
                 jump scene_iwanka_sex.first
 
-            "Kapal Pesiar (Ulangi)" if 'yacht' in variants:
+            "Yacht (Repeat)" if 'yacht' in variants:
                 jump scene_iwanka_sex.yacht
 
-            "Kamar Tidur (Ulangi)" if 'bedroom' in variants:
+            "Bedroom (Repeat)" if 'bedroom' in variants:
                 jump scene_iwanka_sex.bedroom
     else:
 

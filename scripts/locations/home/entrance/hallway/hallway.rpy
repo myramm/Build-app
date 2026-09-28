@@ -48,12 +48,9 @@ label hallway_dialogue:
         scene hallway
         show player 14 with dissolve
         player_name "( Someone's in the shower? )"
-
         player_name "( I wonder if it's {b}[deb_name]{/b}. )"
-
         show player 26
         player_name "( Maybe I can peek just a little... )"
-
         hide player with dissolve
 
     elif M_debbie.is_state(S_debbie_sleepover_offer) and game.timer.is_evening():

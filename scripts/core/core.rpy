@@ -79,8 +79,12 @@ init -20 python:
         return isinstance(variable, str) or isinstance(variable, unicode)
 
 
-    import pickle
-    pick = pickle.dumps
+    try:
+        import cPickle as _pickle
+    except ImportError:
+        import pickle as _pickle
+    pick = _pickle.dumps
+
 
     def test(obj, prt=True):
         def tstlst(lst, prt):

@@ -1,162 +1,98 @@
 label grace_sex_massage_first_time:
-    anon "B-baiklah."
-
+    anon "A-alright."
     hide expression "characters/grace/grace_sex_mc_foreground.png" with dissolve
-    odette "Itulah semangatnya!"
-
+    odette "That's the spirit!"
     grace f_surprised "!!!"
-    odette "Ohhh, sepertinya {b}Tuuku{/b} tidak melebih-lebihkan... huh, sayang?"
-
-    grace f_sad_back "Ssst, jangan katakan itu!"
-
+    odette "Ohhh, it looks like {b}Tuuku{/b} wasn't exaggerating after all... huh, babe?"
+    grace f_sad_back "Shhh, don't say that!"
     anon "Hmm?"
-
-    grace f_sad "T-tidak ada."
-
-    odette "Berbaring saja tengkurap, dan kita akan mulai bekerja, oke?"
-
-    anon "Di perutku?"
-
-    odette "Ya!"
-
+    grace f_sad "N-nothing."
+    odette "Just lie down on your tummy, and we'll get to work, okay?"
+    anon "On my tummy?"
+    odette "Yup!"
     show grace_sex_mc down_front zorder 1 with dissolve
     show odette f_smirk_down
     pause
-    odette f_smirk "Kuda jantanmu menunggu..."
-
-    grace f_tired_back "Kamu menyebalkan."
-
-    odette "Heh, bisakah kamu bersiap saja, dasar pemalu!"
-
-    grace @ f_eyeroll "{i}*Huh*{/i} Baiklah, tapi aku melakukan ini hanya untuk membuatmu diam."
-
-    odette "Mhmm, aku yakin."
-
+    odette f_smirk "Your stallion awaits..."
+    grace f_tired_back "You're infuriating."
+    odette "Heh, would you just saddle up already, you big prude!"
+    grace @ f_eyeroll "{i}*Sigh*{/i} Fine, but I'm only doing this to shut you up."
+    odette "Mhmm, I'm sure."
     show grace b_massage_climb zorder 2 with dissolve
     odette @ f_laugh "Hehehe!"
-
     show grace b_massage_mc_reg with dissolve
     show odette f_smirk_down
-    grace "Ini tidak nyaman bagi Anda, bukan?"
-
-    anon "Tidak, tidak apa-apa."
-
-    grace "Baiklah."
-
+    grace "This isn't uncomfortable for you, is it?"
+    anon "No, it's fine."
+    grace "Alright."
     pause
-    odette "Dia baik, bukan?"
-
-    anon "Ya, ini terasa sangat menyenangkan."
-
-    grace "Hehe, terima kasih."
-
+    odette "She's good, isn't she?"
+    anon "Yeah, this feels really nice."
+    grace "Heh, thanks."
     pause
-    odette "Dia sudah berlatih padaku selama berbulan-bulan sekarang."
-
+    odette "She's been practicing on me for months now."
     pause
-    odette "Apa nama buku tempat Anda mempelajari semua ini?"
-
-    grace "Mengurangi Stres: Terapi untuk Tubuh dan Pikiran"
-
-    grace "Itu memiliki segala macam teknik untuk menghilangkan stres dan membantu Anda rileks."
-
-    grace "Pijat hanyalah salah satunya."
-
-    odette "Ya, yang terbaik."
-
+    odette "What's the name of that book you learned all this from?"
+    grace "Stress Less: Therapy for the Body and Mind"
+    grace "It had all sorts of techniques to relieve stress and help you relax."
+    grace "Massage was just one."
+    odette "Yeah, the best one."
     pause
-    anon "Yah, itu pasti berhasil..."
-
-    anon "... Saya merasa sangat santai."
-
-    grace "Hehe, aku senang mendengarnya."
-
+    anon "Well, it's definitely working..."
+    anon "... I feel very relaxed."
+    grace "Hehe, I'm glad to hear it."
     pause
-    odette "Sepertinya dia mendapat banyak ketegangan di bahunya, bukan?"
-
+    odette "It looks like he's got a lot of tension in those shoulders, doesn't it?"
     pause
-    odette "Bahu yang kuat dan gagah itu..."
-
-    grace "{i}*Gulp*{/i} Y-ya."
-
-    odette "Anda mungkin harus memberi mereka perhatian ekstra."
-
+    odette "Those strong, manly shoulders..."
+    grace "{i}*Gulp*{/i} Y-yeah."
+    odette "You should probably give them extra attention."
     pause
-    odette "Apakah Anda berolahraga, {b}[firstname]{/b}?"
-
-    anon "saya mencoba."
-
-    odette "Ya, itu terlihat."
-
-    odette "Bukankah begitu, {b}Rahmat{/b}?"
-
+    odette "Do you workout, {b}[firstname]{/b}?"
+    anon "I try to."
+    odette "Well, it shows."
+    odette "Doesn't it, {b}Grace{/b}?"
     grace "..."
     pause
-    odette "{b}Rahmat{/b}?"
-
+    odette "{b}Grace{/b}?"
     grace "Hmm?"
-
-    grace "O-oh, umm... apa yang kamu katakan?"
-
-    odette "Hehe, sudahlah."
-
+    grace "O-oh, umm... what did you say?"
+    odette "Hehe, never mind."
     pause
-    odette "Mengapa Anda tidak membaliknya sekarang, {b}[firstname]{/b}, dan biarkan {b}Grace{/b} bekerja di depan Anda?"
-
+    odette "Why don't you flip over now, {b}[firstname]{/b}, and let {b}Grace{/b} work your front?"
     grace "!!!"
-    anon "Benar-benar?"
-
-    grace "Menurutku itu bukan ide yang bagus."
-
-    odette "Oh, jangan konyol!"
-
+    anon "Really?"
+    grace "I don't think that's a good idea."
+    odette "Oh, don't be silly!"
     show grace b_massage_climb zorder 2 with dissolve
-    odette f_smirk "Dia ingin sekali melakukannya!"
-
+    odette f_smirk "She'd love to do it!"
     show grace b_massage zorder 0 with dissolve
     grace @ -m_talk "..."
     show grace_sex_mc laying with dissolve
     show odette f_smirk_down
-    anon "Anda yakin tidak apa-apa?"
-
-    odette "Oh, aku yakin."
-
-    odette f_smirk "Hanya pijatan kecil yang polos di antara teman-teman, bukan?"
-
-    anon "B-benar."
-
+    anon "You're sure it's okay?"
+    odette "Oh, I'm sure."
+    odette f_smirk "Just an innocent little massage between friends, right?"
+    anon "R-right."
     grace "Uhh."
-
     odette @ f_laugh "Hehehe!"
-
-    grace a_towel f_sad_down "{i}*Ahem*{/i} Kenapa tidak kamu tutupi saja, {b}[firstname]{/b}?"
-
-    grace "Itu akan mengurangi kecanggungan, ya?"
-
-    odette "Dimana kesenangannya?!"
-
-    grace "{b}Odette{/b}, tolong..."
-
-    anon "Tidak, tidak apa-apa!"
-
-    anon "aku akan memakainya."
-
+    grace a_towel f_sad_down "{i}*Ahem*{/i} Why don't you put this over your eyes, {b}[firstname]{/b}?"
+    grace "That'll make things less awkward, yeah?"
+    odette "Where's the fun in that?!"
+    grace "{b}Odette{/b}, please..."
+    anon "No, it's okay!"
+    anon "I'll wear it."
     show grace a_idle f_sad_down_back
     hide grace_sex_mc
     show anon grace_massage_apt back
     with dissolve
     grace @ -m_talk "..."
-    odette "Ada sesuatu yang menarik perhatianmu di sana, sayang?"
-
+    odette "Something caught your eye there, babe?"
     grace f_surprised_back "!!!"
-    grace f_sad_down "T-tidak."
-
+    grace f_sad_down "N-no."
     odette @ f_laugh "Hehehe!"
-
-    odette "Sebaiknya kamu mulai, {b}Evie{/b} sedang menunggunya, ingat?"
-
-    grace "{i}*Huh*{/i}"
-
+    odette "You'd better get started, {b}Evie{/b} is waiting on him, remember?"
+    grace "{i}*Sigh*{/i}"
     hide grace
     show anon climb
     with dissolve
@@ -164,120 +100,75 @@ label grace_sex_massage_first_time:
     show odette f_smirk_down
     show anon rub pause
     with dissolve
-    grace "Aku tidak menyakitimu, kan?"
-
-    anon "Tidak."
-
-    odette @ f_eyeroll "Seolah-olah hal kecil sepertimu bisa menyakitinya..."
-
-    grace "Diam, {b}Odette{/b}."
-
+    grace "I'm not hurting you, am I?"
+    anon "Nope."
+    odette @ f_eyeroll "As if a little thing like you could hurt him..."
+    grace "Shut up, {b}Odette{/b}."
     show anon -pause
     with dissolve
     pause
-    anon "Mm, rasanya luar biasa."
-
-    odette "Sudah kubilang!"
-
-    odette "{b}Grace{/b} benar-benar tahu bidangnya."
-
+    anon "Mm, that feels amazing."
+    odette "Told you!"
+    odette "{b}Grace{/b} really knows her stuff."
     pause
-    odette "Bagaimana pendapatmu tentang tubuh {b}[firstname]{/b}, sayang?"
-
-    grace "Hah?"
-
-    odette "Dia baik dan ketat di semua tempat yang tepat, bukan?"
-
+    odette "What do you think of {b}[firstname]{/b}'s body, babe?"
+    grace "Huh?"
+    odette "He's nice and tight in all the right places, isn't he?"
     grace "..."
-    anon "Saya?"
-
-    odette "Tentu saja!"
-
-    odette "Maksudku, lihat saja perutnya..."
-
-    odette "... Dan spesifikasi itu."
-
-    grace "{i}*Meneguk*{/i}"
-
-    odette "Anda tahu, dia bahkan memiliki potongan berbentuk V yang sangat Anda sukai!"
-
-    grace "Y-ya."
-
+    anon "I am?"
+    odette "Oh, definitely!"
+    odette "I mean, just look at those abs..."
+    odette "... And those pecs."
+    grace "{i}*Gulp*{/i}"
+    odette "You know, he's even got that V-shaped cut that you like so much!"
+    grace "Y-yeah."
     pause
-    odette "Anda harus menunjukkan kepadanya teknik pijat tubuh ke tubuh yang telah kami praktikkan."
-
-    grace "Oh, t-tidak... aku tidak bisa..."
-
-    odette "Kenapa tidak?"
-
-    odette "Saya yakin dia akan menyukainya!"
-
-    anon "Tubuh ke tubuh?"
-
-    grace "Itu lebih merupakan urusan Anda-dan-saya, {b}Odette{/b}..."
-
-    odette "Cih, jangan konyol!"
-
-    odette "{b}[firstname]{/b} bersedia, bukan kawan?"
-
-    anon "B-tentu saja, menurutku..."
-
-    odette "Lihat, ini dia!"
-
+    odette "You should show him that body to body massage technique we've been practicing."
+    grace "Oh, n-no... I couldn't..."
+    odette "Why not?"
+    odette "I'm sure he'd love it!"
+    anon "Body to body?"
+    grace "That's really more of a you-and-I thing, {b}Odette{/b}..."
+    odette "Tch, don't be silly!"
+    odette "{b}[firstname]{/b}'s willing, aren't you big fella?"
+    anon "S-sure, I guess..."
+    odette "See, there ya go!"
     grace "{b}Odette{/b}..."
-
-    odette "Ini akan menyenangkan dan rasanya luar biasa."
-
+    odette "It'll be fun and it feels great."
     pause
-    odette "Anda tahu Anda ingin..."
-
+    odette "You know you want to..."
     grace "..."
     pause
     show anon pause
     with dissolve
-    grace "Baik, tapi hanya beberapa menit saja."
-
-    odette "Tentu."
-
+    grace "Fine, but only for a few minutes."
+    odette "Sure."
     show anon grind
     with dissolve
-    grace "Beri tahu saya jika ada yang terasa terlalu aneh, oke?"
-
-    odette @ f_eyeroll "Maukah Anda berhenti khawatir dan membiarkan anak itu bersenang-senang?"
-
+    grace "Let me know if anything feels too weird, okay?"
+    odette @ f_eyeroll "Would you stop worrying and just let the boy enjoy himself?"
     show anon -pause
     with dissolve
     anon @ -m_talk "!!!"
     pause
-    odette "Oh, itu dia..."
-
-    odette "Bagus dan lambat."
-
+    odette "Oh, that's it..."
+    odette "Nice and slow."
     pause
-    odette "Bagaimana kabarmu di sana, kawan?"
-
-    anon "Segalanya terasa licin..."
-
-    odette "hehe!"
-
+    odette "How you doing there, big fella?"
+    anon "Everything feels so slippery..."
+    odette "Hehe!"
     pause
-    odette "Aku yakin ini juga terasa enak untukmu, ya?"
-
-    grace "{i}*Gulp*{/i} Y-ya."
-
+    odette "I'll bet this feels good for you too, huh?"
+    grace "{i}*Gulp*{/i} Y-yeah."
     pause
-    odette "Mmm, aku bisa melihat pantatmu memantul sepanjang malam, sayang..."
-
-    odette "Itu sempurna."
-
+    odette "Mmm, I could watch your ass bounce all night, babe..."
+    odette "It's perfect."
     show anon firm
     with {'master': dissolve}
     grace "..."
-    odette "Bisakah kamu merasakan putingnya, {b}[firstname]{/b}?"
-
+    odette "Can you feel her nipples, {b}[firstname]{/b}?"
     anon @ -m_talk "!!!"
-    odette "Saya yakin mereka bisa memotong berlian sekarang juga!"
-
+    odette "I bet they could cut diamonds right now!"
     show anon hard
     with dissolve
     pause
@@ -285,82 +176,52 @@ label grace_sex_massage_first_time:
     show grace massage_apt surprised
     with dissolve
     grace @ -m_talk "!!!"
-    odette "Oh, halo."
-
-    grace worried "A-apakah itu-"
-
+    odette "Oh, hello there."
+    grace worried "I-is that-"
     odette "Mmhmm."
-
     odette "Hehehe!"
-
-    grace "Oke, um..."
-
-    grace "Saya pikir kita harus berhenti di sini untuk hari ini."
-
-    anon "M-maaf."
-
-    odette "Jangan menyesal kawan, itu wajar saja."
-
-    odette "{b}Grace{/b} hanya bercanda tentang berhenti."
-
-    odette "Bukan begitu, sayang?"
-
+    grace "Okay, umm..."
+    grace "I think we should stop here for today."
+    anon "S-sorry."
+    odette "Don't be sorry big fella, it's perfectly natural."
+    odette "{b}Grace{/b} is just kidding about stopping."
+    odette "Aren't you, babe?"
     grace @ -m_talk "..."
-    odette "Itu hanya pijatan polos dan itu hanya daging..."
-
-    odette "Tidak ada yang perlu dipermalukan."
-
-    grace "Apakah Anda ingin saya berhenti, {b}[firstname]{/b}?"
-
-    odette "Tentu saja tidak!"
-
-    grace @ -m_talk "{i}*Meneguk*{/i}"
-
+    odette "It's just an innocent massage and that's just flesh..."
+    odette "Nothing to be ashamed of."
+    grace "Do you want me to stop, {b}[firstname]{/b}?"
+    odette "Of course he doesn't!"
+    grace @ -m_talk "{i}*Gulp*{/i}"
     hide grace
     show anon grind
     with dissolve
     pause
-    odette "Ini dia."
-
-    odette "Sekarang rasanya luar biasa, bukan?"
-
+    odette "There we go."
+    odette "Now that feels wonderful, doesn't it?"
     grace "..."
-    anon "Y-ya."
-
+    anon "Y-yeah."
     pause
-    grace "Ya Tuhan..."
-
+    grace "Oh god..."
     pause
-    odette "Inilah yang kamu butuhkan, sayang."
-
+    odette "This is exactly what you need, babe."
     grace "Ngh!"
-
-    odette "Itu saja."
-
+    odette "That's it."
     pause
-    odette "Wow, kamu basah sekali!"
-
-    grace "J-jangan katakan itu..."
-
+    odette "Wow, you're so wet!"
+    grace "D-don't say that..."
     odette "Hehehe!"
-
     pause
-    grace "Ahhh!"
-
+    grace "Ahh!"
     pause
     show grace b_massage_insert
     show anon -grind
     show odette a_empty
     with dissolve
     grace "!!!"
-    grace "{b}Odette{/b} Aku tidak bisa-"
-
-    odette "Ssst, ya kamu bisa."
-
-    grace "{i}* Merengek*{/i}"
-
-    odette "Itu hanya pijatan polos... Tidak ada, yang memalukan..."
-
+    grace "{b}Odette{/b} I can't-"
+    odette "Shh, yes you can."
+    grace "{i}*Whimper*{/i}"
+    odette "It's just an innocent massage... Nothing, to be ashamed of..."
     scene location_tattoo_apartment_oil
     $ anim_toggle = True
     $ animated = True
@@ -368,67 +229,42 @@ label grace_sex_massage_first_time:
     show expression AnimatedImage("grace_sex_massage", [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17], M_grace) as grace_sex_massage at Position(xalign = 0.0, yoffset = 0)
     with fade
     pause
-    grace "{i}*Terkesiap*{/i}"
-
-    odette "Tidak apa-apa, sayang."
-
-    odette "Anda bisa menikmatinya."
-
-    grace "Hmm!"
-
+    grace "{i}*Gasp*{/i}"
+    odette "It's okay, babe."
+    odette "You can enjoy it."
+    grace "Mmm!"
     pause
-    odette "Bagaimana kabarmu kawan?"
-
-    anon "Ahh, ini sangat ketat!"
-
-    odette "Hehe, aku berani bertaruh."
-
-    odette "Sudah lama sekali dia tidak memiliki seorang pria."
-
+    odette "How are you doing big fella?"
+    anon "Ahh, it's really tight!"
+    odette "Hehe, I'll bet."
+    odette "It's been a long time since she had a man."
     pause
-    grace "Ngh, ini salah sekali!"
-
-    odette "Ini sangat panas!"
-
+    grace "Ngh, this is so wrong!"
+    odette "This is so hot!"
     pause
-    odette "Ayo sayang, ambillah lebih dalam!"
-
+    odette "C'mon babe, take it deeper!"
     grace "Ahh!!"
-
-    odette "Aku ingin melihatmu cum di seluruh penis besar itu!"
-
+    odette "I wanna see you cum all over that big dick!"
     pause
-    grace "Ya Tuhan!"
-
+    grace "Oh, god!"
     pause
-    grace "sial!!"
-
-    odette "Itu saja, sayang."
-
+    grace "FUCK!!"
+    odette "That's it, babe."
     pause
     show grace_sex_massage 9
     grace "NGGHHH!!!" with flash
-    odette "Anak yang baik!"
-
+    odette "Good girl!"
     grace "Haah... Haah..."
-
-    odette "Jangan berhenti sekarang, {b}[firstname]{/b}..."
-
+    odette "Don't stop now, {b}[firstname]{/b}..."
     anon "Hmm?"
-
-    odette "Berikan padanya dengan keras!"
-
+    odette "Give it to her hard!"
     $ M_grace.set('sex speed', .045)
     show expression AnimatedImage("grace_sex_massage", [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17], M_grace) as grace_sex_massage at Position(xalign = 0.0, yoffset = 0)
-    grace "Haah... sial!"
-
-    odette "Hehehe, bagaimana rasanya?"
-
+    grace "Haah... FUCK!"
+    odette "Hehehe, how's that feel?"
     pause
-    grace "Haah... Bagus sekali!"
-
-    grace "SANGAT BAIK!!"
-
+    grace "Haah... So good!"
+    grace "SO GOOD!!"
     jump grace_sex_massage_loop
 
 label grace_odette_sex_massage_repeat:
@@ -440,14 +276,10 @@ label grace_odette_sex_massage_repeat:
     show odette b_massage f_smirk_down
     show anon grace_massage_apt back rub
     with fade
-    grace "Aku tidak percaya aku melakukan ini lagi..."
-
-    odette "Tahukah Anda, saya selalu bersedia mengambil alih jika itu terlalu berat untuk Anda tangani?"
-
-    grace "Diam, {b}Odette{/b}!"
-
-    odette @ f_laugh "Ha ha ha!"
-
+    grace "I can't believe I'm doing this again..."
+    odette "You know, I'm always willing to take over if it's too much for you to handle?"
+    grace "Shut up, {b}Odette{/b}!"
+    odette @ f_laugh "Hahaha!"
     show anon grind
     with dissolve
     anon @ -m_talk "!!!"
@@ -461,29 +293,22 @@ label grace_odette_sex_massage_repeat:
     show grace massage_apt back worried
     with dissolve
     pause
-    odette "Ini dia."
-
-    odette "Waktunya berpesta!"
-
+    odette "There we go."
+    odette "Party time!"
     hide grace
     show anon grind
     with dissolve
     pause
-    odette "Bagaimana rasanya, sayang?"
-
-    grace "S-bagus sekali!"
-
+    odette "How's that feel, babe?"
+    grace "S-so good!"
     odette @ f_laugh "Hehehe!"
-
     pause
     show grace b_massage_insert
     show anon -grind
     show odette a_empty
     with dissolve
-    odette "Sini, izinkan saya membantu Anda..."
-
-    grace "T-tidak, kita seharusnya tidak-"
-
+    odette "Here, let me help you..."
+    grace "N-no, we really shouldn't-"
 
     scene location_tattoo_apartment_oil
     $ anim_toggle = True
@@ -523,46 +348,32 @@ label grace_sex_massage_loop:
 
 label grace_sex_massage_hscene_dialog:
     if animcounter == 0 and randomizer() < 50:
-        grace "Ya Tuhan!{p=1}{nw}"
-
+        grace "Oh, god!{p=1}{nw}"
     if animcounter == 1 and randomizer() > 50:
         if not M_grace.get("grace_massage_alone"):
-            odette "Persetan dia lebih keras, {b}[firstname]{/b}!{p=2}{nw}"
-
+            odette "Fuck her harder, {b}[firstname]{/b}!{p=2}{nw}"
         grace "Ngh!{p=1}{nw}"
-
         if not M_grace.get("grace_massage_alone"):
-            odette "Ini panas!{p=1}{nw}"
-
+            odette "This is hot!{p=1}{nw}"
     if animcounter == 2 and randomizer() < 50 and not M_grace.get("grace_massage_alone"):
-        odette "Itu saja, sayang.{p=1}{nw}"
-
-        odette "Naiki ayam besar itu!{p=1}{nw}"
-
+        odette "That's it, babe.{p=1}{nw}"
+        odette "Ride that big cock!{p=1}{nw}"
     if animcounter == 3 and randomizer() > 50:
         grace "Ahh!{p=1}{nw}"
-
-        grace "Itu sangat dalam dalam diriku!{p=1}{nw}"
-
+        grace "It's so deep in me!{p=1}{nw}"
     return
 
 label grace_sex_massage_cum_inside:
-    grace "{i}* Merengek*{/i}"
-
+    grace "{i}*Whimper*{/i}"
     if not M_grace.get("grace_massage_alone"):
-        odette "Mmm, aku suka suara-suara kecil yang kamu buat saat kamu cum..."
-
+        odette "Mmm, I love those little noises you make when you cum..."
     pause
-    anon "Aku tidak bisa menahannya lebih lama lagi!"
-
+    anon "I can't hold it any longer!"
     if not M_grace.get("grace_massage_alone"):
-        odette "Tidak apa-apa kawan, biarkan saja."
-
+        odette "That's alright big fella, let it out."
     pause
-    anon "aku akan-"
-
+    anon "I'm gonna-"
     grace "NGGHHH!!!"
-
     hide grace_sex_massage
     if not M_grace.get("grace_massage_alone"):
         show odette b_massage f_smirk zorder 0
@@ -572,8 +383,7 @@ label grace_sex_massage_cum_inside:
     show xray_grace_massage zorder 3:
         align (0,0)
     if not M_grace.get("grace_massage_alone"):
-        odette f_surprised "Wah!"
-
+        odette f_surprised "Whoa!"
     else:
         pause
     hide xray_grace_massage
@@ -583,17 +393,13 @@ label grace_sex_massage_cum_inside:
     if not M_grace.get("grace_massage_alone"):
         show odette f_smirk_down
     grace "Haah... Haah..."
-
     show anon grace_massage_apt pullout2
     with {'master': dissolve}
-    grace "Sialan."
-
+    grace "Holy shit."
     pause
     if not M_grace.get("grace_massage_alone"):
-        grace "Apakah dia masuk ke dalam diriku?!"
-
-        odette "Ya, dan banyak hal lainnya..."
-
+        grace "Did he cum in me?!"
+        odette "Yeah, and a lot at that..."
     if M_grace.get("grace_massage_alone"):
         call call_pregnancy_minigame ("grace_alone_sex_massage_end", M_grace)
     elif M_grace.get("massage_sex_1st_time"):
@@ -602,22 +408,16 @@ label grace_sex_massage_cum_inside:
         call call_pregnancy_minigame ("grace_odette_sex_massage_end", M_grace)
 
 label grace_sex_massage_cum_outside:
-    grace "{i}* Merengek*{/i}"
-
+    grace "{i}*Whimper*{/i}"
     if not M_grace.get("grace_massage_alone"):
-        odette "Mmm, aku suka suara-suara kecil yang kamu buat saat kamu cum..."
-
+        odette "Mmm, I love those little noises you make when you cum..."
     pause
-    anon "Aku tidak bisa menahannya lebih lama lagi!"
-
+    anon "I can't hold it any longer!"
     if not M_grace.get("grace_massage_alone"):
-        odette "Tidak apa-apa kawan, biarkan saja."
-
+        odette "That's alright big fella, let it out."
     pause
-    anon "aku akan-"
-
+    anon "I'm gonna-"
     grace "Ahh!!"
-
     hide grace_sex_massage
     if not M_grace.get("grace_massage_alone"):
         show odette b_massage f_smirk_down zorder 0
@@ -626,18 +426,13 @@ label grace_sex_massage_cum_outside:
     anon "HNNGGG!!!" with flash
     show grace worried
     if not M_grace.get("grace_massage_alone"):
-        odette "Wah!"
-
+        odette "Whoa!"
     pause
     grace "Haah... Haah..."
-
-    grace "Sialan."
-
+    grace "Holy shit."
     if not M_grace.get("grace_massage_alone"):
-        odette "Itu air mani yang banyak!"
-
+        odette "That's a lot of cum!"
         odette @ f_laugh "Hehehe!"
-
     if M_grace.get("grace_massage_alone"):
         jump grace_alone_sex_massage_end
     elif M_grace.get("massage_sex_1st_time"):
@@ -653,83 +448,48 @@ label grace_sex_massage_end:
     show odette b_massage f_smirk
     show expression "characters/grace/grace_sex_mc_foreground.png"
     with fade
-    grace "Aku tidak percaya aku baru saja melakukan itu..."
-
-    odette "santai saja."
-
-    odette "Hanya dua orang yang membuat satu sama lain merasa senang."
-
-    odette "Tidak ada yang salah dengan itu."
-
-    grace f_sad_back "Y-ya, tapi-"
-
-    grace f_tired "Dia pacar kakakku, {b}Odette{/b}!"
-
-    odette "Uh huh, dan ini tidak akan mengubah itu..."
-
-    odette "Benar kan, kawan?"
-
-    anon "T-tidak, tentu saja tidak!"
-
-    odette "Melihat?"
-
-    odette @ f_laugh "Hanya pijatan polos, ingat?"
-
+    grace "I can't believe I just did that..."
+    odette "Oh, relax."
+    odette "It was just two people making each other feel good."
+    odette "Nothing wrong with that."
+    grace f_sad_back "Y-yeah, but-"
+    grace f_tired "He's my sister's boyfriend, {b}Odette{/b}!"
+    odette "Uh huh, and this isn't going to change that..."
+    odette "Is it, big fella?"
+    anon "N-no, of course not!"
+    odette "See?"
+    odette @ f_laugh "Just an innocent massage, remember?"
     grace @ -m_talk "..."
-    odette "Tapi dia baik, bukan?"
-
-    grace "Oh, jangan bilang padaku..."
-
-    odette "Apa?!"
-
-    odette "Anda pikir ayam sebaik itu akan masuk ke dalam hidup kita dan saya tidak akan mencobanya?"
-
+    odette "He's good though, isn't he?"
+    grace "Oh, don't tell me..."
+    odette "What?!"
+    odette "You think a cock that good is going to walk into our lives and I'm not going to try it?"
     grace @ f_angry_back "{b}Odette{/b}!!!"
-
-    odette "Mungkin lain kali jika hal ini terjadi, Anda akan berbagi sedikit ya?"
-
-    grace "Tidak akan ada waktu berikutnya!"
-
-    odette "Ya benar."
-
-    odette @ f_laugh "Ha ha ha!"
-
-    anon "Ehh, ini sudah larut... Aku mungkin harus menyapa {b}Eve{/b} dan mulai pulang."
-
-    grace f_sad "Ya Tuhan, kamu tidak akan memberitahunya, kan?!"
-
+    odette "Maybe next time this happens, you'll share a little, huh?"
+    grace "There isn't going to be a next time!"
+    odette "Yeah, right."
+    odette @ f_laugh "Hahaha!"
+    anon "Ehh, it's getting late... I should probably go say hi to {b}Eve{/b} and start heading home."
+    grace f_sad "Oh my god, you're not going to tell her, are you?!"
     jump grace_odette_sex_massage_ulimate_end
 
 label grace_odette_sex_massage_ulimate_end:
-    odette @ f_eyeroll "Cih, menurutmu dia akan peduli?"
-
-    grace f_tired_back "Bagaimana mungkin dia tidak melakukannya?"
-
-    odette "Dia ingin kamu bahagia juga, tahu?"
-
-    grace "Tentu saja hal itu tidak akan berlanjut hingga meniduri pacarnya, {b}Odette{/b}!"
-
-    odette "Entahlah, menurutku kamu mungkin meremehkannya..."
-
-    grace f_sad "Tolong, jangan katakan padanya."
-
-    anon "O-oke."
-
-    grace "Terima kasih."
-
+    odette @ f_eyeroll "Tch, you really think she'll care?"
+    grace f_tired_back "How could she not?"
+    odette "She wants you to be happy too, you know?"
+    grace "Pretty sure that doesn't extend into fucking her boyfriend, {b}Odette{/b}!"
+    odette "I dunno, I think you might be underestimating her..."
+    grace f_sad "Please, don't tell her."
+    anon "O-okay."
+    grace "Thank you."
     show grace f_sad_down
-    odette "{i}*Huh*{/i} Sampai jumpa, kawan."
-
-    anon "Selamat malam, kalian berdua."
-
+    odette "{i}*Sigh*{/i} See ya around, big fella."
+    anon "Good night, you two."
     hide expression "characters/grace/grace_sex_mc_foreground.png" with dissolve
     grace a_cover_mouth @ -m_talk "..."
-    odette f_smirk "Sebenarnya, penis terbaik yang pernah ada... Benar?"
-
-    grace a_idle f_angry_back "{i}*Huh*{/i} Diam, {b}Odette{/b}!"
-
-    odette @ f_laugh "Ha ha ha!"
-
+    odette f_smirk "For real though, best dick ever... Right?"
+    grace a_idle f_angry_back "{i}*Sigh*{/i} Shut up, {b}Odette{/b}!"
+    odette @ f_laugh "Hahaha!"
     $ renpy.end_replay()
     $ persistent.cookie_jar["Grace"]["unlocked"] = True
     $ persistent.cookie_jar["Grace"]["gallery"]["01_unlocked"] = True
@@ -745,32 +505,24 @@ label odette_massage_sex_switcheroo:
         $ M_grace.set("grace_massage_alone", False)
     $ persistent.cookie_jar["Odette"]["unlocked"] = True
     $ persistent.cookie_jar["Odette"]["gallery"]["02_unlocked"] = True
-    odette "Baiklah, gadis egois... Berhentilah memonopolinya!"
-
+    odette "Alright, selfish girl... Quit hogging it!"
     grace "Haah... Haah..."
-
-    odette "Sekarang giliranku!"
-
-    grace "Baiklah baiklah!"
-
+    odette "It's my turn!"
+    grace "Alright, alright!"
 
     scene location_tattoo_apartment_oil
     show odette b_massage f_smirk_down
     show anon grace_massage_apt back climb hard
     with fade
-    grace "{i}*Huh*{/i} Kita seharusnya tidak melakukan ini..."
-
+    grace "{i}*Sigh*{/i} We should not be doing this..."
     show grace b_massage behind odette:
         xoffset 600
     show anon -climb none behind odette
     show odette b_massage_insert
     with dissolve
-    odette "santai saja."
-
-    odette "Hanya tiga orang, bersenang-senang sedikit."
-
-    odette "Pijat polos, ingat-"
-
+    odette "Oh, relax."
+    odette "It's just three people, having a little fun."
+    odette "Innocent massage, remem-"
     scene location_tattoo_apartment_oil
     $ anim_toggle = True
     $ animated = True
@@ -779,15 +531,11 @@ label odette_massage_sex_switcheroo:
         xoffset 600
     show expression AnimatedImage("odette_sex_massage", [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18], M_odette) as odette_sex_massage at Position(xalign = 0.0, yoffset = 0)
     with fade
-    odette "BIR!!"
-
-    odette "Astaga!"
-
+    odette "BEERR!!"
+    odette "Oh, fuck!"
     pause
-    grace "Penisnya besar sekali..."
-
-    odette "Ya, ceritakan padaku tentang hal itu!"
-
+    grace "His dick is so big..."
+    odette "Yeah, tell me about it!"
     jump odette_sex_massage_loop
 
 label odette_sex_massage_loop:
@@ -820,34 +568,23 @@ label odette_sex_massage_loop:
 label odette_sex_massage_hscene_dialog:
     if animcounter == 0 and randomizer() < 50:
         odette "Ahh!{p=1}{nw}"
-
     if animcounter == 1 and randomizer() > 50:
-        odette "Persetan aku lebih keras, {b}[firstname]{/b}!{p=2}{nw}"
-
-        grace "{i}*Terkesiap*{/i}{p=1}{nw}"
-
+        odette "Fuck me harder, {b}[firstname]{/b}!{p=2}{nw}"
+        grace "{i}*Gasp*{/i}{p=1}{nw}"
     if animcounter == 2 and randomizer() < 50:
-        anon "Kamu sangat ketat!{p=2}{nw}"
-
+        anon "You're so tight!{p=2}{nw}"
     if animcounter == 3 and randomizer() > 50:
-        anon "Apakah kalian semakin dekat?{p=2}{nw}"
-
-        odette "Hampir!{p=1}{nw}"
-
+        anon "Are you getting close?{p=2}{nw}"
+        odette "Almost!{p=1}{nw}"
     return
 
 label odette_sex_massage_cum_inside:
-    odette "Aku akan keluar!"
-
-    anon "Ya, aku juga!"
-
-    odette "Jangan berhenti!"
-
+    odette "I'm going to cum!"
+    anon "Yeah, me too!"
+    odette "Don't stop!"
     pause
-    anon "Ya Tuhan, JANGAN BERHENTI!!"
-
+    anon "Oh my god, DON'T STOP!!"
     odette "NGGHHH!!!"
-
     hide odette_sex_massage
     show odette b_massage_cum
     anon "HNNGGG!!!" with flash
@@ -864,28 +601,19 @@ label odette_sex_massage_cum_inside:
     show odette b_massage_after2
     with {'master': dissolve}
     anon "Haah... Haah..."
-
-    grace "Sialan."
-
+    grace "Holy shit."
     pause
-    odette "Anak baik..."
-
+    odette "Good boy..."
     odette "Hehehe!"
-
     call call_pregnancy_minigame ("grace_odette_sex_massage_end", M_odette)
 
 label odette_sex_massage_cum_outside:
-    odette "Aku akan keluar!"
-
-    anon "Ya, aku juga!"
-
-    odette "Jangan berhenti!"
-
+    odette "I'm going to cum!"
+    anon "Yeah, me too!"
+    odette "Don't stop!"
     pause
-    anon "Ya Tuhan, JANGAN BERHENTI!!"
-
-    odette "Persetan!!"
-
+    anon "Oh my god, DON'T STOP!!"
+    odette "Fuck!!"
     hide odette_sex_massage
     show anon grace_massage_apt back none
     show odette b_massage_pullout
@@ -895,24 +623,16 @@ label odette_sex_massage_cum_outside:
     grace @ a_cover_mouth "!!!"
     pause
     anon "Haah... Haah..."
-
-    grace "Sialan."
-
-    odette "Itu air mani yang banyak!"
-
+    grace "Holy shit."
+    odette "That's a lot of cum!"
     odette "Hehehe!"
-
     jump grace_odette_sex_massage_end
 
 label grace_massage_sex_switcheroo:
     odette "You want to get on again, babe?"
-
-    grace "Oh, entahlah..."
-
+    grace "Oh, I dunno..."
     odette "C'mon, I love watching him fuck you..."
-
-    grace "MM."
-
+    grace "Mmm."
     scene location_tattoo_apartment_oil
     show grace b_massage:
         xoffset 600
@@ -920,21 +640,17 @@ label grace_massage_sex_switcheroo:
     show odette b_massage_insert
     with fade
     odette "You know you want it."
-
     hide grace
     show odette b_massage f_smirk_down behind anon
     show anon climb hard
     with dissolve
-    grace "{i}*Huh*{/i} Kita seharusnya tidak melakukan ini..."
-
+    grace "{i}*Sigh*{/i} We should not be doing this..."
     odette "That a girl!"
-
     show grace b_massage_insert
     show anon -climb
     show odette a_empty
     with dissolve
     odette "Give it to her good, {b}[firstname]{/b}!"
-
     scene location_tattoo_apartment_oil
     $ anim_toggle = True
     $ animated = True
@@ -942,27 +658,18 @@ label grace_massage_sex_switcheroo:
     show expression AnimatedImage("grace_sex_massage", [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17], M_grace) as grace_sex_massage at Position(xalign = 0.0, yoffset = 0)
     with fade
     grace "Ahh!!"
-
-    odette "Itu saja."
-
-    odette "Sama seperti itu!"
-
+    odette "That's it."
+    odette "Just like that!"
     pause
     odette "Oh, I love watching your ass bounce on that dick!"
-
     odette "Hehehe!"
-
     pause
     grace "It's so deep in me!"
-
     pause
-    odette "Ya Tuhan!"
-
+    odette "Oh, god!"
     pause
     odette "Fuck her harder, {b}[firstname]{/b}!"
-
-    grace "{i}*Terkesiap*{/i}"
-
+    grace "{i}*Gasp*{/i}"
     jump grace_sex_massage_loop
 
 label grace_odette_sex_massage_end:
@@ -972,15 +679,10 @@ label grace_odette_sex_massage_end:
     show expression "characters/grace/grace_sex_mc_foreground.png"
     with fade
     grace "We can't keep doing this, {b}Odette{/b}..."
-
-    odette "Kenapa tidak?"
-
+    odette "Why not?"
     grace "It's so wrong."
-
     odette "Then why does it feel so right?"
-
     grace "Think about {b}Eve{/b}."
-
     jump grace_odette_sex_massage_ulimate_end
 
 label grace_alone_sex_massage_end:
@@ -989,17 +691,12 @@ label grace_alone_sex_massage_end:
     show expression "characters/grace/grace_sex_mc_foreground.png"
     with fade
     grace "That was great, but we probably shouldn't keep doing this, {b}[firstname]{/b}..."
-
     grace "..."
     grace "Please, don't tell {b}Eve{/b}."
-
-    anon "O-oke."
-
-    grace "Terima kasih."
-
+    anon "O-okay."
+    grace "Thank you."
     show grace f_sad_down
     anon "Good night, {b}Grace{/b}."
-
     hide expression "characters/grace/grace_sex_mc_foreground.png" with dissolve
     grace a_cover_mouth @ -m_talk "..."
     $ renpy.end_replay()

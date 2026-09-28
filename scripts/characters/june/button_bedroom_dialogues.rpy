@@ -3,50 +3,37 @@ label june_bedroom_dialogue_cosplay_sex_pre:
     show player_sitting 2 zorder 1 at right
     show june_sitting 11 zorder 1 at Position(xpos=300,ypos=787)
     with dissolve
-    player_name "Jadi, apa yang kita lakukan?"
-
+    player_name "So, what're we doing?"
     show june_sitting 10
     show player_sitting 5
-    june "Apakah pintumu terkunci?"
-
+    june "Is your door locked?"
     show june_sitting 11
     show player_sitting 2
-    player_name "Uhh... menurutku begitu? Mengapa?"
-
+    player_name "Uhh... I think so? Why?"
     show june_sitting 12
     show player_sitting 5
-    june "Yah, aku tidak ingin orang tuamu melihatku saat aku sedang berdandan!"
-
+    june "Well, I don't want your parents seeing me while I'm getting dressed up!"
     show june_sitting 11
     show player_sitting 4
-    player_name "Oh, kamu melakukannya... Benar... Ini?"
-
+    player_name "Oh, you're doing it... Right... Here?"
     show june_sitting 10
     show player_sitting 5
-    june "Tentu saja konyol!"
-
-    june "Aku mungkin butuh bantuanmu sementara aku membereskannya..."
-
-    june "Dan saya ingin pendapat Anda tentang keseluruhan proses!"
-
+    june "Of course, silly!"
+    june "I might need your help while I put things on..."
+    june "And I want your opinion on the whole process!"
     show player_sitting 3
-    june "Cosplayku harus terlihat pas."
-
+    june "My cosplay has to look just right."
     show june_sitting 11
     show player_sitting 4
-    player_name "Jadi begitu."
-
-    player_name "Jadi... Bagaimana kita memulainya?"
-
+    player_name "I see."
+    player_name "So... How do we start?"
     show june_sitting 10
     show player_sitting 5
-    june "Mungkin sebaiknya aku membuka pakaian terlebih dahulu."
-
+    june "I should probably get undressed first."
     show june_sitting 11
     player_name "..."
     show june_sitting 10
-    june "Tunggu, biarkan aku melepas baju ini..."
-
+    june "Hold on, let me just get these clothes off..."
     show june_sitting 14 at Position(xoffset=7) with dissolve
     pause
     show player_sitting 7
@@ -61,26 +48,20 @@ label june_bedroom_dialogue_cosplay_sex_pre:
     june "..."
     show june_sitting 20
     june "Haha!"
-
     show player_sitting 5 with dissolve
-    june "Kamu tidak perlu menyembunyikan matamu, konyol!"
-
+    june "You don't have to hide your eyes, silly!"
     show june_sitting 19
     show player_sitting 4
-    player_name "Aku hanya... Tidak ingin-"
-
+    player_name "I just... Didn't want-"
     show june_sitting 20
     show player_sitting 5
-    june "Tidak apa-apa, aku ingin kamu menontonnya."
-
+    june "It's fine, I want you to watch."
     show june_sitting 19
     show player_sitting 4
-    player_name "Oke..."
-
+    player_name "Okay..."
     show june_sitting 20
     show player_sitting 3
-    june "Aku harus melepas SEMUA pakaianku..."
-
+    june "I need to remove ALL of my clothes..."
     hide june_sitting_underwear
     show june_sitting 23
     with dissolve
@@ -88,81 +69,60 @@ label june_bedroom_dialogue_cosplay_sex_pre:
     show june_sitting 24 with dissolve
     pause
     show june_sitting 25 at Position(xoffset=40) with dissolve
-    june "... Jika kita ingin membuat cosplay ini benar!"
-
+    june "... If we want to make this cosplay right!"
     show june_sitting 19 with dissolve
     show player_sitting 4
-    player_name "Kamu... Kamu terlihat sangat baik!"
-
+    player_name "You... You look really good!"
     show june_sitting 22b at Position(xoffset=18)
     show player_sitting 3
-    june "Terima kasih."
-
+    june "Thanks."
     show june_sitting 20
-    june "Sekarang, sebelum saya memakai kostum sebenarnya, saya butuh bantuan Anda dengan sesuatu..."
-
+    june "Now, before I put on the actual costume, I need your help with something..."
     show june_sitting 19
     show player_sitting 4
-    player_name "Apa yang bisa saya bantu?"
-
+    player_name "How can I help?"
     show player_sitting 11
     show june_sitting 26 at Position(xoffset=24) with dissolve
-    june "Aku harus mengecat badanku... Dan ada beberapa tempat yang tidak bisa aku jangkau!"
-
-    june "Ini, ambil ini dan ambil sedikit dengan jarimu..."
-
+    june "I have to put on body paint... And there're some spots I just can't reach!"
+    june "Here, take this and scoop some out with your fingers..."
     show june_sitting 19
     show player_sitting 12
     with dissolve
-    player_name "Di mana saya memulai?"
-
+    player_name "Where do I start?"
     show june_sitting 22b at Position(xoffset=18)
     show player_sitting 13 with dissolve
-    june "Biarkan imajinasi Anda yang bekerja!"
-
+    june "Just let your imagination do the work!"
     show black zorder 3
     show june_sitting 29
     show player_sitting 1
     with dissolve
-    player_name "... Apakah kamu yakin ingin mengecat di sini juga?"
-
-    june "Jangan takut, masuklah ke sana!"
-
-    june "Ooh, itu menggelitik..."
-
+    player_name "... Are you sure you want paint down here too?"
+    june "Don't be scared, get in there!"
+    june "Ooh, that tickles..."
     hide black with dissolve
-    june "Jadi?"
-
-    june "Bagaimana penampilanku?"
-
+    june "So?"
+    june "How do I look?"
     show june_sitting 28
     show player_sitting 2
-    player_name "Benar-benar... Meyakinkan!"
-
-    player_name "Kamu benar-benar terlihat seperti orcette, itu pasti..."
-
+    player_name "It's really... Convincing!"
+    player_name "You really look like an orcette, that's certain..."
     show june_sitting 29
     show player_sitting 5
-    june "Apakah kamu merasa... Tertarik dengan penampilan baruku?"
-
+    june "Do you feel... Attracted to my new look?"
     show june_sitting 28
     show player_sitting 4
-    player_name "Maksudmu aku-"
-
+    player_name "You mean I-"
     show june_sitting 29
     show player_sitting 5
-    june "Apakah kamu merasa terangsang... Memandangku?"
-
+    june "Do you feel horny... Looking at me?"
     show june_sitting 28
     show player_sitting 3
     player_name "..."
     show player_sitting 4
-    player_name "Menurutku kamu sangat cantik... Berbaju hijau..."
-
+    player_name "I think you're very pretty... In green..."
     show june_sitting 29
     show player_sitting 3
-    june "Mengapa kamu tidak mendekat dan menciumku, Kepala Suku?"
-
+    june "Why don't you come closer and kiss me, Chieftain?"
     hide player_sitting
     show june_sitting 31 at center
     with dissolve
@@ -174,48 +134,35 @@ label june_bedroom_dialogue_cosplay_sex_intro:
     hide june_sitting
     hide player_sitting
     with fade
-    june "Aku ingin yang sebesar itu... Ayam kepala suku..."
-
-    june "... Jauh di dalam diriku!"
-
+    june "I want that big... Chieftain cock..."
+    june "... Deep inside me!"
     show junesex 3b with dissolve
-    june "ah..."
-
+    june "Ahh..."
     show junesex 4b with dissolve
-    june "Ya!"
-
-    june "Bork aku, {b}[firstname]{/b}!!"
-
+    june "Yess!"
+    june "Bork me, {b}[firstname]{/b}!!"
     return
 
 label june_bedroom_dialogue_sex_pre_cosplay:
     show june_sitting 3 at Position(xpos=300,ypos=787)
     show player_sitting 1 at right
     with dissolve
-    june "Kamar keren!"
-
-    june "Saya suka poster dan patung Anda!"
-
+    june "Cool room!"
+    june "I love your posters and figurines!"
     show june_sitting 4
     show player_sitting 2
-    player_name "Haha, ya, mereka cukup bagus."
-
-    player_name "Saya sudah memilikinya sejak saya masih kecil."
-
-    player_name "Mereka semacam... Culun, menurutku."
-
+    player_name "Haha, yeah, they're pretty nice."
+    player_name "I've had them since I was a kid."
+    player_name "They're sort of... Geeky, I guess."
     show june_sitting 3
     show player_sitting 1
-    june "Saya sangat menyukainya!"
-
+    june "I really like them!"
     show june_sitting 4
     show player_sitting 2
-    player_name "Terima kasih."
-
+    player_name "Thanks."
     show june_sitting 3
     show player_sitting 1
-    june "Jadi... Apa yang ingin kamu lakukan?"
-
+    june "So... What do you wanna do?"
     show june_sitting 4
     return
 
@@ -223,62 +170,48 @@ label june_bedroom_dialogue_sex_pre_no_cosplay:
     show player_sitting 2 zorder 1 at right
     show june_sitting 11 zorder 1 at Position(xpos=300,ypos=787)
     with dissolve
-    player_name "Jadi, apa rencananya?"
-
+    player_name "So, what's the plan?"
     show june_sitting 10
     show player_sitting 1
-    june "Apakah pintumu terkunci?"
-
+    june "Is your door locked?"
     show player_sitting 2
     show june_sitting 11
-    player_name "Ya. Menurutku {b}[deb_name]{/b} tidak akan mengganggu kita."
-
+    player_name "Yeah. I don't think {b}[deb_name]{/b} will be bothering us."
     show june_sitting 10
-    june "Dingin."
-
+    june "Cool."
     show player_sitting 1
     show june_sitting 12
-    june "Hanya saja... Aku sangat suka nongkrong di kamarmu..."
-
+    june "It's just that... I really like hanging out in your room..."
     show player_sitting 3
-    june "Ini sangat... Nyaman. Aku hanya merasa kita bisa melakukan apapun yang kita inginkan, secara rahasia..."
-
+    june "It's so... Cozy. I just feel like we can do anything we want, in secret..."
     show player_sitting 4
     show june_sitting 13
-    player_name "Saya juga menyukainya."
-
+    player_name "I like it, too."
     show player_sitting 1
     show june_sitting 10
-    june "Jadi, apa yang... Kepala suku Orc kuinginkan dariku malam ini?"
-
+    june "So, what does my... Orc chieftain want from me tonight?"
     show june_sitting 11
     return
 
 label june_bedroom_dialogue_sex_normal_pre:
     show player_sitting 2 zorder 1 at right
     show june_sitting 11 zorder 1 at Position(xpos=300,ypos=787)
-    player_name "Apakah kamu ingin... Berhubungan seks?"
-
+    player_name "Do you want to... Have sex?"
     show player_sitting 1
     show june_sitting 10
-    june "Haruskah aku mendapatkan kostumku?"
-
+    june "Should I get my costume?"
     show player_sitting 4
     show june_sitting 11
-    player_name "Eh, mungkin lain kali?"
-
+    player_name "Eh, maybe another time?"
     show player_sitting 3
     show june_sitting 12
-    june "Oke... Saya kira kita bisa melakukannya seperti ini."
-
+    june "Okay... I guess we can do it like this."
     show player_sitting 4
     show june_sitting 13
-    player_name "Anda tidak keberatan?"
-
+    player_name "You don't mind?"
     show player_sitting 3
     show june_sitting 10
-    june "Bermain peran memang menyenangkan, tapi tentu saja, saya baik-baik saja..."
-
+    june "Roleplaying is really fun, but sure, I'm fine with it..."
     show june_sitting 14 at Position(xoffset=7) with dissolve
     pause
     show june_sitting 15 with dissolve
@@ -292,8 +225,7 @@ label june_bedroom_dialogue_sex_normal_pre:
     show june_sitting 24 with dissolve
     pause
     show june_sitting 25 at Position(xoffset=40) with dissolve
-    june "Ya? Apa yang kamu tunggu? aku di sini..."
-
+    june "Well? What are you waiting for? I'm right here..."
     show june_sitting 30 at center
     hide player_sitting
     with dissolve
@@ -303,20 +235,15 @@ label june_bedroom_dialogue_sex_normal_pre:
 label june_bedroom_dialogue_sex_cosplay_pre:
     show player_sitting 6 at right
     show june_sitting 11 zorder 1 at Position(xpos=300,ypos=787)
-    player_name "Aku bisa membantumu berdandan seperti terakhir kali... Dan menjadi kepala sukumu?"
-
+    player_name "I could help you dress up like last time... And be your chieftain?"
     show player_sitting 3
     show june_sitting 10
-    june "Saya berharap Anda menyarankan hal itu!"
-
-    june "Yang kupikirkan hanyalah berdandan dan menjadi orcette-mu..."
-
-    june "Oke, ayo pakai kostumnya..."
-
+    june "I was hoping you would suggest that!"
+    june "All I've been thinking about is dressing up and becoming your orcette..."
+    june "Okay, let put the costume on..."
     show june_sitting 29
     with fade
-    june "Mengapa kamu tidak mendekat... Dan menciumku, Kepala Suku?"
-
+    june "Why don't you come closer... And kiss me, Chieftain?"
     hide player_sitting
     show june_sitting 31 at center
     with dissolve
@@ -326,124 +253,90 @@ label june_bedroom_dialogue_sex_cosplay_pre:
 label june_bedroom_dialogue_play_games_cosplay_over:
     show june_sitting 11 at Position(xpos=300,ypos=787)
     show player_sitting 2 at right
-    player_name "Apakah Anda ingin bermain game lagi?"
-
+    player_name "Do you want to play games again?"
     show june_sitting 10
     show player_sitting 1
-    june "Tentu, masih ada beberapa misi yang belum saya selesaikan di {i}Orc Bork{/i}."
-
+    june "Sure, there's still some quests I haven't finished in {i}Orc Bork{/i}."
     show june_sitting 11
     show player_sitting 6
-    player_name "Ayo lakukan!"
-
+    player_name "Let's do it!"
     show player_sitting 2
-    player_name "Hanya satu hal, bisakah Anda memberi tahu saya cara memainkannya lagi?"
-
+    player_name "Just one thing, could you tell me how to play it again?"
     show june_sitting 10
     show player_sitting 1
     june "Haha."
-
-    june "Tentu, mendekatlah agar Anda dapat melihat layar dengan lebih baik..."
-
+    june "Sure, come closer so you can see the screen better..."
     show june_sitting 7 at center
     hide player_sitting
     with dissolve
-    june "Kami harus bermain bersama dan mengatur waktu serangan kami."
-
-    june "Saat panah berada di bilah hijau, tekan tombol!"
-
+    june "We have to play together and time our attacks."
+    june "When the arrow is in the green bar, press the button!"
     show june_sitting 8
-    player_name "Oh baiklah! Kedengarannya cukup sederhana."
-
+    player_name "Oh, okay! Sounds pretty simple."
     show june_sitting 7
-    june "Mari kita mencobanya!"
-
+    june "Let's give it a try!"
     return
 
 label june_bedroom_dialogue_play_games_cosplay_not_over:
     show player_sitting 2 at right
-    player_name "Kami bisa mencoba mengalahkan permainan Anda itu."
-
+    player_name "We could try beating that game of yours."
     show june_sitting 10
     show player_sitting 1
-    june "Ya? Anda benar-benar ingin?"
-
+    june "Yeah? You really want to?"
     show june_sitting 11
     show player_sitting 6
-    player_name "Ayo lakukan!"
-
+    player_name "Let's do it!"
     show player_sitting 2
-    player_name "Hanya satu hal, bisakah Anda memberi tahu saya cara bermainnya?"
-
+    player_name "Just one thing, could you tell me how to play?"
     show june_sitting 3
     show player_sitting 1
     with dissolve
     june "Haha."
-
-    june "Yah, itu hanyalah salah satu permainan berburu monster."
-
-    june "Anda melewati ruang bawah tanah, membunuh monster, mendapatkan item..."
-
+    june "Well, it's just one of those monster hunting games."
+    june "You go through dungeons, kill monsters, get items..."
     show player_sitting 5
-    june "... Tapi ada bos terakhir yang sudah lama kucoba kalahkan!!"
-
+    june "... But there's this final boss I've been trying to beat for the longest time!!"
     show player_sitting 1
-    june "Di sini, mendekatlah agar Anda dapat melihat layar dengan lebih baik..."
-
+    june "Here, come closer so you can see the screen better..."
     show june_sitting 8 at center
     hide player_sitting
     with dissolve
-    player_name "Oke, jadi bagaimana kita mengalahkan bos ini?"
-
+    player_name "Okay, so how do we beat this boss?"
     show june_sitting 7
-    june "Kami harus bermain bersama dan mengatur waktu serangan kami."
-
-    june "Saat panah berada di bilah hijau, tekan tombol!"
-
+    june "We have to play together and time our attacks."
+    june "When the arrow is in the green bar, press the button!"
     show june_sitting 8
-    player_name "Oh baiklah! Kedengarannya cukup sederhana."
-
+    player_name "Oh, okay! Sounds pretty simple."
     show june_sitting 7
-    june "Mari kita mencobanya!"
-
+    june "Let's give it a try!"
     return
 
 label june_bedroom_dialogue_leave:
     show player_sitting 4 at right
     show june_sitting 13 at Position(xpos=300,ypos=787)
-    player_name "Sebenarnya aku harus segera tidur..."
-
+    player_name "Actually, I should really get to bed..."
     show june_sitting 12
     show player_sitting 3
-    june "Sudah?!"
-
+    june "Already?!"
     show june_sitting 13
     show player_sitting 4
-    player_name "Ya... {b}[deb_name]{/b} bilang aku harus tidur lebih awal."
-
-    player_name "Maaf, {b}Juni{/b}..."
-
+    player_name "Yeah... {b}[deb_name]{/b} said I need to get to bed earlier."
+    player_name "Sorry, {b}June{/b}..."
     show june_sitting 12
     show player_sitting 3
-    june "Tidak apa-apa, menurutku."
-
-    june "Mungkin kita bisa jalan-jalan lain kali?"
-
+    june "It's alright, I guess."
+    june "Maybe we can hang out another time?"
     show june_sitting 13
     show player_sitting 4
-    player_name "Tentu!"
-
+    player_name "Sure!"
     show june_sitting 11
-    player_name "Saya ingin sekali."
-
+    player_name "I'd love to."
     show june_sitting 10
     show player_sitting 3
-    june "Oke, sampai jumpa di sekolah?"
-
+    june "Okay, see you at school?"
     show june_sitting 11
     show player_sitting 4
-    player_name "Ya!"
-
+    player_name "Yeah!"
     hide june_sitting
     hide player_sitting
     with dissolve
@@ -454,18 +347,13 @@ label june_bedroom_dialogue_normal_sex_intro:
     hide june_sitting
     hide player_sitting
     with fade
-    june "Aku ingin ayam besarmu itu..."
-
-    june "... Jauh di dalam diriku!"
-
+    june "I want that big cock of yours..."
+    june "... Deep inside me!"
     show junesex 3 with dissolve
-    june "ah..."
-
+    june "Ahh..."
     show junesex 4 with dissolve
-    june "Ya!"
-
-    june "Persetan denganku, {b}[firstname]{/b}!!"
-
+    june "Yess!"
+    june "Fuck me, {b}[firstname]{/b}!!"
     return
 
 label june_bedroom_dialogue_cosplay_sex_loop:
@@ -526,16 +414,13 @@ label june_bedroom_dialogue_normal_sex_cum_inside_dialogue:
     pause
     show junesex 9 with hpunch
     june "Ahh!!!"
-
     show white
     pause 0.3
     hide white with dissolve
     pause
     show junesex 14 with dissolve
-    june "Aku... Rasanya enak sekali..."
-
-    june "... Air manimu jauh di dalam diriku..."
-
+    june "I... That feels so good..."
+    june "... Your cum deep inside me..."
     return
 
 label june_bedroom_dialogue_normal_sex_cum_outside:
@@ -548,7 +433,6 @@ label june_bedroom_dialogue_normal_sex_cum_outside_dialogue:
     pause
     show junesex 9 with hpunch
     player_name "Ahh!!!"
-
     show white
     pause 0.3
     show junesex 10
@@ -557,14 +441,10 @@ label june_bedroom_dialogue_normal_sex_cum_outside_dialogue:
     show junesex 11 with dissolve
     june "..."
     show junesex 12
-    june "Begitu banyak..."
-
-    june "Aku berharap kamu akan menahanku dan masuk ke dalam..."
-
-    june "... Dengan semua air mani yang kuat itu..."
-
-    june "Mungkin lain kali?"
-
+    june "So much..."
+    june "I was hoping you would hold me down and cum inside..."
+    june "... With all that strong cum..."
+    june "Maybe next time?"
     return
 
 label june_bedroom_dialogue_cosplay_sex_cum_inside:
@@ -581,18 +461,14 @@ label june_bedroom_dialogue_cosplay_sex_cum_inside_dialogue:
     pause
     show junesex 9b with hpunch
     june "Ahh!!!"
-
     show white
     pause 0.3
     hide white with dissolve
     pause
     show junesex 14b with dissolve
-    june "Aku... Rasanya enak sekali..."
-
-    june "... Benih orcmu jauh di dalam diriku..."
-
-    june "... Kepala sukuku..."
-
+    june "I... That feels so good..."
+    june "... Your orc seed deep inside me..."
+    june "... My chieftain..."
     return
 
 label june_bedroom_dialogue_cosplay_sex_cum_outside:
@@ -609,7 +485,6 @@ label june_bedroom_dialogue_cosplay_sex_cum_outside_dialogue:
     pause
     show junesex 9b with hpunch
     player_name "Ahh!!!"
-
     show white
     pause 0.3
     show junesex 10b
@@ -618,14 +493,10 @@ label june_bedroom_dialogue_cosplay_sex_cum_outside_dialogue:
     show junesex 11b with dissolve
     june "..."
     show junesex 12b
-    june "Begitu banyak... Sperma!"
-
-    june "Aku berharap kamu akan menahanku dan masuk ke dalam..."
-
-    june "...Dengan semua orc yang kuat itu..."
-
-    june "Mungkin lain kali?"
-
+    june "So much... Cum!"
+    june "I was hoping you would hold me down and cum inside..."
+    june "... With all that strong orc cum..."
+    june "Maybe next time?"
     return
 
 label june_bedroom_dialogue_aftercum_inside:
@@ -633,52 +504,39 @@ label june_bedroom_dialogue_aftercum_inside:
     show player_sitting 3 zorder 1 at right
     show june_sitting 10 zorder 1 at Position(xpos=300,ypos=787)
     with fade
-    june "Itu bagus sekali!"
-
-    june "Ini sudah larut... Aku harus pulang."
-
+    june "That was great!"
+    june "It's getting pretty late... I should get home."
     show player_sitting 6
     show june_sitting 11
-    player_name "Ya, {b}[deb_name]{/b} akan mencurigakan dengan banyaknya waktu yang kita habiskan di sini..."
-
+    player_name "Yeah, {b}[deb_name]{/b} is going to get suspicious with all the time we spend in here..."
     show june_sitting 10
     show player_sitting 3
     june "Haha."
-
-    june "Saya pikir ini adalah waktu yang dihabiskan dengan baik!"
-
+    june "I think it was time well spent!"
     show june_sitting 11
     show player_sitting 4
-    player_name "Saya juga bersenang-senang."
-
+    player_name "I had fun too."
     show june_sitting 13
     show player_sitting 4
-    player_name "Hei, uh, tentang melakukannya di dalam..."
-
+    player_name "Hey, uh, about doing it inside..."
     show june_sitting 12
     show player_sitting 5
-    june "Oh, jangan khawatir tentang itu, aku akan minum pil saja."
-
+    june "Oh, don't worry about that, I'll just take a pill."
     show june_sitting 11
     show player_sitting 4
-    player_name "Apakah itu berarti kita bisa melakukan ini lagi dalam waktu dekat?"
-
+    player_name "Does that mean we can do this again soon?"
     show june_sitting 10
     show player_sitting 3
-    june "Itu tergantung... Apakah kamu mau?"
-
+    june "That depends... Do you want to?"
     show player_sitting 6
     show june_sitting 11
-    player_name "Saya ingin sekali."
-
+    player_name "I'd love to."
     show june_sitting 10
     show player_sitting 3
-    june "Oke, kalau begitu sampai jumpa di sekolah?"
-
+    june "Okay, I'll see you at school then?"
     show june_sitting 11
     show player_sitting 4
-    player_name "Ya!"
-
+    player_name "Yeah!"
     return
 
 label june_bedroom_dialogue_aftercum_outside:
@@ -686,42 +544,31 @@ label june_bedroom_dialogue_aftercum_outside:
     show player_sitting 3 zorder 1 at right
     show june_sitting 10 zorder 1 at Position(xpos=300,ypos=787)
     with fade
-    june "Itu bagus sekali!"
-
-    june "Ini sudah larut... Aku harus pulang."
-
+    june "That was great!"
+    june "It's getting pretty late... I should get home."
     show player_sitting 6
     show june_sitting 11
-    player_name "Ya, {b}[deb_name]{/b} akan mencurigakan dengan banyaknya waktu yang kita habiskan di sini..."
-
+    player_name "Yeah, {b}[deb_name]{/b} is going to get suspicious with all the time we spend in here..."
     show june_sitting 10
     show player_sitting 3
     june "Haha."
-
-    june "Saya pikir ini adalah waktu yang dihabiskan dengan baik!"
-
+    june "I think it was time well spent!"
     show june_sitting 11
     show player_sitting 4
-    player_name "Saya juga bersenang-senang."
-
+    player_name "I had fun too."
     show june_sitting 10
     show player_sitting 3
-    june "Mungkin kita bisa melakukan ini lagi dalam waktu dekat?"
-
+    june "Maybe we can do this again soon?"
     show june_sitting 11
     show player_sitting 4
-    player_name "Tentu!"
-
+    player_name "Sure!"
     show player_sitting 6
-    player_name "Saya ingin sekali."
-
+    player_name "I'd love to."
     show june_sitting 10
     show player_sitting 3
-    june "Oke, kalau begitu sampai jumpa di sekolah?"
-
+    june "Okay, I'll see you at school then?"
     show june_sitting 11
     show player_sitting 4
-    player_name "Ya!"
-
+    player_name "Yeah!"
     return
 # Decompiled by unrpyc: https://github.com/CensoredUsername/unrpyc

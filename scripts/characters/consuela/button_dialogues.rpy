@@ -2,48 +2,36 @@ label button_consuela_intro:
     show player 10 at left
     show consuela
     with dissolve
-    player_name "Halo, {b}Consuela{/b}."
-
+    player_name "Hey there, {b}Consuela{/b}."
     show player 5
     show consuela f_unsure
-    consuela "Halo, {b}Tuan [firstname]{/b}."
-
+    consuela "Hello, {b}Mister [firstname]{/b}."
     show consuela f_normal
     show player 12
-    player_name "Anda cukup menghubungi saya {b}[firstname]{/b}..."
-
+    player_name "You can just call me {b}[firstname]{/b}..."
     show player 5
     show consuela f_unsure
-    consuela "Apa?"
-
-    consuela "Tidak ada bahasa Inggris."
-
+    consuela "¿Qué?"
+    consuela "No hablo inglés."
     show consuela f_normal
     show player 10
     player_name "Oh, uhh..."
-
     show player 5
     pause
     consuela @ -m_talk "..."
     show player 3 with dissolve
     player_name "..."
     show consuela f_unsure
-    consuela "Ehh... aku bersih-bersih sekarang."
-
-    consuela "ya?"
-
+    consuela "Ehh... I clean now."
+    consuela "¿Sí?"
     show consuela f_normal
     show player 10 with dissolve
-    player_name "Oh ya."
-
-    player_name "Eh, maksudku... Ya!"
-
+    player_name "Oh, yes."
+    player_name "Err, I mean... Sí!"
     show player 14
-    player_name "Terima kasih, {b}Consuela{/b}."
-
+    player_name "Thank you, {b}Consuela{/b}."
     show player 13
-    consuela "Sama-sama, {b}Tuan [firstname]{/b}."
-
+    consuela "You're welcome, {b}Mister [firstname]{/b}."
     hide player
     hide consuela
     with dissolve

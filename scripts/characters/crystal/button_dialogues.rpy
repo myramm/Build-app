@@ -2,103 +2,78 @@ label button_crystal_preamble:
     show player 5 at left
     show old_crystal 3 at right
     with dissolve
-    crystal "Itu pacar gadis kecilku lagi."
-
+    crystal "It's my little girl's boyfriend again."
     show old_crystal 1 with dissolve
     show player 10
-    player_name "Sudah kubilang, kami tidak-"
-
+    player_name "I told you we're not-"
     show player 5
     show old_crystal 2
-    crystal "Apapun yang kamu katakan, anak muda."
-
+    crystal "Whatever you say, young man."
     show old_crystal 4 with dissolve
-    crystal "{i}*Meneguk*{/i}"
-
+    crystal "{i}*Gulp*{/i}"
     show old_crystal 2 with dissolve
-    crystal "Jadi, apa yang kamu inginkan?"
-
+    crystal "So, what do you want?"
     return
 
 label button_crystal_roxxys_dad:
     show player 10
-    player_name "Dimana {b}Roxxy{/b}... Ayah?"
-
+    player_name "Where's {b}Roxxy{/b}'s... Father?"
     show player 11
     show old_crystal 2
-    crystal "Hah! Dia tidak punya ayah!"
-
-    crystal "Saya sendiri yang membesarkannya."
-
+    crystal "Hah! She don't have no father!"
+    crystal "I raised her myself."
     show old_crystal 1
     show player 10
-    player_name "Jadi begitu."
-
+    player_name "I see."
     show player 11
     show old_crystal 2
-    crystal "Sejujurnya, saya tidak ingat yang mana..."
-
+    crystal "To tell you the truth, I don't remember which one it was..."
     show old_crystal 4 with dissolve
-    crystal "{i}*Meneguk*{/i}"
-
+    crystal "{i}*Gulp*{/i}"
     show old_crystal 2 with dissolve
-    crystal "... Jadi ayahnya bisa jadi siapa saja, sejauh yang aku tahu."
-
+    crystal "... So her daddy could be anyone, for all I know."
     show old_crystal 1
     show player 22
     player_name "!!!"
     show old_crystal 2
-    crystal "Ada lagi yang ingin Anda bicarakan?"
-
+    crystal "Anything else you'd like to talk about?"
     show player 5
     show old_crystal 1
     return
 
 label button_crystal_roxxy:
     show player 10
-    player_name "Tahukah Anda di mana saya bisa menemukan {b}Roxxy{/b}?"
-
+    player_name "Do you know where I could find {b}Roxxy{/b}?"
     show player 5
     show old_crystal 3 with dissolve
-    crystal "Hah! Anda pikir saya mengasuh putri saya?"
-
+    crystal "Hah! You think I babysit my daughter?"
     show old_crystal 1 with dissolve
     show player 10
     player_name "Hmm..."
-
     show player 5
     show old_crystal 2
-    crystal "Dia selalu keluar melakukan hal-hal..."
-
-    crystal "... Tapi, biasanya dia ada di {b}sekolah{/b} atau di {b}pantai{/b}."
-
+    crystal "She's always out doing stuff..."
+    crystal "... But, usually she's at {b}school{/b} or at {b}the beach{/b}."
     show old_crystal 1
     show player 14
-    player_name "Oh. Jadi begitu. Terima kasih!"
-
+    player_name "Oh. I see. Thanks!"
     show player 13
     show old_crystal 2
-    crystal "Ada lagi?"
-
+    crystal "Anything else?"
     show old_crystal 1
     return
 
 label button_crystal_nothing:
     show player 10
-    player_name "Oh, tidak ada apa-apa."
-
-    player_name "aku baru saja lewat..."
-
+    player_name "Oh, nothing."
+    player_name "I was just passing by..."
     show player 11
     show old_crystal 2
-    crystal "Baiklah, sebentar lagi ada tamu yang datang, jadi kenapa kamu tidak ikut saja."
-
+    crystal "Well, I got a visitor coming soon, so why don't you move along."
     show old_crystal 1
     show player 10
-    player_name "Saya minta maaf. Kalau begitu aku berangkat."
-
-    player_name "Selamat tinggal!"
-
+    player_name "I'm sorry. I'll get going then."
+    player_name "Bye!"
     hide player
     hide old_crystal
     with dissolve
@@ -110,33 +85,25 @@ label button_crystal_roxxy_go_to_picnic:
     show player_wet at left
     show old_crystal 3 at right
     with dissolve
-    crystal "Mmm, kamu tahu aku bisa membantumu mengeluarkan pakaian basah itu jika kamu mau?"
-
+    crystal "Mmm, you know I can help you out of them wet clothes if you want?"
     show old_crystal 1 with dissolve
     show player 10
-    player_name "Uhh... aku..."
-
+    player_name "Uhh... I..."
     show player 5
     player_name "..."
     show old_crystal 2
-    crystal "Jangan malu sekarang."
-
-    crystal "Pria tampan, seperti dirimu. Anda berhak mendapat perhatian khusus, bukan?"
-
+    crystal "Don't be shy now."
+    crystal "Handsome man, like yourself. You deserve some special attention, don't ya?"
     show old_crystal 1
     show player 3 with dissolve
     player_name "..."
-    roxxy "{b}Bu{/b}, tinggalkan {b}[firstname]{/b} sendiri!"
-
+    roxxy "{b}Mom{/b}, leave {b}[firstname]{/b} alone!"
     show old_crystal 2
-    crystal "Hehehe, aku hanya menggodanya sedikit."
-
+    crystal "Hehehe, I'm just teasin' the boy a bit."
     show old_crystal 1
-    roxxy "Baiklah, berhenti!"
-
+    roxxy "Well, stop!"
     show old_crystal 4 with dissolve
-    roxxy "{b}[firstname]{/b}, masuk ke sini!"
-
+    roxxy "{b}[firstname]{/b}, get in here!"
     show old_crystal 1
     player_name "..."
     hide old_crystal
@@ -150,24 +117,19 @@ label button_crystal_rox8_11_evening:
     show player 5 at left
     show old_crystal 6 at right
     with dissolve
-    crystal "Kamu kalah, tampan?"
-
+    crystal "You lost, handsome?"
     show old_crystal 5
     show player 10
-    player_name "Hah?"
-
+    player_name "Huh?"
     show player 5
     show old_crystal 6
-    crystal "Oh, kamu pria baru {b}Roxxy{/b}."
-
+    crystal "Oh, yer {b}Roxxy{/b}'s new man."
     show old_crystal 5
     show player 12
-    player_name "T-tidak, aku-"
-
+    player_name "N-no, I'm-"
     show player 5
     show old_crystal 6
-    crystal "Dia ada di dalam."
-
+    crystal "She's inside."
     show old_crystal 5
     return
 
@@ -176,24 +138,19 @@ label button_crystal_rox8_11_day:
     show player 5 at left
     show old_crystal 2 at right
     with dissolve
-    crystal "Kamu kalah, tampan?"
-
+    crystal "You lost, handsome?"
     show old_crystal 1
     show player 10
-    player_name "Hah?"
-
+    player_name "Huh?"
     show player 5
     show old_crystal 2
-    crystal "Oh, kamu pria baru {b}Roxxy{/b}."
-
+    crystal "Oh, yer {b}Roxxy{/b}'s new man."
     show old_crystal 1
     show player 10
-    player_name "T-tidak, aku-"
-
+    player_name "N-no, I'm-"
     show player 5
     show old_crystal 2
-    crystal "Dia tidak di sini."
-
+    crystal "She ain't here."
     show old_crystal 4 with dissolve
     return
 
@@ -202,26 +159,20 @@ label button_crystal_final_evening:
     show player 13 at left
     show old_crystal 6 at right
     with dissolve
-    crystal "Mmm, sekarang ada pria yang baik dan cakap!"
-
+    crystal "Mmm, now there's a nice capable man!"
     show old_crystal 5
     show player 14
-    player_name "Heh, hai {b}Kristal{/b}..."
-
+    player_name "Heh, hi {b}Crystal{/b}..."
     show player 13
     show old_crystal 6
-    crystal "Mengapa kamu tidak minum bir dan duduk bersamaku, Romeo?"
-
-    crystal "Anda bisa memamerkan lidah perak itu lagi..."
-
+    crystal "Why don't you grab a beer and come sit with me, Romeo?"
+    crystal "You can show off that silver tongue some more..."
     show old_crystal 5
     show player 14
-    player_name "Oh, entahlah... {b}Roxxy{/b} tidak akan-"
-
+    player_name "Oh, I dunno... {b}Roxxy{/b} wouldn't-"
     show player 5
     show old_crystal 6
-    crystal "Kamu di sini untuk menelepon {b}Roxxy{/b}?"
-
+    crystal "Yer here to call on {b}Roxxy{/b} then?"
     show old_crystal 5
     return
 
@@ -230,51 +181,38 @@ label button_crystal_final_day:
     show player 13 at left
     show old_crystal 2 at right
     with dissolve
-    crystal "Mmm, sekarang ada pria yang baik dan cakap!"
-
+    crystal "Mmm, now there's a nice capable man!"
     show old_crystal 1
     show player 14
-    player_name "Heh, hai {b}Kristal{/b}..."
-
+    player_name "Heh, hi {b}Crystal{/b}..."
     show player 13
     show old_crystal 2
-    crystal "Mengapa kamu tidak minum bir dan duduk bersamaku, Romeo?"
-
-    crystal "Anda bisa memamerkan lidah perak itu lagi..."
-
+    crystal "Why don't you grab a beer and come sit with me, Romeo?"
+    crystal "You can show off that silver tongue some more..."
     show old_crystal 1
     show player 14
-    player_name "Oh, entahlah... {b}Roxxy{/b} tidak akan-"
-
+    player_name "Oh, I dunno... {b}Roxxy{/b} wouldn't-"
     show player 5
     show old_crystal 2
-    crystal "{b}Roxxy{/b} tidak ada di sini."
-
+    crystal "{b}Roxxy{/b} ain't here."
     show old_crystal 1
     return
 
 label button_crystal_sorry_to_bother:
     show player 10
-    player_name "Maaf mengganggumu."
-
+    player_name "Sorry to bother you."
     show player 5
     show old_crystal 6
-    crystal "Psh, ngomong-ngomong, jangan ganggu aku..."
-
-    crystal "... Sebenarnya, kenapa kamu tidak pergi ke toko dan membelikanku dua belas bungkus yang baru?"
-
-    crystal "Lakukan itu dan kita bisa bicara sampai telingamu lepas."
-
+    crystal "Psh, talkin' don't bother me none..."
+    crystal "... In fact, why don't you run on down to the store and buy me a fresh twelve pack?"
+    crystal "You do that and we can talk 'til yer ears fall off."
     show old_crystal 5
     show player 17
-    player_name "Hehe, tidak apa-apa."
-
-    player_name "Saya harus masuk ke dalam dan melihat {b}Roxxy{/b}."
-
+    player_name "Heh, nah that's okay."
+    player_name "I should get inside and see {b}Roxxy{/b}."
     show player 13
     show old_crystal 6
-    crystal "Cocokkan dirimu."
-
+    crystal "Suit yerself."
     hide player
     hide old_crystal
     with dissolve
@@ -283,24 +221,18 @@ label button_crystal_sorry_to_bother:
 label button_crystal_roxxy_rox8_rox11:
     show old_crystal 1 with dissolve
     show player 10
-    player_name "Tahukah kamu dimana dia?"
-
+    player_name "Do you know where she is?"
     show player 5
     show old_crystal 2
-    crystal "Psh, aku tidak tahu..."
-
-    crystal "... Aku tidak bisa selalu melacak gadis itu."
-
+    crystal "Psh, ain't got a clue..."
+    crystal "... I can't never keep track of that gal."
     show old_crystal 1
     show player 10
-    player_name "Benar-benar?"
-
+    player_name "Really?"
     show player 5
     show old_crystal 2
-    crystal "Anak nakal yang tidak tahu berterima kasih, jangan beritahu aku apa pun."
-
-    crystal "Dia butuh teriakan! Apa yang dia butuhkan..."
-
+    crystal "Ungrateful brat don't tell me nothin'."
+    crystal "She needs a whoopin'! What she needs..."
     show old_crystal 1
     player_name "..."
     return
@@ -308,115 +240,86 @@ label button_crystal_roxxy_rox8_rox11:
 label button_crystal_roxxy_final:
     show old_crystal 4 with dissolve
     show player 12
-    player_name "Di mana dia berada?"
-
+    player_name "Where's she at?"
     show player 5
     show old_crystal 2 with dissolve
-    crystal "Sial kalau aku tahu."
-
-    crystal "Jika dia tidak di sekolah, maka menurutku dia mungkin ada di pantai."
-
-    crystal "Sumpah, gadis itu setengah putri duyung!"
-
+    crystal "Heck if I know."
+    crystal "If she ain't at school, then I reckon she's probably at the beach."
+    crystal "I swear, that girl is half mermaid!"
     show old_crystal 1
     show player 17
-    player_name "Hehe, ya mungkin..."
-
+    player_name "Heh, yeah maybe..."
     show player 13
     return
 
 label button_crystal_roxxys_mom:
     show old_crystal 1 with dissolve
     show player 10
-    player_name "Jadi kamu {b}ibunya Roxxy{/b}?"
-
+    player_name "So you're {b}Roxxy's mom{/b}?"
     show player 5
     show old_crystal 2
-    crystal "Itu benar."
-
-    crystal "Tidak bisakah kamu melihat kemiripannya?"
-
+    crystal "That's right."
+    crystal "Can't you see the resemblance?"
     show old_crystal 1
     menu:
-        "Ya, saya kira.":
+        "Yeah, I suppose.":
             show player 12
-            player_name "Sekarang setelah kamu menyebutkannya, kalian berdua memang sangat mirip."
-
+            player_name "Now that you mention it, you two do look a lot alike."
             show player 5
             show old_crystal 2
-            crystal "Ya, dia benar-benar beruntung, mengejarku."
-
-            crystal "Ayahnya jelek sekali!"
-
+            crystal "Yeah, she really lucked out, takin' after me."
+            crystal "Her father was ugly as sin!"
             show old_crystal 1
             player_name "..."
             show old_crystal 2b
-            crystal "Ha ha ha!"
-
+            crystal "Hahaha!"
             show old_crystal 1
             jump roxmom_dialogue_repeat
-        "Tapi kamu terlihat sangat muda!":
+        "You look so young though!":
             show player 12
-            player_name "Aku melihat kemiripannya tapi kamu terlihat terlalu muda untuk menjadi ibu {b}Roxxy{/b}."
-
+            player_name "I see the resemblance but you look way too young to be {b}Roxxy{/b}'s mom."
             show player 10
-            player_name "Apakah kamu yakin kamu bukan saudara perempuannya?"
-
+            player_name "Are you sure you're not her sister?"
             show player 5
             show old_crystal 2
-            crystal "Nah sekarang, jika Anda tidak punya lidah perak!"
-
-            crystal "Kurasa begitulah caramu tidak menarik perhatian putriku, ya?"
-
+            crystal "Well now, if you ain't got a silver tongue on you!"
+            crystal "I reckon that's how you dun got my daughter's attention, huh?"
             show old_crystal 1
             show player 10
-            player_name "Yah, aku-"
-
+            player_name "Well, I-"
             show player 5
             show old_crystal 2
-            crystal "Aku benci membocorkannya padamu, Romeo... Tapi butuh lebih dari sekadar pembicaraan mewah untuk mempertahankannya."
-
-            crystal "Saya membesarkannya dengan benar, Anda paham?"
-
-            crystal "Tunjukkan padanya bahwa nilai seorang pria terletak pada tindakannya dan bukan kata-katanya!"
-
+            crystal "Hate to break it to ya there, Romeo... But it's gonna take more than fancy talk to keep hold of her."
+            crystal "I brought her up right, you see?"
+            crystal "Showed her that the worth of a man is in his actions and not his words!"
             show old_crystal 1
             player_name "..."
             show old_crystal 2
-            crystal "Jika kamu tidak bisa merawat gadisku dengan baik, sebaiknya kamu pergi saja, Nak."
-
+            crystal "Iffin' you can't take proper care of my girl then you best be movin' on, kiddo."
             show old_crystal 1
             jump roxmom_dialogue_repeat
     return
 
 label button_crystal_roxxy_busy:
     show player 29 with dissolve
-    player_name "Apakah {b}Roxxy{/b} sibuk?"
-
+    player_name "Is {b}Roxxy{/b} busy?"
     show player 3
     show old_crystal 6
-    crystal "Psh, aku meragukannya..."
-
-    crystal "... Dia mungkin ada di sana sambil mengoceh di telepon sialan itu."
-
+    crystal "Psh, I doubt it..."
+    crystal "... She's probably just in there yappin' on that damn phone of hers."
     show old_crystal 5
     show player 12 with dissolve
-    player_name "Jadi aku boleh masuk dan menemuinya?"
-
+    player_name "So I can just go in and see her?"
     show player 5
     show old_crystal 11
-    crystal "... Kamu berharap aku menghentikanmu atau apalah?"
-
+    crystal "... You expectin' me to stop ya or something?"
     show old_crystal 10
     show player 10
-    player_name "aku tidak-"
-
+    player_name "I don't-"
     show player 11
     show old_crystal 6
-    crystal "Astaga, Romeo."
-
-    crystal "Tumbuhkan sepasang dan masuklah ke sana!"
-
+    crystal "Good grief, Romeo."
+    crystal "Grow a pair and get in there already!"
     hide old_crystal
     hide player
     with dissolve
@@ -424,94 +327,68 @@ label button_crystal_roxxy_busy:
 
 label button_crystal_happy_home:
     show player 10
-    player_name "Apakah kamu senang berada di rumah?"
-
+    player_name "Are you happy to be home?"
     show player 5
     show old_crystal 2
-    crystal "Sialan aku!"
-
-    crystal "Tempat ini mungkin adalah tempat kumuh tapi jauh lebih hebat dari sel penjara itu, aku akan memberitahumu itu secara gratis!"
-
-    crystal "Kurasa, aku harus berterima kasih padamu karena telah mengeluarkanku dari sana, ya?"
-
+    crystal "Darn tootin' I am!"
+    crystal "This place might be a shithole but it beats the hell outta that jail cell, I'll tell ya that for free!"
+    crystal "I reckon, I got you to thank for gettin' me outta there, huh?"
     show old_crystal 4 with dissolve
     show player 14
-    player_name "Oh, tidak perlu, terima kasih. Saya dengan senang hati membantu."
-
+    player_name "Oh, no thanks needed. I was just happy to help."
     show player 13
     show old_crystal 2 with dissolve
-    crystal "Heh, ya... Oke."
-
-    crystal "Jika kamu berkata begitu, Romeo."
-
-    crystal "Tawaran itu berlaku jika Anda berubah pikiran."
-
-    crystal "Aku bisa BENAR-BENAR bersyukur...kalau kamu tahu maksudku?"
-
+    crystal "Heh, yeah... Okay."
+    crystal "If you say so, Romeo."
+    crystal "The offer stands iffin' you change yer mind."
+    crystal "I can be REAL thankful... if ya know what I mean?"
     show old_crystal 1
     show player 5
-    player_name "{i}*Meneguk*{/i}"
-
+    player_name "{i}*Gulp*{/i}"
     show old_crystal 2
     crystal "Hehehe."
-
     return
 
 label button_crystal_should_go_evening:
     show player 14
-    player_name "Aku mungkin harus masuk ke sana..."
-
+    player_name "I should probably get in there..."
     show player 13
     show old_crystal 6
-    crystal "Ya, menurutku kamu benar tentang itu."
-
-    crystal "Jaga baik-baik gadisku sekarang, dengar?"
-
+    crystal "Yeah, I reckon yer right about that."
+    crystal "Take good care of my girl now, ya hear?"
     show old_crystal 5
     show player 14
-    player_name "Ya, Bu."
-
+    player_name "Yes, ma'am."
     hide player with dissolve
     pause
     show old_crystal 6
-    crystal "Hahaha, \"Bu\"..."
-
-    crystal "Itu membunuhku setiap saat!"
-
+    crystal "Hahaha, \"ma'am\"..."
+    crystal "That kills me every time!"
     hide old_crystal with dissolve
     return
 
 label button_crystal_should_go_day:
     show player 14
-    player_name "Saya mungkin harus pergi dan mencari {b}Roxxy{/b}."
-
+    player_name "I should probably go and find {b}Roxxy{/b}."
     show player 13
     show old_crystal 2
-    crystal "Baiklah, kamu tidak perlu kabur sekarang..."
-
-    crystal "... Aku dengan senang hati menemanimu sampai dia pulang."
-
+    crystal "Well, you don't have to go runnin' off now..."
+    crystal "... I'm more than happy to keep you company 'til she gets home."
     show old_crystal 1
     show player 14
-    player_name "Hehe, tidak, tidak apa-apa. Aku benci menjadi pengganggu."
-
+    player_name "Heh, no that's alright. I'd hate to be a bother."
     show player 13
     show old_crystal 2
-    crystal "Psh, tidak merepotkan."
-
-    crystal "Saya tahu beberapa cara kita bisa menghabiskan waktu..."
-
+    crystal "Psh, ain't no bother."
+    crystal "I know a few ways we could pass the time..."
     show old_crystal 1
     show player 3 with dissolve
-    player_name "{i}*Meneguk*{/i}"
-
+    player_name "{i}*Gulp*{/i}"
     show player 29
-    player_name "Aku uhh... Sampai jumpa lagi, {b}Crystal{/b}."
-
+    player_name "I'll uhh... See you later, {b}Crystal{/b}."
     show player 3
     show old_crystal 2
-    crystal "Cocokkan dirimu."
-
+    crystal "Suit yerself."
     hide player
     hide old_crystal
     with dissolve
@@ -519,21 +396,16 @@ label button_crystal_should_go_day:
 
 label button_crystal_she_here:
     show player 14
-    player_name "Ya, apakah dia ada di sini?"
-
+    player_name "Yeah, is she here?"
     show player 13
     show old_crystal 6
-    crystal "Oh ya, dia ada di dalam..."
-
+    crystal "Oh, yeah she's in there..."
     show old_crystal 11
-    crystal "Mungkin menyalak di ponselnya, seperti biasa."
-
-    crystal "Jika aku tidak mengetahuinya, aku berani bersumpah benda itu menempel di sisi kepala gadis itu!"
-
+    crystal "Probably yappin' on her phone, as usual."
+    crystal "If I didn't know better, I'd swear that thing was glued to the side of that girl's head!"
     show old_crystal 5
     show player 17
-    player_name "Hehe, ya."
-
+    player_name "Heh, yeah."
     show player 13
     return
 # Decompiled by unrpyc: https://github.com/CensoredUsername/unrpyc

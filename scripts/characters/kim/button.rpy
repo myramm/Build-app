@@ -15,12 +15,9 @@ label kim_button_dialogue:
         call kim_button_lounge
     else:
 
-        kim "Aku bersumpah itu yang terakhir!"
-
-        kim "Saya memberi tahu agen saya bahwa saya tidak peduli seberapa bagus bayarannya, saya sudah selesai memainkan stereotip ini!"
-
-        kim "Saya dibesarkan di Minnesota dan mendapat gelar BA dari Juilliard demi Tuhan!"
-
+        kim "I swear that's the last straw!"
+        kim "I'm telling my agent I don't care how well it pays, I'm done playing these stereotypes!"
+        kim "I grew up in Minnesota and have BA from Juilliard for God's sake!"
 
     $ game.main()
     return

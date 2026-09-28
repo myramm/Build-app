@@ -10,170 +10,107 @@ label con02_job3_roz:
         flip
         xoffset -100
     with dissolve
-    anon "B-permisi?"
-
-    roz "Apa yang kamu inginkan, Nak?"
-
-    anon "Teman saya di sini sedang mencari pekerjaan..."
-
-    anon "Anda tidak akan merekrut karyawan, bukan?"
-
+    anon "E-excuse me?"
+    roz "What do you want, kiddo?"
+    anon "My friend here is looking for work..."
+    anon "You wouldn't happen to be hiring, would you?"
     roz @ -m_talk "..."
-    roz "Dia tidak terlihat seperti dokter bagiku..."
-
-    anon @ f_surprised "Dokter?!"
-
-    anon @ f_laugh "Tidak, tidak, dia bukan seorang dokter."
-
-    anon "Umm, kami berharap kamu mendapat lowongan untuk staf kebersihanmu?"
-
+    roz "She doesn't look like a doctor to me..."
+    anon @ f_surprised "Doctor?!"
+    anon @ f_laugh "No, no, she's not a doctor."
+    anon "Umm, we were hoping you might have an opening on your janitorial staff?"
     roz @ -m_talk "Hmm."
-
-    roz "Ya, kebetulan saja kita melakukannya."
-
-    anon @ f_surprised "Benar-benar?"
-
-    roz "Ya, salah satu petugas kebersihan malam kami secara tidak sengaja masuk ke ruang isolasi minggu lalu..."
-
-    roz "Mendapat kasus demam kuning yang parah."
-
+    roz "Well, it just so happens that we do."
+    anon @ f_surprised "Really?"
+    roz "Yeah, one of our night janitors stumbled into an isolation room by accident last week..."
+    roz "Got himself a bad case of yellow fever."
     anon f_shock "!!!"
-    roz "Dan saya tidak berbicara tentang fetish Asia..."
-
+    roz "And I'm not talking about an Asian fetish thing..."
     anon f_worried "O-oh?"
-
-    roz "Apakah teman Anda berbicara bahasa Inggris?"
-
+    roz "Does your friend speak English?"
     show anon with dissolve:
         unflip
         xoffset 400
     anon "Ehh..."
-
     consuela f_annoyed "What is she asking?" (show_native="¿Qué está preguntando ella?")
     show anon with dissolve:
         flip
         xoffset -100
-    anon "Tidak juga."
-
+    anon "Not really."
     roz @ -m_talk "..."
-    anon "Namun dia adalah seorang pekerja keras, dan dia sangat membutuhkan pekerjaan itu!"
-
-    roz "Tidak bisa membantumu."
-
-    anon "Ah, ayolah!"
-
-    roz "Kita tidak bisa begitu saja mempekerjakan orang di luar jalan untuk masuk ke sini, kau tahu?"
-
-    roz "Bagaimana saya bisa memberinya arahan jika dia tidak bisa berbahasa Inggris?!"
-
-    anon @ f_normal "Dia cukup baik dengan perintah sederhana dan gerakan tangan..."
-
-    roz "Pfft, kuharap kamu bercanda!"
-
+    anon "She's a real hard worker though, and she desperately needs the job!"
+    roz "Can't help ya."
+    anon "Aww, c'mon!"
+    roz "We can't just hire anybody off the street that walks in here, you know?"
+    roz "How am I supposed to give her direction if she can't speak English?!"
+    anon @ f_normal "She's pretty good with simple commands and hand gestures..."
+    roz "Pfft, I hope you're joking!"
     pause
-    anon f_sad "Tolong, punya hati!"
-
-    roz "Saya tidak punya waktu untuk ini."
-
-    anon "Dengar, ini salahku dia dipecat dari pekerjaan terakhirnya dan dia punya keluarga yang harus dinafkahi..."
-
+    anon f_sad "Have a heart, please!"
+    roz "I don't have time for this."
+    anon "Look, it's my fault she got fired from her last job and she's got a family to support..."
     roz @ -m_talk "..."
-    anon "Tolong, aku akan melakukan apa saja!"
-
+    anon "Please, I'll do anything!"
     show roz f_smirk
     pause
-    roz "Apa pun?"
-
-    anon f_normal "Ya."
-
+    roz "Anything?"
+    anon f_normal "Yes."
     pause
-    roz "Berputar ke arahku dengan sangat cepat."
-
+    roz "Spin around for me real quick."
     anon f_worried @ -m_talk "Hmm?"
-
-    roz "Ayolah, aku ingin melihatmu dengan baik."
-
+    roz "Go on, I wanna get a good look at you."
     show anon f_worried_left a_up with dissolve:
         unflip
         xoffset 400
-    anon "Seperti ini?"
-
+    anon "Like this?"
     pause
-    roz "Ya, begitu saja."
-
+    roz "Yeah, just like that."
     consuela "This is getting weird..." (show_native="Esto está raro...")
     roz @ -m_talk "Hmm."
-
-    roz "Baiklah, menurutku kita bisa menyelesaikan sesuatu."
-
+    roz "Alright, I think we can work something out."
     show anon f_worried -a_up with dissolve:
         flip
         xoffset -100
-    anon "Ya?"
-
-    roz "{b}Kita harus naik ke ruang penyimpanan lantai dua{/b} dan mengambil seragam dan lencananya."
-
+    anon "Yeah?"
+    roz "{b}We'll have to head upstairs to the second floor storage room{/b} and grab her a uniform and a badge."
     show anon f_normal a_idle with dissolve:
         unflip
         xoffset 400
-    anon "Anda dengar itu?"
-
-    consuela "saya membersihkan?"
-
-    anon @ f_laugh "Ya, kamu bersih-bersih!"
-
+    anon "You hear that?"
+    consuela "I clean?"
+    anon @ f_laugh "Yes, you clean!"
     show consuela f_normal
-    anon "Ikuti dia ke atas dan ambil seragammu."
-
-    consuela "Seragam?"
-
-    anon "Ya."
-
-    consuela "Oke, aku pergi."
-
+    anon "Follow her upstairs and get your uniform."
+    consuela "Uniform?"
+    anon "Yes."
+    consuela "Okay, I go."
     roz @ a_stop "Ah, ah, ah!"
-
-    roz "Ikuti saja, Nak."
-
+    roz "You follow, kiddo."
     show consuela f_annoyed
     show anon f_worried with dissolve:
         flip
         xoffset -100
-    anon "Hah?"
-
-    roz "Dia tetap di sini."
-
+    anon "Huh?"
+    roz "She stays here."
     anon @ -m_talk "..."
-    roz "Ayo."
-
+    roz "C'mon."
     hide roz with dissolve
-    consuela "saya pergi?"
-
+    consuela "I go?"
     show anon f_worried with dissolve:
         unflip
         xoffset 400
-    anon "Uhh, t-tidak..."
-
-    anon @ a_point_self "saya pergi."
-
-    anon "Anda tinggal."
-
-    consuela "saya tinggal?"
-
-    anon "Y-ya."
-
-    anon f_thinking @ -m_talk "(Aku ingin tahu apa yang dia ingin aku lakukan?)"
-
-    roz "Kamu datang atau apa?"
-
+    anon "Uhh, n-no..."
+    anon @ a_point_self "I go."
+    anon "You stay."
+    consuela "I stay?"
+    anon "Y-yeah."
+    anon f_thinking @ -m_talk "( I wonder what she wants me to do? )"
+    roz "You coming or what?"
     anon f_surprised "!!!"
     show consuela f_sad a_cross with dissolve
-    anon f_worried_left "Y-ya, Bu."
-
-    anon f_normal "Aku akan segera kembali, oke?"
-
-    consuela "O-oke."
-
+    anon f_worried_left "Y-yes, ma'am."
+    anon f_normal "I'll be right back, okay?"
+    consuela "O-okay."
     hide anon with dissolve
     consuela f_sad_down @ -m_talk "..."
     return

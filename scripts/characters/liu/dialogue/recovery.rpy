@@ -1,49 +1,34 @@
 label liu_button_recovery:
     show anon with dissolve:
         xoffset 200
-    anon "Hei, bagaimana perasaanmu?"
-
-    liu f_nervous "Agak gila karena terjebak di tempat tidur ini tapi selain itu bagus."
-
+    anon "Hey, how are you feeling?"
+    liu f_nervous "A bit stir crazy from being stuck in this bed but otherwise good."
     show anon f_confused
 
     if M_liu.pregnancy.baby_gender == 'boy':
-        anon "Adakah perbaikan setelah dia menempel?"
-
+        anon "Any improvement with him latching on?"
     else:
-        anon "Adakah perbaikan setelah dia menempel?"
-
+        anon "Any improvement with her latching on?"
 
     show anon f_normal_low
     show liu f_happy_baby
 
     if M_liu.pregnancy.baby_gender == 'boy':
-        liu "Ya, dia juga orang yang rakus."
-
-        liu "Bukankah kamu{#boy}, anak kecil?"
-
+        liu "Yes, he's a greedy guy too."
+        liu "Aren't you{#boy}, little one?"
     else:
-        liu "Ya, dia juga gadis yang rakus."
+        liu "Yes, she's a greedy girl too."
+        liu "Aren't you{#girl}, little one?"
 
-        liu "Bukankah kamu{#girl}, anak kecil?"
-
-
-    anon f_laugh "hehe."
-
+    anon f_laugh "Hehe."
     pause
     show liu f_happy
-    anon f_normal "Nah, kalian berdua akan sampai di rumah sebelum kalian menyadarinya."
-
-    anon "Anda harus menikmati istirahat di tempat tidur dan pasukan perawat selagi bisa."
-
-    liu "Ya, Anda mungkin benar tentang itu."
-
-    anon "Hubungi saya jika Anda butuh sesuatu, ya?"
-
-    liu f_happy "Saya akan."
-
-    liu "Terima kasih, {b}[firstname]{/b}."
-
+    anon f_normal "Well, you'll both be home before you know it."
+    anon "You should enjoy the bed rest and the army of nurses while you can."
+    liu "Yeah, your probably right about that."
+    anon "Call me if you need anything, yeah?"
+    liu f_happy "I will."
+    liu "Thank you, {b}[firstname]{/b}."
     show anon a_wave f_happy with dissolve
     pause
     hide anon with dissolve

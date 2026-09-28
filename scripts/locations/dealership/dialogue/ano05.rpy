@@ -4,11 +4,8 @@ label ano05_sale_dealership:
     with fade
     show anon f_grin behind scooter at flip with dissolve
     anon @ -m_talk "( Holy crap, I did it! )"
-
     anon @ a_cheering -m_talk "( I bought my very first vehicle! )"
-
     anon @ -m_talk "( {b}I can't wait to show Tony{/b}. )"
-
     hide anon
     hide scooter
     with dissolve

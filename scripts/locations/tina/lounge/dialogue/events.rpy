@@ -5,8 +5,7 @@ label tina_lounge_knock:
         crop (768, 0, 256, 768)
         right
     show anon a_knock with dissolve
-    "{i}*Ketuk* *Ketuk*{/i}"
-
+    "{i}*Knock* *Knock*{/i}"
     show anon a_sides with dissolve
     pause
 
@@ -20,9 +19,7 @@ label tina_lounge_knock:
 
     pause
     anon @ -m_talk "( There's no answer... )"
-
     anon @ -m_talk "( I'll come back later. )"
-
     hide anon with dissolve
     return True
 
@@ -31,13 +28,11 @@ label tina_lounge_knock.answer:
     show location_apt_hall3_301_closeup_door2 as door with dissolve
     show tina b_magic f_surprised behind doorframe with dissolve
     tina "{b}[firstname]{/b}?"
-
     show tina f_sad:
         xoffset -200
     show location_apt_hall3_301_closeup_door1 as door behind stage
     with dissolve
-    tina "Apa yang kamu lakukan di sini?"
-
+    tina "What are you doing here?"
 
     menu:
         "I wanted to see you.":
@@ -45,34 +40,24 @@ label tina_lounge_knock.answer:
 
         "I'm here to see Becca." if M_becca.finished_state(S_bec00_done):
             jump tina_lounge_knock.becca
-        "Hanya menyapa.":
+        "Just saying hi.":
 
             pass
 
-    anon f_normal "Hanya menyapa."
-
+    anon f_normal "Just saying hi."
     tina f_normal "Just in the neighborhood, huh?"
-
-    anon "Cukup banyak."
-
+    anon "Pretty much."
 
     if 4 <= game.timer._dow <= 5:
         tina f_sexy "You know, you should swing by {b}the bank{/b} on Monday."
-
     else:
         tina f_sexy "You know, you should swing by {b}the bank{/b} tomorrow."
 
-
     tina "We can schedule a little fun."
-
     anon "Yeah, that sounds good."
-
-    tina @ f_laugh "Saya tidak sabar."
-
-    anon "Sampai jumpa lagi."
-
+    tina @ f_laugh "I can't wait."
+    anon "See ya soon."
     tina "So long, babyface."
-
     hide anon with dissolve
     return True
 
@@ -80,13 +65,9 @@ label tina_lounge_knock.answer:
 label tina_lounge_knock.becca:
     if M_becca.where not in L_tina_lounge.get_all_children_inclusive():
         tina f_suspicious "Becca?"
-
         tina f_sad "I'm sorry, [firstname]. She's not home at the moment."
-
         anon f_worried "Ohh... Well... I guess I'll call back later then."
-
         tina f_normal "So long, babyface."
-
         hide anon with dissolve
         return True
 
@@ -96,48 +77,36 @@ label tina_lounge_knock.becca:
     else:
 
         show tina b_casual
-        tina f_surprised "Ah, benarkah?"
-
+        tina f_surprised "Oh, really?"
         anon f_worried "Is that okay?"
-
-        tina f_normal "Ya, tentu saja."
-
+        tina f_normal "Yes, of course."
         show anon f_normal
         tina "She's in her bedroom doing homework..."
-
         show location_apt_hall3_301_closeup_door2 as door
         show tina a_sides:
             xzoom -1
             xoffset 515
         with {'master': dissolve}
         tina "... You can head on back."
-
         hide tina
         with {'master': dissolve}
-        anon "Terima kasih."
-
+        anon "Thanks."
         hide anon
         with {'master': dissolve}
         tina "I'll be in my room if you need me."
-
         show location_apt_hall3_301_closeup_door1 as door
         with {'master': dissolve}
-        anon "Dingin."
-
+        anon "Cool."
 
     return
 
 
 label tina_lounge_knock.naked:
-    tina "Siapa itu?"
-
+    tina "Who is it?"
     anon "It's {b}[firstname]{/b}."
-
     anon "I came to see how you're doing."
-
     show location_apt_hall3_301_closeup_door2 as door with dissolve
     tina "Quick, come inside!"
-
     hide anon with dissolve
     return
 
@@ -146,39 +115,27 @@ label tina_lounge_knock.pregnant:
     show location_apt_hall3_301_closeup_door2 as door with dissolve
     show tina b_magic behind doorframe with dissolve
     tina f_sexy "Hi, {b}[firstname]{/b}, come to check up on us?"
-
     hide tina with {'master': dissolve}
-    tina "Masuk."
-
+    tina "Come in."
     hide anon with dissolve
     return
 
 
 label tina_lounge_knock.schedule:
     anon f_flirt "I wanted to see you."
-
     tina "This isn't a good time."
-
     anon f_shy "Oh, right... {b}Becca{/b}'s here, huh?"
-
     tina f_sexy "Come see me at work and we'll schedule something."
-
-    anon "Y-ya, oke."
-
+    anon "Y-yeah, okay."
 
     if 4 <= game.timer._dow <= 5:
         anon f_normal "I'll swing by {b}the bank{/b} on Monday."
-
     else:
         anon f_normal "I'll swing by {b}the bank{/b} tomorrow."
 
-
-    tina @ f_laugh "Saya tidak sabar."
-
-    anon "Sampai jumpa lagi."
-
+    tina @ f_laugh "I can't wait."
+    anon "See ya soon."
     tina "So long, babyface."
-
     hide anon with dissolve
     return True
 
@@ -187,57 +144,43 @@ label tina_lounge_sex:
     scene location_apt_hall3_301_closeup as stage
     show location_apt_hall3_301_closeup_door1 as door behind stage
     show anon a_knock with dissolve
-    "{i}*Ketuk* *Ketuk*{/i}"
-
+    "{i}*Knock* *Knock*{/i}"
     show anon a_sides with dissolve
     pause
 
     scene tina b_doorway f_sexy with fade
     tina "Well, hello there."
-
     tina "You're right on time."
-
-    anon "Apakah saya?"
-
+    anon "Am I?"
     tina "Heh, come on in."
-
 
     scene expression background(744, 420, 3.5) as stage
     show tina b_lingerie
     with fade
     show anon f_shy with dissolve
     anon "{i}*Gulp*{/i} So, I assume {b}Becca{/b} is-"
-
     tina "Shh, don't worry about my daughter."
-
     tina "She's not going to bother us tonight."
-
     show tina a_remove_cloth1 with dissolve
-    anon "Y-ya, oke."
-
+    anon "Y-yeah, okay."
     tina a_remove_cloth2 @ f_eyeroll "Help me get undressed."
-
     show tina b_lingerie_back1
     show anon b_tina_lingerie1 f_flirt_low
     with dissolve
-    anon "Ya, Bu!"
-
+    anon "Yes, ma'am!"
     pause
     show anon b_tina_lingerie2
     show tina b_lingerie_back2
     with dissolve
     tina "Mm, I've been thinking about this all day."
-
     show tina b_lingerie_back3
     show anon b_dressed f_skeptical
     with dissolve
-    anon "Oh ya?"
-
+    anon "Oh, yeah?"
     pause
     show tina b_lingerie_back_bend with dissolve
     show anon f_flirt_low
     tina "I'm so wet for you right now..."
-
     pause
     show tina b_naked a_undress1 f_normal_down with dissolve
     pause
@@ -245,7 +188,6 @@ label tina_lounge_sex:
     pause
     show tina b_naked a_idle f_sexy with dissolve
     tina "Ngh, why are you still wearing clothes?!"
-
     show anon f_thinking a_thinking with dissolve
     pause
     show tina b_naked_crossed f_eyeroll with dissolve
@@ -256,10 +198,8 @@ label tina_lounge_sex:
     with dissolve
     anon "!!!"
     hide tina with dissolve
-    anon "Wah!"
-
-    tina "hehe!"
-
+    anon "Whoa!"
+    tina "Hehe!"
 
     call scene_tina_sex_lounge.repeat
     $ unlock_scene('tina', '01_unlocked', variant='repeat')
@@ -271,9 +211,7 @@ label tina_lounge_sex:
         xoffset 150
     with fade
     tina "Heh, you better get out of here before {b}Rebecca{/b} gets home."
-
-    anon "Y-ya, oke."
-
+    anon "Y-yeah, okay."
     show anon b_empty
     show tina b_naked_disheveled_kiss
     with dissolve
@@ -282,9 +220,7 @@ label tina_lounge_sex:
     show tina b_naked_disheveled
     with dissolve
     tina "It's always a pleasure, {b}[firstname]{/b}."
-
     anon "See ya, {b}Tina{/b}."
-
     hide anon with dissolve
     return
 # Decompiled by unrpyc: https://github.com/CensoredUsername/unrpyc

@@ -63,32 +63,23 @@ label scene_tina_sex_office.loop:
 
 label scene_tina_sex_office.dialogue:
     if animcounter == 0 and randomizer() > 75:
-        tina "Oh, persetan denganku!{p=1}{nw}"
-
+        tina "Oh, fuck me!{p=1}{nw}"
     if animcounter == 1 and randomizer() > 75:
-        tina "Di sana!{p=1}{nw}"
-
+        tina "Right there!{p=1}{nw}"
     elif animcounter == 1 and randomizer() > 75:
-        tina "Sangat dalam!{p=1}{nw}"
-
+        tina "It's so deep!{p=1}{nw}"
     if animcounter == 2 and randomizer() > 75:
-        tina "Saya-{p=1}{nw}"
-
-        tina "Aku akan keluar!!{p=1}{nw}"
-
+        tina "I'm-{p=1}{nw}"
+        tina "I'm gonna cum!!{p=1}{nw}"
     return
 
 
 label scene_tina_sex_office.cum(where):
-    anon "Aku semakin dekat!"
-
-    tina "Jangan berhenti!"
-
+    anon "I'm getting close!"
+    tina "Don't stop!"
     pause
-    anon "aku tidak bisa-"
-
-    tina "Ya Tuhan!!"
-
+    anon "I can't-"
+    tina "Oh, god!!"
     pause
     hide animation
 
@@ -107,7 +98,6 @@ label scene_tina_sex_office.cum(where):
 
     tina "NGGHHH!!!"
 
-
     if where == 'inside':
         show tina b_sex_office_insert o_sex_office_pullout
         hide xray_tina_office
@@ -125,32 +115,21 @@ label scene_tina_sex_office.cum(where):
         with dissolve
 
     anon "Haah... Haah..."
-
-    anon "Wah!"
-
-    anon "Itu tadi..."
-
-    tina "Kuat?"
-
-    anon "Y-ya."
-
-    tina "hehe!"
-
+    anon "Wow!"
+    anon "That was..."
+    tina "Vigorous?"
+    anon "Y-yeah."
+    tina "Hehe!"
     pause
 
     if where == 'inside':
-        tina "Mmm, aku bisa merasakanmu keluar dari diriku..."
-
-        anon "Ya, sebaiknya aku mundur, ya?"
-
+        tina "Mmm, I can feel you leaking out of me..."
+        anon "Yeah, I probably should have pulled out, huh?"
     else:
-        tina "Mmm, ada air mani di jaketku..."
+        tina "Mmm, you got cum on my jacket..."
+        anon "Yeah, I probably should have aimed somewhere else, huh?"
 
-        anon "Ya, sebaiknya aku membidik ke tempat lain, ya?"
-
-
-    tina "Hehe, tidak apa-apa."
-
+    tina "Heh, it's okay."
 
     if where == 'inside':
         call call_pregnancy_minigame (None, M_tina)
@@ -160,28 +139,19 @@ label scene_tina_sex_office.cum(where):
 label scene_tina_sex_office.repeat:
     scene location_bank_office_cubicle_sex
     call scene_tina_sex_office.ready
-    tina "Silakan, masukkan."
-
-    anon "Ya, Bu."
-
+    tina "Go ahead, put it in."
+    anon "Yes, ma'am."
     call scene_tina_sex_office.insert
     tina "Ngh!"
-
     pause
     call scene_tina_sex_office.animate
-    tina "Itu dia!"
-
-    tina "Berikan padaku, {b}[firstname]{/b}!"
-
+    tina "That's it!"
+    tina "Give it to me, {b}[firstname]{/b}!"
     pause
-    anon "Anda suka itu?"
-
-    tina "Ya!"
-
-    anon "Anda suka membungkuk di atas meja Anda?"
-
-    tina "Ah, ya!!"
-
+    anon "You like that?"
+    tina "Yes!"
+    anon "You like being bent over your desk?"
+    tina "Ahh, yes!!"
     call scene_tina_sex_office.loop
     call scene_tina_sex_office.cum (_return)
     return _return

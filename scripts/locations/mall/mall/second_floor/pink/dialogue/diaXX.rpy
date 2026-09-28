@@ -9,7 +9,6 @@ label diaXX_pink_extra:
         xzoom -1
     with fade
     anon @ -m_talk "( ... It's probably time {b}I get this package back to Diane{/b}. )"
-
     hide anon with dissolve
     return
 

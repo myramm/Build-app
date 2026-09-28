@@ -25,7 +25,6 @@ label ano27_jabb_warehouse_cargo:
     show anon f_disgusted o_sewage with dissolve:
         flip
     anon @ -m_talk "( There is nothing that could ever make me want to go back down there! )"
-
     hide anon with dissolve
     return
 # Decompiled by unrpyc: https://github.com/CensoredUsername/unrpyc

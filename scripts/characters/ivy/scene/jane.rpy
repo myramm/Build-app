@@ -1,66 +1,40 @@
 label scene_ivy_jane:
     call scene_ivy_jane.animation
     with fade
-    ivy "Mmm, saya belum pernah mendapat tawaran pelanggan untuk memberi {i}saya{/i} pijatan sebelumnya..."
-
-    jane "Apakah rasanya enak?"
-
-    ivy "Ya, tentu saja."
-
-    anon "(Oh wow, mereka telanjang!)"
-
+    ivy "Mmm, I've never had a customer offer to give {i}me{/i} the massage before..."
+    jane "Does it feel good?"
+    ivy "Yes, it certainly does."
+    anon "( Oh wow, they're naked! )"
     pause
-    anon "( Dan {b}Jane{/b} sedang meraba {b}Ivy{/b}!! )"
-
-    ivy "Anda cukup terampil dengan tangan Anda."
-
-    jane "Hehe, aku sudah banyak berlatih dalam hal ini."
-
+    anon "( And {b}Jane{/b} is fingering {b}Ivy{/b}!! )"
+    ivy "You're quite skilled with your hands."
+    jane "Heh, I've had a lot of practice at this."
     pause
-    jane "Bagaimana caramu menjaga vaginamu tetap kencang saat bekerja?"
-
-    jane "Aku hampir tidak bisa memasukkan dua jari ke dalam dirimu."
-
-    ivy "Haah, itu perlu..."
-
-    ivy "... Banyak pekerjaan."
-
-    jane "Ya, aku berani bertaruh."
-
+    jane "How do you keep your pussy so tight in your line of work anyway?"
+    jane "I can barely get two fingers inside you."
+    ivy "Haah, it takes..."
+    ivy "... A lot of work."
+    jane "Yeah, I'll bet."
     pause
-    ivy "Oh, itu tempatnya!"
-
-    jane "Ya, kamu suka itu?"
-
-    ivy "Ngh, disana!!"
-
+    ivy "Oh, that's the spot!"
+    jane "Yeah, you like that?"
+    ivy "Ngh, right there!!"
     pause
-    anon "( Sial, {b}Ivy{/b} sudah hampir mencapai cumming? )"
-
-    anon "( {b}Jane{/b} pasti tahu apa yang dia lakukan di sana! )"
-
+    anon "( Dang, {b}Ivy{/b} is close to cumming already? )"
+    anon "( {b}Jane{/b} must really know what she's doing down there! )"
     pause
-    jane "Jadi berapa banyak sesi gratis yang kudapat untuk klitoris elektrik itu?"
-
-    ivy "Aku tidak tahu, aku-"
-
+    jane "So how many free sessions do I get for that electro-clit?"
+    ivy "I don't know, I-"
     $ M_ivy.set('sex speed', 1. / 24)
     jane "Hmm?"
-
-    ivy "Ya Tuhan!!"
-
-    ivy "saya-"
-
+    ivy "Oh, god!!"
+    ivy "I-"
     pause
-    ivy "Sial, sebanyak yang kamu mau!!"
-
-    jane "Hehe, jawaban yang bagus."
-
+    ivy "Fuck, as many as you want!!"
+    jane "Hehe, good answer."
     pause
-    anon "(Sebaiknya aku keluar dari sini sebelum mereka selesai...)"
-
-    anon "( ..tidak ingin ketahuan. )"
-
+    anon "( I'd best get out of here before they finish... )"
+    anon "( .. don't wanna get caught. )"
     return
 
 
@@ -75,17 +49,12 @@ label scene_ivy_jane.repeat:
     call scene_ivy_jane.animation
     $ M_ivy.set('sex speed', 1. / 18)
     with fade
-    ivy "Terlalu banyak! aku tidak bisa-"
-
-    jane "Tentu saja bisa."
-
+    ivy "Too many! I can't-"
+    jane "Of course you can."
     pause
-    jane "Sekarang cum untukku."
-
-    jane "Lagi!"
-
+    jane "Now cum for me."
+    jane "Again!"
     ivy "NGGHHH!!!"
-
     return
 
 

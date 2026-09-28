@@ -2,190 +2,141 @@ label mia_library_dialogue_bissette_find_poem_reference_book:
     show player 14 at left
     show old_mia 7 at right
     with dissolve
-    player_name "Hei, {b}Mia{/b}! Lagi sibuk apa?"
-
+    player_name "Hey, {b}Mia{/b}! What are you up to?"
     show player 13
     show old_mia 10
-    mia "Oh, halo, {b}[firstname]{/b}! Saya baru saja akan belajar untuk ujian kimia yang akan datang."
-
+    mia "Oh, hello, {b}[firstname]{/b}! I was just about to study for the upcoming chemistry test."
     show old_mia 7
     show player 12
-    player_name "Kupikir ibumu tidak mengizinkanmu melakukan apa pun sepulang sekolah?"
-
+    player_name "I thought your mom didn't allow you to do anything after school?"
     show player 13
     show old_mia 12
-    mia "Biasanya dia tidak melakukannya, tapi..."
-
+    mia "She usually doesn't but..."
     show old_mia 10
-    mia "Saya mengatakan kepadanya {b}Nona Okita{/b} akan menulis rekomendasi akademis untuk saya jika saya berhasil dalam ujian berikutnya."
-
+    mia "I told her {b}Miss Okita{/b} would write me an academic recommendation if I did well on our next test."
     show old_mia 7
-    player_name "Akankah dia benar-benar melakukan itu?"
-
+    player_name "Will she really do that?"
     show old_mia 10
-    mia "Mungkin tidak, tapi tidak ada salahnya untuk mencobanya, bukan?"
-
-    mia "Dan aku juga bisa jalan-jalan dengan {b}Judith{/b} di luar rumahku!"
-
+    mia "Probably not but it doesn't hurt to try, right?"
+    mia "And I actually get to hang out with {b}Judith{/b} outside of my house too!"
     show old_mia 7
     show player 14
-    player_name "Ya, saya kira tidak."
-
+    player_name "Yeah, I suppose not."
     show player 13
     show old_mia 10
-    mia "Apa yang kamu lakukan di sini?"
-
+    mia "What are you doing here?"
     show old_mia 7
     show player 14
-    player_name "{b}Nona Bissette{/b} memberi saya tugas. Saya pikir mungkin saya bisa mendapatkan inspirasi di sini."
-
+    player_name "{b}Miss Bissette{/b} gave me an assignment. I thought maybe I could get some inspiration here."
     show player 13
     show old_mia 10
-    mia "Oh ya? Apa tugasnya?"
-
+    mia "Oh yeah? What's the assignment?"
     show old_mia 7
     show player 10
-    player_name "Yah, itu agak memalukan..."
-
+    player_name "Well, it's kinda embarrassing..."
     show player 5
     show old_mia 9
-    mia "Hehe, benarkah?! Nah, kamu harus memberitahuku sekarang!"
-
+    mia "Hehe, really?! Well, you have to tell me now!"
     show old_mia 7
     show player 10
-    player_name "{i}*Sigh*{/i} Aku seharusnya menulis puisi romantis dalam bahasa Prancis."
-
+    player_name "{i}*Sigh*{/i} I'm supposed to write a romantic poem in French."
     show player 5
     show old_mia 10
-    mia "Itu tidak memalukan!"
-
+    mia "That's not embarrassing!"
     show old_mia 7
     show player 12
-    player_name "Tidak?"
-
+    player_name "No?"
     show player 5
     show old_mia 10
-    mia "TIDAK! Kita semua harus melakukan itu!"
-
+    mia "No! We all had to do that!"
     show old_mia 12
-    mia "Baiklah semuanya kecuali {b}Roxxy{/b}... Dia tidak pernah mengerjakan pekerjaan rumahnya."
-
+    mia "Well, everyone but {b}Roxxy{/b}... She never does the homework."
     show old_mia 7
     show player 14
-    player_name "Saya tidak tahu. Tentang apa puisimu?"
-
+    player_name "I didn't know. What was your poem about?"
     show player 13
     show old_mia 12
-    mia "Oh, aku..."
-
+    mia "Oh, I..."
     show old_mia 56 with dissolve
-    mia "...Kau tahu, ini dan itu, hehe..."
-
+    mia "... You know, this and that, hehe..."
     show old_mia 55
     show player 14
-    player_name "Ya! Lihat, itu memalukan!"
-
+    player_name "Aha! See, it is embarrassing!"
     show player 13
     show old_mia 10 with dissolve
-    mia "Ya, menurutku itu sedikit."
-
+    mia "Yeah, I guess it is a little bit."
     show old_mia 7
     show player 10
-    player_name "Aku bahkan tidak tahu bagaimana memulai menulis hal ini!"
-
-    player_name "Saya mungkin harus mencari-cari buku tentang {b}Romansa Prancis{/b}..."
-
+    player_name "I don't even know how to begin writing this thing!"
+    player_name "I should probably look around for a book on {b}French Romance{/b}..."
     show player 13
     show old_mia 10
-    mia "Anda tahu, {b}Judith{/b} dan saya menemukan yang sangat informatif."
-
+    mia "You know, {b}Judith{/b} and I found a really informative one."
     show old_mia 7
     show player 10
-    player_name "Ah, benarkah?"
-
+    player_name "Oh really?"
     show player 13
     show old_mia 10
-    mia "Ya, itu cukup grafis..."
-
+    mia "Yeah, it was pretty graphic though..."
     show old_mia 7
     show player 12
-    player_name "Apakah Anda ingat apa namanya?"
-
+    player_name "Do you remember what it was called?"
     show player 13
     show old_mia 12
-    mia "Hmm, tidak, tidak juga."
-
+    mia "Hmm, no, not really."
     show old_mia 10
-    mia "{b}Judith{/b} terakhir kali melakukannya. Dia menggunakannya {b}di ruang belakang{/b} di sana, menurutku."
-
+    mia "{b}Judith{/b} had it last. She was using it {b}in the back room{/b} there, I think."
     show old_mia 7
     show player 10
-    player_name "Hah, menurutmu dia mungkin meninggalkannya di sana?"
-
+    player_name "Huh, you think she might have left it in there?"
     show player 13
     show old_mia 10
-    mia "Mungkin."
-
+    mia "Maybe."
     show old_mia 7
     show player 14
-    player_name "Kurasa aku akan pergi melihatnya. Terima kasih atas bantuannya, {b}Mia{/b}!"
-
+    player_name "I guess I'll go take a look then. Thanks for the help, {b}Mia{/b}!"
     show player 13
     show old_mia 10
-    mia "Tidak masalah! Selamat mencoba, {b}[firstname]{/b}!"
-
+    mia "No problem! Good luck, {b}[firstname]{/b}!"
     show old_mia 7
     show player 14
-    player_name "Kamu juga!"
-
+    player_name "You too!"
     return
 
 label mia_library_dialogue_bissette_mia_book_feedback:
     show old_mia 10 at right
     show player 13 at left
     with dissolve
-    mia "Apakah beruntung menemukannya?"
-
+    mia "Any luck finding it?"
     show old_mia 7
     show player 10
-    player_name "Ya, aku menemukannya..."
-
+    player_name "Yeah, I found it..."
     show player 14
-    player_name "Anda tidak bercanda, ini sangat gamblang!"
-
+    player_name "You weren't kidding, it's really graphic!"
     show player 13
     show old_mia 56 with dissolve
-    mia "... Ya."
-
+    mia "... Yeah."
     show old_mia 55
     show player 10
-    player_name "Aku penasaran apa yang {b}Judith{/b} lakukan sendirian di sana."
-
+    player_name "I wonder what {b}Judith{/b} was doing with it back there by herself."
     show player 5
     show old_mia 56
-    mia "Heh, y-ya, entahlah..."
-
-    mia "... Aku harus kembali belajar."
-
+    mia "Heh, y-yeah, I dunno..."
+    mia "... I should really get back to studying."
     show old_mia 55
     show player 14
-    player_name "Oh benar! Maaf!"
-
-    player_name "Sekali lagi terima kasih, {b}Mia{/b}."
-
+    player_name "Oh, right! Sorry!"
+    player_name "Thanks again, {b}Mia{/b}."
     show player 13
     show old_mia 56
-    mia "Tidak masalah, {b}[firstname]{/b}."
-
+    mia "No problem, {b}[firstname]{/b}."
     hide old_mia with dissolve
     show player 14
-    player_name "Baiklah, sebaiknya saya {b}membawa ini pulang ke komputer saya dan mulai menulis puisi itu untuk Nona Bissette{/b}."
-
+    player_name "Alright, I had better {b}take this home to my computer and get to writing on that poem for Miss Bissette{/b}."
     return
 
 label mia_library_dialogue_do_not_disturb:
     show player 10 with dissolve
-    player_name "Tidak, aku harus membiarkan dia belajar dengan tenang..."
-
+    player_name "No, I should let her study in peace..."
     return
 # Decompiled by unrpyc: https://github.com/CensoredUsername/unrpyc

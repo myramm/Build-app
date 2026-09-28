@@ -4,7 +4,6 @@ label dealership_office_vest_dialogue:
         flip
         xoffset -300
     anon f_laugh @ -m_talk "( It's summer! Not really the season for extra layers! )"
-
     hide anon with dissolve
     return
 # Decompiled by unrpyc: https://github.com/CensoredUsername/unrpyc

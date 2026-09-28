@@ -1,7 +1,7 @@
 label ronda_button_dialogue:
     call expression game.dialog_select("ronda_dialogue_intro")
     menu:
-        "Pertunjukan bakat." if M_dewitt.is_set("talent ask ronda"):
+        "Talent show." if M_dewitt.is_set("talent ask ronda"):
             if M_dewitt.is_set("talent helping kevin"):
                 call expression game.dialog_select("dewitt_talent_show_helping_kevin")
 
@@ -14,7 +14,7 @@ label ronda_button_dialogue:
 
         "Model." if M_ross.is_state(S_ross_ask_model):
             call expression game.dialog_select("ronda_dialogue_model_help")
-        "Pergi.":
+        "Leave.":
 
             call expression game.dialog_select("ronda_dialogue_leave")
     hide anon

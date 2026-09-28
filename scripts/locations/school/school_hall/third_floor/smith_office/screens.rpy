@@ -12,7 +12,6 @@ screen principal_smiths_office():
             focus_mask True
             pos (449,310)
             idle "principal 24f"
-
             hover HoverImage("principal 24f")
             action Hide("principal_smiths_office"), Jump("smith_office_smith_delivery_3_dialogue")
 

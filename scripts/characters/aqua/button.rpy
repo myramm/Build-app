@@ -17,34 +17,34 @@ label aqua_button_dialogue:
 
         call expression game.dialog_select("aqua_dialogue_pre")
     menu aqua_dialogue_options:
-        "Yang lainnya.":
+        "The others.":
             call expression game.dialog_select("aqua_dialogue_the_others")
             jump expression game.dialog_select("aqua_dialogue_options")
-        "Bagaimana kabarmu?":
+        "How are you?":
 
             call expression game.dialog_select("aqua_dialogue_how_are_you")
             jump expression game.dialog_select("aqua_dialogue_options")
 
-        "Perkawinan." if M_aqua.is_state(S_aqua_mating_proposal):
+        "Mating." if M_aqua.is_state(S_aqua_mating_proposal):
             call expression game.dialog_select("aqua_dialogue_mating_pre")
             menu:
-                "Aku?" if player.stats.chr() < 7:
+                "Me?" if player.stats.chr() < 7:
                     $ display.toast(chr_fail)
                     call expression game.dialog_select("aqua_dialogue_mating_stat_fail")
 
 
-                "Saya bisa membantu!" if player.stats.chr() >= 7:
+                "I can help!" if player.stats.chr() >= 7:
                     $ display.toast(chr_pass)
                     call expression game.dialog_select("aqua_dialogue_mating_stat_pass")
                     $ M_aqua.trigger(T_aqua_mating_offer)
 
-        "Perkawinan." if M_aqua.is_state(S_aqua_valor_test):
+        "Mating." if M_aqua.is_state(S_aqua_valor_test):
             call expression game.dialog_select("aqua_dialogue_mating_hint")
 
-        "Pasangan." if M_aqua.is_state([S_aqua_seasucc_intro, S_aqua_seasucc_mushroom, S_aqua_end]):
+        "Mate." if M_aqua.is_state([S_aqua_seasucc_intro, S_aqua_seasucc_mushroom, S_aqua_end]):
             call expression game.dialog_select("aqua_dialogue_mate")
             jump expression game.dialog_select("aqua_sex")
-        "Tidak ada apa-apa.":
+        "Nothing.":
 
             call expression game.dialog_select("aqua_dialogue_nothing")
 

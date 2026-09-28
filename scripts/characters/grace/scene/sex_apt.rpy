@@ -8,33 +8,22 @@ label scene_grace_sex_apt:
     pause
     call scene_grace_sex_apt.insert
     with {'master': dissolve}
-    grace "{i}*Terkesiap*{/i} Ya Tuhan..."
-
+    grace "{i}*Gasp*{/i} Oh, god..."
     call scene_grace_sex_apt.animate
     with {'master': dissolve}
-    grace "{i}* Merengek*{/i}"
-
+    grace "{i}*Whimpers*{/i}"
     pause
-    anon "Kamu sangat cantik, {b}Grace{/b}."
-
-    grace "Ahhh!"
-
+    anon "You are so beautiful, {b}Grace{/b}."
+    grace "Ahh!"
     pause
-    anon "Aku ingin melakukan ini sejak lama..."
-
-    anon "... Sejak pertama kali aku melihatmu."
-
+    anon "I wanted to do this for such a long time..."
+    anon "... Since the moment I first saw you."
     grace "Ngh!"
-
     pause
-    anon "Kamu berhak untuk bahagia, {b}Rahmat{/b}."
-
-    anon "Anda pantas-"
-
-    grace "{i}* Merengek*{/i}"
-
+    anon "You deserve to be happy, {b}Grace{/b}."
+    anon "You deserve-"
+    grace "{i}*Whimpers*{/i}"
     anon "Ahh!!"
-
     pause
     call scene_grace_sex_apt.loop
     call scene_grace_sex_apt.cum (_return)
@@ -95,47 +84,32 @@ label scene_grace_sex_apt.dialogue:
 
     if animcounter == 0 and rng <= .33:
         grace "Oh, {b}[firstname]{/b}!{w=1}{nw}"
-
-        grace "Ya Tuhan!{w=1}{nw}"
-
+        grace "Oh, my god!{w=1}{nw}"
 
     elif animcounter == 1 and rng <= .33:
-        grace "Kamu sangat besar!{w=1.5{nw}"
-
+        grace "You're so fucking big!{w=1.5}{nw}"
         pause 1
-        anon "Apakah rasanya enak?{w=1}{nw}"
-
-        grace "Ya!!{w=1}{nw}"
-
+        anon "Does it feel good?{w=1}{nw}"
+        grace "Yes!!{w=1}{nw}"
 
     elif animcounter == 2 and rng <= .33:
-        grace "Ini sangat buruk, {b}[firstname]{/b}!{w=1}{nw}"
-
-        grace "Kita jahat sekali, apa yang kita-{w=1}{nw}"
-
-        grace "Ahh, ya Tuhan!!{w=1}{nw}"
-
+        grace "This is so bad, {b}[firstname]{/b}!{w=1}{nw}"
+        grace "We're so bad, what are we-{w=1}{nw}"
+        grace "Ahh, my god!!{w=1}{nw}"
 
     return
 
 
 label scene_grace_sex_apt.cum(where):
-    anon "Apakah kamu semakin dekat?"
-
+    anon "Are you getting close?"
     grace "Mhmm!"
-
-    anon "Saya juga."
-
+    anon "Me too."
     pause
-    anon "Anda ingin cum bersama?"
-
-    grace "YA!"
-
+    anon "You wanna cum together?"
+    grace "YES!"
     pause
-    anon "Ini dia!"
-
-    grace "Sial!!"
-
+    anon "Here it comes!"
+    grace "Fuuuuck!!"
     hide grace_sex_apt_anim
 
     if where == 'inside':
@@ -145,7 +119,6 @@ label scene_grace_sex_apt.cum(where):
 
     anon "HNNGGG!!!" with flash
     grace "NGGHHH!!!"
-
 
     if where == 'inside':
         show xray_grace_sex_apt as xray
@@ -162,39 +135,28 @@ label scene_grace_sex_apt.cum(where):
 
     with {'master': dissolve}
     anon "Haah... haah..."
-
     pause
     show anon grace_sex_apt f_happy
     show grace after concerned
     with {'master': dissolve}
-    anon "Itu luar biasa!"
-
+    anon "That was incredible!"
     show grace head
     with {'master': dissolve}
-    anon "aku hanya-"
-
-    anon "Wah!"
-
+    anon "I just-"
+    anon "Wow!"
     pause
     show anon f_concerned
-    anon "Hei, kamu baik-baik saja?"
-
+    anon "Hey, you alright?"
     show grace normal
-    grace "Aku adalah saudara perempuan yang sangat buruk..."
-
-    anon "Apa?!"
-
-    anon "T-tidak, ayolah... jangan lakukan itu..."
-
+    grace "I am a fucking terrible sister..."
+    anon "What?!"
+    anon "N-no, c'mon... don't do that..."
     show grace angry down
     with {'master': dissolve}
-    grace "saya!"
-
-    grace "Kamu adalah orang pertama yang {b}Eve{/b} pernah... dan aku-"
-
+    grace "I am!"
+    grace "You're the first person {b}Eve{/b} has ever... and I-"
     pause
-    grace "Sial!"
-
+    grace "Fuck!"
 
     if where == 'inside':
         call call_pregnancy_minigame (None, M_grace)

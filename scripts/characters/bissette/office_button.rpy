@@ -21,11 +21,11 @@ label bissette_office_dialogue:
 
         call expression game.dialog_select("bissette_dialogue_office_intro")
         menu:
-            "Pengambilan sampel anggur." if M_bissette.is_state(S_bissette_wine_sampling):
+            "Wine sampling." if M_bissette.is_state(S_bissette_wine_sampling):
                 call expression game.dialog_select("bissette_dialogue_office_bissette_wine_sampling")
                 $ M_bissette.set("night visit", True)
                 jump expression game.dialog_select("mrs_bissettes_office_dialogue")
-            "Tidak ada apa-apa.":
+            "Nothing.":
 
                 call expression game.dialog_select("bissette_dialogue_office_leave")
     hide player

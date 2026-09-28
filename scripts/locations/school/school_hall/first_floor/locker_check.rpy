@@ -10,7 +10,6 @@ label locker_check(direction, locker):
             if not locker.is_visited:
                 $ charname = locker.name.split("'")[0]
                 anon "This master key is awesome! Now, let's see what's in {b}[charname]{/b}'s locker."
-
             $ player.location = locker
         else:
             show anon f_worried
@@ -32,22 +31,18 @@ label locker_check(direction, locker):
             if not locker.is_visited:
                 $ charname = locker.name.split("'")[0]
                 anon "This master key is awesome! Now, let's see what's in {b}[charname]{/b}'s locker."
-
             $ player.location = locker
     scene expression locker.background
     return
 
 label locker_locked_1:
     anon "That's not my locker... I would need a key to open it."
-
     hide anon with dissolve
     return
 
 label locker_locked_2:
     anon "It's locked and I don't have the key."
-
     anon "{b}Mrs. Smith{/b} probably has a key to everything."
-
     hide anon with dissolve
     return
 
@@ -55,7 +50,6 @@ label locker_locked_night:
     scene expression player.location.background_blur
     show anon f_worried with dissolve
     anon "This isn't the best time to be loitering in the hallways. I should try again during the day."
-
     hide anon with dissolve
     return
 # Decompiled by unrpyc: https://github.com/CensoredUsername/unrpyc

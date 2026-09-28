@@ -1,75 +1,41 @@
 label con01_init_iwanka:
-    anon f_worried "Bolehkah saya bertanya sesuatu?"
-
-    iwanka f_annoyed "Ini bukan tentang ayahku lagi, kan?"
-
-    anon "T-tidak, bukan seperti itu..."
-
-    anon "Kuharap aku bisa berbicara denganmu tentang pembantu yang bekerja di bawah?"
-
-    iwanka @ f_eyeroll "Pembantu itu?"
-
-    anon "Ya."
-
-    iwanka "Saya mencoba untuk tidak bersosialisasi dengan bantuan..."
-
+    anon f_worried "Can I ask you something?"
+    iwanka f_annoyed "It's not about my father again, is it?"
+    anon "N-no, it's nothing like that..."
+    anon "I was hoping I could talk to you about the maid working downstairs?"
+    iwanka @ f_eyeroll "The maid?"
+    anon "Yeah."
+    iwanka "I try not to socialize with the help..."
     pause
-    anon "Hanya saja, orang tuamu agak kejam padanya, dan aku berharap-"
-
-    iwanka f_bored "Aku harus jujur padamu saat ini, {b}[firstname]{/b}, ini sungguh membosankan..."
-
+    anon "It's just, your parents are kinda cruel to her, and I was hoping-"
+    iwanka f_bored "I gotta be honest with you right now, {b}[firstname]{/b}, this is really boring..."
     anon "Oh."
-
     pause
-    anon @ a_behind_head "Hmm..."
-
-    iwanka f_suspicious "Hei, pernahkah kamu berpikir untuk memperbarui penampilanmu?"
-
-    anon f_confused "Hah?"
-
-    iwanka f_normal "Maksudku, penampilan yang kamu kembangkan ini... Yah, lucu.. kurasa..."
-
-    iwanka "... Dalam arti tertentu, batak menaiki rel."
-
-    anon f_unimpressed "{b}Iwanka{/b}, saya sangat ingin kembali ke masalah {b}Consuela{/b} ini..."
-
-    iwanka "Ya, ya, ya... Tunggu sebentar sementara aku mengerjakan sihirku!"
-
+    anon @ a_behind_head "Umm..."
+    iwanka f_suspicious "Hey, have you ever thought about updating your look?"
+    anon f_confused "Huh?"
+    iwanka f_normal "I mean, this look you've cultivated is... Well, cute.. I guess..."
+    iwanka "... In a sort of, hobo riding the rails kind of way."
+    anon f_unimpressed "{b}Iwanka{/b}, I'd really like to get back to this {b}Consuela{/b} problem..."
+    iwanka "Yeah, yeah, yeah... Hold on one second while I work my magic!"
     iwanka f_thinking "Hmm."
-
-    iwanka f_smirk "Saya pikir Anda akan terlihat AMA-ZING di beberapa Huge-Go Boss atau Coochie!"
-
-    iwanka "Apakah ada tempat untuk membeli merek-merek tersebut di sekitar sini?"
-
-    anon "Eh, tidak."
-
-    iwanka @ f_eyeroll "Eh, tentu saja tidak ada!"
-
-    iwanka f_annoyed "Kota ini seperti penjara yang menakutkan..."
-
-    iwanka "... Omong kosong di planet ini."
-
-    anon f_worried @ -m_talk "Kamu tidak akan membantuku, kan?"
-
-    iwanka f_thinking "Saya ingin tahu apakah ada produk yang setara di luar merek?"
-
-    anon f_sad_down "{i}*Huh*{/i} Lupakan saja."
-
-    iwanka "Mungkin kami bisa memesankan Anda sesuatu secara online?"
-
+    iwanka f_smirk "I'm thinking you would look AMA-ZING in some Huge-Go Boss or Coochie!"
+    iwanka "Is there a place we could buy those brands around here?"
+    anon "Ehh, no."
+    iwanka @ f_eyeroll "Eugh, of course there isn't!"
+    iwanka f_annoyed "This town is like a freaking prison..."
+    iwanka "... On planet bullshit."
+    anon f_worried @ -m_talk "You're not gonna help me, are you?"
+    iwanka f_thinking "I wonder if there's any off-brand equivalents?"
+    anon f_sad_down "{i}*Sigh*{/i} Forget it."
+    iwanka "Maybe we could order you something online?"
     hide anon with {'master': dissolve}
-    iwanka f_excited "Saya pikir Barmani melakukan penjualan online."
-
-    iwanka @ f_laugh "Seperti, oh ya ampun!"
-
-    iwanka "Kalau ada cowok ganteng masuk pakai Barmani... Celana dalamku langsung jatuh ke lantai!"
-
-    iwanka @ f_laugh "Hehe, tahu maksudku?"
-
+    iwanka f_excited "I think Barmani does online sales."
+    iwanka @ f_laugh "Like, oh em gee!"
+    iwanka "If a cute guy walks in wearing Barmani... My panties just instantly hit the floor!"
+    iwanka @ f_laugh "Hehe, know what I mean?"
     iwanka f_normal @ -m_talk "Hmm?"
-
-    iwanka f_suspicious "Kemana dia pergi?"
-
+    iwanka f_suspicious "Where did he go?"
     hide anon with dissolve
 
     $ player.go_to(L_rump_lobby)

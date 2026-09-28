@@ -4,121 +4,76 @@ label ano14_init_liu:
         flip
         xoffset 50
     show liu f_worried
-    liu "Saya tidak ingin pergi."
-
-    kim "Apa maksudmu kamu tidak boleh pergi?!"
-
-    liu "Kumohon... Jangan memaksaku."
-
-    liu "Walikota adalah orang tua yang bejat dan dia membuatku sangat tidak nyaman."
-
-    liu f_ashamed_down "Cara dia menatapku..."
-
-    liu "... Seperti dia membuka bajuku dengan matanya."
-
-    kim a_crossed "Pfft, {b}Kim{/b} tidak peduli dengan ini!"
-
+    liu "I don't want to go."
+    kim "What you mean you no go?!"
+    liu "Please... Don't make me."
+    liu "The mayor is a lecherous old man and he makes me super uncomfortable."
+    liu f_ashamed_down "The way he stares at me..."
+    liu "... Like he's undressing me with his eyes."
+    kim a_crossed "Pfft, {b}Kim{/b} not care 'bout this!"
     liu f_worried @ f_surprised "!!!"
-    kim "Walikota berjanji kepada {b}Kim{/b}."
-
-    kim "Berikan {b}Kim{/b} kendali atas rasa sayang."
-
-    kim "Dia membuat {b}Kim{/b} menjadi pria yang sangat lelah!"
-
-    liu "Jadi kamu hanya akan melayaniku untuk mencapai ambisimu?!"
-
-    kim a_point "Kamu {b}istri Kim{/b}, bodoh!"
-
-    kim "Tugas Anda adalah mendorong {b}Kim{/b} ambisi lebih lanjut!"
-
+    kim "Mayor make promise to {b}Kim{/b}."
+    kim "Give {b}Kim{/b} contror over dearership."
+    kim "He make {b}Kim{/b} a very wearthy man!"
+    liu "So you're just gonna serve me up to further your ambitions?!"
+    kim a_point "You {b}Kim{/b}'s wife, stupid!"
+    kim "It your job to herp {b}Kim{/b} further ambition!"
     liu f_ashamed_down @ -m_talk "..."
-    kim a_crossed "Jangan lupa, saya membayar banyak uang untuk Anda di Korea!"
-
-    kim "Aku membawamu ke sini dan memberimu senapan yang bagus!"
-
-    kim "Aku bahkan yakin kamu punya pekerjaan di bank."
-
-    kim "Ini ucapan terima kasih yang {b}Kim{/b} dapatkan?!"
-
-    liu f_worried "T-tidak, aku hanya-"
-
-    kim @ a_point "Kamu tidak tahu berterima kasih!"
-
+    kim a_crossed "Don't forget, I pay good money for you in Korea!"
+    kim "I bring you here and give you nice rife!"
+    kim "I even ret you have job at bank."
+    kim "This the thanks {b}Kim{/b} get?!"
+    liu f_worried "N-no, I just-"
+    kim @ a_point "You ungratefur!"
     pause .3
-    kim @ a_point "Kamu istri yang buruk!"
-
-    liu "Apakah tidak ada hal lain yang bisa saya lakukan?"
-
-    kim @ a_cry "Brah, brah, brah... {b}Kim{/b} tidak ingin mencari lagi..."
-
-    kim "Walikota memintamu datang, jadi kamu datang."
-
+    kim @ a_point "You bad wife!"
+    liu "Isn't there something else I can do?"
+    kim @ a_cry "Brah, brah, brah... {b}Kim{/b} want no more tarking..."
+    kim "Mayor ask you come, so you come."
     show liu f_worried_down
     show kim f_smirk a_swimsuit
     with dissolve
     pause
-    kim "{b}Kim{/b} belikan untukmu."
-
+    kim "{b}Kim{/b} buy for you."
     liu f_gross @ -m_talk "..."
-    kim "Anda memakai."
-
-    liu f_worried "Tolong, {b}Kim{/b}... Jangan membuat-"
-
-    kim f_angry "Tenang!"
-
-    kim "Anda menuruti atau {b}Kim{/b} mengirim Anda kembali ke Korea!"
-
+    kim "You wear."
+    liu f_worried "Please, {b}Kim{/b}... Don't make-"
+    kim f_angry "Quiet!"
+    kim "You obey or {b}Kim{/b} send you back to Korea!"
     liu @ -m_talk "..."
-    kim "Katakanlah Anda mengerti!"
-
-    liu "... Saya mengerti."
-
-    kim f_smirk "Bagus."
-
-    kim "Anda ambil!"
-
+    kim "Say you understand!"
+    liu "... I understand."
+    kim f_smirk "Good."
+    kim "You take!"
     show kim a_idle
     show liu a_swimsuit f_worried_down
     with dissolve
     pause
     show liu f_worried
-    kim "{b}Kim{/b} menjemputmu, setelah shift di dearership."
-
-    kim "Kami pergi."
-
-    kim f_angry a_counter_raised "Anda membuat walikota senang, ya?"
-
-    liu "{i}*Mengendus*{/i} Y-ya."
-
-    kim f_smirk a_idle "Bagus."
-
-    kim "Finarry, patuhlah."
-
-    kim @ a_point "Bersiaplah."
-
-    kim a_rub "{b}Kim{/b} tidak ingin dinilai."
-
+    kim "{b}Kim{/b} pick you up, after shift at dearership."
+    kim "We go."
+    kim f_angry a_counter_raised "You make mayor happy, yes?"
+    liu "{i}*Sniff*{/i} Y-yes."
+    kim f_smirk a_idle "Good."
+    kim "Finarry, you obey."
+    kim @ a_point "Be ready."
+    kim a_rub "{b}Kim{/b} not want be rate."
     hide kim with dissolve
     pause
     show liu f_worried_down
     pause
     show liu a_swimsuit_drop with dissolve
     pause .2
-    liu a_cry f_crying @ -m_talk "{i}*Terisak*{/i}"
-
+    liu a_cry f_crying @ -m_talk "{i}*Sobs*{/i}"
 
     scene expression player.location.background_blur
     show anon f_worried
     with fade
-    anon @ -m_talk "(Apa-apaan ini?!)"
-
-    anon @ -m_talk "(Aku tahu {b}Kim{/b} itu brengsek tapi itu menjijikkan!)"
-
+    anon @ -m_talk "( What the hell?! )"
+    anon @ -m_talk "( I knew {b}Kim{/b} was an asshole but that was just gross! )"
     pause
-    anon @ -m_talk "(Bagaimana mungkin ada orang yang memperlakukan istrinya seperti itu?)"
-
-    anon @ -m_talk "(Aku harus memastikan dia baik-baik saja...)"
-
+    anon @ -m_talk "( How could anyone treat their wife like that? )"
+    anon @ -m_talk "( I should make sure she's okay... )"
     hide anon with dissolve
     return
 
@@ -129,179 +84,106 @@ label ano14_sobs_liu:
         xoffset -500
     show anon f_worried with dissolve:
         flip
-    liu @ -m_talk "{i}*Terisak*{/i}"
-
+    liu @ -m_talk "{i}*Sobs*{/i}"
     show liu a_wipe_tears b_dressed f_crying with {'master': dissolve}
-    anon "{i}*Ehem*{/i} Bu?"
-
+    anon "{i}*Ahem*{/i} Ma'am?"
     liu f_surprised a_cover "!!!"
     show liu f_worried with {'master': dissolve}:
         flip
         xoffset 0
-    liu @ -m_talk "{i}*Mengendus*{/i}"
-
-    liu a_idle "Oh, maaf soal itu..."
-
-    liu "... Aku akan segera bersamamu."
-
+    liu @ -m_talk "{i}*Sniff*{/i}"
+    liu a_idle "Oh, sorry about that..."
+    liu "... I'll be right with you."
     show liu b_dressed_bend with {'master': dissolve}:
         unflip
         xoffset -550
-    anon "T-tidak, jangan minta maaf."
-
+    anon "N-no, don't apologize."
     show liu b_dressed a_nervous with {'master': dissolve}:
         flip
         xoffset 0
-    anon a_behind_head "Aku agak... Yah, aku mendengar apa yang sedang terjadi..."
-
+    anon a_behind_head "I kinda... Well, I overheard what was going on..."
     pause
-    anon a_idle "... Apakah kamu baik-baik saja?"
-
-    liu "{i}*Sniff*{/i} Y-ya, aku akan baik-baik saja."
-
+    anon a_idle "... Are you alright?"
+    liu "{i}*Sniff*{/i} Y-yeah, I'll be fine."
     show liu f_surprised
     pause
-    liu a_behind "Oh, tembak!"
-
-    liu f_worried "Kamu adalah anak {b}Frank{/b}, umm..."
-
-    liu "... {b}[firstname]{/b}, kan?"
-
-    anon "Itu benar."
-
-    anon "Apakah kamu benar-benar menikah dengan pria itu?"
-
-    liu "{i}*Sniff*{/i} Ya, sayangnya."
-
-    anon "Bagaimana hal itu bisa terjadi?"
-
+    liu a_behind "Oh, shoot!"
+    liu f_worried "You're {b}Frank{/b}'s kid, umm..."
+    liu "... {b}[firstname]{/b}, right?"
+    anon "That's right."
+    anon "Are you really married to that guy?"
+    liu "{i}*Sniff*{/i} Yeah, unfortunately."
+    anon "How did that happen?"
     liu f_curious @ -m_talk "Hmm?"
-
-    liu f_worried_down "Oh, um..."
-
-    anon @ a_hands_up "Maaf, aku tahu itu bukan urusanku."
-
-    anon "Hanya saja, dia tidak seharusnya bicara seperti itu padamu."
-
-    liu f_worried "Heh, itu hanya apa yang ayahmu katakan."
-
-    anon "Apa maksudmu?"
-
-    liu f_worried_down "{i}*Sniff*{/i} T-tidak, tidak apa-apa."
-
+    liu f_worried_down "Oh, umm..."
+    anon @ a_hands_up "Sorry, I know it's not my business."
+    anon "It's just, he shouldn't talk to you like that."
+    liu f_worried "Heh, that's just what your father said."
+    anon "What do you mean?"
+    liu f_worried_down "{i}*Sniff*{/i} N-no, it's nothing."
     pause
-    liu "Saya tidak menikah dengannya karena pilihan, jika itu yang Anda minta."
-
+    liu "I didn't marry him by choice, if that's what you're asking."
     anon "Oh?"
-
-    liu "Keluarga saya berasal dari desa kecil di perbatasan Tiongkok dekat Korea Utara."
-
-    liu "Kami sangat miskin."
-
+    liu "My family is from a small village on the Chinese border near North Korea."
+    liu "We were very poor."
     pause
-    liu "Jadi ketika {b}Kim{/b} menawarkan berat badan saya dalam bentuk perak kepada ayah saya, itu bukanlah keputusan yang sulit."
-
-    anon "Ayahmu menjualmu padanya?"
-
-    anon "Itu mengerikan!"
-
-    liu "... Dan uang itu sangat membantu keluarga saya."
-
+    liu "So when {b}Kim{/b} offered my weight in silver to my father, it wasn't a hard decision."
+    anon "Your father sold you to him?"
+    anon "That's awful!"
+    liu "... And the money helped my family immensely."
     pause
-    liu f_worried_down "Dia tidak salah saat mengatakan dia membawaku ke sini dan memberiku kehidupan yang lebih baik juga."
-
-    liu "Aku punya rumah yang bagus dan pekerjaan yang menghasilkan banyak uang... Dia bahkan mengizinkanku menyimpan sedikit gajiku untuk dibelanjakan sesukaku."
-
-    anon @ f_skeptical "Sedikit ya?"
-
-    anon @ f_skeptical "Betapa murah hatinya dia."
-
-    liu "{i}*Sniff*{/i} Sebenarnya tidak terlalu buruk."
-
-    liu "Dia terlalu sibuk di dealer sehingga tidak bisa menggangguku hampir sepanjang waktu..."
-
-    liu "... Selama aku menjaga rumahnya dan membuatkannya makan malam, segalanya akan damai."
-
-    anon "Anda berhak mendapatkan yang lebih baik."
-
-    liu f_worried "I-Anda baik sekali yang mengatakannya."
-
+    liu f_worried_down "He's not wrong when he says he brought me here and gave me a better life either."
+    liu "I have a nice house and a job making fair money... He even lets me keep a bit of my paycheck to spend as I like."
+    anon @ f_skeptical "A bit, huh?"
+    anon @ f_skeptical "How generous of him."
+    liu "{i}*Sniff*{/i} It's really not so bad."
+    liu "He's too busy at the dealership to bother with me most of the time..."
+    liu "... So long as I keep his house and make him dinner, things are peaceful."
+    anon "You deserve much better."
+    liu f_worried "T-that's kind of you to say."
     pause
-    liu "Kamu sangat mirip ayahmu, tahu?"
-
-    liu "aku benar-benar minta maaf atas semua yang terjadi..."
-
+    liu "You're so much like your father, you know?"
+    liu "I really am sorry for all that happened..."
     pause
-    liu f_worried_down "... Dia pria yang baik."
-
-    anon @ f_sad_down "Y-ya, aku tahu."
-
-    anon "Aku mencoba yang terbaik untuk mencari tahu apa yang terjadi..."
-
-    anon "... Sebenarnya, itulah alasan saya ada di sini hari ini."
-
+    liu f_worried_down "... He was a good man."
+    anon @ f_sad_down "Y-yeah, I know."
+    anon "I'm trying my best to figure out what happened..."
+    anon "... In fact, that's why I'm here today."
     liu f_curious "Hmm?"
-
-    anon f_normal "Begini, saya menemukan kunci kotak kunci ini."
-
-    liu "Salah satu milik kita, di dalam lemari besi?"
-
-    anon "Ya, itulah yang diberitahukan kepadaku."
-
-    anon "Saya pikir {b}Ayah{/b} mungkin meninggalkan sesuatu di sana."
-
+    anon f_normal "Well, you see, I found this key to a lockbox."
+    liu "One of ours, down in the vault?"
+    anon "Yeah, that's what I've been told."
+    anon "I think {b}Dad{/b} might have left something there."
     pause
-    anon "{b}Tina{/b} bilang dia akan membawaku ke bawah untuk memeriksanya."
-
-    liu f_worried "Jadi begitu."
-
-    liu "Sayangnya, dia tidak ada di sini saat ini."
-
+    anon "{b}Tina{/b} said she'd take me down to check it out."
+    liu f_worried "I see."
+    liu "Unfortunately, she's not here at the moment."
     anon f_worried "Oh?"
-
-    liu "Dia mendapat telepon dari sekolah putrinya dan bergegas pergi."
-
-    liu "Sesuatu tentang kerusakan lemari pakaian saat latihan pemandu sorak."
-
-    anon "Tidak bercanda?"
-
+    liu "She got a phone call from her daughter's school and rushed off."
+    liu "Something about a wardrobe malfunction during cheerleading practice."
+    anon "No kidding?"
     pause
-    anon f_unimpressed "Ya, sial."
-
+    anon f_unimpressed "Well, crap."
     pause
-    anon f_worried "Kurasa, aku harus kembali lagi nanti."
-
-    liu "Aku bisa, mungkin... Membawamu ke sana."
-
+    anon f_worried "I guess, I'll have to come back later then."
+    liu "I could, maybe... Take you down there."
     show anon f_surprised
     pause
-    anon @ f_skeptical "Mungkin?"
-
-    liu "T-tidak, aku bisa."
-
-    liu f_worried_down @ f_surprised "Saya akan!"
-
-    anon f_worried "Anda yakin?"
-
-    liu f_worried "Tentu saja!"
-
-    liu a_nervous "Hanya, um..."
-
+    anon @ f_skeptical "Maybe?"
+    liu "N-no, I can."
+    liu f_worried_down @ f_surprised "I will!"
+    anon f_worried "You're sure?"
+    liu f_worried "Definitely!"
+    liu a_nervous "Just, umm..."
     show liu a_swimsuit_show with dissolve
     show anon f_worried_low
-    liu "... Beri aku waktu sejenak untuk menyingkirkan bikini bodoh ini."
-
+    liu "... Give me a moment to put this stupid bikini away."
     show liu f_nervous
-    anon f_normal "Tentu saja."
-
-    liu a_behind "Anda akan menemukan tangga menuju lemari besi di ujung lorong sana."
-
-    liu "Aku akan menemuimu sebentar lagi."
-
-    anon "Terima kasih, {b}Liu{/b}."
-
-    liu "Dengan senang hati, {b}[firstname]{/b}."
-
+    anon f_normal "Of course."
+    liu a_behind "You'll find the stairs to the vault at the end of that hallway there."
+    liu "I'll meet you in a moment."
+    anon "Thank you, {b}Liu{/b}."
+    liu "My pleasure, {b}[firstname]{/b}."
     hide anon with dissolve
     return
 # Decompiled by unrpyc: https://github.com/CensoredUsername/unrpyc

@@ -1,28 +1,20 @@
 label ano16_init_erik:
     show erik
     show anon with dissolve
-    anon "Baiklah, {b}Erik{/b}, kita berada di rumah pohon lama kita..."
-
-    anon "... Bisakah Anda menjelaskan apa yang kami lakukan sekarang?"
-
-    erik @ f_laugh "Itu akan menjadi kesenangan saya!"
-
-    erik "Tapi pertama-tama, kita harus mendaki."
-
-    anon f_confused "{b}Erik{/b}, tidak bisakah kamu memberitahuku di sini saja?"
-
-    erik f_woozy "Percayalah padaku, kawan!"
-
-    erik "Anda akan menyukai ini!"
-
+    anon "Alright, {b}Erik{/b}, we're at our old treehouse..."
+    anon "... Can you explain what we're doing now?"
+    erik @ f_laugh "It would be my pleasure!"
+    erik "But first, we need to climb up."
+    anon f_confused "{b}Erik{/b}, can't you just tell me down here?"
+    erik f_woozy "Trust me, dude!"
+    erik "You're going to love this!"
     hide erik
     show anon f_unimpressed:
         flip
         xoffset -500
     with dissolve
     anon @ -m_talk "..."
-    anon f_sad_down a_rub "{i}*Huh*{/i}"
-
+    anon f_sad_down a_rub "{i}*Sigh*{/i}"
     hide anon with dissolve
     return
 
@@ -31,199 +23,118 @@ label ano16_tree_erik:
     show erik b_knees a_sonar oh_headset:
         xoffset 120
     show anon f_surprised_low b_onbed_back with dissolve
-    erik @ f_laugh "Coba lihat!"
-
-    anon f_confused "Benda apa itu?"
-
-    erik "Itu adalah alat pendengar."
-
-    anon "Perangkat mendengarkan?"
-
-    erik "Ya, itu memperkuat suara yang jauh."
-
-    erik "Kita bisa menggunakannya untuk menguping percakapan yang terjadi di kediaman walikota."
-
-    anon f_normal @ f_surprised "Wah, benarkah?"
-
-    erik f_woozy "Cukup keren, ya?"
-
-    anon "Ini sangat keren!"
-
+    erik @ f_laugh "Check it out!"
+    anon f_confused "What the heck is that thing?"
+    erik "It's a listening device."
+    anon "Listening device?"
+    erik "Yeah, it amplifies sounds that are far away."
+    erik "We can use it to eavesdrop on conversations happening at the mayor's estate."
+    anon f_normal @ f_surprised "Whoa, really?"
+    erik f_woozy "Pretty cool, huh?"
+    anon "It's very cool!"
     pause
-    anon "Tapi, umm... Bagaimana tepatnya cara kerjanya?"
-
-    erik f_normal "Ini sangat sederhana, kawan."
-
-    erik "Anda cukup mengarahkan pistol ke apa pun yang ingin Anda dengarkan..."
-
-    erik a_sonar_point "... Dan perangkat akan memperkuatnya dan kemudian memutarnya kembali melalui headset ini."
-
-    anon f_shy "Oke, tapi saya hanya punya satu pertanyaan..."
-
-    erik a_sonar "Tembak."
-
-    anon "Mengapa kamu memiliki benda itu?"
-
+    anon "But, umm... How exactly does it work?"
+    erik f_normal "It's really simple, dude."
+    erik "You just point the gun at whatever you want to listen to..."
+    erik a_sonar_point "... And the device will amplify it and then play it back through this headset."
+    anon f_shy "Okay, but I just have one question..."
+    erik a_sonar "Shoot."
+    anon "Why do you have that thing?"
     erik f_worried "Oh."
-
-    erik f_worried_down "Eh, karena..."
-
+    erik f_worried_down "Ehh, because..."
     pause
-    anon f_snarky "Karena?"
-
-    erik @ f_worried "... Karena aku membutuhkannya..."
-
+    anon f_snarky "Because?"
+    erik @ f_worried "... Because I needed it..."
     pause
-    erik "... Untuk um..."
-
-    erik f_surprised "... Mengamati burung!"
-
-    anon f_skeptical "Mengamati burung, ya?"
-
-    erik @ f_normal "Ya."
-
-    anon f_snarky @ f_laugh "Pembohong."
-
-    erik f_nervous "Tidak, aku serius!"
-
+    erik "... For umm..."
+    erik f_surprised "... Bird watching!"
+    anon f_skeptical "Bird watching, huh?"
+    erik @ f_normal "Yup."
+    anon f_snarky @ f_laugh "Liar."
+    erik f_nervous "No, I'm serious!"
     anon @ -m_talk "Mhmm."
-
-    anon "Jenis burung apa yang kamu perhatikan, {b}Erik{/b}?"
-
-    erik "Saya tidak tahu..."
-
-    erik "... Yang berbulu?"
-
+    anon "What kind of birds do you watch, {b}Erik{/b}?"
+    erik "I don't know..."
+    erik "... The ones with feathers?"
     anon @ -m_talk "..."
-    erik f_worried "Apakah kita akan melakukan hal ini atau tidak?"
-
-    anon "{i}*Huh*{/i} Ya..."
-
-    anon "... Tapi kita akan membahasnya lagi nanti!"
-
+    erik f_worried "Are we gonna do this thing or not?"
+    anon "{i}*Sigh*{/i} Yes..."
+    anon "... But we're circling back to this later!"
     pause
-    anon f_normal "Sekarang, bagaimana kita tahu ke mana harus mengarahkan benda itu?"
-
-    erik "Ya, {b}Rump estate{/b} terlalu jauh untuk melihat percakapan tanpa teropong, jadi..."
-
-    erik "... Kita harus bekerja sebagai sebuah tim."
-
-    erik "Ambil teropong di dalam koper di sana dan kami akan menggunakannya untuk menunjukkan dengan tepat orang-orang yang sedang melakukan percakapan."
-
-    anon a_binoculars @ f_brag_closed "Maksudmu ini?"
-
-    erik "Oh, Anda sudah mendapatkannya."
-
-    anon a_idle "Ya."
-
-    erik f_worried_down "Sekarang jika saya bisa membuat hal bodoh ini berhasil..."
-
-    anon f_worried "Ini tidak berfungsi?"
-
-    erik @ f_worried "Tidak saat ini."
-
+    anon f_normal "Now, how do we know where to point that thing?"
+    erik "Well, the {b}Rump estate{/b} is too far away to spot conversations without binoculars, so..."
+    erik "... We'll have to work as a team."
+    erik "Grab that pair of binoculars in the suitcase over there and we'll use them to pinpoint people who are having conversations."
+    anon a_binoculars @ f_brag_closed "You mean these?"
+    erik "Oh, you've already got them."
+    anon a_idle "Yup."
+    erik f_worried_down "Now if I can just get this stupid thing working..."
+    anon f_worried "It's not working?"
+    erik @ f_worried "Not at the moment."
     pause
-    erik "Itu tidak masuk akal, kemarin berfungsi dengan baik!"
-
-    anon "Suatu hari?"
-
-    erik f_normal @ f_laugh "Ya, aku sedang mengamati sepasang payudara bagus di pantai."
-
-    anon f_grin @ f_laugh "Lihat, aku tahu kamu punya hal yang mesum pada perempuan!"
-
-    erik f_worried "T-tidak!"
-
+    erik "It doesn't make any sense, it was working fine the other day!"
+    anon "The other day?"
+    erik f_normal @ f_laugh "Yeah, I was observing a nice pair of boobies down at the beach."
+    anon f_grin @ f_laugh "See, I knew you got that thing to perv on girls!"
+    erik f_worried "N-no!"
     pause
-    erik "Burung boobies berkaki biru adalah burung pelaut yang ditemukan di sepanjang garis pantai Amerika Utara, Selatan, dan Tengah!"
-
+    erik "Blue-footed boobies are seafaring birds found along the coastlines of North, South, and Central America!"
     anon f_unimpressed @ -m_talk "..."
     show erik f_woozy
     pause
-    anon "Sejujurnya saya tidak tahu apakah Anda bercanda atau tidak."
-
-    erik "Apa yang bisa kukatakan, aku menyukainya..."
-
+    anon "I honestly can't tell if you're joking or not."
+    erik "What can I say, I like them..."
     pause
-    erik f_normal @ f_laugh "... Dan itulah yang menginspirasi fanfic {i}World of Orcette{/i} saya yang sangat sukses."
-
-    anon f_worried "Fiksi penggemar?"
-
-    erik f_normal @ f_woozy "Ya, mereka menceritakan petualangan erotis karakter saya di pegunungan Kol'gath yang dipenuhi harpy!"
-
+    erik f_normal @ f_laugh "... And they're what inspired my highly successful {i}World of Orcette{/i} fanfics."
+    anon f_worried "Fanfics?"
+    erik f_normal @ f_woozy "Yeah, they chronicle my character's erotic adventures in the harpy-infested mountains of Kol'gath!"
     show anon f_shock
-    erik "Harpy adalah ras betina mirip burung yang harus mencari manusia jantan untuk menghasilkan dan membuahi telur mereka..."
-
-    erik f_woozy "... Dan saya yakin saya tidak perlu memberi tahu Anda, mereka sangat seksi!"
-
+    erik "Harpies are a race of birdlike females that must seek out human men to procreate and fertilize their eggs..."
+    erik f_woozy "... And I'm sure I don't have to tell you, they are crazy sexy!"
     pause
-    anon f_normal @ f_laugh "Aku bahkan tidak tahu bagaimana harus menanggapinya..."
-
-    erik f_worried_down @ f_angry "Grr, ada apa dengan benda ini?!"
-
-    anon "Apakah baterainya mati?"
-
-    erik f_bored "Tentu saja baterainya belum mati, itu yang pertama saya periksa."
-
-    erik "Menurutmu betapa bodohnya aku?"
-
+    anon f_normal @ f_laugh "I don't even know how to respond to that..."
+    erik f_worried_down @ f_angry "Grr, what's wrong with this thing?!"
+    anon "Are the batteries dead?"
+    erik f_bored "Of course the batteries aren't dead, that's the first thing I checked."
+    erik "How stupid do you think I am?"
     anon @ -m_talk "..."
     pause
-    anon a_take "Biarkan saya melihatnya."
-
-    erik "Tidak, aku mengerti..."
-
-    anon f_unimpressed "Bung, berikan padaku!"
-
+    anon a_take "Let me have a look."
+    erik "No, I've got it..."
+    anon f_unimpressed "Dude, give it to me!"
     show anon behind erik
-    erik a_sonar_give f_angry "Baiklah, ambillah!"
-
+    erik a_sonar_give f_angry "Fine, take it!"
     show erik a_idle
     show anon a_sonar f_disgusted_low
     with dissolve
     pause
-    anon "Apa yang-"
-
-    anon f_unimpressed "Kenapa semuanya lengket?!"
-
-    erik f_worried_down "Aku tidak tahu."
-
+    anon "What the-"
+    anon f_unimpressed "Why is it all sticky?!"
+    erik f_worried_down "I don't know."
     pause
-    erik "Mungkin hanya sisa kepulan keju..."
-
+    erik "It's probably just some cheese puff residue..."
     pause
-    erik "... Atau pelumas."
-
+    erik "... Or lubricant."
     anon f_disgusted_low a_sonar_drop1 "Eugh!{p=1}{nw}"
-
     show anon f_surprised_low a_sonar_drop2
     show erik behind anon
     with dissolve
     erik f_surprised "!!!"
-    erik f_angry "Apa-apaan ini, {b}[firstname]{/b}!"
-
+    erik f_angry "What the hell, {b}[firstname]{/b}!"
     show anon f_worried a_idle behind erik
     show erik a_sonar_broken f_worried_down
     with dissolve
     pause
-    erik f_sad_down "Saya membayar tujuh puluh dolar untuk ini."
-
-    anon "Maafkan aku, {b}Erik{/b}..."
-
-    erik "{i}*Sigh*{/i} Saya rasa itulah akhir dari fase mengamati burung saya..."
-
-    anon "Aku tidak bermaksud-"
-
-    erik a_idle f_sad "Tidak apa-apa."
-
-    erik f_normal @ f_laugh "Saya berpikir sudah waktunya untuk beralih ke kuda."
-
+    erik f_sad_down "I paid seventy bucks for this."
+    anon "I'm sorry, {b}Erik{/b}..."
+    erik "{i}*Sigh*{/i} I guess that's the end of my bird-watching phase..."
+    anon "I didn't mean to-"
+    erik a_idle f_sad "It's fine."
+    erik f_normal @ f_laugh "I was thinking it's time to switch to horses anyways."
     show anon f_unimpressed
-    erik "Sudahkah saya memberi tahu Anda tentang suku prajurit centaur yang akan mereka tambahkan di patch berikutnya?"
-
-    anon "{b}Erik{/b}, kita pakai teropong saja dan lihat apa yang bisa kita simpulkan ya?"
-
-    erik "Ya baiklah..."
-
+    erik "Have I told you about the tribe of centaur warriors they're adding in the next patch?"
+    anon "{b}Erik{/b}, let's just use the binoculars and see what we can deduce, yeah?"
+    erik "Yeah, okay..."
 
     scene location_treehouse_window_behind
     show erik f_normal:
@@ -236,78 +147,52 @@ label ano16_tree_erik:
         yoffset -75
     show location_treehouse_window
     with fade
-    erik "Kamu ingin aku pergi dulu?"
-
-    anon "Tidak, aku pergi dulu."
-
+    erik "You want me to go first?"
+    anon "No, I'm going first."
     pause
-    erik f_bored "Cobalah untuk tidak merusaknya juga."
-
-    anon f_unimpressed "Har... Har... Lucu sekali."
-
+    erik f_bored "Just try not to break these too."
+    anon f_unimpressed "Har... Har... Very funny."
     show erik f_normal:
         unflip
         xoffset -280
     show anon f_normal_out a_binocular_look
     with dissolve
     pause
-    anon f_worried "Apa yang-"
-
-    erik "Anda melihat sesuatu?"
-
-    anon "Uhh... Ya."
-
+    anon f_worried "What the-"
+    erik "You see something?"
+    anon "Uhh... Yes."
     pause
-    erik f_surprised "Apakah itu walikota?!"
-
+    erik f_surprised "Is it the mayor?!"
 
     scene location_rump_backyard_spy02 with fade
     pause
-    anon "Ya Tuhan, kuharap tidak..."
-
+    anon "God, I hope not..."
     pause
-    erik "Apa yang kamu lihat, {b}[firstname]{/b}?"
-
-    anon "Sebagai permulaan, penyalahgunaan bendera Amerika..."
-
+    erik "What do you see, {b}[firstname]{/b}?"
+    anon "A gross misuse of the American flag, for starters..."
     pause
-    erik "Bisakah Anda lebih spesifik?"
-
-    anon "Tunggu."
-
+    erik "Can you be more specific?"
+    anon "Hold on."
 
     scene location_rump_backyard_spy01 with fade
     pause
-    anon "Itu adalah pria Hispanik berotot yang mengenakan celana dalam."
-
-    erik "Hah?"
-
-    anon "Dan dia sedang berbicara dengan seorang wanita berbikini."
-
-    erik "Bagus sekali!"
-
-    erik "Apakah dia seksi?!"
-
-    anon "Ehh, dia jelas tidak jelek."
-
-    erik "Saya yakin itu putri walikota."
-
-    erik "Dia seperti, super-duper seksi!"
-
+    anon "It's a muscular Hispanic fellow in his underpants."
+    erik "Huh?"
+    anon "And he's talking to a lady in a bikini."
+    erik "Oh, nice!"
+    erik "Is she hot?!"
+    anon "Ehh, she definitely isn't ugly."
+    erik "I bet it's the mayor's daughter."
+    erik "She's like, super-duper hot!"
 
     scene location_rump_backyard_spy03 with fade
     pause
-    anon "Hmm, mungkin saja."
-
+    anon "Hmm, it might be."
     pause
-    anon "Dia sepertinya sangat tertarik dengan celana dalam pria ini."
-
-    erik "Apa maksudmu?"
-
-    anon "Dia hanya menatap ke arah mereka."
-
-    erik "Aduh, bung... Kuharap itu bukan putrinya."
-
+    anon "She seems really interested in this guy's underpants."
+    erik "What do you mean?"
+    anon "She's just staring right at them."
+    erik "Aww, man... Now I hope it's not his daughter."
 
     scene location_treehouse_window_behind
     show erik f_worried:
@@ -319,19 +204,13 @@ label ano16_tree_erik:
         yoffset -75
     show location_treehouse_window
     with fade
-    anon "Hah?"
-
-    erik f_worried_right "Apakah wanita itu berambut pirang?"
-
-    anon "Tidak."
-
-    erik f_normal @ f_laugh "Fiuh, oke."
-
-    erik "Putrinya berambut pirang."
-
+    anon "Huh?"
+    erik f_worried_right "Was that lady blonde?"
+    anon "No."
+    erik f_normal @ f_laugh "Phew, okay."
+    erik "His daughter is blonde."
     pause
-    erik f_woozy "Dan semoga lajang!"
-
+    erik f_woozy "And hopefully single!"
     show anon f_eyeroll
     pause
     show anon f_normal_out a_binocular_look with dissolve
@@ -339,20 +218,13 @@ label ano16_tree_erik:
     anon f_shock "!!!"
 
     scene location_rump_backyard_spy05 with fade
-    erik "Apa yang kamu lihat?"
-
-    anon "Seorang gadis muda, cantik, berambut pirang."
-
-    erik "{i}*Terkesiap*{/i} Anda menemukannya!"
-
-    anon "Saya kira demikian."
-
-    erik "Apa yang dia lakukan?!"
-
-    anon "Dia tampak sedang berjemur."
-
-    erik "Wah benarkah?!"
-
+    erik "What do you see?"
+    anon "A young, beautiful, blonde girl."
+    erik "{i}*Gasp*{/i} You found her!"
+    anon "I think so."
+    erik "What's she doing?!"
+    anon "She appears to be sunbathing."
+    erik "Whoa, really?!"
 
     scene location_treehouse_window_behind
     show erik f_surprised:
@@ -365,101 +237,66 @@ label ano16_tree_erik:
         yoffset -75
     show location_treehouse_window
     with fade
-    erik "Coba lihat!!"
-
-    anon "Tunggu."
-
-    erik f_bored "Tidak mungkin, kawan!"
-
-    anon f_angry "Hentikan, {b}Erik{/b}!"
-
-    erik "Sekarang giliranku!"
-
+    erik "Lemme see!!"
+    anon "Hold on."
+    erik f_bored "No way, dude!"
+    anon f_angry "Stop it, {b}Erik{/b}!"
+    erik "It's my turn!"
     show anon a_idle f_unimpressed behind erik
     show erik a_binocular f_normal
     with dissolve
-    anon "Baiklah, tenang!"
-
+    anon "Alright, calm down!"
     show erik f_woozy a_binocular_look with dissolve:
         unflip
         xoffset -225
-    anon "Astaga."
-
-    erik "Oh ya!"
-
+    anon "Sheesh."
+    erik "Oh, yeah!"
     pause
-    erik "Itu calon istriku!"
-
-    anon f_snarky @ f_laugh "Pfft, dalam mimpimu!"
-
-    anon "Kamu harusnya tahu sekarang bahwa gadis seperti itu tidak tertarik pada pria seperti kita..."
-
+    erik "There's my future wife!"
+    anon f_snarky @ f_laugh "Pfft, in your dreams!"
+    anon "You should know by now that girls like that have no interest in guys like us..."
     show erik f_worried a_binocular with dissolve:
         flip
         xoffset 125
-    erik "Ah, jangan katakan itu."
-
-    anon f_normal "Lihatlah faktanya, kawan."
-
-    anon "Dia sangat cantik, bertubuh seperti model runway, kaya raya, berpendidikan tinggi..."
-
-    erik f_worried_down "Ya, oke... Tapi-"
-
-    anon "Gadis seperti itu hanya berkencan dengan atlet atau musisi terkenal."
-
-    erik f_woozy "Saya bisa menjadi seorang musisi."
-
-    anon @ f_skeptical "Sobat, seriuslah."
-
-    erik "Saya serius!"
-
+    erik "Aww, don't say that."
+    anon f_normal "Look at the facts, man."
+    anon "She's incredibly gorgeous, built like a runway model, filthy rich, highly educated..."
+    erik f_worried_down "Yeah, okay... But-"
+    anon "Girls like that only date athletes or famous musicians."
+    erik f_woozy "I could be a musician."
+    anon @ f_skeptical "Man, be serious."
+    erik "I am being serious!"
     show erik a_binocular_look with dissolve:
         unflip
         xoffset -225
-    erik "Menghormati karakterku dan menjadi seorang bard adalah hal yang sederhana."
-
+    erik "It's a simple thing to respec my character and become a bard."
     anon f_unimpressed @ -m_talk "..."
     show erik f_normal a_binocular with dissolve:
         flip
         xoffset 125
-    erik "Bard tidak memiliki daya tarik seks maskulin seperti paladin tetapi mereka mendapatkan nilai karisma yang lebih tinggi..."
-
-    erik f_thinking "Menurutmu apakah aku punya peluang lebih besar untuk merayunya dengan kecapi atau harpa?"
-
+    erik "Bards don't have the raw masculine sex appeal that paladins have but they do get higher charisma scores..."
+    erik f_thinking "Do you think I'd have a better chance of seducing her with a lute, or a harp?"
     pause
     show anon a_binocular
     show erik a_idle behind anon
     with dissolve
-    anon "Beri aku itu!"
-
-    erik f_worried "Hai!!"
-
-    anon a_binocular_look f_normal_out "Anda benar-benar harus berhenti berbicara tentang video game..."
-
-    erik f_angry "Mungkin dia suka video game... Pernahkah kamu mempertimbangkannya?!"
-
-    anon "Tidak."
-
+    anon "Give me those!"
+    erik f_worried "Hey!!"
+    anon a_binocular_look f_normal_out "You really have to stop talking about video games..."
+    erik f_angry "Maybe she likes video games... You ever consider that?!"
+    anon "No."
 
     scene location_rump_backyard_spy06 with fade
     pause
-    anon "Hah."
-
-    erik "Bagaimana sekarang?!"
-
-    anon "Tidak ada apa-apa, hanya seorang pelayan yang membawakannya minuman."
-
+    anon "Huh."
+    erik "What now?!"
+    anon "Nothing, just a maid bringing her a beverage."
     pause
-    anon "Hmm, penasaran apakah seragam itu wajib?"
-
-    erik "Seragam?"
-
-    anon "Ya, dia mengenakan seragam pelayan yang sangat minim."
-
-    erik "Ya ampun... Benarkah?!"
-
-    erik "Karena aku punya barang ini untuk pelayan seksi, kawan!"
-
+    anon "Hmm, I wonder if that uniform is mandatory?"
+    erik "Uniform?"
+    anon "Yeah, she's wearing a pretty skimpy maid uniform."
+    erik "Oh, man... Really?!"
+    erik "Because I have this thing for sexy maids, dude!"
 
     scene location_treehouse_window_behind
     show erik:
@@ -471,57 +308,36 @@ label ano16_tree_erik:
         yoffset -75
     show location_treehouse_window
     with fade
-    anon "Untuk apa Anda tidak mempunyai \"sesuatu\"?"
-
-    erik @ f_laugh "Hehe, benar."
-
+    anon "What don't you have a \"thing\" for?"
+    erik @ f_laugh "Heh, true."
     show anon a_binocular_look f_normal_out with dissolve
     pause
-    erik "Minuman apa yang dia bawakan untuknya?"
-
-    anon "Saya tidak tahu."
-
-    anon "Mengapa itu penting?"
-
-    erik f_thinking "Karena, jika aku ingin memenangkan hatinya, penting bagiku untuk mengetahui apa yang dia suka dan tidak suka..."
-
+    erik "What kind of drink did she bring her?"
+    anon "I have no idea."
+    anon "Why does that matter?"
+    erik f_thinking "Because, if I'm going to win her heart, it's important that I know her likes and dislikes..."
     anon @ -m_talk "Mhmm."
-
     pause
-    erik f_normal "Apa yang dia lakukan sekarang?"
-
-    anon "Aku tidak tahu."
-
-    erik f_worried "Bagaimana mungkin kamu tidak tahu?"
-
-    anon "Karena aku sudah move on!"
-
-    anon "Kami mencoba mengintip walikota, ini... Ingat?"
-
-    erik f_sad_down "Aduh."
-
+    erik f_normal "What's she doing now?"
+    anon "I don't know."
+    erik f_worried "How can you not know?"
+    anon "Because I've moved on!"
+    anon "We're trying to snoop on the mayor, here... Remember?"
+    erik f_sad_down "Aww."
     pause
     anon f_shock "!!!"
 
     scene location_rump_backyard_spy04 with fade
-    anon "Itu dia!"
-
-    erik "Anda menemukannya?"
-
-    erik "Apa yang dia lakukan?"
-
+    anon "There he is!"
+    erik "You found him?"
+    erik "What's he doing?"
     pause
-    anon "Aduh, kawan... Gadis malang itu."
-
-    erik "Hah?"
-
-    anon "Dia berendam di bak mandi air panas bersama gadis yang baru kukenal dan suaminya yang SANGAT menyebalkan..."
-
+    anon "Aww, man... That poor girl."
+    erik "Huh?"
+    anon "He's soaking in a hot tub with this girl I recently became acquainted with and her EXTREMELY annoying husband..."
     erik "Oh."
-
     pause
-    erik "Apakah dia seksi?"
-
+    erik "Is she hot?"
 
     scene location_treehouse_window_behind
     show erik f_woozy:
@@ -533,97 +349,63 @@ label ano16_tree_erik:
         yoffset -75
     show location_treehouse_window
     with fade
-    anon "Apa bedanya?"
-
-    erik "Menurutku, tidak..."
-
+    anon "What does that matter?"
+    erik "It doesn't, I suppose..."
     show anon a_binocular_look f_normal_out with dissolve
     pause
-    erik @ f_laugh "Tapi sebenarnya, apakah dia seksi?"
-
-    anon f_worried "... Dia terlihat menyedihkan!"
-
+    erik @ f_laugh "For real though, is she hot?"
+    anon f_worried "... She looks miserable!"
     show erik f_worried with dissolve:
         flip
         xoffset 125
-    erik "Benar-benar?"
-
-    anon a_binocular "Ya, kawan... Aku merasa kasihan padanya."
-
-    erik "Dapatkah saya melihat?"
-
+    erik "Really?"
+    anon a_binocular "Yeah, man... I feel so bad for her."
+    erik "Can I see?"
     show erik a_binocular
     show anon a_idle behind erik
     with dissolve
-    erik f_normal "Terima kasih."
-
+    erik f_normal "Thank you."
     show erik a_binocular_look with dissolve:
         unflip
         xoffset -225
     pause
     erik @ -m_talk "Hmm."
-
     pause
-    anon "Anda melihatnya?"
-
-    erik f_woozy "Oh, aku melihatnya!"
-
+    anon "You see her?"
+    erik f_woozy "Oh, I see her!"
     pause
-    erik "Kawan, aku rela memberikan apa pun demi mendapat kesempatan mendapatkan barang rampasan itu..."
-
-    anon f_confused "Hah?"
-
+    erik "Dude, I'd give my anything for a chance to motorboat that booty..."
+    anon f_confused "Huh?"
     show erik f_normal_right a_binocular with dissolve
-    erik "Mereka bilang itulah penyebab mata merahmu; tapi baginya, aku berani mengambil risiko!"
-
+    erik "They say that's how you get pink eye; but for her, I'd totally risk it!"
     show erik f_woozy a_binocular_look with dissolve
-    anon f_unimpressed "Apakah kamu membohongi putri walikota lagi?!"
-
-    erik "Tidak."
-
-    anon f_angry "Baiklah, kembalikan."
-
-    erik "Tunggu."
-
-    anon "{b}Erik{/b}, aku serius!"
-
-    erik "Mmm, itu seperti sebuah karya seni..."
-
+    anon f_unimpressed "Are you perving the mayor's daughter again?!"
+    erik "No."
+    anon f_angry "Alright, give them back."
+    erik "Hold on."
+    anon "{b}Erik{/b}, I'm serious!"
+    erik "Mmm, it's like a work of art..."
     pause
-    erik "... Beri aku tiga setengah menit... Bahkan mungkin empat--OH SIALAN!"
-
+    erik "... Just give me three and a half minutes... Maybe even four--OH CRAP!"
     show erik f_surprised a_idle with dissolve:
         xoffset -315
         yoffset 225
-    anon f_surprised_low "Apa yang-"
-
-    erik "Oh sial, oh sial, oh sial!"
-
-    anon f_worried_low "Kenapa kamu ada di lantai?"
-
-    erik "Saya pikir dia melihat saya!"
-
-    anon f_shy_low "Apa maksudmu dia melihatmu?!"
-
-    erik "Maksudku, dia menatap langsung ke arahku!"
-
-    erik "Dengan matanya!!"
-
-    anon @ f_eyeroll "Tidak uh."
-
-    erik "Bung, aku tidak bercanda!"
-
-    anon a_binocular_look f_normal_out "Kami seperti seratus meter jauhnya dari-"
-
+    anon f_surprised_low "What the-"
+    erik "Oh crap, oh crap, oh crap!"
+    anon f_worried_low "Why are you on the floor?"
+    erik "I think she saw me!"
+    anon f_shy_low "What do you mean she saw you?!"
+    erik "I mean, she looked directly at me!"
+    erik "With her eyes!!"
+    anon @ f_eyeroll "Nuh uh."
+    erik "Dude, I'm not joking!"
+    anon a_binocular_look f_normal_out "We're like one hundred yards away from-"
 
     scene location_rump_backyard_spy07 with fade
-    anon "Hah."
-
+    anon "Huh."
     pause
-    anon "Anda benar, dia sedang menatap ke arah kita."
-
-    erik "Sudah kubilang!!"
-
+    anon "You're right, she's looking right at us."
+    erik "I told you!!"
     pause
 
     scene location_treehouse_window_behind
@@ -636,39 +418,27 @@ label ano16_tree_erik:
         yoffset 225
     show location_treehouse_window
     with fade
-    erik "Apa yang kita lakukan?"
-
-    anon f_surprised "Aku tidak tahu!"
-
+    erik "What do we do?"
+    anon f_surprised "I don't know!"
     pause
-    anon a_binocular_look f_worried "Sekarang dia bangun."
-
-    erik "Apakah dia terlihat marah?"
-
-    anon "Dia terlihat sangat marah."
-
-    erik "Ya Tuhan!"
-
+    anon a_binocular_look f_worried "Now she's getting up."
+    erik "Does she look mad?"
+    anon "She looks really mad."
+    erik "Oh my god!"
     pause
-    anon "Umm, dia datang ke sini..."
-
-    erik "Haruskah kita lari?"
-
-    erik "Aku merasa kita harus lari!"
-
+    anon "Umm, she's coming this way..."
+    erik "Should we run?"
+    erik "I feel like we should run!"
     hide erik
     show anon f_worried_low a_binocular
     with {'master': dissolve}
-    anon "Kemana kita akan lari?!"
-
+    anon "Where are we gonna run?!"
     show anon a_sides with {'master': dissolve}:
         unflip
         xoffset 230
-    anon "kita berada di pohon..."
-
+    anon "We're in a tree..."
     hide anon with {'master': dissolve}
-    anon "... Dan kamu butuh waktu sekitar lima belas menit untuk mendaki ke sini."
-
+    anon "... And it took you like fifteen minutes to climb up here."
 
     scene location_treehouse_floor_day
     show erik b_knees f_worried:
@@ -677,24 +447,15 @@ label ano16_tree_erik:
     show anon b_onbed_back f_worried behind erik:
         flip
     erik "Hey, don't poke fun!" with fade
-    erik "Anda tahu saya menderita aritmia jantung!"
-
-    anon "Tidak, jangan!"
-
-    erik "Yah, aku bisa saja... Kamu tidak tahu!"
-
-    anon "Nyonya rumahmu mengarang cerita itu untuk mengeluarkanmu dari kelas olahraga!"
-
-    erik "Apakah kamu yakin dia datang ke sini?!"
-
-    erik "Mungkin dia melupakan kita?"
-
-    anon "Saya meragukannya."
-
-    anon "Angkat kepalamu dan lihat!"
-
-    erik "Tidak mungkin, kawan!"
-
+    erik "You know I have cardiac arrhythmia!"
+    anon "No you don't!"
+    erik "Well, I could have... You don't know!"
+    anon "Your landlady made that story up to get you out of gym class!"
+    erik "Are you sure she's coming this way?!"
+    erik "Maybe she forgot about us?"
+    anon "I doubt it."
+    anon "Poke your head up and look!"
+    erik "No way, dude!"
 
     scene location_treehouse_cutscene01
     show text _ ("She had, indeed, not forgotten about us.") as caption
@@ -717,78 +478,45 @@ label ano16_tree_erik:
         flip
         xoffset -100
     with fade
-    erik "Aduh, kawan... Kenapa aku tidak membawa inhalerku!"
-
-    anon "Tenang aja."
-
-    erik f_surprised "Tenang?!"
-
-    erik "Dia putri walikota, kawan!"
-
-    erik f_worried "Kita akan berakhir di bunker di suatu tempat, terkena waterboarding oleh Secret Service!"
-
-    anon @ f_laugh "Tidak, kami tidak."
-
-    anon "Hanya berjongkok dan diam."
-
-    anon "Mungkin dia akan mengira kita kabur."
-
-    erik "Maksudmu bersembunyi?!"
-
-    anon "Ya, sembunyikan."
-
-    erik "Tapi aku payah dalam bersembunyi!"
-
-    anon @ f_confused "Hah?"
-
-    erik "Skor ketangkasanku minus empat!"
-
+    erik "Aww, man... Why didn't I bring my inhaler!"
+    anon "Just calm down."
+    erik f_surprised "Calm down?!"
+    erik "She's the mayor's daughter, dude!"
+    erik f_worried "We're gonna end up in a bunker somewhere, getting waterboarded by Secret Service!"
+    anon @ f_laugh "No, we're not."
+    anon "Just hunker down and keep quiet."
+    anon "Maybe she'll think we ran away."
+    erik "You mean hide?!"
+    anon "Yes, hide."
+    erik "But I suck at hiding!"
+    anon @ f_confused "Huh?"
+    erik "My dexterity score is minus four!"
     show anon f_unimpressed
-    erik "Dan armorku dipenuhi dengan cahaya suci!"
-
-    anon "Ssst!!"
-
-    erik f_surprised "Aku bersinar dalam gelap, kawan!"
-
-    erik f_worried_down "Ya ampun."
-
-    erik f_worried a_cover_face "Aku tidak terlihat, aku tidak terlihat, aku tidak terlihat!"
-
-    anon f_angry "{b}Erik{/b}, diam!"
-
-    erik "Berhentilah berteriak padaku!"
-
+    erik "And my armor is infused with holy light!"
+    anon "Shh!!"
+    erik f_surprised "I glow in the dark, dude!"
+    erik f_worried_down "Oh, man."
+    erik f_worried a_cover_face "I'm invisible, I'm invisible, I'm invisible!"
+    anon f_angry "{b}Erik{/b}, shut up!"
+    erik "Stop yelling at me!"
     anon f_unimpressed @ -m_talk "..."
-    erik a_idle "{i}*Huh*{/i} Seharusnya aku menjadi seorang penyihir..."
-
-    erik "... Seorang penyihir bisa memindahkan kita keluar dari kekacauan ini."
-
-    iwanka "Aku tahu kamu di atas sana, cabul!"
-
+    erik a_idle "{i}*Sigh*{/i} I should have been a wizard..."
+    erik "... A wizard could just teleport us out of this mess."
+    iwanka "I know you're up there, pervert!"
     show erik f_surprised
     show anon f_surprised
-    iwanka "Aku bisa mendengarmu berbisik pada dirimu sendiri!"
-
-    erik a_cover_face "Eee!"
-
-    anon f_worried "Sial, {b}Erik{/b}..."
-
-    iwanka "Ayo tunjukkan dirimu!"
-
+    iwanka "I can hear you whispering to yourself!"
+    erik a_cover_face "Eeep!"
+    anon f_worried "Damnit, {b}Erik{/b}..."
+    iwanka "C'mon, show yourself!"
     pause
-    anon "Haruskah kita mengatakan sesuatu?"
-
-    erik "Bung, tidak!"
-
-    erik "Abaikan saja dia dan mudah-mudahan dia akan pergi."
-
+    anon "Should we say something?"
+    erik "Dude, no!"
+    erik "Just ignore her and hopefully she'll go away."
     pause
-    iwanka "Aku tidak akan pergi sampai kamu menunjukkan dirimu!"
-
-    anon f_unimpressed "Ada ide cemerlang lainnya?"
-
-    erik a_idle f_worried_down "Mungkin ini hanya mimpi buruk?"
-
+    iwanka "I'm not leaving until you show yourself!"
+    anon f_unimpressed "Any other bright ideas?"
+    erik a_idle f_worried_down "Maybe this is just a bad dream?"
 
     scene location_treehouse_cutscene02
     show text _ ("It was not.") as caption
@@ -808,36 +536,23 @@ label ano16_tree_erik:
         flip
         xoffset -100
     with fade
-    erik "Ugh, aku akan muntah."
-
-    anon f_surprised "Jangan muntah!"
-
-    erik "Kawan, mau bagaimana lagi... Itu adalah mekanisme pertahanan!"
-
-    anon f_worried "Saya yakin kita bisa meminta maaf dan semuanya akan baik-baik saja..."
-
-    iwanka "Turunkan dirimu ke sini, sekarang juga!"
-
-    erik a_idle f_worried "Oke, rencana baru."
-
-    erik "Anda turun dan meminta maaf ..."
-
-    erik "... Aku akan tetap di sini dan mengawasi."
-
+    erik "Ugh, I'm gonna throw up."
+    anon f_surprised "Don't throw up!"
+    erik "Dude, I can't help it... It's a defense mechanism!"
+    anon f_worried "I'm sure we can just apologize and everything will be fine..."
+    iwanka "Get your butt down here, right now!"
+    erik a_idle f_worried "Okay, new plan."
+    erik "You go down and apologize..."
+    erik "... I'll stay here and keep a look out."
     anon f_unimpressed @ -m_talk "..."
-    erik f_surprised "Apa?!"
-
-    erik "Tidak ada alasan kami berdua harus mati!"
-
-    iwanka "Baiklah, itu saja, brengsek..."
-
-    iwanka "... aku datang!"
-
+    erik f_surprised "What?!"
+    erik "There's no reason both of us have to die!"
+    iwanka "Alright, that's it asshole..."
+    iwanka "... I'm coming up!"
     anon f_surprised "!!!"
     erik "!!!"
     pause
-    erik f_worried a_cover_face "D-dia bercanda, kan?"
-
+    erik f_worried a_cover_face "S-she's joking, right?"
 
     scene location_treehouse_cutscene03
     show text _ ("She was not.") as caption
@@ -867,414 +582,239 @@ label ano16_tree_erik:
     show erik f_thinking
     show anon f_worried_high
     with dissolve
-    iwanka "Oh, jadi kalian berdua ya?"
-
-    anon "Dengar, aku tidak tahu apa yang menurutmu kamu lihat, tapi kami-"
-
+    iwanka "Oh, so there's two of you, huh?"
+    anon "Look, I don't know what you think you saw, but we-"
     show iwanka b_knees f_annoyed:
         xoffset 200
     show erik f_surprised
     show anon f_worried
     with dissolve
-    iwanka "Saya tahu persis apa yang saya lihat!"
-
-    iwanka @ a_point "Anda memata-matai saya dengan teropong!"
-
-    anon "Y-ya, oke... Aku menggunakan teropong tapi aku tidak memata-mataimu, aku bersumpah!"
-
-    iwanka "Eh ya."
-
-    iwanka "Apakah ini bagian di mana kamu memberitahuku bahwa kamu hanya mengamati burung?"
-
-    anon "T-tidak."
-
-    iwanka "Karena aku pernah mendengar kalimat omong kosong itu sebelumnya!"
-
-    anon "Saya mencoba memata-matai walikota!"
-
-    iwanka f_disgusted "Eugh, kamu punya fetish orang tua atau semacamnya?"
-
-    anon f_surprised "Apa?!"
-
-    anon f_disgusted @ a_scared "Eww, tidak!"
-
-    anon "Itu bukan hal seksual!"
-
-    iwanka f_thinking "Eh ya."
-
-    anon f_worried "Sebenarnya, ini agak rumit."
-
-    anon "Begini, menurutku ayahku mungkin bekerja di perusahaanmu dan-"
-
-    iwanka "Apakah lampu ini berfungsi?"
-
-    anon @ f_confused "Hah?"
-
-    iwanka f_annoyed "Lampu Natal, apakah berfungsi?"
-
-    anon "Ya, kenapa?"
-
-    iwanka f_normal "Aku hanya tidak menyangka tempat ini akan begitu..."
-
-    anon "Norak?"
-
-    iwanka @ f_laugh "Rumah pertanian yang cantik!"
-
-    anon "Saya tidak tahu apa maksudnya."
-
-    iwanka "Itu seperti, menawan... Tapi dengan cara yang sederhana dan sederhana."
-
+    iwanka "I know exactly what I saw!"
+    iwanka @ a_point "You were spying on me with binoculars!"
+    anon "Y-yeah, okay... I was using binoculars but I wasn't spying on you, I swear!"
+    iwanka "Uh huh."
+    iwanka "Is this the part where you tell me you were just bird-watching?"
+    anon "N-no."
+    iwanka "Because I've heard that bullcrap line before!"
+    anon "I was trying to spy on the mayor!"
+    iwanka f_disgusted "Eugh, you have some kind of old man fetish or something?"
+    anon f_surprised "What?!"
+    anon f_disgusted @ a_scared "Eww, no!"
+    anon "It's not a sexual thing!"
+    iwanka f_thinking "Uh huh."
+    anon f_worried "Actually, it's kinda complicated."
+    anon "You see, I think my father might have been working for yours and-"
+    iwanka "Do these lights work?"
+    anon @ f_confused "Huh?"
+    iwanka f_annoyed "The Christmas lights, do they work?"
+    anon "Yeah, why?"
+    iwanka f_normal "I just wasn't expecting this place to be so..."
+    anon "Dorky?"
+    iwanka @ f_laugh "Farmhouse chic!"
+    anon "I don't know what that means."
+    iwanka "It's like, charming... But in a rustic, simpleton kind of way."
     anon "Oh?"
-
-    iwanka "Ya, saya agak menyukainya."
-
-    anon "I-itu bagus, menurutku..."
-
-    iwanka f_suspicious "Siapa kalian?"
-
+    iwanka "Yeah, I kinda dig it."
+    anon "T-that's nice, I guess..."
+    iwanka f_suspicious "Who are you guys?"
     anon @ -m_talk "Hmm?"
-
-    iwanka "Misalnya, siapa namamu?"
-
+    iwanka "Like, what are your names?"
     anon f_normal @ f_surprised "Oh!"
-
-    anon @ a_wave "Ehh, namaku {b}[firstname]{/b}."
-
+    anon @ a_wave "Ehh, my name is {b}[firstname]{/b}."
     show iwanka f_normal
-    anon @ f_normal_left a_nudge "Dan ini sahabatku {b}Erik{/b}."
-
+    anon @ f_normal_left a_nudge "And this is my best friend {b}Erik{/b}."
     pause
-    iwanka f_suspicious "Apakah dia baik-baik saja?"
-
-    anon f_worried_left "Y-ya, dia kadang-kadang mengunci diri..."
-
-    anon f_shy "... Saat dia berada di dekat gadis-gadis cantik."
-
-    iwanka "Aneh."
-
-    anon f_worried "Ya."
-
+    iwanka f_suspicious "Is he okay?"
+    anon f_worried_left "Y-yeah, he just kinda, locks up sometimes..."
+    anon f_shy "... When he's around pretty girls."
+    iwanka "Weird."
+    anon f_worried "Yeah."
     pause
-    anon "Um, siapa namamu?"
-
-    iwanka f_surprised "Maksudmu, kamu tidak tahu?"
-
-    anon "T-tidak, maaf."
-
-    iwanka "Itu mengejutkan."
-
-    iwanka f_normal "Biasanya saat aku bertemu orang baru, mereka tahu lebih banyak tentangku daripada orang tuaku yang ketakutan..."
-
-    anon "Ehh, ya... Maafkan saya, saya tidak terlalu tertarik dengan politik."
-
-    iwanka a_hand "Saya {b}Iwanka{/b}."
-
+    anon "Umm, what's your name?"
+    iwanka f_surprised "You mean, you don't know?"
+    anon "N-no, sorry."
+    iwanka "That's surprising."
+    iwanka f_normal "Usually when I meet new people, they know more about me than my freaking parents..."
+    anon "Ehh, yeah... You'll have to forgive me, I'm not much into politics."
+    iwanka a_hand "I'm {b}Iwanka{/b}."
 
 
     show iwanka a_hand_shake
     show anon a_empty f_normal
     with dissolve
-    anon "{b}Iwanka{/b} ya?"
-
-    anon "Itu nama yang unik."
-
+    anon "{b}Iwanka{/b}, huh?"
+    anon "That's a unique name."
     show iwanka a_idle
     show anon a_idle
     with dissolve
-    iwanka @ f_bored "Ya, menurutku."
-
-    anon "Dan Anda putri walikota?"
-
-    iwanka @ f_snob "Satu-satunya miliknya."
-
+    iwanka @ f_bored "Yeah, I guess."
+    anon "And you're the mayor's daughter?"
+    iwanka @ f_snob "His one and only."
     pause
-    iwanka "Jadi apa yang kalian lakukan untuk bersenang-senang di sini?"
-
+    iwanka "So what do you guys do for fun around here?"
     anon @ -m_talk "Hmm?"
-
-    iwanka @ f_eyeroll "Aku sudah terjebak di sini selama beberapa minggu dan aku benar-benar sekarat karena bosan!"
-
+    iwanka @ f_eyeroll "I've been stuck here for a few weeks now and I'm like, literally dying from boredom!"
     anon "Oh?"
-
-    iwanka @ f_eyeroll "Sama sekali tidak ada apa pun di sini!"
-
-    iwanka "Hanya sebuah mal kecil dengan satu bioskop dan tidak ada pusat perbelanjaan yang layak..."
-
+    iwanka @ f_eyeroll "There is absolutely nothing here!"
+    iwanka "Just a tiny mall with one movie theater and no decent shopping..."
     anon @ -m_talk "..."
-    iwanka "Tidak ada klub dansa, tidak ada bar... Bahkan tempat tari telanjang pun tidak ada!"
-
-    anon f_shy "Ya, yang terakhir ini mengejutkan bukan?"
-
-    iwanka "Serius, pasti ada sesuatu yang menyenangkan untuk dilakukan di kota ini!"
-
-    iwanka "Dan tolong jangan katakan tip sapi."
-
-    anon f_normal "Ya, saya kira kebanyakan orang seusia kita mengadakan pesta."
-
-    iwanka f_surprised "Ya!"
-
-    iwanka f_normal @ f_laugh "Pesta!"
-
-    iwanka "Sekarang kita sampai di suatu tempat!"
-
-    iwanka @ f_suspicious "Di mana saya dapat menemukan salah satu pesta ini?"
-
-    anon @ f_thinking "Ehh, aku tidak yakin..."
-
-    iwanka "Kamu tidak yakin, misalnya, kamu khawatir mereka tidak menginginkanku di sana atau semacamnya?"
-
-    anon f_worried "T-tidak."
-
-    anon f_sad_down "Aku hanya tidak diundang ke banyak pesta... Itu saja."
-
+    iwanka "There's no dance clubs, no bars... Not even a strip joint!"
+    anon f_shy "Yeah, the last one is surprising, isn't it?"
+    iwanka "Seriously, there has to be something fun to do in this town!"
+    iwanka "And please don't say cow tipping."
+    anon f_normal "Well, I suppose most people our age throw parties."
+    iwanka f_surprised "Yes!"
+    iwanka f_normal @ f_laugh "Parties!"
+    iwanka "Now we're getting somewhere!"
+    iwanka @ f_suspicious "Where can I find one of these parties?"
+    anon @ f_thinking "Ehh, I'm not sure..."
+    iwanka "You're not sure, like, you're worried they won't want me there or something?"
+    anon f_worried "N-no."
+    anon f_sad_down "I just don't get invited to many parties... Is all."
     iwanka f_pouting "Oh."
-
-    iwanka f_annoyed "Sial!"
-
-    iwanka f_normal "Anda satu-satunya orang seusia saya yang saya temui sejak saya berada di sini..."
-
+    iwanka f_annoyed "Well, crap!"
+    iwanka f_normal "You're the only people around my age I've met since I've been here..."
     anon f_normal @ f_surprised "Oh?"
-
-    iwanka f_pouting "Ya, ayahku jarang mengizinkanku keluar."
-
-    iwanka @ f_eyeroll "Dia sangat kesal karena aku gagal lulus kuliah dan dia suka, ingin aku terjun ke dunia politik dan mungkin menjadi presiden wanita pertama atau semacamnya..."
-
-    iwanka "... Tapi aku semua berpikir, \"Bagaimana dengan mimpiku, ayah?!\""
-
-    iwanka @ f_suspicious "Bukankah orang tualah yang terburuk?"
-
+    iwanka f_pouting "Yeah, my father doesn't let me go out much."
+    iwanka @ f_eyeroll "He's super pissy because I flunked out of college and he like, wants me to go into politics and maybe become the first female president or something..."
+    iwanka "... But I'm all like, \"What about my dreams, daddy?!\""
+    iwanka @ f_suspicious "Aren't parents the worst?"
     anon "Uhh."
-
-    iwanka a_mime "Itu saja, \"Kamu tidak bisa lepas begitu saja, {b}Iwanka{/b}...\""
-
-    iwanka "Dan, \"Berhentilah bersikap pelacur di depan umum!\""
-
-    iwanka @ f_eyeroll "Bla, bla, bla..."
-
-    iwanka f_annoyed a_idle "Sementara itu, dia dan {b}Ibu{/b} saling membantu dan mengadakan pesta pesta seks..."
-
-    anon f_surprised "O-pesta pesta seks?"
-
-    iwanka f_disgusted "Eugh, kamu tidak ingin tahu, percayalah."
-
-    iwanka "Ini sangat menjijikkan!"
-
-    iwanka "Sekelompok lelaki tua kaya yang menukar istri piala mereka."
-
-    iwanka "Setengahnya bahkan tidak bisa berbahasa Inggris!"
-
+    iwanka a_mime "He's all, \"You can't just let loose, {b}Iwanka{/b}...\""
+    iwanka "And, \"Stop being such a slut in public!\""
+    iwanka @ f_eyeroll "Blah, blah, blah..."
+    iwanka f_annoyed a_idle "Meanwhile, he and {b}Mom{/b} are banging all the help and throwing orgy parties..."
+    anon f_surprised "O-orgy parties?"
+    iwanka f_disgusted "Eugh, you don't wanna know, trust me."
+    iwanka "It's really gross!"
+    iwanka "A bunch of old, rich men swapping their trophy wives."
+    iwanka "Half of which don't even speak English!"
     anon @ -m_talk "..."
-    iwanka "Anda seharusnya melihat pria Rusia yang dia temui terakhir kali..."
-
-    iwanka "... Dia tampak seperti goblin!"
-
+    iwanka "You should have seen this Russian guy he had at the last one..."
+    iwanka "... He looked like a goblin!"
     anon @ f_surprised_teeth "!!!"
-    anon "Anda tidak mengatakannya!"
-
-    anon "Apa lagi yang bisa kamu ceritakan tentang dia?"
-
-    iwanka f_normal "Apa, si goblin?"
-
-    anon "Apakah namanya {b}Raz Chernyshevsky{/b}?"
-
-    iwanka f_disgusted b_knees_back @ f_eyeroll a_wave "Um, siapa yang peduli?!"
-
-    iwanka "Dia menjijikkan!"
-
-    anon f_worried "Ya, tapi-"
-
-    iwanka "Dia mencoba mengangkat tangannya ke atas rokku dan aku bilang padanya aku akan lebih cepat bercinta dengan keledai daripada dia!"
-
-    anon "Apakah Anda yakin dia orang Rusia?"
-
-    iwanka f_normal "Tidak."
-
+    anon "You don't say!"
+    anon "What else can you tell me about him?"
+    iwanka f_normal "What, the goblin guy?"
+    anon "Was his name {b}Raz Chernyshevsky{/b}?"
+    iwanka f_disgusted b_knees_back @ f_eyeroll a_wave "Umm, who cares?!"
+    iwanka "He was disgusting!"
+    anon f_worried "Yeah, but-"
+    iwanka "He tried to put his hand up my skirt and I told him I'd sooner fuck a donkey than him!"
+    anon "Are you're sure he was Russian?"
+    iwanka f_normal "No."
     pause
-    iwanka @ f_eyeroll "Bisakah kita membicarakan hal lain?"
-
+    iwanka @ f_eyeroll "Can we talk about something else, please?"
     anon @ -m_talk "..."
-    iwanka f_suspicious "Anda benar-benar tidak tahu ada pesta apa pun?"
-
+    iwanka f_suspicious "You seriously don't know of any parties?"
     show anon f_thinking
     pause
-    anon f_normal "Anda tahu, saya pikir saya mungkin tahu satu hal..."
-
-    iwanka f_surprised "Benar-benar?"
-
-    anon f_normal_left "Bagaimana menurut anda {b}Erik{/b}?"
-
+    anon f_normal "You know, I think I might know of one after all..."
+    iwanka f_surprised "Really?"
+    anon f_normal_left "What do you think {b}Erik{/b}?"
     erik "..."
     show iwanka f_suspicious
     anon f_worried_left "{b}Erik{/b}?"
-
     show anon a_nudge with dissolve
     erik -m_talk @ -m_talk "!!!"
     show anon a_idle with dissolve
-    erik "H-hah?"
-
-    erik f_worried "Dimana saya?"
-
-    anon "Bolehkah kami mengadakan pesta untuk putri walikota di ruang bawah tanahmu?"
-
-    erik f_surprised m_talk "I-Walikota... Putri..."
-
+    erik "H-huh?"
+    erik f_worried "Where am I?"
+    anon "Can we throw a party for the mayor's daughter in your basement?"
+    erik f_surprised m_talk "T-the mayor's... Daughter..."
     show iwanka f_laugh a_wave with dissolve
-    iwanka "Halo!"
-
+    iwanka "Hello!"
     show iwanka f_normal a_idle with dissolve
     erik "..."
-    anon f_normal @ f_laugh "Cukup yakin itu adalah ya."
-
-    iwanka @ f_laugh "Luar biasa!"
-
-    anon "Ini mungkin bukan jenis pesta yang biasa Anda lakukan, tetapi-"
-
-    iwanka @ f_eyeroll "Jangan khawatir, semuanya lebih baik daripada duduk-duduk bersama orang tuaku!"
-
+    anon f_normal @ f_laugh "Pretty sure that's a yes."
+    iwanka @ f_laugh "Awesome!"
+    anon "It might not be the kind of parties you're used to but-"
+    iwanka @ f_eyeroll "Don't worry, anything is better than sitting around with my parents!"
     pause
-    iwanka f_suspicious "Kecuali..."
-
-    iwanka "... Akan ada alkohol di pestamu, kan?"
-
-    anon "Tentu saja."
-
-    iwanka f_normal @ f_laugh "Oke bagus!"
-
-    anon "Rumahnya yang hijau, di sebelah sana."
-
-    iwanka "Ya Tuhan, rasanya menyenangkan jika dilepaskan lagi!"
-
-    iwanka "... Aku benar-benar akan menjadi gila jika berdiam diri di rumah itu."
-
-    anon "Sampai jumpa malam ini?"
-
-    iwanka f_smirk "Ya, aku akan menyelinap ke sekitar jam sepuluh."
-
+    iwanka f_suspicious "Unless..."
+    iwanka "... There's gonna be alcohol at your party, right?"
+    anon "Of course."
+    iwanka f_normal @ f_laugh "Okay, good!"
+    anon "His house is the green one, just over there."
+    iwanka "God, it's gonna feel good to let loose again!"
+    iwanka "... I am really going stir crazy shut up in that mansion."
+    anon "We'll see you tonight then?"
+    iwanka f_smirk "Yeah, I'll sneak over around ten."
     show iwanka b_knees_standing:
         xoffset 100
     show anon f_normal_high
     with dissolve
     pause
     iwanka "Oh!"
-
     show iwanka b_knees_back_pull f_normal:
         xoffset 150
     show anon f_normal
     with dissolve
-    iwanka "Apa aturan berpakaiannya?"
-
-    anon f_worried "Kode berpakaian?"
-
-    iwanka f_smirk "Ya, apakah kamu berpikir seperti, gaun koktail?"
-
-    anon f_shy "Ehh, masuk saja sesukamu yang membuatmu nyaman."
-
-    iwanka "Menarik..."
-
+    iwanka "What's the dress code?"
+    anon f_worried "Dress code?"
+    iwanka f_smirk "Yeah, are you thinking like, cocktail dress?"
+    anon f_shy "Ehh, just come in whatever makes you feel comfortable."
+    iwanka "Interesting..."
     show iwanka b_knees_back with dissolve
-    iwanka f_normal "Oke, aku akan memikirkan sesuatu."
-
-    iwanka @ a_wave "Sampai jumpa malam ini!"
-
-    anon f_normal "Nanti, {b}Iwanka{/b}."
-
+    iwanka f_normal "Okay, I'll figure something out."
+    iwanka @ a_wave "See you tonight!"
+    anon f_normal "Later, {b}Iwanka{/b}."
     hide iwanka with dissolve
     pause
-    anon f_normal_left "Fiuh, itu tidak terduga!"
-
-    anon "Dia akhirnya menjadi sangat keren."
-
-    anon "Agak terlalu cerewet tapi... Sepertinya dia punya informasi tentang bos mafia Rusia itu."
-
-    anon "Bukankah begitu?"
-
+    anon f_normal_left "Phew, that was unexpected!"
+    anon "She ended up being pretty cool."
+    anon "A little overly chatty but... It sounds like she might have information on the Russian mob boss."
+    anon "Don't you think?"
     erik "..."
-    anon f_worried_left "Bung, serius?!"
-
+    anon f_worried_left "Dude, seriously?!"
     show anon a_nudge with dissolve
     erik -m_talk @ -m_talk "!!!"
     show anon a_idle with dissolve
-    erik "H-hah?"
-
-    erik f_worried "Dimana saya?"
-
-    anon f_sad_down "{i}*Huh*{/i}"
-
+    erik "H-huh?"
+    erik f_worried "Where am I?"
+    anon f_sad_down "{i}*Sigh*{/i}"
 
     $ player.go_to(L_treehouse)
     scene expression background(512, 576, 7.) as stage
     show anon
     show erik f_surprised
     with slowfade
-    erik "Jadi putri walikota yang sangat seksi akan datang ke rumahku malam ini?!"
-
-    anon "Ya."
-
-    erik "... Untuk pesta?"
-
-    anon "Ya."
-
-    erik f_worried "Tapi aku belum pernah mengadakan pesta sebelumnya..."
-
-    anon "Tenang, itu tidak harus menjadi pesta yang bagus."
-
-    anon "Kami hanya akan menyalakan musik dan menari atau semacamnya... Cobalah untuk menunjukkan padanya saat-saat yang menyenangkan, Anda tahu?"
-
-    erik f_surprised "Menari?"
-
-    erik "Saya tidak menari, {b}[firstname]{/b}."
-
-    anon "Tidak apa-apa."
-
-    anon "Pastikan saja ada banyak alkohol, ya?"
-
-    erik f_normal @ f_laugh "Oh, saya bisa mendapatkan {b}Ny. Johnson{/b} buatlah knish!"
-
-    anon "Tidak!"
-
-    erik f_worried "Tidak ada knish?"
-
-    anon "Itu hanya akan membuatnya aneh."
-
-    anon "Makanan biasa, seperti keripik kentang atau kue atau apalah..."
-
-    erik f_normal @ f_laugh "Oh baiklah!"
-
-    anon "Luar biasa."
-
-    erik f_worried "Umm, kamu akan berada di sana sebelum dia muncul, kan?"
-
-    anon "Heh iya {b}Erik{/b}."
-
-    erik "B-bagus."
-
-    erik "Karena aku tidak yakin bisa berbicara dengannya."
-
-    anon "Apa yang terjadi dengan pembicaraan \"Dia calon istriku!\"?"
-
-    erik "Ya..."
-
-    erik @ f_normal "... Maksudku, di {i}jauh{/i} masa depan."
-
-    erik "Tidak malam ini."
-
-    anon "Cobalah untuk tidak mengunci lagi."
-
-    anon "Saya mungkin memerlukan bantuan untuk menggali informasi darinya."
-
+    erik "So the mayor's ridiculously hot daughter is coming to my house tonight?!"
+    anon "Yes."
+    erik "... For a party?"
+    anon "Yes."
+    erik f_worried "But I've never thrown a party before..."
+    anon "Relax, it doesn't have to be a good party."
+    anon "We'll just put some music on and dance or something... Try to show her a good time, you know?"
+    erik f_surprised "Dance?"
+    erik "I don't dance, {b}[firstname]{/b}."
+    anon "That's fine."
+    anon "Just make sure there's lots of alcohol, yeah?"
+    erik f_normal @ f_laugh "Oh, I could have {b}Mrs. Johnson{/b} make some knish!"
+    anon "No!"
+    erik f_worried "No knish?"
+    anon "That'll just weird her out."
+    anon "Normal food, like potato chips or cookies or something..."
+    erik f_normal @ f_laugh "Oh, okay!"
+    anon "Awesome."
+    erik f_worried "Umm, you're gonna be there before she shows up, right?"
+    anon "Heh, yes {b}Erik{/b}."
+    erik "G-good."
+    erik "Because I'm not sure I can talk to her."
+    anon "What happened to the \"She's my future wife!\" talk?"
+    erik "Yeah..."
+    erik @ f_normal "... I meant like, in the {i}far{/i} future."
+    erik "Not tonight."
+    anon "Just try not to lock up again."
+    anon "I might need help extracting information from her."
     erik f_worried_down @ -m_talk "..."
-    anon "Sampai jumpa {b}malam ini{/b}, oke?"
-
-    erik f_worried "Ya baiklah."
-
+    anon "I'll see you {b}tonight{/b}, okay?"
+    erik f_worried "Yeah, okay."
     hide erik with dissolve
     pause
-    anon @ f_thinking -m_talk "(Hmm, saya harap ini berhasil...)"
-
-    anon a_thinking @ -m_talk "(Saya tidak akan pernah masuk ke dalam rumah {b}Rump{/b} sendirian dan {b}Iwanka{/b} adalah satu-satunya petunjuk yang saya miliki... )"
-
-    anon a_idle f_worried @ -m_talk "( ... {b}Malam ini{/b} di {b}rumah Erik{/b} mungkin satu-satunya kesempatanku! )"
-
+    anon @ f_thinking -m_talk "( Hmm, I hope this works... )"
+    anon a_thinking @ -m_talk "( I'll never get inside {b}Rump{/b}'s mansion by myself and {b}Iwanka{/b} is the only lead I have... )"
+    anon a_idle f_worried @ -m_talk "( ... {b}Tonight{/b} at {b}Erik's house{/b} might be my only chance! )"
     hide anon with dissolve
     return
 # Decompiled by unrpyc: https://github.com/CensoredUsername/unrpyc

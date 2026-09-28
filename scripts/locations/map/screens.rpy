@@ -295,7 +295,6 @@ screen town_map():
 
     if not L_warehouse.locked:
         add "smoke01"
-
         imagebutton:
             focus_mask True
             pos (110,58)
@@ -370,13 +369,9 @@ screen town_map():
     add game.timer.image("car02{}")
     add game.timer.image("car03{}")
     add "sparkle01"
-
     add "sparkle02"
-
     add "sparkle03"
-
     add "cloud01"
-
     if Game.is_christmas() and random.random() >= 0.9:
         $ A_hes_real.unlock()
         add game.timer.image("santa_car{}")

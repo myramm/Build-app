@@ -15,79 +15,54 @@ label ano07_hint_josie:
 
 
 label ano07_hint_josie.help:
-    anon f_normal "Tentang foto-foto pribadi itu."
-
-    josephine f_normal "Sudahkah Anda berbicara dengan {b}Jiang{/b} tentang masalah kecil saya?"
-
-    anon f_worried "Saya masih mengerjakannya..."
-
+    anon f_normal "About those private photos."
+    josephine f_normal "Have you spoken with {b}Jiang{/b} about my little problem?"
+    anon f_worried "I'm still working on that..."
     pause
-    anon f_normal "Anda bilang dia kepala mekanik di dealer ini?"
-
-    josephine @ a_point_back "Ya, dia seharusnya {b}di garasi{/b} di belakangku."
-
-    anon "Baiklah, aku akan berbicara dengannya."
-
+    anon f_normal "You said he's the head mechanic here at the dealership?"
+    josephine @ a_point_back "Yeah, he should be {b}in the garage{/b} behind me."
+    anon "Alright, I'll speak with him."
     hide anon with dissolve
     return
 
 
 label ano07_hint_josie.find:
-    anon f_normal "Tentang foto-foto pribadi itu."
-
-    josephine f_normal "Sudahkah Anda berbicara dengan {b}Jiang{/b} tentang masalah kecil saya?"
-
-    anon f_worried "Ya, saya pikir dia akan membantu."
-
-    anon @ f_unimpressed -m_talk "(Tetapi hanya sekali saya menemukan tas perkakas keberuntungannya!)"
-
+    anon f_normal "About those private photos."
+    josephine f_normal "Have you spoken with {b}Jiang{/b} about my little problem?"
+    anon f_worried "Yes, I think he's going to help."
+    anon @ f_unimpressed -m_talk "( But only once I find his lucky tool bag! )"
     pause
-    anon f_normal "Saya yakin foto-foto itu akan terhapus dalam waktu singkat."
-
-    josephine f_concerned "Ya..."
-
-    anon "Saya akan kembali segera setelah saya mendapat kabar."
-
+    anon f_normal "I'm sure we'll have those photos erased in no time."
+    josephine f_concerned "Yeah..."
+    anon "I'll be back as soon as I have news."
     hide anon with dissolve
     return
 
 
 label ano07_hint_josie.give:
-    anon f_normal "Tentang foto-foto pribadi itu."
-
-    josephine f_surprised "Anda mendapatkannya?!"
-
-    anon f_worried "Belum, tapi saya sedang dalam perjalanan untuk melapor masuk dengan {b}Jiang{/b} sekarang."
-
+    anon f_normal "About those private photos."
+    josephine f_surprised "You got them?!"
+    anon f_worried "Not yet, but I'm on my way to check in with {b}Jiang{/b} now."
     show josephine f_angry_up
-    anon @ f_shy -m_talk "(Tas perkakas keberuntungan ada di belakangnya!)"
-
+    anon @ f_shy -m_talk "( Lucky tool bag in tow! )"
     pause
-    josephine f_concerned "Ya? Apa yang kamu tunggu?"
-
-    anon "T-tidak ada. Segera kembali!"
-
+    josephine f_concerned "Well? What are you waiting for?"
+    anon "N-nothing. Be right back!"
     hide anon with dissolve
     return
 
 
 label ano07_hint_josie.perk:
-    anon f_shy_low "Tentang foto-foto pribadi itu."
-
+    anon f_shy_low "About those private photos."
     josephine @ -m_talk "..."
     show anon f_worried_low
     pause
-    anon f_unimpressed @ a_wave "{b}Yosephine{/b}! Foto-fotonya?"
-
-    josephine f_angry_down "Bung, streaming."
-
-    josephine "Ssst."
-
+    anon f_unimpressed @ a_wave "{b}Josephine{/b}! The photos?"
+    josephine f_angry_down "Dude, stream."
+    josephine "Shh."
     show josephine f_normal_down
     anon "Ugh."
-
-    anon @ -m_talk "(Saya kira saya akan memberitahunya kabar baik nanti...)"
-
+    anon @ -m_talk "( I guess I'll tell her the good news later... )"
     hide anon with dissolve
     return
 
@@ -97,40 +72,28 @@ label ano07_perk_josie:
         xoffset 100
     show anon with dissolve:
         xoffset 100
-    anon "Aku menghapus foto-foto itu dari ponsel {b}Kim{/b} untukmu."
-
+    anon "I deleted those photos off {b}Kim{/b}'s phone for you."
     show josephine b_dressed f_surprised with fastdissolve:
         xoffset 0
-    josephine "Mustahil!"
-
-    josephine "Benar-benar?"
-
-    anon "Ya."
-
-    anon "Semuanya sudah diurus."
-
-    josephine f_shy "Sialan."
-
-    josephine "Saya tidak percaya Anda benar-benar berhasil melakukannya!"
-
+    josephine "No way!"
+    josephine "Really?"
+    anon "Yup."
+    anon "It's all taken care of."
+    josephine f_shy "Holy shit."
+    josephine "I can't believe you actually pulled it off!"
     pause
-    josephine "Kurasa, aku berhutang banyak padamu..."
-
+    josephine "I guess, I owe you big time..."
     pause
-    josephine f_sexy "Heh, apa yang harus aku lakukan untuk membalas budimu?"
-
-    anon "Yah, aku masih butuh bantuan untuk menemukan mobil itu untuk-"
-
-    josephine "Ikutlah denganku!"
-
+    josephine f_sexy "Heh, whatever shall I do to repay you?"
+    anon "Well, I still need help finding that car for my-"
+    josephine "Come with me!"
     show xtra3 as counter behind josephine
     show anon b_pulling5 f_worried_left behind josephine:
         xoffset -152
     show josephine b_empty:
         xoffset -768
     with {'master': dissolve}
-    anon "Apa yang-"
-
+    anon "What the-"
     hide anon
     hide josephine
     with dissolve
@@ -140,106 +103,69 @@ label ano07_perk_josie:
     show josephine a_hips f_sexy
     show anon f_worried
     with dissolve
-    anon "Apa yang terjadi?"
-
-    josephine "Aku memberimu hadiahmu, ya!"
-
-    anon "Eh, oke?"
-
+    anon "What's going on?"
+    josephine "I'm giving you your reward, duh!"
+    anon "Ehh, okay?"
 
     if M_josie.peeked:
-        josephine "Tunggu sebentar."
-
-        josephine f_concerned "Anda tidak melihat fotonya, bukan?"
-
+        josephine "Wait a second."
+        josephine f_concerned "You didn't look at the photos, did you?"
 
         menu:
-            "Ya, sedikit.":
+            "Yeah, a little.":
 
-                anon "Ya, sedikit."
+                anon "Yeah, a little."
+                josephine f_angry "Ugh, seriously?"
+                anon f_shy @ a_behind_head "I couldn't help it."
+                anon "I was curious."
+                josephine a_crossed "Well, I WAS going to reward you with a private show but since you already rewarded yourself..."
+                anon f_worried "I'm really sorry."
+            "What?! Of course not!":
 
-                josephine f_angry "Eh, serius?"
-
-                anon f_shy @ a_behind_head "Saya tidak bisa menahannya."
-
-                anon "Saya penasaran."
-
-                josephine a_crossed "Baiklah, AKU akan menghadiahimu dengan pertunjukan pribadi, tetapi karena kamu sudah menghadiahi dirimu sendiri..."
-
-                anon f_worried "Saya benar-benar minta maaf."
-
-            "Apa?! Tentu saja tidak!":
-
-                anon f_shy "Apa?! Tentu saja tidak!"
-
+                anon f_shy "What?! Of course not!"
                 show anon f_grin
                 josephine @ -m_talk "..."
-                josephine f_angry a_crossed "Kamu pembohong!"
+                josephine f_angry a_crossed "You liar!"
+                anon f_worried "Huh?"
+                josephine "You're totally lying to me right now!"
+                anon "N-no, I'm not..."
 
-                anon f_worried "Hah?"
-
-                josephine "Kamu benar-benar berbohong padaku sekarang!"
-
-                anon "T-tidak, aku tidak..."
-
-
-        josephine @ f_eyeroll "Terserahlah, kawan."
-
-        josephine "Sayang sekali karena aku merasa cukup murah hati untuk membiarkanmu pergi langsung..."
-
-        anon f_sad_down "Aduh, bung!"
-
-        josephine "Mungkin lain kali kamu akan-"
-
+        josephine @ f_eyeroll "Whatever, dude."
+        josephine "It's too bad cause I was feeling generous enough to let you go hands on..."
+        anon f_sad_down "Aww, man!"
+        josephine "Maybe next time you'll-"
     else:
 
-        josephine "Sekarang ingatlah bahwa saya melakukan ini hanya karena Anda membantu saya hari ini dan saya benar-benar sekarat karena bosan dengan pekerjaan ini..."
-
-        anon f_confused "Melakukan apa sebenarnya?"
-
-        josephine a_flash2 @ a_flash1 "Apa pendapatmu tentang ini, potongan mangkuk?"
-
+        josephine "Now bear in mind that I'm only doing this because you helped me out today and I'm literally dying of boredom at this job..."
+        anon f_confused "Doing what, exactly?"
+        josephine a_flash2 @ a_flash1 "What do you think about these, bowl cut?"
         anon f_shock "!!!"
-        anon f_flirt_low "I-itu bagus sekali."
-
-        josephine "Benar?"
-
+        anon f_flirt_low "T-those are very nice."
+        josephine "Right?"
         pause
-        josephine "Anda ingin menyentuhnya?"
-
-        anon f_shy "{i}*Gulp*{/i} Apakah Anda yakin?"
-
-        josephine "Tentu saja aku yakin, aku menawarkannya bukan?"
-
-        anon f_flirt_low "Ya baiklah."
-
+        josephine "You wanna touch them?"
+        anon f_shy "{i}*Gulp*{/i} Are you sure?"
+        josephine "Of course I'm sure, I offered, didn't I?"
+        anon f_flirt_low "Yeah, okay."
         show anon b_empty:
             xoffset 357
             yoffset 22
         show josephine b_dressed_fondle a_idle
         with dissolve
         pause
-        anon "Wow, mereka sangat bersemangat!"
-
-        josephine f_concerned "Apa yang kamu lakukan?"
-
+        anon "Wow, they're so perky!"
+        josephine f_concerned "What the hell are you doing?"
         show josephine a_squeeze1 with dissolve
-        anon f_worried "Hah?"
-
-        josephine "Itu bukan tombol radio, tahu?!"
-
-        anon f_worried_low "Oh, uhh... Maaf."
-
+        anon f_worried "Huh?"
+        josephine "They aren't radio knobs, you know?!"
+        anon f_worried_low "Oh, uhh... Sorry."
         show josephine a_idle f_normal with dissolve
         show anon f_flirt_low
         pause
-        anon "Aku suka putingmu, sangat kecil dan imut!"
-
-        josephine "Yah, saya tidak yakin saya menghargai komentar kecil itu tetapi saya akan mengakui hal yang lucu itu..."
-
+        anon "I love your nipples, they're so tiny and cute!"
+        josephine "Well, I'm not sure I appreciate the tiny remark but I'll concede the cute thing..."
         pause
-        josephine "Anda ingin mencicipi-"
-
+        josephine "You wanna tast-"
 
     show anon b_dressed a_up f_surprised behind josephine:
         flip
@@ -248,69 +174,47 @@ label ano07_perk_josie:
     if not M_josie.peeked:
         show josephine b_dressed a_flash2 f_surprised
     with dissolve
-    sato "{b}Yosephine{/b}!!!"
-
+    sato "{b}Josephine{/b}!!!"
     show anon a_sides f_surprised_teeth
     if not M_josie.peeked:
         show josephine a_cover
     with dissolve
-    josephine f_concerned "Ayah?!"
-
+    josephine f_concerned "Daddy?!"
     show sato f_angry a_hips with dissolve:
         flip
-    sato "Apa yang kamu lakukan di sini!"
-
-    josephine a_hips "Aduh Buyung."
-
-    josephine "Kamu telah memergokiku lagi, lagi..."
-
-    josephine "Apakah kebobrokanku tidak ada habisnya?!"
-
-    josephine "Anda pasti harus memecat saya kali ini-"
-
-    sato "Ini bukan waktu istirahat yang dijadwalkan, nona muda!"
-
+    sato "What the hell are you doing in here!"
+    josephine a_hips "Oh, dear."
+    josephine "You've caught me red-handed, again..."
+    josephine "Is there no end to my depravity?!"
+    josephine "You'll definitely have to fire me this tim-"
+    sato "This is not your scheduled break period, young lady!"
     show anon f_confused
     show josephine f_surprised m_talk
     pause
-    josephine "I-itulah yang membuatmu marah?!"
-
+    josephine "T-that's what you're mad about?!"
     if M_josie.peeked:
-        josephine "Saya baru saja akan membiarkan pelanggan ini merasakan saya dan Anda marah karena saya tidak ada di meja depan!"
-
+        josephine "I was just about to let this customer feel me up and you're angry that I'm not at the front desk!"
     else:
-        josephine "Saya membiarkan pelanggan ini merasakan saya dan Anda marah karena saya tidak ada di meja depan!"
-
+        josephine "I was letting this customer feel me up and you're angry that I'm not at the front desk!"
     show josephine -m_talk
-    sato "Saya tidak punya waktu untuk bercanda saat ini, {b}Josephine{/b}!"
-
+    sato "I don't have time for your jokes right now, {b}Josephine{/b}!"
     show anon f_worried
-    josephine "Tapi aku-"
-
-    sato "Anda memiliki tanggung jawab terhadap perusahaan ini dan saya berharap Anda menanggapinya dengan serius!"
-
+    josephine "But I-"
+    sato "You have responsibilities to this company and I expect you to take them seriously!"
     show josephine a_crossed f_pouting with dissolve
-    sato "Sekarang kembalilah ke bawah dan pastikan kebutuhan pelanggan kami terpenuhi saat ini juga!"
-
+    sato "Now get your butt back downstairs and see that our customer's needs are taken care of this instant!"
     josephine @ -m_talk "..."
-    sato "Maksudku!"
-
-    josephine f_angry "Bagus!"
-
+    sato "I mean it!"
+    josephine f_angry "Fine!"
     hide josephine with dissolve
     pause
-    sato f_confused "Saya sangat menyesal mengenai hal itu, Pak."
-
-    sato "Jika Anda tidak keberatan kembali ke ruang pamer, saya jamin, putri saya akan dengan senang hati membantu Anda..."
-
-    anon f_skeptical "Hmm, terima kasih?"
-
-    sato f_smiling "Dengan senang hati, Pak."
-
+    sato f_confused "I'm terribly sorry about that, sir."
+    sato "If you wouldn't mind heading back down to the showroom, I assure you, my daughter will be happy to assist you..."
+    anon f_skeptical "Umm, thanks?"
+    sato f_smiling "It's my pleasure, sir."
     hide sato with dissolve
     pause
-    anon f_worried "Aneh."
-
+    anon f_worried "Weird."
     hide anon with dissolve
     return
 
@@ -318,93 +222,64 @@ label ano07_perk_josie:
 label ano07_sale_josie:
     show anon with dissolve
     label ano07_sale_josie.anon:
-    anon f_normal @ f_grin a_point "Tolong, satu mobil!"
-
-    josephine b_dressed f_normal "Ini adalah mobil termurah yang kami miliki saat ini."
-
-    josephine "Vulva Mini."
-
-    anon f_surprised "Mini-apa?!"
-
-    josephine "Ini sangat populer di kalangan pelanggan persuasi wanita."
-
-    josephine "Nilai ecerannya sebelas ribu lima ratus."
-
-    anon "Sebelas ribu?!"
-
-    anon "Itu agak berlebihan, bukan?"
-
-    josephine "Harga terendah yang bisa saya lepaskan adalah enam ribu."
-
-    josephine "Tapi dengan perdagangan Anda, kami bisa menghasilkan empat puluh lima ratus."
-
-    anon f_worried "Empat puluh lima ratus, ya?"
-
-    anon "Aku mungkin bisa mengayunkannya..."
-
-    josephine "Jadi, kamu mau atau tidak?"
-
+    anon f_normal @ f_grin a_point "One car, please!"
+    josephine b_dressed f_normal "This is the cheapest car we have at the moment."
+    josephine "The Mini Vulva."
+    anon f_surprised "The mini-what?!"
+    josephine "It's very popular with customers of the female persuasion."
+    josephine "It has a retail value of eleven thousand and five hundred."
+    anon "Eleven thousand?!"
+    anon "That's a bit much, isn't it?"
+    josephine "The lowest I can let it go for is six thousand."
+    josephine "But with your trade in we can do forty-five hundred."
+    anon f_worried "Forty-five hundred, huh?"
+    anon "I might be able to swing that..."
+    josephine "So, you want it or not?"
     show anon f_thinking a_thinking with dissolve
 
     menu:
-        "Ya. ($4.500)":
+        "Yes. ($4,500)":
             jump ano07_sale_josie.deal
-        "Mungkin nanti.":
+        "Maybe later.":
 
             pass
 
-    anon a_thinking f_worried "Saya harus memikirkannya."
-
-    josephine @ f_eyeroll "Besar."
-
+    anon a_thinking f_worried "I'll have to think about it."
+    josephine @ f_eyeroll "Great."
     hide josephine
     show josephine b_dressed_sleeping behind anon
     show anon f_worried_low
     with {'master': dissolve}
-    josephine "Luangkan waktumu, potong mangkuk."
-
-    josephine "Bukannya aku akan pergi kemana-mana..."
-
+    josephine "Take your time, bowl cut."
+    josephine "It's not like I'm going anywhere..."
     hide anon with dissolve
     return
 
 
 label ano07_sale_josie.deal:
     if player.has_money(4500):
-        anon f_normal a_idle "aku akan mengambilnya!"
-
-        josephine @ f_eyeroll "Luar biasa."
-
+        anon f_normal a_idle "I'll take it!"
+        josephine @ f_eyeroll "Super."
         show anon a_money with dissolve
         pause
         show anon a_idle with dissolve
-        josephine "Ayahku akan sangat bangga..."
-
-        anon "Oh, ayolah... Tidak seburuk itu."
-
-        josephine @ f_eyeroll "Ya."
-
-        josephine "Ambil saja mobil kecilmu dan kalahkan, ya, potong mangkuk?"
-
-        josephine "Aku punya pekerjaan yang aku coba untuk tidak lakukan."
-
+        josephine "My father will be so proud..."
+        anon "Oh, c'mon... It wasn't that bad."
+        josephine @ f_eyeroll "Eugh."
+        josephine "Just take your little car and beat it, would ya, bowl cut?"
+        josephine "I've got work I'm trying not to do."
         show josephine f_normal_down a_phone with dissolve
-        anon "Baiklah."
-
-        anon "Terima kasih sekali lagi!"
-
+        anon "Alright."
+        anon "Well, thanks again!"
         hide anon with dissolve
         return 'compact_key'
     else:
-        anon f_worried "Saya akan kembali untuk mengambilnya segera setelah saya punya uang."
-
-        josephine @ f_eyeroll "Besar."
-
+        anon f_worried "I'll be back to get it as soon as I have the money."
+        josephine @ f_eyeroll "Great."
         show josephine f_normal_down a_phone
         show anon f_worried_low
         with {'master': dissolve}
-        josephine "Bukannya aku akan pergi kemana-mana..."
-
+        josephine "It's not like I'm going anywhere..."
         hide anon with dissolve
     return
 # Decompiled by unrpyc: https://github.com/CensoredUsername/unrpyc

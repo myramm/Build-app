@@ -7,7 +7,6 @@ screen police_office():
         idle "objects/character_harold_01_empty.png"
         if M_mia.get_state() == S_mia_search_desk:
             alt "Harold's desk"
-
             hover HoverImage("objects/character_harold_01_empty.png")
             action Hide("police_office"), Jump("police_harolds_desk")
 
@@ -16,7 +15,6 @@ screen police_office():
             focus_mask True
             pos (670,384)
             alt "Talk to harold"
-
             idle "objects/character_harold_01.png"
             hover HoverImage("objects/character_harold_01.png")
             action TalkTo(M_harold)
@@ -26,7 +24,6 @@ screen police_office():
             focus_mask True
             pos (280,350)
             alt "Talk To Earl"
-
             idle "objects/character_earl_01.png"
             hover HoverImage("objects/character_earl_01.png")
             action TalkTo(M_earl)
@@ -35,7 +32,6 @@ screen police_office():
         focus_mask True
         pos (350,700)
         alt "Exit Police Station Office"
-
         idle "boxes/auto_option_13.png"
         hover HoverImage("boxes/auto_option_13.png")
         action MoveTo(L_police_lobby)
@@ -47,7 +43,6 @@ screen harolds_desk():
         focus_mask True
         pos (896,628)
         alt "Desk Picture"
-
         idle PulseHoverImage("objects/object_picture_05.png", delay = 0.5)
         hover HoverImage("objects/object_picture_05.png")
         action Hide("harolds_desk"), Return()

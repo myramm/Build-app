@@ -30,11 +30,8 @@ layeredimage josephine:
         attribute b_dressed default
         attribute b_empty null
         attribute b_dressed_kiss "josephine_body_b_dressed_kiss"
-
         attribute b_naked_kiss "josephine_body_b_naked_kiss"
-
         attribute b_magic "josephine_body_b_[M_josie.outfit.get][M_josie.pregnancy.to_string]"   
-
         attribute b_sex_top null
 
 
@@ -157,7 +154,6 @@ layeredimage josephine:
     group arms if_any ['b_dressed','b_dressed_messy','b_dressed_slip'] auto variant 'dressed':
         attribute a_idle default 'josephine_arms_dressed_a_desk'
         attribute a_baby "josephine_arms_dressed_a_baby_[M_josie.pregnancy.baby_gender]"
-
         attribute a_touch 'josephine_arms_dressed_a_touch[M_josie.pregnancy.to_string]'
 
 
@@ -167,7 +163,6 @@ layeredimage josephine:
 
     group arms if_all 'b_gown_bed' auto variant 'gown_bed':
         attribute a_idle default "josephine_arms_gown_bed_a_baby_[M_josie.pregnancy.baby_gender]"
-
 
 
     group arms if_all 'b_magic' auto:

@@ -1,28 +1,21 @@
 label bridget_dialogue_eve_dress_code_intro_repeat:
-    anon f_worried "Sebenarnya, saya berharap Anda bisa berbicara dengan {b}Nyonya. Smith{/b} tentang kebijakan aturan berpakaian yang baru..."
-
+    anon f_worried "Actually, I was hoping you could talk to {b}Mrs. Smith{/b} about the new dress code policy..."
     bridget a_crossed "Ah, ah, ah!"
-
-    bridget f_sexy "Anda ingat kesepakatan kita?"
-
+    bridget f_sexy "You remember our deal?"
     show bridget b_pickup with dissolve
     show anon f_worried_low
     pause
     show bridget b_dressed a_ropes with dissolve
     show anon f_unimpressed
-    bridget "Anda membantu saya..."
-
+    bridget "You help me..."
     show bridget a_ropes_throw with dissolve
     pause
     show bridget a_idle
     show anon a_ropes_bunch
     with dissolve
-    bridget "... Dan aku membantumu."
-
-    anon f_tired "{i}*Huh*{/i} Ya, saya ingat."
-
-    bridget a_hips "Pisahkan itu dan kita akan bicara."
-
+    bridget "... And I help you."
+    anon f_tired "{i}*Sigh*{/i} Yeah, I remember."
+    bridget a_hips "Untangle those and then we'll talk."
     hide bridget with dissolve
     anon f_sad_down "..."
     scene black with fade
@@ -35,50 +28,33 @@ label bridget_dialogue_eve_dress_code_failure_repeat:
     show anon a_ropes_tangled f_hurt
     show bridget
     with fade
-    bridget "Nah, bagaimana perkembangannya di-"
-
+    bridget "Well, how are things progressing in-"
     show bridget f_surprised
-    anon f_tired "Ehh, itu tidak berjalan dengan baik..."
-
+    anon f_tired "Ehh, it's not going so well..."
     bridget f_normal @ f_laugh a_laugh "Hahahaah!"
-
-    bridget "Bagaimana kamu bisa-"
-
-    anon f_unimpressed "Saya tidak tahu!"
-
-    bridget "Sini, izinkan saya membantu Anda."
-
+    bridget "How did you even-"
+    anon f_unimpressed "I have no idea!"
+    bridget "Here, let me help you."
     scene black with fade
     pause
     scene expression player.location.background_closeup
     show anon a_rub
     show bridget a_ropes
     with dissolve
-    bridget "Di sana."
-
-    anon f_worried "Maaf, {b}Pelatih Bridget{/b}."
-
-    bridget @ f_sexy "Hehe, jangan khawatir..."
-
-    bridget "Anda bisa mencobanya lagi besok."
-
+    bridget "There."
+    anon f_worried "Sorry, {b}Coach Bridget{/b}."
+    bridget @ f_sexy "Heh, no worries..."
+    bridget "You can just try again tomorrow."
     anon f_sad_down "..."
-    bridget "Kecuali jika Anda tidak lagi membutuhkan bantuan saya dengan apa pun yang Anda keluhkan sebelumnya?"
-
-    anon f_tired "Kebijakan aturan berpakaian."
-
-    bridget "Ya, itu..."
-
+    bridget "Unless you no longer need my help with whatever it is you were whining about earlier?"
+    anon f_tired "The dress code policy."
+    bridget "Yeah, that..."
     pause
-    bridget a_crossed "Sampai jumpa besok?"
-
-    anon f_sad_down "Ya baiklah."
-
+    bridget a_crossed "See you tomorrow?"
+    anon f_sad_down "Yeah, okay."
     hide bridget with dissolve
-    anon f_thinking a_thinking @ -m_talk "(Hmm, kalau saja aku tidak terlalu canggung...)"
-
-    anon @ -m_talk "( Mungkin {b}Saya harus berbicara dengan pelatih Muay Thai di Gym{/b}? )"
-
+    anon f_thinking a_thinking @ -m_talk "( Hmm, if only I wasn't so clumsy... )"
+    anon @ -m_talk "( Maybe {b}I should speak with that Muay Thai trainer at the Gym{/b}? )"
     hide anon with dissolve
     return
 
@@ -89,42 +65,26 @@ label bridget_dialogue_eve_dress_code_success_repeat:
     show anon a_ropes f_grin
     show bridget
     with fade
-    bridget "Nah, bagaimana perkembangannya di-"
-
+    bridget "Well, how are things progressing in-"
     show bridget f_surprised
-    anon @ f_laugh "Aku baru saja menguraikan yang terakhir!"
-
-    bridget f_sexy "Wow, kerja bagus {b}[firstname]{/b}!"
-
-    bridget f_normal a_hips "Saya pikir itu akan memakan waktu berminggu-minggu bagi Anda untuk menyelesaikannya..."
-
-    anon f_normal "Yah, aku senang sekali hal itu tidak terjadi!"
-
-    anon "Maukah kamu membantuku soal aturan berpakaian sekarang?"
-
-    bridget "Itu tergantung pada apa sebenarnya yang Anda ingin saya lakukan?"
-
-    bridget "Kalian harus tahu bahwa aku tidak terlalu peduli dengan apa yang kalian kenakan saat berada di sekolah."
-
-    anon f_worried "Itu bukan bagian yang menggangguku..."
-
-    anon "Tahukah Anda {b}Ny. Smith{/b} melarang pewarna rambut?"
-
+    anon @ f_laugh "I just got the last one untangled!"
+    bridget f_sexy "Wow, nice work {b}[firstname]{/b}!"
+    bridget f_normal a_hips "I figured that was going to take you weeks to sort out..."
+    anon f_normal "Well, I'm sure glad it didn't!"
+    anon "Will you help me out with the dress code thing now?"
+    bridget "That depends on what exactly you want me to do?"
+    bridget "You should know that I don't really give a damn what you kids wear while you're here at school."
+    anon f_worried "That's not the part that bothers me..."
+    anon "Did you know {b}Mrs. Smith{/b} was disallowing hair dye?"
     show bridget f_surprised
     pause
-    bridget f_angry "Apa?!"
-
-    anon "Ya, baik untuk mahasiswa maupun dosen..."
-
-    bridget "Dia berada di atas mayatku!"
-
+    bridget f_angry "What?!"
+    anon "Yeah, for both students and faculty..."
+    bridget "Over my dead body she is!"
     hide bridget with dissolve
-    anon f_confused "Jadi, kamu akan berbicara dengannya tentang-"
-
-    anon f_worried @ -m_talk "(Whoa, dia buru-buru pergi...)"
-
-    anon @ -m_talk "(Saya mungkin harus mengikutinya.)"
-
+    anon f_confused "So, you'll talk to her about-"
+    anon f_worried @ -m_talk "( Whoa, she stomped off in a hurry... )"
+    anon @ -m_talk "( I should probably follow her. )"
     scene black with fade
     pause
     scene expression "backgrounds/location_school_third_sideview_day.jpg" with None
@@ -138,44 +98,27 @@ label bridget_dialogue_eve_dress_code_success_repeat:
         flip
     show smith
     with fade
-    bridget "Di atas mayatku, kamu melarang pewarna rambut!"
-
-    smith "Oh, ayolah, {b}Bridget{/b}..."
-
-    smith "Lagi pula, kamu terlalu tua untuk mengecat rambutmu!"
-
-    bridget "Usiaku bukan urusanmu!"
-
-    bridget "Aku suka rambutku dan tak seorang pun memaksaku mengubahnya, apalagi kamu!"
-
-    smith "Anda tidak dapat berbicara kepada saya seperti itu!"
-
-    bridget "Sialnya aku tidak bisa!"
-
-    bridget "Anda melanggar hak saya, dan saya tidak akan membelanya!"
-
-    smith "Astaga, tenanglah!"
-
-    smith "{i}*Huh*{/i} Aku akan minta {b}Annie{/b} menyimpan kebijakan bodoh itu besok, oke?!"
-
-    smith "Lagipula itu semua adalah ide bodohnya..."
-
-    smith @ f_eyeroll "Gadis itu bahkan tidak bisa menulis kebijakan aturan berpakaian sederhana tanpa membuatku pusing..."
-
-    bridget "Lagipula, kita tidak memerlukan aturan berpakaian, ini sekolah negeri!"
-
-    smith "Ya, ya, kamu sudah menang, {b}Bridget{/b}..."
-
-    smith "Keluar saja sebelum aku kehilangan kesabaran."
-
-    bridget "Cih, terserah."
-
+    bridget "Over my dead body you're disallowing hair dye!"
+    smith "Oh, come now, {b}Bridget{/b}..."
+    smith "You're too old to be dying your hair anyways!"
+    bridget "My age is none of your concern!"
+    bridget "I like my hair and nobody is making me change it, least of all you!"
+    smith "You can't speak to me like that!"
+    bridget "The hell I can't!"
+    bridget "You're infringing my rights, and I'm not going to stand for it!"
+    smith "Good grief, calm down!"
+    smith "{i}*Sigh*{/i} I'll have {b}Annie{/b} shelf the stupid policy tomorrow, alright?!"
+    smith "It was all her stupid idea anyway..."
+    smith @ f_eyeroll "The girl can't even write a simple dress code policy without causing me headaches..."
+    bridget "It's not like we need a dress code anyways, it's a public school!"
+    smith "Yeah, yeah, you've already won, {b}Bridget{/b}..."
+    smith "Just get out before I lose my patience."
+    bridget "Tch, whatever."
     hide bridget
     show bridget f_eyeroll:
         xoffset -400
     with dissolve
-    bridget "... Dasar jalang tua."
-
+    bridget "... You old bitch."
     hide bridget with dissolve
     smith "..."
     scene expression "backgrounds/location_school_third_sideview_day.jpg" with None
@@ -183,11 +126,9 @@ label bridget_dialogue_eve_dress_code_success_repeat:
         flip
         xoffset -200
     with dissolve
-    anon "(Whoa, dia benar-benar membohonginya!)"
-
+    anon "( Whoa, she's really laying into her! )"
     pause
-    anon "(Oh sial, dia keluar!)"
-
+    anon "( Oh crap, she's coming out! )"
     hide anon
     show anon f_surprised_teeth b_dressed a_rub:
         flip
@@ -195,25 +136,16 @@ label bridget_dialogue_eve_dress_code_success_repeat:
         flip
     with dissolve
     bridget @ -m_talk "..."
-    anon a_idle f_worried @ a_rub "J-jadi... {i}*Ahem*{/i} B-bagaimana hasilnya?"
-
-    bridget "Semuanya sudah diurus."
-
-    anon f_surprised @ f_shock "Dengan serius?!"
-
-    bridget "Ya."
-
-    bridget "Anda dapat memberi tahu teman Anda atau apa pun bahwa tidak ada yang perlu dikhawatirkan."
-
-    anon f_normal "Terima kasih, {b}Pelatih Bridget{/b}!"
-
+    anon a_idle f_worried @ a_rub "S-so... {i}*Ahem*{/i} H-how did it go?"
+    bridget "It's all taken care of."
+    anon f_surprised @ f_shock "Seriously?!"
+    bridget "Yup."
+    bridget "You can tell your friend or whatever that there's nothing to worry about."
+    anon f_normal "Thanks, {b}Coach Bridget{/b}!"
     bridget @ -m_talk "Mhmm."
-
     hide bridget with dissolve
-    anon f_grin "( Wow, {b}Pelatih Bridget{/b} sama sekali tidak takut pada {b}Nyonya Smith{/b}! )"
-
-    anon "( Saya tidak sabar untuk memberi tahu {b}Eve{/b} kabar baik besok! )"
-
+    anon f_grin "( Wow, {b}Coach Bridget{/b} isn't afraid of {b}Mrs. Smith{/b} at all! )"
+    anon "( I can't wait to tell {b}Eve{/b} the good news tomorrow! )"
     hide anon with dissolve
     return
 
@@ -221,54 +153,34 @@ label bridget_dialogue_eve_dress_code_intro_first:
     scene expression player.location.background_blur with None
     show anon f_worried_low
     show bridget b_pickup with dissolve
-    bridget "Ugh, kemana perginya makhluk-makhluk sialan itu?!"
-
-    anon "B-permisi, Bu?"
-
-    bridget "Ya, ya... Tunggu sebentar, ya!"
-
-    bridget "{i}*Sigh*{/i} Aku tahu aku melemparkannya ke sini di suatu tempat!"
-
-    anon "Dapatkah saya membantu Anda menemukan sesuatu?"
-
-    bridget "Tidak, aku hanya mencari lompat tali..."
-
-    bridget "Saya ingin menggunakannya di kelas berikutnya dan-"
-
-    bridget "Itu dia!"
-
+    bridget "Ugh, where there hell did those damn things run off to?!"
+    anon "E-excuse me, ma'am?"
+    bridget "Yeah, yeah... Hold on one second, will ya!"
+    bridget "{i}*Sigh*{/i} I know I threw them in here somewhere!"
+    anon "Can I help you find something?"
+    bridget "No, I'm just looking for the jump ropes..."
+    bridget "I wanna use them next class and-"
+    bridget "There you are!"
     show bridget b_dressed a_ropes f_angry_down with dissolve
     show anon f_worried
-    bridget "Ya Tuhan!"
-
+    bridget "Good lord!"
     anon f_surprised_teeth "!!!"
-    bridget "Lihatlah bencana ini!"
-
+    bridget "Look at this disaster!"
     show anon f_worried
-    bridget f_angry "Aku butuh waktu berhari-hari untuk mengungkap kekacauan ini!"
-
-    anon "Ya, itu sungguh menyebalkan..."
-
-    anon f_surprised @ f_confused "Bagaimanapun, aku sangat berharap kamu bisa membantuku dengan-"
-
-    bridget f_sexy "Tidak uh!"
-
-    anon f_worried "T-tapi aku bahkan belum memberitahumu apa yang kubutuhkan!"
-
-    bridget "Jika kamu ingin bantuanku, kamu akan membantuku terlebih dahulu."
-
-    anon f_unimpressed "Ah, kawan..."
-
+    bridget f_angry "It's gonna take me days to unravel this mess!"
+    anon "Yeah, that really sucks..."
+    anon f_surprised @ f_confused "Anyways, I was really hoping you could help me with-"
+    bridget f_sexy "Nu uh!"
+    anon f_worried "B-but I haven't even told you what I need yet!"
+    bridget "If you want my help, you're gonna help me with this first."
+    anon f_unimpressed "Ah, man..."
     show bridget a_ropes_throw with dissolve
-    bridget "Ini dia, selamat menikmati!"
-
+    bridget "There ya go, enjoy!"
     show bridget a_idle
     show anon f_surprised_teeth_down a_ropes_bunch
     with dissolve
-    bridget f_normal "Ayo temui saya setelah Anda selesai dan MUNGKIN saya akan membantu Anda."
-
-    anon f_tired "Y-ya, Bu..."
-
+    bridget f_normal "Come find me when you're finished and MAYBE I'll help you out."
+    anon f_tired "Y-yes, ma'am..."
     hide bridget with dissolve
     anon f_sad_down "..."
     scene black with fade
@@ -276,17 +188,12 @@ label bridget_dialogue_eve_dress_code_intro_first:
     return
 
 label bridget_button_dress_code_track:
-    anon f_worried "Sebenarnya, saya berharap Anda bisa berbicara dengan {b}Nyonya. Smith{/b} tentang kebijakan aturan berpakaian yang baru..."
-
-    bridget "Jangan sekarang, {b}[firstname]{/b}!"
-
-    bridget "Tidak bisakah kamu melihat kita sedang berada di tengah-tengah kelas di sini?!"
-
+    anon f_worried "Actually, I was hoping you could talk to {b}Mrs. Smith{/b} about the new dress code policy..."
+    bridget "Not now, {b}[firstname]{/b}!"
+    bridget "Can't you see we're in the middle of class here?!"
     hide bridget with dissolve
-    anon f_confused "O-oh, maaf."
-
-    anon f_thinking a_thinking @ -m_talk "( Hmm, aku harus menunggu dan berbicara dengannya di kantornya {b}sepulang sekolah{/b}. )"
-
+    anon f_confused "O-oh, sorry."
+    anon f_thinking a_thinking @ -m_talk "( Hmm, I should wait and speak with her in her office {b}after school{/b}. )"
     hide anon with dissolve
     return
 
@@ -296,20 +203,14 @@ label coach_bridget_dialogue_office_intro:
     show bridget f_angry
     with dissolve
     bridget "{b}[firstname]{/b}!"
-
-    bridget "Apa yang kamu lakukan di sini?"
-
+    bridget "What are you doing in here?"
     show anon f_shock
     show bridget a_crossed with dissolve
-    anon "Maaf, Bu!!!"
-
-    anon "Saya baru saja punya beberapa pertanyaan!"
-
+    anon "Sorry, ma'am!!!"
+    anon "I just had some questions!"
     show anon f_surprised
-    bridget "Pertanyaan?!"
-
-    bridget "Seperti apa?"
-
+    bridget "Questions?!"
+    bridget "Like what?"
     return
 
 label coach_bridget_dialogue_courtyard_intro:
@@ -318,44 +219,31 @@ label coach_bridget_dialogue_courtyard_intro:
     show bridget f_angry
     with dissolve
     bridget "{b}[firstname]{/b}!"
-
-    bridget "Sebaiknya kamu {b}berlatihlah di gym{/b}, atau aku akan mendorong kakiku ke pantatmu!!"
-
+    bridget "You better {b}be training your ass off at the gym{/b}, or I'm going to shove my foot up your ass!!"
     show anon f_shock
     show bridget a_crossed with dissolve
-    anon "Ya, Bu!!!"
-
+    anon "Yes, ma'am!!!"
     show anon f_surprised
-    bridget "Ada pertanyaan?!"
-
+    bridget "Got any questions?!"
     return
 
 label coach_bridget_dialogue_training_advice:
     show anon f_worried
     show bridget a_crossed f_normal
-    anon "Aku... Nah, di mana aku harus berlatih?"
-
+    anon "I... Well, where should I train?"
     show bridget f_angry
     bridget @ -m_talk "..."
     show anon f_surprised
-    bridget "Aku baru saja memberitahumu!"
-
-    bridget @ f_angry_yell "Di GYM!!!"
-
-    anon f_worried "Tapi... Apa yang harus saya latih?"
-
-    bridget "Anda harus melatih {b}kekuatan{/b} dan {b}ketangkasan{/b} Anda jika ingin berhasil!"
-
-    bridget "Anda akan berkompetisi dalam lari gawang 110 meter untuk membuat sekolah ini dan tim Anda lolos ke kejuaraan negara bagian!"
-
-    anon "Itu... Banyak tekanan."
-
+    bridget "I just told you!"
+    bridget @ f_angry_yell "At the GYM!!!"
+    anon f_worried "But... What should I train?"
+    bridget "You have to work on your {b}strength{/b} and {b}dexterity{/b} if you want to make it!"
+    bridget "You'll be competing in the 110-meter hurdles to qualify this school and your team into the state championship!"
+    anon "That's... A lot of pressure."
     show anon f_surprised_teeth
-    bridget "... Dan sebaiknya kamu TIDAK mengecewakanku!"
-
+    bridget "... And you better NOT fail me!"
     show anon f_surprised
-    anon "Ya, Bu!!!"
-
+    anon "Yes, ma'am!!!"
     hide bridget
     hide anon
     with dissolve
@@ -364,14 +252,10 @@ label coach_bridget_dialogue_training_advice:
 label coach_bridget_dialogue_leave:
     show anon f_worried
     show bridget a_crossed f_normal
-    anon "Aku... aku lupa."
-
-    bridget f_angry "Lupa? Wah, kamu adalah potongan daging paling menyedihkan yang pernah kulihat!"
-
+    anon "I... I forgot."
+    bridget f_angry "Forgot? Boy you are the saddest piece of meat I've ever seen!"
     show anon f_surprised
-    bridget @ f_angry_yell "Sekarang keluar dari sini dan mulai BEKERJA!!"
-
-    anon f_shock "Ya, Bu!!!"
-
+    bridget @ f_angry_yell "Now get out of here and get to WORK!!"
+    anon f_shock "Yes, ma'am!!!"
     return
 # Decompiled by unrpyc: https://github.com/CensoredUsername/unrpyc

@@ -63,25 +63,17 @@ layeredimage diane:
         attribute b_nightgown_sit "characters/diane/layeredimage/diane_body_b_nightgown_sit[M_diane.pregnancy.to_string].png"
         attribute b_pull_mc_naked "characters/diane/layeredimage/diane_body_b_pull_mc_[M_diane.outfit.get].png"        
         attribute b_laying_grope "diane_body_b_laying_grope"        
-
         attribute b_jerk "diane_body_b_jerk"
-
         attribute b_hay_feeding1 "characters/diane/layeredimage/diane_body_b_hay_feeding_[M_diane.outfit.get]1.png"
         attribute b_hay_feeding "diane_body_b_hay_feeding"
-
         attribute b_hay_feeding_shirtless "diane_body_b_hay_feeding_shirtless"
-
         attribute b_nightgown_sit_stroke "diane_body_b_nightgown_sit_stroke"
-
         attribute b_hay_rub "diane_body_b_hay_rub"
-
         attribute b_hay_stroke "diane_body_b_hay_stroke"
-
         attribute b_hay_cucumber1 "characters/diane/layeredimage/diane_body_b_hay_cucumber1_[M_diane.outfit.get].png"
         attribute b_hay_cucumber2 "characters/diane/layeredimage/diane_body_b_hay_cucumber2_[M_diane.outfit.get].png"
         attribute b_hay_sit "characters/diane/layeredimage/diane_body_b_hay_[M_diane.outfit.get].png"
         attribute b_topless "diane_body_b_topless[M_diane.pregnancy.to_string]"
-
         attribute b_empty null
 
 
@@ -89,8 +81,7 @@ layeredimage diane:
         attribute b_kiss_casual Image("characters/diane/layeredimage/diane_body_b_kiss_casual.png",xoffset=-217)
         attribute b_kiss_mouth Image("characters/diane/layeredimage/diane_body_b_kiss_mouth.png",xoffset=-172)
         attribute b_kiss_naked "characters/diane/layeredimage/diane_body_b_kiss_[M_diane.outfit.get].png" 
-        attribute b_kiss_both_naked "diane_kiss_keduanya_telanjang[M_diane.pregnancy.to_string]" 
-
+        attribute b_kiss_both_naked "diane_kiss_both_naked[M_diane.pregnancy.to_string]" 
         attribute b_lingerie_kiss Image("characters/diane/layeredimage/diane_body_b_lingerie_kiss.png",xoffset=-124)
         attribute b_hug_vero_talk Image("characters/diane/layeredimage/diane_body_b_hug_vero_talk.png",xoffset=-235)
         attribute b_dinner_hug1 Image("characters/diane/layeredimage/diane_body_b_dinner_hug1.png",xoffset=-125)
@@ -107,11 +98,8 @@ layeredimage diane:
         attribute b_hay_behind_talk "characters/diane/layeredimage/diane_body_b_hay_behind_talk_[M_diane.outfit.get].png"
         attribute b_hay_insert1 "characters/diane/layeredimage/diane_body_b_hay_insert1_[M_diane.outfit.get].png"
         attribute b_laying_massage_back "diane_body_b_laying_massage_back"
-
         attribute b_laying_massage_naked_back "diane_body_b_laying_massage_naked_back"
-
         attribute b_laying_massage_butt "diane_body_b_laying_massage_butt"
-
 
         attribute b_laying_getup Image("characters/diane/layeredimage/diane_body_b_laying_getup.png",yoffset=30)
         attribute b_laying_kick Image("characters/diane/layeredimage/diane_body_b_laying_kick.png",yoffset=30)
@@ -279,60 +267,41 @@ layeredimage diane:
         attribute a_cucumber_rub "diane_arms_dressed_a_cucumber_rub"
 
 
-
     group arms if_any ['b_naked'] auto variant 'naked':
         attribute a_idle default "diane_arms_[M_diane.outfit.get]_a_sides[M_diane.pregnancy.to_string]"
-
         attribute a_shovel_sides "diane_arms_[M_diane.outfit.get]_a_shovel_sides"
-
         attribute a_touch_belly "diane_arms_[M_diane.outfit.get]_a_touch[M_diane.pregnancy.to_string]"
-
         attribute a_touch_cum "characters/diane/layeredimage/diane_arms_[M_diane.outfit.get]_a_touch_cum.png"
         attribute a_lick_cum "characters/diane/layeredimage/diane_arms_[M_diane.outfit.get]_a_lick_cum.png"
         attribute a_squeeze3 "diane_arms_[M_diane.outfit.get]_a_squeeze3[M_diane.pregnancy.to_string]"
-
         attribute a_bottle1 "diane_arms_[M_diane.outfit.get]_a_bottle1[M_diane.pregnancy.to_string]"
-
         attribute a_statue_full "characters/diane/layeredimage/diane_arms_[M_diane.outfit.get]_a_statue_full.png"
         attribute a_nudge "characters/diane/layeredimage/diane_arms_[M_diane.outfit.get]_a_nudge.png"
         attribute a_shock "characters/diane/layeredimage/diane_arms_shirtless_a_shock.png"
         attribute a_check "characters/diane/layeredimage/diane_arms_cow_a_check.png"
         attribute a_milk_cups "diane_arms_[M_diane.outfit.get]_a_milk_cups[M_diane.pregnancy.to_belly_string]"
-
         attribute a_milk_cups_give "diane_arms_[M_diane.outfit.get]_a_milk_cups_give[M_diane.pregnancy.to_belly_string]"
-
         attribute a_take "diane_arms_[M_diane.outfit.get]_a_take[M_diane.pregnancy.to_belly_string]"
-
 
 
     group arms if_any ['b_shirtless_pull','b_shirtless'] auto variant 'shirtless':
         attribute a_idle default "diane_arms_shirtless_a_sides[M_diane.pregnancy.to_string]"
-
         attribute a_wave "diane_arms_shirtless_a_wave"
-
         attribute a_cover "diane_arms_shirtless_a_cover[M_diane.pregnancy.to_string]"
-
         attribute a_vase1 "diane_arms_shirtless_a_vase1[M_diane.pregnancy.to_string]"
-
         attribute a_vase2 "diane_arms_shirtless_a_vase2[M_diane.pregnancy.to_string]"
-
 
 
     group arms if_any ['b_topless'] auto variant 'topless':
         attribute a_idle default "diane_arms_naked_a_sides[M_diane.pregnancy.to_string]"
-
         attribute a_squeeze3 "diane_arms_[M_diane.outfit.get]_a_squeeze3[M_diane.pregnancy.to_string]"
-
         attribute a_bottle1 "diane_arms_[M_diane.outfit.get]_a_bottle1[M_diane.pregnancy.to_string]"
-
 
 
     group arms if_any ['b_topless_blank','b_topless_blank2'] auto variant 'topless_blank':
         attribute a_idle default 'diane_arms_topless_blank_a_waiting'
         attribute a_squeeze "diane_arms_topless_blank_a_squeeze"
-
         attribute a_pump "diane_arms_topless_a_pump"
-
 
 
     group arms if_any ['b_lingerie'] auto variant 'lingerie':
@@ -345,7 +314,6 @@ layeredimage diane:
         attribute a_drink "characters/diane/layeredimage/diane_arms_laying_a_[drink_made]_drink.png"     
         attribute a_drink_sip "characters/diane/layeredimage/diane_arms_laying_a_[drink_made]_drink_sip.png"
         attribute a_wave "diane_arms_laying_a_wave"
-
 
 
     group arms if_all 'b_gown_bed' auto variant 'gown_bed':
@@ -362,10 +330,8 @@ layeredimage diane:
         attribute a_touch "diane_arms_dinner_a_touch"
 
 
-
     group arms if_all 'b_cow' auto variant 'cow':
         attribute a_idle default "diane_arms_cow_a_sides[M_diane.pregnancy.to_string]"
-
 
 
     group arms if_any ['b_couch','b_couch_boob'] auto variant 'couch':
@@ -383,17 +349,13 @@ layeredimage diane:
 
     group arms if_all 'b_nightgown' auto variant 'nightgown':
         attribute a_idle default "diane_arms_nightgown_a_sides[M_diane.pregnancy.to_string]"
-
-        attribute a_water "diane_arms_baju tidur_a_water[M_diane.pregnancy.to_string]"
-
+        attribute a_water "diane_arms_nightgown_a_water[M_diane.pregnancy.to_string]"
 
 
     group arms if_any ['b_hay_feeding1','b_hay_feeding','b_hay_feeding_shirtless','b_hay_feeding_shirtless2','b_hay_feeding_shirtless1','b_hay_feeding_naked2','b_hay_feeding_naked1','b_hay_feeding_cow2','b_hay_feeding_cow1'] auto variant 'hay_feeding':
         attribute a_idle default null
         attribute a_stroke "diane_arms_hay_feeding_a_stroke"
-
         attribute a_shirtless_stroke "diane_arms_hay_feeding_a_shirtless_stroke"
-
 
 
 layeredimage diane deb0m_post:

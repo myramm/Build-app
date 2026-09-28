@@ -2,14 +2,10 @@ label scene_nadya_sex_office:
     call scene_nadya_sex_office.stage
     pause
     call scene_nadya_sex_office.common
-    nadya f_normal "Oh, aku pikir kita..."
-
-    nadya "... Akan mendapat teman yang sangat baik, {b}[firstname]{/b}."
-
-    anon "Y-ya, aku juga."
-
-    nadya f_laugh "hehe!"
-
+    nadya f_normal "Oh, I am thinking we..."
+    nadya "... Will make very good friends, {b}[firstname]{/b}."
+    anon "Y-yeah, me too."
+    nadya f_laugh "Hehe!"
 
     if _return == 'inside':
         call call_pregnancy_minigame (None, M_nadya)
@@ -80,46 +76,33 @@ label scene_nadya_sex_office.loop:
 
 label scene_nadya_sex_office.dialogue:
     if animcounter == 0 and randomizer() > 75:
-        nadya "Saya tidak menginginkan belas kasihan.{w=1}{nw}"
-
-        anon "Umm, oke...{w=1}{nw}"
-
+        nadya "I want no mercy.{w=1}{nw}"
+        anon "Umm, okay...{w=1}{nw}"
     elif animcounter == 0 and randomizer() > 75:
         nadya "Mmm, that feels good.{w=1}{nw}" (show_native="Mmm, khorosho.")
     elif animcounter == 1 and randomizer() > 75:
         nadya "Ahh!{w=1}{nw}"
-
         pause 1
-        anon "Wow, Anda menerima semuanya tanpa masalah!{w=1}{nw}"
-
-        nadya "Kurangi bicara, perbanyak omongan!{w=1}{nw}"
-
-        anon "Baiklah.{w=1}{nw}"
-
+        anon "Wow, you're taking the whole thing no problem!{w=1}{nw}"
+        nadya "Less talking, more fucking!{w=1}{nw}"
+        anon "Alright.{w=1}{nw}"
     elif animcounter == 2 and randomizer() > 75:
         nadya "Your cock is amazing!{w=1}{nw}" (show_native="U tebya potryasayushchiy chlen!")
-        nadya "Persetan denganku!!{w=1}{nw}"
-
+        nadya "Fuck me!!{w=1}{nw}"
     elif animcounter == 2 and randomizer() > 75:
-        nadya "Ya!{w=1}{nw}"
-
-        nadya "Ya ampun!{w=1}{nw}"
-
+        nadya "Da!{w=1}{nw}"
+        nadya "Oh, da!{w=1}{nw}"
     return
 
 
 label scene_nadya_sex_office.cum(where):
-    anon "Apakah kamu dekat?"
-
-    nadya "Ya!!"
-
-    anon "Bagus, karena aku tidak bisa bertahan lebih lama lagi!"
-
+    anon "Are you close?"
+    nadya "Da!!"
+    anon "Good, cause I can't last much longer!"
     pause
     nadya "I'm cumming!!" (show_native="Ya konchayu!!")
     nadya "Ahh, I'm cumming!!" (show_native="Ahh, ya konchayu!!")
     nadya "NGGHHH!!!"
-
     hide animation
     show nadya nadya_sex_couch f_surprised m_talk
     if where == 'inside':
@@ -135,7 +118,6 @@ label scene_nadya_sex_office.cum(where):
         show nadya a_cumshot3
     show nadya -m_talk
     anon "Haah... Haah..."
-
     if where == 'inside':
         show nadya a_insert b_base o_after with dissolve
         pause
@@ -145,34 +127,24 @@ label scene_nadya_sex_office.cum(where):
 
 label scene_nadya_sex_office.common:
     call scene_nadya_sex_office.pre
-    nadya "Persetan dengan vaginamu, oke?"
-
-    nadya "Saya tidak menginginkan belas kasihan."
-
-    anon "Um, oke..."
-
+    nadya "Fuck pussy hard, okay?"
+    nadya "I want no mercy."
+    anon "Umm, okay..."
     call scene_nadya_sex_office.insert
     nadya "Mmm, that feels good." (show_native="Mmm, khorosho.")
     pause
     call scene_nadya_sex_office.animate
-    nadya "Ahhh!"
-
+    nadya "Ahh!"
     pause
-    anon "Wow, kamu menerima semuanya tanpa masalah!"
-
-    nadya "Kurangi bicara, perbanyak bicara!"
-
-    anon "Baiklah."
-
+    anon "Wow, you're taking the whole thing no problem!"
+    nadya "Less talking, more fucking!"
+    anon "Alright."
     pause
     nadya "Your cock is amazing!" (show_native="U tebya potryasayushchiy chlen!")
-    nadya "Persetan denganku!!"
-
+    nadya "Fuck me!!"
     pause
-    nadya "Ya!"
-
-    nadya "Ya ampun!"
-
+    nadya "Da!"
+    nadya "Oh, da!"
     pause
     call scene_nadya_sex_office.loop
     call scene_nadya_sex_office.cum (_return)
@@ -181,44 +153,31 @@ label scene_nadya_sex_office.common:
 
 label scene_nadya_sex_office.repeat:
     call scene_nadya_sex_office.stage
-    nadya "Ayo..."
-
-    nadya "... Memekku sudah meneteskan nafsu."
-
-    anon "Y-ya, oke."
-
+    nadya "Come..."
+    nadya "... My pussy drips with desire already."
+    anon "Y-yeah, okay."
     call scene_nadya_sex_office.common
 
     if _return == 'inside':
         nadya "Wow!" (show_native="Ukh ty!")
-        nadya f_normal "Kamu membuatku kenyang!"
-
-        anon "Y-ya."
-
-        nadya "Ini pasti akan membuat bayi!"
-
+        nadya f_normal "You fill me up!"
+        anon "Y-yeah."
+        nadya "This much will make baby for certain!"
         pause
-        anon "Apakah itu hal yang buruk?"
-
+        anon "Is that a bad thing?"
         nadya "Of course not!" (show_native="Konechno, nyet!")
-        nadya "Saya membutuhkan ahli waris untuk mengambil alih Bratva di masa depan."
-
-        nadya "Mudah-mudahan itu perempuan."
-
+        nadya "I will need heir to take over Bratva in future times."
+        nadya "Hopefully is girl."
         call call_pregnancy_minigame (None, M_nadya)
     else:
 
         pause
         nadya "Wow!" (show_native="Ukh ty!")
-        nadya f_normal "Anda menjatuhkan beban yang mengesankan!"
-
-        anon "Y-ya."
-
-        nadya "Lihat itu, lari ke bawah."
-
+        nadya f_normal "You drop impressive load!"
+        anon "Y-yeah."
+        nadya "Look at it, run down leg."
         pause
-        nadya f_laugh "hehe!"
-
+        nadya f_laugh "Hehe!"
 
     return
 

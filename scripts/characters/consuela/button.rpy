@@ -35,8 +35,7 @@ label consuela_button_dialogue:
         call consuela_button_beachhouse
     else:
 
-        consuela "Hai."
-
+        consuela "Hi."
 
     $ game.main()
     return

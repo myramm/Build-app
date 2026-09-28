@@ -3,13 +3,12 @@ label okita_button_dialogue:
 
     if M_eve.is_state(S_eve_dress_code_ask_teachers):
         show anon f_thinking with dissolve
-        anon @ -m_talk "( Hmmm... Apa yang harus aku bicarakan dengan {b}Nona Okita{/b}? )"
-
+        anon @ -m_talk "( Hmmm... What should I talk to {b}Miss Okita{/b} about? )"
         menu okita_button_menu:
-            "Kode berpakaian.":
+            "The dress code.":
                 call expression game.dialog_select("okita_button_dress_code")
                 $ game.main()
-            "Sesuatu yang lain.":
+            "Something else.":
                 pass
 
     if M_okita.is_state(S_okita_intro):
@@ -30,9 +29,9 @@ label okita_button_dialogue:
         call expression game.dialog_select("science_classroom_okita_has_glasses")
         if M_okita.is_set("glasses assembly fail"):
             menu:
-                "Coba lagi.":
+                "Try again.":
                     call expression game.dialog_select("science_classroom_okita_has_glasses_try_again")
-                "Tidak ada apa-apa.":
+                "Nothing.":
 
                     $ game.main()
 
@@ -61,9 +60,9 @@ label okita_button_dialogue:
         call expression game.dialog_select("science_classroom_okita_has_faptic")
         if M_okita.is_set("belt assembly fail"):
             menu:
-                "Coba lagi.":
+                "Try again.":
                     call expression game.dialog_select("science_classroom_okita_has_faptic_try_again")
-                "Tidak ada apa-apa.":
+                "Nothing.":
 
                     $ game.main()
 
@@ -105,27 +104,25 @@ label okita_button_dialogue:
             show anon f_worried
             show okita 2 at right
             with dissolve
-            anon "Tentang barang-barang yang Anda butuhkan..."
-
+            anon "About those items you needed..."
             menu okita_items:
-                "Jamur." if not player.has_item("mushroom"):
+                "Mushroom." if not player.has_item("mushroom"):
                     call expression game.dialog_select("button_okita_ingredients_mushroom")
 
-                "Kodok Terangsang." if not player.has_item("toad"):
+                "Horny Toad." if not player.has_item("toad"):
                     call expression game.dialog_select("button_okita_ingredients_toad")
 
-                "Bunga." if not player.has_item("caveflower"):
+                "Flower." if not player.has_item("caveflower"):
                     call expression game.dialog_select("button_okita_ingredients_flower")
 
-                "Cairan dasar." if not player.has_item("chicken_stock"):
+                "Base liquid." if not player.has_item("chicken_stock"):
                     call expression game.dialog_select("button_okita_ingredients_stock")
 
-                "{b}Ny. DNA Smith{/b}." if not player.has_item("tissue"):
+                "{b}Mrs. Smith{/b}'s DNA." if not player.has_item("tissue"):
                     call expression game.dialog_select("button_okita_ingredients_tissue")
-                "Itu saja.":
+                "That's all.":
 
-                    anon "Saya akan kembali mengumpulkan barang-barang itu."
-
+                    anon "I'll get back to collecting those items then."
                     $ game.main()
             jump expression game.dialog_select("okita_items")
 

@@ -10,39 +10,26 @@ label eveX1_lewd:
     pause
     show eve b_pajamas_sleeping03 with dissolve
     pause
-    eve @ -m_talk "MM."
-
+    eve @ -m_talk "Mmm."
     eve "{b}[firstname]{/b}?"
-
-    anon "Selamat pagi, tukang tidur."
-
-    eve f_happy_close "Hehe!"
-
+    anon "Good morning, sleepyhead."
+    eve f_happy_close "Heh!"
 
     scene location_tattoo_bedroom_bed_top
     show eve a_belly b_pajamas_bed_back f_yawn m_talk
     show anon a_down b_sleep_side_eve f_sleep_side_normal
     show eve_overlay_o_blanket as blanket
     with fade
-    eve -m_talk "{i}*Menguap*{/i}"
-
-    eve a_belly b_pajamas_bed_side f_happy "Jam berapa sekarang?"
-
-    anon "Entahlah, sepertinya jam sepuluh?"
-
-    eve f_concerned "Uh, pagi sekali?"
-
-    eve "Mari kita kembali tidur."
-
-    anon f_sleep_side_sexy "Apa, apakah kamu berencana untuk tidur sepanjang hari?"
-
-    eve f_happy "Ya."
-
+    eve -m_talk "{i}*Yawn*{/i}"
+    eve a_belly b_pajamas_bed_side f_happy "What time is it?"
+    anon "I dunno, like ten o'clock?"
+    eve f_concerned "Ugh, so early?"
+    eve "Let's go back to sleep."
+    anon f_sleep_side_sexy "What, do you plan to sleep the whole day away?"
+    eve f_happy "Yes."
     show eve b_pajamas_bed_back f_calm with {'master': dissolve}
-    eve "Apalagi sekarang kamu di sini untuk memelukku."
-
-    anon f_sleep_side_normal "Oh, jadi itu akan menjadi alasanmu, ya?"
-
+    eve "Especially now that you're here to snuggle me."
+    anon f_sleep_side_normal "Oh, so that's gonna be your excuse, huh?"
     show anon a_hold b_sleep_side_eve_cuddle f_sleep_side_sexy
     show eve a_empty
     show eve_arms_pajamas_bed_back_a_belly as eve_arm_left behind blanket:
@@ -50,54 +37,36 @@ label eveX1_lewd:
     show eve_arms_pajamas_bed_back_a_belly as eve_arm_right behind anon:
         crop (0, 0, 680, 768)
     with {'master': dissolve}
-    eve f_laugh @ -m_talk "hehe!"
-
+    eve f_laugh @ -m_talk "Hehe!"
     show anon f_sleep_side_normal_closed
     show eve f_calm
     pause
-    anon "Rasanya menyenangkan."
-
-    eve "Benar?"
-
+    anon "It does feel nice."
+    eve "Right?"
     pause
-    anon "Kamu lembut sekali, {b}Eve{/b}."
-
+    anon "You're so soft, {b}Eve{/b}."
     pause
-    anon "Dan hangat."
-
+    anon "And warm."
     eve @ -m_talk "Mhmm."
-
     pause
-    anon "Astaga, kamu juga wangi!"
-
-    anon f_sleep_side_normal "Seperti kue yang baru dipanggang."
-
-    eve "Heh, kurangi bicara, perbanyak tidur!"
-
-    anon f_sleep_side_sexy "Saya bisa memikirkan sesuatu yang lebih menyenangkan daripada tidur."
-
-    eve "Tidak ada yang lebih menyenangkan daripada tidur."
-
-    anon "Anda yakin tentang itu?"
-
-    eve "Ya."
-
+    anon "Man, you smell good too!"
+    anon f_sleep_side_normal "Like fresh baked cookies."
+    eve "Heh, less talking, more sleeping!"
+    anon f_sleep_side_sexy "I can think of something more fun than sleep."
+    eve "Nothing is more fun than sleep."
+    anon "You sure about that?"
+    eve "Yes."
     hide eve_arm_left
     hide eve_arm_right
     show anon b_sleep_side_eve_kiss
-    eve a_down f_gasping "{i}*Terkesiap*{/i}"
-
-    eve f_calm "Ah, itu tidak adil..."
-
-    anon b_sleep_side_eve_cuddle f_sleep_side_normal "Mmm, kamu juga enak."
-
+    eve a_down f_gasping "{i}*Gasp*{/i}"
+    eve f_calm "Oh, that's no fair... "
+    anon b_sleep_side_eve_cuddle f_sleep_side_normal "Mmm, you taste good too."
     show anon b_sleep_side_eve_kiss with dissolve
-    eve "... Heh, kamu bertarung kotor."
-
+    eve "... Heh, you're fighting dirty."
     show eve f_lipbite
     pause
     eve @ -m_talk "Ngh!"
-
     pause
     show anon b_sleep_side_eve_cuddle
     show eve a_empty b_pajamas_bed_side f_sexy
@@ -112,33 +81,25 @@ label eveX1_lewd:
     hide eve_arm_right
     show eve b_pajamas_bed_side_kiss
     with dissolve
-    eve @ -m_talk "MM."
-
+    eve @ -m_talk "Mmm."
     pause
     show anon a_touch b_sleep_side_eve f_sleep_side_sexy behind blanket
     show eve a_belly b_pajamas_bed_side f_happy
     with {'master': dissolve}
-    eve "Penipu."
-
-    anon "Masih ingin kembali tidur?"
-
-    eve "Tidak."
-
-    anon "Hehe."
-
+    eve "Cheater."
+    anon "Still wanna go back to sleep?"
+    eve "No."
+    anon "Heh."
     hide anon
     show eve b_pajamas_bed_side_kiss
     with dissolve
-    eve "MM."
-
+    eve "Mmm."
     pause
     show anon a_touch b_sleep_side_eve f_sleep_side_normal behind blanket
     show eve a_belly b_pajamas_bed_side f_happy
     with dissolve
-    eve "Bantu aku melepas celana piyama ini."
-
-    anon "Dengan senang hati!"
-
+    eve "Help me get these pajama bottoms off."
+    anon "With pleasure!"
 
     $ renpy.dynamic(gender='trans' if M_eve.get('biggus_dickus') else 'cis',
                     anal=not M_eve.get('sex_front_1st_time'))
@@ -150,36 +111,25 @@ label eveX1_lewd:
     scene location_tattoo_bedroom_bed_side
     show eve b_pajamas_sleeping03 f_happy_close
     with fade
-    eve @ -m_talk "MM."
-
-    eve "Aku bisa terbiasa bangun seperti itu..."
-
-    anon "Ya?"
-
+    eve @ -m_talk "Mmm."
+    eve "I could get used to waking up like that..."
+    anon "Yeah?"
     pause
-    anon "Yah, aku bisa terbiasa tertidur seperti ini."
-
-    eve "Saya juga."
-
+    anon "Well, I could get used to falling asleep like this."
+    eve "Me too."
     pause
-    eve "Aku cinta kamu, {b}[firstname]{/b}."
-
+    eve "I love you, {b}[firstname]{/b}."
 
     menu:
-        "Aku pun mencintaimu.":
-            anon "Aku pun mencintaimu."
-
-            eve "Kamu adalah hal terbaik yang pernah terjadi padaku."
-
-            anon "Begitu pula {b}Evie{/b}."
-
-        "Tidur.":
+        "I love you too.":
+            anon "I love you too."
+            eve "You're the best thing that's ever happened to me."
+            anon "Likewise, {b}Evie{/b}."
+        "Sleep.":
 
             pause
-            eve f_curious_back "Apakah kamu mendengarku, {b}[firstname]{/b}?"
-
+            eve f_curious_back "Did you hear me, {b}[firstname]{/b}?"
             anon "Zzz..."
-
             show eve f_sad_down
             pause
             show eve f_calm_close
@@ -189,25 +139,20 @@ label eveX1_lewd:
     scene expression background(440, 304, 3.2, o=1) as stage with longfade
     show anon a_rub b_shirt f_yawn with {'master': dissolve}:
         xoffset -250 xzoom -1
-    anon @ -m_talk "{i}*Menguap*{/i}"
-
+    anon @ -m_talk "{i}*Yawn*{/i}"
     show anon b_shirt_undress_bottom with dissolve
     pause
     show anon a_sides b_dressed f_happy_back_low with {'master': dissolve}
-    anon "{b}Malam{/b}?"
-
+    anon "{b}Eve{/b}?"
     show anon f_confused_low with {'master': dissolve}:
         xoffset 250 xzoom 1
     pause
-    anon a_thinking f_thinking_down @ -m_talk "(Hmm, dia pasti sudah bangun sebelum aku...)"
-
+    anon a_thinking f_thinking_down @ -m_talk "( Hmm, she must have woken up before me... )"
     show anon a_sides f_confused with {'master': dissolve}:
         xoffset -250 xzoom -1
-    anon @ -m_talk "( ... Dan sepertinya {b}pancuran sedang berjalan{/b}. )"
-
+    anon @ -m_talk "( ... And it sounds like {b}the shower is running{/b}. )"
     pause
-    anon f_grin @ -m_talk "(Saya ingin tahu apakah dia tertarik pada perusahaan kecil?)"
-
+    anon f_grin @ -m_talk "( I wonder if she'd be interested in a little company? )"
     hide anon with dissolve
     return
 
@@ -217,15 +162,11 @@ label eveX1_lewd.fail:
     show eve b_pajamas_sleeping01 f_calm_close
     show anon a_empty b_empty f_happy_back_low:
         offset (-266.5, 45.5) subpixel True xzoom -.78 yzoom .78
-    anon @ -m_talk "(Aww, dia terlihat sangat damai dan manis...)"
-
-    anon @ -m_talk "(Saya tidak ingin merusaknya.)"
-
+    anon @ -m_talk "( Aww, she looks so peaceful and cute... )"
+    anon @ -m_talk "( I don't wanna ruin it. )"
     pause
-    anon f_normal_back_low @ -m_talk "(Saya akan kembali lagi nanti dan berbicara dengannya.)"
-
-    anon f_happy_back_low @ -m_talk "( Mimpi indah, {b}Malam{/b}. )"
-
+    anon f_normal_back_low @ -m_talk "( I'll just come back later in the day and speak with her then. )"
+    anon f_happy_back_low @ -m_talk "( Sweet dreams, {b}Eve{/b}. )"
 
     scene black with dissolve
     return

@@ -24,13 +24,11 @@ style style_shooting_score:
     antialias True
     color "#bebebe"
 
-
 style style_bike_repair_count:
     size 40
     bold True
     antialias True
     color "#bebebe"
-
     outlines [ (absolute(2), "#000", absolute(0), absolute(0)) ]
 
 

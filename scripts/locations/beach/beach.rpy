@@ -22,31 +22,23 @@ label sara_bikini_picked_up:
     if M_roxxy.is_state(S_roxxy_get_new_bikini):
         show player 655 with dissolve
         player_name "Hmm..."
-
         show player 655b
         player_name "It's a little small for {b}Roxxy{/b} but it might do the trick."
-
         show player 655
         player_name "..."
         show player 655b
         player_name "I can't believe {b}Miss Sara{/b} was wearing this tiny thing!"
-
         player_name "Hmm, I doubt she'd mind if I borrow it for a while."
-
         player_name "I should take it to {b}Roxxy{/b} and see what she thinks..."
-
         hide player with dissolve
         $ player.get_item("sara_bikini")
     else:
         show player 655 with dissolve
         player_name "( Hmm... )"
-
         show player 655b
         player_name "( It's {b}Miss Sara{/b}'s bikini... )"
-
         show player 655
         player_name "( I should pick it up to return it to her )"
-
         show player 655b
         $ player.get_item("sara_bikini")
     $ game.main()

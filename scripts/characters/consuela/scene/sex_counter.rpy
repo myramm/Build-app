@@ -2,39 +2,27 @@ label scene_consuela_sex_counter:
     scene location_beach_house_kitchen_counter
     call scene_consuela_sex_counter.ready
     with fade
-    anon "Apakah kamu yakin tentang ini?"
-
-    consuela "Ya, aku mau!"
-
-    consuela "Berikan padaku, ayah!"
-
+    anon "Are you sure about this?"
+    consuela "Si, I want!"
+    consuela "Give it to me, papi!"
     call scene_consuela_sex_counter.pre
     with dissolve
-    anon "Baiklah."
-
+    anon "Alright."
     call scene_consuela_sex_counter.insert
     with fastdissolve
-    consuela "{i}*Terkesiap*{/i}"
-
+    consuela "{i}*Gasp*{/i}"
     consuela "So big!" (show_native="¡Está enorme!")
-    anon "Kamu baik-baik saja?"
-
+    anon "You alright?"
     consuela "S-si."
-
-    consuela "Umm, pelan-pelan... Oke?"
-
-    anon "Oke."
-
+    consuela "Umm, slowly... Okay?"
+    anon "Okay."
     call scene_consuela_sex_counter.animate
     with dissolve
     consuela "Oh my god!" (show_native="¡Ay dios mío!")
     consuela "Hah!"
-
     pause
-    anon "Wah, ketat sekali, {b}Consuela{/b}..."
-
-    anon "Sepertinya sudah cukup lama bagimu, ya?"
-
+    anon "Wow, you're so tight, {b}Consuela{/b}..."
+    anon "Guess it's been a while for you, huh?"
     consuela "Yes!" (show_native="¡Si!")
     consuela "Oh yes, daddy!" (show_native="¡Ay si, papi!")
     call scene_consuela_sex_counter.loop
@@ -42,14 +30,11 @@ label scene_consuela_sex_counter:
     consuela "Fuck my pussy!" (show_native="¡Cógeme!")
     consuela "Harder!" (show_native="¡Más duro!")
     pause
-    anon "aku akan keluar!"
-
-    consuela "Ya!"
-
+    anon "I'm gonna cum!"
+    consuela "Si!"
     consuela "Give it to me!" (show_native="¡Dámelo!")
     pause
-    anon "aku akan-"
-
+    anon "I'm gonna-"
     if _return == 'inside':
         call scene_consuela_sex_counter.inside
     else:
@@ -134,24 +119,17 @@ label scene_consuela_sex_counter.loop:
 label scene_consuela_sex_counter.dialogue:
     if animcounter == 0 and randomizer() < 50:
         consuela "Ahh!!{p=1}{nw}"
-
     if animcounter == 1 and randomizer() > 50:
         consuela "This is amazing!{p=2}{nw}" (show_native="¡Esto es increíble!")
         consuela "Don't stop!{p=1}{nw}" (show_native="No pares!")
     if animcounter == 2 and randomizer() < 50:
-        consuela "Oh, persetan denganku!{p=1}{nw}"
-
-        consuela "Persetan denganku, ayah!{p=1}{nw}"
-
-        anon "Panas sekali!{p=2}{nw}"
-
+        consuela "Oh, fuck me!{p=1}{nw}"
+        consuela "Fuck me, papi!{p=1}{nw}"
+        anon "This is so hot!{p=2}{nw}"
     if animcounter == 3 and randomizer() > 50:
-        consuela "Selengkapnya.{p=1}{nw}"
-
-        anon "Lebih lanjut?{p=1}{nw}"
-
-        consuela "Ya, lagi!{p=1}{nw}"
-
+        consuela "More.{p=1}{nw}"
+        anon "More?{p=1}{nw}"
+        consuela "Si, more!{p=1}{nw}"
         if M_consuela.get("sex speed") > 0.061:
             $ M_consuela.set("sex speed",
                              M_consuela.get("sex speed") - 0.03)
@@ -165,7 +143,6 @@ label scene_consuela_sex_counter.inside:
     show xray_consuela counter with fastdissolve:
         align (0,0)
     consuela "NGGHHH!!!"
-
     hide xray_consuela
     show consuela b_counter o_kitchen_after
     show consuela_mc_body_kitchen insert_pullout
@@ -174,30 +151,21 @@ label scene_consuela_sex_counter.inside:
     with dissolve
     pause
     anon "Haah... Haah..."
-
     call scene_consuela_sex_counter.ready
     with dissolve
-    anon "Wah!"
-
+    anon "Wow!"
     consuela "My god!" (show_native="¡Santo cielo!")
     consuela "That was amazing!" (show_native="¡Eso fue increíble!")
-    consuela "hehe!"
-
-    anon "aku masuk ke dalam dirimu..."
-
+    consuela "Hehe!"
+    anon "I came inside you..."
     consuela "Hmm?"
-
-    consuela "Oh, baiklah."
-
-    anon "Tapi kamu bisa hamil..."
-
+    consuela "Oh, es okay."
+    anon "But you could get pregnant..."
     consuela "I doubt we conceive." (show_native="Dudo que concibamos.")
     consuela "Very unlikely at my age." (show_native="Muy poco probable a mi edad.")
     anon "..."
-    consuela "Jangan khawatir, oke?"
-
-    anon "O-oke."
-
+    consuela "No worry, okay?"
+    anon "O-okay."
 
     call call_pregnancy_minigame (None, M_consuela)
     return
@@ -210,16 +178,12 @@ label scene_consuela_sex_counter.outside:
     show consuela_mc_dick_kitchen cumshot
     anon "HNNGGG!!!" with flash
     consuela "NGGHHH!!!"
-
     pause
     anon "Haah... Haah..."
-
-    anon "Itu luar biasa!"
-
+    anon "That was awesome!"
     consuela "My god!" (show_native="¡Santo cielo!")
     consuela "I'm a mess..." (show_native="Soy un desastre...")
-    consuela "hehe!"
-
+    consuela "Hehe!"
     return
 
 
@@ -230,15 +194,12 @@ label scene_consuela_sex_counter.repeat:
     consuela "Mmm, this is the best part of my day." (show_native="Mmm, esta es la mejor parte de mi día.")
     call scene_consuela_sex_counter.pre
     with dissolve
-    anon "Anda siap?"
-
-    consuela "Ya."
-
+    anon "You ready?"
+    consuela "Si."
     call scene_consuela_sex_counter.insert
     with fastdissolve
     consuela "!!!"
-    consuela "Oh, ayah!"
-
+    consuela "Oh, papi!"
     call scene_consuela_sex_counter.animate
     with dissolve
     consuela "Your cock is so big!" (show_native="¡Tu verga está muy grande!")
@@ -246,22 +207,16 @@ label scene_consuela_sex_counter.repeat:
     consuela "This makes me very envious of my daughter..." (show_native="Esto me da mucha envidia de mi hija...")
     consuela "I hope you'll still fuck me after marrying her?" (show_native="¿Espero que todavía me cojas después de casarte con ella?")
     anon "Hmm?"
-
-    consuela "Kataku, lebih keras papi!"
-
-    anon "O-oke."
-
+    consuela "I say, harder papi!"
+    anon "O-okay."
     pause
-    consuela "Ahhh!"
-
+    consuela "Ahh!"
     call scene_consuela_sex_counter.loop
-    anon "Aku semakin dekat!"
-
+    anon "I'm getting close!"
     consuela "Don't stop!" (show_native="¡No pares!")
     consuela "Faster!" (show_native="¡Más rápido!")
     pause
-    anon "Ini dia!"
-
+    anon "Here it comes!"
     if _return == 'inside':
         call scene_consuela_sex_counter.inside
     else:

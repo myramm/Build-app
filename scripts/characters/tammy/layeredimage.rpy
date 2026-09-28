@@ -28,7 +28,6 @@ layeredimage tammy:
         attribute b_magic "tammy_body_b_[M_tammy.outfit.get][M_tammy.pregnancy.to_string]"   
 
 
-
     group mouth prefix 'm':
         attribute talk null
 
@@ -94,7 +93,6 @@ image tammy_f = "characters/tammy/tammy_face_f_normal.png"
 
 image tammy_arms_yoga_a_watch:
     "tammy_arms_yoga_a_watch1"
-
     pause .4
     "tammy_arms_yoga_a_watch2" with fastdissolve
 # Decompiled by unrpyc: https://github.com/CensoredUsername/unrpyc

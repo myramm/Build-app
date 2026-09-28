@@ -1,8 +1,7 @@
 label iwanka_button_bedroom:
     show iwanka f_excited
     show anon with dissolve
-    iwanka "Ya ampun!!"
-
+    iwanka "Oh em gee!!"
     hide anon
     show iwanka b_dressed_kiss:
         xoffset -200
@@ -12,185 +11,123 @@ label iwanka_button_bedroom:
     show iwanka b_dressed:
         xoffset 0
     with dissolve
-    anon "Wah, oke."
-
-    iwanka "Saya sangat senang Anda ada di sini!"
-
-    iwanka "Terjebak di rumah ini adalah hal terburuk!"
-
+    anon "Wow, okay."
+    iwanka "I am so glad you're here!"
+    iwanka "Being stuck in this house is the absolute worst!"
     anon @ -m_talk "..."
-    iwanka "Jadi apa yang terjadi?"
-
+    iwanka "So what's going on?"
 
     menu iwanka_button_bedroom.choice:
         "{b}Consuela{/b}." if M_consuela.between_states(S_con01_init, S_con01_give) and not M_consuela.finished_state(S_con01_skip):
             jump con01_init_iwanka
-        "Bekerja untuk ayahmu?":
+        "Working for your dad?":
 
             jump iwanka_button_bedroom.work
-        "kapal pesiar":
+        "The Yacht":
 
             jump iwanka_button_bedroom.yacht
-        "Seks oral.":
+        "Blowjob.":
 
             jump iwanka_button_bedroom.blowjob
 
-        "Seks." if M_iwanka.finished_state(S_iwa01_pier):
+        "Sex." if M_iwanka.finished_state(S_iwa01_pier):
             jump iwanka_button_bedroom.sex
-        "Saya harus pergi.":
+        "I should go.":
 
             pass
 
-    anon f_normal @ a_wave "Saya harus pergi."
-
-    iwanka f_normal "Ya baiklah."
-
-    iwanka f_smirk "Temui aku di kapal pesiar nanti dan kita akan berpesta, oke?"
-
-    anon "Ya mungkin."
-
-    iwanka @ f_laugh "Sampai jumpa, {b}[firstname]{/b}."
-
+    anon f_normal @ a_wave "I should go."
+    iwanka f_normal "Yeah, okay."
+    iwanka f_smirk "Meet me on the yacht later and we'll party, okay?"
+    anon "Yeah, maybe."
+    iwanka @ f_laugh "See ya, {b}[firstname]{/b}."
     hide anon with dissolve
     return
 
 
 label iwanka_button_bedroom.blowjob:
-    anon f_normal "Bolehkah memberiku pekerjaan pukulan?"
-
-    iwanka f_smirk "Hehe, benarkah?"
-
-    anon "Ya kenapa tidak?"
-
-    iwanka "Umm, kamu sadar ayahku akan mengirimmu ke negara dunia ketiga jika dia menangkap kita, kan?"
-
-    anon f_worried "Tunggu, apa?"
-
-    iwanka "Ya."
-
+    anon f_normal "Mind giving me a blowjob?"
+    iwanka f_smirk "Heh, really?"
+    anon "Yeah, why not?"
+    iwanka "Umm, you realize my father will ship you off to a third world country if he catches us, right?"
+    anon f_worried "Wait, what?"
+    iwanka "Yeah."
     pause
-    anon "Kamu serius?"
-
-    iwanka "Sangat serius."
-
-    iwanka "Dan itu setelah dia mengebirimu."
-
+    anon "You're serious?"
+    iwanka "Dead serious."
+    iwanka "And that's after he has you castrated."
     anon f_surprised "!!!"
     iwanka @ -m_talk "Mhmm."
-
     show anon f_surprised_down
     pause
-    iwanka "Anda masih menginginkan pekerjaan pukulan itu?"
-
-    anon f_worried "saya-"
-
-    anon f_shy a_behind_head "Umm, kamu tahu... Setelah dipikir-pikir lagi..."
-
+    iwanka "You still want that blowjob?"
+    anon f_worried "I-"
+    anon f_shy a_behind_head "Umm, you know... On second thought..."
     iwanka @ f_laugh "Haha!"
-
-    iwanka "Menurutku tidak."
-
+    iwanka "I didn't think so."
     show anon a_idle with dissolve
     jump iwanka_button_bedroom.choice
 
 
 label iwanka_button_bedroom.sex:
-    anon f_flirt "Ingin melakukannya?"
-
-    iwanka f_smirk "Hehe, benarkah?"
-
-    anon "Ya kenapa tidak?"
-
-    iwanka f_excited "Umm, kamu sadar ayahku akan mengirimmu ke negara dunia ketiga jika dia menangkap kita, kan?"
-
-    anon f_worried a_behind_head "Tunggu, apa?"
-
-    iwanka f_smirk "Ya."
-
+    anon f_flirt "Want to do it?"
+    iwanka f_smirk "Heh, really?"
+    anon "Yeah, why not?"
+    iwanka f_excited "Umm, you realize my father will ship you off to a third world country if he catches us, right?"
+    anon f_worried a_behind_head "Wait, what?"
+    iwanka f_smirk "Yeah."
     show anon f_surprised_teeth
     pause
-    anon f_worried "Kamu serius?"
-
-    iwanka "Sangat serius."
-
-    iwanka "Dan itu setelah dia mengebirimu."
-
+    anon f_worried "You're serious?"
+    iwanka "Dead serious."
+    iwanka "And that's after he has you castrated."
     anon "!!!"
     iwanka @ -m_talk "Mhmm."
-
     pause
-    iwanka "Anda masih menginginkan seks?"
-
-    anon "saya-"
-
-    anon "Umm, kamu tahu... Setelah dipikir-pikir lagi..."
-
+    iwanka "You still want sex?"
+    anon "I-"
+    anon "Umm, you know... On second thought..."
     iwanka "Haha!"
-
-    iwanka "Menurutku tidak."
-
+    iwanka "I didn't think so."
     show anon a_idle with dissolve
     jump iwanka_button_bedroom.choice
 
 
 label iwanka_button_bedroom.work:
-    anon f_worried "Bukankah kamu seharusnya membantu ayahmu mengerjakan pekerjaannya?"
-
-    iwanka f_normal "Tidak, aku sedang mogok kerja."
-
-    anon "Memukul?"
-
-    iwanka f_annoyed "Itu benar."
-
-    iwanka "Saya menuntut jam kerja yang lebih pendek dan istirahat yang lebih lama!"
-
-    iwanka @ a_finger "Saya ingin kantor saya sendiri dengan TV plasma dan salah satu kursi pijat!"
-
+    anon f_worried "Aren't you supposed to be helping your dad with his work?"
+    iwanka f_normal "No, I'm on strike."
+    anon "Strike?"
+    iwanka f_annoyed "That's right."
+    iwanka "I demand shorter hours and longer breaks!"
+    iwanka @ a_finger "I want my own office with a plasma TV and one of those massage chairs!"
     anon @ -m_talk "..."
-    iwanka "Tunjangan tambahan lima ribu dolar seminggu!"
-
-    iwanka "Irisan lemon segar untuk air kemasan saya!"
-
+    iwanka "An extra five thousand dollars a week in allowance!"
+    iwanka "Fresh lemon wedges for my bottled water!"
     pause
-    iwanka "Dan yang tak kalah pentingnya, saya ingin omong kosong tahanan rumah ini berakhir!"
-
-    iwanka f_smirk "Kemudian, dan hanya setelah itu saya akan kembali bekerja."
-
+    iwanka "And last but not least, I want this house arrest bullshit to be over!"
+    iwanka f_smirk "Then, and only then will I get back to work."
     anon "Wow."
-
-    anon @ a_behind_head "Hmm, oke."
-
-    iwanka f_annoyed "Saya tidak akan diperlakukan seperti tahanan di rumah saya sendiri."
-
-    iwanka @ a_finger "Ini adalah Amerika, bukan Tiongkok komunis!"
-
+    anon @ a_behind_head "Umm, okay."
+    iwanka f_annoyed "I'm not going to be treated like some prisoner in my own home."
+    iwanka @ a_finger "This is America, not communist China!"
     jump iwanka_button_bedroom.choice
 
 
 label iwanka_button_bedroom.yacht:
-    anon f_normal "Setidaknya kamu masih bisa menyelinap ke kapal pesiar, bukan?"
-
-    iwanka f_smirk "Ya, dan terima kasih Tuhan untuk itu!"
-
-    iwanka "Saya akan memanjat tembok jika Anda tidak menunjukkan kepada saya cara melakukan itu."
-
-    anon "Bukan apa-apa, aku hanya senang bisa membantu."
-
-    iwanka "Tidak, aku berhutang banyak padamu."
-
+    anon f_normal "At least you can still sneak out to the yacht, right?"
+    iwanka f_smirk "Yes, and thank god for that!"
+    iwanka "I'd be climbing the walls if you hadn't shown me how to do that."
+    anon "It was nothing, I'm just happy I could help."
+    iwanka "No, I owe you big time."
     show iwanka a_touch_sexy:
         xoffset -200
     show anon f_shy behind iwanka
     with dissolve
-    iwanka "Dan aku tak sabar untuk membalas budimu... Berkali-kali."
-
-    anon "{i}*Gulp*{/i} Y-ya, aku juga menantikannya."
-
+    iwanka "And I'm looking forward to repaying you... Many, many times."
+    anon "{i}*Gulp*{/i} Y-yeah, I'm looking forward to that too."
     show iwanka a_idle behind anon with dissolve:
         xoffset 0
-    iwanka "Tapi tidak di sini."
-
-    iwanka "Ayahku akan membunuhmu jika dia menangkap kami."
-
+    iwanka "But not here."
+    iwanka "My father would kill you if he caught us."
     jump iwanka_button_bedroom.choice
 # Decompiled by unrpyc: https://github.com/CensoredUsername/unrpyc

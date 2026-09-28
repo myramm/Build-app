@@ -24,7 +24,6 @@ screen debug_menu_popup():
                            'ABCDEFGHIJKLMNOPQRSTUVWXYZ'
                            '0123456789 ')
                 color "#fefefe"
-
                 length 60
                 size 20
                 value ScreenVariableInputValue("understand_input")
@@ -135,8 +134,7 @@ screen debug_menu(current_screen):
 
             elif current_screen == "time":
                 textbutton "Tick Timer" action Function(game.timer.tick)
-                text "Tetapkan hari ke:"
-
+                text "Set day to:"
                 hbox:
                     textbutton "Mon." action Function(game.timer.set_time, 1, 0)
                     textbutton "Tue." action Function(game.timer.set_time, 1, 1)
@@ -145,15 +143,13 @@ screen debug_menu(current_screen):
                     textbutton "Fri." action Function(game.timer.set_time, 1, 4)
                     textbutton "Sat." action Function(game.timer.set_time, 1, 5)
                     textbutton "Sun." action Function(game.timer.set_time, 1, 6)
-                text "Tetapkan waktu untuk:"
-
+                text "Set time to:"
                 hbox:
                     textbutton "Morning" action Function(game.timer.set_time, 0)
                     textbutton "Afternoon" action Function(game.timer.set_time, 1)
                     textbutton "Evening" action Function(game.timer.set_time, 2)
                     textbutton "Night" action Function(game.timer.set_time, 3)
-                text "Lewati Maju:"
-
+                text "Skip Forward :"
                 hbox:
                     textbutton "Day" action Function(game.timer.skip_forward, 1)
                     textbutton "Week" action Function(game.timer.skip_forward, 7)
@@ -185,8 +181,7 @@ screen debug_menu(current_screen):
                         cols 1
                         draggable True
                         mousewheel True
-                        scrollbars "vertikal"
-
+                        scrollbars "vertical"
                         xfill True
                         for machine in sorted(machines, key=lambda m: m._name):
                             hbox:
@@ -211,8 +206,7 @@ screen debug_menu(current_screen):
                         cols 1
                         draggable True
                         mousewheel True
-                        scrollbars "vertikal"
-
+                        scrollbars "vertical"
                         xfill True
                         for location in sorted(locations, key=lambda l: l.name):
                             hbox:
@@ -247,7 +241,7 @@ screen debug_menu(current_screen):
                                             text_size 15
                                             xsize 120
                                     if location != player.location:
-                                        textbutton "Pindahkan pemain":
+                                        textbutton "Move player":
                                             action (Function(renpy.scene, layer='screens'),
                                                         Function(player.go_to, location),
                                                         Function(location.call))
@@ -262,14 +256,12 @@ screen debug_menu(current_screen):
                             text "Filter: " size 20
                             input color "#fefefe" length 60 size 20:
                                 allow "abcdefghijklmnopqrstuvwxyz0123456789_"
-
                                 value ScreenVariableInputValue("items_input")
                     vpgrid:
                         cols 1
                         draggable True
                         mousewheel True
-                        scrollbars "vertikal"
-
+                        scrollbars "vertical"
                         xfill True
                         for item, in_inventory in search_item(items_input):
                             hbox:
@@ -300,7 +292,7 @@ screen debug_menu(current_screen):
             idle "buttons/debug_console.png"
             hover HoverImage("buttons/debug_console.png")
             action Hide("debug_menu"), Call("_console")
-        textbutton "Riwayat Konsol.":
+        textbutton "Console Hist.":
             action Function(print, console_history())
             pos 700, 80
             text_size 15
@@ -319,8 +311,7 @@ screen debug_menu_machine_vars(machine=None):
             cols 1
             draggable True
             mousewheel True
-            scrollbars "vertikal"
-
+            scrollbars "vertical"
             xfill True
             for varname, varvalue in machine._vars.items():
                 hbox:

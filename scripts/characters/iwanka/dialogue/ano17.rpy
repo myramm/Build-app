@@ -6,129 +6,80 @@ label ano17_porn_iwanka:
     show iwanka b_club_back
     show anon f_shy with dissolve:
         xoffset -100
-    anon "Apakah musik ini oke?"
-
+    anon "Is this music okay?"
     show iwanka b_club with dissolve
     iwanka @ -m_talk "Hmm?"
-
-    iwanka "Ya, tidak apa-apa."
-
+    iwanka "Yeah, it's fine."
     show iwanka b_club_back with dissolve
     show anon f_flirt_low
-    iwanka "Apakah ini ikan asli?"
-
-    anon "Ya."
-
-    iwanka "Sangat keren!"
-
+    iwanka "Are these real fish?"
+    anon "Yeah."
+    iwanka "Very cool!"
     show iwanka b_club
     show anon f_shy
     with dissolve
-    iwanka "Saya selalu menginginkan akuarium tetapi ibu saya tidak mengizinkan saya memilikinya."
-
-    anon "Kenapa?"
-
-    iwanka @ f_eyeroll "Karena dia hampir tenggelam di kolam koi saat aku masih kecil."
-
-    anon f_surprised "Apa?!"
-
-    iwanka @ f_laugh "Hehe, ya!"
-
-    anon "Bagaimana hal itu bisa terjadi?"
-
-    iwanka f_smirk "Kami dulu punya satu di halaman belakang rumah lama kami."
-
-    iwanka "Dan suatu malam, yah... Dia terlalu banyak minum dan terjatuh."
-
-    anon "Anda bercanda!"
-
-    iwanka @ f_laugh "Tidak."
-
-    iwanka "Rupanya, bagian bawahnya sangat licin karena lumut atau semacamnya dan dia tidak bisa berdiri dengan sepatu hak tingginya."
-
-    anon f_worried "Bagaimana dia keluar?"
-
-    iwanka @ f_laugh "Heh, salah satu kepala pelayan harus melompat dan menyelamatkannya..."
-
-    iwanka "... Itu lucu sekali!"
-
-    anon "Dan itulah alasan dia tidak mengizinkan Anda memiliki akuarium?"
-
-    iwanka "Ya, itulah alasan utamanya."
-
-    iwanka "Dia tidak pernah benar-benar melihat betapa menariknya memiliki hewan peliharaan."
-
-    iwanka @ f_drunk a_point "\"Ajak saja salah satu pelayan jalan-jalan jika kamu sangat membutuhkan hewan peliharaan, {b}Iwanka{/b}!\""
-
+    iwanka "I always wanted an aquarium but my mom won't let me have one."
+    anon "How come?"
+    iwanka @ f_eyeroll "Because she almost drowned in a koi pond when I was little."
+    anon f_surprised "What?!"
+    iwanka @ f_laugh "Hehe, yup!"
+    anon "How did that happen?"
+    iwanka f_smirk "We used to have one in the backyard of our old mansion."
+    iwanka "And one night, well... She had a little too much to drink and fell in."
+    anon "You're kidding!"
+    iwanka @ f_laugh "Nope."
+    iwanka "Apparently, the bottom was really slick with moss or something and she couldn't stand up in her high heels."
+    anon f_worried "How did she get out?"
+    iwanka @ f_laugh "Heh, one of the butlers had to jump in and rescue her..."
+    iwanka "... It was hilarious!"
+    anon "And that's the reason she won't let you have an aquarium?"
+    iwanka "Yeah, that's the big reason."
+    iwanka "She never really saw the appeal in having pets."
+    iwanka @ f_drunk a_point "\"Just take one of the maids for a walk if you're so desperate for a pet, {b}Iwanka{/b}!\""
     show anon f_surprised_teeth
-    iwanka "Yang mana, tidak berhasil. FYI."
-
-    iwanka f_snob "Lupe memang mengeluh saat aku memasangkan tali itu padanya..."
-
+    iwanka "Which, doesn't work FYI."
+    iwanka f_snob "Lupe sure did complain when I put that leash on her..."
     show erik a_glass behind iwanka:
         flip
         xoffset 50
     show anon f_shock
     with dissolve
     pause
-    iwanka f_smirk @ f_laugh "... Dan dia tidak pandai melakukan trik."
-
+    iwanka f_smirk @ f_laugh "... And she wasn't very good at doing tricks."
     anon f_surprised @ -m_talk "..."
-    erik f_woozy "{i}*Ahem*{/i} Minuman Anda, Nyonya."
-
+    erik f_woozy "{i}*Ahem*{/i} Your drink, milady."
     show erik a_idle
     show iwanka a_glass f_laugh
     show anon f_normal
     with dissolve
-    iwanka "hehe!"
-
-    iwanka a_glass_drink f_drink @ f_smirk a_glass_cheer "Terima kasih, tuan yang baik hati!"
-
+    iwanka "Hehe!"
+    iwanka a_glass_drink f_drink @ f_smirk a_glass_cheer "Thank you, kind sir!"
     pause
-    iwanka f_drunk a_glass_empty "Mmm, ini enak sekali!"
-
-    iwanka "Apakah kamu suka, cahaya bulan sebagai bartender atau semacamnya, bintik-bintik?"
-
-    erik f_shy "Aku?"
-
-    erik "T-tidak, aku belum pernah merawat bar seumur hidupku..."
-
-    iwanka "Anda harus memeriksanya!"
-
+    iwanka f_drunk a_glass_empty "Mmm, these are so good!"
+    iwanka "Do you like, moonlight as a bartender or something, freckles?"
+    erik f_shy "Me?"
+    erik "N-no, I've never tended a bar in my life..."
+    iwanka "You should look into it!"
     show iwanka a_glass_empty_give with dissolve
-    erik f_normal "Maksudku, aku memang menghabiskan sedikit waktu untuk meningkatkan skill alkimiaku tapi itu hanya untuk sebuah pencapaian."
-
+    erik f_normal "I mean, I did spend a little bit of time leveling up my alchemy skill but that was just for an achievement."
     show iwanka f_laugh a_idle
     show erik a_glass_empty
     with dissolve
-    iwanka "Hehe, apa?!"
-
+    iwanka "Heh, what?!"
     show iwanka f_drunk
-    erik "Saya agak terlalu komplet dalam hal {i}Dunia Orcette{/i}."
-
-    iwanka @ f_disgusted "Saya tidak tahu apa yang Anda bicarakan."
-
-    iwanka @ a_point "Fiuh, sepertinya minuman ini mulai menarik perhatianku!"
-
+    erik "I'm a bit of a completionist when it comes to {i}World of Orcette{/i}."
+    iwanka @ f_disgusted "I have no idea what you're talking about."
+    iwanka @ a_point "Phew, I think these drinks are starting to get to me!"
     show erik f_woozy
-    anon f_worried "Mungkin sebaiknya kita duduk..."
-
-    iwanka "Hehe, oke."
-
-    anon "... Anda dapat bercerita lebih banyak tentang keluarga Anda."
-
-    iwanka f_disgusted "Eww, tunggu... Tidak."
-
+    anon f_worried "Maybe we should go sit down..."
+    iwanka "Heh, okay."
+    anon "... You can tell me more about your family."
+    iwanka f_disgusted "Eww, wait... No."
     anon @ -m_talk "Hmm?"
-
-    iwanka "Aku tidak mau bicara tentang keluargaku, mereka payah!"
-
-    anon "Itu-"
-
-    iwanka f_drunk @ f_laugh "Ayo menari!"
-
-    anon f_shy "Ehh, aku bukan penari yang hebat..."
-
+    iwanka "I don't wanna talk about my family, they suck!"
+    anon "That's-"
+    iwanka f_drunk @ f_laugh "Let's dance!"
+    anon f_shy "Ehh, I'm not much of a dancer..."
     show layer master:
         ease 1.6 xpos 685
     with None
@@ -141,8 +92,7 @@ label ano17_porn_iwanka:
         unflip
         xoffset -450
     with {'master': MultipleTransition((False, Pause(.2), False, slowdissolve, True))}
-    iwanka "Ayo, ini akan menyenangkan!"
-
+    iwanka "C'mon, it'll be fun!"
     show iwanka b_club:
         flip
         xoffset -685
@@ -150,141 +100,98 @@ label ano17_porn_iwanka:
         flip
         xoffset -885
     with {'master': dissolve}
-    iwanka "Jika Anda memainkan kartu Anda dengan benar, saya mungkin akan membiarkan Anda merasakannya."
-
+    iwanka "If you play your cards right, I might even let you cop a feel."
     show erik f_nervous
     show anon f_surprised
     pause
     show anon f_normal behind iwanka with {'master': dissolve}:
         unflip
         xoffset -550
-    iwanka "Bagaimana menurutmu, bintik-bintik?"
-
-    iwanka @ a_point "Anda ingin berdansa dengan kami?"
-
+    iwanka "What do you say, freckles?"
+    iwanka @ a_point "You wanna dance with us?"
     erik "Ehh."
-
     show erik a_whisper f_thinking with dissolve:
         flip
         xoffset -80
-    erik "Apa itu, {b}Tam{/b}?"
-
+    erik "What's that, {b}Tam{/b}?"
     show erik f_worried_right
     pause
     show anon f_worried
     show iwanka f_disgusted
-    erik f_thinking "Tentu, saya akan segera ke sana!"
-
+    erik f_thinking "Sure, I'll be right there!"
     show erik a_idle f_nervous with dissolve:
         unflip
         xoffset -450
-    erik "Kalian berdua silakan saja, dia memanggilku."
-
-    iwanka "Aku tidak mendengar apa pun..."
-
+    erik "You two go ahead, she's calling me."
+    iwanka "I didn't hear anything..."
     hide erik with {'master': dissolve}
-    erik "Aku akan memberimu isi ulang dalam perjalanan pulang!"
-
-    iwanka f_smirk @ f_excited "Buatlah menjadi ganda!!"
-
-    erik "Saya tidak tahu apa artinya tapi oke!"
-
-    iwanka "Menurutku, hanya kamu dan aku saja, ya?"
-
+    erik "I'll get you a refill on the way back!"
+    iwanka f_smirk @ f_excited "Make it a double!!"
+    erik "I don't know what that means but okay!"
+    iwanka "I guess it's just you and me then, huh?"
     show anon f_shy with dissolve:
         flip
         xoffset -785
-    anon "Y-ya, menurutku..."
-
+    anon "Y-yeah, I guess..."
     $ M_iwanka.set('sex speed', .3)
     show iwanka b_club_dance with dissolve
     show anon f_surprised a_surprised_up_both with dissolve
     pause
-    anon f_flirt_low a_sides "Wah, kamu um..."
-
-    anon "... Sangat pandai dalam hal ini."
-
-    iwanka @ -m_talk "hehe!"
-
+    anon f_flirt_low a_sides "Whoa, you're umm..."
+    anon "... Really good at this."
+    iwanka @ -m_talk "Hehe!"
     pause
     show iwanka b_club with dissolve
     show anon f_shy
-    iwanka "Nah, tunggu apa lagi?"
-
-    anon "Hmm."
-
-    anon "O-oke."
-
+    iwanka "Well, what are you waiting for?"
+    anon "Umm."
+    anon "O-okay."
     show anon b_dressed_dance_shy with dissolve
     show iwanka f_disgusted
     pause
-    iwanka f_smirk @ a_point "Wow, kamu payah dalam hal ini..."
-
+    iwanka f_smirk @ a_point "Wow, you do suck at this..."
     show anon b_dressed f_unimpressed with fastdissolve
-    anon "Sudah kubilang!"
-
+    anon "I told you!"
     iwanka @ f_laugh "Hahahaah!"
-
     pause
-    iwanka "Masalahmu adalah kamu terlalu minder."
-
+    iwanka "Your problem is you're too self-conscious."
     anon f_worried @ -m_talk "Hmm?"
-
-    iwanka "Anda perlu sedikit rileks."
-
-    iwanka "Menari adalah tentang bersenang-senang dan tidak mengkhawatirkan apa yang dipikirkan orang lain."
-
+    iwanka "You need to relax a little."
+    iwanka "Dancing is all about having fun and not worrying what other people think."
     show iwanka b_club_dance_back behind anon
     show anon f_flirt_low
     with dissolve
     pause
-    iwanka @ -m_talk "Melihat?"
-
-    anon "Eh ya."
-
+    iwanka @ -m_talk "See?"
+    anon "Uh huh."
     pause
-    iwanka @ -m_talk "Itu mudah."
-
-    iwanka @ -m_talk "Pindah saja ke musik dan lakukan apa yang terasa alami."
-
+    iwanka @ -m_talk "It's easy."
+    iwanka @ -m_talk "Just move to the music and do what feels natural."
     show anon behind iwanka
     show iwanka b_club_dance with dissolve
-    anon "Eh ya."
-
+    anon "Uh huh."
     pause
     show iwanka b_club
     show anon f_shy a_behind_head
     with dissolve
-    iwanka "Ayo goyangkan pinggulmu {b}[firstname]{/b}!"
-
-    anon "Ehh, menurutku lebih baik aku menonton saja..."
-
-    iwanka "Cih, jangan jadi pengacau pesta!"
-
+    iwanka "C'mon, shake those hips {b}[firstname]{/b}!"
+    anon "Ehh, I really think I'm better off watching..."
+    iwanka "Tsk, don't be a party pooper!"
     show iwanka b_club_dance_back behind anon with dissolve
-    iwanka @ -m_talk "Diam saja dan menari!"
-
+    iwanka @ -m_talk "Just shut up and dance!"
     pause
-    anon "Eh, benar..."
-
+    anon "Ehh, right..."
     show anon b_dressed_dance_flirt_low with dissolve
     pause
-    anon @ -m_talk "(Ya ampun, lihat pinggulnya...)"
-
-    anon b_dressed_dance_unimpressed @ -m_talk "( ... Dan di sini aku terlihat seperti orang idiot. )"
-
+    anon @ -m_talk "( Oh man, look at those hips go... )"
+    anon b_dressed_dance_unimpressed @ -m_talk "( ... And here I am looking like an idiot. )"
     pause
-    iwanka @ -m_talk "Bagaimana kabarnya kembali ke sana?"
-
-    anon b_dressed_dance_flirt_low @ b_dressed_dance_shy_talk "Hanya menikmati pemandangan."
-
-    iwanka @ -m_talk "hehe!"
-
-    anon @ -m_talk "(Tolong jangan berbalik!)"
-
+    iwanka @ -m_talk "How's it going back there?"
+    anon b_dressed_dance_flirt_low @ b_dressed_dance_shy_talk "Just enjoying the view."
+    iwanka @ -m_talk "Hehe!"
+    anon @ -m_talk "( Please don't turn around! )"
     pause
-    erik "Oke, siapa yang siap minum lagi?!"
-
+    erik "Okay, who's ready for another drink?!"
     show erik a_glass:
         unflip
         xoffset -450
@@ -293,466 +200,276 @@ label ano17_porn_iwanka:
         unflip
         xoffset -400
     with {'master': dissolve}
-    iwanka "{i}*Terkesiap*{/i} Aku!!"
-
+    iwanka "{i}*Gasp*{/i} Me!!"
     hide iwanka
     hide erik
     show anon b_dressed_catch_breath:
         flip
         xoffset -785
     with slowdissolve
-    anon @ -m_talk "(Oh, syukurlah.)"
-
-    anon @ -m_talk "(Saya harus berterima kasih kepada {b}Erik{/b} atas penyelamatannya setelah dia pergi... )"
-
-    erik "Ayo duduk di sofa dan bantu aku memilih permainan papan!"
-
-    iwanka "Permainan papan?"
-
+    anon @ -m_talk "( Oh, thank goodness. )"
+    anon @ -m_talk "( I'll have to thank {b}Erik{/b} for the rescue after she leaves... )"
+    erik "Come sit on the couch and help me pick a board game!"
+    iwanka "Board game?"
     show anon f_surprised b_dressed a_surprised_up_both with dissolve
     pause
-    anon a_fists f_unimpressed "(... Dan setelah aku selesai membunuhnya!)"
-
+    anon a_fists f_unimpressed "( ... And once I'm finished murdering him! )"
 
     scene location_erik_basement_back_couch
     show iwanka b_sidebed_right a_glass f_disgusted
     show erik b_sidebed a_orcette_figure
     with fade
-    iwanka "Dan permainan ini disebut {i}Orcette Party{/i}?"
-
+    iwanka "And this game is called {i}Orcette Party{/i}?"
     erik @ -m_talk "Mhmm!"
-
-    erik "Ini Orcette di sini, dia adalah pemimpin faksi Orc."
-
-    iwanka f_smirk "Dia seksi!"
-
-    erik "Oh, tentu saja!"
-
-    erik "Dia juga sangat kuat!"
-
-    erik "Anda setidaknya harus berada di level tujuh puluh lima sebelum Anda dapat memberikan tantangan padanya."
-
-    iwanka f_disgusted "Um, oke..."
-
+    erik "This is Orcette right here, she's the leader of the orc faction."
+    iwanka f_smirk "She's hot!"
+    erik "Oh, totally!"
+    erik "She's like crazy powerful too!"
+    erik "You have to be at least level seventy-five before you can even issue a challenge to her."
+    iwanka f_disgusted "Umm, okay..."
     show anon b_sit f_worried with dissolve:
         xoffset -250
-    iwanka "... Tapi apa itu Orc?"
-
-    erik f_surprised "Hah?"
-
-    erik f_worried "Kamu tidak serius, kan?"
-
-    anon "{b}Erik{/b}, tidak semua orang menyukai permainan peran fantasi..."
-
-    erik "Y-ya, oke."
-
-    erik f_normal "Orc adalah suku humanoid hijau yang tinggal di gua."
-
-    iwanka f_suspicious "Humanoid?"
-
-    erik "Artinya mereka memiliki ciri-ciri manusia."
-
-    erik "Tahukah Anda, bipedal, dua lengan, relatif tinggi dibandingkan lebar..."
-
+    iwanka "... But what's an orc?"
+    erik f_surprised "Huh?"
+    erik f_worried "You're not serious, are you?"
+    anon "{b}Erik{/b}, not everyone is into fantasy roleplaying games..."
+    erik "Y-yeah, okay."
+    erik f_normal "Orcs are a tribal, cave-dwelling society of green humanoids."
+    iwanka f_suspicious "Humanoids?"
+    erik "It means they have human characteristics."
+    erik "You know, bipedal, two arms, relatively tall compared to wide..."
     iwanka f_disgusted @ -m_talk "..."
-    anon f_unimpressed "Katanya mereka mirip seperti kita, tapi hijau."
-
-    iwanka b_sidebed_left f_normal "Oh baiklah!"
-
-    iwanka "Itu masuk akal."
-
+    anon f_unimpressed "He's saying they look just like us but green."
+    iwanka b_sidebed_left f_normal "Oh, okay!"
+    iwanka "That makes sense."
     show iwanka b_sidebed_right with {'master': dissolve}
-    erik "Yah, secara teknis mereka memiliki lebih banyak kesamaan dengan elf daripada manusia, tapi menurutku kita tidak perlu membahasnya..."
-
+    erik "Well, technically they have more in common with elves than humans but I suppose we don't have to get into that..."
     show iwanka a_glass_orcette f_smirk_down
     show erik a_idle
     with dissolve
     pause
-    iwanka @ f_suspicious "Apakah payudaranya seharusnya asli?"
-
-    iwanka @ f_laugh "Karena saya dapat memberitahu Anda dari pengalaman bahwa dibutuhkan banyak uang untuk membuat mereka berdiri seperti itu!"
-
+    iwanka @ f_suspicious "Are her tits supposed to be real?"
+    iwanka @ f_laugh "Because I can tell you from experience that it costs good money to get them to stand up like that!"
     show iwanka f_drink a_glass_drink b_sidebed_left
     show erik a_orcette_figure
     with dissolve
-    erik "Ehh, mereka mungkin ditingkatkan secara ajaib atau semacamnya?"
-
+    erik "Ehh, they might be magically enhanced or something?"
     show iwanka a_glass f_suspicious b_sidebed_right with dissolve
-    iwanka @ f_suspicious "Ditingkatkan secara ajaib?"
-
-    anon "Tahukah kamu, kita sebenarnya tidak perlu membicarakan hal ini, {b}Iwanka{/b}."
-
+    iwanka @ f_suspicious "Magically enhanced?"
+    anon "You know, we really don't have to talk about this, {b}Iwanka{/b}."
     show iwanka b_sidebed_left f_normal with dissolve
-    iwanka "Tidak, tidak apa-apa."
-
-    iwanka @ f_suspicious "Itu umm... Menarik... menurutku."
-
+    iwanka "No, it's okay."
+    iwanka @ f_suspicious "It's umm... Interesting... I think."
     show iwanka b_sidebed_right a_glass_orcette
     show erik a_idle
     with dissolve
-    iwanka "Jadi bisakah aku menjadi Orcette?"
-
-    erik @ f_laugh "Tentu!"
-
-    iwanka @ f_suspicious_down "Apakah dia mendapatkan pedang atau semacamnya?"
-
-    erik "Sebenarnya dia menggunakan tombak yang terbuat dari tulang ular raksasa."
-
-    iwanka @ f_laugh "Bagus sekali!"
-
-    iwanka f_smirk "Oke, berikan tombakku, aku ingin mengacau!"
-
-    erik "Lihat, aku tahu dia akan terlibat dalam hal ini!"
-
+    iwanka "So can I be Orcette?"
+    erik @ f_laugh "Sure!"
+    iwanka @ f_suspicious_down "Does she get a sword or something?"
+    erik "Actually, she uses a spear made from the bones of a giant serpent."
+    iwanka @ f_laugh "Dope!"
+    iwanka f_smirk "Okay, give me my spear, I wanna fuck some shit up!"
+    erik "See, I knew she'd be into this!"
     anon @ -m_talk "..."
-    erik "Aku akan mengambil sisanya."
-
-    erik "{b}[firstname]{/b}, apakah kamu ingin menjadi Ivar yang Tak Puas atau Joxer yang Berkah?"
-
-    anon @ f_skeptical "Apakah itu penting?"
-
+    erik "I'll go get the rest of the stuff."
+    erik "{b}[firstname]{/b}, do you wanna be Ivar the Insatiable or Joxer the Well-endowed?"
+    anon @ f_skeptical "Does it matter?"
     show iwanka b_sidebed_left with dissolve
-    iwanka "Pergilah bersama yang berkekuatan besar, lalu kita lihat siapa yang memiliki tombak lebih besar."
-
+    iwanka "Go with the well-endowed one, then we'll see who has the bigger spear."
     show erik f_worried
     show anon f_shy of_blush
     with {'master': dissolve}
     anon f_shy "Ehh."
-
     show anon -of_blush with {'master': slowdissolve}
     iwanka @ f_laugh "Hehehe!"
-
     show iwanka b_sidebed_right with {'master': dissolve}
-    erik "Tidak tidak tidak!"
-
-    erik f_normal "Joxer tidak menggunakan tombak."
-
-    erik "Dia seorang penyair, jadi dia menggunakan kecapinya untuk melawan kejahatan!"
-
-    iwanka f_smirk @ f_laugh "Oh, seorang musisi, bahkan lebih baik lagi!"
-
-    iwanka "Mereka seperti, sangat seksi."
-
-    erik @ f_laugh "Saya akan segera kembali!"
-
-    iwanka a_glass_finger "Tunggu, bintik-bintik."
-
+    erik "No, no, no!"
+    erik f_normal "Joxer doesn't use spears."
+    erik "He's a bard, so he uses his lute to combat evil!"
+    iwanka f_smirk @ f_laugh "Oh, a musician, even better!"
+    iwanka "They are like, so hot."
+    erik @ f_laugh "I'll be right back!"
+    iwanka a_glass_finger "Hold up, freckles."
     show iwanka a_glass_drink f_drink b_sidebed_left with dissolve
     pause
     show iwanka a_idle f_drunk b_sidebed_right with dissolve
-    iwanka @ -m_talk "Hmm!!!"
-
-    iwanka "Pukul aku lagi!"
-
-    erik a_thumbs "O-oke."
-
+    iwanka @ -m_talk "Mmm!!!"
+    iwanka "Hit me again!"
+    erik a_thumbs "O-okay."
     hide erik
     show iwanka b_sidebed_left f_smirk
     with dissolve
     show anon f_shy
     pause
-    anon "Jadi..."
-
-    iwanka f_drunk "Bolehkah saya memberi tahu Anda sebuah rahasia, {b}[firstname]{/b}?"
-
-    anon "B-yakin?"
-
-    iwanka "Saya seperti, sangat terbuang saat ini."
-
-    anon f_worried "Ya, saya bisa melihatnya."
-
+    anon "So..."
+    iwanka f_drunk "Can I tell you a secret, {b}[firstname]{/b}?"
+    anon "S-sure?"
+    iwanka "I am like, super wasted right now."
+    anon f_worried "Yeah, I can see that."
     iwanka @ f_laugh "Hehehe!"
-
-    anon f_shy "Apakah kamu minum seperti ini di pesta orang tuamu?"
-
-    iwanka @ f_eyeroll "Ah, andai saja..."
-
-    iwanka "... Mereka tidak mengizinkan saya minum selama pesta mereka."
-
-    iwanka @ f_bored "Sebenarnya, menurutku aku belum pernah mabuk seperti ini sejak aku lulus kuliah."
-
+    anon f_shy "Do you drink like this at your parents' parties?"
+    iwanka @ f_eyeroll "Ugh, if only..."
+    iwanka "... They don't allow me to drink during their parties."
+    iwanka @ f_bored "In fact, I don't think I've been this drunk since I left college."
     anon "Oh?"
-
-    iwanka "Ya."
-
-    iwanka "Sangat menyenangkan di sana!"
-
-    iwanka f_sad "Saya berharap saya bisa kembali."
-
+    iwanka "Yeah."
+    iwanka "It was so much fun there!"
+    iwanka f_sad "I wish I could go back."
     pause
-    iwanka f_drunk "Ya ampun, kali ini, tahun pertama..."
-
-    iwanka "... Kami sedang berkendara dengan limusin pesta teman saya Damian dan saya merasa sangat terpukul dengan jello shot, bukan?"
-
-    anon f_worried "Eh ya."
-
-    iwanka "Dan teman saya yang lain, Macy, berkata, \"Kita harus mengerjakan tiang penari telanjang itu bersama-sama!\""
-
-    iwanka "Kedengarannya sangat menyenangkan... Tapi kami sangat terbuang, kami hanya berakhir dalam kekacauan di lantai!"
-
+    iwanka f_drunk "Oh em gee, this one time, freshman year..."
+    iwanka "... We were driving around in my friend Damian's party limousine and I got like, totally hammered on jello shots, right?"
+    anon f_worried "Uh huh."
+    iwanka "And my other friend Macy was like, \"We should totally grind on that stripper pole together!\""
+    iwanka "Which sounded super fun... But we were so wasted, we just ended up in a tangled mess on the floor!"
     iwanka @ f_laugh "Hahahaah!"
-
-    anon f_tired "Eh ya."
-
-    iwanka "Dia hanya berkata, \"Ya ampun, kenapa kamu jadi wanita jalang mabuk yang bodoh?\""
-
-    iwanka "Dan aku seperti, \"Ck, kamulah yang tidak bisa berdiri!\""
-
+    anon f_tired "Uh huh."
+    iwanka "She was all, \"Oh em gee, why are you such a stupid drunk bitch?\""
+    iwanka "And I was like, \"Tsk, you're the one who can't stand up!\""
     anon @ -m_talk "..."
-    iwanka @ f_laugh "Lalu kami bermesraan sementara semua orang di limusin menonton."
-
-    anon "Eh ya."
-
+    iwanka @ f_laugh "Then we made out while everyone in the limo watched."
+    anon "Uh huh."
     pause
-    anon f_surprised "Tunggu-"
-
-    anon "Apa bagian terakhir itu?"
-
-    iwanka "Lalu dia menyerangku."
-
+    anon f_surprised "Wait-"
+    anon "What was that last part?"
+    iwanka "Then she went down on me."
     anon f_shock "..."
-    iwanka @ a_shrug "Ya, aku jadi agak jorok saat minum."
-
-    anon f_shy "Lalu apa yang terjadi?"
-
-    iwanka "Aku muntah di dompetnya."
-
+    iwanka @ a_shrug "Yeah, I get kinda slutty when I drink."
+    anon f_shy "Then what happened?"
+    iwanka "I puked in her purse."
     anon f_disgusted @ -m_talk "!!!"
-    iwanka "Dan itu bukan metafora, aku benar-benar muntah di dompet Vispucci seharga sebelas ratus dolar."
-
-    iwanka @ f_laugh "Dia sangat marah!"
-
-    anon "Y-ya, aku bisa membayangkannya."
-
-    iwanka "Itu menyenangkan!"
-
-    iwanka f_annoyed "Sampai staf ayah saya menemukan videonya secara online."
-
+    iwanka "And that's not a metaphor, I really puked in her eleven-hundred-dollar Vispucci purse."
+    iwanka @ f_laugh "She was maaaad!"
+    anon "Y-yeah, I can imagine."
+    iwanka "It was fun though!"
+    iwanka f_annoyed "Until my dad's staff found the video online."
     anon f_shy "Oh?"
-
-    iwanka "Dia membuatku pulang dan menghabiskan sisa liburan musim semi di resor pulau ini bersama ibuku..."
-
-    anon "Kedengarannya tidak terlalu buruk bagi saya."
-
-    iwanka f_disgusted "Ugh, itu karena kamu tidak mengenal ibuku..."
-
-    anon "Itu benar."
-
-    iwanka "... Yang dia lakukan sepanjang perjalanan hanyalah mengeluh tentang ayahku!"
-
+    iwanka "He made me come home and spend the rest of spring break at this island resort with my mother..."
+    anon "That doesn't sound so bad to me."
+    iwanka f_disgusted "Ugh, that's because you don't know my mother..."
+    anon "That's true."
+    iwanka "... All she did the entire trip was complain about my dad!"
     pause
-    iwanka "Oh, dan persetan dengan anak cabana itu!"
-
+    iwanka "Oh, and screw the cabana boy!"
     anon @ f_surprised "!!!"
-    iwanka @ f_eyeroll "Aku bersumpah, tidak ada terapi yang cukup di dunia ini untuk membantuku mengatasi hal-hal yang kudengar dari kamar hotelnya!"
-
-    anon "Apakah ayahmu dan dia sering bertengkar?"
-
+    iwanka @ f_eyeroll "I swear, there's not enough therapy in the world to help me get over the things I heard coming out of her hotel room!"
+    anon "Do your father and her fight a lot?"
     iwanka f_suspicious @ -m_talk "Hmm?"
-
-    iwanka "Um, kurasa..."
-
-    anon "Apa yang mereka pertengkarkan?"
-
-    iwanka "Ck, kenapa kamu begitu tertarik dengan orang tuaku?"
-
-    anon f_worried "Apakah saya?"
-
-    iwanka "Anda terus bertanya tentang mereka, setiap lima menit!"
-
-    anon "Maafkan aku, aku tidak bermaksud-"
-
-    iwanka f_annoyed "Apa menurutmu aku jelek atau apa?"
-
-    anon "T-tidak, tentu saja tidak!"
-
-    anon "aku hanya... um..."
-
-    anon f_shy "... Mencoba mempelajari lebih lanjut tentang Anda..."
-
+    iwanka "Umm, I guess..."
+    anon "What do they fight about?"
+    iwanka "Tsk, why are you so interested in my parents?"
+    anon f_worried "Am I?"
+    iwanka "You keep asking about them, like, every five minutes!"
+    anon "I'm sorry, I don't mean to-"
+    iwanka f_annoyed "Do you think I'm ugly or something?"
+    anon "N-no, of course not!"
+    anon "I'm just... Umm..."
+    anon f_shy "... Trying to learn more about you..."
     show iwanka f_suspicious
     pause
-    anon "... Karena aku sangat menyukaimu!"
-
-    iwanka f_drunk "Ah, benarkah?!"
-
-    anon "Ya?"
-
-    iwanka @ f_laugh "Kamu manis sekali, {b}[firstname]{/b}!"
-
+    anon "... Because I like you so much!"
+    iwanka f_drunk "Aww, really?!"
+    anon "Yes?"
+    iwanka @ f_laugh "You are so sweet, {b}[firstname]{/b}!"
     anon @ f_grin -m_talk "Mhmm."
-
-    iwanka "Saya pikir kita harus suka, jalan-jalan lagi kapan-kapan!"
-
-    anon "Ya, tentu saja."
-
+    iwanka "I think we should like, totally hang out again sometime!"
+    anon "Yeah, definitely."
     pause
-    anon "Mungkin Anda bisa mengundang saya ke tempat Anda?"
-
-    iwanka f_annoyed "Eh, tidak..."
-
-    anon f_worried "Tidak?"
-
-    iwanka "Yah, itu agak memalukan tapi..."
-
-    iwanka "... Ayahku tidak mengizinkanku mengundang anak laki-laki kemari."
-
-    anon "Benar-benar?"
-
-    iwanka "Ya, itu sudah menjadi peraturan sejak aku berumur tiga belas tahun."
-
-    anon f_confused "Tapi kamu sudah menjadi wanita dewasa..."
-
-    iwanka @ f_drunk "Aku tahu, kan?!"
-
-    iwanka "Ini sangat konyol!"
-
-    anon f_worried "Apakah ada cara agar aku bisa menyelinap masuk atau apa?"
-
-    iwanka f_smirk "Anda ingin mencoba dan menyelinap ke tanah milik ayah saya?"
-
-    anon f_shy "Jika itu berarti aku bisa bertemu denganmu, tentu saja!"
-
-    iwanka f_drunk @ f_laugh "Aduh!!"
-
-    anon "Ide buruk?"
-
-    iwanka @ a_shrug "Ya, tidak jika Anda menikmati disetrum..."
-
+    anon "Maybe you could invite me over to your place?"
+    iwanka f_annoyed "Ehh, no..."
+    anon f_worried "No?"
+    iwanka "Well, it's kinda embarrassing but..."
+    iwanka "... My dad doesn't really let me invite boys over."
+    anon "Really?"
+    iwanka "Yeah, it's been a rule since I was thirteen."
+    anon f_confused "But you're a grown woman..."
+    iwanka @ f_drunk "I know, right?!"
+    iwanka "It's so ridiculous!"
+    anon f_worried "Is there a way I could sneak in or something?"
+    iwanka f_smirk "You wanna try and sneak into my father's estate?"
+    anon f_shy "If it means I get to see you, sure!"
+    iwanka f_drunk @ f_laugh "Aww!!"
+    anon "Bad idea?"
+    iwanka @ a_shrug "Well, not if you enjoy getting tasered in the nuts..."
     anon @ f_surprised_teeth "!!!"
-    anon "{i}*Ahem*{/i} Saya tidak."
-
-    iwanka @ f_laugh "hehe!"
-
-    anon "Ada ide lain?"
-
-    iwanka f_thinking "Nah, ada satu hal yang mungkin berhasil..."
-
+    anon "{i}*Ahem*{/i} I do not."
+    iwanka @ f_laugh "Hehe!"
+    anon "Any other ideas?"
+    iwanka f_thinking "Well, there is one thing that might work..."
     anon f_normal "Oh?"
-
-    iwanka f_smirk "... Kamu ingin tahu?"
-
-    anon f_shy "Saya bersedia."
-
-    iwanka "Anda {i}benarkah{/i} ingin tahu?"
-
-    anon "Ya, tolong!"
-
-    iwanka f_drunk "Sederhana saja."
-
-    iwanka "Yang harus Anda lakukan adalah-"
-
-    erik "aku kembali!"
-
+    iwanka f_smirk "... You wanna know?"
+    anon f_shy "I do."
+    iwanka "You {i}really{/i} wanna know?"
+    anon "Yes, please!"
+    iwanka f_drunk "It's simple."
+    iwanka "All you have to do is-"
+    erik "I'm baaaack!"
     show iwanka b_sidebed_right
     anon f_hurt @ f_surprised "!!!" with hpunch
     show erik b_sidebed a_glass f_woozy with dissolve
-    erik "Apakah kamu merindukanku?"
-
-    anon "(Tidaaaak!!!)"
-
-    iwanka @ f_laugh "Oh, apakah itu minumanku?"
-
-    erik "Tentu saja, Nyonya."
-
+    erik "Did you miss me?"
+    anon "( Nooooo!!! )"
+    iwanka @ f_laugh "Oh, is that my drink?"
+    erik "It sure is, milady."
     show anon f_unimpressed
-    iwanka "Beri aku, beri aku!"
-
+    iwanka "Gimme, gimme!"
     show iwanka a_glass
     show erik a_box
     with dissolve
-    erik "Oke, jadi mungkin perlu waktu beberapa saat untuk memahami semua peraturan..."
-
+    erik "Okay, so it might take a while to get through all the rules..."
     show iwanka a_glass_drink f_drink b_sidebed_left with dissolve
     pause
     show iwanka a_glass f_drunk b_sidebed_right with dissolve
-    erik f_worried "... Dan beberapa bagian permainannya agak... Umm, lengket."
-
-    anon f_worried "{i}*Huh*{/i} Tentu saja mereka..."
-
-    erik f_normal "Tapi tidak ada yang perlu dikhawatirkan."
-
-    erik "Hanya sesuatu yang terjadi pada action figure seiring berjalannya waktu."
-
-    anon f_angry "{b}Erik{/b}, kita sedang ngobrol!"
-
+    erik f_worried "... And a couple of the game pieces are a bit... Umm, sticky."
+    anon f_worried "{i}*Sigh*{/i} Of course they are..."
+    erik f_normal "It's nothing to worry about though."
+    erik "Just something that happens to action figures over time."
+    anon f_angry "{b}Erik{/b}, we are in the middle of a conversation!"
     erik f_worried "O-oh?"
-
-    anon f_shy "Apa yang kamu katakan, {b}Iwanka{/b}?"
-
-    iwanka b_sidebed_left @ f_laugh "Aku ingin menari lagi!"
-
-    anon f_worried "Hah?"
-
+    anon f_shy "What were you saying, {b}Iwanka{/b}?"
+    iwanka b_sidebed_left @ f_laugh "I wanna dance some more!"
+    anon f_worried "Huh?"
     hide iwanka with dissolve
-    anon "Tapi bagaimana dengan-"
-
+    anon "But what about-"
     pause
-    anon f_angry "Sial, {b}Erik{/b}!!"
-
-    erik "Saya pikir kita akan bermain?"
-
-    anon "Tidak ada yang mau bermain permainan papan!"
-
-    erik f_sad "Maafkan aku, {b}[firstname]{/b}... Aku-"
-
-    iwanka "Apakah kalian datang?!"
-
-    anon f_tired @ f_worried_forward "Ya, sebentar."
-
-    anon "Bung, dia baru saja hendak memberitahuku cara masuk ke dalam perkebunan!"
-
-    erik f_angry "Yah, aku tidak tahu itu..."
-
-    erik "Saya hanya mencoba membantu!"
-
-    anon "{i}*Huh*{/i} Kamu baru saja membuatku sangat kacau!"
-
-    erik "Aku bilang aku minta maaf!"
-
+    anon f_angry "Damnit, {b}Erik{/b}!!"
+    erik "I thought we were gonna play?"
+    anon "Nobody wants to play board games!"
+    erik f_sad "I'm sorry, {b}[firstname]{/b}... I-"
+    iwanka "Are you guys coming?!"
+    anon f_tired @ f_worried_forward "Yeah, just a second."
+    anon "Dude, she was just about to tell me how to get inside the estate!"
+    erik f_angry "Well, I didn't know that..."
+    erik "I'm just trying to help!"
+    anon "{i}*Sigh*{/i} You just screwed me so hard!"
+    erik "I said I'm sorry!"
     iwanka "Ahhh!!!"
-
     "{i}*Crash*{/i}" with hpunch
     show anon f_surprised_low
     show erik f_surprised_down a_idle with dissolve:
         flip
         xoffset 550
-    erik "Oh sial!"
-
+    erik "Oh, crap!"
     hide anon with dissolve
     anon "{b}Iwanka{/b}!!!"
 
-
     scene location_erik_basement_back_floor with fade
-    iwanka "Pffft, hahahah!!"
-
-    anon "Apakah kamu baik-baik saja?!"
-
-    iwanka "Saya pikir saya punya oopsi."
-
-    anon "Ya, benar."
-
-    iwanka "Aku sangat terbuang saat ini!!"
-
+    iwanka "Pffft, hahahaah!!"
+    anon "Are you alright?!"
+    iwanka "I think I had an oopsie."
+    anon "Yeah, you did."
+    iwanka "I am so wasted right now!!"
     iwanka "Hahahaah!"
-
     pause
-    anon "Biarkan aku membantumu berdiri..."
-
+    anon "Let me help you up..."
     show iwanka_face_f_floor_surprised
     iwanka "Hmm?"
-
     hide iwanka_face_f_floor_surprised
-    iwanka "Apa ini?"
-
+    iwanka "What are these?"
     show iwanka_face_f_floor_surprised
-    erik "Ehh, itu bukan apa-apa!"
-
-    erik "Jangan melihat-"
-
+    erik "Ehh, those are nothing!"
+    erik "Don't look at-"
     hide iwanka_face_f_floor_surprised
-    iwanka "{i}Warcock{/i}?"
-
+    iwanka "{i}Warcocks{/i}?"
     erik "!!!"
 
     scene expression background(424, 400, 2.) as stage
@@ -762,107 +479,71 @@ label ano17_porn_iwanka:
     show anon f_worried:
         xoffset -100
     with fade
-    iwanka "{i}Peri Menjadi Liar{/i}?"
-
-    erik "Salah satu teman guildku meninggalkan itu di sini..."
-
-    anon "Kamu tidak terluka, kan?"
-
+    iwanka "{i}Elves Gone Wild{/i}?"
+    erik "One of my guildmates left those here..."
+    anon "You're not hurt, are you?"
     show iwanka b_club f_disgusted a_dvd_show with dissolve:
         xoffset 50
-    iwanka "{i}Putri Nelayan{/i}?"
-
-    iwanka a_dvd "Apakah ini DVD porno?"
-
-    erik "T-tidak..."
-
-    iwanka "Yang ini dianimasikan!"
-
-    erik "Ya, itu disebut hentai."
-
+    iwanka "{i}The Fisherman's Daughter{/i}?"
+    iwanka a_dvd "Are these porn DVDs?"
+    erik "N-no..."
+    iwanka "This one is animated!"
+    erik "Yeah, it's called hentai."
     show iwanka f_suspicious
     show anon f_confused
     pause
-    erik f_nervous @ f_worried_right "Maksudku, itulah yang diberitahukan kepadaku..."
-
-    erik "... Oleh orang-orang yang menonton hal itu..."
-
+    erik f_nervous @ f_worried_right "I mean, that's what I've been told..."
+    erik "... By people who watch that stuff..."
     pause
-    erik f_sad_down "... Teman-teman, bukan aku."
-
+    erik f_sad_down "... People, not me."
     iwanka @ -m_talk "Mhmm."
-
-    iwanka f_smirk_down "\"Kano sang nelayan dan keluarganya selalu sangat mencintai laut... Namun bagi putrinya yang menggairahkan, Hamako, cinta itu berjalan dua arah!\""
-
-    iwanka "\"Bisakah nafsunya yang besar terhadap penghuni lautan terpuaskan?\""
-
-    iwanka "\"Apakah kebejatannya tidak mengenal batas?!\""
-
-    anon f_surprised "Kawan, apakah itu tentakel porno?"
-
-    erik @ f_worried_right "Itu bukan milikku, aku bersumpah!"
-
-    iwanka f_suspicious "Jadi dia suka, berhubungan seks dengan ikan atau apa?"
-
+    iwanka f_smirk_down "\"Kano the fisherman and his family have always held a deep love for the sea... But for his voluptuous daughter Hamako, that love goes both ways!\""
+    iwanka "\"Can her great lust for the denizens of the deep ever be satiated?\""
+    iwanka "\"Does her depravity know no bounds?!\""
+    anon f_surprised "Dude, is that tentacle porn?"
+    erik @ f_worried_right "It's not mine, I swear!"
+    iwanka f_suspicious "So she like, has sex with fish or something?"
     erik @ -m_talk "..."
-    iwanka f_drunk @ f_laugh "Ya ampun, bolehkah kita menontonnya?!"
-
+    iwanka f_drunk @ f_laugh "Oh em gee, can we watch it?!"
     show erik f_surprised m_talk
-    anon f_surprised "APA?!"
-
+    anon f_surprised "WHAT?!"
     erik -m_talk "!!!"
-    iwanka "Aku ingin melihatnya bercinta dengan ikan!"
-
-    erik f_normal @ f_eyeroll "Cih, dia tidak bercinta dengan ikan..."
-
-    anon f_worried "Saya pikir Anda bilang Anda belum pernah melihatnya!"
-
+    iwanka "I wanna see her fuck the fish!"
+    erik f_normal @ f_eyeroll "Tsk, she doesn't fuck a fish..."
+    anon f_worried "I thought you said you've never seen it!"
     show erik f_nervous with {'master': dissolve}:
         unflip
         xoffset -350
-    erik "Yah, yang jelas aku berbohong!"
-
-    erik "{i}*Huh*{/i} Dia meniduri gurita..."
-
+    erik "Well, obviously I lied!"
+    erik "{i}*Sigh*{/i} She fucks an octopus..."
     pause
     show erik f_sad_down with dissolve:
         flip
         xoffset 100
-    erik "... Lalu cumi-cumi."
-
+    erik "... Then a squid."
     show anon f_hurt a_facepalm with dissolve
     pause
-    erik f_woozy "Lalu keduanya."
-
-    iwanka @ f_laugh "Oh, kami sangat menonton ini!!"
-
+    erik f_woozy "Then both."
+    iwanka @ f_laugh "Oh, we are so watching this!!"
     show anon f_surprised a_sides with dissolve
-    erik f_worried "Kamu serius?"
-
-    iwanka "Ya, cepatlah!"
-
+    erik f_worried "You're serious?"
+    iwanka "Yes, hurry up!"
     show erik a_dvd
     show iwanka a_idle
     with dissolve
-    erik f_normal "B-baiklah."
-
+    erik f_normal "A-alright."
     hide erik with dissolve
-    anon f_worried "Anda benar-benar ingin melihat seorang wanita berhubungan seks dengan cumi-cumi?"
-
-    iwanka "Dan seekor gurita!"
-
+    anon f_worried "You really wanna watch a woman have sex with a squid?"
+    iwanka "And an octopus!"
     anon f_tired -m_talk "..."
-    iwanka f_suspicious "Jangan dibuat aneh-aneh, {b}[firstname]{/b}."
-
+    iwanka f_suspicious "Don't make it weird, {b}[firstname]{/b}."
     hide iwanka
     show anon f_surprised:
         flip
         xoffset -550
     with {'master': dissolve}
-    iwanka "Ayo duduk bersamaku!"
-
-    anon f_eyeroll "Ya, akulah yang membuatnya aneh."
-
+    iwanka "Come sit with me!"
+    anon f_eyeroll "Yeah, I'm the one making it weird."
     hide anon with dissolve
 
     scene location_erik_basement_back_couch
@@ -870,110 +551,72 @@ label ano17_porn_iwanka:
     with fade
     show anon b_sit f_worried behind iwanka with {'master': dissolve}:
         xoffset -250
-    anon "Ini sebaiknya tidak membangkitkan sesuatu dalam diriku..."
-
+    anon "This had better not awaken something in me..."
     show iwanka b_sidebed_left_shy f_laugh with dissolve
-    iwanka "Hah, santai saja!"
-
-    iwanka f_drunk "Dengan premis seperti ini, pasti cheesy dan jenaka."
-
+    iwanka "Hah, relax!"
+    iwanka f_drunk "With a premise like this, it's sure to be cheesy and humorous."
     show erik b_sidebed with dissolve
     show iwanka b_sidebed_right_shy
-    erik "Anda salah."
-
-    erik "Ini sebenarnya ditulis dengan sangat baik dan cukup erotis."
-
-    iwanka @ f_laugh "Kamu sangat kenyang!"
-
-    erik "aku serius!"
-
+    erik "You're wrong."
+    erik "It's actually very well written and quite erotic."
+    iwanka @ f_laugh "You are so full of it!"
+    erik "I'm serious!"
     show anon f_tired
-    iwanka "Ssst!!"
-
-    iwanka "Ini dimulai."
-
+    iwanka "Shh!!"
+    iwanka "It's starting."
     show erik behind iwanka with dissolve:
         flip
         xoffset 550
     pause
-    iwanka f_suspicious @ f_disgusted "Apa yang-"
-
-    iwanka "Apakah ini semua dalam bahasa Jepang?"
-
-    erik "Ya, Anda harus membaca subtitlenya."
-
-    iwanka f_disgusted "Dengan serius?"
-
-    iwanka "Jika saya ingin membaca, saya akan membeli buku!"
-
-    iwanka f_drunk "Ceritakan saja apa yang terjadi dan lanjutkan ke bagian yang menarik."
-
-    erik f_worried_right "Benar-benar?"
-
-    iwanka "Aku ingin melihatnya disetubuhi oleh tentakel!"
-
+    iwanka f_suspicious @ f_disgusted "What the-"
+    iwanka "Is this all in Japanese?"
+    erik "Yeah, you have to read the subtitles."
+    iwanka f_disgusted "Seriously?"
+    iwanka "If I wanted to read, I'd get a book!"
+    iwanka f_drunk "Just tell me what happens and skip to the juicy part."
+    erik f_worried_right "Really?"
+    iwanka "I wanna see her get fucked by tentacles!"
     show anon f_surprised_teeth
-    erik "Oke oke..."
-
+    erik "Okay, okay..."
     show anon f_tired
     hide erik
     with dissolve
     pause
-    erik "Pada dasarnya, ayahnya adalah seorang nelayan dan suatu hari seekor bayi gurita tertangkap jaringnya."
-
+    erik "Basically, her father is a fisherman and one day a baby octopus gets caught in his net."
     show anon f_tired with {'master': dissolve}
-    erik "Dia membawanya pulang, berniat mengubahnya menjadi tako; tapi Hamako menghentikannya karena itu sangat lucu."
-
-    iwanka @ f_laugh "Ah, aku ingin melihat bayinya!"
-
-    erik "Tunggu."
-
+    erik "He brings it home, intent on turning it into tako; but Hamako stops him because it's so cute."
+    iwanka @ f_laugh "Aww, I wanna see the baby!"
+    erik "Hold on."
     pause
-    erik "Di sana."
-
+    erik "There."
     show anon f_tired_happy
-    iwanka "Ya ampun, itu menggemaskan!!!"
-
+    iwanka "Oh em gee, it's adorable!!!"
     show iwanka b_sidebed_left_shy with dissolve
-    iwanka "Lihatlah mata kecilnya yang sedih!!!"
-
+    iwanka "Look at its sad little eyes!!!"
     show iwanka b_sidebed_right_shy with dissolve
-    anon "Eh ya."
-
+    anon "Uh huh."
     show anon f_tired
-    iwanka "Oke, lalu apa yang terjadi!"
-
-    erik "Nah, Hamako memohon kepada ayahnya untuk membiarkan dia memelihara bayi gurita itu sebagai hewan peliharaan..."
-
-    erik "... Dan selama bertahun-tahun, pertumbuhannya menjadi sangat besar."
-
-    erik "Saking besarnya, dia harus melepaskannya kembali ke laut."
-
-    iwanka f_pouting "Ah, itu menyedihkan!"
-
+    iwanka "Okay, then what happens!"
+    erik "Well, Hamako begs her father to let her keep the baby octopus as a pet..."
+    erik "... And over the years, it grows really large."
+    erik "So large in fact, that she has to release him back into the ocean."
+    iwanka f_pouting "Aww, that's sad!"
     label ano17_porn_iwanka.replay:
-    erik "Tapi dia kembali setiap malam dan menunggu di dermaga hingga dia mengunjunginya."
-
-    erik "Kalau begitu, baiklah..."
-
-    erik "... Anda akan lihat."
-
-    iwanka f_smirk @ f_laugh "Ayo, ayo, ayo!"
-
+    erik "But he comes back every night and waits at the dock for her to visit him."
+    erik "Then, well..."
+    erik "... You'll see."
+    iwanka f_smirk @ f_laugh "Go, go, go!"
     show erik b_sidebed behind iwanka with dissolve:
         flip
         xoffset 550
     pause
-    iwanka "Oke, jadi itu memeluknya..."
-
+    iwanka "Okay, so it's hugging her..."
     pause
 
     scene location_erik_basement_back_hentai_pre with fade
-    iwanka "Wah, lihat semua tentakel itu!"
-
+    iwanka "Whoa, look at all those tentacles!"
     pause
-    iwanka "Sepertinya itu akan menggelitik..."
-
+    iwanka "That seems like it would tickle..."
     pause
 
     scene location_erik_basement_back_couch
@@ -984,41 +627,29 @@ label ano17_porn_iwanka:
         xoffset 550
     show iwanka b_sidebed_right_shy f_smirk
     with fade
-    anon f_tired @ f_skeptical "Pastinya pakaian tidak meledak begitu saja..."
-
-    iwanka "Ssst!!"
-
+    anon f_tired @ f_skeptical "Pretty sure clothes don't just explode like that..."
+    iwanka "Shh!!"
     pause
-    iwanka @ f_suspicious "Bagaimana cara berhubungan seks dengan gurita?"
-
-    erik "Mereka memiliki kelenjar seks di tentakelnya."
-
-    iwanka "Benar?"
-
-    erik "Setidaknya di film."
-
+    iwanka @ f_suspicious "How do you have sex with an octopus anyways?"
+    erik "They have sex glands on their tentacles."
+    iwanka "They do?"
+    erik "Well, in the movie at least."
     pause
     show iwanka f_concerned
     pause
-    iwanka "Tidak mungkin itu bisa muat di dalam-"
-
+    iwanka "There is no way that's going to fit inside-"
     show anon f_surprised_down o_sit_boner with {'master': dissolve}
-    iwanka f_surprised "Oh, sudahlah... Ini dia."
-
+    iwanka f_surprised "Oh, never mind... There it goes."
 
     $ M_iwanka.set('sex speed', 1 / 12.)
 
     scene location_erik_basement_back_hentai_sex
     show iwanka_sex_hentai
     with fade
-    iwanka "Wah, di pantatnya juga ya?"
-
-    erik "Yah, hanya satu untuk saat ini."
-
-    iwanka "Satu saja sudah cukup, percayalah..."
-
-    iwanka "... Dan lihat betapa tebalnya mereka!"
-
+    iwanka "Wow, in her ass too, huh?"
+    erik "Well, just the one for now."
+    iwanka "One is plenty, trust me..."
+    iwanka "... And look how thick they are!"
     pause
 
     scene location_erik_basement_back_couch
@@ -1029,32 +660,23 @@ label ano17_porn_iwanka:
         xoffset 550
     show iwanka b_sidebed_right_shy f_suspicious
     with fade
-    iwanka "Benda biru apa itu?"
-
-    erik "Sperma."
-
-    iwanka f_surprised "Sial, itu banyak sekali spermanya!"
-
+    iwanka "What's that blue stuff?"
+    erik "Sperm."
+    iwanka f_surprised "Holy crap, that's a lot of sperm!"
     pause
-    iwanka f_annoyed "Dia tidak bisa menelan semua itu!"
-
+    iwanka f_annoyed "She can't swallow all that!"
     show anon f_shy
-    erik "Tidak, tapi dia pasti mencoba..."
-
+    erik "No, but she sure does try..."
     pause
 
     scene location_erik_basement_back_hentai_sex
     show iwanka_sex_hentai_cum
     with fade
-    iwanka "Ini umm... sedikit intens."
-
-    iwanka "Dia seperti boneka tak berdaya bagi makhluk ini..."
-
-    erik "Ya, cukup banyak."
-
+    iwanka "This is umm... a little intense."
+    iwanka "She's just like, a helpless fuck doll for this creature..."
+    erik "Yeah, pretty much."
     pause
-    iwanka "... Agak panas."
-
+    iwanka "... It's kinda hot."
     pause
 
     scene location_erik_basement_back_couch
@@ -1080,12 +702,9 @@ label ano17_porn_iwanka:
     scene location_erik_basement_back_hentai_sex
     show iwanka_sex_hentai_cum
     with fade
-    iwanka "Ya ampun!"
-
-    iwanka "Lihat semua air mani yang dipompa ke dalam vaginanya..."
-
-    iwanka "... Itu keluar dari dirinya!"
-
+    iwanka "Oh em gee!"
+    iwanka "Look at all that cum it's pumping into her pussy..."
+    iwanka "... It's spurting out of her!"
     pause
 
     scene location_erik_basement_back_couch
@@ -1096,21 +715,15 @@ label ano17_porn_iwanka:
         xoffset 550
     show iwanka a_rub b_sidebed_right_shy f_drunk
     with fade
-    iwanka @ f_content_closed -m_talk "MM."
-
+    iwanka @ f_content_closed -m_talk "Mmm."
     anon f_surprised_low "!!!"
-    anon @ -m_talk "(Apakah dia... Sedang melakukan masturbasi?)"
-
+    anon @ -m_talk "( Is she... Masturbating? )"
     show anon f_flirt_low
     pause
-    iwanka "Berapa banyak tentakel yang bisa muat di sana?!"
-
-    erik "Oh, ini bukan apa-apa."
-
-    erik "Tunggu saja sampai Anda melihat adegan threesome dengan cumi-cumi..."
-
-    iwanka "Nghh, kurasa aku tidak akan bertahan selama itu!"
-
+    iwanka "How many tentacles are going to fit in there?!"
+    erik "Oh, this is nothing."
+    erik "Just wait until you see the threesome scene with the squid..."
+    iwanka "Nghh, I don't think I'm gonna last that long!"
     pause
 
     python:
@@ -1121,58 +734,42 @@ label ano17_porn_iwanka:
     show anon f_surprised_down o_empty
     with dissolve
     anon "!!!"
-    anon @ f_surprised "A-wah, apa yang kamu lakukan?!"
-
+    anon @ f_surprised "W-whoa, what are you doing?!"
     show erik b_sidebed f_worried with dissolve:
         unflip
         xoffset 0
-    iwanka "Bukankah sudah jelas?"
-
+    iwanka "Isn't it obvious?"
     show anon o_sit_boner
     show erik f_surprised
     show iwanka b_kneeling a_idle:
         xoffset -146
     with dissolve
-    iwanka "Ini membuatku terangsang sekali, {b}[firstname]{/b}!"
-
-    erik @ f_surprised_down "Sialan, kawan!"
-
-    iwanka "Bisakah saya melihatnya?"
-
-    anon "Oh, entahlah..."
-
-    iwanka "Mmm, tolong?"
-
-    anon "{b}Erik{/b} sedang duduk di sana!"
-
-    iwanka "Dia tidak akan keberatan..."
-
-    iwanka "Anda tidak akan keberatan, bukan, bintik-bintik?"
-
+    iwanka "This is making me horny as hell, {b}[firstname]{/b}!"
+    erik @ f_surprised_down "Holy crap, dude!"
+    iwanka "Can I see it?"
+    anon "Oh, I dunno..."
+    iwanka "Mmm, please?"
+    anon "{b}Erik{/b} is sitting right there!"
+    iwanka "He won't mind..."
+    iwanka "You won't mind, will you, freckles?"
     show anon f_surprised
     show erik a_thumbs f_laugh with dissolve
     pause
     show erik f_woozy a_idle with dissolve
-    iwanka "Melihat."
-
+    iwanka "See."
     show anon b_sit_back f_flirt_low
     show iwanka a_undress1
     with dissolve
-    anon "Ini meningkat dengan sangat cepat..."
-
+    anon "This escalated very quickly..."
     show anon b_sit_back_shirt o_empty od_empty
     show iwanka a_undress2
     with dissolve
-    iwanka "hehe!"
-
+    iwanka "Hehe!"
     show iwanka a_undress3 with dissolve
     show iwanka a_undress4 with dissolve
-    anon "Ya ampun..."
-
-    erik @ f_laugh "Terhebat... Pesta... PERNAH!"
-
-    erik a_phone "Ini yang terjadi di papan pesan guildku!"
-
+    anon "Oh, man..."
+    erik @ f_laugh "Greatest... Party... EVER!"
+    erik a_phone "This is so going on my guild's message board!"
 
     call scene_iwanka_blowjob
     $ unlock_scene('iwanka', '01_unlocked', variant='basement')
@@ -1183,203 +780,120 @@ label ano17_porn_iwanka:
     show iwanka b_sidebed_left f_drunk o_cum
     show erik b_sidebed f_woozy
     with fade
-    iwanka "Itu menyenangkan!"
-
-    anon "Y-ya, benar."
-
+    iwanka "That was fun!"
+    anon "Y-yeah, it was."
     show iwanka b_sidebed_right with dissolve
-    iwanka "Bisakah saya mendapatkan handuk atau sesuatu?"
-
+    iwanka "Can I get a towel or something?"
     erik @ -m_talk "Hmm?"
-
-    erik "Tentu saja!"
-
+    erik "Oh, sure!"
     hide erik with dissolve
     pause
     show iwanka b_sidebed_left with dissolve
-    iwanka "Sekarang aku sudah menjagamu, mungkin kamu bisa membalas budi?"
-
-    anon f_flirt "Uhh, ya... Kurasa aku bisa."
-
-    iwanka "Bagus sekali."
-
+    iwanka "Now that I've taken care of you, maybe you can return the favor?"
+    anon f_flirt "Uhh, yeah... I suppose I could."
+    iwanka "Excellent."
     show iwanka b_sidebed_left_shy with dissolve
-    iwanka "Berhati-hatilah karena dengan semua kegembiraan ini, di bawah sana seperti badai tropis!"
-
-    "{i}*Selamat datang*{/i}"
-
-    anon @ f_confused "Apa itu?"
-
-    "{i}*Selamat datang*{/i}"
-
-    iwanka f_annoyed "Ugh, itu ponselku yang bodoh..."
-
+    iwanka "Just be careful because with all this excitement, it's like a tropical storm down there!"
+    "{i}*Brrriiiing*{/i}"
+    anon @ f_confused "What is that?"
+    "{i}*Brrriiiing*{/i}"
+    iwanka f_annoyed "Ugh, it's my stupid phone..."
     show iwanka b_sidebed_left with dissolve
-    iwanka "... Tunggu."
-
-    iwanka a_phone f_suspicious_down "Aww, kawan... Ini ayahku."
-
+    iwanka "... Hold on."
+    iwanka a_phone f_suspicious_down "Aww, man... It's my dad."
     show anon f_worried
-    iwanka a_phone_talk f_annoyed "Halo?"
-
+    iwanka a_phone_talk f_annoyed "Hello?"
     pause
-    iwanka "Saya di rumah teman."
-
+    iwanka "I'm at a friend's house."
     pause
-    iwanka "Umm, karena kamu sibuk mendisiplinkan pelayan?"
-
+    iwanka "Umm, because you were busy disciplining the maid?"
     pause
-    iwanka "{b}Ayah{/b}, umurku dua puluh tujuh..."
-
+    iwanka "{b}Dad{/b}, I'm twenty-seven..."
     pause
-    iwanka "Jadi aku bisa menjaga diriku sendiri!"
-
+    iwanka "So I can take care of myself!"
     pause
-    iwanka "Ya, sekedar informasi, teman saya laki-laki."
-
+    iwanka "Yes, for your information, my friend is a boy."
     pause
-    iwanka "Tidak, kami tidak berhubungan seks!"
-
-    iwanka @ f_eyeroll "Yesus!"
-
+    iwanka "No, we're not having sex!"
+    iwanka @ f_eyeroll "Jesus!"
     show iwanka f_drunk
     pause
-    iwanka f_annoyed "Aku akan pulang sebentar lagi."
-
+    iwanka f_annoyed "I'll be home in a little while."
     pause
-    iwanka "Tidak bisakah menunggu?"
-
+    iwanka "Can't it wait?"
     pause
-    iwanka "Grr, aku benar-benar muak dengan ini!"
-
+    iwanka "Grr, I'm really getting sick of this!"
     pause
-    iwanka "Halo?"
-
-    iwanka a_phone @ f_suspicious_down "Brengsek!"
-
-    anon "Apa yang terjadi?"
-
-    iwanka f_sad "{i}*Huh*{/i} Aku harus pergi..."
-
-    anon "Apa sekarang?"
-
-    iwanka "Ya."
-
-    iwanka "Ayah saya mengirim mobil untuk menjemput saya."
-
-    anon "Hah?"
-
-    anon "Bagaimana mereka tahu di mana Anda berada?"
-
-    iwanka "Mereka melacak telepon saya."
-
+    iwanka "Hello?"
+    iwanka a_phone @ f_suspicious_down "Asshole!"
+    anon "What's going on?"
+    iwanka f_sad "{i}*Sigh*{/i} I have to go..."
+    anon "What, right now?"
+    iwanka "Yes."
+    iwanka "My dad sent a car to collect me."
+    anon "Huh?"
+    anon "How do they know where you are?"
+    iwanka "They track my phone."
     pause
-    anon "Baiklah, bolehkah aku bertemu denganmu lagi?"
-
-    iwanka f_surprised "Anda serius tentang hal itu?"
-
-    anon "Hmm, ya?"
-
-    iwanka f_drunk "Hah."
-
-    anon "Tadinya kau akan memberitahuku cara menyelinap ke rumah ayahmu agar kita bisa jalan-jalan, ingat?"
-
-    iwanka "Heh, kamu tidak perlu menyelinap masuk..."
-
-    anon @ f_confused "saya tidak?"
-
-    iwanka "Tidak."
-
-    iwanka "Katakan saja pada penjaga di gerbang depan bahwa kamu ada janji dengan saya..."
-
-    iwanka "... Dan ketika dia menanyakan tujuannya apa, katakan padanya untuk wawancara sebagai asisten baruku."
-
-    anon "Asistenmu, serius?"
-
-    iwanka "Apakah kamu ingin datang menemuiku atau tidak?"
-
-    anon f_shy "Tentu saja."
-
-    iwanka "Nah, itulah satu-satunya cara Anda masuk ke dalam."
-
-    iwanka "Bertingkahlah percaya diri dan Anda akan baik-baik saja."
-
-    anon "O-oke."
-
-    iwanka a_idle f_eyeroll "Ugh, semuanya menjadi menyenangkan juga."
-
+    anon "Well, can I see you again?"
+    iwanka f_surprised "You were serious about that?"
+    anon "Umm, yeah?"
+    iwanka f_drunk "Huh."
+    anon "You were gonna tell me how to sneak in to your dad's estate so we could hang out, remember?"
+    iwanka "Heh, you don't have to sneak in..."
+    anon @ f_confused "I don't?"
+    iwanka "No."
+    iwanka "Just tell the guard at the front gate that you have an appointment with me..."
+    iwanka "... And when he asks for what purpose, tell him it's to interview as my new assistant."
+    anon "Your assistant, seriously?"
+    iwanka "Do you wanna come see me or not?"
+    anon f_shy "Of course."
+    iwanka "Well, that's the only way you're getting inside."
+    iwanka "Just act confident and you'll be fine."
+    anon "O-okay."
+    iwanka a_idle f_eyeroll "Ugh, things were just getting fun too."
     hide iwanka with dissolve
     pause
-    erik "Ini derekmu-"
-
-    erik "T-tunggu, kamu mau kemana?"
-
-    iwanka "Ayahku mengirim mobil untuk menjemputku."
-
+    erik "Here's your towe-"
+    erik "W-wait, where are you going?"
+    iwanka "My dad sent a car to pick me up."
     erik "Oh."
-
-    iwanka "Terima kasih untuk pestanya."
-
-    erik "Y-ya, tidak masalah."
-
-    erik "Tahan!"
-
+    iwanka "Thanks for the party."
+    erik "Y-yeah, no problem."
+    erik "Hold up!"
     iwanka "Hmm?"
-
-    erik "Anda mungkin ingin menghapus wajah Anda."
-
+    erik "You might wanna wipe your face off."
     show anon f_laugh
-    iwanka "Oh benar."
-
+    iwanka "Oh, right."
     show anon f_shy
     pause
-    iwanka "Terima kasih."
-
+    iwanka "Thanks."
     pause
     show erik b_sidebed f_woozy with dissolve
     pause
-    erik "Jadi..."
-
-    erik "... Apakah itu luar biasa atau apa?!"
-
-    anon f_normal @ f_flirt "Ya, memang begitu."
-
-    erik "Sayang sekali Anda tidak mendapatkan info yang Anda inginkan, tetapi pekerjaan pukulan dari {b}Iwanka Rump{/b} adalah hadiah hiburan yang cukup bagus!"
-
-    anon @ f_laugh "Sebenarnya, dia memberiku jalan masuk ke dalam kawasan walikota sebelum dia pergi."
-
-    erik f_normal "Ah, benarkah?"
-
-    anon "Ya."
-
-    erik "Kacang keren, kawan!"
-
-    erik "Saya kira malam ini sukses besar, ya?"
-
-    anon "Anehnya, ya."
-
-    erik "Bagus."
-
+    erik "So..."
+    erik "... Was that awesome or what?!"
+    anon f_normal @ f_flirt "Yeah, it kinda was."
+    erik "It's too bad you didn't get the info you wanted but a blowjob from {b}Iwanka Rump{/b} is a pretty good consolation prize!"
+    anon @ f_laugh "Actually, she did give me a way inside the mayor's estate before she left."
+    erik f_normal "Oh, really?"
+    anon "Yup."
+    erik "Cool beans, dude!"
+    erik "I guess tonight was a huge success then, huh?"
+    anon "Surprisingly, yes."
+    erik "Good."
     pause
-    erik a_phone @ f_laugh "Jadi, bolehkah saya mengupload video ini sekarang?"
-
-    anon "Hehe, ya, silakan."
-
-    erik "Luar biasa!"
-
+    erik a_phone @ f_laugh "So, can I go upload this video now?"
+    anon "Heh, yes, go ahead."
+    erik "Awesome!"
     hide erik with dissolve
-    erik "Ini benar-benar akan memaksimalkan status popularitasku di guildku!"
-
+    erik "This is totally gonna max my popularity stat with my guild!"
     show anon f_laugh
     pause
-    anon f_normal @ -m_talk "(Saya benar-benar mengira malam ini akan menjadi bencana...)"
-
-    anon @ f_flirt -m_talk "(... Tapi semuanya berhasil pada akhirnya.)"
-
-    anon @ f_laugh -m_talk "( Sekarang, langkah selanjutnya adalah {b}menyusup ke rumah Walikota Rump{/b}! )"
-
-    anon @ -m_talk "(Saya harus {b}berbicara dengan keamanannya{/b} besok dan melihat apakah info {b}Iwanka{/b} bagus. )"
-
+    anon f_normal @ -m_talk "( I really thought this night was going to be a disaster... )"
+    anon @ f_flirt -m_talk "( ... But things worked out in the end. )"
+    anon @ f_laugh -m_talk "( Now, the next step is {b}infiltrating Mayor Rump's mansion{/b}! )"
+    anon @ -m_talk "( I should {b}speak with his security{/b} tomorrow and see if {b}Iwanka{/b}'s info is good. )"
     hide anon with dissolve
 
     scene black with slowdissolve

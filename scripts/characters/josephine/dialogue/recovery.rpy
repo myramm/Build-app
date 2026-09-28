@@ -1,43 +1,27 @@
 label josie_button_recovery:
     show anon with dissolve
-    josephine f_sexy "Hai, {b}[firstname]{/b}."
-
-    josephine "Anda datang untuk memeriksa kami lagi?"
-
+    josephine f_sexy "Hey, {b}[firstname]{/b}."
+    josephine "You come by to check on us again?"
 
     menu josie_button_recovery.choice:
-        "Ya.":
+        "Yup.":
             pass
 
-    anon f_normal "Ya."
-
-    josephine f_sexy "Anda terlalu khawatir."
-
-    josephine "Kami baik-baik saja."
-
-    anon "Ya, saya tahu."
-
-    anon "Aku hanya ingin memastikan..."
-
+    anon f_normal "Yup."
+    josephine f_sexy "You worry too much."
+    josephine "We're fine."
+    anon "Yeah, I know."
+    anon "I just wanna make sure..."
     pause
-    anon "... Dan mungkin melihat sekilas tentang menyusui."
-
+    anon "... And maybe catch a glimpse of some breastfeeding."
     josephine @ f_laugh "Hah!"
-
-    josephine "Sangat lucu."
-
-    josephine "Anda seharusnya mengoleskan minyak lanolin ke puting saya setiap kali selesai menyusui, Anda tahu?"
-
-    anon "Oh, kalau begitu, lupakan saja!"
-
-    josephine @ f_laugh "hehe!"
-
-    anon "Aku akan membiarkan kalian kembali beristirahat, oke?"
-
+    josephine "Very funny."
+    josephine "You're supposed to rub lanoline oil on my nipples after each feeding, you know?"
+    anon "Oh, well in that case, forget it!"
+    josephine @ f_laugh "Hehe!"
+    anon "I'll let you guys get back to resting, okay?"
     josephine f_sexy_down @ -m_talk "Mhmm."
-
-    anon @ f_laugh a_wave "Sampai jumpa, si kecil."
-
+    anon @ f_laugh a_wave "Bye bye, little one."
     hide anon with dissolve
     return
 # Decompiled by unrpyc: https://github.com/CensoredUsername/unrpyc

@@ -4,84 +4,50 @@ label scene_khadne_crates_sex:
 
     call scene_khadne_crates_sex.stage
     with fade
-    anon "Anda siap?"
-
-    khadne "{i}*Gulp*{/i} Saya kira begitu."
-
-    anon "Ini dia."
-
+    anon "You ready?"
+    khadne "{i}*Gulp*{/i} I think so."
+    anon "Here it comes."
     call scene_khadne_crates_sex.insert
     with dissolve
-    khadne @ -m_talk "{i}*Iiiitthh*{/i}"
-
-    anon "Bagaimana rasanya?"
-
-    khadne f_moan "Ngh, sakit!"
-
-    anon "Baiklah, aku tidak akan melangkah lebih jauh..."
-
-    khadne @ -m_talk "{i}* Merengek*{/i}"
-
-    anon "Bernafas."
-
-    khadne f_nervous "{i}*Fiuh*{/i} Haah... Haah... {i}*Fiuh*{/i}"
-
-    anon "Itu dia..."
-
-    anon "... Berikan waktu pada tubuh Anda untuk menyesuaikan diri."
-
-    khadne "{i}*Fiuh*{/i} Haah... Haah... {i}*Fiuh*{/i}"
-
-    khadne "Saya pikir mungkin itu berhasil..."
-
-    anon "Ya?"
-
-    khadne "{i}*Fiuh*{/i} Haah... Haah... {i}*Fiuh*{/i}"
-
-    anon "Aku akan mulai bergerak sedikit, oke?"
-
-    khadne "O-oke."
-
+    khadne @ -m_talk "{i}*Iiitthh*{/i}"
+    anon "How's that feel?"
+    khadne f_moan "Ngh, it hurts!"
+    anon "Alright, I won't go any further..."
+    khadne @ -m_talk "{i}*Whimpers*{/i}"
+    anon "Breathe."
+    khadne f_nervous "{i}*Phew*{/i} Haah... Haah... {i}*Phew*{/i}"
+    anon "That's it..."
+    anon "... Give your body time to adjust."
+    khadne "{i}*Phew*{/i} Haah... Haah... {i}*Phew*{/i}"
+    khadne "I think maybe it working..."
+    anon "Yeah?"
+    khadne "{i}*Phew*{/i} Haah... Haah... {i}*Phew*{/i}"
+    anon "I'm gonna start moving a little, okay?"
+    khadne "O-okay."
     call scene_khadne_crates_sex.animate
     with dissolve
     pause
-    khadne "{i}* Merengek*{/i}"
-
-    anon "Bernapaslah, {b}Khadne{/b}."
-
-    khadne "{i}*Fiuh*{/i} Haah... Haah... {i}*Fiuh*{/i}"
-
-    anon "Ini dia."
-
+    khadne "{i}*Whimper*{/i}"
+    anon "Breathe, {b}Khadne{/b}."
+    khadne "{i}*Phew*{/i} Haah... Haah... {i}*Phew*{/i}"
+    anon "There ya go."
     pause
-    anon "Masih sakit?"
-
-    khadne "Ya, tapi tidak terlalu buruk."
-
-    anon "Anda ingin saya berhenti?"
-
-    khadne "T-tidak."
-
+    anon "Still hurting?"
+    khadne "Yes, but not so bad."
+    anon "You want me to stop?"
+    khadne "N-no."
     pause
-    khadne "Ahhh!"
-
-    anon "Lebih baik?"
-
-    khadne "Menurutku begitu..."
-
-    khadne "... Ya."
-
+    khadne "Ahh!"
+    anon "Better?"
+    khadne "I think so..."
+    khadne "... Yes."
     pause
     khadne "Oh my god..." (show_native="O moy Bog...")
-    anon "Merasa baik?"
-
+    anon "Feeling good?"
     khadne "Mhmm!"
-
     pause
-    anon "Bisakah saya mempercepat?"
-
-    khadne "Ya."
-
+    anon "Can I speed up?"
+    khadne "Yes."
     $ M_khadne.set('sex speed', 1. / 10)
     pause
     call scene_khadne_crates_sex.dialogue (1)
@@ -92,28 +58,18 @@ label scene_khadne_crates_sex:
     pause
     label scene_khadne_crates_sex.resume:
     call scene_khadne_crates_sex.loop
-    anon "aku rasa aku tidak bisa bertahan lebih lama lagi..."
-
-    khadne "Anda ingin membuat cum?"
-
-    anon "... Ya!"
-
+    anon "I don't think I can last much longer..."
+    khadne "You want make cum?"
+    anon "... Yeah!"
     khadne "Ahh!!"
-
     pause
-    khadne "Lakukan!"
-
-    khadne "Buatkan air mani untukku!"
-
+    khadne "Do it!"
+    khadne "Make cum for me!"
     anon "Haaah!!"
-
     pause
-    anon "Ya Tuhan..."
-
-    anon "... Ini dia!"
-
-    khadne "Ya!!"
-
+    anon "Oh, god..."
+    anon "... Here it comes!"
+    khadne "Yes!!"
     pause
 
     hide anim
@@ -137,7 +93,6 @@ label scene_khadne_crates_sex:
         show khadne o_cumshot3
 
     khadne "NGGHHH!!!"
-
     pause
     hide xray
 
@@ -146,10 +101,8 @@ label scene_khadne_crates_sex:
         with {'master': dissolve}
 
     anon "Haah... Haah..."
-
     show khadne f_normal
-    anon "Fiuh!"
-
+    anon "Phew!"
     return _return
 
 
@@ -195,28 +148,21 @@ label scene_khadne_crates_sex.dialogue(opt, rng=-1):
 
     if opt == 1:
         khadne "Oh, wow!" (show_native="Vot eto da!")
-        anon "Anda suka itu?"
-
-        khadne "Ya!"
-
+        anon "You like that?"
+        khadne "Yes!"
 
         if rng < .2:
-            khadne "Ini sangat berbeda dari sebelumnya!"
-
-            anon "Aku sudah bilang padamu."
-
+            khadne "It's so different than before!"
+            anon "I told you."
 
     elif opt == 2:
         khadne "Oh, fuck me!" (show_native="Oh, trakhni menya!")
 
         if rng < .4:
             anon "Hmm?"
+            khadne "Fuck me, {b}[firstname]{/b}!"
 
-            khadne "Persetan denganku, {b}[firstname]{/b}!"
-
-
-        anon "Ya, Bu!"
-
+        anon "Yes, ma'am!"
 
     elif opt == 3:
         if rng < .5:
@@ -225,18 +171,14 @@ label scene_khadne_crates_sex.dialogue(opt, rng=-1):
         if rng < .3:
             khadne "Fuck my pussy, {b}[firstname]{/b}!" (show_native="Trakhni moyu kisku, {b}[firstname]{/b}!")
 
-        anon "Sial, kamu seksi."
-
+        anon "Damn, you're sexy."
         khadne "Ahh!!"
 
-
     elif opt == 4:
-        khadne "Lebih sulit!"
-
+        khadne "Harder!"
 
         if rng < .25:
-            anon "Wah, hati-hati jangan sampai botolnya terjatuh!"
-
+            anon "Whoa, careful you don't knock over the bottles!"
 
     return
 
@@ -251,19 +193,14 @@ label scene_khadne_crates_sex.repeat:
 
     call scene_khadne_crates_sex.stage
     with fade
-    anon "Ingatlah untuk memberitahuku apakah aku akan berpuasa, oke?"
-
-    khadne "Y-ya, oke."
-
+    anon "Just remember to tell me if I'm going to fast, okay?"
+    khadne "Y-yeah, okay."
     call scene_khadne_crates_sex.insert
     with dissolve
     khadne f_nervous @ f_moan_teeth -m_talk "!!!"
-    anon "Kamu baik-baik saja?"
-
+    anon "You good?"
     khadne "Very."
-
-    anon "Luar biasa!"
-
+    anon "Awesome!"
     call scene_khadne_crates_sex.animate
     with dissolve
     pause
@@ -285,10 +222,10 @@ label scene_khadne_crates_sex.replay:
     if len(variants) > 1:
         scene expression background(l=L_warehouse_storage) with fade
         menu:
-            "Pertama" if 'first' in variants:
+            "First" if 'first' in variants:
                 jump scene_khadne_crates_sex.first
 
-            "Ulangi" if 'repeat' in variants:
+            "Repeat" if 'repeat' in variants:
                 jump scene_khadne_crates_sex.repeat
 
     jump expression 'scene_khadne_crates_sex.{}'.format(next(iter(variants)))

@@ -1,118 +1,93 @@
 label liu_button_lobby:
     show anon with dissolve
-    liu "Selamat datang di {b}Saga Finansial{/b}."
-
-    liu f_happy "Bagaimana saya bisa membantu-"
-
+    liu "Welcome to {b}Saga Financial{/b}."
+    liu f_happy "How can I help-"
 
     if M_anon.finished_state(S_ano28_clue):
         show liu a_mouth_cover f_surprised
         with {'master': dissolve}
         liu "{b}[firstname]{/b}!!"
-
-        anon a_wave "Hei, Liu."
-
+        anon a_wave "Hey, Liu."
         show anon a_sides
         show liu a_point_self
         with {'master': dissolve}
-        liu "Apakah kamu datang menemuiku?"
-
+        liu "Did you come to see me?"
         show liu a_sides
         with {'master': dissolve}
     else:
 
         show liu a_sides f_nervous
         with {'master': dissolve}
-        liu "O-oh, kamu kembali..."
-
-        anon "Halo lagi, Liu."
-
+        liu "O-oh, you're back..."
+        anon "Hello again, Liu."
 
     menu liu_button_lobby.choice:
 
-        "Nomor apartemen?" if M_anon.is_state(S_ano23_done, S_ano24_init):
+        "Apartment number?" if M_anon.is_state(S_ano23_done, S_ano24_init):
             jump liu_button_lobby.apartment
 
-        "uang ayah." if M_anon.is_state(S_ano28_cash):
+        "Dad's money." if M_anon.is_state(S_ano28_cash):
             jump ano28_cash_liu_money
 
-        "Apakah Tina ada?" if M_tina.is_state(S_tin02_init):
+        "Is Tina around?" if M_tina.is_state(S_tin02_init):
             if L_bank_cubicle.is_here(M_tina):
                 jump tin02_init_liu
             jump liu_button_lobby.tina
-        "akun saya.":
+        "My account.":
 
             jump liu_button_lobby.account
 
-        "Tentang ayahku..." if not M_anon.finished_state(S_ano28_clue):
+        "About my dad..." if not M_anon.finished_state(S_ano28_clue):
             jump liu_button_lobby.father
 
-        "Bagaimana kabarmu?" if M_anon.finished_state(S_ano14_find):
+        "How are you?" if M_anon.finished_state(S_ano14_find):
             if M_anon.finished_state(S_ano28_clue):
                 jump liu_button_lobby.upbeat
             jump liu_button_lobby.unsure
 
-        "Seks." if M_anon.finished_state(S_ano28_clue):
+        "Sex." if M_anon.finished_state(S_ano28_clue):
             jump liu_button_lobby.suggest
-        "Saya harus pergi.":
+        "I should go.":
 
             pass
 
     if M_anon.finished_state(S_ano28_clue):
-        anon f_worried "Aku harus pergi."
-
-        liu f_sexy a_sides "Ingat, untuk datang ke apartemenku nanti, oke?"
-
-        anon f_flirt "Jangan khawatir, saya akan melakukannya."
-
-        liu f_happy "Sampai jumpa lagi, {b}[firstname]{/b}."
-
-        anon f_normal "Sampai jumpa, {b}Liu{/b}."
-
+        anon f_worried "I gotta go."
+        liu f_sexy a_sides "Remember, to come by my apartment later, okay?"
+        anon f_flirt "Don't worry, I will."
+        liu f_happy "See you later then, {b}[firstname]{/b}."
+        anon f_normal "Bye, {b}Liu{/b}."
     else:
 
-        anon f_normal "Semoga harimu menyenangkan."
-
-        liu "Ya, kamu juga."
-
+        anon f_normal "Have a good day."
+        liu "Yes, you too."
 
     hide anon with dissolve
     return
 
 
 label liu_button_lobby.account:
-    anon f_normal "Di mana saya dapat mengakses akun saya?"
-
-    liu f_normal "Cara termudah adalah dengan menggunakan salah satu mesin ATM kami."
-
-    liu @ a_point_away "Faktanya, ada satu di belakang Anda."
-
+    anon f_normal "Where can I access my account?"
+    liu f_normal "The easiest way is by using one of our ATM machines."
+    liu @ a_point_away "In fact, there's one right behind you."
     show anon f_normal_left
-    liu "Di sana, di dinding seberang."
-
-    anon f_normal "Baiklah terima kasih."
-
-    liu f_worried "Tidak masalah."
-
+    liu "Just there, on the opposite wall."
+    anon f_normal "Alright, thanks."
+    liu f_worried "No problem."
     jump liu_button_lobby.choice
 
 
 label liu_button_lobby.anything:
-    anon f_confused "Apa pun?"
-
-    liu "Ya, apa pun yang Anda inginkan!"
-
+    anon f_confused "Anything?"
+    liu "Yes, anything you want!"
     show liu f_sexy o_blush
     with {'master': dissolve}
-    liu "aku milikmu."
-
+    liu "I'm yours."
     show anon a_thinking f_thinking
     show liu f_nervous_lipbite
     with {'master': dissolve}
     anon @ -m_talk "Hmm."
-
-    anon "Saya akan menghubungi Anda kembali mengenai hal itu."
-
+    anon "I'll get back to you on that."
     show anon a_idle f_normal
     show liu f_worried -o_blush
     with dissolve
@@ -120,215 +95,141 @@ label liu_button_lobby.anything:
 
 
 label liu_button_lobby.apartment:
-    anon f_worried @ f_confused "Dimana apartemenmu lagi?"
-
-    liu f_normal "Kami tinggal di {b}Kompleks Apartemen Beachside Heights, kamar 204{/b}."
-
-    anon f_normal "Oh benar."
-
-    anon "Saya ingat sekarang."
-
-    liu "{b}Kim{/b} biasanya bekerja hingga larut malam jadi jika Anda datang di malam hari, kita akan punya banyak waktu untuk mengintip."
-
-    anon "Sempurna."
-
+    anon f_worried @ f_confused "Where is your apartment again?"
+    liu f_normal "We live over in the {b}Beachside Heights Apartment Complex, room 204{/b}."
+    anon f_normal "Oh, right."
+    anon "I remember now."
+    liu "{b}Kim{/b} usually works late so if you come by in the evening, we'll have plenty of time to snoop around."
+    anon "Perfect."
     jump liu_button_lobby.choice
 
 
 label liu_button_lobby.boss:
     show liu f_nervous_back o_blush with {'master': dissolve}
-    liu "Ssst, {b}[firstname]{/b}!!!"
-
+    liu "Shhhhh, {b}[firstname]{/b}!!!"
     show anon f_normal
     show liu a_cover f_nervous
     with {'master': dissolve}
-    liu "Kita tidak bisa melakukan itu sekarang!"
-
-    anon "Kenapa?"
-
-    liu "Bosku ada di sini..."
-
+    liu "We can't do that now!"
+    anon "How come?"
+    liu "My boss is here..."
     show liu -o_blush
     with {'master': dissolve}
-    liu "... dia bisa-"
-
-    anon f_confused "Maksudmu {b}Tina{/b}?"
-
-    liu "Ya!"
-
+    liu "... she could-"
+    anon f_confused "You mean {b}Tina{/b}?"
+    liu "Yes!"
     show anon f_normal
 
     menu:
-        "Saya yakin dia tidak akan keberatan.":
+        "I'm sure she wouldn't mind.":
             jump liu_button_lobby.risky
-        "Kita bisa memintanya untuk bergabung dengan kita?":
+        "We could ask her to join us?":
 
             jump liu_button_lobby.threesome
-        "Lain kali saja.":
+        "Another time then.":
 
             pass
 
-    anon "Tidak apa-apa, kita bisa bertemu lagi nanti di tempatmu."
-
-    liu f_worried "Ya..."
-
+    anon "It's fine, we can meet up later at your place."
+    liu f_worried "Yeah..."
     show liu a_nervous f_worried_down with {'master': dissolve}
-    liu "... Kecuali, sekarang sore hari akan terasa seperti selamanya!"
-
-    anon f_flirt "Antisipasi justru membuatnya lebih baik, Anda tahu?"
-
+    liu "... Except, now the afternoon is going to feel like an eternity!"
+    anon f_flirt "Anticipation just makes it better, you know?"
     show liu a_sides f_nervous_lipbite with {'master': dissolve}
-    liu @ -m_talk "Tidak."
-
+    liu @ -m_talk "Ngh."
     pause
-    liu f_nervous "Berhentilah menggodaku, {b}[firstname]{/b}!"
-
-    anon f_normal "Hehe, maaf."
-
+    liu f_nervous "Stop teasing me, {b}[firstname]{/b}!"
+    anon f_normal "Heh, sorry."
     pause
-    anon @ f_thinking -m_talk "( Bukankah {b}Liu{/b} menyebutkan sebelumnya bahwa {b}Tina datang terlambat pada hari Selasa{/b}? )"
-
+    anon @ f_thinking -m_talk "( Didn't {b}Liu{/b} mention before that {b}Tina comes in late on Tuesdays{/b}? )"
     jump liu_button_lobby.choice
 
 
 label liu_button_lobby.father:
-    anon f_confused "Apakah kamu yakin tidak ada lagi yang bisa kamu ceritakan padaku?"
-
-    liu f_nervous @ f_nervous_back "aku uhh-"
-
+    anon f_confused "Are you sure there's nothing else you can tell me?"
+    liu f_nervous @ f_nervous_back "I uhh-"
     pause
 
     if M_anon.finished_state(S_ano14_find):
         jump liu_button_lobby.rump
 
-    anon "Apakah Anda mengenalnya dengan baik?"
-
-    liu "Y-ya, kami-"
-
+    anon "Did you know him well?"
+    liu "Y-yes, we were-"
     show liu f_worried_down
     pause
-    liu f_worried "Maksudku, tidak... Kami hanya rekan kerja."
-
-    liu @ a_holdup "Lihat, {b}[firstname]{/b}..."
-
-    liu "Ayahmu adalah pria yang sangat baik dan aku berduka atas kematiannya, tapi aku-"
-
+    liu f_worried "I mean, no... We were just coworkers."
+    liu @ a_holdup "Look, {b}[firstname]{/b}..."
+    liu "Your father was a really nice man and I mourn his passing, but I-"
     anon @ -m_talk "..."
-    liu "Saya benar-benar tidak tahu apa-apa."
-
-    anon f_worried @ -m_talk "(Dia berbohong.)"
-
-    liu f_worried_down "Saya berharap saya melakukannya..."
-
-    anon @ -m_talk "(Kenapa dia tidak memberitahuku?)"
-
-    liu f_worried "Sepertinya Anda dan teman Anda sedang melalui masa sulit saat ini, dan saya bersimpati, ya."
-
-    liu "Aku berharap masih ada lagi yang bisa kulakukan untukmu..."
-
-    anon @ -m_talk "(Pasti ada sesuatu yang bisa kulakukan agar dia terbuka padaku...)"
-
+    liu "I really don't know anything."
+    anon f_worried @ -m_talk "( She's lying. )"
+    liu f_worried_down "I wish I did..."
+    anon @ -m_talk "( Why won't she tell me? )"
+    liu f_worried "It sounds like you and your friend are going through a really rough time right now, and I sympathize, I do."
+    liu "I wish there was more I could do for you..."
+    anon @ -m_talk "( There has to be something I can do to get her to open up to me... )"
     pause
-    anon @ a_thinking f_thinking -m_talk "(...Mungkin aku hanya perlu mencari momen yang tepat?)"
-
+    anon @ a_thinking f_thinking -m_talk "( ... Maybe I just need to find the right moment? )"
     jump liu_button_lobby.choice
 
 
 label liu_button_lobby.risky:
-    anon "Dia akan baik-baik saja dengan itu."
-
+    anon "She'd be cool with it."
     show liu a_nervous f_worried_down with {'master': dissolve}
-    liu "Ya benar."
-
-    liu f_worried "Saya akhirnya mendapatkan semua keuntungan dari pekerjaan ini dan Anda ingin saya mengambil risiko kehilangan pekerjaan ini?"
-
-    anon "{b}Tina{/b} tidak akan memecatmu karena hal seperti itu."
-
-    liu f_curious "Bagaimana Anda bisa yakin?"
-
+    liu "Yeah, right."
+    liu f_worried "I'm finally getting all the perks of this job and you want me risk losing it?"
+    anon "{b}Tina{/b} wouldn't fire you over something like that."
+    liu f_curious "How can you be sure?"
     show anon a_behind_head f_worried_surprised with {'master': dissolve}
-    anon "aku uhh..."
-
+    anon "I uhh..."
     show anon f_worried_left
     pause
     show anon a_sides f_worried with {'master': dissolve}
-    liu "Lihat, kamu tidak tahu pasti!"
-
-    anon f_normal "Nah, kalau kamu dipecat, itu akan memberi kita lebih banyak waktu luang bersama..."
-
+    liu "See, you don't know for sure!"
+    anon f_normal "Well, if you did get fired, it would give us more free time together..."
     show liu a_sides f_happy with {'master': dissolve}
-    liu "Haha, lucu sekali."
-
-    liu f_nervous "Kita seharusnya tidak melakukannya, {b}[firstname]{/b}..."
-
-    liu f_worried "... aku minta maaf."
-
-    anon "Oh, tidak apa-apa."
-
-    anon "Saya mengerti."
-
-    liu f_nervous "Mengapa kamu tidak datang saja ke tempatku malam ini sepulang kerja?"
-
-    liu f_sexy "Aku akan menebusnya padamu kalau begitu."
-
-    anon "Kedengarannya bagus."
-
+    liu "Haha, very funny."
+    liu f_nervous "We really shouldn't, {b}[firstname]{/b}..."
+    liu f_worried "... I'm sorry."
+    anon "Oh, it's fine."
+    anon "I understand."
+    liu f_nervous "Why don't you just come over to my place tonight after work?"
+    liu f_sexy "I'll make it up to you then."
+    anon "Sounds good."
     jump liu_button_lobby.choice
 
 
 label liu_button_lobby.rump:
-    anon f_worried "Tolong, {b}Liu{/b}... Aku khawatir apa yang akan terjadi pada teman-temanku jika semua ini terus berlanjut..."
-
+    anon f_worried "Please, {b}Liu{/b}... I'm worried what will happen to my friends if this all continues..."
     show liu f_worried
-    anon "... Informasi apa pun berguna, sekecil apa pun."
-
-    liu "Y-yah, saya tahu {b}Frank{/b} sedang mengontrak beberapa pekerjaan dengan {b}Walikota Rump{/b}..."
-
-    anon f_normal "Ya, aku sendiri yang memikirkannya."
-
+    anon "... Any information is helpful, no matter how small."
+    liu "W-well, I know {b}Frank{/b} was contracting some work with {b}Mayor Rump{/b}..."
+    anon f_normal "Yeah, I figured that much out myself."
     pause
-    anon "Pernahkah dia menyebutkan pekerjaan apa itu?"
-
+    anon "Did he ever mention what kind of work it was?"
     show liu f_nervous_back a_cover with dissolve
-    anon "Atau mungkin siapa lagi yang terlibat?"
-
-    liu f_nervous "Umm... T-tidak, menurutku tidak..."
-
-    anon "Apa kamu yakin?"
-
-    liu "Itu terjadi beberapa waktu yang lalu... A-dan ingatanku tidak begitu bagus..."
-
-    anon f_worried @ -m_talk "(Dia berbohong lagi.)"
-
-    liu a_sides "Saya benar-benar minta maaf, {b}[firstname]{/b}..."
-
-    liu "... Saya berharap saya bisa lebih membantu."
-
-    anon f_thinking_down @ -m_talk "(Saya kira dia masih tidak mempercayai saya.)"
-
-    anon f_normal "Tidak apa-apa, {b}Liu{/b}."
-
-    anon "Saya mengerti."
-
-    liu f_normal "Saya yakin polisi akan menjaga keamanan teman Anda."
-
-    anon "Ya, saya harap begitu."
-
-    anon @ -m_talk "(Saya hanya harus terus memainkan permainan menunggu untuk saat ini...)"
-
-    anon @ -m_talk "( ... Dan mudah-mudahan, ada kesempatan lain yang muncul. )"
-
+    anon "Or maybe who else was involved?"
+    liu f_nervous "Umm... N-no, I don't think so..."
+    anon "Are you sure?"
+    liu "It was a while back... A-and my memory isn't so good..."
+    anon f_worried @ -m_talk "( She's lying again. )"
+    liu a_sides " I'm really sorry, {b}[firstname]{/b}..."
+    liu "... I wish I could be more helpful."
+    anon f_thinking_down @ -m_talk "( I guess she still doesn't trust me. )"
+    anon f_normal "That's okay, {b}Liu{/b}."
+    anon "I understand."
+    liu f_normal "I'm sure the police will keep your friends safe."
+    anon "Yeah, I hope so."
+    anon @ -m_talk "( I'll just have to keep playing the waiting game for now... )"
+    anon @ -m_talk "( ... And hopefully, another opportunity will present itself. )"
     jump liu_button_lobby.choice
 
 
 label liu_button_lobby.sex:
     show liu a_mouth_cover f_surprised o_blush with {'master': dissolve}
-    liu "Apa sekarang?!"
-
-    anon f_happy "Ya."
-
-    liu a_nervous f_worried "Kita tidak bisa melakukan itu, saya sedang bekerja!"
-
+    liu "What, now?!"
+    anon f_happy "Yeah."
+    liu a_nervous f_worried "We can't do that, I'm working!"
     show anon f_skeptical with dissolve:
         xoffset -500
         xzoom -1
@@ -336,80 +237,61 @@ label liu_button_lobby.sex:
     show anon a_point_back f_confused with {'master': dissolve}:
         xoffset 0
         xzoom 1
-    anon "Aww, ayolah, hampir tidak ada orang di sini..."
-
+    anon "Aww, c'mon, there's hardly anyone in here..."
     show liu f_ashamed_down
     pause
     show anon a_sides f_brag with {'master': dissolve}
-    anon "... Dan bosmu tidak akan datang sampai sore ini, kan?"
-
-    liu a_behind f_nervous "Y-ya."
-
-    anon f_normal "Mari kita menyelinap ke belakang sebentar..."
-
+    anon "... And your boss won't be in until this afternoon, right?"
+    liu a_behind f_nervous "Y-yeah."
+    anon f_normal "Let's just sneak in the back for a moment..."
     show liu f_nervous_lipbite
-    anon "... Itu akan sepadan, aku janji."
-
-    liu f_nervous_lipbite_back @ -m_talk "Tidak."
-
+    anon "... It'll be worth it, I promise."
+    liu f_nervous_lipbite_back @ -m_talk "Ngh."
     pause
-    liu f_worried "Oke, tapi kita harus cepat!"
-
+    liu f_worried "Okay, but we have to be quick!"
     hide liu with {'master': dissolve}
-    anon f_brag "Hehe, ya."
-
-    anon f_happy "\"Cepat.\""
-
-    anon f_flirt "Benar sekali."
-
+    anon f_brag "Heh, yeah."
+    anon f_happy "\"Quick.\""
+    anon f_flirt "Totally."
     hide anon with dissolve
 
     scene location_bank_office_printer
     show liu b_dressed_kiss_2:
         xoffset 250
     with fade
-    liu "MM."
-
+    liu "Mmm."
     pause
     show anon a_sides f_shy behind liu:
         xoffset 200
     show liu a_close_blouse b_dressed_disheveled f_nervous o_blush:
         xoffset 0
     with {'master': dissolve}
-    liu "Ini nakal sekali, {b}[firstname]{/b}!"
-
-    anon f_flirt "Heh, ini akan menjadi jauh lebih nakal."
-
-    anon f_shy_down "Mengapa kamu tidak naik ke mesin fotokopi itu?"
-
+    liu "This is so naughty, {b}[firstname]{/b}!"
+    anon f_flirt "Heh, it's about to get a whole lot naughtier."
+    anon f_shy_down "Why don't you hop up on that copier?"
     show anon f_flirt
     show liu a_sides f_nervous_down:
         xoffset 475
         xzoom -1
     with {'master': dissolve}
     liu @ -m_talk "Hmm?"
-
     show liu a_behind f_sexy:
         xoffset 0
         xzoom 1
     with {'master': dissolve}
-    liu "Y-ya, oke."
-
+    liu "Y-yeah, okay."
     show anon f_flirt_low
     show liu a_sides f_nervous_down
     with dissolve
     show liu a_skirt_up_pull2 b_dressed_disheveled_skirt_up f_nervous_lipbite_back with {'master': dissolve}
-    anon "Ya Tuhan, kamu seksi sekali!"
-
+    anon "Oh my god, you are so sexy!"
     show liu b_dressed_disheveled_skirt_pull_down_panties f_nervous_down with dissolve
     pause
     show anon f_flirt
     show liu a_shy b_dressed_disheveled_skirt_up f_sexy_lipbite
     with {'master': dissolve}
-    liu f_sexy "Ya?"
-
-    anon f_flirt "Ayo, naik ke sana."
-
+    liu f_sexy "Yeah?"
+    anon f_flirt "Go on, get up there."
     show anon a_remove_shorts f_shy_down
     show liu b_dressed_disheveled_jump1 f_nervous_down
     with dissolve
@@ -424,19 +306,16 @@ label liu_button_lobby.sex:
     show liu b_dressed_disheveled_printer_open
     with dissolve
     pause
-    anon f_flirt_low "Itu pemandangan yang indah!"
-
+    anon f_flirt_low "That is a beautiful sight!"
     show anon od_dick2
     show liu f_surprised_down
     with dissolve
     show anon od_dick3 with dissolve
     show anon od_dick4 with dissolve
     pause
-    liu f_laugh "hehe!"
-
+    liu f_laugh "Hehe!"
     show liu f_sexy_lipbite
-    anon f_flirt "Sekarang berbaringlah."
-
+    anon f_flirt "Now lay back."
 
     call scene_liu_sex_office.repeat
     $ unlock_scene('liu', '02_unlocked')
@@ -452,28 +331,20 @@ label liu_button_lobby.sex:
     with fade
 
     if _return == 'inside':
-        liu "Celana dalamku akan penuh dengan air manimu sepanjang hari ini..."
-
+        liu "My panties are gonna be full of your cum for the rest of the day now..."
         show anon f_shy_low
         show liu f_sexy_lipbite
-        anon "Hehe, maaf."
-
-        liu f_nervous_down "Itu menetes ke pahaku..."
-
-        anon f_worried "... Kamu ingin aku mengambilkanmu tisu?"
-
-        liu f_nervous "T-tidak, aku akan mengurusnya."
-
+        anon "Heh, sorry."
+        liu f_nervous_down "It's trickling down my thigh..."
+        anon f_worried "... You want me to get you some paper towels?"
+        liu f_nervous "N-no, I'll take care of it."
     else:
 
-        liu "Apakah ini benar-benar terlihat?"
-
+        liu "Is it really noticable?"
         show liu f_nervous_lipbite
-        anon f_worried_low "Tidak, tidak juga."
-
+        anon f_worried_low "No, not really."
         show anon f_shy
-        liu f_nervous "Oke, bagus."
-
+        liu f_nervous "Okay, good."
 
     show liu a_close_blouse b_dressed_disheveled_skirt_up f_nervous_lipbite
     with dissolve
@@ -493,23 +364,17 @@ label liu_button_lobby.sex:
     show anon f_shy
     show liu a_sides b_dressed_disheveled f_happy
     with {'master': dissolve}
-    liu f_happy "Heh, aku hampir tidak bisa berdiri!"
-
+    liu f_happy "Heh, I can barely stand up!"
     show anon a_handshake f_worried
     show liu f_nervous_down
     with {'master': dissolve}
-    anon "Apakah kamu akan baik-baik saja?"
-
-    liu f_happy "Y-ya, aku akan baik-baik saja."
-
+    anon "Are you going to be okay?"
+    liu f_happy "Y-yeah, I'll be fine."
     show anon a_sides f_shy
     with {'master': dissolve}
-    liu f_sexy "Fiuh, panas sekali, {b}[firstname]{/b}..."
-
-    liu "... Aku masih kesemutan."
-
-    anon "Hehe."
-
+    liu f_sexy "Phew, that was so hot, {b}[firstname]{/b}..."
+    liu "... I'm still tingling."
+    anon "Heh."
     show anon b_empty f_surprised:
         xoffset 175
     show liu b_dressed_disheveled_hug_surprised behind anon:
@@ -520,15 +385,11 @@ label liu_button_lobby.sex:
     show liu b_dressed_disheveled_hug
     with dissolve
     pause
-    liu "Anda mungkin harus pergi dulu, agar tidak ada yang curiga."
-
-    anon @ f_normal_closed "Baiklah."
-
+    liu "You should probably leave first, so nobody gets suspicious."
+    anon @ f_normal_closed "Alright."
     pause
-    liu "Sampai jumpa nanti?"
-
-    anon f_normal_low "Tentu saja."
-
+    liu "I'll see you later?"
+    anon f_normal_low "Of course."
     show anon b_dressed f_normal behind liu
     show liu a_close_blouse b_dressed_disheveled f_nervous_down:
         xoffset -75
@@ -544,10 +405,8 @@ label liu_button_lobby.sex:
         crop (0, 353, 1024, 415)
         xoffset -75
     with {'master': dissolve}
-    anon "Semoga harimu menyenangkan, {b}Liu{/b}."
-
-    liu f_happy "Saya pasti akan melakukannya."
-
+    anon "Have a good day, {b}Liu{/b}."
+    liu f_happy "I definitely will."
     hide anon
     show liu f_happy_closed
     show liu a_cover as body
@@ -557,8 +416,7 @@ label liu_button_lobby.sex:
 
 
 label liu_button_lobby.suggest:
-    anon f_flirt "Punya sedikit waktu untuk \"bersenang-senang\"?"
-
+    anon f_flirt "Got a little time for some \"fun\"?"
 
     if M_tina.where in L_bank.get_all_children_inclusive():
         jump liu_button_lobby.boss
@@ -567,130 +425,93 @@ label liu_button_lobby.suggest:
         jump liu_button_lobby.sex
 
     show liu f_worried o_blush with {'master': dissolve}
-    liu "Ssst, {b}[firstname]{/b}!!!"
-
+    liu "Shhhhh, {b}[firstname]{/b}!!!"
     show anon f_normal
     show liu a_hold_arm
     with {'master': dissolve}
-    liu "Kita tidak bisa melakukan itu sekarang!"
-
-    anon f_confused "Kenapa?"
-
+    liu "We can't do that now!"
+    anon f_confused "How come?"
     show liu -o_blush
     with {'master': dissolve}
-    liu "Lihatlah ke sekeliling, ada orang di mana-mana, bahkan satpam pun mengawasi!"
-
+    liu "Look around, there are people everywhere, even the security guard is watching!"
     show anon a_surprised f_surprised_left
     with {'master': dissolve}
-    liu f_ashamed_down "Saya satu-satunya teller yang bertugas saat ini, jadi saya akan dirindukan."
-
+    liu f_ashamed_down "I'm the only teller on duty right now, so I'd be missed."
     show anon a_sides f_confused_back
     with {'master': dissolve}
-    anon @ -m_talk "( Kapan saya melihat penjaga yang mengantuk itu bertugas? {b}Selasa pagi{/b}? )"
-
+    anon @ -m_talk "( When did I see that sleepy guard on duty? {b}Tuesday mornings{/b}? )"
     show anon f_worried
-    liu f_worried "Maaf, {b}[firstname]{/b}."
-
-    anon f_shy "Jangan khawatir."
-
+    liu f_worried "Sorry, {b}[firstname]{/b}."
+    anon f_shy "Don't worry."
     show liu a_sides f_nervous
     with {'master': dissolve}
-    anon "Saya mengerti."
-
-    liu "Mungkin jika kita tidak terlalu sibuk aku bisa-"
-
+    anon "I understand."
+    liu "Maybe if we weren't so busy I could-"
     show anon a_wave f_normal with {'master': dissolve}
-    anon f_normal "Tidak apa-apa, {b}Liu{/b}. Aku bisa menghubungimu nanti."
-
+    anon f_normal "It's okay, {b}Liu{/b}. I can call on you later."
     show anon a_sides with {'master': dissolve}
-    liu f_happy "Benar-benar?!"
-
-    liu f_sexy "Aku pasti akan menebusnya padamu."
-
-    anon f_normal "Kedengarannya bagus."
-
+    liu f_happy "Really?!"
+    liu f_sexy "I'd be sure to make it up to you."
+    anon f_normal "Sounds good."
     jump liu_button_lobby.choice
 
 
 label liu_button_lobby.threesome:
-    anon f_thinking "Mungkin dia bisa bergabung?"
-
+    anon f_thinking "Perhaps she could join in?"
     show liu a_mouth_cover f_surprised with {'master': dissolve}
-    liu "Ya ampun, bisakah kamu bayangkan?!"
-
+    liu "Oh my gosh, could you imagine?!"
     pause
     show anon f_normal
     show liu a_hold_arm f_nervous o_blush
     with {'master': dissolve}
-    liu "Saya yakin dia seperti pemakan pria di balik pintu tertutup!"
-
+    liu "I bet she's like a total man eater behind closed doors!"
     show liu f_nervous_lipbite_back
-    anon f_happy "Y-ya, mungkin..."
-
+    anon f_happy "Y-yeah, maybe..."
     show liu f_nervous_lipbite
-    anon f_normal "... Kamu ingin mencari tahu?"
-
+    anon f_normal "... You wanna find out?"
     show liu a_sides f_happy with {'master': dissolve}
-    liu "Heh, berhenti menggodaku!"
-
+    liu "Heh, stop teasing me!"
     show liu f_nervous -o_blush
     with {'master': dissolve}
-    liu "{b}Tina{/b} bukan tipe cewek seperti itu."
-
-    anon "Jika Anda berkata demikian."
-
+    liu "{b}Tina{/b} isn't that type of girl."
+    anon "If you say so."
     jump liu_button_lobby.choice
 
 
 label liu_button_lobby.tina:
-    anon f_normal "Apakah Tina ada?"
-
+    anon f_normal "Is Tina around?"
     if game.timer.is_weekend():
-        liu f_worried "Maaf, tidak. Dia hanya bekerja pada {b}hari kerja{/b}."
-
+        liu f_worried "Sorry, no. She only works on {b}weekdays{/b}."
     else:
-        liu f_worried "Maaf, tidak. Dia tidak akan masuk sampai nanti {b}sore ini{/b}."
-
+        liu f_worried "Sorry, no. She won't be in until later {b}this afternoon{/b}."
     show anon f_worried
-    liu f_curious "Apakah ada yang bisa saya bantu?"
-
-    anon "Tidak, tidak, tidak apa-apa."
-
-    liu f_normal "Baiklah, apakah ada hal lain yang bisa saya lakukan untuk Anda hari ini?"
-
-    anon @ f_thinking "Hmm..."
-
+    liu f_curious "Is it something I can assist you with?"
+    anon "No, no, that's okay."
+    liu f_normal "Very well, is there anything else I can do for you today?"
+    anon @ f_thinking "Umm..."
     jump liu_button_lobby.choice
 
 
 label liu_button_lobby.upbeat:
-    anon "Bagaimana kabarmu?"
-
-    liu f_happy "Saya luar biasa!"
-
+    anon "How are you?"
+    liu f_happy "I'm wonderful!"
     show anon f_brag
-    liu "Setiap hari terasa lebih cerah sekarang karena {b}Kim{/b} telah tiada dan kamu ada dalam hidupku."
-
-    liu "Aku akan melakukan apa saja untuk membuatmu bahagia seperti kamu telah membuatku bahagia, {b}[firstname]{/b}!"
-
+    liu "Every day seems brighter now that {b}Kim{/b} is gone and you are in my life."
+    liu "I'll do anything to make you as happy as you've made me, {b}[firstname]{/b}!"
 
     menu:
-        "Apa pun?":
+        "Anything?":
             jump liu_button_lobby.anything
-        "Senyummu sudah cukup.":
+        "Your smile is enough.":
 
             pass
 
-    anon f_happy "Melihat senyum indahmu saja sudah membuatku bahagia, {b}Liu{/b}."
-
-    anon "Anda adalah orang yang luar biasa dan Anda pantas mendapatkan kebahagiaan."
-
-    liu f_nervous "Aduh, {b}[firstname]{/b}... Kamu terlalu baik padaku."
-
+    anon f_happy "Just seeing your beautiful smile is enough to make me happy, {b}Liu{/b}."
+    anon "You're a wonderful person and you deserve happiness."
+    liu f_nervous "Aww, {b}[firstname]{/b}... You're too good to me."
     show liu f_nervous_back
     pause
-    liu f_nervous "Mendekatlah."
-
+    liu f_nervous "Come closer."
     show anon f_confused_low
     show liu b_dressed_lean_whisper f_sexy
     with dissolve
@@ -698,19 +519,14 @@ label liu_button_lobby.upbeat:
     show anon b_spook f_confused:
         xoffset 150
     with dissolve
-    liu "Mengapa kamu tidak datang ke apartemenku malam ini?"
-
+    liu "Why don't you come by my apartment tonight?"
     anon f_surprised "Oh?"
-
-    liu "Aku akan melakukan lebih dari sekedar tersenyum untukmu..."
-
-    anon f_flirt "{i}*Gulp*{/i} Y-ya, oke."
-
+    liu "I'll do a lot more than smile for you..."
+    anon f_flirt "{i}*Gulp*{/i} Y-yeah, okay."
     show anon f_shy_high
     show liu a_mouth_cover b_dressed f_laugh
     with {'master': dissolve}
-    liu "hehe!"
-
+    liu "Hehe!"
     show anon a_sides b_dressed f_shy:
         xoffset 0
     show liu a_idle f_happy
@@ -719,43 +535,27 @@ label liu_button_lobby.upbeat:
 
 
 label liu_button_lobby.unsure:
-    anon f_shy "Bagaimana kabarmu?"
-
+    anon f_shy "How are you?"
     show liu a_point_self f_surprised o_blush with {'master': dissolve}
-    liu "A-aku?"
-
-    anon f_normal "Ya."
-
-    anon "Harimu menyenangkan?"
-
+    liu "M-me?"
+    anon f_normal "Yeah."
+    anon "You having a good day?"
     show liu a_cover f_nervous_back with {'master': dissolve}
-    liu "Ya ampun... aku uhh..."
-
-    liu "... Y-ya, menurutku begitu."
-
-    anon f_confused "Anda tidak yakin?"
-
-    liu f_nervous "T-tidak, benar, hanya saja..."
-
-    liu "... Aku tidak terlalu terbiasa dengan orang-orang yang bertanya tentang hariku."
-
-    anon f_surprised "Tidak?"
-
+    liu "Oh, my... I uhh..."
+    liu "... Y-yes, I think so."
+    anon f_confused "You're not certain?"
+    liu f_nervous "N-no, I am, it's just..."
+    liu "... I'm not really used to people asking me about my day."
+    anon f_surprised "No?"
     pause
-    anon f_confused "Bahkan bukan suamimu?"
-
+    anon f_confused "Not even your husband?"
     show liu a_sides f_ashamed_down -o_blush with {'master': dissolve}
-    liu "Tentu saja tidak."
-
-    liu "{b}Kim{/b} tidak pernah suka berbasa-basi."
-
-    anon f_thinking_down "Hmm, begitu."
-
-    anon a_thinking @ -m_talk "(Saya kira itu tidak mengejutkan.)"
-
+    liu "Oh, definitely not."
+    liu "{b}Kim{/b}'s never been much for small talk."
+    anon f_thinking_down "Hmm, I see."
+    anon a_thinking @ -m_talk "( I guess that shouldn't come as a surprise. )"
     show anon a_sides f_worried
     with {'master': dissolve}
-    anon @ -m_talk "(Gadis ini benar-benar pantas mendapatkan yang lebih baik.)"
-
+    anon @ -m_talk "( This girl really does deserve much better. )"
     jump liu_button_lobby.choice
 # Decompiled by unrpyc: https://github.com/CensoredUsername/unrpyc

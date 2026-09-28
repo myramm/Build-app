@@ -13,19 +13,13 @@ label ano18_trap_consuela:
     with dissolve
     consuela "No, no, no... He has to go!" (show_native="¡No, no, no... El tiene que irse!")
     show consuela a_idle with dissolve
-    ricky "Kamu harus pergi, tampan!"
-
-    ricky "Anda benar-benar tidak ingin {b}Mister Rump{/b} menangkap Anda kembali ke sini."
-
+    ricky "You gotta go, handsome!"
+    ricky "You really don't want {b}Mister Rump{/b} to catch you back here."
     show anon f_worried
-    ricky "Percayalah kepadaku."
-
-    anon "Y-ya, baiklah."
-
-    anon "Tapi aku akan kembali!"
-
-    consuela @ a_point "Pergi!"
-
+    ricky "Trust me."
+    anon "Y-yeah, alright."
+    anon "I'm coming back though!"
+    consuela @ a_point "Go!"
     hide anon with dissolve
     return
 # Decompiled by unrpyc: https://github.com/CensoredUsername/unrpyc

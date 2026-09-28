@@ -1,65 +1,40 @@
 label scene_ivy_vera:
     call scene_ivy_vera.animation
     with fade
-    ivy "Apakah ini membantu meredakan ketegangan Anda?"
-
-    vero "Tentu saja!"
-
-    anon "(Wah, lihatlah!)"
-
+    ivy "Is this helping with your tension?"
+    vero "Oh, definitely!"
+    anon "( Whoa, check it out! )"
     pause
-    ivy "Hati-hati, jangan menjatuhkanku dari meja kali ini!"
-
-    vero "Oke, itu terjadi sekali..."
-
-    vero "... Dan itu karena Anda menggunakan {i}cara{/i} terlalu banyak pelumas!"
-
-    ivy "Yah, maaf, tapi aku menyukainya ekstra lubey!"
-
-    vero "Hehe!"
-
+    ivy "Careful you don't knock me off the table this time!"
+    vero "Okay, that happened once..."
+    vero "... And it was because you used {i}way{/i} too much lube!"
+    ivy "Well, I'm sorry but I like it extra lubey!"
+    vero "Heh!"
     pause
-    anon "( Apakah mereka menggunakan dildo dua sisi? )"
-
-    anon "(Itu sangat panas!)"
-
+    anon "( Are they using a double-sided dildo? )"
+    anon "( That's so hot! )"
     pause
-    vero "Ahh, sial!"
-
-    ivy "Menikmati?"
-
-    vero "Ya!!"
-
+    vero "Ahh, fuck!"
+    ivy "Enjoying?"
+    vero "Yes!!"
     pause
-    ivy "Jadi, apakah kamu..."
-
-    ivy "... Membuat-"
-
+    ivy "So have you..."
+    ivy "... Made a-"
     $ M_ivy.set('sex speed', 1. / 14)
-    ivy "Tidak!!"
-
-    ivy "Keputusan belum?!"
-
+    ivy "Ngh!!"
+    ivy "Decision yet?!"
     pause
-    vero "Tidak, menurutku..."
-
-    vero "... Kita perlu melakukan..."
-
+    vero "No, I think..."
+    vero "... We need to do..."
     $ M_ivy.set('sex speed', 1. / 18)
-    ivy "Sial!"
-
-    vero "...Sedikit lagi..."
-
+    ivy "Fuck!"
+    vero "... A little more..."
     $ M_ivy.set('sex speed', 1. / 22)
-    ivy "Astaga!!"
-
-    vero "... PENGUJIAN!!!"
-
-    anon "(Wow, lihat mereka pergi...)"
-
+    ivy "Oh, fuck!!"
+    vero "... TESTING!!!"
+    anon "( Wow, look at them go... )"
     pause
-    anon "(Saya sangat ingin tinggal di sini dan menonton...)"
-
+    anon "( As much as I'd like to stay here and watch... )"
     return
 
 
@@ -74,26 +49,17 @@ label scene_ivy_vera.repeat:
     call scene_ivy_vera.animation
     $ M_ivy.set('sex speed', 1. / 18)
     with fade
-    anon "(Saya yakin {b}Diane{/b} tidak akan keberatan jika saya meluangkan waktu... )"
-
-    anon "(... Sedikit lebih lama lagi tidak ada salahnya.)"
-
+    anon "( I'm sure {b}Diane{/b} won't mind me taking my time... )"
+    anon "( ... Just a little longer couldn't hurt. )"
     ivy "Haah! Haah!!"
-
     pause
-    ivy "Tetap saja..."
-
-    ivy "... Belum diputuskan?"
-
-    vero "Anda tidak bisa terburu-buru-"
-
+    ivy "Still..."
+    ivy "... Not decided?"
+    vero "You can't rush-"
     vero "Hng!"
-
-    vero "... pengujian semacam ini!"
-
+    vero "... this sort of testing!"
     pause
-    anon "(Sepertinya itu akan memakan waktu cukup lama.)"
-
+    anon "( Sounds like they're going to be a while. )"
     return
 
 

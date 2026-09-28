@@ -30,9 +30,7 @@ layeredimage iwanka:
         attribute b_dressed default
         attribute b_empty null
         attribute b_magic "iwanka_body_b_[M_iwanka.outfit.get][M_iwanka.pregnancy.to_string]"   
-
         attribute b_dressed_magic "iwanka_body_b_dressed[M_iwanka.pregnancy.to_string]"   
-
         attribute b_swim_kiss 'iwanka_body_b_swim_kiss'
         attribute b_maid_kiss 'iwanka_body_b_maid_kiss'
         attribute b_naked_kiss 'iwanka_body_b_naked_kiss'
@@ -238,7 +236,6 @@ layeredimage iwanka:
 
     group arms if_all 'b_gown_bed' auto variant 'gown_bed':
         attribute a_idle default "iwanka_arms_gown_bed_a_baby_[M_iwanka.pregnancy.baby_gender]"
-
 
 
     group arms if_all 'b_magic' auto:

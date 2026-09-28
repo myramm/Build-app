@@ -9,19 +9,19 @@ label angelica_default_button_dialogue:
     if M_ross.is_state(S_ross_get_linens) and not player.has_item("linens"):
         call expression game.dialog_select("angelica_dialogue_ross_get_linens_pre")
         menu:
-            "Linen.":
+            "Linens.":
                 call expression game.dialog_select("angelica_dialogue_ross_get_linens")
                 $ player.get_item("linens")
 
     elif M_mia.is_set("helen dialogue change"):
         call expression game.dialog_select("angelica_dialogue_change_pre")
         menu:
-            "Bicara.":
+            "Talk.":
                 call expression game.dialog_select("angelica_dialogue_change_talk")
-            "kuburan.":
+            "Graveyard.":
 
                 call expression game.dialog_select("angelica_dialogue_change_graveyard")
-            "Sudahlah.":
+            "Never mind.":
 
                 call expression game.dialog_select("angelica_dialogue_change_leave")
     else:
@@ -33,22 +33,22 @@ label angelica_room_button_dialogue:
     if M_helen.is_set("helen route"):
         call expression game.dialog_select("angelicas_room_dialogue_helen_route_pre")
         menu angelicas_room_dialogue_helen_route_options:
-            "Memukul.":
+            "Spanking.":
                 call expression game.dialog_select("angelicas_room_dialogue_helen_route_spanking")
                 jump expression game.dialog_select("sacrament_complete")
-            "Benih suci.":
+            "Holy seed.":
 
                 call expression game.dialog_select("angelicas_room_dialogue_helen_route_holy_seed")
                 jump expression game.dialog_select("helen_mc_churchsex")
-            "Sebarkan {b}Helen{/b}.":
+            "Spread {b}Helen{/b}.":
 
                 call expression game.dialog_select("angelicas_room_dialogue_helen_route_spread_helen")
                 jump expression game.dialog_select("sacrament_complete")
-            "Apakah kamu sudah berdosa?":
+            "Have you sinned?":
 
                 call popup ('alpha')
                 jump expression game.dialog_select("angelicas_room_dialogue_helen_route_options")
-            "Tidak ada apa-apa.":
+            "Nothing.":
 
                 call expression game.dialog_select("angelicas_room_dialogue_helen_route_leave")
                 $ game.main()
@@ -62,18 +62,18 @@ label angelica_room_button_dialogue:
     elif M_mia.is_state(S_mia_find_sinners):
         call expression game.dialog_select("angelicas_room_dialogue_mia_find_sinners_pre")
         menu:
-            "Temukan orang berdosa.":
+            "Find sinners.":
                 call expression game.dialog_select("angelicas_room_dialogue_mia_find_sinners")
 
     elif M_mia.is_state(S_mia_angelicas_whip):
         call expression game.dialog_select("angelicas_room_dialogue_mia_angelicas_whip_pre")
         menu:
-            "Cambuk.":
+            "The whip.":
                 if player.has_item("whip"):
                     $ player.remove_item("whip")
                     jump expression game.dialog_select("helen_sacrement_training_part2")
                 call expression game.dialog_select("angelicas_room_dialogue_mia_angelicas_whip")
-            "Tidak ada apa-apa.":
+            "Nothing.":
 
                 call expression game.dialog_select("angelicas_room_dialogue_mia_angelicas_whip_leave")
     else:
@@ -86,14 +86,14 @@ label angelica_room_button_dialogue:
             $ player.go_to_previous()
             $ game.main()
         menu:
-            "Diikat." if M_mia.is_state([S_mia_harolds_thoughts, S_mia_angelicas_final_request]) and not player.has_item("strapon"):
+            "Strap-on." if M_mia.is_state([S_mia_harolds_thoughts, S_mia_angelicas_final_request]) and not player.has_item("strapon"):
                 call expression game.dialog_select("angelicas_room_dialogue_mia_angelicas_final_request_strap_on")
 
-            "Tidak ada apa-apa." if M_mia.is_state([S_mia_harolds_thoughts, S_mia_angelicas_final_request]):
+            "Nothing." if M_mia.is_state([S_mia_harolds_thoughts, S_mia_angelicas_final_request]):
                 call expression game.dialog_select("angelicas_room_dialogue_mia_angelicas_final_request_leave")
                 $ game.main()
 
-            "Tidak ada apa-apa." if not M_mia.is_state([S_mia_harolds_thoughts, S_mia_angelicas_final_request]):
+            "Nothing." if not M_mia.is_state([S_mia_harolds_thoughts, S_mia_angelicas_final_request]):
                 call expression game.dialog_select("angelicas_room_dialogue_default_leave")
                 $ game.main()
     $ game.main()

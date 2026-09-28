@@ -5,76 +5,42 @@ label jos01_find_kim:
         flip
         xoffset 200
     with fade
-    rump "Anda ingin memberi tahu saya mengapa saya mendapat telepon dari rekan saya yang mengatakan Anda tidak menghormati putrinya?"
-
+    rump "You want to tell me why I'm getting phone calls from my associate, saying you disrespected his daughter?"
     kim f_curious @ -m_talk "Hmm?"
-
-    rump "Dia bilang dia datang ke sini beberapa hari yang lalu, ingin membeli mobil, dan kamu tidak mau membantunya?"
-
-    kim f_normal "Itu tidak benar!"
-
-    kim "Saya terr padanya, dia ingin mobil custom, saya harus memesannya."
-
-    kim "Ambil beberapa minggu sebelum datang."
-
-    rump f_normal @ a_hand "Ya, tapi dia bilang kamu sangat kasar padanya..."
-
-    kim f_angry "Ck, dia bayi besar!"
-
-    kim "Membuat ulah di toko, saya tidak punya waktu untuk mengganti popok rittre girr!"
-
+    rump "He says she came in here the other day, looking to purchase a car, and you wouldn't help her?"
+    kim f_normal "That's not true!"
+    kim "I terr her, she want custom car, I must make order."
+    kim "Take coupre weeks before come."
+    rump f_normal @ a_hand "Yes, but he says you were very rude to her..."
+    kim f_angry "Tsk, she big baby!"
+    kim "Throw tantrum in store, I no have time for changing rittre girr diapers!"
     kim f_smirk @ f_laugh a_rub "Huehuehue!"
-
-    rump f_angry @ a_finger "Ini bukan bahan tertawaan, {b}Kim{/b}."
-
+    rump f_angry @ a_finger "This is not a laughing matter, {b}Kim{/b}."
     show kim f_normal
-    rump "Rekan saya adalah orang yang sangat serius dan dia tidak menanggapi rasa tidak hormat dengan baik."
-
-    rump "Dia pasti mengirim orang ke sini untuk mencelakakanmu, kalau saja aku tidak turun tangan."
-
-    kim f_angry @ f_baby_cry "Apa?!"
-
-    kim "Mereka mengancam {b}Kim{/b}?!"
-
-    rump f_normal "Anda beruntung telah membuktikan diri Anda sebagai aset berharga sejauh ini."
-
-    rump "Tapi saya peringatkan Anda sekarang, Anda jauh dari tak tergantikan."
-
-    rump "Apakah kamu mengerti?"
-
-    kim f_normal "Ya, ya... {b}Kim{/b} mengerti."
-
-    kim @ a_wave "Maksudku, tidak ada rasa tidak hormat."
-
-    rump "Gadis itu akan kembali ke sini minggu depan dan Anda AKAN memiliki mobil yang menunggunya, bersama dengan permintaan maaf."
-
-    rump "Apakah saya memperjelas diri saya?"
-
-    kim "Y-ya, tentu saja, {b}Pak. pantat{/b}!"
-
-    kim "{b}Kim{/b} menyiapkan mobil dan membuat permintaan maaf besar-besaran."
-
-    rump "Sangat bagus."
-
+    rump "My associate is a very serious man and he does not respond well to disrespect."
+    rump "He'd have sent men here to do you harm, had I not stepped in."
+    kim f_angry @ f_baby_cry "Whaaa?!"
+    kim "They threaten {b}Kim{/b}?!"
+    rump f_normal "You're lucky you've proven yourself to be a valuable asset thus far."
+    rump "But I'm warning you now, you are far from irreplaceable."
+    rump "Do you understand?"
+    kim f_normal "Yes, yes... {b}Kim{/b} understand."
+    kim @ a_wave "I meant no disrespect."
+    rump "The girl will be returning here next week and you WILL have a car waiting for her, along with an apology."
+    rump "Do I make myself clear?"
+    kim "Y-yes, of course, {b}Mr. Rump{/b}!"
+    kim "{b}Kim{/b} prepare car and make big time aporogy."
+    rump "Very good."
     pause
-    rump "Sekarang semuanya sudah beres, saya ingin berbicara dengan Anda tentang meningkatnya kebutuhan perusahaan kami di Summerville."
-
-    rump "Mengapa kamu tidak mampir ke rumahku nanti malam dan kita akan membahas detailnya, hmm?"
-
-    rump f_smirk "Ajaklah istrimu yang cantik itu... Kita semua akan berendam di bak mandi air panas."
-
-    kim f_smirk "Wirr {b}Ny. Rump{/b} akan bergabung dengan kami?"
-
-    rump "Pastinya."
-
-    kim "Oh, {b}Kim{/b} seperti suara itu..."
-
-    kim "Kami datang."
-
-    rump "Luar biasa."
-
-    rump "Aku akan memberi tahu pengawalku bahwa kamu diharapkan."
-
+    rump "Now that's settled, I'd like to speak with you about the growing needs of our enterprise here in Summerville."
+    rump "Why don't you swing by my estate later this evening and we'll discuss the details, hmm?"
+    rump f_smirk "Bring that beautiful wife of yours along... We'll all go for a dip in the hot tub."
+    kim f_smirk "Wirr {b}Mrs. Rump{/b} be joining us?"
+    rump "Most definitely."
+    kim "Oh, {b}Kim{/b} rike sound of that..."
+    kim "We come."
+    rump "Wonderful."
+    rump "I'll let my guards know you're expected."
     show rump f_normal with dissolve:
         unflip
         xoffset -400
@@ -82,25 +48,16 @@ label jos01_find_kim:
     show rump with dissolve:
         flip
         xoffset 100
-    rump @ a_finger "Oh, satu hal lagi..."
-
+    rump @ a_finger "Oh, one more thing..."
     kim f_curious @ -m_talk "Hmm?"
-
-    rump "Kumpulkan dokumen apa pun yang dimiliki bos Anda mengenai urusan kita selama dua belas bulan terakhir, dan buanglah."
-
-    rump "Segalanya akan segera memanas dan saya tidak ingin ada jejak kertas."
-
-    kim f_smirk "Ya, tentu saja."
-
-    kim "{b}Catatan di lantai atas, di kantor{/b}."
-
-    kim "{b}Kim{/b} sayang dengan mereka."
-
-    rump "Jangan mengecewakanku, {b}Kim{/b}."
-
+    rump "Gather up any paperwork your boss has on our dealings over the past twelve months, and dispose of them."
+    rump "Things are going to be heating up very soon and I don't want a paper trail."
+    kim f_smirk "Yes, of course."
+    kim "{b}Records upstairs, in office{/b}."
+    kim "{b}Kim{/b} dear with them."
+    rump "Don't let me down, {b}Kim{/b}."
     show kim b_dressed_bow with dissolve
-    kim "Tidak pernah, {b}Bpk. pantat{/b}."
-
+    kim "Never, {b}Mr. Rump{/b}."
     hide rump
     show kim b_dressed
     with dissolve
@@ -110,12 +67,9 @@ label jos01_find_kim:
     scene expression background(560, 480, 3) as stage
     show anon f_worried
     with fade
-    anon @ -m_talk "( Hmm, mungkinkah {b}Walikota Rump{/b} berbisnis dengan mafia Rusia? )"
-
-    anon @ -m_talk "(Tentu saja terdengar seperti itu dari percakapan yang baru saja kudengar...)"
-
-    anon @ -m_talk "(Saya harus {b}pergi ke atas ke kantor dan melihat bagaimana menemukan dokumen{/b} yang sedang mereka diskusikan. )"
-
+    anon @ -m_talk "( Hmm, is it possible that {b}Mayor Rump{/b} is doing business with the Russian mob? )"
+    anon @ -m_talk "( It certainly sounds that way from the conversation I just overheard... )"
+    anon @ -m_talk "( I should {b}head upstairs to the office and see about finding that paperwork{/b} they were discussing. )"
     hide anon with dissolve
     return
 # Decompiled by unrpyc: https://github.com/CensoredUsername/unrpyc

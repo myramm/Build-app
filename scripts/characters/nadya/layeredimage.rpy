@@ -32,12 +32,9 @@ layeredimage nadya:
         attribute b_dressed default
         attribute b_empty null
         attribute b_magic "nadya_body_b_[M_nadya.outfit][M_nadya.pregnancy]"   
-
         attribute b_traditional_kiss
-        attribute b_dressed_magic "nadya_tubuh_b_berdandan[M_nadya.pregnancy]"
-
+        attribute b_dressed_magic "nadya_body_b_dressed[M_nadya.pregnancy]"
         attribute b_dressed_couch_magic "nadya_body_b_dressed_couch[M_nadya.pregnancy]"
-
 
 
     group mouth prefix 'm':

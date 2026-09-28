@@ -3,20 +3,14 @@ label mar01_tour_apt_hall3:
     show anon with dissolve:
         flip
     anon "Well, I should probably get going..."
-
     pause
     show maria b_casual_magic with dissolve:
         flip
     maria "Thanks again for the help, handsome."
-
-    anon "Terima kasih kembali."
-
+    anon "You're welcome."
     maria "Feel free to stop by anytime."
-
     anon "Alright, I will."
-
-    anon @ a_wave "Sampai jumpa."
-
+    anon @ a_wave "See ya."
     hide anon with dissolve
     return
 # Decompiled by unrpyc: https://github.com/CensoredUsername/unrpyc

@@ -44,89 +44,60 @@ label scene_odette_crypt_cowgirl.dialogue(opt, rng=-1):
 
     if opt == 1:
         odette "Ahh!!"
-
         anon "Ooh."
 
-
     elif opt == 2:
-        anon "M'oh, bagaimana rum bisa pinnin'??"
-
-        odette "Ssst!"
-
+        anon "M'oh, way da rum iz pinnin'??"
+        odette "Shh!"
 
         if rng < .7:
-            anon "huh!"
-
+            anon "Guh!"
 
     elif opt == 3:
-        anon "Burrb, aku tidak mau puuukey..."
-
-        odette "Fokus saja pada sesuatu, {b}[firstname]{/b}..."
-
+        anon "Burrb, i'nda eelin puuukey..."
+        odette "Just focus on something, {b}[firstname]{/b}..."
 
         if rng < .3:
             anon "Hmm?"
 
-
-        odette "... Seperti payudaraku."
-
+        odette "... Like my tits."
 
         if rng < .4:
-            anon "Mmm, kamu..."
-
-            anon "... mereka mohon, bodoh!"
-
+            anon "Mmm, ye..."
+            anon "... 'em 'um beg ass 'iddies!"
 
     elif opt == 4:
-        odette "Anda menyukai cara mereka memantul?"
-
-        anon "Oh ya..."
-
+        odette "You like the way they're bouncing?"
+        anon "Oh ye..."
         anon "... 'Oingey, 'oingey, 'oingey!"
-
         odette "Hehehe!"
 
-
     elif opt == 4:
-        odette "Itu dia, sobat besar..."
-
-        odette "... Benamkan saja wajahmu di sana."
-
-        anon "Mm, ya."
-
-        anon "{i}*Tarik napas*{/i} Bagus sekali."
-
+        odette "That's it, big fella..."
+        odette "... Just bury your face in there."
+        anon "Mm, yee."
+        anon "{i}*Inhales*{/i} Ew mel gud."
 
     elif opt == 5:
-        odette "Ahh, penis besar ini..."
-
-        odette "... Terasa sangat enak!"
-
+        odette "Ahh, this big dick..."
+        odette "... Feels so fucking good!"
 
         if rng < .2:
-            odette "Saya berharap saya bisa mengendarainya selamanya!"
-
+            odette "I wish I could ride it for all of eternity!"
             anon "Erniny?!"
-
 
     return
 
 
 label scene_odette_crypt_cowgirl.switch:
-    odette "Ayo, {b}[firstname]{/b}...lebih keras!"
-
-    anon "Aduh!"
-
-    anon "'misalnya tidak bekerja'..."
-
+    odette "C'mon, {b}[firstname]{/b}... harder!"
+    anon "M'eye tyin'!"
+    anon "'egs dun workin'..."
     call scene_odette_sex_crypt.insert
     with {'master': dissolve}
-    odette "Ugh, hanya-"
-
-    odette "Biarkan aku melakukannya!"
-
+    odette "Ugh, just-"
+    odette "Let me do it!"
     anon "Murr?"
-
 
     scene location_crypt_side
     show odette b_vamp_sitting f_smirk
@@ -139,10 +110,8 @@ label scene_odette_crypt_cowgirl.switch:
         xoffset -200
     show anon b_empty
     with {'master': dissolve}
-    odette "Duduklah di singgasana, aku akan menunggangi kemaluanmu."
-
-    anon f_flirt "M'oh, ya-"
-
+    odette "Sit down in the throne, I'm gonna ride your cock."
+    anon f_flirt "M'oh, yee-"
     hide armrest
     show odette f_laugh:
         xoffset -250
@@ -165,12 +134,10 @@ label scene_odette_crypt_cowgirl.switch:
 
     call scene_odette_crypt_cowgirl.stage
     with fade
-    anon "Mhmm, seperti alas lumpur."
-
+    anon "Mhmm, iz mud bedder."
     call scene_odette_crypt_cowgirl.insert
     with {'master': dissolve}
-    odette "Besar... sial... kontol..."
-
+    odette "Big... fucking... dick..."
     call scene_odette_crypt_cowgirl.animate
     with {'master': dissolve}
     call scene_odette_crypt_cowgirl.dialogue (1)
@@ -183,16 +150,11 @@ label scene_odette_crypt_cowgirl.switch:
     pause
     call scene_odette_crypt_cowgirl.dialogue (5)
     pause
-    anon "Ngh, tidak apa-apa!"
-
+    anon "Ngh, es no wurkin'!"
     anon "Mi gun puk!"
-
-    odette "Tidak, jangan muntah!"
-
-    odette "Ayo, aku hampir sampai!"
-
+    odette "No, don't puke!"
+    odette "C'mon, I'm almost there!"
     anon "Murrp!"
-
     pause
 
     call scene_odette_crypt_cowgirl.loop
@@ -200,22 +162,14 @@ label scene_odette_crypt_cowgirl.switch:
     if _return == 'switch':
         jump scene_odette_sex_crypt.switch
 
-    odette "Astaga!"
-
-    anon "Mi 'dengan halus gun puk."
-
-    odette "Oh, persetan denganku!!"
-
-    odette "aku akan keluar!"
-
+    odette "Oh, fuck!"
+    anon "Mi 'efinely gun puk."
+    odette "Oh, fuck me!!"
+    odette "I'm gonna cum!"
     anon "MI GUN PUK, {b}ONETTE{/b}!!"
-
-    anon "Aku akan-"
-
+    anon "Iz gon-"
     odette "NGGHHH!!!"
-
     anon "Buuurb-"
-
     show odette_body_b_sex_vamp_missionary_cum as anim
     anon "HRRRNNGGG!!!" with flash
     show xray_side as xray:
@@ -230,16 +184,11 @@ label scene_odette_crypt_cowgirl.switch:
     call scene_odette_crypt_cowgirl.insert
     with {'master': dissolve}
     anon "Haah... Haah..."
-
     show odette_crypt_cowgirl_cum as cum
-    odette "Hmm, hangat sekali."
-
-    anon "Ya."
-
-    anon "Apakah aku muntah?"
-
-    odette "Heh, tidak, kamu tidak muntah."
-
+    odette "Mmm, it's so warm."
+    anon "Yeah."
+    anon "Id I puk?"
+    odette "Heh, no you didn't puke."
     return
 
 

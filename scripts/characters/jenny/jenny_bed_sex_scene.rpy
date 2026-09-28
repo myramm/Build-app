@@ -17,25 +17,21 @@ label jenny_bed_night_button:
 label jenny_bed_night_pre_j17:
     scene expression player.location.background_blur with None
     show anon f_surprised_teeth with dissolve
-    anon "(Tidak mungkin aku mengganggunya!)"
-
-    anon "(Dia akan membunuhku!)"
-
+    anon "( There's no way I'm bothering her! )"
+    anon "( She'll kill me! )"
     hide anon with dissolve
     return
 
 label jenny_bed_night_j17_j20:
     scene expression player.location.background_blur with None
     show anon f_thinking a_thinking with dissolve
-    anon @ -m_talk "(Kamu tahu, akhir-akhir ini hubungan kita menjadi lebih baik...)"
-
-    anon @ -m_talk "(Mungkin dia tidak keberatan?)"
-
+    anon @ -m_talk "( You know, we have been getting along better recently... )"
+    anon @ -m_talk "( Maybe she wouldn't mind? )"
     show anon f_grin
     menu:
-        "Lakukan itu.":
+        "Do it.":
             call expression game.dialog_select("jenny_bed_night_do_it_j17")
-        "Sebaiknya aku tidak melakukannya.":
+        "I'd better not.":
             call expression game.dialog_select("jenny_bed_night_better_not")
     return
 
@@ -57,12 +53,9 @@ label jenny_bed_night_do_it_j17:
     pause
     show jenny f_sleep_side_wake
     jenny "Hmm?"
-
     show jenny b_sleep_turn a_turn f_sleep_turn_angry o_sleep_panties with dissolve
-    jenny "Apa yang-"
-
-    anon "H-hai."
-
+    jenny "What the-"
+    anon "H-hi."
     pause
     show jenny a_turn_push
     show anon b_sleep_side o_sleep_side_boxers a_react f_sleep_side_shock
@@ -71,46 +64,33 @@ label jenny_bed_night_do_it_j17:
     show anon f_surprised_teeth b_underwear
     show jenny f_angry a_crossed
     with fade
-    jenny "Serius, ada apa denganmu?!"
-
-    anon f_sad "maafkan aku... aku-"
-
-    jenny "Anda tidak boleh begitu saja menyelinap ke tempat tidur wanita saat dia sedang tidur, {b}[firstname]{/b}!"
-
-    jenny "Itu sangat menyeramkan!"
-
-    anon "Aku hanya berpikir mungkin-"
-
+    jenny "Seriously, what the fuck is wrong with you?!"
+    anon f_sad "I'm sorry... I-"
+    jenny "You don't just sneak into a woman's bed while she's sleeping, {b}[firstname]{/b}!"
+    jenny "That is so creepy!"
+    anon "I just thought that maybe-"
     show anon f_depressed
-    jenny "Tidak, Anda jelas tidak berpikir!"
-
-    jenny "Eugh, keluar saja!"
-
+    jenny "No, you obviously didn't think!"
+    jenny "Eugh, just get the fuck out!"
     anon f_sad @ -m_talk "..."
     hide anon with dissolve
     show jenny f_eyeroll
-    jenny "pecundang sialan..."
-
+    jenny "Fucking loser..."
     scene black with fade
     pause
     $ player.go_to(L_home_hallway)
     scene expression player.location.background_blur with None
     show anon f_sad_down with dissolve
-    anon @ -m_talk "(Yah, itu mengerikan...)"
-
-    anon @ -m_talk "(Mengapa menurutku itu ide yang bagus?)"
-
-    anon @ -m_talk "( {i}*Sigh*{/i} Saya harap dia tidak memberi tahu {b}[deb_name]{/b} tentang ini... )"
-
+    anon @ -m_talk "( Well, that was awful... )"
+    anon @ -m_talk "( Why did I think that was a good idea? )"
+    anon @ -m_talk "( {i}*Sigh*{/i} I hope she doesn't tell {b}[deb_name]{/b} about this... )"
     hide anon with dissolve
     return
 
 label jenny_bed_night_better_not:
     show anon f_worried a_idle with dissolve
-    anon @ -m_talk "(Ya, tidak...)"
-
-    anon @ -m_talk "(Tidak ada gunanya membuatnya kesal.)"
-
+    anon @ -m_talk "( Yeah, no... )"
+    anon @ -m_talk "( It's not worth pissing her off. )"
     hide anon with dissolve
     return
 
@@ -120,15 +100,13 @@ label jenny_bed_night_sex_intro:
         $ game.timer.tick(3)
     scene expression player.location.background_blur with None
     show anon f_thinking a_thinking with dissolve
-    anon @ -m_talk "(Tentunya dia tidak akan marah padaku sekarang, kan?)"
-
-    anon @ -m_talk "(Maksudku, dia naik ke tempat tidurKU di tengah malam... Kenapa aku tidak bisa melakukan hal yang sama? )"
-
+    anon @ -m_talk "( Surely she won't get mad at me now, right? )"
+    anon @ -m_talk "( I mean, she's been climbing into MY bed in the middle of the night... Why can't I do the same? )"
     show anon f_grin
     menu:
-        "Lakukan itu.":
+        "Do it.":
             call expression game.dialog_select("jenny_bed_night_sex_do_it")
-        "Sebaiknya aku tidak melakukannya." if store._in_replay is None:
+        "I'd better not." if store._in_replay is None:
             call expression game.dialog_select("jenny_bed_night_better_not")
     return
 
@@ -152,49 +130,33 @@ label jenny_bed_night_sex_do_it:
         pause
         show jenny f_sleep_side_wake
         jenny "Hmm?"
-
         show jenny b_sleep_turn a_turn f_sleep_turn_angry o_sleep_panties with dissolve
         jenny "{b}[firstname]{/b}?"
-
-        anon "H-hai."
-
+        anon "H-hi."
         pause
-        jenny "Apa yang kamu lakukan?"
-
-        anon "Uhh, mau tidur?"
-
-        jenny "Pergilah ke tempat tidurmu sendiri, pecundang!"
-
-        anon "Aduh, ayolah {b}[jen_name]{/b}... Kamu selalu naik ke tempat tidurku!"
-
-        jenny "Ya, karena aku ingin bercinta... Bukan untuk berpelukan dan berliur di sekujur tubuhmu saat kamu mencoba untuk tidur."
-
-        anon "aku tidak berliur..."
-
+        jenny "What the fuck are you doing?"
+        anon "Uhh, going to bed?"
+        jenny "Go get in your own bed, loser!"
+        anon "Aww, c'mon {b}[jen_name]{/b}... You climb into my bed all the time!"
+        jenny "Yeah, because I wanna fuck... Not to cuddle up and slobber all over you while you're trying to sleep."
+        anon "I don't slobber..."
         show jenny b_sleep_side a_side f_sleep_side_tired with dissolve
-        jenny "Ya benar."
-
+        jenny "Yeah, right."
         show jenny f_sleep_side_sleeping
         pause
         show jenny b_sleep_turn a_turn f_sleep_turn_normal with dissolve
         jenny @ -m_talk "..."
-        jenny "Baiklah, cepatlah!"
-
+        jenny "Fine, just hurry it up!"
         anon @ -m_talk "Hmm?"
-
-        jenny "Saya lelah, {b}[firstname]{/b}!"
-
-        jenny "Jadi, kalau kau ingin meniduriku, cepatlah lakukan itu... Kalau tidak, pergilah!"
-
+        jenny "I'm tired, {b}[firstname]{/b}!"
+        jenny "So, if you're going to fuck me then hurry up and do it already... Otherwise, get the fuck out!"
         show jenny b_sleep_side a_side f_sleep_side_sleeping with dissolve
         show anon f_sleep_side_shock
         menu:
-            "Oke.":
-                anon f_sleep_side_shy "O-oke."
-
+            "Okay.":
+                anon f_sleep_side_shy "O-okay."
                 pause
-                anon "Hmm..."
-
+                anon "Umm..."
 
                 label jenny_bed_night_grope_in_bed:
                     show anon f_sleep_side_kiss b_empty_sleep_cuddle
@@ -203,8 +165,7 @@ label jenny_bed_night_sex_do_it:
                     show jenny b_sleep_side_grope a_empty f_empty as anim_body behind jenny
                     with dissolve
                     pause
-                    jenny "MM."
-
+                    jenny "Mmm."
                     show anon b_sleep_side f_sleep_side_shy o_sleep_side_boxers_boner
                     show expression "characters/anon/anon_arms_sleep_side_a_normal.png"
                     hide anim_arms
@@ -224,42 +185,36 @@ label jenny_bed_night_sex_do_it:
                     show jenny b_sleep_side_grope_shirtup a_empty f_empty as anim_body behind jenny
                     with dissolve
                     pause
-                    jenny "Oke, rasanya enak sekali..."
-
+                    jenny "Okay, that feels really good..."
                     show jenny f_sleep_side_rolleye
                     show jenny_arms_a_sleep_side_grope as anim_arms
                     show jenny b_sleep_side_grope_hump_shirtup as anim_body
                     with dissolve
                     jenny "Ngghhh!"
-
                     pause
-                    anon f_sleep_side_shy "Kamu senang aku sudah membangunkanmu?"
-
+                    anon f_sleep_side_shy "You glad I woke you up yet?"
                     show jenny f_sleep_side_tired
-                    jenny "Diam..."
-
+                    jenny "Shut up..."
                     show anon f_sleep_side_kiss
                     show jenny f_sleep_side_enjoy
                     pause
                     menu jenny_bed_night_whatcha_do:
-                        "Melangkah lebih jauh.":
+                        "Go further.":
                             jump jenny_bed_night_go_further
-                        "Melanjutkan.":
+                        "Continue.":
                             pause
                             jump jenny_bed_night_whatcha_do
 
-            "Lupakan." if store._in_replay is None:
+            "Forget it." if store._in_replay is None:
                 show anon b_sleep_leave
                 hide anim_arms
                 hide anim_body
                 show jenny b_sleep_turn a_turn f_sleep_turn_normal o_sleep_blanket
                 hide expression "characters/jenny/layeredimage/jenny_overlay_o_sleep_blanket_transparent.png"
                 with dissolve
-                anon "Baiklah, lupakan saja..."
-
+                anon "Fine, just forget it..."
                 hide anon with dissolve
-                jenny "Dengan senang hati."
-
+                jenny "Gladly."
                 $ player.go_to(L_home_hallway)
                 $ game.main()
     else:
@@ -274,26 +229,17 @@ label jenny_bed_night_sex_do_it:
         with dissolve
         show jenny f_sleep_side_wake
         jenny "Hmm?"
-
         show jenny b_sleep_turn a_turn f_sleep_turn_angry o_sleep_panties with dissolve
         jenny "{b}[firstname]{/b}?"
-
-        anon "H-hai."
-
+        anon "H-hi."
         pause
-        jenny "Sialan ini lagi?"
-
-        anon "Saya pikir kamu menyukainya?"
-
-        jenny "Apa yang memberimu ide itu?"
-
-        anon "J-jadi, kamu tidak menyukainya?"
-
-        jenny "Itu bukan-"
-
+        jenny "This shit again?"
+        anon "I thought you liked it?"
+        jenny "What the fuck gave you that idea?"
+        anon "S-so, you didn't like it?"
+        jenny "That's not-"
         pause
-        jenny "Sudahlah, cepatlah ya?!"
-
+        jenny "Never mind, just hurry it up, would you?!"
         show jenny b_sleep_side a_side f_sleep_side_sleeping with dissolve
         jump jenny_bed_night_grope_in_bed
 
@@ -305,8 +251,7 @@ label jenny_bed_night_go_further:
     hide anim_body
     show jenny b_sleep_turn_shirtup o_sleep_panties f_sleep_turn_normal a_turn
     with dissolve
-    jenny "Baiklah, pemanasannya sudah cukup."
-
+    jenny "Alright, that's enough foreplay."
     show jenny a_turn_remove1 o_empty with dissolve
     pause
     show anon a_remove1_boner f_sleep_side_normal o_empty zorder 1
@@ -325,17 +270,14 @@ label jenny_bed_night_go_further:
     show player_jenny_sleeping_sex pre
     show jenny_sex_sleep_blanket
     with fade
-    jenny "Masukkan ke dalam diriku."
-
+    jenny "Put it inside me."
     hide jenny_sleeping_sex_face
     show jenny_sleeping_sex insert
     hide player_jenny_sleeping_sex
     with dissolve
-    anon "Baiklah."
-
+    anon "Alright."
     show jenny_sleeping_sex 1 with dissolve
     jenny "Fuuuuck..."
-
     $ anim_toggle = True
     $ animated = True
     $ M_jenny.set('sex speed', .12)
@@ -371,75 +313,52 @@ label jenny_jenny_bed_sex_loop:
 
 label jenny_jenny_bed_sex_hscene_dialog:
     if animcounter == 0 and randomizer() < 25:
-        jenny "Mmm, rasanya menyenangkan...{p=1}{nw}"
-
+        jenny "Mmm, that feels good...{p=1}{nw}"
     if animcounter == 1 and randomizer() < 25:
         anon "Mmhmm.{p=1}{nw}"
-
     if animcounter == 2 and randomizer() < 25:
         jenny "Ahhh!{p=1}{nw}"
-
     if animcounter == 3 and randomizer() < 25:
-        jenny "Oh, itu dia!{p=1}{nw}"
-
-        jenny "Ya!{p=1}{nw}"
-
+        jenny "Oh, right there!{p=1}{nw}"
+        jenny "Yeah!{p=1}{nw}"
     return
 
 label jenny_jenny_bed_sex_cum_outside:
     $ M_jenny.set("jenny_bed_cum_inside", False)
-    jenny "Jangan berhenti!"
-
-    anon "Aku akan keluar!"
-
-    jenny "JANGAN BERHENTI!!"
-
+    jenny "Don't stop!"
+    anon "I'm going to cum!"
+    jenny "DON'T STOP!!"
     show jenny_sleeping_sex insert with dissolve
-    jenny "JANGAN-"
-
+    jenny "DON'T-"
     show jenny_sleeping_sex default
     show jenny_sleeping_sex_face cum
     show player_jenny_sleeping_sex cum
     anon "HNNGGG!!!" with flash
     show jenny_sleeping_sex_face angry_talk
-    jenny "Oh, apa-apaan ini, {b}[firstname]{/b}!"
-
+    jenny "Oh, what the fuck, {b}[firstname]{/b}!"
     scene expression "backgrounds/location_home_jennybedroom_bed.jpg"
     show jenny b_sleep_after f_sleep_turn_angry
     show expression "characters/jenny/layeredimage/jenny_overlay_o_sleep_blanket_transparent.png" zorder 1
     show anon f_sleep_side_shy b_empty_sleep_cuddle
     with fade
     anon @ -m_talk "Hmm?"
-
-    jenny "Eugh, itu ada di mana-mana!"
-
-    jenny "Bagaimana aku bisa tidur sekarang?"
-
-    anon "M-maaf..."
-
-    jenny "Demi Tuhan..."
-
+    jenny "Eugh, it's fucking everywhere!"
+    jenny "How am I supposed to sleep now?"
+    anon "S-sorry..."
+    jenny "For fuck's sake..."
     pause
-    jenny "Keluar!"
-
-    anon "Apa?!"
-
-    anon "Apakah kamu serius?"
-
-    jenny "Ya, kamu menjijikkan!"
-
+    jenny "Get out!"
+    anon "What?!"
+    anon "Are you serious?"
+    jenny "Yes, you're disgusting!"
     jump jenny_bed_sex_night_end
 
 label jenny_jenny_bed_sex_cum_inside:
     $ M_jenny.set("jenny_bed_cum_inside", True)
-    jenny "Jangan berhenti!"
-
-    anon "Aku akan keluar!"
-
-    jenny "JANGAN BERHENTI!!"
-
+    jenny "Don't stop!"
+    anon "I'm going to cum!"
+    jenny "DON'T STOP!!"
     jenny "NGGHHH!!!"
-
     show jenny_sleeping_sex cum
     anon "HNNGGG!!!" with flash
     show xray_jenny_jenny_bed at Position (align=(0,0))
@@ -449,14 +368,12 @@ label jenny_jenny_bed_sex_cum_inside:
     hide xray_jenny_jenny_bed
     show jenny_sleeping_sex pullout
     with dissolve
-    jenny "Wah!"
-
+    jenny "Oh, wow!"
     show jenny_sleeping_sex default
     show jenny_sleeping_sex_face normal
     show player_jenny_sleeping_sex after
     with dissolve
     anon "Haah... Haah..."
-
     call call_pregnancy_minigame ("jenny_bed_sex_cum_inside_post_pregnancy", M_jenny)
 
 label jenny_bed_sex_cum_inside_post_pregnancy:
@@ -465,73 +382,46 @@ label jenny_bed_sex_cum_inside_post_pregnancy:
     show expression "characters/jenny/layeredimage/jenny_overlay_o_sleep_blanket_transparent.png" zorder 1
     show anon f_sleep_side_shy b_empty_sleep_cuddle
     with fade
-    jenny "Apakah kamu benar-benar masuk ke dalam diriku?"
-
-    anon "Ya."
-
-    jenny "Sialan, {b}[firstname]{/b}!"
-
-    anon "Kamu bilang jangan berhenti..."
-
-    jenny "Anda tahu, bukan itu maksud saya!"
-
-    anon "Yah, aku minta maaf..."
-
-    anon "Kami benar-benar menyukainya dan semuanya terasa begitu baik, saya-"
-
-    jenny "{i}*Huh*{/i} Astaga..."
-
-    jenny "Keluar saja!"
-
-    anon "Apa?!"
-
-    anon "Apakah kamu serius?"
-
-    jenny "Ya, kamu menjijikkan!"
-
+    jenny "Did you fucking cum inside me?"
+    anon "Yeah."
+    jenny "Goddamnit, {b}[firstname]{/b}!"
+    anon "You did say not to stop..."
+    jenny "You know that's not what I meant!"
+    anon "Well, I'm sorry..."
+    anon "We were just really into it and everything felt so good, I-"
+    jenny "{i}*Sigh*{/i} For fuck's sake..."
+    jenny "Just get out!"
+    anon "What?!"
+    anon "Are you serious?"
+    jenny "Yes, you're disgusting!"
     jump jenny_bed_sex_night_end
 
 label jenny_bed_sex_night_end:
     if M_jenny.get("dominance") > 0:
         show anon f_sleep_side_normal
-        anon "Maukah kamu bersantai saja?"
-
+        anon "Would you just chill out?"
         if M_jenny.get("jenny_bed_cum_inside"):
-            anon "Semuanya akan baik-baik saja."
-
+            anon "Everything will be fine."
         else:
-            anon "Ini tidak seperti kamu belum pernah meminum air maniku sebelumnya..."
-
+            anon "It's not like you've never had my semen on you before..."
         jenny "..."
-        anon "Diam saja dan tidurlah, kita bisa mengatasinya besok pagi."
-
+        anon "Just shut up and go to sleep, we can deal with it in the morning."
         show jenny f_sleep_turn_angry
-        jenny "Bagus."
-
-        jenny "... Brengsek."
-
+        jenny "Fine."
+        jenny "... Asshole."
     else:
         show anon f_sleep_side_shy
-        anon "Ayo, {b}[jen_name]{/b}..."
-
-        anon "Tidak bisakah kita tidur saja?"
-
+        anon "C'mon, {b}[jen_name]{/b}..."
+        anon "Can't we just sleep?"
         show jenny f_sleep_turn_angry
-        jenny "Aku tidak ingin kamu mendengkur di telingaku sepanjang malam!"
-
-        anon "Kaulah yang mendengkur!!!"
-
-        jenny "Persetan denganmu!"
-
+        jenny "I don't want you snoring in my ear all night!"
+        anon "You're the one who snores!!!"
+        jenny "Fuck you!"
         pause
-        jenny "Bagus."
-
-        jenny "Dasar sayang!"
-
-        anon "Terima kasih!"
-
-        jenny "Eh..."
-
+        jenny "Fine."
+        jenny "You big fucking baby!"
+        anon "Thank you!"
+        jenny "Eugh..."
     scene location_home_jennybedroom_night_sleep with fade
     if _in_replay:
         pause

@@ -85,16 +85,12 @@ label sis_panties_dialogue:
     show player 723 with dissolve
     $ player.get_item("jenny_panties")
     player_name "( These are {b}[jen_name]{/b}'s panties. )"
-
     player_name "( I wonder why she keeps a pair in her nightstand? )"
-
     pause
     if M_somrak.finished_state(S_somrak_start):
         player_name "( I bet {b}Master Somrak{/b} would like these. )"
-
     elif M_jenny.is_state(S_jenny_snoop_around, S_jenny_snoop_diary):
         player_name "( Better put them back before she catches me. )"
-
         $ player.remove_item("jenny_panties")
         $ player.inventory.remove_picked_up("jenny_panties")
     hide player with dissolve
@@ -130,9 +126,7 @@ label jenny_sleeping_button:
         scene expression player.location.background_blur with None
         show player 22b with dissolve
         player_name "( Whoa, don't be crazy {b}[firstname]{/b}! )"
-
         player_name "( She will definitely kill me if I wake her up! )"
-
         hide player with dissolve
     $ game.main()
     return
@@ -148,36 +142,27 @@ label home_sisbedroom_diary:
         $ M_jenny.trigger(T_jenny_looked_at_diary)
         show player 5 with dissolve
         player_name "( Wow, I can't believe how conceited she is... )"
-
         player_name "( I should hurry up and {b}find that camera{/b}! )"
-
         if M_jenny.is_state(S_jenny_snoop_nightstand):
             show player 4 with dissolve
             player_name "( ... Maybe it's {b}in her nightstand{/b}? )"
-
         hide player with dissolve
         call jenny_return_from_shower_check
 
     elif M_jenny.is_state(S_jenny_snoop_around_for_laptop):
         show player 23 with dissolve
-        player_name "Wah!!"
-
+        player_name "Whoa!!"
         player_name "{b}[jen_name]{/b} is masturbating for men over the internet?!"
-
         player_name "She's completely lost her mind!"
-
         player_name "{b}[deb_name]{/b} would totally freak if she found out about this..."
-
         show player 22
         pause
         show player 35
         player_name "I wonder if I can sneak a peek at this somehow?"
-
         show player 34
         pause
         show player 35
         player_name "... Maybe I can find some stuff on {b}her laptop{/b}?"
-
         hide player with dissolve
         $ M_jenny.trigger(T_jenny_check_laptop)
 
@@ -185,17 +170,12 @@ label home_sisbedroom_diary:
         $ M_jenny.set("checked_diary_j22", True)
         show anon f_laugh with dissolve
         anon "( That's it! )"
-
         anon f_normal "( I should {b}buy her something nice{/b} and see if that makes her rethink this whole dating thing! )"
-
         anon f_thinking @ -m_talk "( Now the only question is, what do I buy her? )"
-
         show anon a_thinking with dissolve
         anon @ -m_talk "( Hmm, {b}she'll want something expensive{/b}, no doubt! )"
-
         show anon a_idle with dissolve
         anon f_normal @ -m_talk "( I should {b}head to the mall and see about getting her a necklace or something{/b}. )"
-
         hide anon with dissolve
 
     $ game.main()

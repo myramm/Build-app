@@ -4,73 +4,49 @@ label mel01_init_melonia:
         xoffset 350
     show anon f_worried with dissolve:
         xoffset -100
-    melonia "Eugh, bak mandi air panas ini menjijikkan!"
-
-    melonia "Apa yang sedang dilakukan anak biliar baru itu?!"
-
+    melonia "Eugh, this hot tub is disgusting!"
+    melonia "What in the hell has that new pool boy been doing?!"
     show melonia f_annoyed with dissolve:
         unflip
         xoffset -250
     pause
-    melonia "Itu dia!"
-
+    melonia "There you are!"
     anon "Ehh."
-
-    melonia @ a_point_back "Mau menjelaskan mengapa bak mandi air panas saya belum dibersihkan?!"
-
-    anon a_behind_head "aku um-"
-
-    melonia f_confused "Dan di mana seragammu?!"
-
+    melonia @ a_point_back "Care to explain why my hot tub hasn't been cleaned yet?!"
+    anon a_behind_head "I umm-"
+    melonia f_confused "And where's your uniform?!"
     anon "Ehh."
-
-    anon "Apakah seragam itu memang diperlukan, Bu?"
-
-    melonia f_annoyed "Tentu saja itu perlu!"
-
-    anon a_sides "Aku agak tidak nyaman-"
-
-    melonia "Jangan tanya aku, {b}Hector{/b}!"
-
-    melonia "Anda akan pergi dan berbicara dengan {b}Ricky{/b} tentang hal itu begitu Anda selesai membersihkan!"
-
-    anon "Bagaimana jika, sebaliknya-"
-
-    melonia a_crossed @ f_yell "Tidak satu kata lagi, {b}Hector{/b}!"
-
+    anon "Is the uniform really necessary, ma'am?"
+    melonia f_annoyed "Of course it's necessary!"
+    anon a_sides "I'm kind of uncomfortable-"
+    melonia "Don't question me, {b}Hector{/b}!"
+    melonia "You will go and speak with {b}Ricky{/b} about it the second you're finished cleaning!"
+    anon "What if, instead-"
+    melonia a_crossed @ f_yell "Not one more word, {b}Hector{/b}!"
     anon f_sad_down @ -m_talk "..."
-    melonia a_point_back "Saya ingin bak mandi air panas ini digosok dan disaring sekarang juga!"
-
-    melonia a_point_down "Dan besok pagi, Anda AKAN tiba di sini tepat waktu dan mengenakan seragam yang pantas..."
-
-    melonia a_idle "... Apakah ada pemahaman di antara kita?!"
-
-    anon "{i}*Huh*{/i} Y-iya, Bu."
-
+    melonia a_point_back "I want this hot tub scrubbed and filtered right this instant!"
+    melonia a_point_down "And tomorrow morning, you WILL be here on time and in the proper uniform..."
+    melonia a_idle "... Is there an understanding between us?!"
+    anon "{i}*Sigh*{/i} Y-yes, ma'am."
     show melonia a_crossed with dissolve
     pause
-    melonia "Aku sadar ini hari pertamamu, namun aku mengharapkan yang lebih baik darimu, {b}Hector{/b}."
-
+    melonia "I realize it's your first day but nevertheless, I expected better from you, {b}Hector{/b}."
     anon @ -m_talk "..."
     show anon f_surprised
-    melonia "Sekarang selesaikan!"
-
+    melonia "Now get it done!"
     hide melonia
     show anon:
         flip
         xoffset -600
     with dissolve
     pause
-    anon f_worried @ -m_talk "(Yah, itu bukanlah awal yang baik.)"
-
+    anon f_worried @ -m_talk "( Well that wasn't a very auspicious start. )"
     pause
     show anon f_worried_low with dissolve:
         unflip
         xoffset 200
-    anon @ -m_talk "(Saya tidak tahu cara membersihkan bak mandi air panas...)"
-
-    anon @ -m_talk "( ... Saya harus {b}berbicara dengan Ricky{/b} dan melihat apakah dia dapat membantu saya. )"
-
+    anon @ -m_talk "( I have no idea how to clean a hot tub... )"
+    anon @ -m_talk "( ... I should {b}speak with Ricky{/b} and see if he can lend me a hand. )"
     hide anon with dissolve
     return
 
@@ -84,24 +60,15 @@ label mel01_more_melonia:
     show location_rump_backyard_jacuzzi_overlay as hottub:
         yoffset 155
     show anon f_worried_low with dissolve
-    melonia "{b}Hektor{/b}?"
-
-    melonia f_annoyed "Apa yang masih kamu lakukan di sini?"
-
-    anon "Hanya memeriksa untuk melihat apakah Anda memerlukan sesuatu."
-
-    melonia "Saya baik-baik saja."
-
-    melonia f_normal "{b}Ricky{/b} memenuhi kebutuhan saya."
-
-    anon "B-benar, oke."
-
-    melonia f_annoyed "Pulanglah hari ini, aku sudah selesai denganmu."
-
-    anon f_sad_down a_sides "Tentu saja, Bu."
-
-    melonia "Dan pastikan bak mandi air panas ini tetap bersih!"
-
+    melonia "{b}Hector{/b}?"
+    melonia f_annoyed "What are you still doing here?"
+    anon "Just checking to see if you need anything."
+    melonia "I'm fine."
+    melonia f_normal "{b}Ricky{/b} is attending to my needs."
+    anon "R-right, okay."
+    melonia f_annoyed "Head home for the day, I'm done with you."
+    anon f_sad_down a_sides "Of course, ma'am."
+    melonia "And make sure this hot tub stays clean!"
     hide anon with dissolve
     return
 # Decompiled by unrpyc: https://github.com/CensoredUsername/unrpyc

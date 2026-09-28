@@ -1,66 +1,46 @@
 label ivy_button_greet:
     show anon with dissolve
-    ivy "Hai!"
-
-    ivy "Bisakah saya membantu Anda dengan sesuatu?"
-
-    anon f_worried a_behind_head "Ini pertama kalinya aku ke sini. aku... um..."
-
-    ivy @ f_laugh "Tidak apa-apa! Saya mengerti! Semua orang sedikit malu saat pertama kali datang ke sini..."
-
-    ivy "Kami memiliki banyak pilihan {b}mainan{/b} dan {b}pakaian seksi{/b} yang dapat Anda lihat di pajangan dinding kami."
-
+    ivy "Hi!"
+    ivy "Can I help you with something?"
+    anon f_worried a_behind_head "It's my first time here. I... Umm..."
+    ivy @ f_laugh "It's okay! I understand! Everyone's a little shy when they first come here..."
+    ivy "We have a large selection of {b}toys{/b} and {b}sexy apparel{/b} that you can view on our wall display."
     show anon f_surprised a_idle with dissolve
-    ivy "Kami juga dapat menawarkan... {b}sesi pijat seluruh tubuh{/b} di salah satu... Kamar pribadi kami."
-
-    ivy "Tukang pijat kami menggunakan berbagai teknik relaksasi tubuh alami... Yang pasti akan memuaskan kebutuhan Anda..."
-
-    anon f_normal @ f_confused "Oh... Aku tidak tahu kamu menawarkan pijatan di sini."
-
-    ivy @ f_laugh "Itu salah satu... Layanan yang kurang diiklankan...."
-
-    ivy "Apakah Anda ingin melihat {b}pamflet pilihan pijat kami{/b}?"
-
+    ivy "We can also offer a... {b}full body massage session{/b} in one of our... Private rooms."
+    ivy "Our masseuse uses a variety of natural body relaxation techniques... That will surely satisfy your needs..."
+    anon f_normal @ f_confused "Oh... I didn't know you offered massages here."
+    ivy @ f_laugh "It's one of our... Less advertised... Services."
+    ivy "Would you like to see our massage selection {b}pamphlet{/b}?"
     return
 
 
 label ivy_button_greet_repeat:
     show anon with dissolve
-    ivy "Hai!"
-
-    ivy "Bisakah saya membantu Anda dengan sesuatu?"
-
+    ivy "Hi!"
+    ivy "Can I help you with something?"
     return
 
 
 label button_ivy_massage:
-    anon f_shy "Bisakah saya melihat... Pamflet pijat Anda?"
-
+    anon f_shy "Could I see... Your massage pamphlet?"
     show ivy a_flyer with dissolve
-    ivy "Tentu! Sesuaikan dirimu!"
-
-    anon "Terima kasih..."
-
+    ivy "Sure! Suit yourself!"
+    anon "Thanks..."
     return
 
 
 label button_ivy_just_shopping:
-    anon f_worried "Saya baik-baik saja, terima kasih."
-
-    anon "Aku di sini hanya untuk berbelanja..."
-
+    anon f_worried "I'm fine, thank you."
+    anon "I'm just here to do some shopping..."
     show anon f_normal
-    ivy @ f_laugh "Baiklah kalau begitu! Beri tahu saya jika Anda memerlukan hal lain."
-
+    ivy @ f_laugh "Alright, then! Let me know if you need anything else."
     return
 
 
 label button_ivy_massage_first:
     show ivy a_flyer
-    anon f_normal @ f_shy "Kurasa aku bisa melihatnya..."
-
-    ivy "Tentu! Sesuaikan dirimu!"
-
+    anon f_normal @ f_shy "I guess I could have a look at it..."
+    ivy "Sure! Suit yourself!"
     hide ivy
     hide anon
     with dissolve

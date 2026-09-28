@@ -3,10 +3,8 @@ label school_mia_study_reminder:
     show player 4
     with dissolve
     player_name "( Hmm, now that I've caught up in French class, {b}I can help Mia with her studies{/b}. )"
-
     show player 1
     player_name "( I should {b}talk to her about it{/b}! )"
-
     return
 
 label school_hall_dialogue:
@@ -135,19 +133,16 @@ label school_hall_dialogue:
         elif M_roxxy.is_state(S_roxxy_fight_dexter) and not game.timer.is_dark():
             call expression game.dialog_select("school_roxxy_fight_dexter")
             menu:
-                "Tidak.":
+                "No.":
                     show player 10 with dissolve
                     player_name "No, this is life or death... I should really prepare more."
-
                     $ player.go_to(L_map)
                     $ game.main()
-                "Ya.":
+                "Yes.":
 
                     show player 12 with dissolve
                     player_name "No more running..."
-
                     player_name "It's time to put {b}Dexter{/b} down for good!"
-
                     jump dexter_fight
             hide player with dissolve
 

@@ -57,7 +57,7 @@ label somrak_button_dialogue:
         "Panties obsession.":
             call expression game.dialog_select("button_somrak_panties_obsession")
             jump somrak_menu_dialogue
-        "Sudahlah.":
+        "Never mind.":
             call expression game.dialog_select("button_somrak_nevermind")
 
     $ game.main()
@@ -99,22 +99,17 @@ label muay_thai.fail:
     with fade
     somrak "NO, NO, NO!" with vpunch
     somrak "You're attacking like an undisciplined dog!"
-
     show somrak f_normal
     player_name "I'm sorry, {b}Master{/b}... I-"
-
     show somrak a_poke f_angry
     show masterplayer 40
     player_name "!!!" with hpunch
     show masterplayer 27
     show somrak f_angry a_point with dissolve
     somrak "Do not be sorry, be better!"
-
     somrak "Come back tomorrow!"
-
     show somrak a_idle f_normal with dissolve
     player_name "Y-yes, {b}Master Somrak{/b}..."
-
     hide masterplayer
     hide somrak
     with dissolve

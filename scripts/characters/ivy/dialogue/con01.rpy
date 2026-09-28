@@ -1,128 +1,83 @@
 label con01_idea_ivy:
-    anon f_worried "Apakah Anda tertarik melakukan sedikit pekerjaan pembantu untuk {b}walikota{/b}?"
-
-    ivy f_confused "Pekerjaan pembantu?"
-
-    ivy "Apakah itu sebuah eufemisme untuk sesuatu?"
-
-    anon f_normal @ f_shy a_behind_head "T-tidak."
-
-    anon "Dia membutuhkan seseorang untuk membersihkan rumahnya."
-
-    ivy f_normal "Heh, apa aku terlihat seperti pelayan bagimu?"
-
-    anon f_worried "Anda tidak."
-
-    ivy "Baiklah, ini dia."
-
-    anon @ f_sad_down "{i}*Huh*{/i} Sial."
-
-    ivy "Mungkin mencoba layanan tata graha atau semacamnya?"
-
-    anon "Tidak, itu tidak akan berhasil."
-
-    ivy "Kenapa tidak?"
-
-    anon "{b}Walikota{/b} punya beberapa, eh, \"berkebutuhan khusus.\""
-
-    ivy "Maksudmu-"
-
+    anon f_worried "Would you be interested in doing a bit of maid work for {b}the mayor{/b}?"
+    ivy f_confused "Maid work?"
+    ivy "Is that a euphemism for something?"
+    anon f_normal @ f_shy a_behind_head "N-no."
+    anon "He needs someone to clean his house."
+    ivy f_normal "Heh, do I look like a maid to you?"
+    anon f_worried "You do not."
+    ivy "Well, there ya go."
+    anon @ f_sad_down "{i}*Sigh*{/i} Crap."
+    ivy "Maybe try a maid service or something?"
+    anon "No, that won't work."
+    ivy "Why not?"
+    anon "{b}The mayor{/b} has some, eh, \"special needs.\""
+    ivy "You mean-"
     pause
-    ivy f_shy @ f_eww "eh."
-
-    anon "Ya."
-
-    ivy f_normal "Anda tahu apa?"
-
+    ivy f_shy @ f_eww "Eww."
+    anon "Yeah."
+    ivy f_normal "You know what?"
     show ivy b_naked_pickup with dissolve
-    ivy "Saya mungkin punya jawaban untuk masalah Anda."
-
-    anon f_surprised "Benar-benar?"
-
-    ivy "Yup, beri aku satu-"
-
+    ivy "I might just have the answer to your problem."
+    anon f_surprised "Really?"
+    ivy "Yup, just give me one-"
     show anon f_normal
     ivy "Ah hah!"
-
     show ivy b_dressed a_thotbot with dissolve
-    ivy "Ini dia."
-
+    ivy "Here we go."
     pause
 
     scene expression player.location.background_closeup
     show closeup_thotbot
     with fade
     pause
-    anon "{b}Bot itu{/b}?"
-
-    anon "Solusi pembersihan untuk pria kesepian."
-
-    anon "Dengan alat kelamin yang realistis?"
-
+    anon "{b}Thotbot{/b}?"
+    anon "The cleaning solution for lonely men."
+    anon "With realistic genitalia?"
 
     call ivy_button_stage
     show anon f_skeptical a_thotbot
     with fade
-    anon "Apakah ini nyata?"
-
-    ivy "Ya."
-
-    ivy "Dulu aku punya satu di toko ini, tapi seorang wanita berjas lab membelinya."
-
-    anon f_thinking a_thinking "Hmm, ini sebenarnya bisa berhasil."
-
-    anon f_normal "Bisakah kamu memberikanku satu?"
-
-    ivy "Jika Anda punya uang, saya bisa mendapatkannya di sini dalam beberapa hari."
-
-    anon "Berapa harganya?"
-
-    ivy "Dengan pengiriman, katakanlah... Seribu dolar?"
-
-    anon f_shock a_surprised_up_both "Seribu dolar?!"
-
+    anon "Is this for real?"
+    ivy "Yup."
+    ivy "I used to have one here in the shop but some lady in a lab coat bought it."
+    anon f_thinking a_thinking "Hmm, this could actually work."
+    anon f_normal "Could you get me one?"
+    ivy "If you've got the money, I could have it here in a few days."
+    anon "How much?"
+    ivy "With shipping, let's say... One thousand dollars?"
+    anon f_shock a_surprised_up_both "One thousand dollars?!"
     return
 
 
 label con01_deal_ivy:
-    anon "Apakah kamu masih bersedia memesan robot pembantu itu untukku?"
-
-    ivy "Boleh, selama kamu punya uang?"
-
+    anon "Are you still willing to order that robot maid for me?"
+    ivy "Sure, so long as you have the money?"
 
     menu con01_deal_ivy.choice:
-        "Baiklah, ini dia." if player.has_money(1000):
+        "Fine, here you go." if player.has_money(1000):
             jump con01_deal_ivy.purchase
-        "Saya tidak mampu membelinya!":
+        "I can't afford that!":
 
             pass
 
-    anon f_worried a_idle @ f_sad_down "Saya tidak punya itu!"
-
-    ivy "Baiklah, kembalilah dan temui aku ketika kamu melakukannya."
-
-    anon "Astaga, baiklah."
-
-    anon "Saya akan kembali."
-
+    anon f_worried a_idle @ f_sad_down "I don't have that!"
+    ivy "Well, come back and see me when you do."
+    anon "Sheesh, alright."
+    anon "I'll be back."
     hide anon with dissolve
     return
 
 
 label con01_deal_ivy.purchase:
-    anon f_normal a_money "Baiklah, ini dia."
-
+    anon f_normal a_money "Fine, here you go."
     show anon a_idle
     show ivy a_money
     with dissolve
-    ivy "Sempurna!"
-
-    ivy a_idle "Saya akan segera memesannya."
-
-    ivy "Kembalilah dan ambil dalam beberapa hari, oke?"
-
-    anon "Baiklah terima kasih!"
-
+    ivy "Perfect!"
+    ivy a_idle "I'll order it right away."
+    ivy "Come back and pick it up in a few days, okay?"
+    anon "Alright, thanks!"
     hide anon with dissolve
 
     $ player.spend_money(1000)
@@ -131,52 +86,35 @@ label con01_deal_ivy.purchase:
 
 
 label con01_take_ivy:
-    anon "Apakah paket saya sudah sampai?"
-
-    ivy "Tentu saja!"
-
+    anon "Has my package arrived yet?"
+    ivy "It sure has!"
     show anon f_normal
-    ivy "Satu detik."
-
+    ivy "One second."
     hide ivy with dissolve
     pause
-    ivy "Anda tahu, ketika mereka berkata, \"alat kelamin yang realistis\" mereka tidak bercanda!"
-
-    ivy "Hal ini luar biasa!"
-
+    ivy "You know, when they said, \"realistic genitalia\" they weren't kidding!"
+    ivy "This thing is incredible!"
     show ivy f_laugh
     show thotbot:
         flip
         xoffset -100
     with dissolve
     show anon f_surprised
-    ivy "Aku tidak bisa menjamin kemampuan pembersihannya, tapi vagina itu prima!"
-
+    ivy "I can't vouch for its cleaning abilities, but that pussy is primo!"
     show ivy f_normal
-    anon f_confused "Eh, kamu mencobanya?"
-
-    ivy f_sexy "Tentu saja!"
-
-    ivy "Saya melakukan pengujian jaminan kualitas pada semua produk saya di sini di {b}Pink{/b}."
-
-    anon "... Benar."
-
-    ivy @ f_laugh "hehe!"
-
+    anon f_confused "Eh, you tried it?"
+    ivy f_sexy "Of course!"
+    ivy "I perform quality assurance testing on all of my products here at {b}Pink{/b}."
+    anon "... Right."
+    ivy @ f_laugh "Hehe!"
     show anon f_flirt_grin
     pause
-    ivy "Ada lagi yang bisa saya bantu?"
-
-    anon f_flirt_low "T-tidak, aku baik-baik saja."
-
-    anon "Saya hanya berharap {b}walikota{/b} menyukainya."
-
-    ivy "Saya yakin dia akan melakukannya."
-
-    ivy f_normal "Semoga harimu menyenangkan!"
-
-    anon @ f_flirt a_wave "Terima kasih!"
-
+    ivy "Anything else I can help you with?"
+    anon f_flirt_low "N-no, I'm good."
+    anon "I just hope {b}the mayor{/b} likes it."
+    ivy "I'm sure he will."
+    ivy f_normal "Have a good day!"
+    anon @ f_flirt a_wave "Thanks!"
     show anon a_backpack_robot
     hide thotbot
     with dissolve
@@ -185,23 +123,17 @@ label con01_take_ivy:
     scene expression player.location.background_blur
     show anon f_worried
     with fade
-    anon @ -m_talk "( Sobat, kuharap aku tidak bertemu dengan siapa pun yang kukenal saat aku membawa barang ini... )"
-
-    anon @ -m_talk "( Saya harus {b}bergegas menemui istri walikota{/b} dan melihat apakah itu cukup untuk membebaskan {b}Consuela{/b}. )"
-
+    anon @ -m_talk "( Man, I hope I don't run into anybody I know while I'm carrying this thing around... )"
+    anon @ -m_talk "( I should {b}hurry to the mayor's wife{/b} and see if it's enough to free {b}Consuela{/b}. )"
     hide anon with dissolve
     return
 
 
 label con01_take_ivy.check:
-    anon "Apakah paket saya sudah sampai?"
-
-    ivy "Sayangnya tidak."
-
-    ivy "Biasanya diperlukan waktu dua atau tiga hari untuk pengiriman di sini."
-
-    anon f_sad_down "{i}*Huh*{/i} Baiklah, terima kasih."
-
+    anon "Has my package arrived yet?"
+    ivy "I'm afraid not."
+    ivy "It usually takes two or three days for deliveries here."
+    anon f_sad_down "{i}*Sigh*{/i} Alright, thanks."
     hide anon with dissolve
     return
 
@@ -210,39 +142,28 @@ label con01_skip_ivy:
     if player.has_item('thotbot'):
         show anon a_backpack f_looking_down with dissolve
         pause
-        anon a_backpack_robot f_normal "Saya ingin mengembalikan ini."
-
+        anon a_backpack_robot f_normal "I'd like to return this please."
         show anon a_sides f_normal
         show thotbot:
             flip
             xoffset -100
         with dissolve
-        ivy "Tentu saja!"
-
-        ivy "Anda belum menggunakannya kan? Kami tidak dapat menerima barang bekas, Anda mengerti."
-
+        ivy "Of course!"
+        ivy "You haven't used it have you? We can't accept used items, you understand."
         show anon f_surprised
         show anon of_blush with {'master': dissolve}
-        anon "Aku-- T-- Tidak! Itu sudah ada di tasku sepanjang waktu!"
-
-        ivy "Luar biasa, itu pasti membantu."
-
+        anon "I-- N-- No! It's been in my bag the entire time!"
+        ivy "Excellent, that definitely helps matters."
     else:
-        anon "Saya ingin membatalkan {b}Thotbot{/b} yang saya pesan."
+        anon "I'd like to cancel the {b}Thotbot{/b} I ordered, please."
+        ivy "No problem!"
 
-        ivy "Tidak masalah!"
-
-
-    ivy f_surprised_down "Hmm, lebih sedikit pengiriman dan penanganan, Anda berhak mendapatkan pengembalian dana delapan puluh persen."
-
+    ivy f_surprised_down "Hmm, less shipping and handling, you're eligble for an eighty percent refund."
     show ivy f_normal
     anon -of_blush f_shock "!!!" with hpunch
-    anon f_surprised "Hanya delapan puluh persen?!"
-
-    ivy "Itu adalah pesanan khusus. Saya sangat menyesal."
-
-    anon f_sad "Kurasa lebih baik daripada tidak sama sekali."
-
+    anon f_surprised "Only eighty percent?!"
+    ivy "It was a special order. I'm very sorry."
+    anon f_sad "Well better than nothing, I guess."
     if player.has_item('thotbot'):
         hide ivy with dissolve
         pause .6
@@ -254,20 +175,15 @@ label con01_skip_ivy:
         with dissolve
         pause .6
         show ivy behind counter with dissolve
-    ivy a_money "Ini dia, maaf pembelian Anda tidak berhasil."
-
+    ivy a_money "Here you are, sorry your purchase didn't work out."
     show anon a_money
     show ivy a_idle
     with dissolve
-    anon "Terima kasih."
-
+    anon "Thanks."
     show anon a_idle with dissolve
-    ivy "Akankah ada hal lain?"
-
-    anon "Tidak saat ini."
-
-    ivy f_normal "Semoga hari Anda membaik!"
-
+    ivy "Will there be anything else?"
+    anon "Not at the moment."
+    ivy f_normal "Well hope your day improves!"
     hide anon with dissolve
     return
 # Decompiled by unrpyc: https://github.com/CensoredUsername/unrpyc

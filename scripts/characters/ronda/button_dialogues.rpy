@@ -3,84 +3,55 @@ label ronda_dialogue_intro:
     show ronda b_jersey
     show anon a_wave
     with dissolve
-    anon "Hai, {b}Ronda{/b}. Apa kabarmu?"
-
+    anon "Hey, {b}Ronda{/b}. How are you?"
     show anon a_idle with dissolve
-    ronda "Saya baik-baik saja. Pertanyaannya, apakah Anda sudah berlatih?"
-
+    ronda "I'm doing fine. The question is, have you been training?"
     anon f_worried_low @ -m_talk "..."
-    anon "Tidak-"
-
+    anon "No-"
     show anon f_worried
-    ronda f_upset @ f_upset_angry "Lalu berhenti menggerakkan bibir itu dan mulailah menggerakkan... Kaki itu!"
-
+    ronda f_upset @ f_upset_angry "Then stop moving those lips and start moving those... Legs!"
     anon f_skeptical @ -m_talk "???"
-    ronda f_normal "Sudahlah. Itu hanya sesuatu yang selalu ayahku katakan..."
-
+    ronda f_normal "Never mind. It's just something my dad always says..."
     show anon f_worried
-    ronda "Pokoknya, sebaiknya kamu bergegas karena ujiannya akan segera tiba!"
-
+    ronda "Anyway, you better hurry up 'cause the trials are coming up fast!"
     return
 
 label ronda_dialogue_talent_show_help:
-    anon f_worried "Saya kira Anda tidak tertarik menjadi sukarelawan untuk pertunjukan bakat musik {b}Miss Dewitt{/b}?"
-
+    anon f_worried "I don't suppose you'd be interested in volunteering for {b}Miss Dewitt{/b}'s musical talent show?"
     show ronda b_jersey f_normal
-    ronda "Bakat musik? Tidak, saya tidak akan tertarik."
-
-    anon "Apa kamu yakin? Anda tidak memainkan alat musik atau bernyanyi sama sekali?"
-
-    ronda "Umm, tidak bisakah kamu melihat ada hal lain yang lebih penting untuk aku fokuskan. Seperti lari dan berenang..."
-
-    ronda "Hal-hal yang harus Anda fokuskan juga!"
-
-    ronda "Anda tidak akan pernah masuk tim jika Anda terus mengabaikan pelatihan Anda!"
-
-    anon @ f_skeptical "Tahukah Anda, hidup ini lebih dari sekadar olahraga, {b}Ronda{/b}..."
-
-    ronda "Pfft, ya benar."
-
+    ronda "Musical talent? No, I would not be interested."
+    anon "Are you sure? You don't play any instruments or sing at all?"
+    ronda "Umm, can't you see I have more important things to focus on. Like track and swimming..."
+    ronda "Stuff you should be focusing on as well!"
+    ronda "You're never gonna make the team if you keep ignoring your training!"
+    anon @ f_skeptical "You know, there's more to life than sports, {b}Ronda{/b}..."
+    ronda "Pfft, yeah right."
     return
 
 label ronda_dialogue_model_help:
     show ronda b_jersey f_normal
-    anon f_normal "Saya sedang mengerjakan proyek untuk {b}Miss Ross{/b} dan itu memerlukan model langsung."
-
-    anon @ a_point "Apakah Anda tertarik?"
-
-    ronda "Sibuk."
-
-    anon f_worried "Sibuk?"
-
-    anon "Melakukan apa?"
-
+    anon f_normal "I'm working on a project for {b}Miss Ross{/b} and it requires a live model."
+    anon @ a_point "Would you be interested?"
+    ronda "Busy."
+    anon f_worried "Busy?"
+    anon "Doing what?"
     show ronda
-    ronda f_upset_angry "Sungguh, {b}[firstname]{/b}?!"
-
-    ronda "Saya harus berlari sejauh 6 mil dan mandi es sebelum latihan sepak bola."
-
+    ronda f_upset_angry "For real, {b}[firstname]{/b}?!"
+    ronda "I've gotta run 6 miles and hit an ice bath before soccer practice."
     show ronda f_upset
     anon f_surprised @ f_worried_low "Uhh..."
-
-    ronda @ f_upset_angry "Setelah itu, saya hanya punya waktu 40 menit untuk menyelesaikan beberapa putaran sebelum kolam ditutup."
-
-    anon "Itu jelek-"
-
+    ronda @ f_upset_angry "Afterwards, I've only got 40 minutes to get some laps in before the pool closes."
+    anon "That's cra-"
     show anon f_surprised_teeth
-    ronda @ f_upset_angry "Kemudian kembali ke rumah ke bantal pemanas dan crunch."
-
-    anon f_worried "OKE! Oke! Saya mengerti..."
-
+    ronda @ f_upset_angry "Then it's back home to a heating pad and crunches."
+    anon f_worried "OKAY! Okay! I got it..."
     hide ronda with dissolve
-    anon f_surprised "Gadis itu gila!"
-
+    anon f_surprised "That girl is insane!"
     return
 
 label ronda_dialogue_leave:
     show anon
-    anon "Baiklah."
-
-    anon @ a_wave "Sampai jumpa lagi."
-
+    anon "Alright."
+    anon @ a_wave "See you later."
     return
 # Decompiled by unrpyc: https://github.com/CensoredUsername/unrpyc

@@ -129,7 +129,7 @@ label dishes_dialogue:
             call expression game.dialog_select("kitchen_mom_dishes_yes")
             $ game.timer.tick()
             $ M_debbie.trigger(T_debbie_washed_dishes)
-        "Sudahlah.":
+        "Never mind.":
 
             call expression game.dialog_select("kitchen_mom_dishes_no")
     $ M_debbie.set("chores", False)

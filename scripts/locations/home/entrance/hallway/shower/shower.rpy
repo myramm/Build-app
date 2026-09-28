@@ -57,7 +57,7 @@ label mom_shower:
                 $ M_debbie.trigger(T_debbie_shower_admire)
                 $ game.timer.tick()
                 $ playSound()
-            "Pergi.":
+            "Leave.":
 
                 call expression game.dialog_select("shower_mom_walk_in_no")
 
@@ -79,7 +79,7 @@ label mom_shower:
                     "Wash {b}[deb_name]{/b}.":
                         call expression game.dialog_select("shower_mom_sex_wash")
                         menu shower_mom_sex_wash_menu:
-                            "pekerjaan tangan.":
+                            "Handjob.":
                                 call expression game.dialog_select("shower_mom_sex_wash_handjob")
                                 jump expression game.dialog_select("mom_shower_end")
 
@@ -88,11 +88,11 @@ label mom_shower:
                                 $ M_debbie.set("shower fingered", True)
                                 jump expression game.dialog_select("shower_mom_sex_wash_menu")
 
-                            "Seks oral." if M_debbie.is_set("sex available"):
+                            "Blowjob." if M_debbie.is_set("sex available"):
                                 call expression game.dialog_select("shower_mom_sex_blowjob")
                                 jump expression game.dialog_select("mom_shower_end")
 
-                            "Seks." if M_debbie.is_set("sex available"):
+                            "Sex." if M_debbie.is_set("sex available"):
                                 if M_debbie.is_set("shower fingered"):
                                     call expression game.dialog_select("shower_mom_sex_already_fingered")
                                     call expression game.dialog_select("shower_mom_sex_wash_handjob")
@@ -100,11 +100,11 @@ label mom_shower:
                                 else:
 
                                     jump expression game.dialog_select("mom_shower_sex")
-                            "Pergi.":
+                            "Leave.":
 
                                 jump expression game.dialog_select("mom_shower_end")
 
-                    "Seks." if M_debbie.is_set("sex available"):
+                    "Sex." if M_debbie.is_set("sex available"):
                         label mom_shower_sex:
                             $ M_debbie.set("sex speed", .4)
                             $ anim_toggle = True
@@ -113,7 +113,7 @@ label mom_shower:
                             $ cum = False
                         call expression game.dialog_select("shower_mom_sex_fuck_pre")
                         jump expression game.dialog_select("mom_shower_sex_loop")
-            "Pergi.":
+            "Leave.":
 
                 call expression game.dialog_select("shower_mom_sex_leave")
     else:

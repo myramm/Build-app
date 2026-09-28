@@ -2,9 +2,7 @@ label church_graveyard_crypt_dialogue:
     scene
     show screen church_graveyard_crypt()
     anon "( This is a creepy looking door... )"
-
     anon "( ... I wonder where it leads? )"
-
 
     call screen empty()
     return
@@ -14,15 +12,10 @@ label church_graveyard_crypt_dialogue.fullmoon:
     scene
     show screen church_graveyard_crypt()
     anon "( Hmm, do I really wanna go down there again? )"
-
     anon "( {b}Grace{/b} said {b}Odette{/b} is just pretending for some fetish she has. )"
-
     anon "( So there's nothing to worry about... )"
-
     anon "( ... Right? )"
-
     anon "( Man, my heart is racing... )"
-
 
     call screen empty()
 
@@ -30,13 +23,9 @@ label church_graveyard_crypt_dialogue.fullmoon:
         return
 
     anon "{b}Odette{/b}?"
-
     anon "Are you down there?"
-
     "Hehehe!"
-
     anon "( Oh man, not this again... )"
-
 
     call screen empty()
 
@@ -44,9 +33,7 @@ label church_graveyard_crypt_dialogue.fullmoon:
         return
 
     anon "( Nothing ventured, nothing gained. )"
-
     anon "( Here we go! )"
-
     return 'enter'
 
 
@@ -62,7 +49,6 @@ label church_graveyard_grave_dialogue.dark:
     show anon a_sides f_worried_low at flip with dissolve
     pause
     anon @ -m_talk "( Dad loved the sun. I'll visit him when it's beaming down. )"
-
     pause
     hide anon with dissolve
     return
@@ -73,21 +59,16 @@ label church_graveyard_grave_dialogue.wait:
     show anon a_sides f_worried_low at flip with dissolve
     pause
     anon "H-"
-
     pause
     anon "I ..."
-
     show anon f_sad_down
     pause
     anon @ -m_talk "( I can't do this right now. )"
-
     anon @ -m_talk "( I'm not ready. )"
-
     show anon a_cover_boner3 f_disgusted_wince with dissolve:
         unflip
         xoffset 550
     anon "I'll come back soon, Dad, I promise..."
-
     hide anon with dissolve
     return
 

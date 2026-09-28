@@ -45,20 +45,14 @@ label scene_odette_paizuri.loop:
 label scene_odette_paizuri.dialogue:
     $ renpy.dynamic(rng=randomizer())
     if animcounter == 0 and rng > 85:
-        anon "Fiuh, ya..."
-
-        anon "... Itu luar biasa!"
-
+        anon "Phew, yeah..."
+        anon "... That's fantastic!"
     elif animcounter == 1 and rng > 85:
-        anon "Apakah itu baik untukmu?"
-
+        anon "Is it good for you?"
         odette "Mhmm."
-
     elif animcounter == 2 and rng > 85:
         anon "Oh, {b}Odette{/b}!"
-
-        anon "Oh, aku suka payudaramu!!"
-
+        anon "Oh, I love your tits!!"
     return
 
 
@@ -67,64 +61,41 @@ label scene_odette_paizuri.repeat:
     scene location_tattoo_garage_sex_titjob
     show odette_sex_boobjob_anim07 as animation
     with fade
-    anon "Anda siap?"
-
+    anon "You ready?"
     odette "Mhmm."
-
-    anon "Ini dia!"
-
+    anon "Here we go!"
     call scene_odette_paizuri.animation
     with dissolve
-    anon "Fiuh, ya..."
-
-    anon "... Itu luar biasa!"
-
+    anon "Phew, yeah..."
+    anon "... That's fantastic!"
     pause
-    anon "Rasanya penisku terjepit di antara dua awan empuk surga murni saat ini..."
-
-    odette "hehe!"
-
-    anon "... Sungguh, aku bisa mendengar malaikat bernyanyi!"
-
+    anon "It feels like my dick is wedged between two pillowy clouds of pure heaven right now..."
+    odette "Hehe!"
+    anon "... Seriously, I can hear angels singing!"
     pause
-    anon "Apakah itu baik untukmu?"
-
+    anon "Is it good for you?"
     odette "Mhmm."
-
     pause
-    anon "Kamu sedikit menggigil."
-
-    odette "Ya, itu menggelitik..."
-
-    anon "Itu bagus, bukan?"
-
-    odette "... Sangat!"
-
+    anon "You're shivering a bit."
+    odette "Yeah, it tingles..."
+    anon "That's good, right?"
+    odette "... Very!"
     pause
     anon "Oh, {b}Odette{/b}!"
-
-    anon "Oh, aku suka payudaramu!!"
-
+    anon "Oh, I love your tits!!"
     call scene_odette_paizuri.loop
-    anon "aku akan keluar!"
-
-    odette "Silakan, sobat besar..."
-
-    anon "aku akan-"
-
-    anon "aku-"
-
+    anon "I'm gonna cum!"
+    odette "Go ahead, big fella..."
+    anon "I'm gonna-"
+    anon "I'm-"
     pause
     show odette_sex_boobjob_cum as animation
     show odette_sex_boobjob_cumshot
     anon "HNNGGG!!!" with flash
     pause
     anon "Haah... Haah..."
-
-    anon "... sial."
-
-    odette "hehe!"
-
+    anon "... Holy crap."
+    odette "Hehe!"
     return
 
 

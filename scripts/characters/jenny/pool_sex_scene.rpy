@@ -4,20 +4,15 @@ label jenny_pool_sex_intro:
     show jenny_pool_sex_face normal_talk_down
     show overlay_o_water zorder 100
     with fade
-    jenny "Pastikan saja kamu tetap menundukkan kepala, aku tidak ingin {b}[deb_name]{/b} melihat kita!"
-
+    jenny "Just make sure you keep your head down, I don't want {b}[deb_name]{/b} to see us!"
     show jenny_pool_sex_face normal_down
-    anon "Saya akan!"
-
+    anon "I will!"
     show jenny_pool_sex insert with dissolve
-    anon "Wah, rasanya aneh di dalam air.."
-
+    anon "Wow, this feels weird in the water..."
     show jenny_pool_sex_face normal_talk_down
-    jenny "Diam dan turun lebih rendah, bodoh!"
-
+    jenny "Shut up and get down lower, dummy!"
     show jenny_pool_sex_face normal_down
-    anon "Aku tidak bisa turun lebih rendah, airnya-"
-
+    anon "I can't go lower, the water is-"
     hide jenny_pool_sex_face normal_down
     show jenny_pool_sex 1
     anon "!!!" with hpunch
@@ -27,44 +22,27 @@ label jenny_pool_sex_intro:
     $ M_jenny.set('sex speed', .12)
     show expression AnimatedImage("jenny_pool_sex", [1,2,3,4,5,6,7,8,9,10], M_jenny) as jenny_pool_sex at Position(xalign = 0.0, yoffset = 0) with dissolve
     pause
-    jenny "Hmm, sial!"
-
-    anon "Berhenti, kamu mendorongku ke bawah!"
-
-    jenny "Ssst!!"
-
+    jenny "Mmm, fuck!"
+    anon "Stop, you're pushing me under!"
+    jenny "Shh!!"
     anon "{i}*Bllgggh*{/i}"
-
     pause
-    anon "{b}[jen_name]{/b} Anda berangkat-"
-
+    anon "{b}[jen_name]{/b} you're goin-"
     anon "{i}*Bllgghhrrghhh*{/i}"
-
-    jenny "Berhentilah membuat banyak keributan!"
-
-    anon "Anda menenggelamkan saya!"
-
-    jenny "Oh, aku bukan kamu sayang besar!"
-
+    jenny "Stop making so much noise!"
+    anon "You're drowning me!"
+    jenny "Oh, I am not you big baby!"
     pause
     anon "{i}*Bllggh*{/i}"
-
-    anon "{i}*Batuk* *Batuk*{/i}"
-
-    jenny "Mm, aku sangat menyukai penis besar ini... Sangat!!"
-
+    anon "{i}*Cough* *Cough*{/i}"
+    jenny "Mm, I love this big dick... So much!!"
     pause
-    jenny "Ayo, setubuhi aku lebih cepat, {b}[firstname]{/b}!"
-
-    anon "saya sedang mencoba!"
-
+    jenny "C'mon, fuck me faster, {b}[firstname]{/b}!"
+    anon "I'm trying!"
     pause
-    jenny "Sialan!!"
-
-    jenny "Aku akan keluar!"
-
-    anon "aku ke-"
-
+    jenny "Holy fuck!!"
+    jenny "I'm going to cum!"
+    anon "Me to-"
 
 label jenny_pool_sex_loop:
     show screen sex_anim_buttons
@@ -102,31 +80,21 @@ label jenny_pool_sex_loop:
 label jenny_pool_sex_hscene_dialog:
     if animcounter == 0 and randomizer() < 10:
         jenny "Ahh!!{p=1}{nw}"
-
         anon "{i}*Blghrghhh*{/i}!!!{p=1}{nw}"
-
     if animcounter == 1 and randomizer() < 10:
         anon "{i}*Bllgggh*{/i}{p=1}{nw}"
-
-        jenny "Sangat dalam!{p=1}{nw}"
-
-        jenny "Oh, persetan denganku!{p=1}{nw}"
-
+        jenny "It's so deep!{p=1}{nw}"
+        jenny "Oh, fuck me!{p=1}{nw}"
     if animcounter == 2 and randomizer() < 10:
         jenny "FUUUUUCK!!!{p=1}{nw}"
-
     if animcounter == 3 and randomizer() < 10:
         anon "{i}*Bllgghhrrghhh*{/i}{p=1}{nw}"
-
     return
 
 label jenny_pool_sex_cum_inside:
-    jenny "Ya Tuhan, ya Tuhan, Ya Tuhan!!"
-
-    jenny "Jangan berhenti!!"
-
+    jenny "Ohmygod, ohmygod, OHMYGOD!!"
+    jenny "Don't stop!!"
     jenny "NGGHHH!!!"
-
     show jenny_pool_sex cum
     anon "HNNGGG!!!" with flash
     show jenny_pool_sex cum2
@@ -143,9 +111,7 @@ label jenny_pool_sex_cum_inside:
     show player_jenny_pool pullout2
     with dissolve
     jenny "Haah... Haah..."
-
-    jenny "Itu luar biasa!"
-
+    jenny "That was awesome!"
     call call_pregnancy_minigame ("jenny_pool_sex_cum_inside_post_pregnancy", M_jenny)
 
 label jenny_pool_sex_cum_inside_post_pregnancy:
@@ -153,28 +119,20 @@ label jenny_pool_sex_cum_inside_post_pregnancy:
     show anon f_tired b_pool
     show jenny b_pool f_upset_down
     with fade
-    anon "Saya pikir saya akan pingsan..."
-
+    anon "I think I'm going to pass out..."
     show jenny f_angry
-    jenny "Apakah kamu masuk ke dalam diriku?!"
-
-    anon "Aku bahkan tidak tahu, {b}[jen_name]{/b}... Hidupku berkelebat di depan mataku!"
-
+    jenny "Did you cum in me?!"
+    anon "I don't even know, {b}[jen_name]{/b}... My life was flashing before my eyes!"
     show jenny f_eyeroll
-    jenny "Oh, berhentilah bersikap dramatis..."
-
+    jenny "Oh, quit being so dramatic..."
     show jenny f_angry
-    jenny "Aku bersumpah, jika aku hamil, aku akan membunuhmu!"
-
-    anon "{b}[jen_name]{/b}, aku bahkan tidak bisa-"
-
-    anon "Aku perlu berbaring atau apalah..."
-
+    jenny "I swear, if I get pregnant, I'm gonna kill you!"
+    anon "{b}[jen_name]{/b}, I can't even-"
+    anon "I need to go lay down or something..."
     hide anon with dissolve
     pause
     show jenny f_angry
-    jenny "Pakai celanamu sebelum masuk ke dalam, tolol!"
-
+    jenny "Put your pants on before you go inside, moron!"
     $ renpy.end_replay()
     $ persistent.cookie_jar["Jenny"]["unlocked"] = True
     $ persistent.cookie_jar["Jenny"]["gallery"]["16_unlocked"] = True
@@ -183,12 +141,9 @@ label jenny_pool_sex_cum_inside_post_pregnancy:
     $ game.main()
 
 label jenny_pool_sex_cum_outside:
-    jenny "Ya Tuhan, ya Tuhan, Ya Tuhan!!"
-
-    jenny "Jangan berhenti!!"
-
+    jenny "Ohmygod, ohmygod, OHMYGOD!!"
+    jenny "Don't stop!!"
     jenny "NGGHHH!!!"
-
     show jenny_pool_sex pullout1
     show jenny_pool_sex_face normal_down
     with dissolve
@@ -201,33 +156,23 @@ label jenny_pool_sex_cum_outside:
     pause
     show jenny_pool_sex_face normal_talk_down
     jenny "Haah... Haah..."
-
-    jenny "Itu luar biasa!"
-
+    jenny "That was awesome!"
     scene expression "backgrounds/location_home_backyard_pool_day_closeup.jpg"
     show anon f_tired b_pool
     show jenny b_pool f_upset_down
     with fade
-    anon "Saya pikir saya akan pingsan..."
-
+    anon "I think I'm going to pass out..."
     show jenny f_gross
-    jenny "Eww, air manimu melayang di sekitarku!"
-
-    anon "Y-ya, maaf... Hidupku berkelebat di depan mataku!"
-
-    jenny "Oh, berhentilah bersikap dramatis..."
-
-    jenny "Akulah yang merendam jus bolamu di sini!"
-
-    anon "{b}[jen_name]{/b}, aku bahkan tidak bisa-"
-
-    anon "Aku perlu berbaring atau apalah..."
-
+    jenny "Eww, your cum is floating all around me!"
+    anon "Y-yeah, sorry... My life was flashing before my eyes!"
+    jenny "Oh, quit being so dramatic..."
+    jenny "I'm the one marinating in your ball juice over here!"
+    anon "{b}[jen_name]{/b}, I can't even-"
+    anon "I need to go lay down or something..."
     hide anon with dissolve
     pause
     show jenny f_gross
-    jenny "Pakai celanamu sebelum masuk ke dalam, tolol!"
-
+    jenny "Put your pants on before you go inside, moron!"
     $ renpy.end_replay()
     $ persistent.cookie_jar["Jenny"]["unlocked"] = True
     $ persistent.cookie_jar["Jenny"]["gallery"]["16_unlocked"] = True

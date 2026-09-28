@@ -4,7 +4,6 @@ label gym_lock_check:
     if game.timer.is_night() and destination != L_gym_front:
         show anon with dissolve
         anon @ -m_talk "( It's closed now, I can come back tomorrow. )"
-
         hide anon with dissolve
         $ player.go_to(L_gym_front)
     else:

@@ -1,57 +1,37 @@
 label ode02_init_odette:
-    odette f_smirk "Kamu tidak akan takut padaku, kan?"
-
-    anon f_worried "{i}*Meneguk*{/i} T-tidak."
-
-    anon "Aku hanya memastikan kamu masih ingin melakukannya..."
-
-    odette "Tentu saja."
-
+    odette f_smirk "You're not gonna chicken out on me, are you?"
+    anon f_worried "{i}*Gulp*{/i} N-no."
+    anon "I'm just making sure you still wanna do it..."
+    odette "Well, of course."
     show anon f_hurt
     pause
-    odette @ f_laugh "Heh, jangan khawatir {b}[firstname]{/b}... Pasti menyenangkan."
-
+    odette @ f_laugh "Heh, don't worry {b}[firstname]{/b}... It'll be fun."
     show anon f_worried
-    odette "{b}temui aku di sana saat bulan purnama berikutnya{/b}, oke?"
-
+    odette "Just {b}meet me there during the next full moon{/b}, okay?"
 
     $ renpy.dynamic(ttl=game.timer.days_until_lunar(.5))
     $ renpy.dynamic(day=game.timer.dayOfWeek(delta=ttl, full=True))
 
     if game.timer.is_fullmoon():
-        odette @ f_wink "Maksudku malam ini!"
-
-        anon f_surprised "Y-ya, oke..."
-
+        odette @ f_wink "By which I mean tonight!"
+        anon f_surprised "Y-yeah, okay..."
     elif ttl > 21:
-        odette @ f_sad "Yang terakhir baru saja berakhir, jadi akan memakan waktu beberapa minggu."
-
-        anon "Oh baiklah."
-
+        odette @ f_sad "The last one only just ended, so it'll be a few weeks."
+        anon "Oh, okay."
     elif ttl > 14:
-        odette @ f_pouting "Yang terakhir baru terjadi sekitar seminggu yang lalu, jadi yang berikutnya belum akan terjadi dalam beberapa minggu."
-
-        anon "Ya baiklah."
-
+        odette @ f_pouting "The last one was only a week or so ago, so the next won't be for a few weeks yet."
+        anon "Yeah, okay."
     elif ttl > 7:
-        odette @ f_shy "Yang berikutnya tinggal seminggu lagi, saya sangat bersemangat!"
-
-        anon "Secepat itu?"
-
-        odette @ f_laugh "Khawatir, kawan?"
-
+        odette @ f_shy "The next one is just over a week away, I'm so excited!"
+        anon "That soon?"
+        odette @ f_laugh "Worried, big fella?"
     elif ttl > 1:
-        odette "Yang berikutnya ada di [day], saya harap Anda siap!"
-
-        anon f_shy "Apakah saya punya pilihan?"
-
-        odette @ f_laugh "Hehe, tidak!"
-
+        odette "The next one is on [day], I hope you're ready!"
+        anon f_shy "Do I have a choice?"
+        odette @ f_laugh "Hehe, nope!"
     else:
-        odette @ f_wink "Oh, dan {i}peringatan spoiler{/i}: Itu besok!"
-
-        anon f_surprised @ -m_talk "{i}*Meneguk*{/i}"
-
+        odette @ f_wink "Oh, and {i}spoiler alert{/i}: That's tomorrow!"
+        anon f_surprised @ -m_talk "{i}*Gulp*{/i}"
 
     show anon f_normal
     return
@@ -61,65 +41,45 @@ label ode02_tomb_odette:
     scene odette b_vamp_front f_vamp_tongue
     anon "( !!! )" with hpunch
     anon "{b}Odette{/b}?"
-
-    anon "Apakah itu kamu?"
-
+    anon "Is that you?"
 
     scene black with fasteyeshut
     pause .05
 
     scene odette b_vamp_front_normal with fasteyeopen
-    odette "Hei, sobat besar..."
-
-    odette "... Senang sekali Anda akhirnya bergabung dengan saya di tempat tinggal saya yang sederhana."
-
+    odette "Hey there, big fella..."
+    odette "... Nice of you to finally join me in my humble abode."
 
     scene location_crypt_side
     show odette b_vamp_sitting_cape_normal f_smirk
     show anon f_worried:
         xoffset -150
     with fade
-    anon "Tempat tinggalmu yang sederhana?"
-
-    anon "I-ini ruang bawah tanah!"
-
-    odette @ f_laugh "Hehe, luar biasa bukan?"
-
-    anon f_worried_low "aku... Umm-"
-
-    odette "Anda seharusnya sudah melihatnya sebelum saya datang..."
-
+    anon "Your humble abode?"
+    anon "T-this is a crypt!"
+    odette @ f_laugh "Hehe, isn't it awesome?"
+    anon f_worried_low "I... Umm-"
+    odette "You should have seen it before I came along..."
     show anon f_worried
-    odette "... Itu mengerikan!"
-
-    anon "Y-ya, ini agak... Tidak wajar, bukan?"
-
-    odette f_happy_up "Tidak sehat?"
-
+    odette "... It was ghastly!"
+    anon "Y-yeah, this is kinda... Morbid, isn't it?"
+    odette f_happy_up "Morbid?"
     pause
-    odette f_smirk @ f_laugh "Apakah kamu mengatakan kamu tidak menyukai rumah baruku?"
-
-    anon a_behind_head "Salah..."
-
-    odette "Anda tidak menganggapnya erotis?"
-
-    anon f_surprised a_sides "Erotis?!"
-
-    odette @ f_happy_up "Semua roh ini dikuburkan di sini..."
-
-    odette "... Bisakah kamu merasakan mereka memperhatikanmu?"
-
+    odette f_smirk @ f_laugh "Are you saying you don't like my new home?"
+    anon a_behind_head "Err..."
+    odette "You don't find it erotic?"
+    anon f_surprised a_sides "Erotic?!"
+    odette @ f_happy_up "All these spirits laid to rest here..."
+    odette "... Can you feel them watching you?"
     show anon f_worried a_surprised_up_both with {'master': dissolve}:
         flip
         xoffset -650
-    anon "A-mengamatiku?"
-
+    anon "W-watching me?"
     show odette b_vamp_normal f_tired_happy_lipbite with dissolve:
         xoffset -480
     pause
     show anon f_surprised_teeth
-    odette f_smirk "Mmm, aku merasa kesemutan di punggungku hanya dengan memikirkannya..."
-
+    odette f_smirk "Mmm, I get tingles running up my spine just thinking about it..."
     show anon a_surprised_shoulders:
         unflip
         xoffset -150
@@ -130,136 +90,95 @@ label ode02_tomb_odette:
     show anon f_skeptical a_sides
     with {'master': dissolve}
     odette "Hehehehe!"
-
     show anon f_worried_low
     pause
-    anon "Apa yang kamu kenakan?"
-
+    anon "What are you wearing?"
     show odette f_smirk
-    anon f_frown_down a_point_down "Dan dimana sepatumu?"
-
+    anon f_frown_down a_point_down "And where are your shoes?"
     show anon f_surprised_low a_sides behind odette
     show odette b_vamp_show:
         xoffset -250
     with dissolve
-    odette "Apakah kamu menyukainya?"
-
-    odette "Ini kostum Halloweenku dari tahun lalu."
-
+    odette "Do you like it?"
+    odette "It's my halloween costume from last year."
     show odette b_vamp_normal f_smirk:
         xoffset -150
     show anon f_worried
     with dissolve
-    odette "Atau, yah... Setidaknya itu jubah dari kostum halloweenku."
-
-    anon "Anda mungkin tidak boleh bertelanjang kaki di sini."
-
-    odette "Sisanya hanya akan menghalangi kita, bukan begitu?"
-
-    anon f_frown_down "Maksudku, kamu akan terkena cacing tambang atau semacamnya..."
-
+    odette "Or, well... At least it's the cape from my halloween costume."
+    anon "You probably shouldn't be barefoot in here."
+    odette "The rest of it would just get in our way, don't you think?"
+    anon f_frown_down "I'm just saying, you're gonna end up with hook worms or something..."
     odette @ f_laugh "Hehehe!"
-
     show anon f_worried
     show odette f_drink a_blood_cup_drink
     with dissolve
-    odette "Hmm!"
-
-    anon "A-apa yang kamu minum di sana?"
-
+    odette "Mmm!"
+    anon "W-what are you drinking there?"
     show odette f_smirk a_idle with dissolve
-    odette "Oh ini?"
-
+    odette "Oh, this?"
     show odette with {'master': dissolve}:
         xoffset -225
-    odette "Hanya sedikit anggur merah... Apakah kamu mau?"
-
-    anon "Aku ehh... Tidak, sebaiknya aku tidak melakukannya..."
-
-    odette "Ayolah, aku bersikeras!"
-
-    anon "T-tidak, sungguh itu-"
-
+    odette "Just some red wine... Would you like some?"
+    anon "I ehh... No, I probably shouldn't..."
+    odette "Come now, I insist!"
+    anon "N-no, really that's-"
     show odette a_blood_cup_force
     show anon f_smoke a_up
     with {'master': dissolve}
     anon "!!!"
     pause
-    odette "Itu saja."
-
-    odette "Minumlah dalam-dalam, kawan."
-
+    odette "That's it."
+    odette "Drink deep, big fella."
     show odette a_idle
     show anon f_worried a_sides
     with dissolve
-    anon "Eugh, bagiku itu tidak terasa seperti anggur..."
-
-    odette "Heh, itu perpaduan yang sangat istimewa."
-
-    odette "Saya membuatnya sendiri."
-
+    anon "Eugh, that doesn't taste like wine to me..."
+    odette "Heh, it's a very special blend."
+    odette "I made it myself."
     show odette f_drink a_blood_cup_drink with dissolve
-    anon "Benar-benar?"
-
+    anon "Really?"
     show odette a_idle f_smirk with dissolve
-    anon "Bukankah itu seharusnya manis?"
-
+    anon "Isn't it supposed to be sweet?"
     pause
-    anon "Karena itu lebih seperti rasa asin..."
-
-    anon "... Rasanya agak manis juga."
-
+    anon "Because that's more like a salty flavor..."
+    anon "... It's kinda syrupy too."
     show odette a_blood_cup_force
     show anon f_smoke a_up
     with dissolve
-    odette "Ssst."
-
+    odette "Shh."
     anon "!!!"
-    odette "Ini akan membuat Anda merasa luar biasa, percayalah."
-
+    odette "This is going to make you feel fantastic, just trust me."
     pause
     show odette a_idle
     show anon f_disgusted a_sides
     with dissolve
-    anon "Eh, kawan..."
-
-    anon "Ini sangat tebal."
-
+    anon "Eugh, man..."
+    anon "It's so thick."
     odette @ -m_talk "Mhmm."
-
     show odette f_drink a_blood_cup_drink behind anon
     show anon a_surprised_hands f_surprised_low
     with dissolve
     pause
-    anon "Lenganku terasa aneh."
-
+    anon "My arms feel weird."
     show odette a_idle f_smirk o_blood
     with dissolve
-    odette "Itu berarti itu berhasil."
-
+    odette "That means it's working."
     show anon a_surprised_lips f_surprised_down with dissolve
-    anon "N mah robekan biaya kebas..."
-
-    odette @ f_laugh "hehe!"
-
-    anon a_sides f_surprised "Apa namamu?"
-
-    odette "Sangat normal, {b}[firstname]{/b}."
-
-    odette a_blood_cup_throw "Jangan khawatir, kepala kecilmu yang cantik."
-
+    anon "N mah rips fee numb..."
+    odette @ f_laugh "Hehe!"
+    anon a_sides f_surprised "Id dis namol?"
+    odette "Perfectly normal, {b}[firstname]{/b}."
+    odette a_blood_cup_throw "Don't you worry your pretty little head."
     show odette a_blood_wipe o_empty with dissolve
     anon @ -m_talk "Hmm."
-
     show odette a_undress1 with dissolve
     pause
     show odette b_naked a_vamp_undress2
     show anon a_surprised_hands f_surprised_low
     with dissolve
-    anon "Ah joo sial?"
-
+    anon "Ah joo shurr?"
     show odette a_idle with dissolve
-    anon "Kaz tidak tahu-"
-
+    anon "Kaz dis dunnit-"
     jump odette_button_crypt.resume
 # Decompiled by unrpyc: https://github.com/CensoredUsername/unrpyc

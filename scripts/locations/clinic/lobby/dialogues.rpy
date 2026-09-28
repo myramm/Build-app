@@ -11,11 +11,9 @@ label hospital_desk_caught_dialogue:
     show old_roz 2
     with hpunch
     roz "Can I help you?"
-
     show old_roz 1
     show player 10f
     player_name "Erm... I..."
-
     show player 11f
     return
 
@@ -29,38 +27,28 @@ label hospital_jizz_checkup:
     show diane b_casual:
         xoffset -250
     with dissolve
-    diane "H-halo."
-
+    diane "H-hello."
     show old_roz 2
-    roz "Ya?"
-
+    roz "Yeah?"
     show old_roz 1
     diane "I have an appointment for a check up."
-
     show old_roz 11b at Position (xoffset=-40) with dissolve
     roz "Hmm."
-
     pause
     show old_roz 2 with dissolve
     roz "{b}Diane{/b}?"
-
     show old_roz 1
-    diane "Itu benar."
-
+    diane "That's right."
     show old_roz 2
     roz "Go on up to the second floor exam room and change into a gown."
-
     roz "The nurse will be up to see you momentarily."
-
     show old_roz 1
-    diane "O-oke."
-
+    diane "O-okay."
     show diane:
         flip
         xoffset 300
     with dissolve
     diane "C'mon, {b}[firstname]{/b}."
-
     hide player
     hide diane
     with dissolve

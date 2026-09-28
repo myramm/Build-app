@@ -5,11 +5,9 @@ label art_minigame_done_dialogue:
     show player 1f zorder 2 at right
     with dissolve
     mia "You did it!"
-
     show old_ross 11
     show old_mia 11f
     ross "Well done, {b}[firstname]{/b}!"
-
     show old_mia 8f
     show old_ross 24
     show player 22f
@@ -19,49 +17,36 @@ label art_minigame_done_dialogue:
     show principalo 1 zorder 0 at Position(xpos=0.7, ypos=1.0)
     with dissolve
     annie "I told them they weren't allowed to be here, ma'am."
-
     show annieo 1
     show old_ross 25
     ross "I was just giving my student a bit of last minute advice."
-
     show player 11f
     ross "... But I really think this would go a lot smoother if you allowed me to stay and supervise..."
-
     show old_ross 24
     show principalo 2
-    smith "TIDAK!"
-
+    smith "NO!"
     show old_ross 23
     show principalo 1
     ross "Really, {b}Mrs. Smith{/b}, I must protest."
-
-    ross "Ini adalah-"
-
+    ross "This is-"
     show old_ross 22
     show principalo 2b
     smith "ABSOLUTELY NOT!"
-
     show principalo 1
     show annieo 2
     annie "You heard the principal, beat it!"
-
     show annieo 1
     show old_mia 12bf
     mia "Good luck, {b}[firstname]{/b}!"
-
     hide old_mia with dissolve
     show old_ross 23
-    ross "Uh, baiklah..."
-
+    ross "Ugh, fine..."
     show old_ross 25
     ross "You can do this, {b}[firstname]{/b}."
-
     ross "Just remember everything I taught you!"
-
     show old_ross 24
     show annieo 2
     annie "Would you get out already!"
-
     show old_ross 22
     show annieo 1
     ross "..."
@@ -71,45 +56,36 @@ label art_minigame_done_dialogue:
     pause
     show principalo 4 at Position(xpos=0.2, ypos=1.0) with dissolve
     smith "Lock the door please, {b}Annie{/b}."
-
     show principalo 3
     show annieo 2
-    annie "Ya, Bu."
-
+    annie "Yes, ma'am."
     show principalo 4
     show annieo 1
     smith "Ah, ah, ah! Remember what we discussed..."
-
     show principalo 3
     show annieo 9
     show annieoverlay 1 zorder 2 at Position(xpos=0.549, ypos=1.0)
-    annie "Oh benar!"
-
+    annie "Oh, right!"
     show annieo 9
     annie "Umm, yes, my Queen."
-
     hide annieoverlay
     hide annieo
     with dissolve
     player_name "..."
     show principalo 4
     smith "Much better."
-
     show principalo 3
     pause
     show annieo 1 zorder 1 at Position(xpos=0.55, ypos=1.0) with dissolve
     pause
     show principalo 4
     smith "Please inform, this one, as to what is about to happen here."
-
     show principalo 3
     show annieo 2
     annie "Right away, my Queen."
-
     show annieo 1f at Position(xpos=0.45, ypos=1.0) with dissolve
     show player 10f
     player_name "... What is happening right now?"
-
     show player 22f
     show annieo 7f
     show annieoverlay 1f zorder 2 at Position(xpos=0.451, ypos=1.0)
@@ -117,109 +93,81 @@ label art_minigame_done_dialogue:
     hide annieoverlay
     show annieo 2f
     annie "You, peasant, will have the honor of capturing our beloved Queen in all her glory."
-
     show player 11f
     annie "However, there are a few rules that we must go over before you begin."
-
     show annieo 1f
     pause
     show annieo 2f
     annie "Rule 1..."
-
     annie "From this moment onwards you will only refer to {b}Mrs. Smith{/b} as {i}our Queen{/i}, {i}Her Royal Highness{/i}, or {i}Her Majesty{/i}."
-
     show annieo 1f
     player_name "..."
     show annieo 2f
     annie "You don't want to forget rule 1, trust me!"
-
     show annieo 1f
     pause
     show annieo 2f
     annie "Rule 2..."
-
     annie "You must not address our Queen directly."
-
     annie "If you have any questions, you will ask me and I will answer."
-
     show annieo 1f
     player_name "..."
     show annieo 2f
     annie "And rule 3..."
-
     annie "After we have finished here, you will never, EVER, reveal what transpired in this room."
-
     annie "Do so and I assure you, your life will be forfeit!"
-
     annie "Is that understood?!"
-
     show annieo 1f
     player_name "..."
     show annieo 2f
     annie "You may talk, peasant."
-
     show annieo 1f
     show player 10f
     player_name "Uhh, sure. Yeah, I got it."
-
     show annieo 2f
     show player 11f
-    annie "Sangat bagus!"
-
+    annie "Very good!"
     show annieo 2 at Position(xpos=0.5, ypos=1.0) with dissolve
     annie "I believe the filthy peasant is ready to begin, my Queen."
-
     show annieo 1
     show principalo 4
     smith "It's about time."
-
     show principalo 3
     pause
     show principalo 4
     smith "It's so hard to find good peasants these days."
-
     show principalo 3
     show annieo 2
     annie "Yes, my Queen it certainly is..."
-
     show annieo 1
     show principalo 4
     smith "Very well, slave. You may begin..."
-
     show principalo 3
     show annieo 2f at Position(xpos=0.45, ypos=1.0)
     annie "Right away, Your Majesty!"
-
     show annieo 4f with dissolve
     pause
     show annieo 5f with dissolve
     show player 23f
     player_name "( !!! )" with hpunch
     player_name "( Holy shit! )"
-
     show annieo 7f with dissolve
     annie "IS THERE A PROBLEM?!"
-
     show annieo 7bf
     show player 10f
     player_name "N-nooo..."
-
     show player 11f
     show annieo 7f
     annie "Then stop ogling me, you pathetic-"
-
     show annieo 7bf
     show principalo 2b
     smith "Attend me, slave, before I lose my patience!"
-
     show principalo 3
     show annieo 10f with dissolve
     pause
     show annieo 9f
     annie "Yes, my Queen..."
-
     annie "... Please, forgive me."
-
     hide annieo
     show principalo 5 at Position(xpos=0.315, ypos=1.0)
     with dissolve
@@ -232,22 +180,17 @@ label art_minigame_done_dialogue:
     show annieo 8 zorder 0 at Position(xpos=0.5, ypos=1.0)
     with dissolve
     player_name "( I can see everything! )"
-
     pause
     show player 11f
     pause
     show player 10f
     player_name "... Am I supposed to start painting now?"
-
     show player 11f
     show annieo 7f at Position(xpos=0.525, ypos=1.0) with dissolve
-    annie "TIDAK!"
-
+    annie "NO!"
     annie "We have to get into position first!"
-
     show annieo 6 at Position(xpos=0.5, ypos=1.0) with dissolve
     annie "... Stupid peasant..."
-
 
     scene location_school_art_cutscene09
     show text _ ("I couldn't decide whether to laugh or crap my pants in terror...") as caption
@@ -273,42 +216,33 @@ label art_minigame_done_dialogue:
     show annieo 5 zorder 3 at Position(xpos=0.05, ypos=1.45)
     with fade
     player_name "I think that should do it..."
-
     show player 11f
     show annieo 6
     annie "Does that mean you're finished?"
-
     show player 10f
     show annieo 5
-    player_name "Y-ya?"
-
+    player_name "Y-yes?"
     show player 11f
     hide annieo
     show annieo 9f zorder 2 at Position(xpos=0.25, ypos=1.25)
     with dissolve
     annie "Thank god, my butt is killing me!"
-
     show annieo 8f at Position(xpos=0.4, ypos=1.0)
     show principalo 8f zorder 3
     with dissolve
-    smith "{i}*Ehem*{/i}"
-
+    smith "{i}*Ahem*{/i}"
     show principalo 7f
     show annieo 9f
     annie "Oh! Sorry, my Queen!"
-
     show annieo 8f
     show principalo 13f at Position(xpos=0.242, ypos=1.0) with dissolve
     smith "Ugh, I'll discipline you later, slave!"
-
     show principalo 12f
     show annieo 9f
     annie "Of course, Your Majesty!"
-
     show annieo 8f
     show principalo 14f
     smith "Spin the painting around so I can see it, peasant!"
-
     show principalo 12f
     pause
     show player 518f zorder 0 with dissolve
@@ -322,120 +256,89 @@ label art_minigame_done_dialogue:
     show player 11f zorder 2
     with dissolve
     player_name "( Please, like it!!! )"
-
     show principalo 10f at Position(xpos=0.2, ypos=1.0) with dissolve
     smith "..."
     show principalo 11f
     smith "IT'S MARVELOUS!"
-
     show principalo 11bf
     smith "Finally, an accurate portrayal of my true self!"
-
     show principalo 10f
     show annieo 6f
     annie "You look beautiful, Your Majesty."
-
     show principalo 9f
     show annieo 8f with dissolve
     smith "SILENCE!"
-
     show principalo 12f at Position(xpos=0.242, ypos=1.0) with dissolve
     smith "..."
     show principalo 13f
     smith "Ugh, you've ruined the moment, slave..."
-
     show principalo 12f
     annie "..."
     show principalo 11f at Position(xpos=0.2, ypos=1.0) with dissolve
     smith "Peasant?"
-
     show principalo 10f
     player_name "..."
     show principalo 11f
     smith "Peasant?! You may address me, just this once."
-
     show principalo 10f
     show player 10f
     player_name "Oh, that's me, isn't it?"
-
     show principalo 12f at Position(xpos=0.242, ypos=1.0) with dissolve
     player_name "Sorry, uhh... Yes, my Queen?"
-
     show player 11f
     smith "..."
     show principalo 11f at Position(xpos=0.2, ypos=1.0) with dissolve
     smith "You did very well!"
-
     smith "Your Queen is pleased."
-
     smith "Tell your teacher I want this painting framed and delivered to my office as soon as possible!"
-
     show principalo 13f at Position(xpos=0.242, ypos=1.0) with dissolve
     smith "Understood?"
-
     show principalo 12f
     show player 10f
-    player_name "Ya, Bu."
-
+    player_name "Yes, ma'am."
     show player 22f
     smith "..."
     show player 10f
     player_name "Sorry, I meant {i}my Queen{/i}."
-
     show player 11f
     smith "Hmph!"
-
     show principalo 13f
-    smith "Sangat bagus."
-
+    smith "Very good."
     show principalo 9f at Position(xpos=0.2, ypos=1.0) with dissolve
-    smith "Budak?!"
-
+    smith "Slave?!"
     show principalo 7f
     show annieo 9 zorder 3 at Position(xpos=0.45, ypos=1.0) with dissolve
     annie "Right here, Your Majesty!"
-
     show annieo 8
     show principalo 8f
     smith "Gather up our robes and let us be off."
-
     show principalo 7f zorder 0 at Position(xpos=0.55, ypos=1.0) with dissolve
     smith "I think I'll have you give me a bath this evening..."
-
     hide principalo
     show annieo 9f at Position(xpos=0.2, ypos=1.0)
     with dissolve
     annie "Of course, Your Majesty! It would be my honor!"
-
     show annieo 8f
     smith "... And don't think I've forgotten your blunder earlier!"
-
     smith "I'll see that you're disciplined after you've finished bathing me."
-
     show annieo 9f zorder 0 at Position(xpos=0.55, ypos=1.0) with dissolve
     annie "Yes, my Queen..."
-
     hide annieo with dissolve
     pause
     show player 11 with dissolve
     player_name "..."
     show player 10
     player_name "What."
-
     player_name "The."
-
     player_name "F-"
-
     show player 11
     ross "{b}[firstname]{/b}!"
-
     show old_ross 25f zorder 0 at Position(xpos=0.55, ypos=1.0)
     show old_mia 8b zorder 0 at Position(xpos=0.75, ypos=1.0)
     with dissolve
 
 
     ross "How did the painting go?"
-
     show old_ross 24 zorder 1 at left
     show old_mia 8bf zorder 0 at Position(xpos=0.35, ypos=1.0)
     show player 11f
@@ -444,135 +347,99 @@ label art_minigame_done_dialogue:
     ross "..."
     show player 10f
     player_name "Yeah, imagine the weirdest thing you can."
-
     player_name "Then multiply it times a thousand!"
-
     player_name "You still won't even come close to how weird my night was..."
-
     show player 11f
     show old_mia 12bf
     mia "What did they say?"
-
     show player 10f
     show old_mia 8bf
     player_name "I uhh, can't tell you."
-
     show player 11f
     show old_mia 12bf
-    mia "Hah?"
-
+    mia "Huh?"
     show player 10f
     show old_mia 8bf
     player_name "I'm pretty sure {b}Mrs. Smith{/b} would have me murdered in my sleep if I said anything more."
-
     show player 11f
     show old_mia 12bf
-    mia "Astaga, baiklah."
-
+    mia "Sheesh, alright."
     show old_mia 9f
     mia "The painting looks nice though!"
-
     show old_mia 11f
     show player 10f
     player_name "You haven't said anything yet, {b}Miss Ross{/b}?"
-
     show player 11f
     ross "..."
     show old_mia 7f
     show old_ross 34 with dissolve
     ross "... It's beautiful."
-
     show old_ross 34b
     show old_mia 10bf
     mia "Are you crying?"
-
     show old_ross 34
     show old_mia 11f
     ross "Sorry, I'm just so proud!"
-
     show old_ross 34b
     show old_mia 9f
-    mia "Aduh..."
-
+    mia "Aww..."
     show old_mia 11f
     show old_ross 34
     ross "Come here, both of you!"
-
     hide player
     hide old_mia
     show old_ross 54
     with dissolve
     ross "I think you just saved my job, {b}[firstname]{/b}!"
-
     ross "Thanks, you guys..."
-
     show old_ross 55
     mia "I'm just happy I got to be a part of all this!"
-
     show old_ross 10
     show player 10f zorder 2 at right
     show old_mia 7f zorder 0 at Position(xpos=0.35, ypos=1.0)
     with dissolve
     player_name "{b}Mrs. Smith{/b} said she wants it framed and delivered to her office right away."
-
     show player 11f
     show old_ross 11
     ross "Well, she's gonna have to wait!"
-
     ross "We have a contest to win!"
-
     show old_ross 10
     show old_mia 9f
     mia "Oh, yay!"
-
     show old_mia 11f
     show player 10f
     player_name "Won't she get upset?"
-
     show player 11f
     show old_ross 11
     ross "Probably."
-
     show old_mia 7f
     ross "... But she'll get over it pretty quick when I tell her the art class won't be needing funding next year."
-
     show player 2f
     show old_ross 10
     player_name "You really think we'll win?"
-
     show player 1f
     show old_ross 27 with dissolve
-    ross "Saya bersedia!"
-
+    ross "I do!"
     ross "This painting is really remarkable, {b}[firstname]{/b}!"
-
     show old_ross 26
     show player 2f
-    player_name "Terima kasih!"
-
+    player_name "Thanks!"
     show player 1f
     show old_ross 27
     ross "You know, we should celebrate!"
-
     ross "... I think I've got some party favors upstairs if you guys-"
-
     show old_ross 25 with dissolve
     ross "Oh, crap! It's getting really late, isn't it?"
-
     show old_ross 25b
     ross "You kids must be exhausted!"
-
     show old_ross 25
     ross "Get on home and get some sleep. I'll make sure the painting gets framed and sent off to the contest."
-
     show old_ross 24
     show player 2f
     player_name "Okay. Goodnight, you two!"
-
     show player 1f
     show old_mia 9f
     mia "Sweet dreams, {b}[firstname]{/b}!"
-
     $ renpy.end_replay()
     return
 

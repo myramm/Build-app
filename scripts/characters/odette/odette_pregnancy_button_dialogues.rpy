@@ -1,26 +1,18 @@
 label button_odette_pregnancy_leave_stage_0:
 label button_odette_pregnancy_leave_stage_1:
-    anon @ a_wave "Aku akan meninggalkanmu."
-
-    odette "Baiklah."
-
-    odette "Berikan {b}Evie{/b} ciuman untukku, oke?"
-
-    anon "Akan dilakukan."
-
+    anon @ a_wave "I'll leave you be."
+    odette "Alright."
+    odette "Give {b}Evie{/b} a kiss for me, okay?"
+    anon "Will do."
     hide anon with dissolve
     return
 
 label button_odette_pregnancy_leave_stage_2:
 label button_odette_pregnancy_leave_stage_3:
-    anon f_normal "Aku akan meninggalkanmu."
-
-    odette f_normal "Baiklah."
-
-    odette f_smirk "Berikan {b}Evie{/b} ciuman untukku, oke?"
-
-    anon "Akan dilakukan."
-
+    anon f_normal "I'll leave you be."
+    odette f_normal "Alright."
+    odette f_smirk "Give {b}Evie{/b} a kiss for me, okay?"
+    anon "Will do."
     hide anon with dissolve
     return
 
@@ -29,197 +21,121 @@ label button_odette_pregnancy_bathroom_stage_4:
     show layer master at flip
     show odette f_smirk b_naked_pregnant_belly a_towel
     show anon f_flirt with dissolve
-    odette "Kembali lagi?"
-
-    anon "Saya tidak bisa menahannya."
-
-    anon "Kamu sangat seksi saat ini..."
-
-    odette @ f_laugh "Hehe, tidak apa-apa."
-
+    odette "Back again?"
+    anon "I can't help it."
+    anon "You're just so sexy right now..."
+    odette @ f_laugh "Hehe, it's alright."
     show odette a_remove1 with dissolve
     pause
     show odette a_remove2 with dissolve
     show anon f_flirt_low
-    odette "Saya tidak keberatan."
-
-    odette a_squeeze "Lihatlah selama yang kamu mau, kawan."
-
+    odette "I don't mind."
+    odette a_squeeze "Look as long as you want, big fella."
     pause
     hide anon with dissolve
     $ game.main()
     return
 
 label button_odette_pregnancy_leave_stage_4:
-    anon "Aku akan meninggalkanmu."
-
-    odette "Baiklah."
-
-    odette "Berikan {b}Evie{/b} ciuman untukku, oke?"
-
-    anon "Akan dilakukan."
-
+    anon "I'll leave you be."
+    odette "Alright."
+    odette "Give {b}Evie{/b} a kiss for me, okay?"
+    anon "Will do."
     hide anon with dissolve
     return
 
 label button_odette_pregnancy_get_anything_0:
 label button_odette_pregnancy_get_anything_1:
-    anon "Bolehkah aku memberimu sesuatu?"
-
-    odette f_smirk "Yah, penis dalam yang bagus pasti menyenangkan..."
-
-    odette @ f_eyeroll a_shrug "... Tapi aku sudah berjanji pada {b}Grace{/b} Aku tidak akan melakukannya, setidaknya sampai bayinya lahir."
-
+    anon "Can I get you something?"
+    odette f_smirk "Well, a nice deep dicking would be nice..."
+    odette @ f_eyeroll a_shrug "... But I sorta promised {b}Grace{/b} I wouldn't, at least not until after the baby pops out."
     anon @ f_sad_down "Oh."
-
-    odette @ f_sad "Ya..."
-
-    odette "... Tapi percayalah, begitu aku bisa, kita akan kesulitan... Mengerti?"
-
-    anon f_normal @ f_flirt "Hehe, oke."
-
+    odette @ f_sad "Yeah..."
+    odette "... But believe me, the second I'm able, we're fucking hard... Got it?"
+    anon f_normal @ f_flirt "Heh, okay."
     return
 
 label button_odette_pregnancy_get_anything_2:
 label button_odette_pregnancy_get_anything_3:
-    anon "Ada yang bisa kuberikan padamu?"
-
-    odette "Heh, kecuali Anda tahu suatu tempat di sekitar kota yang menjual kue corong?"
-
-    anon f_skeptical "kue corong?"
-
-    odette "Ya Tuhan, aku sangat menginginkannya!"
-
-    odette @ f_eyeroll "Anda tidak tahu."
-
+    anon "Can I get you anything?"
+    odette "Heh, not unless you know somewhere around town that sells funnel cake?"
+    anon f_skeptical "Funnel cake?"
+    odette "Oh my god, I've been craving it so bad!"
+    odette @ f_eyeroll "You have no idea."
     show anon f_normal
     pause
-    odette "Mungkin dengan saus keju nacho..."
-
+    odette "Maybe with some nacho cheese dip..."
     pause
-    odette f_surprised "{i}*Terkesiap*{/i} Atau salsa!"
-
-    anon f_disgusted_down "Oke, baru saja."
-
-    odette f_sad "Ya, saya tahu itu menjijikkan... Saya tidak bisa menjelaskannya."
-
+    odette f_surprised "{i}*Gasp*{/i} Or salsa!"
+    anon f_disgusted_down "Okay, eww."
+    odette f_sad "Yeah, I know it's gross... I can't explain it."
     pause
-    odette "Ugh, mulutku berair hanya dengan memikirkannya!"
-
-    anon "Uhh, aku tidak tahu ada tempat di sekitar sini yang menjual kue corong..."
-
-    anon f_worried "Aku bisa membelikanmu donat?"
-
-    odette "Ugh, tidak... Tidak apa-apa."
-
-    anon "Anda yakin?"
-
-    odette "Ya."
-
-    odette "Terima kasih."
-
+    odette "Ugh, my mouth is watering just thinking about it!"
+    anon "Uhh, I don't know any place around here that sells funnel cake..."
+    anon f_worried "I could get you donuts?"
+    odette "Ugh, no... It's okay."
+    anon "You sure?"
+    odette "Yeah."
+    odette "Thanks anyways."
     return
 
 label button_odette_pregnancy_get_anything_4:
-    anon "Ada yang bisa kuberikan padamu?"
-
-    odette f_tired "Ya ampun jangan kesana {b}[firstname]{/b}..."
-
-    odette "Aku ingin kontol, sayang sekali!"
-
+    anon "Can I get you anything?"
+    odette f_tired "Oh man, don't go there {b}[firstname]{/b}..."
+    odette "I want dick, so bad!"
     anon f_disgusted_down "Ehh."
-
-    odette "Semua mainan di dunia tidak dapat menggantikan mainan asli."
-
-    anon f_worried "Kami selalu bisa-"
-
-    odette f_surprised "Tidak, jangan goda aku!"
-
-    odette "{b}Grace{/b} bilang kita bisa bercinta semau kita setelah bayinya lahir dan aku ingin menepati janjiku."
-
-    anon f_surprised "Baiklah."
-
-    odette f_tired "Saya hanya berharap itu terjadi segera, saya sekarat di sini..."
-
-    odette f_tired_down "Kamu dengar itu, dasar brengsek?!"
-
-    odette "Waktunya habis, keluarlah dari sana!"
-
-    anon f_worried @ f_worried_left "hehe!"
-
+    odette "All the toys in the world can't replace the real thing."
+    anon f_worried "We could always-"
+    odette f_surprised "No, don't tempt me!"
+    odette "{b}Grace{/b} said we could fuck all we want once the baby is born and I wanna keep my promise."
+    anon f_surprised "Alright."
+    odette f_tired "I just hope it happens soon, I'm dying here..."
+    odette f_tired_down "You hear that, you little shit?!"
+    odette "Time's up, come out of there already!"
+    anon f_worried @ f_worried_left "Hehe!"
     return
 
 label button_odette_pregnancy_how_feeling_0:
 label button_odette_pregnancy_how_feeling_1:
-    anon "Bagaimana perasaanmu?"
-
-    odette @ f_confused "Uhh, baiklah?"
-
+    anon "How are you feeling?"
+    odette @ f_confused "Uhh, fine?"
     pause
-    odette "Mengapa kamu bertanya?"
-
-    anon @ a_point "Kau tahu, karena bayinya..."
-
-    odette "Oh benar!"
-
-    odette "Bayi itu."
-
-    odette "Ya, aku baik-baik saja sejauh ini."
-
-    odette "Jangan khawatir."
-
-    anon "Baiklah."
-
+    odette "Why do you ask?"
+    anon @ a_point "You know, because of the baby..."
+    odette "Oh, right!"
+    odette "The baby."
+    odette "Yeah, I'm good so far."
+    odette "No worries."
+    anon "Alright."
     return
 
 label button_odette_pregnancy_how_feeling_2:
 label button_odette_pregnancy_how_feeling_3:
-    anon f_worried "Bagaimana perasaanmu?"
-
-    odette @ f_tired "Ehh, oke, menurutku..."
-
-    odette "Morning Sickness itu menyebalkan!"
-
+    anon f_worried "How are you feeling?"
+    odette @ f_tired "Ehh, okay I guess..."
+    odette "Morning sickness is a bitch and a half!"
     anon "Oh?"
-
-    odette f_sad "Ya, dan payudaraku juga membunuhku!"
-
-    anon "Itu menyebalkan..."
-
-    odette f_smirk @ f_eyeroll "{i}*Huh*{/i} Ya."
-
-    odette "Saya sangat senang {b}Grace{/b} membujuk saya untuk tidak melakukan tindik di puting..."
-
+    odette f_sad "Yeah, and my tits are killing me too!"
+    anon "That sucks..."
+    odette f_smirk @ f_eyeroll "{i}*Sigh*{/i} Yeah."
+    odette "I'm really glad {b}Grace{/b} talked me out of the nipple piercings..."
     odette @ f_laugh "Hehehe!"
-
-    odette "Tapi serius, aku baik-baik saja."
-
+    odette "But seriously, I'm good."
     show anon f_normal
-    odette "Dia telah merawatku dengan baik."
-
-    anon "Yah, aku senang mendengarnya."
-
-    odette "Ya."
-
+    odette "She's been taking good care of me."
+    anon "Well, I'm glad to hear it."
+    odette "Yup."
     return
 
 label button_odette_pregnancy_how_feeling_4:
-    anon "Bagaimana perasaanmu?"
-
-    odette f_tired "Ugh, aku sangat siap untuk mengeluarkan anak iblis ini dariku..."
-
-    anon f_worried "Seburuk itu, ya?"
-
-    odette "Anda tidak tahu!"
-
-    odette "Bocah kecil itu membuatku terjaga sepanjang malam, menendang!"
-
-    odette "Aku bersumpah demi Tuhan, dia mencoba bermain sepak bola dengan ginjalku."
-
-    anon "Kedengarannya kasar."
-
-    odette "{i}*Huh*{/i} Ya."
-
+    anon "How are you feeling?"
+    odette f_tired "Ugh, I'm so ready to get this demon child out of me..."
+    anon f_worried "That bad, huh?"
+    odette "You have no idea!"
+    odette "The little brat keeps me up all night, kicking!"
+    odette "I swear to god, it's trying to play soccer with my kidneys."
+    anon "That sounds rough."
+    odette "{i}*Sigh*{/i} Yeah."
     return
 
 label button_odette_pregnancy_intro_4:
@@ -227,10 +143,8 @@ label button_odette_pregnancy_intro_4:
     show anon
     show odette f_smirk
     with dissolve
-    anon "Halo, {b}Odette{/b}."
-
-    odette "Hei, teman besar."
-
+    anon "Hello, {b}Odette{/b}."
+    odette "Hey, big fella."
     return
 
 label button_odette_pregnancy_intro_2:
@@ -239,10 +153,8 @@ label button_odette_pregnancy_intro_3:
     show anon
     show odette f_smirk
     with dissolve
-    anon "Halo, {b}Odette{/b}."
-
-    odette "Hei, teman besar."
-
+    anon "Hello, {b}Odette{/b}."
+    odette "Hey, big fella."
     return
 
 label button_odette_pregnancy_intro_0:
@@ -251,52 +163,33 @@ label button_odette_pregnancy_intro_1:
     show anon
     show odette f_smirk
     with dissolve
-    anon "Halo, {b}Odette{/b}."
-
-    odette "Hei, teman besar."
-
+    anon "Hello, {b}Odette{/b}."
+    odette "Hey, big fella."
     return
 
 label button_odette_pregnancy_gave_birth_leave:
-    anon a_idle f_normal "Aku akan meninggalkanmu."
-
-    odette "Berikan {b}Evie{/b} ciuman untukku."
-
-    anon "Akan dilakukan."
-
+    anon a_idle f_normal "I'll leave you be."
+    odette "Give {b}Evie{/b} a kiss for me."
+    anon "Will do."
     hide anon with dissolve
     return
 
 label button_odette_pregnancy_gave_birth_need_anything:
-    anon "Kalian butuh sesuatu?"
-
-    odette "Ya, perawat basah akan menyenangkan."
-
-    anon @ f_worried a_behind_head "Ehh, aku tidak yakin bisa membantumu disana..."
-
-    odette "Hehe, bukan?"
-
-    odette "Cih, harapanku terlalu tinggi."
-
-    anon "Maaf."
-
-    odette "Tidak apa-apa, kamu bisa segera menebusnya."
-
+    anon "You guys need anything?"
+    odette "Yeah, a wet nurse would be nice."
+    anon @ f_worried a_behind_head "Ehh, not sure I can help you there..."
+    odette "Hehe, no?"
+    odette "Tsk, you got my hopes up."
+    anon "Sorry."
+    odette "That's alright, you can make it up to me soon."
     anon @ -m_talk "Hmm?"
-
-    odette f_smirk "Memekku sudah membaik dan tak lama lagi, aku akan membutuhkan penis itu."
-
-    anon a_behind_head f_shy "{i}*Meneguk*{/i} O-oke..."
-
-    odette "Saya serius, {b}[firstname]{/b}..."
-
+    odette f_smirk "My pussy is on the mend and pretty soon, I'm going to need that dick."
+    anon a_behind_head f_shy "{i}*Gulp*{/i} O-okay..."
+    odette "I'm serious, {b}[firstname]{/b}..."
     show anon f_surprised
-    odette "Sebaiknya kau meniduriku dengan keras!"
-
-    anon "Saya mengerti."
-
+    odette "You better fuck me real hard!"
+    anon "I understand."
     odette @ f_laugh "Hehehe!"
-
     return
 
 label button_odette_pregnancy_gave_birth_intro:
@@ -304,73 +197,45 @@ label button_odette_pregnancy_gave_birth_intro:
     show odette f_happy_down a_baby
     show anon
     with dissolve
-    odette "Kalau tidak memperlambat proses menyusui, payudara {b}ibu{/b} akan lepas..."
-
-    odette "Ya, benar!"
-
+    odette "If you don't slow down on the breastfeeding, {b}Mommy{/b}'s tits are gonna fall off..."
+    odette "Yes, they are!"
     odette @ f_laugh "Hehehe!"
-
-    anon "Hai."
-
-    odette f_smirk "Hei, teman besar."
-
+    anon "Hey there."
+    odette f_smirk "Hey, big fella."
     return
 
 label button_odette_pregnancy_yup:
-    anon "Ya, bagaimana kabar kalian?"
-
-    odette "Kami berdua baik-baik saja."
-
+    anon "Yeah, how are you guys doing?"
+    odette "We're both doing well."
     show odette f_happy_down
     if M_odette.pregnancy.baby_gender == "boy":
-        odette "Saya baru saja selesai memberinya makan."
-
-        odette "Dia benar-benar pria kecil yang lapar..."
-
-        odette "... Menghabiskan setengah hari dengan putingku di mulutnya."
-
-        anon "Heh, aku tidak bisa menyalahkannya di sana..."
-
+        odette "I just finished feeding him."
+        odette "He sure is a hungry little guy..."
+        odette "... Spends half the day with my nipple in his mouth."
+        anon "Heh, I can't really blame him there..."
     elif M_odette.pregnancy.baby_gender == "twins":
-        odette "Saya baru saja selesai memberi mereka makan."
-
-        odette "Itu pastinya adalah hal-hal kecil yang lapar..."
-
-        odette "... Habiskan setengah hari dengan putingku di mulut mereka."
-
-        anon "Heh, aku tidak bisa menyalahkan mereka di sana..."
-
+        odette "I just finished feeding them."
+        odette "They sure are some hungry little things..."
+        odette "... Spend half the day with my nipple in their mouths."
+        anon "Heh, I can't really blame them there..."
     else:
-        odette "Saya baru saja selesai memberinya makan."
-
-        odette "Dia benar-benar gadis kecil yang lapar..."
-
-        odette "... Menghabiskan setengah hari dengan putingku di mulutnya."
-
-        anon "Heh, aku tidak bisa menyalahkannya di sana..."
-
-    anon "Saya tidak berpikir payudara itu bisa menjadi lebih besar tetapi entah bagaimana mereka berhasil..."
-
+        odette "I just finished feeding her."
+        odette "She sure is a hungry little girl..."
+        odette "... Spends half the day with my nipple in her mouth."
+        anon "Heh, I can't really blame her there..."
+    anon "I didn't think those breasts could get any bigger but somehow they managed it..."
     odette @ f_laugh "Hehehe!"
-
     pause
-    anon @ a_wave "Kurasa aku harus meninggalkan kalian untuk beristirahat."
-
-    odette f_normal "Intip {b}Grace{/b} dan pastikan dia baik-baik saja selama aku terjebak di sini, ya?"
-
-    anon "Saya bisa melakukan itu."
-
-    odette "Terima kasih, {b}[firstname]{/b}."
-
+    anon @ a_wave "I guess I should leave you guys to rest."
+    odette f_normal "Peek in on {b}Grace{/b} and make sure she's doing okay while I'm stuck in here, yeah?"
+    anon "I can do that."
+    odette "Thanks, {b}[firstname]{/b}."
     pause
     if M_odette.pregnancy.baby_gender == "twins":
-        anon "Sampai jumpa lagi, anak-anak kecil."
-
+        anon "I'll see you soon, little ones."
     else:
-        anon "Sampai jumpa, anak kecil."
-
+        anon "I'll see you soon, little one."
     odette @ f_laugh "Hehehe!"
-
     hide anon with dissolve
     return
 
@@ -378,9 +243,7 @@ label button_odette_pregnancy_bedridden:
     scene expression game.timer.image("location_hospital_baby_bed{}")
     show odette b_gown_bed f_smirk
     show anon with dissolve
-    odette "Hei, teman besar."
-
-    odette "Anda datang untuk memeriksa kami lagi?"
-
+    odette "Hey, big fella."
+    odette "You come by to check on us again?"
     return
 # Decompiled by unrpyc: https://github.com/CensoredUsername/unrpyc

@@ -3,20 +3,16 @@ screen machine_sex_options(machine):
         imagebutton:
             focus_mask True
             pos (250,615)
-            idle "seksb_slower_n"
-
-            hover "seksb_slower_h"
-
+            idle "sexb_slower_n"
+            hover "sexb_slower_h"
             action Hide("machine_sex_options"), Function(machine.set, "sex speed", machine.get("sex speed") + 0.05)
 
     if machine.get("sex speed") > .076:
         imagebutton:
             focus_mask True
             pos (450,615)
-            idle "seksb_lebih cepat_n"
-
-            hover "seksb_lebih cepat_h"
-
+            idle "sexb_faster_n"
+            hover "sexb_faster_h"
             action Hide("machine_sex_options"), Function(machine.set, "sex speed", machine.get("sex speed") - 0.05)
 
 screen xray_scr():
@@ -65,20 +61,16 @@ screen sex_screen(machine, loop_label, buttons=[], n_frames=8, **kwargs):
             focus_mask True
             xpos 180
             ypos 735
-            idle "seksb_slower_n"
-
-            hover "seksb_slower_h"
-
+            idle "sexb_slower_n"
+            hover "sexb_slower_h"
             action Hide("sex_screen"), Function(machine.set, "sex speed", machine.get("sex speed") + speed_increment), Jump(loop_label)
 
     imagebutton:
         focus_mask True
         xpos 380
         ypos 735
-        idle "seksb_teruskan_n"
-
-        hover "seksb_keepgoing_h"
-
+        idle "sexb_keepgoing_n"
+        hover "sexb_keepgoing_h"
         action Hide("sex_screen"), Jump(loop_label)
 
     if machine.get("sex speed") > slow:
@@ -86,10 +78,8 @@ screen sex_screen(machine, loop_label, buttons=[], n_frames=8, **kwargs):
             focus_mask True
             xpos 580
             ypos 735
-            idle "seksb_lebih cepat_n"
-
-            hover "seksb_lebih cepat_h"
-
+            idle "sexb_faster_n"
+            hover "sexb_faster_h"
             action Hide("sex_screen"), Function(machine.set, "sex speed", machine.get("sex speed") - speed_increment), Jump(loop_label)
 
     hbox:

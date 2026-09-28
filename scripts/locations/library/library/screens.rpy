@@ -4,7 +4,6 @@ screen library():
     imagebutton:
         focus_mask True
         alt "Library Bookshelf"
-
         pos (513,354)
         idle "objects/object_shelf_03.png"
         hover HoverImage("objects/object_shelf_03.png")
@@ -26,7 +25,6 @@ screen library():
         focus_mask True
         pos (104,378)
         alt "Librarian Desk"
-
         idle "objects/object_desk_05.png"
         hover HoverImage("objects/object_desk_05.png")
         action TalkTo(M_jane)
@@ -35,7 +33,6 @@ screen library():
         focus_mask True
         pos (636,349)
         alt "Library Backroom Door"
-
         idle "objects/object_door_29.png"
         hover HoverImage("objects/object_door_29.png")
         action Hide("library"), MoveTo(L_library_backroom)
@@ -44,7 +41,6 @@ screen library():
         focus_mask True
         pos (803,324)
         alt "Library Meeting Room Door"
-
         idle "objects/object_door_55.png"
         hover HoverImage("objects/object_door_55.png")
         action Hide("library"), MoveTo(L_library_meetingroom)
@@ -53,7 +49,6 @@ screen library():
         focus_mask True
         align (0.5,0.97)
         alt "Exit Library"
-
         idle "boxes/auto_option_generic_01.png"
         hover HoverImage("boxes/auto_option_generic_01.png")
         action Hide("library"), MoveTo(L_library_front)

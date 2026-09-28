@@ -7,18 +7,18 @@ label cedric_button_dialogue:
         call expression game.dialog_select("button_cedric_intro_repeat")
 
     menu cedric_menu:
-        "Apa yang sedang kamu lakukan?":
+        "What have you been up to?":
             call expression game.dialog_select("button_cedric_what_have_you_been_up_to")
             jump cedric_menu
-        "Bisakah kamu melihatku?":
+        "Can you spot me?":
 
             call expression game.dialog_select("button_cedric_can_you_spot_me")
             jump cedric_menu
 
-        "Tentang {b}[jen_name]{/b}." if M_jenny.is_state(S_jenny_talk_to_cedric):
+        "About {b}[jen_name]{/b}." if M_jenny.is_state(S_jenny_talk_to_cedric):
             call expression game.dialog_select("button_cedric_about_jenny")
             $ M_jenny.trigger(T_jenny_talked_to_cedric)
-        "Sampai jumpa!":
+        "See ya!":
 
             call expression game.dialog_select("button_cedric_see_ya")
 

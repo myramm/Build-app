@@ -7,7 +7,7 @@ label lucy_button_dialogue:
         call expression game.dialog_select("lucy_button_intro_night")
 
     menu button_lucy_menu:
-        "Bagaimana kabarmu?":
+        "How are you?":
             call expression game.dialog_select("button_lucy_how_are_you")
             jump button_lucy_menu
 
@@ -33,7 +33,7 @@ label lucy_button_dialogue:
         "How are the little ones?" if PregnancyManager.total_babies() > 1 and L_annie_daycare.is_here(M_lucy):
             call expression game.dialog_select("button_lucy_how_are_the_little_ones")
             jump button_lucy_menu
-        "Saya harus pergi.":
+        "I should go.":
 
             call expression game.dialog_select("button_lucy_leave")
 

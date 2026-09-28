@@ -2,39 +2,27 @@ label dewitt_dialogue_dress_code:
     hide player
     show anon f_worried:
         flip
-    anon "Sebenarnya, saya ingin berbicara dengan Anda tentang {b}Nyonya. Smith{/b}..."
-
+    anon "Actually, I wanted to talk to you about {b}Mrs. Smith{/b}..."
     show dewitt 11b with dissolve
-    dewitt "{i}*Sigh*{/i} Apa yang telah dilakukan wanita bodoh itu sekarang?"
-
+    dewitt "{i}*Sigh*{/i} What has that fool woman done now?"
     show dewitt 10b
-    anon "Dia meminta {b}Annie{/b} menerapkan kebijakan aturan berpakaian yang baru, dan saya berharap Anda dapat berbicara dengannya tentang perubahan kebijakan tersebut?"
-
+    anon "She's got {b}Annie{/b} enforcing a new dress code policy, and I was hoping you could speak with her about changing it?"
     show dewitt 11b
-    dewitt "Ya ampun, percayalah, tidak ada yang lebih kucintai selain memberikan sedikit pikiranku pada wanita tua itu..."
-
-    dewitt "... Tapi dia sudah memotong anggaran musikku sedemikian rupa sehingga pada dasarnya tidak ada!"
-
-    dewitt "Jika saya menimbulkan masalah karena aturan berpakaian, siapa yang tahu apa yang akan terjadi?"
-
+    dewitt "Oh sugar, believe me, there's nothing I'd love more than to give that old hag a piece of my mind..."
+    dewitt "... But she's already cut my music budget so much that it's basically nonexistent!"
+    dewitt "If I stir up trouble over a dress code, who knows what will happen?"
     show dewitt 10b
-    anon "Y-ya, aku mengerti."
-
+    anon "Y-yeah, I understand."
     show dewitt 2 with dissolve
-    dewitt "Apakah Anda mencoba bertanya kepada guru lain?"
-
+    dewitt "Did you try asking the other teachers?"
     show dewitt 1
-    anon "aku akan bertanya pada mereka."
-
+    anon "I'll ask them."
     show dewitt 2
-    dewitt "Saya yakin salah satu dari mereka akan membantu Anda."
-
+    dewitt "I'm sure one of them will help you."
     show dewitt 1
-    anon f_normal "Terima kasih, {b}Nona Dewitt{/b}."
-
+    anon f_normal "Thanks, {b}Miss Dewitt{/b}."
     show dewitt 2
-    dewitt "Semoga beruntung, gula."
-
+    dewitt "Good luck, sugar."
     show dewitt 1
     hide anon with dissolve
     return
@@ -42,26 +30,21 @@ label dewitt_dialogue_dress_code:
 label dewitt_dialogue_dewitt_eve_meet_up:
     scene music_classroom_c
     show player 10 with dissolve
-    player_name "Saya harus memberinya ruang untuk saat ini."
-
-    player_name "Dan saya juga harus {b}mengunjungi Eve di taman pada malam hari{/b}."
-
+    player_name "I should give her some space for the time being."
+    player_name "And I should also {b}visit Eve in the park at night{/b}."
     return
 
 label dewitt_dialogue_dewitt_science_adhesive:
     scene music_classroom_c
     show player 17 with dissolve
-    player_name "{b}Kevin{/b} akan membuat perekat di kelas {b}Nona Okita{/b}."
-
-    player_name "Aku harus melihat apa yang dia lakukan."
-
+    player_name "{b}Kevin{/b} was going to make some adhesive in {b}Miss Okita{/b}'s classroom."
+    player_name "I should see what he's up to."
     return
 
 label dewitt_dialogue_dewitt_school_sneak_mission_help:
     scene music_classroom_c
     show player 10 with dissolve
-    player_name "Mungkin {b}Erik{/b} akan membantuku {b}menyelinap ke sekolah malam ini{/b}."
-
+    player_name "Maybe {b}Erik{/b} will help me {b}sneak into the school tonight{/b}."
     return
 
 label dewitt_dialogue_dewitt_office_night_visit_delay:
@@ -69,26 +52,20 @@ label dewitt_dialogue_dewitt_office_night_visit_delay:
     show player 13 at left
     show dewitt 19f at right
     with dissolve
-    dewitt "Ingat, aku punya satu kejutan lagi untukmu."
-
+    dewitt "Remember, I have one more surprise for you."
     hide player
     show dewitt 6f at left
     with dissolve
-    dewitt "Anda harus datang ke kantor saya {b}besok{/b} sepulang sekolah jika Anda menginginkannya..."
-
+    dewitt "You'll have to come to my office {b}tomorrow{/b} after school if you want it..."
     show player 29 at left
     show dewitt 18f at Position (xpos=300)
     with dissolve
-    player_name "O-oke..."
-
-    player_name "Saya akan berada di sana."
-
+    player_name "O-okay..."
+    player_name "I'll be there."
     show player 13 with dissolve
     show dewitt 19f
-    dewitt "Hmm, aku tidak sabar!"
-
-    dewitt "Sampai jumpa, {b}[firstname]{/b}."
-
+    dewitt "Mmm, I can't wait!"
+    dewitt "See you then, {b}[firstname]{/b}."
     hide dewitt with dissolve
     show player 18
     player_name "..."
@@ -99,26 +76,20 @@ label dewitt_dialogue_dewitt_office_night_visit:
     show player 13 at left
     show dewitt 19f at right
     with dissolve
-    dewitt "Ingat, aku punya satu kejutan lagi untukmu."
-
+    dewitt "Remember, I have one more surprise for you."
     hide player
     show dewitt 6f at left
     with dissolve
-    dewitt "Kamu harus datang ke kantorku sepulang sekolah jika kamu menginginkannya..."
-
+    dewitt "You'll have to come to my office after school if you want it..."
     show player 29 at left
     show dewitt 18f at Position (xpos=300)
     with dissolve
-    player_name "O-oke..."
-
-    player_name "Saya akan berada di sana."
-
+    player_name "O-okay..."
+    player_name "I'll be there."
     show player 13 with dissolve
     show dewitt 19f
-    dewitt "Hmm, aku tidak sabar!"
-
-    dewitt "Sampai jumpa, {b}[firstname]{/b}."
-
+    dewitt "Mmm, I can't wait!"
+    dewitt "See you then, {b}[firstname]{/b}."
     hide dewitt with dissolve
     show player 18
     player_name "..."
@@ -129,136 +100,104 @@ label dewitt_dialogue_dewitt_end:
     show player 13f at right
     show dewitt 2 at left
     with dissolve
-    dewitt "Terima kasih sekali lagi untuk semuanya, sayang!"
-
+    dewitt "Thanks again for everything, sugar!"
     show dewitt 1
     show player 14f
-    player_name "Dengan senang hati, {b}Nona Dewitt{/b}."
-
+    player_name "My pleasure, {b}Miss Dewitt{/b}."
     show player 13f
     show dewitt 19 with dissolve
-    dewitt "Ingat, pintuku selalu terbuka untukmu."
-
+    dewitt "Remember, my door is always open for you."
     show dewitt 18
     show player 17f
-    player_name "Ya, Bu."
-
+    player_name "Yes, ma'am."
     return
 
 label dewitt_dialogue_intro:
     scene music_classroom_c
     show dewitt 1 at left
     show player 2f at right
-    player_name "Hai, {b}Nona Dewitt{/b}."
-
+    player_name "Hi, {b}Miss Dewitt{/b}."
     show dewitt 2
     show player 1f
-    dewitt "Halo, {b}[firstname]{/b}!"
-
-    dewitt "Siap bergabung bersama kami hari ini?"
-
+    dewitt "Hello, {b}[firstname]{/b}!"
+    dewitt "Ready to groove with us today?"
     show dewitt 1
     show player 33f
-    player_name "Tentu saja!"
-
+    player_name "Of course!"
     show dewitt 2
     show player 13f
-    dewitt "Apakah ada sesuatu yang ingin Anda bicarakan?"
-
+    dewitt "Is there anything you want to talk about?"
     show dewitt 1
     show player 34f
     return
 
 label dewitt_dialogue_dewitt_find_flute:
     show player 10f
-    player_name "Di mana saya harus mulai mencari seruling?"
-
+    player_name "Where should I start looking for the flute?"
     show player 5f
     show dewitt 2
-    dewitt "Apakah Anda {b}memeriksa lembar pembayaran instrumen di loker kelas{/b}?"
-
+    dewitt "Did you {b}check the instrument checkout sheet in the classroom locker{/b}?"
     show dewitt 1
     show player 14f
-    player_name "Oh ya!"
-
-    player_name "Saya akan mencari petunjuk di sana!"
-
+    player_name "Oh yeah!"
+    player_name "I'll look there for a clue!"
     show player 13f
     show dewitt 2
-    dewitt "Sampai jumpa, gula!"
-
+    dewitt "Bye, sugar!"
     return
 
 label dewitt_dialogue_dewitt_make_new_flute:
     show player 10f
-    player_name "Tentang seruling-"
-
+    player_name "About the flute-"
     show player 11f
     show dewitt 2
-    dewitt "Apakah Anda {b}menemukan serulingnya{/b}?"
-
+    dewitt "Did you {b}find the flute{/b} yet?"
     show dewitt 1
     show player 3f at Position (xoffset=-8) with dissolve
     player_name "..."
     show player 10f with dissolve
-    player_name "Belum."
-
+    player_name "Not yet."
     show player 5f
     show dewitt 2
-    dewitt "Saya harap itu tidak hilang."
-
+    dewitt "I hope it's not lost."
     show dewitt 1
     show player 14f
-    player_name "Jangan khawatir! Saya ikut!"
-
+    player_name "Don't worry! I'm on it!"
     show player 13f
     show dewitt 2
-    dewitt "Terima kasih, {b}[firstname]{/b}!"
-
+    dewitt "Thanks, {b}[firstname]{/b}!"
     hide dewitt with dissolve
     show player 4f with dissolve
-    player_name "( {b}Erik{/b} bilang aku seharusnya bisa membuatnya. )"
-
+    player_name "( {b}Erik{/b} said I should be able to make one. )"
     return
 
 label dewitt_dialogue_talent_show_help:
     show player 10f
-    player_name "Berapa banyak orang yang Anda butuhkan untuk pertunjukan bakat lagi?"
-
+    player_name "How many people do you need for the talent show again?"
     show player 5f
     show dewitt 5
-    dewitt "Saya berharap setidaknya {b}dua lagi{/b}."
-
-    dewitt "Kurang dari itu dan saya khawatir kami harus membatalkannya."
-
+    dewitt "I was hoping for at least {b}two more{/b}."
+    dewitt "Any less and I'm afraid we'll have to cancel."
     show dewitt 4
     show player 14f
-    player_name "Baiklah, jangan khawatir, {b}Nona Dewitt{/b}! Aku akan mencari seseorang!"
-
+    player_name "Alright, no worries, {b}Miss Dewitt{/b}! I'll find someone!"
     show player 13f
     show dewitt 5
-    dewitt "Ah terima kasih, gula!"
-
+    dewitt "Aww thanks, sugar!"
     return
 
 label dewitt_dialogue_leave:
     show player 10f
-    player_name "Tidak juga..."
-
-    player_name "Hanya berharap aku bisa mengejar ketinggalan."
-
+    player_name "Not really..."
+    player_name "Just hoping I can catch up."
     show dewitt 2
     show player 5f
-    dewitt "Oh sayang. Kamu akan baik-baik saja!"
-
+    dewitt "Oh, honey. You'll be just fiiine!"
     show player 13f
-    dewitt "Pilih instrumen dan duduklah!"
-
-    dewitt "Kami akan membawa Anda kembali ke jalurnya..."
-
+    dewitt "Pick an instrument and take a seat!"
+    dewitt "We'll get you back in the groove..."
     show dewitt 1
     show player 14f
-    player_name "Terima kasih, {b}Nona Dewitt{/b}..."
-
+    player_name "Thanks, {b}Miss Dewitt{/b}..."
     return
 # Decompiled by unrpyc: https://github.com/CensoredUsername/unrpyc

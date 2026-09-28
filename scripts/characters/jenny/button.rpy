@@ -47,10 +47,10 @@ label jenny_button_dialogue:
     elif M_jenny.is_state(S_jenny_have_breakfast_2) and L_home_diningroom.is_here(M_jenny):
         call expression game.dialog_select("dining_room_jenny_have_breakfast_2")
         menu:
-            "Kamu seksi. {color=7ff7}[[Submissive]{/color}":
+            "You're hot. {color=7ff7}[[Submissive]{/color}":
                 call expression game.dialog_select("dining_room_jenny_have_breakfast_2_youre_hot")
                 $ M_jenny.decrement("dominance")
-            "Tidak.{color=f77b}[[Dominant]{/color}":
+            "No. {color=f77b}[[Dominant]{/color}":
                 call expression game.dialog_select("dining_room_jenny_have_breakfast_2_no")
                 $ M_jenny.increment("dominance")
         $ M_jenny.trigger(T_jenny_had_breakfast_2)
@@ -134,7 +134,7 @@ label jenny_button_dialogue:
                 else:
                     call expression game.dialog_select("jenny_button_intro_bedroom_evening_j21")
     menu sis_bedroom_menu:
-        "Aku punya sesuatu untukmu." if player.has_item('picture2') and L_home_sisbedroom.is_here(M_jenny):
+        "I have something for you." if player.has_item('picture2') and L_home_sisbedroom.is_here(M_jenny):
             show jenny b_dressed
             call jenny_button_old_photo
             $ player.remove_item('picture2')
@@ -143,32 +143,32 @@ label jenny_button_dialogue:
         "{b}Roxxy{/b}." if M_bissette.is_state(S_bissette_jenny_mentoring_payment) and L_home_sisbedroom.is_here(M_jenny):
             call expression game.dialog_select("jenny_dialogue_roxxy_pre")
             menu:
-                "Membayar." if player.has_money(500):
+                "Pay." if player.has_money(500):
                     $ player.spend_money(500)
                     call expression game.dialog_select("jenny_dialogue_roxxy_pay")
                     $ M_bissette.trigger(T_bissette_jenny_paid)
-                "Jangan membayar.":
+                "Don't pay.":
 
                     call expression game.dialog_select("jenny_dialogue_roxxy_do_not_pay")
 
-        "Aku punya kejutan untukmu!" if M_jenny.is_state(S_jenny_diary_clue) and player.has_item("\w+_necklace", regex=True) and game.timer.is_tick(1, 2):
+        "I have a surprise for you!" if M_jenny.is_state(S_jenny_diary_clue) and player.has_item("\w+_necklace", regex=True) and game.timer.is_tick(1, 2):
             call expression game.dialog_select("button_jenny_have_a_surprise_necklace")
             menu:
-                "Ya.":
+                "Yes.":
                     call expression game.dialog_select("button_jenny_have_a_surprise_yes")
-                "Tidak, aku ingin yang asli!":
+                "No, I want the real thing!":
                     call expression game.dialog_select("button_jenny_have_a_surprise_no")
             $ M_jenny.trigger(T_jenny_give_necklace)
             jump sis_bedroom_menu
 
-        "Buatlah kesepakatan." if M_jenny.finished_state(S_jenny_go_to_her_room):
+        "Make a deal." if M_jenny.finished_state(S_jenny_go_to_her_room):
             if L_home_diningroom.is_here(M_jenny) or L_home_backyard.is_here(M_jenny):
                 call expression game.dialog_select("jenny_dialogue_make_a_deal_breakfast")
             else:
                 call expression game.dialog_select("jenny_dialogue_make_a_deal")
             $ game.main()
 
-        "Mainan." if M_jenny.is_state(S_jenny_get_a_toy, S_jenny_go_to_pink, S_jenny_bring_toy_back) and L_home_sisbedroom.is_here(M_jenny):
+        "Toy." if M_jenny.is_state(S_jenny_get_a_toy, S_jenny_go_to_pink, S_jenny_bring_toy_back) and L_home_sisbedroom.is_here(M_jenny):
             if M_jenny.is_state(S_jenny_bring_toy_back):
                 call expression game.dialog_select("button_jenny_has_toy_electroclit")
                 if M_jenny.get("dominance") <= 0:
@@ -185,73 +185,73 @@ label jenny_button_dialogue:
         "{b}Cedric{/b}." if M_jenny.is_state(S_jenny_talk_to_cedric) and L_home_sisbedroom.is_here(M_jenny):
             call expression game.dialog_select("button_jenny_talk_to_cedric")
 
-        "Pertunjukan kamera." if M_jenny.is_state(S_jenny_come_back_camshow) and not M_jenny.pregnancy and game.timer.is_day():
+        "Camshow." if M_jenny.is_state(S_jenny_come_back_camshow) and not M_jenny.pregnancy and game.timer.is_day():
             call expression game.dialog_select("button_jenny_come_back_camshow")
 
-        "Pertunjukan kamera." if M_jenny.finished_state(S_jenny_start_camshow_handjob) and L_home_sisbedroom.is_here(M_jenny) and not M_jenny.pregnancy and game.timer.is_day():
+        "Camshow." if M_jenny.finished_state(S_jenny_start_camshow_handjob) and L_home_sisbedroom.is_here(M_jenny) and not M_jenny.pregnancy and game.timer.is_day():
             $ M_jenny.set('teasin_before_sex', False)
             call expression game.dialog_select("button_jenny_camshow")
             menu jenny_camshow_options:
-                "pekerjaan tangan.":
+                "Handjob.":
                     if M_jenny.get('teasin_before_sex'):
                         call expression game.dialog_select("finger_blasting_hj")
                     else:
                         call expression game.dialog_select("jenny_hj_intro_repeat")
 
-                "Lisan." if M_jenny.finished_state(S_jenny_start_camshow_blowjob):
+                "Oral." if M_jenny.finished_state(S_jenny_start_camshow_blowjob):
                     if M_jenny.get('teasin_before_sex'):
                         call expression game.dialog_select("finger_blasting_bj")
                     else:
                         call expression game.dialog_select("jenny_bj_intro_repeat")
 
-                "cunnilingus." if M_jenny.finished_state(S_jenny_give_cunni):
+                "Cunnilingus." if M_jenny.finished_state(S_jenny_give_cunni):
                     if M_jenny.get('teasin_before_sex'):
                         call expression game.dialog_select("finger_blasting_cunni")
                     else:
                         call expression game.dialog_select("jenny_cunni_intro_repeat")
 
-                "Seks." if M_jenny.finished_state(S_jenny_cheerleader_sex):
+                "Sex." if M_jenny.finished_state(S_jenny_cheerleader_sex):
                     if M_jenny.get('teasin_before_sex'):
                         call expression game.dialog_select("finger_blasting_sex")
                     else:
                         call expression game.dialog_select("jenny_sex_intro_repeat")
 
-        "Hanya ingin tahu." if L_home_diningroom.is_here(M_jenny) and not M_jenny.finished_state(S_jenny_caught_talking_to_camslut):
+        "Just curious." if L_home_diningroom.is_here(M_jenny) and not M_jenny.finished_state(S_jenny_caught_talking_to_camslut):
             call expression game.dialog_select("jenny_button_just_curious")
             jump sis_bedroom_menu
 
-        "Kamu dan telepon itu." if L_home_diningroom.is_here(M_jenny) and not M_jenny.finished_state(S_jenny_caught_talking_to_camslut):
+        "You and that phone." if L_home_diningroom.is_here(M_jenny) and not M_jenny.finished_state(S_jenny_caught_talking_to_camslut):
             call expression game.dialog_select("jenny_button_you_and_phone")
             jump sis_bedroom_menu
 
-        "Hanya menyapa." if L_home_sisbedroom.is_here(M_jenny) and not M_jenny.finished_state(S_jenny_caught_talking_to_camslut):
+        "Just saying hi." if L_home_sisbedroom.is_here(M_jenny) and not M_jenny.finished_state(S_jenny_caught_talking_to_camslut):
             call expression game.dialog_select("jenny_button_just_saying_hi")
             jump sis_bedroom_menu
 
-        "Tidak berenang?" if L_home_backyard.is_here(M_jenny) and M_jenny.between_states(S_jenny_start, S_jenny_caught_talking_to_camslut):
+        "Not swimming?" if L_home_backyard.is_here(M_jenny) and M_jenny.between_states(S_jenny_start, S_jenny_caught_talking_to_camslut):
             call expression game.dialog_select("button_jenny_not_swimming")
             jump sis_bedroom_menu
 
-        "Akhirnya bersikap hangat padaku?" if game.timer.is_morning() and M_jenny.finished_state(S_jenny_catch_her_jilling):
+        "Finally warming up to me?" if game.timer.is_morning() and M_jenny.finished_state(S_jenny_catch_her_jilling):
             call expression game.dialog_select("jenny_button_warming_up")
             jump sis_bedroom_menu
 
-        "Apa yang kamu tulis?" if game.timer.is_evening() and not M_jenny.finished_state(S_jenny_caught_talking_to_camslut):
+        "What are you writing?" if game.timer.is_evening() and not M_jenny.finished_state(S_jenny_caught_talking_to_camslut):
             if not M_jenny.finished_state(S_jenny_caught_talking_to_camslut):
                 call expression game.dialog_select("jenny_button_what_are_you_writing")
             elif M_jenny.between_states(S_jenny_start, S_jenny_caught_talking_to_camslut):
                 call expression game.dialog_select("jenny_button_what_are_you_writing_2")
                 jump sis_bedroom_menu
 
-        "Apakah kamu benar-benar tinggal?" if M_jenny.finished_inclusive(S_jenny_end) and not M_jenny.pregnancy.had_baby:
+        "Are you really staying?" if M_jenny.finished_inclusive(S_jenny_end) and not M_jenny.pregnancy.had_baby:
             call expression game.dialog_select("jenny_button_really_staying")
             jump sis_bedroom_menu
 
-        "Anda ingin menonton film porno bersama?" if M_jenny.finished_state(S_jenny_catch_her_jilling) and game.timer.is_afternoon():
+        "You wanna watch porn together?" if M_jenny.finished_state(S_jenny_catch_her_jilling) and game.timer.is_afternoon():
             call expression game.dialog_select("button_jenny_wanna_watch_porn")
             $ M_jenny.set("force_couch_sex", True)
 
-        "Ingin bermain-main?" if game.timer.is_day() and L_home_diningroom.is_here(M_jenny) and M_jenny.finished_inclusive(S_jenny_end) and not M_jenny.pregnancy:
+        "Wanna fool around?" if game.timer.is_day() and L_home_diningroom.is_here(M_jenny) and M_jenny.finished_inclusive(S_jenny_end) and not M_jenny.pregnancy:
             $ player.go_to(L_home_diningroom)
             if M_jenny.get("first_sex_dining"):
                 call expression game.dialog_select("button_jenny_fool_around_diningroom_first")
@@ -259,53 +259,53 @@ label jenny_button_dialogue:
                 call expression game.dialog_select("button_jenny_fool_around_diningroom_repeat")
             jump jenny_dining_room_sex_intro
 
-        "Ingin bermain-main?" if game.timer.is_day() and L_home_backyard.is_here(M_jenny) and M_jenny.finished_inclusive(S_jenny_end) and not M_jenny.pregnancy:
+        "Wanna fool around?" if game.timer.is_day() and L_home_backyard.is_here(M_jenny) and M_jenny.finished_inclusive(S_jenny_end) and not M_jenny.pregnancy:
             if M_jenny.get("first_sex_pool"):
                 $ M_jenny.set("first_sex_pool", False)
                 call expression game.dialog_select("button_jenny_fool_around_pool_first")
             else:
                 call expression game.dialog_select("button_jenny_fool_around_pool_repeat")
 
-        "Ingin bermain-main?" if L_home_sisbedroom.is_here(M_jenny) and M_jenny.finished_inclusive(S_jenny_end) and not M_jenny.pregnancy and game.timer.is_afternoon():
+        "Wanna fool around?" if L_home_sisbedroom.is_here(M_jenny) and M_jenny.finished_inclusive(S_jenny_end) and not M_jenny.pregnancy and game.timer.is_afternoon():
             call expression game.dialog_select("jenny_button_fool_around")
             menu:
-                "Oke.":
+                "Okay.":
                     $ M_jenny.set('teasin_before_sex', True)
                     jump jenny_camshow_options
-                "Tidak hari ini.":
+                "Not today.":
                     call expression game.dialog_select("jenny_button_fool_around_not_today")
                     $ player.go_to(L_home_hallway)
                     $ game.main()
 
-        "Ingin bermain-main?" if game.timer.is_evening() and M_jenny.finished_inclusive(S_jenny_end):
+        "Wanna fool around?" if game.timer.is_evening() and M_jenny.finished_inclusive(S_jenny_end):
             call expression game.dialog_select("jenny_button_fool_around_evening")
             jump sis_bedroom_menu
 
-        "Datanglah ke kamarku malam ini." if M_jenny.finished_state(S_jenny_night_time_sex) and L_home_sisbedroom.is_here(M_jenny):
+        "Come to my room tonight." if M_jenny.finished_state(S_jenny_night_time_sex) and L_home_sisbedroom.is_here(M_jenny):
             call expression game.dialog_select("jenny_button_come_to_my_room")
             $ M_jenny.set("forced_sneak_in_chance", 60)
             jump sis_bedroom_menu
 
-        "Pengalaman pacar." if M_jenny.finished_inclusive(S_jenny_necklace_rebutal):
+        "Girlfriend experience." if M_jenny.finished_inclusive(S_jenny_necklace_rebutal):
             if game.timer.is_day():
                 call expression game.dialog_select("jenny_button_gf_experience_day")
                 jump sis_bedroom_menu
             elif game.timer.is_evening():
                 call expression game.dialog_select("jenny_button_gf_experience_evening")
                 menu:
-                    "Ya.":
+                    "Yes.":
                         jump expression game.dialog_select("jenny_button_gf_experience_yes")
-                    "Sudahlah.":
+                    "Never mind.":
                         call expression game.dialog_select("jenny_button_gf_experience_nevermind")
                         jump sis_bedroom_menu
 
-        "Tidak ada apa-apa." if L_home_diningroom.is_here(M_jenny) and not M_jenny.finished_state(S_jenny_caught_talking_to_camslut):
+        "Nothing." if L_home_diningroom.is_here(M_jenny) and not M_jenny.finished_state(S_jenny_caught_talking_to_camslut):
             if not M_jenny.finished_state(S_jenny_caught_talking_to_camslut):
                 call expression game.dialog_select("jenny_button_nothing")
             elif M_jenny.between_states(S_jenny_start, S_jenny_caught_talking_to_camslut):
                 call expression game.dialog_select("jenny_button_nothing_2")
 
-        "Sudahlah." if (L_home_sisbedroom.is_here(M_jenny) or L_home_backyard.is_here(M_jenny)) and not M_jenny.finished_state(S_jenny_caught_talking_to_camslut):
+        "Never mind." if (L_home_sisbedroom.is_here(M_jenny) or L_home_backyard.is_here(M_jenny)) and not M_jenny.finished_state(S_jenny_caught_talking_to_camslut):
             if game.timer.is_day():
                 if not M_jenny.finished_state(S_jenny_caught_talking_to_camslut):
                     call expression game.dialog_select("jenny_button_nevermind")
@@ -317,10 +317,10 @@ label jenny_button_dialogue:
                 elif M_jenny.between_states(S_jenny_start, S_jenny_caught_talking_to_camslut):
                     call expression game.dialog_select("jenny_button_nervermind_evening")
 
-        "Saya harus pergi." if (L_home_diningroom.is_here(M_jenny) or L_home_backyard.is_here(M_jenny)) and M_jenny.finished_state(S_jenny_caught_talking_to_camslut):
+        "I should go." if (L_home_diningroom.is_here(M_jenny) or L_home_backyard.is_here(M_jenny)) and M_jenny.finished_state(S_jenny_caught_talking_to_camslut):
             call expression game.dialog_select("jenny_button_leave_final_morning")
 
-        "Tidak, aku sedang sibuk." if L_home_sisbedroom.is_here(M_jenny) and M_jenny.finished_state(S_jenny_caught_talking_to_camslut):
+        "Nah, I'm busy." if L_home_sisbedroom.is_here(M_jenny) and M_jenny.finished_state(S_jenny_caught_talking_to_camslut):
             call expression game.dialog_select("jenny_button_leave_final_bedroom")
 
     hide anon
@@ -332,80 +332,51 @@ label jenny_hospital_bed_dialogue:
     scene expression game.timer.image("location_hospital_baby_bed{}")
     show jenny a_baby b_gown_bed f_happy_down
     show anon with dissolve
-    anon "Hei, bagaimana perasaanmu?"
-
-    jenny "Aduh, {b}[firstname]{/b}..."
-
+    anon "Hey, how are you feeling?"
+    jenny "Aww, {b}[firstname]{/b}..."
     if M_jenny.pregnancy.baby_gender == "twins":
-        jenny "Bukankah mereka cantik?"
-
-        jenny "Aku tidak bisa berhenti menatap mereka..."
-
+        jenny "Aren't they beautiful?"
+        jenny "I can't stop staring at them..."
     elif M_jenny.pregnancy.baby_gender == "boy":
-        jenny "Bukankah dia cantik?"
-
-        jenny "Aku tidak bisa berhenti menatapnya..."
-
+        jenny "Isn't he beautiful?"
+        jenny "I can't stop staring at him..."
     else:
-        jenny "Bukankah dia cantik?"
-
-        jenny "Aku tidak bisa berhenti menatapnya..."
-
-    anon "Hehe, aneh sekali mendengarmu berbicara seperti ini..."
-
-    jenny f_upset "Oh, diamlah!"
-
-    anon @ f_laugh "Itulah {b}[jen_name]{/b} yang saya kenal dan sukai."
-
-    jenny f_happy_down @ f_eyeroll "... Kontol."
-
+        jenny "Isn't she beautiful?"
+        jenny "I can't stop staring at her..."
+    anon "Hehe, it's so weird hearing you talk like this..."
+    jenny f_upset "Oh, shut up!"
+    anon @ f_laugh "There's the {b}[jen_name]{/b} I know and love."
+    jenny f_happy_down @ f_eyeroll "... Dick."
     menu:
-        "Aku hanya ingin memeriksamu.":
-            anon "Aku hanya ingin memeriksamu."
-
-            jenny "Ya, kami baik-baik saja."
-
-            jenny @ f_eyeroll "Maksudku, aku kelelahan dan makanan di sini jelek tapi..."
-
-            jenny "... Kalau tidak, kami baik-baik saja."
-
-            anon "Heh, kamu akan segera pulang."
-
+        "I just wanted to check on you.":
+            anon "I just wanted to check on you."
+            jenny "Well, we're fine."
+            jenny @ f_eyeroll "I mean, I'm exhausted and the food here fucking sucks but..."
+            jenny "... Otherwise, we're fine."
+            anon "Heh, you'll be coming home soon."
             if M_jenny.pregnancy.baby_gender == "twins":
-                anon "Anda ingin saya meminumnya sebentar agar Anda bisa tidur?"
-
+                anon "You want me to take them for a while so you can sleep?"
             elif M_jenny.pregnancy.baby_gender == "boy":
-                anon "Kamu ingin aku membawanya sebentar agar kamu bisa tidur?"
-
+                anon "You want me to take him for a while so you can sleep?"
             else:
-                anon "Kamu ingin aku membawanya sebentar agar kamu bisa tidur?"
-
+                anon "You want me to take her for a while so you can sleep?"
             jenny @ f_happy -m_talk "Hmm?"
-
             if M_jenny.pregnancy.baby_gender == "twins":
-                jenny "Tidak, aku mendapatkannya!"
-
+                jenny "No, I've got them!"
             elif M_jenny.pregnancy.baby_gender == "boy":
-                jenny "Tidak, aku menangkapnya!"
-
+                jenny "No, I've got him!"
             else:
-                jenny "Tidak, aku mendapatkannya!"
-
-            anon "Anda yakin?"
-
+                jenny "No, I've got her!"
+            anon "You sure?"
             show jenny f_upset
             if M_jenny.pregnancy.baby_gender == "twins":
-                jenny "Saya bilang, saya punya, {b}[firstname]{/b}!"
-
+                jenny "I said, I've got them, {b}[firstname]{/b}!"
             elif M_jenny.pregnancy.baby_gender == "boy":
-                jenny "Aku bilang, aku punya dia, {b}[firstname]{/b}!"
-
+                jenny "I said, I've got him, {b}[firstname]{/b}!"
             else:
-                jenny "Aku berkata, aku mendapatkannya, {b}[firstname]{/b}!"
-
+                jenny "I said, I've got her, {b}[firstname]{/b}!"
             show jenny f_happy_down
-            anon f_worried "O-oke."
-
+            anon f_worried "O-okay."
             hide anon with dissolve
     $ game.main()
 
@@ -414,54 +385,54 @@ label jenny_pregnancy_menu:
         "{b}Roxxy{/b}." if M_bissette.is_state(S_bissette_jenny_mentoring_payment) and L_home_sisbedroom.is_here(M_jenny):
             call expression game.dialog_select("jenny_dialogue_roxxy_pre")
             menu:
-                "Membayar." if player.has_money(500):
+                "Pay." if player.has_money(500):
                     $ player.spend_money(500)
                     call expression game.dialog_select("jenny_dialogue_roxxy_pay")
                     $ M_bissette.trigger(T_bissette_jenny_paid)
-                "Jangan membayar.":
+                "Don't pay.":
 
                     call expression game.dialog_select("jenny_dialogue_roxxy_do_not_pay")
-        "Kamu baik-baik saja?" if game.timer.is_morning() and M_jenny.pregnancy.stage == 1:
+        "You doing okay?" if game.timer.is_morning() and M_jenny.pregnancy.stage == 1:
             call expression game.dialog_select("jenny_pregnancy_you_doing_ok_1")
             jump jenny_pregnancy_menu
-        "Apakah kamu masih marah?" if M_jenny.pregnancy.stage == 1:
+        "Are you still mad?" if M_jenny.pregnancy.stage == 1:
             call expression game.dialog_select("jenny_pregnancy_are_you_still_mad")
             jump jenny_pregnancy_menu
-        "Kamu baik-baik saja?" if M_jenny.pregnancy.stage == 2:
+        "You doing okay?" if M_jenny.pregnancy.stage == 2:
             call expression game.dialog_select("jenny_pregnancy_you_doing_ok_2")
             jump jenny_pregnancy_menu
-        "Bolehkah aku memberimu sesuatu?" if M_jenny.pregnancy.stage == 2:
+        "Can I get you something?" if M_jenny.pregnancy.stage == 2:
             call expression game.dialog_select("jenny_pregnancy_can_i_get_you_something")
             jump jenny_pregnancy_menu
-        "Tentang {b}[deb_name]{/b}..." if M_jenny.pregnancy.stage == 2:
+        "About {b}[deb_name]{/b}..." if M_jenny.pregnancy.stage == 2:
             call expression game.dialog_select("jenny_pregnancy_about_debbie")
             jump jenny_pregnancy_menu
-        "Bolehkah aku memberimu sesuatu?" if game.timer.is_afternoon() and M_jenny.pregnancy.stage == 4:
+        "Can I get you something?" if game.timer.is_afternoon() and M_jenny.pregnancy.stage == 4:
             call expression game.dialog_select("jenny_pregnancy_can_i_get_you_something_3")
             jump jenny_pregnancy_menu
-        "{b}[deb_name]{/b} membuat Anda gila?" if M_jenny.pregnancy.stage in (3,4):
+        "{b}[deb_name]{/b} is driving you crazy?" if M_jenny.pregnancy.stage in (3,4):
             call expression game.dialog_select("jenny_pregnancy_debbie_driving_crazy")
             jump jenny_pregnancy_menu
-        "Pertunjukan kamera?" if M_jenny.pregnancy.stage in (3,4) and game.timer.is_afternoon() and M_jenny.finished_state(S_jen0m_food):
+        "Cam show?" if M_jenny.pregnancy.stage in (3,4) and game.timer.is_afternoon() and M_jenny.finished_state(S_jen0m_food):
             call jenny_button_pregnant.sex
             $ M_jenny.set('preg_afterglow', True)
             $ player.go_to(L_home_hallway)
             $ game.timer.tick()
             $ game.main()
-        "Aku akan meninggalkanmu.":
+        "I'll leave you be.":
 
             call expression game.dialog_select("jenny_pregnancy_leave")
             $ game.main()
 
 label jenny_pregnancy_baby_menu:
     menu:
-        "Kalian butuh sesuatu?":
+        "You guys need anything?":
             call expression game.dialog_select("jenny_pregnancy_baby_need_anything")
             jump jenny_pregnancy_baby_menu
-        "Menantikan Tempat Penitipan Anak.":
+        "Looking forward to Daycare.":
             call expression game.dialog_select("jenny_pregnancy_baby_looking_forward_daycare")
             jump jenny_pregnancy_baby_menu
-        "Aku akan meninggalkanmu.":
+        "I'll leave you be.":
             call expression game.dialog_select("jenny_pregnancy_baby_leave")
             $ game.main()
 
@@ -480,7 +451,7 @@ label jenny_button_gf_experience_yes:
         $ M_jenny.set("girlfriend_in_progress", True)
         call expression game.dialog_select("jenny_button_gf_experience_start")
         menu:
-            "Tetap di dalam.":
+            "Stay in.":
                 call expression game.dialog_select("jenny_button_gf_experience_stay_in")
                 $ game.timer.tick()
                 $ player.go_to(L_home_livingroom)
@@ -492,17 +463,12 @@ label jenny_button_girlfriend_experience_bedroom:
     show jenny b_visit_sit_naked a_down f_visit_sexy_up
     with fade
     if M_jenny.get("jenny_girlfriend_first_time"):
-        anon "A-wah."
-
-        jenny "Butuh waktu cukup lama..."
-
+        anon "W-whoa."
+        jenny "Took you long enough..."
         anon @ -m_talk "..."
-        jenny "kamu suka?"
-
-        anon "saya suka!"
-
-        jenny "Hehe, bagus!"
-
+        jenny "You like?"
+        anon "I like!"
+        jenny "Hehe, good!"
         show jenny a_push
         show anon b_sit_falling f_empty
         with dissolve
@@ -510,49 +476,34 @@ label jenny_button_girlfriend_experience_bedroom:
         show jenny f_visit_sexy a_down
         show anon b_sit_laying o_visit_laying_boner
         with dissolve
-        jenny "Sekarang berbaringlah dan biarkan aku menjagamu."
-
+        jenny "Now lay back and let me take care of you."
 
         scene expression "backgrounds/location_home_bedroom_sex05.jpg"
         show jenny_mc_room_sex insert
         with fade
-        jenny "Mmm, aku sangat senang pacar baruku punya penis yang bagus!"
-
-        anon "Anda menyukainya?"
-
+        jenny "Mmm, I'm real glad my new boyfriend has such a nice cock!"
+        anon "You like it?"
         show jenny_mc_room_sex 1 with dissolve
-        jenny "Sial!"
-
+        jenny "Fuuuuck!"
         pause
         $ animated = True
         $ anim_toggle = True
         $ M_jenny.set('sex speed', .12)
         show expression AnimatedImage("jenny_mc_room_sex", [1,2,3,4,5,6,7,8,9], M_jenny) as jenny_mc_room_sex at Position(xalign = 0.0, yoffset = 0)
-        jenny "Heh, aku tidak akan berkencan denganmu jika aku tidak..."
-
-        anon "Wow, kamu benar-benar basah malam ini!"
-
-        jenny "saya tahu..."
-
+        jenny "Heh, I wouldn't be dating you if I didn't..."
+        anon "Wow, you're really wet tonight!"
+        jenny "I know..."
         pause
-        jenny "Mmm, aku sudah memikirkan ayammu sepanjang malam!"
-
-        anon "Bahkan saat kami sedang menonton acaramu?"
-
-        jenny "Ya, aku pernah melihat semuanya sebelumnya..."
-
-        anon "Oh benar."
-
+        jenny "Mmm, I've been thinking about your cock all night!"
+        anon "Even while we were watching your show?"
+        jenny "Yeah, I've seen it all before..."
+        anon "Oh, right."
         pause
-        jenny "Aku akan tidur nyenyak setelah ini!"
-
-        anon "Ya, aku juga!"
-
+        jenny "I'm going to sleep real well after this!"
+        anon "Yeah, me too!"
     else:
-        anon "Kau tahu, aku sudah terbiasa melihatmu telanjang di tempat tidurku di malam hari..."
-
-        jenny "Ya, saya yakin Anda bisa."
-
+        anon "You know, I could really get used to seeing you naked on my bed in the evenings..."
+        jenny "Yeah, I bet you could."
         show jenny a_push
         show anon b_sit_falling f_empty
         with dissolve
@@ -560,33 +511,24 @@ label jenny_button_girlfriend_experience_bedroom:
         show jenny f_visit_sexy a_down
         show anon b_sit_laying o_visit_laying_boner
         with dissolve
-        jenny "Sekarang berbaringlah dan biarkan aku menjagamu."
-
+        jenny "Now lay back and let me take care of you."
         scene expression "backgrounds/location_home_bedroom_sex05.jpg"
         show jenny_mc_room_sex insert
         with fade
-        jenny "Mmm, aku suka ayam ini!"
-
-        anon "Menurutku dia juga mencintaimu."
-
+        jenny "Mmm, I love this cock!"
+        anon "I think it loves you too."
         jenny "Hah!"
-
         show jenny_mc_room_sex 1 with dissolve
-        jenny "Sial!"
-
+        jenny "Fuuuuck!"
         pause
         $ animated = True
         $ anim_toggle = True
         $ M_jenny.set('sex speed', .12)
         show expression AnimatedImage("jenny_mc_room_sex", [1,2,3,4,5,6,7,8,9], M_jenny) as jenny_mc_room_sex at Position(xalign = 0.0, yoffset = 0)
-        jenny "Sangat dalam, {b}[firstname]{/b}!"
-
-        anon "Ya..."
-
+        jenny "It's so deep, {b}[firstname]{/b}!"
+        anon "Yeah..."
         pause
-        anon "Saya suka melihat payudara Anda memantul dari posisi ini!"
-
-        jenny "Ahhh!"
-
+        anon "I love watching your boobs bounce from this position!"
+        jenny "Ahh!"
     jump jenny_mc_room_sex_loop
 # Decompiled by unrpyc: https://github.com/CensoredUsername/unrpyc

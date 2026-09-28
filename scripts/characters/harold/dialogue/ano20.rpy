@@ -4,238 +4,150 @@ label ano20_cops_harold:
     show anon with dissolve:
         xoffset -100
     harold "{b}[firstname]{/b}?"
-
-    harold f_concerned "Apa yang kamu lakukan di sini selarut ini?"
-
-    anon "Aku punya sesuatu untukmu."
-
-    harold f_suspicious "Untukku?"
-
+    harold f_concerned "What are you doing here so late?"
+    anon "I have something for you."
+    harold f_suspicious "For me?"
     show anon f_looking_down a_backpack with dissolve
     pause
     show anon a_recorder_give_cashless f_normal with dissolve
     harold f_surprised @ -m_talk "!!!"
-    anon "Ini adalah bukti yang membuktikan {b}Walikota Rump{/b} bekerja sama dengan Rusia."
-
+    anon "This is evidence that proves {b}Mayor Rump{/b} is working with the Russians."
     show harold a_recorder_cashless
     show anon a_idle
     with dissolve
-    harold "Apa yang-"
-
-    harold "Dimana kamu mendapatkan ini?"
-
-    anon "Saya menemukannya di kantor {b}Walikota Rump{/b}."
-
-    harold f_suspicious "Hah?!"
-
-    harold "Bagaimana kamu bisa masuk ke kantor pribadi walikota?"
-
-    anon "Apakah itu penting?"
-
-    harold f_angry "Tentu saja itu penting!"
-
+    harold "What the-"
+    harold "Where did you get this?"
+    anon "I found it in {b}Mayor Rump{/b}'s office."
+    harold f_suspicious "Huh?!"
+    harold "How in the heck did you get into the mayor's personal office?"
+    anon "Does that really matter?"
+    harold f_angry "Of course it matters!"
     show anon f_worried
-    harold "Jika {b}Pantat{/b} berada di tempat tidur dengan orang Rusia seperti yang kami duga, maka Anda harus menjauhi dia."
-
-    harold "Anda akan terbunuh, {b}[firstname]{/b}!"
-
-    anon f_angry "Bisakah Anda melihat buktinya saja?!"
-
+    harold "If {b}Rump{/b} is in bed with the Russians like we suspect, then you should be staying well clear of him."
+    harold "You're going to get yourself killed, {b}[firstname]{/b}!"
+    anon f_angry "Would you just look at the evidence, please?!"
     harold @ -m_talk "..."
-    harold f_surprised_down "Benda apa ini?"
-
-    anon f_worried @ a_point "Folder di sana penuh dengan laporan bank untuk sekitar selusin rekening luar negeri."
-
-    anon "Berdasarkan jumlah tersebut, menurut saya, kemungkinan besar dia akan mempertahankan bagian keuntungannya."
-
-    harold f_suspicious "Keuntungan apa?"
-
-    anon "Anda tahu, bagiannya dari apa pun yang dijajakan orang Rusia."
-
+    harold f_surprised_down "What is this stuff anyways?"
+    anon f_worried @ a_point "That folder there is full of bank statements for about a dozen offshore accounts."
+    anon "Based on the amounts, I'd say it's a good bet that's where he's keeping his cut of the profits."
+    harold f_suspicious "What profits?"
+    anon "You know, his cut of whatever the Russians are peddling."
     harold @ -m_talk "Hmm."
-
-    anon "Ada juga banyak akta properti di sini di Summerville."
-
-    anon "Termasuk gudang yang Anda jelajahi tadi malam."
-
-    harold f_surprised "Tunggu sebentar, {b}Rump{/b} pemilik tempat itu?!"
-
+    anon "There's also bunch of deeds for property here in Summerville."
+    anon "Including that warehouse you were scoping out the other night."
+    harold f_surprised "Wait a second, {b}Rump{/b} owns that place?!"
     anon @ -m_talk "Mhmm."
-
-    harold f_concerned "Saya memberi tahu {b}Earl{/b} bahwa nama perusahaan terdengar palsu..."
-
-    harold a_recorder_listen_cashless f_suspicious "... Bagaimana dengan ini?"
-
-    anon "Ini adalah rekaman {b}Rump{/b} dan percakapan orang Rusia."
-
-    anon "Di dalamnya, Anda akan mendengar bos mafia mengaku membunuh dua wanita dan {b}Rump{/b} menertawakannya."
-
-    harold f_concerned "Kamu serius?"
-
-    anon f_angry "Kemudian mereka mendiskusikan pembunuhan ayahku."
-
+    harold f_concerned "I told {b}Earl{/b} that company name sounded fake..."
+    harold a_recorder_listen_cashless f_suspicious "... What about this?"
+    anon "It's a recording of {b}Rump{/b} and the Russians talking shop."
+    anon "On it, you'll hear the mob boss confess to killing two women and {b}Rump{/b} laughing about it."
+    harold f_concerned "You're serious?"
+    anon f_angry "Then they discuss killing my father."
     harold @ f_surprised "!!!"
-    harold "Itu-"
-
+    harold "That's-"
     pause
-    harold "Yesus, Nak..."
-
-    harold "Apakah Anda menemukan hal lain?"
-
+    harold "Jesus, kid..."
+    harold "Did you find anything else?"
     show anon f_worried
 
     $ renpy.dynamic(rv=None)
     menu:
-        "Ceritakan padanya tentang uang itu. {color=7ff7}[[Honest]{/color}":
-            anon "Saya menemukan ini juga."
-
+        "Tell him about the money. {color=7ff7}[[Honest]{/color}":
+            anon "I found this too."
             show anon a_recorder_give_cash with dissolve
             pause
             show harold a_recorder f_surprised_down
             show anon a_idle
             with dissolve
-            harold "Wah, itu uang tunai yang banyak."
-
+            harold "Whoa, that's a lot of cash."
             show harold f_concerned
-            anon "Ya."
-
-            anon "Beberapa dari hasil haramnya tidak diragukan lagi."
-
-        "Tidak, itu segalanya. {color=f77b}[[Dishonest]{/color}":
+            anon "Yeah."
+            anon "Some of his ill-gotten gains no doubt."
+        "Nope, that's everything. {color=f77b}[[Dishonest]{/color}":
 
             $ rv = True
-            anon f_thinking a_thinking @ -m_talk "(Hmm.)"
+            anon f_thinking a_thinking @ -m_talk "( Hmm. )"
+            anon @ -m_talk "( There's no reason I shouldn't keep this money, right? )"
+            anon @ -m_talk "( I mean, it's not going to do anybody any good sitting in some evidence room... )"
+            anon f_shy a_behind_head "Ehh, nope."
+            anon "That's everything I found."
 
-            anon @ -m_talk "(Tidak ada alasan saya tidak menyimpan uang ini, kan?)"
-
-            anon @ -m_talk "(Maksudku, tidak ada gunanya bagi siapa pun untuk duduk di ruang bukti...)"
-
-            anon f_shy a_behind_head "Eh, tidak."
-
-            anon "Itu semua yang saya temukan."
-
-
-    anon a_idle "Jumlahnya cukup untuk melakukan penangkapan, bukan?"
-
-    harold "Jika semuanya sudah diperiksa, maka ya."
-
-    harold "Tunggu di sini sebentar sementara aku menyampaikan ini pada bosku, oke?"
-
-    anon "Ya baiklah."
-
+    anon a_idle "There's enough there to make an arrest, don't you think?"
+    harold "If it all checks out, then yes."
+    harold "Wait here a minute while I take this to my boss, okay?"
+    anon "Yeah, okay."
     hide harold
     show anon:
         flip
         xoffset -600
     with dissolve
-    harold "Hei {b}Yumi{/b}, bisakah kamu menjaga anak itu sebentar?"
-
-    yumi "Tentu saja, bos."
-
+    harold "Hey {b}Yumi{/b}, can you watch the kid for a minute?"
+    yumi "Sure thing, boss."
     show yumi f_concerned with dissolve:
         xoffset -50
     pause
     show anon with dissolve:
         unflip
         xoffset -100
-    yumi "Astaga, sepertinya kamu mengalami malam yang berat..."
-
+    yumi "Jeez, you look like you're having a rough night..."
     pause
-    yumi "Lagipula, apa yang kamu lakukan di sini?"
-
-    anon @ f_sad_down "{i}*Huh*{/i} Ceritanya panjang."
-
+    yumi "What are you doing here anyways?"
+    anon @ f_sad_down "{i}*Sigh*{/i} It's a long story."
     pause
-    yumi "Ada hubungannya dengan kasus ayahmu?"
-
-    anon "Ya."
-
-    yumi f_suspicious "Anda tidak mengintip orang-orang Rusia itu lagi, bukan?"
-
-    anon "Tidak."
-
-    yumi f_concerned "Anda sebaiknya tidak melakukannya!"
-
+    yumi "Something to do with your father's case?"
+    anon "Yeah."
+    yumi f_suspicious "You weren't snooping on those Russians again, were you?"
+    anon "No."
+    yumi f_concerned "You'd better not be!"
 
     if False:
-        yumi f_normal @ f_wink "Aku akan memborgolmu ke tempat tidurku dan menyanderamu sampai semua ini selesai..."
-
+        yumi f_normal @ f_wink "I'll handcuff you to my bed and keep you hostage until this whole thing blows over..."
         show anon f_surprised
-        yumi "Tidakkah menurutmu aku tidak akan melakukannya!"
-
-        anon "Itu-"
-
+        yumi "Don't you think I won't!"
+        anon "That-"
         pause
-        anon f_normal @ f_laugh "Sebenarnya tidak terdengar terlalu buruk."
-
-        yumi @ f_laugh "Hehe, diamlah!"
-
+        anon f_normal @ f_laugh "Doesn't sound so bad actually."
+        yumi @ f_laugh "Heh, shut up!"
     else:
 
-        yumi "Orang-orang itu akan membunuhmu, {b}[firstname]{/b}!"
+        yumi "Those guys will kill you, {b}[firstname]{/b}!"
+        yumi "I don't think I could face your landlady if that happened..."
+        anon "Well, you can relax."
+        anon "I haven't gone anywhere near them since you guys caught me at the warehouse."
 
-        yumi "Kurasa aku tidak bisa menghadapi induk semangmu jika itu terjadi..."
-
-        anon "Baiklah, kamu bisa santai."
-
-        anon "Aku belum pernah mendekati mereka sejak kalian menangkapku di gudang."
-
-
-    yumi f_normal "Kami membuat kemajuan, Anda tahu?"
-
+    yumi f_normal "We are making progress, you know?"
     anon f_normal @ f_surprised "Oh?"
-
-    yumi "{b}Harold{/b} mampu mengidentifikasi bos mafia."
-
+    yumi "{b}Harold{/b} was able to ID the mob boss."
     anon @ -m_talk "..."
     yumi "{b}Raznikov Putin Chernyshevsky{/b}."
-
-    yumi @ f_eyeroll "Tapi dia singkatnya {b}Raz{/b}."
-
-    anon f_surprised "Tunggu sebentar..."
-
-    anon "Biar kutebak."
-
-    anon f_worried "Pria pendek?"
-
-    anon "Agak terlihat seperti goblin pucat?"
-
-    yumi f_suspicious "Bagaimana Anda mengetahui hal itu?"
-
-    anon "Tebakan yang beruntung."
-
-    yumi f_concerned "Ada sesuatu yang tidak kamu beritahukan padaku!"
-
-    anon f_surprised a_sides "Tidak."
-
+    yumi @ f_eyeroll "But he goes by {b}Raz{/b} for short."
+    anon f_surprised "Wait a second..."
+    anon "Let me guess."
+    anon f_worried "Short guy?"
+    anon "Kinda looks like a pale goblin?"
+    yumi f_suspicious "How did you know that?"
+    anon "Lucky guess."
+    yumi f_concerned "There's something you're not telling me!"
+    anon f_surprised a_sides "No."
     pause
-    yumi "Ya, ada!"
-
-    yumi "Ayo, tumpahkan."
-
+    yumi "Yes, there is!"
+    yumi "C'mon, spill it."
     anon f_worried @ -m_talk "..."
 
     if False:
-        yumi f_concerned "Itu dia, aku akan memborgolnya!"
-
-        anon @ f_laugh "Heh, baiklah... Hanya-"
-
+        yumi f_concerned "That's it, I'm getting the handcuffs!"
+        anon @ f_laugh "Heh, alright... Just-"
     else:
 
-        yumi "Apakah saya perlu membawa Anda ke interogasi?!"
+        yumi "Do I need to take you down to interrogation?!"
+        anon @ f_confused "Huh?"
+        yumi "I don't like being kept-"
 
-        anon @ f_confused "Hah?"
-
-        yumi "Aku tidak suka disimpan-"
-
-
-    harold "{b}Yumi{/b}, aku ingin kamu mengambil perlengkapan kita dan membawanya ke dalam mobil."
-
+    harold "{b}Yumi{/b}, I need you to go grab our gear and get it in the car."
     show anon with dissolve:
         flip
         xoffset -600
     yumi @ -m_talk "Hmm?"
-
     show anon:
         unflip
         xoffset -100
@@ -243,57 +155,35 @@ label ano20_cops_harold:
         flip
         xoffset 175
     with dissolve
-    yumi f_suspicious "Apa yang terjadi, bos?"
-
-    harold "Ketua baru saja memberi wewenang padaku untuk membawa {b}Rump{/b} ke dalam tuduhan."
-
-    yumi f_surprised "Apakah kamu serius?"
-
-    harold "Ya, cepatlah."
-
-    yumi "Y-ya, tuan!"
-
+    yumi f_suspicious "What's going on, boss?"
+    harold "The chief just authorized me to bring {b}Rump{/b} in on charges."
+    yumi f_surprised "Are you serious?"
+    harold "Yes, hurry up."
+    yumi "Y-yes, sir!"
     hide yumi with dissolve
     pause
     show harold with dissolve:
         unflip
         xoffset -200
-    harold f_concerned "Bisakah kamu pulang sendiri dengan baik?"
-
-    anon f_worried a_idle "Baiklah, tunggu sebentar... bolehkah aku ikut denganmu?"
-
-    harold f_concerned "Tidak, kamu tidak boleh ikut dengan kami!"
-
-    anon "Kenapa tidak?!"
-
-    harold "Ini urusan polisi, {b}[firstname]{/b}..."
-
-    harold "Kita tidak bisa membiarkan warga sipil ikut serta demi kesenangan pribadi mereka."
-
-    anon f_angry "Hei, kalau bukan karena buktiku kamu tidak akan-"
-
-    harold "Saya tidak akan berdebat dengan Anda tentang hal ini."
-
-    anon "Bagaimana dengan Rusia?!"
-
-    anon "Anda akan menangkap mereka juga, kan?!"
-
-    harold "Saya tidak tahu, oke?"
-
-    harold "Kita bisa mendiskusikannya besok."
-
-    harold "Untuk saat ini, bisakah kamu pulang saja dan biarkan kami melakukan pekerjaan kami?!"
-
-    anon "Ya, baiklah... Terserah."
-
-    harold "Terima kasih!"
-
+    harold f_concerned "Can you get yourself home alright?"
+    anon f_worried a_idle "Well, hold on a second... can't I come with you?"
+    harold f_concerned "No, you can't come with us!"
+    anon "Why not?!"
+    harold "This is police business, {b}[firstname]{/b}..."
+    harold "We can't just let civilians tag along for their own personal enjoyment."
+    anon f_angry "Hey, if it wasn't for my evidence you wouldn't-"
+    harold "I'm not going to argue with you about this."
+    anon "What about the Russians?!"
+    anon "You're gonna arrest them too, right?!"
+    harold "I don't know, okay?"
+    harold "We can discuss it tomorrow."
+    harold "For now, can you just get your butt home and let us do our job?!"
+    anon "Yeah, fine... Whatever."
+    harold "Thank you!"
     hide harold with dissolve
     pause
-    anon f_disgusted @ -m_talk "(Yah, setidaknya mereka akhirnya melakukan sesuatu...)"
-
-    anon @ -m_talk "(Saya kira tidak ada yang bisa saya lakukan selain pulang dan menunggu.)"
-
+    anon f_disgusted @ -m_talk "( Well, at least they're finally doing something... )"
+    anon @ -m_talk "( I guess there's nothing for me to do but go home and wait. )"
     hide anon with dissolve
     return rv
 # Decompiled by unrpyc: https://github.com/CensoredUsername/unrpyc

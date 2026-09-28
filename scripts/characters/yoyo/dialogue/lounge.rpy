@@ -1,40 +1,31 @@
 label yoyo_button_lounge:
     show anon f_worried with dissolve
-    anon @ -m_talk "(Oh tidak, aku tidak mau membahasnya sekarang.)"
-
+    anon @ -m_talk "( Oh no, I'm so not getting into it with her right now. )"
     pause
-    anon f_worried_surprised @ -m_talk "( Hal terakhir yang saya perlukan adalah semangkuk mie untuk topi... )"
-
-    anon f_surprised_teeth @ -m_talk "(... Josie tidak akan pernah membiarkanku mendengar bagian akhirnya.)"
-
+    anon f_worried_surprised @ -m_talk "( The last thing I need is a bowl of noodles for a hat... )"
+    anon f_surprised_teeth @ -m_talk "( ... Josie would never let me hear the end it. )"
     hide anon with dissolve
     return
 
 
 label yoyo_button_lounge.unknown:
     show anon f_confused with dissolve
-    anon @ -m_talk "(Hmm... Aku penasaran siapa gadis itu?)"
-
+    anon @ -m_talk "( Hmm... I wonder who that girl is? )"
     pause
-    anon f_surprised @ -m_talk "(Dia benar-benar ingin makan mie itu...)"
-
-    anon f_worried @ -m_talk "( ... Mungkin aku akan kembali ketika dia sudah tidak terlalu sibuk. )"
-
+    anon f_surprised @ -m_talk "( She's really going at those noodles... )"
+    anon f_worried @ -m_talk "( ... Maybe I'll come back when she's less occupied. )"
     hide anon with dissolve
     return
 
 
 label yoyo_button_lounge.unsure:
     show anon a_sides f_confused with dissolve
-    anon @ -m_talk "(Dia tampak begitu tulus tentang \"kue aplikasi\" itu... )"
-
-    anon f_thinking @ -m_talk "( ... Dan aku sangat menyukai krim pisang. )"
-
+    anon @ -m_talk "( She seemed so sincere about that \"appology pie\"... )"
+    anon f_thinking @ -m_talk "( ... And I do love banana cream. )"
     pause
     show anon a_rub f_confused
     with {'master': dissolve}
-    anon @ -m_talk "(Hmm. Aku harus tidur di sana, dan mungkin menemukannya di ruang pamer besok.)"
-
+    anon @ -m_talk "( Hmm. I should sleep on it, and maybe find her in the showroom tomorrow. )"
     hide anon with dissolve
     return
 # Decompiled by unrpyc: https://github.com/CensoredUsername/unrpyc

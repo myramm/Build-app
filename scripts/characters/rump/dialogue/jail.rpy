@@ -1,96 +1,58 @@
 label rump_button_jail:
-    rump "Ini benar-benar konyol..."
-
-    rump "... Saya walikota kota terkutuk ini dan Anda tidak bisa begitu saja memperlakukan saya seperti penjahat kelas bawah!"
-
-    rump "Saya tahu hak-hak saya dan saya ingin menelepon lagi!"
-
+    rump "This is absolutely ridiculous..."
+    rump "... I'm the mayor of this damn city and you can't just treat me like some low-life criminal!"
+    rump "I know my rights and I wanna make another phone call!"
     show anon f_unimpressed with dissolve:
         xoffset 100
         xzoom -1
     pause
     rump f_suspicious @ -m_talk "Hmm?"
-
-    rump "Bukankah kamu terlalu pendek untuk menjadi petugas polisi?"
-
-    anon f_confused "Hah?"
-
-    rump "Dimana seragammu?"
-
+    rump "Aren't you a little short for a police officer?"
+    anon f_confused "Huh?"
+    rump "Where's your uniform?"
     show anon f_thinking_down a_frustrated with dissolve
     pause
     anon "Oh."
-
-    anon f_unimpressed a_idle "Benar."
-
-    anon "Tidak, saya bukan petugas polisi."
-
-    rump "Jadi, apa yang kamu lakukan di sini?"
-
-    rump "Apakah orang-orang bodoh di lantai atas mengirimmu ke sini untuk mengantarkan air mineral yang kuminta?"
-
-    anon f_normal @ f_laugh "Hehe, tidak."
-
-    anon "Saya hanya ingin melihat apakah Anda menikmati masa tinggal Anda di balik jeruji besi."
-
-    rump f_angry @ f_surprised "Permisi?!"
-
-    anon "Jeruknya sedikit berlebihan dengan warna cokelat palsu milikmu, bukan begitu?"
-
-    rump "Hei, kamu tidak boleh bicara seperti itu padaku, dasar brengsek!"
-
-    rump "Kamu pikir kamu ini siapa?!"
-
-    anon f_flirt a_point_self "Aku?"
-
-    anon -a_point_self @ f_laugh "Oh, akulah orang yang memasukkanmu ke sana."
-
-    rump f_surprised "Hah?!"
-
+    anon f_unimpressed a_idle "Right."
+    anon "No, I'm not a police officer."
+    rump "So then what the hell are you doing down here?"
+    rump "Did those numbskulls upstairs send you down here to deliver that mineral water I've been asking for?"
+    anon f_normal @ f_laugh "Heh, nope."
+    anon "I just wanted to see if you were enjoying your stay behind bars."
+    rump f_angry @ f_surprised "Excuse me?!"
+    anon "The orange is a little redundant with that fake tan of yours, don't you think?"
+    rump "Hey, you can't talk to me like that you little shit!"
+    rump "Who in the hell do you think you are?!"
+    anon f_flirt a_point_self "Me?"
+    anon -a_point_self @ f_laugh "Oh, I'm the guy who put you in there."
+    rump f_surprised "Huh?!"
     anon @ -m_talk "Mhmm."
-
-    anon "Aku membobol brankas di kantormu..."
-
-    anon "... Anda seharusnya lebih berhati-hati dalam menyembunyikan semua bukti yang memberatkan itu."
-
-    rump f_sad "Itu bukan-"
-
+    anon "I broke into that safe in your office..."
+    anon "... You should really have taken better care hiding all that incriminating evidence."
+    rump f_sad "That's not-"
     show rump a_crossed f_angry
     hide hands
     with dissolve
-    rump "Maksudku..."
-
-    rump "... Saya tidak mengerti apa yang Anda bicarakan."
-
-    anon "Tidak?"
-
-    anon "Semua rekening di luar negeri penuh dengan uang mafia?"
-
-    anon "Perbuatan ke tempat persembunyian kriminal yang diketahui?"
-
-    rump "Kedengarannya seperti dongeng kecil yang Anda buat."
-
-    rump "Sayang sekali tidak ada kebenaran di dalamnya."
-
+    rump "I mean..."
+    rump "... I don't have a clue what you're talking about."
+    anon "No?"
+    anon "All those offshore accounts full of mob money?"
+    anon "Deeds to known criminal hideouts?"
+    rump "Sounds like quite the little fairy tale you've concocted."
+    rump "Too bad there isn't a grain of truth to any of it."
     show anon f_angry
     pause
-    anon "Bagaimana dengan rekaman digital di mana Anda menertawakan pembunuhan orang yang tidak bersalah."
-
-    rump "Tidak, tidak membunyikan bel apa pun."
-
+    anon "How about the digital recording where you gloat about the murder of an innocent man."
+    rump "Nope, not ringing any bells."
     anon @ -m_talk "Mhmm."
-
-    anon "Aku tahu kamu-"
-
-    melonia "Ugh, baunya seperti toilet umum di bawah sini..."
-
+    anon "I know you're-"
+    melonia "Ugh, it's smells like a public restroom down here..."
     show rump f_surprised
     show anon f_surprised:
         xoffset 600
         xzoom 1
     with dissolve
-    rump "{b}Melonia{/b}, apakah itu kamu?!"
-
+    rump "{b}Melonia{/b}, is that you?!"
     show anon f_worried:
         xoffset 100
         xzoom -1
@@ -98,47 +60,31 @@ label rump_button_jail:
         xoffset -100
     show rump f_normal
     with dissolve
-    melonia "Ya, ini aku... Kau tahu, aku tidak percaya aku setuju untuk datang-"
-
+    melonia "Yes, it's me... You know, I can't believe I agreed to come-"
     show melonia f_confused
     pause
     melonia f_smirk @ f_laugh "Pffft, hahahahahaaah!"
-
-    rump f_angry "Ya, haha, lucu sekali."
-
-    rump "Aku sudah meneleponmu belasan kali sejak polisi bodoh itu memasukkanku ke sini, tahu?!"
-
-    rump "Kenapa lama sekali?!"
-
-    melonia "Yah, aku mengabaikanmu, tentu saja..."
-
+    rump f_angry "Yeah, haha, very funny."
+    rump "I've called you like dozen times since those stupid cops put me in here, you know?!"
+    rump "What the hell took you so long?!"
+    melonia "Well, I was ignoring you, obviously..."
     show anon f_grin
-    rump "Sialan, {b}Melonia{/b}... Ini bukan soal bercanda!"
-
-    rump "Ini akan menyebabkan kita mengalami beberapa masalah serius!"
-
+    rump "God damnit, {b}Melonia{/b}... This isn't a joking matter!"
+    rump "This will cause us of some serious problems!"
     show anon f_normal
-    melonia "Oh, kita sudah tidak ada lagi, sayang..."
-
-    rump "Apa?!"
-
-    melonia "Begitu mereka memastikan bahwa keuntungan harammu seluruhnya disimpan di luar negeri, mereka akan melepaskan kekayaan kita di Amerika Serikat kembali padaku..."
-
+    melonia "Oh, there is no us anymore, dear..."
+    rump "What?!"
+    melonia "Once they confirm that your illicit profits were entirely kept off-shore, they'll release our stateside fortune back to me..."
     show rump f_sad
     show anon f_surprised
-    melonia @ f_laugh "... Pada saat itu, semua uangmu akan menjadi milikku."
-
+    melonia @ f_laugh "... At which point, all your money will be mine."
     rump @ -m_talk "..."
     show anon f_normal
-    melonia "Aku akan mengharapkan beberapa surat cerai, jika aku jadi kamu."
-
-    rump a_up "Sekarang tunggu sebentar, sayang, dan pikirkan apa yang sedang kamu lakukan..."
-
-    rump "...Masih ada kemungkinan besar rekanku bisa mengeluarkanku dari masalah ini!"
-
+    melonia "I'd be expecting some divorce papers, if I were you."
+    rump a_up "Now wait just a second, sweetheart, and think about what you're doing..."
+    rump "... There's still a good chance my associates can get me out of this!"
     show anon f_worried
-    rump "Mereka orang-orang yang berkuasa, Anda tahu?"
-
+    rump "They're powerful people, you know?"
     show rump a_bars
     show rump_overlay_jumpsuit_o_hands as hands:
         xoffset -50
@@ -146,42 +92,29 @@ label rump_button_jail:
     show melonia a_thinking f_eyeroll
     with {'master': dissolve}
     melonia @ -m_talk "Hmm."
-
     pause
-    melonia a_idle f_smirk "Tidak, aku yakin kamu sedang kacau, sayang."
-
+    melonia a_idle f_smirk "No, I'm pretty sure you're fucked, dear."
     show anon f_flirt_grin
     show rump f_angry a_bars_single
     show rump_overlay_jumpsuit_o_hands_point as hands
     with {'master': dissolve}
-    rump "Bajingan kecil ini mengaku bertanggung jawab atas kekacauan ini!"
-
-    rump "Yang harus Anda lakukan hanyalah menelepon {b}Chernyshevsky{/b} dan dia akan menghilang selamanya."
-
+    rump "This little piece of shit is claiming to be the one responsible for this mess!"
+    rump "All you have to do is make one call to {b}Chernyshevsky{/b} and he'll disappear for good."
     show anon f_normal
     show rump a_bars
     show rump_overlay_jumpsuit_o_hands as hands
     with {'master': dissolve}
-    melonia "Oh, baiklah, aku tidak menginginkan itu..."
-
-    rump f_suspicious "Hah?"
-
-    melonia "Menurutmu bagaimana dia mendapat akses ke kantormu, sayang?"
-
+    melonia "Oh, well I wouldn't want that..."
+    rump f_suspicious "Huh?"
+    melonia "How do you think he got access to your office, dear?"
     show anon f_grin
-    rump f_surprised "Y-maksudmu-"
-
-    rump f_furious "Anda membantunya?!"
-
+    rump f_surprised "Y-you mean-"
+    rump f_furious "You helped him?!"
     melonia @ f_laugh "Hehehe!"
-
     show anon f_normal
-    melonia "Oh, waktu yang tepat."
-
-    melonia "Dan bukan hanya itu yang saya lakukan."
-
-    rump "Apa yang kamu-"
-
+    melonia "Oh, big time."
+    melonia "And that's not all I did."
+    rump "What are you-"
     show melonia b_dressed_kiss:
         xoffset 150
         xzoom -1
@@ -197,22 +130,17 @@ label rump_button_jail:
         xoffset -50
         xzoom 1
     with dissolve
-    melonia "Oh, dan dia juga baik..."
-
+    melonia "Oh, and he's good too..."
     show anon f_flirt_grin
-    melonia "... Dia memuaskanku dengan cara yang tidak pernah bisa dilakukan oleh udang kecilmu yang menyedihkan itu."
-
+    melonia "... He satisfied me in ways your pathetic little shrimp never could."
     show rump a_bars_single
     show rump_overlay_jumpsuit_o_hands_grab as hands
     show anon f_surprised_teeth -of_blush
     with fastdissolve
-    rump "Aku akan membunuh kalian berdua dengan tangan kosong!"
-
+    rump "I'll kill you both with my bare hands!"
     show anon f_worried
-    melonia f_eyeroll @ f_laugh "Ha ha ha!"
-
-    melonia "Hentikan itu, sayang... Kamu terlihat konyol."
-
+    melonia f_eyeroll @ f_laugh "Hahaha!"
+    melonia "Stop that, dear... You look ridiculous."
     show anon f_flirt
     show rump a_bars
     show rump_overlay_jumpsuit_o_hands as hands
@@ -220,37 +148,27 @@ label rump_button_jail:
         xoffset 500
         xzoom -1
     with dissolve
-    melonia f_smirk "Mengapa Anda tidak datang ke perkebunannya nanti, {b}[firstname]{/b}?"
-
+    melonia f_smirk "Why don't you come by the estate later, {b}[firstname]{/b}?"
     show anon f_flirt_grin of_blush
     with {'master': dissolve}
-    melonia "Kami akan berhubungan seks di meja favorit suamiku."
-
-    rump "Kamu sudah mati, {b}Melonia{/b}!"
-
-    rump "Kamu mendengarku?!"
-
+    melonia "We'll have sex on my husbands favorite desk."
+    rump "You're a dead woman, {b}Melonia{/b}!"
+    rump "You hear me?!"
     show melonia with dissolve:
         xoffset -50
         xzoom 1
-    melonia "Ya ampun, lihat jamnya..."
-
-    rump "MATI!"
-
-    melonia "... Aku harus segera pergi."
-
+    melonia "Oh my, look at the time..."
+    rump "DEAD!"
+    melonia "... I should really get going."
     show anon f_grin -of_blush
     with {'master': dissolve}
-    melonia "Usahakan sabunnya jangan sampai terjatuh ya sayang."
-
+    melonia "Try not to drop the soap, dear."
     show melonia f_drink a_blow_kiss with dissolve
     melonia @ -m_talk "Muah!"
-
     show melonia f_laugh a_idle with dissolve:
         xoffset 500
         xzoom -1
     melonia "Hahahaah!"
-
     hide melonia
     show anon f_normal:
         xoffset 650
@@ -258,52 +176,31 @@ label rump_button_jail:
     with dissolve
     pause
     anon "Wow."
-
     pause
     show anon with dissolve:
         xoffset 100
         xzoom -1
-    anon "Itu brutal."
-
-    rump "Ya, kita akan tertawa selagi bisa karena kamu juga sudah mati, kekasih."
-
+    anon "That was brutal."
+    rump "Yeah, well laugh while you can because you're dead too, loverboy."
     anon f_unimpressed @ -m_talk "Mhmm."
-
-    rump "Rekan saya akan mencari tahu siapa Anda dan saya akan memastikan seluruh keluarga Anda menderita karenanya!"
-
-    anon f_flirt a_sides @ a_frustrated "Oh, maksudmu kamu belum tahu siapa aku?"
-
-    rump "Ayo, beritahu aku!"
-
+    rump "My associates are gonna find out who you are and I'll see to it that your entire family suffers for this!"
+    anon f_flirt a_sides @ a_frustrated "Oh, you mean you haven't figured out who I am yet?"
+    rump "Go on then, tell me!"
     anon f_angry "{b}[firstname] Cummings.{/b}"
-
-    rump f_smirk @ f_laugh "Pfft, nama bodoh."
-
-    rump "Heh, baiklah {b}[firstname] Cummings{/b}, Anda dapat mengharapkan kunjungan dari-"
-
-    rump f_suspicious "Tunggu sebentar... {b}Cummings{/b}?"
-
-    rump "Kamu anak akuntan idiot itu?!"
-
-    anon "Itu benar!"
-
-    anon "Dan Anda akan membusuk di penjara karena peran yang Anda mainkan dalam pembunuhannya!"
-
-    rump f_smirk "{i}*Mendengus*{/i} Aku tidak ada hubungannya dengan itu!"
-
-    rump "Bajingan yang merasa benar sendiri itu membuat dirinya terbunuh!"
-
-    anon "Oh, kamu bisa hentikan itu."
-
-    anon "Aku sudah merekam pengakuanmu, ingat?"
-
-    rump f_suspicious "Itu bukan-"
-
-    anon "Bukan apa?!"
-
+    rump f_smirk @ f_laugh "Pfft, stupid name."
+    rump "Heh, well {b}[firstname] Cummings{/b}, you can expect a visit from-"
+    rump f_suspicious "Wait a second... {b}Cummings{/b}?"
+    rump "You're that idiot accountant's kid?!"
+    anon "That's right!"
+    anon "And you're going to rot in jail for the role you played in his murder!"
+    rump f_smirk "{i}*Snort*{/i} I didn't have anything to do with it!"
+    rump "That self-righteous prick got himself killed!"
+    anon "Oh, you can cut the shit."
+    anon "I've got you confessing on tape, remember?"
+    rump f_suspicious "That's not-"
+    anon "Not what?!"
     rump f_sad @ -m_talk "..."
-    anon "Ya, aku juga akan berhenti bicara jika aku jadi kamu."
-
+    anon "Yeah, I'd stop talking too if I were you."
     show anon a_idle with dissolve:
         xoffset 650
         xzoom 1
@@ -313,51 +210,36 @@ label rump_button_jail:
     show anon f_flirt with {'master': dissolve}:
         xoffset 100
         xzoom -1
-    anon "Oh, ngomong-ngomong..."
-
-    anon @ a_point_self "... Aku juga berhubungan seks dengan putrimu."
-
+    anon "Oh, by the way..."
+    anon @ a_point_self "... I'm having sex with your daughter too."
     rump f_surprised "!!!"
-    rump f_furious "Kamu bangsat!"
-
+    rump f_furious "You son of a bitch!"
     show anon with {'master': dissolve}:
         xoffset 650
         xzoom 1
-    anon "Nikmati penjara, brengsek."
-
+    anon "Enjoy prison, asshole."
     hide anon with {'master': dissolve}
-    rump "KAMU BANGSAT!!!"
-
-    rump "Ini belum berakhir, Nak!"
-
+    rump "YOU SON OF A BITCH!!!"
+    rump "This isn't over, kid!"
     show rump a_bars_single
     show rump_overlay_jumpsuit_o_hands_point as hands
     with dissolve
-    rump "Aku akan tertawa terakhir!"
-
-    rump "Tunggu dan lihat saja!"
-
+    rump "I'm gonna have the last laugh!"
+    rump "Just you wait and see!"
 
     scene expression background(l=L_police_lobby)
     show anon f_unimpressed
     with fade
-    anon @ -m_talk "( {i}*Sigh*{/i} Anda tahu, saya benar-benar berpikir itu akan membuat saya merasa lebih baik... )"
-
-    anon f_tired @ -m_talk "(... Tapi aku malah merasa semakin marah.)"
-
+    anon @ -m_talk "( {i}*Sigh*{/i} You know, I really thought that was going to make me feel better... )"
+    anon f_tired @ -m_talk "( ... But instead I just feel even more angry. )"
     show anon f_thinking
     pause
-    anon @ -m_talk "( {b}Rump{/b} mungkin adalah orang yang serakah dan egois, tapi dia hanyalah pion dalam semua ini. )"
-
-    anon f_angry @ -m_talk "( {b}Chernyshevsky{/b} adalah penjahat sebenarnya. )"
-
-    anon @ -m_talk "(Dialah yang membunuh {b}Ayah{/b}. )"
-
+    anon @ -m_talk "( {b}Rump{/b} might be a greedy, self-centered prick, but he was just a pawn in all this. )"
+    anon f_angry @ -m_talk "( {b}Chernyshevsky{/b} is the real villain. )"
+    anon @ -m_talk "( He's the one who killed {b}Dad{/b}. )"
     pause
-    anon f_thinking @ -m_talk "(Pasti ada cara untuk mencapainya.)"
-
-    anon @ -m_talk "(Saya hanya perlu menemukannya!)"
-
+    anon f_thinking @ -m_talk "( There has to be some way to get to him. )"
+    anon @ -m_talk "( I just need to find it! )"
     hide anon with dissolve
     return
 
@@ -366,18 +248,12 @@ label rump_button_jail.repeat:
     show anon with dissolve:
         xoffset 100
         xzoom -1
-    rump "Apa, kamu kembali lagi untuk menertawakannya?!"
-
-    anon f_flirt "Itu benar."
-
-    rump "Ya, kita akan tertawa selagi bisa karena kamu sudah mati, kekasih."
-
-    rump f_furious "Saat rekanku mendengar apa yang kau lakukan, mereka akan datang demi seluruh keluargamu!"
-
+    rump "What, you come back to gloat some more?!"
+    anon f_flirt "That's right."
+    rump "Yeah, well laugh while you can because you're dead, loverboy."
+    rump f_furious "The second my associates hear what you did, they're gonna come for your entire family!"
     anon f_unimpressed @ -m_talk "Mhmm."
-
-    anon "Kita lihat saja nanti."
-
+    anon "We'll see."
     show anon with dissolve:
         xoffset 650
         xzoom 1
@@ -387,29 +263,20 @@ label rump_button_jail.repeat:
     show anon f_flirt with dissolve:
         xoffset 100
         xzoom -1
-    anon "Ah, aku hampir lupa."
-
-    anon "Ada pesan untuk istri atau anak perempuan Anda?"
-
-    anon a_point_back "Saya baru saja akan pergi ke sana dan menghabiskan waktu bersama salah satu atau keduanya."
-
+    anon "Oh, I almost forgot."
+    anon "Any messages for your wife or daughter?"
+    anon a_point_back "I was just about to head over there and spend some time with one or both of them."
     show rump a_bars_single
     show rump_overlay_jumpsuit_o_hands_point as hands
     with {'master': fastdissolve}
-    rump "Kamu bangsat!"
-
-    anon "Tidak?"
-
-    rump "AKU AKAN MEMBUNUHMU!!!"
-
-    anon a_frustrated "Oke, kalau begitu."
-
-    anon a_wave "Nikmati penjara, brengsek."
-
+    rump "You son of a bitch!"
+    anon "No?"
+    rump "I'M GONNA KILL YOU!!!"
+    anon a_frustrated "Okay, then."
+    anon a_wave "Enjoy prison, asshole."
     hide anon
     show rump_overlay_jumpsuit_o_hands_grab as hands
     with {'master': dissolve}
     rump "Raaaaaargh!!!"
-
     return
 # Decompiled by unrpyc: https://github.com/CensoredUsername/unrpyc

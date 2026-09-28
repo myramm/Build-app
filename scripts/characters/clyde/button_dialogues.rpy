@@ -4,540 +4,393 @@ label button_clyde_pink_beaver:
     show clyde 1 at left
     if M_clyde.get("cletus"):
         show clyde_hat at left
-    player_name "Hei, tentang berang-berang yang kamu inginkan."
-
+    player_name "Hey, about that beaver you wanted."
     show player 13f
     show clyde 2
-    clyde "Ya?"
-
+    clyde "Yah?"
     show clyde 1
     show player 239_240f
     pause
     show player 709f
-    player_name "Apakah ini dia?"
-
+    player_name "Is this it?"
     show player 708f
     show clyde 30
     clyde "!!!"
     show clyde 4 with dissolve
-    clyde "Baiklah, olesi pantatku dan panggilkan aku biskuit, kamu benar-benar mengerti!"
-
+    clyde "Well, butter my butt and call me a biscuit, you actually got it!"
     show clyde 3
     show player 709f
-    player_name "Saya pikir ini mungkin saja."
-
+    player_name "I thought this might be it."
     show clyde 34
     show player 13f
     with dissolve
     pause
     show clyde 35
-    clyde "Bagaimana kamu bisa memenangkan hal ini?!"
-
+    clyde "How the heck did you win dis thing?!"
     show clyde 33 with dissolve
-    clyde "Pekan raya ini bahkan belum akan diadakan selama 2 bulan lagi!"
-
+    clyde "The fair ain't even gon' be here for another 2 months!"
     show clyde 32
     show player 12f
-    player_name "Saya membelinya di pusat perbelanjaan, {b}Clyde{/b}."
-
+    player_name "I bought it at the shopping mall, {b}Clyde{/b}."
     show player 5f
     show clyde 2 with dissolve
-    clyde "Mal?"
-
-    clyde "Ah, tembak."
-
-    clyde "Aku belum pernah ke sana."
-
-    clyde "Ke mana anjing itu lari sekarang?"
-
-    clyde "Ayo, gadis!"
-
+    clyde "The mall?"
+    clyde "Ah, shoot."
+    clyde "I ain't never been in dere."
+    clyde "Where's that dog run off to now?"
+    clyde "C'mon, girl!"
     show clyde 1
     pause
     show player 10f
-    player_name "Tunggu. Kamu belum pernah ke mal?"
-
+    player_name "Wait. You've never been to the mall?"
     show player 5f
     show clyde 9 with dissolve
-    clyde "Tidak, tuan."
-
+    clyde "No, sir."
     show clyde 3
     show player 10f
-    player_name "Di mana Anda membeli bahan makanan?"
-
+    player_name "Where do you buy your groceries then?"
     show player 5f
     show clyde 4
-    clyde "Pfft, kalian penduduk kota dan toko belanjaan kalian..."
-
-    clyde "Aku tidak akan membayar siapa pun untuk barang-barang yang gratis di sini, di hutan!"
-
+    clyde "Pfft, you city folk and yer groceries..."
+    clyde "I ain't payin' nobody fer stuff dat's free right here in the woods!"
     show clyde 3
     show player 10f
-    player_name "... Hah?"
-
+    player_name "... Huh?"
     show player 5f
     show clyde 9 with dissolve
-    clyde "Aku berburu makanan fer mah, sobat."
-
+    clyde "I hunt fer mah food, buddy."
     show clyde 4 with dissolve
-    clyde "Ngomong-ngomong, aku punya semangkuk besar tupai yang direbus di gubuk mah."
-
-    clyde "Kamu harus datang untuk makan malam!"
-
+    clyde "Speakin' of, I got a nice pot of squirrel stewin' back in mah shack."
+    clyde "You oughta come by fer dinner!"
     show clyde 3
     show player 12f
-    player_name "Eh, tidak, terima kasih."
-
+    player_name "Eugh, no thanks."
     show player 5f
-    pig "{i}*Memperas*{/i}"
-
+    pig "{i}*Squeeeeee*{/i}"
     show clyde 4
-    clyde "Itu dia!"
-
+    clyde "There you are!"
     if M_clyde.get("cletus"):
         show clyde_hat down
     show clyde 36
     with dissolve
-    clyde "Kemana saja kamu gadis?!"
-
+    clyde "Where you been girl?!"
     if M_clyde.get("cletus"):
         show clyde_hat
     show clyde 38
     with dissolve
     pig "{i}*Oink*{/i}"
-
     show clyde 37
-    clyde "Lihat apa yang {b}[firstname]{/b} bawakan untukmu!"
-
+    clyde "Look what {b}[firstname]{/b} brought fer ya!"
     show clyde 38
-    pig "{i}*PEREMPUAN*{/i}"
-
+    pig "{i}*SQUEE SQUEE*{/i}"
     show clyde 37
-    clyde "Hehehe, lihat betapa bahagianya dia!"
-
+    clyde "Hehehe, look how happy she is!"
     if M_clyde.get("cletus"):
         show clyde_hat down
     show clyde 36
     with dissolve
-    clyde "Pergilah dan bersenang-senanglah sekarang!"
-
+    clyde "You go and have some fun now!"
     if M_clyde.get("cletus"):
         show clyde_hat
     show clyde 3
     with dissolve
-    pig "{i}*Mendengus*{/i}"
-
+    pig "{i}*Snort*{/i}"
     pause
     show clyde 4
-    clyde "Sekarang dia adalah seekor anjing yang bahagia."
-
-    clyde "Baiklah sobat..."
-
+    clyde "Now dat is one happy dog."
+    clyde "Alright feller..."
     show clyde 9 with dissolve
-    clyde "Aku harus membalas budimu entah bagaimana caranya."
-
+    clyde "I gotta repay you fer dis somehow."
     show clyde 3 with dissolve
     show player 12f
-    player_name "Jangan khawatir tentang hal itu."
-
-    player_name "Anggap saja itu sebuah hadiah."
-
+    player_name "Don't worry about it."
+    player_name "Just consider it a gift."
     show player 5f
     show clyde 4
-    clyde "Sekarang tunggu sebentar."
-
+    clyde "Now hold on, just a second."
     show clyde 1 with dissolve
     pause
     show clyde 9 with dissolve
     clyde "Oh!"
-
-    clyde "Saya mendapatkan barangnya!"
-
+    clyde "I got just the thing!"
     hide clyde
     hide clyde_hat
     with dissolve
     show player 10f
-    player_name "Kemana kamu pergi?!"
-
+    player_name "Where are you going?!"
     show player 5f
-    clyde "Tunggu di sana!"
-
+    clyde "Wait there!"
     pause
-    clyde "Jangan gerakkan satu otot pun!"
-
+    clyde "Don't you move a muscle!"
     show player 25f
-    player_name "Ya ampun."
-
-    player_name "B-benarkah, tidak apa-apa..."
-
-    player_name "aku tidak perlu-"
-
+    player_name "Oh, man."
+    player_name "R-really, it's okay..."
+    player_name "I don't nee-"
     show player 11f
     show clyde 40 at left
     if M_clyde.get("cletus"):
         show clyde_hat at left
     with dissolve
-    clyde "Coba lihat!"
-
+    clyde "Check it out!"
     show clyde 39
     if player.has_item("mysterious_statue_1"):
         show player 23f
         player_name "!!!"
         show player 30f
         if M_clyde.get("cletus"):
-            player_name "{b}Cletus{/b}, kukira kamu bilang kamu tidak tahu apa-apa tentang patung kakekmu!"
-
+            player_name "{b}Cletus{/b}, I thought you said you didn't know anything about your grandfather's statue!"
         else:
-            player_name "{b}Clyde{/b}, kukira kamu bilang kamu tidak tahu apa-apa tentang patung kakekmu!"
-
+            player_name "{b}Clyde{/b}, I thought you said you didn't know anything about your grandfather's statue!"
         show player 90f
         show clyde 40
-        clyde "Oh benar."
-
-        clyde "Aku memang mengatakan itu, bukan?"
-
+        clyde "Oh, right."
+        clyde "I did say that, didn't I?"
         show clyde 39
         pause
         show clyde 11 with dissolve
-        clyde "Yah, aku berbohong."
-
+        clyde "Well, I was lyin'."
         show clyde 12
         show player 12f
-        player_name "Mengapa?!"
-
+        player_name "Why?!"
         show player 90f
     else:
 
         player_name "!!!"
         show player 30f
-        player_name "Apa itu?"
-
+        player_name "What the heck is that?"
         show player 5f
         show clyde 40
-        clyde "Ya, dulunya itu milik kakekku."
-
+        clyde "Well, it used to belong to my grandpappy."
         show clyde 39
         show player 10f
-        player_name "Kakekmu?!"
-
+        player_name "Your grandpappy?!"
         show player 5f
         show clyde 9 with dissolve
-        clyde "Itu benar!"
-
-        clyde "Ole {b}Jebadiah Delmont{/b} sendiri!"
-
+        clyde "That's right!"
+        clyde "Ole {b}Jebadiah Delmont{/b} himself!"
         show clyde 3
         pause
         player_name "..."
         show clyde 2 with dissolve
-        clyde "Anda belum pernah mendengar tentang {b}Jebadiah Delmont{/b}?"
-
+        clyde "You've never heard of {b}Jebadiah Delmont{/b}?"
         show clyde 1
         show player 10f
-        player_name "Tidak?"
-
+        player_name "No?"
         show player 5f
         show clyde 2
-        clyde "{i}*Huh*{/i} Astaga."
-
+        clyde "{i}*Sigh*{/i} Good grief."
         show clyde 4 with dissolve
-        clyde "Dia dulu sangat terkenal di sekitar daerah ini karena sapi-sapinya dan susunya yang lezat!"
-
-        clyde "Dia memenangkan segala macam kontes."
-
+        clyde "He used to be perty famous 'round these parts for his cows and their delicious milk!"
+        clyde "He won all sorts of contests."
         show clyde 3
         show player 10f
-        player_name "Dia adalah seorang peternak sapi perah?"
-
+        player_name "He was a dairy farmer?"
         show player 5f
         show clyde 4
-        clyde "Yah, dia tidak hanya melakukan peternakan sapi perah."
-
-        clyde "Dia memiliki segala jenis binatang."
-
+        clyde "Well, he didn't just do dairy farmin'."
+        clyde "He had all sorts of animals."
         show clyde 9 with dissolve
-        clyde "Anda seharusnya melihat telur ayam yang dia bawa ke pameran."
-
-        clyde "Mereka sebesar bola sepak!"
-
+        clyde "You shoulda seen the chicken eggs he'd bring to fair."
+        clyde "They was as big as a football!"
         show clyde 3 with dissolve
         show player 10f
-        player_name "Sungguh?"
-
+        player_name "For real?"
         show player 5f
         show clyde 4
-        clyde "Heh, ya sobat!"
-
+        clyde "Heh, yeah buddy!"
         show clyde 3
         pause
         show player 17f
-        player_name "Kedengarannya luar biasa!"
-
+        player_name "That sounds awesome!"
         show player 14f
-        player_name "Ceritakan lebih banyak kepada saya."
-
+        player_name "Tell me more."
         show player 13f
         show clyde 11 with dissolve
-        clyde "Oh tidak. aku uhh..."
-
-        clyde "{i}*Ahem*{/i} Aku benar-benar tidak ingin membahas semua itu..."
-
+        clyde "Oh, no. I uhh..."
+        clyde "{i}*Ahem*{/i} I really don't wanna get into all that..."
         show clyde 12
         show player 10f
-        player_name "Hah, kenapa tidak?"
-
+        player_name "Huh, why not?"
         show player 5f
     show clyde 11
-    clyde "Begini kawan, kakekku bukanlah kebanggaan {b}keluarga Delmont{/b}..."
-
-    clyde "Kami tidak suka membicarakannya!"
-
+    clyde "Look buddy, my grandpappy ain't exactly the pride of the {b}Delmont family{/b}..."
+    clyde "We don't like talkin' 'bout it!"
     show clyde 12
     show player 10f
-    player_name "Kenapa?"
-
+    player_name "How come?"
     show player 5f
     show clyde 2 with dissolve
-    clyde "{i}*Sigh*{/i} Anggap saja ole {b}Jebadiah{/b} sedikit, tersentuh di kepala, oke?"
-
+    clyde "{i}*Sigh*{/i} Let's just say ole {b}Jebadiah{/b} was a little, touched in the head, alright?"
     show clyde 1
     show player 10f
-    player_name "Tersentuh di kepala?"
-
+    player_name "Touched in the head?"
     show player 5f
     show clyde 2
-    clyde "Kamu tahu."
-
-    clyde "Dia punya beberapa sekrup yang lepas."
-
+    clyde "You know."
+    clyde "He had a few screws loose."
     show clyde 1
     show player 10f
     player_name "Uhh..."
-
     show player 5f
     show clyde 9 with dissolve
-    clyde "Rodanya berputar tetapi hamster itu mati."
-
+    clyde "His wheel was turning but the hamster was dead."
     show clyde 3 with dissolve
     show player 10f
-    player_name "saya tidak..."
-
+    player_name "I don't..."
     show player 5f
     show clyde 4
-    clyde "Dia kekurangan beberapa kartu untuk mencapai setumpuk penuh."
-
+    clyde "He was a few cards short of a full deck."
     show clyde 3
     show player 12f
-    player_name "Apa yang kamu bicarakan?!"
-
+    player_name "What are you talking about?!"
     show player 5f
     show clyde 26 with dissolve
-    clyde "Cih, dia lebih gila dari porta-potty di festival kacang, oke?!"
-
+    clyde "Tch, he was nuttier than a porta-potty at a peanut festival, alright?!"
     show clyde 25
     show player 12f
-    player_name "Maksudmu dia gila?"
-
+    player_name "You mean he was crazy?"
     show player 5f
     show clyde 26
-    clyde "Itu yang aku coba sampaikan padamu..."
-
+    clyde "That's what I've been tryin' to tell ya..."
     show clyde 25
     show player 10f
     player_name "Oh."
-
     show player 5f
     show clyde 2
-    clyde "Ya."
-
-    clyde "Mama bilang dia selalu sedikit eksentrik."
-
-    clyde "Orang-orang yang berteriak biasa memanggilnya penyihir dusun."
-
+    clyde "Yeah."
+    clyde "Mama says he was always a bit eccentric."
+    clyde "Folk in the holler used to call him the hillbilly wizard."
     show clyde 1
     show player 10f
-    player_name "Dia adalah seorang penyihir?"
-
+    player_name "He was a wizard?"
     show player 5f
     show clyde 2
-    clyde "Ya, tapi dia bukan orang yang baik."
-
-    clyde "Aku ingat, dia pernah mencoba mengubahku menjadi katak, karena aku sudah pergi dan kepalaku tersangkut di tangga."
-
+    clyde "Yeah, but he wasn't a very good one."
+    clyde "I remember, he tried turnin' me into a toad one time, 'cause I had gone and got my head stuck in the stairs."
     show clyde 1
     show player 10f
-    player_name "Kepalamu tersangkut di tangga?!"
-
+    player_name "You got your head stuck in the stairs?!"
     show player 5f
     show clyde 2
-    clyde "Kakakku bilang ada leprechaun yang tinggal di bawah tangga dan aku ingin bertemu dengannya."
-
+    clyde "My brother told me there was a leprechaun livin' under the stairs and I wanted to see him."
     show clyde 1
     show player 17f
     player_name "Pfft, hahaha!"
-
     show player 13f
     show clyde 2
-    clyde "Bagaimanapun, mantranya tidak berhasil."
-
+    clyde "Anyways, his spell didn't work."
     show clyde 11 with dissolve
-    clyde "Jadi Mama harus mengolesiku dengan lemak bacon dan mengeluarkanku."
-
+    clyde "So Mama had to grease me up with bacon fat and slide me out."
     show clyde 12
     show player 17f
     player_name "Haha!"
-
     show player 13f
     show clyde 4
-    clyde "Lalu suatu saat, aku gagal di kelas dua..."
-
-    clyde "... Dan kakek, katanya, \"Jangan khawatir sedikit pun {b}Clyde{/b}. Kakek akan segera memperbaikinya untukmu.\""
-
+    clyde "Then there was this one time, I was failin' the second grade..."
+    clyde "... And grandpappy, he said, \"Don't you worry none little {b}Clyde{/b}. Grandpappy will fix it right up fer ya.\""
     show clyde 3
     pause
     show player 14f
-    player_name "Oke, jadi apa yang terjadi?"
-
+    player_name "Okay, so what happened?"
     show player 13f
     show clyde 2 with dissolve
-    clyde "Yah, aku tidak tahu pasti. Mereka menemukannya di gedung sekolah, di tengah malam, telanjang bulat dan berlumuran darah ayam."
-
+    clyde "Well, I don't rightly know. They found him in the school house, in the middle of the night, buck naked and covered in chicken blood."
     show clyde 1
     show player 23f
-    player_name "Darah ayam?!"
-
+    player_name "Chicken blood?!"
     show player 11f
     show clyde 2
-    clyde "Ya, dia bilang dia sedang melakukan semacam ritual untuk membantuku bersekolah."
-
-    clyde "Tampaknya dia adalah orang yang berteriak-teriak, berteriak-teriak, dan terus-terusan."
-
+    clyde "Yeah, he said he was performin' some kinda ritual thingy to help me with my schoolin'."
+    clyde "Apparently he was a hootin' and a hollerin' and a carryin' on."
     show clyde 1
     show player 10f
-    player_name "Ya, dia memang terdengar sedikit gila, {b}Clyde{/b}."
-
+    player_name "Yeah, he does sound a little crazy, {b}Clyde{/b}."
     show player 12f
     show clyde 2
-    clyde "Ya, menurutku memang begitu."
-
-    clyde "Tapi dia adalah orang yang manis."
-
-    clyde "Sayang sekali semua roh jahat marah padanya."
-
+    clyde "Yeah, I reckon he was."
+    clyde "He was a sweet ole feller though."
+    clyde "It's too bad all dem evil spirits got mad at him."
     show clyde 1
     show player 10f
-    player_name "Roh jahat?"
-
+    player_name "Evil spirits?"
     show player 11f
     show clyde 2
-    clyde "Ya, dia memberitahuku semuanya tepat setelah dia memecahkan patung ini dan menyembunyikan potongannya."
-
-    clyde "Katanya mereka akan datang untuknya dan dia ingin dia aman."
-
+    clyde "Yeah, he told me all 'bout it right after he broke this here statue and hid the pieces."
+    clyde "Said they was coming fer him and he wanted her to be safe."
     show clyde 1
     show player 10f
-    player_name "Dia?"
-
+    player_name "Her?"
     show player 5f
     show clyde 40 with dissolve
-    clyde "Wanita di dalam patung, tentu saja!"
-
-    clyde "Dia benar-benar sedih karena menyembunyikannya."
-
-    clyde "Bagaimanapun, dia adalah jimat keberuntungannya."
-
+    clyde "The lady in the statue, of course!"
+    clyde "He was real tore up about hiding her away."
+    clyde "She was his good luck charm after all."
     show clyde 39
     show player 12f
-    player_name "Aneh."
-
+    player_name "Weird."
     show player 5f
     show clyde 9 with dissolve
-    clyde "Lalu kami memergokinya sedang berzina dengan ternaknya dan Mama mengirimnya ke rumah sakit jiwa."
-
+    clyde "Then we caught him fornicatin' with the livestock and Mama sent him off to the nuthouse."
     show clyde 3 with dissolve
     show player 22f
     player_name "!!!" with hpunch
     show player 23f
-    player_name "Maksudmu dia-"
-
-    player_name "A-dengan binatang?!"
-
+    player_name "You mean he-"
+    player_name "W-with animals?!"
     show player 37f
     show clyde 11
     with dissolve
-    clyde "{i}*Sigh*{/i} Yup, menangis seperti bayi juga."
-
-    clyde "Roh-roh itu pasti telah berbuat banyak padanya, kawan yang malang."
-
+    clyde "{i}*Sigh*{/i} Yup, crying like a baby too."
+    clyde "Them spirits musta really done a number on him, poor feller."
     show clyde 12
     show player 10f with dissolve
-    player_name "Jadi uhh..."
-
-    player_name "... Apakah kakekmu masih tinggal di rumah sakit jiwa?"
-
+    player_name "So uhh..."
+    player_name "... Is your grandpa still living at the nuthouse then?"
     show player 5f
     show clyde 2 with dissolve
-    clyde "Ah, tidak."
-
-    clyde "Sekitar dua minggu setelah Mama mengirimnya ke sana, kamarnya terbakar dan dia terbakar di dalamnya."
-
+    clyde "Ah, nah."
+    clyde "About two weeks after Mama sent him there, his room caught on fire and he burnt up in it."
     show clyde 1
     show player 24f
-    player_name "Yesus..."
-
+    player_name "Jesus..."
     show clyde 2
-    clyde "Mereka tidak yakin bagaimana api mulai terjadi tetapi saya rasa mereka akhirnya berhasil menangkapnya."
-
+    clyde "They not sure how the fire started but I reckon them spirits finally got him."
     show clyde 1
-    player_name "aku bahkan tidak..."
-
+    player_name "I don't even..."
     player_name "..."
     show clyde 30
-    clyde "Ya, itu sungguh menyedihkan..."
-
+    clyde "Yeah, it was real sad..."
     show clyde 29
     pause
     show player 11f
     show clyde 2
-    clyde "Bagaimanapun!"
-
+    clyde "Anyways!"
     show player 5f
     show clyde 40 with dissolve
-    clyde "Kurasa dia tidak keberatan aku memberimu potongan patung ini."
-
-    clyde "Sampai jumpa saat Anda membantu saya dan semuanya."
-
-    clyde "Siapa tahu bisa membawa keberuntungan juga."
-
+    clyde "I reckon he wouldn't mind me giving you this piece of the statue."
+    clyde "Seein' as you helped me and all."
+    clyde "Who knows, maybe it'll bring you luck too."
     show clyde 39
     show player 10f
-    player_name "B-benar."
-
-    player_name "Terima kasih, saya rasa..."
-
+    player_name "R-right."
+    player_name "Thanks, I guess..."
     show player 715f
     show clyde 9
     with dissolve
-    clyde "Jangan sebutkan itu, sobat!"
-
+    clyde "Don't mention it, buddy!"
     show player 5f with dissolve
-    clyde "Sekarang, permisi."
-
-    clyde "Saya ingin melihat anjing saya memberikan apa yang diberikan kepada berang-berang itu!"
-
+    clyde "Now if you'll excuse me."
+    clyde "I wanna watch my dog give that ole beaver what fer!"
     hide clyde
     hide clyde_hat
     with dissolve
     clyde "Hehehe."
-
     show player 239_240f with dissolve
     pause
     show player 715f with dissolve
-    player_name "( Anda tahu, ini sebenarnya menjelaskan banyak hal tentang {b}Clyde{/b} dan mengapa dia seperti itu... )"
-
+    player_name "( You know, this actually explains quite a lot about {b}Clyde{/b} and why he is the way he is... )"
     pause
-    player_name "(Saya kira saya harus memperhatikan bagian lain dari patung ini.)"
-
+    player_name "( I guess I should keep an eye out for the other pieces of this statue. )"
     hide player with dissolve
     return
 
@@ -549,96 +402,70 @@ label button_clyde_mysterious_statue_1:
         show clyde_hat at left
     pause
     show player 688cf
-    player_name "Anda tahu sesuatu tentang {b}Clyde{/b} ini?"
-
+    player_name "You know anything about this {b}Clyde{/b}?"
     show player 688bf
     show clyde 30
-    clyde "{i}*Terkesiap*{/i} Di mana kamu menemukannya?!"
-
+    clyde "{i}*Gasp*{/i} Where in the world did you find that?!"
     show clyde 29
     show player 688cf
-    player_name "Itu terkubur di bawah rumah teman saya."
-
+    player_name "It was buried under my friend's house."
     show player 688bf
     pause
     show player 688cf
-    player_name "Nama {b}Delmont{/b} terukir di bagian bawah."
-
+    player_name "The name {b}Delmont{/b} is etched in the bottom."
     show player 688bf
     show clyde 2
-    clyde "Ya."
-
+    clyde "Yeah."
     show clyde 4 with dissolve
-    clyde "Itu bagian dari jimat keberuntungan kakekku."
-
+    clyde "It's part of my grandpappy's good luck charm."
     show clyde 3
     show player 688cf
-    player_name "Kakek?"
-
-    player_name "Maksudmu kakekmu?"
-
+    player_name "Grandpappy?"
+    player_name "You mean your grandfather?"
     show player 13f with dissolve
     show clyde 4
-    clyde "Eh ya, {b}Jebadiah Delmont{/b}."
-
-    clyde "Dia sangat terkenal di wilayah ini bertahun-tahun yang lalu karena susu yang dihasilkan sapi-sapinya."
-
+    clyde "Uh huh, {b}Jebadiah Delmont{/b}."
+    clyde "He was real famous in these parts many years ago for the milk his cows produced."
     show clyde 3
     show player 10f
-    player_name "Susu sapi?"
-
+    player_name "Cow milk?"
     show player 5f
     clyde "Mmhmm."
-
     show clyde 4
-    clyde "Enak sekali!"
-
-    clyde "Memenangkan banyak kontes dengannya."
-
+    clyde "It was delicious!"
+    clyde "Won a bunch of contests with it."
     show clyde 3
     show player 14f
-    player_name "Itu cukup keren."
-
+    player_name "That's pretty cool."
     show player 13f
     show clyde 4
-    clyde "Dia juga punya beberapa telur ayam yang luar biasa."
-
-    clyde "Mereka sebesar bola sepak!"
-
+    clyde "He had some amazing chicken eggs too."
+    clyde "They was big as a football!"
     show clyde 3
     pause
     show player 12f
-    player_name "Benar..."
-
+    player_name "Right..."
     show player 5f
     pause
     show player 10f
-    player_name "Jadi uhh..."
-
-    player_name "Tahukah Anda di mana sisa patung ini berada?"
-
+    player_name "So uhh..."
+    player_name "Do you know where the rest of this statue might be?"
     show player 5f
     show clyde 11 with dissolve
-    clyde "Tidak!"
-
+    clyde "Nope!"
     show clyde 12
     pause
     show player 10f
-    player_name "Oh, karena aku hanya berpikir-"
-
+    player_name "Oh, 'cause I just thought-"
     show player 5f
     show clyde 9 with dissolve
-    clyde "Maaf kawan, tidak bisa membantumu!"
-
-    clyde "Aku tidak tahu jongkok!"
-
+    clyde "Sorry feller, can't help ya!"
+    clyde "I dun know squat!"
     show clyde 3 with dissolve
     show player 10f
-    player_name "Baiklah..."
-
+    player_name "Alright..."
     show player 24f
-    player_name "Terima kasih, kurasa."
-
+    player_name "Thanks anyways, I guess."
     show player 5f
     show clyde 1 with dissolve
     return
@@ -651,39 +478,29 @@ label button_clyde_mysterious_statue_2:
         show clyde_hat at left
     pause
     show player 715bf with dissolve
-    player_name "Adakah yang tahu di mana saya bisa menemukan lebih banyak patung ini?"
-
+    player_name "Any idea where I can find more of this statue?"
     show player 715cf
     show clyde 2
-    clyde "Emm, tidak juga."
-
-    clyde "Kakekku, potongan terakhir itu mungkin akan {b}menemukanmu{/b}."
-
+    clyde "Erm, not really."
+    clyde "Knowin' grandpappy, that last piece will probably {b}find you{/b}."
     show clyde 1
     show player 10f with dissolve
-    player_name "Apa maksudmu?"
-
+    player_name "What do you mean?"
     show player 5f
     show clyde 2
-    clyde "Ya, sepertinya aku akan segera {b}menemukan tempat nyaman yang bagus untuk bersantai{/b}..."
-
-    clyde "... {b}di suatu tempat dekat pantai, mungkin{/b}."
-
+    clyde "Yeah, I reckon I'd prolly jus' {b}find a nice comfy place to relax{/b}..."
+    clyde "... {b}somewheres near the beach, maybe{/b}."
     show clyde 1
     pause
     show clyde 2
-    clyde "Saya yakin {b}kepala itu akan muncul dengan sendirinya{/b}."
-
+    clyde "I betcha {b}that head will pop up all on its own{/b}."
     show clyde 1
     show player 10f with dissolve
-    player_name "Eh, benar..."
-
-    player_name "Terima kasih. Saya rasa..."
-
+    player_name "Ehh, right..."
+    player_name "Well, thanks. I guess..."
     show player 5f
     show clyde 9 with dissolve
-    clyde "Tidak masalah, sobat."
-
+    clyde "No problem, buddy."
     show clyde 1 with dissolve
     return
 
@@ -694,114 +511,84 @@ label button_clyde_your_dog:
     show clyde 1 at left
     if M_clyde.get("cletus"):
         show clyde_hat at left
-    player_name "Jadi, tentang anjingmu..."
-
+    player_name "So, about your dog..."
     show player 5f
     show clyde 4 with dissolve
-    clyde "Ah ya, dia gadis yang baik, bukan?"
-
+    clyde "Ah yeah, she's a good girl, ain't she?"
     show clyde 3
     show player 10f
-    player_name "Oke, tentu saja."
-
+    player_name "Okay, sure."
     show player 12f
-    player_name "Kamu sadar dia bukan anjing, kan?"
-
+    player_name "You realize she isn't a dog though, right?"
     show player 5f
     show clyde 4
-    clyde "Anjing terbaik yang pernah saya miliki!"
-
+    clyde "Best dog I ever had!"
     show clyde 3
     show player 24f
-    player_name "{i}*Huh*{/i}"
-
+    player_name "{i}*Sigh*{/i}"
     show player 5f
     show clyde 4
-    clyde "Itu sebabnya aku berlatih keras, untuk memenangkan salah satu {b}boneka berang-berang{/b} di pekan raya."
-
+    clyde "That's why I'm practicin' so hard, to win her one of dem {b}stuffed beavers{/b} at the fair."
     show clyde 3
     show player 12f
-    player_name "Ya, Anda menyebutkan itu."
-
+    player_name "Yeah, you mentioned that."
     show player 10f
-    player_name "Mengapa kamu tidak membelikannya saja?"
-
+    player_name "Why don't you just buy her one?"
     show player 5f
     show clyde 9 with dissolve
-    clyde "Psh, sekarang kamu bicara gila..."
-
-    clyde "Bagaimana menurut Anda {b}Berang-berang merah muda{/b} hanya tumbuh di pohon atau apa saja?"
-
+    clyde "Psh, now you'se talkin' crazy..."
+    clyde "What, you think {b}Pink beavers{/b} jus' be growin' on trees or somethin'?"
     show clyde 3 with dissolve
     show player 10f
-    player_name "Apakah warna itu penting?"
-
+    player_name "Does the color really matter?"
     show player 5f
     show clyde 4
-    clyde "Heck ya itu penting!"
-
-    clyde "{b}Berang-berang merah muda{/b} adalah berang-berang terbaik."
-
+    clyde "Heck ya it matters!"
+    clyde "{b}Pink beavers{/b} is the best beavers."
     show clyde 9 with dissolve
-    clyde "Semua orang tahu itu!"
-
+    clyde "Ever'body knows dat!"
     show clyde 3 with dissolve
     show player 402f
-    player_name "... Benar."
-
+    player_name "... Right."
     show player 10f
-    player_name "Oke, semoga sukses dengan semuanya, saya kira..."
-
+    player_name "Okay, well, good luck with all that, I guess..."
     show player 5f
     show clyde 4
-    clyde "\"Keberuntungan\" adalah nama tengahku, saudara."
-
+    clyde "\"Luck\" is my middle name, brother."
     show clyde 3
     pause
     show clyde 2 with dissolve
-    clyde "Sebenarnya itu Kornelius."
-
+    clyde "Actually it's Cornelius."
     show clyde 1
     show player 12f
-    player_name "Hah?"
-
+    player_name "Huh?"
     show player 5f
     show clyde 2
     if M_clyde.get("cletus"):
         clyde "{b}Cletus Cornelius Delmont{/b}."
-
     else:
         clyde "{b}Clyde Cornelius Delmont{/b}."
-
     show clyde 1
     show player 10f
-    player_name "Nama tengahmu Cornelius?"
-
+    player_name "Your middle name is Cornelius?"
     show player 5f
     show clyde 9 with dissolve
-    clyde "Ya sobat."
-
-    clyde "Seperti pencari rusa di pertunjukan rusa kutub."
-
+    clyde "Yeah buddy."
+    clyde "Like that prospector fella on the flyin' reindeer show."
     show clyde 4
-    clyde "Kamu lihat yang pertama?!"
-
+    clyde "You seen dat one?!"
     show clyde 3
     show player 10f
-    player_name "Saya kira tidak demikian..."
-
+    player_name "I don't think so..."
     show player 5f
     show clyde 4
-    clyde "Maaan, bagus sekali!"
-
+    clyde "Maaan, das a great one!"
     show clyde 3
     show player 10f
-    player_name "Kamu pria yang aneh, {b}Clyde{/b}."
-
+    player_name "You're a weird guy, {b}Clyde{/b}."
     show player 5f
     show clyde 4
-    clyde "Eh ya!"
-
+    clyde "Uh huh!"
     show clyde 1 with dissolve
     return
 
@@ -810,53 +597,39 @@ label button_clyde_roxxy_get_evidence_intro:
     show clyde 1 at left
     show player 12f at right
     with dissolve
-    player_name "Kita perlu membicarakan situasi ini dengan {b}Crystal{/b}."
-
+    player_name "We need to talk about this situation with {b}Crystal{/b}."
     show player 5f
     show clyde 22
-    clyde "Saya lebih suka tidak..."
-
+    clyde "I'd rather not..."
     show clyde 21
     show player 10f
-    player_name "{b}Clyde{/b}, mereka akan mengirimnya ke penjara dan mengambil trailernya!"
-
+    player_name "{b}Clyde{/b}, they're gonna send her away to prison and take the trailer away!"
     show player 5f
     show clyde 26
-    clyde "Lihat di sini! Kamu pikir aku tidak tahu itu!"
-
-    clyde "Aku merasa tidak enak tapi tidak ada yang bisa kulakukan untuk menghentikannya!"
-
+    clyde "Look 'chere! You think I dun know that!"
+    clyde "I feel bad but there ain't nothin' I can do to stop it!"
     show clyde 25
     show player 12f
-    player_name "Anda bisa menyerahkan diri..."
-
+    player_name "You could turn yourself in..."
     show player 5f
     show clyde 22
-    clyde "Ya benar..."
-
-    clyde "Lalu kami berdua akan berakhir di balik jeruji besi!"
-
+    clyde "Yeah right..."
+    clyde "Then we'd both end up behind bars!"
     show clyde 21
     show player 10f
-    player_name "Tidak jika Anda memberi tahu mereka bahwa {b}Crystal{/b} tidak tahu Anda menyembunyikan narkoba di sana."
-
+    player_name "Not if you tell them that {b}Crystal{/b} had no idea you hid the drugs there."
     show player 5f
     clyde "..."
     show clyde 2
-    clyde "... Dan mengapa saya melakukan itu?"
-
+    clyde "... And why would I do that?"
     show clyde 1
     show player 12f
-    player_name "... Karena itu adalah hal yang benar untuk dilakukan!"
-
+    player_name "... Because it's the right thing to do!"
     show player 90f
     show clyde 2
     clyde "Pfft."
-
-    clyde "Saya tidak bisa pergi ke penjara!"
-
-    clyde "Pria tampan sepertiku, hewan-hewan itu akan memakanku hidup-hidup di dere."
-
+    clyde "I can't be going away to prison!"
+    clyde "Handsome feller like me, those animals will eat me alive in dere."
     show clyde 1
     return
 
@@ -866,126 +639,89 @@ label button_clyde_roxxy_get_evidence_about_roxxy_pass:
     show clyde 1 at left
     clyde "..."
     show player 10f
-    player_name "Lihat, kawan. Dia jatuh cinta padamu karena dia keluargamu."
-
-    player_name "... Tapi ini jauh lebih buruk dari yang dia kira!"
-
-    player_name "Dia akan pergi untuk waktu yang lama dan {b}Roxxy{/b} akan kehilangan ibu dan rumahnya."
-
+    player_name "Look, man. She took the fall for you because she's your family."
+    player_name "... But this is way worse than she thinks it is!"
+    player_name "She's gonna go away for a long time and {b}Roxxy{/b} is gonna lose her mom and her home."
     show player 12f
-    player_name "{b}Roxxy{/b} tidak melakukan apa pun sehingga pantas mendapatkannya!"
-
+    player_name "{b}Roxxy{/b} didn't do anything to deserve that!"
     show player 5f
     show clyde 21
     clyde "..."
     show clyde 22
-    clyde "... Aduh, sial! Anda benar."
-
-    clyde "{b}Roxanne{/b} seharusnya tidak perlu menderita karena aku..."
-
-    clyde "... Tapi aku tidak akan kembali ke penjara! ... Tidak tuan!"
-
+    clyde "... Aww, shit! You're right."
+    clyde "{b}Roxanne{/b} shouldn't have to suffer on my account..."
+    clyde "... But I ain't goin' back to prison! ... No sir!"
     show clyde 21
     player_name "..."
     show player 14f
-    player_name "Bagaimana jika Anda mengirimkan pengakuan Anda melalui surat?"
-
-    player_name "Beritahu mereka tentang gubuk Anda dan biarkan mereka datang mencari buktinya."
-
-    player_name "Jika Anda melakukannya dengan benar, Anda bisa pergi jauh sebelum mereka mulai mencari Anda."
-
+    player_name "What if you sent your confession in with a letter?"
+    player_name "Tell them about your shack and let them come find the evidence."
+    player_name "If you do things right, you can be long gone before they start searching for you."
     show player 13f
     clyde "..."
     show clyde 22
-    clyde "Saya kira saya bisa kembali berteriak..."
-
-    clyde "Mereka tidak akan pernah menemukanku di sana."
-
-    clyde "... Tapi aku pasti akan merindukan {b}Bibi Crystal{/b}..."
-
+    clyde "I suppose I could go on back to the holler..."
+    clyde "They ain't never gonna find me there."
+    clyde "... I sure would miss {b}Auntie Crystal{/b} though..."
     show clyde 21
     show player 10f
-    player_name "Anda akan menyelamatkannya dari penjara, kawan."
-
+    player_name "You'd be saving her from prison, man."
     show player 5f
     show clyde 22
-    clyde "Hmm, menurutku kamu punya rencana bagus."
-
+    clyde "Hmm, I reckon' you got a good plan."
     show player 13f
-    clyde "Jadi saya melakukan ini dan dia bebas dari hukuman?"
-
+    clyde "So I do this and she gets off scot-free?"
     show clyde 21
     show player 12f
-    player_name "... Kami masih harus memberikan uang jaminan untuknya tapi ini awal yang baik."
-
+    player_name "... We'd still have to come up with bail money for her but it's a good start."
     show player 5f
     show clyde 22
-    clyde "Berapa banyak uang yang Anda butuhkan?"
-
+    clyde "How much money you need?"
     show clyde 21
     show player 12f
-    player_name "Lima puluh ribu dolar..."
-
+    player_name "Fifty thousand dollars..."
     show player 5f
     show clyde 2
-    clyde "... Hah."
-
-    clyde "Yah, aku bisa melakukan itu!"
-
+    clyde "... Huh."
+    clyde "Well, I can do that!"
     show clyde 1
     show player 10f
     player_name "What?!" with hpunch
-    player_name "Kamu tidak bisa serius..."
-
-    player_name "Anda punya lima puluh ribu dolar tergeletak di suatu tempat?"
-
+    player_name "You can't be serious..."
+    player_name "You have fifty thousand dollars lying around somewhere?"
     show player 11f
     show clyde 2
-    clyde "Tidak tepat."
-
+    clyde "Not exactly."
     show clyde 4 with dissolve
-    clyde "... Tapi aku mendapat kekacauan dari sabu itu."
-
-    clyde "Saya kira, cukup untuk membayar seratus ribu dolar kepada pembeli yang tepat."
-
+    clyde "... But I got a whole mess of that meth."
+    clyde "Enough to clear one hundred thousand dollars to the right buyer, I imagine."
     show clyde 3
     show player 10f
-    player_name "Itu gila!"
-
-    player_name "Bisakah Anda benar-benar menjualnya?"
-
+    player_name "That's nuts!"
+    player_name "Can you really sell it?"
     show player 5f
     show clyde 4
-    clyde "Pfft! Ayo sobat..."
-
-    clyde "Tidak tahukah kamu dengan siapa kamu bicara?"
-
-    clyde "Saya bisa menjual es loli saus tomat kepada seorang gadis yang mengenakan sarung tangan putih!"
-
+    clyde "Pfft! C'mon buddy..."
+    clyde "Dontcha know who yer talkin' to?"
+    clyde "I could sell a ketchup popsicle to a gal wearin' white gloves!"
     show clyde 3
     show player 11f
     player_name "..."
     show player 12f
-    player_name "... es loli kecap?"
-
+    player_name "... Ketchup popsicle?"
     show player 5f
     show clyde 9 with dissolve
-    clyde "Ya, sobat!"
-
+    clyde "Yeah, buddy!"
     show clyde 3 with dissolve
     show player 14f
-    player_name "... Kapan kamu bisa melakukannya?"
-
+    player_name "... When can you do it?"
     show player 13f
     show clyde 4
-    clyde "Hmm, aku harus menelpon mah pembeli."
-
-    clyde "... Tapi sebentar lagi, kurasa."
-
+    clyde "Hmm, I'll have to call up mah buyer."
+    clyde "... But perty soon, I reckon'."
     show clyde 3
     show player 14f
-    player_name "Aku akan memberitahu {b}Roxxy{/b} kabar baiknya!"
-
+    player_name "I'm gonna go tell {b}Roxxy{/b} the good news!"
     hide player
     hide clyde
     with dissolve
@@ -995,26 +731,19 @@ label button_clyde_roxxy_get_evidence_about_roxxy_fail:
     scene expression player.location.background_blur
     show clyde 1 at left
     show player 12f at right
-    player_name "Anda seorang pengecut!"
-
+    player_name "You're a coward!"
     show player 90f
     show clyde 26
-    clyde "Hei sekarang, jangan panggil aku bukan pengecut!"
-
-    clyde "Anda tidak tahu bagaimana rasanya di penjara oleh orang seperti saya!"
-
-    clyde "Aku belum pernah ke sana sekali pun dan aku akan terkutuk jika aku kembali!"
-
+    clyde "Hey now, don't you be calling ME no coward!"
+    clyde "You got no idea what it's like in the slammer fer someone like me!"
+    clyde "I dun been there once and I'll be damned if I'm goin' back!"
     show clyde 25
     show player 15f
-    player_name "Terserah... PENGECUT!"
-
+    player_name "Whatever... COWARD!"
     show player 16f
     show clyde 26
-    clyde "Persetan denganmu!"
-
-    clyde "Aku tidak perlu mengambil ini!"
-
+    clyde "Screw you!"
+    clyde "I dun hafta take this!"
     hide clyde
     hide player
     with dissolve
@@ -1022,14 +751,11 @@ label button_clyde_roxxy_get_evidence_about_roxxy_fail:
 
 label button_clyde_roxxy_get_evidence_nevermind:
     show player 12f
-    player_name "Ah, lupakan saja!"
-
+    player_name "Ugh, forget it!"
     show player 90f
     show clyde 22
-    clyde "Ya, itulah yang saya rencanakan!"
-
-    clyde "Menurutku, ada banyak sekali yang lupa di dasar kaleng bir ini!"
-
+    clyde "Yeah, that's exactly what I plan on doin'!"
+    clyde "I reckon' thar's a whole mess of forgettin' at the bottom of these here beer cans!"
     hide clyde
     hide player
     with dissolve
@@ -1040,23 +766,18 @@ label button_clyde_roxxy_selling_meth_ask_roxxy:
     show clyde 1 at left
     show player 10f at right
     with dissolve
-    player_name "Kapan Anda bisa menjual sabu itu?"
-
+    player_name "When can you sell that meth?"
     show player 5f
     show clyde 2
-    clyde "Pegang kudamu, sobat!"
-
-    clyde "Hal-hal ini membutuhkan waktu."
-
+    clyde "Hold yer horses, buddy!"
+    clyde "These things take time."
     show clyde 1
     player_name "..."
     show clyde 2
-    clyde "Lanjutkan saja dan beri tahu sepupu manisku bahwa {b}Clyde{/b} akan mengurus semuanya!"
-
+    clyde "You just go on and tell my sweet cousin that {b}Clyde{/b} is gon take care of everthang!"
     show clyde 1
     show player 14f
-    player_name "... Benar."
-
+    player_name "... Right."
     hide player
     hide clyde
     with dissolve
@@ -1066,79 +787,57 @@ label button_clyde_roxxy_selling_meth:
     scene expression player.location.background_blur
     show clyde 3 at left
     show player 10f at right
-    player_name "Anda sudah menghubungi pembeli Anda?"
-
+    player_name "You get in touch with your buyer yet?"
     show player 5f
     show clyde 4 with dissolve
-    clyde "Ya, sobat!"
-
+    clyde "Yeah, buddy!"
     show player 13f
-    clyde "Aku sedang berusaha membuat kesepakatan yang mematikan di sini!"
-
+    clyde "I'm fixin' to make a killin' on dis here deal!"
     show clyde 3
     show player 12f
-    player_name "{b}Roxxy{/b} bilang kamu belum pernah menjual sabu sebelumnya!"
-
+    player_name "{b}Roxxy{/b} says you've never sold meth before!"
     show player 90f
     show clyde 26 with dissolve
-    clyde "Apa?!"
-
-    clyde "Dia tidak tahu apa-apa!"
-
-    clyde "Saya telah mengikuti banyak penawaran di sini!"
-
+    clyde "What?!"
+    clyde "She dun know nuthin'!"
+    clyde "I been in on plenty of these here deals!"
     show clyde 25
     show player 12f
-    player_name "Anda sebenarnya pernah berurusan dengan pembeli sebelumnya?"
-
+    player_name "You've actually dealt with the buyers before?"
     show player 5f
     show clyde 1
     clyde "..."
     show clyde 22
-    clyde "Ya, saya menonton {b}Bibi Crystal{/b} melakukannya ratusan kali!"
-
+    clyde "Well, I watched {b}Auntie Crystal{/b} do it a hundert times!"
     show clyde 1
     show player 37f with dissolve
     player_name "..."
-    player_name "{i}*Huh*{/i} Aku ikut denganmu."
-
+    player_name "{i}*Sigh*{/i} I'm coming with you."
     show player 90f with dissolve
     show clyde 2
-    clyde "Hah?"
-
-    clyde "Apa yang Anda ketahui tentang menjual narkoba?"
-
+    clyde "Huh?"
+    clyde "What do you know about selling drugs?"
     show clyde 1
     show player 12f
-    player_name "Bukan apa-apa."
-
-    player_name "... Tapi saya mengenal Anda, dan Anda jelas tidak cukup kompeten untuk melakukan ini sendirian."
-
+    player_name "Not a damn thing."
+    player_name "... But I know you, and you're definitely not competent enough to do this alone."
     show player 90f
     show clyde 22
-    clyde "Ya, bukan itu... Tunggu sebentar, apa maksudnya \"campito\"?!"
-
+    clyde "Well, that's not... Wait a second, what's \"campito\" mean?!"
     show clyde 1
     show player 12f
-    player_name "... Tepat."
-
+    player_name "... Exactly."
     show player 90f
     show clyde 2
-    clyde "Cih, terserah, sobat."
-
-    clyde "Datang atau tidak datang. Tidak masalah bagi saya!"
-
+    clyde "Tch, whatever, buddy."
+    clyde "Come or don't come. It don't matter none to me!"
     show clyde 26
-    clyde "... Tapi jika kamu datang, sebaiknya {b}temui aku di trailer, malam ini{/b}."
-
-    clyde "Anda mengerti?"
-
+    clyde "... But iffin' you are comin', you'd best {b}meet me at the trailer, tonight{/b}."
+    clyde "You got that?"
     show clyde 1
     show player 12f
-    player_name "Ya, saya mengerti."
-
-    player_name "Sampai jumpa {b}malam ini di trailer Roxxy{/b}."
-
+    player_name "Yeah, I got it."
+    player_name "I'll see you {b}tonight at Roxxy's trailer{/b}."
     hide player
     hide clyde
     with dissolve
@@ -1148,20 +847,15 @@ label button_clyde_roxxy_meeting_buyer:
     scene expression player.location.background_blur
     show clyde 1 at left
     show player 12f at right
-    player_name "Apakah kita masih bisa menjual sabu itu?"
-
+    player_name "We still good to sell that meth?"
     show player 90f
     show clyde 4 with dissolve
-    clyde "Tentu 'tidak."
-
-    clyde "Cukup {b}berada di sini malam ini{/b} jika rencana Anda adalah ikut serta."
-
+    clyde "Sure 'nuff."
+    clyde "Just {b}be here tonight{/b} iffin' your plan is to tag along."
     show clyde 3
     show player 12f
-    player_name "Ya, saya mengerti."
-
-    player_name "Sampai jumpa {b}malam ini{/b}."
-
+    player_name "Yeah, I got it."
+    player_name "I'll see you {b}tonight{/b}."
     hide player
     hide clyde
     with dissolve
@@ -1171,67 +865,52 @@ label button_clyde_roxxy_meeting_buyer_dark:
     scene expression player.location.background_blur
     show clyde 1 at left
     show player 12f at right
-    player_name "Anda siap berangkat?"
-
+    player_name "You ready to go?"
     show player 90f
     show clyde 1
     clyde "..."
     show clyde 2
-    clyde "Kamu memakainya?"
-
+    clyde "You wearing dat?"
     show clyde 1
     show player 5f
     player_name "..."
     show player 10f
-    player_name "Apa yang salah dengan apa yang aku kenakan?"
-
+    player_name "What's wrong with what I'm wearing?"
     show player 5f
     show clyde 2
-    clyde "Eugh... Entahlah, sobat. Kamu terlihat sangat mencurigakan..."
-
-    clyde "Aku yakin, aku tidak akan membeli narkoba dari orang yang mirip denganmu."
-
+    clyde "Eugh... I dunno, buddy. You look awfully suspicious..."
+    clyde "I sure as heck wouldn't buy no drugs off somebody lookin' like you."
     show clyde 1
     show player 10f
-    player_name "Yah, aku tidak membawa pakaian lain..."
-
+    player_name "Well, I didn't bring any other clothes..."
     show player 5f
     clyde "..."
     show clyde 2
-    clyde "Tunggu sebentar. Aku punya sesuatu untuk kamu pakai!"
-
+    clyde "Hold on a second. I gots somethin' fer you to wear!"
     hide clyde with dissolve
     show player 12f
-    player_name "... Ini pasti menarik."
-
+    player_name "... This should be interesting."
     scene black with fade
     pause
     scene park_bench
     show clyde 4 at left
     with dissolve
-    clyde "Ayo sekarang sobat..."
-
-    clyde "Kamu akan membuat kami terlambat!"
-
+    clyde "C'mon now, buddy..."
+    clyde "You gon make us late!"
     show clyde 3
     show player 12f at right
     show player_outfit bb 638ef at Position (xpos=866)
     with dissolve
-    player_name "Aku tidak percaya aku membiarkanmu membujukku untuk memakai ini..."
-
-    player_name "Saya merasa konyol!"
-
+    player_name "I can't believe I let you talk me into wearing this..."
+    player_name "I feel ridiculous!"
     show player 90f
     show clyde 4
-    clyde "Psh, jangan konyol."
-
-    clyde "Kamu terlihat seperti aslinya!"
-
+    clyde "Psh, dun be silly."
+    clyde "You look like the real deal!"
     show clyde 3
     player_name "..."
     show clyde 4
-    clyde "Pembeli akan tiba di sini kapan saja."
-
+    clyde "The buyer should be here any second now."
     hide clyde
     hide player
     hide player_outfit
@@ -1244,140 +923,102 @@ label button_clyde_cletus_introduce:
     show clyde_hat at left
     with dissolve
     player_name "{b}Clyde{/b}?!"
-
     show player 5f
     show clyde 22 with dissolve
     clyde "!!!"
     show clyde 21
     show player 10f
-    player_name "Kapan kamu kembali ke kota?!"
-
+    player_name "When did you get back into town?!"
     show player 5f
     show clyde 2
-    clyde "Ehh, maaf kawan."
-
-    clyde "Kamu salah orang..."
-
+    clyde "Ehh, sorry buddy."
+    clyde "You got the wrong feller..."
     show clyde 1
     show player 10f
-    player_name "Hah?"
-
+    player_name "Huh?"
     show player 5f
     show clyde 4 with dissolve
-    clyde "Namanya {b}Cletus{/b}!"
-
-    clyde "Senang bertemu denganmu!"
-
+    clyde "Name's {b}Cletus{/b}!"
+    clyde "Pleasure to meet ya!"
     show clyde 3
     player_name "..."
     show player 12f
-    player_name "Apa yang kamu bicarakan, {b}Clyde{/b}?"
-
+    player_name "What are you talking about, {b}Clyde{/b}?"
     show player 5f
     show clyde 2 with dissolve
-    clyde "{i}*Ahem*{/i} Sekali lagi..."
-
-    clyde "Namanya bukan {b}Clyde{/b}... Ini {b}Cletus{/b}."
-
+    clyde "{i}*Ahem*{/i} Again..."
+    clyde "The name's not {b}Clyde{/b}... It's {b}Cletus{/b}."
     show clyde 1
     show player 12f
-    player_name "... Tapi kamu terlihat seperti sepupu {b}Roxxy{/b} {b}Clyde{/b}."
-
+    player_name "... But you look just like {b}Roxxy{/b}'s cousin {b}Clyde{/b}."
     show player 5f
     show clyde 2
-    clyde "Hmm, baiklah, maaf. Saya tidak kenal orang {b}Clyde{/b} ini."
-
+    clyde "Hmm, well, sorry. I don't know this {b}Clyde{/b} person."
     show clyde 9 with dissolve
-    clyde "Dia benar-benar terdengar seperti pria jalang yang tampan!"
-
+    clyde "He sure does sound like a handsome son bitch though!"
     show clyde 3 with dissolve
     player_name "..."
     show player 17f
-    player_name "Apakah kamu bercanda denganku sekarang?!"
-
+    player_name "Are you joking with me right now?!"
     show player 13f
     show clyde 4
-    clyde "Izinkan saya menanyakan ini kepada Anda..."
-
-    clyde "Apakah {b}Clyde{/b} ini memakai topi?"
-
+    clyde "Let me ask you this..."
+    clyde "Did this {b}Clyde{/b} wear a hat?"
     show clyde 3
     show player 10f
-    player_name "... Tidak."
-
+    player_name "... No."
     show player 5f
     show clyde 4
-    clyde "Baiklah, ini dia!"
-
-    clyde "Seperti yang bisa kamu lihat... {b}Cletus{/b} tidak pernah pergi ke mana pun, tanpa topi terpercayanya!"
-
+    clyde "Well, then there ya go!"
+    clyde "As you can see... {b}Cletus{/b} never goes nowhere, without his trusty hat!"
     show clyde 3
     player_name "..."
     show player 25f
-    player_name "Ini aneh."
-
+    player_name "This is weird."
     show player 12f
-    player_name "aku akan pergi."
-
+    player_name "I'm gonna go."
     show player 5f
     show clyde 4
-    clyde "Baiklah. Senang bertemu denganmu, {b}[firstname]{/b}!"
-
+    clyde "Alright. Well, it was nice meetin' ya, {b}[firstname]{/b}!"
     show clyde 3
     player_name "..."
     show player 92f
-    player_name "Aku tidak memberitahumu namaku!"
-
+    player_name "I didn't tell you my name!"
     show player 91f
     show clyde 22
     clyde "!!!" with hpunch
-    clyde "Oh, salah..."
-
-    clyde "...Yah, aku..."
-
+    clyde "Oh, err..."
+    clyde "... Well, I..."
     show clyde 11 with dissolve
-    clyde "Umm... Telepati!"
-
+    clyde "Umm... Telepathy!"
     show clyde 12
     show player 10f
-    player_name "Hah?!"
-
+    player_name "Huh?!"
     show player 5f
     show clyde 11
-    clyde "Saya, {b}Cletus{/b}... Saya seorang telepatis."
-
+    clyde "I, {b}Cletus{/b}... Am a telepath."
     show clyde 4 with dissolve
-    clyde "... Dan aku tidak membaca pikiranmu dengan peluru pikiran mah!"
-
+    clyde "... And I dun read yer thoughts with mah mind bullets!"
     show clyde 3
     show player 10f
-    player_name "Peluru pikiran?"
-
+    player_name "Mind bullets?"
     show player 5f
     show clyde 9 with dissolve
-    clyde "Itu benar, sobat!"
-
+    clyde "Dat's right, buddy!"
     show clyde 4 with dissolve
-    clyde "Jadi jangan beritahu orang-orang bahwa aku ada di sini."
-
-    clyde "Karena aku akan tahu..."
-
-    clyde "Apalagi kalau orang-orang itu adalah orang yang tidak tahu malu."
-
+    clyde "So don't go tellin' people that I'm here."
+    clyde "'Cause I'll know..."
+    clyde "Especially, if those people are the fuzz."
     show clyde 3
     player_name "..."
     show player 25f
-    player_name "saya..."
-
-    player_name "... Hanya..."
-
-    player_name "... Sampai jumpa."
-
+    player_name "I..."
+    player_name "... Just..."
+    player_name "... Bye."
     hide player with dissolve
     pause
     show clyde 4
-    clyde "Sampai jumpa, sobat!"
-
+    clyde "So long, buddy!"
     hide clyde
     hide clyde_hat
     with dissolve
@@ -1387,49 +1028,37 @@ label button_clyde_intro_0:
     show clyde 2 at left
     show player 5f at right
     with dissolve
-    clyde "Bolehkah aku membantumu melakukan sesuatu?"
-
+    clyde "Can I help you with somethin'?"
     show clyde 1
     show player 10f
-    player_name "Eh, bukan?"
-
+    player_name "Uhh, no?"
     show player 5f
     show clyde 22
-    clyde "Ya ampun. Apakah Anda salah satu dari mereka dari pintu ke pintu, Yesus mengasihi kalian?"
-
+    clyde "Oh, man. Are you one of dem door to door, Jesus loves ya, people?"
     show clyde 21
     show player 12f
-    player_name "Apa?! TIDAK!"
-
+    player_name "What?! No!"
     show player 5f
     show clyde 26
-    clyde "{i}*Terkesiap*{/i} Apakah kamu seorang polisi?!"
-
-    clyde "Anda harus memberi tahu saya sekarang, itu hukumnya!"
-
+    clyde "{i}*Gasp*{/i} Are you a cop?!"
+    clyde "You have to tell me now, it's the law!"
     show clyde 25
     show player 12f
-    player_name "Tidak, kawan... Kita baru bertemu kemarin malam!"
-
+    player_name "No, man... We met just the other night!"
     show player 5f
     clyde "..."
     show player 10f
-    player_name "Saya sedang membantu {b}Roxxy{/b} mengerjakan pekerjaan rumahnya?"
-
+    player_name "I was helping {b}Roxxy{/b} with her homework?"
     show player 5f
     show clyde 4 with dissolve
-    clyde "Oh, sial ya!"
-
-    clyde "Pacar barumu {b}Roxanne{/b}!"
-
+    clyde "Oh, shit yeah!"
+    clyde "Yer {b}Roxanne{/b}'s new boyfriend!"
     show clyde 3
     show player 10f
-    player_name "Tidak, kami hanya teman-"
-
+    player_name "No, we're just fr-"
     show player 5f
     show clyde 4
-    clyde "Bagaimana kabarnya, saudara?!"
-
+    clyde "How's it goin', brother?!"
     show clyde 3
     player_name "..."
     return
@@ -1438,16 +1067,13 @@ label button_clyde_intro_1:
     show clyde 4 at left
     show player 5f at right
     with dissolve
-    clyde "Ada apa, saudara?"
-
+    clyde "What's up, brother?"
     show clyde 3
     show player 14f
-    player_name "Oh, hai {b}Clyde{/b}..."
-
+    player_name "Oh, hey {b}Clyde{/b}..."
     show player 5f
     show clyde 4
-    clyde "Apa yang kamu lakukan di sini?"
-
+    clyde "Whatchu doin' out here?"
     show clyde 3
     return
 
@@ -1456,140 +1082,104 @@ label button_cletus_intro:
     show clyde 3 at left
     show clyde_hat at left
     with dissolve
-    player_name "Jadi, {b}Cletus{/b}, kan?"
-
+    player_name "So, {b}Cletus{/b}, right?"
     show player 5f
     show clyde 9 with dissolve
-    clyde "Itu benar, sobat!"
-
+    clyde "Dat's right, buddy!"
     show clyde 4 with dissolve
-    clyde "Apa yang bisa aku lakukan ya, Fer?"
-
+    clyde "What can I do ya fer?"
     show clyde 3
     return
 
 label button_clyde_how_are_you:
     show player 37f with dissolve
-    player_name "{i}*Huh*{/i} Saya baik-baik saja."
-
-    player_name "Apa kabarmu?"
-
+    player_name "{i}*Sigh*{/i} I'm good."
+    player_name "How are you doing?"
     show player 5f with dissolve
     show clyde 9 with dissolve
-    clyde "Lebih tepatnya, siapa yang tidak aku lakukan!"
-
-    clyde "Hahah, tahu maksudku, saudara?"
-
+    clyde "More like, who ain't I doin'!"
+    clyde "Hahah, know what I mean, brother?"
     show clyde 3 with dissolve
     show player 24f
     player_name "..."
     show clyde 11 with dissolve
-    clyde "Karena aku sering berhubungan seks... Dengan para wanita..."
-
-    clyde "{i}*Ahem*{/i} Wanita manusia."
-
+    clyde "'Cause I'm havin' all the sex... With the ladies..."
+    clyde "{i}*Ahem*{/i} Human ladies."
     show clyde 12
     show player 12f
-    player_name "Ya, saya mengerti, {b}Clyde{/b}..."
-
+    player_name "Yeah, I get it, {b}Clyde{/b}..."
     show clyde 9 with dissolve
-    clyde "Heh, ya, benar!"
-
+    clyde "Heh, yeah you do!"
     show clyde 3 with dissolve
     return
 
 label button_clyde_where_are_you_from:
     show player 10f
-    player_name "Saya belum pernah mendengar orang berbicara seperti Anda, {b}Clyde{/b}..."
-
+    player_name "I've never heard anybody talk the way you do, {b}Clyde{/b}..."
     show player 12f
-    player_name "Ngomong-ngomong, dari mana asalmu?"
-
+    player_name "Where are you from anyways?"
     show player 5f
     show clyde 4
-    clyde "Itu karena kalian semua orang kota jadi bicara aneh!"
-
-    clyde "Sambil berteriak, kita semua berbicara seperti ini..."
-
+    clyde "Dat's 'cause all you city folk be talkin' weird!"
+    clyde "Down in the holler, we all talk like dis..."
     show clyde 3
     show player 10f
-    player_name "... Teriakannya?"
-
+    player_name "... The holler?"
     show player 5f
     show clyde 4
-    clyde "Ya."
-
+    clyde "Yeah."
     show clyde 3
     show player 10f
-    player_name "Apa itu?"
-
+    player_name "What is that?"
     show player 5f
     show clyde 4
-    clyde "Uhh, tempat aku dibesarkan. Duh!"
-
+    clyde "Uhh, where I growed up. Duh!"
     show clyde 3
     show player 11f
     player_name "..."
     show clyde 4
-    clyde "Hanya beberapa kabupaten di utara dari sini."
-
-    clyde "Di atas bukit."
-
+    clyde "It's just a few counties north of here."
+    clyde "Up in the hills."
     show clyde 3
     show player 10f
-    player_name "Kupikir di utara semuanya hutan?"
-
+    player_name "I thought it was all woods up north?"
     show player 5f
     show clyde 4
-    clyde "Ya, sangat banyak..."
-
+    clyde "Yeah, perty much..."
     show clyde 3
     show player 12f
-    player_name "Orang-orang tinggal di atas sana?"
-
+    player_name "People live up there?"
     show player 5f
     show clyde 4
-    clyde "Psh, sebagian besar keluargaku masih tinggal di sana."
-
-    clyde "Kupikir aku akan pindah ke sini bersama {b}Bibi Crystal{/b} untuk membaca mantra."
-
-    clyde "Berikan kehidupan kota yang menyenangkan."
-
+    clyde "Psh, most my family still livin' dere."
+    clyde "I thought I'd move up here with {b}Auntie Crystal{/b} fer a spell."
+    clyde "Give city life a fair shake."
     show clyde 3
     show player 10f
-    player_name "Bagaimana hasilnya?"
-
+    player_name "How's that working out?"
     show player 5f
     show clyde 2 with dissolve
-    clyde "Ehh, ada naik turunnya."
-
-    clyde "Aku rindu minuman keras dari rumah dan semua rumput liar."
-
+    clyde "Ehh, it's got its ups and downs."
+    clyde "I miss the moonshine from back home and all the weed."
     show clyde 1
     player_name "..."
     show clyde 4 with dissolve
-    clyde "... Tapi aku sedang masak-masak di sini!"
-
+    clyde "... But I'm makin' a killin' cookin' up here!"
     show clyde 22 with dissolve
     clyde "!!!"
     show clyde 21
     show player 12f
-    player_name "Masak apa?"
-
+    player_name "What are you cooking?"
     show player 5f
     show clyde 22
     clyde "Ehh..."
-
     show clyde 21
     clyde "..."
     show clyde 22
-    clyde "Ayam!"
-
+    clyde "Chicken!"
     show clyde 4 with dissolve
-    clyde "Hehe, ya! Aku sedang memasak banyak ayam goreng!"
-
-    clyde "Kalian warga kota tidak pernah merasa cukup..."
-
+    clyde "Heh, yeah! I'm cookin' buttloads of fried chicken!"
+    clyde "You city folk just can't get enough..."
     show clyde 3
     show player 4f with dissolve
     player_name "..."
@@ -1599,16 +1189,12 @@ label button_clyde_where_are_you_from:
 
 label button_clyde_see_ya:
     show player 36f with dissolve
-    player_name "aku harus pergi..."
-
+    player_name "I should get going..."
     show player 5f with dissolve
     show clyde 4
-    clyde "Ya baiklah."
-
-    clyde "Teruslah bergoyang, saudara!"
-
+    clyde "Yeah, okay."
+    clyde "Keep on rockin', brother!"
     clyde "Wooo!!"
-
     show clyde 3
     show player 30f
     player_name "..."
@@ -1619,61 +1205,44 @@ label button_clyde_see_ya:
 
 label button_clyde_whats_going_on:
     show player 12f
-    player_name "Apa yang terjadi di sana?"
-
+    player_name "What have you got going on in there?"
     show player 5f
     show clyde 2 with dissolve
-    clyde "Eh, maaf saudaraku."
-
-    clyde "Gubuk ini dilarang keras!"
-
+    clyde "Ehh, sorry brother."
+    clyde "The shack is strictly off-limits!"
     show clyde 9 with dissolve
-    clyde "Kecuali kamu punya bagian wanita?!"
-
+    clyde "Unless you got lady parts?!"
     show clyde 3 with dissolve
     show player 30f
-    player_name "... Tidak."
-
+    player_name "... Nope."
     show player 5f
     show clyde 4
-    clyde "Heh, baiklah, ingat ini... Kalau gubuknya sedang asik, sebaiknya jangan diketuk!"
-
+    clyde "Heh, well, remember this... If the shack is a rockin', best not be knockin'!"
     show clyde 9 with dissolve
-    clyde "Tahu maksudku?!"
-
+    clyde "Know what I mean?!"
     show clyde 3
     show player 401f
-    player_name "... Ya. Aku harap aku tidak melakukannya..."
-
+    player_name "... Yeah. I wish I didn't though..."
     show player 403f
     return
 
 label button_clyde_nice_tractor:
     show player 14f
-    player_name "Traktor yang bagus."
-
+    player_name "Nice tractor."
     show player 13f
     show clyde 4
-    clyde "Oh ya!"
-
-    clyde "Itu adalah {b}Big Bertha{/b}!"
-
-    clyde "Bukankah dia cantik?"
-
+    clyde "Oh, yeah!"
+    clyde "Dat dere is {b}Big Bertha{/b}!"
+    clyde "Ain't she a beauty?"
     show clyde 3
     player_name "..."
     show clyde 4
-    clyde "Saya sendiri yang membangunnya dari sisa."
-
-    clyde "31,2 tenaga kuda, 2500 rpm, tangki 8,5 galon..."
-
-    clyde "... Dan lihat saja hasil akhir berwarna merah delima itu!"
-
-    clyde "Hmm! Dia yang paling seksi di kendaraan roda empat!"
-
+    clyde "I built her up from scraps, myself."
+    clyde "31.2 horsepower, 2500 rpm, 8.5 gallon tank..."
+    clyde "... And just look at that ruby red finish!"
+    clyde "Mmm! She's the sexiest thing on four wheels!"
     show clyde 9 with dissolve
-    clyde "Tahu maksudku?"
-
+    clyde "Know what I mean?"
     show clyde 3 with dissolve
     show player 5f
     player_name "..."
@@ -1681,16 +1250,12 @@ label button_clyde_nice_tractor:
 
 label button_clyde_nevermind:
     show player 10f
-    player_name "Sebenarnya, sudahlah."
-
-    player_name "... Mungkin lain kali?"
-
+    player_name "Actually, never mind."
+    player_name "... Maybe some other time?"
     show player 5f
     show clyde 4
-    clyde "Psh, ya, saudara!"
-
-    clyde "Anda tahu di mana menemukan saya."
-
+    clyde "Psh, hell yeah, brother!"
+    clyde "You know where to find me."
     hide player
     hide clyde
     hide clyde_hat
@@ -1699,63 +1264,46 @@ label button_clyde_nevermind:
 
 label button_clyde_know_youre_clyde:
     show player 15f
-    player_name "Ayo, {b}Clyde{/b}! Aku tahu itu kamu!"
-
+    player_name "C'mon, {b}Clyde{/b}! I know it's you!"
     show player 16f
     show clyde 4
-    clyde "Aku tidak tahu apa yang kamu bicarakan..."
-
+    clyde "I don't know what yer talkin' 'bout..."
     show clyde 3
     show player 15f
-    player_name "Ini bodoh, aku tidak akan memberitahu siapa pun kamu kembali..."
-
+    player_name "This is stupid, I'm not gonna tell anybody you're back..."
     show player 16f
     show clyde 4
-    clyde "Apa yang sedang merokok, kawan?"
-
+    clyde "Whatchu been smokin', buddy?"
     show player 428f
-    clyde "Namanya {b}Cletus{/b} dan ini pertama kalinya saya berada di sini."
-
-    clyde "Pernah."
-
+    clyde "The names {b}Cletus{/b} and this is my first time being here."
+    clyde "Ever."
     show clyde 3
     show player 403f
     player_name "..."
     show player 402f with dissolve
-    player_name "Masih tertulis {b}Clyde{/b} di atas kotak teks Anda!"
-
+    player_name "It still says {b}Clyde{/b} above your text box!"
     show player 403f
     show clyde 2 with dissolve
-    clyde "Hai sekarang!"
-
-    clyde "Jangan merusak tembok keempat!"
-
-    clyde "Itu curang!"
-
-    clyde "Namanya {b}Cletus{/b}!!!"
-
+    clyde "Hey now!"
+    clyde "Don't go breakin' the fourth wall!"
+    clyde "That's cheatin'!"
+    clyde "The name is {b}Cletus{/b}!!!"
     show clyde 26
-    clyde "Katakan!"
-
+    clyde "Say it!"
     show clyde 25
     show player 90f
     player_name "..."
     show clyde 2
-    clyde "Ayolah, kamu tahu kamu ingin mengatakannya..."
-
+    clyde "C'mon, you know you wanna say it..."
     show clyde 1
     show player 24f
-    player_name "{i}*Huh*{/i}"
-
+    player_name "{i}*Sigh*{/i}"
     show player 25f
     player_name "{b}Cletus{/b}."
-
     show player 24f
     show clyde 4 with dissolve
-    clyde "Ini dia!"
-
-    clyde "Itu tidak terlalu sulit sekarang, bukan?"
-
+    clyde "There ya go!"
+    clyde "That weren't so hard now, was it?"
     show clyde 3
     player_name "..."
     return

@@ -13,13 +13,9 @@ label scene_josie_blowjob:
     if _return:
         call scene_josie_blowjob.outside
     anon "Haah... Haah..."
-
-    josephine "hehe!"
-
-    anon "Itu luar biasa!"
-
-    josephine b_sex_bj_lick o_empty "Mmm, kamu rasanya enak."
-
+    josephine "Hehe!"
+    anon "That was incredible!"
+    josephine b_sex_bj_lick o_empty "Mmm, you taste good."
     pause
     return
 
@@ -74,34 +70,24 @@ label scene_josie_blowjob.loop:
 label scene_josie_blowjob.dialogue:
     if animcounter == 0 and randomizer() > 75:
         anon "AAHHHPP!!!{p=1}{nw}"
-
-        josephine "Hmm.{p=1}{nw}"
-
+        josephine "Mmm.{p=1}{nw}"
     if animcounter == 1 and randomizer() > 75:
-        anon "Sialan!{p=1}{nw}"
-
+        anon "Holy crap!{p=1}{nw}"
     elif animcounter == 1 and randomizer() > 75:
-        anon "Oh ya.{p=1}{nw}"
-
+        anon "Oh, yeah.{p=1}{nw}"
     if animcounter == 2 and randomizer() > 75:
-        anon "Bibir itu ajaib...{p=2}{nw}"
-
-        josephine "Hmm.{p=1}{nw}"
-
+        anon "Those lips are magical...{p=2}{nw}"
+        josephine "Mmm.{p=1}{nw}"
     elif animcounter == 2 and randomizer() > 75:
-        anon "Kamu luar biasa {b}Josie{/b}!{p=2}{nw}"
-
+        anon "You're incredible {b}Josie{/b}!{p=2}{nw}"
         josephine "{i}*Sluuuuuuurp*{/i}{p=1}{nw}"
-
     return
 
 
 label scene_josie_blowjob.outside:
-    anon "aku akan keluar!"
-
+    anon "I'm gonna cum!"
     pause
-    anon "{b}Josie{/b}, aku akan-"
-
+    anon "{b}Josie{/b}, I'm gonna-"
     pause
     hide animation
     show josephine b_sex_bj_talk f_cum
@@ -119,24 +105,18 @@ label scene_josie_blowjob.repeat:
     scene location_dealership_indoor_sex_bj
     call scene_josie_blowjob.ready
     with fade
-    josephine "Kamu tahu, kamu beruntung aku menyukaimu..."
-
+    josephine "You know, you're lucky I like you..."
     pause
-    josephine "... Dan sangat membosankan di dealer ini!"
-
-    anon "Amin untuk itu!"
-
+    josephine "... And that it's so freaking boring in this dealership!"
+    anon "Amen to that!"
     call scene_josie_blowjob.animate
     with dissolve
     call scene_josie_blowjob.loop
     if _return:
         call scene_josie_blowjob.outside
-    josephine "Anda suka cumming di wajah saya, bukan?"
-
-    anon "Anda yakin saya yakin!"
-
-    josephine "hehe!"
-
+    josephine "You like cumming on my face, don't you?"
+    anon "You bet I do!"
+    josephine "Hehe!"
     show josephine b_sex_bj_lick o_empty with dissolve
     pause
     return

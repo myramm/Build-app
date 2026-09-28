@@ -1,31 +1,25 @@
 label consuela_button_floor:
-    consuela "Halo, ayah."
-
-    anon "Hai, {b}Consuela{/b}."
-
+    consuela "Hola, papi."
+    anon "Hey, {b}Consuela{/b}."
 
     menu consuela_button_floor.choice:
-        "Biarkan saya membantu Anda berdiri.":
+        "Let me help you up.":
             jump consuela_button_floor.help
-        "Seks.":
+        "Sex.":
 
             jump consuela_button_floor.sex
-        "Sudahlah.":
+        "Never mind.":
 
             pass
 
-    anon f_normal "Sudahlah."
-
-    consuela "saya membersihkan."
-
-    anon @ a_point "Yup, kamu bersih-bersih."
-
+    anon f_normal "Never mind."
+    consuela "I clean."
+    anon @ a_point "Yup, you clean."
     return
 
 
 label consuela_button_floor.help:
-    anon "Biarkan aku membantumu berdiri..."
-
+    anon "Let me help you up..."
 
     call consuela_button_stage
     hide consuela
@@ -44,22 +38,15 @@ label consuela_button_floor.help:
 
 
 label consuela_button_floor.sex:
-    anon "Aku bisa melihatmu membersihkan lantai itu sepanjang hari..."
-
-    consuela f_smirk "kamu suka?"
-
-    anon "Ya, sangat banyak!"
-
+    anon "I could watch you clean that floor all day..."
+    consuela f_smirk "You like?"
+    anon "Yes, very much!"
     pause
-    consuela "Anda ingin berhubungan seks sekarang?"
-
-    anon "Ya."
-
-    consuela "hehe!"
-
+    consuela "You want make sex now?"
+    anon "Si."
+    consuela "Hehe!"
     consuela "Take off your clothes." (show_native="Quitate la ropa.")
-    anon "Aku ingin kamu seperti ini!"
-
+    anon "I want you just like this!"
     consuela f_confused "You want to fuck me on the floor?" (show_native="¿Quieres cogerme en el piso?")
 
     call scene_consuela_sex_floor.repeat from consuela_button_floor.resume
@@ -80,12 +67,9 @@ label consuela_button_floor.sex_anal_virgin:
     show consuela f_smirk a_hips
     with fade
     consuela "I had no idea!" (show_native="¡No tenía ni idea!")
-    anon "Bagus?"
-
-    consuela "Ya, {b}Pak [firstname]{/b}."
-
-    consuela "Bagus."
-
+    anon "Good?"
+    consuela "Si, {b}Mister [firstname]{/b}."
+    consuela "Good."
     show consuela b_kiss
     hide anon
     with dissolve
@@ -97,34 +81,21 @@ label consuela_button_floor.sex_anal_virgin:
     with dissolve
     consuela "We have to do that again!" (show_native="¡Tenemos que hacer eso otra vez!")
     anon @ -m_talk "Hmm?"
-
-    consuela "Dubur."
-
-    consuela "Anda melakukannya untuk saya?"
-
-    anon @ a_behind_head "Uhh, tentu saja..."
-
-    consuela "Anak baik."
-
-    consuela "Aku suka analnya."
-
-    anon "Heh, aku senang kita mencobanya."
-
-    consuela "Ya, senang."
-
+    consuela "Anal."
+    consuela "You do for me?"
+    anon @ a_behind_head "Uhh, sure..."
+    consuela "Good boy."
+    consuela "I like the anal."
+    anon "Heh, I'm glad we tried it then."
+    consuela "Si, glad."
     pause
-    consuela "Oke, aku bersih-bersih sekarang."
-
-    anon "T-tentu saja."
-
+    consuela "Okay, I clean now."
+    anon "S-sure."
     hide consuela with dissolve
     pause
-    anon f_grin @ -m_talk "(Wah!)"
-
-    anon @ -m_talk "( {b}Consuela{/b} suka anal. )"
-
-    anon f_laugh "(Pembantu terbaik yang pernah ada!)"
-
+    anon f_grin @ -m_talk "( Wow! )"
+    anon @ -m_talk "( {b}Consuela{/b} likes anal. )"
+    anon f_laugh "( Best maid ever! )"
     hide anon with dissolve
 
     $ game.timer.tick()
@@ -135,14 +106,10 @@ label consuela_button_floor.sex_anal:
     show consuela f_smirk a_hips
     with fade
     consuela "Heh, I can barely stand..." (show_native="Heh, apenas puedo soportar...")
-    anon "Bagaimana tadi?"
-
-    consuela "Bagus, ayah."
-
-    consuela "Aku cum keras."
-
-    anon "Ya, aku juga."
-
+    anon "How was that?"
+    consuela "Good, papi."
+    consuela "I cum hard."
+    anon "Yeah, me too."
     show consuela b_kiss
     hide anon
     with dissolve
@@ -151,14 +118,10 @@ label consuela_button_floor.sex_anal:
     show consuela b_magic:
         xoffset -200
     with dissolve
-    consuela "Oke, aku bersih-bersih sekarang."
-
-    anon "Baiklah."
-
-    anon "Sampai jumpa nanti."
-
-    consuela "Ya, nanti."
-
+    consuela "Okay, I clean now."
+    anon "Alright."
+    anon "I'll see you later."
+    consuela "Si, later."
     hide anon with dissolve
 
     $ game.timer.tick()

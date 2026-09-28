@@ -53,118 +53,118 @@ label diane_button_dialogue:
 
     if M_diane.pregnancy.gave_birth:
         menu dia_baby_default_dialogue_options:
-            "Bagaimana kabarnya?" if M_diane.pregnancy.baby_gender == "boy":
+            "How's he doing?" if M_diane.pregnancy.baby_gender == "boy":
                 call expression game.dialog_select("dianes_dialogue_hows_baby_doing_boy")
                 jump dia_baby_default_dialogue_options
 
-            "Bagaimana kabarnya?" if M_diane.pregnancy.baby_gender == "twins":
+            "How are they doing?" if M_diane.pregnancy.baby_gender == "twins":
                 call expression game.dialog_select("dianes_dialogue_hows_baby_doing_twins")
                 jump dia_baby_default_dialogue_options
 
-            "Bagaimana kabarnya?" if M_diane.pregnancy.baby_gender == "girl":
+            "How's she doing?" if M_diane.pregnancy.baby_gender == "girl":
                 call expression game.dialog_select("dianes_dialogue_hows_baby_doing_girl")
                 jump dia_baby_default_dialogue_options
-            "Ada yang bisa kuberikan padamu?":
+            "Can I get you anything?":
 
                 call expression game.dialog_select("dianes_dialogue_get_anything_baby")
                 jump dia_baby_default_dialogue_options
 
-            "Siap memompa?" if M_diane.finished_state(S_diane_return_production_book) and L_diane_barn_interior.is_here(M_diane):
+            "Ready to pump?" if M_diane.finished_state(S_diane_return_production_book) and L_diane_barn_interior.is_here(M_diane):
                 call expression game.dialog_select("dianes_dialogue_ready_to_pump")
                 jump milking_game_pre
-            "Aku akan meninggalkan kalian.":
+            "I'll leave you guys be.":
 
                 call expression game.dialog_select("dianes_dialogue_baby_leave")
         $ game.main()
 
     menu dia_default_dialogue_options:
-        "Apa yang sedang kamu lakukan?" if M_diane.between_states(S_dia01_init, S_diane_work_on_garden):
+        "What have you been up to?" if M_diane.between_states(S_dia01_init, S_diane_work_on_garden):
             call expression game.dialog_select("dianes_dialogue_what_have_you_been_up_to")
             jump dia_default_dialogue_options
 
-        "Bagaimana tamannya?" if M_diane.between_states(S_dia01_init, S_diane_work_on_garden):
+        "How's the garden?" if M_diane.between_states(S_dia01_init, S_diane_work_on_garden):
             call expression game.dialog_select("dianes_dialogue_hows_the_garden")
             jump dia_default_dialogue_options
 
-        "Tentang {b}[deb_name]{/b}." if M_diane.between_states(S_dia01_init, S_diane_work_on_garden):
+        "About {b}[deb_name]{/b}." if M_diane.between_states(S_dia01_init, S_diane_work_on_garden):
             call expression game.dialog_select("dianes_dialogue_about_debname")
             jump dia_default_dialogue_options
 
-        "Bagaimana tamannya?" if M_diane.between_states(S_diane_get_augmentation, S_diane_milking_help):
+        "How's the garden?" if M_diane.between_states(S_diane_get_augmentation, S_diane_milking_help):
             call expression game.dialog_select("dianes_dialogue_hows_the_garden_2")
             jump dia_default_dialogue_options
 
-        "Bagaimana bisnisnya?" if M_diane.pregnancy.number_of_babies>0:
+        "How's business?" if M_diane.pregnancy.number_of_babies>0:
             call expression game.dialog_select("dianes_dialogue_hows_business")
             jump dia_default_dialogue_options
 
-        "Tentang {b}Veronica{/b}." if M_diane.between_states(S_diane_get_augmentation, S_diane_milking_help):
+        "About {b}Veronica{/b}." if M_diane.between_states(S_diane_get_augmentation, S_diane_milking_help):
             call expression game.dialog_select("dianes_dialogue_about_veronica")
             jump dia_default_dialogue_options
 
-        "Apakah Anda pernah berbicara dengan {b}[deb_name]{/b} baru-baru ini?" if M_diane.between_states(S_diane_get_augmentation, S_diane_milking_help):
+        "Have you spoken with {b}[deb_name]{/b} recently?" if M_diane.between_states(S_diane_get_augmentation, S_diane_milking_help):
             call expression game.dialog_select("dianes_dialogue_have_you_spoken_with_debname")
             jump dia_default_dialogue_options
 
-        "Merasa lebih baik?" if M_diane.between_states(S_diane_debbie_evening_visit, S_diane_couch_crashing):
+        "Feeling better?" if M_diane.between_states(S_diane_debbie_evening_visit, S_diane_couch_crashing):
             call expression game.dialog_select("dianes_dialogue_feeling_better")
             jump dia_default_dialogue_options
 
-        "Saya sangat suka bekerja untuk Anda." if M_diane.between_states(S_diane_debbie_evening_visit, S_diane_return_outfit_package) and L_diane_barn_interior.is_here(M_diane):
+        "I really like working for you." if M_diane.between_states(S_diane_debbie_evening_visit, S_diane_return_outfit_package) and L_diane_barn_interior.is_here(M_diane):
             call expression game.dialog_select("dianes_dialogue_like_working_for_you")
             jump dia_default_dialogue_options
 
-        "Bagaimana sofanya?" if M_diane.between_states(S_diane_barn_news, S_diane_return_outfit_package) and L_diane_barn_interior.is_here(M_diane):
+        "How's the couch?" if M_diane.between_states(S_diane_barn_news, S_diane_return_outfit_package) and L_diane_barn_interior.is_here(M_diane):
             call expression game.dialog_select("dianes_dialogue_hows_the_couch")
             jump dia_default_dialogue_options
 
-        "Lagi sibuk apa?" if M_diane.between_states(S_diane_barn_news, S_diane_return_outfit_package) and game.timer.is_dark():
+        "What are you up to?" if M_diane.between_states(S_diane_barn_news, S_diane_return_outfit_package) and game.timer.is_dark():
             call expression game.dialog_select("dianes_dialogue_what_are_you_up_to")
             jump dia_default_dialogue_options
 
-        "Dimana {b}[deb_name]{/b}?" if M_diane.between_states(S_diane_barn_news, S_diane_return_outfit_package) and game.timer.is_dark():
+        "Where's {b}[deb_name]{/b}?" if M_diane.between_states(S_diane_barn_news, S_diane_return_outfit_package) and game.timer.is_dark():
             call expression game.dialog_select("dianes_dialogue_wheres_debname")
             jump dia_default_dialogue_options
 
-        "Saya suka gaun tidur itu!" if M_diane.between_states(S_diane_barn_news, S_diane_return_outfit_package) and game.timer.is_dark():
+        "I love that nightgown!" if M_diane.between_states(S_diane_barn_news, S_diane_return_outfit_package) and game.timer.is_dark():
             call expression game.dialog_select("dianes_dialogue_love_that_nightgown")
             jump dia_default_dialogue_options
 
-        "Anda sudah menghubungi {b}Veronica{/b}?" if M_diane.between_states(S_diane_milk_production_increase, S_diane_end) and game.timer.is_day():
+        "You call {b}Veronica{/b} yet?" if M_diane.between_states(S_diane_milk_production_increase, S_diane_end) and game.timer.is_day():
             call expression game.dialog_select("dianes_dialogue_call_veronica")
             jump dia_default_dialogue_options
 
-        "Bagaimana kabar bisnisnya?" if M_diane.between_states(S_diane_milk_production_increase, S_diane_end) and game.timer.is_day():
+        "How's the business going?" if M_diane.between_states(S_diane_milk_production_increase, S_diane_end) and game.timer.is_day():
             call expression game.dialog_select("dianes_dialogue_hows_the_business")
             jump dia_default_dialogue_options
 
-        "Lagi sibuk apa?" if M_diane.is_state(S_diane_milk_production_increase) and game.timer.is_dark():
+        "What are you up to?" if M_diane.is_state(S_diane_milk_production_increase) and game.timer.is_dark():
             call expression game.dialog_select("dianes_dialogue_what_up_to")
             jump dia_default_dialogue_options
 
-        "Saya sedang dalam perjalanan untuk melihat {b}[deb_name]{/b}." if M_diane.is_state(S_diane_milk_production_increase) and game.timer.is_dark():
+        "I was on my way to see {b}[deb_name]{/b}." if M_diane.is_state(S_diane_milk_production_increase) and game.timer.is_dark():
             call expression game.dialog_select("dianes_dialogue_on_my_way_debbie")
             $ game.main()
 
-        "Gadis Sapi." if M_daisy.between_states(S_daisy_awakened_statue, S_daisy_picking_flowers):
+        "Cow Girl." if M_daisy.between_states(S_daisy_awakened_statue, S_daisy_picking_flowers):
             call expression game.dialog_select("dianes_dialogue_cow_girl")
             jump dia_default_dialogue_options
 
-        "{b}Bunga aster{/b}." if M_daisy.finished_state(S_daisy_picking_flowers):
+        "{b}Daisy{/b}." if M_daisy.finished_state(S_daisy_picking_flowers):
             call expression game.dialog_select("dianes_dialogue_daisy")
             jump dia_default_dialogue_options
 
-        "Cat." if M_dewitt.is_state([S_dewitt_ask_diane_paint, S_dewitt_shed_get_paint]):
+        "Paint." if M_dewitt.is_state([S_dewitt_ask_diane_paint, S_dewitt_shed_get_paint]):
             call expression game.dialog_select("dianes_dialogue_pre_fun_paint")
             $ M_dewitt.trigger(T_dewitt_shed_paint)
 
-        "Menyusui." if M_diane.finished_state(S_diane_milking_help) and (L_diane_barn_interior.is_here(M_diane) or L_diane_shed.is_here(M_diane)) and M_diane.pregnancy.stage <= 2:
+        "Breastfeed." if M_diane.finished_state(S_diane_milking_help) and (L_diane_barn_interior.is_here(M_diane) or L_diane_shed.is_here(M_diane)) and M_diane.pregnancy.stage <= 2:
             call expression game.dialog_select("dianes_dialogue_breastfeed")
 
-        "Minum." if M_diane.is_state(S_diane_make_drink) and not game.timer.is_dark():
+        "Drink." if M_diane.is_state(S_diane_make_drink) and not game.timer.is_dark():
             call expression game.dialog_select("dianes_dialogue_make_drink")
 
-        "Alat." if M_diane.is_state(S_diane_fetch_pump):
+        "Tool." if M_diane.is_state(S_diane_fetch_pump):
             if player.has_item("pump"):
                 call expression game.dialog_select("dianes_dialogue_diane_got_pump")
                 $ M_diane.trigger(T_diane_found_pump)
@@ -172,63 +172,63 @@ label diane_button_dialogue:
             else:
                 call expression game.dialog_select("dianes_dialogue_diane_fetch_pump")
 
-        "Pengiriman." if M_diane.is_state(S_dia03_give, S_dia03_wrap):
+        "Delivery." if M_diane.is_state(S_dia03_give, S_dia03_wrap):
             if M_diane.is_state(S_dia03_give):
                 call expression game.dialog_select("dianes_dialogue_delivery_1_reminder")
             else:
                 call expression game.dialog_select("dianes_dialogue_delivery_1_done")
                 $ M_diane.trigger(T_dia03_wrap)
 
-        "Pengiriman." if M_diane.between_states(S_diane_delivery_3_fetch_goods, S_diane_delivery_3_drop_off_goods):
+        "Delivery." if M_diane.between_states(S_diane_delivery_3_fetch_goods, S_diane_delivery_3_drop_off_goods):
             call expression game.dialog_select("dianes_dialogue_delivery_3_reminder")
 
-        "Pompa." if M_diane.is_state(S_diane_dump_pump):
+        "Pump." if M_diane.is_state(S_diane_dump_pump):
             call expression game.dialog_select("dianes_dialogue_dump_pump")
             $ game.main()
 
-        "Setelan sapi." if M_diane.finished_state(S_diane_return_outfit_package) and L_diane_barn_interior.is_here(M_diane):
+        "Cow suit." if M_diane.finished_state(S_diane_return_outfit_package) and L_diane_barn_interior.is_here(M_diane):
             call expression game.dialog_select("dianes_dialogue_cow_suit")
             call expression game.dialog_select("diane_outfit_change")
             jump dia_default_dialogue_options
 
-        "Sesi pemuliaan." if M_diane.finished_state(S_diane_return_outfit_package) and M_diane.pregnancy.stage <= 2 and L_diane_barn_interior.is_here(M_diane):
+        "Breeding session." if M_diane.finished_state(S_diane_return_outfit_package) and M_diane.pregnancy.stage <= 2 and L_diane_barn_interior.is_here(M_diane):
             call expression game.dialog_select("dianes_dialogue_breeding_session")
             jump diane_sex_breed_start
 
-        "Bagaimana kabar bayinya?" if M_diane.pregnancy and 1<=M_diane.pregnancy.stage<=4:
+        "How's the baby?" if M_diane.pregnancy and 1<=M_diane.pregnancy.stage<=4:
             call expression game.dialog_select("dianes_dialogue_hows_the_baby_pregnancy_{}".format(M_diane.pregnancy.stage))
             jump dia_default_dialogue_options
 
-        "Rasakan dari sumbernya." if L_diane_shed.is_here(M_diane) and M_diane.finished_state(S_diane_milk_production_increase):
+        "Taste from the source." if L_diane_shed.is_here(M_diane) and M_diane.finished_state(S_diane_milk_production_increase):
             call expression game.dialog_select("dianes_shed_dianes_dialogue_lets_milk")
 
-        "Siap memompa?" if M_diane.finished_state(S_diane_return_production_book) and L_diane_barn_interior.is_here(M_diane):
+        "Ready to pump?" if M_diane.finished_state(S_diane_return_production_book) and L_diane_barn_interior.is_here(M_diane):
             call expression game.dialog_select("dianes_dialogue_ready_to_pump")
             jump milking_game_pre
 
-        "Sampel Susu." if M_daisy.is_state(S_daisy_viewed_statue) and L_diane_barn_interior.is_here(M_diane) and not player.has_item("milk_sample"):
+        "Milk Sample." if M_daisy.is_state(S_daisy_viewed_statue) and L_diane_barn_interior.is_here(M_diane) and not player.has_item("milk_sample"):
             call expression game.dialog_select("dianes_dialogue_milk_sample")
             $ player.get_item("milk_sample")
 
-        "Saya harus mulai bekerja." if M_diane.between_states(S_dia01_init, S_diane_work_on_garden):
+        "I should get to work." if M_diane.between_states(S_dia01_init, S_diane_work_on_garden):
             call expression game.dialog_select("dianes_dialogue_leave_d1")
 
-        "Anda harus santai saja." if M_diane.between_states(S_diane_get_augmentation, S_diane_milking_help):
+        "You should take it easy." if M_diane.between_states(S_diane_get_augmentation, S_diane_milking_help):
             call expression game.dialog_select("dianes_dialogue_take_it_easy")
 
-        "Saya harus mulai bekerja." if M_diane.between_states(S_diane_debbie_evening_visit, S_diane_return_outfit_package) and not L_home_livingroom.is_here(M_diane):
+        "I should get to work." if M_diane.between_states(S_diane_debbie_evening_visit, S_diane_return_outfit_package) and not L_home_livingroom.is_here(M_diane):
             call expression game.dialog_select("dianes_dialogue_leave_d12b")
 
-        "Selamat malam." if M_diane.between_states(S_diane_inform_carpenter, S_diane_return_outfit_package) and game.timer.is_dark():
+        "Goodnight." if M_diane.between_states(S_diane_inform_carpenter, S_diane_return_outfit_package) and game.timer.is_dark():
             call expression game.dialog_select("dianes_dialogue_goodnight")
 
-        "Saya harus mulai bekerja." if M_diane.finished_state(S_diane_milk_production_increase) and game.timer.is_day():
+        "I should get to work." if M_diane.finished_state(S_diane_milk_production_increase) and game.timer.is_day():
             call expression game.dialog_select("dianes_dialogue_leave_d19_d20_day")
 
-        "Selamat malam." if M_diane.is_state(S_diane_milk_production_increase, S_diane_risky_frisky_kinky) and game.timer.is_dark():
+        "Goodnight." if M_diane.is_state(S_diane_milk_production_increase, S_diane_risky_frisky_kinky) and game.timer.is_dark():
             call expression game.dialog_select("dianes_dialogue_goodnight_1")
 
-        "Selamat malam." if M_diane.finished_state(S_diane_risky_frisky_kinky) and game.timer.is_dark():
+        "Goodnight." if M_diane.finished_state(S_diane_risky_frisky_kinky) and game.timer.is_dark():
             if (M_debbie.is_state(S_debbie_sleepover, S_debbie_romance_movie, S_debbie_romance_movie_two, S_debbie_spy) or
                 M_jenny.is_state(S_jenny_catch_her_jilling) or M_debbie.get("movie night")):
                 call expression game.dialog_select("dianes_dialogue_goodnight_1")
@@ -250,11 +250,9 @@ label diane_outfit_change:
     show player 26 at left
     show diane b_naked a_idle f_smirk
     with dissolve
-    diane "Apakah itu lebih baik?"
-
+    diane "Is that better?"
     show player 29 with dissolve
-    player_name "Y-ya."
-
+    player_name "Y-yeah."
     show player 13 with dissolve
     return
 
@@ -274,29 +272,20 @@ label diane_debbie_3way_dialogue:
     show playerf 5b at Position (xpos=200,ypos=850)
     show playerfa 1 at Position (xpos=180,ypos=640)
     with dissolve
-    debbie "Itu dia!"
-
-    diane "Akhirnya!"
-
-    debbie "Kami khawatir Anda mungkin tidak datang malam ini."
-
-    diane "Aku akan memulai tanpamu!"
-
-    debbie "Hehe, oh hentikan!"
-
-    diane "aku serius!"
-
-    diane "Anda mau bergabung dengan kami, {b}[firstname]{/b}?"
-
+    debbie "There he is!"
+    diane "Finally!"
+    debbie "We were worried you might not come tonight."
+    diane "I was about to start without you!"
+    debbie "Hehe, oh stop it!"
+    diane "I'm serious!"
+    diane "You gonna join us, {b}[firstname]{/b}?"
     menu:
-        "Ya.":
+        "Yes.":
             show playerf 5 at Position (xpos=200,ypos=850)
             show playerfa 1 at Position (xpos=180,ypos=640)
-            player_name "Tentu saja!"
-
+            player_name "Definitely!"
             show playerf 5b
-            debbie "Ah, aku sangat senang!"
-
+            debbie "Oh, I'm so happy!"
             show debbie b_bed_nightgown_undress
             show diane b_nightgown_undress f_down_front
             with dissolve
@@ -309,13 +298,10 @@ label diane_debbie_3way_dialogue:
             show debbie b_naked_bed
             with dissolve
             pause
-            diane "Nah, tunggu apa lagi?!"
-
-            debbie "Lepaskan celana itu!"
-
+            diane "Well, what are you waiting for?!"
+            debbie "Get those pants off!"
             show playerf 5
-            player_name "Oke!"
-
+            player_name "Okay!"
             hide playerf
             hide playerfa
             hide debbie
@@ -324,81 +310,62 @@ label diane_debbie_3way_dialogue:
 
             scene expression "backgrounds/location_home_debbiebed_sex.jpg"
             show diane_debbie_sex_bed diane_talk
-            diane "Mmm, aku senang berada di sini bersama kalian."
-
-            diane "Ini seperti seks terbaik yang pernah ada!"
-
+            diane "Mmm, I love being in here with you guys."
+            diane "It's like the best sex ever!"
             show diane_debbie_sex_bed debbie_talk
-            debbie "Hehe, benar sekali!"
-
+            debbie "Heh, it really is!"
             show diane_debbie_sex_bed player_talk
-            player_name "Ya!"
-
+            player_name "Yeah!"
             show diane_debbie_sex_bed debbie_talk
-            debbie "Jadi sayang, kamu ingin memulai dengan siapa malam ini?"
-
+            debbie "So sweetie, who do you wanna start with tonight?"
             menu:
-                "{b}Diana{/b}.":
+                "{b}Diane{/b}.":
                     $ M_diane.set("change partner",False)
                 "{b}[deb_name]{/b}.":
 
                     $ M_diane.set("change partner",True)
             jump diane_debbie_pre_sex_loop
-        "Tidak.":
+        "No.":
 
             show playerf 5 at Position (xpos=200,ypos=850)
             show playerfa 1 at Position (xpos=180,ypos=640)
-            player_name "Eh, sebenarnya..."
-
-            player_name "Ada hal lain yang perlu aku urus."
-
+            player_name "Eh, actually..."
+            player_name "I have something else I need to take care of."
             show playerf 5b
-            debbie f_sad "Aduh, kamu yakin?"
-
+            debbie f_sad "Aww, are you sure?"
             show playerf 5
-            player_name "Ya maaf."
-
+            player_name "Yeah, sorry."
             show playerf 5b
-            debbie f_normal "Tidak apa-apa, sayang."
-
-            diane "Kerugianmu, kawan."
-
-            diane "Sepertinya kita sendirian malam ini!"
-
+            debbie f_normal "That's alright, sweetie."
+            diane "Your loss, stud."
+            diane "Looks like we're on our own tonight!"
             hide debbie
             show diane b_nightgown_sit_kissing_debbie:
                 xoffset 100
             with dissolve
             show playerf 3
             player_name "!!!"
-            player_name "(Ah, bung...)"
-
+            player_name "( Ah, man... )"
 
             scene expression background(236, 432, 4.5, l=L_home_livingroom) as stage
             show anon a_thinking f_thinking:
                 xoffset 150
             with fade
-            anon @ -m_talk "(Aku ingin tahu apakah mereka benar-benar akan terus berjalan tanpa-)"
-
-            diane "MM."
-
+            anon @ -m_talk "( I wonder if they're really gonna keep going without- )"
+            diane "Mmm."
             anon f_surprised_forward @ -m_talk "!!!" with hpunch
             pause
             show anon b_dressed_bending1 with {'master': dissolve}:
                 xoffset -350
                 xzoom -1
-            debbie "Heh, itu menggelitik!!"
-
+            debbie "Heh, that tickles!!"
             diane "Hehehe!"
-
             show anon a_sides b_dressed f_grin with {'master': dissolve}:
                 xoffset 150
                 xzoom 1
-            anon @ -m_talk "(Hmm, kurasa begitu...)"
-
+            anon @ -m_talk "( Hmm, I guess so... )"
             hide anon with {'master': dissolve}
-            debbie "Ya Tuhan... di sana!"
-
+            debbie "Oh, god... right there!"
             $ M_diane.set("refused 3way", True)
             $ player.go_to(L_home_livingroom)
     $ game.main()
@@ -407,62 +374,45 @@ label diane_hospital_bed_dialogue:
     scene expression game.timer.image("location_hospital_baby_bed{}")
     show diane f_normal a_baby b_gown_bed
     show player 13 with dissolve
-    diane "Hei, tampan."
-
-    diane "Anda datang untuk memeriksa kami lagi?"
-
+    diane "Hey, handsome."
+    diane "You come by to check on us again?"
     menu:
-        "Ya.":
+        "Yup.":
             show player 14
             if M_diane.pregnancy.baby_gender == "boy":
-                player_name "Bagaimana kabarnya?"
-
+                player_name "How's he doing?"
                 show player 426
                 show diane f_teasing_look
-                diane "Dia sedang tidur."
-
+                diane "He's sleeping."
                 show diane f_down_front
                 show player 429
-                player_name "Dia sangat lucu!"
-
+                player_name "He's so cute!"
             elif M_diane.pregnancy.baby_gender == "twins":
-                player_name "Bagaimana kabar mereka?"
-
+                player_name "How are they doing?"
                 show player 426
-                diane @ f_teasing_look "Mereka sedang tidur."
-
+                diane @ f_teasing_look "They're sleeping."
                 show player 429
-                player_name "Mereka sangat lucu!"
-
+                player_name "They're so cute!"
             else:
-                player_name "Bagaimana kabarnya?"
-
+                player_name "How's she doing?"
                 show player 426
-                diane @ f_teasing_look "Dia sedang tidur."
-
+                diane @ f_teasing_look "She's sleeping."
                 show player 429
-                player_name "Dia sangat lucu!"
-
+                player_name "She's so cute!"
             show player 426
-            diane @ f_laugh "hehe."
-
+            diane @ f_laugh "Hehe."
             pause
             show player 14
-            player_name "Kurasa aku harus meninggalkan kalian untuk beristirahat."
-
+            player_name "I guess I should leave you guys to rest."
             show player 13
-            diane f_normal "Kami akan segera pulang."
-
+            diane f_normal "We'll be home soon."
             show player 14
-            player_name "Oke."
-
+            player_name "Okay."
             show player 429
             if M_diane.pregnancy.baby_gender == "twins":
-                player_name "Sampai jumpa lagi, anak-anak kecil."
-
+                player_name "I'll see you soon, little ones."
             else:
-                player_name "Sampai jumpa, anak kecil."
-
+                player_name "I'll see you soon, little one."
             hide player with dissolve
     $ game.main()
 # Decompiled by unrpyc: https://github.com/CensoredUsername/unrpyc

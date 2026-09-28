@@ -23,7 +23,7 @@ label bridget_button_dialogue:
             $ game.main()
 
     menu:
-        "Kode berpakaian." if M_eve.get("failed_bridget_test") and M_eve.is_state(S_eve_dress_code_ask_teachers):
+        "Dress code." if M_eve.get("failed_bridget_test") and M_eve.is_state(S_eve_dress_code_ask_teachers):
             call expression game.dialog_select("bridget_dialogue_eve_dress_code_intro_repeat")
             if player.has_required_dex(5):
                 $ display.toast(dex_pass)
@@ -36,10 +36,10 @@ label bridget_button_dialogue:
             $ game.timer.tick()
             $ player.go_to(L_map)
             $ game.main()
-        "Di mana saya berlatih?":
+        "Where do I train?":
 
             call expression game.dialog_select("coach_bridget_dialogue_training_advice")
-        "Tidak ada apa-apa.":
+        "Nothing.":
 
             call expression game.dialog_select("coach_bridget_dialogue_leave")
     hide bridget

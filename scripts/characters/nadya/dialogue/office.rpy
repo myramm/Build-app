@@ -1,76 +1,56 @@
 label nadya_button_office:
     show anon b_sit with {'master': dissolve}:
         xoffset -250
-    anon "Yah, kamu terlihat nyaman."
-
-    nadya "Ya."
-
+    anon "Well, you look comfortable."
+    nadya "Da."
     show nadya b_dressed_couch_relax with {'master': dissolve}
-    nadya "Anda dapat mengatakan banyak hal buruk tentang ayah saya tetapi sulit untuk disangkal, dia memiliki selera yang bagus."
-
+    nadya "You can say many terrible things about my father but it's hard to deny, he had good taste."
     pause
-    nadya "Ayo, duduklah lebih dekat jika Anda mau...."
-
-    nadya "... Saya tidak menggigit."
-
+    nadya "Come, sit closer if you’d like...."
+    nadya "... I do not bite."
     show anon f_happy
 
     menu nadya_button_office.choice:
-        "Jadi bagaimana rasanya menjadi penanggung jawab?":
+        "So how does it feel to be in charge?":
             jump nadya_button_office.boss
-        "Dimana {b}Katya{/b}?":
+        "Where's {b}Katya{/b}?":
 
             jump nadya_button_office.katya
-        "Seks":
+        "Sex":
 
             jump nadya_button_office.sex
-        "Saya tidak bisa tinggal.":
+        "I can't stay.":
 
             pass
 
-    anon f_shy "Aku tidak bisa tinggal, {b}Nadya{/b}."
-
+    anon f_shy "I can't stay, {b}Nadya{/b}."
     show nadya b_dressed_couch f_pouting with {'master': dissolve}
-    nadya "Tidak?"
-
-    nadya "Ya, itu sangat disayangkan."
-
-    nadya f_sexy "Saya menantikan saat-saat seksi dengan ayam cantik Anda."
-
-    anon "Maaf."
-
+    nadya "No?"
+    nadya "Well, that is pity."
+    nadya f_sexy "I was looking forward to sexy times with your beautiful cock."
+    anon "Sorry."
     show anon a_shy_neck f_shy with {'master': dissolve}
-    anon "Mungkin lain kali?"
-
-    nadya f_normal "Ya, ya... Lain kali."
-
+    anon "Another time, perhaps?"
+    nadya f_normal "Yes, yes... Another time."
     show anon a_idle
     with {'master': dissolve}
-    nadya "{b}Katya{/b} akan melayani saya sebagai gantinya."
-
-    anon f_normal "Baiklah, baiklah... Selamat malam, {b}Nadya{/b}."
-
+    nadya "{b}Katya{/b} will service me instead."
+    anon f_normal "Alright, well... Good night, {b}Nadya{/b}."
     nadya "Farewell, {b}[firstname]{/b}." (show_native="Do svidaniya, {b}[firstname]{/b}.")
     return
 
 
 label nadya_button_office.blowjob:
-    anon f_shy "Mulutmu terasa sangat enak terakhir kali..."
-
-    nadya f_confused "Anda ingin membuat saat-saat seksi di mulut saya?"
-
+    anon f_shy "Your mouth felt really good last time..."
+    nadya f_confused "You want to make sexy times in my mouth?"
     show anon f_shy_low
     pause
-    nadya f_normal "Baiklah..."
-
+    nadya f_normal "Very well..."
     show anon f_shy
-    nadya "... Tapi saya harap Anda berencana membalas budi suatu hari nanti!"
-
-    anon f_flirt "Itu mungkin bisa diatur."
-
+    nadya "... But I hope you plan to return favor one day!"
+    anon f_flirt "That can probably be arranged."
     pause
-    nadya f_sexy "Datang."
-
+    nadya f_sexy "Come."
     show anon a_idle b_sit_naked_up f_shy_low od_naked_dick3:
         xoffset 0
     with dissolve
@@ -92,34 +72,22 @@ label nadya_button_office.blowjob:
     show anon a_idle b_sit f_worried
     show nadya f_normal -o_smoke
     with {'master': dissolve}
-    nadya "Di sana."
-
-    nadya "Rokok terasa lebih enak."
-
-    anon f_confused "Anda harus benar-benar berhenti merokok, tahu?"
-
+    nadya "There."
+    nadya "Cigarette is taste better."
+    anon f_confused "You should really quit smoking, you know?"
     nadya f_frowning "Bah!"
-
-    anon f_worried "Serius, itu buruk bagimu."
-
+    anon f_worried "Seriously, it's bad for you."
     show anon f_surprised
-    nadya @ f_eyeroll "\"Serius, ini buruk bagimu.\""
-
+    nadya @ f_eyeroll "\"Seriously, is bad for you.\""
     show anon f_unimpressed
-    nadya "Kalian orang Amerika jadi sangat banci akhir-akhir ini..."
-
-    nadya "... Saya tidak tahu bagaimana Anda memenangkan perang dingin."
-
+    nadya "You Americans become such pussy these days..."
+    nadya "... I have no idea how you win cold war."
     anon @ -m_talk "..."
-    nadya "Hindari ceramah konyolmu dan beri tahu {b}Svetlana{/b} untuk mengirim {b}Katya{/b}."
-
+    nadya "Spare me your silly lecture and tell {b}Svetlana{/b} to send for {b}Katya{/b}."
     show anon f_tired
-    nadya f_normal "Dia akan menghabisiku."
-
-    anon f_sad_down "Y-ya, oke."
-
-    nadya f_happy "Anak baik."
-
+    nadya f_normal "She will finish me off."
+    anon f_sad_down "Y-yeah, okay."
+    nadya f_happy "Good boy."
     hide anon
     show nadya a_cig_smoking
     with dissolve
@@ -137,42 +105,29 @@ label nadya_button_office.blowjob:
     show anon a_sides with dissolve:
         xoffset 100
         xzoom -1
-    svetlana "Berakhir begitu cepat?"
-
-    anon f_worried "Ya, um..."
-
+    svetlana "Over so soon?"
+    anon f_worried "Yeah, umm..."
     show anon a_point_back
     with {'master': dissolve}
-    anon "... Dia meminta {b}Katya{/b}."
-
+    anon "... She asked for {b}Katya{/b}."
     show svetlana a_sides f_smirk with {'master': dissolve}
-    svetlana "Hehe, itu tidak mengherankan."
-
+    svetlana "Heh, that is not surpise."
     show anon a_sides
     with {'master': dissolve}
-    svetlana "{b}Katya{/b} sangat terampil dengan lidah."
-
-    anon f_shy "Ya, itulah yang saya dengar."
-
-    svetlana f_laugh "Hehe, aku akan menjemputnya."
-
-    svetlana f_happy "Selamat menempuh perjalanan pulang."
-
-    anon f_normal "Terima kasih."
-
+    svetlana "{b}Katya{/b} is very skilled with tongue."
+    anon f_shy "Yeah, that's what I hear."
+    svetlana f_laugh "Heh, I will get her."
+    svetlana f_happy "Have safe journey home."
+    anon f_normal "Thanks."
     return
 
 
 label nadya_button_office.bow:
-    anon "Bagaimana kalau kamu berbaring miring lagi?"
-
-    nadya f_happy "Ya."
-
+    anon "How about you lie down on your side again?"
+    nadya f_happy "Da."
     show anon f_happy
-    nadya "Ini posisi yang bagus!"
-
-    nadya "Saya sangat menyukainya."
-
+    nadya "This is good position!"
+    nadya "I like very much."
 
     call scene_nadya_sex_office.repeat
     $ unlock_scene('nadya', '02_unlocked')
@@ -184,18 +139,13 @@ label nadya_button_office.bow:
     with fade
     pause
     show anon a_remove_shorts1 b_sit with {'master': dissolve}
-    nadya "Ini adalah saat-saat seksi yang bagus."
-
+    nadya "This was good sexy times."
     show anon a_idle b_sit f_normal with {'master': dissolve}
-    anon "Ya, benar."
-
-    nadya f_sexy "Anda segera kembali, kami melakukan lebih banyak."
-
-    anon f_flirt "Sangat."
-
+    anon "Yeah, it was."
+    nadya f_sexy "You come back soon, we do more."
+    anon f_flirt "Absolutely."
     nadya f_normal "Farewell, {b}[firstname]{/b}." (show_native="Do svidaniya, {b}[firstname]{/b}.")
-    anon f_normal "Selamat tinggal, {b}Nadya{/b}."
-
+    anon f_normal "Goodbye, {b}Nadya{/b}."
     hide anon with dissolve
 
     call svetlana_button_stage
@@ -206,36 +156,25 @@ label nadya_button_office.bow:
     show anon a_sides with dissolve:
         xoffset 100
         xzoom -1
-    svetlana "Sepertinya Anda berhasil menyenangkannya sekali lagi."
-
-    anon f_brag "Ya, saya yakin begitu."
-
-    svetlana "Dia mengalami banyak orgasme... Saya dengar."
-
+    svetlana "Sounds like you manage to please her once again."
+    anon f_brag "Yeah, I believe so."
+    svetlana "She have many orgasm... I hear."
     show anon a_rub f_worried with {'master': dissolve}
-    anon "Oh, benar... ummm... maaf."
-
+    anon "Oh, right... ummm... sorry."
     svetlana f_curious @ -m_talk "Hmm?"
-
     show anon a_sides with {'master': dissolve}
-    anon "Saya yakin ini canggung bagi Anda, karena harus mendengarkan kami."
-
+    anon "I'm sure it's awkward for you, having to listen to us."
     svetlana f_smirk "No..." (show_native="Nyet...")
-    svetlana "... Saya tidak keberatan."
-
+    svetlana "... I do not mind."
     show anon f_normal
     pause
-    svetlana "Sejujurnya, ini menarik."
-
+    svetlana "Truthfully, is kind of exciting."
     show anon a_shy_neck f_shy_left of_blush with {'master': dissolve}
     anon "Oh?"
-
     show anon f_shy
-    svetlana "Mungkin, {b}Nona Chernyshevsky{/b} akan membiarkan saya berjaga dari seberang pintu di masa depan, ya?"
-
+    svetlana "Perhaps, {b}Miss Chernyshevsky{/b} would let me guard from opposite side of door in future, eh?"
     show anon a_sides with {'master': dissolve}
-    anon "Heh, ya... Mungkin."
-
+    anon "Heh, yeah... Maybe."
     show anon f_normal -of_blush
     with dissolve
     pause
@@ -243,92 +182,60 @@ label nadya_button_office.bow:
 
 
 label nadya_button_office.boss:
-    anon f_normal "Jadi, bagaimana kepemimpinan yang cocok untuk Anda?"
-
+    anon f_normal "So how is leadership suiting you?"
     show nadya a_up f_happy with {'master': dissolve}
-    nadya "Luar biasa."
-
-    nadya "Saya melakukan sesuka saya dan semua orang mematuhinya."
-
+    nadya "Is wonderful."
+    nadya "I do as I please and everyone obeys."
     show nadya a_idle
     with {'master': dissolve}
-    nadya "Kami akhirnya mendapat untung dan sekarang bisnis kami sah, kami tidak punya masalah lagi dengan polisi."
-
-    anon "Itu bagus untuk didengar."
-
-    nadya "Ya."
-
+    nadya "We are finally making profits and now that we are legitimate business, we have no more problems with police."
+    anon "That's good to hear."
+    nadya "Da."
     pause
-    nadya f_normal "Apakah kamu sudah mengambil keputusan?"
-
+    nadya f_normal "Have you make decision yet?"
     anon f_confused @ -m_talk "Hmm?"
-
-    nadya "Tawaran saya..."
-
-    nadya "... Untuk pekerjaan."
-
-    anon f_shy "Oh, umm... Tidak, maaf."
-
-    anon "Saya perlu waktu lagi."
-
-    nadya f_frowning "{i}*Huh*{/i} Baiklah."
-
+    nadya "My offer..."
+    nadya "... For job."
+    anon f_shy "Oh, umm... No, sorry."
+    anon "I need some more time."
+    nadya f_frowning "{i}*Sigh*{/i} Very well."
     pause
-    nadya f_sexy "Hehe."
-
-    anon f_confused "Apa?"
-
+    nadya f_sexy "Heh."
+    anon f_confused "What?"
     show nadya a_up f_bored with {'master': dissolve}
-    nadya "Sepanjang hari, itu adalah, \"Ya, bos.\" atau \"Segera bos!\""
-
+    nadya "All day, it's, \"Yes, boss.\" or \"Right away boss!\""
     show nadya a_idle
     with {'master': dissolve}
-    nadya f_pouting "Kamu satu-satunya orang yang memberitahuku bahwa aku harus menunggu..."
-
+    nadya f_pouting "You are only person who tells me I must wait..."
     anon "Oh?"
-
-    nadya f_sexy "Itu menggairahkan saya."
-
-    anon f_flirt "{i}*Gulp*{/i} Begitu."
-
+    nadya f_sexy "It excites me."
+    anon f_flirt "{i}*Gulp*{/i} I see."
     jump nadya_button_office.choice
 
 
 label nadya_button_office.katya:
-    anon f_normal "Tahukah kamu dimana {b}Katya{/b} berada?"
-
-    nadya f_normal "Aku memberinya libur malam."
-
-    nadya "Untuk melakukan apa yang dia mau."
-
-    nadya "Dia telah terbukti menjadi penasihat bisnis yang sangat baik dan saya akan membuatnya bahagia."
-
+    anon f_normal "Do you know where {b}Katya{/b} is?"
+    nadya f_normal "I give her evenings off."
+    nadya "To do as she pleases."
+    nadya "She has proven to be surprisingly good business advisor and I would keep her happy."
     anon f_confused "Oh?"
-
-    nadya "Pria Amerika tampaknya sangat... rentan terhadap pesonanya."
-
+    nadya "American men seem especially... susceptible, to her charms."
     show nadya a_up f_happy
     with {'master': dissolve}
-    nadya "Mereka berusaha sekuat tenaga untuk menyenangkannya."
-
-    anon f_shy "Y-ya, aku bisa melihatnya."
-
+    nadya "They bend over backwards to please her."
+    anon f_shy "Y-yeah, I could see that."
     show nadya a_idle with dissolve
     jump nadya_button_office.choice
 
 
 label nadya_button_office.sex:
-    anon f_shy "Mungkin Anda ingin-"
-
-    nadya f_sexy "Aku selalu mendambakan saat-saat seksi bersamamu, {b}[firstname]{/b}."
-
+    anon f_shy "Might you want to-"
+    nadya f_sexy "I am always eager for sexy times with you, {b}[firstname]{/b}."
     pause
     show nadya b_dressed_couch with {'master': dissolve}
-    nadya "Mari kita singkirkan pakaian, ya?"
-
+    nadya "Let's get rid of clothes, eh?"
     show nadya a_undress1 f_sexy_down with {'master': dissolve}
-    anon "Ide bagus."
-
+    anon "Good idea."
     show anon f_shy_low
     show nadya b_dressed_couch_undress2
     with dissolve
@@ -349,66 +256,51 @@ label nadya_button_office.sex:
     pause
     show nadya a_idle f_happy with dissolve
     pause
-    nadya "Di sana."
-
+    nadya "There."
     show anon f_flirt
-    nadya "Anda suka menonton, ya?"
-
-    anon "{i}*Gulp*{/i} Y-ya, benar."
-
+    nadya "You like to watch, yes?"
+    anon "{i}*Gulp*{/i} Y-yeah, I do."
     show anon f_flirt_low
     show nadya f_sexy_down
     pause
-    nadya f_sexy "Sekarang giliranmu."
-
+    nadya f_sexy "Is your turn now."
     anon f_confused @ -m_talk "Hmm?"
-
     nadya f_bored @ -m_talk "..."
     show anon a_behind_head f_shy of_blush with {'master': dissolve}
-    anon "Oh benar."
-
-    anon "Maaf."
-
+    anon "Oh, right."
+    anon "Sorry."
     show nadya f_sexy_down
     show anon a_remove_shorts1 f_shy_down
     with dissolve
     pause
     show anon b_sit_back_remove_shorts2 -o_sit_boner od_dick_spring with {'master': dissolve}
-    nadya f_laugh "hehe!"
-
+    nadya f_laugh "Hehe!"
     show anon b_sit_naked_remove_shirt od_dick2
     with {'master': dissolve}
-    nadya f_sexy_down @ -m_talk "MM."
-
+    nadya f_sexy_down @ -m_talk "Mmm."
     show anon a_idle b_sit_naked f_flirt with {'master': dissolve}
-    nadya f_sexy "Saya juga suka menonton."
-
-    nadya "Kamu pria yang sangat cantik, {b}[firstname]{/b}."
-
+    nadya f_sexy "I like to watch too."
+    nadya "You are very pretty man, {b}[firstname]{/b}."
     show anon a_shy_neck f_shy_left with {'master': dissolve}
     anon @ -m_talk "..."
-    nadya f_laugh "hehe!"
-
+    nadya f_laugh "Hehe!"
     show anon f_shy
     pause
     show anon a_idle with {'master': dissolve}
-    nadya f_sexy "Jadi..."
-
-    nadya "... Apa yang kita lakukan sekarang?"
-
+    nadya f_sexy "So..."
+    nadya "... What we do now?"
 
     menu:
-        "Seks oral.":
+        "Blowjob.":
             call nadya_button_office.blowjob
-        "Seks.":
+        "Sex.":
 
             call nadya_button_office.bow
 
     show svetlana a_wave with {'master': dissolve}
     svetlana "Farewell, {b}[firstname]{/b}." (show_native="Do svidaniya, {b}[firstname]{/b}.")
     show anon a_wave with {'master': dissolve}
-    anon "Selamat tinggal, {b}Svet{/b}."
-
+    anon "Goodbye, {b}Svet{/b}."
     show svetlana a_sides
     hide anon
     with dissolve

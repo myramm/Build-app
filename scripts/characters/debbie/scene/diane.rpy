@@ -45,100 +45,63 @@ label scene_debbie_diane_bedroom.dialogue:
 
     if animcounter == 0 and rng <= .66:
         if slow:
-            debbie "Bagaimana Anda selalu menemukan tempat yang sempurna?!{w=2}{nw}"
-
-            diane "Oh, ayolah... kita berteman baik.{w=2}{nw}"
-
-            diane "Kalau ada yang tahu tempatmu, itu aku.{w=2}{nw}"
-
-            debbie "Hehe, menurutku itu masuk akal.{w=2}{nw}"
-
+            debbie "How do you always find the perfect spot?!{w=2}{nw}"
+            diane "Oh, c'mon... we're best friends.{w=2}{nw}"
+            diane "If anyone should know your spots, it's me.{w=2}{nw}"
+            debbie "Hehe, I guess that makes sense.{w=2}{nw}"
         else:
-            diane "Astaga!{w=1}{nw}"
-
+            diane "Oh, fuck!{w=1}{nw}"
             debbie "Ahh!{w=1}{nw}"
-
             pause 1
             diane "Oh, {b}[deb_name]{/b}!{w=1}{nw}"
-
             pause 1
-            diane "Ini terasa luar biasa!!{w=1}{nw}"
-
+            diane "This feels so amazing!!{w=1}{nw}"
         pause 1
 
     elif animcounter == 1 and rng <= .33:
         if slow:
-            diane "Ya Tuhan, kamu basah kuyup...{w=1.5{nw}"
-
+            diane "Oh my god, you're sopping wet...{w=1.5}{nw}"
             debbie "{b}Diane{/b}!!{w=1}{nw}"
-
-            debbie "Jangan berkata seperti itu, kamu tahu itu membuatku malu!{w=2}{nw}"
-
-            diane "Hehe!{w=1}{nw}"
-
-            diane "Ya, tapi itu juga membuat Anda bersemangat.{w=1.5{nw}"
-
+            debbie "Don't say things like that, you know it embarrasses me!{w=2}{nw}"
+            diane "Heh!{w=1}{nw}"
+            diane "Yeah, but it excites you too.{w=1.5}{nw}"
             debbie "Ngh!{w=1}{nw}"
-
             pause .5
-            diane "Lihat!{w=1}{nw}"
-
+            diane "See!{w=1}{nw}"
         else:
-            diane "Aku sangat senang kita bisa dekat lagi, seperti dulu!!{w=2}{nw}"
-
-            debbie "Saya juga!{w=1}{nw}"
-
-            diane "Aku sangat merindukanmu, {b}[deb_name]{/b}!{w=2}{nw}"
-
+            diane "I'm so happy we're close again, like we used to be!!{w=2}{nw}"
+            debbie "Me too!{w=1}{nw}"
+            diane "I missed you so much, {b}[deb_name]{/b}!{w=2}{nw}"
             debbie "Ahh!!{w=1}{nw}"
-
-            debbie "Jangan berhenti!!{w=1}{nw}"
-
+            debbie "Don't stop!!{w=1}{nw}"
         pause 1
 
     elif animcounter == 1 and rng <= .66:
         if slow:
-            diane "Aku suka menggoda vagina kecilmu yang basah, {b}[deb_name]{/b}...{w=2}{nw}"
-
+            diane "I love teasing your wet little pussy, {b}[deb_name]{/b}...{w=2}{nw}"
         else:
-            diane "Apakah kamu akan melakukan cum untukku?{w=1.5{nw}"
-
-            debbie "Ya!!!{w=1}{nw}"
-
+            diane "Are you gonna cum for me?{w=1.5}{nw}"
+            debbie "Yes!!!{w=1}{nw}"
 
     elif animcounter == 2 and rng <= .66:
         if slow:
-            diane "Hmm.{w=1}{nw}"
-
-            diane "Anda menyukainya?{w=1}{nw}"
-
-            debbie "Y-ya.{w=1}{nw}"
-
-            diane "Kamu suka kalau memek kita bergesekan?{w=2}{nw}"
-
-            debbie "Ya.{w=1}{nw}"
-
+            diane "Mmm.{w=1}{nw}"
+            diane "You like that?{w=1}{nw}"
+            debbie "Y-yes.{w=1}{nw}"
+            diane "You like it when our pussies rub together?{w=2}{nw}"
+            debbie "I do.{w=1}{nw}"
             pause 1
-            diane "Katakan padaku kamu menyukainya!{w=1.5{nw}"
-
-            debbie "Saya menyukainya!{w=1}{nw}"
-
-            diane "Ayo sayang... kamu bisa melakukan yang lebih baik dari itu...{w=2}{nw}"
-
-            debbie "Ahh, aku suka kalau memek kami bergesekan, {b}Diane{/b}!{w=2}{nw}"
-
-            diane "Sial, aku juga!{w=1}{nw}"
-
+            diane "Tell me you love it!{w=1.5}{nw}"
+            debbie "I love it!{w=1}{nw}"
+            diane "C'mon, babe... you can do better than that...{w=2}{nw}"
+            debbie "Ahh, I love it when our pussies rub together, {b}Diane{/b}!{w=2}{nw}"
+            diane "Fuck, me too!{w=1}{nw}"
         else:
-            debbie "Ngh, tuhan!{w=1}{nw}"
-
-            debbie "Saya semakin dekat, {b}Diane{/b}!{w=1.5{nw}"
-
-            diane "Saya juga!{w=1}{nw}"
-
+            debbie "Ngh, god!{w=1}{nw}"
+            debbie "I'm getting close, {b}Diane{/b}!{w=1.5}{nw}"
+            diane "Me too!{w=1}{nw}"
             pause
             debbie "Fuuuuck!!{w=1}{nw}"
-
         pause 1
 
     return
@@ -146,36 +109,24 @@ label scene_debbie_diane_bedroom.dialogue:
 
 label scene_debbie_diane_bedroom.cum:
     debbie "Ahh, {b}Diane{/b}!!"
-
-    debbie "aku akan keluar!!"
-
-    diane "Sperma denganku!!"
-
+    debbie "I'm gonna cum!!"
+    diane "Cum with me!!"
     pause
-    diane "Aku cinta kamu, {b}[deb_name]{/b}!"
-
-    diane "Anda adalah sahabat saya di seluruh dunia!"
-
-    debbie "aku juga mencintaimu!!"
-
+    diane "I love you, {b}[deb_name]{/b}!"
+    diane "You're my best friend in the whole world!"
+    debbie "I love you toooo!!"
     show debbie_body_b_sex_lesb_cum as animation
     diane "NGGHHH!!!" with flash
     debbie "NGGHHH!!!"
-
     pause
     show debbie_body_b_sex_lesb_fall as animation with dissolve
     diane "Haah... Haah..."
-
     pause
-    diane "Yah, itu tadi-"
-
+    diane "Well, that was-"
     pause
-    debbie "Berat?"
-
-    diane "Hehe, ya."
-
+    debbie "Strenuous?"
+    diane "Heh, yeah."
     debbie "Hehehe!"
-
     return
 
 

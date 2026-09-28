@@ -1,8 +1,6 @@
 label odette_repeat_sex_couch:
-    anon "Di sofa. Telanjang."
-
-    odette f_pouting "Hmm, membosankan sekali ya?"
-
+    anon "On the couch. Naked."
+    odette f_pouting "Hmm, that's kind of boring, isn't it?"
     show anon f_worried
 
     if M_odette.once('couch_sex') and not M_odette.once('couch_anal'):
@@ -13,13 +11,10 @@ label odette_repeat_sex_couch:
 
 label odette_repeat_sex_couch.repeat:
     pause
-    odette f_normal "Oh baiklah."
-
+    odette f_normal "Oh, alright."
     show anon f_normal
-    odette f_smirk "Kurasa aku tidak bisa menyalahkanmu karena ingin melihat si kembar melompat-lompat."
-
-    anon f_confused "Si kembar?"
-
+    odette f_smirk "I suppose I can't blame you for wanting to see the twins bounce around."
+    anon f_confused "The twins?"
     show odette b_skirt f_happy_down a_remove1
     with dissolve
     pause
@@ -34,9 +29,7 @@ label odette_repeat_sex_couch.repeat:
     show odette f_smirk b_skirt a_reveal
     with {'master': dissolve}
     odette "Ta-da!!"
-
-    anon f_flirt "Oh benar."
-
+    anon f_flirt "Oh, right."
     show anon f_flirt_low
     show odette f_happy_down a_remove5
     with dissolve
@@ -46,10 +39,8 @@ label odette_repeat_sex_couch.repeat:
     pause
     show odette a_hips b_panties f_smirk
     with {'master': dissolve}
-    anon f_happy "Ya ampun, tubuhmu konyol!"
-
-    odette f_shy "Hehe, terima kasih."
-
+    anon f_happy "Geez, your body is ridiculous!"
+    odette f_shy "Heh, thanks."
     show anon f_shy_low
     show odette b_remove7 f_happy_down
     with dissolve
@@ -57,20 +48,15 @@ label odette_repeat_sex_couch.repeat:
     show anon f_shy
     show odette b_naked f_smirk
     with {'master': dissolve}
-    odette "Sekarang, ayo kawan..."
-
+    odette "Now, c'mon big fella..."
     hide odette
     with {'master': dissolve}
-    odette "... Memekku sangat ingin diaduk!"
-
-    anon f_confused "Mendambakan apa sekarang?!"
-
-    odette "Kemarilah dan persetan denganku!"
-
+    odette "... My pussy is yearning for a churning!"
+    anon f_confused "Yearning for what now?!"
+    odette "Get over here and fuck me!"
     hide anon
     with {'master': dissolve}
-    anon "Ya, Bu."
-
+    anon "Yes, ma'am."
 
     call scene_odette_couch_back.repeat (M_odette.get('couch_anal', False))
     $ unlock_scene('Odette', '06_unlocked', variant='back')
@@ -93,29 +79,21 @@ label odette_repeat_sex_couch.repeat:
     with {'master': dissolve}
     odette @ -m_talk "!!!"
     show anon f_surprised
-    odette "Astaga, apa ini sudah larut?!"
-
-    odette f_sad "Aku harus pergi ke toko atau {b}Grace{/b} akan membunuhku!"
-
+    odette "Holy shit, is it that late already?!"
+    odette f_sad "I gotta get to the shop or {b}Grace{/b} is gonna kill me!"
     show anon f_worried
-    anon "Ya baiklah."
-
-    anon "Sampai jumpa lagi?"
-
+    anon "Yeah, alright."
+    anon "See you later?"
     show anon f_normal
-    odette f_smirk "Nanti, kawan."
-
+    odette f_smirk "Later, big fella."
     show odette a_kiss f_kiss
     with {'master': dissolve}
     odette @ -m_talk "Muah!"
-
     hide odette
     show anon a_wave f_flirt_grin
     with {'master': dissolve}
-    odette "Beritahu {b}Evie{/b} Aku menyapa!!"
-
-    anon f_happy "Akan berhasil!"
-
+    odette "Tell {b}Evie{/b} I said hello!!"
+    anon f_happy "Will do!"
     hide anon with dissolve
     return 'afterglow'
 
@@ -125,19 +103,14 @@ label odette_repeat_sex_couch.second:
     show odette f_thinking
     pause
     show anon f_confused
-    odette f_smirk "Atau mungkin tidak!"
-
+    odette f_smirk "Or maybe not!"
     show anon f_surprised
-    odette "Anda ingin memasukkan benda besar itu ke pantat saya?"
-
+    odette "You wanna stick that big thing in my ass?"
     show anon f_brag
-    anon "Maksudku, apakah kamu pikir kamu bisa mengatasinya?"
-
+    anon "I mean, if you think you can handle it?"
     odette f_smirk_lip_down @ -m_talk "Hmm."
-
     pause
-    odette f_smirk "Ya, hanya ada satu cara untuk mengetahuinya!"
-
+    odette f_smirk "Well, there's only one way to find out!"
     show odette b_skirt f_happy_down a_remove1
     with dissolve
     pause
@@ -152,14 +125,10 @@ label odette_repeat_sex_couch.second:
     show anon f_flirt
     show odette f_normal b_skirt a_hips
     with {'master': dissolve}
-    anon "Apakah itu ya?"
-
-    odette f_smirk "Itu tentatif ya..."
-
-    odette "... Hanya saja, pelan-pelan dulu, ya?"
-
-    odette "Sudah lama tidak bertemu."
-
+    anon "Is that a yes?"
+    odette f_smirk "It's a tentative yes..."
+    odette "... Just, go slow at first, yeah?"
+    odette "It's been a while."
     show anon f_flirt_low
     show odette f_happy_down a_remove5
     with dissolve
@@ -169,10 +138,8 @@ label odette_repeat_sex_couch.second:
     pause
     show odette a_hips b_panties f_smirk
     with {'master': dissolve}
-    anon f_shy "Lambat, benar."
-
-    anon f_brag "Ya, saya bisa melakukan itu."
-
+    anon f_shy "Slow, right."
+    anon f_brag "Yeah, I can do that."
     show anon f_shy_low
     show odette b_remove7 f_happy_down
     with dissolve
@@ -180,12 +147,10 @@ label odette_repeat_sex_couch.second:
     show anon f_brag
     show odette b_naked f_smirk
     with {'master': dissolve}
-    odette "Ayolah!"
-
+    odette "C'mon then!"
     hide odette
     with {'master': dissolve}
-    anon f_happy "Luar biasa."
-
+    anon f_happy "Awesome."
 
     call scene_odette_couch_anal
     $ unlock_scene('Odette', '06_unlocked', variant='anal')
@@ -204,35 +169,24 @@ label odette_repeat_sex_couch.second:
     pause
     show odette a_butthurt b_dressed f_pouting_right
     with {'master': dissolve}
-    odette "Ya ampun, aku akan berjalan-jalan dengan lucu sepanjang hari ini..."
-
-    anon f_confused "Ya?"
-
+    odette "Geez, I'm gonna be walking funny for the rest of the day..."
+    anon f_confused "Yeah?"
     show odette a_hips f_pouting
     with {'master': dissolve}
-    odette "... Kamu benar-benar melakukan sesuatu padaku."
-
-    anon f_worried "Menurutmu {b}Grace{/b} akan menyadarinya?"
-
-    odette f_smirk "Jangan khawatir."
-
-    odette "Aku hanya akan bilang padanya aku terlalu keras dengan salah satu mainanku."
-
-    anon f_brag "Sering-seringlah melakukannya, bukan?"
-
-    odette @ f_wink "Kadang-kadang."
-
+    odette "... You really did a number on me."
+    anon f_worried "You think {b}Grace{/b} will notice?"
+    odette f_smirk "Oh, don't worry."
+    odette "I'll just tell her I went too hard with one of my toys."
+    anon f_brag "Do that often, do you?"
+    odette @ f_wink "Occasionally."
     pause
-    odette "Hehe, nanti, kawan."
-
+    odette "Hehe, later, big fella."
     show odette a_kiss f_kiss
     with {'master': dissolve}
     odette @ -m_talk "Muah!"
-
     hide odette
     show anon a_wave f_happy
     with {'master': dissolve}
-    anon "Nanti, {b}Odette{/b}."
-
+    anon "Later, {b}Odette{/b}."
     return 'afterglow'
 # Decompiled by unrpyc: https://github.com/CensoredUsername/unrpyc

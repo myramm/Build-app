@@ -23,61 +23,46 @@ label jab_button_cargo:
     show anon with {'master': dissolve}:
         xoffset -75
         xzoom 1
-    anon "Hai, {b}Jab{/b}."
-
-    jab a_sides "Bisakah saya mengajukan pertanyaan?"
-
+    anon "Hey, {b}Jab{/b}."
+    jab a_sides "Can I ask question?"
 
     menu jab_button_cargo.choice:
-        "Eh, tentu saja.":
+        "Ehh, sure.":
             jump jab_button_cargo.question
-        "Nama macam apa itu {b}Jab{/b}?":
+        "What kind of name is {b}Jab{/b}?":
 
             jump jab_button_cargo.name
-        "Tidak sekarang.":
+        "Not now.":
 
             pass
 
     if len(queries) > 8:
         show anon a_crossed f_annoyed with {'master': dissolve}
-        anon "Tunggu!"
-
-        anon f_confused "Bagaimana mungkin Anda bisa mendapatkan lebih banyak?!"
-
+        anon "Staaahp!"
+        anon f_confused "How can you possibly have more?!"
     elif queries:
         show anon a_up f_worried with {'master': dissolve}
-        anon "Tolong jangan lagi!"
-
+        anon "No more please!"
     else:
-        anon "Tolong jangan sekarang."
-
+        anon "Not now please."
 
     show thug a_defensive f_normal with {'master': dissolve}
-    jab "Oke, tapi mungkin saya bisa memberi Anda dokumen yang sedang saya kerjakan ini dengan saran untuk membuat game lebih baik?"
-
+    jab "Okay, but perhaps I could give you this document I've been working on with suggestions to make game better?"
     show anon a_sides
     show thug a_sides
     with {'master': dissolve}
     anon f_confused "Ehh..."
-
-    jab "Hanya dua puluh lima halaman tetapi masih banyak lagi yang akan datang, jadi jangan khawatir."
-
-    anon f_surprised "Dua puluh lima halaman?!"
-
-    anon f_confused "Apa-"
-
+    jab "Is only twenty-five pages but more is coming, so don't worry."
+    anon f_surprised "Twenty-five pages?!"
+    anon f_confused "Wha-"
     show thug a_scratch_head f_concerned with {'master': dissolve}
-    jab "Ehh, maaf... Dua puluh delapan."
-
-    jab "Saya lupa saya menambahkan ide saya untuk membuat momen seksi dengan semua wanita di rumah pantai."
-
+    jab "Ehh, sorry... Twenty-eight."
+    jab "I forgot I added my ideas for making sexy times with all the womans at beach house."
     show anon a_pocket
     show thug a_sides
     with {'master': dissolve}
-    anon "Kami sudah merencanakannya."
-
-    jab f_happy "Oh bagus. Maka ide saya sangat membantu."
-
+    anon "We're already planning that."
+    jab f_happy "Oh, good. Then my ideas have been helpful."
     anon f_skeptical @ -m_talk "..."
     show anon a_point f_confused
     with {'master': dissolve}
@@ -89,114 +74,78 @@ label jab_button_cargo:
         xoffset 500
         xzoom -1
     with {'master': dissolve}
-    jab "Biarkan aku menemukan dokumenku..."
-
+    jab "Let me just find my documents..."
     show anon a_surprised_up_both f_surprised_teeth
     hide thug
     with {'master': dissolve}
-    jab "... Aku tahu mereka ada di sini di suatu tempat."
-
+    jab "... I know they're here somewhere."
     show anon a_protect f_worried with {'master': dissolve}
-    jab "Anda ingin saya memberi Anda diagram untuk perluasan peta di masa mendatang?"
-
+    jab "You want I should give you diagrams for future map expasions?"
     show anon:
         easeout 3 xoffset -800
-    jab "Awalnya saya membuat lima tetapi sekarang telah berkembang menjadi dua belas."
-
+    jab "I made five originally but it has grown to twelve now."
 
     scene expression background(104, 512, 5, l=L_warehouse_depot) with fade
     show anon b_dressed_catch_breath with fastdissolve:
         xoffset -100
-    anon @ -m_talk "(Haah... Haah...)"
-
-    anon @ -m_talk "(Ya ampun, haah... Itu menakutkan!)"
-
+    anon @ -m_talk "( Haah... Haah... )"
+    anon @ -m_talk "( Oh man, haah... That was terrifying! )"
     show anon a_surprised b_dressed f_worried with {'master': dissolve}
-    anon "(Aku harus terus berjalan, dia mungkin masih menemukanku di sini...)"
-
+    anon "( I should keep going, he might still find me out here... )"
     hide anon with fastdissolve
     return 'escape'
 
 
 label jab_button_cargo.name:
     show anon a_wave f_normal_closed with {'master': dissolve}
-    anon "Izinkan {i}saya{/i} bertanya..."
-
+    anon "Let {i}me{/i} ask..."
     show anon a_sides f_skeptical
     with {'master': dissolve}
-    anon "... Nama macam apa itu {b}Jab{/b}?"
-
-    jab f_happy "Merupakan kependekan dari {b}Jabzap{/b}."
-
+    anon "... What kind of a name is {b}Jab{/b} anyway?"
+    jab f_happy "Is short for {b}Jabzap{/b}."
     show anon f_confused
-    jab "Nama panggilan."
-
-    anon f_skeptical "Jadi siapa nama aslimu?"
-
+    jab "Nickname."
+    anon f_skeptical "So what is your real name then?"
     show thug a_finger f_smirk with {'master': dissolve}
-    jab "Oh, aku mengerti apa yang kamu lakukan..."
-
-    jab "... Jangan menipuku, kawan!"
-
-    anon f_confused "Hah?"
-
+    jab "Oh, I see what you do..."
+    jab "... You no trick me, comrade!"
+    anon f_confused "Huh?"
     show thug a_chest with {'master': dissolve}
-    jab "Pikiran orang Rusia kuat!"
-
-    jab "Saya tidak akan menjadi korban permainan pikiran licik Anda!"
-
-    anon f_sad_down "Anda tahu apa..."
-
-    anon "... Sudahlah."
-
-    anon "Saya tidak ingin tahu."
-
+    jab "Russian mind is strong!"
+    jab "I will not fall victim to your sneaky mind games!"
+    anon f_sad_down "You know what..."
+    anon "... Never mind."
+    anon "I don't wanna know."
     show thug a_sides f_laugh with {'master': dissolve}
     jab "Ah hah!"
-
-    jab f_happy "Saya menang!"
-
+    jab f_happy "I win!"
     show thug f_laugh
-    anon f_worried "Tidak, aku sungguh tidak ingin tahu."
-
-    jab f_happy "Terlambat!"
-
-    jab "saya menang."
-
+    anon f_worried "No, I seriously don't wanna know."
+    jab f_happy "Too late!"
+    jab "I win."
     show thug f_laugh
     show anon a_pocket
     with {'master': dissolve}
-    anon "Benar... Terserah."
-
-    anon "Tidak peduli."
-
-    jab f_normal "Saya juga tidak."
-
+    anon "Right... Whatever."
+    anon "Don't care."
+    jab f_normal "Me neither."
     pause
-    jab f_happy "Karena saya sudah menang."
-
+    jab f_happy "Because I already won."
     show anon a_crossed f_annoyed
     show thug f_laugh
     with {'master': dissolve}
-    anon "Tidak, kamu tidak melakukannya!"
-
-    jab f_happy "Ya, benar."
-
+    anon "No you didn't!"
+    jab f_happy "Yes, I did."
     pause
     show thug a_cheer1 f_smirk with dissolve
     show thug a_cheer with None
-    jab "Lakukan {b}Jab{/b}!!"
-
-    extend "Lakukan {b}Jab{/b}!!"
-
-    extend "Lakukan {b}Jab{/b}!!"
-
+    jab "Go {b}Jab{/b}!! "
+    extend "Go {b}Jab{/b}!! "
+    extend "Go {b}Jab{/b}!!"
     show thug a_cheer1 with None
-    anon f_eyeroll "Astaga, kamu menyebalkan!"
-
+    anon f_eyeroll "Jesus, you are infuriating!"
     hide anon with {'master': dissolve}
-    jab f_concerned "Oh ayolah, jangan jadi pecundang!"
-
+    jab f_concerned "Oh come now, don't be sore loser!"
     return
 
 
@@ -207,17 +156,13 @@ label jab_button_cargo.question:
         queries.add(q)
 
     if intro <= .33:
-        anon "Eh, tentu saja."
-
+        anon "Ehh, sure."
     elif intro <= .66:
-        anon "Saya rasa..."
-
+        anon "I guess..."
     elif intro <= .99:
-        anon "Kenapa tidak?"
-
+        anon "Why not?"
     else:
-        anon "Adakah yang bisa mencegah hal itu sekarang?"
-
+        anon "Can anything prevent that now?"
 
     call expression 'jab_button_cargo.question{}'.format(q)
 
@@ -229,209 +174,153 @@ label jab_button_cargo.question:
         show anon a_crossed f_thinking_down
 
     with {'master': dissolve}
-    anon @ -m_talk "(Saya tidak tahu bagaimana menanggapi ini...)"
-
+    anon @ -m_talk "( I have no idea how to respond to this... )"
     show anon a_sides f_shy -of_blush with {'master': dissolve}
-    anon "Biarkan saya menghubungi Anda kembali tentang hal itu."
-
+    anon "Let me get back to you on that."
     show thug a_sides f_normal_down with {'master': dissolve}
-    jab "{i}*Huh*{/i} Baiklah..."
-
+    jab "{i}*Sigh*{/i} Very well..."
     pause
-    jab f_normal "Satu pertanyaan lagi?"
-
+    jab f_normal "One more question?"
     show anon f_tired
     jump jab_button_cargo.choice
 
 
 label jab_button_cargo.question1:
     show thug a_hips f_normal with {'master': dissolve}
-    jab "Tampaknya banyak karakter di kota yang mengubah penampilan."
-
+    jab "It seems many characters in town are changing appearance."
     show anon f_confused
-    jab "Kebanyakan orang tampaknya berpikir ini adalah perbaikan tetapi saya tidak yakin..."
-
-    jab f_confused "... Bukankah lebih baik membiarkan mereka apa adanya?"
-
+    jab "Most people seem think is improvement but I'm not sure..."
+    jab f_confused "... Is not better to leave as they are?"
     show anon a_behind_head with {'master': dissolve}
     anon "Ehh..."
-
-    jab "Menurut saya, perubahan bukan tanpa alasan yang jelas."
-
+    jab "Change is for no good reason, I think."
     return
 
 
 label jab_button_cargo.question2:
-    jab f_normal "Saya mendengar cerita tentang wanita yang mengubah rumah menjadi kandang hewan..."
-
+    jab f_normal "I hear story of woman turning house into barn for animals..."
     show anon f_worried_surprised
     show thug a_confused f_confused
     with {'master': dissolve}
-    jab "... Mengapa seseorang melakukan ini?!"
-
-    jab "Tidak masuk akal!"
-
+    jab "... Why would someone do this?!"
+    jab "Is not making sense!"
     show anon a_behind_head f_shy
     show thug a_hips
     with {'master': dissolve}
     anon "Ehh..."
-
-    jab "Saya harus mengajukan petisi untuk memperbaiki keputusan ini..."
-
-    jab "... Apakah kegilaan, menurutku."
-
+    jab "I should make petition for correcting this decision..."
+    jab "... Is lunacy, I think."
     return
 
 
 label jab_button_cargo.question3:
-    jab f_normal "Anda sadar bahwa rumah yang Anda tinggali tidak masuk akal?"
-
+    jab f_normal "You realize that house you stay in makes no sense?"
     show anon f_confused
     show thug a_finger
     with {'master': dissolve}
-    jab "Kamar tidak cocok dengan eksterior."
-
+    jab "Rooms do not match exterior."
     show thug a_confused f_confused
     with {'master': dissolve}
-    jab "... Apakah ini disengaja atau kelalaian?"
-
+    jab "... Is this intentional or oversight?"
     anon f_worried_left "Ehh..."
-
     show anon f_worried
     show thug a_sides f_normal
     with {'master': dissolve}
-    jab "Menurutku, ini membuat artis terlihat bodoh."
-
+    jab "This makes artist look foolish, I think."
     return
 
 
 label jab_button_cargo.question4:
     show thug a_scratch_head f_confused with {'master': dissolve}
-    jab "Kenapa belum semua karakter hamil?"
-
+    jab "Why is not all characters have pregnancy yet?"
     show anon a_facepalm f_worried_down
     show thug a_hips
     with {'master': dissolve}
-    jab "Aku ingin punya bayi dengan semua orang tapi tidak."
-
-    jab "... Kenapa kamu melakukan ini pada penggemar yang memujanya?"
-
+    jab "I want make babies with everyone but no."
+    jab "... Why you do this to adoring fan?"
     show anon a_sides f_worried with {'master': dissolve}
     anon "Ehh..."
-
-    jab f_normal "Setidaknya tambahkan {b}Roxxy{/b}."
-
-    jab f_smirk "Dia adalah waifu terbaik..."
-
+    jab f_normal "At least add {b}Roxxy{/b}."
+    jab f_smirk "She is best waifu..."
     show thug a_boobs with {'master': dissolve}
-    jab "...dengan payudara seperti torpedo!"
-
+    jab "... with breasts like torpedoes!"
     return
 
 
 label jab_button_cargo.question5:
-    jab f_normal "Tahukah Anda bahwa beberapa latar belakang masih memerlukan pengambilan gambar eksterior?"
-
+    jab f_normal "You realize that some backgrounds still require exterior shots?"
     show anon f_eyeroll
-    jab "Mereka ada untuk banyak orang tetapi tidak semua."
-
+    jab "They exist for many but not all."
     show anon f_tired
-    jab f_confused "... Apakah ini disengaja atau kelalaian?"
-
+    jab f_confused "... Is this intentional or oversight?"
     anon "Ehh..."
-
     show thug a_crossed with {'master': dissolve}
-    jab "Pembuat kue ini menurutku pemalas."
-
+    jab "This cookie artist is lazy, I think."
     return
 
 
 label jab_button_cargo.question6:
-    jab f_normal "Mengapa {b}Kevin{/b} ada dalam daftar tugas Anda?"
-
+    jab f_normal "Why is {b}Kevin{/b} on your to do list?"
     show anon f_confused
-    jab f_confused "Apakah kamu gay, kawan?"
-
+    jab f_confused "Are you gay, comrade?"
     show anon f_surprised
-    jab f_normal "...Maksudku, tidak apa-apa jika kamu... Selama kamu mengerti, aku tidak menyukainya."
-
+    jab f_normal "... I mean, is fine if you are... So long as you understand, I'm not into it."
     anon f_confused "Ehh..."
-
-    jab f_smirk "Penisku hanya seperti lubang pantat wanita."
-
+    jab f_smirk "My penis like only lady butthole."
     show anon f_worried_surprised
     pause
     return
 
 
 label jab_button_cargo.question7:
-    jab f_normal "Mengapa putri induk semang belum mencintaimu?"
-
+    jab f_normal "Why is landlady's daughter not loving you yet?"
     show anon f_surprised
     show thug a_hips f_angry
     with {'master': dissolve}
-    jab "Menyebalkan!"
-
-    jab "... Anda melakukan begitu banyak hal, dan memberinya banyak uang..."
-
+    jab "Is infuriating!"
+    jab "... You do so much, and give her big monies..."
     show anon a_shy_neck f_shy_left of_blush with {'master': dissolve}
     anon @ -m_talk "..."
     show thug a_confused with {'master': dissolve}
-    jab "... Kenapa dia tidak bisa mengakui bahwa dia mencintaimu?!"
-
-    jab "Tidak bisa diterima!"
-
+    jab "... Why can she not admit she loves you?!"
+    jab "Is unacceptable!"
     show anon a_sides f_worried -of_blush
     show thug a_hips
     with {'master': dissolve}
-    jab "Saya sangat marah!"
-
+    jab "I so mad!"
     return
 
 
 label jab_button_cargo.question8:
-    jab f_confused "Ada apa dengan wanita tua di rumah sakit yang mendapatkan begitu banyak momen seksi?"
-
+    jab f_confused "What is with old lady at hospital getting so many sexy times?"
     show anon f_confused
-    jab "Cookie punya fetish wanita tua?"
-
+    jab "Cookie has old lady fetish?"
     show anon f_unimpressed
-    jab "... Sementara itu, karakter yang lebih baik hanya memiliki satu!"
-
+    jab "... Meanwhile, better characters have only one!"
     show anon a_behind_head with {'master': dissolve}
     anon "Ehh..."
-
-    jab f_normal "Tidak bisa diterima!"
-
+    jab f_normal "Is unacceptable!"
     show anon a_sides f_flirt_grin
     show thug a_finger
     with {'master': dissolve}
-    jab "Saya ingin meminta lebih banyak adegan dengan guru musik!"
-
+    jab "I want demand more scenes with music teacher!"
     show thug a_sides f_smirk
     with {'master': dissolve}
-    jab "Milkshake-nya membuat semua anak laki-laki Rusia datang ke halaman, ya?"
-
+    jab "Her milkshake brings all the Russian boys to the yard, eh?"
     return
 
 
 label jab_button_cargo.question9:
-    jab f_confused "Kenapa {b}Judith{/b} tidak mendapatkan waktu cinta yang lebih seksi?"
-
+    jab f_confused "How come {b}Judith{/b} does not get more sexy time love?"
     show anon f_surprised
-    jab "Ya, dia cantik dan kutu buku dengan kacamata kebesaran."
-
-    jab f_smirk "... Tapi rapikan itu!"
-
+    jab "Yes, she is thicc and nerdy with the oversize glasses."
+    jab f_smirk "... But those tiddies though!"
     show anon a_behind_head f_shy of_blush with {'master': dissolve}
     anon "Ehh..."
-
     show thug a_boobs with {'master': dissolve}
-    jab "Saya ingin menutupinya dengan krim kocok dan saus coklat..."
-
+    jab "I want to cover them in whipped cream and chocolate sauce..."
     show anon f_shy_left
-    jab "... Dan kemudian mengikatnya di sekitar penisku!"
-
+    jab "... And then tie them in knot around my penis!"
     show thug a_sides f_normal
     return
 # Decompiled by unrpyc: https://github.com/CensoredUsername/unrpyc

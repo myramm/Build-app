@@ -1,6 +1,14 @@
-# Summertime Saga v0.20.16 - Terjemahan Bahasa Indonesia
+# Summertime Saga v0.20.16 - Bahasa Indonesia + Fitur Ganti Bahasa
 
-Repositori ini berisi file translasi lengkap ke dalam **Bahasa Indonesia** untuk **Summertime Saga v0.20.16 (Stable)** dan pipeline otomatisasi build APK Android.
+Repositori ini berisi terjemahan lengkap **Bahasa Indonesia** untuk **Summertime Saga v0.20.16 (Stable)** dengan **Fitur Ganti Bahasa (In-Game Language Switcher)** dan APK Android siap pakai.
+
+---
+
+## 🌟 Fitur Unggulan
+* 🔄 **Fitur Ganti Bahasa (Language Switcher):** Bebas beralih antara **Bahasa Indonesia** dan **English** kapan saja melalui menu **Settings / Pengaturan**.
+* 💬 **80.600+ Dialog & UI Terjemahan:** 100% dialog percakapan, narasi, pilihan interaktif, menu, petunjuk/tips, jurnal quest, dan pesan HP telah diterjemahkan.
+* 🛡️ **Bebas Crash / Anti FC (Force Close):** Seluruh bytecode dan aset Android telah dikompilasi secara penuh (Python 2.7 bytecode `bytecode-27.rpyb` & pre-compiled `.rpyc`) sehingga aman untuk filesystem Android read-only.
+* ✍️ **100% Signed & Verified:** Ditandatangani dengan skema v1, v2, dan v3 (kompatibel untuk Android 5.0 hingga Android 14+).
 
 ---
 
@@ -8,35 +16,31 @@ Repositori ini berisi file translasi lengkap ke dalam **Bahasa Indonesia** untuk
 
 Silakan unduh file terbaru melalui menu **[Releases](https://github.com/myramm/Build-app/releases)**:
 
-1. **`SummertimeSaga-0.20.16-Indonesian.apk`** (~875 MB)
-   * File APK siap pasang di HP Android.
-   * Sudah ditandatangani (*signed*) menggunakan v1/v2/v3 signature.
-   * Tidak akan kembali ke Bahasa Inggris (Bahasa Indonesia menjadi bahasa native).
+1. **`SummertimeSaga-0.20.16-Indonesian.apk`** (~896 MB)
+   * File APK Android siap install langsung di HP.
+   * Dilengkapi tombol ganti bahasa di menu **Settings**.
 
-2. **`SummertimeSaga_v0.20.16_Bahasa_Indonesia.zip`** (~2.8 MB)
-   * Kumpulan 1.625 file script `.rpy` (75.875 baris dialog) yang sudah diterjemahkan.
-   * Cocok untuk modding, backup, atau rebuild APK sendiri.
+2. **`SummertimeSaga_v0.20.16_Bahasa_Indonesia.zip`** (~32 MB)
+   * Paket translasi lengkap (database `tl_id.dat`, scripts `.rpyc`, and cache).
+   * Bisa dipasang di versi PC, Mac, Linux, maupun Android manual.
 
 ---
 
-## 🛠️ Cara Penggunaan & Pemasangan
+## 🕹️ Cara Menggunakan Fitur Ganti Bahasa
 
-### Metode 1: Pasang APK Langsung di HP Android
-1. Download file `SummertimeSaga-0.20.16-Indonesian.apk` dari tab [Releases](https://github.com/myramm/Build-app/releases).
-2. Install di HP Android Anda (izinkan *Install Unknown Apps* jika muncul peringatan).
-3. Buka game dan langsung mainkan dalam Bahasa Indonesia.
+1. Buka game di HP / PC.
+2. Di Menu Utama (atau menu pause saat bermain), pilih **Settings** (Pengaturan).
+3. Di bagian kiri atas, Anda akan melihat pilihan **Language / Bahasa**:
+   * Klik **[ Bahasa Indonesia ]** untuk mengaktifkan Bahasa Indonesia.
+   * Klik **[ English ]** untuk kembali ke Bahasa Inggris.
+4. Pilihan bahasa tersimpan otomatis (*persistent*) dan tetap aktif saat game dibuka kembali.
 
-### Metode 2: Pasang File Script ke Folder Game (Tanpa Install APK Baru)
+---
+
+## 🛠️ Pemasangan Manual (Untuk PC / Android Tanpa APK)
+
 1. Download dan ekstrak `SummertimeSaga_v0.20.16_Bahasa_Indonesia.zip`.
-2. Salin folder `scripts/` ke direktori penyimpanan game:
-   ```
-   Android/data/com.kompasproductions.summertimesaga/files/game/
-   ```
-3. Buka game seperti biasa.
-
----
-
-## 📜 Statistik Translasi
-* **Total File Script:** 1.625 file `.rpy`
-* **Total Baris Dialog:** 75.875 baris teks
-* **Proteksi Tag:** Tag formatting (`{b}`, `{i}`, `{color}`), variabel nama (`[player_name]`, `[firstname]`), dan karakter khusus dipertahankan 100% tanpa merusak kode Python / Ren'Py.
+2. Salin isi folder `game/` ke dalam folder instalasi game Anda:
+   * **Android:** `Android/data/com.kompasproductions.summertimesaga/files/game/`
+   * **PC (Windows):** `<Folder Summertime Saga>/game/`
+3. Jalankan game, masuk ke menu **Settings**, lalu pilih **Bahasa Indonesia**.

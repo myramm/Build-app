@@ -101,31 +101,21 @@ label eve_button_dialogue:
     elif M_eve.is_state(S_eve_six6nine9_time) and player.location == L_tattooparlor_bedroom and game.timer.is_evening():
         call expression game.dialog_select("eve_button_eve_six6nine9_time")
         menu:
-            "aku akan melakukannya.":
-                anon "aku akan melakukannya."
-
-                eve "Anda akan melakukannya?"
-
-                anon "Tentu."
-
-                eve "Hehe, oke!"
-
+            "I'll do it.":
+                anon "I'll do it."
+                eve "You will?"
+                anon "Sure."
+                eve "Hehe, okay!"
                 jump eve_69
-            "Tidak, aku tidak mau.":
+            "Nah, I don't want to.":
 
-                anon "Tidak, aku tidak mau."
-
-                eve f_thinking_down "O-oh, oke."
-
+                anon "Nah, I don't want to."
+                eve f_thinking_down "O-oh, okay."
                 pause
-                anon "Maaf, menurutku aku belum siap untuk itu."
-
-                eve "Tidak, tidak apa-apa... Aku mengerti."
-
-                eve "Kami hanya akan berpegang pada barang-barang tangan saja."
-
-                anon "Kemarilah!"
-
+                anon "Sorry, I just don't think I'm ready for that."
+                eve "No, it's fine... I get it."
+                eve "We'll just stick to hand stuff."
+                anon "Come here!"
                 eve f_happy @ -m_talk "!!!"
                 jump eve_handjob
     elif M_eve.is_state(S_eve_sexy_time) and player.location == L_tattooparlor_bedroom and game.timer.is_evening():
@@ -155,7 +145,7 @@ label eve_button_dialogue:
 
 
         menu eve_button_menu:
-            "Pertunjukan bakat." if M_dewitt.is_state([S_dewitt_talent_show_ask, S_dewitt_talent_show_ask_eve]) or M_dewitt.is_set("talent helping kevin") and player.location == L_school_frenchclassroom:
+            "Talent show." if M_dewitt.is_state([S_dewitt_talent_show_ask, S_dewitt_talent_show_ask_eve]) or M_dewitt.is_set("talent helping kevin") and player.location == L_school_frenchclassroom:
                 if M_dewitt.is_set("talent helping kevin"):
                     call expression game.dialog_select("dewitt_talent_show_helping_kevin")
 
@@ -166,31 +156,31 @@ label eve_button_dialogue:
                     call expression game.dialog_select("button_eve_talent_show_help")
                     $ M_dewitt.trigger(T_dewitt_eves_agreement)
 
-            "Perekat." if M_dewitt.is_state(S_dewitt_science_adhesive) and player.location == L_school_frenchclassroom:
+            "Adhesive." if M_dewitt.is_state(S_dewitt_science_adhesive) and player.location == L_school_frenchclassroom:
                 call expression game.dialog_select("eve_classroom_dialogue_adehsive")
 
-            "{b}hadiah Nona Bissette{/b}." if player.location == L_school_frenchclassroom:
+            "{b}Miss Bissette{/b}'s reward." if player.location == L_school_frenchclassroom:
                 call expression game.dialog_select("eve_classroom_dialogue_bissettes_reward")
                 jump eve_button_menu
 
-            "Berpesta." if M_eve.is_state(S_eve_party_start) and game.timer.is_weekday() and player.location == L_school_frenchclassroom:
+            "Party." if M_eve.is_state(S_eve_party_start) and game.timer.is_weekday() and player.location == L_school_frenchclassroom:
                 call expression game.dialog_select("eve_button_party_start")
                 jump eve_button_menu
 
-            "Ruang bawah tanah?" if M_odette.finished_state(S_ode02_warn):
+            "The crypt?" if M_odette.finished_state(S_ode02_warn):
                 call eve_button_crypt
                 jump eve_button_menu
 
-            "Nongkrong bareng." if player.location == L_school_frenchclassroom:
+            "Hang out." if player.location == L_school_frenchclassroom:
                 call expression game.dialog_select("eve_classroom_dialogue_hang_out")
                 jump eve_button_menu
 
-            "Papan Seni." if M_ross.is_state(S_ross_find_art_pad) and player.location == L_school_righthallway:
+            "Art Pad." if M_ross.is_state(S_ross_find_art_pad) and player.location == L_school_righthallway:
                 call expression game.dialog_select("button_eve_ross_find_art_pad")
                 $ M_ross.trigger(T_ross_find_eve_backpack)
                 jump eve_button_menu
 
-            "Ransel." if M_ross.is_state(S_ross_find_eve_backpack) and player.location == L_school_righthallway:
+            "Backpack." if M_ross.is_state(S_ross_find_eve_backpack) and player.location == L_school_righthallway:
                 if player.has_item("eve_backpack"):
                     call expression game.dialog_select("button_eve_ross_find_eve_backpack_have_backpack")
                     $ player.remove_item("eve_backpack")
@@ -200,7 +190,7 @@ label eve_button_dialogue:
                     call expression game.dialog_select("button_eve_ross_find_eve_backpack_no_backpack")
                 jump eve_button_menu
 
-            "Menggambar." if M_ross.is_state(S_ross_get_eve_drawing) and player.location == L_school_righthallway:
+            "Drawing." if M_ross.is_state(S_ross_get_eve_drawing) and player.location == L_school_righthallway:
                 call expression game.dialog_select("button_eve_ross_get_eve_drawing")
                 jump eve_button_menu
 
@@ -208,78 +198,78 @@ label eve_button_dialogue:
                 call expression game.dialog_select("button_eve_ask_model")
                 jump eve_button_menu
 
-            "Cat." if M_ross.is_state(S_ross_get_paint) and player.location == L_school_righthallway:
+            "Paint." if M_ross.is_state(S_ross_get_paint) and player.location == L_school_righthallway:
                 call expression game.dialog_select("button_eve_ross_get_paint")
                 $ L_tattooparlor.unlock()
                 $ M_ross.trigger(T_ross_talk_to_grace)
                 jump eve_button_menu
 
-            "Cat." if M_ross.is_state(S_ross_get_paint_grace) and player.location == L_school_righthallway:
+            "Paint." if M_ross.is_state(S_ross_get_paint_grace) and player.location == L_school_righthallway:
                 call expression game.dialog_select("button_eve_ross_get_paint_grace")
                 jump eve_button_menu
 
-            "Suka rambutnya!" if player.location == L_school_frenchclassroom:
+            "Love the hair!" if player.location == L_school_frenchclassroom:
                 call expression game.dialog_select("button_eve_love_the_hair")
                 jump eve_button_menu
 
-            "Kamu terlihat cantik hari ini!" if player.location == L_school_frenchclassroom and M_eve.between_states(S_eve_pot_cheerup, S_eve_make_up_dress_table):
+            "You look nice today!" if player.location == L_school_frenchclassroom and M_eve.between_states(S_eve_pot_cheerup, S_eve_make_up_dress_table):
                 call expression game.dialog_select("button_eve_you_look_nice_today")
                 jump eve_button_menu
 
-            "Sesuatu yang sederhana?" if player.location in (L_school_lefthallway, L_school_righthallway) and M_eve.between_states(S_eve_pot_cheerup, S_eve_make_up_dress_table):
+            "Something simple?" if player.location in (L_school_lefthallway, L_school_righthallway) and M_eve.between_states(S_eve_pot_cheerup, S_eve_make_up_dress_table):
                 call expression game.dialog_select("button_eve_something_simple")
                 jump eve_button_menu
 
-            "Kenapa kamu tidak ada di taman?" if player.location == L_tattooparlor_roof and M_eve.between_states(S_eve_pot_cheerup, S_eve_make_up_dress_table):
+            "How come you're not at the park?" if player.location == L_tattooparlor_roof and M_eve.between_states(S_eve_pot_cheerup, S_eve_make_up_dress_table):
                 call expression game.dialog_select("button_eve_how_come_not_at_the_park")
                 jump eve_button_menu
 
-            "Bagaimana kabar semua orang di rumah?" if player.location in (L_school_frenchclassroom, L_school_lefthallway, L_school_righthallway) and M_eve.between_states(S_eve_pot_cheerup, S_eve_make_up_dress_table):
+            "How's everyone at home?" if player.location in (L_school_frenchclassroom, L_school_lefthallway, L_school_righthallway) and M_eve.between_states(S_eve_pot_cheerup, S_eve_make_up_dress_table):
                 call expression game.dialog_select("button_eve_hows_everyone_at_home")
                 jump eve_button_menu
 
-            "Proyek Seni." if player.location in (L_school_frenchclassroom, L_school_lefthallway, L_school_righthallway, L_tattooparlor_roof) and M_eve.between_states(S_eve_detention, S_eve_make_up_dress_table):
+            "Art Project." if player.location in (L_school_frenchclassroom, L_school_lefthallway, L_school_righthallway, L_tattooparlor_roof) and M_eve.between_states(S_eve_detention, S_eve_make_up_dress_table):
                 call expression game.dialog_select("button_eve_art_project")
                 jump eve_button_menu
 
-            "Bisnis menjadi lebih baik?" if player.location in (L_school_frenchclassroom, L_school_lefthallway, L_school_righthallway, L_tattooparlor_roof) and M_eve.between_states(S_eve_clients_take_care_clients, S_eve_make_up_dress_table):
+            "Business doing any better?" if player.location in (L_school_frenchclassroom, L_school_lefthallway, L_school_righthallway, L_tattooparlor_roof) and M_eve.between_states(S_eve_clients_take_care_clients, S_eve_make_up_dress_table):
                 call expression game.dialog_select("button_eve_business_doing_any_better")
                 jump eve_button_menu
 
-            "Bagaimana {b}Odette{/b} dan {b}Grace{/b}?" if player.location in (L_school_frenchclassroom, L_school_lefthallway, L_school_righthallway) and M_eve.finished_state(S_eve_make_up_dress_table):
+            "How are {b}Odette{/b} and {b}Grace{/b}?" if player.location in (L_school_frenchclassroom, L_school_lefthallway, L_school_righthallway) and M_eve.finished_state(S_eve_make_up_dress_table):
                 call expression game.dialog_select("button_eve_how_are_odette_and_grace")
                 jump eve_button_menu
 
-            "Saya akan berada di sana." if player.location in (L_school_lefthallway, L_school_righthallway) and M_eve.finished_state(S_eve_make_up_dress_table):
+            "I'll be there." if player.location in (L_school_lefthallway, L_school_righthallway) and M_eve.finished_state(S_eve_make_up_dress_table):
                 call expression game.dialog_select("button_eve_ill_be_there")
                 jump eve_button_menu
 
-            "Benar-benar?" if player.location in (L_school_righthallway, L_school_lefthallway) and M_eve.between_states(S_eve_start, S_eve_pot_cheerup):
+            "Really?" if player.location in (L_school_righthallway, L_school_lefthallway) and M_eve.between_states(S_eve_start, S_eve_pot_cheerup):
                 call expression game.dialog_select("button_eve_hallway_really")
                 jump eve_button_menu
 
-            "Anda harus mencari tempat baru?" if player.location == L_park:
+            "You should find a new spot?" if player.location == L_park:
                 call expression game.dialog_select("button_eve_should_find_a_new_spot")
                 jump eve_button_menu
 
-            "Kamu masih menggambar?" if player.location in (L_school_frenchclassroom, L_school_righthallway, L_school_lefthallway) and M_eve.between_states(S_eve_park_hangout, S_eve_pot_cheerup):
+            "You still drawing?" if player.location in (L_school_frenchclassroom, L_school_righthallway, L_school_lefthallway) and M_eve.between_states(S_eve_park_hangout, S_eve_pot_cheerup):
                 call expression game.dialog_select("button_eve_you_still_drawing")
                 jump eve_button_menu
 
-            "{i}Street Kombat{/i} pertandingan ulang!" if player.location in (L_school_frenchclassroom, L_school_righthallway, L_school_lefthallway) and M_eve.between_states(S_eve_visit_bedroom, S_eve_pot_cheerup):
+            "{i}Street Kombat{/i} rematch!" if player.location in (L_school_frenchclassroom, L_school_righthallway, L_school_lefthallway) and M_eve.between_states(S_eve_visit_bedroom, S_eve_pot_cheerup):
                 call expression game.dialog_select("button_eve_street_kombat_rematch")
                 jump eve_button_menu
 
-            "Bagaimana keadaan di toko?" if player.location in (L_school_frenchclassroom, L_school_righthallway, L_school_lefthallway) and M_eve.between_states(S_eve_visit_bedroom, S_eve_pot_cheerup):
+            "How are things at the shop?" if player.location in (L_school_frenchclassroom, L_school_righthallway, L_school_lefthallway) and M_eve.between_states(S_eve_visit_bedroom, S_eve_pot_cheerup):
                 call expression game.dialog_select("button_eve_how_are_things_at_the_shop")
                 jump eve_button_menu
 
-            "Main-main." if player.location in (L_tattooparlor_bedroom, L_tattooparlor_roof) and M_eve.finished_state(S_eve_six6nine9_time):
+            "Fool around." if player.location in (L_tattooparlor_bedroom, L_tattooparlor_roof) and M_eve.finished_state(S_eve_six6nine9_time):
                 if player.location == L_tattooparlor_roof:
                     $ player.go_to(L_tattooparlor_tent)
                 call expression game.dialog_select("button_eve_fool_around")
 
-            "Mandi?" if player.location in (L_tattooparlor_bedroom, L_tattooparlor_roof) and M_eve.shower:
+            "Shower?" if player.location in (L_tattooparlor_bedroom, L_tattooparlor_roof) and M_eve.shower:
                 call eveX2_post_eve
                 $ game.timer.tick()
                 $ player.go_to(L_tattooparlor_fire_escape)
@@ -291,39 +281,34 @@ label eve_button_dialogue:
 
 
 
-            "Mungkin lain kali." if player.location in (L_school_frenchclassroom, L_school_lefthallway, L_school_righthallway) and M_eve.finished_state(S_eve_make_up_dress_table):
+            "Maybe another time." if player.location in (L_school_frenchclassroom, L_school_lefthallway, L_school_righthallway) and M_eve.finished_state(S_eve_make_up_dress_table):
                 call expression game.dialog_select("button_eve_maybe_another_time")
                 jump eve_button_menu
 
-            "Sudahlah." if player.location in (L_school_frenchclassroom, L_school_righthallway, L_school_lefthallway):
+            "Never mind." if player.location in (L_school_frenchclassroom, L_school_righthallway, L_school_lefthallway):
                 call expression game.dialog_select("button_eve_nevermind_school")
 
-            "Sudahlah." if player.location == L_park:
+            "Never mind." if player.location == L_park:
                 call expression game.dialog_select("button_eve_nevermind_park")
 
-            "Sudahlah." if player.location == L_tattooparlor_roof:
+            "Never mind." if player.location == L_tattooparlor_roof:
                 call expression game.dialog_select("button_eve_nevermind_roof")
 
-            "Sebenarnya, aku harus pergi." if player.location == L_tattooparlor_bedroom:
+            "Actually, I should go." if player.location == L_tattooparlor_bedroom:
                 call expression game.dialog_select("button_eve_i_should_go")
     $ game.main()
 
 
 label button_eve_fool_around:
-    anon f_flirt "Anda ingin main-main sedikit?"
-
-    eve f_sexy "Tentu saja!"
-
+    anon f_flirt "You wanna mess around a little?"
+    eve f_sexy "Definitely!"
     pause
     if player.location == L_tattooparlor_tent:
-        eve "Ikuti aku ke dalam tenda."
-
+        eve "Follow me into the tent."
     else:
-        eve "Ayo berbaring di tempat tidur."
+        eve "Come lay on the bed."
 
-
-    anon "Oke."
-
+    anon "Okay."
     if player.location == L_tattooparlor_tent:
         scene expression player.location.background_blur with None
         show eve b_onbed_dressed f_sexy
@@ -332,12 +317,9 @@ label button_eve_fool_around:
         show eve b_onbed_tanktop f_sexy
     show anon b_onbed_sit f_flirt
     with dissolve
-    eve "Aku mungkin harus melepas pakaian ini, ya?"
-
+    eve "I should probably take off these clothes, huh?"
     anon @ -m_talk "Mmhmm."
-
-    eve @ f_laugh "hehe!"
-
+    eve @ f_laugh "Hehe!"
     if player.location == L_tattooparlor_tent:
         show eve f_normal_down b_onbed_topless a_remove2 with dissolve
         pause
@@ -350,73 +332,54 @@ label button_eve_fool_around:
     show eve b_onbed_top_remove4 with dissolve
     pause
     show eve f_sexy b_onbed_nude with dissolve
-    eve "kamu suka?"
-
-    anon "Oh, aku suka!"
-
-    eve @ f_laugh "Hehe, giliranmu!"
-
+    eve "You like?"
+    anon "Oh, me like!"
+    eve @ f_laugh "Hehe, your turn!"
     show anon b_onbed_sit_changing3 with fastdissolve
     pause .5
     hide anon
     show eve b_onbed_cuddle_naked_kiss o_dick a_idle
     with dissolve
     anon "!!!"
-    eve "MM."
-
+    eve "Mmm."
     pause
     show eve b_onbed_cuddle_naked f_happy
     show anon b_empty_eve_onbed_cuddle f_flirt_low zorder 1
     with dissolve
     pause
-    eve "Jadi, kita di sini lagi..."
-
+    eve "So, here we are again..."
     $ M_eve.set('sex speed', .4)
     show eve a_jerk o_empty with dissolve
     anon "Mmhmm."
-
     pause
-    eve "Apa yang ada dalam pikiranmu?"
-
+    eve "What did you have in mind?"
     menu:
-        "pekerjaan tangan.":
+        "Handjob.":
             jump eve_handjob
-        "Enam puluh sembilan.":
+        "Sixty-nine.":
 
-            eve "Anda ingin enam puluh sembilan lagi?"
-
-            anon "Tentu."
-
-            eve "Saya tidak yakin apakah Anda menyukainya pertama kali..."
-
-            anon "Ya, jangan bertanya-tanya lagi."
-
-            eve "hehe!"
-
+            eve "You wanna sixty-nine again?"
+            anon "Sure."
+            eve "I wasn't sure if you liked it the first time..."
+            anon "Well, wonder no more."
+            eve "Hehe!"
             jump eve_69
-        "Mari kita berpelukan sebentar.":
+        "Let's just cuddle for a while.":
 
-            anon "Mari kita berpelukan sebentar."
-
-            eve a_chest o_dick "Oh, aku kecewa karenanya!"
-
-            eve f_happy_closed "Aku suka saat kamu memelukku seperti ini..."
-
-            anon "Ya, aku juga."
-
+            anon "Let's just cuddle for a while."
+            eve a_chest o_dick "Oh, I'm down for that!"
+            eve f_happy_closed "I love it when you hold me like this..."
+            anon "Yeah, me too."
             jump eve_HJ_end
 
-        "Seks." if M_eve.is_state(S_eve_end):
-            anon "Tolong seks!"
-
-            eve "Mmm, aku berharap kamu akan mengatakan itu!"
-
-            eve "Bagaimana kamu menginginkanku?"
-
+        "Sex." if M_eve.is_state(S_eve_end):
+            anon "Sex, please!"
+            eve "Mmm, I was hoping you'd say that!"
+            eve "How do you want me?"
             menu:
-                "Atas!":
+                "Top!":
                     jump eve_sex_front_intro
-                "Dasar!":
+                "Bottom!":
 
                     jump eve_sex_back_intro
     return
@@ -438,26 +401,26 @@ label eve_preg_button_dialogue:
 
     call expression eve_preg_label('intro')
     menu eve_preg_menu:
-        "Bagaimana perasaanmu?" if eve_preg_label('feeling'):
+        "How are you feeling?" if eve_preg_label('feeling'):
             call expression eve_preg_label('feeling')
 
-        "Kunjungan dokter." if eve_preg_label('doctor'):
+        "Doctor's visit." if eve_preg_label('doctor'):
             call expression eve_preg_label('doctor')
 
-        "{b}Rahmat{/b}." if eve_preg_label('grace'):
+        "{b}Grace{/b}." if eve_preg_label('grace'):
             call expression eve_preg_label('grace')
 
-        "Apa yang kamu nyanyikan?" if eve_preg_label('singing'):
+        "What's that you're singing?" if eve_preg_label('singing'):
             call expression eve_preg_label('singing')
 
-        "Ada yang bisa kuberikan padamu?" if eve_preg_label('anything'):
+        "Can I get you anything?" if eve_preg_label('anything'):
             call expression eve_preg_label('anything')
 
-        "Aku serahkan padamu kalau begitu." if M_eve.pregnancy.stage <= 4:
+        "I'll leave you to it then." if M_eve.pregnancy.stage <= 4:
             call expression eve_preg_label('leave')
             $ game.main()
 
-        "Aku akan meninggalkanmu." if M_eve.pregnancy.stage > 4:
+        "I'll leave you be." if M_eve.pregnancy.stage > 4:
             call expression eve_preg_label('leave')
             $ game.main()
 

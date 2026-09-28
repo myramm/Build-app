@@ -8,11 +8,11 @@ label richard_button_dialogue:
         "You should take it easy on {b}Lucy{/b}." if game.timer.is_day():
             call expression game.dialog_select("button_richard_take_it_easy_lucy")
             jump richard_button_menu
-        "Bagaimana kabar bisnisnya?":
+        "How's the business going?":
 
             call expression game.dialog_select("button_richard_hows_the_business")
             jump richard_button_menu
-        "Tidak ada apa-apa.":
+        "Nothing.":
 
             if game.timer.is_day():
                 call expression game.dialog_select("button_richard_nothing_day")

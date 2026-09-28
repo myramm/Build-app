@@ -2,94 +2,61 @@ label ano27_init_jab:
     scene location_hill_limo_closeup_evening
     show thug
     show anon f_annoyed with dissolve
-    anon "Oh, bagus... itu kamu."
-
-    thug @ f_laugh "{b}Kelinci kecil Dimitri{/b}!!"
-
-    thug "Anda membawa lebih banyak uang untuk saya?"
-
-    anon "Tidak."
-
-    anon "Saya pikir uang saya sudah cukup, bukan?"
-
-    thug "Ah, jangan menganggapnya terlalu pribadi..."
-
-    thug "... Apakah tugasku mengambil uang itu."
-
+    anon "Oh, great... it's you."
+    thug @ f_laugh "{b}Dimitri{/b}'s little bunny!!"
+    thug "You bring more money for me?"
+    anon "No."
+    anon "I think you have enough of my money, don't you?"
+    thug "Aww, don't take it so personal..."
+    thug "... Is my job to take the monies."
     show anon f_hurt a_facepalm with dissolve
     pause
-    anon a_idle f_snarky "Dimana pacarmu?"
-
-    thug f_confused "Pacar perempuan?"
-
+    anon a_idle f_snarky "Where's your girlfriend?"
+    thug f_confused "Girlfriend?"
     show anon f_flirt_grin
-    thug "aku tidak punya-"
-
+    thug "I don't have-"
     show thug f_surprised
     pause
     show anon f_grin
-    thug f_angry "Oh, haha... lucu sekali."
-
+    thug f_angry "Oh, haha... very funny."
     show anon f_normal
-    thug a_point "Bagaimana kalau aku meninju wajahmu, ya?"
-
+    thug a_point "How about I put fist through your face, eh?"
     show anon f_worried
-    thug f_normal "Kami melihat siapa yang tertawa saat itu."
-
+    thug f_normal "We see who laughing then."
     show thug a_idle with {'master': dissolve}
-    anon f_annoyed "Ya, terserah."
-
-    anon "Begini, aku ada pertemuan dengan {b}Nadya{/b}... bolehkah aku lewat?"
-
+    anon f_annoyed "Yeah, whatever."
+    anon "Look, I've got a meeting with {b}Nadya{/b}... you gonna let me pass?"
     show thug f_angry
     pause
-    thug "Bagus."
-
-    thug a_point "Tapi ingat ini..."
-
-    thug "... Aku makan makanan sepertimu untuk sarapan!"
-
-    anon f_disgusted @ f_skeptical "Eww, kamu makan kotoran untuk sarapan?"
-
-    thug "Ya, itu-"
-
+    thug "Fine."
+    thug a_point "But remember this..."
+    thug "... I eat piece of shit like you for breakfast!"
+    anon f_disgusted @ f_skeptical "Eww, you eat shit for breakfast?"
+    thug "Yes, that's-"
     show thug f_confused a_thinking with dissolve
     pause 0.5
-    thug a_point "Err, tunggu... tidak!"
-
-    thug f_angry "Bukan ini yang saya katakan!"
-
+    thug a_point "Err, wait... no!"
+    thug f_angry "This not what I'm saying!"
     show thug a_idle with {'master': dissolve}
     anon f_confused @ -m_talk "..."
-    thug a_point "Kamu adalah orang brengsek dalam skenario ini... jadi aku akan makan-"
-
-    thug a_thinking f_confused "Ehh, tidak... ini juga tidak benar."
-
+    thug a_point "You are the shit in this scenario... so then I would be eating-"
+    thug a_thinking f_confused "Ehh, no... this not right either."
     show anon f_worried_surprised
     thug f_angry a_idle "Dammit!" (show_native="Yoperesete!")
-    thug "Semuanya campur aduk sekarang!"
-
+    thug "Is all jumbled now!"
     anon f_worried @ -m_talk "..."
     show anon f_confused
-    thug f_confused "Biasanya saya makan syrniki enak dengan semangkuk kasha..."
-
-    anon "Eh ya."
-
-    thug "... Tapi ini adalah metafora untuk membuatmu menjadi mayat."
-
-    nadya "{b}Jab{/b}, berhenti bicara dan buka pintu!"
-
+    thug f_confused "Usually I eat nice syrniki with bowl of kasha..."
+    anon "Uh huh."
+    thug "... But this is metaphor for making you into corpse."
+    nadya "{b}Jab{/b}, stop talking and open door!"
     show thug f_wincing
     nadya "... Fucking asshole." (show_native="... Grebanyy mudak.")
     show anon f_snarky
-    jab f_concerned "Y-ya, tentu saja!"
-
-    jab "Maaf, {b}Nona Chernyshevsky{/b}."
-
-    jab "{i}*Ahem*{/i} Dia akan menemuimu sekarang."
-
+    jab f_concerned "Y-yes, of course!"
+    jab "Sorry, {b}Miss Chernyshevsky{/b}."
+    jab "{i}*Ahem*{/i} She will see you now."
     anon @ -m_talk "Mhmm."
-
 
     scene location_hill_cutscene_limo_enter
     show text _ ("It felt like I was walking into a lions den...") as caption
@@ -105,31 +72,20 @@ label ano27_init_jab:
     scene location_mugging_limo_back
     show nadya b_dress_limo2
     with fade
-    nadya "Anda harus memaafkan pengawal saya ..."
-
-    nadya "... Dia orang baik dan setia padaku, tapi kepalanya kosong."
-
+    nadya "You must forgive my bodyguard..."
+    nadya "... He is good man and loyal to me, but his head is empty."
     anon "Hmm?"
-
-    nadya "Seperti anak anjing yang tidak terlatih, saya harus mengajarinya berhenti membuat pispot di atas karpet."
-
-    anon "Benar."
-
-    anon "Oke."
-
+    nadya "Like untrained puppy dog, I must teach him to stop making potty on carpets."
+    anon "Right."
+    anon "Okay."
     pause
-    anon "Saya sangat berharap itu sebuah metafora..."
-
-    nadya "Anda membawa tas kerja?"
-
-    anon "Itu di sini."
-
+    anon "I really hope that's a metaphor..."
+    nadya "You bring briefcase?"
+    anon "It's right here."
     show nadya b_dress_limo9 with dissolve
-    nadya "Bolehkah saya melihatnya?"
-
+    nadya "May I see it?"
     pause
-    anon "T-tentu saja."
-
+    anon "S-sure."
     show nadya b_dress_limo5 with dissolve
     pause
     show nadya b_dress_limo6 f_normal_down with dissolve
@@ -137,113 +93,70 @@ label ano27_init_jab:
     show nadya b_dress_limo7 f_surprised_down with dissolve
     nadya @ -m_talk "!!!"
     pause
-    anon "Kami senang?"
-
-    nadya f_smirk "Ya, kami senang."
-
+    anon "We happy?"
+    nadya f_smirk "Da, we happy."
     show nadya b_dress_limo6 with dissolve
     pause
     show nadya b_dress_limo14 with dissolve
     pause
-    nadya "Harus kukatakan, aku terkejut..."
-
+    nadya "I must say, I'm surprised..."
     show nadya b_dress_limo15 with dissolve
-    nadya "... Aku tidak percaya kamu benar-benar mampu."
-
+    nadya "... I did not believe you truely capable."
     show nadya b_dress_limo14 with dissolve
-    anon "Yah, kamu bukan orang pertama yang meremehkanku."
-
-    nadya "Hehe, ini benar."
-
-    nadya "Aku mendengar tentang bocah brengsek {b}Walikota Rump{/b} dari dealer mobil."
-
-    anon "Maksudmu {b}Kim{/b}?"
-
-    nadya "Ya, {b}Kim{/b}."
-
-    nadya @ f_laugh "Hahaha, gambar di berita... kocak!"
-
+    anon "Well, you're not the first person to underestimate me."
+    nadya "Heh, this is true."
+    nadya "I hear about {b}Mayor Rump{/b}'s little fuckboy from car dealership."
+    anon "You mean {b}Kim{/b}?"
+    nadya "Da, {b}Kim{/b}."
+    nadya @ f_laugh "Hahaha, the picture on news... hilarious!"
     pause
-    anon "Jadi, apakah ini berarti Anda akan menepati janji Anda?"
-
+    anon "So, does this mean you're gonna keep to your end of the bargain?"
     nadya @ -m_talk "Hmm."
-
-    nadya f_normal "Ya."
-
-    nadya "Tapi bisakah aku percaya kamu akan menarik pelatuknya?"
-
-    anon "Pemicu tarik-P?"
-
-    nadya "Jika aku membawamu sekamar dengan papa..."
-
-    nadya f_angry "... Aku ingin dia mati, bukan ditangkap!"
-
+    nadya f_normal "Da."
+    nadya "But can I trust you will pull trigger?"
+    anon "P-pull trigger?"
+    nadya "If I get you in room with papa..."
+    nadya f_angry "... I want him dead, not arrested!"
     pause
-    nadya f_confused "Anda punya nyali untuk melakukan ini?"
-
-    anon "aku uhh..."
-
-    anon "... Ya?"
-
-    nadya f_serious "Maka kita harus segera bertindak."
-
-    nadya "Dia sudah menyiapkan operasi untuk kembali ke Rusia."
-
-    anon "Saya siap berangkat sekarang."
-
-    nadya f_smirk "Heh, kamu bersemangat... ini bagus."
-
+    nadya f_confused "You have balls to do this?"
+    anon "I uhh..."
+    anon "... Yes?"
+    nadya f_serious "Then we must act soon."
+    nadya "He is already packing up operation for return to Russia."
+    anon "I'm ready to go now."
+    nadya f_smirk "Heh, you're eager... this is good."
     pause
-    nadya f_serious "Di gudang terdapat saluran pembuangan limbah yang menuju ke ruang penyimpanan bahan kimia."
-
-    nadya "Itu adalah titik masuk."
-
-    anon "Anda ingin saya merangkak masuk melalui saluran pembuangan limbah?"
-
-    nadya f_smirk "Ya."
-
+    nadya f_serious "At warehouse, there is sewage drain that leads to chemical storage room."
+    nadya "That is entry point."
+    anon "You want me to crawl in through a sewage drain?"
+    nadya f_smirk "Da."
     pause
-    nadya f_confused "Apakah ini masalah?"
-
-    anon "T-tidak, kurasa tidak."
-
+    nadya f_confused "Is this problem?"
+    anon "N-no, I guess not."
     pause
-    nadya f_smirk "Beri aku waktu beberapa hari dan aku akan menggunakan ini untuk membuat banyak orang menentangnya."
-
+    nadya f_smirk "Give me few days and I will use this to turn many men against him."
     pause
-    nadya f_serious "Saya akan menghubungi Anda... tetapi Anda harus siap!"
-
-    nadya "Kita tidak bisa membiarkan peluang berlalu begitu saja!"
-
-    anon "Saya akan bersiap."
-
+    nadya f_serious "I will contact you... but you must be ready!"
+    nadya "We cannot let opportunity slip away!"
+    anon "I'll be ready."
     nadya f_normal "Good." (show_native="Khoroshiy.")
     pause
-    nadya "Saat papa meninggal, kita akan berteman..."
-
-    nadya f_smirk "... Atau mungkin lebih?"
-
-    anon "{i}*Gulp*{/i} M-lebih?"
-
-    nadya "Heh, kita akan lihat apa yang akan terjadi di masa depan."
-
+    nadya "When papa is dead, we will be friends..."
+    nadya f_smirk "... Or perhaps more?"
+    anon "{i}*Gulp*{/i} M-more?"
+    nadya "Heh, we will see what future brings."
     pause
-    nadya f_serious "Sekarang... tinggalkan aku."
-
-    anon "Y-ya, oke."
-
+    nadya f_serious "Now... leave me."
+    anon "Y-yeah, okay."
     show nadya f_serious_right
     pause
     nadya f_angry_right "{b}Jab{/b}, time to go!" (show_native="{b}Jab{/b}, vremya idti!")
     nadya "We have work to do." (show_native="Nam yest' nad chem rabotat'.")
-    jab "Y-ya, {b}Nona Chernyshevsky{/b}."
-
+    jab "Y-yes, {b}Miss Chernyshevsky{/b}."
     show nadya f_angry
     pause
-    jab "Anda ingin saya harus mengambil-"
-
-    nadya f_angry_right "Jangan mulai dengan pertanyaan, kendarai saja mobilnya!"
-
+    jab "You want I should take the-"
+    nadya f_angry_right "Don't start with the questions, just drive the fucking car!"
 
     scene expression L_pizzeria_interior.background_closeup as underlay:
         xoffset 415
@@ -259,98 +172,61 @@ label ano27_init_jab:
     show anon f_laugh with dissolve:
         xoffset -500
         xzoom -1
-    anon @ -m_talk "( Heh, senang melihat bajingan itu berkeringat sedikit setelah semua masalah yang dia timbulkan padaku. )"
-
-    anon f_grin @ -m_talk "(Saya rasa saya akan senang bekerja dengan {b}Nadya{/b}. )"
-
+    anon @ -m_talk "( Heh, it's nice to see that asshole sweat a little after all the problems he's caused me. )"
+    anon f_grin @ -m_talk "( I think I'm going to like working with {b}Nadya{/b}. )"
     show anon a_phone f_looking_down with dissolve
     pause
     show anon f_normal a_phone_talk with dissolve
-    "{i}*Dering* *Dering*{/i}"
-
+    "{i}*Ring* *Ring*{/i}"
     show expression stage as stage at phoneright with phoneright.show
-    tony "{b}Pizza Tony{/b}, pilih {b}Tony{/b}."
-
-    anon "Ini aku."
-
-    tony @ f_laugh "Oh, hei juara!"
-
-    tony "Anda sudah pernah melihat {b}Ruskie{/b}?"
-
-    anon "Ya, sebenarnya aku baru saja selesai rapat."
-
-    tony "Nah, melihat bagaimana kamu masih hidup dan menelepon, menurutku semuanya berjalan baik?"
-
-    anon "Benar."
-
-    anon "Dia memberiku jalan masuk ke dalam gudang dan meminta waktu beberapa hari untuk membuat beberapa anak buah ayahnya menentangnya."
-
-    tony f_smirk "Tidak bercanda?"
-
-    tony "Jadi kita bisa mengharapkan cadangan setelah masalah terjadi?"
-
-    anon "Itu yang dia katakan..."
-
+    tony "{b}Tony{/b}'s pizza, go for {b}Tony{/b}."
+    anon "It's me."
+    tony @ f_laugh "Oh, hey champ!"
+    tony "You been to see the {b}Ruskie{/b} broad yet?"
+    anon "Yeah, I just finished with the meeting actually."
+    tony "Well, seein' as how you're still alive and callin', I'm gonna assume it went well?"
+    anon "It did."
+    anon "She gave me a way inside the warehouse and asked for a couple days to turn some of her father's men against him."
+    tony f_smirk "No kiddin'?"
+    tony "So we can expect some back-up once shit hits the fan?"
+    anon "That's what she says..."
     show tony f_sad
     pause
-    tony f_suspicious "... Dan kamu yakin dia tidak akan menikam kita dari belakang setelah pekerjaannya selesai?"
-
-    anon f_worried "Cukup percaya diri."
-
+    tony f_suspicious "... And you're confident she ain't gonna stab us in the back the second the job's done?"
+    anon f_worried "Pretty confident."
     pause
-    anon "Aku bisa pergi sendiri jika kamu khawatir... Aku tidak ingin mengambil risiko pada keluarga barumu jika-"
-
-    tony f_angry "Tidak, tidak, tidak... jangan mulai dengan omong kosong itu."
-
-    tony "Aku berjanji akan membantumu mendapatkan keadilan bagi ayahmu dan itulah yang akan aku lakukan."
-
-    tony f_suspicious "Hanya memastikan aku mendapatkan semua informasinya."
-
+    anon "I can just go myself if you're worried... I don't wanna risk your new family if-"
+    tony f_angry "No, no, no... don't start with that shit."
+    tony "I promised I'd help ya get justice for your father and that's exactly what I'm gonna do."
+    tony f_suspicious "Just makin' sure I got all the information."
     pause
-    anon "Dia sangat menginginkan ini..."
-
-    anon "... Dan aku tidak yakin apa yang akan dia peroleh jika dia mengkhianati kita."
-
-    tony "Bagaimanapun, kita harus merencanakan kemungkinan untuk itu."
-
+    anon "She wants this real bad..."
+    anon "... And I'm not sure what she'd stand to gain from double-crossing us."
+    tony "Well we should plan a contingency for it anyways."
     show anon f_worried_surprised
-    tony f_normal "Seringkali peluru yang tidak kamu lihat datanglah yang membuatmu kesal."
-
+    tony f_normal "It's often the bullet ya don't see comin' that gets ya."
     pause
     show anon f_worried
-    tony "Kita akan mulai merencanakannya besok, ya?"
-
-    anon "Ya baiklah."
-
-    tony @ f_laugh "Bagus."
-
-    tony "Aku akan meminta {b}Maria{/b} memasakkan kita sesuatu yang istimewa, ya?"
-
-    tony "Satu ledakan terakhir sebelum kita masuk ke sarang singa."
-
-    anon f_normal "Kedengarannya bagus, {b}Tony{/b}!"
-
-    tony "Pastikan saja kamu membawa selera makanmu!"
-
-    anon "Hehe, aku akan melakukannya."
-
+    tony "We'll start plannin' tomorrow, yeah?"
+    anon "Yeah, okay."
+    tony @ f_laugh "Good."
+    tony "I'll have {b}Maria{/b} cook us up somethin' special, eh?"
+    tony "One last blowout before we charge into the lions den."
+    anon f_normal "Sounds good, {b}Tony{/b}!"
+    tony "Just make sure ya bring your appetite!"
+    anon "Heh, I will."
     pause
-    anon "Sampai jumpa."
-
-    tony "Nanti, juara."
-
+    anon "See you then."
+    tony "Later, champ."
     show anon a_phone f_looking_down with dissolve
     show expression stage as stage with {'master': phoneright.hide}
-    "{i}*Bip*{/i}"
-
+    "{i}*Beep*{/i}"
     show anon a_idle f_normal with dissolve:
         xoffset 0
         xzoom 1
     pause
-    anon @ -m_talk "(Sepertinya besok akan menjadi hari yang sibuk.)"
-
-    anon @ -m_talk "(Saya harus pulang dan beristirahat.)"
-
+    anon @ -m_talk "( Sounds like tomorrow's gonna be a busy day. )"
+    anon @ -m_talk "( I should head home and get some rest. )"
     hide anon with dissolve
     return
 
@@ -358,244 +234,154 @@ label ano27_init_jab:
 label ano27_jabb_jab:
     show thug a_bottle f_disgusted
     show anon a_surprised f_surprised_teeth_down o_sewage with dissolve
-    jab "Eugh, kamu bau!"
-
-    anon f_annoyed "Ya, terima kasih, Kapten Jelas."
-
-    jab "Tidak, serius!"
-
-    jab "Baumu seperti, dua gelandangan yang berhubungan seks gay di dalam tas olahraga yang penuh dengan kaus kaki kotor berusia setahun."
-
+    jab "Eugh, you reek!"
+    anon f_annoyed "Yeah, thank you, Captain Obvious."
+    jab "No, seriously!"
+    jab "You smell like, two hobos having the gay sex inside gym bag full of year old dirty socks."
     anon f_unimpressed @ -m_talk "..."
-    jab f_normal "Tidak, tidak..."
-
-    jab "Baumu seperti telur busuk yang dicelupkan ke toilet umum restoran India dan dibiarkan tergeletak di sarang rambut manusia yang terbakar!"
-
+    jab f_normal "No, no..."
+    jab "You smell like, rotten eggs dipped in public toilet of Indian restaurant and left lying in a nest of burning human hair!"
     pause
-    anon "Kamu sudah selesai?"
-
-    jab @ f_laugh "Hehe, ya."
-
+    anon "You done?"
+    jab @ f_laugh "Heh, yes."
     anon f_tired "Goo-"
-
     show anon f_confused
-    jab a_bottle_finger @ f_surprised "Err... tunggu, tidak!"
-
-    jab "Saya punya satu lagi!"
-
+    jab a_bottle_finger @ f_surprised "Err... wait, no!"
+    jab "I have one more!"
     anon a_sides f_unimpressed @ -m_talk "..."
-    jab a_bottle "Anda berbau seperti lutefisk yang dimasak dalam crockpot dengan karung penuh uang kotor dan ganggang biru-hijau di samping genangan belerang yang hangat."
-
-    jab @ f_laugh "Seperti itulah baumu!"
-
+    jab a_bottle "You smell like, lutefisk cooking in crockpot with sack full of dirty pennies and blue-green algae next to a tepid pool of sulphur."
+    jab @ f_laugh "That's exactly what you smell like!"
     pause
-    anon "Sangat lucu."
-
-    anon f_worried_low a_point_down "Apakah itu perbekalan yang {b}Nadya{/b} tinggalkan untukku?"
-
-    jab "Ya."
-
-    anon a_sides "{i}*Sigh*{/i} Sebaiknya itu menjadi sesuatu yang baik."
-
+    anon "Very funny."
+    anon f_worried_low a_point_down "Are those the supplies {b}Nadya{/b} left me?"
+    jab "Da."
+    anon a_sides "{i}*Sigh*{/i} It had better be something good."
     show anon b_dressed_pickup o_sewage_pickup with {'master': dissolve}
-    jab f_normal_down m_talk "Bersiaplah untuk kecewa."
-
+    jab f_normal_down m_talk "Prepare to be disappointed."
     show thug a_bottle_drink f_drink -m_talk with {'master': dissolve}
-    anon "Apa yang-"
-
+    anon "What the-"
     pause
     show thug a_bottle_empty f_confused_down with {'master': dissolve}
-    anon "Sebatang sabun dan handuk?!"
-
+    anon "A bar of soap and a towel?!"
     show thug f_concerned
     show anon b_dressed f_angry a_rag o_sewage
     with {'master': dissolve}
-    anon "Hanya ini yang tersisa?!"
-
-    jab "Apa yang ingin Anda temukan?"
-
+    anon "This is all she left?!"
+    jab "What were you hoping to find?"
     show thug a_bottle_throw f_normal with {'master': dissolve}
-    anon f_annoyed "Entahlah... sesuatu yang berguna?!"
-
+    anon f_annoyed "I dunno... something useful?!"
     show thug b_dressed a_idle with {'master': dissolve}
-    jab "Percayalah, sabun sangat bermanfaat bagi Anda saat ini."
-
-    anon "Bahkan tidak ada air!"
-
+    jab "Trust me, soap very useful for you now."
+    anon "There's not even any water!"
     jab f_confused "Oh, ehh..."
-
     show thug f_confused_down with {'master': dissolve}:
         xoffset 500
         xzoom -1
-    jab "... Sial."
-
+    jab "... Shit."
     pause
     show thug f_concerned with {'master': dissolve}:
         xoffset 0
         xzoom 1
-    jab "Saya buruk."
-
+    jab "My bad."
     pause
-    anon "Kamu brengsek, {b}Jab{/b}."
-
-    jab f_normal "Ya, kamu bukan orang pertama yang memberitahuku hal ini..."
-
-    anon f_sad_down "{i}*Sigh*{/i} Kurasa, aku harus melakukannya saja."
-
+    anon "You're a fucking asshole, {b}Jab{/b}."
+    jab f_normal "Yes, you are not the first to tell me this..."
+    anon f_sad_down "{i}*Sigh*{/i} I guess, I'll just have to make do."
     show anon f_hurt a_rag_wash_face with dissolve
-    jab "Mungkin kamu bisa menggunakan bau busuk dan menyebarkannya ke mantan rekanku, kan?"
-
+    jab "Perhaps you can weaponize foul odor and unleash it upon my former comrades, eh?"
     show anon o_sewage_body a_rag_wash_shirt f_looking_down with dissolve
     jab @ f_laugh "Haha!"
-
     show anon o_empty a_rag_throw f_normal with dissolve
-    anon "Selesai."
-
+    anon "Done."
     show anon a_sides with dissolve
     show thug f_surprised
     jab @ -m_talk "Hmm?"
-
-    anon "Sekarang kita perlu menemukan cara untuk menyelinapkan teman-temanku ke dalam."
-
-    jab f_confused "Ehh, bagaimana kamu melakukan ini?!"
-
-    anon "Apakah ada pintu keluar di dekat sini?"
-
-    jab f_confused_down a_scratch_head "Tadinya kamu kotor tapi sekarang kamu masih asli... Aku tidak-"
-
-    anon f_worried @ f_annoyed "{b}Jab{/b}, fokus!"
-
-    jab f_confused a_idle "Ehh, maaf...apa pertanyaannya?"
-
-    anon "Bagaimana caranya kita mengajak teman-temanku masuk?!"
-
+    anon "Now we need to find a way to sneak my friends inside."
+    jab f_confused "Ehh, how you do this?!"
+    anon "Are there any exits nearby?"
+    jab f_confused_down a_scratch_head "You were filthy but now you pristine... I don't-"
+    anon f_worried @ f_annoyed "{b}Jab{/b}, focus!"
+    jab f_confused a_idle "Ehh, sorry... what is question?"
+    anon "How do we get my friends inside?!"
     jab f_concerned "Oh."
-
-    jab "Umm... ini akan menjadi masalah."
-
-    jab "Pintu masuk terdekat adalah lantai gudang utama."
-
-    jab "Banyak penjaga di sana!"
-
-    anon "Tunjukkan padaku."
-
-    jab f_normal @ a_defensive "Ehh, menurutku tidak."
-
-    anon f_surprised "TIDAK?!"
-
-    anon f_angry "Apa maksudmu bukan?!"
-
-    jab "aku tidak akan pergi..."
-
-    jab "... Apakah misi bunuh diri!"
-
-    anon f_annoyed "{b}Nadya{/b} berjanji padaku kamu akan membantu!"
-
-    jab "Nah, {b}Nona Chernyshevsky{/b} tidak ada di sini... kan?"
-
-    anon "Kamu serius tidak mau membantuku?!"
-
-    jab "Saya beritahu Anda pergi ke lantai gudang utama, ya?"
-
+    jab "Umm... this is going to be problem."
+    jab "Closest entrance is main warehouse floor."
+    jab "Many guards there!"
+    anon "Show me."
+    jab f_normal @ a_defensive "Ehh, I think no."
+    anon f_surprised "No?!"
+    anon f_angry "What do you mean, no?!"
+    jab "I'm not going..."
+    jab "... Is suicide mission!"
+    anon f_annoyed "{b}Nadya{/b} promised me you'd help!"
+    jab "Well, {b}Miss Chernyshevsky{/b} not here... is she?"
+    anon "You're seriously not going to help me?!"
+    jab "I tell you go to main warehouse floor, yes?"
     pause
-    jab @ a_point "Itu lewat sana."
-
+    jab @ a_point "It's that way."
     pause
-    anon f_unimpressed "Uh, baiklah."
-
-    anon a_give_me "Berikan saja senjatamu dan aku akan pergi sendiri."
-
-    jab f_angry "Apa, tidak!"
-
-    jab "Apakah senjataku!"
-
+    anon f_unimpressed "Ugh, fine."
+    anon a_give_me "Just give me your gun and I'll go alone."
+    jab f_angry "What, no!"
+    jab "Is my gun!"
     pause
-    anon f_tired "Ayolah!"
-
-    jab f_concerned "Mustahil."
-
-    jab "Aku butuh senjataku."
-
-    anon f_skeptical "Mengapa Anda mungkin membutuhkan senjata yang meringkuk di ruang penyimpanan?"
-
-    jab "Ehh, entahlah... tikus besar, mungkin?"
-
+    anon f_tired "Man, c'mon!"
+    jab f_concerned "No way."
+    jab "I need my gun."
+    anon f_skeptical "Why would you possibly need a gun cowering back here in the storage room?"
+    jab "Ehh, I don't know... big rat, maybe?"
     show anon a_sides f_unimpressed with dissolve
     pause
-    anon "Seekor tikus besar?"
-
-    jab "Ya, dengan cakar besar dan rasa darah manusia."
-
-    anon "Anda luar biasa."
-
+    anon "A big rat?"
+    jab "Yes, with huge claws and a taste for human blood."
+    anon "You are unbelievable."
     pause
-    anon f_annoyed a_frustrated "Persetan denganmu, {b}Jab{/b}!"
-
+    anon f_annoyed a_frustrated "Screw you, {b}Jab{/b}!"
     show anon a_sides with {'master': dissolve}:
         xoffset -500
         xzoom -1
-    jab f_laugh a_wave "Selamat tinggal."
-
+    jab f_laugh a_wave "Bye."
     show thug a_idle f_normal
     hide anon
     with {'master': dissolve}
-    jab "Selamat bersenang-senang!"
-
-    anon "Kamu payah."
-
+    jab "Have a great time!"
+    anon "You suck."
     return
 
 
 label ano27_peek_jab:
     show thug a_bottle
     show anon f_worried with dissolve
-    jab "Adakah yang beruntung, kawan?"
-
-    anon "Tidak."
-
+    jab "Any luck, comrade?"
+    anon "No."
     pause
 
     if not M_jab.once('water'):
-        anon f_surprised_low "Tunggu..."
-
-        anon f_angry "Bagaimana kamu mendapatkan sebotol air lagi?"
-
-        jab "Aku uhh... aku menemukannya."
-
-        anon "Apa maksudmu, kamu menemukannya... dimana?!"
-
-        jab "Ada dalam persediaan."
-
+        anon f_surprised_low "Wait..."
+        anon f_angry "How'd you get another bottle of water?"
+        jab "I uhh... I find it."
+        anon "What do you mean, you found it... where?!"
+        jab "Was in supplies."
     else:
         anon f_surprised_low @ -m_talk "..."
-        anon f_surprised "Oke, serius... berapa banyak air yang kamu sembunyikan dariku?"
+        anon f_surprised "Okay, seriously... how much water are you hiding from me?"
 
-
-    jab "kamu mau?"
-
+    jab "You want?"
     anon f_unimpressed @ -m_talk "..."
-    anon f_skeptical "Yah, itu tidak baik bagiku sekarang, kan?!"
-
+    anon f_skeptical "Well, it's no good to me now, is it?!"
     pause
-    anon f_annoyed "Senjatamu di sisi lain..."
-
-    jab @ f_laugh "Ya, senjata sangat berguna."
-
-    jab "Mungkin yang terbaik adalah jika Anda merangkak kembali ke saluran pembuangan limbah dan mencarinya..."
-
-    anon a_frustrated "Persetan denganmu, {b}Jab{/b}!"
-
+    anon f_annoyed "Your gun on the other hand..."
+    jab @ f_laugh "Yes, gun is very useful."
+    jab "Maybe is best if you crawl back into sewage drain and go find one..."
+    anon a_frustrated "Screw you, {b}Jab{/b}!"
     show anon -a_frustrated with {'master': dissolve}:
         xoffset -500
         xzoom -1
-    jab @ f_laugh "Selamat tinggal."
-
+    jab @ f_laugh "Bye."
     hide anon with {'master': dissolve}
-    jab "Selamat bersenang-senang!"
-
+    jab "Have a great time!"
     show thug a_bottle_drink f_drink with {'master': dissolve}
-    anon "Kamu payah."
-
+    anon "You suck."
     show thug a_bottle_throw f_normal with dissolve
     return
 # Decompiled by unrpyc: https://github.com/CensoredUsername/unrpyc

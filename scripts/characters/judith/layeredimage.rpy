@@ -29,7 +29,6 @@ layeredimage judith:
         attribute b_magic "judith_body_b_[M_judith.outfit.get][M_judith.pregnancy.to_string]"   
 
 
-
     group mouth prefix 'm':
         attribute talk null
 

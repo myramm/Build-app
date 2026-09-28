@@ -38,37 +38,22 @@ layeredimage odette:
 
 
     group body auto:
-        attribute b_dressed default "odette_body_b_berpakaian[M_odette.pregnancy.to_string]"
-
+        attribute b_dressed default "odette_body_b_dressed[M_odette.pregnancy.to_string]"
         attribute b_empty null
         attribute b_kiss_eve "odette_body_b_kiss_eve"
-
         attribute b_kiss_grace "odette_body_b_kiss_grace"
-
         attribute b_kiss_anon "odette_body_b_kiss_anon"
-
         attribute b_massage_cum "odette_body_b_massage_cum"
-
         attribute b_bike_cum "odette_body_b_bike_cum"
-
-        attribute b_vamp_front "lokasi_crypt_front"
-
-        attribute b_vamp_front_normal "lokasi_crypt_front"
-
+        attribute b_vamp_front "location_crypt_front"
+        attribute b_vamp_front_normal "location_crypt_front"
         attribute b_vamp_normal "odette_body_b_vamp"
-
         attribute b_vamp_sitting_cape_normal "odette_body_b_vamp_sitting_cape"
-
-        attribute b_vamp_sitting_normal "odette_body_b_vamp_duduk"
-
-        attribute b_vamp_bite "lokasi_crypt_bite01"
-
+        attribute b_vamp_sitting_normal "odette_body_b_vamp_sitting"
+        attribute b_vamp_bite "location_crypt_bite01"
         attribute b_vamp_magic "odette_body_b_vamp[M_odette.pregnancy.to_string]"
-
         attribute b_naked_vamp "odette_body_b_naked"
-
         attribute b_naked_vamp_pull_anon "odette_body_b_naked_pull_anon"
-
 
 
     group mouth prefix 'm':
@@ -254,7 +239,6 @@ layeredimage odette:
         attribute a_baby "odette_arms_dressed_a_baby_[M_odette.pregnancy.baby_gender]"
 
 
-
     group arms if_any ['b_vamp_magic'] auto variant 'vamp':
         attribute a_idle default 'odette_arms_vamp_a_touch[M_odette.pregnancy.to_string]'
 
@@ -302,7 +286,6 @@ layeredimage odette:
 
     group arms if_all 'b_gown_bed' auto variant 'gown_bed':
         attribute a_idle default "odette_arms_gown_bed_a_baby_[M_odette.pregnancy.baby_gender]"
-
 
 
     group overlay if_not 'b_sex_vamp_base' auto:

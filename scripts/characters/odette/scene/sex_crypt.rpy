@@ -46,75 +46,51 @@ label scene_odette_sex_crypt.loop:
 label scene_odette_sex_crypt.dialogue(opt, rng=-1):
 
     if opt == 1:
-        odette "Oh, aku sudah memimpikan hal ini sejak lama!"
-
-        odette "Rasanya luar biasa!"
-
+        odette "Oh, I've dreamed about this for so long!"
+        odette "It feels incredible!"
 
     elif opt == 2:
-        odette "Persetan denganku, {b}[firstname]{/b}!"
-
+        odette "Fuck me, {b}[firstname]{/b}!"
 
         if rng < .3:
-            odette "Persetan dengan vagina vampirku yang kotor!"
-
+            odette "Fuck my filthy vampire pussy!"
             anon "AMPUR?"
-
             anon "Wazzit-"
 
-
-        odette "Lebih sulit!"
-
+        odette "Harder!"
 
     elif opt == 3:
         if rng < .6:
-            anon "Hinga akhirmu adalah iggin dan mah ack!"
+            anon "Ur hinga nals er iggin n mah ack!"
 
-
-        odette "Katakan padaku aku ratumu!"
-
+        odette "Tell me I'm your queen!"
 
         if rng < .3:
-            anon "Hah?"
+            anon "Huh?"
+            odette "Say it!"
 
-            odette "Katakan!"
-
-
-        anon "Anda mah tertarik."
-
-        odette "Ya!"
-
+        anon "Ur mah Keen."
+        odette "Yes!"
 
     elif opt == 4:
-        odette "Bisakah kamu merasakan mereka memperhatikan kita?"
-
+        odette "Can you feel them watching us?"
         anon "Hoo?"
-
-        odette "Arwah orang yang baru saja pergi."
-
-        odette "Itu membuatku sangat basah!"
-
-        anon "Eh ya ampun!"
-
+        odette "The spirits of the recently departed."
+        odette "It gets me so wet!"
+        anon "Errh gud!"
 
     elif opt == 5:
-        odette "Ya, itu dia!{p=2}{nw}"
-
+        odette "Yeah, that's it!{p=2}{nw}"
         odette "Ahhhh!{p=1}{nw}"
 
-
     elif opt == 6:
-        odette "Anda menyukainya, {b}[firstname]{/b}?{p=2}{nw}"
-
-        anon "Eh ya ampun!{p=1}{nw}"
-
+        odette "You like that, {b}[firstname]{/b}?{p=2}{nw}"
+        anon "Errh gud!{p=1}{nw}"
 
     elif opt == 7:
         if rng < .2:
-            odette "Sial!{p=1}{nw}"
-
-            odette "Aku akan keluar!{p=1}{nw}"
-
+            odette "Fuuuuck!{p=1}{nw}"
+            odette "I'm gonna cum!{p=1}{nw}"
 
     return
 
@@ -122,18 +98,13 @@ label scene_odette_sex_crypt.dialogue(opt, rng=-1):
 label scene_odette_sex_crypt.switch:
     call scene_odette_crypt_cowgirl.insert
     with {'master': dissolve}
-    odette "Oke oke..."
-
-    odette "... Sebaiknya kau mundur."
-
+    odette "Okay, okay..."
+    odette "... You'd better stand back up."
     anon "Hmm?"
-
     call scene_odette_crypt_cowgirl.stage
     with {'master': dissolve}
-    odette "Anda akan merasa lebih baik, percayalah."
-
-    anon "Ugh, oke."
-
+    odette "You'll feel better, trust me."
+    anon "Ugh, ogay."
 
     scene location_crypt_side
     show odette b_naked_vamp_pull_anon f_smirk:
@@ -143,10 +114,8 @@ label scene_odette_sex_crypt.switch:
         xoffset -275
         xzoom -1
     with fade
-    odette "Apakah itu membantu?"
-
-    anon f_shy "Mm, tawaran teka-teki."
-
+    odette "Did that help?"
+    anon f_shy "Mm, ridle bid."
     show odette:
         xoffset -175
         xzoom 1
@@ -154,55 +123,42 @@ label scene_odette_sex_crypt.switch:
         xoffset -150
         xzoom 1
     with {'master': dissolve}
-    odette "Bagus..."
-
+    odette "Good..."
     show odette b_vamp_sitting:
         xoffset 0
     show anon a_cannoli_gobble b_shirt od_dick4
     with {'master': dissolve}
-    odette "... Sekarang lemparkan kembali ke sana, kawan!"
-
+    odette "... Now throw it back in there, big fella!"
     show anon f_disgusted_wince
     with {'master': dissolve}
-    anon "{i}*Meneguk*{/i}"
-
+    anon "{i}*Gulp*{/i}"
 
     $ M_odette.set('sex speed', 1. / 8)
 
     call scene_odette_sex_crypt.stage
     with fade
-    odette "Cepatlah!"
-
+    odette "Hurry up!"
     show odette b_sex_vamp_insert d_rub f_down
     with {'master': dissolve}
-    anon "Aku sedang mencoba."
-
+    anon "Ib trynin."
     show odette b_sex_vamp_base o_pre
     with {'master': dissolve}
     odette "Ngh!"
-
     call scene_odette_sex_crypt.insert
     with {'master': dissolve}
-    odette "Ahhh!"
-
-    anon "Ya Tuhan!"
-
+    odette "Ahh!"
+    anon "God ib!"
     call scene_odette_sex_crypt.animate
     with {'master': dissolve}
     jump scene_odette_sex_crypt.resume
 
 
 label scene_odette_sex_crypt.cum(where):
-    odette "Astaga!"
-
-    odette "aku akan keluar!"
-
-    anon "Ya ampun!"
-
-    anon "Aku akan-"
-
+    odette "Oh, fuck!"
+    odette "I'm gonna cum!"
+    anon "Meh eww!"
+    anon "Iz gon-"
     odette "NGGHHH!!!"
-
     hide anim
 
     if where == 'inside':
@@ -227,19 +183,14 @@ label scene_odette_sex_crypt.cum(where):
 
     anon "Haah... Haah..."
 
-
     if where == 'inside':
         show odette b_sex_vamp_base o_after with dissolve
 
-    odette "Hmm, hangat sekali."
-
+    odette "Mmm, it's so warm."
     show odette f_normal
-    anon "Ya."
-
-    anon "Aku tidak ada... T harr..."
-
+    anon "Yeah."
+    anon "Iz aught... N harr..."
     odette "Hehehe!"
-
     return
 
 
@@ -248,24 +199,18 @@ label scene_odette_sex_crypt.repeat:
 
     call scene_odette_sex_crypt.stage
     with fade
-    odette "Masukkan saja ke dalam diriku, {b}[firstname]{/b}!"
-
+    odette "Just put it inside me, {b}[firstname]{/b}!"
     show odette b_sex_vamp_insert d_rub f_down
     with {'master': dissolve}
-    odette "Ahhh!"
-
-    anon "Aku sedang mencoba."
-
+    odette "Ahh!"
+    anon "Ib trynin."
     show odette b_sex_vamp_base o_pre
     with {'master': dissolve}
-    anon "eberphing o merah dan kelinci."
-
+    anon "eberphing o red n hare."
     call scene_odette_sex_crypt.insert
     with {'master': dissolve}
     odette "Ngh!"
-
-    anon "Tuhan ib."
-
+    anon "God ib."
     call scene_odette_sex_crypt.animate
     with {'master': dissolve}
     pause

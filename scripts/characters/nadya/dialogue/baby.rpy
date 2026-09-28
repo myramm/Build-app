@@ -8,30 +8,24 @@ label nadya_button_baby_depot:
     pause .1
     show nadya f_surprised
     show svetlana f_surprised
-    "{i}*Pekerja mengobrol*{/i}"
-
+    "{i}*Workers chattering*{/i}"
     show svetlana a_crossed
     show nadya f_angry:
         xoffset 675
         xzoom -1
     with {'master': dissolve}
-    nadya "Hei, berhentilah berkeliaran!"
-
+    nadya "Hey, stop loitering about!"
     show svetlana:
         xoffset 450
     with {'master': dissolve}
-    nadya "Kembali bekerja, kalian semua!"
-
+    nadya "Back to work, all of you!"
     show anon f_worried behind nadya with dissolve:
         xoffset -100
-    nadya "Apa, menurutmu karena aku punya bayi, aku tidak akan berjalan dan menjadikanmu teladan?!"
-
+    nadya "What, you think because I have baby I will not walk over and make example of you?!"
     show anon f_worried_surprised
-    nadya "Aku memasukkanmu ke dalam karung kentang dan mengirimmu kembali ke Rusia!"
-
+    nadya "I stuff you in potato sack and ship you back Russia!"
     show anon f_worried
     anon "Ehh, {b}Nadya{/b}?"
-
     show anon a_surprised_up_both f_worried_surprised
     show nadya f_frowning:
         xoffset 100
@@ -40,100 +34,69 @@ label nadya_button_baby_depot:
         xoffset -100
         xzoom 1
     with {'master': dissolve}
-    nadya "Apa?!"
-
+    nadya "What?!"
     show svetlana f_normal
     nadya f_normal "Oh."
-
     show anon a_sides f_worried
     with {'master': dissolve}
     nadya "Sorry, {b}[firstname]{/b}." (show_native="Izvinite, {b}[firstname]{/b}.")
-    nadya "Hormon-hormon menjadi gila dalam diriku..."
-
+    nadya "The hormones are running crazy inside me..."
     show anon f_shy
-    nadya f_annoyed_down "... Dan payudaraku tidak berhenti bocor..."
-
-    nadya "... Seperti musim hujan."
-
+    nadya f_annoyed_down "... And my tits won't stop leaking..."
+    nadya "... Is like monsoon."
     show nadya f_normal
 
     menu nadya_button_baby_depot.choice:
-        "Bagaimana kabar si kecil kita?":
+        "How's our little one?":
             if not M_nadya.once('baby_vodka'):
                 jump nadya_button_baby_depot.vodka
             jump nadya_button_baby_depot.sleep
-        "Saya harus pergi.":
+        "I should go.":
 
             pass
 
-    anon "Beritahu aku jika kamu butuh sesuatu, oke?"
-
+    anon "Let me know if you need anything, okay?"
     show svetlana f_happy
-    nadya f_happy "Jangan khawatir."
-
-    nadya "Semuanya terkendali."
-
-    svetlana "Ya."
-
-    svetlana "Tidak masalah."
-
+    nadya f_happy "Do not worry."
+    nadya "Everything is under control."
+    svetlana "Da."
+    svetlana "Is no problem."
     hide anon with dissolve
     return
 
 
 label nadya_button_baby_depot.vodka:
-    anon "Bagaimana kabar si kecil kita?"
-
-    nadya "Bagus."
-
+    anon "How's our little one?"
+    nadya "Is good."
     show anon f_normal
-    nadya "Sedikit kesulitan tidur tetapi tidak ada yang tidak bisa diperbaiki dengan beberapa tetes vodka."
-
-    anon f_surprised "vodka?!"
-
-    anon "Anda tidak bisa memberi bayi vodka!!"
-
+    nadya "A little trouble sleeping but nothing a few drop vodka can't fix."
+    anon f_surprised "Vodka?!"
+    anon "You can't give babies vodka!!"
     show svetlana f_curious
     nadya f_frowning @ -m_talk "Hmm?"
-
-    nadya "Kenapa tidak?!"
-
-    anon f_worried_surprised "Karena... itu buruk bagi mereka!"
-
+    nadya "Why not?!"
+    anon f_worried_surprised "Because... it's bad for them!"
     show nadya f_normal
-    svetlana f_smirk "Tidak buruk untuk bayi Rusia."
-
+    svetlana f_smirk "Is not bad for Russian baby."
     show svetlana a_hips
     with {'master': dissolve}
-    svetlana "Vodka membuat mereka kuat."
-
-    nadya "Lihat, sudah diketahui!"
-
-    svetlana "Hal ini diketahui."
-
-    anon f_annoyed "Tidak, itu tidak diketahui!"
-
+    svetlana "Vodka make them strong."
+    nadya "See, it is known!"
+    svetlana "It is known."
+    anon f_annoyed "No, it is not known!"
     show nadya f_angry
     show svetlana f_glaring
     pause
-    anon "Jangan beri aku hal yang mencolok, itu tidak akan berhasil!"
-
-    anon "Aku akan menurunkan kakiku!"
-
-    anon "Tidak ada vodka untuk bayi kami!"
-
-    nadya f_pouting "Hanya sedikit untuk membantu tidur."
-
-    nadya "Itu tidak akan merugikan-"
-
-    anon "Aku bilang tidak!"
-
+    anon "Don't give me the glaring thing, it's not going to work!"
+    anon "I'm putting my foot down!"
+    anon "No vodka for our baby!"
+    nadya f_pouting "Is just tiny bit to help sleep."
+    nadya "It will not harm-"
+    anon "I said no!"
     pause
-    anon "Aku serius, {b}Nadya{/b}."
-
+    anon "I'm serious, {b}Nadya{/b}."
     pause
-    nadya f_frowning "Hmph, baiklah."
-
+    nadya f_frowning "Hmph, very well."
     show svetlana a_surprised f_surprised with {'master': dissolve}:
         xoffset 450
         xzoom -1
@@ -143,113 +106,81 @@ label nadya_button_baby_depot.vodka:
     nadya f_worried "He is good father." (show_native="On khoroshiy otets.")
     show svetlana f_timid
     nadya "I owe him a lot." (show_native="Ya yemu mnogim obyazan.")
-    anon f_unimpressed "Tolong, bahasa Inggris."
-
-    nadya "Menurutku kamu menang."
-
+    anon f_unimpressed "English, please."
+    nadya "I say you win."
     show svetlana f_timid:
         xoffset -100
         xzoom 1
     with {'master': dissolve}
-    nadya "Tidak ada vodka untuk bayi."
-
-    anon "Dan kamu?"
-
-    svetlana f_normal "{b}Nona Chernyshevsky{/b} membayar saya untuk mengikuti perintah."
-
-    svetlana "Jika dia mengatakan tidak ada vodka untuk bayi, maka tidak ada vodka untuk bayi."
-
-    anon f_shy "Syukurlah untuk itu!"
-
+    nadya "No vodka for babies."
+    anon "And you?"
+    svetlana f_normal "{b}Miss Chernyshevsky{/b} pays me to follow orders."
+    svetlana "If she say no vodka for babies, then no vodka for babies."
+    anon f_shy "Thank goodness for that!"
     jump nadya_button_baby_depot.choice
 
 
 label nadya_button_baby_depot.sleep:
-    anon "Bagaimana kabar si kecil?"
-
-    nadya f_normal "Bagus."
-
+    anon "How's the little one?"
+    nadya f_normal "Is good."
     show svetlana f_normal
-    nadya f_worried "Masih sulit tidur sepanjang malam, tapi kita akan segera melewati masa terburuknya."
-
-    svetlana "Ya, ada peningkatan setiap hari."
-
+    nadya f_worried "Still trouble sleeping through night, but we'll soon be past the worst of it."
+    svetlana "Da, there is improvement each day."
     pause
     show svetlana f_smirk_back
-    nadya "Saya senang memiliki {b}Svetlana{/b}, dia sangat baik dengan bayi."
-
+    nadya "I'm glad to have {b}Svetlana{/b}, she is very good with baby."
     show svetlana a_crossed f_normal with {'master': dissolve}
-    svetlana "Bayi bukanlah hal baru bagi saya."
-
-    svetlana "Saya sudah mengurus banyak hal."
-
-    anon "Yah, aku bersyukur kami memilikimu juga."
-
+    svetlana "Babies are nothing new to me."
+    svetlana "I've taken care of many."
+    anon "Well, I'm thankful we have you as well."
     show svetlana a_sides f_happy with {'master': dissolve}
-    svetlana "Heh, senang sekali diapresiasi."
-
+    svetlana "Heh, is nice to be appreciated."
     svetlana "Thank you." (show_native="Spasibo.")
     jump nadya_button_baby_depot.choice
 
 
 label nadya_button_baby_office:
-    nadya "Ssst, sayang akhirnya tidur."
-
+    nadya "Shh, baby is finally sleeping."
     show anon b_sit with dissolve:
         xoffset -250
     pause
     show anon f_shy_low
 
     if M_nadya.pregnancy.baby_gender:
-        anon "Dia sangat cantik."
-
+        anon "He's so beautiful."
     else:
-        anon "Dia sangat cantik."
+        anon "She's so beautiful."
 
-
-    nadya f_sexy_down "Ya."
-
+    nadya f_sexy_down "Da."
     pause
-    nadya "Apalagi saat tidur."
-
+    nadya "Especially when sleeping."
 
     menu nadya_button_baby_office.choice:
-        "Butuh sesuatu?":
+        "Need anything?":
             jump nadya_button_baby_office.anything
-        "Hati-hati di jalan.":
+        "Take care.":
 
             pass
 
-    anon f_shy "Hati-hati di jalan."
-
-    nadya f_normal "Beritahu {b}Svetlana{/b} untuk mengambilkan selimut bedong baru saat Anda keluar."
-
-    anon "Bisa."
-
+    anon f_shy "Take care."
+    nadya f_normal "Tell {b}Svetlana{/b} to fetch new swaddling blanket on your way out."
+    anon "Can do."
     nadya f_happy "Thank you." (show_native="Spasibo.")
     pause
-    anon "Selamat malam, {b}Nadya{/b}."
-
-    anon f_shy_low "Selamat malam, si kecil."
-
+    anon "Good night, {b}Nadya{/b}."
+    anon f_shy_low "Good night, little one."
     nadya "Good night, {b}[firstname]{/b}." (show_native="Spokoynoy nochi, {b}[firstname]{/b}.")
     hide anon with dissolve
     return
 
 
 label nadya_button_baby_office.anything:
-    anon f_normal "Butuh sesuatu?"
-
+    anon f_normal "Need anything?"
     nadya f_normal "No." (show_native="Nyet.")
-    nadya "Bayi akan tidur tiga puluh menit..."
-
-    nadya "... Kalau begitu aku akan memberi makan."
-
-    nadya "Setelah itu, {b}Svetlana{/b} akan membacakan cerita bayi sambil saya beristirahat."
-
-    anon f_shy "Sepertinya kalian berdua memiliki segalanya dengan baik."
-
-    nadya f_happy "Ya."
-
+    nadya "Baby will sleep thirty minutes..."
+    nadya "... Then I will feed."
+    nadya "After that, {b}Svetlana{/b} will read baby story while I rest."
+    anon f_shy "Sounds like you two have everything well in hand."
+    nadya f_happy "Da."
     jump nadya_button_baby_office.choice
 # Decompiled by unrpyc: https://github.com/CensoredUsername/unrpyc

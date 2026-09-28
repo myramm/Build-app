@@ -1,10 +1,8 @@
 label dewitt_dialogue_office_dewitt_eve_meet_up:
     scene expression game.timer.image("dewitt_office_c{}")
     show player 10 with dissolve
-    player_name "Saya harus memberinya ruang untuk saat ini."
-
-    player_name "Dan saya juga harus {b}mengunjungi Eve di taman pada malam hari{/b}."
-
+    player_name "I should give her some space for the time being."
+    player_name "And I should also {b}visit Eve in the park at night{/b}."
     return
 
 label dewitt_dialogue_office_dewitt_end_intro:
@@ -12,31 +10,24 @@ label dewitt_dialogue_office_dewitt_end_intro:
     show dewitt 18 at left
     show player 14f at right
     with dissolve
-    player_name "Hai, {b}Melodi{/b}!"
-
+    player_name "Hey there, {b}Melody{/b}!"
     show player 13f
     show dewitt 19
-    dewitt "Mmm, hai {b}[firstname]{/b}!"
-
-    dewitt "Aku berharap kamu akan datang mengunjungiku malam ini..."
-
+    dewitt "Mmm, hey {b}[firstname]{/b}!"
+    dewitt "I was hoping you'd come visit me tonight..."
     show dewitt 18
     show player 14f
-    player_name "Heh, kamu sedang ingin bersenang-senang?"
-
+    player_name "Heh, you in the mood for a bit of fun?"
     show player 13f
     show dewitt 19
-    dewitt "Aku selalu bersemangat untukmu, {b}[firstname]{/b}."
-
-    dewitt "Kamu ingin langsung melakukannya atau haruskah aku menari untukmu dulu?"
-
+    dewitt "I'm always in the mood for you, {b}[firstname]{/b}."
+    dewitt "You wanna get right to it or should I dance for you first?"
     show dewitt 18
     return
 
 label dewitt_dialogue_office_dewitt_end_dance:
     show dewitt 19
-    dewitt "Silakan duduk, sayang."
-
+    dewitt "Have a seat then, sugar."
     scene expression game.timer.image("dewitt_office_sex{}")
     $ M_dewitt.set("sex speed", 0.125)
     show dewitts 1
@@ -48,25 +39,17 @@ label dewitt_dialogue_office_dewitt_end_dance:
     hide dewitt
     show expression AnimatedImage("dewitt_twerk", [1,2,3,4,5,6,7,8,9,10], M_dewitt) as dewitt_twerk at Position(xalign = 0.55, yalign = 0.0)
     with dissolve
-    dewitt "Hmm..."
-
-    dewitt "Kamu suka itu, sayang?"
-
-    player_name "Oh ya!"
-
+    dewitt "Mmm..."
+    dewitt "You like that, baby?"
+    player_name "Oh yeah!"
     show player dewitts 1b with hpunch
     show player dewitts 1 with dissolve
     dewitt "Oh!"
-
-    dewitt "Saya suka ketika Anda melakukan itu!"
-
+    dewitt "I love it when you do that!"
     pause
-    dewitt "Saya pikir saya harus kehilangan beberapa pakaian ini!"
-
-    dewitt "Bagaimana menurutmu, gula?"
-
-    player_name "Y-ya!"
-
+    dewitt "I think I should lose some of these clothes!"
+    dewitt "What do you think, sugar?"
+    player_name "Y-yeah!"
     hide dewitts
     hide dewitt_twerk
     hide dewitt
@@ -81,42 +64,35 @@ label dewitt_dialogue_office_dewitt_end_dance:
     show dewitt 32b with dissolve
     pause
     show dewitt 29 with dissolve
-    dewitt "Ayo ganti musiknya juga!"
-
+    dewitt "Let's change up the music too!"
     show dewitt 35b at Position (xoffset=354) with dissolve
     pause
 
     show player 626 zorder 0 at Position (xpos=550) with dissolve
     pause
     show dewitt 36 at Position (xoffset=354)
-    dewitt "Dan apa yang kamu lakukan di belakang sana?"
-
-    dewitt "Pernahkah kamu mendengar bahwa kamu tidak boleh menyentuh para penari?"
-
+    dewitt "And just what are you doing back there?"
+    dewitt "Haven't you heard you're not supposed to touch the dancers?"
     show dewitt 35 at Position (xoffset=354)
 
     show player 629
     show player_hand 629b_629c zorder 2 at Position (xpos=550)
     with dissolve
-    player_name "Ups..."
-
+    player_name "Whoops..."
     show player 628
     show dewitt 36 at Position (xoffset=354)
-    dewitt "Bo nakal-"
-
+    dewitt "Naughty bo-"
 
     show player_hand 629d
     show dewitt 37 at Position (xoffset=290) with hpunch
     show player 626
     hide player_hand
     with dissolve
-    dewitt "Hai!"
-
+    dewitt "Hey there!"
     show dewitt 38 at Position (xoffset=290)
     show player 627
     with dissolve
-    dewitt "Kembalilah ke sofa itu, nakal!"
-
+    dewitt "Get back on that couch, naughty!"
 
     $ M_dewitt.set("sex speed", 0.125)
     scene expression game.timer.image("dewitt_office_sex{}")
@@ -124,32 +100,23 @@ label dewitt_dialogue_office_dewitt_end_dance:
     show dewitt cloths 1c
     show player dewitts 1 zorder 2 at left
     with dissolve
-    dewitt "Mmm, bagaimana keadaannya sekarang?"
-
+    dewitt "Mmm, how's it looking now?"
     hide dewitts
     hide dewitt
     show expression AnimatedImage("dewitt_twerk", ["1c","2c","3c","4c","5c","6c","7c","8c","9c","10c"], M_dewitt) as dewitt_twerk at Position(xalign = 0.55, yalign = 0.0)
     with dissolve
-    player_name "Kamu sangat seksi, {b}Melodi{/b}!"
-
-    dewitt "Heh, terima kasih, gula!"
-
+    player_name "You're so sexy, {b}Melody{/b}!"
+    dewitt "Heh, thanks, sugar!"
     pause
     show player dewitts 1b with hpunch
     show player dewitts 1 with dissolve
-    dewitt "Hmm!"
-
-    dewitt "Dasar anak nakal!"
-
-    dewitt "Kamu membuatku basah kuyup!"
-
+    dewitt "Mmm!"
+    dewitt "You naughty boy!"
+    dewitt "You're getting me so wet!"
     pause
-    dewitt "Anda siap untuk final?"
-
-    player_name "Ya, Bu!"
-
-    dewitt "Hehe, perhatikan baik-baik..."
-
+    dewitt "You ready for the finale?"
+    player_name "Yes, ma'am!"
+    dewitt "Hehe, watch closely..."
     scene black with fade
     pause 0.25
     $ M_dewitt.set("sex speed", 0.125)
@@ -157,38 +124,29 @@ label dewitt_dialogue_office_dewitt_end_dance:
     show dewitts 1
     show player dewitts 1 zorder 2 at left
     with dissolve
-    dewitt "Mmm, lihat aku mengerjakan vagina ini, sayang!"
-
+    dewitt "Mmm, watch me work this pussy, baby!"
     hide dewitts
     show expression AnimatedImage("dewitt_twerk", ["1b","2b","3b","4b","5b","6b","7b","8b","9b","10b"], M_dewitt) as dewitt_twerk at Position(xalign = 0.55, yalign = 0.0)
     with dissolve
     pause
     show player dewitts 1b with hpunch
     show player dewitts 1 with dissolve
-    dewitt "Sial!"
-
-    dewitt "Aku tidak tahan lagi, sayang!"
-
-    dewitt "Aku butuh penis sebesar itu!"
-
+    dewitt "Fuck!"
+    dewitt "I can't take it much longer, sugar!"
+    dewitt "I need that big dick!"
     pause
     return
 
 
 label dewitt_dialogue_office_dewitt_end_bj:
     show player 14f
-    player_name "Bisakah kamu memberiku BJ lagi?"
-
+    player_name "Would you be able to give me a BJ again?"
     show player 13f
     show dewitt 19 with dissolve
-    dewitt "Saya ingin sekali!"
-
-    dewitt "Anda tahu saya pernah memainkan beberapa seruling sebelumnya."
-
-    dewitt "Tapi seruling kulitmu adalah yang terbaik yang pernah kunikmati saat membungkus bibirku."
-
-    dewitt "Tapi cukup bicara, izinkan saya memberi Anda pertunjukan pribadi lainnya."
-
+    dewitt "I'd love to!"
+    dewitt "You know I've played a few flutes before."
+    dewitt "But your skin flute is the best I've ever had the pleasure of wrapping my lips around."
+    dewitt "But enough talk let me give you another private performance."
     scene black with fade
 
     $ M_dewitt.set("sex speed", 0.175)
@@ -208,18 +166,14 @@ label dewitt_dialogue_office_dewitt_end_bj:
 
 label dewitt_dialogue_office_dewitt_end_sex:
     show dewitt 19
-    dewitt "Saya berharap Anda ingin langsung bergabung!"
-
-    dewitt "Mari kita lihat siapa yang paling cepat melepaskan pakaiannya!"
-
+    dewitt "I was hoping you wanted to jump right in!"
+    dewitt "Let's see who can get out of their clothes the quickest!"
     show dewitt 20 with dissolve
     show player 26f
-    player_name "Apa tidak ada hitungan mundur?"
-
+    player_name "What no count down?"
     show dewitt 31f with dissolve
     show player 8f with dissolve
-    dewitt "Tidak!"
-
+    dewitt "Nope!"
     show dewitt 32f with dissolve
     show player 261 with dissolve
     pause
@@ -228,13 +182,10 @@ label dewitt_dialogue_office_dewitt_end_sex:
     show player 263 with dissolve
     pause
     show dewitt 19b
-    dewitt "Sepertinya aku menang!"
-
-    dewitt "Sekarang buat aku cum!"
-
+    dewitt "Looks like I won!"
+    dewitt "Now make me cum!"
     show player 262
-    player_name "Ya, Bu!"
-
+    player_name "Yes, ma'am!"
     label dewitt_twerk_end:
         scene black with fade
         pause 0.25
@@ -242,16 +193,13 @@ label dewitt_dialogue_office_dewitt_end_sex:
         show dewitts 1
         show player dewitts 2 zorder 2 at left
         with dissolve
-        dewitt "Berikan padaku, {b}[firstname]{/b}!"
-
+        dewitt "Give it to me, {b}[firstname]{/b}!"
         hide player
         show dewitts 3 at left
         with dissolve
-        dewitt "Berhenti bermain-main di sana! Saya tidak sabar!"
-
+        dewitt "Stop playing back there! I can't wait!"
         show dewitts 4
-        dewitt "Di sini, gula..."
-
+        dewitt "Right here, sugar..."
         show dewitts 5 with dissolve
         pause
         $ M_dewitt.set("sex speed", 0.125)
@@ -264,41 +212,32 @@ label dewitt_dialogue_office_intro:
     show dewitt 1b at left
     show player 14f at right
     with dissolve
-    player_name "Halo, {b}Nona Dewitt{/b}."
-
+    player_name "Hello, {b}Miss Dewitt{/b}."
     show player 13f
     show dewitt 2b
-    dewitt "Halo, {b}[firstname]{/b}!"
-
-    dewitt "Apakah Anda memerlukan sesuatu?"
-
+    dewitt "Hey there, {b}[firstname]{/b}!"
+    dewitt "Did you need something?"
     show dewitt 1b
     return
 
 label dewitt_dialogue_office_flute_lessons:
     show player 26f
-    player_name "Saya berharap Anda dapat membantu mengajari saya cara menguasai seruling saya."
-
+    player_name "I was hoping you could help teach me how to master my flute."
     show player 13f
     show dewitt 19 with dissolve
-    dewitt "Saya berharap Anda akan bertanya!"
-
-    dewitt "Temui aku di sini malam ini dan kita bisa bermain bersama!"
-
+    dewitt "I was hoping you were going ask!"
+    dewitt "Meet me here tonight and we can play together!"
     hide player
     show dewitt 6 at right
     with dissolve
-    dewitt "Dan jangan terlambat atau aku harus bermain solo."
-
+    dewitt "And don't be late or I'll just have to play solo."
     return
 
 label dewitt_dialogue_office_leave:
     show player 14f
-    player_name "Tidak saat ini."
-
+    player_name "Not at the moment."
     show player 13f
     show dewitt 2b
-    dewitt "Baiklah. Semoga harimu menyenangkan!"
-
+    dewitt "Alright. Well, have an awesome day!"
     return
 # Decompiled by unrpyc: https://github.com/CensoredUsername/unrpyc

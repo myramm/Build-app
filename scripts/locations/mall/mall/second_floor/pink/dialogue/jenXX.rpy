@@ -12,7 +12,6 @@ label jenXX_pink_extra:
         show anon a_toy1 f_shy_low
         with fade
         anon @ -m_talk "( Besides, {b}Jenny will be expecting me with her new toy{/b}. )"
-
         show anon a_backpack f_shy_down
         with {'master': dissolve}
         pause
@@ -24,7 +23,6 @@ label jenXX_pink_extra:
         with fade
 
     anon @ -m_talk "( Good thing I peeked, I could have completely missed that! )"
-
     hide anon with dissolve
     return
 
@@ -42,7 +40,6 @@ label jenXX_pink_extra.repeat:
     show anon a_sides f_laugh
     with {'master': dissolve}
     anon @ -m_talk "( I can't believe they're still going! )"
-
     hide anon with dissolve
     return
 # Decompiled by unrpyc: https://github.com/CensoredUsername/unrpyc

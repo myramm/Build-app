@@ -12,52 +12,34 @@ label scene_tina_sex_lounge:
     with {'master': dissolve}
     anon "!!!"
     tina f_normal @ f_moan "Haah!"
-
-    tina "Astaga!"
-
+    tina "Oh, fuck!"
     pause
-    tina "Nah, itu penis yang besar!"
-
-    anon "Ya Tuhan..."
-
-    anon "Saya tidak percaya ini terjadi!"
-
+    tina "Now that's a big dick!"
+    anon "Oh my god..."
+    anon "I can't believe this is happening!"
     call scene_tina_sex_lounge.animate
     with {'master': dissolve}
     pause
-    tina @ -m_talk "Hmm!"
-
-    anon "aku akan keluar!"
-
+    tina @ -m_talk "Mmm!"
+    anon "I'm gonna cum!"
     hide anim
     show anon b_tina_sex
     show tina b_sex_talk
     with {'master': dissolve}
-    tina "Tidak!"
-
-    anon "Apa-"
-
-    anon "Kenapa kamu berhenti?!"
-
-    tina "Anda tidak diperbolehkan untuk cum sampai saya mengatakannya!"
-
-    anon "Hah?!"
-
-    anon "I-itu bukan-"
-
-    tina "Ini instruksi saya selanjutnya!"
-
+    tina "No!"
+    anon "Wha-"
+    anon "Why did you stop?!"
+    tina "You are not allowed to cum until I say so!"
+    anon "Huh?!"
+    anon "T-that's not-"
+    tina "It's my next instruction!"
     anon @ -m_talk "..."
-    tina "Dan kamu akan mengikuti instruksiku, bukan, babyface?"
-
-    anon "Maksudku, aku akan mencoba..."
-
+    tina "And you're gonna follow my instructions, aren't you, babyface?"
+    anon "I mean, I'll try..."
     call scene_tina_sex_lounge.animate
     with {'master': dissolve}
-    tina "Aku tidak bisa mendengarmu!"
-
+    tina "I can't hear you!"
     anon "Haah!"
-
     pause
     call scene_tina_sex_lounge.dialogue (1)
     pause
@@ -67,39 +49,25 @@ label scene_tina_sex_lounge:
     pause
     call scene_tina_sex_lounge.dialogue (4)
     call scene_tina_sex_lounge.loop
-    tina "aku hampir..."
-
+    tina "I'm almost..."
     pause
-    tina "... Hampir sampai!"
-
-    tina "Sialan!"
-
+    tina "... Almost there!"
+    tina "Holy fuck!"
     pause
     tina "Haah!"
-
     pause
     tina "HAAAH!!"
-
-    anon "{b}Tina{/b}, aku tidak bisa-"
-
+    anon "{b}Tina{/b}, I can't-"
     pause
-    tina "Lihat aku!"
-
-    anon "Eh ya?"
-
-    tina "Kita akan cum bersama-sama!"
-
-    tina "Katakan!"
-
-    anon "Kita akan cum bersama-sama."
-
+    tina "Look at me!"
+    anon "Uh huh?"
+    tina "We're gonna cum together!"
+    tina "Say it!"
+    anon "We're gonna cum together."
     pause
-    tina "DI SINI!"
-
-    tina "DIA!!"
-
-    tina "DATANG!!!"
-
+    tina "HERE!"
+    tina "IT!!"
+    tina "COMES!!!"
     call scene_tina_sex_lounge.cum (_return)
     return
 
@@ -146,92 +114,65 @@ label scene_tina_sex_lounge.loop:
 
 label scene_tina_sex_lounge.dialogue(opt, rng=-1):
     if opt == 1:
-        tina "Katakanlah Anda akan mengikuti instruksi saya!"
-
-        anon "Y-ya!"
-
+        tina "Say you will follow my instructions!"
+        anon "Y-yes!"
 
         if rng < .2:
-            anon "Aku akan mengikutimu-"
+            anon "I will follow your-"
+            anon "Oh god!"
 
-            anon "Ya Tuhan!"
-
-
-        tina "Anak baik."
-
+        tina "Good boy."
 
     elif opt == 2:
-        tina "Ahhh!"
-
-        anon "Ini adalah-"
-
+        tina "Ahh!"
+        anon "This is-"
 
     elif opt == 3:
-        tina "Ini sangat tebal!"
-
-        anon "Kamu bertindak terlalu cepat!"
-
-        tina "Fokus, wajah sayang!"
-
+        tina "It's so fucking thick!"
+        anon "You're going too fast!"
+        tina "Focus, babyface!"
 
     elif opt == 4:
-        tina "Bernapas saja."
-
+        tina "Just breathe."
 
     elif opt == 5:
-        tina "Berikan padaku, anak besar!"
-
+        tina "Give it to me big boy!"
 
     elif opt == 6:
-        anon "Kamu sangat seksi!"
-
-        tina "Oh ya?"
-
+        anon "You are so sexy!"
+        tina "Oh, yeah?"
 
     elif opt == 7:
-        anon "Aku suka payudara besarmu!"
-
-        tina "Apa lagi yang kamu suka?"
-
+        anon "I love your big tits!"
+        tina "What else do you like?"
 
         if rng < 0 or 0 <= rng < .3:
-            anon "Rambut merah menyala itu!"
-
-            tina "Terus berlanjut!"
-
+            anon "That fiery red hair!"
+            tina "Keep going!"
 
         if rng < 0 or .3 <= rng < .6:
-            anon "Mata biru yang indah itu."
-
-            tina "Ahhh!"
-
+            anon "Those beautiful blue eyes."
+            tina "Ahh!"
 
         if rng < 0 or .6 <= rng < 1:
-            anon "Keledai yang tebal dan lezat ini."
-
+            anon "This thick, luscious ass."
             tina "Oh, {b}[firstname]{/b}..."
-
 
     return
 
 
 label scene_tina_sex_lounge.switch:
-    tina "Sini, biar aku ke atas lagi."
-
+    tina "Here, lemme get on top again."
     anon "Hmm?"
-
-    tina "Saya ingin finis di atas."
-
+    tina "I wanna finish on top."
     call scene_tina_lounge_doggy.insert
     with {'master': dissolve}
     anon "Oh, uhh..."
-
     show tina b_sex_doggy_insert_anon as anon_body
     show tina_body_b_sex_doggy_insert_arm as anon_arm
     call scene_tina_lounge_doggy.pre
     with {'master': dissolve}
-    anon "... Ya baiklah."
-
+    anon "... Yeah, alright."
     hide anim
     hide leg
     show tina b_sex_inbetween f_sexy_left behind anon_body
@@ -266,7 +207,6 @@ label scene_tina_sex_lounge.cum(where):
             align (0, 0)
 
     tina "NGGHHH!!!"
-
     show anon b_tina_sex behind tina
     show tina b_sex_talk
 
@@ -279,17 +219,11 @@ label scene_tina_sex_lounge.cum(where):
     with {'master': dissolve}
     pause
     anon "Haah... Haah..."
-
-    anon "Wah!"
-
-    anon "Itu tadi..."
-
-    tina "Kuat?"
-
-    anon "Y-ya."
-
-    tina "hehe!"
-
+    anon "Wow!"
+    anon "That was..."
+    tina "Vigorous?"
+    anon "Y-yeah."
+    tina "Hehe!"
 
     if where == 'inside':
         call call_pregnancy_minigame (None, M_tina)
@@ -315,12 +249,9 @@ label scene_tina_sex_lounge.repeat:
     with {'master': dissolve}
     anon "!!!"
     tina f_normal @ f_moan "Haah!"
-
     pause
-    tina "Mmm, aku sangat senang {b}Tony{/b} mengirimkanmu!"
-
-    anon "Y-ya, aku juga!"
-
+    tina "Mmm, I'm so glad {b}Tony{/b} sent you!"
+    anon "Y-yeah, me too!"
     call scene_tina_sex_lounge.animate
     with {'master': dissolve}
     call scene_tina_sex_lounge.dialogue (5)
@@ -335,17 +266,12 @@ label scene_tina_sex_lounge.repeat:
     if _return == 'switch':
         jump scene_tina_lounge_doggy.switch
 
-    tina "aku akan keluar!"
-
-    anon "Saya juga!"
-
-    tina "Bersama-sama kalau begitu!"
-
+    tina "I'm gonna cum!"
+    anon "Me too!"
+    tina "Together then!"
     pause
-    tina "Hampir!"
-
-    tina "Di sana!!"
-
+    tina "Almost!"
+    tina "There!!"
     call scene_tina_sex_lounge.cum (_return)
     return
 
@@ -356,10 +282,10 @@ label scene_tina_sex_lounge.replay:
     if len(variants) > 1:
         scene expression background(l=L_tina_lounge) with fade
         menu:
-            "Pertama" if 'first' in variants:
+            "First" if 'first' in variants:
                 jump scene_tina_sex_lounge.first
 
-            "Ulangi" if 'repeat' in variants:
+            "Repeat" if 'repeat' in variants:
                 jump scene_tina_sex_lounge.repeat
 
     jump expression 'scene_tina_sex_lounge.{}'.format(next(iter(variants)))

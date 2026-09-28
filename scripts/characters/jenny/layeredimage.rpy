@@ -54,38 +54,22 @@ layeredimage jenny:
         attribute b_dressed_magic 'jenny_body_b_dressed[M_jenny.pregnancy]'
         attribute b_empty null
         attribute b_groping_touch "jenny_body_b_groping_touch"
-
         attribute b_groping_suck "jenny_body_b_groping_suck"
-
         attribute b_groping_naked_touch "jenny_body_b_groping_naked_touch"
-
         attribute b_groping_naked_suck "jenny_body_b_groping_naked_suck"
-
         attribute b_groping_naked_finger "jenny_body_b_groping_naked_finger"
-
         attribute b_shower_scene_d_rub "jenny_body_b_shower_scene_d_rub"
-
         attribute b_shower_scene_e_rub "jenny_body_b_shower_scene_e_rub"
-
         attribute b_bed_pussy "jenny_body_b_bed_pussy"
-
         attribute b_shower_soaping "jenny_body_b_shower_soaping"
-
         attribute b_shower_butt "jenny_body_b_shower_butt"
-
         attribute b_front_kiss "jenny_body_b_front_kiss"
-
         attribute b_sleep_side_grope "jenny_body_b_sleep_side_grope"
-
         attribute b_sleep_side_grope_shirtup "jenny_body_b_sleep_side_grope_shirtup"
-
         attribute b_sleep_side_grope_hump_shirtup "jenny_body_b_sleep_side_grope_hump_shirtup"
-
         attribute b_towel "characters/jenny/layeredimage/jenny_body_b_towel[M_jenny.pregnancy.to_string].png"
         attribute b_couch_clit "jenny_body_b_couch_clit"
-
         attribute b_magic_sit_stand_dressed "jenny_body_b_magic_sit_stand_dressed"
-
         attribute b_dressed_tied_boob_grab
 
 
@@ -103,27 +87,16 @@ layeredimage jenny:
 
     group face if_not 'm_talk' if_all 'b_magic_sit_stand_dressed':
         attribute f_normal "jenny_face_f_magic_sit_stand_normal"
-
         attribute f_sexy "jenny_face_f_magic_sit_stand_sexy"
-
         attribute f_grin "jenny_face_f_magic_sit_stand_grin"
-
         attribute f_laugh "jenny_face_f_magic_sit_stand_laugh"
-
         attribute f_eyeroll "jenny_face_f_magic_sit_stand_eyeroll"
-
         attribute f_upset "jenny_face_f_magic_sit_stand_upset"
-
         attribute f_angry "jenny_face_f_magic_sit_stand_angry"
-
         attribute f_phone_upset "jenny_face_f_magic_sit_stand_phone_upset"
-
         attribute f_gross "jenny_face_f_magic_sit_stand_gross"
-
         attribute f_surprised "jenny_face_f_magic_sit_stand_surprised"
-
         attribute f_sad "jenny_face_f_magic_sit_stand_sad"
-
 
 
     group face if_not 'm_talk' if_any jenny_clothing_options auto
@@ -237,11 +210,8 @@ layeredimage jenny:
 
     group face if_not 'm_talk' if_all 'b_bed_pussy' auto variant 'bed_pussy':
         attribute f_sexy_down "jenny_face_bed_pussy_f_sexy_down"
-
         attribute f_nipple2 "jenny_face_bed_pussy_f_nipple2"
-
         attribute f_nipple3 "jenny_face_bed_pussy_f_nipple3"
-
 
 
     group face if_not 'm_talk' if_all 'b_bed_pussy1' auto:
@@ -309,27 +279,16 @@ layeredimage jenny:
 
     group face if_all ['m_talk', 'b_magic_sit_stand_dressed']:
         attribute f_grin "jenny_face_talk_f_magic_sit_stand_grin"
-
         attribute f_normal "jenny_face_talk_f_magic_sit_stand_normal"
-
         attribute f_sexy "jenny_face_talk_f_magic_sit_stand_sexy"
-
         attribute f_eyeroll "jenny_face_f_magic_sit_stand_eyeroll"
-
         attribute f_upset "jenny_face_talk_f_magic_sit_stand_upset"
-
         attribute f_angry "jenny_face_talk_f_magic_sit_stand_angry"
-
         attribute f_phone_upset "jenny_face_talk_f_magic_sit_stand_phone_upset"
-
         attribute f_gross "jenny_face_talk_f_magic_sit_stand_gross"
-
         attribute f_sad "jenny_face_talk_f_magic_sit_stand_sad"
-
         attribute f_laugh "jenny_face_f_magic_sit_stand_laugh"
-
         attribute f_surprised "jenny_face_f_magic_sit_stand_surprised"
-
 
 
     group face if_all 'm_talk' if_any jenny_clothing_options auto variant 'talk'
@@ -443,11 +402,8 @@ layeredimage jenny:
 
     group face if_all ['m_talk','b_bed_pussy'] auto variant 'bed_pussy_talk':
         attribute f_sexy_down "jenny_face_bed_pussy_talk_f_sexy_down"
-
         attribute f_nipple2 "jenny_face_bed_pussy_talk_f_nipple2"
-
         attribute f_nipple3 "jenny_face_bed_pussy_talk_f_nipple3"
-
 
 
     group face if_all ['m_talk', 'b_bed_pussy1'] auto variant 'talk':
@@ -516,9 +472,7 @@ layeredimage jenny:
 
     group arms if_any ['b_dressed', 'b_dressed_magic', 'b_wet', 'b_casual', 'b_towelhead', 'b_pantieless'] auto variant 'dressed':
         attribute a_idle default "jenny_arms_dressed_a_crossed[M_jenny.pregnancy.to_string]"
-
         attribute a_phone "jenny_arms_dressed_a_phone[M_jenny.pregnancy.to_string]"
-
         attribute a_baby "characters/jenny/layeredimage/jenny_arms_dressed_a_baby_[player.last_baby_gender].png"
         attribute a_magic
 
@@ -527,19 +481,15 @@ layeredimage jenny:
         attribute a_idle default "jenny_arms_dressed_a_crossed_pregnant_bump"
 
 
-
     group arms if_any ['b_dressed_pregnant_belly'] auto variant 'dressed':
         attribute a_idle default "jenny_arms_dressed_a_crossed_pregnant_belly"
-
         attribute a_crossed "jenny_arms_dressed_a_crossed_pregnant_belly"
-
         attribute a_cry 'jenny_arms_dressed_a_pregnant_belly_cry'
         attribute a_touch 'jenny_arms_dressed_a_pregnant_touch'
 
 
     group arms if_any ['b_jersey_pregnant_belly'] auto variant 'jersey_pregnant_belly':
         attribute a_idle default "jenny_arms_jersey_pregnant_belly_a_touch"
-
 
 
     group arms if_any ['b_naked_pregnant_belly'] auto variant 'naked_pregnant_belly':
@@ -567,24 +517,18 @@ layeredimage jenny:
 
     group arms if_any ['b_magic_sit_stand_dressed'] auto:
         attribute a_idle default "jenny_arms_a_magic_sit_stand_hip_spoon"
-
         attribute a_magic_sit_stand_belly_touch "jenny_arms_a_magic_sit_stand_belly_touch"
-
         attribute a_magic_sit_stand_phone "jenny_arms_a_magic_sit_stand_phone"
-
         attribute a_magic_sit_stand_crossed "jenny_arms_a_magic_sit_stand_crossed"
-
 
 
     group arms if_any ['b_bed_front_sit'] auto variant 'bed_front_sit':
         attribute a_idle default "jenny_arms_bed_front_sit_a_sides"
 
 
-
     group arms if_any ['b_couch_sit'] auto variant 'couch':
         attribute a_idle default 'jenny_arms_couch_a_rest'
         attribute a_dick "jenny_arms_couch_a_dick"
-
 
 
     group arms if_any ['b_bed_panties', 'b_bed_dressed'] auto variant 'bed_dressed':
@@ -633,10 +577,8 @@ layeredimage jenny:
 
 
     group arms if_any ['b_swimsuit'] auto variant 'swimsuit':
-        attribute a_idle default "jenny_arms_baju renang_a_crossed[M_jenny.pregnancy.to_string]"
-
-        attribute a_phone "jenny_arms_baju renang_a_ponsel[M_jenny.pregnancy.to_string]"
-
+        attribute a_idle default "jenny_arms_swimsuit_a_crossed[M_jenny.pregnancy.to_string]"
+        attribute a_phone "jenny_arms_swimsuit_a_phone[M_jenny.pregnancy.to_string]"
 
 
     group arms if_any ['b_dinner_casual_side'] auto variant 'dinner_casual_side':
@@ -656,7 +598,6 @@ layeredimage jenny:
         attribute a_jerk "jenny_arms_bed_side_a_jerk"
 
 
-
     group arms if_any 'b_jersey_bed_side' auto variant 'jersey_bed_side':
         attribute a_idle default 'jenny_arms_jersey_bed_side_a_side'
 
@@ -674,12 +615,9 @@ layeredimage jenny:
 
 
     group arms if_any ['b_breakfast_dressed', 'b_breakfast_dressed_pregnant_belly', 'b_dinner_casual'] auto variant 'breakfast_dressed':
-        attribute a_idle default "jenny_arms_sarapan_berpakaian_a_crossed[M_jenny.pregnancy.to_string]"
-
-        attribute a_phone "jenny_arms_sarapan_berpakaian_a_ponsel[M_jenny.pregnancy.to_string]"
-
-        attribute a_rub "jenny_arms_sarapan_berpakaian_a_rub"
-
+        attribute a_idle default "jenny_arms_breakfast_dressed_a_crossed[M_jenny.pregnancy.to_string]"
+        attribute a_phone "jenny_arms_breakfast_dressed_a_phone[M_jenny.pregnancy.to_string]"
+        attribute a_rub "jenny_arms_breakfast_dressed_a_rub"
 
 
     group arms if_any ['b_breakfast_dressed_eat_pregnant_belly'] auto variant 'breakfast_dressed_eat_pregnant_belly':
@@ -698,7 +636,6 @@ layeredimage jenny:
         attribute a_stroke "jenny_arms_visit_sit_a_stroke"
 
 
-
     group arms if_any ['b_sleep_side_naked'] auto variant 'sleep_naked':
         attribute a_idle default 'jenny_arms_sleep_naked_a_side'
 
@@ -710,7 +647,6 @@ layeredimage jenny:
     group arms if_any ['b_naked', 'b_shower', 'b_panties'] auto variant 'naked':
         attribute a_idle default 'jenny_arms_naked_a_hips'
         attribute a_monster_hit "jenny_arms_naked_a_monster_hit"
-
 
 
     group arms if_any ['b_shower_back'] auto variant 'shower_back':
@@ -754,7 +690,6 @@ layeredimage jenny:
     group overlay if_not ['b_breakfast_dressed', 'b_breakfast_dressed_pregnant_belly', 'b_breakfast_dressed_pregnant_bump', 'b_dinner_casual', 'b_breakfast_gettingup', 'b_breakfast_gettingup_pregnant_belly', 'b_breakfast_standing', 'b_breakfast_standing_panties_down', 'b_breakfast_standing_pregnant_belly', 'b_breakfast_pulling', 'b_breakfast_pulling_pregnant_belly', 'b_cheer_dress1', 'b_dressed_panties_remove_down', 'b_dressed_pregnant_belly_panties_remove_down', 'b_dressed_pregnant_belly_run', 'b_dressed_pregnant_bump_run', 'b_dressed_run', 'b_naked_panties_remove_down'] auto:
         attribute o_empty default null
         attribute o_visit_cumshot "jenny_overlay_o_visit_cumshot"
-
 
     group overlay if_any ['b_breakfast_dressed', 'b_breakfast_dressed_pregnant_belly', 'b_breakfast_dressed_pregnant_bump', 'b_dinner_casual'] auto:
         offset (129, 144)

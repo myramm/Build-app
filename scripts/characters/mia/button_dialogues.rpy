@@ -10,49 +10,38 @@ label mia_dialogue_helen_route:
         show old_mial 1f at right
     show player 10 at left
     with dissolve
-    player_name "Hai, {b}Mia{/b}."
-
+    player_name "Hi, {b}Mia{/b}."
     show player 5
     show old_mia 12
-    mia "Oh... Halo, {b}[firstname]{/b}."
-
+    mia "Oh... Hello, {b}[firstname]{/b}."
     show old_mia 8
     show player 10
     player_name "..."
     show player 11
     pause
     show player 10
-    player_name "Jadi, bagaimana kabarmu?"
-
+    player_name "So, how are you doing?"
     show player 5
     show old_mia 12
-    mia "Aku masih merasa sedikit sedih karena keluargaku tidak bisa bersama."
-
+    mia "I'm still feeling a bit sad about my family not being together."
     show old_mia 46f
-    mia "Aku rindu bangun dan bertemu ayahku setiap pagi."
-
-    mia "Dan {b}Ibu{/b} nampaknya semakin menjauh akhir-akhir ini."
-
+    mia "I miss waking up and seeing my dad every morning."
+    mia "And {b}Mom{/b} seems more distant lately."
     show old_mia 45f
     show player 10
-    player_name "Hah..."
-
+    player_name "Huh..."
     show player 12
-    player_name "Hei, apakah kamu ingin melakukan sesuatu nanti?"
-
+    player_name "Hey, do you want to do something later?"
     show player 10
-    player_name "Ada kuis lain yang akan datang. Ingin belajar?"
-
+    player_name "There's another quiz coming up. Want to study?"
     show player 5
     show old_mia 46f
-    mia "Tidak, aku sedang tidak ingin melakukan apa pun saat ini."
-
+    mia "No. I don't feel like doing anything right now."
     show old_mia 45f
     show player 24
     player_name "..."
     show player 10
-    player_name "Baiklah, aku akan menyusulmu nanti!"
-
+    player_name "Well, I'll catch up with you later then!"
     show player 5
     mia "..."
     hide player
@@ -74,48 +63,35 @@ label mia_dialogue_helen_change_news:
         show old_mial 1f at right
     with dissolve
     mia "{b}[firstname]{/b}!"
-
-    mia "Apa yang telah terjadi?"
-
+    mia "What happened?"
     show old_mia 7
     show player 14
-    player_name "Aku berbicara dengan ibumu. Saya pikir saya berhasil menghubunginya!"
-
+    player_name "I talked to your mom. I think I got through to her!"
     show player 13
     show old_mia 10
-    mia "Kamu melakukannya?! Tapi bagaimana..."
-
+    mia "You did?! But how..."
     show old_mia 7
     show player 17
-    player_name "Aku tahu, ceritanya panjang..."
-
+    player_name "I know, it's a long story..."
     show player 14
-    player_name "... Tapi semuanya akan baik-baik saja. Saya berjanji!"
-
-    player_name "Kami berbicara, dan dia setuju untuk mencoba mengubah keadaan agar mereka dapat kembali bersama!"
-
+    player_name "... But everything will be fine. I promise!"
+    player_name "We spoke, and she agreed to try changing things so they can get back together!"
     show player 13
     show old_mia 9
-    mia "Itu luar biasa!"
-
+    mia "That's amazing!"
     show old_mia 7
     show player 14
-    player_name "Menurutku dia juga akan lebih toleran padamu..."
-
-    player_name "... Aku merasa dia akan mengubah sikapnya."
-
+    player_name "I think she will be more lenient with you as well..."
+    player_name "... I feel like she will change her attitude."
     show player 13
     show old_mia 10
-    mia "Wow... Anda pasti bekerja keras untuk meyakinkannya!"
-
+    mia "Wow... You must have really worked hard on convincing her!"
     show old_mia 7
     show player 17
-    player_name "Saya punya beberapa trik. Ha ha!"
-
+    player_name "I have a few tricks up my sleeve. Haha!"
     show player 13
     show old_mia 10
-    mia "Saya sangat senang! Terima kasih, {b}[firstname]{/b}!"
-
+    mia "I'm so happy! Thank you, {b}[firstname]{/b}!"
     show old_mia 7
     pause
     hide player
@@ -129,12 +105,10 @@ label mia_dialogue_helen_change_news:
     if player.location == L_school_scienceclassroom:
         show old_mial 1f
     with dissolve
-    mia "Kalau begitu, sampai jumpa lagi!"
-
+    mia "I'll see you later, then!"
     show old_mia 7
     show player 21
-    player_name "Selamat tinggal."
-
+    player_name "Bye."
     hide player
     hide old_mial
     hide old_mia
@@ -146,30 +120,23 @@ label mia_dialogue_mia_bedroom_mia_end_intro:
     show player 13 at left
     show old_mia 10 at right
     with dissolve
-    mia "Saya sangat senang Anda datang."
-
+    mia "I'm so happy you came."
     show old_mia 7
     show player 14
-    player_name "Hai, {b}Mia{/b}."
-
+    player_name "Hi, {b}Mia{/b}."
     show player 13
     show old_mia 10
-    mia "Jadi kamu ingin jalan-jalan?"
-
-    mia "Atau apakah Anda di sini untuk mencoba teknik belajar baru saya?"
-
+    mia "So you want to hang out?"
+    mia "Or are you here to try that new studying technique of mine?"
     show old_mia 7
     return
 
 label mia_dialogue_mia_bedroom_mia_end_study:
-    player_name "Mau... Belajar telanjang lagi?"
-
+    player_name "Want to... Study naked again?"
     show player 13
     show old_mia 10
-    mia "Ya!"
-
-    mia "Duduklah di tempat tidur sementara aku berganti pakaian."
-
+    mia "Yeah!"
+    mia "Sit on the bed while I change."
     hide player
     hide old_mia
     with dissolve
@@ -178,22 +145,17 @@ label mia_dialogue_mia_bedroom_mia_end_study:
 label mia_dialogue_mia_bedroom_mia_end_leave:
     show old_mia 8
     show player 10
-    player_name "Aku ingin sekali... Tapi ini sudah larut..."
-
+    player_name "I'd love to... But it's getting late..."
     show old_mia 12
     show player 5
-    mia "Oh oke..."
-
-    mia "... Apakah kamu akan segera kembali?"
-
+    mia "Oh, okay..."
+    mia "... Will you come back soon?"
     show player 14
     show old_mia 8
-    player_name "Ya. Saya akan melihat apa yang bisa saya lakukan!"
-
+    player_name "Yeah. I'll see what I can do!"
     show old_mia 12
     show player 1
-    mia "Selamat malam..."
-
+    mia "Good night..."
     hide player
     hide old_mia
     with dissolve
@@ -204,125 +166,92 @@ label mia_dialogue_mia_bedroom_mia_tattoo_help:
     show player 13 at left
     show old_mia 10 at right
     with dissolve
-    mia "Hei!"
-
-    mia "Saya sangat senang Anda bisa melakukannya!"
-
+    mia "Hey!"
+    mia "I'm so happy you could make it!"
     show old_mia 7
     show player 17
-    player_name "Tidak apa-apa. Sepertinya ada sesuatu yang penting untuk dibicarakan."
-
+    player_name "It's fine. It just seemed like you had something important to talk about."
     show player 14
-    player_name "Anda ingin menanyakan sesuatu kepada saya?"
-
+    player_name "You wanted to ask me something?"
     show player 13
     show old_mia 10
-    mia "Yah, itu tidak {i}itu{/i} penting..."
-
-    mia "... Saya berharap bisa mendapatkan pendapat Anda tentang sesuatu, dan mungkin Anda bisa membantu saya."
-
+    mia "Well, it's not {i}that{/i} important..."
+    mia "... I was hoping I could get your opinion on something, and maybe you could help me."
     show old_mia 7
     show player 10
-    player_name "Uhh... kurasa begitu. Tentang apa ini?"
-
+    player_name "Uhh... I guess so. What is it about?"
     show player 11
     show old_mia 10
-    mia "Tahukah Anda tentang tato?"
-
+    mia "Do you know anything about tattoos?"
     show old_mia 7
     show player 10
-    player_name "Tato?!"
-
+    player_name "Tattoos?!"
     show player 12
-    player_name "Mengapa? Apakah Anda berpikir untuk mendapatkannya?"
-
+    player_name "Why? Are you thinking about getting one?"
     show player 11
     show old_mia 12
-    mia "Aku tahu itu buruk..."
-
-    mia "... Tapi, aku bosan disuruh apa yang harus kulakukan!"
-
-    mia "Saya hanya ingin melakukan sesuatu... Spontan dan bersenang-senang!"
-
-    mia "Untuk merasa bebas..."
-
+    mia "I know it's bad..."
+    mia "... But, I'm tired of being told what to do!"
+    mia "I just feel like doing something... Spontaneous and to have fun!"
+    mia "To feel free..."
     show old_mia 8
     show player 10
-    player_name "Apakah ibumu akan baik-baik saja dengan ini?"
-
+    player_name "Is your mom going to be okay with this?"
     show player 5
     show old_mia 12
-    mia "Saya tidak peduli lagi."
-
+    mia "I don't care anymore."
     show old_mia 8
     show player 11
     player_name "..."
     show player 14
-    player_name "Tato itu cukup keren. Aku hanya tidak ingin kamu mendapat masalah."
-
+    player_name "Tattoos are pretty cool. I just don't want you to get into trouble."
     show player 13
     show old_mia 12
-    mia "Apakah kamu akan membantuku?"
-
+    mia "Are you going to help me?"
     show old_mia 8
     show player 14
-    player_name "Tentu, tapi bagaimana caranya?"
-
+    player_name "Sure, but how?"
     show player 13
     show old_mia 10
-    mia "Saya tahu Anda suka menggambar sesuatu di kelas sepanjang waktu, dan saya telah melihat karya seni Anda..."
-
-    mia "... Saya berharap Anda akan menggambar sesuatu untuk tato saya!"
-
+    mia "I know you like to draw stuff in class all the time, and I've seen your art..."
+    mia "... I was hoping you would draw something for my tattoo!"
     show old_mia 7
     show player 22
     player_name "!!!" with hpunch
     show player 29
-    player_name "Apa kamu yakin?"
-
+    player_name "Are you sure?"
     show player 13 with dissolve
     show old_mia 10
-    mia "Ya! Kamu sangat ahli dalam hal itu."
-
+    mia "Yeah! You're so good at it."
     show old_mia 7
     show player 21
-    player_name "Terima kasih, tapi saya bahkan tidak tahu apa yang Anda inginkan!"
-
+    player_name "Thanks, but I don't even know what you want!"
     show player 13
     show old_mia 10
-    mia "Hmm... Aku ingin sesuatu yang lucu!"
-
+    mia "Hmm... I want something cute!"
     show old_mia 9
-    mia "Dengan warna-warna cantik!"
-
+    mia "With pretty colors!"
     show old_mia 7
     show player 24
-    player_name "Bagaimana jika itu buruk dan Anda akhirnya membencinya?"
-
+    player_name "What if it's bad and you end up hating it?"
     show player 13
     show old_mia 10
-    mia "Saya yakin semuanya akan baik-baik saja!"
-
+    mia "I'm sure it will be fine!"
     show old_mia 7
     show player 14
-    player_name "Jika kamu berkata begitu..."
-
+    player_name "If you say so..."
     show player 13
     show old_mia 10
-    mia "Datang menemui saya ketika Anda memiliki sesuatu."
-
+    mia "Come see me when you have something."
     show old_mia 7
     show player 14
-    player_name "Baiklah."
-
+    player_name "Alright."
     show player 13
     show old_mia 10
-    mia "Saya harus tidur. Sampai jumpa di sekolah!"
-
+    mia "I have to go sleep. I'll see you at school!"
     show old_mia 7
     show player 36 with dissolve
-    player_name "Selamat malam!"
-
+    player_name "Good night!"
     hide player
     hide old_mia
     with dissolve
@@ -333,16 +262,12 @@ label mia_dialogue_mia_bedroom_mia_church_plan:
     show player 13 at left
     show old_mia 12 at right
     with dissolve
-    player_name "Hai, {b}Mia{/b}."
-
-    player_name "Kupikir aku akan menyelinap dan menemuimu."
-
+    player_name "Hey, {b}Mia{/b}."
+    player_name "Thought I'd sneak up and see you."
     show player 5
     show old_mia 10
-    mia "Ah, terima kasih. Saya menghargainya."
-
-    mia "Ada apa?"
-
+    mia "Aww, thanks. I appreciate it."
+    mia "What's up?"
     show old_mia 7
     return
 
@@ -350,27 +275,21 @@ label mia_dialogue_mia_bedroom_intro:
     scene location_mia_bedroom_closeup
     show old_mia 10 at right
     show player 13 at left with dissolve
-    mia "Saya sangat senang Anda datang!"
-
+    mia "I'm so happy you came!"
     show old_mia 7
     show player 21
-    player_name "Hai, {b}Mia{/b}!"
-
+    player_name "Hi, {b}Mia{/b}!"
     show player 29
-    player_name "Terasa aneh, menyelinap ke rumah seseorang di malam hari..."
-
+    player_name "Feels kind of strange, sneaking into someone's house at night..."
     show old_mia 9
     show player 13
-    mia "Tidak apa-apa! Kita tidak akan mendapat masalah..."
-
+    mia "It's fine! We're not gonna get in trouble..."
     show old_mia 10
     show player 11
-    mia "... Kita hanya perlu {b}diam saja{/b}!"
-
+    mia "... We just have to {b}stay quiet{/b}!"
     show old_mia 7
     show player 17
-    player_name "Jika Anda berkata demikian. Ha ha."
-
+    player_name "If you say so. Haha."
     show old_mia 12
     show player 1
     return
@@ -381,18 +300,14 @@ label mia_dialogue_science_classroom_mia_strip_aftermath:
     show old_mia 12 at right
     show old_mial 1f at right
     with dissolve
-    mia "Hai, {b}[firstname]{/b}..."
-
+    mia "Hey, {b}[firstname]{/b}..."
     show old_mia 8
     show player 10
-    player_name "Bagaimana kabarmu?"
-
+    player_name "How are you?"
     show player 5
     show old_mia 12
-    mia "Aku baik-baik saja, tapi kita sebaiknya tidak bicara."
-
-    mia "Aku sudah cukup mendapat masalah... Maaf."
-
+    mia "I'm okay, but we really shouldn't be talking."
+    mia "I'm in enough trouble as it is... Sorry."
     show old_mia 8
     show player 24
     player_name "..."
@@ -409,96 +324,72 @@ label mia_dialogue_science_classroom_mia_consult:
     show old_mial 1f at right
     with dissolve
     mia "{b}[firstname]{/b}!"
-
     show old_mia 7
     show player 14
-    player_name "Hei, {b}Mia{/b}!"
-
+    player_name "Hey, {b}Mia{/b}!"
     show old_mia 10
     show player 13
-    mia "Aku ingin mengucapkan terima kasih karena telah datang mengunjungiku malam itu..."
-
+    mia "I wanted to thank you for coming to visit me the other night..."
     show player 11
-    mia "... Aku sangat menikmatinya, tapi..."
-
+    mia "... I really enjoyed it, but..."
     show old_mia 7
     player_name "..."
     show old_mia 8
     show player 10
-    player_name "Apakah ada yang salah?"
-
+    player_name "Is something wrong?"
     show old_mia 12
     show player 11
-    mia "Ya, ibuku semakin curiga."
-
+    mia "Well, my mom is growing suspicious."
     show old_mia 8
     show player 10
-    player_name "Tentang saya?"
-
+    player_name "Of me?"
     show old_mia 12
     show player 5
-    mia "Ya, menurutku dia tahu kamu datang."
-
+    mia "Yeah, I think she knows you came over."
     show old_mia 8
     show player 10
-    player_name "Apakah ini benar-benar masalah besar?"
-
+    player_name "Is it really that big of a deal?"
     show old_mia 12
     show player 5
-    mia "Dia pasti TIDAK setuju dengan itu."
-
+    mia "She's definitely NOT okay with it."
     show player 11
-    mia "Maksudku, mungkin jika entah bagaimana... Kau mempunyai sisi baik dari ayahku? Aku yakin dia bisa berbicara dengannya."
-
+    mia "I mean, maybe if somehow... You got on my dad's good side? I'm sure he could talk to her."
     show old_mia 8
     show player 10
-    player_name "Ayahmu? Tapi bagaimana caranya?"
-
+    player_name "Your dad? But how?"
     show old_mia 7
-    player_name "Dia tampaknya juga cukup ketat!"
-
+    player_name "He seems pretty strict too!"
     show old_mia 9
     show player 11
-    mia "Tidak mungkin, dia sangat lembut..."
-
+    mia "No way, he's a big softie..."
     show old_mia 10
     show player 1
-    mia "Dia dulunya sangat keren, tahu?"
-
+    mia "He used to be really cool, you know?"
     show old_mia 7
     show player 14
-    player_name "Oke, jadi bagaimana aku bisa mendapatkan sisi baiknya?"
-
+    player_name "Okay, so how can I get on his good side?"
     show old_mia 10
     show player 1
-    mia "Hmm... aku tidak yakin..."
-
-    mia "Mungkin mencoba {b}berikan dia sesuatu yang dia suka, seperti sekotak donat{/b}!"
-
+    mia "Hmm... I'm not sure..."
+    mia "Maybe try and {b}get him something he likes, like a box of donuts{/b}!"
     show old_mia 7
     show player 14
-    player_name "Donat?"
-
+    player_name "Donuts?"
     show old_mia 9
     show player 1
-    mia "Ha ha. Aku tahu... Sangat tipikal. Tapi, dia sangat menyukainya!"
-
+    mia "Haha. I know... So typical. But, he really likes them!"
     show old_mia 8
     show player 14
-    player_name "Apakah dia punya jenis donat favorit?"
-
+    player_name "Does he have a favorite kind of donut?"
     show old_mia 12
     show player 1
-    mia "Ah, aku tidak begitu yakin..."
-
+    mia "Oh, I'm not really sure..."
     show old_mia 7
     show player 14
-    player_name "Baiklah! Mungkin saya bisa {b}mencari tahu dan memberinya sesuatu{/b}."
-
+    player_name "Alright! Maybe I can {b}find out and get him something{/b}."
     show old_mia 10
     show player 1
-    mia "Terima kasih! Kamu manis sekali... Aku yakin dia akan menyukainya!"
-
+    mia "Thanks! You're so sweet... I'm sure he'll love it!"
     return
 
 label mia_dialogue_science_classroom_mia_parent_unblock:
@@ -508,94 +399,69 @@ label mia_dialogue_science_classroom_mia_parent_unblock:
     show old_mial 1f at right
     with dissolve
     mia "{b}[firstname]{/b}!"
-
     show old_mia 10
     show player 11
-    mia "Anda tidak akan percaya ini!"
-
+    mia "You won't believe this!"
     show player 14
     show old_mia 7
-    player_name "Hah? Apa yang telah terjadi?"
-
+    player_name "Huh? What happened?"
     show player 1
     show old_mia 10
-    mia "Tadi malam, aku mendengar ayahku membicarakanmu dengan ibuku!"
-
+    mia "Last night, I heard my dad talking about you with my mom!"
     show player 14
     show old_mia 7
-    player_name "Tentang saya? Sungguh?"
-
+    player_name "About me? For real?"
     show player 1
     show old_mia 9
-    mia "Ya!"
-
+    mia "Yeah!"
     show old_mia 10
-    mia "Dia mengatakan betapa pentingnya berteman di usiaku..."
-
-    mia "... Betapa menurutnya dia harus mengizinkan aku bertemu denganmu, karena kamu adalah orang yang baik dan sebagainya..."
-
+    mia "He was saying how important it was to make friends at my age..."
+    mia "... How he thought she should let me see you, since you're a good person and all..."
     show player 14
     show old_mia 7
-    player_name "Wah..."
-
-    player_name "Jadi, ibumu baik-baik saja denganku sekarang?!"
-
+    player_name "Woa..."
+    player_name "So, your mom is cool with me now?!"
     show player 11
     show old_mia 10
-    mia "Yah, dia tidak terlalu senang dengan gagasan itu, itu sudah pasti!"
-
+    mia "Well, she wasn't too pleased with the idea, that's for sure!"
     show player 1
     show old_mia 9
-    mia "Tapi, menurutku itu mungkin berhasil sedikit."
-
+    mia "But, I think it might have worked a little bit."
     show player 17
     show old_mia 7
-    player_name "Saya rasa itu adalah sesuatu."
-
+    player_name "I guess it's something."
     show player 13
     show old_mia 10
-    mia "Terima kasih telah berbicara dengan ayahku..."
-
+    mia "Thanks for speaking with my dad..."
     show player 14
     show old_mia 7
-    player_name "Itu bukan masalah besar, dan ayahmu sebenarnya tampak seperti pria yang keren!"
-
+    player_name "It's not a big deal, and your dad seems like a cool guy, actually!"
     show player 1
     show old_mia 10
-    mia "Ya... Dia dulu lebih banyak bicara dalam hidup kami."
-
+    mia "Yeah... He used to have more say in our lives."
     show player 14
     show old_mia 8
-    player_name "Bagaimanapun, aku harus kembali ke kelas-"
-
+    player_name "Anyway, I should get back to class-"
     show player 11
     show old_mia 12
-    mia "Tunggu!! saya..."
-
-    mia "Saya ingin mendapatkan pendapat Anda tentang sesuatu."
-
+    mia "Wait!! I..."
+    mia "I wanted to get your opinion on something."
     show player 14
     show old_mia 8
-    player_name "Sesuatu?"
-
+    player_name "Something?"
     show player 11
     show old_mia 12
-    mia "Saya merasa tidak nyaman membicarakannya di sini..."
-
+    mia "I don't really feel comfortably talking about it here..."
     show player 13
-    mia "Tapi mungkin... Kamu bisa mengunjungiku malam ini?"
-
+    mia "But maybe... You could visit me tonight?"
     show player 14
     show old_mia 7
-    player_name "Saya ingin sekali!"
-
+    player_name "I'd love to!"
     show player 1
     show old_mia 9
-    mia "Manis!"
-
+    mia "Sweet!"
     show old_mia 10
-    mia "Kalau begitu, aku akan menunggumu di rumah."
-
+    mia "I'll be waiting for you at home, then."
     hide old_mia
     hide old_mial
     hide player
@@ -608,50 +474,37 @@ label mia_dialogue_science_classroom_mia_favor:
     show old_mia 10 at right
     show old_mial 1f at right
     with dissolve
-    mia "Selamat pagi, {b}[firstname]{/b}!"
-
+    mia "Good morning, {b}[firstname]{/b}!"
     show old_mia 7
     show player 14
-    player_name "Selamat pagi, {b}Mia{/b}."
-
+    player_name "Good morning, {b}Mia{/b}."
     show player 13
     show old_mia 10
-    mia "Saya berharap Anda dapat membantu saya dengan sesuatu... Sekali lagi?"
-
+    mia "I was hoping you could help me with something... Once again?"
     show old_mia 7
     show player 14
-    player_name "Tentu saja, {b}Mia{/b}. Saya tidak keberatan!"
-
+    player_name "Of course, {b}Mia{/b}. I don't mind!"
     show player 13
     show old_mia 10
-    mia "Aku ingin kamu melakukan keajaibanmu dan mengajak ayahku keluar untuk makan malam bersama ibuku dan aku."
-
-    mia "Dia mendengarkanmu..."
-
+    mia "I want you to work your magic and get my dad to come out for dinner with my mom and I."
+    mia "He listens to you..."
     show old_mia 7
     show player 14
-    player_name "Makan malam? Sepertinya hubungan orang tuamu baik-baik saja lagi."
-
-    player_name "Saya akan {b}mengunjungi karyanya{/b} dan melihat apa yang dapat saya lakukan!"
-
+    player_name "Dinner? Sounds like your parents are on good terms again."
+    player_name "I'll {b}stop by his work{/b} and see what I can do!"
     show player 13
     show old_mia 12
-    mia "Saya menghargai bantuan Anda, {b}[firstname]{/b}. Aku hanya tidak tahu apa yang akan kulakukan pada diriku sendiri jika mereka tidak kembali bersama."
-
+    mia "I appreciate your help, {b}[firstname]{/b}. I just don't know what I'd do with myself if they don't get back together."
     show old_mia 46f
-    mia "aku merasa ini semua salahku..."
-
+    mia "I feel like all of this is my fault..."
     show old_mia 45f
     show player 10
-    player_name "Oh, ayolah, {b}Mia{/b}... Kamu tidak boleh berpikir seperti itu!"
-
+    player_name "Oh, come on, {b}Mia{/b}... You can't think that way!"
     show player 14
-    player_name "Jangan khawatir, aku akan mengantar ayahmu ke kencan makan malam itu."
-
+    player_name "Don't worry, I'll get your dad to that dinner date."
     show player 13
     show old_mia 46f
-    mia "Terima kasih... Kamu manis."
-
+    mia "Thanks... You're sweet."
     hide old_mia
     hide old_mial
     hide player
@@ -664,31 +517,24 @@ label mia_dialogue_science_classroom_mia_need_space:
     show old_mia 8 at right
     show old_mial 1f at right
     with dissolve
-    player_name "Hai, {b}Mia{/b}..."
-
-    player_name "Bagaimana kabarmu?"
-
+    player_name "Hey, {b}Mia{/b}..."
+    player_name "How are you?"
     show player 5
     show old_mia 12
-    mia "Saya baik-baik saja."
-
+    mia "I'm doing okay."
     show old_mia 8
     mia "..."
     show player 3 with dissolve
     player_name "..."
     show old_mia 12
-    mia "Kurasa aku hanya ingin ruang saat ini."
-
+    mia "I think I just want some space right now."
     show old_mia 8
     show player 10 with dissolve
-    player_name "Baiklah..."
-
-    player_name "Saya akan berbicara dengan Anda nanti. Namun, beri tahu saya jika Anda membutuhkan sesuatu."
-
+    player_name "Alright..."
+    player_name "I'll talk to you later. Just let me know if you need something, though."
     show player 5
     show old_mia 12
-    mia "Terima kasih, {b}[firstname]{/b}..."
-
+    mia "Thanks, {b}[firstname]{/b}..."
     hide old_mia
     hide old_mial
     hide player
@@ -701,24 +547,18 @@ label mia_dialogue_science_classroom_mia_church_plan:
     show old_mia 8 at right
     show old_mial 1f at right
     with dissolve
-    player_name "Hei, {b}Mia{/b}!"
-
-    player_name "Bagaimana kabarmu?"
-
+    player_name "Hey, {b}Mia{/b}!"
+    player_name "How are you?"
     show player 5
     show old_mia 12
-    mia "saya baik-baik saja."
-
-    mia "Tapi saya berharap semuanya bisa kembali seperti semula di rumah."
-
+    mia "I'm alright."
+    mia "But I wish things could go back to the way they were before at home."
     show old_mia 8
     show player 10
-    player_name "Maaf..."
-
+    player_name "Sorry..."
     show player 5
     show old_mia 12
-    mia "Apakah ada sesuatu yang ingin Anda bicarakan?"
-
+    mia "Is there something you wanted to talk about?"
     show old_mia 8
     return
 
@@ -728,18 +568,14 @@ label mia_dialogue_science_classroom_mia_urgent_help:
     show old_mia 12 at right
     show old_mial 1f at right
     with dissolve
-    mia "Hai, {b}[firstname]{/b}!"
-
-    mia "Tolong {b}mampir ke rumah saya hari ini{/b}, oke?"
-
+    mia "Hey, {b}[firstname]{/b}!"
+    mia "Please {b}stop at my house later today{/b}, alright?"
     show old_mia 8
     show player 10
-    player_name "Baiklah."
-
+    player_name "Alright."
     show player 5
     show old_mia 12
-    mia "Ada lagi yang Anda butuhkan?"
-
+    mia "Anything else you needed?"
     show old_mia 8
     return
 
@@ -749,25 +585,19 @@ label mia_dialogue_science_classroom_intro:
     show old_mia 7 at right
     show old_mial 1f at right
     with dissolve
-    player_name "Hei, {b}Mia{/b}!"
-
-    player_name "Bagaimana kabarmu?"
-
+    player_name "Hey, {b}Mia{/b}!"
+    player_name "How are you?"
     show player 13
     show old_mia 10
-    mia "Saya baik-baik saja."
-
+    mia "I'm doing okay."
     show old_mia 12
-    mia "Tidak terlalu menantikan kelas saya berikutnya."
-
+    mia "Not really looking forward to my next class."
     show old_mia 7
     show player 17
-    player_name "Ya. Aku mendengarmu."
-
+    player_name "Yeah. I hear ya."
     show player 13
     show old_mia 10
-    mia "Apakah ada sesuatu yang ingin Anda bicarakan?"
-
+    mia "Is there something you wanted to talk about?"
     show old_mia 7
     return
 
@@ -776,50 +606,37 @@ label mia_dialogue_mias_house_entrance_mia_favor:
     show player 13 at left
     show old_mia 10 at right
     with dissolve
-    mia "Selamat pagi, {b}[firstname]{/b}!"
-
+    mia "Good morning, {b}[firstname]{/b}!"
     show old_mia 7
     show player 14
-    player_name "Selamat pagi, {b}Mia{/b}."
-
+    player_name "Good morning, {b}Mia{/b}."
     show player 13
     show old_mia 10
-    mia "Saya berharap Anda dapat membantu saya dengan sesuatu... Sekali lagi?"
-
+    mia "I was hoping you could help me with something... Once again?"
     show old_mia 7
     show player 14
-    player_name "Tentu saja, {b}Mia{/b}. Saya tidak keberatan!"
-
+    player_name "Of course, {b}Mia{/b}. I don't mind!"
     show player 13
     show old_mia 10
-    mia "Aku ingin kamu melakukan keajaibanmu dan mengajak ayahku keluar untuk makan malam bersama ibuku dan aku."
-
-    mia "Dia mendengarkanmu..."
-
+    mia "I want you to work your magic and get my dad to come out for dinner with my mom and I."
+    mia "He listens to you..."
     show old_mia 7
     show player 14
-    player_name "Makan malam? Sepertinya hubungan orang tuamu baik-baik saja lagi."
-
-    player_name "Saya akan {b}mengunjungi karyanya{/b} dan melihat apa yang dapat saya lakukan!"
-
+    player_name "Dinner? Sounds like your parents are on good terms again."
+    player_name "I'll {b}stop by his work{/b} and see what I can do!"
     show player 13
     show old_mia 12
-    mia "Saya menghargai bantuan Anda, {b}[firstname]{/b}. Aku hanya tidak tahu apa yang akan kulakukan pada diriku sendiri jika mereka tidak kembali bersama."
-
+    mia "I appreciate your help, {b}[firstname]{/b}. I just don't know what I'd do with myself if they don't get back together."
     show old_mia 46f
-    mia "aku merasa ini semua salahku..."
-
+    mia "I feel like all of this is my fault..."
     show old_mia 45f
     show player 10
-    player_name "Oh, ayolah, {b}Mia{/b}... Kamu tidak boleh berpikir seperti itu!"
-
+    player_name "Oh, come on, {b}Mia{/b}... You can't think that way!"
     show player 14
-    player_name "Jangan khawatir, aku akan mengantar ayahmu ke kencan makan malam itu."
-
+    player_name "Don't worry, I'll get your dad to that dinner date."
     show player 13
     show old_mia 46f
-    mia "Terima kasih... Kamu manis."
-
+    mia "Thanks... You're sweet."
     hide old_mia
     hide player
     with dissolve
@@ -830,12 +647,10 @@ label mia_dialogue_mias_house_entrance_mia_helen_talk:
     show player 5 at left
     show old_mia 12 at right
     with dissolve
-    mia "Bisakah kamu {b}berbicara dengan ibuku{/b}? Dia ada di {b}kamarnya di lantai atas{/b}..."
-
+    mia "Can you {b}talk to my mom{/b}? She's in {b}her room upstairs{/b}..."
     show player 10
     show old_mia 8
-    player_name "Saya akan mencoba, {b}Mia{/b}."
-
+    player_name "I'll try, {b}Mia{/b}."
     hide old_mia
     hide player
     with dissolve
@@ -846,18 +661,15 @@ label mia_dialogue_mias_house_entrance_mia_church_plan:
     show player 13 at left
     show old_mia 12 at right
     with dissolve
-    mia "Hai, {b}[firstname]{/b}."
-
+    mia "Hi, {b}[firstname]{/b}."
     show player 5
     pause
     show player 10
     show old_mia 8
-    player_name "Halo, {b}Mia{/b}."
-
+    player_name "Hello, {b}Mia{/b}."
     show player 5
     show old_mia 12
-    mia "Ada apa?"
-
+    mia "What's up?"
     show old_mia 8
     return
 
@@ -866,255 +678,189 @@ label mia_dialogue_mias_house_entrance_intro:
     show player 13 at left
     show old_mia 10 at right
     with dissolve
-    mia "Hai, {b}[firstname]{/b}."
-
+    mia "Hi, {b}[firstname]{/b}."
     show player 14
     show old_mia 7
-    player_name "Halo, {b}Mia{/b}."
-
+    player_name "Hello, {b}Mia{/b}."
     show player 13
     show old_mia 10
-    mia "Ada apa?"
-
+    mia "What's up?"
     show old_mia 7
     return
 
 label mia_dialogue_chat:
     show old_mia 7
     show player 2
-    player_name "Tentu!"
-
+    player_name "Sure!"
     show player 10
-    player_name "Umm... Kamu tidak perlu menjawab ini, tapi..."
-
+    player_name "Umm... You don't have to answer this, but..."
     show old_mia 8
-    player_name "Tidakkah kamu merasa aneh kalau orang tuamu tidak mengizinkanmu mempunyai teman?"
-
+    player_name "Don't you find it odd that your parents won't let you have friends over?"
     show player 5
     mia "..."
     show old_mia 12
-    mia "Hanya saja... Begitulah yang terjadi pada ibuku."
-
+    mia "It's just... The way it is, with my mom."
     show old_mia 8
     show player 12
-    player_name "Dan kamu tidak keberatan?"
-
+    player_name "And you don't mind?"
     show player 11
     show old_mia 12
-    mia "Dia hanya bersikap protektif!"
-
-    mia "Aku tahu dia sangat mencintaiku, dan menginginkan yang terbaik untukku..."
-
+    mia "She's just being protective!"
+    mia "I know she just loves me a lot, and wants the best for me..."
     show old_mia 8
     show player 12
-    player_name "Tapi kamu harus bertemu dengan teman secara diam-diam..."
-
+    player_name "But you have to meet with friends secretly..."
     show old_mia 12
     show player 5
-    mia "Aku tahu... Tapi dia tidak akan mengerti."
-
+    mia "I know... But she wouldn't understand."
     show old_mia 8
     show player 24
-    player_name "begitu..."
-
+    player_name "I see..."
     show player 21
-    player_name "Selama kamu bahagia?"
-
+    player_name "As long as you're happy?"
     show old_mia 9
     show player 13
-    mia "Ya!"
-
+    mia "Yup!"
     return
 
 label mia_dialogue_talent_show_help:
     show player 10
-    player_name "Apakah Anda memainkan alat musik atau bernyanyi?"
-
+    player_name "Do you play any instruments or sing?"
     show player 5
     show old_mia 9
-    mia "Ya, saya bernyanyi di paduan suara di gereja sepanjang waktu!"
-
+    mia "Yeah, I sing in the choir at church all the time!"
     show old_mia 7
     show player 14
-    player_name "Anda melakukannya? Luar biasa!"
-
-    player_name "Anda harus bernyanyi di acara pencarian bakat {b}Miss Dewitt{/b}!"
-
-    player_name "Kami benar-benar membutuhkan lebih banyak orang untuk menjadi sukarelawan."
-
+    player_name "You do? Awesome!"
+    player_name "You should sing in {b}Miss Dewitt{/b}'s talent show!"
+    player_name "We really need more people to volunteer."
     show player 13
     show old_mia 12
-    mia "Oh, um."
-
-    mia "Aku ingin tapi aku tidak bisa."
-
+    mia "Oh, umm."
+    mia "I'd like to but I can't."
     show old_mia 8
     show player 10
-    player_name "Hah? Mengapa tidak?"
-
+    player_name "Huh? Why not?"
     show player 5
     show old_mia 12
-    mia "Ibuku bahkan tidak mengizinkanku pergi ke pertunjukan bakat, apalagi berpartisipasi."
-
+    mia "My mom won't even let me go to the talent show, much less participate."
     show old_mia 8
     show player 12
-    player_name "Kenapa?"
-
+    player_name "How come?"
     show player 5
     show old_mia 12
-    mia "Dia tidak ingin aku mendengarkan musik rock atau rap..."
-
-    mia "Dia takut itu akan mencemari pikiran mudaku atau semacamnya."
-
+    mia "She doesn't want me listening to rock or rap music..."
+    mia "She's afraid it will taint my young mind or something like that."
     show old_mia 8
     show player 12
-    player_name "Itu menyebalkan!"
-
+    player_name "That sucks!"
     show player 5
     show old_mia 12
-    mia "Ya. Maaf."
-
+    mia "Yeah. Sorry."
     show player 10
-    player_name "Tidak apa-apa, {b}Mia{/b}. Terima kasih!"
-
+    player_name "That's alright, {b}Mia{/b}. Thanks anyways!"
     return
 
 label mia_dialogue_parents:
     show player 14
-    player_name "Jadi, bagaimana kabar orang tuamu?"
-
+    player_name "So, how are your parents doing?"
     show player 13
     show old_mia 10
-    mia "Sibuk. Ibuku selalu di gereja dan Ayah selalu bekerja."
-
+    mia "Busy. My mom is always at church and Dad is always working."
     show old_mia 12
-    mia "Mungkin yang terbaik adalah seperti itu."
-
+    mia "Probably best that way."
     show old_mia 8
     show player 10
-    player_name "Bagaimana bisa?"
-
+    player_name "How so?"
     show player 11
     show old_mia 12
-    mia "Saat orang tuaku berkumpul, yang mereka lakukan hanyalah berdebat."
-
+    mia "When my parents get together, all they do is argue."
     show player 5
-    mia "Aku sangat membencinya."
-
-    mia "Aku berharap mereka rukun, seperti dulu..."
-
+    mia "I hate it so much."
+    mia "I wish they got along better, like they used to..."
     show old_mia 8
     show player 10
-    player_name "Saya tidak tahu kalau seperti itu. Tampaknya mereka baik-baik saja."
-
+    player_name "I didn't know it was like that. They seemed alright."
     show player 5
     show old_mia 12
-    mia "Ya, ibuku sepertinya yang paling sering mengaduk panci."
-
-    mia "Dia sangat keras kepala dan tidak mau menerima jawaban tidak."
-
-    mia "Jadi {b}Ayah{/b} ikuti saja apa pun yang dia katakan sekarang..."
-
+    mia "Yeah, my mom seems to stir the pot the most, though."
+    mia "She is very heavy-handed and won't take no for an answer."
+    mia "So {b}Dad{/b} just goes along anything she says now..."
     show old_mia 8
     show player 10
-    player_name "Itu menyebalkan."
-
+    player_name "That sucks."
     show player 5
     show old_mia 12
-    mia "Dia bahkan memaksaku untuk melakukan studi Alkitab akhir-akhir ini..."
-
-    mia "... Dan bilang aku harus bertemu dengan seorang anak laki-laki dari gereja, jika aku sudah siap."
-
+    mia "She's even been forcing me to do bible studies lately..."
+    mia "... And says I should meet a boy from the church, when I'm ready."
     show old_mia 8
     show player 11
     player_name "..."
     show old_mia 12
-    mia "Aku tahu, ini... Aneh."
-
+    mia "I know, it's... Weird."
     show old_mia 9
-    mia "Bagaimanapun! Mari kita bicara tentang hal lain."
-
+    mia "Anyway! Let's talk about something else."
     show old_mia 7
     show player 13
     return
 
 label mia_dialogue_mia_clues:
     show player 10
-    player_name "Di mana Anda bilang saya bisa menemukan petunjuk tentang keberadaan {b}Harold{/b}?"
-
+    player_name "Where did you say I could find clues about {b}Harold{/b}'s whereabouts?"
     show player 5
     show old_mia 12
-    mia "{b}Mulailah dengan menanyai rekan kerjanya di kantor polisi{/b}..."
-
-    mia "... Dan {b}mencari petunjuk di sekitar tempat kerjanya{/b}."
-
+    mia "{b}Start by questioning his coworkers at the police station{/b}..."
+    mia "... And {b}look for clues around his workplace{/b}."
     show old_mia 8
     show player 12
-    player_name "Saya kira saya bisa bertanya-tanya untuk melihat di mana dia berada..."
-
+    player_name "I suppose I can ask around to see where he could be..."
     show player 5
     show old_mia 12
-    mia "Terima kasih..."
-
+    mia "Thank you..."
     return
 
 label mia_dialogue_mia_convince_harold:
     show player 10
-    player_name "Apa yang kamu ingin aku lakukan lagi pada ayahmu?"
-
+    player_name "What did you need me to get your dad to do again?"
     show player 13
     show old_mia 10
-    mia "Aku ingin kamu {b}mengundangnya makan malam bersama ibuku dan aku{/b}."
-
-    mia "Kalian berdua sangat rukun. Mungkin Anda bisa memelintir lengannya jika diperlukan."
-
+    mia "I want you to {b}invite him out to dinner with my mother and I{/b}."
+    mia "You both get along so well together. Maybe you can twist his arm if needed."
     show old_mia 7
     show player 14
-    player_name "Tentu! Saya akan {b}menangkapnya di kantor polisi{/b}."
-
+    player_name "Sure! I'll {b}catch up with him at the police station{/b}."
     show player 13
     show old_mia 10
-    mia "Terima kasih, {b}[firstname]{/b}."
-
+    mia "Thanks, {b}[firstname]{/b}."
     return
 
 label mia_dialogue_glasses:
     show player 12
-    player_name "Apa yang kamu ingin aku lakukan dengan kacamata ini lagi?"
-
+    player_name "What did you want me to do with these glasses again?"
     show player 5
     show old_mia 10
-    mia "Oh, aku berharap kamu bisa {b}menyerahkannya ke tempat kerja ayahku{/b}."
-
+    mia "Oh, I was hoping you could {b}drop them off at my dad's work{/b}."
     show old_mia 7
     show player 14
-    player_name "Itu benar... Aku ingat sekarang."
-
-    player_name "Kalau begitu, aku akan melakukannya!"
-
+    player_name "That's right... I remember now."
+    player_name "I'll get to it, then!"
     return
 
 label mia_dialogue_donuts:
     show player 14 at left
     show old_mia 7 at right
-    player_name "Ada ide bagaimana cara mengetahui jenis donat yang disukai ayahmu?"
-
+    player_name "Any ideas on how can I find out what kind of donuts your dad likes?"
     show player 1
     show old_mia 10
     mia "Oh, ehmm..."
-
-    mia "Mungkin {b}bertanya seputar pekerjaannya{/b}?"
-
-    mia "Mereka SUKA makan donat di sana..."
-
+    mia "Maybe {b}ask around his work{/b}?"
+    mia "They LOVE eating donuts over there..."
     show old_mia 7
     show player 17
-    player_name "Haha, mungkin Anda benar, itu bisa berhasil."
-
+    player_name "Haha, maybe you're right, that could work."
     show old_mia 10
     show player 1
-    mia "Ada lagi yang ingin Anda bicarakan?"
-
+    mia "Anything else you want to talk about?"
     show old_mia 7
     show player 1
     return
@@ -1122,177 +868,134 @@ label mia_dialogue_donuts:
 label mia_dialogue_mia_draw_tattoo:
     show old_mia 7 at right
     show player 10 at left
-    player_name "Tentang seni tato yang Anda inginkan..."
-
+    player_name "About that tattoo art you wanted..."
     show player 5
     show old_mia 10
-    mia "Oh! Apakah kamu memilikinya?!"
-
+    mia "Oh! Do you have it?!"
     show old_mia 7
     show player 10
-    player_name "Tidak, belum."
-
-    player_name "Tapi, apa yang kamu inginkan lagi?"
-
+    player_name "No, not yet."
+    player_name "But, what was it you wanted again?"
     show player 5
     show old_mia 10
-    mia "Hmm... Sesuatu yang lucu dan penuh warna!"
-
+    mia "Hmm... Something cute and colorful!"
     show old_mia 7
     show player 17
-    player_name "Haha, baiklah."
-
+    player_name "Haha, alright."
     show player 14
-    player_name "Saya akan melihat apa yang bisa saya lakukan."
-
+    player_name "I'll see what I can do."
     show player 13
     show old_mia 9
-    mia "Terima kasih banyak, {b}[firstname]{/b}."
-
+    mia "Thank you so much, {b}[firstname]{/b}."
     return
 
 label mia_dialogue_mia_show_tattoo_fail:
     show old_mia 7 at right
     show player 2 at left
-    player_name "Tentang seni tato yang Anda inginkan..."
-
+    player_name "About that tattoo art you wanted..."
     show player 13
     show old_mia 10
-    mia "Oh! Apakah kamu memilikinya?!"
-
+    mia "Oh! Do you have it?!"
     show old_mia 7
     show player 14
-    player_name "Ya!"
-
+    player_name "Yup!"
     show player 239_240 with dissolve
-    player_name "Butuh beberapa saat bagi saya untuk membuatnya..."
-
+    player_name "It took me a while to make it..."
     show player 386 with dissolve
-    player_name "Ini dia!"
-
+    player_name "Here it is!"
     show player 13
     show old_mia 32
     if player.location == L_school_scienceclassroom:
         show old_mial 1b
     with dissolve
     mia "Hmm..."
-
     show player 10
-    player_name "Apakah ada yang salah?"
-
+    player_name "Is something wrong?"
     show player 11
     show old_mia 33
-    mia "Yah, aku mengharapkan sesuatu yang berbeda."
-
+    mia "Well, I was hoping for something different."
     show old_mia 34
     show player 25
     player_name "Oh..."
-
     show player 24
     show old_mia 30
-    mia "Saya menyukainya!!"
-
+    mia "I like it!!"
     show old_mia 33
-    mia "Tapi mungkin Anda bisa mencoba yang lain?"
-
+    mia "But maybe you can try something else?"
     show old_mia 34
     show player 10
-    player_name "Seperti apa?"
-
+    player_name "Like what?"
     show player 5
     show old_mia 30
-    mia "Cobalah sesuatu yang lucu, yang warnanya cantik!"
-
+    mia "Try something cute, that has pretty colors!"
     show old_mia 31
     show player 14
-    player_name "Baiklah, saya akan mencoba membuat yang lain..."
-
+    player_name "Alright, I'll try and make something else..."
     show player 13
     show old_mia 30
-    mia "Terima kasih banyak, {b}[firstname]{/b}."
-
+    mia "Thank you so much, {b}[firstname]{/b}."
     return
 
 label mia_dialogue_mia_show_tattoo_pass:
     show old_mia 7 at right
     show player 2 at left
-    player_name "Tentang seni tato yang Anda inginkan..."
-
+    player_name "About that tattoo art you wanted..."
     show player 13
     show old_mia 10
-    mia "Oh! Apakah kamu memilikinya?!"
-
+    mia "Oh! Do you have it?!"
     show old_mia 7
     show player 14
-    player_name "Ya!"
-
+    player_name "Yup!"
     show player 239_240 with dissolve
-    player_name "Butuh beberapa saat bagi saya untuk membuatnya..."
-
+    player_name "It took me a while to make it..."
     show player 386 with dissolve
-    player_name "Ini dia!"
-
+    player_name "Here it is!"
     show player 13
     show old_mia 29
     if player.location == L_school_scienceclassroom:
         show old_mial 1b at right
     with dissolve
-    mia "wah!!!"
-
+    mia "WOW!!!"
     show old_mia 30
-    mia "Saya sangat MENYUKAINYA!"
-
+    mia "I absolutely LOVE it!"
     show old_mia 31
     show player 17
-    player_name "Benar-benar?"
-
+    player_name "Really?"
     show player 18
     show old_mia 30
-    mia "Ya!"
-
+    mia "Yeah!"
     show old_mia 29
-    mia "Cantik sekali..."
-
+    mia "It's so pretty..."
     show old_mia 31
     show player 14
-    player_name "Keren! Saya senang Anda menyukainya."
-
+    player_name "Cool! I'm glad you like it."
     show player 13
     show old_mia 30
-    mia "Kita harus {b}mengunjungi Sugar Tats{/b} dan melihat apakah mereka bisa membuatkannya untuk saya."
-
+    mia "We should {b}visit Sugar Tats{/b} and see if they can make it for me."
     show old_mia 7
     if player.location == L_school_scienceclassroom:
         show old_mial 1f
     with dissolve
     show player 12
-    player_name "Sekarang?!"
-
+    player_name "Now?!"
     show player 5
     show old_mia 9
-    mia "Jangan sekarang, bodoh!"
-
+    mia "Not right now, silly!"
     show old_mia 10
-    mia "Bagaimana kalau hari Sabtu?"
-
+    mia "How about Saturday?"
     show old_mia 7
     show player 10
-    player_name "Oke, saya bisa {b}menemui Anda di sana pada hari Sabtu{/b}."
-
+    player_name "Okay, I can {b}meet you there on Saturday{/b}."
     show player 5
     show old_mia 10
-    mia "Berjanjilah kamu akan menemuiku di sana {b}siang hari{/b}!"
-
+    mia "Promise you'll meet me there {b}during the day{/b}!"
     show old_mia 7
     show player 14
-    player_name "Saya berjanji!"
-
+    player_name "I promise!"
     show player 13
     show old_mia 10
-    mia "Oke, bagus. Aku tidak yakin aku bisa melakukannya sendiri, haha."
-
-    mia "Sampai jumpa."
-
+    mia "Okay, good. I'm not sure I can do it on my own, haha."
+    mia "See you then."
     hide player
     hide old_mia
     hide old_mial
@@ -1302,290 +1005,219 @@ label mia_dialogue_mia_show_tattoo_pass:
 label mia_dialogue_mia_get_tattoo:
     show old_mia 7 at right
     show player 12 at left
-    player_name "Tentang tato itu..."
-
+    player_name "About that tattoo..."
     show player 5
     show old_mia 12
-    mia "Apakah kamu masih datang?"
-
+    mia "Are you still coming?"
     show old_mia 8
     show player 14
-    player_name "Tentu saja!"
-
+    player_name "Of course!"
     show player 10
-    player_name "Tapi kapan kamu ingin pergi?"
-
+    player_name "But when did you want to go?"
     show player 11
     show old_mia 12
-    mia "Kamu sudah lupa?!"
-
+    mia "You already forgot?!"
     show old_mia 8
     show player 21
-    player_name "Sepertinya aku sedang memikirkan banyak hal akhir-akhir ini..."
-
+    player_name "I guess I just have a lot on my mind lately..."
     show player 13
     show old_mia 9
-    mia "Tidak apa-apa, haha."
-
+    mia "It's okay, haha."
     show old_mia 10
-    mia "Aku ingin kamu {b}menemuiku pada hari Sabtu di salon tato, pada siang hari{/b}!"
-
+    mia "I need you to {b}meet me on Saturday at the tattoo parlor, during the day{/b}!"
     show old_mia 7
     show player 14
-    player_name "Baiklah, aku akan memastikan untuk berada di sana bersamamu."
-
+    player_name "Alright, I'll make sure to be there with you."
     show player 13
     show old_mia 10
-    mia "Terima kasih banyak, {b}[firstname]{/b}."
-
+    mia "Thank you so much, {b}[firstname]{/b}."
     return
 
 label mia_dialogue_church:
     show player 12
-    player_name "Kapan ibumu pergi ke gereja?"
-
+    player_name "When does your mom go to church?"
     show player 5
     show old_mia 12
-    mia "{b}Pada akhir pekan di pagi hari{/b}."
-
+    mia "{b}On the weekend in the morning{/b}."
     show old_mia 8
     show player 34
     player_name "Hmm..."
-
     show player 14
-    player_name "Baiklah terima kasih."
-
+    player_name "Alright, thanks."
     show player 13
     show old_mia 12
-    mia "Apa yang akan kamu lakukan?!"
-
+    mia "What are you going to do?!"
     show old_mia 8
     show player 12
-    player_name "Saya belum sepenuhnya yakin, namun saya akan menghubungi Anda kembali jika saya menemukan caranya."
-
+    player_name "I'm not totally sure yet, but I'll get back to you if I find a way."
     show player 13
     show old_mia 12
-    mia "Oke..."
-
+    mia "Okay..."
     return
 
 label mia_dialogue_art_sessions_intro:
     show player 10
-    player_name "Hei, jadi uhh... {b}Nona Ross{/b} memintaku untuk datang berbicara denganmu."
-
+    player_name "Hey, so uhh... {b}Miss Ross{/b} asked me to come talk to you."
     show player 11
     show old_mia 10
-    mia "Benar-benar?"
-
+    mia "Really?"
     show player 10
     show old_mia 7
-    player_name "Ya, dia ingin kamu menjadi rekanku untuk beberapa sesi seni pribadi."
-
+    player_name "Yeah, she wants you to be my partner for some private art sessions."
     return
 
 label mia_dialogue_art_sessions_stat_pass:
     show player 10
-    player_name "Saya sangat ingin Anda datang membantu, {b}Mia{/b}."
-
+    player_name "I'd really like you to come help, {b}Mia{/b}."
     show player 5
     show old_mia 12
-    mia "Anda akan melakukannya?"
-
+    mia "You would?"
     show old_mia 8
     show player 29 with dissolve
-    player_name "Benar sekali."
-
+    player_name "Totally."
     show player 3
     show old_mia 8b
     mia "Hmm..."
-
     show old_mia 9
-    mia "Oke!"
-
+    mia "Okay!"
     show player 13 with dissolve
     show old_mia 10
-    mia "Aku akan datang untukmu, {b}[firstname]{/b}."
-
+    mia "I'll come for you, {b}[firstname]{/b}."
     show old_mia 7
     show player 14
-    player_name "Manis! Terima kasih, {b}Mia{/b}!"
-
+    player_name "Sweet! Thanks, {b}Mia{/b}!"
     show player 13
     show old_mia 9
-    mia "Hehe, tidak masalah."
-
+    mia "Hehe, no problem."
     show old_mia 7
     show player 14
-    player_name "Jadi, sampai jumpa di sana?"
-
+    player_name "So, I'll see you there?"
     show player 13
     show old_mia 10
-    mia "Anda yakin!"
-
+    mia "You bet!"
     return
 
 label mia_dialogue_art_sessions_stat_fail:
-    player_name "Dia cukup bersikeras bahwa itu pasti Anda."
-
+    player_name "She's pretty adamant it needs to be you."
     show player 11
     show old_mia 12
-    mia "... Tapi aku bahkan tidak pandai seni."
-
+    mia "... But I'm not even very good at art."
     show player 10
     show old_mia 8
-    player_name "Kamu tidak mungkin seburuk itu..."
-
+    player_name "You can't be that bad..."
     show player 11
     show old_mia 12
-    mia "Percayalah, aku benar-benar jahat!"
-
-    mia "Anda harus mencari orang lain."
-
-    mia "Lagi pula, ibuku hanya akan mengatakan tidak."
-
+    mia "Trust me, I'm really bad!"
+    mia "You should find somebody else."
+    mia "Besides, my mom would just say no."
     show player 10
     show old_mia 8
-    player_name "Oh, baiklah kalau begitu."
-
+    player_name "Oh, okay then."
     return
 
 label mia_dialogue_homework_want_parents_back:
     show player 14
-    player_name "Kalian ingin belajar bersama tentang apa?"
-
+    player_name "What did you want to study together on?"
     show player 13
     show old_mia 12
-    mia "Aku sedang tidak sanggup melakukannya saat ini."
-
+    mia "I'm not really feeling up to it right now."
     show old_mia 8
     show player 10
-    player_name "Baiklah..."
-
+    player_name "Alright..."
     show player 5
     show old_mia 12
-    mia "Maaf."
-
-    mia "Aku hanya ingin orang tuaku kembali bersama."
-
+    mia "Sorry."
+    mia "I just want my parents to be back together."
     show old_mia 8
     show player 10
-    player_name "Aku tahu."
-
-    player_name "Beri tahu saya jika Anda membutuhkan bantuan saya."
-
+    player_name "I know."
+    player_name "Just let me know if you need my help."
     show player 5
     show old_mia 12
-    mia "Terima kasih, {b}[firstname]{/b}."
-
+    mia "Thanks, {b}[firstname]{/b}."
     show old_mia 8
     return
 
 label mia_dialogue_homework_intro:
     show player 14
-    player_name "Kalian ingin belajar bersama tentang apa?"
-
+    player_name "What did you want to study together on?"
     show player 13
     show old_mia 10
-    mia "Kami akan mempelajari hal-hal yang berkaitan dengan {b}PR kelas bahasa Prancis{/b} terakhir. Apakah Anda sudah menyerahkan tugas itu?"
-
+    mia "We'd be studying things related to the last {b}French class homework{/b}. Did you hand that assignment in yet?"
     show old_mia 7
     return
 
 label mia_dialogue_homework_still_busy:
     show player 24
-    player_name "Tidak, aku masih mengerjakannya."
-
+    player_name "No. I'm still working on it."
     show player 13
     show old_mia 10
-    mia "Nah, setelah selesai, {b}singgah ke rumah saya{/b}."
-
+    mia "Well, once you have it done, {b}stop over to my house{/b}."
     hide old_mia
     hide old_mial
     with dissolve
     show player 5 with dissolve
-    player_name "(Saya harus mencoba dan {b}menyelesaikan pekerjaan rumah bahasa Prancis saya{/b}, sehingga saya bisa belajar dengan {b}Mia{/b}. )"
-
+    player_name "( I should try and {b}finish my French homework{/b}, so I can study with {b}Mia{/b}. )"
     show player 4 with dissolve
     pause
-    player_name "(Saya bertanya-tanya mengapa dia memilih saya untuk membantunya belajar.)"
-
-    player_name "(Dia biasanya belajar dengan {b}Judith{/b}, dan dia sangat pandai dalam bahasa Prancis... )"
-
-    player_name "(Saya tidak yakin bagaimana saya bisa membantunya.)"
-
+    player_name "( I wonder why she picked me to help her study. )"
+    player_name "( She usually studies with {b}Judith{/b}, and she's really good at French... )"
+    player_name "( I'm not sure how I could help her. )"
     show player 13 with dissolve
-    player_name "(Setidaknya kita bisa jalan-jalan, dan dia sangat manis...)"
-
+    player_name "( At least we'll get to hang out, and she's really cute... )"
     hide player with dissolve
     return
 
 label mia_dialogue_homework_study:
     show player 14
-    player_name "Saya menyerahkannya belum lama ini."
-
+    player_name "I turned it in not that long ago."
     show player 13
     show old_mia 10
-    mia "Kalau ada waktu, {b}menyelinap ke kamarku di malam hari{/b}, supaya kita bisa belajar nanti."
-
+    mia "When you have the time, {b}sneak up to my room in the evening{/b}, so we can study then."
     show old_mia 7
     show player 17
-    player_name "Akan berhasil!"
-
+    player_name "Will do!"
     show player 13
     return
 
 label mia_dialogue_study_repeat:
     show player 14
-    player_name "Tentu saja!"
-
+    player_name "Of course!"
     scene mia_bedroom_closeup
     show old_mia 16 zorder 1 at Position (xpos = 680, ypos = 574)
     show player 141 zorder 0 at Position (xpos = 250, ypos = 578)
     with dissolve
-    mia "Terima kasih telah menyelinap ke sini lagi."
-
+    mia "Thanks for sneaking up here again."
     show old_mia 13
     show player 142
-    player_name "Tidak terlalu sulit jika orang tua Anda terpaku pada TV."
-
+    player_name "It's not too hard with your parents glued to the TV."
     show player 143
     show old_mia 16
-    mia "Ya, hanya itu yang membuat mereka tidak saling berteriak."
-
-    mia "Mereka sangat suka menonton tayangan ulang."
-
-    mia "Kadang-kadang saya menonton bersama mereka ketika saya selesai mengerjakan pekerjaan rumah."
-
+    mia "Yeah, it's the only thing that keeps them from yelling at each other."
+    mia "They really like watching reruns."
+    mia "I sometimes watch with them when I'm done with homework."
     show old_mia 22
-    mia "Namun sebagian besar waktu saya berdiam di sini... Lebih tenang."
-
+    mia "Most of the time I stay up here though... It's quieter."
     show old_mia 14
     show player 146
-    player_name "Agak disayangkan orang tuamu tidak akur."
-
+    player_name "It kind of sucks your parents don't get along."
     show player 141
     show old_mia 18
-    mia "... Ya."
-
-    mia "Mungkin akan kembali seperti dulu."
-
+    mia "... Yeah."
+    mia "Maybe it will get back to the way it used to be."
     show old_mia 14
     pause
     show old_mia 16
-    mia "Sebaiknya kau pergi sebelum orang tuaku memperhatikanmu."
-
+    mia "You better get going before my parents notice you."
     show old_mia 13
     show player 142
-    player_name "Aku akan mampir lagi, oke?"
-
+    player_name "I'll stop over again, okay?"
     show player 141
     show old_mia 15
-    mia "Besar! Selamat malam {b}[firstname]{/b}!"
-
+    mia "Great! Goodnight {b}[firstname]{/b}!"
     show old_mia 13
     show player 142
-    player_name "Selamat malam, {b}Mia{/b}."
-
+    player_name "Goodnight, {b}Mia{/b}."
     hide player
     hide old_mia
     with dissolve
@@ -1594,101 +1226,77 @@ label mia_dialogue_study_repeat:
 label mia_dialogue_study_first:
     show old_mia 7
     show player 21
-    player_name "Menurutku kita harus belajar?"
-
+    player_name "I guess we should be studying?"
     show old_mia 9
     show player 13
-    mia "Tentu saja!"
-
+    mia "Of course!"
     show old_mia 10
-    mia "Kalau begitu, ayo lakukan itu."
-
+    mia "Let's do that, then."
     show player 11
-    mia "Izinkan saya mengambil semua buku pelajaran dan menyiapkannya {b}di tempat tidur saya{/b}?"
-
+    mia "Let me get all the textbooks and set up {b}on my bed{/b}?"
     show old_mia 7
     show player 21
-    player_name "Uh... Oke!"
-
+    player_name "Uh... Okay!"
     return
 
 label mia_dialogue_study_want_parents_back:
     show player 12
-    player_name "Apakah Anda ingin belajar bersama?"
-
+    player_name "Did you want to study together?"
     show player 5
     show old_mia 12
-    mia "Aku sedang tidak sanggup melakukannya saat ini."
-
+    mia "I'm not really feeling up to it right now."
     show old_mia 8
     show player 10
-    player_name "Baiklah..."
-
+    player_name "Alright..."
     show player 5
     show old_mia 12
-    mia "Maaf."
-
-    mia "Aku hanya ingin orang tuaku kembali bersama."
-
+    mia "Sorry."
+    mia "I just want my parents to be back together."
     show old_mia 8
     show player 10
-    player_name "Aku tahu."
-
-    player_name "Beri tahu saya jika Anda membutuhkan bantuan saya."
-
+    player_name "I know."
+    player_name "Just let me know if you need my help."
     show player 5
     show old_mia 12
-    mia "Terima kasih, {b}[firstname]{/b}."
-
+    mia "Thanks, {b}[firstname]{/b}."
     show old_mia 8
     return
 
 label mia_dialogue_mias_bedroom_leave:
     show old_mia 8
     show player 10
-    player_name "Aku ingin sekali... Tapi ini sudah larut..."
-
+    player_name "I'd love to... But it's getting late..."
     show old_mia 12
     show player 5
-    mia "Oh oke..."
-
-    mia "... Apakah kamu akan segera kembali?"
-
+    mia "Oh, okay..."
+    mia "... Will you come back soon?"
     show player 14
     show old_mia 8
-    player_name "Ya. Saya akan melihat apa yang bisa saya lakukan!"
-
+    player_name "Yeah. I'll see what I can do!"
     show old_mia 12
     show player 1
-    mia "Selamat malam..."
-
+    mia "Good night..."
     return
 
 label mia_dialogue_science_classroom_leave:
     show player 10
-    player_name "Sebenarnya, sebaiknya aku kembali ke kelas."
-
+    player_name "Actually, I'd better get back to class."
     show player 5
     show old_mia 12
-    mia "Oh, oke... Bicara lagi nanti!"
-
+    mia "Oh, okay... Talk to you later then!"
     show old_mia 8
     show player 14
-    player_name "Sampai jumpa!"
-
+    player_name "See ya!"
     return
 
 label mia_dialogue_mias_house_entrance_leave:
     show player 10
-    player_name "Sebenarnya, aku ingat ada sesuatu yang harus kulakukan."
-
+    player_name "Actually, I remember I had something I needed to do."
     show player 5
     show old_mia 12
-    mia "Oh, oke... Bicara lagi nanti!"
-
+    mia "Oh, okay... Talk to you later then!"
     show old_mia 8
     show player 14
-    player_name "Sampai jumpa!"
-
+    player_name "See ya!"
     return
 # Decompiled by unrpyc: https://github.com/CensoredUsername/unrpyc

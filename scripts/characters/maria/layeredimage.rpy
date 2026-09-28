@@ -32,31 +32,18 @@ layeredimage maria:
         attribute b_dressed default
         attribute b_empty null
         attribute b_magic "maria_body_b_[M_maria.outfit][M_maria.pregnancy]"   
-
         attribute b_dressed_magic "maria_body_b_dressed[M_maria.pregnancy]"   
-
         attribute b_casual_magic "maria_body_b_casual[M_maria.pregnancy]"   
-
         attribute b_dressed_pregnant_kiss "maria_body_b_dressed_pregnant_kiss"
-
         attribute b_lingerie_back "maria_body_b_lingerie_back"
-
         attribute b_naked_kiss_tony "maria_body_b_naked_kiss_tony"
-
         attribute b_lingerie_kiss_tony "maria_body_b_lingerie_kiss_tony"
-
         attribute b_magic_kiss_mc_cheek "maria_body_b_[M_maria.outfit][M_maria.pregnancy]_kiss_mc_cheek"
-
         attribute b_magic_fall "maria_body_b_[M_maria.outfit]_falling[M_maria.pregnancy]"
-
         attribute b_magic_mc_hold "maria_body_b_[M_maria.outfit][M_maria.pregnancy]_mc_hold"
-
         attribute b_magic_hug_boobs1 "maria_body_[M_maria.outfit]_b_hug_boobs1[M_maria.pregnancy]"
-
         attribute b_magic_hug_boobs2 "maria_body_[M_maria.outfit]_b_hug_boobs2[M_maria.pregnancy]"
-
         attribute b_casual_hug_mc "maria_body_b_casual[M_maria.pregnancy]_hug_mc"
-
 
 
     group mouth prefix 'm':
@@ -198,10 +185,8 @@ layeredimage maria:
         attribute a_baby "maria_arms_dressed_a_baby_[M_maria.pregnancy.baby_gender]"
 
 
-
     group arms if_all 'b_gown_bed' auto variant 'gown_bed':
         attribute a_idle default "maria_arms_gown_bed_a_baby_[M_maria.pregnancy.baby_gender]"
-
 
 
     group arms if_all 'b_naked_bending' auto variant 'naked_bending':
@@ -216,7 +201,6 @@ layeredimage maria:
     group arms if_all 'b_casual' auto variant 'casual':
         attribute a_idle default 'maria_arms_casual_a_hips'
         attribute a_baby "maria_arms_casual_a_baby_[M_maria.pregnancy.baby_gender]"
-
 
 
     group arms if_all 'b_magic' auto:

@@ -5,120 +5,87 @@ label dewitt_dialogue_lounge_intro:
     with dissolve
     pause
     show dewittl 1 with dissolve
-    player_name "Oh, hai, {b}Nona Dewitt{/b}."
-
+    player_name "Oh, hi there, {b}Miss Dewitt{/b}."
     show player 11
     show dewittl 3 with dissolve
-    dewitt "{b}[firstname]{/b}? Kamu tidak seharusnya berada di sini..."
-
+    dewitt "{b}[firstname]{/b}? You're not supposed to be in here..."
     show player 10
     show dewittl 2
-    player_name "Ya maaf."
-
+    player_name "Yeah, sorry."
     show player 2
-    player_name "{b}Nona Ross{/b} menyuruh saya mencari majalah lama."
-
-    player_name "Kami sedang membuat kolase!"
-
+    player_name "{b}Miss Ross{/b} has me looking for old magazines."
+    player_name "We're making a collage!"
     show player 1
     show dewittl 3
-    dewitt "Kolase, ya?"
-
-    dewitt "Saya selalu membuatnya ketika saya masih muda!"
-
+    dewitt "Collage, huh?"
+    dewitt "I used to make those all the time when I was younger!"
     show player 2
     show dewittl 2
-    player_name "Apa yang sedang kamu camilan?"
-
+    player_name "What are you snacking on?"
     show player 1
     show dewittl 3b at Position(xpos=0.965, ypos=1.0) with dissolve
-    dewitt "Oh ini?"
-
+    dewitt "Oh this?"
     show dewittl 3 at right with dissolve
-    dewitt "Ini adalah salah satu brownies {i}spesial{/i}Barbara{/b}."
-
+    dewitt "It's one of {b}Barbara{/b}'s {i}special{/i} brownies."
     show player 2
     show dewittl 2
-    player_name "Saya tidak tahu {b}Nona Ross{/b} bisa membuat kue?"
-
+    player_name "I didn't know {b}Miss Ross{/b} could bake?"
     show player 1
     show dewittl 3
-    dewitt "Dia membuat brownies TERBAIK!"
-
-    dewitt "Saya tidak pernah merasa cukup!"
-
+    dewitt "She makes the BEST brownies!"
+    dewitt "I just can't get enough!"
     show player 2
     show dewittl 2
-    player_name "... Rapi!"
-
-    player_name "Jadi, menurut Anda apakah saya dapat menyediakan beberapa majalah itu di atas meja?"
-
+    player_name "... Neat!"
+    player_name "So, do you think I could have a few of those magazines there on the table?"
     show player 1
     show dewittl 3
-    dewitt "Saya tidak mengerti mengapa tidak."
-
+    dewitt "I don't see why not."
     show player 2
     show dewittl 2
-    player_name "Kagum-"
-
+    player_name "Awes-"
     show player 11
     show dewittl 6 with dissolve
-    dewitt "Jika Anda dapat menjawab pertanyaan dari tes saya berikutnya!"
-
+    dewitt "If you can answer a question off my next test!"
     show player 10
     show dewittl 2 with dissolve
-    player_name "Benar-benar?"
-
+    player_name "Really?"
     show player 11
     show dewittl 3
-    dewitt "Tidak ada yang gratis dalam hidup, {b}[firstname]{/b}."
-
-    dewitt "Sekarang mari kita lihat..."
-
-    dewitt "Seruling termasuk dalam kelompok instrumen yang mana?"
-
+    dewitt "Nothing's free in life, {b}[firstname]{/b}."
+    dewitt "Now let's see..."
+    dewitt "The flute is a member of which instrumental family?"
     return
 
 label dewitt_dialogue_lounge_stat_pass:
     show player 2 at left
     show dewittl 2 at right
-    player_name "Itu mudah! Angin kayu."
-
+    player_name "That's easy! Woodwind."
     show player 1
     show dewittl 3
-    dewitt "Bagus sekali, {b}[firstname]{/b}!"
-
-    dewitt "Saya kira Anda telah memperhatikan di kelas."
-
+    dewitt "Very good, {b}[firstname]{/b}!"
+    dewitt "I guess you've been paying attention in class after all."
     show dewittl 4 with dissolve
-    dewitt "Silakan ambil majalah sebanyak yang Anda perlukan."
-
+    dewitt "Go ahead and take as many magazines as you need."
     show player 595 with dissolve
     show dewittl 2
-    player_name "Luar biasa!"
-
-    player_name "Terima kasih, {b}Nona Dewitt{/b}! Nikmati brownies Anda!"
-
+    player_name "Awesome!"
+    player_name "Thanks, {b}Miss Dewitt{/b}! Enjoy your brownie!"
     show player 594
     show dewittl 1b at Position(xpos=0.965, ypos=1.0) with dissolve
-    dewitt "Oh, bagus sekali! Hmm..."
-
+    dewitt "Ohm, so good! Mmm..."
     return
 
 label dewitt_dialogue_lounge_stat_fail:
     show player 10
     show dewittl 2
-    player_name "Err... Instrumen punya keluarga?"
-
+    player_name "Err... Instrument's have families?"
     show player 11
     show dewittl 3
-    dewitt "Heh, itu sesuatu yang sebaiknya kau pikirkan jika kau menginginkan majalah-majalah ini."
-
-    dewitt "Kembalilah ketika Anda tahu jawabannya."
-
+    dewitt "Heh, well, that's something you'd better figure out if you want these magazines."
+    dewitt "Come back when you know the answer."
     show dewittl 2
     show player 10
-    player_name "Ah, kawan..."
-
+    player_name "Ah, man..."
     return
 # Decompiled by unrpyc: https://github.com/CensoredUsername/unrpyc

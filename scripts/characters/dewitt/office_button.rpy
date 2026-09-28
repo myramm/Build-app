@@ -5,23 +5,23 @@ label dewitt_office_button_dialogue:
     elif M_dewitt.is_state(S_dewitt_end) and game.timer.is_dark():
         call expression game.dialog_select("dewitt_dialogue_office_dewitt_end_intro")
         menu:
-            "Menari.":
+            "Dance.":
                 call expression game.dialog_select("dewitt_dialogue_office_dewitt_end_dance")
                 jump expression game.dialog_select("dewitt_twerk_loop")
-            "Seks oral.":
+            "Blowjob.":
 
                 call expression game.dialog_select("dewitt_dialogue_office_dewitt_end_bj")
                 jump expression game.dialog_select("dewitt_bj_loop")
-            "Benar untuk itu.":
+            "Right to it.":
 
                 jump expression game.dialog_select("dewitt_dialogue_office_dewitt_end_sex")
     else:
 
         call expression game.dialog_select("dewitt_dialogue_office_intro")
         menu:
-            "Pelajaran seruling privat." if M_dewitt.is_state(S_dewitt_end):
+            "Private flute lessons." if M_dewitt.is_state(S_dewitt_end):
                 call expression game.dialog_select("dewitt_dialogue_office_flute_lessons")
-            "Tidak ada apa-apa.":
+            "Nothing.":
 
                 call expression game.dialog_select("dewitt_dialogue_office_leave")
     hide player

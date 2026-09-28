@@ -3,57 +3,38 @@ label bissette_dialogue_dress_code:
     hide bissette
     show teacher 1 at right
     show anon f_worried
-    anon "Sebenarnya, saya berharap Anda bisa berbicara dengan {b}Nyonya. Smith{/b} tentang kebijakan aturan berpakaian yang baru..."
-
+    anon "Actually, I was hoping you could talk to {b}Mrs. Smith{/b} about the new dress code policy..."
     show teacher 5
-    bissette "Apa?"
-
+    bissette "Quoi?"
     show teacher 2
-    bissette "Kode berpakaiannya?"
-
+    bissette "The dress code?"
     show teacher 1
-    anon "Ya."
-
+    anon "Yeah."
     show teacher 2
-    bissette "Saya belum pernah mendengar hal ini sebelumnya?"
-
+    bissette "I have not heard of this before?"
     show teacher 1
-    anon f_unimpressed_bored "Baiklah, {b}Ny. Smith{/b} baru saja menerapkannya dan itu sangat konyol..."
-
-    anon f_worried @ f_unimpressed_bored "Itu melarang kita mewarnai rambut kita dan saya hanya berpikir-"
-
+    anon f_unimpressed_bored "Well, {b}Mrs. Smith{/b} just implemented it and it's really very silly..."
+    anon f_worried @ f_unimpressed_bored "It forbids us from dying our hair and I just thought-"
     show teacher 2
-    bissette "Anda berpikir untuk mengecat rambut?"
-
+    bissette "You are thinking of dying the hairs?"
     show teacher 1
     anon @ f_surprised "Hmm?"
-
-    anon @ f_normal "Oh, tidak... Bukan aku."
-
-    anon "Aku khawatir tentang {b}Eve{/b}, kamu tahu?"
-
+    anon @ f_normal "Oh, no... Not me."
+    anon "I was worried about {b}Eve{/b}, you know?"
     show teacher 2
-    bissette "Ah, ya... Rambut birunya."
-
+    bissette "Ah, yes... The blue hairs."
     show teacher 1
-    anon "Ya, dia sangat menyukainya dan aku hanya berpikir-"
-
+    anon "Yeah, she really likes it and I just thought-"
     show teacher 5
-    bissette "Maaf, {b}[firstname]{/b}..."
-
-    bissette "Saya ingin membantu tetapi saya sudah mempunyai terlalu banyak masalah dengan kepala sekolah..."
-
+    bissette "I'm sorry, {b}[firstname]{/b}..."
+    bissette "I wish to be helpful but I have too much trouble with the principal already..."
     show teacher 4
-    anon "Tidak apa-apa, {b}Nona Bissette{/b}."
-
-    anon "Saya mengerti."
-
+    anon "It's okay, {b}Miss Bissette{/b}."
+    anon "I understand."
     show teacher 2
-    bissette "Mungkin salah satu guru lain bisa membantu Anda?"
-
+    bissette "Perhaps one of the other teachers could be helping you?"
     show teacher 1
-    anon "Ya, aku akan bertanya pada salah satu dari mereka."
-
+    anon "Yeah, I'll ask one of them."
     hide anon with dissolve
     return
 
@@ -62,16 +43,13 @@ label bissette_dialogue_meet_in_office:
     show player 10 at left
     show teacher 1 at right
     with dissolve
-    player_name "{b}Nona Bissette{/b}, apa yang perlu saya lakukan?"
-
+    player_name "{b}Miss Bissette{/b}, what did you need me to do?"
     show player 5
     show teacher 12
-    bissette "Oh, {b}[firstname]{/b}. Tidak di sini. {b}Temui aku di kantor sepulang sekolah{/b} ya?"
-
+    bissette "Oh, {b}[firstname]{/b}. Not here. {b}Come see me in my office after school{/b}, yes?"
     show teacher 13
     show player 14
-    player_name "Oke, aku akan menemuimu di sana."
-
+    player_name "Okay, I'll meet you there."
     return
 
 label bissette_dialogue_check_dictionary:
@@ -79,8 +57,7 @@ label bissette_dialogue_check_dictionary:
     show teacher 1 at right
     show player 10 at left
     with dissolve
-    player_name "Hai, {b}Nona Bissette{/b}. Saya menemukan {b}kamus{/b} di perpustakaan tetapi ada beberapa halaman yang hilang."
-
+    player_name "Hey, {b}Miss Bissette{/b}. I found a {b}dictionary{/b} at the library but it's missing a few pages."
     show player 239_240 with dissolve
     pause
     show player 503 with dissolve
@@ -88,75 +65,53 @@ label bissette_dialogue_check_dictionary:
     show player 5
     show teacher 22b
     with dissolve
-    bissette "Ya ampun!"
-
-    bissette "Menurut saya, ini akan membuat segalanya menjadi sangat sulit."
-
-    bissette "Bagian Prancis ke Inggris masih utuh tetapi Anda kehilangan banyak kata..."
-
-    bissette "Saya khawatir beberapa di antaranya mungkin penting bagi mata pelajaran yang akan kita pelajari."
-
+    bissette "Oh, my!"
+    bissette "This will make things very difficult, I think."
+    bissette "The French to English section is intact but you are missing many words..."
+    bissette "I'm afraid some of them might be crucial to the subjects we are to be studying."
     show teacher 21b
     show player 10
-    player_name "Ah, aku takut akan hal itu..."
-
+    player_name "Ugh, I was afraid of that..."
     show player 5
     show teacher 21
-    bissette "Hmm, mungkin semuanya belum hilang. Saya yakin {b}teman sekelas Anda akan bersedia membiarkan Anda menyalin halaman yang hilang dari kamus mereka{/b}."
-
-    bissette "Anda dapat {b}menggunakan mesin fotocopy di lab komputer{/b}."
-
+    bissette "Hmm, perhaps all is not lost. I'm sure {b}a classmate of yours would be willing to let you copy the missing pages from their dictionary{/b}."
+    bissette "You can {b}use the photocopier in the computer lab{/b}."
     show teacher 22
     show player 14
-    player_name "Itu ide yang bagus!"
-
+    player_name "That's a good idea!"
     show player 13
     show teacher 2 with dissolve
-    bissette "Ini adalah hal yang baik, {b}[firstname]{/b}."
-
-    bissette "Pastikan untuk mendapatkan kata-kata bahasa Inggris yang diawali dengan huruf \"B\" untuk pelajaran berikutnya."
-
+    bissette "Tu es le bienvenu, {b}[firstname]{/b}."
+    bissette "Be sure to get English words beginning with the letter \"B\" for our next lesson."
     show teacher 1
     show player 14
-    player_name "Baiklah, {b}saatnya mencari kamus lain{/b}..."
-
+    player_name "Alright, {b}time to track down another dictionary{/b}..."
     show player 13
     show teacher 12
-    bissette "Sudah bekerja keras. Saya tahu Anda sangat menginginkan hadiah spesial, ya?"
-
+    bissette "Working so hard already. I can tell you are desiring the special reward, very much, yes?"
     show teacher 13
     show player 10
-    player_name "Adakah pemikiran tentang {b}kamus{/b} siapa yang harus saya pinjam?"
-
+    player_name "Any thoughts on whose {b}dictionary{/b} I should be asking to borrow?"
     show player 13
     show teacher 11
     bissette "Hmm..."
-
     show teacher 2
-    bissette "Mungkin {b}Judith{/b}?"
-
-    bissette "Dia menunjukkan banyak bakat untuk bahasa Prancis..."
-
+    bissette "Perhaps {b}Judith{/b}?"
+    bissette "She shows much talent for the French tongue..."
     show teacher 1
     show player 14
-    player_name "Oke, {b}Saya akan mulai dengan Judith{/b}."
-
+    player_name "Okay, {b}I'll start with Judith then{/b}."
     return
 
 label bissette_dialogue_intro:
     show anon
     show bissette
     with dissolve
-    bissette "Hai, {b}[firstname]{/b}!"
-
-    anon @ f_laugh "Hai, {b}Nona Bissette{/b}!"
-
-    bissette @ a_finger "Apakah kamu sudah bisa melanjutkan studimu?"
-
-    bissette "Saya sangat berharap Anda melakukannya!"
-
-    bissette "Sekarang, apakah ada sesuatu yang ingin Anda bicarakan?"
-
+    bissette "Hi, {b}[firstname]{/b}!"
+    anon @ f_laugh "Hi, {b}Miss Bissette{/b}!"
+    bissette @ a_finger "Have you been able to catch up on your studies?"
+    bissette "I really hope you do!"
+    bissette "Now, is there something you wanted to talk about?"
     return
 
 label bissette_dialogue_food_assignment_intro:
@@ -164,34 +119,25 @@ label bissette_dialogue_food_assignment_intro:
     hide bissette
     show teacher 1 at right
     show player 10 at left
-    player_name "Apa tugasku selanjutnya?"
-
+    player_name "What's my next assignment?"
     show player 5
     show teacher 2
-    bissette "Saya ingin Anda {b}menulis beberapa paragraf tentang makanan favorit Anda, dalam bahasa Prancis{/b}."
-
-    bissette "Kalau begitu kita akan membahasnya bersama, ya?"
-
+    bissette "I want you to {b}write a few paragraphs about your favorite food, en Français{/b}."
+    bissette "Then we will go over it together, yes?"
     show teacher 1
     show player 14
-    player_name "Oh ya!"
-
+    player_name "Oh, yeah!"
     return
 
 label bissette_dialogue_food_assignment_prepare_assignment:
-    anon "Saya harus mengunjungi pustakawan itu lagi. Mungkin dia bisa mencarikan buku tentang {b}makanan Prancis{/b} untuk saya."
-
-    anon "Lalu aku bisa mengetik sesuatu di komputerku."
-
-    anon "Terima kasih, {b}Nona Bissette{/b}!"
-
+    anon "I should visit that librarian again. Maybe she could find a book about {b}French food{/b} for me."
+    anon "Then I can type something up at my computer."
+    anon "Thanks, {b}Miss Bissette{/b}!"
     return
 
 label bissette_dialogue_food_assignment_do_assignment:
-    anon "Saya harus mengetik sesuatu di komputer saya."
-
-    anon "Terima kasih, {b}Nona Bissette{/b}!"
-
+    anon "I should type something up at my computer."
+    anon "Thanks, {b}Miss Bissette{/b}!"
     return
 
 label bissette_dialogue_poem_assignment_intro:
@@ -199,33 +145,25 @@ label bissette_dialogue_poem_assignment_intro:
     hide bissette
     show teacher 1 at right
     show player 10 at left
-    player_name "Ingatkan saya, tugas apa lagi?"
-
+    player_name "Remind me, what was the assignment again?"
     show player 5
     show teacher 2
-    bissette "Lekuel? Kamu sebagai déjà oublié?"
-
-    bissette "Anda akan {b}menulis puisi romantis dalam bahasa Prancis{/b}!"
-
+    bissette "Lequel? Tu as déjà oublié?"
+    bissette "You are to be {b}writing a romantic poem en Français{/b}!"
     show teacher 1
     show player 14
-    player_name "Oh benar!"
-
-    player_name "Terima kasih, {b}Nona Bissette{/b}."
-
+    player_name "Oh, right!"
+    player_name "Thanks, {b}Miss Bissette{/b}."
     show player 13
     show teacher 2
-    bissette "{b}Kembalikan kepada saya setelah selesai{/b}."
-
-    bissette "Jangan biarkan aku menunggu, mon bel homme."
-
+    bissette "{b}Return to me once it's complete{/b}."
+    bissette "Don't keep me waiting, mon bel homme."
     return
 
 label bissette_dialogue_poem_assignment_do_assignment:
     hide anon
     show player 14 at left
-    player_name "Saya harus mengetik sesuatu di komputer saya."
-
+    player_name "I should type something up at my computer."
     return
 
 label bissette_dialogue_poem_assignment_print_assignment:
@@ -233,24 +171,19 @@ label bissette_dialogue_poem_assignment_print_assignment:
     hide bissette
     show teacher 1 at right
     show player 14 at left
-    player_name "Saya menyelesaikan puisinya, {b}Nona Bissette{/b}."
-
+    player_name "I finished the poem, {b}Miss Bissette{/b}."
     show player 13
     show teacher 2
-    bissette "Bagus, coba saya lihat!"
-
+    bissette "Great, let me see!"
     show teacher 1
     show player 10
-    player_name "Oh ya, aku harus mencetaknya dulu.."
-
+    player_name "Oh, I need to print it out first..."
     show player 5
     show teacher 2
-    bissette "Nah, printernya ada di {b}lab komputer{/b} ya?"
-
+    bissette "Well, the printer is in the {b}computer lab{/b}, yes?"
     show teacher 1
     show player 14
-    player_name "Yup, segera kembali!"
-
+    player_name "Yup, be right back!"
     return
 
 label bissette_dialogue_private_tutoring:
@@ -258,25 +191,19 @@ label bissette_dialogue_private_tutoring:
     hide bissette
     show teacher 1 at right
     show player 10 at left
-    player_name "Apa menurutmu kita bisa bertemu di kantormu malam ini?"
-
+    player_name "Do you think we could meet in your office tonight?"
     show player 26
-    player_name "Anda tahu, untuk beberapa... Bimbingan belajar?"
-
+    player_name "You know, for some... Tutoring?"
     show player 13
     show teacher 12
-    bissette "Oh, les. Ya!"
-
-    bissette "Sampai jumpa malam ini untuk pertemuan tatap muka, ya?"
-
+    bissette "Oh, tutoring. Oui!"
+    bissette "I'll see you tonight for some one-on-one time, yes?"
     show teacher 13
     show player 33
-    player_name "Ya!"
-
+    player_name "Oui!"
     show player 13
     show teacher 12
     bissette "Très bien, mon bel homme!"
-
     return
 
 label bissette_dialogue_tutoring:
@@ -284,98 +211,72 @@ label bissette_dialogue_tutoring:
     hide bissette
     show teacher 1 at right
     show player 10 at left
-    player_name "Saya ingin tahu apakah Anda masih menawarkan les privat?"
-
+    player_name "I was wondering if you were still offering private tutoring?"
     show player 5
     show teacher 3
-    bissette "Oh ya!"
-
+    bissette "Oh, oui!"
     show teacher 1
     show player 14
-    player_name "Luar biasa! Kapan Anda akan tersedia-"
-
+    player_name "Awesome! When would you be availa-"
     show player 11
     show teacher 2
-    bissette "Mengesankan! Anda adalah siswa pertama yang bertanya tentang bimbingan belajar!"
-
+    bissette "Impressionnant! You're the first student to inquire about the tutoring!"
     show teacher 1
     show player 12
-    player_name "Benar-benar? Itu aneh..."
-
+    player_name "Really? That's weird..."
     show player 5
     show teacher 5
-    bissette "Saya mulai berpikir tidak ada seorang pun yang tertarik dengan hadiah khusus tersebut."
-
+    bissette "I was beginning to think nobody was interested in the special reward."
     show teacher 1
     show player 12
-    player_name "Oh iya, aku lupa hadiah spesialnya..."
-
+    player_name "Oh yeah, I forgot about the special reward..."
     show player 5
     show teacher 5
-    bissette "Apa? Anda juga tidak menginginkan imbalannya?!"
-
+    bissette "Quoi? You are not desiring the reward either?!"
     show teacher 4
     show player 29 with dissolve
-    player_name "Err... Bukan, maksudku... A-hadiah spesial terdengar luar biasa, {b}Nona Bissette{/b}."
-
+    player_name "Err... No, I mean... A-a special reward sounds wonderful, {b}Miss Bissette{/b}."
     show player 3
     show teacher 3
-    bissette "Ah luar biasa!"
-
+    bissette "Ah superbe!"
     show teacher 2
-    bissette "Lalu kita akan bertemu sepulang sekolah untuk pelajaran tatap muka, ya?"
-
+    bissette "Then we will meet after school for some one-on-one lessons, yes?"
     show teacher 1
     show player 10 with dissolve
-    player_name "Umm... Ya, menurutku itu akan-"
-
+    player_name "Umm... Yeah, I think that will-"
     show player 11
     show teacher 2
-    bissette "Sangat bagus!"
-
-    bissette "Pastikan untuk {b}membawa kamus bahasa Prancis Anda{/b}."
-
+    bissette "Très bien!"
+    bissette "Just be sure to {b}bring your French dictionary{/b} along."
     show teacher 1
     show player 24
-    player_name "Ah, sial. Tentang itu... {b}Nona Bissette{/b}, sepertinya saya tidak dapat menemukan {b}kamus bahasa Prancis{/b} saya."
-
+    player_name "Ah, crap. About that... {b}Miss Bissette{/b}, I can't seem to find my {b}French dictionary{/b}."
     show player 25
-    player_name "Itu tidak ada di ranselku, di rumahku, atau di lokerku..."
-
+    player_name "It's not in my backpack, my house, or my locker..."
     show player 5
     show teacher 5
-    bissette "Oh tidak, ini tidak bagus!"
-
-    bissette "Mungkin Anda harus {b}mampir ke perpustakaan{/b} dan melihat apakah mereka memilikinya?"
-
+    bissette "Oh non, this is not good!"
+    bissette "Perhaps you should {b}stop by the library{/b} and see if they have one?"
     show teacher 2
-    bissette "Aku ingin meminjamkan milikku padamu, tapi sayangnya aku baru saja menumpahkan anggur ke atasnya."
-
+    bissette "I would loan you mine, but I'm afraid I've recently spilled wine upon it."
     show teacher 1
     show player 14
-    player_name "Oh ya, aku lupa tentang perpustakaan!"
-
+    player_name "Oh yeah, I forgot about the library!"
     show player 13
     show teacher 2
-    bissette "Ya ampun, aku sendiri sering pergi ke sana."
-
+    bissette "Oui, I go there quite often myself."
     show teacher 12
-    bissette "Saya suka merasakan buku bagus di tangan saya."
-
-    bissette "Dipeluk oleh api hangat dengan anggur kental..."
-
-    bissette "Ini adalah surga."
-
+    bissette "I love the feel of a good book in my hands."
+    bissette "Cuddled up by the warm fire with some strong wine..."
+    bissette "C'est le paradis."
     show teacher 13
     show player 11
     player_name "..."
     show teacher 2
-    bissette "Oh, bodohnya aku, terus mengoceh. {b}beri tahu saya jika Anda sudah memiliki kamusnya{/b} ya?"
-
+    bissette "Oh, silly me, babbling on and on. Just {b}let me know when you have the dictionary{/b}, yes?"
     show teacher 1
     show player 14
-    player_name "Tentu saja, {b}Nona Bissette{/b}."
-
+    player_name "Sure thing, {b}Miss Bissette{/b}."
     return
 
 label bissette_dialogue_get_dictionary:
@@ -383,20 +284,15 @@ label bissette_dialogue_get_dictionary:
     hide bissette
     show teacher 1 at right
     show player 12 at left
-    player_name "Ingatkan saya apa yang perlu saya dapatkan sebelum kita bisa belajar bersama?"
-
+    player_name "Remind me what I need to get before we can study together?"
     show player 5
     show teacher 2
-    bissette "Anda memerlukan {b}kamus Bahasa Prancis ke Bahasa Inggris{/b}."
-
-    bissette "{b}Cek perpustakaan{/b} ya?"
-
+    bissette "You will need a {b}French to English dictionary{/b}."
+    bissette "{b}Check the library{/b}, yes?"
     show teacher 1
     show player 14
-    player_name "Oh benar!"
-
-    player_name "Terima kasih!"
-
+    player_name "Oh, that's right!"
+    player_name "Thanks!"
     return
 
 label bissette_dialogue_replace_missing_pages:
@@ -404,26 +300,20 @@ label bissette_dialogue_replace_missing_pages:
     hide bissette
     show teacher 1 at right
     show player 12 at left
-    player_name "Apa yang harus saya lakukan lagi?"
-
+    player_name "What was I supposed to do again?"
     show player 5
     show teacher 2
-    bissette "{b}Salin halaman yang hilang dari kamus teman sekelas{/b}."
-
+    bissette "{b}Copy the pages you are missing from a classmate's dictionary{/b}."
     show teacher 1
     show player 14
-    player_name "Oh benar!"
-
+    player_name "Oh, that's right!"
     show player 13
     show teacher 2
-    bissette "Periksa dengan {b}Judith{/b}. Dia sangat pandai berbahasa Prancis."
-
+    bissette "Check with {b}Judith{/b}. She is very good with her French."
     show teacher 1
     show player 14
-    player_name "Dan kemudian {b}lab komputer memiliki mesin fotokopi{/b}..."
-
-    player_name "Mengerti, sekali lagi terima kasih!"
-
+    player_name "And then {b}the computer lab has the copy machine{/b}..."
+    player_name "Got it, thanks again!"
     return
 
 label bissette_dialogue_chat:
@@ -431,21 +321,14 @@ label bissette_dialogue_chat:
     hide player
     show bissette
     show anon f_shy a_behind_head
-    anon "{b}Nona Bissette{/b}, saya hanya ingin mengatakan bahwa saya sangat menghargai bantuan dalam menyelesaikan tugas sekolah saya!"
-
+    anon "{b}Miss Bissette{/b}, I just wanted to say that I really appreciate the help with catching up on my school work!"
     show anon f_normal
-    bissette f_sexy @ f_laugh a_hair "Dengan senang hati! Yang saya inginkan hanyalah memastikan bahwa Anda termotivasi untuk tampil..."
-
-    bissette "... Dan saya suka memberi penghargaan kepada siswa pekerja keras!"
-
-    anon "Saya akan melakukan yang terbaik. aku sangat ingin mendapat nilai bagus..."
-
-    bissette f_normal "Itu yang ingin saya dengar!"
-
-    bissette "Saya bisa {b}meninjau pekerjaan rumah Anda bersama Anda{/b} saat Anda menyerahkannya, jika Anda mau!"
-
-    anon @ f_laugh "Kedengarannya bagus, {b}Nona Bissette{/b}! Terima kasih!"
-
+    bissette f_sexy @ f_laugh a_hair "It's my pleasure! All I want is to make sure that you are motivated to perform..."
+    bissette "... And I love rewarding hardworking students!"
+    anon "I'll do my best. I really want to get a good grade..."
+    bissette f_normal "That's what I like to hear!"
+    bissette "I can {b}review your homework with you{/b} when you hand it in, if you want!"
+    anon @ f_laugh "That sounds good, {b}Miss Bissette{/b}! Thank you!"
     return
 
 label bissette_dialogue_leave:
@@ -453,13 +336,9 @@ label bissette_dialogue_leave:
     hide teacher
     show anon f_normal
     show bissette
-    anon "Tidak, aku hanya ingin menyapa."
-
-    bissette f_normal "Baiklah, duduklah. Kelas akan segera dimulai!"
-
-    bissette @ f_laugh "Saya punya pelajaran menarik yang direncanakan untuk hari ini!"
-
-    anon "Kedengarannya bagus, {b}Nona Bissette{/b}."
-
+    anon "No. I just wanted to say hello."
+    bissette f_normal "Well, take a seat. Class will be starting soon!"
+    bissette @ f_laugh "I've got an exciting lesson planned for today!"
+    anon "Sounds good, {b}Miss Bissette{/b}."
     return
 # Decompiled by unrpyc: https://github.com/CensoredUsername/unrpyc

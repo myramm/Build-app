@@ -5,22 +5,16 @@ label dianes_dialogue_breastfeed:
     show diane b_naked a_idle f_smirk
     if store._in_replay:
         with fade
-    player_name "Bisakah saya mencicipi susu Anda lagi?"
-
+    player_name "Could I sample some more of your milk?"
     show player 13
-    diane @ f_laugh "Heh, mau dosis lagi langsung dari keran?"
-
+    diane @ f_laugh "Heh, you want another dose straight from the tap?"
     show player 17
-    player_name "Ya, tolong!"
-
+    player_name "Yes, please!"
     show player 13
-    diane "Hmm, baiklah."
-
-    diane "Ingatlah untuk tidak minum terlalu banyak, oke?"
-
+    diane "Hmm, alright."
+    diane "Just remember not to drink too much, okay?"
     show player 14
-    player_name "Ya, saya ingat!"
-
+    player_name "Yup, I remember!"
     hide player
     hide diane
     with dissolve
@@ -37,46 +31,34 @@ label diane_repeatable_breastfeed:
         $ M_diane.outfit.is_naked = 0
     show diane b_hay_feeding a_stroke f_explain
     with dissolve
-    diane "Mmm, mulut hangat itu terasa nikmat setelah seharian memompa."
-
+    diane "Mmm, that warm mouth feels so good after a day of pumping."
     show diane f_lip_bite
     pause
     show diane f_explain
-    diane "Ahh, bagaimana rasanya hari ini kawan?"
-
+    diane "Ahh, how's it taste today, stud?"
     show diane f_smirk_down
     player_name "Mmhmm!"
-
     show diane f_laugh
     diane "Hehehe!"
-
     show diane f_smirk_down
     pause
     show diane f_explain
-    diane "Kita seharusnya tidak melakukan ini tetapi untuk beberapa alasan..."
-
-    diane "... Itu membuatku semakin ingin melakukannya!"
-
+    diane "We shouldn't be doing this but for some reason..."
+    diane "... That just makes me wanna do it even more!"
     show diane f_lip_bite
     pause
     show diane b_hay_feeding1 with dissolve
     diane "Ngghh!"
-
     show diane f_shamed_look
-    diane "Baiklah, sebaiknya kita berhenti sebelum kamu meminumku sampai kering, kawan."
-
+    diane "Alright, we'd better stop before you drink me dry, stud."
     show diane f_smirk_down
-    player_name "Aduh."
-
+    player_name "Aww."
     show diane f_explain
-    diane "saya tahu..."
-
+    diane "I know..."
     show diane f_shamed_look
-    diane "Kita akan melakukannya lagi lain kali, oke?"
-
+    diane "We'll do it again another day, alright?"
     show diane f_smirk_down
-    player_name "Ya baiklah."
-
+    player_name "Yeah, alright."
     show playersex 1 at right
     if M_diane.outfit.get == "shirtless":
         show diane f_smirk_front b_hay_undress1
@@ -90,16 +72,12 @@ label diane_repeatable_breastfeed:
             $ M_diane.outfit.is_naked = 1
 
         show diane f_smirk_front
-        diane "Apakah kamu masih keras?"
-
+        diane "Are you still hard?"
         if M_diane.outfit.get == "shirtless":
             show diane b_hay_dressed with dissolve
-        player_name "Eh ya."
-
-        diane "Mengapa kamu tidak mengeluarkan penis sebesar itu untukku?"
-
-        player_name "O-oke."
-
+        player_name "Uh huh."
+        diane "Why don't you take that big dick out for me?"
+        player_name "O-okay."
         show playersex 2 with dissolve
         show diane f_down_front
         pause
@@ -108,91 +86,64 @@ label diane_repeatable_breastfeed:
         show playersex 3 with dissolve
         pause
         show diane f_smirk_front
-        diane "Luar biasa!"
-
+        diane "Wonderful!"
         if M_diane.outfit.get == "shirtless":
-            diane "Giliranku."
-
+            diane "My turn."
             show diane f_smirk_down b_hay_undress1 with dissolve
             pause
             show diane b_hay_undress2 with dissolve
             pause
             show diane b_hay_naked with dissolve
-        diane "Sekarang biarkan aku-"
-
+        diane "Now let me just-"
         hide playersex
         show diane b_hay_rub f_lip_bite
         player_name "!!!" with hpunch
-        player_name "Ya Tuhan!"
-
+        player_name "Oh, god!"
         pause
         pause
         show diane b_hay_sit f_smirk_front
         show playersex 3
         with dissolve
-        player_name "Apakah menurut Anda kita bisa melakukan hal itu lagi?"
-
-        player_name "Kau tahu, dengan payudaramu dan... Uhh..."
-
-        diane "Anda ingin pekerjaan payudara yang lain?"
-
-        player_name "Ya, payudara!"
-
-        diane @ f_laugh "hehe."
-
-        diane "Ya, kita bisa..."
-
+        player_name "Do you think we could do that thing again?"
+        player_name "You know, with your boobs and my... Uhh..."
+        diane "You want another boobjob?"
+        player_name "Yeah, boobjob!"
+        diane @ f_laugh "Hehe."
+        diane "Well, we could..."
         pause
-        diane "... Atau, mungkin, Anda bisa memenuhi kebutuhan saya hari ini?"
-
-        player_name "Hah?"
-
-        player_name "O-oke, tentu saja."
-
-        diane "Anak baik!"
-
-        player_name "Apa yang perlu saya lakukan?"
-
-        diane "Baiklah, mari kita lihat..."
-
+        diane "... Or, maybe, you could take care of my needs today?"
+        player_name "Huh?"
+        player_name "O-okay, sure."
+        diane "Good boy!"
+        player_name "What do you need me to do?"
+        diane "Well, let's see..."
         show diane f_thinking
         pause
         show diane f_smirk_front
-        diane "Oh, aku tahu!"
-
+        diane "Oh, I know!"
         show diane b_hay_cucumber1 with dissolve
-        player_name "Uhh, mentimun?"
-
-        diane "Oh, ayolah, jangan berpura-pura bodoh."
-
-        diane "Saya tahu Anda melihat saya di dapur hari itu."
-
-        player_name "Y-ya, tapi kamu ingin aku-"
-
+        player_name "Uhh, a cucumber?"
+        diane "Oh, c'mon, don't play dumb."
+        diane "I know you saw me in the kitchen that day."
+        player_name "Y-yeah, but you want me to-"
         diane @ f_laugh "Mmhmm!"
-
         pause
-        player_name "Baiklah."
-
+        player_name "Alright."
         show diane b_hay_cucumber2 with dissolve
         pause
         show diane b_hay_behind_talk
         show playersex 18
         with dissolve
-        diane "Bersikaplah lembut, oke?"
-
+        diane "Be gentle, okay?"
         show diane b_hay_behind
-        player_name "Oke."
-
+        player_name "Okay."
         show diane b_hay_behind_pre with dissolve
         pause
         hide playersex
         show diane b_hay_insert1
         with dissolve
-        player_name "Seperti ini?"
-
-        diane "Hmm, begitu saja!"
-
+        player_name "Like this?"
+        diane "Mmm, just like that!"
         hide diane
         jump diane_cucumber_start
     else:
@@ -201,16 +152,13 @@ label diane_repeatable_breastfeed:
             show diane b_hay_dressed with dissolve
 
         menu:
-            "pekerjaan payudara.":
+            "Boobjob.":
                 show playersex 1 at right
                 show diane f_smirk_front
                 with dissolve
-                player_name "Apa menurutmu kita bisa melakukan hal boobjob itu lagi?"
-
-                diane "Tentu, kita bisa melakukan itu."
-
-                diane "Lepaskan celana itu dan duduklah di sini."
-
+                player_name "Do you think you we could do that boobjob thing again?"
+                diane "Sure, we can do that."
+                diane "Get those pants off and sit up here."
                 show playersex 2
                 if M_diane.outfit.get == "shirtless":
                     show diane f_smirk_down b_hay_undress1
@@ -235,20 +183,17 @@ label diane_repeatable_breastfeed:
                 show diane_sex_boobjob 2
                 show diane_sex_boobjob_look talk
                 with dissolve
-                diane "Anda sangat menyukai ini, ya?"
-
+                diane "You really like this, huh?"
                 hide diane_sex_boobjob_look
 
                 jump diane_boobjob_start
-            "Timun.":
+            "Cucumber.":
 
                 show playersex 1 at right
                 show diane f_smirk_front
                 with dissolve
-                player_name "Apakah Anda ingin menggunakan mentimun lagi?"
-
-                diane "Tentu saja!"
-
+                player_name "Would you like to use the cucumber again?"
+                diane "Oh, definitely!"
                 show playersex 2
                 if M_diane.outfit.get == "shirtless":
                     show diane f_smirk_down b_hay_undress1
@@ -268,23 +213,20 @@ label diane_repeatable_breastfeed:
                     pause
                     $ M_diane.outfit.is_naked = 1
                 show diane f_smirk_front b_hay_cucumber1 with dissolve
-                diane "Bersikaplah lembut saja, oke?"
-
+                diane "Just be gentle, okay?"
                 show playersex 18
                 show diane b_hay_behind
                 with dissolve
-                player_name "Saya akan."
-
+                player_name "I will."
                 show diane b_hay_behind_pre with dissolve
-                player_name "Ini dia..."
-
+                player_name "Here it comes..."
                 hide playersex
                 show diane b_hay_insert1
                 with dissolve
                 pause
                 hide diane
                 jump diane_cucumber_start
-            "Sebaiknya aku kembali bekerja.":
+            "I better get back to work.":
 
                 if store._in_replay is None:
                     scene expression player.location.background_blur with None
@@ -298,11 +240,9 @@ label diane_repeatable_breastfeed:
                     show diane b_naked f_smirk
                 show player 13 at left
                 with dissolve
-                diane "Sekarang kembalikan pantat imutmu!"
-
+                diane "Now get your cute butt back to work!"
                 show player 14
-                player_name "Ya, Bu!"
-
+                player_name "Yes, ma'am!"
                 hide player
                 hide diane
                 with dissolve
@@ -315,9 +255,7 @@ label diane_cucumber_start:
     $ M_diane.set('sex speed', .4)
     show expression AnimatedImage("diane_hay_insert", [1,2], M_diane) as diane_hay_insert at Position(xalign = 0.0, yoffset = 0)
     diane "Ahhh!!"
-
-    player_name "Wah, kamu basah banget, {b}Diane{/b}!"
-
+    player_name "Wow, you're really wet, {b}Diane{/b}!"
     jump diane_cucumber_loop
 
 label diane_cucumber_loop:
@@ -348,72 +286,53 @@ label diane_cucumber_loop:
     call screen diane_cucumber_options
 
 label diane_cucumber_cum:
-    diane "Saya hampir sampai!"
-
+    diane "I'm almost there!"
     if randomizer() < 50:
-        diane "Jangan berhenti!"
-
+        diane "Don't stop!"
     else:
-        diane "Persetan denganku!"
-
+        diane "Fuck me!"
     pause
     diane "NGGHHH!!!" with flash
     hide diane_hay_insert
     show diane b_hay_insert1
     with dissolve
     diane "Haah... Haah..."
-
     show playersex 18
     show diane b_hay_behind_pre
     with dissolve
     pause
     show diane b_hay_behind_talk with dissolve
-    diane "Oh, itu luar biasa {b}[firstname]{/b}!"
-
+    diane "Oh, that was wonderful {b}[firstname]{/b}!"
     show diane b_hay_behind
     if randomizer() < 50:
-        player_name "Hehe, kamu datang dengan sangat keras!"
-
+        player_name "Hehe, you came really hard!"
         show diane b_hay_behind_talk
-        diane "Benar, hehe!"
-
+        diane "I did, hehe!"
     else:
-        player_name "Hehe, ya, itu menyenangkan!"
-
-        player_name "Anda gemetar seperti orang gila di ujung sana."
-
+        player_name "Hehe, yeah, that was fun!"
+        player_name "You were shaking like crazy at the end there."
         show diane b_hay_behind_talk
-        diane "hehe!"
-
-    diane "Itu karena kamu merawatku dengan baik."
-
+        diane "Hehe!"
+    diane "That's because you took such good care of me."
     show diane b_hay_behind
     pause
     show diane b_hay_behind_talk
-    diane "Terima kasih untuk itu."
-
+    diane "Thank you for that, by the way."
     show diane b_hay_behind
-    player_name "Tidak masalah."
-
+    player_name "No problem."
     show diane b_hay_behind_talk
-    diane "Haah... aku perlu istirahat sejenak."
-
-    diane "Anda baik-baik saja kembali bekerja?"
-
+    diane "Haah... I need to rest for a moment."
+    diane "You okay going back to work?"
     show diane b_hay_behind
-    player_name "T-tentu saja."
-
+    player_name "S-sure."
     show diane b_hay_behind_talk
-    diane "Anak baik."
-
+    diane "Good boy."
     show diane b_hay_behind
     hide playersex with dissolve
     pause
     show diane b_hay_behind_pre with dissolve
-    diane "Fiuh!"
-
-    diane "Itu sangat intens!"
-
+    diane "Phew!"
+    diane "That was intense!"
     hide diane with dissolve
     $ persistent.cookie_jar["Diane"]["unlocked"] = True
     $ persistent.cookie_jar["Diane"]["gallery"]["05_unlocked"] = True
@@ -430,108 +349,77 @@ label diane_cucumber_cum:
 
 label diane_cucumber_hscene_dialog:
     if animcounter == 0 and randomizer() < 25:
-        diane "Ya Tuhan!{p=1}{nw}"
-
+        diane "Oh, god!{p=1}{nw}"
     if animcounter == 0 and randomizer() < 25:
         diane "Ahh!{p=1}{nw}"
-
     if animcounter == 1 and randomizer() > 75:
-        diane "Ya!{p=1}{nw}"
-
+        diane "Yes!{p=1}{nw}"
     if animcounter == 1 and randomizer() > 75:
-        diane "Mmm, itu saja {b}[firstname]{/b}!{p=1}{nw}"
-
-        diane "Persetan aku dengan mentimun itu!{p=2}{nw}"
-
+        diane "Mmm, that's it {b}[firstname]{/b}!{p=1}{nw}"
+        diane "Fuck me with that cucumber!{p=2}{nw}"
     if animcounter == 2 and randomizer() < 25:
-        diane "Lebih dalam, {b}[firstname]{/b}!{p=1}{nw}"
-
+        diane "Deeper, {b}[firstname]{/b}!{p=1}{nw}"
     if animcounter == 2 and randomizer() < 25:
-        diane "Dasar anak nakal!{p=1}{nw}"
-
+        diane "You naughty boy!{p=1}{nw}"
         player_name "Heh.{p=1}{nw}"
-
     if animcounter == 3 and randomizer() > 75:
         diane "Ahhh!!{p=1}{nw}"
-
-        diane "Saya hampir sampai...{p=2}{nw}"
-
+        diane "I'm almost there...{p=2}{nw}"
     if animcounter == 3 and randomizer() > 75:
-        diane "Lebih cepat!{p=1}{nw}"
-
+        diane "Faster!{p=1}{nw}"
         if M_diane.get("sex speed") > 0.21:
             $ M_diane.set("sex speed", M_diane.get("sex speed") - 0.1)
         diane "Ahh!!{p=1}{nw}"
-
     return
 
 label diane_first_breastfeed:
     scene expression "backgrounds/location_diane_shed_hay_stack.jpg"
     show diane b_hay_feeding a_stroke f_explain
     with dissolve
-    diane "Mmm, mulut hangat itu terasa nikmat setelah seharian memompa."
-
+    diane "Mmm, that warm mouth feels so good after a day of pumping."
     show diane f_lip_bite
     pause
     show diane f_explain
-    diane "Ahh, bagaimana rasanya hari ini kawan?"
-
+    diane "Ahh, how's it taste today, stud?"
     show diane f_smirk_down
     player_name "Mmhmm!"
-
     show diane f_laugh
     diane "Hehehe!"
-
     show diane f_smirk_down
     pause
     show diane f_explain
-    diane "Kita seharusnya tidak melakukan ini tetapi untuk beberapa alasan..."
-
-    diane "... Itu membuatku semakin ingin melakukannya!"
-
+    diane "We shouldn't be doing this but for some reason..."
+    diane "... That just makes me wanna do it even more!"
     show diane f_lip_bite
     pause
     show diane b_hay_feeding1 with dissolve
     diane "Ngghh!"
-
     show diane f_shamed_look
-    diane "Baiklah, sebaiknya kita berhenti sebelum kamu meminumku sampai kering, kawan."
-
+    diane "Alright, we'd better stop before you drink me dry, stud."
     show diane f_smirk_down
-    player_name "Aduh."
-
+    player_name "Aww."
     show diane f_explain
-    diane "saya tahu..."
-
+    diane "I know..."
     show diane f_shamed_look
-    diane "Kita akan melakukannya lagi lain kali, oke?"
-
+    diane "We'll do it again another day, alright?"
     show playersex 1 at right
     if M_diane.outfit.get == "shirtless":
         show diane f_smirk_down b_hay_undress1
     else:
         show diane f_smirk_front b_hay_sit
     with dissolve
-    player_name "Apakah tidak ada hal lain yang bisa kita lakukan?"
-
+    player_name "Isn't there anything else we can do?"
     if M_diane.outfit.get == "shirtless":
         show diane b_hay_dressed f_smirk_front with dissolve
-    diane "Seperti apa?"
-
-    player_name "Entahlah..."
-
-    player_name "... Aku sangat terangsang!"
-
-    diane @ f_laugh "Hehe, aku tahu tampan, aku juga..."
-
+    diane "Like what?"
+    player_name "I dunno..."
+    player_name "... I'm just so horny!"
+    diane @ f_laugh "Hehe, I know handsome, me too..."
     pause
-    diane "Baiklah, kenapa kamu tidak mengeluarkannya untukku?"
-
-    diane "Biarkan saya melihatnya dengan baik."
-
+    diane "Alright, why don't you take it out for me?"
+    diane "Let me get a good look at it."
     pause
-    player_name "O-oke."
-
+    player_name "O-okay."
     show playersex 2 with dissolve
     show diane f_down_front
     pause
@@ -540,80 +428,55 @@ label diane_first_breastfeed:
     show playersex 3 with dissolve
     pause
     show diane f_surprised_front
-    diane "Hmm, baiklah tuan..."
-
-    diane "Itu adalah sesuatu yang sangat istimewa!"
-
-    player_name "Y-ya?"
-
+    diane "Mmm, good lord..."
+    diane "That is something really special!"
+    player_name "Y-yeah?"
     show diane f_smirk_front
     diane @ -m_talk "Mmmhmm."
-
     pause
     if M_diane.outfit.get == "shirtless":
         $ M_diane.outfit.is_naked = 1
-        diane "Kurasa sekarang giliranku, ya?"
-
+        diane "I guess it's my turn now, huh?"
         show diane f_smirk_down b_hay_undress1 with dissolve
         pause
         show diane b_hay_undress2 with dissolve
-        player_name "Wah!"
-
+        player_name "Wow!"
         show diane b_hay_naked f_laugh with dissolve
-        diane "Hehehe, kamu suka?"
-
+        diane "Hehehe, you like?"
         show diane f_smirk_front
-    player_name "Kamu cantik sekali, {b}Diane{/b}!"
-
-    diane "Ah, aku tidak secantik itu..."
-
-    player_name "Ya, benar!"
-
-    diane "Ck, sungguh mempesona..."
-
-    player_name "Jadi apa yang akan kita lakukan?"
-
+    player_name "You're so beautiful, {b}Diane{/b}!"
+    diane "Oh, I'm not THAT beautiful..."
+    player_name "Yes you are!"
+    diane "Tsk, such a charmer..."
+    player_name "So what are we going to do?"
     hide playersex
     show diane b_hay_rub f_lip_bite
     player_name "!!!" with hpunch
-    player_name "Ya Tuhan!"
-
+    player_name "Oh, god!"
     pause
     pause
     if M_diane.outfit.get == "shirtless":
-        player_name "Bisakah saya memasukkannya ke dalam, {b}Diane{/b}?"
-
+        player_name "Can I put it inside, {b}Diane{/b}?"
         show playersex 3 at right
         show diane b_hay_naked f_shamed_front
         with dissolve
-        diane "Tidak, tidak..."
-
-        player_name "Kenapa?"
-
-        diane "{b}[firstname]{/b}, Anda tahu alasannya..."
-
-        diane "Kami tidak bisa..."
-
-        player_name "{i}*Huh*{/i} Tapi aku sangat ingin melakukannya!"
-
-        diane "Aku tahu, tampan..."
-
+        diane "Ngh, no..."
+        player_name "How come?"
+        diane "{b}[firstname]{/b}, you know why..."
+        diane "We can't..."
+        player_name "{i}*Sigh*{/i} But I want to, so bad!"
+        diane "I know, handsome..."
         pause
         show diane f_smirk_front
     else:
         show playersex 3 at right
         show diane b_hay_sit f_smirk_front
         with dissolve
-    diane "Ayo duduk di sini."
-
+    diane "Come sit here."
     player_name "Hmm?"
-
-    diane "Ayo."
-
-    diane "Aku akan mengurus ini untukmu."
-
-    player_name "O-oke..."
-
+    diane "Come on."
+    diane "I'm gonna take care of this for you."
+    player_name "O-okay..."
     hide diane
     hide playersex
     scene expression "backgrounds/location_barn_floor_boobjob.jpg"
@@ -622,17 +485,13 @@ label diane_first_breastfeed:
     show diane_sex_boobjob 2
     show diane_sex_boobjob_look talk
     with dissolve
-    diane "Anda menyukai payudara saya, bukan?"
-
+    diane "You like my breasts, don't you?"
     show diane_sex_boobjob_look
-    player_name "Tentu saja!"
-
+    player_name "Of course!"
     show diane_sex_boobjob_look talk
-    diane "Aku akan menunjukkanmu sesuatu yang istimewa..."
-
+    diane "I'm gonna show you something special..."
     show diane_sex_boobjob_look
-    player_name "Apa yang kamu-"
-
+    player_name "What are you-"
     hide diane_sex_boobjob_look
     jump diane_boobjob_start
 
@@ -642,10 +501,8 @@ label diane_boobjob_start:
     $ M_diane.set('sex speed', .25)
     show expression AnimatedImage("diane_sex_boobjob", [1,2,3,2], M_diane) as diane_sex_boobjob at Position(xalign = 0.0, yoffset = 0)
     player_name "Haah!" with hpunch
-    diane "Anda suka itu?"
-
-    player_name "Y-ya!!"
-
+    diane "You like that?"
+    player_name "Y-yes!!"
     label diane_boobjob_loop:
         show screen sex_anim_buttons
         pause
@@ -677,68 +534,43 @@ label diane_boobjob_hscene_dialog:
     $ renpy.dynamic(rng=randomizer())
     if animcounter == 0:
         if rng > 90:
-            player_name "Ya Tuhan, ini terasa luar biasa!{p=2}{nw}"
-
+            player_name "Oh my god, this feels amazing!{p=2}{nw}"
             diane "Hehehe!{p=1}{nw}"
-
     elif animcounter == 1:
         if rng > 95:
-            player_name "Di mana Anda belajar melakukan hal ini?{p=2}{nw}"
-
+            player_name "Where did you learn to do this?{p=2}{nw}"
             diane "Hmm?{p=1}{nw}"
-
-            diane "Oh, umm... Sebenarnya, {b}[deb_name]{/b} yang menunjukkan padaku cara melakukan ini...{p=2}{nw}"
-
-            diane "Dulu ketika kita masih muda dan liar.{p=2}{nw}"
-
-            player_name "Apa?!{p=1}{nw}"
-
-            player_name "{b}[deb_name]{/b} mengajarimu ini?!{p=2}{nw}"
-
-            diane "Hehe, apa?{p=1}{nw}"
-
-            diane "Kamu tidak mengira {b}[deb_name]{/b} masih perawan, bukan?{p=2}{nw}"
-
-            player_name "Ya, tidak.{p=1}{nw}"
-
-            player_name "Saya hanya tidak...{p=1}{nw}"
-
+            diane "Oh, umm... Actually, it was {b}[deb_name]{/b} who showed me how to do this...{p=2}{nw}"
+            diane "Back when we were young and wild.{p=2}{nw}"
+            player_name "What?!{p=1}{nw}"
+            player_name "{b}[deb_name]{/b} taught you this?!{p=2}{nw}"
+            diane "Hehe, what?{p=1}{nw}"
+            diane "You didn't think {b}[deb_name]{/b} was a virgin, did you?{p=2}{nw}"
+            player_name "Well, no.{p=1}{nw}"
+            player_name "I just didn't...{p=1}{nw}"
             player_name "Ahh!!{p=1}{nw}"
-
         elif rng > 80:
-            player_name "Mmm, panas sekali!{p=2}{nw}"
-
+            player_name "Mmm, this is so hot!{p=2}{nw}"
     elif animcounter == 2:
         if rng > 90:
-            diane "Kamu sangat suka meniduri payudaraku, bukankah kamu tampan?{p=2}{nw}"
-
-            player_name "Y-ya!{p=1}{nw}"
-
+            diane "You really like fucking my boobs, don't you handsome?{p=2}{nw}"
+            player_name "Y-yeah!{p=1}{nw}"
             diane "Hehe!{p=1}{nw}"
-
         elif rng > 80:
-            diane "Kamu suka bagaimana payudaraku terasa melingkari penismu?{p=2}{nw}"
-
-            player_name "Y-ya!{p=1}{nw}"
-
+            diane "You like the way my tits feel wrapped around your cock?{p=2}{nw}"
+            player_name "Y-yes!{p=1}{nw}"
         elif rng > 70:
-            diane "Aku suka merasakan penismu yang besar dan keras di sela-sela payudaraku...{p=2}{nw}"
-
-            player_name "Saya juga!{p=1}{nw}"
-
+            diane "I love feeling that big hard cock of yours in between my tits...{p=2}{nw}"
+            player_name "Me too!{p=1}{nw}"
     elif animcounter == 3:
         if rng > 90:
-            player_name "Saya semakin dekat...{p=2}{nw}"
-
+            player_name "I'm getting close...{p=2}{nw}"
     return
 
 label diane_boobjob_cum:
-    player_name "Aku semakin dekat, {b}Diane{/b}!"
-
-    diane "Tidak apa-apa, tampan."
-
-    diane "Biarkan keluar."
-
+    player_name "I'm getting close, {b}Diane{/b}!"
+    diane "That's alright, handsome."
+    diane "Let it out."
     pause
     show diane_sex_boobjob cum
     show diane_sex_boobjob_cum
@@ -746,16 +578,13 @@ label diane_boobjob_cum:
     show diane_sex_boobjob 2
     show diane_sex_boobjob_look talk
     with dissolve
-    diane "Anak baik!"
-
+    diane "Good boy!"
     show diane_sex_boobjob_look
     pause
     player_name "Haah... Haah..."
-
     pause
     show diane_sex_boobjob_look talk
     diane "Hehehe!"
-
     scene black with fade
     hide diane_sex_boobjob_look
     hide diane_sex_boobjob
@@ -768,14 +597,11 @@ label diane_boobjob_cum:
         pause
         show player 14 with dissolve
         show diane f_smirk
-        player_name "Itu luar biasa!"
-
+        player_name "That was awesome!"
         show player 13
-        diane "Anda merasa lebih baik sekarang?"
-
+        diane "You feel better now?"
         show player 17
-        player_name "Tentu saja!"
-
+        player_name "Definitely!"
         show player 13
         show diane a_touch_cum f_down_front with dissolve
         pause
@@ -784,52 +610,38 @@ label diane_boobjob_cum:
         player_name "!!!"
         show diane f_smirk a_idle with dissolve
         show player 10
-        player_name "Apakah kamu baru saja-"
-
+        player_name "Did you just-"
         show player 5
         show diane f_laugh
         diane "Hehehe!"
-
         show diane f_smirk
-        diane "Kamu sudah meminum susuku, wajar saja jika aku mencoba susumu."
-
+        diane "You've been drinking my milk, it's only fair I get to try yours."
         show player 14
-        player_name "... Dengan baik?"
-
+        player_name "... Well?"
         show player 13
-        diane "Itu tidak buruk."
-
+        diane "It's not bad."
         pause
-        diane "Saya tidak berpikir kita akan mendapat pesanan untuk itu..."
-
+        diane "I don't think we're gonna get any orders for it though..."
         show diane f_cheese
         show player 17
         player_name "Haha!"
-
         show player 14
-        player_name "Ya, mungkin tidak."
-
+        player_name "Yeah, probably not."
         show player 13
         show diane f_smirk
-        diane "Baiklah, kita harus kembali bekerja."
-
-        diane "... Dan aku perlu membersihkan diriku!"
-
+        diane "Alright, we really should get back to work."
+        diane "... And I need to clean myself up!"
         show player 14
-        player_name "Ya, oke {b}Diane{/b}."
-
-        player_name "Saya akan berada di taman jika Anda membutuhkan saya."
-
+        player_name "Yeah, okay {b}Diane{/b}."
+        player_name "I'll be in the garden if you need me."
         show player 13
-        diane "Terima kasih, {b}[firstname]{/b}."
-
+        diane "Thanks, {b}[firstname]{/b}."
         hide player with dissolve
         pause
         show diane a_touch_cum f_down_front with dissolve
         pause
         show diane a_lick_cum f_lick_finger with dissolve
-        diane @ -m_talk "Hmm!"
-
+        diane @ -m_talk "Mmm!"
         hide diane with dissolve
     else:
         if M_diane.outfit.get == "shirtless":
@@ -840,30 +652,22 @@ label diane_boobjob_cum:
         pause
         show player 14
         show diane f_smirk
-        player_name "Fiuh!"
-
-        player_name "Terima kasih, {b}Diane{/b}."
-
-        player_name "Saya sangat membutuhkan itu."
-
+        player_name "Phew!"
+        player_name "Thanks, {b}Diane{/b}."
+        player_name "I really needed that."
         show player 13
-        diane "Dengan senang hati, kawan."
-
-        diane "Sekarang kembali bekerja, ya?"
-
+        diane "My pleasure, stud."
+        diane "Now get back to work, will ya?"
         show player 14
-        player_name "Y-ya, oke."
-
+        player_name "Y-yeah, okay."
         hide player with dissolve
         pause
         show diane a_touch_cum f_down_front with dissolve
         pause
         show diane a_lick_cum f_lick_finger with dissolve
-        diane @ -m_talk "Hmm, enak!"
-
+        diane @ -m_talk "Mmm, delicious!"
         show diane a_idle f_cheese with dissolve
-        diane "hehe!"
-
+        diane "Hehe!"
         hide diane with dissolve
     $ persistent.cookie_jar["Diane"]["unlocked"] = True
     $ persistent.cookie_jar["Diane"]["gallery"]["04_unlocked"] = True
@@ -930,165 +734,111 @@ label diane_sex_breed_loop:
 label diane_sex_breed_hscene_dialog:
     if animcounter == 0 and randomizer() < 25:
         if randomizer() > 50:
-            diane "Oh ya!{p=1}{nw}"
-
-            diane "Sangat dalam!{p=1}{nw}"
-
+            diane "Oh yes!{p=1}{nw}"
+            diane "It's so deep!{p=1}{nw}"
         else:
             if M_diane.pregnancy.number_of_babies>0:
-                diane "Oh, aku sangat menginginkan bayi lagi, {b}[firstname]{/b}.{p=2}{nw}"
-
+                diane "Oh, I want another baby so bad, {b}[firstname]{/b}.{p=2}{nw}"
             else:
-                diane "Oh, aku sangat menginginkan bayimu, {b}[firstname]{/b}.{p=2}{nw}"
-
-            diane "Tolong masukkan ke dalam diriku!{p=2}{nw}"
-
+                diane "Oh, I want your baby so bad, {b}[firstname]{/b}.{p=2}{nw}"
+            diane "Put it inside me, please!{p=2}{nw}"
     if animcounter == 0 and randomizer() > 90:
-        diane "Ya, {b}[firstname]{/b}!{p=1}{nw}"
-
-        diane "Persetan aku seperti binatang!{p=1}{nw}"
-
+        diane "Yes, {b}[firstname]{/b}!{p=1}{nw}"
+        diane "Fuck me like an animal!{p=1}{nw}"
     if animcounter == 1 and randomizer() < 25:
-        diane "Bantengku!{p=1}{nw}"
-
-        diane "Banteng besarku yang kuat!{p=2}{nw}"
-
+        diane "My bull!{p=1}{nw}"
+        diane "My big strong bull!{p=2}{nw}"
     if animcounter == 1 and randomizer() < 25:
         if randomizer() > 50:
-            diane "Oh, enak sekali!{p=1}{nw}"
-
+            diane "Oh, it's so good!{p=1}{nw}"
         else:
-            diane "Kamu besar sekali, {b}[firstname]{/b}!{p=1}{nw}"
-
+            diane "You're so big, {b}[firstname]{/b}!{p=1}{nw}"
     if animcounter == 2 and randomizer() > 75:
         if randomizer() > 50:
-            player_name "Fiuh, ini terasa luar biasa {b}Diane{/b}!{p=2}{nw}"
-
+            player_name "Phew, this feels amazing {b}Diane{/b}!{p=2}{nw}"
             diane "Mmmhmm!{p=1}{nw}"
-
         else:
-            diane "Ya!{p=1}{nw}"
-
-            diane "Ya Tuhan, ya!{p=1}{nw}"
-
+            diane "Yes!{p=1}{nw}"
+            diane "Oh god, yes!{p=1}{nw}"
     if animcounter == 3 and randomizer() > 90:
-        player_name "Moo untukku.{p=1}{nw}"
-
-        diane "Apa?{p=1}{nw}"
-
+        player_name "Moo for me.{p=1}{nw}"
+        diane "What?{p=1}{nw}"
         pause 1
-        player_name "Anda ingin ditiduri seperti binatang, bukan?{p=2}{nw}"
-
-        diane "Ya Tuhan ya!{p=1}{nw}"
-
-        player_name "Lalu moo untukku.{p=1}{nw}"
-
+        player_name "You want to be fucked like an animal, don't you?{p=2}{nw}"
+        diane "Oh, god yes!{p=1}{nw}"
+        player_name "Then moo for me.{p=1}{nw}"
         pause 1
         diane "... Moo?{p=1}{nw}"
-
-        player_name "Anda bisa melakukan lebih baik dari itu...{p=2}{nw}"
-
+        player_name "You can do better than that...{p=2}{nw}"
         if M_diane.get("sex speed") > 0.031:
             $ M_diane.set("sex speed", M_diane.get("sex speed") - 0.03)
         diane "Moo!{p=1}{nw}"
-
-        player_name "Lebih keras, {b}Diane{/b}!{p=1}{nw}"
-
+        player_name "Louder, {b}Diane{/b}!{p=1}{nw}"
         diane "Moo!!{p=1}{nw}"
-
-        player_name "Lebih keras!{p=1}{nw}"
-
+        player_name "Louder!{p=1}{nw}"
         if M_diane.get("sex speed") > 0.031:
             $ M_diane.set("sex speed", M_diane.get("sex speed") - 0.03)
-        diane "Aduh!{p=1}{nw}"
-
-        player_name "Moo untukku!{p=1}{nw}"
-
+        diane "Oh, shit!{p=1}{nw}"
+        player_name "Moo for me!{p=1}{nw}"
         diane "MOO!!!{p=1}{nw}"
-
         pause 1
         diane "MOOOOOOO!!!{p=1}{nw}"
-
     if animcounter == 3 and randomizer() > 75:
         if randomizer() > 50:
-            diane "Itu dia!{p=1}{nw}"
-
-            diane "Persetan denganku, kawan!{p=1}{nw}"
-
+            diane "That's it!{p=1}{nw}"
+            diane "Fuck me, stud!{p=1}{nw}"
         if M_diane.get("sex speed") > 0.031:
             $ M_diane.set("sex speed", M_diane.get("sex speed") - 0.03)
         if randomizer() > 50:
             diane "Ohh! Oooh!!{p=1}{nw}"
-
             pause 1
-            diane "OOOOH, TUHAN!!!{p=1}{nw}"
-
+            diane "OOOOH, GOD!!!{p=1}{nw}"
         else:
             diane "Aaahhh!!!{p=1}{nw}"
-
     if animcounter == 4 and randomizer() < 25:
         if randomizer() < 50:
-            diane "Enak sekali!{p=1}{nw}"
-
+            diane "It's so good!{p=1}{nw}"
             pause 1
-            diane "Oh, enak sekali!{p=1}{nw}"
-
+            diane "Oh, it's so fucking good!{p=1}{nw}"
         else:
-            diane "Isi aku, kawan!{p=1}{nw}"
-
+            diane "Fill me up, stud!{p=1}{nw}"
     if animcounter == 4 and randomizer() > 75:
         if randomizer() > 50:
-            player_name "Wow, {b}Diane{/b}, kamu basah sekali!{p=1}{nw}"
-
+            player_name "Wow, {b}Diane{/b}, you're so wet!{p=1}{nw}"
             pause 1
-            diane "Saya tahu!{p=1}{nw}"
-
-            diane "Tubuhku menyukai penismu!{p=1}{nw}"
-
+            diane "I know!{p=1}{nw}"
+            diane "My body loves your cock!{p=1}{nw}"
         else:
-            diane "Lakukan, {b}[firstname]{/b}!{p=1}{nw}"
-
-            diane "Kembangkan aku!{p=1}{nw}"
-
+            diane "Do it, {b}[firstname]{/b}!{p=1}{nw}"
+            diane "Breed me!{p=1}{nw}"
     return
 
 label diane_sex_breed_cum_pre:
-    player_name "{b}Diane{/b} Aku akan keluar!"
-
-    diane "Ah, aku jugauuuu!!!"
-
+    player_name "{b}Diane{/b} I'm gonna cum!"
+    diane "Ah, meeee toooo!!!"
     pause
     if randomizer() < 50:
-        diane "Sperma di dalam diriku, {b}[firstname]{/b}!"
-
+        diane "Cum in me, {b}[firstname]{/b}!"
         if M_diane.pregnancy.number_of_babies>0:
-            diane "Aku ingin bayi lagi di dalam diriku!"
-
+            diane "I want another baby inside me!"
         else:
-            diane "Aku ingin bayimu ada di dalam diriku!"
-
+            diane "I want your baby inside me!"
     else:
-        diane "Air mani di dalam diriku, {b}[firstname]{/b}!"
-
-        diane "Saya ingin semuanya!"
-
-    player_name "Ya Tuhan!"
-
+        diane "Cum inside me, {b}[firstname]{/b}!"
+        diane "I want all of it!"
+    player_name "Oh god!"
     pause
     if store._in_replay is None:
         $ M_diane.trigger(T_diane_brought_outfit_package)
     call screen diane_cum_breed_options
 
 label diane_sex_breed_cum_out:
-    player_name "saya tidak..."
-
+    player_name "I don't..."
     $ M_diane.set('sex speed', 0.09)
     pause
-    player_name "saya tidak bisa..."
-
+    player_name "I can't..."
     pause
     diane "AAAAHHHH!!!"
-
     scene expression "backgrounds/location_barn_sex_back_day.jpg"
     show diane_sex_breed after
     show diane_sex_breed_mc cumshot 2
@@ -1101,9 +851,7 @@ label diane_sex_breed_cum_out:
     with dissolve
     pause
     player_name "Haah... Haah..."
-
-    diane "Apa-"
-
+    diane "Wha-"
     pause
 
     scene expression "backgrounds/location_barn_day_blur.jpg"
@@ -1111,83 +859,58 @@ label diane_sex_breed_cum_out:
     show diane b_naked f_sad
     with fade
     if randomizer() < 50:
-        diane "... Apa yang telah terjadi?"
-
-        diane "{b}[firstname]{/b}, kamu seharusnya masuk ke dalam diriku..."
-
+        diane "... What happened?"
+        diane "{b}[firstname]{/b}, you were supposed to cum inside me..."
         show player 367
-        player_name "Aku tahu."
-
+        player_name "I know."
         show player 368
         pause
         show player 367
-        player_name "Aku tahu."
-
-        player_name "Saya minta maaf."
-
-        player_name "Saatnya tiba dan aku seperti..."
-
+        player_name "I know."
+        player_name "I'm sorry."
+        player_name "The moment came and I just kinda..."
         show player 368
         pause
         show player 367
-        player_name "... Fiuh, entahlah."
-
-        player_name "Aku akan masuk ke dalam dirimu lain kali, oke?"
-
+        player_name "... Phew, I dunno."
+        player_name "I'll cum inside you next time, okay?"
         show player 368
         pause
         if M_diane.pregnancy.number_of_babies>0:
             show diane f_shamed_smile
-            diane "Baiklah..."
-
+            diane "Alright..."
         else:
-            diane "Anda harus ingat, ada alasan kami melakukan ini..."
-
+            diane "You have to remember, there's a reason we're doing this..."
             show diane f_shamed
             show player 367
-            player_name "Aku tahu."
-
+            player_name "I know."
             show player 368
         show diane f_normal
-        diane "Tapi itu sungguh luar biasa!"
-
+        diane "That WAS incredible though!"
     else:
-        diane "Anda menarik diri!"
-
+        diane "You pulled out!"
         show player 367
-        player_name "Aku tahu."
-
+        player_name "I know."
         show player 368
-        diane "Mengapa kamu-"
-
-        diane "{b}[firstname]{/b}, aku tidak bisa hamil jika kamu cum di punggungku!"
-
+        diane "Why did you-"
+        diane "{b}[firstname]{/b}, I can't get pregnant if you cum on my back!"
         show player 367
-        player_name "Saya minta maaf."
-
-        player_name "Aku hanya tidak bisa kali ini."
-
+        player_name "I'm sorry."
+        player_name "I just, couldn't this time."
         show player 368
         pause
-        diane "Oh, tidak apa-apa."
-
-        diane "Saya tidak marah."
-
+        diane "Oh, it's alright."
+        diane "I'm not mad."
         if M_diane.pregnancy.number_of_babies>0:
             show player 367
         else:
-            diane "Anda hanya perlu mengingat mengapa kami melakukan ini."
-
+            diane "You just have to remember why we're doing this."
             pause
-            diane @ f_normal "Jangan salah paham, aku SANGAT suka menidurimu, {b}[firstname]{/b}..."
-
-            diane "...Tetapi jika saya tidak hamil maka bisnis saya akan menderita."
-
+            diane @ f_normal "Don't get me wrong, I REALLY like fucking you, {b}[firstname]{/b}..."
+            diane "... But if I don't get pregnant then the business will suffer."
             show player 367
-            player_name "Aku tahu."
-
-        player_name "Saya minta maaf."
-
+            player_name "I know."
+        player_name "I'm sorry."
         hide player
         show diane b_kiss_both_naked:
             xoffset -217
@@ -1197,29 +920,21 @@ label diane_sex_breed_cum_out:
         show player 366 at left
         show diane b_naked f_normal
         with dissolve
-        diane "Jangan meminta maaf."
-
+        diane "Don't apologize."
         show diane f_smirk
         if M_diane.pregnancy.number_of_babies>0:
-            diane "Lain kali, masukkan bayi lagi ke dalam diriku!"
-
+            diane "Just next time, put another baby in me!"
         else:
-            diane "Lain kali saja, masukkan bayi ke dalam diriku!"
-
-        diane "Oke?"
-
+            diane "Just next time, put a baby in me!"
+        diane "Okay?"
         show player 365
-        player_name "Oke..."
-
+        player_name "Okay..."
         show player 366
-        diane "Sekarang, mari kita mulai memerah susu."
-
+        diane "Now, let's start milking."
         show player 365
-        player_name "Ya, Bu."
-
+        player_name "Yes, ma'am."
         show player 366
-        diane "Bersikaplah lembut saja, {b}[firstname]{/b}."
-
+        diane "Just be gentle, {b}[firstname]{/b}."
         hide player
         hide diane
         with dissolve
@@ -1230,15 +945,11 @@ label diane_sex_breed_cum_out:
 
 label diane_sex_breed_cum_in:
     player_name "Ooh!"
-
     pause
-    player_name "Ini dia!"
-
-    diane "Isi aku, {b}[firstname]{/b}!!"
-
+    player_name "Here it comes!"
+    diane "Fill me up, {b}[firstname]{/b}!!"
     pause
     diane "AAAAHHHH!!!"
-
     scene expression "backgrounds/location_barn_sex_back_day.jpg"
     $ M_diane.set("sex speed",0.4)
     show diane_sex_breed creampie zorder 0
@@ -1248,7 +959,6 @@ label diane_sex_breed_cum_in:
     show diane_sex_breed creampie_pullout
     with dissolve
     diane "NGGHHH!!!"
-
     show diane_sex_breed insert_and_pullout
     show diane_sex_dick_cum 2 zorder 3
     with dissolve
@@ -1263,13 +973,10 @@ label diane_sex_breed_cum_in:
     show diane_sex_cum spread
     with dissolve
     player_name "Haah... Haah..."
-
     pause
-    diane "Ya Tuhan!"
-
+    diane "Oh, GOD!"
     pause
-    diane "Begitu banyak..."
-
+    diane "So much..."
     pause
     $ persistent.cookie_jar["Diane"]["unlocked"] = True
     $ persistent.cookie_jar["Diane"]["gallery"]["06_unlocked"] = True
@@ -1285,55 +992,40 @@ label diane_sex_breed_cum_in_after_minigame:
     show diane b_naked f_smirk
     with fade
     if randomizer() < 50 or M_diane.is_set("breed first time"):
-        diane "Itu sangat banyak, {b}[firstname]{/b}!"
-
+        diane "That was so much cum, {b}[firstname]{/b}!"
         show player 365
-        player_name "M-maaf."
-
+        player_name "S-sorry."
         show player 366
-        diane "Tidak, ini luar biasa!"
-
+        diane "No, it's wonderful!"
     else:
-        diane "Mmm, aku suka muatanmu yang besar, {b}[firstname]{/b}."
-
+        diane "Mmm, I love your huge loads, {b}[firstname]{/b}."
         show player 365
-        player_name "Y-ya?"
-
+        player_name "Y-yeah?"
         show player 366
         show diane f_laugh
         diane "They feel so wonderful!"
-
     show diane f_smirk
     show player 365
-    player_name "Hehe."
-
+    player_name "Heh."
     show player 366
     pause
     show player 365
     if M_diane.pregnancy.number_of_babies>0:
         player_name "Do you think you're, you know... pregnant again?"
-
     else:
         player_name "Do you think you're, you know... pregnant?"
-
     show player 366
     show diane f_laugh
     diane "Haha, it's too early to know."
-
     show diane f_smirk
-    diane "Saya harap begitu."
-
+    diane "I hope so."
     pause
     show player 365
     player_name "You might have my baby inside you, right now!"
-
     show player 366
     diane "Hehe, I know!"
-
     diane "It's so exciting!"
-
     diane "Oh, stud... You were so good!"
-
     jump milking_game_pre_after_sex
 
 label diane_debbie_sex_start:
@@ -1378,78 +1070,49 @@ label diane_debbie_sex_hscene_dialog:
     if not M_diane.get("change partner"):
         if animcounter == 0 and randomizer() < 25:
             diane "OH MY GOD!{p=1}{nw}"
-
             diane "Don't stop!!{p=1}{nw}"
-
         if animcounter == 1 and randomizer() < 25:
-            diane "Aduh!{p=1}{nw}"
-
+            diane "Oh, shit!{p=1}{nw}"
             diane "Ahhh!{p=1}{nw}"
-
         if animcounter == 2 and randomizer() < 10:
             debbie "Hehe, I love this view!{p=2}{nw}"
-
             diane "Sorry, if I leak on you...{p=2}{nw}"
-
             debbie "It's okay, I don't mind.{p=2}{nw}"
-
         elif randomizer() < 25:
             diane "Oh my god, it's so deep!{p=2}{nw}"
-
             debbie "My boy has the best cock, doesn't he?!{p=2}{nw}"
-
             diane "Yes!!{p=1}{nw}"
-
         if animcounter == 3 and randomizer() < 25:
-            player_name "Saya semakin dekat!{p=1}{nw}"
-
+            player_name "I'm getting close!{p=1}{nw}"
             diane "Ahh, me too!{p=1}{nw}"
-
             debbie "That's okay sweetie, you go right ahead!{p=2}{nw}"
-
     else:
         if animcounter == 0 and randomizer() < 25:
-            diane "Ayo, {b}[firstname]{/b}!{p=1}{nw}"
-
+            diane "C'mon, {b}[firstname]{/b}!{p=1}{nw}"
             diane "Fuck her harder!{p=1}{nw}"
-
             if M_diane.get("sex speed") > 0.31:
                 $ M_diane.set("sex speed", M_diane.get("sex speed") - 0.03)
-            debbie "Ya Tuhan!{p=1}{nw}"
-
+            debbie "Oh, god!{p=1}{nw}"
         elif randomizer() < 50:
             debbie "AHHH!!{p=1}{nw}"
-
             diane "That's it, stud!{p=1}{nw}"
-
         if animcounter == 1 and randomizer() < 25:
             debbie "Ahh!{p=1}{nw}"
-
         if animcounter == 2 and randomizer() < 25:
             diane "How is it so easy for you?!{p=2}{nw}"
-
             debbie "Hmm?{p=1}{nw}"
-
             diane "You take that huge cock like it's nothing!{p=2}{nw}"
-
             debbie "Mmm, I dunno...{p=1}{nw}"
-
             debbie "... It just feels so wonderful!{p=1}{nw}"
-
         if animcounter == 3 and randomizer() < 25:
-            player_name "Saya semakin dekat!{p=1}{nw}"
-
+            player_name "I'm getting close!{p=1}{nw}"
             debbie "Ahh, me too!{p=1}{nw}"
-
             diane "Go ahead, handsome.{p=1}{nw}"
-
             diane "Show {b}[deb_name]{/b} how much you love her.{p=2}{nw}"
-
     return
 
 label diane_debbie_sex_cum:
-    player_name "Ini dia!"
-
+    player_name "Here it comes!"
     pause
     if M_diane.get("cum inside"):
         show diane_debbie_sex_bed cumpie
@@ -1463,138 +1126,95 @@ label diane_debbie_sex_cum:
     player_name "HNNGGG!!!" with flash
     if not M_diane.get("change partner"):
         diane "NGGHHH!!!"
-
     else:
         debbie "OHHH!!!"
-
     hide xray_diane_debbie_sex with dissolve
     pause
     player_name "Haah... Haah..."
-
     hide diane_debbie_sex_bed_cumshot_mc
 
     if not M_diane.get("change partner"):
         show diane_debbie_sex_bed diane_after_talk
         with dissolve
-        diane "Oh, wah..."
-
+        diane "Oh, wow..."
         if M_diane.get("cum inside"):
             diane "He came so much in me."
-
             show diane_debbie_sex_bed debbie_after_talk
             debbie "Hehe, that's my boy!"
-
             show diane_debbie_sex_bed diane_after_talk
-            diane "MM."
-
+            diane "Mmm."
         else:
             show diane_debbie_sex_bed debbie_after_talk
             debbie "There's so much!"
-
             show diane_debbie_sex_bed diane_after_talk
             diane "Sheesh, I'm covered!"
-
             diane "Haha!"
-
     else:
         show diane_debbie_sex_bed debbie_after_talk
         with dissolve
-        debbie "Ya ampun..."
-
+        debbie "Oh, my..."
         if M_diane.get("cum inside"):
             debbie "I feel so full."
-
             show diane_debbie_sex_bed diane_after_talk
             diane "Hehe, that's my big sexy stud!"
-
             show diane_debbie_sex_bed debbie_after_talk
-            debbie "MM."
-
+            debbie "Mmm."
         else:
             show diane_debbie_sex_bed diane_after_talk
             diane "There's so much!"
-
             show diane_debbie_sex_bed debbie_after_talk
-            debbie "hehe!"
-
+            debbie "Hehe!"
             debbie "Oh, I love feeling it on me!"
-
 
     if M_diane.is_set("3way first time"):
         show diane_debbie_sex_bed diane_after_talk
         diane "I'm so glad this happened!"
-
         show diane_debbie_sex_bed debbie_after_talk
         debbie "It was wonderful, wasn't it?"
-
         player_name "It was so awesome!"
-
         show diane_debbie_sex_bed diane_after_talk
         diane "Hehehe!"
-
         show diane_debbie_sex_bed debbie_after_talk
         debbie "Hehehe!"
-
         player_name "Can we do this again?!"
-
         show diane_debbie_sex_bed diane_after_talk
         diane "I'm down!"
-
         show diane_debbie_sex_bed debbie_after_talk
         debbie "Of course, we can do it whenever you want, {b}[firstname]{/b}."
-
         pause
         show diane_debbie_sex_bed debbie_after_talk
         debbie "Right now, I just want you to come and lay with us."
-
         show diane_debbie_sex_bed debbie_lounge_after_talk with dissolve
         debbie "I'm worn out!"
-
         show diane_debbie_sex_bed diane_lounge_after_talk
         diane "Hah, yeah... Me too!"
-
         show diane_debbie_sex_bed player_lounge_after_talk
-        player_name "hehe."
-
+        player_name "Hehe."
         show diane_debbie_sex_bed debbie_lounge_after_talk
         debbie "C'mere sweetie!"
-
         debbie "Lie here between us."
-
         show diane_debbie_sex_bed player_lounge_after_talk
-        player_name "O-oke."
-
+        player_name "O-okay."
     else:
 
         show diane_debbie_sex_bed diane_after_talk
-        diane "Fiuh."
-
+        diane "Phew."
         diane "I'm so exhausted now..."
-
         show diane_debbie_sex_bed debbie_after_talk
         debbie "Ugh, me too."
-
         debbie "There's two of us, and we still can't keep up with him!"
-
         show diane_debbie_sex_bed diane_after_talk
         diane "Haha!"
-
-        player_name "Apa pun."
-
+        player_name "Whatever."
         show diane_debbie_sex_bed player_lounge_after_talk with dissolve
         player_name "I'm tired too!"
-
         show diane_debbie_sex_bed debbie_lounge_after_talk
-        debbie "Tidak apa-apa, sayang."
-
+        debbie "That's alright, sweetie."
         debbie "You just lay here and rest."
-
         show diane_debbie_sex_bed diane_lounge_after_talk
         diane "Aww, I love you guys!"
-
         show diane_debbie_sex_bed debbie_lounge_after_talk
         debbie "Hehe, we love you too."
-
 
     scene black with fade
     hide diane_debbie_sex_bed
@@ -1627,20 +1247,15 @@ label diane_debbie_sleepover_wakeup_first:
     pause
     show player 5 with dissolve
     player_name "Hmm?"
-
     show player 10
     player_name "Where'd everybody go?"
-
     show player 9 at Position (xoffset=40) with dissolve
     pause
     show player 17 with dissolve
     player_name "{i}*Sniff*{/i} Something smells great!"
-
     show player 14
     player_name "{b}[deb_name]{/b} must be cooking {b}in the kitchen{/b}."
-
     player_name "I should {b}go check it out{/b}."
-
     hide player with dissolve
     return
 
@@ -1652,7 +1267,6 @@ label diane_debbie_sleepover_wakeup_repeat:
     pause
     show player 14 with dissolve
     player_name "Looks like {b}Diane{/b} and {b}[deb_name]{/b} are already up."
-
     hide player with dissolve
     return
 
@@ -1664,36 +1278,27 @@ label diane_debbie_pre_sex_loop:
             if animated:
                 show diane_debbie_sex_bed player_talk
             player_name "I think it's time that {b}Diane{/b} had a turn."
-
             if animated:
                 show diane_debbie_sex_bed debbie_talk
             debbie "If that's what you want, sweetie."
-
-            debbie "Teruskan."
-
+            debbie "Go ahead."
             if animated:
                 show diane_debbie_sex_bed diane_talk
             diane "Mmhmm, bring that big dick over here."
-
             show diane_debbie_sex_bed insert with dissolve
-            debbie "hehe!"
-
+            debbie "Hehe!"
             diane "C'mon stud, show me what you got!"
-
             show diane_debbie_sex_bed 7
             diane "!!!" with hpunch
         else:
             if animated:
                 show diane_debbie_sex_bed player_talk
             player_name "{b}Diane{/b}, you're up next!"
-
             if animated:
                 show diane_debbie_sex_bed diane_talk
             diane "Mmm, lucky me!"
-
             show diane_debbie_sex_bed insert with dissolve
             diane "C'mon stud, show me what you got!"
-
             show diane_debbie_sex_bed 7
             diane "!!!" with hpunch
     else:
@@ -1701,40 +1306,29 @@ label diane_debbie_pre_sex_loop:
             if animated:
                 show diane_debbie_sex_bed player_talk
             player_name "Ready, {b}[deb_name]{/b}?"
-
             if animated:
                 show diane_debbie_sex_bed debbie_talk
-            debbie "Hmm!"
-
+            debbie "Mmm!"
             show diane_debbie_sex_bed insert with dissolve
             debbie "That's it sweetie!"
-
             debbie "Let me show a thing or two, {b}[firstname]{/b}!"
-
-            player_name "Eh ya!"
-
+            player_name "Uh huh!"
             show diane_debbie_sex_bed 7
             diane "Oh!" with hpunch
         else:
             if animated:
                 show diane_debbie_sex_bed player_talk
             player_name "It's {b}[deb_name]{/b}'s turn!"
-
             if animated:
                 show diane_debbie_sex_bed diane_talk
             diane "Ahh, good idea..."
-
             diane "I need a break!"
-
             if animated:
                 show diane_debbie_sex_bed debbie_talk
-            debbie "hehe!"
-
+            debbie "Hehe!"
             show diane_debbie_sex_bed insert with dissolve
             player_name "Here it comes, {b}[deb_name]{/b}."
-
             debbie "I'm ready!"
-
             show diane_debbie_sex_bed 7
             debbie "Oh! That's it sweetie!" with hpunch
     $ animated = False
@@ -1756,10 +1350,10 @@ label diane_cookiejar.paizuri:
     menu:
         "Overalls":
             $ M_diane.outfit.set_default_outfit_schedule('shirtless')
-        "pakaian sapi":
+        "Cowsuit":
 
             $ M_diane.outfit.set_default_outfit_schedule('cow')
-        "Telanjang":
+        "Naked":
 
             $ M_diane.outfit.is_naked = True
 
@@ -1774,9 +1368,9 @@ label diane_cookiejar.cucumber:
     scene location_barn_hay_stack
 
     menu:
-        "pakaian sapi":
+        "Cowsuit":
             $ M_diane.outfit.set_default_outfit_schedule('cow')
-        "Telanjang":
+        "Naked":
 
             $ M_diane.outfit.is_naked = True
 
@@ -1789,9 +1383,9 @@ label diane_cookiejar.breed:
     scene location_barn_hay_stack
 
     menu:
-        "pakaian sapi":
+        "Cowsuit":
             $ M_diane.outfit.set_default_outfit_schedule('cow')
-        "Telanjang":
+        "Naked":
 
             $ M_diane.outfit.is_naked = True
 

@@ -3,21 +3,15 @@ label jenny_button_intro_bedroom_evening_j8:
     show anon f_worried
     show jenny f_upset a_crossed
     with dissolve
-    jenny "Apa yang kamu lakukan?!"
-
+    jenny "What the fuck are you doing?!"
     anon "Hmm?"
-
-    anon "T-tidak ada... aku hanya-"
-
-    jenny "Keluarlah dari kamarku, dasar mesum!"
-
-    anon f_skeptical "Kenapa suasana hatimu selalu buruk?"
-
+    anon "N-nothing... I just-"
+    jenny "Get the hell out of my room, you perv!"
+    anon f_skeptical "Why are you always in such a foul mood?"
     show jenny f_angry
     jenny "GET OUT OF MY ROOM, {b}[firstname!u]{/b}!!!" with hpunch
     show anon f_surprised a_rub with dissolve
-    anon "Oke, oke... aku berangkat."
-
+    anon "Okay, okay... I'm going."
     hide anon with dissolve
     return
 
@@ -26,12 +20,9 @@ label jenny_button_intro_bedroom_evening_j16:
     show anon f_worried
     show jenny f_upset
     with dissolve
-    jenny "Ya Tuhan, apa yang kamu inginkan sekarang?!"
-
-    anon "T-tidak ada... aku hanya-"
-
-    jenny "Anda sebaiknya punya alasan bagus untuk mengganggu saya!"
-
+    jenny "Oh my god, what do you want now?!"
+    anon "N-nothing... I just-"
+    jenny "You had better have a good reason for bothering me!"
     show anon f_surprised_teeth a_behind_head with dissolve
     anon @ -m_talk "..."
     show anon a_idle
@@ -42,21 +33,15 @@ label jenny_button_intro_bedroom_evening_j20:
     show anon f_normal a_wave
     show jenny f_upset
     with dissolve
-    anon "Hai."
-
+    anon "Hey."
     show anon a_idle
-    jenny "Hai."
-
+    jenny "Hey."
     show anon f_worried
     pause
-    anon "Jadi, uhh..."
-
-    anon "A-ada apa?"
-
-    jenny @ f_eyeroll "Ya Tuhan..."
-
-    jenny "Berhentilah bertingkah aneh dan langsung ke intinya."
-
+    anon "So, uhh..."
+    anon "W-what's up?"
+    jenny @ f_eyeroll "Oh my god..."
+    jenny "Stop acting weird and get to the point."
     anon f_tired @ -m_talk "..."
     return
 
@@ -65,64 +50,43 @@ label jenny_button_intro_bedroom_evening_j21:
     show anon f_normal
     show jenny
     with dissolve
-    anon "Hai."
-
-    jenny "Hai."
-
+    anon "Hey."
+    jenny "Hey."
     pause
-    anon "Kamu sibuk?"
-
-    jenny "Tidak juga, saya hanya menunggu {b}Jane{/b} menelepon."
-
-    anon "Oh, ehh... Keren."
-
+    anon "You busy?"
+    jenny "Not really, I'm just waiting on {b}Jane{/b} to call."
+    anon "Oh, ehh... Cool."
     jenny @ f_eyeroll "..."
-    jenny "Apa yang kamu inginkan, {b}[firstname]{/b}?"
-
+    jenny "What do you want, {b}[firstname]{/b}?"
     return
 
 label jenny_button_intro_backyard_j21:
     scene expression player.location.background_closeup with None
     show anon f_worried
     show jenny f_upset b_swimsuit a_hips
-    anon "Hai, {b}[jen_name]{/b}."
-
-    jenny "Hai."
-
+    anon "Hey, {b}[jen_name]{/b}."
+    jenny "Hey."
     pause
-    anon f_confused "Kamu uhh... Mau aku mengoleskan tabir surya padamu atau apalah?"
-
+    anon f_confused "You uhh... Want me to rub some sunscreen on you or something?"
     show anon f_worried
     show jenny f_laugh
-    jenny "Pfft, kamu mau!"
-
+    jenny "Pfft, you wish!"
     show jenny f_grin
     pause
-    jenny "Telanjanglah dan aku akan memikirkannya."
-
-    anon "Apa?!"
-
-    jenny "Ayo, keluarkan."
-
-    anon f_skeptical "Mustahil!"
-
-    anon "{b}[deb_name]{/b} ada di sana, di dapur!"
-
+    jenny "Get naked and I'll think about it."
+    anon "What?!"
+    jenny "C'mon, take it out."
+    anon f_skeptical "No way!"
+    anon "{b}[deb_name]{/b} is right there, in the kitchen!"
     show jenny f_laugh
     jenny "Hahahaah!"
-
     show jenny f_grin
-    jenny "Akan sangat lucu jika dia keluar dari sini dan kamu telanjang!"
-
-    anon f_worried "Tidak, itu tidak akan..."
-
-    anon "Dia akan panik!"
-
-    jenny "Aku tahu!"
-
+    jenny "It would be so fucking funny if she walked out here and you were naked!"
+    anon f_worried "No it wouldn't..."
+    anon "She would freak out!"
+    jenny "I know!"
     show jenny f_laugh
     jenny "Hahahaah!"
-
     show jenny f_grin
     return
 
@@ -130,19 +94,13 @@ label jenny_button_intro_bedroom_j21:
     scene expression player.location.background_closeup with None
     show anon f_worried
     show jenny f_upset
-    anon "Hai."
-
-    jenny "Hai."
-
+    anon "Hey."
+    jenny "Hey."
     pause
-    jenny "Anda siap untuk melakukan pertunjukan?"
-
-    jenny "Lepaskan pakaian itu!"
-
+    jenny "You ready to do a show?"
+    jenny "Get those clothes off!"
     anon f_confused "Ehh..."
-
-    jenny "Ayo {b}[firstname]{/b}, penggemarku sudah menunggu!"
-
+    jenny "C'mon {b}[firstname]{/b}, my fans are waiting!"
     return
 
 label jenny_button_intro_diningroom_j21:
@@ -151,52 +109,37 @@ label jenny_button_intro_diningroom_j21:
     show anon b_dinner_sitting_look_left f_normal zorder 0
     show expression "characters/jenny/layeredimage/jenny_breakfast_table.png" zorder 2
     with dissolve
-    anon "Pagi."
-
+    anon "Morning."
     show jenny a_spoon f_normal with dissolve
-    jenny "Pagi."
-
+    jenny "Morning."
     pause
-    anon "Kamu terlihat cantik hari ini."
-
-    jenny @ f_eyeroll "Hehe, ya."
-
+    anon "You look nice today."
+    jenny @ f_eyeroll "Heh, duh."
     show anon f_looking_down_eating a_eating with dissolve
     pause
     show anon f_looking_down_food a_resting with dissolve
-    jenny "Kamu datang ke kamarku nanti?"
-
-    anon f_surprised_food "Entahlah, mungkin?"
-
+    jenny "You coming to my room later?"
+    anon f_surprised_food "I dunno, maybe?"
     show anon f_surprised_food
-    jenny "Anda sebaiknya."
-
-    jenny "Banyak uang yang bisa dihasilkan."
-
-    anon f_normal "Ya, saya tahu."
-
+    jenny "You'd better."
+    jenny "Lots of money to be made."
+    anon f_normal "Yeah, I know."
     return
 
 label jenny_button_intro_bedroom_j20:
     scene expression player.location.background_closeup with None
     show anon f_worried
     show jenny f_upset
-    anon "Hai."
-
-    jenny "Hai."
-
+    anon "Hey."
+    jenny "Hey."
     show jenny f_gross
     pause
-    anon "Jadi, uhh..."
-
-    anon "A-ada apa?"
-
+    anon "So, uhh..."
+    anon "W-what's up?"
     show jenny f_eyeroll
-    jenny "Ya Tuhan..."
-
+    jenny "Oh my god..."
     show jenny f_upset
-    jenny "Berhentilah bertingkah aneh dan langsung ke intinya."
-
+    jenny "Stop acting weird and get to the point."
     anon f_skeptical @ -m_talk "..."
     return
 
@@ -204,25 +147,19 @@ label jenny_button_intro_backyard_j20:
     scene expression player.location.background_closeup with None
     show anon f_worried
     show jenny f_upset b_swimsuit a_hips
-    anon "Pagi."
-
+    anon "Morning."
     show jenny f_normal
-    jenny "Pagi."
-
+    jenny "Morning."
     pause
-    anon f_normal "Pasti menyenangkan di sini hari ini..."
-
+    anon f_normal "It sure is nice out here today..."
     show jenny f_eyeroll
-    jenny "Ya."
-
+    jenny "Yup."
     show jenny f_gross
     pause
     anon @ -m_talk "..."
     show jenny f_upset
-    jenny "Sudahlah!"
-
-    jenny "Saya mencoba bersantai di sini."
-
+    jenny "Spit it out already!"
+    jenny "I'm trying to relax here."
     anon f_worried @ -m_talk "..."
     return
 
@@ -232,37 +169,26 @@ label jenny_button_intro_diningroom_j20:
     show anon b_dinner_sitting_look_left f_worried zorder 0
     show expression "characters/jenny/layeredimage/jenny_breakfast_table.png" zorder 2
     with dissolve
-    anon "Pagi."
-
-    jenny "Pagi."
-
+    anon "Morning."
+    jenny "Morning."
     pause
-    anon "Anda melihat bagian komentar Anda lagi?"
-
-    jenny "Ya, orang-orang ini benar-benar gila!"
-
-    jenny "Anda harus membaca beberapa hal yang mereka minta saya lakukan..."
-
-    anon "Tapi itu uang yang bagus, bukan?"
-
-    jenny "Ya, ya!"
-
+    anon "You looking at your comments section again?"
+    jenny "Yeah, these people are fucking nuts!"
+    jenny "You should read some of the things they ask me to do..."
+    anon "It's good money though, right?"
+    jenny "Hell yeah!"
     show jenny f_upset
-    jenny "Apakah kamu menginginkan sesuatu?"
-
+    jenny "Do you want something?"
     return
 
 label jenny_button_intro_bedroom_j16:
     scene expression player.location.background_closeup with None
     show jenny f_eyeroll
     show anon f_worried
-    jenny "Ya Tuhan, apa yang kamu inginkan sekarang?!"
-
+    jenny "Oh my god, what do you want now?!"
     show jenny f_upset
-    anon "T-tidak ada... aku hanya-"
-
-    jenny "Anda sebaiknya punya alasan bagus untuk mengganggu saya!"
-
+    anon "N-nothing... I just-"
+    jenny "You had better have a good reason for bothering me!"
     anon @ -m_talk "..."
     return
 
@@ -270,22 +196,16 @@ label jenny_button_intro_backyard_j16:
     scene expression player.location.background_closeup with None
     show jenny f_upset b_swimsuit a_hips
     show anon f_worried
-    anon "H-hei."
-
+    anon "H-hey."
     jenny @ -m_talk "..."
     pause
-    anon "Aku suka pakaian renangmu-"
-
+    anon "I like your swimsui-"
     show anon f_surprised
-    jenny "Apa yang kamu inginkan?!"
-
-    anon f_worried "aku tidak-"
-
+    jenny "What do you want?!"
+    anon f_worried "I don't-"
     show anon f_confused
-    jenny "Ludahkan atau kesal!"
-
-    jenny "Saya mencoba bersantai di sini."
-
+    jenny "Spit it out or piss off!"
+    jenny "I'm trying to relax here."
     anon @ -m_talk "..."
     return
 
@@ -295,43 +215,30 @@ label jenny_button_intro_diningroom_j16:
     show anon b_dinner_sitting_look_left f_worried zorder 0
     show expression "characters/jenny/layeredimage/jenny_breakfast_table.png" zorder 2
     with dissolve
-    anon "Pagi."
-
-    jenny "Ya, ya..."
-
+    anon "Morning."
+    jenny "Yeah, yeah..."
     pause
-    anon "Apa yang sedang kamu lakukan?"
-
-    jenny "Ugh, bajingan sialan ini..."
-
-    anon "Hah?!"
-
-    jenny "Tidak ada... Sudahlah!"
-
+    anon "What are you doing?"
+    jenny "Ugh, these fucking assholes..."
+    anon "Huh?!"
+    jenny "Nothing... Never mind!"
     show jenny f_upset
-    jenny "Apa yang kamu inginkan, {b}[firstname]{/b}?!"
-
+    jenny "What do you want, {b}[firstname]{/b}?!"
     return
 
 label jenny_button_intro_bedroom_j8:
     scene expression player.location.background_closeup with None
     show jenny f_upset a_crossed
     show anon f_worried
-    jenny "Apa yang kamu lakukan?!"
-
+    jenny "What the fuck are you doing?!"
     anon "Hmm?"
-
-    anon "T-tidak ada... aku hanya-"
-
+    anon "N-nothing... I just-"
     show jenny f_angry
-    jenny "Keluarlah dari kamarku, dasar mesum!"
-
-    anon f_skeptical "Kenapa suasana hatimu selalu buruk?"
-
+    jenny "Get the hell out of my room, you perv!"
+    anon f_skeptical "Why are you always in such a foul mood?"
     show anon f_surprised
     jenny "GET OUT OF MY ROOM, {b}[firstname!u]{/b}!!!" with hpunch
-    anon f_worried "Oke, oke... aku berangkat."
-
+    anon f_worried "Okay, okay... I'm going."
     hide anon with dissolve
     return
 
@@ -339,24 +246,17 @@ label jenny_button_intro_backyard_j8:
     scene expression player.location.background_closeup with None
     show jenny f_upset b_swimsuit a_hips
     show anon f_worried
-    anon "H-hei."
-
+    anon "H-hey."
     jenny @ -m_talk "..."
     pause
-    anon "Aku suka pakaian renangmu-"
-
+    anon "I like your swimsui-"
     show anon f_surprised
-    jenny "Pergilah."
-
+    jenny "Go away."
     anon @ -m_talk "..."
-    anon f_confused "Aku hanya mencoba memberimu persetujuan."
-
-    jenny "Aku bilang, pergilah, pecundang!"
-
-    jenny "Saya mencoba bersantai di sini."
-
-    anon "Cih, baiklah."
-
+    anon f_confused "I was just trying to give you a compli-"
+    jenny "I said, go away, loser!"
+    jenny "I'm trying to relax here."
+    anon "Tch, fine."
     hide anon with dissolve
     return
 
@@ -366,18 +266,13 @@ label jenny_button_intro_diningroom_j8:
     show anon b_dinner_sitting_look_left f_worried zorder 0
     show expression "characters/jenny/layeredimage/jenny_breakfast_table.png" zorder 2
     with dissolve
-    anon "Pagi."
-
+    anon "Morning."
     jenny @ -m_talk "..."
     pause
-    anon "Aku berkata, selamat pagi-"
-
-    jenny "aku mendengarmu."
-
-    jenny "Diam saja dan tinggalkan aku sendiri, pecundang..."
-
-    anon f_tired "Cih, baiklah."
-
+    anon "I said, good morn-"
+    jenny "I heard you."
+    jenny "Just shut up and leave me alone, loser..."
+    anon f_tired "Tch, fine."
     show anon f_looking_down_eating a_eating with dissolve
     pause
     show anon f_looking_down_food a_resting with dissolve

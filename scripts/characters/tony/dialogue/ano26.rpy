@@ -5,28 +5,21 @@ label ano26_init_tony.pizzeria:
     show tony f_smirk
     show anon with dissolve:
         flip
-    tony "Kamu sudah mendapatkan tasnya?"
-
-    anon "Ya, kami siap berangkat."
-
-    tony f_normal @ f_laugh "Bagus sekali."
-
-    tony m_talk "{b}Bawalah tasmu ke bank pada Selasa pagi dan aku akan menemuimu di sana.{/b}"
-
+    tony "You get the bag yet?"
+    anon "Yup, we're good to go."
+    tony f_normal @ f_laugh "Excellent."
+    tony m_talk "{b}Bring the bag with ya to the bank Tuesday morning and I'll meet ya there.{/b}"
 
     if 'a_baby' not in renpy.get_attributes('tony'):
         show tony a_point with {'master': dissolve}
 
-    tony "Jangan terlambat!"
-
+    tony "Don't be late!"
 
     if 'a_baby' not in renpy.get_attributes('tony'):
         show tony a_idle -m_talk with {'master': dissolve}
 
-    anon "saya tidak akan melakukannya."
-
+    anon "I won't."
     tony "Attaboy."
-
     hide anon with dissolve
     return
 
@@ -34,123 +27,82 @@ label ano26_init_tony.pizzeria:
 label ano26_init_tony.bank:
     show anon with dissolve:
         xzoom -1
-    tony "Ya bawa tasnya?"
-
-    anon "Ya, saya mengerti di sini, {b}Tony{/b}."
-
+    tony "Ya bring the bag?"
+    anon "Yeah, I got it right here, {b}Tony{/b}."
     show anon a_backpack f_looking_down with dissolve
     pause
     show anon f_normal a_duffel_give with dissolve
-    tony "Cantik!"
-
+    tony "Beautiful!"
     show anon a_idle
     show tony a_duffel_search f_normal_down
     with dissolve
-    tony "Mari kita lihat di sini."
-
+    tony "Let's see here."
     pause
-    tony a_duffel_give_mask "Pakai ini."
-
+    tony a_duffel_give_mask "Put this on."
     show tony a_duffel_search
     show anon a_baklava1 f_worried_low
     with dissolve
-    anon "Uhh, oke..."
-
+    anon "Uhh, okay..."
     show anon a_baklava2 with dissolve
     pause
     show anon f_confused a_sides of_ski_mask with dissolve
-    anon "{b}Tony{/b}, kenapa ada topi hijau yang menempel di topengku?"
-
-    tony f_smirk "Karena itu adalah topeng Luigi dan itu adalah ciri khasnya."
-
+    anon "{b}Tony{/b}, why is there a green hat attached to my mask?"
+    tony f_smirk "'Cause that was Luigi's mask and it's his signature look."
     anon @ -m_talk "Hmm?"
-
-    tony f_normal_down "Sobat, hal ini membawaku kembali."
-
+    tony f_normal_down "Man, this stuff takes me back."
     pause
-    tony a_duffel_give_mini_gun "Ini bagianmu."
-
+    tony a_duffel_give_mini_gun "Here's your piece."
     show tony a_duffel_search
     show anon a_tiny_gun_look f_worried_low
     with dissolve
     anon @ -m_talk "..."
     show tony a_baklava1 with dissolve
-    anon f_worried "Dengan serius?"
-
-    tony a_baklava2 f_question "Apa?"
-
+    anon f_worried "Seriously?"
+    tony a_baklava2 f_question "What?"
     show tony o_ski_mask a_idle with dissolve
-    anon f_skeptical "Ini senjata yang kamu berikan padaku?"
-
-    tony f_smirk "Cukup bagus, ya?"
-
-    anon "Tidak, itu konyol!"
-
+    anon f_skeptical "This is the gun you're giving me?"
+    tony f_smirk "Pretty nice, eh?"
+    anon "No, it's ridiculous!"
     show tony f_sad
-    anon "Apakah Anda mendapatkannya di departemen anak-anak atau semacamnya?"
-
-    tony "Hei, ayolah... itu favorit Luigi."
-
-    anon "Aku merasa seperti aku akan menghancurkan benda ini!"
-
-    anon "Aku bahkan tidak bisa memasukkan jariku ke dalam pelindung pelatuk..."
-
-    tony f_smirk "Oh, jangan khawatir tentang menarik pelatuknya."
-
+    anon "Did you get it in the kids department or something?"
+    tony "Hey, c'mon... that was Luigi's favorite."
+    anon "I feel like I'm gonna break this thing!"
+    anon "I can't even get my finger inside the trigger guard..."
+    tony f_smirk "Oh, don't worry about pullin' the trigger."
     anon @ -m_talk "Hmm?"
-
-    tony f_laugh "Tidak ada peluru di dalamnya."
-
+    tony f_laugh "It ain't got no bullets in it."
     anon @ f_surprised "!!!"
-    anon "Apa maksudmu tidak ada peluru di dalamnya?!"
-
-    tony f_suspicious "Kamu berencana menembak seseorang yang tangguh?"
-
-    anon f_worried "Yah, tidak... tapi-"
-
-    tony "Lalu kenapa kamu butuh peluru?"
-
-    anon "Entahlah..."
-
+    anon "What do you mean, it doesn't have any bullets in it?!"
+    tony f_suspicious "You plannin' on shootin' somebody tough guy?"
+    anon f_worried "Well, no... but-"
+    tony "Then why do you need bullets?"
+    anon "I dunno..."
     show tony a_duffel_search f_normal_down with dissolve
     pause
-    anon "... Bagaimana jika ada yang tidak beres di sana?"
-
+    anon "... What if something goes wrong in there?"
     show tony a_duffel_gun1 with dissolve
     show tony f_normal a_duffel_gun2 with dissolve
-    tony "Lalu aku akan menanganinya."
-
+    tony "Then I'll handle it."
     anon f_surprised "!!!"
-    anon f_unimpressed "Kamu mengambil itu?!"
-
+    anon f_unimpressed "You're taking that?!"
     tony a_gun_down @ -m_talk "Mhmm."
-
     pause
-    anon @ a_tiny_gun_move f_worried_low "Dan saya mengerti?"
-
-    tony f_smirk "Hei, bukan ukuran senjatanya yang penting, jagoan..."
-
-    tony "... Itu adalah kaliber pelurunya."
-
-    anon a_tiny_gun_down f_angry "Tapi kamu tidak memberiku peluru!!!"
-
-    tony "Anda siap?"
-
+    anon @ a_tiny_gun_move f_worried_low "And I get this?"
+    tony f_smirk "Hey, it's not the size of the gun that matters, champ..."
+    tony "... It's the caliber of the bullets."
+    anon a_tiny_gun_down f_angry "But you didn't give me any bullets!!!"
+    tony "You ready?"
     show anon f_surprised
-    tony "Ayo lakukan ini!"
-
-    anon "Baiklah, tunggu sebentar... bukankah sebaiknya kita-"
-
+    tony "Let's do this!"
+    anon "Well, hold on a second... shouldn't we-"
     show tony a_gun_up f_laugh with {'master': dissolve}:
         xoffset -450
         xzoom 1
     tony "LEEEEEEEROOOOOOOOOOY!!!"
-
     hide tony with {'master': dissolve}
     anon f_shock @ -m_talk "..."
     anon a_tiny_gun_look f_disgusted_low @ -m_talk "..."
-    anon a_tiny_gun_down f_tired "{i}*Huh*{/i}"
-
+    anon a_tiny_gun_down f_tired "{i}*Sigh*{/i}"
     hide anon with dissolve
 
     scene expression background(512, 512, 3, l=L_bank_lobby)
@@ -158,56 +110,41 @@ label ano26_init_tony.bank:
         xoffset -300
         xzoom 1
     with fade
-    tony "Baiklah semuanya, ini penundaan!"
-
+    tony "Alright everybody, this is a hold-up!"
     show tony a_gun_cock1 with dissolve
     show tony a_gun_cock2 with fastdissolve
     show tony a_gun_cock1 with fastdissolve
     pause
-    tony a_gun_point "Berdirilah di atas kepalamu dan letakkan tanganmu di belakang lututmu!"
-
+    tony a_gun_point "Get on ya heads and put your hands behind ya knees!"
     show tony f_surprised
     pause
-    tony a_gun_lower "Apa yang-"
-
+    tony a_gun_lower "What the-"
     show tony f_angry a_gun_down with dissolve:
         xoffset 200
         xzoom -1
-    tony "Tidak ada seorang pun di sini!"
-
+    tony "There's nobody in here!"
     show anon f_unimpressed of_ski_mask with dissolve:
         xzoom -1
     anon "Duh."
-
-    anon "{b}Liu{/b} bilang mereka selalu mati di Selasa pagi, ingat?"
-
-    anon "Itu bagian dari rencananya."
-
-    tony "Ya, ya... tapi, kupikir setidaknya akan ada beberapa orang."
-
+    anon "{b}Liu{/b} said they were always dead on Tuesday mornings, remember?"
+    anon "That's part of the plan."
+    tony "Well, yeah... but, I thought there would at least be a couple people."
     show tony with dissolve:
         xoffset -300
         xzoom 1
-    tony "Di mana kesenangannya?"
-
-    anon "Kami di sini bukan untuk bersenang-senang... kami di sini untuk mengambil tas kerja."
-
-    tony "Ah, kawan."
-
-    anon "Ikat penjaga keamanan sementara saya berpura-pura memaksa {b}Liu{/b} ke bawah."
-
-    tony "Ya, ya..."
-
+    tony "Where's the fun in this?"
+    anon "We're not here for fun... we're here to get the briefcase."
+    tony "Aww, man."
+    anon "Go tie up the security guard while I make a show of forcing {b}Liu{/b} downstairs."
+    tony "Yeah, yeah..."
     hide tony with dissolve
-    tony "Hei, bangunlah, orang tua!"
-
+    tony "Hey, wake up, old timer!"
     pause
     show anon a_tiny_gun_look f_disgusted_low with dissolve:
         xoffset 500
         xzoom 1
     pause
-    anon f_worried "Yah, tidak ada apa-apa..."
-
+    anon f_worried "Well, here goes nothing..."
     hide anon with dissolve
     return
 
@@ -217,15 +154,12 @@ label ano26_talk_tony:
     show anon of_ski_mask with dissolve:
         xoffset -250
         xzoom -1
-    anon @ -m_talk "( {b}Tony{/b} sedang menangani penjaga keamanan. )"
-
+    anon @ -m_talk "( {b}Tony{/b}'s handling the security guard. )"
     show anon with dissolve:
         xoffset 250
         xzoom 1
-    anon @ -m_talk "(Saya harus mulai dengan membuat pertunjukan dengan {b}Liu{/b} untuk kamera. )"
-
-    anon @ -m_talk "( {b}Saya harus memaksanya turun ke bawah ke dalam brankas{/b}. )"
-
+    anon @ -m_talk "( I should start by making a show with {b}Liu{/b} for the cameras. )"
+    anon @ -m_talk "( {b}I'll need to force her downstairs into the vault{/b}. )"
     hide anon with dissolve
     return
 
@@ -235,15 +169,12 @@ label ano26_move_tony:
     show anon of_ski_mask with dissolve:
         xoffset -250
         xzoom -1
-    anon @ -m_talk "( {b}Tony{/b} akan bergabung dengan kita saat dia mengikat penjaga keamanan. )"
-
+    anon @ -m_talk "( {b}Tony{/b} will join us when he's tied up the security guard. )"
     show anon with dissolve:
         xoffset 250
         xzoom 1
-    anon @ -m_talk "(Sementara itu saya harus melanjutkan sandiwara ini dengan {b}Liu{/b} untuk kamera. )"
-
-    anon @ -m_talk "( {b}Kita harus turun ke bawah menuju brankas{/b}. )"
-
+    anon @ -m_talk "( Meanwhile I need to keep up this charade with {b}Liu{/b} for the cameras. )"
+    anon @ -m_talk "( {b}We should head downstairs to the vault{/b}. )"
     hide anon with dissolve
     return
 # Decompiled by unrpyc: https://github.com/CensoredUsername/unrpyc

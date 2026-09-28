@@ -34,7 +34,6 @@ layeredimage tina:
         attribute b_magic "tina_body_b_[M_tina.outfit.get][M_tina.pregnancy.to_string]"   
 
 
-
     group mouth prefix 'm':
         attribute talk null
 
@@ -116,10 +115,8 @@ layeredimage tina:
         attribute a_baby "tina_arms_dressed_a_baby_[M_tina.pregnancy.baby_gender]"
 
 
-
     group arms if_all 'b_dressed_open' auto variant 'dressed_open':
         attribute a_idle default "tina_arms_dressed_open_a_pull"
-
 
 
 
@@ -127,10 +124,8 @@ layeredimage tina:
         attribute a_idle default "tina_arms_dressed_open_boobs_a_hips"       
 
 
-
     group arms if_all 'b_gown_bed' auto variant 'gown_bed':
         attribute a_idle default "tina_arms_gown_bed_a_baby_[M_tina.pregnancy.baby_gender]"
-
 
 
     group arms if_all 'b_magic' auto:
@@ -145,13 +140,10 @@ layeredimage tina:
         attribute a_baby "tina_arms_casual_a_baby_[M_tina.pregnancy.baby_gender]"
 
 
-
     group arms if_any ['b_lingerie'] auto variant 'lingerie':
         attribute a_idle default 'tina_arms_lingerie_a_hips'
         attribute a_baby "tina_arms_lingerie_a_baby_[M_tina.pregnancy.baby_gender]"
-
         attribute a_squeeze "tina_arms_lingerie_a_squeeze"
-
 
 
     group arms if_any ['b_panties_knees'] auto variant 'panties_knees': 

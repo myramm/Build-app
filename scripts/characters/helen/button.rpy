@@ -40,7 +40,7 @@ label helen_button_dialogue:
             "Ritual." if M_mia.is_state(S_mia_find_sinners):
                 call expression game.dialog_select("helen_dialogue_change_ritual")
                 menu:
-                    "Aku tidak tahu." if player.stats.chr() < 5:
+                    "I don't know." if player.stats.chr() < 5:
                         $ display.toast(chr_fail)
                         call expression game.dialog_select("helen_dialogue_change_ritual_stat_fail")
 

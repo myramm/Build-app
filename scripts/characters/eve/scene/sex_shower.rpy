@@ -49,71 +49,48 @@ label scene_eve_sex_shower.dialogue:
 
     if animcounter == 0 and rng <= .33:
         eve "Ahh!!{w=1}{nw}"
-
         if gender == 'trans':
-            eve "Persetan, {b}[firstname]{/b}!!{w=2.5{nw}"
-
-            eve "OH, sial!!!{w=2}{nw}"
-
+            eve "Fuck my ass, {b}[firstname]{/b}!!{w=2.5}{nw}"
+            eve "OH, FUCK IT!!!{w=2}{nw}"
         else:
-            eve "Persetan denganku, {b}[firstname]{/b}!!{w=2.5{nw}"
-
-            eve "OH, PERCAYA AKU!!!{w=2}{nw}"
-
+            eve "Fuck me, {b}[firstname]{/b}!!{w=2.5}{nw}"
+            eve "OH, FUCK ME!!!{w=2}{nw}"
     elif animcounter == 0 and rng <= .66:
-        eve "Ah, disana!!{w=2}{nw}"
-
+        eve "Ah, right there!!{w=2}{nw}"
 
     elif animcounter == 1 and rng <= .33:
         if gender == 'trans':
-            anon "Pantatmu luar biasa, {b}Eve{/b}!{w=3}{nw}"
-
+            anon "Your ass is amazing, {b}Eve{/b}!{w=3}{nw}"
         else:
-            anon "Ini luar biasa, {b}Hawa{/b}!{w=2.5{nw}"
-
+            anon "This is amazing, {b}Eve{/b}!{w=2.5}{nw}"
         eve "Ahh!{w=1}{nw}"
-
     elif animcounter == 1 and rng <= .66:
-        eve "SIALAN YA!!!{w=1.5{nw}"
-
-        eve "Aku cinta kamu, {b}[firstname]{/b}!{w=2.5{nw}"
-
+        eve "FUCK YES!!!{w=1.5}{nw}"
+        eve "I love you, {b}[firstname]{/b}!{w=2.5}{nw}"
 
     elif animcounter == 2 and rng <= .33:
         if gender == 'trans':
-            anon "Sangat ketat!{w=2}{nw}"
-
+            anon "It's so tight!{w=2}{nw}"
         else:
-            anon "Kamu sangat ketat!{w=2}{nw}"
-
-        eve "Oh, {b}[firstname]{/b}!!{w=1.5{nw}"
-
+            anon "You're so tight!{w=2}{nw}"
+        eve "Oh, {b}[firstname]{/b}!!{w=1.5}{nw}"
     elif animcounter == 2 and rng <= .66:
-        eve "Aku sangat mencintaimu-{w=2}{nw}"
-
-        eve "...Ngh, BANYAK!!{w=1.5{nw}"
-
+        eve "I love you so fucking-{w=2}{nw}"
+        eve "... Ngh, MUCH!!{w=1.5}{nw}"
 
     return
 
 
 label scene_eve_sex_shower.cum(where):
-    anon "Aku semakin dekat!"
-
-    eve "Saya juga!"
-
+    anon "I'm getting close!"
+    eve "Me too!"
     pause
-    eve "Pegang aku erat-erat!"
-
-    anon "Seperti ini?"
-
-    eve "Ya, begitu saja!!"
-
+    eve "Hold me tight!"
+    anon "Like this?"
+    eve "Yes, just like that!!"
     pause
-    eve "Ya, ya, ya!!!"
-
+    eve "Yes, yes, yes!!!"
     eve "NGGHHH!!!"
-
 
     show eve_body_b_sex_shower_cum as animation
 
@@ -131,9 +108,7 @@ label scene_eve_sex_shower.cum(where):
     with {'master': dissolve}
 
     anon "Haah... Haah..."
-
     eve "Haah... Haah..."
-
     hide animation
     hide penis
     show eve b_naked_shower_kiss01 f_drink behind steam:
@@ -145,30 +120,21 @@ label scene_eve_sex_shower.cum(where):
         show eve od_scar
 
     with {'master': dissolve}
-    eve "Sialan, apa aku kelelahan!"
-
+    eve "Holy shit, am I exhausted!"
     show eve f_nervous
-    anon "Fiuh, aku juga."
-
-    eve f_nervous_down "Setidaknya kita tidak perlu membereskan kekacauan kali ini."
-
-    anon "Hehe, ya."
-
-    eve f_nervous "Anda mungkin harus membantu saya keluar."
-
-    anon "Benar-benar?"
-
+    anon "Phew, me too."
+    eve f_nervous_down "At least we don't need to clean up a mess this time."
+    anon "Heh, yeah."
+    eve f_nervous "You might have to help me get out."
+    anon "Really?"
 
     if gender == 'trans':
         show eve od_dick01
         with {'master': dissolve}
 
-    eve f_happy "Ya, aku merasa seperti akan terjungkal..."
-
-    anon "hehe!"
-
+    eve f_happy "Yeah, I feel like I'm about to tip over..."
+    anon "Hehe!"
     eve f_laugh "... Hehehe!"
-
 
     if gender == 'cis' and where == 'inside':
         call call_pregnancy_minigame (None, M_eve)
@@ -196,47 +162,28 @@ label scene_eve_sex_shower.repeat(gender):
     show shower_steam
     with fade
     eve "Haah!"
-
-    anon "Wow, semuanya berjalan cukup mudah saat itu."
-
+    anon "Wow, it went in pretty easy that time."
     call scene_eve_sex_shower.animate
-    eve "Ya, untukmu..."
-
-    eve "... Mungkin..."
-
-    eve "...Ah, sial!"
-
-    anon "Apakah itu terlalu dalam?"
-
-    eve "Tidak."
-
-    anon "Apa kamu yakin?"
-
-    eve "Y-ya!"
-
-    eve "sial!!"
-
+    eve "Yeah, for you..."
+    eve "... Maybe..."
+    eve "... Ah, fuck!"
+    anon "Is it too deep?"
+    eve "No."
+    anon "Are you sure?"
+    eve "Y-yes!"
+    eve "FUCK!!"
     pause
-    anon "Aduh, beruap sekali di sini..."
-
-    eve "Eh ya!"
-
+    anon "Man, it's so steamy in here..."
+    eve "Uh huh!"
     pause
-    anon "... Bisakah kita menurunkan suhu air sedikit?"
-
-    eve "Tidak!!"
-
+    anon "... Could we maybe turn the water temperature down a little?"
+    eve "Ngh!!"
     pause
-    anon "{b}Malam{/b}?"
-
+    anon "{b}Eve{/b}?"
     eve "Hmm?"
-
-    anon "Sudahlah."
-
-    eve "T-tidak, apa yang kamu katakan?"
-
-    anon "Tidak ada yang penting."
-
+    anon "Nevermind."
+    eve "N-no, what did you say?"
+    anon "Nothing important."
 
     call scene_eve_sex_shower.loop
     call scene_eve_sex_shower.cum (_return)

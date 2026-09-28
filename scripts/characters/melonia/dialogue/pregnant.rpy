@@ -1,16 +1,13 @@
 label melonia_button_pregnant:
     show melonia f_annoyed
     show anon with dissolve
-    anon "Bagaimana kabarnya?"
-
-    melonia "Cih, aku hamil anak idiotmu.."
-
+    anon "How's everything going?"
+    melonia "Tch, I'm pregnant with your idiot child..."
     show anon f_worried
-    melonia "... Menurut Anda bagaimana kelanjutannya?"
-
+    melonia "... How do you think it's going?"
 
     menu melonia_button_pregnant.choice:
-        "Apakah kamu merasa baik-baik saja?":
+        "Are you feeling okay?":
 
             if M_melonia.pregnancy.stage == 1:
                 jump melonia_button_pregnant.annoyed
@@ -18,123 +15,79 @@ label melonia_button_pregnant:
                 jump melonia_button_pregnant.vain
             else:
                 jump melonia_button_pregnant.nauseous
-        "Tetap keluar dari bak mandi air panas?":
+        "Staying out of the hot tub?":
 
             jump melonia_button_pregnant.hottub
-        "Saya harus pergi.":
+        "I should go.":
 
             pass
 
-    anon f_worried "Saya harus pergi."
-
-    anon "Beritahu aku jika kamu butuh sesuatu, oke?"
-
-    melonia f_annoyed "Ya, bagaimana dengan anak biliar yang tahu cara menarik diri?"
-
+    anon f_worried "I should go."
+    anon "Let me know if you need anything, okay?"
+    melonia f_annoyed "Yeah, how about a pool boy who knows how to pull out?"
     anon f_thinking @ -m_talk "..."
-    anon f_normal @ f_laugh "Sangat lucu."
-
-    melonia "Pukul saja dan biarkan aku rileks, ya?!"
-
-    anon f_sad_down "Bagus."
-
+    anon f_normal @ f_laugh "Very funny."
+    melonia "Just beat it and let me relax, would you?!"
+    anon f_sad_down "Fine."
     hide anon with dissolve
     return
 
 
 label melonia_button_pregnant.annoyed:
-    anon f_worried "Apakah kamu merasa baik-baik saja?"
-
-    melonia f_annoyed "Tidak."
-
-    melonia "Aku merasa sangat, sangat kesal padamu saat ini karena membujukku melakukan hal ini!"
-
-    anon "Oke..."
-
-    anon "... Tapi sebaliknya, kamu merasa baik-baik saja?"
-
-    melonia @ f_pouting "{i}*Huh*{/i} Saya merasa hamil."
-
-    melonia "Ada pertanyaan lagi?!"
-
+    anon f_worried "Are you feeling okay?"
+    melonia f_annoyed "No."
+    melonia "I'm feeling very, very annoyed with you right now for talking me into this!"
+    anon "Okay..."
+    anon "... But otherwise, you're feeling good?"
+    melonia @ f_pouting "{i}*Sigh*{/i} I feel pregnant."
+    melonia "Any more questions?!"
     jump melonia_button_pregnant.choice
 
 
 label melonia_button_pregnant.hottub:
-    anon f_shy "Tetap keluar dari bak mandi air panas?"
-
-    melonia f_glaring "Apakah kamu ingin aku memukulmu?"
-
-    anon f_brag_closed "Penting bagi Anda untuk tidak berendam air panas saat sedang hamil, {b}Melonia{/b}..."
-
-    anon "... Anda tahu itu."
-
+    anon f_shy "Staying out of the hot tub?"
+    melonia f_glaring "Do you want me to punch you?"
+    anon f_brag_closed "It's important that you stay out of the hot tub while you're pregnant, {b}Melonia{/b}..."
+    anon "... You know that."
     show anon f_shy
-    melonia "Ya, {b}[firstname]{/b}."
-
-    melonia "Saya menghindari bak mandi air panas; Aku bukan monster!"
-
-    anon a_point "Dan tanpa alkohol?"
-
+    melonia "Yes, {b}[firstname]{/b}."
+    melonia "I'm staying out of the hot tub; I'm not a monster!"
+    anon a_point "And no alcohol?"
     melonia a_fists @ -m_talk "..."
-    anon a_idle f_worried @ f_surprised a_surprised_up_both "Oh ya, aku anggap itu sebagai ya..."
-
+    anon a_idle f_worried @ f_surprised a_surprised_up_both "Oh kay, I'll take that as a yes..."
     show melonia a_idle with dissolve
     jump melonia_button_pregnant.choice
 
 
 label melonia_button_pregnant.nauseous:
-    anon f_worried "Apakah kamu merasa baik-baik saja?"
-
-    melonia f_annoyed "Tidak, aku merasa tidak enak badan!"
-
-    melonia "Punggungku sakit, aku mual, kakiku bengkak, dan payudaraku bocor ke mana-mana!"
-
-    anon "Itu, um-"
-
-    melonia @ f_pouting "Dan yang terpenting, setiap kali saya bersin, saya buang air kecil sedikit!"
-
+    anon f_worried "Are you feeling okay?"
+    melonia f_annoyed "No, I am not feeling okay!"
+    melonia "My back hurts, I'm nauseous, my feet are swollen, and my tits are leaking all over the place!"
+    anon "That's, umm-"
+    melonia @ f_pouting "And to top it all off, everytime I sneeze I pee a little!"
     anon f_surprised @ -m_talk "!!!"
-    melonia "Ya."
-
-    melonia "Itu berita gembira kecil yang menarik, bukan?!"
-
-    anon f_worried "Dapatkah saya melakukan sesuatu untuk membuat Anda merasa lebih baik?"
-
-    melonia "Anda bisa saja meninju wajah Anda sendiri, seperti, SANGAT keras."
-
+    melonia "Yeah."
+    melonia "That's a lovely little tidbit, isn't it?!"
+    anon f_worried "Can I do something to make you feel better?"
+    melonia "You could punch yourself in the face, like, REALLY hard."
     anon @ f_hurt -m_talk "..."
-    anon "Adakah yang tidak terlalu kejam?"
-
-    melonia "{i}*Huh*{/i} Tidak."
-
-    melonia "Aku hanya ingin anak iblis ini keluar dariku..."
-
-    anon "Anda hampir sampai, tinggal beberapa hari lagi."
-
+    anon "Anything less violent?"
+    melonia "{i}*Sigh*{/i} No."
+    melonia "I just want this demon child out of me..."
+    anon "You're almost there, just a few more days."
     jump melonia_button_pregnant.choice
 
 
 label melonia_button_pregnant.vain:
-    anon f_worried "Apakah kamu merasa baik-baik saja?"
-
-    melonia f_annoyed "Eh, lihat aku..."
-
-    anon "Hah?"
-
-    melonia "Apakah Anda tahu berapa banyak usaha yang diperlukan untuk bangkit kembali setelah saya {b}Iwanka{/b}?"
-
-    anon @ f_thinking "Hmm."
-
-    melonia @ f_yell "Terlalu banyak!"
-
-    melonia "Dan sekarang saya harus mengulanginya lagi, terima kasih!"
-
-    anon "Kamu bersikap konyol."
-
-    anon "Menurutku kamu tampak hebat!"
-
-    melonia @ f_eyeroll "Yah, kamu idiot."
-
+    anon f_worried "Are you feeling okay?"
+    melonia f_annoyed "Eugh, look at me..."
+    anon "Huh?"
+    melonia "Do you have any idea how much work it took to bounce back after I had {b}Iwanka{/b}?"
+    anon @ f_thinking "Umm."
+    melonia @ f_yell "Too much!"
+    melonia "And now I'm going to have to do it all over again, thanks to you!"
+    anon "You're being ridiculous."
+    anon "I think you look great!"
+    melonia @ f_eyeroll "Well, you're an idiot."
     jump melonia_button_pregnant.choice
 # Decompiled by unrpyc: https://github.com/CensoredUsername/unrpyc

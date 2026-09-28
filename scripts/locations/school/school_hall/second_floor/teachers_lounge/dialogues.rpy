@@ -2,9 +2,7 @@ label teachers_lounge_first_visit:
     scene expression game.timer.image("backgrounds/location_school_lounge{}_blur.jpg") with fade
     show player 14 with dissolve
     player_name "This must be the teachers' lounge."
-
     player_name "Their private little getaway from my classmates."
-
     hide player with dissolve
     return
 
@@ -12,16 +10,13 @@ label teachers_lounge_okita_dose_smith:
     scene location_school_lounge_day_blur
     show player 11
     player_name "( There she is! Drinking coffee just like I thought. )"
-
     player_name "( I just need to dose the coffee pot! )"
-
     return
 
 label coffee_pot_dialogue_wrong_time:
     scene location_school_lounge_day_blur
     show player 11
     player_name "( I can't do it while she's sitting there... )"
-
     return
 
 label coffee_pot_dialogue_right_time:
@@ -55,7 +50,6 @@ label microwave_dialogue:
     scene expression game.timer.image("backgrounds/location_school_lounge_microwave{}.jpg")
     player_name "An apple?!" with hpunch
     player_name "Why would anyone cook apples in microwaves..."
-
     $ A_apple.unlock()
     $ game.main()
 # Decompiled by unrpyc: https://github.com/CensoredUsername/unrpyc

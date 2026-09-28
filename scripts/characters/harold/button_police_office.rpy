@@ -40,31 +40,31 @@ label harold_police_button_dialogue:
 
         call expression game.dialog_select("harold_police_office_dialogue_pre")
         menu:
-            "Dimana {b}Mia{/b}?":
+            "Where's {b}Mia{/b}?":
                 call expression game.dialog_select("harold_police_office_dialogue_wheres_mia")
 
-            "Saya menemukan foto ini." if M_anon.between_states(S_ano13_done, S_ano14_done):
+            "I found this photo." if M_anon.between_states(S_ano13_done, S_ano14_done):
                 call harold_button_office.photo
                 $ player.remove_item('picture4')
                 $ player.get_item('picture4_alt')
 
-            "Ketua." if M_roxxy.is_state(S_roxxy_ask_earl_release):
+            "The chief." if M_roxxy.is_state(S_roxxy_ask_earl_release):
                 call expression game.dialog_select("harold_police_office_dialogue_the_chief")
 
             "{b}Larry{/b}." if M_mia.is_state(S_mia_stolen_goods) and M_larry.finished_state(S_larry_start):
                 call expression game.dialog_select("harold_police_office_dialogue_larry")
 
-            "Maling." if M_mia.is_state(S_mia_stolen_goods) and not M_larry.finished_state(S_larry_start):
+            "Thief." if M_mia.is_state(S_mia_stolen_goods) and not M_larry.finished_state(S_larry_start):
                 call expression game.dialog_select("harold_police_office_dialogue_thief")
 
-            "Donat." if M_mia.is_state(S_mia_impress_harold) and not player.has_item("donuts_correct") and not player.has_item("donuts_fail"):
+            "Donuts." if M_mia.is_state(S_mia_impress_harold) and not player.has_item("donuts_correct") and not player.has_item("donuts_fail"):
                 call expression game.dialog_select("harold_police_office_dialogue_donuts")
 
-            "Donat." if M_mia.is_state(S_mia_impress_harold) and player.has_item("donuts_fail"):
+            "Donuts." if M_mia.is_state(S_mia_impress_harold) and player.has_item("donuts_fail"):
                 call expression game.dialog_select("harold_police_office_dialogue_donuts_wrong")
                 $ player.remove_item("donuts_fail")
 
-            "Donat." if M_mia.is_state(S_mia_impress_harold) and player.has_item("donuts_correct"):
+            "Donuts." if M_mia.is_state(S_mia_impress_harold) and player.has_item("donuts_correct"):
                 $ harold_glaze = M_harold.get("glaze")
                 $ harold_topping = M_harold.get("topping")
                 call expression game.dialog_select("harold_police_office_dialogue_donuts_correct")

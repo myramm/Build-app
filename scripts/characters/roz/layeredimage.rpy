@@ -31,7 +31,6 @@ layeredimage roz:
         attribute b_magic "roz_body_b_[M_roz.outfit.get][M_roz.pregnancy.to_string]"   
 
 
-
     group mouth prefix 'm':
         attribute talk null
 
@@ -85,10 +84,8 @@ layeredimage roz:
         attribute a_baby "roz_arms_dressed_a_baby_[M_roz.pregnancy.baby_gender]"
 
 
-
     group arms if_all 'b_gown_bed' auto variant 'gown_bed':
         attribute a_idle default "roz_arms_gown_bed_a_baby_[M_roz.pregnancy.baby_gender]"
-
 
 
     group arms if_all 'b_magic' auto:

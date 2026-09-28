@@ -64,34 +64,23 @@ label scene_daisy_sex_loft.loop:
 label scene_daisy_sex_loft.dialogue:
     if animcounter == 0 and randomizer() > 75:
         daisy "Ahh!{p=.75}{nw}"
-
         daisy "That's it Mr. Weasel!{p=1.25}{nw}"
-
         daisy "That's it!!{p=1}{nw}"
-
     if animcounter == 1 and randomizer() > 75:
         anon "{b}Daisy{/b} you're shaking.{p=1.5}{nw}"
-
         daisy "I know, I'm sorry...{p=1}{nw}"
-
         daisy "... It's all the tingles, I can't help it!{p=2}{nw}"
-
     if animcounter == 2 and randomizer() > 75:
         daisy "Haah! Your weasel is so deep, {b}[firstname]{/b}!{p=1.5}{nw}"
-
     return
 
 
 label scene_daisy_sex_loft.cum(where):
     daisy "I think I'm about to have one of those orgasm thingies again!"
-
-    anon "Ya, aku juga!"
-
+    anon "Yeah, me too!"
     pause
     daisy "Oh, {b}[firstname]{/b}!!"
-
-    daisy "AAH!!"
-
+    daisy "AHH!!"
     pause
 
     if where == 'inside':
@@ -113,7 +102,6 @@ label scene_daisy_sex_loft.cum(where):
             zoom .94
 
     daisy -m_talk "NGGHHH!!!"
-
     hide xray
 
     if where == 'inside':
@@ -124,15 +112,10 @@ label scene_daisy_sex_loft.cum(where):
 
     with {'master': dissolve}
     daisy "Oh, wowzers!"
-
     anon "Haah... Haah..."
-
     daisy f_calm_up "That was a lot of milk!"
-
-    anon "Ya."
-
-    daisy f_calm_down "hehe!"
-
+    anon "Yeah."
+    daisy f_calm_down "Hehe!"
 
     if where == 'inside':
         call call_pregnancy_minigame (None, M_daisy)
@@ -143,58 +126,36 @@ label scene_daisy_sex_loft.repeat:
     call scene_daisy_sex_loft.stage
     with fade
     daisy "Come on in Mr. Weasel!"
-
-    anon "Hehe."
-
+    anon "Heh."
     call scene_daisy_sex_loft.insert
     daisy "!!!"
     pause
     call scene_daisy_sex_loft.animate
     daisy "Oh, that's really nice."
-
-    anon "Ya?"
-
+    anon "Yeah?"
     daisy "Mhmm!"
-
     pause
     daisy "You're such a good man, {b}[firstname]{/b}..."
-
     daisy "... Making me feel better after my bad dream."
-
     anon "Heh, it's no problem, {b}Daisy{/b}..."
-
     anon "... Believe me, I'm happy to do it."
-
     pause
     daisy "Mmm, your weasel goes so deep in my hidey hole, {b}[firstname]{/b}!"
-
-    anon "Apakah rasanya enak?"
-
+    anon "Does it feel good?"
     daisy "Really, {i}really{/i} good!"
-
     pause
-    daisy "Ahhh!"
-
+    daisy "Ahh!"
     daisy "That's it Mr. Weasel!"
-
     daisy "That's it!!"
-
     pause
     anon "{b}Daisy{/b} you're shaking."
-
     daisy "I know, I'm sorry..."
-
     daisy "... It's all the tingles, I can't help it!"
-
     pause
     anon "Oh, you're so wet!"
-
     daisy "You mean my floogina?"
-
     anon "{i}Va{/i}-gina, {b}Daisy{/b}."
-
     daisy "Right, {i}va{/i}-gina."
-
     pause
     call scene_daisy_sex_loft.loop
     call scene_daisy_sex_loft.cum (_return)

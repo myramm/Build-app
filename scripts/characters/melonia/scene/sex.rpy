@@ -4,50 +4,33 @@ label scene_melonia_sex:
 
     call scene_melonia_sex.stage
     with fade
-    melonia @ -m_talk "MM."
-
-    melonia "Masukkan ke dalam, {b}Hector{/b}!"
-
-    melonia "Saya tidak sabar menunggu sedetik pun!"
-
-    anon "Oke."
-
+    melonia @ -m_talk "Mmm."
+    melonia "Put it in, {b}Hector{/b}!"
+    melonia "I can't wait another second!"
+    anon "Okay."
     call scene_melonia_sex.insert
     with {'master': dissolve}
-    melonia "Ya Tuhan!"
-
-    melonia "YA TUHAN!!"
-
-    melonia f_surprised "Itu terlalu besar!"
-
-    melonia "Ini adalah-"
-
+    melonia "Oh god!"
+    melonia "OH MY GOD!!"
+    melonia f_surprised "It's too big!"
+    melonia "This is-"
     call scene_melonia_sex.animate
     with {'master': dissolve}
-    melonia "Ahhh!!"
-
+    melonia "AHHH!!"
     pause
-    anon "Apakah kamu baik-baik saja!"
-
-    melonia "aku tidak bisa-"
-
+    anon "Are you alright!"
+    melonia "I can't-"
     call scene_melonia_sex.dialogue (1)
     pause
     melonia "OHMYGODOHMYGODOHMYGOD!!!"
-
-    anon "Inilah yang Anda inginkan..."
-
-    melonia "{b}HEKTOR{/b}!!"
-
-    melonia "OH, {b}HEKTOR{/b}!!!"
-
+    anon "This is what you wanted..."
+    melonia "{b}HECTOR{/b}!!"
+    melonia "OH, {b}HECTOR{/b}!!!"
     hide anim
     show melonia b_sex_insert_pullout f_surprised
     with {'master': dissolve}
-    melonia "Apa?!"
-
-    melonia "Mengapa kamu-"
-
+    melonia "Whaa?!"
+    melonia "Why did you-"
     show melonia b_sex_anim_hard
     anon "MY." with vpunch
     show melonia b_sex_anim_hard
@@ -60,13 +43,10 @@ label scene_melonia_sex:
     with {'master': dissolve}
     call scene_melonia_sex.dialogue (2)
     show melonia f_surprised with {'master': dissolve}
-    anon "Katakan!"
-
+    anon "Say it!"
     melonia "{b}[firstname]{/b}?"
-
     call scene_melonia_sex.animate
-    melonia "AHH, [nama depan!u]!"
-
+    melonia "AHH, [firstname!u]!"
     pause
     call scene_melonia_sex.loop
     call scene_melonia_sex.cum (_return)
@@ -116,72 +96,50 @@ label scene_melonia_sex.dialogue(opt, rng=-1):
 
     if opt == 1:
         if rng < .2:
-            anon "Apakah kamu baik-baik saja!"
+            anon "Are you alright!"
+            melonia "I can't-"
 
-            melonia "aku tidak bisa-"
-
-
-        melonia "Ini keterlaluan!"
-
-        anon "Haruskah saya berhenti?"
-
+        melonia "This is too much!"
+        anon "Should I stop?"
 
         if variant == 'first':
-            melonia "Oh, persetan denganku!!"
-
+            melonia "Oh, fuck me!!"
         else:
-            melonia "Tidak, jangan berhenti!!"
-
+            melonia "No, don't stop!!"
 
         if rng < .5:
-            anon "Oke."
-
+            anon "Okay."
 
     elif opt == 2:
-        melonia "{i}* Merengek*{/i}"
-
+        melonia "{i}*Whimpers*{/i}"
 
     elif opt == 3:
-        melonia "Ahhh!!"
-
+        melonia "AHHH!!"
 
     elif opt == 4:
         melonia "OHMYGODOHMYGODOHMYGOD!!!"
-
-        anon "Inilah yang Anda inginkan..."
-
-        melonia "[nama depan!u]!!!"
-
-        melonia "OH, [nama depan!u]!!!!"
-
+        anon "This is what you wanted..."
+        melonia "[firstname!u]!!!"
+        melonia "OH, [firstname!u]!!!!"
 
     elif opt == 5:
-        anon "Saya senang Anda menggunakan nama asli saya sekarang."
-
-        melonia "{i}* Merengek*{/i}"
-
+        anon "I'm happy you're using my real name now."
+        melonia "{i}*Whimpers*{/i}"
 
     elif opt == 6:
-        anon "Katakan!"
-
+        anon "Say it!"
         melonia "{b}[firstname]{/b}!"
-
-        anon "Lebih keras!"
-
-        melonia "AHH, [nama depan!u]!"
-
+        anon "Louder!"
+        melonia "AHH, [firstname!u]!"
 
     elif opt == 7:
-        melonia "[nama depan!u]!"
-
+        melonia "[firstname!u]!"
 
     elif opt == 8:
-        melonia "Oh, persetan denganku!!"
-
+        melonia "Oh, fuck me!!"
 
     elif opt == 9:
-        melonia "OH, [nama depan!u]!!!!"
-
+        melonia "OH, [firstname!u]!!!!"
 
     return
 
@@ -193,39 +151,26 @@ label scene_melonia_sex.flip:
     call scene_melonia_bedroom_press.pre
     show melonia f_confused
     with {'master': dissolve}
-    anon "Baiklah, balikkan kembali."
-
-    melonia "Hei..."
-
-    melonia f_annoyed "... Aku hampir sampai!"
-
-    anon "Ya, tidak peduli."
-
-    anon "Baliklah, aku tidak ingin melihatmu lagi."
-
-    melonia f_eyeroll "Oh, berhentilah bersikap seperti bayi..."
-
-    melonia "... Itu hanya pembicaraan kotor kecil."
-
+    anon "Alright, flip back over."
+    melonia "Hey..."
+    melonia f_annoyed "... I was almost there!"
+    anon "Yeah, don't care."
+    anon "Flip over, I don't wanna look at you anymore."
+    melonia f_eyeroll "Oh, stop being such a baby..."
+    melonia "... It's just a little dirty talk."
     show melonia f_smirk
-    anon "Balik!"
-
-    anon "Lebih!"
-
+    anon "Flip!"
+    anon "Over!"
     show melonia b_sex_transition
     with {'master': dissolve}
-    melonia "{b}Hector{/b}, kamu sangat agresif hari ini!"
-
+    melonia "{b}Hector{/b}, you're so aggressive today!"
     call scene_melonia_sex.stage
     with {'master': dissolve}
-    anon "Demi keparat..."
-
-    anon "... Itu bukan namaku!"
-
+    anon "For fucks sake..."
+    anon "... That's not my name!"
     show melonia b_sex_insert_pullout f_moan
     with {'master': dissolve}
-    melonia "{i}*Terkesiap*{/i} Oh ho ho ..."
-
+    melonia "{i}*Gasp*{/i} Oh ho ho ..."
     show melonia b_sex_anim01
     melonia "FUUUUUUCK!!!" with vpunch
     call scene_melonia_sex.animate
@@ -239,42 +184,29 @@ label scene_melonia_sex.switch:
     hide anim
     show melonia b_sex_insert_pullout f_smirk
     with dissolve
-    anon "Saya pikir vagina Anda perlu perhatian lebih."
-
+    anon "I think your pussy needs some more attention."
     show melonia b_sex_anim01
     melonia "OHMYGODOHMYGODOHMYGOD!!!" with vpunch
     call scene_melonia_sex.animate
     with {'master': dissolve}
-    anon "Ini yang Anda butuhkan, bukan?"
-
-    melonia "[nama depan!u]!!!"
-
-    anon "Katakan!"
-
-    melonia "Inilah yang saya butuhkan!"
-
-    anon "Lebih keras!"
-
-    melonia "AHH, aku sangat membutuhkannya!"
-
+    anon "This is what you needed, isn't it?"
+    melonia "[firstname!u]!!!"
+    anon "Say it!"
+    melonia "This is what I needed!"
+    anon "Louder!"
+    melonia "AHH, I need it so bad!"
     pause
     jump scene_melonia_sex.resume
 
 
 label scene_melonia_sex.cum(where, type='vaginal'):
-    melonia "aku akan keluar!"
-
-    anon "Saya juga!"
-
+    melonia "I'm gonna cum!"
+    anon "Me too!"
     pause
-    melonia "Jangan berhenti!"
-
-    melonia "Ya Tuhan, {b}[firstname]{/b}!!"
-
-    melonia "JANGAN BERHENTI!!!"
-
+    melonia "Don't stop!"
+    melonia "Oh my god, {b}[firstname]{/b}!!"
+    melonia "DON'T STOP!!!"
     melonia "NGGHHH!!!"
-
     hide anim
 
     if where == 'inside':
@@ -296,47 +228,34 @@ label scene_melonia_sex.cum(where, type='vaginal'):
         with {'master': dissolve}
 
     anon "Haah... Haah..."
-
     pause
 
     if where == 'inside':
         show melonia b_sex_insert_pullout f_satisfied with dissolve
 
-    anon "Apakah kamu merasa lebih baik sekarang?"
-
+    anon "Do you feel better now?"
 
     if where == 'inside':
         show melonia b_sex_pre_after a_after with dissolve
 
-    melonia @ -m_talk "{i}* Merengek*{/i}"
-
+    melonia @ -m_talk "{i}*Whimper*{/i}"
     anon "{b}Melonia{/b}?"
-
-    anon "Apakah kamu baik-baik saja?"
-
-    melonia "saya tidak bisa..."
-
-    melonia "... Bicara."
-
+    anon "Are you alright?"
+    melonia "I can't..."
+    melonia "... Talk."
     anon "Hmm?"
-
-    melonia "Kembang api."
-
-    anon "Benar."
-
-    anon "aku akan um-"
-
+    melonia "Fireworks."
+    anon "Right."
+    anon "I'll umm-"
 
     if where == 'inside':
-        anon "Oke."
-
+        anon "Okay."
 
         if type == 'vaginal':
             call call_pregnancy_minigame (None, M_melonia)
     else:
 
-        anon "Ambilkanmu handuk atau apalah..."
-
+        anon "Get you a towel or something..."
 
     return
 
@@ -351,22 +270,15 @@ label scene_melonia_sex.repeat:
 
     call scene_melonia_sex.stage
     with fade
-    melonia "Masukkan!"
-
-    melonia "Saya tidak sabar menunggu sedetik pun!"
-
-    anon "Oke."
-
+    melonia "Put it in!"
+    melonia "I can't wait another second!"
+    anon "Okay."
     call scene_melonia_sex.insert
     with {'master': dissolve}
-    melonia "Ya Tuhan!"
-
-    melonia "YA TUHAN!!"
-
-    melonia "Ini sangat besar!"
-
-    melonia "Saya pikir ini akan lebih mudah!"
-
+    melonia "Oh god!"
+    melonia "OH MY GOD!!"
+    melonia "It's so big!"
+    melonia "I thought it would be easier!"
     pause
     call scene_melonia_sex.animate
     with {'master': dissolve}
@@ -398,10 +310,10 @@ label scene_melonia_sex.replay:
     if len(variants) > 1:
         scene expression background(l=L_rump_master) with fade
         menu:
-            "Pertama" if 'first' in variants:
+            "First" if 'first' in variants:
                 jump scene_melonia_sex.first
 
-            "Ulangi" if 'repeat' in variants:
+            "Repeat" if 'repeat' in variants:
                 jump scene_melonia_sex.repeat
 
     jump expression 'scene_melonia_sex.{}'.format(next(iter(variants)))

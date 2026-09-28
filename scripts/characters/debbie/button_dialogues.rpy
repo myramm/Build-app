@@ -2,26 +2,18 @@ label debbie_dialogue_jenny_pool_talk:
     scene expression player.location.background_closeup with None
     show anon f_normal
     show debbie
-    debbie "Jadi, apa yang dia katakan?"
-
+    debbie "So, what did she say?"
     anon f_worried @ -m_talk "Hmm?"
-
-    anon "Oh, aku belum bertanya padanya..."
-
+    anon "Oh, I haven't asked her yet..."
     show anon f_normal
-    debbie "Heh, tunggu apa lagi, konyol?"
-
-    anon "Aku akan pergi sekarang."
-
-    debbie "Terima kasih sayang."
-
-    anon "Tidak masalah."
-
+    debbie "Heh, what are you waiting for silly?"
+    anon "I'll go right now."
+    debbie "Thanks, sweetie."
+    anon "No problem."
     hide debbie
     show anon f_thinking a_thinking
     with dissolve
-    anon @ -m_talk "( Hmm, menurutku {b}[jen_name] sedang bersantai di tepi kolam renang{/b}... )"
-
+    anon @ -m_talk "( Hmm, I think {b}[jen_name] is lounging out by the pool{/b}... )"
     hide anon with dissolve
     return
 
@@ -29,10 +21,8 @@ label debbie_dialogue_mom_relaxing:
     scene expression player.location.background_closeup
     show debbie
     show anon with dissolve
-    debbie "Hei sayang! Bukankah sebaiknya kamu pergi?"
-
-    anon "Ya. Aku sedang dalam perjalanan."
-
+    debbie "Hey, sweetie! Shouldn't you get going?"
+    anon "Yeah. I was on my way."
     hide anon with dissolve
     return
 
@@ -45,46 +35,32 @@ label debbie_dialogue_mom_not_revealing_kitchen:
     show old_debbie 48 at Position(xpos=660,ypos=768) with dissolve
     debbie "( !!! )"
     show old_debbie 48c
-    debbie "Sayang, apa yang kamu lakukan di belakang sana?"
-
+    debbie "Sweetie, what are you doing back there?"
     show old_debbie 50j
-    player_name "Mmm, tidak apa-apa..."
-
+    player_name "Mmm, noooothing..."
     show old_debbie 50k
-    debbie "Sayang!"
-
-    debbie "Bagaimana jika {b}[jen_name]{/b} masuk?"
-
-    debbie "Dia akan punya seekor sapi!"
-
+    debbie "Sweetie!"
+    debbie "What if {b}[jen_name]{/b} comes in?"
+    debbie "She'd have a cow!"
     show old_debbie 50j
-    player_name "Heh, jangan khawatir, dia ada di kamarnya."
-
-    player_name "... Dan selain itu..."
-
-    player_name "... Ini hanya akan memakan waktu sebentar."
-
+    player_name "Heh, don't worry, she's up in her room."
+    player_name "... And besides..."
+    player_name "... This will only take a moment."
     show old_debbie 50k
-    debbie "Kamu sungguh jahat b-"
-
-    debbie "Ahhh!"
-
-    debbie "... Baiklah! Cepatlah!"
-
+    debbie "You're such a bad b-"
+    debbie "Ahh!"
+    debbie "... Alright! Just be quick!"
     show old_debbie 49_50_50b at Position(xpos=660,ypos=768) with dissolve
     pause
     pause
     show old_debbie 48c with dissolve
-    debbie "Oke oke! Kita harus berhenti!"
-
+    debbie "Okay, okay! We have to stop!"
     show old_debbie 50k
-    debbie "Lagi dan aku harus mengganti celana dalamku!"
-
+    debbie "Anymore and I'll have to go change my panties!"
     show player 1 at left
     show old_debbie 52 at right
     with dissolve
-    debbie "Apa lagi yang bisa saya bantu?"
-
+    debbie "What else can I help you with?"
     show old_debbie 1
     return
 
@@ -92,80 +68,49 @@ label debbie_dialogue_mom_fetch_lotion:
     show player 13 at left
     show old_debbie 2 at right
     with dissolve
-    debbie "Apakah kamu {b}menemukan losionku di lemari kamarku{/b}?"
-
+    debbie "Did you {b}find my lotion in my bedroom dresser{/b}?"
     show old_debbie 1
     show player 10
-    player_name "Tidak, belum."
-
+    player_name "No, not yet."
     show player 5
     show old_debbie 2
-    debbie "Nah, tunggu apa lagi?"
-
+    debbie "Well, what are you waiting for?"
     return
 
 label debbie_dialogue_mom_car_condition:
     scene expression player.location.background_blur
     show debbie
     show anon f_worried with dissolve
-    anon "Ya, aku melihat mesinnya..."
-
-    debbie "Dan?"
-
-    anon "Jelek banget, {b}[deb_name]{/b}..."
-
-    anon "Tidak mungkin aku bisa memperbaikinya sendiri."
-
-    debbie f_sad "Ya ampun..."
-
-    anon "Ya, sebenarnya, menurut saya Anda mungkin harus mengganti semuanya."
-
-    anon "Ini benar-benar rusak parah!"
-
-    debbie @ f_surprised "T-tapi, aku tidak sanggup mengganti mesinnya!"
-
-    anon "Aku tahu."
-
+    anon "Well, I looked at the engine..."
+    debbie "And?"
+    anon "It's really bad, {b}[deb_name]{/b}..."
+    anon "There's no way I can fix it on my own."
+    debbie f_sad "Oh, dear..."
+    anon "Yeah, in fact, I think you might have to replace the whole thing."
+    anon "It's really busted up bad!"
+    debbie @ f_surprised "B-but, I can't afford to replace the engine!"
+    anon "I know."
     pause
-    debbie "Bagaimana dengan garansinya?!"
-
-    anon "Garansi?"
-
-    debbie "Ya, ayahmu membayar ekstra untuk garansi lima tahun ketika dia membelikan mobil untukku."
-
-    anon @ f_normal "Itu bisa berhasil."
-
-    anon "Belum lebih dari lima tahun, bukan?"
-
-    debbie "Aku tidak tahu."
-
+    debbie "What about the warranty?!"
+    anon "Warranty?"
+    debbie "Yeah, your father paid extra for a five year warranty when he bought the car for me."
+    anon @ f_normal "That could work."
+    anon "It hasn't been more than five years, has it?"
+    debbie "I don't know."
     show anon f_normal
-    debbie "Apakah menurut Anda mereka akan menanggung biaya perbaikannya?"
-
-    anon "Mungkin."
-
-    debbie "Oh, ini buruk..."
-
-    debbie "Apa yang akan kita lakukan tanpa mobil itu, {b}[firstname]{/b}?"
-
-    anon "Jangan khawatir, {b}[deb_name]{/b}."
-
-    anon @ f_laugh "Saya akan {b}menelepon dan berbicara dengan mereka{/b}."
-
-    debbie f_normal "Anda akan melakukannya?"
-
-    anon "Tentu saja."
-
-    debbie "Oh sayang..."
-
-    anon "Saya yakin mereka bisa membantu kami."
-
-    debbie "Saya harap Anda benar."
-
-    anon "Saya akan {b}kembali ke mobil dan menelepon mereka sekarang{/b}."
-
-    anon "Seandainya mereka membutuhkan detail."
-
+    debbie "Do you think they'll cover the repairs?"
+    anon "Maybe."
+    debbie "Oh, this is bad..."
+    debbie "What are we gonna do without that car, {b}[firstname]{/b}?"
+    anon "Don't worry, {b}[deb_name]{/b}."
+    anon @ f_laugh "I'll {b}call and speak with them{/b}."
+    debbie f_normal "You will?"
+    anon "Of course."
+    debbie "Oh, sweetie..."
+    anon "I'm sure they'll be able to help us."
+    debbie "I hope you're right."
+    anon "I'll {b}head back to the car and call them now{/b}."
+    anon "In case they need details."
     hide anon with dissolve
     return
 
@@ -183,48 +128,33 @@ label debbie_dialogue_mom_revealing_feel_ass_sex_pre:
     show old_debbie 48 at Position(xpos=660,ypos=768) with dissolve
     debbie "( !!! )"
     show old_debbie 48c
-    debbie "Sayang?"
-
-    debbie "Apa yang kamu lakukan di belakang sana?"
-
+    debbie "Sweetie?"
+    debbie "What are you doing back there?"
     show old_debbie 50j
-    player_name "Mmm, tidak apa-apa..."
-
+    player_name "Mmm, noooothing..."
     show old_debbie 50k
-    debbie "ah..."
-
-    debbie "Bagaimana jika {b}[jen_name]{/b} masuk?"
-
-    debbie "Dia akan punya seekor sapi!"
-
+    debbie "Ahh..."
+    debbie "What if {b}[jen_name]{/b} comes in?"
+    debbie "She'd have a cow!"
     show old_debbie 50j
-    player_name "Hehe, jangan khawatir. Dia ada di kamarnya."
-
+    player_name "Heh, don't worry. She's up in her room."
     show old_debbie 49_50_50b at Position(xpos=660,ypos=768) with dissolve
     pause
     pause
     pause
     show old_debbie 50j with dissolve
-    player_name "Apakah itu terasa enak?"
-
+    player_name "Does that feel good?"
     show old_debbie 50k
-    debbie "Tentu saja..."
-
-    debbie "Mmm, kamu membuatku basah kuyup!"
-
-    debbie "Ahhh!"
-
+    debbie "Of course it does..."
+    debbie "Mmm, you're making me so wet!"
+    debbie "Ahh!"
     show old_debbie 50j
-    player_name "Bagaimana jika aku menurunkan celana dalam ini dan menidurimu di sini?"
-
+    player_name "What if I pulled these panties down and fucked you right here?"
     show old_debbie 50k
-    debbie "Ya Tuhan..."
-
-    debbie "Oke, lakukanlah! Bawa aku ke sini! Cepatlah, sayang!"
-
+    debbie "Oh god..."
+    debbie "Okay, do it! Take me right here! Just be quick, sweetie!"
     show old_debbie 50j
-    player_name "Mmm, lebih baik kamu pegang lemari itu erat-erat!"
-
+    player_name "Mmm, you better hold on to that cabinet tight!"
     show old_debbie 50c with dissolve
     pause
     show old_debbie 50d with dissolve
@@ -234,21 +164,17 @@ label debbie_dialogue_mom_revealing_feel_ass_sex_pre:
     with dissolve
     pause
     show old_debbie 50g with dissolve
-    debbie "Oh ya!"
-
+    debbie "Oh, yes!"
     hide old_debbie
     show debbies 164 at right
     with dissolve
     debbie "Ahhh!"
-
-    player_name "Wah, kamu menetes..."
-
+    player_name "Wow, you're dripping..."
     return
 
 label debbie_dialogue_mom_revealing_feel_ass_sex_after:
     show expression AnimatedImage("debbies", [164,165,166,167,168], M_debbie) as debbies at right with dissolve
-    debbie "Oh, persetan denganku!"
-
+    debbie "Oh, fuck me!"
     return
 
 label mom_kitchen_fuck_loop:
@@ -284,19 +210,14 @@ label debbie_kitchen_hscene_dialog:
     if animcounter == 1:
         if randomizer() <= 50:
             debbie "Oh!!!{p=1}{nw}"
-
         else:
             debbie "AHHH!!!{p=1}{nw}"
 
-
     elif animcounter == 3:
         if randomizer() <= 50:
-            debbie "Apakah kamu sudah cum?{p=2}{nw}"
-
-            player_name "Belum...{p=2}{nw}"
-
-            debbie "Cepatlah sayang... Kurasa... aku tak sanggup... Masih banyak lagi!{p=3}{nw}"
-
+            debbie "Did you cum, yet?{p=2}{nw}"
+            player_name "Not yet...{p=2}{nw}"
+            debbie "Hurry, sweetie... I don't think... I can take... Much more!{p=3}{nw}"
     return
 
 label mom_kitchen_fuck_cum:
@@ -310,48 +231,35 @@ label mom_kitchen_fuck_cum:
 label mom_kitchen_fuck_cum_dialogue:
     player_name "( !!! )"
     player_name "Oh, {b}[deb_name]{/b}!"
-
-    player_name "aku-"
-
-    debbie "Ssst!"
-
+    player_name "I'm-"
+    debbie "Shhhh!"
     show debbies 169 with flash
     player_name "UHH!!!"
-
     hide debbies
     show old_debbie 50h at right
     with dissolve
     pause
-    debbie "Oh, saya suka saat Anda mengambil alih!"
-
-    player_name "Apakah kamu cum?"
-
-    debbie "Oh ya!"
-
+    debbie "Oh, I love it when you take charge!"
+    player_name "Did you cum?"
+    debbie "Oh, yeah!"
     show old_debbie 50i at right
     show player 434 at left
     with dissolve
-    debbie "Fiuh, kakiku masih gemetar..."
-
-    debbie "... Wow, kamu sering datang!"
-
+    debbie "Phew, my legs are still shaking..."
+    debbie "... Wow, you came a lot!"
     pause
     show old_debbie 61 with dissolve
     show player 10
-    player_name "Maaf."
-
+    player_name "Sorry."
     show player 13
     show old_debbie 62
-    debbie "Tidak, aku menyukainya! Rasanya menyenangkan di dalam diriku."
-
+    debbie "No, I love it! It feels nice inside me."
     show old_debbie 61
     show player 14
-    player_name "Heh, aku suka kalau kamu mengatakan hal seperti itu."
-
+    player_name "Heh, I love it when you say things like that."
     show player 13
     show old_debbie 62
-    debbie "Hehe, itu faktanya.."
-
+    debbie "Hehe, well, it's the truth..."
     hide player
     hide old_debbie
     with dissolve
@@ -364,27 +272,21 @@ label debbie_dialogue_mom_revealing_feel_ass_no_sex:
     with dissolve
     pause
     show old_debbie 50k at Position(xpos=660,ypos=768) with dissolve
-    debbie "Baiklah, halo juga untukmu, sayang..."
-
+    debbie "Well, hello to you too, sweetie..."
     show old_debbie 50j
-    player_name "Hai, {b}[deb_name]{/b}..."
-
+    player_name "Hey, {b}[deb_name]{/b}..."
     show old_debbie 50k
-    debbie "Berhati-hatilah."
-
+    debbie "Just be careful."
     show old_debbie 49_50_50b at Position(xpos=660,ypos=768) with dissolve
     pause
     pause
     show old_debbie 50k with dissolve
-    debbie "Oke oke! Kita harus berhenti!"
-
-    debbie "Lagi dan aku harus mengganti celana dalamku!"
-
+    debbie "Okay, okay! We have to stop!"
+    debbie "Anymore and I'll have to go change my panties!"
     show player 1 at left
     show old_debbie 52 at right
     with dissolve
-    debbie "Apa lagi yang bisa saya bantu?"
-
+    debbie "What else can I help you with?"
     show old_debbie 1
     return
 
@@ -394,12 +296,10 @@ label debbie_dialogue_mom_revealing_talk:
     show old_debbie 1 at right
     show player 2 at left
     with dissolve
-    player_name "Hai {b}[deb_name]{/b}, ada waktu sebentar?"
-
+    player_name "Hey {b}[deb_name]{/b}, got a minute?"
     show old_debbie 2
     show player 1
-    debbie "Butuh sesuatu, {b}[firstname]{/b}?"
-
+    debbie "Need something, {b}[firstname]{/b}?"
     show old_debbie 1
     return
 
@@ -408,42 +308,29 @@ label debbie_dialogue_mom_revealing:
     show old_debbie 2 at right
     with dissolve
     if randomizer() <= 10:
-        debbie "Itu pria besarku..."
-
+        debbie "There's my big man..."
     elif randomizer() <= 20:
-        debbie "Hai, sayang."
-
-        debbie "Apa yang bisa saya lakukan untuk Anda?"
-
+        debbie "Hey there, sweetie."
+        debbie "What can I do for you?"
     elif randomizer() <= 30:
         debbie "Awww..."
-
-        debbie "Tidak, halo, remas?"
-
+        debbie "No hello squeeze?"
     elif randomizer() <= 70:
-        debbie "Mencari saya, saya harap."
-
+        debbie "Looking for me, I hope."
     elif randomizer() <= 80:
-        debbie "Butuh sesuatu, sayang?"
-
-        debbie "Atau bisakah aku melakukan sesuatu untukmu?"
-
+        debbie "Need something, sweetie?"
+        debbie "Or can I do something for you?"
     elif L_home_shower.is_here(M_jenny):
-        debbie "{b}[jen_name]{/b} sedang mandi."
-
-        debbie "Jika Anda membutuhkan saya sebentar."
-
+        debbie "{b}[jen_name]{/b} is in the shower."
+        debbie "In case you needed me for a quick sec."
     else:
-        debbie "Aku berharap bisa bertemu denganmu hari ini."
-
+        debbie "I was hoping I'd see you today."
     show old_debbie 1
     show player 14
     if randomizer() <= 50:
-        player_name "Halo, {b}[deb_name]{/b}."
-
+        player_name "Hello, {b}[deb_name]{/b}."
     else:
-        player_name "Kamu terlihat baik hari ini."
-
+        player_name "You're looking good today."
     show player 13
     return
 
@@ -451,92 +338,68 @@ label debbie_dialogue_mom_not_revealing:
     show player 1 at left
     show old_debbie 2 at right
     with dissolve
-    debbie "Hai sayang!"
-
-    debbie "Apakah semuanya baik-baik saja di sekolah?"
-
+    debbie "Hi, sweetie!"
+    debbie "Is everything okay at school?"
     show player 14 at left
     show old_debbie 1 at right
-    player_name "Ya..."
-
+    player_name "Yeah..."
     show player 13 at left
     show old_debbie 13 at right
-    debbie "Saya harap Anda tidak ketinggalan terlalu jauh, bagaimana dengan semua yang telah terjadi?"
-
+    debbie "I hope you didn't fall too far behind, what with all that's happened?"
     show old_debbie 14 at right
     show player 14 at left
-    player_name "Tidak, aku akan menyusul."
-
+    player_name "Nah, I'll catch up."
     show player 13 at left
     show old_debbie 13 at right
-    debbie "Beri tahu saya jika ada yang bisa saya lakukan untuk membantu?"
-
+    debbie "Just let me know if there is ever anything I can do to help?"
     show player 21 at left
     show old_debbie 14 at right
-    player_name "Oke, {b}[deb_name]{/b}..."
-
-    player_name "Saya harus pergi."
-
+    player_name "Okay, {b}[deb_name]{/b}..."
+    player_name "I should go."
     show player 13 at left
     show old_debbie 3 at right
-    debbie "Jangan keluar terlalu larut!"
-
+    debbie "Don't stay out too late!"
     show old_debbie 1
     return
 
 label debbie_dialogue_ask_about_dad:
     show player 10 at left
     show old_debbie 1 at right
-    player_name "{b}[deb_name]{/b}, tahukah kamu apa yang terjadi pada ayah?"
-
+    player_name "{b}[deb_name]{/b}, do you know what happened to dad?"
     show player 11
     show old_debbie 60 at Position (xoffset=-28) with dissolve
-    debbie "Oh... Sayang, aku..."
-
+    debbie "Oh... Sweetie, I..."
     show old_debbie 59 at Position (xoffset=-28)
     show player 10
-    player_name "Tolong, saya ingin tahu yang sebenarnya!"
-
+    player_name "Please, I want to know the truth!"
     show player 11
     show old_debbie 60 at Position (xoffset=-28)
-    debbie "Maafkan aku, sayang. Saya tidak punya jawaban apa pun untuk Anda."
-
-    debbie "Investigasi polisi belum menemukan apa pun..."
-
+    debbie "I'm sorry, sweetie. I don't have any answers for you."
+    debbie "The police investigation hasn't turned up anything yet..."
     show old_debbie 59 at Position (xoffset=-28)
     show player 10
-    player_name "Apakah menurut Anda mereka akan menemukan sesuatu?"
-
+    player_name "Do you think they'll find anything?"
     show player 11
     show old_debbie 60 at Position (xoffset=-28)
-    debbie "Saya harap begitu."
-
+    debbie "I hope so."
     show old_debbie 59 at Position (xoffset=-28)
     pause
     show old_debbie 60 at Position (xoffset=-28)
-    debbie "Sayang..."
-
-    debbie "Aku juga ingin mengakhiri semua ini..."
-
-    debbie "... Tapi ayahmu tidak ingin kita terobsesi dengan hal ini."
-
+    debbie "Sweetie..."
+    debbie "I want closure on this whole thing too..."
+    debbie "... But your father wouldn't want us obsessing over this."
     show old_debbie 63 at Position (xoffset=-28)
-    debbie "Anda seorang pria muda dan Anda harus fokus menjalani hidup Anda."
-
-    debbie "Lakukan itu untuk ayahmu."
-
+    debbie "You're a young man and you need to focus on living your life."
+    debbie "Do it for your dad."
     show player 10
     show old_debbie 59 at Position (xoffset=-28)
-    player_name "Ya. saya akan mencoba."
-
+    player_name "Yeah. I'll try."
     show player 14
     show old_debbie 61 at Position (xoffset=-28)
-    player_name "Terima kasih, {b}[deb_name]{/b}."
-
+    player_name "Thanks, {b}[deb_name]{/b}."
     show player 1
     show old_debbie 2 with dissolve
-    debbie "Ada lagi yang Anda butuhkan?"
-
+    debbie "Anything else you need?"
     show old_debbie 1
     show player 1
     return
@@ -544,162 +407,118 @@ label debbie_dialogue_ask_about_dad:
 label debbie_dialogue_ask_about_money_problems:
     show old_debbie 13
     show player 11
-    debbie "Sudah kubilang jangan khawatir tentang itu."
-
-    debbie "Semuanya akan baik-baik saja!"
-
+    debbie "I told you not to worry about that."
+    debbie "Everything is going to be fine!"
     show old_debbie 14
     show player 14
-    player_name "Oke, tapi bagaimana jika saya ingin membantu Anda?"
-
-    player_name "Bagaimana jika saya mendapat pekerjaan nyata?"
-
+    player_name "Okay, but what if I wanted to help you?"
+    player_name "What if I got a real job?"
     show player 10
-    player_name "Saya merasa agak bertanggung jawab atas semua stres ini..."
-
+    player_name "I feel somewhat responsible for all this stress..."
     show old_debbie 52 at Position (xoffset=1)
     show player 11
-    debbie "Anda dapat membantu saya dengan tetap bersekolah!"
-
-    debbie "Ayahmu akan terguling dalam kuburnya jika aku membiarkanmu mendapatkan pekerjaan penuh waktu..."
-
-    debbie "Dia ingin kamu menyelesaikan pendidikanmu."
-
+    debbie "You can help me by staying in school!"
+    debbie "Your father would roll over in his grave if I let you get a full time job..."
+    debbie "He wanted you to finish your education."
     show old_debbie 51 at Position (xoffset=1)
     show player 10
-    player_name "Tapi saya bisa bekerja sepulang sekolah dan di akhir pekan..."
-
+    player_name "But I can work after school and on the weekends..."
     show old_debbie 53 at Position (xoffset=-18) with dissolve
     show player 13
-    debbie "{i}*Huh*{/i} Kamu keras kepala sekali, sama seperti ayahmu..."
-
+    debbie "{i}*Sigh*{/i} You're so stubborn, just like your father..."
     show old_debbie 59 at Position (xoffset=-28) with dissolve
     debbie "Hmm..."
-
     show old_debbie 61 at Position (xoffset=-28)
-    debbie "Fokuslah untuk menaikkan nilaimu dulu, oke?"
-
-    debbie "Maka mungkin Anda bisa mendapatkan pekerjaan."
-
+    debbie "Focus on getting your grades up first, okay?"
+    debbie "Then maybe you can get a job."
     show old_debbie 61 at Position (xoffset=-28)
     show player 18
-    player_name "Y-ya, oke."
-
+    player_name "Y-yeah, okay."
     show old_debbie 62 at Position (xoffset=-28)
     show player 1
-    debbie "Ada lagi yang ingin kamu bicarakan, sayang?"
-
+    debbie "Anything else you want to talk about, sweetie?"
     show old_debbie 1 with dissolve
     return
 
 label debbie_dialogue_ask_about_men_in_suits:
     show player 10
-    player_name "{b}[deb_name]{/b}, saya ingin berbicara tentang apa yang dikatakan pria berjas itu..."
-
+    player_name "{b}[deb_name]{/b}, I wanted to talk about what that guy in the suit said..."
     show old_debbie 59 at Position (xoffset=-28) with dissolve
-    player_name "Apakah ayah terlibat dengan mereka?"
-
+    player_name "Was dad involved with them?"
     show player 11
     show old_debbie 53 at Position (xoffset=-18) with dissolve
-    debbie "{i}*Huh*{/i} Sejujurnya, aku tidak tahu, sayang.."
-
-    debbie "Ayahmu adalah pria yang baik, {b}[firstname]{/b}."
-
-    debbie "Sulit membayangkan dia terlibat dengan sekelompok preman seperti itu..."
-
-    debbie "... Tapi sekarang dia sudah pergi dan sepertinya masih banyak yang tidak dia ceritakan padaku."
-
+    debbie "{i}*Sigh*{/i} Honestly, I don't know, sweetie.."
+    debbie "Your father was a good man, {b}[firstname]{/b}."
+    debbie "It's hard to imagine him getting mixed up with a bunch of thugs like that..."
+    debbie "... But now he's gone and it seems there's a lot he didn't share with me."
     show old_debbie 60 at Position (xoffset=-28) with dissolve
-    debbie "Orang-orang itu mengira ayahmu berhutang uang pada mereka, dan sekarang dia sudah meninggal, mereka ingin kita membayar utangnya."
-
+    debbie "Those men think your father owed them money, and now that he's dead they want us to cover his debt."
     show player 10
     show old_debbie 59 at Position (xoffset=-28)
-    player_name "Mengapa polisi tidak melakukan apa pun untuk menghentikan mereka?!"
-
+    player_name "Why aren't the police doing anything to stop them?!"
     show player 11
     show old_debbie 60 at Position (xoffset=-28)
-    debbie "Tidak sesederhana itu, sayang..."
-
+    debbie "It's not that simple, sweetie..."
     show player 10
     show old_debbie 59 at Position (xoffset=-28)
-    player_name "Kenapa tidak?!"
-
+    player_name "Why not?!"
     show player 11
     show old_debbie 60 at Position (xoffset=-28)
-    debbie "{i}*Huh*{/i} Ternyata tidak."
-
+    debbie "{i}*Sigh*{/i} It just isn't."
     show old_debbie 59
     pause
     show old_debbie 53 at Position (xoffset=-18) with dissolve
-    debbie "Kadang-kadang saya berpikir kita harus mengambil {b}[jen_name]{/b} dan menghilang untuk sementara..."
-
+    debbie "Sometimes I think we should just grab {b}[jen_name]{/b} and disappear for a while..."
     show player 1
     show old_debbie 63 at Position (xoffset=-28) with dissolve
-    debbie "Heh, itu akan menjadi sebuah petualangan, bukan?"
-
+    debbie "Heh, that would be an adventure, wouldn't it?"
     show old_debbie 51 at Position (xoffset=1)
     show player 2
-    player_name "Ya, saya kira."
-
+    player_name "Yeah, I suppose."
     show old_debbie 2 with dissolve
     show player 1
-    debbie "Apakah ada hal lain yang ingin Anda bicarakan?"
-
+    debbie "Is there anything else you wanted to talk about?"
     show old_debbie 1
     return
 
 label debbie_dialogue_paint:
     show player 10
-    player_name "Bukankah ada cat di garasi?"
-
+    player_name "Wasn't there some paint in the garage?"
     show player 5
     show old_debbie 13
-    debbie "Cat? Apa yang Anda inginkan dengan cat lama?"
-
+    debbie "Paint? What do you want with old paint?"
     show old_debbie 1
     show player 10
-    player_name "Tadinya aku akan mencoba dan membuat... Sesuatu."
-
+    player_name "I was going to try and make... Something."
     show player 5
     show old_debbie 2
-    debbie "Oh, baiklah, {b}Diane{/b} bilang dia akan membuangnya untukku."
-
+    debbie "Oh, well, {b}Diane{/b} said she'd get rid of them for me."
     show old_debbie 1
     show player 12
-    player_name "Benar-benar?"
-
-    player_name "Baiklah, sebaiknya aku lihat apakah aku bisa mengambilnya sebelum dia membuangnya!"
-
-    player_name "Terima kasih, {b}[deb_name]{/b}! Sampai jumpa, {b}[deb_name]{/b}!"
-
+    player_name "Really?"
+    player_name "Well, I'd better see if I can pick them up before she throws them away!"
+    player_name "Thanks, {b}[deb_name]{/b}! Bye, {b}[deb_name]{/b}!"
     hide player with dissolve
     show old_debbie 2
-    debbie "Selamat tinggal!"
-
+    debbie "Bye!"
     return
 
 label debbie_dialogue_help_mow_lawn:
     show player 10
-    player_name "Apakah Anda memerlukan bantuan dalam hal apa pun?"
-
+    player_name "Did you need help with anything?"
     show player 5
     show old_debbie 2
-    debbie "Apakah kamu sudah selesai memotong rumput di halaman?"
-
+    debbie "Did you finish mowing the yard?"
     show old_debbie 1
     show player 10
-    player_name "Oh benar!"
-
-    player_name "Saya akan membahasnya."
-
+    player_name "Oh, right!"
+    player_name "I'll get on that."
     show player 13
     show old_debbie 2
-    debbie "Aku akan sangat menghargainya, sayang."
-
+    debbie "I'd really appreciate it, sweetie."
     show old_debbie 1
     show player 14
-    player_name "Tidak masalah!"
-
+    player_name "No problem!"
     hide player
     hide old_debbie
     with dissolve
@@ -707,66 +526,50 @@ label debbie_dialogue_help_mow_lawn:
 
 label debbie_dialogue_help_fix_broken_pipe:
     show player 4
-    player_name "(Saya harus memperbaiki {b}wastafel kamar mandi{/b} entah bagaimana... )"
-
+    player_name "( I gotta fix the {b}bathroom sink{/b} somehow... )"
     return
 
 label debbie_dialogue_help_chores_pre:
     show player 14
-    player_name "Ada lagi yang perlu bantuan Anda?"
-
+    player_name "Anything else you need help with?"
     show player 13
     show old_debbie 2
     return
 
 label debbie_dialogue_help_chores_later:
-    debbie "Tidak. Tidak sekarang, sayang."
-
-    debbie "Mungkin nanti, jika Anda masih tersedia."
-
+    debbie "No. Not right now, sweetie."
+    debbie "Maybe later, if you're still available."
     return
 
 label debbie_dialogue_help_chores_tomorrow:
-    debbie "Tidak. Tidak hari ini, sayang."
-
-    debbie "Mungkin besok, jika Anda masih tersedia."
-
+    debbie "No. Not today, sweetie."
+    debbie "Maybe tomorrow, if you're still available."
     return
 
 label debbie_dialogue_help_chores_after:
     show old_debbie 3
-    debbie "Terima kasih sudah bertanya!"
-
+    debbie "Thanks for asking!"
     show old_debbie 1
     show player 14
-    player_name "Sama-sama, {b}[deb_name]{/b}."
-
+    player_name "You're welcome, {b}[deb_name]{/b}."
     return
 
 label debbie_dialogue_help_check_car:
     show player 4
-    player_name "(Saya harus {b}pergi memeriksa mobil{/b} seperti {b}[deb_name]{/b} meminta saya melakukannya. )"
-
+    player_name "( I should {b}go check the car{/b} like {b}[deb_name]{/b} asked me to. )"
     return
 
 label debbie_dialogue_help_fix_car:
     scene expression player.location.background_closeup
     show debbie
     show anon with dissolve
-    debbie "Adakah keberuntungan dengan dealernya, sayang?"
-
+    debbie "Any luck with the dealership, sweetie?"
     anon @ -m_talk "Hmm?"
-
-    anon @ f_brag_closed "Oh benar!"
-
-    debbie "Apakah kamu lupa?"
-
-    anon "Tidak, aku akan mengurusnya sekarang."
-
-    anon "Saya akan {b}menelepon dari dekat mobil{/b} jika mereka memerlukan detailnya."
-
-    debbie "Terima kasih sayang."
-
+    anon @ f_brag_closed "Oh, right!"
+    debbie "Did you forget?"
+    anon "Nope, I'll take care of it right now."
+    anon "I'll {b}call from near the car{/b} in case they need any details."
+    debbie "Thanks, sweetheart."
     hide anon with dissolve
     return
 
@@ -774,128 +577,98 @@ label debbie_dialogue_mech_en_route:
     scene expression player.location.background_closeup
     show debbie
     show anon with dissolve
-    debbie "Adakah keberuntungan dengan dealernya, sayang?"
-
-    anon "Mereka mengirim seseorang ke sana secepat mungkin."
-
-    debbie "Oh luar biasa! Terima kasih sayang."
-
+    debbie "Any luck with the dealership, sweetie?"
+    anon "They're sending someone over as soon as possible."
+    debbie "Oh wonderful! Thanks, sweetheart."
     hide anon with dissolve
     return
 
 label debbie_dialogue_help_nothing:
     show player 2
-    player_name "Hai, {b}[deb_name]{/b}, ada yang bisa saya lakukan untuk membantu pekerjaan rumah?"
-
+    player_name "Hey, {b}[deb_name]{/b}, anything I can do to help around the house?"
     show player 1
     debbie "Hmm..."
-
     show old_debbie 2
-    debbie "Tidak ada yang bisa kupikirkan saat ini, tidak."
-
+    debbie "Nothing I can think of right now, no."
     show old_debbie 1
     show player 2
-    player_name "Dingin. Beri tahu saya jika terjadi sesuatu."
-
+    player_name "Cool. Let me know if something comes up."
     return
 
 label debbie_dialogue_lotion_fun_had_sex:
     show player 14
-    player_name "Perlu aku mengoleskan lotion lagi pada... Kakimu?"
-
+    player_name "Need me to rub some more lotion on... Your legs?"
     show player 13
     show old_debbie 2
-    debbie "Kedengarannya luar biasa, sayang."
-
-    debbie "Aku benar-benar membutuhkan sentuhan lembutmu saat ini."
-
+    debbie "That sounds wonderful, sweetie."
+    debbie "I could really use your gentle touch right about now."
     return
 
 label debbie_dialogue_lotion_fun:
     show player 10
-    player_name "Perlu aku mengoleskan lotion lagi pada... Kakimu?"
-
+    player_name "Need me to rub some more lotion on... Your legs?"
     show player 5
     show old_debbie 13
-    debbie "Oh... Lagi? Yah, aku..."
-
+    debbie "Oh... Again? Well, I..."
     show old_debbie 14
     show player 10
-    player_name "Apakah saya melakukan pekerjaan yang buruk?"
-
+    player_name "Did I do a bad job?"
     show player 5
     show old_debbie 13
-    debbie "Oh, tidak, sayang. Itu... Sangat bagus."
-
+    debbie "Oh, no, sweetie. It was... Really good."
     show old_debbie 14
     pause
     show old_debbie 13
-    debbie "Tentu, saya kira saya perlu istirahat."
-
+    debbie "Sure, I guess I could use a break."
     show old_debbie 1
     show player 14
-    player_name "Besar!"
-
+    player_name "Great!"
     show player 13
     show old_debbie 2
     return
 
 label debbie_dialogue_lotion_fun_after:
-    debbie "Pergi dan ambil {b}lotion dari lemari kamar tidurku{/b}."
-
+    debbie "Go and grab the {b}lotion from my bedroom dresser{/b}."
     show old_debbie 1
     show player 14
-    player_name "Baiklah!"
-
+    player_name "Alright!"
     return
 
 label debbie_dialogue_shopping:
     scene location_home_kitchen_day_blur
     show player 2 at left
     show old_debbie 1 at right
-    player_name "Ingatkah saat kamu mengajakku pergi berbelanja bersamamu?"
-
+    player_name "Remember when you asked me to go shopping with you?"
     show player 1
     show old_debbie 2
-    debbie "Ya."
-
+    debbie "Yeah."
     show player 2
     show old_debbie 1
-    player_name "Yah, aku bebas sekarang. Apakah kamu masih ingin pergi?"
-
+    player_name "Well, I'm free now. Do you still wanna go?"
     show player 1
     show old_debbie 3
-    debbie "Benar-benar?! Besar!"
-
+    debbie "Really?! Great!"
     show old_debbie 2
-    debbie "Biarkan aku bersiap-siap dan aku akan menemuimu di mobil, oke?"
-
+    debbie "Just let me get ready and I'll meet you in the car, okay?"
     show old_debbie 1
     show player 2
-    player_name "Baiklah."
-
+    player_name "Alright."
     return
 
 label debbie_dialogue_shower_basement:
     show player 2
     show old_debbie 1
-    player_name "Jadi uhh..."
-
-    player_name "Kupikir kita mungkin bisa... Mandi bersama?"
-
+    player_name "So uhh..."
+    player_name "I was thinking we could maybe... Take a shower together?"
     show player 13
     show old_debbie 2
-    debbie "Sekarang?"
-
+    debbie "Right now?"
     show old_debbie 1
     debbie "Hmm..."
-
     show old_debbie 3
-    debbie "Kurasa aku bisa mandi."
-
+    debbie "I suppose I could go for a shower."
     show old_debbie 2
-    debbie "Biarkan aku menyelesaikan cucian ini dan aku akan menemuimu di lantai atas."
-
+    debbie "Let me just finish putting this load of laundry in and I'll meet you upstairs."
     scene shower_closeup
     show debbies 27
     with dissolve
@@ -903,32 +676,24 @@ label debbie_dialogue_shower_basement:
     show debbies 28 at Position(xpos=487,ypos=768) with dissolve
     pause
     show debbies 34 with dissolve
-    debbie "Semoga Anda belum hampir selesai..."
-
-    debbie "Aku berharap kita bisa menghabiskan waktu di sini."
-
+    debbie "Hope you're not almost done..."
+    debbie "I was hoping we could spend some time in here."
     return
 
 label debbie_dialogue_shower_kitchen:
     show player 2
     show old_debbie 1
-    player_name "Hai, {b}[deb_name]{/b}!"
-
-    player_name "Saya bertanya-tanya..."
-
+    player_name "Hey, {b}[deb_name]{/b}!"
+    player_name "I was wondering..."
     show player 21
-    player_name "Maukah kamu mandi bersamaku?"
-
+    player_name "Would you like to take a shower with me?"
     show player 14
     show old_debbie 2
-    debbie "Cuaca di rumah mulai panas..."
-
+    debbie "It is getting pretty hot in the house..."
     show old_debbie 3
-    debbie "Tentu! Mandi terdengar menyenangkan saat ini."
-
+    debbie "Sure! A shower sounds lovely right now."
     show old_debbie 2
-    debbie "Beri aku waktu sebentar. Saya akan bergabung dengan Anda setelah saya selesai di sini."
-
+    debbie "Give me a minute. I'll join you after I'm done here."
     scene shower_closeup
     show debbies 27
     with dissolve
@@ -936,58 +701,45 @@ label debbie_dialogue_shower_kitchen:
     show debbies 28 at Position(xpos=487,ypos=768) with dissolve
     pause
     show debbies 34 with dissolve
-    debbie "Maaf membuatmu menunggu, sayang..."
-
+    debbie "Sorry to keep you waiting, sweetie..."
     return
 
 label debbie_dialogue_sex_in_debbies_room_basement:
     show player 14
-    player_name "Maukah kamu bergabung denganku di kamarmu?"
-
+    player_name "Would you like to join me in your room?"
     show player 13
     show old_debbie 3
-    debbie "Sekarang?"
-
+    debbie "Right now?"
     show old_debbie 1
     show player 10
-    player_name "Sangat!"
-
+    player_name "Absolutely!"
     show player 5
     show old_debbie 2
-    debbie "Hehe, baiklah..."
-
+    debbie "Heh, alright..."
     show player 13
-    debbie "... Pastikan saja, {b}[jen_name]{/b} tidak melihat kita."
-
+    debbie "... Just make sure, {b}[jen_name]{/b} doesn't see us."
     show old_debbie 1
     show player 14
-    player_name "Saya akan."
-
+    player_name "I will."
     show player 13
     show old_debbie 2
     debbie "Hehehe..."
-
-    debbie "Kamu akan membuatku lelah!"
-
+    debbie "You're going to wear me out!"
     show old_debbie 1
     show player 14
-    player_name "Saya hanya memastikan Anda banyak berolahraga!"
-
+    player_name "I'm just making sure you get plenty of exercise!"
     show player 13
     show old_debbie 3
-    debbie "Ha ha ha."
-
+    debbie "Hahaha."
     show old_debbie 2
-    debbie "Angkat pantatmu ke atas dan buka baju itu!"
-
+    debbie "Get your butt upstairs and get those clothes off!"
     scene debbie_bedroom_closeup2
 
     label sex_mom_bed_intro_1:
         show old_debbie 86 at left
         show player 434f at right
         with dissolve
-        debbie "Spreinya sangat bagus dan lembut... Mengapa kamu tidak ikut berbaring denganku..."
-
+        debbie "The bed sheets are so nice and soft... Why don't you come lay with me..."
         show old_debbie 84
         show player 8f with dissolve
         pause
@@ -995,32 +747,25 @@ label debbie_dialogue_sex_in_debbies_room_basement:
         pause
         show old_debbie 85
         show player 263 with dissolve
-        debbie "Anak nakal."
-
+        debbie "Naughty boy."
         show old_debbie 84
         show player 262
-        player_name "Apa?"
-
+        player_name "What?"
         show player 263
         show old_debbie 85
-        debbie "Anda benar-benar tidak pernah puas."
-
+        debbie "You truly are insatiable."
         show old_debbie 84
         show player 262
-        player_name "Anda bisa berbaring telentang dan saya bisa melakukan sisanya."
-
+        player_name "You can just lay on your back and I can do the rest."
         show player 263
         show old_debbie 86
-        debbie "Nah, di mana serunya itu?"
-
+        debbie "Well, where's the fun in that?"
         show old_debbie 84
         show player 262
-        player_name "Hehe, jangan khawatir. Aku akan membuatnya menyenangkan!"
-
+        player_name "Heh, don't worry. I'll make it fun!"
         show player 263
         show old_debbie 84
-        debbie "Mmm, saya tidak ragu tentang itu!"
-
+        debbie "Mmm, I have no doubt about that!"
         show old_debbie 89 with dissolve
         if not store._in_replay == None:
             call expression game.dialog_select("debbie_dialogue_sex_in_debbies_room_after")
@@ -1029,20 +774,15 @@ label debbie_dialogue_sex_in_debbies_room_basement:
 
 label debbie_dialogue_sex_in_debbies_room_kitchen:
     show player 14
-    player_name "Maukah kamu bergabung denganku di kamarmu?"
-
+    player_name "Would you like to join me in your room?"
     show player 13
     show old_debbie 2
-    debbie "Sekarang?"
-
-    debbie "Sangat!"
-
-    debbie "Mari kita pastikan, {b}[jen_name]{/b} tidak melihat kita."
-
+    debbie "Right now?"
+    debbie "Absolutely!"
+    debbie "Let's just make sure, {b}[jen_name]{/b} doesn't see us."
     show old_debbie 1
     show player 14
-    player_name "Ya."
-
+    player_name "Yup."
     show player 13
     scene debbie_bedroom_closeup2
 
@@ -1050,34 +790,26 @@ label debbie_dialogue_sex_in_debbies_room_kitchen:
         show player 434f at right
         show old_debbie 86 at left
         with dissolve
-        debbie "Saya berharap Anda akan membawa saya ke sini hari ini!"
-
+        debbie "I was hoping you'd bring me in here for this today!"
         show old_debbie 84
         show player 435f
-        player_name "Anda benar-benar memikirkannya?"
-
+        player_name "You were really thinking about it?"
         show player 434f
         show old_debbie 86
-        debbie "Apakah itu mengejutkan Anda?"
-
-        debbie "Aku selalu memikirkan ayam besarmu itu..."
-
+        debbie "Does that really surprise you?"
+        debbie "I'm always thinking about that big cock of yours..."
         show old_debbie 84
         show player 435f
-        player_name "Heh, aku juga sering memikirkannya... Apalagi saat kamu mengenakan jubahmu itu."
-
+        player_name "Heh, I think about it a lot too... Especially when you're wearing that robe of yours."
         show player 434f
         show old_debbie 89 with dissolve
-        debbie "Maksudmu benda lama ini?"
-
+        debbie "You mean this old thing?"
         show old_debbie 90
         show player 435f
-        player_name "... Oh ya."
-
+        player_name "... Oh, yeah."
         show player 434f
         show old_debbie 89
-        debbie "Hehe, kenapa kamu tidak melepas baju itu dan ikut bermain denganku?"
-
+        debbie "Hehe, why don't you take off those clothes and come play with me?"
         show old_debbie 90
         show player 8f with dissolve
         pause
@@ -1087,7 +819,6 @@ label debbie_dialogue_sex_in_debbies_room_kitchen:
         show old_debbie 102
         with dissolve
         debbie "Mmmm..."
-
         show old_debbie 103
         if not store._in_replay == None:
             call expression game.dialog_select("debbie_dialogue_sex_in_debbies_room_after")
@@ -1095,8 +826,7 @@ label debbie_dialogue_sex_in_debbies_room_kitchen:
     return
 
 label debbie_dialogue_sex_in_debbies_room_after:
-    debbie "Datang dan tangkap aku, Nak!"
-
+    debbie "Come and get me, big boy!"
     hide player
     show old_debbie 104 at left
     with dissolve
@@ -1106,76 +836,57 @@ label debbie_dialogue_sex_in_debbies_room_after:
 
 label debbie_dialogue_sex_in_my_room:
     show player 2
-    player_name "Kamu ingin tidur di kamarku malam ini?"
-
+    player_name "You wanna sleep in my room tonight?"
     show player 1
     show old_debbie 2
-    debbie "Mmm, aku akan menyukainya, sayang."
-
+    debbie "Mmm, I would love that, sweetie."
     show player 2
     show old_debbie 1
-    player_name "Besar! Aku akan menunggumu kalau begitu."
-
+    player_name "Great! I'll wait up for you then."
     show player 1
     show old_debbie 2
-    debbie "Tak sabar menunggu!"
-
+    debbie "Can't wait!"
     return
 
 label debbie_dialogue_sex_in_car:
     show player 14
-    player_name "{b}[deb_name]{/b}, maukah kamu ikut denganku sebentar?"
-
+    player_name "{b}[deb_name]{/b}, would you come with me for a second?"
     show player 13
     show old_debbie 2
     debbie "Hmm?"
-
     show old_debbie 1
     show player 14
-    player_name "Ikuti saja aku."
-
+    player_name "Just follow me."
     show player 13
     show old_debbie 2
-    debbie "Hehe, apa yang sedang kamu lakukan?"
-
+    debbie "Hehe, what are you up to?"
     show old_debbie 2
     debbie "..."
     show old_debbie 3
-    debbie "Anda sedang merencanakan sesuatu!"
-
+    debbie "You're planning something!"
     show old_debbie 2
-    debbie "hehe!"
-
-    debbie "Apakah ini kejutan?"
-
-    debbie "... Saya suka kejutan!"
-
+    debbie "Hehe!"
+    debbie "Is it a surprise?"
+    debbie "... I love surprises!"
     show old_debbie 1
     show player 14
-    player_name "Hehe, aku tahu kamu tahu."
-
-    player_name "Tapi aku tidak akan menyebutnya sebagai kejutan..."
-
+    player_name "Heh, I know you do."
+    player_name "I wouldn't really call it a surprise though..."
     show player 13
     show old_debbie 3
-    debbie "hehe!"
-
+    debbie "Hehe!"
     show old_debbie 2
-    debbie "Kalau begitu, kamu akan menyebutnya apa?"
-
+    debbie "Well, what would you call it then?"
     show old_debbie 1
     debbie "..."
     show old_debbie 2
-    debbie "Apakah ini sesuatu yang nakal?"
-
+    debbie "Is this something naughty?"
     debbie "..."
     show old_debbie 1
     show player 14
-    player_name "Mungkin."
-
+    player_name "Maaaaybe."
     show old_debbie 2
-    debbie "Hehe, baiklah. Ayo cepat selagi {b}[jen_name]{/b} ada di atas."
-
+    debbie "Hehe, alright. Let's go quickly while {b}[jen_name]{/b} is upstairs."
     hide player
     hide old_debbie
     scene black
@@ -1184,74 +895,58 @@ label debbie_dialogue_sex_in_car:
 
 label debbie_dialogue_watch_movie:
     show player 2
-    player_name "Saya berpikir, mungkin kita harus menonton film lain malam ini. Tertarik?"
-
+    player_name "I was thinking, maybe we should watch another movie tonight. Interested?"
     show player 1
     show old_debbie 2
-    debbie "Mmm, nonton film malam, ya?"
-
-    debbie "Kedengarannya itu ide yang bagus, sayang!"
-
+    debbie "Mmm, a movie night, huh?"
+    debbie "That sounds like a great idea, sweetheart!"
     show player 2
     show old_debbie 1
-    player_name "Luar biasa!"
-
-    player_name "Sampai jumpa {b}malam ini{/b} di {b}ruang tamu{/b} kalau begitu?"
-
+    player_name "Awesome!"
+    player_name "I'll see you {b}tonight{/b} in the {b}living room{/b} then?"
     show player 1
     show old_debbie 2
-    debbie "Saya tidak sabar..."
-
+    debbie "I can't wait..."
     return
 
 label debbie_dialogue_laundry_sex_basement:
     scene home_basement
     show old_debbie 122 at right
     show player 14 at left
-    player_name "Apakah Anda hampir selesai mencuci?"
-
+    player_name "Are you almost done with the laundry?"
     show player 13
     show old_debbie 123
-    debbie "Hampir. Saya hanya perlu memindahkan beban ini ke pengering."
-
-    debbie "Kenapa, ada apa sayang?"
-
+    debbie "Almost. I just have to move this load into the dryer."
+    debbie "Why, what's up, sweetie?"
     show player 14
     show old_debbie 122
-    player_name "Saya hanya berpikir Anda mungkin ingin pergi jalan-jalan?"
-
+    player_name "I just thought you might like to go for a ride?"
     show player 13
     show old_debbie 123
-    debbie "Oh, merasa agak nakal, ya?"
-
+    debbie "Oh, feeling a bit naughty, are we?"
     show player 8 with dissolve
     pause
     show player 261f with dissolve
     pause
     show old_debbie 123
-    debbie "Hehe, saya anggap itu sebagai ya!"
-
+    debbie "Hehe, I'll take that as a yes!"
     show player 263f with dissolve
     debbie "..."
     show old_debbie 121
     show player 432
-    player_name "Sangat!"
-
+    player_name "Absolutely!"
     show player 431
     pause
     show old_debbie 123
-    debbie "Lepaskan pakaian itu dan masuk ke mesin cuci!"
-
+    debbie "Get those clothes off and get on the washer!"
     scene home_basement_sex_01
     show player 271 at Position(xpos=655,ypos=768)
     show old_debbie 107 zorder 0 at Position(xpos=200)
     with dissolve
     pause
     show old_debbie 108
-    debbie "Giliranku..."
-
-    debbie "Mmm, aku sudah menunggu sepanjang pagi untuk ini!"
-
+    debbie "My turn..."
+    debbie "Mmm, I've been waiting all morning for this!"
     show old_debbie 109
     pause
     show old_debbie 110
@@ -1264,15 +959,11 @@ label debbie_dialogue_laundry_sex_basement:
     pause
     show old_debbie 114
     pause
-    player_name "Kamu terlihat cantik, {b}[deb_name]{/b}."
-
+    player_name "You look beautiful, {b}[deb_name]{/b}."
     show old_debbie 115
-    debbie "Duduk saja dan rileks, sayang."
-
-    debbie "aku akan mengurus semuanya..."
-
-    debbie "... Pastikan saja kamu tetap bersamaku."
-
+    debbie "Just sit back and relax, sweetie."
+    debbie "I'll take care of everything..."
+    debbie "... Just make sure you hold on to me."
     hide player
     hide old_debbie
     show debbies 124 at Position(xpos=650)
@@ -1282,7 +973,6 @@ label debbie_dialogue_laundry_sex_basement:
     pause
     show debbies 126f with dissolve
     debbie "Oh!"
-
     show debbies 126e
     pause
     show debbies 126d
@@ -1296,55 +986,41 @@ label debbie_dialogue_laundry_sex_basement:
 
 label debbie_dialogue_laundry_sex_basement_random_true:
     debbie "Mmmm..."
-
-    debbie "Aku hampir tidak bisa menampung kalian semua."
-
+    debbie "I can barely fit you all in."
     return
 
 label debbie_dialogue_laundry_sex_basement_random_false:
-    debbie "ah..."
-
+    debbie "Ahh..."
     player_name "( !!! )"
-    player_name "Kamu sangat hangat..."
-
+    player_name "You're so warm..."
     return
 
 label debbie_dialogue_laundry_sex_kitchen:
     show player 14
-    player_name "Hai, {b}[deb_name]{/b}... Apakah kamu ingin nongkrong di ruang bawah tanah untuk bersenang-senang sebentar?"
-
+    player_name "Hey, {b}[deb_name]{/b}... Do you want to hang out in the basement for some quick fun?"
     show player 13
     show old_debbie 2
     debbie "Oh?"
-
     show old_debbie 1
     show player 14
-    player_name "Saya pikir kita bisa menyalakan pengering dan Anda bisa bersuara sekeras yang Anda inginkan..."
-
+    player_name "I figured we could turn on the dryer and you could be as loud as you wanted..."
     show player 13
     show old_debbie 3
     debbie "Haha."
-
     show old_debbie 2
-    debbie "Itu cukup nakal, sayang."
-
+    debbie "That's quite naughty, sweetie."
     show old_debbie 1
     pause
     show old_debbie 2
-    debbie "Hmm... Baiklah!"
-
-    debbie "Saya punya waktu luang dan saya bisa menggunakan... Perhatian."
-
+    debbie "Hmm... Alright!"
+    debbie "I have some free time and I could use some... Attention."
     show old_debbie 1
     show player 14
-    player_name "Benar-benar?"
-
+    player_name "Really?"
     show player 13
     show old_debbie 2
-    debbie "Tentu!"
-
-    debbie "Temui aku di sana sebentar lagi..."
-
+    debbie "Sure!"
+    debbie "Just meet me down there in a minute..."
     hide old_debbie
     hide player
     with dissolve
@@ -1353,185 +1029,139 @@ label debbie_dialogue_laundry_sex_kitchen:
 label debbie_dialogue_kiss:
     show player 10 at left
     show old_debbie 1 at right
-    player_name "Hei... Umm, {b}[deb_name]{/b}?"
-
+    player_name "Hey... Umm, {b}[deb_name]{/b}?"
     show player 5
     show old_debbie 2
-    debbie "Ya, sayang?"
-
+    debbie "Yes, sweetie?"
     show player 10
     show old_debbie 1
-    player_name "Bolehkah aku menanyakan sesuatu padamu?"
-
+    player_name "Could I ask you something?"
     show player 5
     show old_debbie 3
-    debbie "Tentu saja! Anda bisa bertanya apa saja kepada saya."
-
+    debbie "Of course! You can ask me anything."
     show player 10
     show old_debbie 1
-    player_name "Yah, itu agak... Memalukan."
-
+    player_name "Well, it's kinda... Embarrassing."
     show player 5
     show old_debbie 13
-    debbie "Oh? Baiklah, {b}[firstname]{/b}."
-
-    debbie "Tidak perlu merasa malu."
-
-    debbie "Tidak denganku..."
-
+    debbie "Oh? Well, that's okay, {b}[firstname]{/b}."
+    debbie "There's no need to feel embarrassed."
+    debbie "Not with me..."
     show old_debbie 14
     show player 10
-    player_name "Oke."
-
+    player_name "Okay."
     return
 
 label debbie_dialogue_kiss_teach:
     show player 10 at left
     show old_debbie 14 at right
-    player_name "Saya ingin tahu apakah Anda bisa..."
-
-    player_name "Ya..."
-
+    player_name "I was wondering if you could..."
+    player_name "Well..."
     show player 5
     show old_debbie 13
-    debbie "Jika aku bisa apa, sayang?"
-
+    debbie "If I could what, sweetheart?"
     show player 10
     show old_debbie 14
-    player_name "Err... Ingat tempo hari di mall?"
-
+    player_name "Err... Remember the other day at the mall?"
     show player 5
     show old_debbie 14b
     player_name "..."
     show old_debbie 13
-    debbie "... Ya?"
-
+    debbie "... Yes?"
     show player 10
     show old_debbie 14b
-    player_name "Baiklah... Aku berharap kamu bisa mengajariku lebih banyak, kamu tahu, tentang berciuman?"
-
+    player_name "Well... I was hoping you could teach me more, you know, about kissing?"
     show player 5
     show old_debbie 13
-    debbie "Apa?!"
-
+    debbie "What?!"
     show old_debbie 14b
     player_name "..."
     show old_debbie 13
-    debbie "Itu sebuah kesalahan, sayang. Aku seharusnya tidak pernah..."
-
-    debbie "Apa yang kamu harap aku akan ajarkan padamu?"
-
+    debbie "That was a mistake, sweetie. I should never have..."
+    debbie "What are you hoping I'd teach you anyways?"
     show player 10
     show old_debbie 14b
-    player_name "Anda tahu, seperti, bagaimana melakukannya."
-
-    player_name "Saya pikir, mungkin Anda bisa menunjukkan kepada saya apa yang disukai wanita?"
-
+    player_name "You know, like, how to do it."
+    player_name "I thought, maybe, you could show me what women like?"
     show player 5
     show old_debbie 13
-    debbie "Hmm, baiklah, aku pasti bisa memberitahumu apa yang disukai wanita."
-
-    debbie "... Tapi menurutku menunjukkan padamu bukanlah ide yang bagus. Itu akan menjadi hal yang tidak pantas..."
-
+    debbie "Hmm, well, I could certainly tell you what women like."
+    debbie "... But I don't think showing you is a good idea. It would be kind of inappropriate..."
     show old_debbie 14b
     return
 
 label debbie_dialogue_kiss_teach_stat_fail:
     show player 10 at left
     show old_debbie 14b at right
-    player_name "Apa kamu yakin?"
-
-    player_name "Saya sangat ingin berlatih bersama Anda."
-
+    player_name "Are you sure?"
+    player_name "I'd really like to practice with you."
     show player 5
     debbie "..."
     show old_debbie 13
-    debbie "Itu bukan ide bagus, sayang."
-
+    debbie "It's just not a good idea, sweetie."
     show player 10
     show old_debbie 14b
-    player_name "Oh... B-baiklah."
-
+    player_name "Oh... A-alright."
     show player 5
     show old_debbie 13
-    debbie "Maaf, sayang."
-
+    debbie "Sorry, sweetheart."
     show player 10
     show old_debbie 14b
-    player_name "Tidak apa-apa, {b}[deb_name]{/b}."
-
+    player_name "It's okay, {b}[deb_name]{/b}."
     return
 
 label debbie_dialogue_kiss_leave:
     show player 10 at left
     show old_debbie 14 at right
-    player_name "... Sebenarnya."
-
-    player_name "Sudahlah."
-
+    player_name "... Actually."
+    player_name "Never mind."
     show old_debbie 13
     show player 5
-    debbie "Apa kamu yakin?"
-
-    debbie "Anda selalu dapat berbicara dengan saya, {b}[firstname]{/b}."
-
+    debbie "Are you sure?"
+    debbie "You can always talk to me, {b}[firstname]{/b}."
     show player 10
     show old_debbie 14
-    player_name "Ya, tidak apa-apa."
-
-    player_name "Maaf mengganggumu."
-
+    player_name "Yeah, it's nothing."
+    player_name "Sorry to bug you."
     show player 5
     show old_debbie 13
-    debbie "Kamu tidak pernah menggangguku, sayang."
-
+    debbie "You never bug me, sweetie."
     return
 
 label debbie_dialogue_kiss_practice:
     show player 2 at left
     show old_debbie 1 at right
-    player_name "Apa menurutmu kita bisa berlatih lagi?"
-
-    player_name "Kamu tahu... Berciuman?"
-
+    player_name "Do you think we could practice again?"
+    player_name "You know... Kissing?"
     show player 1
     show old_debbie 13
-    debbie "Lagi?"
-
+    debbie "Again?"
     show player 2
     show old_debbie 14b
-    player_name "Y-ya. Saya pikir saya menjadi lebih baik!"
-
+    player_name "Y-yeah. I think I'm getting better!"
     show player 1
     show old_debbie 13
-    debbie "... Baiklah."
-
-    debbie "Tapi hanya sedikit!"
-
+    debbie "... Alright."
+    debbie "But just a little!"
     show player 2
     show old_debbie 14
-    player_name "Oke, tentu saja."
-
+    player_name "Okay, sure."
     hide player
     show old_debbie 79 at Position(xpos=0.70, ypos=1.0) with dissolve
     pause
     show old_debbie 80
-    debbie "Hmm..."
-
+    debbie "Mmm..."
     show old_debbie 79
     pause
     show old_debbie 78 at Position(xpos=0.80, ypos=1.0) with dissolve
     show player 233 at Position(xpos=0.30, ypos=1.0) with dissolve
     pause
     show old_debbie 77
-    debbie "Wow... Menurutku kamu pasti menjadi lebih baik."
-
-    debbie "... Dan kamu sudah sangat baik sejak awal!"
-
+    debbie "Wow... I'd say you're definitely getting better."
+    debbie "... And you were already so good to begin with!"
     show player 232
     show old_debbie 76
-    player_name "Terima kasih, {b}[deb_name]{/b}!"
-
+    player_name "Thanks, {b}[deb_name]{/b}!"
     show player 231
     show old_debbie 74
     pause
@@ -1539,33 +1169,25 @@ label debbie_dialogue_kiss_practice:
     pause
     show player 232
     show old_debbie 76
-    player_name "Maaf tentang... Anda tahu."
-
+    player_name "Sorry about the... You know."
     show player 231
     show old_debbie 75
-    debbie "Hehe, tidak apa-apa, sayang."
-
-    debbie "Sangat alami."
-
-    debbie "Gadis-gadis di kota ini sedang dalam masalah."
-
+    debbie "Hehe, it's alright, sweetheart."
+    debbie "Perfectly natural."
+    debbie "The girls in this town are in trouble."
     show player 232
     show old_debbie 72
-    player_name "Hah, tentu saja!"
-
+    player_name "Hah, you bet!"
     show player 231
     show old_debbie 73
-    debbie "Tangkap mereka, sayang!"
-
+    debbie "Go get em, sweetie!"
     show player 232
     show old_debbie 72
-    player_name "Ya, Bu!"
-
+    player_name "Yes, ma'am!"
     return
 
 label debbie_dialogue_leave:
     show player 2
-    player_name "Sebenarnya sudahlah, sampai jumpa lagi, {b}[deb_name]{/b}."
-
+    player_name "Actually, never mind, see you later, {b}[deb_name]{/b}."
     return
 # Decompiled by unrpyc: https://github.com/CensoredUsername/unrpyc

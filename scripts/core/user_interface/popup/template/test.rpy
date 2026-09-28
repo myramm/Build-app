@@ -53,8 +53,7 @@ label popup_test:
     call popup ('earn', 550)
     call popup ('poor')
 
-    "sirip"
-
+    "fin"
 
     return
 # Decompiled by unrpyc: https://github.com/CensoredUsername/unrpyc

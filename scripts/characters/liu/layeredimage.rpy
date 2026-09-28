@@ -34,24 +34,16 @@ layeredimage liu:
         attribute b_empty null
         attribute b_floor 'location_bank_hallway_floor'
         attribute b_magic "liu_body_b_[M_liu.outfit][M_liu.pregnancy]"   
-
         attribute b_mcpuffin null
-        attribute b_dressed_kiss "liu_tubuh_b_berpakaian_ciuman"
-
-        attribute b_dressed_kiss_2 "liu_tubuh_b_berpakaian_ciuman_2"
-
-        attribute b_dressed_kiss_3 "liu_tubuh_b_berpakaian_ciuman_3"
-
+        attribute b_dressed_kiss "liu_body_b_dressed_kiss"
+        attribute b_dressed_kiss_2 "liu_body_b_dressed_kiss_2"
+        attribute b_dressed_kiss_3 "liu_body_b_dressed_kiss_3"
         attribute b_robe_kiss
         attribute b_robe_disheveled_kiss
         attribute b_bed_skirt_kiss "liu_body_b_bed_skirt_kiss"
-
         attribute b_bed_naked_kiss "liu_body_b_bed_naked_kiss"
-
         attribute b_bed_dressed_kiss "liu_body_b_bed_dressed_kiss"
-
         attribute b_bed_shorts_kiss "liu_body_b_bed_shorts_kiss"
-
         attribute b_mcpuffin null
         attribute b_dressed_magic 'liu_body_b_dressed[M_liu.pregnancy]'
         attribute b_robe_magic 'liu_body_b_robe_hair[M_liu.pregnancy]'

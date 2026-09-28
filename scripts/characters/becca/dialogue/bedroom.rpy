@@ -6,55 +6,45 @@ label becca_button_bedroom:
     show becca a_front b_home_bed f_confused
     with {'master': dissolve}
     becca "{b}[firstname]{/b}?"
-
     show anon a_wave
     with {'master': dissolve}
-    anon "Hai, {b}Becca{/b}."
-
-    becca "Apa yang kamu lakukan di sini?"
-
+    anon "Hey, {b}Becca{/b}."
+    becca "What are you doing here?"
     show anon a_sides
     with {'master': dissolve}
 
     menu becca_button_bedroom.choice:
-        "Saya berada di lingkungan itu.":
+        "I was in the neighborhood.":
             jump becca_button_bedroom.area
-        "Apa yang sedang kamu kerjakan?":
+        "What are you working on?":
 
             jump becca_button_bedroom.work
-        "Seks.":
+        "Sex.":
 
             jump becca_button_bedroom.sex
-        "Hanya menyapa.":
+        "Just saying hi.":
 
             pass
 
-    anon "Anda akan berada di pantai akhir pekan ini, bukan?"
-
-    becca f_confused "Hmm, ya?"
-
-    becca "Mengapa saya tidak berada di sana?"
-
-    anon f_shy "Entahlah, aku hanya memastikan saja."
-
+    anon "You'll be at the beach this weekend, right?"
+    becca f_confused "Umm, yeah?"
+    becca "Why wouldn't I be there?"
+    anon f_shy "I dunno, I was just making sure."
     pause
     show anon a_shy_neck f_shy_left
     show becca a_front f_surprised
     with {'master': dissolve}
     pause
-    anon "Aku sangat menantikannya, tahu?"
-
+    anon "I'm really looking forward to it, you know?"
     show becca a_front f_shy_down o_blush
     with {'master': dissolve}
-    becca "Oh, um..."
-
+    becca "Oh, umm..."
     show anon f_shy
     show becca b_home_bed_back f_shy_low
     with {'master': dissolve}
     pause
     show becca f_shy_down
-    becca "... Y-ya, aku juga."
-
+    becca "... Y-yeah, me too."
     show anon a_cheering f_grin
     with {'master': dissolve}
     pause
@@ -63,14 +53,11 @@ label becca_button_bedroom:
     pause
     show anon a_sides f_shy
     with {'master': dissolve}
-    anon "C-keren!"
-
-    anon f_happy "Kurasa, sampai jumpa di sana!"
-
+    anon "C-cool!"
+    anon f_happy "I guess, I'll just see you there!"
     show becca b_home_bed f_shy_happy
     with {'master': dissolve}
-    becca "Sampai jumpa, {b}[firstname]{/b}."
-
+    becca "See ya, {b}[firstname]{/b}."
     hide anon
     show becca f_concerned_lipbite
     with {'master': dissolve}
@@ -79,36 +66,28 @@ label becca_button_bedroom:
 
 
 label becca_button_bedroom.area:
-    anon "Kupikir aku akan mampir dan menyapa."
-
+    anon "Just thought I'd drop in and say hello."
     show becca a_crossed
     with {'master': dissolve}
     becca @ -m_talk "Mhmm."
-
-    becca f_annoyed "Sebaiknya kau tidak melakukan hal-hal buruk lagi dengan ibuku."
-
+    becca f_annoyed "You'd better not be doing nasty shit with my mother again."
     show anon a_behind_head f_worried
     with {'master': dissolve}
     anon "Oh, ehh..."
 
-
     menu:
-        "Tentu saja tidak.":
+        "Of course not.":
             pass
-        "Saya tidak akan menyebutnya jahat...":
+        "I wouldn't call it nasty...":
 
             jump becca_button_bedroom.troll
 
-    anon f_shy "Sudah kubilang, itu hanya kesalahpahaman sederhana."
-
-    becca f_eyeroll "Ya, terserah."
-
+    anon f_shy "I told you, that was just a simple misunderstanding."
+    becca f_eyeroll "Yeah, whatever."
     show becca a_front f_annoyed
     with {'master': dissolve}
-    becca "Hanya... diam."
-
-    anon "Baiklah."
-
+    becca "Just... shut up."
+    anon "Alright."
     show anon a_sides
     with {'master': dissolve}
     jump becca_button_bedroom.choice
@@ -117,46 +96,33 @@ label becca_button_bedroom.area:
 label becca_button_bedroom.sex:
     show anon a_shy_neck f_shy_left
     with {'master': dissolve}
-    anon "Katakanlah, ingat suatu hari ketika kita uhh... kamu tahu?"
-
+    anon "Say, remember the other day when we uhh... you know?"
     becca f_confused @ -m_talk "Hmm?"
-
-    anon f_shy "Saat kami melakukan facetime {b}Roxxy{/b}..."
-
+    anon f_shy "When we facetimed {b}Roxxy{/b}..."
     show anon of_blush
     with {'master': dissolve}
-    anon "... Jadi dia bisa mengawasi kita... uhh..."
-
+    anon "... So she could watch us... uhh..."
     show becca a_front f_shy_down o_blush
     with {'master': dissolve}
-    becca "Oh itu."
-
+    becca "Oh, that."
     show anon a_sides
     with {'master': dissolve}
-    anon "Y-ya."
-
-    becca f_shy "Anda ingin melakukannya lagi?"
-
-    anon f_worried "Maksudku, jika kamu tidak mau, aku mengerti-"
-
-    becca f_concerned "T-tidak, aku bersedia!"
-
+    anon "Y-yeah."
+    becca f_shy "You wanna, do that again?"
+    anon f_worried "I mean, if you don't want to, I under-"
+    becca f_concerned "N-no, I do!"
     show becca b_home_bed_back f_shy_low
     with {'master': dissolve}
-    becca "Atau, uhh... Maksudku, kita bisa..."
-
-    becca f_shy_happy_down @ f_shy_down "... K-karena, kamu tahu, itu lebih baik daripada mengerjakan pekerjaan rumah."
-
-    anon f_shy "Benar."
-
+    becca "Or, uhh... I mean, we can..."
+    becca f_shy_happy_down @ f_shy_down "... B-because, you know, it's better than doing homework."
+    anon f_shy "Right."
     show becca b_home_bed f_concerned_lipbite_low
     with {'master': dissolve}
     pause
     show anon f_normal -of_blush
     show becca f_concerned -o_blush
     with {'master': dissolve}
-    becca "Mari kita lihat apakah {b}Roxxy{/b} ada di rumah terlebih dahulu."
-
+    becca "Let's see if {b}Roxxy{/b}'s home first."
     show anon a_surprised_shoulders f_surprised_down behind becca:
         xoffset -150
     show becca b_home_bed_reach
@@ -173,11 +139,9 @@ label becca_button_bedroom.sex:
         offset (-85, -35)
     show becca a_phone_talk f_shy
     with {'master': dissolve}
-    "{i}*Dering* *Dering*{/i}"
-
+    "{i}*Ring* *Ring*{/i}"
     pause
-    "{i}*Dering* *Dering*{/i}"
-
+    "{i}*Ring* *Ring*{/i}"
 
     $ renpy.dynamic(local=ComposeTransition(phoneleft.show,
         before=MoveTransition(.7, time_warp=_warper.easein_cubic)))
@@ -192,68 +156,48 @@ label becca_button_bedroom.sex:
         xoffset -300
     show expression phoneleft.core_bar as split
     with {'master': local}
-    roxxy "Halo?"
-
-    becca "Hei, ini aku."
-
-    roxxy "Oh, hei... ada apa?"
-
+    roxxy "Hello?"
+    becca "Hey, it's me."
+    roxxy "Oh, hey... what's up?"
     show becca f_shy_back o_blush
     with {'master': dissolve}
-    becca "Umm, jadi... pacarmu ada di sini lagi dan kami berpikir-"
-
-    roxxy f_annoyed "{b}[firstname]{/b} ada di sana lagi?!"
-
+    becca "Umm, so... your boyfriend's here again and we were kinda thinking-"
+    roxxy f_annoyed "{b}[firstname]{/b}'s over there again?!"
     show anon f_worried_surprised
-    becca f_concerned "Ya, ya... Maksudku, dia hanya ada di lingkungan sekitar dan mampir untuk menyapa, kau tahu?"
-
+    becca f_concerned "Well, yeah... I mean, he was just in the neighborhood and stopped by to say hello, you know?"
     show anon f_worried
-    roxxy f_suspicious "Eh ya."
-
+    roxxy f_suspicious "Uh huh."
     pause
-    roxxy f_smug "Dan coba kutebak, kamu mau mencicipi lagi penis lezat itu?"
-
+    roxxy f_smug "And let me guess, you want another taste of that delicious dick?"
     show anon f_flirt_grin
-    becca f_shy_back "Umm... m-agak..."
-
+    becca f_shy_back "Umm... s-sorta..."
     show roxxy b_nails_phone f_bored_down
     with {'master': dissolve}
-    roxxy "Ya, kedengarannya tidak terlalu meyakinkan."
-
+    roxxy "Well, that didn't sound very convincing."
     show anon f_worried
-    becca f_concerned "Tolong, {b}Roxxy{/b}?"
-
-    roxxy f_smug_out "Ayolah, kamu tahu apa yang ingin aku dengar..."
-
+    becca f_concerned "Please, {b}Roxxy{/b}?"
+    roxxy f_smug_out "C'mon, you know what I wanna hear..."
     show anon f_shy
     show becca f_shy_down
     pause
-    becca "Aku seorang jalang beta yang terangsang..."
-
+    becca "I'm a horny beta bitch..."
     show roxxy f_horny_lipbite_out
-    becca "... Dan kamu adalah alfaku..."
-
+    becca "... And you're my alpha..."
     pause
-    becca "... Maukah kamu mengizinkan pacarmu melakukan apa yang diinginkannya bersamaku?"
-
+    becca "... Will you please allow your boyfriend have his way with me?"
     show anon f_grin
     show roxxy f_horny_lipbite_close
     pause
     show roxxy b_phone f_smug
     with {'master': dissolve}
-    roxxy "Ha ha ha!"
-
+    roxxy "Hahaha!"
     show anon f_happy
-    roxxy f_horny "Baiklah, baiklah..."
-
-    roxxy f_smug "... Tapi tatap aku lagi supaya aku bisa menonton."
-
-    becca f_shy "Y-ya, oke."
-
+    roxxy f_horny "Alright, fine..."
+    roxxy f_smug "... But facetime me again so I can watch."
+    becca f_shy "Y-yeah, okay."
     hide becca
     with {'master': dissolve}
-    anon "Jadi kita melakukan ini?"
-
+    anon "So we're doing this?"
 
     scene location_tina_becca_bedroom_evening:
         anchor (712, 400)
@@ -272,37 +216,30 @@ label becca_button_bedroom.sex:
         xzoom -1
         zoom .7
     with fade
-    roxxy "Ya, Anda bisa melakukannya..."
-
+    roxxy "Yes, you can do it..."
     show anon f_shy
     show becca b_home_bed f_concerned_lipbite o_blush behind cam:
         offset (175, 170)
         zoom .9
     with {'master': dissolve}
-    roxxy "... Tapi saya harap Anda menghargai betapa luar biasa pacar yang Anda miliki!"
-
-    anon f_flirt "Tentu saja saya mengapresiasi {b}Roxxy{/b}..."
-
+    roxxy "... But I hope you appreciate what an amazing girlfriend you have!"
+    anon f_flirt "Of course I appreciate that {b}Roxxy{/b}..."
     show becca b_home_bed_undress a_remove_top01
     with {'master': dissolve}
-    anon "... Kamu yang terbaik!"
-
+    anon "... You're the best!"
     show anon f_flirt_low
     show becca a_remove_top02 -o_blush
     with {'master': dissolve}
-    roxxy f_smug_out "Bagus."
-
+    roxxy f_smug_out "Good."
     show anon a_side
     show becca a_remove_top03
     with dissolve
     show becca a_remove_top04
     with {'master': dissolve}
-    roxxy "Sekarang cepatlah berangkat karena ibuku akan segera pulang dan aku tidak ingin dia mengganggu acaranya!"
-
+    roxxy "Now hurry up and get to fuckin' because my mom will be home soon and I don't want her interrupting the show!"
     show becca a_sides b_pants_bed
     with {'master': dissolve}
-    anon "{i}*Gulp*{/i} Y-ya, oke."
-
+    anon "{i}*Gulp*{/i} Y-yeah, okay."
     show anon b_onbed_sit_changing3 -of_blush:
         offset (-330, 28)
         yalign 1.
@@ -341,48 +278,34 @@ label becca_button_bedroom.sex:
     show becca f_sexy_low
     show roxxy f_smug_out -m_talk
     with {'master': dissolve}
-    roxxy "Kamu mau penis itu, {b}Becca{/b}?"
-
+    roxxy "You want that dick, {b}Becca{/b}?"
     show anon a_behind f_flirt_low
     with {'master': dissolve}
-    becca f_sexy_low "Y-ya."
-
-    roxxy "Aku tidak bisa mendengarmu!"
-
+    becca f_sexy_low "Y-yes."
+    roxxy "I can't hear you!"
     show anon f_shy of_blush
     with {'master': dissolve}
-    becca "Ya, saya menginginkannya!"
-
-    roxxy f_horny_out "Siapa itu kontolnya?"
-
+    becca "Yes, I want it!"
+    roxxy f_horny_out "Who's dick is it?"
     show anon f_brag
-    becca f_thinking @ f_exhausted_closed -m_talk "Milikmu."
-
-    roxxy f_smug_out "Lebih keras!"
-
+    becca f_thinking @ f_exhausted_closed -m_talk "Yours."
+    roxxy f_smug_out "Louder!"
     show anon f_surprised
     show becca b_naked_bed_back f_annoyed
     with {'master': fastdissolve}
-    becca @ f_annoyed_surprised "Itu penismu, {b}Roxxy{/b}!"
-
-    roxxy f_happy_out "Hehe, gadis baik..."
-
+    becca @ f_annoyed_surprised "It's your dick, {b}Roxxy{/b}!"
+    roxxy f_happy_out "Hehe, good girl..."
     show anon f_happy
     show becca b_naked_bed f_concerned_lipbite_low
     with {'master': dissolve}
-    roxxy f_smug_out "... Sekarang tidurlah, {b}[firstname]{/b}."
-
-    roxxy "Aku ingin dia menunggangimu."
-
+    roxxy f_smug_out "... Now get on the bed, {b}[firstname]{/b}."
+    roxxy "I want her to ride you."
     show anon a_sides f_shy
     with {'master': dissolve}
-    anon "B-benar, um..."
-
-    anon f_flirt "... Ini luar biasa!"
-
+    anon "R-right, umm..."
+    anon f_flirt "... This is awesome!"
     show anon f_grin
-    roxxy f_laugh "hehe!"
-
+    roxxy f_laugh "Hehe!"
 
     call scene_becca_sex_bedroom.repeat
     $ unlock_scene('becca', '03_unlocked')
@@ -398,170 +321,125 @@ label becca_button_bedroom.sex:
     show anon b_naked_bed_mount
     show becca b_naked_disheveled_bed_mount f_exhausted_closed
     with fade
-    roxxy "Panas sekali, {b}[firstname]{/b}!"
-
+    roxxy "That was so fucking hot, {b}[firstname]{/b}!"
     show becca b_naked_disheveled_bed_belly behind anon
     anon "!!!" with hpunch
     show anon b_sit_naked f_surprised_low od_dick1:
         offset (-250, 15)
     with {'master': dissolve}
-    roxxy "Apa lagi?!"
-
+    roxxy "What, again?!"
     show anon b_sit_naked_check f_surprised_low od_naked_dick1 behind becca:
         offset (0, -30)
     with {'master': dissolve}
     anon "{b}Becca{/b}?"
-
     show anon f_surprised_down
     show becca a_shoo
     with {'master': dissolve}
-    becca @ -m_talk "*Bergumam tak jelas*"
-
+    becca @ -m_talk "*Mumbles unintelligibly*"
     show anon f_worried_low
     show becca -a_shoo
     with {'master': dissolve}
     show anon b_liu_naked -od_naked_dick1:
         offset (-300, -50)
     with {'master': dissolve}
-    roxxy "Bagaimana kamu masih bisa berkutat dengan penis pacarku yang besar?"
-
+    roxxy "How can you still be struggling with my boyfriend's big dick?"
     show anon f_flirt_low of_blush
     show becca a_reach f_thinking
     with {'master': dissolve}
-    becca "Ugh... diamlah, {b}Roxxy{/b}!"
-
+    becca "Ugh... shut up, {b}Roxxy{/b}!"
     show becca a_phone f_shy o_blush
     with dissolve
     show expression stage as stage at local with {'master': local.show}
-    roxxy "{i}*Mendengus*{/i} Maaf tapi ini lucu..."
-
+    roxxy "{i}*Snort*{/i} I'm sorry but it's funny..."
     if M_missy.taken_dick:
         show anon f_surprised_low
-        roxxy f_smug "... Bahkan {b}Missy{/b} menganggapnya lebih baik dari Anda!"
-
+        roxxy f_smug "... Even {b}Missy{/b} takes it better than you!"
     show anon f_worried_low -of_blush
     with {'master': dissolve}
     becca f_upset "Grr!"
-
     show roxxy f_annoyed_right
     with {'master': dissolve}
-    crystal "{b}Roxanne{/b}, aku pulang!!"
-
+    crystal "{b}Roxanne{/b}, I'm home!!"
     show becca f_concerned
-    roxxy f_annoyed "Oh sial!"
-
-    roxxy "Aku harus pergi."
-
-    roxxy f_suspicious "Maukah kamu mampir dan menemuiku nanti, {b}[firstname]{/b}?"
-
+    roxxy f_annoyed "Oh, shit!"
+    roxxy "I gotta go."
+    roxxy f_suspicious "Will you come by and see me later, {b}[firstname]{/b}?"
     show becca f_shy_back_low
     anon f_confused_low @ -m_talk "Hmm?"
-
-    roxxy f_horny_lipbite @ f_horny "Menonton kalian berdua memang menyenangkan, tapi aku lebih suka kalian berdua untuk sementara waktu."
-
+    roxxy f_horny_lipbite @ f_horny "Watching you two is fun and all but I'd much rather have you to myself for a while."
     show becca f_shy_back_low
     show anon f_thinking_down
 
     menu:
-        "Tentu.":
-            anon f_normal_low "Ya, sepenuhnya."
-
+        "Sure.":
+            anon f_normal_low "Yeah, totally."
             show becca f_shy_back_down
             show roxxy f_horny_lipbite_close
-            anon "Aku akan segera menemuimu, oke?"
-
-            roxxy f_horny "Bagus."
-
+            anon "I'll come see you soon, okay?"
+            roxxy f_horny "Good."
             show anon f_grin
             show becca f_surprised
-            roxxy f_smug "Aku akan memberimu seks terbaik dalam hidupmu saat kau di sini lagi, aku janji!"
+            roxxy f_smug "I'm gonna give you the best sex of your life next time you're here, I promise!"
+        "Yeah, maybe...":
 
-        "Ya, mungkin...":
-
-            anon f_worried_low "Jika ada waktu."
-
-            roxxy f_suspicious "Ayo, {b}[firstname]{/b}..."
-
-            roxxy "... Tidak bisakah kamu meluangkan waktu?"
-
-            anon "Saya akan mencoba, oke?"
-
+            anon f_worried_low "If there's time."
+            roxxy f_suspicious "C'mon, {b}[firstname]{/b}..."
+            roxxy "... Can't you make time?"
+            anon "I'll try, okay?"
             show becca f_shy
-            roxxy f_bored_down "{i}*Huh*{/i} Baiklah."
-
-            roxxy "Hanya-"
-
+            roxxy f_bored_down "{i}*Sigh*{/i} Alright."
+            roxxy "Just-"
             pause
-            roxxy f_bored "Aku merindukanmu."
-
+            roxxy f_bored "I miss you."
             show becca f_sad
-            anon "Aku tahu."
+            anon "I know."
 
-
-    crystal "Dimana sih kamu, {b}Roxanne{/b}?!"
-
+    crystal "Where the heck are ya, {b}Roxanne{/b}?!"
     show anon f_surprised_low
     show becca f_surprised
     show roxxy f_annoyed_right
-    crystal "Saya butuh bantuan!"
-
+    crystal "I need help!"
     show anon f_worried_low
     show becca f_concerned
     show roxxy b_hangup c_hangup
     with {'master': dissolve}
-    roxxy "Ugh, aku- ... Ayo... tunggu dulu!!"
-
+    roxxy "Ugh, I- ... Coming... just, hold on!!"
     show anon f_surprised_low
     show becca f_surprised
-    roxxy f_eyeroll "Bodoh, mabuk, tidak ada gunanya..."
-
+    roxxy f_eyeroll "Stupid, drunk, good for nothing..."
     show roxxy b_stomach c_stomach f_bored
     with {'master': dissolve}
-    roxxy "... Aku akan bicara dengan kalian nanti."
-
-    anon f_normal_low "Y-ya, oke."
-
+    roxxy "... I'll talk to you guys later."
+    anon f_normal_low "Y-yeah, okay."
     show roxxy f_angry_right
-    becca f_happy "Nanti, {b}Roxxy{/b}."
-
+    becca f_happy "Later, {b}Roxxy{/b}."
     show anon f_surprised_low
     show becca f_surprised
     hide roxxy
     with {'master': dissolve}
-    roxxy "Kamu sangat memalukan-"
-
+    roxxy "You are so fucking embarrass-"
     show expression stage as stage with {'master': local.hide}
-    "{i}*Bip*{/i}"
-
+    "{i}*Beep*{/i}"
     show becca a_reach f_shy with {'master': dissolve}
-    anon f_surprised_low "Oh oke..."
-
+    anon f_surprised_low "Oh kay..."
     show anon a_surprised b_sit_naked_up f_normal_low od_naked_dick1 behind becca:
         offset (-30, -30)
     show becca a_down
     with {'master': dissolve}
-    anon "...Saya kira, saya mungkin harus pergi juga."
-
+    anon "... I guess, I should probably get going too."
     show anon f_flirt_low
     show becca b_naked_disheveled_bed_up f_thinking
     with {'master': dissolve}
-    becca "Ya baiklah."
-
-    anon f_shy_low "Sampai jumpa nanti?"
-
+    becca "Yeah, okay."
+    anon f_shy_low "I'll see you later?"
     becca f_shy_happy_up @ -m_talk "Mhmm,"
-
-    becca "Saya akan berada di sini."
-
-    anon f_flirt_low "Dingin."
-
+    becca "I'll be here."
+    anon f_flirt_low "Cool."
     hide anon
     show becca f_sexy_low
     with {'master': dissolve}
-    anon "Sampai jumpa lagi, {b}Becca{/b}."
-
-    becca "Nanti."
-
+    anon "See you later, {b}Becca{/b}."
+    becca "Later."
     show becca f_concerned_lipbite
     with {'master': dissolve}
     pause
@@ -571,86 +449,58 @@ label becca_button_bedroom.sex:
 label becca_button_bedroom.troll:
     show anon f_shy_left of_blush
     with {'master': dissolve}
-    anon "Saya tidak akan menyebutnya jahat..."
-
+    anon "I wouldn't call it nasty..."
     show becca f_glaring
-    anon f_flirt "... Ibumu sangat seksi."
-
+    anon f_flirt "... Your mom is really sexy."
     show becca a_angry f_surprised
     with {'master': dissolve}
     becca @ -m_talk "!!!"
     show becca a_hips f_disgusted
     with {'master': dissolve}
-    becca "Eugh, ayolah {b}[firstname]{/b}... Aku tidak ingin mendengar omong kosong itu!!"
-
+    becca "Eugh, c'mon {b}[firstname]{/b}... I don't wanna hear that shit!!"
     show anon a_cannoli_gobble f_laugh
     show becca f_glaring
     with {'master': dissolve}
-    anon "{i}*Mendengus*{/i}"
-
+    anon "{i}*Snort*{/i}"
     show anon a_sides f_happy -of_blush
     with {'master': dissolve}
-    anon "Tenang saja, aku hanya mempermainkanmu {b}Becca{/b}..."
-
-    becca f_annoyed "Ya, tidak lucu!"
-
-    anon f_shy "Hehe, maaf."
-
+    anon "Relax, I'm just messing with you {b}Becca{/b}..."
+    becca f_annoyed "Yeah, not funny!"
+    anon f_shy "Hehe, sorry."
     jump becca_button_bedroom.choice
 
 
 label becca_button_bedroom.work:
     show anon a_point_down f_confused_low
     with {'master': dissolve}
-    anon "Apa yang sedang kamu kerjakan?"
-
+    anon "What are you working on?"
     show becca f_normal_down
     pause
-    becca f_normal "Itu hanya hal yang membosankan untuk kelas {b}Nona Dewitt{/b}."
-
+    becca f_normal "It's just a boring thing for {b}Miss Dewitt{/b}'s class."
     show anon a_sides f_normal
     show becca a_front
     with {'master': dissolve}
-    anon "Oh ya?"
-
-    becca "Saya seharusnya menjelaskan perbedaan antara kunci musik bass dan kunci musik treble dalam satu paragraf..."
-
+    anon "Oh, yeah?"
+    becca "I'm supposed to explain the difference between a bass clef and a treble clef in one paragraph..."
     show anon f_confused
-    becca "... Lalu saya harus mengidentifikasi dan memberi label dengan benar semua nilai nada."
-
-    anon "Kedengarannya sulit."
-
-    becca f_concerned "Tidak juga."
-
-    becca "Saya telah membaca lembaran musik sejak saya berusia lima tahun."
-
-    anon "Benar-benar?"
-
-    becca f_normal @ f_eyeroll "Ya, ibuku memaksaku mengambil pelajaran piano."
-
-    anon f_surprised "Anda bisa bermain piano?"
-
+    becca "... Then I have to properly identify and label all the note values."
+    anon "That sounds hard."
+    becca f_concerned "Not really."
+    becca "I've been reading sheet music since I was like, five years old."
+    anon "Really?"
+    becca f_normal @ f_eyeroll "Yeah, my mom forced me take piano lessons."
+    anon f_surprised "You can play the piano?"
     becca @ -m_talk "Mhmm."
-
-    anon f_happy "Itu luar biasa!"
-
-    becca f_shy_back_low "Ehh, tidak juga..."
-
-    anon f_worried "Tidak?"
-
-    becca f_sad "Itu membosankan dan aku membencinya."
-
-    anon @ f_confused "Kenapa?"
-
-    becca f_annoyed "Karena saya masih kecil dan saya ingin berada di luar bermain-main dengan anak-anak lain!"
-
-    becca "Tidak terkurung di rumah bersama ibuku dan guru musik jompo itu!"
-
+    anon f_happy "That's awesome!"
+    becca f_shy_back_low "Ehh, not really..."
+    anon f_worried "No?"
+    becca f_sad "It's boring and I hated it."
+    anon @ f_confused "How come?"
+    becca f_annoyed "Because I was a little girl and I wanted to be outside playing games with all the other kids!"
+    becca "Not cooped up in the house with my mother and that decrepit music teacher!"
     anon f_thinking_down "Oh."
-
     pause
-    anon f_happy "Yah, menurutku masih keren."
-
+    anon f_happy "Well, I think still think it's cool."
     show becca f_eyeroll
     pause
     show becca f_normal

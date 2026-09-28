@@ -1,89 +1,55 @@
 label con01_init_ricky:
-    anon f_worried "Apakah mereka selalu memperlakukan {b}Consuela{/b} dengan sangat buruk?"
-
+    anon f_worried "Do they always treat {b}Consuela{/b} so poorly?"
     pause
-    ricky f_confused "Anda tampak terkejut?"
-
-    anon "Saya."
-
-    anon "Maksudku, Walikota selalu terlihat seperti orang yang murah hati di TV..."
-
-    ricky f_sad "Kamu harus banyak belajar tentang dunia, temanku."
-
-    ricky "Itu hanya kepribadian publiknya."
-
-    ricky "Kebanyakan politisi bertindak sangat berbeda di balik pintu tertutup."
-
-    anon "Ya, menurutku..."
-
+    ricky f_confused "You seem surprised?"
+    anon "I am."
+    anon "I mean, the mayor always seems like a pretty generous guy on TV..."
+    ricky f_sad "You have a lot to learn about the world, my friend."
+    ricky "That's just his public persona."
+    ricky "Most politicians act very differently behind closed doors."
+    anon "Yeah, I guess..."
     pause
-    anon "Dapatkah Anda memikirkan cara apa pun yang dapat saya lakukan untuk membantunya?"
-
-    ricky f_smirk "Heh, bisakah kamu memberinya kartu hijau?"
-
-    anon "Tidak."
-
-    ricky "Kalau begitu menurutku tidak."
-
+    anon "Can you think of any way I could help her?"
+    ricky f_smirk "Heh, can you get her a green card?"
+    anon "No."
+    ricky "Then I think not."
     pause
-    anon f_thinking a_thinking "Saya bisa mencoba berbicara dengan walikota."
-
-    ricky f_surprised "Ide buruk!"
-
-    ricky f_sad "Kemungkinan besar Anda akan memperburuk keadaannya..."
-
+    anon f_thinking a_thinking "I could try talking to the mayor."
+    ricky f_surprised "Bad idea!"
+    ricky f_sad "You'll likely make things worse for her..."
     show anon f_worried
     pause
-    ricky f_thinking "Hmm, kamu bisa mencoba {b}berbicara dengan istri Walikota{/b}, menurutku..."
-
+    ricky f_thinking "Hmm, you could try {b}speaking with the mayor's wife{/b}, I suppose..."
     anon f_surprised "{b}Melonia{/b}?"
-
-    anon f_skeptical "Menurutmu dia mungkin bisa membantu?"
-
-    ricky f_normal "Bukan karena kebaikan, dia tidak akan..."
-
-    ricky "... Tetapi jika Anda dapat meyakinkan dia bahwa membantu {b}Consuela{/b} adalah kepentingan terbaiknya, ada kemungkinan dia akan melakukannya."
-
-    ricky "Apalagi jika itu membuat suaminya kesal."
-
-    ricky "Dia memiliki sedikit cinta padanya."
-
+    anon f_skeptical "You really think she might help?"
+    ricky f_normal "Not out of kindness, she won't..."
+    ricky "... But if you can convince her that it's in her best interest to help {b}Consuela{/b}, there's a chance she might do it."
+    ricky "Especially if it screws her husband over."
+    ricky "She has very little love for him."
     anon f_thinking "Hmm."
-
     pause
-    anon f_normal "Yah, sepertinya aku tidak punya ide yang lebih baik."
-
-    anon "{b}Saya akan pergi dan berbicara dengan istri Walikota{/b}."
-
+    anon f_normal "Well, it's not like I have a better idea."
+    anon "{b}I'll go and talk to the mayor's wife{/b}."
 
     if game.timer.is_day():
-        ricky "{b}Tunggu sampai malam{/b}, setelah dia berendam di bak mandi, dia merasa rileks."
+        ricky "{b}Wait for evening{/b}, after her soak in the tub has relaxed her."
 
-
-    anon a_idle @ a_wave "Terima kasih, {b}Ricky{/b}."
-
-    ricky f_smirk "Semoga berhasil, kawan."
-
+    anon a_idle @ a_wave "Thanks, {b}Ricky{/b}."
+    ricky f_smirk "Good luck, amigo."
     hide anon with dissolve
     return
 
 
 label con01_init_ricky.repeat:
-    ricky f_confused "Apakah Anda {b}berbicara dengan istri Walikota{/b}?"
-
-    anon "Belum."
-
-    ricky f_sad "Berhati-hatilah, ya?"
-
-    ricky "Dia lebih pintar dari yang dia biarkan."
-
-    anon "Saya akan berhati-hati."
-
+    ricky f_confused "Did you {b}speak with the mayor's wife{/b}?"
+    anon "Not yet."
+    ricky f_sad "Just be careful, yeah?"
+    ricky "She's smarter than she lets on."
+    anon "I'll be careful."
 
     if game.timer.is_day():
         hide anon with {'master': dissolve}
-        ricky "Dan ingatlah untuk {b}menunggu malam{/b}, amigo!"
-
+        ricky "And remember to {b}wait for evening{/b}, amigo!"
     else:
         hide anon with dissolve
     return
@@ -91,67 +57,39 @@ label con01_init_ricky.repeat:
 
 label con01_plan_ricky:
     show ricky f_smirk
-    anon f_normal "Kabar baik!"
-
-    anon "Saya rasa saya menemukan cara untuk melihat {b}Consuela{/b} bebas dari tempat ini."
-
-    ricky "Benar-benar?"
-
-    ricky "Bagaimana Anda mengaturnya?"
-
-    anon @ f_brag_closed "Istri Walikota bilang aku hanya perlu mencari pembantu pengganti."
-
+    anon f_normal "Good news!"
+    anon "I think I found a way to see {b}Consuela{/b} free of this place."
+    ricky "Really?"
+    ricky "How did you manage that?"
+    anon @ f_brag_closed "The mayor's wife says I just need to find a replacement maid."
     ricky @ -m_talk "..."
     ricky @ f_laugh "Hahahahahahaah!"
-
-    anon f_worried @ f_skeptical "Mengapa kamu tertawa?"
-
-    ricky "Siapa yang rela bekerja demi upah yang {b}Rumps{/b} membayar dan menerima {b}Mister Rump{/b} ketika dia menjadi tampan?"
-
-    anon "Baiklah, saya berharap Anda mengenal seseorang?"
-
+    anon f_worried @ f_skeptical "Why are you laughing?"
+    ricky "Who's going to willingly work for the wages {b}the Rumps{/b} pay and put up with {b}Mister Rump{/b} when he gets handsy?"
+    anon "Well, I was hoping you might know somebody?"
     ricky @ f_laugh "Pfft, hahahahaah!"
-
     anon f_sad_down @ -m_talk "..."
-    ricky "Bahkan imigran gelap pun punya standar."
-
-    ricky "Saya juga tidak yakin saya akan nyaman menyarankannya kepada mereka."
-
-    anon "{i}*Huh*{/i} Sial."
-
-    ricky "Percayalah, tak seorang pun akan tahan dengan tempat ini jika tidak terpaksa."
-
-    anon "Pasti ada seseorang!"
-
-    ricky "Ya benar."
-
-    ricky "Yang Anda butuhkan adalah {b}pelacur{/b} atau semacamnya..."
-
-    anon f_surprised "Pelacur?!"
-
-    ricky "Pelacur yang benar-benar putus asa."
-
-    anon f_worried "Kami tidak memiliki hal seperti itu di Summerville!"
-
+    ricky "Even illegal immigrants have standards."
+    ricky "I'm not sure I'd be comfortable suggesting it to them, either."
+    anon "{i}*Sigh*{/i} Crap."
+    ricky "Trust me, nobody is going to put up with this place if they don't have to."
+    anon "There's gotta be someone!"
+    ricky "Yeah, right."
+    ricky "What you need is a {b}prostitute{/b} or something..."
+    anon f_surprised "Prostitute?!"
+    ricky "A really desperate prostitute."
+    anon f_worried "We don't have anything like that in Summerville!"
     ricky "Hah!"
-
-    ricky "Kenaifanmu sungguh menggemaskan, kawan."
-
+    ricky "Your naiveté is quite adorable, amigo."
     anon @ -m_talk "..."
-    ricky "Ada lagi yang bisa saya bantu?"
-
-    anon "Tidak."
-
-    ricky "Tidak ada pelacur di Summerville..."
-
+    ricky "Anything else I can help you with?"
+    anon "No."
+    ricky "No prostitutes in Summerville..."
     hide ricky with {'master': dissolve}
     ricky "Hahahahahahaah!"
-
-    anon f_thinking a_thinking @ -m_talk "( Apakah kita benar-benar memiliki pekerja seks di kota kecil kita? )"
-
+    anon f_thinking a_thinking @ -m_talk "( Do we really have sex workers in our small town? )"
     pause
-    anon f_grin a_idle @ -m_talk "( {b}Saya kira tidak ada salahnya untuk memeriksanya{/b}. )"
-
+    anon f_grin a_idle @ -m_talk "( {b}I guess it wouldn't hurt to look into it{/b}. )"
     hide anon with dissolve
 
     $ M_consuela.trigger(T_con01_plan)

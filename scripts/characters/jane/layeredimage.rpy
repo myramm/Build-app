@@ -33,7 +33,6 @@ layeredimage jane:
         attribute b_dance "jane_body_b_dance"
 
 
-
     group mouth prefix 'm':
         attribute talk null
 

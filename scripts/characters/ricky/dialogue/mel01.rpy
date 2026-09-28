@@ -2,61 +2,41 @@ label mel01_hint_ricky:
     show ricky f_laugh
     show anon f_sad with dissolve:
         flip
-    ricky "Fiuh, itu sulit untuk ditonton, amigo..."
-
-    anon "Anda melihatnya, ya?"
-
-    ricky f_normal "Dia benar-benar menyukaimu."
-
-    anon "Ya."
-
-    ricky a_finger "Jangan khawatir, kawan."
-
-    ricky "Saya akan membantu Anda!"
-
+    ricky "Phew, that was hard to watch, amigo..."
+    anon "You saw that, huh?"
+    ricky f_normal "She really laid into you."
+    anon "Yeah."
+    ricky a_finger "Do not worry, amigo."
+    ricky "I will help you!"
     show ricky a_idle with dissolve
-    anon f_shy "Saya akan sangat menghargainya."
-
-    anon "Saya tidak tahu apa-apa tentang pemeliharaan bak mandi air panas."
-
-    ricky "Ini sangat sederhana."
-
-    ricky "Ayo, {b}ambil leaf skimmer{/b} di sana dan saya akan menunjukkannya kepada Anda."
-
+    anon f_shy "I'd really appreciate it."
+    anon "I don't know the first thing about hot tub maintenance."
+    ricky "It's very simple."
+    ricky "Come, {b}grab the leaf skimmer{/b} just there and I'll show you."
     hide ricky
     show anon f_confused:
         unflip
         xoffset 500
     with {'master': dissolve}
-    anon "{b}Peluncur daun{/b}?"
-
-    anon f_worried "Y-ya, oke."
-
+    anon "{b}Leaf skimmer{/b}?"
+    anon f_worried "Y-yeah, okay."
     hide anon with dissolve
     return
 
 
 label mel01_find_ricky:
     show anon f_worried with dissolve
-    ricky "Ada masalah, kawan?"
-
-    anon "Umm, apa sebenarnya {b}leaf skimmer{/b} itu?"
-
-    ricky @ f_laugh "Hehe, kamu serius?"
-
-    ricky "Itu adalah jaring kecil pada sebatang tongkat."
-
-    ricky @ a_finger_down "Di tanah, di sana."
-
+    ricky "Problem, amigo?"
+    anon "Umm, what's a {b}leaf skimmer{/b} exactly?"
+    ricky @ f_laugh "Heh, you serious?"
+    ricky "It's the little net on a stick."
+    ricky @ a_finger_down "On the ground, there."
     show anon f_worried_low
     pause .5
-    anon f_normal_low "Oh, begitu."
-
-    anon "Aku akan mengambilnya."
-
+    anon f_normal_low "Oh, I see."
+    anon "I'll grab it."
     ricky f_laugh "Go on, friend!" (show_native="Andale, amigo!")
-    ricky "{b}Ny. Rump{/b} akan segera kembali."
-
+    ricky "{b}Mrs. Rump{/b} will be returning soon."
     hide anon with dissolve
     return
 
@@ -64,56 +44,34 @@ label mel01_find_ricky:
 label mel01_help_ricky:
     show anon a_net with dissolve:
         xoffset -150
-    anon "Baiklah, saya punya {b}leaf skimmer{/b}."
-
-    ricky "Bagus sekali, kawan."
-
-    ricky "Sekarang, Anda hanya perlu menghilangkan semua hal buruk ini."
-
+    anon "Alright, I've got the {b}leaf skimmer{/b}."
+    ricky "Very good, amigo."
+    ricky "Now, you just need to fish out all of this nastiness."
     show anon f_disgusted_low
-    anon "Eh, apa-apaan ini..."
-
-    ricky "Ya, Walikota pasti sangat bersenang-senang tadi malam..."
-
-    anon "{b}Walikota Rump{/b} melakukan ini?"
-
-    ricky "Dia suka bersantai di malam hari."
-
-    anon "Menjijikkan sekali!"
-
-    ricky @ f_laugh "Hehe, ini bukan apa-apa..."
-
-    ricky f_smirk "... Kamu akan melihatnya setelah dia ditemani!"
-
-    anon f_sad_down "Ah, kawan."
-
-    ricky "Lihat sisi baiknya, ya?"
-
-    ricky "Setidaknya bayarannya sangat buruk."
-
+    anon "Eugh, what the hell..."
+    ricky "Si, the mayor must have enjoyed himself thoroughly last night..."
+    anon "{b}Mayor Rump{/b} did this?"
+    ricky "He likes to unwind at night."
+    anon "It's so disgusting!"
+    ricky @ f_laugh "Heh, this is nothing..."
+    ricky f_smirk "... You should see it after he has company over!"
+    anon f_sad_down "Aww, man."
+    ricky "Look on the bright side, eh?"
+    ricky "At least the pay is terrible."
     anon @ -m_talk "..."
     ricky f_laugh "Hahahaah!"
-
-    ricky "Hei, tidak ada yang bilang pekerjaan itu mudah, kawan."
-
-    anon f_disgusted_low "Ya, tapi ini menjijikkan."
-
-    ricky "Setelah Anda selesai melakukan skimming, saya akan mengajari Anda cara memeriksa level dan menyaring air."
-
-    anon f_tired "{i}*Huh*{/i} Oke."
-
-    ricky f_normal "Anda akan baik-baik saja."
-
-    ricky "Jangan pikirkan itu."
-
+    ricky "Hey, nobody said that the job would be easy, amigo."
+    anon f_disgusted_low "Yeah, but this is just gross."
+    ricky "Once you're done with the skimming, I'll teach you how to check the levels and filter the water."
+    anon f_tired "{i}*Sigh*{/i} Okay."
+    ricky f_normal "You'll be fine."
+    ricky "Just don't think about it."
     hide ricky with dissolve
     pause
     show anon b_dressed_back_cleaning a_net2 with dissolve:
         yoffset 155
-    anon "Jangan pikirkan itu..."
-
-    anon "... Temukan tempat bahagiamu."
-
+    anon "Don't think about it..."
+    anon "... Find your happy place."
 
     call minigame_hottub (1, 5)
 
@@ -127,16 +85,12 @@ label mel01_help_ricky:
     show ricky:
         xoffset 150
     with fade
-    ricky "Hei, kelihatannya cukup bagus!"
-
+    ricky "Hey, it's looking pretty good!"
     show anon a_net with dissolve
     pause
-    ricky f_smirk "Ehh, kamu melewatkan satu tempat."
-
+    ricky f_smirk "Ehh, you missed a spot."
     anon @ -m_talk "Hmm?"
-
-    ricky @ a_finger_tub "Di sana saja."
-
+    ricky @ a_finger_tub "Just there."
     show anon b_dressed_back_cleaning a_idle with dissolve:
         yoffset 155
     pause
@@ -144,8 +98,7 @@ label mel01_help_ricky:
         yoffset 0
     anon "!!!" with hpunch
     show anon a_net_condom_fling with dissolve
-    anon "UEGH!!!"
-
+    anon "EUGH!!!"
     show anon a_net f_surprised_teeth
     show ricky f_thinking:
         flip
@@ -153,102 +106,63 @@ label mel01_help_ricky:
     with dissolve
     pause
     ricky f_smirk @ -m_talk "Hmm."
-
     show ricky f_laugh with dissolve:
         xoffset 150
         unflip
-    ricky "Jarak yang bagus!"
-
+    ricky "Nice distance!"
     show ricky f_smirk
-    anon f_unimpressed a_net_sides "Ya terima kasih."
-
-    anon f_disgusted "Kau tahu, aku telah melakukan beberapa hal yang cukup kacau dalam hidupku..."
-
-    anon "... Tapi memancing kondom bekas dari bak mandi air panas milik walikota adalah sebuah level yang benar-benar baru."
-
-    ricky f_sad "Bisa jadi lebih buruk lagi, kawan."
-
-    anon "Saya tidak mengerti caranya."
-
-    ricky f_smirk "Anda bisa berada di sini ketika dia menggunakannya."
-
-    anon "Eh..."
-
+    anon f_unimpressed a_net_sides "Yeah, thanks."
+    anon f_disgusted "You know, I've done some pretty messed-up stuff in my life..."
+    anon "... But fishing used condoms out of the mayor's hot tub is like, a whole new level."
+    ricky f_sad "It could be worse, amigo."
+    anon "I don't see how."
+    ricky f_smirk "You could have been here when he used it."
+    anon "Eugh..."
     ricky @ f_laugh "Hahahaah!"
-
-    anon "... Aku tidak membutuhkan gambaran itu di kepalaku, {b}Ricky{/b}!"
-
-    ricky f_normal "Ayo, saya tunjukkan langkah selanjutnya."
-
-    anon f_worried "Oke."
-
+    anon "... I did not need that image in my head, {b}Ricky{/b}!"
+    ricky f_normal "C'mon, I show you the next step."
+    anon f_worried "Okay."
     show ricky b_pull_pants with dissolve:
         yoffset 50
     pause
     show ricky b_dressed a_chlorine with dissolve:
         yoffset 0
-    ricky "Oke, di sinilah keajaiban terjadi..."
-
-    anon @ f_confused "Apa itu?"
-
-    ricky "Klorin, teman."
-
+    ricky "Okay, here is where the magic happens..."
+    anon @ f_confused "What is that?"
+    ricky "Chlorine, amigo."
     show ricky a_chlorine_pour1 with dissolve
     pause
-    anon f_disgusted_wince "Wah, kuat sekali!"
-
-    ricky "Ya."
-
+    anon f_disgusted_wince "Wow, it's really strong!"
+    ricky "Si."
     show anon f_worried_low
-    ricky "Ini lima kali lebih kuat dari biasanya."
-
-    ricky "{b}Ny. Rump{/b} memesannya khusus dari Meksiko."
-
-    anon f_worried "Ini membakar mataku..."
-
-    ricky "Heh, iya... Hati-hati jangan terlalu banyak menghirupnya."
-
-    ricky "Ini akan mengubah bagian dalam Anda menjadi menempel."
-
+    ricky "It's five times stronger than usual."
+    ricky "{b}Mrs. Rump{/b} has it special-ordered from Mexico."
+    anon f_worried "It's burning my eyes..."
+    ricky "Heh, yeah... Be careful you do not inhale too much."
+    ricky "It will turn your insides to paste."
     anon f_surprised "!!!"
-    anon "Apakah kamu serius?!"
-
-    ricky @ f_laugh "Tentu saja tidak!"
-
-    ricky "Kamu sangat mudah tertipu, amigo!"
-
+    anon "Are you serious?!"
+    ricky @ f_laugh "Of course not!"
+    ricky "You are so gullible, amigo!"
     anon f_unimpressed @ -m_talk "..."
     pause
-    anon "Sheesh, berapa banyak yang akan kamu tuangkan ke sana?"
-
-    ricky "Tentu saja semuanya."
-
-    ricky "Tidak ada hal yang berlebihan, percayalah."
-
-    ricky a_chlorine_pour2 "Anda akan berterima kasih kepada saya nanti."
-
+    anon "Sheesh, how much are you going to pour in there?"
+    ricky "All of it, of course."
+    ricky "There's no such thing as too much, trust me."
+    ricky a_chlorine_pour2 "You'll thank me later."
     anon "Hmm?"
-
-    ricky a_hips @ a_chlorine_throw "Baiklah, ini waktunya untuk langkah terakhir."
-
-    anon "Oke."
-
+    ricky a_hips @ a_chlorine_throw "Alright, it's time for the last step."
+    anon "Okay."
     show ricky b_dressed_back_jacuzzi with dissolve:
         yoffset 155
-    ricky "Kita tinggal nyalakan jetnya dan beri waktu sekitar sepuluh menit untuk menyaring airnya."
-
-    anon "Itu saja?"
-
+    ricky "We just turn on the jets and give it about ten minutes to filter the water."
+    anon "That's it?"
     show ricky b_dressed with dissolve:
         yoffset 0
-    ricky @ f_laugh "Itu dia!"
-
-    ricky "Sepotong kue, ya?"
-
-    anon "Ya, menurutku."
-
-    melonia "{i}*Ehem*{/i}"
-
+    ricky @ f_laugh "That's it!"
+    ricky "Piece of cake, eh?"
+    anon "Yeah, I guess."
+    melonia "{i}*Ahem*{/i}"
     show anon f_shock with dissolve:
         flip
         xoffset -250
@@ -257,60 +171,36 @@ label mel01_help_ricky:
     show melonia b_swimsuit f_normal with dissolve:
         flip
         xoffset -100
-    melonia "Bagaimana kabarmu di sini, {b}Ricky{/b}?"
-
-    ricky @ f_laugh "Ya, bagus sekali, Senora."
-
-    ricky "Anak baru belajar dengan cepat."
-
+    melonia "How's it going out here, {b}Ricky{/b}?"
+    ricky @ f_laugh "Si, es very good, señora."
+    ricky "The new kid learns quickly."
     melonia @ f_annoyed -m_talk "Mhmm."
-
-    melonia "Saya percaya dia bisa belajar tepat waktu mulai sekarang?"
-
-    anon "Y-ya, Bu."
-
-    melonia "Pastikan dia mendapat seragam yang pantas."
-
-    ricky "Dengan senang hati, Bu."
-
-    melonia "Dan saya ingin Anda tahu, {b}Hector{/b}, bahwa uang Anda untuk hari ini akan disalurkan ke {b}Ricky{/b}..."
-
+    melonia "I trust he can learn to be on time from now on then?"
+    anon "Y-yes, ma'am."
+    melonia "See to it that he gets a proper uniform."
+    ricky "It would be my pleasure, ma'am."
+    melonia "And I want you to know, {b}Hector{/b}, that your money for the day is going to {b}Ricky{/b}..."
     anon f_surprised @ -m_talk "Hmm?"
-
-    melonia "... Karena dia harus meluangkan waktu untuk mengajari Anda cara melakukan pekerjaan Anda."
-
-    ricky f_confused a_up "T-tidak, tidak apa-apa..."
-
-    ricky "... Dia melakukan sebagian besar pekerjaan."
-
+    melonia "... Since he had to take time out of his day to teach you how to do your job."
+    ricky f_confused a_up "N-no, it's okay..."
+    ricky "... He did most of the work."
     show ricky a_idle with dissolve
-    melonia f_annoyed "Omong kosong!"
-
-    melonia "Saya tidak akan memberi penghargaan kepada salah satu karyawan saya atas keterlambatan dan ketidakmampuannya!"
-
-    anon f_worried_left "Tidak apa-apa, {b}Ricky{/b}."
-
-    anon "Saya tidak peduli."
-
+    melonia f_annoyed "Nonsense!"
+    melonia "I will not reward one of my employees for tardiness and ineptitude!"
+    anon f_worried_left "It's fine, {b}Ricky{/b}."
+    anon "I don't care."
     ricky "Ehh."
-
     show anon f_worried
-    melonia "Kembalilah dan temui aku setelah kamu selesai dengannya."
-
-    melonia a_shoulder "Aku ingin kamu bekerja di pundakku lagi."
-
-    ricky f_normal "Ya, señora."
-
+    melonia "Come back and see me once you're finished with him."
+    melonia a_shoulder "I'd like you to work on my shoulders again."
+    ricky f_normal "Si, señora."
     show melonia a_idle with dissolve
     show anon f_worried_left
-    ricky a_finger "Ayo, teman-teman."
-
-    ricky @ f_laugh "Sudah waktunya bagi Anda untuk naik tempat tidur gantung!"
-
+    ricky a_finger "Come along, amigo."
+    ricky @ f_laugh "It's time for you to hammock up!"
     hide ricky with dissolve
     show melonia f_smirk
-    anon f_worried "B-tempat tidur gantung?"
-
+    anon f_worried "H-hammock up?"
     hide anon with dissolve
     show melonia f_smirk_down
     pause
@@ -321,126 +211,79 @@ label mel01_help_ricky:
     show ricky a_finger:
         flip
     with fade
-    ricky "Sekarang, kami harus menemukan tempat tidur gantung yang sempurna untuk Anda!"
-
-    anon "{b}Ricky{/b}, menurutku tidak-"
-
-    ricky "Percayalah padaku, temanku!"
-
-    ricky "Anda akan terlihat luar biasa!"
-
+    ricky "Now, we must find the perfect hammock for you!"
+    anon "{b}Ricky{/b}, I really don't think-"
+    ricky "Trust me, my friend!"
+    ricky "You're going to look fabulous!"
     show ricky f_laugh a_pocket with dissolve
-    anon f_worried_low "Ehh, apa yang kamu-"
-
-    ricky a_hammock_bunch f_smirk "Manjakan matamu, amigo!"
-
+    anon f_worried_low "Ehh, what are you-"
+    ricky a_hammock_bunch f_smirk "Feast your eyes, amigo!"
     anon f_surprised_low a_up "!!!"
-    anon f_worried a_sides "Apakah Anda hanya membawanya kemana-mana sepanjang hari?"
-
-    ricky f_confused "Ya?"
-
+    anon f_worried a_sides "Do you just carry those around with you all day?"
+    ricky f_confused "Si?"
     pause
-    ricky f_smirk "Saya ingin membiarkan pilihan saya tetap terbuka."
-
-    ricky @ f_smirk_wink "Prajurit Aztec kecilku suka memakai aksesori!"
-
+    ricky f_smirk "I like to keep my options open."
+    ricky @ f_smirk_wink "My little Aztec warrior likes to accessorize!"
     anon @ a_facepalm f_sad_down -m_talk "..."
-    ricky "Jadi yang mana?!"
-
-    anon f_worried_low "Sobat, aku tidak tahu..."
-
-    ricky "Secara pribadi, menurut saya yang berwarna merah muda akan terlihat sangat bagus."
-
-    ricky @ f_laugh "Dan rendanya akan terasa nyaman di paket Anda."
-
-    anon f_worried "Tidak ada warna merah muda."
-
-    ricky f_confused "Kalau begitu yang ungu?"
-
+    ricky "So which one shall it be?!"
+    anon f_worried_low "Man, I don't know..."
+    ricky "Personally, I think the pink one would look very nice."
+    ricky @ f_laugh "And the lace will feel good against your package."
+    anon f_worried "No pink."
+    ricky f_confused "The purple then?"
     show anon f_tired
-    ricky f_smirk @ f_smirk_wink "{b}Ny. Bokong{/b} tidak akan mampu menahan bola-bola berbulu halus itu ya?"
-
+    ricky f_smirk @ f_smirk_wink "{b}Mrs. Rump{/b} will not be able to resist the fuzzy balls, eh?"
     anon f_unimpressed @ -m_talk "..."
-    ricky @ f_laugh "Mereka akan menghipnotisnya saat Anda bekerja."
-
-    anon f_worried_low "Ehh, menurutku itu... Agak terlalu..."
-
-    ricky "Luar biasa?"
-
-    anon "... Flamboyan..."
-
+    ricky @ f_laugh "They will hypnotize her as you work."
+    anon f_worried_low "Ehh, I think those are... A bit too..."
+    ricky "Fabulous?"
+    anon "... Flamboyant..."
     show ricky f_sad
-    anon f_worried "... Untukku."
-
-    ricky "Mari kita sepakat untuk tidak setuju mengenai hal itu."
-
-    anon f_worried_low "Mungkin yang hijau?"
-
-    ricky f_confused "Anda ingin yang hijau?"
-
-    ricky "Tapi itu sangat polos dan membosankan?"
-
-    ricky "aku belum pernah memakainya sekali pun..."
-
-    anon f_surprised @ f_laugh "SEMPURNA!"
-
+    anon f_worried "... For me."
+    ricky "Let's agree to disagree about that."
+    anon f_worried_low "Maybe the green one?"
+    ricky f_confused "You want the green?"
+    ricky "But it's so plain and boring?"
+    ricky "I've never worn it even once..."
+    anon f_surprised @ f_laugh "PERFECT!"
     show ricky f_sad
-    anon "Eh, maksudku..."
-
-    anon f_worried "{i}*Ahem*{/i} Saya rasa saya akan ehh... Cobalah yang itu."
-
+    anon "Err, I mean..."
+    anon f_worried "{i}*Ahem*{/i} I think I'll ehh... Give that one a try."
     ricky @ -m_talk "..."
-    ricky a_hammock_bunch_shrug "Sesuaikan dirimu."
-
+    ricky a_hammock_bunch_shrug "Suit yourself."
     show ricky a_idle
     show anon a_hammock
     with dissolve
-    anon f_worried_low "Terima kasih."
-
-    anon "Saya rasa..."
-
-    ricky f_smirk "Sekarang, mari kita lihat apakah cocok."
-
-    anon f_surprised "Apa sekarang?"
-
-    ricky "Tidak ada waktu seperti sekarang."
-
-    anon f_disgusted "Ehh... T-tidak, tidak apa-apa."
-
+    anon f_worried_low "Thanks."
+    anon "I guess..."
+    ricky f_smirk "Now, let's see if it fits."
+    anon f_surprised "What, right now?"
+    ricky "No time like the present."
+    anon f_disgusted "Ehh... N-no, that's okay."
     show anon a_backpack f_looking_down with dissolve
     pause
-    anon f_worried a_idle "Saya pikir saya akan menyimpannya untuk lain kali."
-
-    ricky f_sad "Aww, kamu cukup menggoda, amigo."
-
+    anon f_worried a_idle "I think I'll save that for next time."
+    ricky f_sad "Aww, you're quite the tease, amigo."
     anon @ -m_talk "..."
     melonia "{b}Ricky{/b}!!"
-
     show anon f_surprised
-    melonia "Tidak bijaksana membuatku menunggu!!"
-
-    ricky a_whisper f_normal "Ya, señora!"
-
-    ricky a_idle "Lain kali saja."
-
-    ricky "Hati-hati, kawan."
-
-    anon f_normal "Y-ya, sampai jumpa, {b}Ricky{/b}."
-
+    melonia "It's unwise to keep me waiting!!"
+    ricky a_whisper f_normal "Si, señora!"
+    ricky a_idle "Next time then."
+    ricky "Take care, amigo."
+    anon f_normal "Y-yeah, see ya, {b}Ricky{/b}."
     hide ricky
     show anon a_wave:
         unflip
         xoffset 500
     with {'master': dissolve}
-    ricky "Ini aku datang, señora!"
-
+    ricky "Here I come, señora!"
     show anon a_backpack2 f_looking_down with dissolve:
         flip
         xoffset 0
     pause
     anon a_hammock f_worried_low @ -m_talk "..."
-    anon f_sad_down "{i}*Huh*{/i} Apa yang telah aku lakukan?"
-
+    anon f_sad_down "{i}*Sigh*{/i} What have I gotten myself into?"
     hide anon with dissolve
     return
 # Decompiled by unrpyc: https://github.com/CensoredUsername/unrpyc

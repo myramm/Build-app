@@ -12,673 +12,433 @@ label tony_button_pizzeria:
             show tony a_point
         with dissolve
         if M_anon.finished_state(S_ano11_bone):
-            tony "'Ey, itu temanku!"
-
+            tony "'Ey, there's my guy!"
             show anon f_grin
-            tony a_idle "Bagaimana kabarmu, juara?!"
-
+            tony a_idle "How ya doin', champ?!"
         else:
-            tony "'Hei, jagoan!"
-
+            tony "'Ey there, champ!"
             show anon f_grin
-            tony a_idle "Anda siap mengantarkan pizza?"
-
+            tony a_idle "You ready to deliver some pizza?"
         show anon f_normal
     else:
         show anon with dissolve
         if M_anon.finished_state(S_ano11_bone) and not M_maria.pregnancy:
-            tony "'Hei, jagoan!"
-
-            tony "Jika Anda mencari {b}Maria{/b}, dia ada di ruang toko."
-
+            tony "'Ey there, champ!"
+            tony "If you're lookin' for {b}Maria{/b}, she's in the store room."
         else:
-            tony "Kamu masih di sini?"
-
-            tony "Anda harus pulang."
-
+            tony "You're still here?"
+            tony "You should head on home."
 
     label tony_button_pizzeria.choice:
     if M_anon.finished_state(S_ano11_bone):
         menu:
-            "Kotak kunci." if M_anon.is_state(S_ano14_tony):
+            "Lockbox." if M_anon.is_state(S_ano14_tony):
                 jump ano14_tony_tony_lockbox
 
-            "Pesan pizza." if game.timer.is_day():
+            "Order pizza." if game.timer.is_day():
                 jump tony_dialogue_order
 
-            "Butuh bantuan?" if game.timer.is_dark():
+            "Need help?" if game.timer.is_dark():
                 jump tony_button_pizzeria.help
-            "Tatomu?":
+            "Your tattoo?":
 
                 jump tony_button_pizzeria.tattoo
 
-            "{b}Maria{/b} di sekitar?" if game.timer.is_day():
+            "{b}Maria{/b} around?" if game.timer.is_day():
                 jump tony_button_pizzeria.curious
 
-            "{b}Maria{/b} di sekitar?" if game.timer.is_dark() and M_maria.pregnancy.stage > 4:
+            "{b}Maria{/b} around?" if game.timer.is_dark() and M_maria.pregnancy.stage > 4:
                 jump tony_button_pizzeria.babies
-            "Bagaimana Anda dan {b}Maria{/b} bertemu?":
+            "How did you and {b}Maria{/b} meet?":
 
                 jump tony_button_pizzeria.maria
 
-            "Saya harus pergi." if game.timer.is_day():
+            "I should go." if game.timer.is_day():
                 pass
 
-            "Baru saja check-in." if game.timer.is_dark():
+            "Just checking in." if game.timer.is_dark():
                 pass
     else:
 
         menu:
-            "Anda yakin!" if game.timer.is_day():
+            "You bet!" if game.timer.is_day():
                 jump tony_button_pizzeria.deliver
 
-            "Pesan pizza." if game.timer.is_day():
+            "Order pizza." if game.timer.is_day():
                 jump tony_dialogue_order
 
-            "Butuh bantuan?" if game.timer.is_dark():
+            "Need help?" if game.timer.is_dark():
                 jump tony_button_pizzeria.help
 
-            "Mafia Italia." if M_anon.finished_state(S_ano06_cook):
+            "Italian Mafia." if M_anon.finished_state(S_ano06_cook):
                 jump tony_button_pizzeria.italians
 
-            "Tatomu?" if not M_anon.finished_state(S_ano06_cook):
+            "Your tattoo?" if not M_anon.finished_state(S_ano06_cook):
                 jump tony_button_pizzeria.tattoo
-            "Rusia.":
+            "The Russians.":
 
                 jump tony_button_pizzeria.russians
 
-            "Bagaimana Anda dan {b}Maria{/b} bertemu?" if M_maria.met:
+            "How did you and {b}Maria{/b} meet?" if M_maria.met:
                 jump tony_button_pizzeria.maria
 
-            "Adopsi?" if M_anon.between_states(S_ano08_work, S_ano10_tony):
+            "Adoption?" if M_anon.between_states(S_ano08_work, S_ano10_tony):
                 jump tony_button_pizzeria.adoption
 
-            "Ada informasi belum?" if M_anon.between_states(S_ano08_work, S_ano10_tony):
+            "Any information yet?" if M_anon.between_states(S_ano08_work, S_ano10_tony):
                 jump tony_button_pizzeria.info
 
-            "Saya harus pergi." if game.timer.is_day():
+            "I should go." if game.timer.is_day():
                 pass
 
-            "Selamat malam." if game.timer.is_dark():
+            "Good night." if game.timer.is_dark():
                 pass
 
     if game.timer.is_day():
         if M_anon.finished_state(S_ano11_bone):
-            anon f_normal "Saya harus pergi."
-
-            tony f_normal "Ahh, baiklah, jagoan."
-
-            anon "Sampai jumpa nanti?"
-
-            tony "Anda yakin."
-
+            anon f_normal "I should go."
+            tony f_normal "Ahh, alright, champ."
+            anon "I'll see you later?"
+            tony "You bet."
         else:
-            anon f_normal "Sebenarnya, ada beberapa hal lain yang perlu aku urus saat ini..."
-
-            tony f_normal "Apa, kamu akan pergi?"
-
-            anon "Y-ya, tapi aku akan segera kembali."
-
-            anon "Saya berjanji."
-
-            tony "Ck, cepat ya?"
-
-            tony @ f_laugh a_belly "Pizza ini mulai dingin!"
-
-            anon "Ya, tuan!"
-
+            anon f_normal "Actually, I have a few other things I need to take care of right now..."
+            tony f_normal "What, you're leaving?"
+            anon "Y-yeah, but I'll be back real soon."
+            anon "I promise."
+            tony "Tsk, make it quick, will ya?"
+            tony @ f_laugh a_belly "These pizzas are gettin' cold!"
+            anon "Yes, sir!"
     else:
         if M_anon.finished_state(S_ano11_bone):
-            anon f_normal "Baru saja check-in."
-
-            tony f_normal "Tidak perlu khawatir tentang saya."
-
-            tony "Pulanglah ke ibumu, ya?"
-
-            tony "Sampai jumpa besok."
-
+            anon f_normal "Just checking in."
+            tony f_normal "No need to worry about me."
+            tony "Get on home to your ma, eh?"
+            tony "I'll see ya tomorrow."
         else:
-            anon f_normal @ a_wave "Selamat malam."
-
-            tony f_normal a_idle @ a_wave "Sampai jumpa besok, juara."
-
+            anon f_normal @ a_wave "Good night."
+            tony f_normal a_idle @ a_wave "See you tomorrow, champ."
 
     hide anon with dissolve
     return
 
 
 label tony_button_pizzeria.adoption:
-    anon f_normal "Jadi, Anda sedang memikirkan tentang adopsi?"
-
-    tony f_suspicious @ f_eyeroll a_frustrated "Oh bagus, sekarang kamu akan mulai membuat keberanianku tentang adopsi juga?"
-
-    anon @ f_worried "Tidak, menurutku {b}Tina{/b} membuat beberapa poin bagus..."
-
-    anon "Anda akan tahu persis apa yang mereka alami."
-
-    tony f_sad "Ya, aku tidak tahu tentang itu..."
-
-    tony "Saya yakin sistemnya telah banyak berubah selama tiga puluh tahun terakhir ini..."
-
-    tony "... Dan bahkan jika belum, itu tidak mengubah fakta bahwa saya lebih suka membesarkan anak-anak {b}Maria{/b} daripada anak-anak orang asing yang belum pernah saya temui."
-
+    anon f_normal "So, you're thinking about adoption?"
+    tony f_suspicious @ f_eyeroll a_frustrated "Oh great, now you're gonna start bustin' my balls about adoption too?"
+    anon @ f_worried "No, I just think {b}Tina{/b} made some decent points..."
+    anon "You would know exactly what they're going through."
+    tony f_sad "Yeah, I dunno about that..."
+    tony "I'm sure the system has changed quite a bit over these past thirty years..."
+    tony "... And even if it hasn't, it don't change the fact that I'd rather raise {b}Maria{/b}'s kids than some stranger's I never met."
     pause
-    tony "Mungkin itu membuatku menjadi orang jahat tapi itulah yang aku rasakan."
-
-    anon "Tidak, itu tidak membuatmu menjadi orang jahat, {b}Tony{/b}."
-
+    tony "Maybe that makes me a bad person but it's how I feel."
+    anon "No, it doesn't make you a bad person, {b}Tony{/b}."
     pause
-    anon @ f_confused "Jadi Anda lebih memilih jalur bank sperma?"
-
-    tony "Ya tapi {b}Maria{/b} tidak ingin mendengar apa pun tentang itu."
-
+    anon @ f_confused "So you'd rather go the sperm bank route?"
+    tony "Yeah but {b}Maria{/b} don't wanna hear nothin' about it."
     pause
-    anon "Jadi apa yang akan kamu lakukan?"
-
-    tony "Kalahkan aku."
-
-    tony "Itu adalah sesuatu yang dia dan aku harus pikirkan setelah kita menyelesaikan masalah kecilmu di Rusia..."
-
+    anon "So what are you gonna do then?"
+    tony "Beats me."
+    tony "It's something her and I will have to figure out after we've dealt with your little Russian problem..."
     jump tony_button_pizzeria.choice
 
 
 label tony_button_pizzeria.babies:
-    anon f_normal "Dimana {b}Maria{/b}?"
-
+    anon f_normal "Where's {b}Maria{/b}?"
     show tony f_normal
     if M_maria.pregnancy.baby_gender == 'boy':
-        tony "Si kecil mulai rewel jadi dia membawanya pulang."
-
-        tony "Aku hanya berharap dia tidur sepanjang malam kali ini..."
-
+        tony "The little one was gettin' cranky so she took him on home."
+        tony "I just hope he sleeps through the night this time..."
     elif M_maria.pregnancy.baby_gender == 'girl':
-        tony "Si kecil mulai rewel jadi dia membawanya pulang."
-
-        tony "Aku hanya berharap dia tidur sepanjang malam kali ini..."
-
+        tony "The little one was gettin' cranky so she took her on home."
+        tony "I just hope she sleeps through the night this time..."
     else:
-        tony "Anak-anak kecil mulai rewel jadi dia membawanya pulang."
-
-        tony "Aku hanya berharap mereka tidur sepanjang malam kali ini..."
-
+        tony "The little ones were gettin' cranky so she took 'em on home."
+        tony "I just hope they sleep through the night this time..."
     jump tony_button_pizzeria.choice
 
 
 label tony_button_pizzeria.curious:
-    anon f_normal "{b}Maria{/b} di sekitar?"
-
-    tony f_suspicious "Ya, tentu saja."
-
-    tony @ a_point_back "Dia ada di dapur, seperti biasa."
-
-    tony f_smirk @ a_frustrated "Kenapa kamu bertanya?"
-
-    anon f_shy @ a_behind_head "Oh, aku... Uhh-"
-
-    anon "{i}*Ahem*{/i} Penasaran saja."
-
-    tony @ a_belly f_laugh "Hah, penasaran katanya..."
-
-    tony "Hanya saja, jangan terlalu keras, ya?"
-
-    tony @ a_point f_smirk_wink "Tidak ingin pelanggan mendengarnya."
-
+    anon f_normal "{b}Maria{/b} around?"
+    tony f_suspicious "Yeah, of course."
+    tony @ a_point_back "She's in the kitchen, like usual."
+    tony f_smirk @ a_frustrated "Why ya askin'?"
+    anon f_shy @ a_behind_head "Oh, I was... Uhh-"
+    anon "{i}*Ahem*{/i} Just curious."
+    tony @ a_belly f_laugh "Hah, curious he says..."
+    tony "Just don't be too loud, eh?"
+    tony @ a_point f_smirk_wink "Don't want the customers hearin'."
     anon @ -m_talk "..."
     jump tony_button_pizzeria.choice
 
 
 label tony_button_pizzeria.deliver:
-    anon f_normal "Anda yakin!"
-
-    tony f_normal @ f_laugh "Itu yang ingin saya dengar!"
-
-    tony @ a_point "Aku punya beberapa pai yang ada di konter; dimasak dengan baik dan siap untuk dibawa pergi!"
-
-    tony @ f_smirk "Pastikan kamu menempatkannya di tempat yang benar, capisce?"
-
-    anon @ a_salute f_grin "Ya, tuan!"
-
+    anon f_normal "You bet!"
+    tony f_normal @ f_laugh "That's what I like to hear!"
+    tony @ a_point "I've got some pies sittin' right over there on the counter; cooked up nice and rarin' to go!"
+    tony @ f_smirk "Make sure you get 'em to the right place, capisce?"
+    anon @ a_salute f_grin "Yes, sir!"
     hide anon with dissolve
     tony "Attaboy!"
-
-    tony @ a_finger_up "Anda akan langsung ke puncak, jagoan."
-
+    tony @ a_finger_up "You're going straight to the top, champ."
     return
 
 
 label tony_button_pizzeria.help:
-    anon f_normal "Butuh bantuan?"
-
-    tony f_normal "Nah, menyapu membuatku rileks."
-
-    tony "Saya mengerti."
-
-    anon "Baiklah."
-
+    anon f_normal "Need help?"
+    tony f_normal "Nah, sweepin' relaxes me."
+    tony "I got this."
+    anon "Alright."
     jump tony_button_pizzeria.choice
 
 
 label tony_button_pizzeria.info:
-    anon f_normal "Ada informasi belum?"
-
-    tony f_suspicious "Dengar, aku tahu kamu sangat bersemangat..."
-
-    tony "... Tapi Eddie bisa menjadi bajingan yang sangat licin jika dia tidak ingin ditemukan."
-
+    anon f_normal "Any information yet?"
+    tony f_suspicious "Look, I know you're eager..."
+    tony "... But Eddie can be a real slippery bastard when he don't wanna be found."
     anon f_worried @ -m_talk "..."
-    tony "Saya berjanji, Anda akan menjadi orang pertama yang mengetahuinya begitu saya mendengar kabar darinya."
-
-    tony f_normal @ a_point "Terus lakukan apa yang sedang kamu lakukan, jagoan."
-
-    tony "Setiap pizza yang Anda kirimkan membantu {b}Maria{/b} dan saya lebih dari yang Anda tahu."
-
-    anon f_normal "Ya baiklah."
-
+    tony "I promise, you'll be the first person to know the second I hear from him."
+    tony f_normal @ a_point "Just keep doin' what you're doin', champ."
+    tony "Every pizza you deliver helps {b}Maria{/b} and I more than you know."
+    anon f_normal "Yeah, okay."
     jump tony_button_pizzeria.choice
 
 
 label tony_button_pizzeria.italians:
-    anon f_worried "Apa yang Anda ketahui tentang Mafia Italia?"
-
-    tony f_sad a_sides "Heh, {b}Maria{/b} memperingatkanku bahwa dia membocorkan rahasia itu."
-
-    anon "Jadi itu benar kan?"
-
-    tony "Ya itu benar."
-
+    anon f_worried "What do you know about the Italian Mafia?"
+    tony f_sad a_sides "Heh, {b}Maria{/b} warned me she spilled the beans on that."
+    anon "So it's true then?"
+    tony "Yeah, it's true."
     pause
-    anon "Bagaimana Anda bisa terlibat dengan massa, {b}Tony{/b}?"
-
-    tony f_suspicious "Yah, sepertinya tidak banyak peluang di luar sana untuk anak yatim piatu yang tidak berpendidikan..."
-
-    tony "Setelah panti asuhan mengirim kami berkemas, kami terpaksa melakukan apa pun yang kami bisa untuk menjaga tempat tinggal dan makanan di perut kami."
-
+    anon "How did you get mixed up with the mob, {b}Tony{/b}?"
+    tony f_suspicious "Well, it's not like there was a whole lot of opportunities out there for orphan boys with no education..."
+    tony "After the orphanage sent us packin', we were forced to do whatever we could to keep a roof over our heads and food in our bellies."
     anon @ -m_talk "..."
-    tony "Hanya masalah waktu sampai kita terjerumus ke dalam kejahatan."
-
+    tony "It was only a matter of time 'til we fell into crime."
     anon @ -m_talk "..."
-    tony f_sad "Jadi, apa yang ingin kamu ketahui?"
-
+    tony f_sad "So, what do you wanna know?"
 
     menu tony_button_pizzeria.mob:
-        "Bagaimana Anda bergabung?":
+        "How did you join?":
 
             jump tony_button_pizzeria.join
-        "Apakah kamu sudah membunuh orang?":
+        "Have you killed people?":
 
             jump tony_button_pizzeria.kill
-        "Tatonya?":
+        "The tattoo?":
 
             jump tony_button_pizzeria.trinacria
-        "Mengapa kamu berhenti?":
+        "Why did you quit?":
 
             jump tony_button_pizzeria.quit
-        "Itu sudah cukup.":
+        "That's enough.":
 
             pass
 
-    anon f_normal "Saya tidak perlu mendengar lagi."
-
-    tony f_normal a_idle "Baiklah, bagus."
-
+    anon f_normal "I don't need to hear any more."
+    tony f_normal a_idle "Alright, good."
     jump tony_button_pizzeria.choice
 
 
 label tony_button_pizzeria.join:
-    anon f_worried "Bagaimana Anda bergabung?"
-
-    tony f_suspicious "Oh, itu yang dilakukan Luigi."
-
-    tony "Dia biasa naik kereta bawah tanah bolak-balik, pencopet."
-
-    tony "Dan suatu hari dia tertangkap tangannya di saku Lorenzo Rossi."
-
-    anon @ f_confused "Siapa Lorenzo Rossi?"
-
-    tony "Dia adalah bandar untuk bos mafia."
-
+    anon f_worried "How did you join?"
+    tony f_suspicious "Oh, that was Luigi's doin'."
+    tony "He used to ride the subway back and forth, pickpocketin' folks."
+    tony "And one day he got caught with his hand in Lorenzo Rossi's pocket."
+    anon @ f_confused "Who's Lorenzo Rossi?"
+    tony "He was a bookie for the mob boss."
     anon "Oh."
-
-    tony @ a_frustrated "Ya, Luigi mengira dia sudah mati, pastinya..."
-
-    tony "... Tapi kemudian pria itu bangkit dan menawarinya pekerjaan!"
-
-    anon "Benar-benar?"
-
-    tony "Ya."
-
-    tony "Luigi memutuskan dia lebih suka menjadi karyawan daripada mati, jadi dia menerimanya."
-
-    anon "Masuk akal."
-
+    tony @ a_frustrated "Yeah, Luigi thought he was a dead man, for sure..."
+    tony "... But then the guy up and offers him a job instead!"
+    anon "Really?"
+    tony "Yup."
+    tony "Luigi decided he'd rather be an employee than a dead man, so he took it."
+    anon "Makes sense."
     pause
-    tony "Lalu beberapa minggu kemudian, dia mengajakku bergabung."
-
-    anon @ f_surprised "Begitu saja?"
-
-    tony "Ya, kurang lebih."
-
-    tony "Saya harus membuktikan bahwa saya bisa menangani diri saya sendiri terlebih dahulu; tapi kamu kenal aku..."
-
-    tony f_normal @ f_smirk_wink a_fists "Itu tidak masalah."
-
+    tony "Then a few weeks later, he brought me into the fold."
+    anon @ f_surprised "Just like that?"
+    tony "Yeah, more or less."
+    tony "I had to prove I could handle myself first; but you know me..."
+    tony f_normal @ f_smirk_wink a_fists "That wasn't no problem."
     pause
-    anon "Anda tidak ragu untuk bergabung?"
-
-    tony f_suspicious "Oh, aku punya banyak sekali!"
-
-    tony "Tapi kemudian Anda melihat sekilas betapa menguntungkannya kejahatan terorganisir dan keraguan Anda langsung hilang begitu saja, tahu apa yang saya maksud?"
-
+    anon "You didn't have any reservations about joining up?"
+    tony f_suspicious "Oh, I had tons of 'em!"
+    tony "But then you get a glimpse of how lucrative organized crime can be and your reservations fly right out the window, know what I mean?"
     anon @ -m_talk "..."
-    tony "Aku tahu ini adalah kesempatanku untuk mengukir sesuatu yang baik untuk {b}Maria{/b} dan diriku sendiri."
-
-    tony "Buatlah kehidupan yang layak untuk kami dan kami, lho?"
-
+    tony "I knew it was my chance to carve out somethin' nice for {b}Maria{/b} and myself."
+    tony "Make a decent life for us and ours, ya know?"
     jump tony_button_pizzeria.mob
 
 
 label tony_button_pizzeria.kill:
-    anon f_worried "Apakah kamu sudah membunuh orang?"
-
-    tony f_suspicious "Sheesh, kamu baru saja menebaknya, ya?"
-
-    tony "Kau tahu, urusan mafia bukan soal membunuh orang, jagoan."
-
-    tony "Ini lebih tentang memeras mereka."
-
-    tony @ a_money "Mereka menginginkan uang; bukan darah."
-
+    anon f_worried "Have you killed people?"
+    tony f_suspicious "Sheesh, you're just divin' right into it, eh?"
+    tony "You know, the mafia's business isn't about killin' people, champ."
+    tony "It's more about extortin' 'em."
+    tony @ a_money "They want money; not blood."
     anon @ -m_talk "..."
-    tony @ a_fists "Kekerasan hanyalah produk sampingan."
-
-    anon "Jadi, apakah itu jawaban ya?"
-
-    tony f_sad "{i}*Sigh*{/i} Nak, aku melakukan apa yang harus kulakukan untuk bertahan hidup."
-
-    tony "Itu adalah bisnis yang buruk dan saya telah mengalami hal yang sangat buruk."
-
-    tony f_sad_down "Hal-hal yang harus saya jalani selama sisa hari-hari saya."
-
+    tony @ a_fists "Violence is just a byproduct."
+    anon "So, is that a yes?"
+    tony f_sad "{i}*Sigh*{/i} Kid, I did what I had to do to survive."
+    tony "It was ugly business and I've been party to some real awfulness."
+    tony f_sad_down "Things I gotta live with for the rest of my days."
     pause
-    tony f_sad "Hal-hal yang mungkin Anda pikir ingin Anda ketahui... Tapi percayalah, jagoan... Anda tidak tahu."
-
+    tony f_sad "Things you might think you wanna know about... But trust me, champ... You don't."
     anon @ -m_talk "..."
-    tony "Bisakah kamu mengerti apa yang aku katakan?"
-
-    anon "Y-ya, menurutku..."
-
-    tony f_suspicious @ a_point_under "Bagus, karena aku benar-benar tidak ingin membicarakan hal itu denganmu."
-
+    tony "Can you understand what I'm sayin'?"
+    anon "Y-yeah, I guess..."
+    tony f_suspicious @ a_point_under "Good, 'cause I really don't wanna go into that stuff with you."
     jump tony_button_pizzeria.mob
 
 
 label tony_button_pizzeria.maria:
-    anon f_normal "Bagaimana Anda dan {b}Maria{/b} bertemu?"
-
-    tony f_normal a_heart @ f_laugh a_point "Ahh, sekarang ada cerita yang layak diceritakan!"
-
-    tony "{b}Maria{/b} dan saya bertemu ketika kami masih kecil di Brooklyn."
-
-    anon "Kalian dari Brooklyn?"
-
-    tony a_idle @ a_finger_up "Ya itu benar."
-
-    tony "Soalnya, dia berasal dari keluarga berada."
-
-    tony "Ayahnya memiliki restoran mewah di sisi timur dan ibunya pernah menjadi sukarelawan di panti asuhan tempat saya dibesarkan."
-
+    anon f_normal "How did you and {b}Maria{/b} meet?"
+    tony f_normal a_heart @ f_laugh a_point "Ahh, now there's a story worth tellin'!"
+    tony "{b}Maria{/b} and I met when we was kids back in Brooklyn."
+    anon "You guys are from Brooklyn?"
+    tony a_idle @ a_finger_up "Yeah, that's right."
+    tony "You see, she came from a well-to-do family."
+    tony "Her father owned this fancy restaurant over on the east side and her ma used to volunteer at the orphanage where I grew up."
     anon "Oh?"
-
-    tony "Kau tahu, menyajikan makanan untuk kita semua tikus jalanan dan menambal pakaian kita."
-
-    tony "Hal semacam itu."
-
-    tony @ f_smirk_wink a_frustrated "Dia adalah wanita yang benar-benar murah hati, ibu {b}Maria{/b} dan apelnya tidak jatuh jauh dari pohonnya."
-
+    tony "You know, servin' food to all us street rats and patchin' up our clothes."
+    tony "That kinda thing."
+    tony @ f_smirk_wink a_frustrated "She was a real generous woman, {b}Maria{/b}'s ma and the apple didn't fall far from the tree."
     pause
-    tony "Jadi begini, suatu hari dia membawa {b}Maria{/b} ke panti asuhan bersamanya..."
-
-    tony "Dan mereka berdua membuat keributan, membuat seluruh tempat berbau harum."
-
+    tony "So you see, one day she brings {b}Maria{/b} down to the orphanage with her..."
+    tony "And they're both cookin' up a storm, makin' the whole place smell wonderful."
     pause
-    tony "Maksudku, usianya belum lebih dari tiga belas tahun saat itu, tapi dia sangat pandai di dapur, bahkan saat itu!"
-
-    tony f_smirk_closed a_heart "Fiuh, biar kuberitahu ya... Aku langsung jatuh cinta saat melihatnya."
-
-    tony f_normal a_idle @ f_smirk_wink "Lalu aku mencicipi cannolisnya."
-
-    tony "Aku memberitahunya saat itu juga aku akan menikahinya suatu hari nanti."
-
-    anon f_surprised "Benar-benar?!"
-
+    tony "I mean, she couldn't have been more than thirteen at the time, but she was a fuckin' savant in the kitchen, even then!"
+    tony f_smirk_closed a_heart "Phew, lemme tell ya... I was smitten the second I saw her."
+    tony f_normal a_idle @ f_smirk_wink "Then I tasted her cannolis."
+    tony "I told her right then and there I was gonna marry her someday."
+    anon f_surprised "Really?!"
     tony @ -m_talk "Mhmm."
-
-    anon f_normal "Apa yang dia katakan?"
-
-    tony "Ahh, dia menjadi merah seperti bit dan kemudian menyuruhku menutup lubang paiku."
-
-    anon "Maksudmu, dia tidak juga menyukaimu?"
-
-    tony "Nah, dia hanya... Ya-"
-
+    anon f_normal "What did she say?"
+    tony "Ahh, she turned red as a beet and then told me to shut my piehole."
+    anon "You mean, she didn't like you back?"
+    tony "Nah, she just... Well-"
     pause
-    tony "Yang bagus membuatmu bekerja untuk itu, jagoan."
-
-    tony @ f_smirk_wink "Ingat itu."
-
+    tony "The good ones make you work for it, champ."
+    tony @ f_smirk_wink "Remember that."
     pause
-    anon "Jadi kalian berdua sudah lama bersama?"
-
-    tony "Hampir tiga puluh tahun."
-
-    anon "Itu luar biasa, {b}Tony{/b}."
-
-    tony "Bukan?"
-
-    tony @ a_point_back "{i}*Huh*{/i} Wah, butuh waktu lama untuk meyakinkan ayahnya bahwa aku berharga..."
-
-    anon "Dia tidak menyetujuinya?"
-
-    tony f_suspicious @ a_wave "Ahh, tentu saja tidak!"
-
-    tony "Saya hanyalah seorang bukan siapa-siapa tanpa satu sen pun di saku saya."
-
-    tony "Dia tahu aku tidak cukup baik untuk putrinya."
-
-    anon "Tapi Anda membuktikan dia salah?"
-
-    tony f_normal @ f_smirk_wink "Yah, bisa dibilang begitu..."
-
-    tony "Aku mendapatkan pekerjaan, menghasilkan uang yang lumayan, dan menabung setiap sen yang kumiliki selama tiga tahun."
-
-    tony "Kemudian saya membeli sebuah tempat kecil yang bagus di sisi timur dan meminta persetujuan ayahnya."
-
-    anon "Dan?"
-
-    tony @ f_laugh a_belly "Heh, tua tangguh itu mematahkan dua tulang rusukku dan mematahkan rongga mataku."
-
+    anon "So you two have been together for a long time then?"
+    tony "Almost thirty years."
+    anon "That's wonderful, {b}Tony{/b}."
+    tony "Ain't it?"
+    tony @ a_point_back "{i}*Sigh*{/i} Man, it took a long time to convince her father I was worth a damn..."
+    anon "He didn't approve?"
+    tony f_suspicious @ a_wave "Ahh, of course not!"
+    tony "I was just some nobody without a cent in my pocket."
+    tony "He knew I wasn't good enough for his daughter."
+    anon "But you proved him wrong?"
+    tony f_normal @ f_smirk_wink "Well, you could say that..."
+    tony "I got myself a job, makin' decent money, and saved every cent I had for three years."
+    tony "Then I bought a nice little place on the east side and asked her father for his approval."
+    anon "And?"
+    tony @ f_laugh a_belly "Heh, the tough old bastard broke two of my ribs and fractured my eye socket."
     anon f_surprised "!!!"
-    anon "Sungguh?!"
-
-    tony f_sad "aku tak pernah cukup baik untuknya..."
-
+    anon "For real?!"
+    tony f_sad "I never was good enough for him..."
     show anon f_worried
-    tony f_normal @ a_finger_up "... Tapi aku cukup baik untuknya, dan itulah yang penting."
-
-    tony @ f_smirk_wink "Ingat itu, jagoan."
-
-    anon f_normal "Y-ya, oke {b}Tony{/b}."
-
+    tony f_normal @ a_finger_up "... But I was good enough for her, and that's what matters."
+    tony @ f_smirk_wink "Remember that, champ."
+    anon f_normal "Y-yeah, okay {b}Tony{/b}."
     pause
-    tony @ a_frustrated "Sheesh, dengarkan aku."
-
-    tony "Bergaul seperti wanita tua di salon rambut."
-
-    tony "Bagaimana menurutmu kita akan mengantarkan pizza itu, ya?"
-
+    tony @ a_frustrated "Sheesh, listen to me."
+    tony "Gabbin' on like an old lady in a hair salon."
+    tony "What do you say we get those pizzas delivered, eh?"
     jump tony_button_pizzeria.choice
 
 
 label tony_button_pizzeria.quit:
-    anon f_worried "Mengapa kamu berhenti?"
-
-    tony f_sad "Eh, pemerasan selama dua puluh tahun mulai membebani seseorang, kau tahu?"
-
-    tony "Saya tidak dapat melakukannya lagi."
-
-    tony "Kemudian Luigi meninggal dan saya menyadari bahwa semua orang yang saya temui ada di dalam tanah atau di penjara."
-
+    anon f_worried "Why did you quit?"
+    tony f_sad "Eh, twenty years of extortin' people starts to wear on a person, you know?"
+    tony "I couldn't do it no more."
+    tony "Then Luigi died and I realized that everyone I came up with was either in the ground or in prison."
     pause
-    tony "Kami berkemas, meraih {b}Tina{/b} dan gadisnya, lalu segera keluar dari sana."
-
-    tony "Memutuskan untuk mencoba kehidupan tenang untuk sementara waktu."
-
-    anon f_normal "Jadi Anda membuka restoran pizza?"
-
-    tony f_normal "Hehe, kenapa tidak ya?"
-
-    tony "{b}Maria{/b} suka memasak dan tidak banyak restoran di kota kecil ini."
-
-    anon "Itu benar."
-
+    tony "We packed up, grabbed {b}Tina{/b} and her girl, and got the hell outta there."
+    tony "Decided to try the quiet life for a while."
+    anon f_normal "So you opened up a pizzeria?"
+    tony f_normal "Heh, why not, eh?"
+    tony "{b}Maria{/b} loves cookin' and there ain't many restaurants in this little town."
+    anon "That's true."
     jump tony_button_pizzeria.mob
 
 
 label tony_button_pizzeria.russians:
-    anon f_worried "Tentang orang-orang Rusia itu..."
-
-    tony f_suspicious "Bagaimana dengan mereka?"
-
-    anon "Saya ingin tahu bagaimana Anda mengenal mereka?"
-
-    tony "Ehh, panjang ceritanya ya jagoan.."
-
-    tony "Anggap saja aku pernah berurusan dengan mereka di masa lalu, oke?"
-
-    anon "Baiklah."
-
-    anon "Anda menyebut seseorang bernama {b}Raz{/b}..."
-
-    anon "Siapa dia?"
-
-    tony "{b}Raz{/b} adalah bos mereka."
-
-    anon "Bagaimana cara kerjanya?"
-
-    tony "Apa maksudmu?"
-
-    anon "Maksudku, sejak kapan penjahat punya bos?"
-
-    tony "Mereka Bratva, Nak."
-
+    anon f_worried "About those Russians..."
+    tony f_suspicious "What about 'em?"
+    anon "I'm curious how you know them?"
+    tony "Ehh, that's a long story, champ..."
+    tony "Let's just say I've had dealings with them in the past, okay?"
+    anon "Alright."
+    anon "You mentioned someone named {b}Raz{/b}..."
+    anon "Who is he?"
+    tony "{b}Raz{/b} is their boss."
+    anon "How does that work?"
+    tony "What do you mean?"
+    anon "I mean, since when do criminals have bosses?"
+    tony "They're Bratva, kid."
     anon @ f_skeptical "Bratva?"
-
-    tony "mafia Rusia."
-
+    tony "Russian mafia."
     anon f_surprised "!!!"
-    tony "Pastinya kamu sudah tahu kan apa itu mafia?"
-
-    anon f_worried "Y-ya, menurutku begitu."
-
+    tony "Surely, you know what mafia is, don'tcha?"
+    anon f_worried "Y-yeah, I think so."
     pause
-    anon "Apa yang dilakukan mafia Rusia di Summerville?"
-
-    tony "Pfft, sial kalau aku tahu..."
-
-    tony "... Tapi apapun yang mereka lakukan, itu tidak baik."
-
-    tony "Aku akan memberitahumu itu secara gratis."
-
-    tony "Anda sebaiknya menghindarinya."
-
+    anon "What are the Russian mafia doing in Summerville?"
+    tony "Pfft, hell if I know..."
+    tony "... But whatever they're doin', it ain't good."
+    tony "I'll tell you that for free."
+    tony "You'd be wise to steer well clear of 'em."
     jump tony_button_pizzeria.choice
 
 
 label tony_button_pizzeria.tattoo:
-    anon @ a_point "Tatomu..."
-
-    tony f_suspicious "Anda ingin tahu tentang tatonya, ya?"
-
-    anon "Ya, tuan."
-
+    anon @ a_point "Your tattoo..."
+    tony f_suspicious "You wanna know about the tattoo, eh?"
+    anon "Yes, sir."
     pause
-    anon f_worried "U-kecuali, kamu tidak mau memberitahuku?"
-
+    anon f_worried "U-unless, you don't want to tell me?"
     pause
-    anon "Maaf, saya tidak bermaksud mengorek atau tidak-"
-
-    tony f_sad "Ahh, tidak apa-apa, jagoan."
-
-    tony "Aku tidak bisa menyalahkanmu karena penasaran."
-
+    anon "Sorry, I don't mean to pry or noth-"
+    tony f_sad "Ahh, it's alright, champ."
+    tony "I can't fault ya for bein' curious."
     pause
-    tony "Ini bukan sesuatu yang biasa saya diskusikan dengan orang yang baru saya kenal."
-
-    anon "Saya mengerti."
-
-    tony f_smirk "Mungkin jika aku mengenalmu lebih baik..."
-
-    anon "Y-ya, oke."
-
-    tony f_normal "Untuk saat ini, anggap saja itu sisa dari kehidupan masa lalu, capisce?"
-
-    anon f_skeptical "Kehidupan masa lalu?"
-
-    tony f_suspicious "Apa, menurutmu aku selalu menjadi penjual pizza?"
-
-    tony a_belly @ f_normal_down a_frustrated "Yesus, lihat aku..."
-
-    tony "Tentu saja Anda berpikir demikian."
-
+    tony "It's just not something I usually discuss with people I've only recently become acquainted with."
+    anon "I understand."
+    tony f_smirk "Maybe if I got to know you better..."
+    anon "Y-yeah, okay."
+    tony f_normal "For now, let's just say it's a remnant from a past life, capisce?"
+    anon f_skeptical "Past life?"
+    tony f_suspicious "What, you think I've always been a pizza peddler?"
+    tony a_belly @ f_normal_down a_frustrated "Jesus, look at me..."
+    tony "Of course you think that."
     show tony a_idle with dissolve
-    anon f_worried "Itu bukan-"
-
-    tony f_smirk "Saya tidak selalu terlihat seperti tukang ledeng Italia yang gemuk, Anda tahu..."
-
-    tony f_normal @ f_laugh "Faktanya, saya dulunya cukup jantan!"
-
-    anon f_normal @ f_laugh "Benar-benar?"
-
-    tony f_suspicious "Ya, sungguh!"
-
-    tony a_fists @ a_point "Asal tahu saja, saya masih punya beberapa pertarungan bagus yang tersisa dalam diri saya."
-
-    tony "Jadi jangan memaksakan keberuntunganmu, kawan bijak."
-
-    anon f_surprised a_up "Wah, aku tidak-"
-
+    anon f_worried "That's not-"
+    tony f_smirk "I didn't always look like a fat Italian plumber, you know..."
+    tony f_normal @ f_laugh "In fact, I used to be quite virile!"
+    anon f_normal @ f_laugh "Really?"
+    tony f_suspicious "Ya, really!"
+    tony a_fists @ a_point "I'll have you know, I still got a few good fights left in me."
+    tony "So don't push your luck, wise guy."
+    anon f_surprised a_up "Whoa, I wasn't-"
     tony a_belly f_normal @ f_laugh "Hah!"
-
-    tony a_idle "Tenang, jagoan."
-
-    tony @ f_smirk_wink "Aku hanya ingin menghancurkanmu."
-
+    tony a_idle "Relax, champ."
+    tony @ f_smirk_wink "I'm just bustin' ya balls."
     anon f_worried a_behind_head @ -m_talk "..."
-    tony "Kenapa kamu selalu gelisah sepanjang waktu, ya?"
-
-    anon f_sad_down a_idle "Entahlah."
-
-    tony f_suspicious "Kamu seperti kelinci kecil yang ketakutan atau semacamnya..."
-
-    anon "Saya minta maaf."
-
-    tony f_normal @ f_laugh "Dan berhentilah meminta maaf sepanjang waktu!"
-
-    tony "Para wanita benci hal seperti itu, kamu tahu?"
-
-    anon "Y-ya."
-
-    tony f_angry a_fists "Mereka menginginkan pria yang memiliki tulang punggung, ya?!"
-
+    tony "Why are you always so twitchy all the time, eh?"
+    anon f_sad_down a_idle "I dunno."
+    tony f_suspicious "You're like a scared little rabbit or something..."
+    anon "I'm sorry."
+    tony f_normal @ f_laugh "And stop apologizin' all the time!"
+    tony "The ladies hate that kinda thing, you know?"
+    anon "Y-yeah."
+    tony f_angry a_fists "They want a man with some backbone, yeah?!"
     anon @ -m_talk "..."
-    tony "Seseorang yang dapat mereka andalkan untuk merawat mereka."
-
-    tony f_suspicious a_idle "Bukankah ayahmu yang mengajarimu hal itu?"
-
-    anon "Tidak juga."
-
-    tony f_sad a_frustrated "Yesus."
-
+    tony "Someone they can rely on to take care of 'em."
+    tony f_suspicious a_idle "Didn't your papa teach ya that?"
+    anon "Not really."
+    tony f_sad a_frustrated "Jesus."
     if L_pizzeria_interior.is_here(M_tony):
         show tony a_mc_hip_single:
             xoffset 32
@@ -691,40 +451,29 @@ label tony_button_pizzeria.tattoo:
         show tony_arms_dressed_a_mc_shoulder_single:
             xoffset -32
     with dissolve
-    tony "Baiklah, jangan khawatir, jagoan."
-
+    tony "Well, don'tcha worry, champ."
     show anon f_shy
-    tony f_normal "Paman {b}Tony{/b} akan mengajarimu semua yang perlu kamu ketahui."
-
+    tony f_normal "Uncle {b}Tony{/b} is gonna teach ya everything you need to know."
     pause
     show tony f_smirk_closed a_finger_up:
         xoffset 0
     hide tony_arms_dressed_a_mc_shoulder_single
     with {'master': dissolve}
-    tony "Tapi pertama-tama, Anda harus mengantarkan pizza ini."
-
-    tony f_normal a_frustrated "berubah-ubah?"
-
-    anon @ a_salute "Ya, tuan."
-
+    tony "But first, you gotta deliver these pizzas."
+    tony f_normal a_frustrated "Capisce?"
+    anon @ a_salute "Yes, sir."
     show tony a_idle with dissolve
     jump tony_button_pizzeria.choice
 
 label tony_button_pizzeria.trinacria:
-    anon f_normal "Jadi tentang tato."
-
-    tony f_normal "Oh itu?"
-
+    anon f_normal "So about the tattoo."
+    tony f_normal "Oh, that?"
     show tony b_casual a_unbutton1 with dissolve
     pause 1
-    tony a_unbutton2 "Heh, itu Trinacria, jagoan."
-
-    tony "Simbol Sisilia yang lebih tua dari tanah."
-
-    tony a_unbutton1 "Banyak orang mafia yang mendapatkannya."
-
+    tony a_unbutton2 "Heh, it's the Trinacria, champ."
+    tony "A Sicilian symbol that's older than dirt."
+    tony a_unbutton1 "Lots of the mob guys got it."
     show tony b_dressed a_idle with dissolve
-    anon f_skeptical "Jadi begitu."
-
+    anon f_skeptical "I see."
     jump tony_button_pizzeria.mob
 # Decompiled by unrpyc: https://github.com/CensoredUsername/unrpyc

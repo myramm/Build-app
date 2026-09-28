@@ -17,7 +17,7 @@ label annie_button_dialogue:
     menu:
         "Model." if M_ross.is_state(S_ross_ask_model):
             call expression game.dialog_select("annie_dialogue_ross_ask_model")
-        "Hai!":
+        "Hi!":
 
             call expression game.dialog_select("annie_dialogue_leave")
     $ game.main()

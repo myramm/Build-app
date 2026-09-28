@@ -1,14 +1,14 @@
 label lily_button_dialogue:
     call expression game.dialog_select("lily_dialogue_pre")
     menu tatiana_options:
-        "Anda tampak familier.":
+        "You seem familiar.":
             call expression game.dialog_select("lily_dialogue_familiar")
             jump expression game.dialog_select("tatiana_options")
-        "Ada saran?":
+        "Any suggestions?":
 
             call expression game.dialog_select("lily_dialogue_suggestions")
             jump expression game.dialog_select("tatiana_options")
-        "Saya menemukan apa yang saya butuhkan.":
+        "I found what I need.":
 
             call expression game.dialog_select("lily_dialogue_leave")
 

@@ -1,401 +1,241 @@
 label ano07_mech_jiang:
     show anon with dissolve
-    anon "Permisi, Pak?"
-
+    anon "Excuse me, sir?"
     show jiang with dissolve:
         unflip
         xoffset 0
     jiang @ -m_talk "Hmm?"
-
-    jiang "Kamu bicara padaku?"
-
-    anon "Apakah Anda {b}Jiang{/b}?"
-
-    jiang "Saya mungkin saja."
-
-    jiang "Siapa yang bertanya?"
-
-    anon @ a_wave "Halo, saya {b}[firstname]{/b}."
-
+    jiang "You talkin' to me?"
+    anon "Are you {b}Jiang{/b}?"
+    jiang "I might be."
+    jiang "Who's askin'?"
+    anon @ a_wave "Hi there, I'm {b}[firstname]{/b}."
     jiang @ -m_talk "..."
-    jiang "Oh oke."
-
-    anon "{b}Josephine{/b} mengirimku ke sini untuk menanyakan sesuatu padamu."
-
-    jiang f_suspicious "{b}Yosephine{/b}?"
-
-    jiang "Sobat, saya tidak kenal siapa pun yang bernama {b}Josephine{/b}!"
-
-    anon "Dia gadis yang bekerja di meja resepsionis di dalam..."
-
-    jiang f_smirk "Ah sial!"
-
-    jiang "Sungguh?"
-
+    jiang "Oh kay."
+    anon "{b}Josephine{/b} sent me out here to ask you something."
+    jiang f_suspicious "{b}Josephine{/b}?"
+    jiang "Man, I don't know nobody named {b}Josephine{/b}!"
+    anon "She's the girl working the reception desk inside..."
+    jiang f_smirk "Ah snap!"
+    jiang "For real?"
     pause
-    jiang "Gadis itu baik-baik saja!"
-
-    anon "Y-ya, oke."
-
-    anon "Aku berharap kamu bisa-"
-
-    jiang "Dia mencoba bermain dengan playa?"
-
-    anon f_confused "Hah?"
-
-    jiang "Maksudku, aku biasanya tidak main-main dengan gadis-gadis Asia itu..."
-
-    jiang "... Karena mereka tidak mendapat barang rampasan dan pemeliharaannya sangat tinggi!"
-
-    jiang "Tahu apa yang aku katakan?"
-
-    anon f_worried "Eh, tidak juga."
-
-    jiang "Tapi aku mungkin membuat pengecualian untuk gadismu, karena dia punya DSL itu, sial!"
-
-    anon f_confused "DSL?"
-
-    jiang "Ya, bibir penghisap penis."
-
+    jiang "That girl is fiiiine!"
+    anon "Y-yeah, okay."
+    anon "I was hoping you could-"
+    jiang "She tryin' to get with a playa?"
+    anon f_confused "Huh?"
+    jiang "I mean, I usually don't mess with them Asian girls..."
+    jiang "... 'Cause they got no booty and they high-maintenance as fuck!"
+    jiang "Know what I'm sayin'?"
+    anon f_worried "Eh, not really."
+    jiang "I might make an exception for your girl though, 'cause she's got them DSLs, like damn!"
+    anon f_confused "DSLs?"
+    jiang "Yeah, dick-sucking lips."
     anon f_surprised "!!!"
-    jiang "Dia punya set yang bagus!"
-
-    jiang "Tahu apa yang aku katakan?"
-
+    jiang "She's got a great set on her!"
+    jiang "Know what I'm sayin'?"
     anon f_worried @ -m_talk "..."
-    anon "Umm, maaf, tapi bukan itu alasanku berada di sini."
-
-    jiang f_suspicious "Tsk, kawan... Kalau begitu, apa yang kamu inginkan?"
-
-    anon "Kudengar kalian berteman {b}Kim{/b}?"
-
-    jiang f_annoyed "Pfft, tidak!"
-
-    jiang "Aku tidak berteman dengan si cebol kecil pemarah itu!"
-
-    jiang "Keparat itu berhutang padaku dua ratus dolar!"
-
-    anon f_normal "Ah, benarkah?"
-
-    jiang "Benar sekali."
-
-    jiang "Minta saya melakukan jailbreak pada ponselnya dan menginstal banyak program keamanan..."
-
-    jiang "... Lalu dia membuatku kaku ketika tiba waktunya untuk membayar!"
-
-    jiang "Bicara tentang menghadiahiku begitu dia memimpin dan sial."
-
-    anon "Ya, itu pasti terdengar seperti dia."
-
-    anon "Dengar, umm... Aku mencoba mendapatkan ponselnya, dan sepertinya hanya kamulah satu-satunya orang yang mampu mewujudkannya."
-
-    jiang f_smirk "Heh, ya... Oke."
-
-    jiang "Aku mungkin bisa memberinya omong kosong dan mengajakmu berduaan dengannya."
-
-    jiang "Pertanyaannya adalah... Berapa banyak yang Anda bayar?"
-
-    anon f_worried "Eh, aku tidak tahu."
-
-    jiang f_suspicious "Apa maksudmu, kamu tidak tahu?"
-
-    anon "Aku sedang menabung untuk membeli mobil sekarang."
-
-    jiang f_annoyed "Ya baiklah, aku tidak bekerja secara gratis."
-
-    jiang "Saya ingin uang tunai, kali ini dimuka."
-
-    jiang "Tidak ada lagi barang gratis!"
-
-    jiang "{b}Jiang{/b} jangan main-main."
-
-    jiang "Tahu apa yang aku katakan?"
-
-    anon "Y-ya..."
-
-    anon "Apakah ada hal lain yang bisa kita lakukan?"
-
-    jiang f_suspicious "Seperti apa?"
-
-    anon "Entahlah, ada yang bisa saya bantu?"
-
-    jiang a_up f_eyeroll "Wah, tahan."
-
-    jiang "Aku tidak tertarik pada hal-hal gay, sekarang..."
-
+    anon "Umm, sorry but that's not why I'm here."
+    jiang f_suspicious "Tsk, man... What the fuck you want then?"
+    anon "I heard you're friends {b}Kim{/b}?"
+    jiang f_annoyed "Pfft, hell no!"
+    jiang "I ain't friends with that angry little midget!"
+    jiang "Motherfucker owes me two hundred bucks!"
+    anon f_normal "Oh, really?"
+    jiang "Damn straight."
+    jiang "Had me jailbreak his phone and install a bunch of security programs..."
+    jiang "... Then he stiffed me when it came time to pay up!"
+    jiang "Talkin' 'bout rewarding me once he's in charge and shit."
+    anon "Yeah, that definitely sounds like him."
+    anon "Listen, umm... I'm trying to get my hands on that phone of his, and it seems like you're the only person capable of making that happen."
+    jiang f_smirk "Heh, yeah... Okay."
+    jiang "I could probably feed him some bullshit and get you some one-on-one time with it."
+    jiang "The question is... How much you payin'?"
+    anon f_worried "Eh, I don't know."
+    jiang f_suspicious "What do you mean, you don't know?"
+    anon "I'm kinda saving up for a car right now."
+    jiang f_annoyed "Yeah well, I ain't workin' for free."
+    jiang "I want cash money, upfront this time."
+    jiang "No more freebies!"
+    jiang "{b}Jiang{/b} don't play that shit."
+    jiang "Know what I'm sayin'?"
+    anon "Y-yeah..."
+    anon "Is there something else we can work out?"
+    jiang f_suspicious "Like what?"
+    anon "I dunno, something I can assist you with?"
+    jiang a_up f_eyeroll "Whoa, hold up."
+    jiang "I ain't into no gay shit, now..."
     anon f_surprised "!!!"
     show jiang f_annoyed a_idle with dissolve
-    anon f_worried "Itu bukan-"
-
-    anon "Aku tidak bermaksud seperti itu!"
-
-    jiang f_suspicious "Eh ya."
-
-    anon "Apakah ada pekerjaan yang perlu Anda selesaikan atau bantuan untuk sesuatu?"
-
-    jiang "Apakah aku terlihat seperti pria yang tidak bisa menangani pekerjaannya sendiri?"
-
-    anon "Tidak."
-
-    jiang f_normal @ f_thinking "Maksudku, sepertinya kamu bisa membantuku dengan {b}tas perkakas keberuntunganku{/b}..."
-
-    anon "Tas perkakas keberuntungan Anda?"
-
-    jiang "Ya, saya salah menaruhnya di suatu tempat dan tidak sempat mencarinya."
-
+    anon f_worried "That's not-"
+    anon "I wasn't implying that!"
+    jiang f_suspicious "Uh huh."
+    anon "Is there like, work you need done or help with something?"
+    jiang "Do I look like a man who can't handle his own work?"
+    anon "No."
+    jiang f_normal @ f_thinking "I mean, I guess you could help me out with {b}my lucky tool bag{/b}..."
+    anon "Your lucky tool bag?"
+    jiang "Yeah, I misplaced it somewhere and haven't had time to look for it."
     anon f_normal "Oh?"
-
-    jiang "Jika kamu bisa menemukannya dan membawanya ke sini... Kurasa aku akan membantumu."
-
-    anon @ f_laugh "Saya pasti bisa melakukan itu."
-
-    anon "Adakah ide di mana saya harus memulai pencarian?"
-
-    jiang @ f_thinking "Mungkin ada di salah satu pekerjaan sampinganku."
-
-    anon "Pekerjaan sampingan?"
-
-    jiang "Ya, saya melakukan perbaikan di samping."
-
-    jiang "Anda tahu, hampir semua hal yang berbayar."
-
-    anon "Lanjutkan."
-
-    jiang "Selama akhir pekan, saya melakukan perbaikan pada mesin es {b}di gedung apartemen besar itu{/b} di kota."
-
-    anon "Oke."
-
-    jiang f_thinking "Lalu saya perbaiki toilet yang rusak {b}di mall{/b}..."
-
-    jiang "... Dan ada unit penyaringan air {b}di kolam renang umum{/b}."
-
+    jiang "If you can find it and bring it here... I guess I'll help you out."
+    anon @ f_laugh "I can definitely do that."
+    anon "Any idea where I should start the search?"
+    jiang @ f_thinking "It's probably layin' around at one of my side jobs."
+    anon "Side jobs?"
+    jiang "Yeah, I do repairs on the side."
+    jiang "You know, pretty much anything that pays."
+    anon "Go on."
+    jiang "Over the weekend, I was doing repairs on the ice machine {b}at that big apartment building{/b} in town."
+    anon "Okay."
+    jiang f_thinking "Then I fixed a broken toilet {b}at the mall{/b}..."
+    jiang "... And there's the water filtration unit {b}at the public pool{/b}."
     pause
-    jiang "Hal sialan itu selalu rusak."
-
+    jiang "Damn thing is always breakin' down."
     show jiang f_normal
-    anon "Baiklah, jadi {b}gedung apartemen besar{/b}, {b}kamar mandi mal{/b}, dan {b}kolam renang umum{/b}?"
-
-    anon "Saya akan memeriksanya."
-
-    jiang f_suspicious "Hati-hati dengan {b}tas peralatan keberuntunganku{/b} ya?"
-
-    jiang f_annoyed "Anda melanggar apa pun dan kesepakatan dibatalkan."
-
-    jiang "Anda tahu apa yang saya katakan?"
-
-    anon "Ya, aku akan berhati-hati."
-
-    anon "Siapkan saja ponsel itu saat aku kembali."
-
-    jiang f_normal "Ya, ya..."
-
+    anon "Alright, so {b}the big apartment building{/b}, {b}the mall bathroom{/b}, and {b}the public pool{/b}?"
+    anon "I'll take a look."
+    jiang f_suspicious "Be careful with my {b}lucky tool bag{/b}, will ya?"
+    jiang f_annoyed "You break anything and the deal is off."
+    jiang "You know what I'm sayin'?"
+    anon "Yeah, I'll be careful."
+    anon "Just have that phone ready when I get back."
+    jiang f_normal "Yeah, yeah..."
     hide anon with dissolve
     return
 
 
 label ano07_find_jiang:
     show anon with dissolve
-    anon "Adakah yang beruntung mendapatkan ponsel {b}Kim{/b}?"
-
+    anon "Any luck getting {b}Kim{/b}'s phone?"
     show jiang with dissolve:
         unflip
         xoffset 0
-    jiang "Mungkin."
-
-    jiang "Adakah yang beruntung menemukan {b}tas peralatan{/b} saya?"
-
-    anon f_worried "Belum."
-
-    jiang @ f_suspicious "Ya, Anda tidak akan mendapatkan telepon tanpanya."
-
-    jiang "Anda tahu apa yang saya katakan?"
-
-    anon "{i}*Huh*{/i} Ya, saya mengerti."
-
-    anon "Menurut Anda, di mana Anda meninggalkannya lagi?"
-
-    jiang f_annoyed "Aduh, aku tidak tahu!"
-
-    jiang "Selama akhir pekan, saya melakukan perbaikan pada mesin es {b}di gedung apartemen besar itu{/b} di kota."
-
-    anon "Oke."
-
-    jiang f_thinking "Lalu saya perbaiki toilet yang rusak {b}di mall{/b}..."
-
-    jiang "... Dan ada unit penyaringan air {b}di kolam renang umum{/b}."
-
+    jiang "Maybe."
+    jiang "Any luck finding my {b}tool bag{/b}?"
+    anon f_worried "Not yet."
+    jiang @ f_suspicious "Well, you ain't gettin' the phone without it."
+    jiang "You know what I'm sayin'?"
+    anon "{i}*Sigh*{/i} Yeah, I get it."
+    anon "Where do you think you left it again?"
+    jiang f_annoyed "Man, I don't know!"
+    jiang "Over the weekend, I was doing repairs on the ice machine {b}at that big apartment building{/b} in town."
+    anon "Okay."
+    jiang f_thinking "Then I fixed a broken toilet {b}at the mall{/b}..."
+    jiang "... And there's the water filtration unit {b}at the public pool{/b}."
     pause
-    jiang f_annoyed "Hal sialan itu selalu rusak."
-
-    anon f_normal "Baiklah, jadi {b}gedung apartemen besar{/b}, {b}kamar mandi mal{/b}, dan {b}kolam renang umum{/b}?"
-
-    anon "Saya akan memeriksanya."
-
+    jiang f_annoyed "Damn thing is always breakin' down."
+    anon f_normal "Alright, so {b}the big apartment building{/b}, {b}the mall bathroom{/b}, and {b}the public pool{/b}?"
+    anon "I'll check it out."
     hide anon with dissolve
     return
 
 
 label ano07_give_jiang:
     show anon with dissolve
-    anon "Hei, {b}Jiang{/b}!"
-
+    anon "Hey, {b}Jiang{/b}!"
     show anon f_shy_down a_backpack
     show jiang:
         unflip
         xoffset 0
     with dissolve
-    anon "Lihat apa yang kudapat!"
-
+    anon "Look what I got!"
     show anon a_toolbag f_normal with dissolve
     pause
-    jiang "Yo, kamu menemukannya!"
-
+    jiang "Yo, you found it!"
     show anon a_idle
     show jiang a_toolbag f_happy_down
     with dissolve
     pause
-    jiang f_normal "Hmm, semuanya tampak baik-baik saja."
-
-    anon "Apakah Anda bisa mendapatkan ponsel {b}Kim{/b}?"
-
-    jiang "Psh, kamu tahu itu!"
-
+    jiang f_normal "Hmm, everything looks good."
+    anon "Were you able to get {b}Kim{/b}'s phone?"
+    jiang "Psh, you know it!"
     show jiang a_phone_kim with dissolve
-    jiang "Memberitahunya bahwa ada versi baru dari perangkat lunak keamanan itu dan dia langsung menyerahkannya."
-
+    jiang "Told him there was a new version of that security software and he handed it right over."
     show anon a_phone_kim
     show jiang a_sides
     with dissolve
-    anon "Bagus!"
-
+    anon "Nice!"
     show anon f_shy_down
     pause
-    jiang "Apa yang kamu inginkan darinya?"
-
+    jiang "What do you want with it anyways?"
     anon f_normal @ -m_talk "Hmm?"
-
-    anon "Oh, itu hanya beberapa foto yang dia curi dari {b}Josephine{/b} yang saya janjikan akan dihapus untuknya."
-
-    jiang f_suspicious "Foto apa?"
-
-    anon f_shy_down "Tidak tahu."
-
-    anon "Dia hanya bilang itu privasi."
-
+    anon "Oh, it's just some pics he stole from {b}Josephine{/b} that I promised to delete for her."
+    jiang f_suspicious "What kinda pics?"
+    anon f_shy_down "No idea."
+    anon "She just said they were private."
     jiang f_normal "Oh."
-
     pause
-    jiang f_suspicious "Tunggu sebentar..."
-
-    jiang f_smirk "Apakah kita berbicara tentang foto telanjang?"
-
-    anon f_worried "Aku tidak tahu."
-
-    anon "Aku berjanji padanya aku tidak akan melihat."
-
-    jiang @ f_suspicious "Apa kamu gila?!"
-
-    jiang "Kamu punya foto telanjang seorang wanita cantik di tanganmu sekarang dan kamu bahkan tidak mau melihatnya?!"
-
+    jiang f_suspicious "Wait a second..."
+    jiang f_smirk "Are we talking naked pics?"
+    anon f_worried "I don't know."
+    anon "I promised her I wouldn't look."
+    jiang @ f_suspicious "Are you fuckin' crazy?!"
+    jiang "You got naked pics of a beautiful woman in your hand right now and you ain't even gonna look?!"
     anon @ -m_talk "..."
-    jiang "Ayo kawan, mari kita intip omong kosong itu!"
-
+    jiang "C'mon man, let's peep that shit!"
     show anon f_thinking
 
     menu:
-        "Nah, aku berjanji tidak akan melihatnya.":
-            anon f_worried "Maaf."
-
-            jiang f_annoyed @ f_eyeroll a_head "Aduh, serius kawan..."
-
-            anon "Bukannya dia mengirimkannya kepadaku."
-
-            anon "Mereka dicuri darinya."
-
-            jiang "Jadi?"
-
-            anon "Jadi, ada apa denganmu?"
-
-            jiang "Pfft, tidak ada masalah denganku!"
-
-            jiang f_suspicious "Aku hanya pria yang menyukai payudara, itu saja."
-
-            anon "Itu tidak benar."
-
-            jiang f_normal "Jika mencintai payudara salah, maka saya tidak ingin menjadi benar!"
-
-        "Satu mengintip tidak ada salahnya.":
+        "Nah, I promised not to look.":
+            anon f_worried "Sorry."
+            jiang f_annoyed @ f_eyeroll a_head "Aww, seriously man..."
+            anon "It's not like she sent them to me."
+            anon "They were stolen from her."
+            jiang "So?"
+            anon "So, what's the matter with you?"
+            jiang "Pfft, nothin' is the matter with me!"
+            jiang f_suspicious "I'm just a man who loves boobs, that's all."
+            anon "It wouldn't be right."
+            jiang f_normal "If lovin' boobs is wrong, then I don't want to be right!"
+        "One peek wouldn't hurt.":
 
             $ M_josie.set('peeked', True)
-            anon f_flirt "Saya kira satu mengintip tidak ada salahnya."
-
-            jiang "Nah, tidak ada salahnya sedikit pun!"
-
-            jiang "Tahu apa yang aku katakan?"
-
+            anon f_flirt "I suppose one peek wouldn't hurt."
+            jiang "Nah, it wouldn't hurt one little bit!"
+            jiang "Know what I'm sayin'?"
             hide anon
             hide jiang
             show closeup_josephine_nude as phone
             with dissolve
             anon "!!!"
-            anon "Saya kira itu adalah foto telanjang..."
-
-            jiang "Sial ya, kawan!"
-
-            jiang "Itu kecil tapi bagus."
-
+            anon "I guess they were naked pics..."
+            jiang "Hell to the yeah, man!"
+            jiang "Those are small but nice."
             pause
-            jiang "Apakah masih ada lagi?"
-
-            anon "Ya, menurutku begitu."
-
+            jiang "Is there more?"
+            anon "Yeah, I think so."
             show closeup_josephine_nude2 as phone with dissolve
             anon "!!!"
-            jiang "Oh sial!"
-
-            jiang "Aku melihat beberapa vagina mengintip!"
-
-            anon "Aku ingin tahu untuk apa dia mengambil ini?"
-
-            jiang "Siapa yang peduli?"
-
-            jiang "Ini luar biasa!"
-
+            jiang "Oh snap!"
+            jiang "I see some pussy peekin'!"
+            anon "I wonder what she took these for?"
+            jiang "Who cares?"
+            jiang "This is awesome!"
             pause
-            anon "Saya pikir itu sudah cukup."
-
+            anon "I think that's enough."
             pause
             hide phone
             show anon a_phone_kim f_worried
             show jiang f_annoyed
             with dissolve
-            jiang "Aduh, kawan... Ayo!"
-
-            anon "Tidak, rasanya tidak benar; melihat ini."
-
-            jiang "Jika melihat wanita telanjang itu salah, maka saya tidak ingin menjadi benar!"
-
+            jiang "Aww, man... C'mon!"
+            anon "No, it doesn't feel right; looking at these."
+            jiang "If lookin' at naked women is wrong, then I don't want to be right!"
 
     show anon a_idle
     show jiang a_phone_kim
     with dissolve
-    anon "Sekali lagi terima kasih atas bantuan Anda hari ini."
-
-    jiang a_sides f_annoyed @ f_eyeroll "Ya, siapa pun pria..."
-
+    anon "Thanks again, for your help today."
+    jiang a_sides f_annoyed @ f_eyeroll "Yeah, whatever man..."
     show jiang with dissolve:
         flip
         xoffset 500
-    jiang "Bocah kulit putih gila sialan, masuk ke sini dan menghapus foto telanjang."
-
+    jiang "Fuckin' crazy white boy, comin' up in here and deletin' naked pics."
     hide jiang with dissolve
-    jiang "Entah kenapa aku terus terlibat dengan bajingan gila ini..."
-
+    jiang "I dunno why I keep gettin' involved with these crazy motherfuckers..."
     pause
-    anon @ -m_talk "(Yah, itu sudah cukup.)"
-
-    anon @ -m_talk "(Saya harus menghubungi {b}Josephine{/b} dan memberitahunya bahwa dia bisa berhenti panik sekarang. )"
-
+    anon @ -m_talk "( Well, that settles that. )"
+    anon @ -m_talk "( I should check in with {b}Josephine{/b} and tell her she can stop freaking out now. )"
     hide anon with dissolve
     return
 # Decompiled by unrpyc: https://github.com/CensoredUsername/unrpyc

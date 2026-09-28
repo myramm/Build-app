@@ -14,100 +14,65 @@ label scene_jenny_solo_peephole.animate:
 
 
 label scene_jenny_solo_peephole.daddy:
-    jenny "MM."
-
+    jenny "Mmm."
     pause
-    jenny "Itu dia, Ayah!"
-
-    jenny "Beri aku yang besar!"
-
+    jenny "That's it, Daddy!"
+    jenny "Gimme the big one!"
     pause
-    jenny "Haah, dua puluh empat karat..."
-
-    jenny "... Batu kecubung bertatahkan..."
-
+    jenny "Haah, twenty-four karat..."
+    jenny "... Amethyst encrusted..."
     $ M_jenny.set('sex speed', 1 / 10.)
-    jenny "... Ahh, sial!"
-
-    anon "(Hmm?)"
-
+    jenny "... Ahh, fuck!"
+    anon "( Hmm? )"
     pause
-    jenny "Apa itu?"
-
-    jenny "Kamu ingin mengajakku naik kapal pesiar barumu?!"
-
+    jenny "What's that?"
+    jenny "You wanna take me out on your new yacht?!"
     pause
-    jenny "Mmm, sampanye di bak mandi air panas?!"
-
+    jenny "Mmm, champagne in the hot tub?!"
     $ M_jenny.set('sex speed', 1 / 12.)
-    jenny "Oh ya..."
-
-    jenny "... Isi aku!"
-
-    anon "( Ini yang dia pikirkan saat dia melakukan masturbasi?! )"
-
+    jenny "Oh, yes..."
+    jenny "... Fill me up!"
+    anon "( This is what she thinks about when she's masturbating?! )"
     pause
-    jenny "Ahh, tapi aku tidak bisa memutuskan antara mobil convertible merah dan mobil hitam-"
-
-    jenny "Ah, benarkah?"
-
-    jenny "Kamu akan membelikan keduanya untukku?!"
-
+    jenny "Ahh, but I can't decide between the red convertable and the black-"
+    jenny "Oh, really?"
+    jenny "You're gonna buy them both for me?!"
     $ M_jenny.set('sex speed', 1 / 16.)
-    jenny "Tidak, kamu yang terbaik!"
-
+    jenny "Ngh, you're the best!"
     pause
     return
 
 
 label scene_jenny_solo_peephole.anon:
-    jenny "MM."
-
+    jenny "Mmm."
     pause
-    jenny "Itu dia!"
-
-    jenny "Panggil aku putri!!"
-
+    jenny "That's it!"
+    jenny "Call me princess!!"
     pause
-    jenny "Jangan bicara balik padaku..."
-
-    jenny "... Anda tahu Anda menginginkannya!"
-
+    jenny "Don't talk back to me..."
+    jenny "... You know you want it!"
     $ M_jenny.set('sex speed', 1 / 10.)
-    jenny "Ahh, sial!"
-
-    anon "(Hmm?)"
-
+    jenny "Ahh, fuck!"
+    anon "( Hmm? )"
     pause
-    jenny "Diam dan makan vaginaku!"
-
+    jenny "Shut up and eat my pussy!"
     pause
-    jenny "Hmm, begitu saja."
-
-    jenny "Oh, aku yakin kamu ingin meniduriku, bukan?"
-
-    jenny "Katakan, {b}[firstname]{/b}!"
-
+    jenny "Mmm, just like that."
+    jenny "Oh, I bet you wanna fuck me, don't you?"
+    jenny "Say it, {b}[firstname]{/b}!"
     anon "( !!! )"
     $ M_jenny.set('sex speed', 1 / 12.)
-    jenny "Tidak, itu benar!"
-
-    anon "(Dia sedang membayangkanku!)"
-
-    jenny "Berlutut!"
-
+    jenny "Ngh, that's right!"
+    anon "( She's imagining me! )"
+    jenny "Get on your knees!"
     pause
-    jenny "Sekarang jilat kakiku dan mohon padaku!"
-
+    jenny "Now lick my feet and beg me!"
     $ M_jenny.set('sex speed', 1 / 14.)
     jenny "Mhmm..."
-
     $ M_jenny.set('sex speed', 1 / 16.)
-    jenny "... Semua jari kakiku."
-
+    jenny "... All my toes."
     pause
-    jenny "Ahh, sial!"
-
+    jenny "Ahh, fuck!"
     pause
     return
 
@@ -132,7 +97,7 @@ label scene_jenny_solo_peephole.replay:
     if len(variants) > 1:
         scene expression background(l=L_home_attic) with fade
         menu:
-            "Ayah" if 'daddy' in variants:
+            "Daddy" if 'daddy' in variants:
                 call scene_jenny_solo_peephole.repeat ('daddy')
 
             "[firstname]" if 'anon' in variants:

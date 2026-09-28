@@ -141,13 +141,11 @@ screen altar_puzzle():
         drag:
             drag_name "Middle Groove"
 
-
             draggable False
             xpos 150 ypos 130
 
         drag:
             drag_name "Piece 01"
-
             child "buttons/puzzle_piece_01.png"
             droppable False
             dragged piece_dragged
@@ -155,7 +153,6 @@ screen altar_puzzle():
 
         drag:
             drag_name "Piece 02"
-
             child "buttons/puzzle_piece_02.png"
             droppable False
             dragged piece_dragged
@@ -163,7 +160,6 @@ screen altar_puzzle():
 
         drag:
             drag_name "Piece 03"
-
             child "buttons/puzzle_piece_03.png"
             droppable False
             dragged piece_dragged
@@ -171,7 +167,6 @@ screen altar_puzzle():
 
         drag:
             drag_name "Piece 04"
-
             child "buttons/puzzle_piece_04.png"
             droppable False
             dragged piece_dragged
@@ -179,7 +174,6 @@ screen altar_puzzle():
 
         drag:
             drag_name "Piece 05"
-
             child "buttons/puzzle_piece_05.png"
             droppable False
             dragged piece_dragged
@@ -187,7 +181,6 @@ screen altar_puzzle():
 
         drag:
             drag_name "Piece 06"
-
             child "buttons/puzzle_piece_06.png"
             droppable False
             dragged piece_dragged
@@ -195,7 +188,6 @@ screen altar_puzzle():
 
         drag:
             drag_name "Piece 07"
-
             child "buttons/puzzle_piece_07.png"
             droppable False
             dragged piece_dragged
@@ -203,7 +195,6 @@ screen altar_puzzle():
 
         drag:
             drag_name "Piece 08"
-
             child "buttons/puzzle_piece_08.png"
             droppable False
             dragged piece_dragged
@@ -211,7 +202,6 @@ screen altar_puzzle():
 
         drag:
             drag_name "Piece 09"
-
             child "buttons/puzzle_piece_09.png"
             droppable False
             dragged piece_dragged
@@ -219,7 +209,6 @@ screen altar_puzzle():
 
         drag:
             drag_name "Piece 10"
-
             child "buttons/puzzle_piece_10.png"
             droppable False
             dragged piece_dragged
@@ -227,7 +216,6 @@ screen altar_puzzle():
 
         drag:
             drag_name "Piece 11"
-
             child "buttons/puzzle_piece_11.png"
             droppable False
             dragged piece_dragged
@@ -235,7 +223,6 @@ screen altar_puzzle():
 
         drag:
             drag_name "Piece 12"
-
             child "buttons/puzzle_piece_12.png"
             droppable False
             dragged piece_dragged
@@ -243,7 +230,6 @@ screen altar_puzzle():
 
         drag:
             drag_name "Piece 13"
-
             child "buttons/puzzle_piece_13.png"
             droppable False
             dragged piece_dragged
@@ -251,7 +237,6 @@ screen altar_puzzle():
 
         drag:
             drag_name "Piece 14"
-
             child "buttons/puzzle_piece_14.png"
             droppable False
             dragged piece_dragged
@@ -259,7 +244,6 @@ screen altar_puzzle():
 
         drag:
             drag_name "Piece 15"
-
             child "buttons/puzzle_piece_15.png"
             droppable False
             dragged piece_dragged
@@ -267,7 +251,6 @@ screen altar_puzzle():
 
         drag:
             drag_name "Piece 16"
-
             child "buttons/puzzle_piece_16.png"
             droppable False
             dragged piece_dragged
@@ -275,7 +258,6 @@ screen altar_puzzle():
 
         drag:
             drag_name "Piece 17"
-
             child "buttons/puzzle_piece_17.png"
             droppable False
             dragged piece_dragged
@@ -283,7 +265,6 @@ screen altar_puzzle():
 
         drag:
             drag_name "Piece 18"
-
             child "buttons/puzzle_piece_18.png"
             droppable False
             dragged piece_dragged
@@ -291,7 +272,6 @@ screen altar_puzzle():
 
         drag:
             drag_name "Piece 19"
-
             child "buttons/puzzle_piece_19.png"
             droppable False
             dragged piece_dragged
@@ -299,7 +279,6 @@ screen altar_puzzle():
 
         drag:
             drag_name "Piece 20"
-
             child "buttons/puzzle_piece_20.png"
             droppable False
             dragged piece_dragged
@@ -307,7 +286,6 @@ screen altar_puzzle():
 
         drag:
             drag_name "Piece 21"
-
             child "buttons/puzzle_piece_21.png"
             droppable False
             dragged piece_dragged
@@ -315,7 +293,6 @@ screen altar_puzzle():
 
         drag:
             drag_name "Piece 22"
-
             child "buttons/puzzle_piece_22.png"
             droppable True
             dragged piece_dragged

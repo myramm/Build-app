@@ -4,26 +4,20 @@ label melonia_button_baby(low=False):
     else:
         show anon f_worried with dissolve
     anon "{b}Melonia{/b}?"
-
-    melonia "Hai, {b}[firstname]{/b}."
-
-    anon "Mengapa robot itu menggendong anak kita?"
-
-    melonia "Maksudmu pembantunya?"
-
-    anon "Ya, pelayan {i}robot{/i}."
-
-    melonia "Tidak apa-apa, {b}[firstname]{/b}."
-
+    melonia "Hey, {b}[firstname]{/b}."
+    anon "Why is the robot holding our child?"
+    melonia "You mean the maid?"
+    anon "Yeah, the {i}robot{/i} maid."
+    melonia "It's fine, {b}[firstname]{/b}."
 
     menu melonia_button_baby.choice:
-        "Ini tidak baik!":
+        "It's not fine!":
 
             jump melonia_button_baby.thotbot
-        "Lakukan pemanasan terhadap anak kita?":
+        "Warm up to our child?":
 
             jump melonia_button_baby.effort
-        "Nikmati waktu {i}saya{/i} Anda, saya rasa.":
+        "Enjoy your {i}me{/i} time, I guess.":
 
             pass
 
@@ -31,28 +25,21 @@ label melonia_button_baby(low=False):
         show anon f_worried_low
     else:
         show anon f_worried
-    anon "Nikmati waktu {i}saya{/i} Anda, saya rasa."
-
+    anon "Enjoy your {i}me{/i} time, I guess."
     if low:
         show melonia f_smirk_up
     else:
         show melonia f_smirk
-    melonia "Oh, jangan terlalu murung."
-
-    melonia "Saya akan kembali ke seratus persen sebelum Anda menyadarinya."
-
-    anon "Maksudnya itu apa?"
-
-    melonia "Artinya, sebaiknya Anda mengosongkan jadwal Anda."
-
+    melonia "Oh, don't be so morose."
+    melonia "I'll be back to one hundred percent before you know it."
+    anon "What does that mean?"
+    melonia "It means, you'd better clear your schedule."
     if low:
         show melonia f_relax
     else:
         show melonia f_smirk
-    melonia "Karena kau berutang padaku orgasme yang luar biasa setelah semua barang bayi ini dan aku yakin akan menagihnya!"
-
-    anon f_sad_down "{i}*Huh*{/i} Ya, oke."
-
+    melonia "Because you owe me a monumental orgasm after all this baby stuff and I'm damn sure going to collect!"
+    anon f_sad_down "{i}*Sigh*{/i} Yeah, okay."
     hide anon with dissolve
     return
 
@@ -62,24 +49,17 @@ label melonia_button_baby.effort:
         show anon f_worried_low
     else:
         show anon f_worried
-    anon "Anda setidaknya harus berusaha menjalin ikatan dengan anak kita."
-
+    anon "You have to at least make an effort to bond with our child."
     if low:
         show melonia f_relax
     else:
         show melonia f_normal
-    anon "Oke, tapi kapan?"
-
-    melonia "Ketika sudah tua..."
-
-    melonia "... Dan tidak mudah mengotori dirinya sendiri."
-
+    anon "Okay, but when?"
+    melonia "When it's older..."
+    melonia "... And less prone to soiling itself."
     anon "{b}Melonia{/b}..."
-
-    melonia "Mungkin kita akan beruntung dan yang ini akan meninggalkan sarangnya pada usia normal alih-alih mencemoohku seumur hidupnya..."
-
-    melonia "...Seperti anak lain yang namanya tidak akan saya sebutkan."
-
+    melonia "Maybe we'll get lucky and this one will leave the nest at a normal age instead of mooching off me its entire life..."
+    melonia "... Like a certain other child whose name I won't mention."
     jump melonia_button_baby.choice
 
 
@@ -88,44 +68,34 @@ label melonia_button_baby.thotbot:
         show anon f_worried_low
     else:
         show anon f_worried
-    anon "Ini tidak baik!"
-
-    anon "Aku tidak suka kamu meninggalkan bayi kita dengan benda itu."
-
+    anon "It's not fine!"
+    anon "I don't like you leaving our baby with that thing."
     if low:
         show melonia f_relax
     else:
         show melonia f_normal
-    melonia "Kenapa tidak?"
-
-    melonia "Saya memasukkannya ke mode penitipan anak."
-
-    anon "Karena itu-"
-
+    melonia "Why not?"
+    melonia "I put it in childcare mode."
+    anon "Because it's-"
     if low:
         show anon f_surprised_low
     else:
         show anon f_surprised
     pause
-    anon @ a_point_back "Tunggu, ada mode penitipan anak?"
-
-    melonia "Tentu saja."
-
+    anon @ a_point_back "Wait, it has a childcare mode?"
+    melonia "Of course."
     show anon f_thinking
     pause
     if low:
         show anon f_worried_low
     else:
         show anon f_worried
-    anon "Tidak, tidak... Aku masih tidak menyukainya."
-
+    anon "No, no... I still don't like it."
     if low:
         show melonia f_annoyed_up
     else:
         show melonia f_annoyed
-    melonia "Kalau begitu, tonton sendiri!"
-
-    melonia "Saya menghabiskan sembilan bulan membawa benda itu dan sekarang saya ingin waktu {i}saya{/i}!"
-
+    melonia "Well, then watch it yourself!"
+    melonia "I spent nine months carrying that thing around and now I want some {i}me{/i} time!"
     jump melonia_button_baby.choice
 # Decompiled by unrpyc: https://github.com/CensoredUsername/unrpyc

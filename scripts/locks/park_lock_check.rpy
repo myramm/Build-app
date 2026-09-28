@@ -6,9 +6,7 @@ label park_lock_check:
         show object_key_02:
             pos (540, 280)
         anon "( I don't think anyone will miss this key... )"
-
         anon "( It looks important some how. {b}I should pick it up.{/b} )"
-
     else:
 
         return

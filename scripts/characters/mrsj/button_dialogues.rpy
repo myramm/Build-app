@@ -2,22 +2,17 @@ label button_mrsj_greetings:
     show player 14 at left
     show mrsj 14 at right
     with dissolve
-    player_name "Hai, {b}Ny. Johnson{/b}!"
-
+    player_name "Hi, {b}Mrs. Johnson{/b}!"
     show player 1
     show mrsj 17
-    mrsj "Hai, {b}[firstname]{/b}!"
-
-    mrsj "Bagaimana kabarmu?"
-
+    mrsj "Hey, {b}[firstname]{/b}!"
+    mrsj "How are you?"
     show player 14
     show mrsj 14
-    player_name "Saya baik-baik saja, terima kasih!"
-
+    player_name "I'm good, thanks!"
     show player 1
     show mrsj 17
-    mrsj "Apakah ada yang bisa saya lakukan untuk Anda?"
-
+    mrsj "Is there anything I can do for ya?"
     show mrsj 14
     return
 
@@ -28,20 +23,16 @@ label button_mrsj_sex_ed_intro:
     show player 11 zorder 2 at left
     show old_erik 1f zorder 1 at Position(xpos=300)
     with dissolve
-    mrsj "Hei, teman-teman..."
-
+    mrsj "Hey, boys..."
     show mrsj 41
     show player 21
-    player_name "H-hai, {b}Ny. Johnson{/b}!"
-
+    player_name "H-hi, {b}Mrs. Johnson{/b}!"
     show player 13
     show old_erik 4f
-    erik "Anda... Cantik sekali, {b}Ny. Johnson{/b}."
-
+    erik "You're... Very pretty, {b}Mrs. Johnson{/b}."
     show old_erik 1f
     show mrsj 40b with fastdissolve
-    mrsj "Nah, apakah kamu hanya akan terus menatapku atau kamu ingin menanyakan sesuatu padaku?"
-
+    mrsj "Well, are you just gonna keep staring at me or do you want to ask me something?"
     show mrsj 39
     return
 
@@ -50,50 +41,38 @@ label button_mrsj_private_yoga_intro:
     show mrsj 54 at Position(xpos=734,ypos=650)
     show player 433 zorder 2 at left
     with dissolve
-    mrsj "Halo, {b}[firstname]{/b}..."
-
+    mrsj "Hello, {b}[firstname]{/b}..."
     show mrsj 53
     player_name "!!!"
     show mrsj 54
-    mrsj "Apakah ada yang salah?"
-
+    mrsj "Is there something wrong?"
     show player 435
     show mrsj 53
-    player_name "Anda... Anda telanjang, {b}Ny. Johnson{/b}."
-
+    player_name "You... You're naked, {b}Mrs. Johnson{/b}."
     show player 434
     show mrsj 54
-    mrsj "Saya ingin merasa... Nyaman di kamar saya..."
-
-    mrsj "Bukankah kamu hendak menanyakan sesuatu padaku?"
-
+    mrsj "I like to feel... Comfortable in my room..."
+    mrsj "Weren't you about to ask me something?"
     show mrsj 53
     return
 
 label button_mrsj_erik_learn_fetch_prompt:
     show mrsj 14 at right
     show player 10 at left
-    player_name "Bagaimana kami dapat membantu Anda bersiap untuk pendidikan seks kami lagi?"
-
+    player_name "How can we help you get ready for our sex education again?"
     show player 5
     show mrsj 17
-    mrsj "Saya memerlukan buku instruksional yang bagus, seperti {b}Kama Sutra{/b}."
-
-    mrsj "Dan beberapa {b}pil KB{/b}!"
-
+    mrsj "I'll need a good instructional book, like {b}Kama Sutra{/b}."
+    mrsj "And some {b}birth control pills{/b}!"
     show mrsj 49
-    mrsj "Anda tidak akan pernah bisa terlalu berhati-hati..."
-
+    mrsj "You can never be too careful..."
     show mrsj 50
     show player 14
-    player_name "Baiklah."
-
-    player_name "Aku akan mencoba dan menemukannya..."
-
+    player_name "Alright."
+    player_name "I'll try and find them..."
     show player 5
     show mrsj 17
-    mrsj "Ingatlah untuk membawanya bersamamu ke kamarku pada {b}malam hari{/b}."
-
+    mrsj "Remember to bring them with you to my room in the {b}evening{/b}."
     hide player
     hide mrsj
     with dissolve
@@ -101,70 +80,53 @@ label button_mrsj_erik_learn_fetch_prompt:
 
 label button_mrsj_erik_got_gf:
     show player 14
-    player_name "Sepertinya aku bisa memperkenalkan {b}Erik{/b} kepada seorang gadis di sekolah!"
-
+    player_name "I think I was able to introduce {b}Erik{/b} to a girl at school!"
     show player 1
     show mrsj 17
-    mrsj "Benar-benar?!"
-
+    mrsj "Really?!"
     show player 14
     show mrsj 14
-    player_name "Ya!"
-
-    player_name "Mereka punya banyak kesamaan, mereka akan cocok satu sama lain!"
-
+    player_name "Yeah!"
+    player_name "They have so much in common, they would be perfect for each other!"
     show mrsj 17
     show player 17
-    player_name "Saya pikir ini pasti akan berhasil!"
-
+    player_name "I think it's going to work out for sure!"
     show player 1
     show mrsj 18
-    mrsj "Itu luar biasa!!"
-
+    mrsj "That's wonderful!!"
     show mrsj 17
-    mrsj "Aku tidak percaya kamu begitu baik pada {b}Erik{/b}."
-
+    mrsj "I can't believe you've been so good to {b}Erik{/b}."
     show mrsj 49
-    mrsj "Saya pikir sudah waktunya bagi saya untuk memberi Anda sedikit hadiah..."
-
+    mrsj "I think it's time for me to give you a little reward..."
     show player 21
     show mrsj 50
-    player_name "A... Hadiah?"
-
+    player_name "A... A reward?"
     show player 11
     show mrsj 49
-    mrsj "Bagaimana kalau saya memberi Anda beberapa... pelajaran yoga {i}pribadi{/i}..."
-
-    mrsj "Jenis yang tidak bisa Anda lihat di gym."
-
+    mrsj "How about I give you some... {i}private{/i} yoga lessons..."
+    mrsj "The kind you don't get to see in the gym."
     show mrsj 50
     show player 21
-    player_name "Itu akan luar biasa, {b}Ny. Johnson{/b}!"
-
+    player_name "That would be awesome, {b}Mrs. Johnson{/b}!"
     show player 13
     show mrsj 49
     if game.timer.is_dark():
-        mrsj "Kalau begitu mari kita mulai, oke?"
-
+        mrsj "Then let's get started, shall we?"
 
         scene erik_upstairs_night_c2
         show mrsj 54 at Position(xpos=734,ypos=650)
         show player 433 zorder 2 at left
         with fade
     else:
-        mrsj "Datang saja mengunjungiku pada malam hari di kamarku... Pastikan kamu cukup istirahat!"
-
+        mrsj "Just come visit me at night in my room... Make sure you're well-rested!"
         show player 11
-        mrsj "Ini bisa jadi... Cukup melelahkan."
-
+        mrsj "It can be... Quite exhausting."
         show player 21
         show mrsj 50
-        player_name "Y-ya, {b}Ny. Johnson{/b}."
-
+        player_name "Y-yes, {b}Mrs. Johnson{/b}."
         show player 13
         show mrsj 49
-        mrsj "Sampai jumpa lagi, aku akan menunggu!"
-
+        mrsj "See you later, I'll be waiting!"
         hide player
         hide mrsj
         with dissolve
@@ -172,60 +134,44 @@ label button_mrsj_erik_got_gf:
 
 label button_mrsj_erik_introduce_june:
     show player 14
-    player_name "Ada gadis di sekolah yang menurutku disukai {b}Erik{/b}."
-
+    player_name "There's this girl at school that I think {b}Erik{/b} likes."
     show player 1
     show mrsj 17
-    mrsj "Benar-benar?"
-
+    mrsj "Really?"
     show mrsj 18
-    mrsj "Itu luar biasa!"
-
+    mrsj "That's wonderful!"
     show mrsj 17
-    mrsj "Apakah kamu kenal dia? Seperti apa dia?!"
-
+    mrsj "Do you know her? What is she like?!"
     show mrsj 14
     show player 14
-    player_name "Tidak, aku belum berbicara dengannya."
-
-    player_name "Dia dari kelas yang berbeda, menurutku."
-
+    player_name "No, I haven't spoken to her yet."
+    player_name "She's from a different class, I think."
     show mrsj 17
     show player 1
-    mrsj "Oh, begitu."
-
+    mrsj "Oh, I see."
     show player 11
-    mrsj "Apakah {b}Erik{/b} berbicara dengannya?"
-
+    mrsj "Is {b}Erik{/b} speaking to her?"
     show mrsj 14
     show player 10
-    player_name "Menurutku tidak... Dia bilang dia terlalu pemalu."
-
-    player_name "Saya mengatakan kepadanya bahwa saya akan mencari tahu lebih banyak tentang dia dan memberi tahu dia seperti apa dia."
-
+    player_name "I don't think so... He says he's too shy."
+    player_name "I told him I would find out more about her and let him know what she's like."
     show mrsj 18
     show player 13
-    mrsj "Kamu baik sekali!!"
-
+    mrsj "That's so nice of you!!"
     show mrsj 17
-    mrsj "Dia sangat beruntung memilikimu sebagai teman..."
-
+    mrsj "He's very lucky to have you as a friend..."
     show mrsj 14
     show player 14
-    player_name "Oh, aku yakin dia akan melakukan hal yang sama padaku!"
-
+    player_name "Oh, I'm sure he would do the same for me!"
     show mrsj 49
     show player 1
-    mrsj "Begini saja, beri tahu saya bagaimana kelanjutannya..."
-
+    mrsj "Tell you what, let me know how all of this goes..."
     show player 11
-    mrsj "Jika kamu bisa menemukan {b}Erik{/b} pacar, ada hadiah spesial menantimu..."
-
+    mrsj "If you can find {b}Erik{/b} a girlfriend, there's a special reward waiting for you..."
     show mrsj 50
     player_name "..."
     show player 21
-    player_name "Tentu, {b}Ny. Johnson{/b}!"
-
+    player_name "Sure, {b}Mrs. Johnson{/b}!"
     show player 1
     show mrsj 14
     return
@@ -233,61 +179,45 @@ label button_mrsj_erik_introduce_june:
 label button_mrsj_breastfeeding:
     show mrsj 38 at right
     show player 12 at left
-    player_name "Jadi, sudah berapa lama... Menyusui {b}Erik{/b}?"
-
+    player_name "So, how long have you been... Breastfeeding {b}Erik{/b}?"
     show player 5
     show mrsj 52
     mrsj "Oh..."
-
-    mrsj "Dengar, ini bukan apa yang mungkin kamu pikirkan."
-
-    mrsj "Saya selalu mengasuhnya seperti ini."
-
+    mrsj "Listen, it's not what you might think."
+    mrsj "I just always nurtured him like this."
     show mrsj 38
     show player 11
     mrsj "..."
     show mrsj 52
-    mrsj "Kau tahu dia tidak mendapat banyak perhatian dari gadis-gadis di sekolah."
-
-    mrsj "Aku merasa kasihan padanya!"
-
-    mrsj "Saya hanya ingin {b}Erik{/b} merasakan dan melihat apa itu wanita!"
-
+    mrsj "You know he doesn't get much attention from the girls at school."
+    mrsj "I felt so bad for him!"
+    mrsj "I just wanted {b}Erik{/b} to experience and see what women are all about!"
     show mrsj 20
-    mrsj "Tapi mungkin aku... aku sudah berlebihan melakukannya?"
-
+    mrsj "But maybe I... I over did it?"
     show mrsj 19c
     show player 5
     player_name "..."
     show player 12
-    player_name "Senang sekali Anda begitu peduli dan memberinya perhatian!"
-
+    player_name "It's great that you care so much and give him attention!"
     show mrsj 14
     show player 10
-    player_name "Menurutku dia sangat beruntung..."
-
+    player_name "I think he's very lucky..."
     show player 11
     show mrsj 18
     mrsj "Oh, haha!"
-
     show mrsj 17
-    mrsj "Baiklah, terima kasih..."
-
-    mrsj "Saya pikir pria muda yang baik seperti Anda membutuhkan semua perhatian yang Anda bisa..."
-
+    mrsj "Well, thank you..."
+    mrsj "I think nice young men like yourselves need all the attention you can..."
     show mrsj 14
     show player 13
     player_name "..."
     show mrsj 49
-    mrsj "Maksud saya, terima kasih atas pengertiannya, {b}[firstname]{/b}."
-
+    mrsj "I mean, thanks for understanding, {b}[firstname]{/b}."
     show mrsj 52
-    mrsj "Hanya... Ingatlah untuk menjaga ini di antara kita, oke?"
-
+    mrsj "Just... Remember to keep this between us, okay?"
     show mrsj 14
     show player 14
-    player_name "Ya, {b}Ny. Johnson{/b}."
-
+    player_name "Yes, {b}Mrs. Johnson{/b}."
     hide player
     hide mrsj
     with dissolve
@@ -295,65 +225,49 @@ label button_mrsj_breastfeeding:
 
 label button_mrsj_yoga_help_repeat:
     show player 10
-    player_name "Apa yang perlu saya bantu?"
-
+    player_name "What did you need me to help with?"
     show player 5
     show mrsj 19
-    mrsj "Saya membutuhkan seseorang untuk pergi dan {b}mengajar kelas yoga untuk saya malam ini{/b}."
-
+    mrsj "I need someone to go and {b}teach my yoga class for me tonight{/b}."
     show mrsj 49
-    mrsj "Apakah kamu pikir kamu bisa membantu... Tetangga kesayanganmu??"
-
+    mrsj "Do you think you could help your... Favorite neighbor??"
     show mrsj 50
     show player 14
-    player_name "Tentu saja!"
-
+    player_name "Of course!"
     show player 13
     show mrsj 17
-    mrsj "Ingatlah untuk {b}mempelajari gerakan yoga dari daftar itu{/b} yang saya berikan!"
-
+    mrsj "Remember to {b}study those yoga moves from that list{/b} I gave!"
     return
 
 label button_mrsj_youre_so_fit:
     show mrsj 14 at right
     show player 29 at left
-    player_name "Saya harus mengatakan, {b}Ny. Johnson{/b}, kamu benar-benar bugar!"
-
-    player_name "Apakah Anda banyak berolahraga?"
-
+    player_name "I have to say, {b}Mrs. Johnson{/b}, you are really fit!"
+    player_name "Do you exercise a lot?"
     show mrsj 18 at right
     show player 13 at left
-    mrsj "Ah... Kamu baik sekali!"
-
+    mrsj "Aw... You're so nice!"
     show mrsj 17 at right
-    mrsj "Baiklah, saya mencoba menggunakan gym sesering mungkin..."
-
-    mrsj "... Saya juga pergi jogging! Dan saya juga melakukan yoga di kamar saya pada malam hari..."
-
+    mrsj "Well, I try to use the gym as often as I can..."
+    mrsj "... I also go jogging! And I do yoga in my room at night as well..."
     show mrsj 19 at right
     show player 21 at left
-    player_name "Ya, itu berhasil!"
-
+    player_name "Well, it's working!"
     show player 13 at left
-    mrsj "Menurutmu?"
-
+    mrsj "You think?"
     show mrsj 15 at right
     show player 11 at left
-    mrsj "Bokongku masih agak besar..."
-
+    mrsj "My butt is still a bit big..."
     show mrsj 16 at right
     show player 23 at left
-    mrsj "... Dan payudaraku tidak seperti dulu lagi..."
-
+    mrsj "... And my boobs are not like they used to be..."
     player_name "..."
     show player 28 at left
     show mrsj 19 at right
-    player_name "{i}*Meneguk*{/i}"
-
+    player_name "{i}*Gulp*{/i}"
     show player 1 at left
     show mrsj 18 at right
-    mrsj "Apakah ada hal lain yang ingin Anda bicarakan?"
-
+    mrsj "Is there anything else you wanted to talk about?"
     return
 
 label button_mrsj_leave:
@@ -366,31 +280,26 @@ label button_mrsj_leave:
     if mrsj_nude:
         show mrsj 39
         show player 14 at left
-        player_name "Aku harus pergi, tapi aku akan kembali!"
-
+        player_name "I have to go, but I'll be back though!"
     else:
         if mrsj_nude_bed:
             show mrsj 53
         else:
             show mrsj 14 at right
         show player 14 at left
-        player_name "Saya harus mencari {b}Erik{/b}!"
-
+        player_name "I should go find {b}Erik{/b}!"
     if mrsj_nude or mrsj_nude_bed:
         if mrsj_nude:
             show mrsj 40
         elif mrsj_nude_bed:
             show mrsj 54
         show player 1 at left
-        mrsj "Benar-benar?"
-
-        mrsj "Ya, pastikan untuk segera kembali!"
-
+        mrsj "Really?"
+        mrsj "Well, be sure to come back soon!"
     else:
         show mrsj 18 at right
         show player 1 at left
-        mrsj "Baiklah kalau begitu!"
-
+        mrsj "Alright, then!"
     if mrsj_nude:
         show mrsj 39
     elif mrsj_nude_bed:
@@ -398,94 +307,72 @@ label button_mrsj_leave:
     else:
         show mrsj 14 at right
     show player 17 at left
-    player_name "Sampai jumpa, {b}Ny. Johnson{/b}!"
-
+    player_name "Bye, {b}Mrs. Johnson{/b}!"
 
     $ del mrsj_nude, mrsj_nude_bed
     return
 
 label mrsj_erik_poker_invite_early:
-    player_name "Saya ingin tahu apakah Anda ingin bergabung dengan {b}Erik{/b} dan saya untuk bermain poker?"
-
+    player_name "I was wondering if you'd like to join {b}Erik{/b} and me for poker?"
     show player 1
     show mrsj 17
-    mrsj "Saya tidak bisa sekarang, saya harus segera mengajar kelas..."
-
-    mrsj "Tapi mampirlah ke kamarku {b}malam ini{/b} dan aku akan dengan senang hati melakukannya."
-
+    mrsj "I can't right now, I have to teach a class soon..."
+    mrsj "But stop by my room this {b}evening{/b} and I'd be happy to."
     show player 18
     show mrsj 14
-    player_name "Luar biasa! Terima kasih, {b}Ny. Johnson{/b}!"
-
+    player_name "Awesome! Thanks, {b}Mrs. Johnson{/b}!"
     hide player
     hide mrsj
     with dissolve
     return
 
 label mrsj_erik_poker_invite_fail:
-    player_name "Saya ingin tahu apakah Anda bisa mengajari kami bermain poker?"
-
+    player_name "I was wondering if you could teach us to play poker?"
     show mrsj 17
     show player 1
-    mrsj "Permainan kartu?"
-
+    mrsj "The card game?"
     show mrsj 14
     show player 14
-    player_name "Ya, {b}Erik{/b} dan saya hanya mencari pemain ketiga."
-
+    player_name "Yeah, {b}Erik{/b} and I are just looking for a third player."
     show mrsj 17
     show player 14
-    mrsj "Oh, aku ingin sekali."
-
+    mrsj "Oh, I'd love to."
     show player 19
-    mrsj "Tapi aku benar-benar tidak punya waktu hari ini, maaf..."
-
+    mrsj "But I really just don't have the time today, sorry..."
     show mrsj 14
     show player 14
-    player_name "Tidak apa-apa, mungkin lain kali."
-
+    player_name "That's alright, maybe some other time."
     hide player
     hide mrsj
     with dissolve
     return
 
 label mrsj_erik_poker_invite_pass:
-    player_name "Saya ingin tahu apakah Anda ingin bergabung dengan {b}Erik{/b} dan saya untuk bermain poker?"
-
+    player_name "I was wondering if you'd like to join {b}Erik{/b} and me for poker?"
     show player 1
     show mrsj 17
-    mrsj "Sekarang?"
-
+    mrsj "Right now?"
     show player 14
     show mrsj 14
-    player_name "Ya..."
-
-    player_name "Maksudku, kamu tidak perlu melakukannya!"
-
-    player_name "{b}Erik{/b} dan saya hanya mencari pemain ketiga..."
-
+    player_name "Yeah..."
+    player_name "I mean, you don't have to!"
+    player_name "{b}Erik{/b} and I are just looking for a third player..."
     show player 1
     show mrsj 17
-    mrsj "Dia menunggu di bawah?"
-
+    mrsj "He's waiting downstairs?"
     show player 14
     show mrsj 14
-    player_name "Ya, kami ingin bermain sekarang, jika Anda senggang?"
-
+    player_name "Yeah, we'd like to play now, if you're free?"
     show player 1
     mrsj "Hmm..."
-
     show mrsj 17
-    mrsj "Kedengarannya menyenangkan, saya bahkan mungkin bisa mengajari kalian satu atau dua hal."
-
+    mrsj "Sounds like fun, I might even be able to teach you boys a thing or two."
     show mrsj 18
     show player 13
-    mrsj "Ayo pergi!"
-
+    mrsj "Let's go!"
     show player 18
     show mrsj 14
-    player_name "Luar biasa! Terima kasih, {b}Ny. Johnson{/b}!"
-
+    player_name "Awesome! Thanks, {b}Mrs. Johnson{/b}!"
     hide mrsj
     hide player
     with dissolve
@@ -496,27 +383,22 @@ label mrsj_erik_poker_invite_pass:
     show mrsj 19 at right
     show player 1 at left
     with dissolve
-    mrsj "Kalian tidak berencana bermain seperti ini, kan?"
-
+    mrsj "You boys aren't planning on playing like this, are you?"
     show player 11
     show mrsj 14
     player_name "..."
     show player 10
-    player_name "Apa maksudmu?"
-
+    player_name "What do you mean?"
     show player 11
     show mrsj 18
-    mrsj "Anda tidak bisa bermain poker tanpa minuman yang enak!"
-
+    mrsj "You can't play poker without a nice drink!"
     show mrsj 14
     show player 1
     show old_erik 4f
-    erik "Minuman?"
-
+    erik "A drink?"
     show old_erik 1f
     show mrsj 18
-    mrsj "Mari kita lihat apa yang tersisa di {b}lemari alkohol{/b}, oke?"
-
+    mrsj "Let's see what's left in the {b}alcohol cabinet{/b}, shall we?"
     hide mrsj
     hide old_erik
     hide player
@@ -527,44 +409,33 @@ label mrsj_erik_poker_invite_pass:
     show player 1 at left
     show mrsj 14 at right
     with dissolve
-    erik "Wiski..."
-
-    erik "Wiski... Wiski..."
-
-    erik "Wiski... Wiski... Wiski..."
-
-    erik "Tidak ada apa-apa selain wiski di sini..."
-
+    erik "Whiskey..."
+    erik "Whiskey... Whiskey..."
+    erik "Whiskey... Whiskey... Whiskey..."
+    erik "There's nothing but whiskey in here..."
     show old_erik 1f
     show mrsj 17
-    mrsj "Suamiku hanya minum wiski."
-
+    mrsj "My husband only drank whiskey."
     show mrsj 14
     show player 14
-    player_name "Tidak apa-apa!"
-
-    player_name "Kami akan mengambil apa pun yang ada di sana, haha!"
-
+    player_name "That's fine!"
+    player_name "We'll take whatever's in there, haha!"
     show old_erik 15
     show player 1
     with dissolve
-    erik "Haruskah kita mencobanya sebelum menyajikannya ke meja?"
-
+    erik "Should we try it before we take it to the table?"
     show old_erik 16
     show mrsj 22
     with dissolve
-    mrsj "Mari kita lihat bagaimana rasanya..."
-
+    mrsj "Let's see how this tastes..."
     show old_erik 20
     show mrsj 21
     show player 185
     with dissolve
-    erik "Ini dia..."
-
+    erik "Here we go..."
     show player 186
     show old_erik 17
-    player_name "Bersulang!"
-
+    player_name "Cheers!"
     show player 189
     show old_erik 19
     show mrsj 25
@@ -577,32 +448,26 @@ label mrsj_erik_poker_invite_pass:
     pause
     show player 191
     player_name "Ugh!!"
-
     show player 188
     show mrsj 24
     show old_erik 17
     with dissolve
-    mrsj "Wah..."
-
+    mrsj "Woaa..."
     show old_erik 20
     show mrsj 14
     with dissolve
-    erik "Hmm... Lumayan!"
-
+    erik "Hmm... Not bad!"
     show old_erik 17
     player_name "..."
     show player 187
-    player_name "Kamu menyukainya?!"
-
+    player_name "You liked that?!"
     show player 188
     show old_erik 20
-    erik "Ya, itu agak manis."
-
+    erik "Yeah, it's kind of sweet."
     show player 185
     show old_erik 17
     show mrsj 18
-    mrsj "Baiklah, teman-teman! Ayo ambil ini kembali dan mulai permainannya!"
-
+    mrsj "Alright, boys! Let's take this back and start the game!"
     hide mrsj
     hide old_erik
     hide player
@@ -615,40 +480,29 @@ label mrsj_erik_poker_invite_pass:
     show old_erikpoker 1 zorder 1 at Position(xpos=153,ypos=626)
     show old_erikpokerc 9 zorder 2 at Position(xpos=144,ypos=592)
     with fade
-    mrsj "Jadi..."
-
-    mrsj "Apakah kita bermain Omaha, atau Texas Hold'em?"
-
+    mrsj "So..."
+    mrsj "Are we playing Omaha, or Texas hold'em?"
     show mrsjpoker 1
     player_name "..."
-    player_name "Kami hanya tahu strip poker..."
-
+    player_name "We only know strip poker..."
     show mrsjpoker 2
-    mrsj "Haha! Apakah kamu bercanda?"
-
+    mrsj "Haha! Are you kidding me?"
     show mrsjpoker 10 at Position(xpos=856,ypos=627)
-    player_name "Itu satu-satunya orang baik yang bermain di sekolah..."
-
+    player_name "It's the only kind people play at school..."
     show old_erikpoker 2
-    erik "Anda tidak perlu... {b}Ny. Johnson{/b}."
-
+    erik "You don't have to... {b}Mrs. Johnson{/b}."
     show old_erikpoker 11
     show mrsjpoker 9 at Position(xpos=856,ypos=627)
-    mrsj "saya akan bermain!"
-
+    mrsj "I'll play!"
     show mrsjpoker 4 at Position(xpos=857,ypos=626)
-    mrsj "Saya bukan orang yang pemalu. Aku juga bisa bersenang-senang!"
-
+    mrsj "I'm not a prude. I can have fun, too!"
     show mrsjpoker 2
-    mrsj "Saya biasa bermain strip poker dulu..."
-
+    mrsj "I used to play strip poker back in the day..."
     show mrsjpoker 5
-    mrsj "... Dan saya adalah yang {b}terbaik{/b} dalam hal itu!"
-
+    mrsj "... And I was the {b}best{/b} at it!"
     show old_erikpoker 12
     show mrsjpoker 1
-    erik "Jadi, apa yang kita lakukan sekarang?"
-
+    erik "So, what do we do now?"
     show old_erikpoker 1
     return
 
@@ -666,8 +520,7 @@ label mrsj_erik_poker_invite_repeat:
         show mrsj 53
     else:
         show mrsj 14 at right
-    player_name "Apakah Anda ingin bermain poker bersama kami lagi?"
-
+    player_name "Would you like to play some poker with us again?"
     show player 1
     if mrsj_nude:
         show mrsj 40
@@ -675,8 +528,7 @@ label mrsj_erik_poker_invite_repeat:
         show mrsj 54
     else:
         show mrsj 17
-    mrsj "Masih mencari teman untuk bermain?"
-
+    mrsj "Still looking for friends to play with?"
     show player 14
     if mrsj_nude:
         show mrsj 39
@@ -684,8 +536,7 @@ label mrsj_erik_poker_invite_repeat:
         show mrsj 53
     else:
         show mrsj 14
-    player_name "Yah, hanya saja-"
-
+    player_name "Well, it's just that-"
     show player 1
     if mrsj_nude:
         show mrsj 40
@@ -693,8 +544,7 @@ label mrsj_erik_poker_invite_repeat:
         show mrsj 54
     else:
         show mrsj 18
-    mrsj "Tidak apa-apa!!"
-
+    mrsj "It's fine!!"
     show player 1
     if mrsj_nude:
         show mrsj 40
@@ -702,8 +552,7 @@ label mrsj_erik_poker_invite_repeat:
         show mrsj 54
     else:
         show mrsj 17
-    mrsj "aku akan bermain denganmu kawan..."
-
+    mrsj "I'll play with you boys..."
     show player 14
     if mrsj_nude:
         show mrsj 39
@@ -711,8 +560,7 @@ label mrsj_erik_poker_invite_repeat:
         show mrsj 53
     else:
         show mrsj 14
-    player_name "Benar-benar?"
-
+    player_name "Really?"
     show player 1
     if mrsj_nude:
         show mrsj 40b
@@ -720,8 +568,7 @@ label mrsj_erik_poker_invite_repeat:
         show mrsj 54
     else:
         show mrsj 20
-    mrsj "Yah... Terakhir kali agak berlebihan..."
-
+    mrsj "Well... Last time was a bit much..."
     show player 13
     if mrsj_nude:
         show mrsj 40
@@ -729,8 +576,7 @@ label mrsj_erik_poker_invite_repeat:
         show mrsj 54
     else:
         show mrsj 18
-    mrsj "Tapi kenapa tidak?"
-
+    mrsj "But, why not?"
     show player 14
     if mrsj_nude:
         show mrsj 39
@@ -738,8 +584,7 @@ label mrsj_erik_poker_invite_repeat:
         show mrsj 53
     else:
         show mrsj 14
-    player_name "Oke."
-
+    player_name "Okay."
     show player 13
     if mrsj_nude:
         show mrsj 40
@@ -747,8 +592,7 @@ label mrsj_erik_poker_invite_repeat:
         show mrsj 54
     else:
         show mrsj 17
-    mrsj "Kapan kita bermain?"
-
+    mrsj "When are we playing?"
     show player 14
     if mrsj_nude:
         show mrsj 39
@@ -757,11 +601,9 @@ label mrsj_erik_poker_invite_repeat:
     else:
         show mrsj 14
     if mrsj_nude:
-        player_name "Sekarang!"
-
+        player_name "Right now!"
     else:
-        player_name "{b}Erik{/b} sudah menunggu di bawah."
-
+        player_name "{b}Erik{/b}'s already downstairs waiting."
     show player 1
     if mrsj_nude:
         show mrsj 40b
@@ -769,17 +611,13 @@ label mrsj_erik_poker_invite_repeat:
         show mrsj 54
     else:
         show mrsj 18
-    mrsj "Haha, baiklah."
-
+    mrsj "Haha, alright."
     if mrsj_nude or mrsj_nude_bed:
-        mrsj "Biarkan aku berpakaian."
-
+        mrsj "Just let me get dressed."
         if mrsj_nude_bed:
-            mrsj "Jadi kamu bisa menanggalkan pakaianku lagi!"
-
+            mrsj "So you can undress me again!"
         else:
-            mrsj "Jika tidak, ini akan menjadi pertandingan yang sangat singkat!"
-
+            mrsj "Otherwise, it'll be a very short game!"
     hide mrsj
     hide old_erik
     hide player
@@ -790,39 +628,32 @@ label mrsj_erik_poker_invite_repeat:
     scene erik_basement_cabinet
     show old_erik 4f at Position(xpos=300)
     with fade
-    erik "Aku akan mengambil wiski!"
-
+    erik "I'll fetch the whiskey!"
     show player 1 at left
     show mrsj 14 at right
     with dissolve
     show old_erik 1f
     show mrsj 19
     show player 11
-    mrsj "Oh, apakah kalian berdua yakin tentang itu?"
-
+    mrsj "Oh, are you two sure about that?"
     show mrsj 19c
     show player 10
-    player_name "Tentang apa?"
-
+    player_name "About what?"
     show mrsj 19
     show player 11
-    mrsj "Alkoholnya, kamu ingat apa yang terjadi terakhir kali, kan?"
-
+    mrsj "The alcohol, you remember what happened last time, right?"
     show mrsj 19c
     show old_erik 5f
-    erik "Tapi, kita semua bersenang-senang, bukan?"
-
+    erik "But, we all had fun, didn't we?"
     show old_erik 1f
     pause
     show mrsj 14 with fastdissolve
     pause
     show mrsj 17
     show player 1
-    mrsj "Saya kira Anda benar..."
-
+    mrsj "I suppose you're right..."
     show mrsj 18
-    mrsj "Oh, apa-apaan ini, ayo kita lakukan!"
-
+    mrsj "Oh, what the heck, let's do it!"
     hide mrsj
     hide old_erik
     hide player
@@ -835,26 +666,20 @@ label mrsj_erik_poker_invite_repeat:
     show old_erikpoker 1 zorder 1 at Position(xpos=153,ypos=626)
     show old_erikpokerc 9 zorder 2 at Position(xpos=144,ypos=592)
     with fade
-    mrsj "Jadi..."
-
-    mrsj "Apakah kita akan bermain strip poker lagi?"
-
+    mrsj "So..."
+    mrsj "Are we playing strip poker again?"
     show mrsjpoker 1
     player_name "..."
     show mrsjpoker 2
-    mrsj "Ha ha! Aku bisa membacakan kalian berdua seperti sepasang buku!"
-
+    mrsj "Haha! I can read you two like a pair of books!"
     show mrsjpoker 10 at Position(xpos=856,ypos=627)
     show old_erikpoker 2
-    erik "Anda tidak punya-"
-
+    erik "You don't have-"
     show old_erikpoker 11
     show mrsjpoker 9 at Position(xpos=856,ypos=627)
-    mrsj "saya akan bermain!"
-
+    mrsj "I'll play!"
     show mrsjpoker 4 at Position(xpos=857,ypos=626)
-    mrsj "Saya bukan orang yang pemalu. Saya pikir Anda sudah mengetahuinya sekarang!"
-
+    mrsj "I'm not a prude. I'd have thought you'd know that by now!"
     show mrsjpoker 2
     show old_erikpoker 1
     return
@@ -862,117 +687,87 @@ label mrsj_erik_poker_invite_repeat:
 label mrsj_erik_fork:
     show player 14 at left
     show mrsj 14 at right
-    player_name "Saya ingin berbicara tentang {b}Erik{/b}..."
-
+    player_name "I wanted to talk about {b}Erik{/b}..."
     show player 1
     show mrsj 19
-    mrsj "Oh, apakah dia baik-baik saja?"
-
+    mrsj "Oh, is he okay?"
     show player 14
     show mrsj 19c
-    player_name "Ya, dia baik-baik saja."
-
-    player_name "Aku sedang berbicara dengannya tentang apa yang terjadi malam itu..."
-
+    player_name "Yeah, he's fine."
+    player_name "I was talking to him about what happened the other night..."
     show player 11
     show mrsj 19
-    mrsj "Apakah dia kesal?"
-
+    mrsj "Is he upset?"
     show player 14
     show mrsj 19c
-    player_name "Tidak, tidak sama sekali."
-
+    player_name "No, not at all."
     show player 10
-    player_name "Dia hanya tidak yakin dengan apa yang dia inginkan..."
-
+    player_name "He's just not sure about what he wants..."
     show player 11
     show mrsj 19
-    mrsj "Bagaimana bisa?"
-
+    mrsj "How so?"
     show player 10
     show mrsj 19c
-    player_name "Saya pikir dia sudah menyerah untuk bertemu gadis-gadis."
-
-    player_name "Aku bisa mencoba membantunya mendapatkan pacar, tapi menurutku dia lebih menyukaimu..."
-
+    player_name "I think he's given up on meeting girls."
+    player_name "I could try and help him get a girlfriend, but I think he likes you more..."
     show player 13
     show mrsj 19
-    mrsj "Ya ampun..."
-
+    mrsj "Oh, my..."
     show mrsj 20
-    mrsj "Apakah aku terlalu melindunginya?"
-
+    mrsj "Have I really sheltered him too much?"
     show mrsj 19
-    mrsj "Menurut Anda apa yang harus saya lakukan?"
-
+    mrsj "What do you think I should do?"
     show mrsj 19c
     return
 
 label mrsj_erik_fork_teach:
     show player 14 at left
     show mrsj 19c at right
-    player_name "Saya pikir yang terbaik adalah jika Anda memberinya perhatian yang dia butuhkan..."
-
+    player_name "I think it's best if you give him the attention he needs..."
     show mrsj 19
     show player 1
-    mrsj "Menurutmu begitu?"
-
+    mrsj "You really think so?"
     show mrsj 19c
     show player 14
-    player_name "Yah, menurutku dia tidak ingin bertemu gadis lain..."
-
-    player_name "... Dan dia sangat menyukaimu!"
-
+    player_name "Well, I don't think he wants to see any other girls..."
+    player_name "... And he really likes you!"
     show mrsj 19
     show player 1
-    mrsj "Dia selalu dekat denganku..."
-
+    mrsj "He's always been close to me..."
     show mrsj 19c
     show player 14
-    player_name "Kami bersenang-senang malam itu!"
-
-    player_name "Aku belum pernah melihat {b}Erik{/b} sebahagia ini."
-
+    player_name "We had such a great time the other night!"
+    player_name "I've never seen {b}Erik{/b} this happy."
     show mrsj 19
     show player 11
-    mrsj "Menurutmu... Kalian ingin lebih... Perhatian?"
-
+    mrsj "Do you think... You boys would like more of that kind of... Attention?"
     show mrsj 19c
     show player 21
-    player_name "Aku... menurutku begitu!"
-
+    player_name "I... I think so!"
     show mrsj 20
     show player 13
-    mrsj "Jika tidak ada gadis di sekolah yang memberinya perhatian yang dia butuhkan..."
-
+    mrsj "If none of the girls from school will give him the attention he needs..."
     show mrsj 19
-    mrsj "... Mungkin aku yang harus menjadi orangnya?"
-
+    mrsj "... Maybe I should be the one?"
     show mrsj 14
     show player 14
-    player_name "Saya pikir dia akan menyukainya."
-
+    player_name "I think he would like that."
     show mrsj 49
     show player 11
-    mrsj "Bagaimana jika saya memberi kalian beberapa... Pendidikan seks pribadi?"
-
+    mrsj "What if I gave you guys some... Personal sex education?"
     show mrsj 50
     player_name "!!!" with vpunch
     show mrsj 49
-    mrsj "Tentu saja itu hanya untuk tujuan pendidikan..."
-
+    mrsj "It's only for educational purposes of course..."
     show mrsj 50
     show player 29
-    player_name "Oh, aku emm... Aku tidak keberatan sama sekali!"
-
+    player_name "Oh, I emm... I wouldn't mind at all!"
     show mrsj 49
     show player 13
-    mrsj "Tapi aku harus memikirkannya terlebih dahulu."
-
+    mrsj "I'd have to think it over first, though."
     show mrsj 50
     show player 14
-    player_name "Tentu, {b}Ny. Johnson{/b}!"
-
+    player_name "Sure, {b}Mrs. Johnson{/b}!"
     show mrsj 14
     show player 1
     with None
@@ -984,110 +779,79 @@ label mrsj_erik_fork_teach:
 label mrsj_erik_fork_match:
     show player 14 at left
     show mrsj 19c
-    player_name "Saya pikir kita harus mencoba mencarikannya pacar."
-
+    player_name "I think we should try and find him a girlfriend."
     show player 1
     show mrsj 19
-    mrsj "Menurutmu begitu?"
-
+    mrsj "You really think so?"
     show player 14
     show mrsj 19c
-    player_name "Yah, menurutku dia akan lebih bahagia..."
-
-    player_name "... Dan itu akan membangun kepercayaan dirinya!"
-
+    player_name "Well, I think he would be happier..."
+    player_name "... And it'd build up his confidence!"
     show player 1
     show mrsj 20
-    mrsj "Dia memang perlu keluar lebih banyak..."
-
+    mrsj "He does need to go out more..."
     show player 10
     show mrsj 19c
-    player_name "Jangan salah paham, kami bersenang-senang malam itu..."
-
+    player_name "Don't get me wrong, we had a lot of fun the other night..."
     show player 14
-    player_name "... Tapi menurutku {b}Erik{/b} perlu bertemu gadis lain."
-
+    player_name "... But I think {b}Erik{/b} needs to meet other girls."
     show player 13
     show mrsj 20
-    mrsj "Anda benar..."
-
+    mrsj "You're right..."
     show player 11
     show mrsj 19
-    mrsj "Tapi bagaimana dengan... Aku?"
-
+    mrsj "But what about... Me?"
     show player 10
     show mrsj 19c
-    player_name "Apa maksudmu?"
-
+    player_name "What do you mean?"
     show player 11
     show mrsj 19
-    mrsj "Ya..."
-
-    mrsj "Jika {b}Erik{/b} menemukan pacar... Apa yang akan saya lakukan?"
-
+    mrsj "Well..."
+    mrsj "If {b}Erik{/b} finds a girlfriend... What will I do?"
     show mrsj 20
-    mrsj "Aku tidak ingin ada orang yang memberikan perhatianku..."
-
+    mrsj "I won't have anyone to give my attention to..."
     show player 21
     show mrsj 19c
-    player_name "Oh, saya yakin Anda akan menemukan seseorang {b}Ny. Johnson{/b}!"
-
+    player_name "Oh, I'm sure you will find someone {b}Mrs. Johnson{/b}!"
     show mrsj 14
-    player_name "Kamu sangat... Menarik, dan penuh kasih sayang!"
-
+    player_name "You're very... Attractive, and loving!"
     show player 13
     show mrsj 17
-    mrsj "Aww, manis sekali ucapanmu."
-
+    mrsj "Aww, that's very sweet of you to say."
     show mrsj 50
     mrsj "Hmm..."
-
     show mrsj 49
     show player 1
-    mrsj "Saya punya ide berbeda!"
-
-    mrsj "Bagaimana jika saya mengambil perhatian itu..."
-
+    mrsj "I have a different idea!"
+    mrsj "What if I took that attention..."
     show player 11
-    mrsj "... Dan memberikannya kepada {i}kamu{/i}?"
-
+    mrsj "... And gave it to {i}you{/i}?"
     show mrsj 50
     player_name "!!!" with vpunch
     show mrsj 49
-    mrsj "Ada apa?"
-
-    mrsj "Hanya jika Anda menginginkannya, itulah yang ingin saya katakan..."
-
+    mrsj "What's wrong?"
+    mrsj "Only if you wanted to, is what I meant to say..."
     show player 21
     show mrsj 50
-    player_name "A-aku tidak keberatan sama sekali!"
-
-    player_name "Tapi, hanya selama {b}Erik{/b} tidak masalah."
-
+    player_name "I-I wouldn't mind at all!"
+    player_name "But, only as long as {b}Erik{/b} is okay with it."
     show player 1
     show mrsj 49
-    mrsj "Tanyakan saja padanya!"
-
-    mrsj "aku yakin dia akan baik-baik saja dengan itu..."
-
+    mrsj "Just ask him!"
+    mrsj "I'm sure he would be okay with that..."
     show player 13
-    mrsj "... Apalagi kalau dia terlalu sibuk bermain-main dengan gadis lain! Ha ha."
-
+    mrsj "... Especially if he's too busy playing with another girl! Haha."
     show player 29
     show mrsj 50
-    player_name "Saya kira begitu, haha."
-
+    player_name "I suppose so, haha."
     show player 14
-    player_name "Aku akan mencoba mencarikan seseorang untuknya..."
-
+    player_name "I'll try and find someone for him..."
     show player 13
     show mrsj 49
-    mrsj "Kembalilah dan beri tahu saya apa yang terjadi."
-
+    mrsj "Come back and let me know what happens."
     show player 17
     show mrsj 50
-    player_name "Tentu, {b}Ny. Johnson{/b}!"
-
+    player_name "Sure, {b}Mrs. Johnson{/b}!"
     show mrsj 14
     show player 1
     with None

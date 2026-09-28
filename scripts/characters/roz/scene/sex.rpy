@@ -13,22 +13,16 @@ label scene_roz_sex:
     scene location_hospital_sex
     show expression AnimatedImage("rozs", [1,2,3,4,5,6,7], M_roz) as rozs at right
     with dissolve
-    roz "Itu dia nak, bagus dan dalam."
-
+    roz "That's it kid, nice and deep."
     pause
-    roz "Oh Yaaah..."
-
+    roz "Oh Yeeaah..."
     pause
-    roz "Jangan khawatir untuk menariknya keluar juga."
-
-    roz "Tidak ada pipa yang berfungsi lagi dan saya menyukai nuansa di dalamnya."
-
+    roz "Don't you worry about pullin' out neither."
+    roz "None of the plumbing works anymore and I like the feel of it inside."
     $ M_roz.set("sex speed", .125)
-    roz "Itu saja, begitu saja."
-
+    roz "That's it, just like that."
     pause
-    roz "Ayo nak, lebih keras!"
-
+    roz "C'mon kid, harder!"
     $ M_roz.set("sex speed", .075)
     jump scene_roz_sex.loop
 
@@ -41,32 +35,26 @@ label scene_roz_sex.intro:
     show player 80 with dissolve
     pause
     show old_roz 19
-    roz "Kenapa kamu tidak mengeluarkan monster itu dan kita bisa mulai."
-
+    roz "Why don't you get that monster out and so we can get started."
     show player 83
     show old_roz 18
-    player_name "Ya, Bu!"
-
+    player_name "Yes, ma'am!"
     show player 480 at Position(xpos=.35,ypos=1.0) with dissolve
     pause
     show old_roz 19
-    roz "Nak, kamu benar-benar mendapatkan yang hebat."
-
+    roz "Kid, you really got a great one."
     show old_roz 18
     show player 482
     pause
     show old_roz 19
-    roz "Jangan lupa untuk menyelesaikannya di dalam sekarang..."
-
+    roz "Don't you be forgettin' to finish inside now..."
     show old_roz 18
     show player 481
-    player_name "Y-ya, Bu!"
-
+    player_name "Y-yes ma'am!"
     show player 483 at Position (xpos=.36,ypos=1.0)
     show old_roz 19
     with dissolve
-    roz "Itu anak yang baik..."
-
+    roz "That's a good boy..."
     return
 
 label scene_roz_sex.loop:
@@ -99,27 +87,19 @@ label scene_roz_sex.loop:
 label scene_roz_sex.dialogue:
     if animcounter == 1 and randomizer() > 50:
         roz "Ahhhh!!!{p=1}{nw}"
-
     elif animcounter == 3 and randomizer() > 50:
         roz "Oh!!!{p=1}{nw}"
-
         player_name "Uhhh...{p=1}{nw}"
-
     return
 
 label scene_roz_sex.finish:
-    player_name "{b}Roz{/b}, aku tidak bisa bertahan... M-lebih lama lagi."
-
-    roz "Selesaikan di dalam diriku!"
-
+    player_name "{b}Roz{/b}, I can't hold out... M-much longer."
+    roz "Finish inside me!"
     pause
-    roz "Ya ampun!!!"
-
+    roz "Oh goodness!!!"
     show rozs 8_9 with flash
     player_name "UHHH!!"
-
     roz "AAAAHHH!!!!"
-
     pause
     hide rozs
     show player 482 zorder 2 at Position(xpos = .36, ypos = 1.0)
@@ -129,18 +109,14 @@ label scene_roz_sex.finish:
     with dissolve
     pause
     show old_roz 19
-    roz "{i}*Mengi*{/i} ... Wah."
-
-    roz "Astaga... {i}*Batuk*{/i} Enak sekali, {b}[firstname]{/b}!"
-
+    roz "{i}*Wheeze*{/i} ... Whew."
+    roz "Dear me... {i}*Cough*{/i} That was really good, {b}[firstname]{/b}!"
     show old_roz 18
     show player 481
-    player_name "Y-ya..."
-
+    player_name "Y-yeah..."
     show player 482
     show old_roz 19
-    roz "Beri aku waktu sebentar... Untuk mengatur napas."
-
+    roz "Just give me a moment... To catch my breath."
     show old_roz 18
     pause
     return
@@ -155,43 +131,35 @@ label roz02_roz_sex_intro:
     show player 78 with dissolve
     pause
     show old_roz 19
-    roz "Hehe, aku masih mengerti."
-
+    roz "Heh, I still got it."
     show player 80
     show old_roz 18
     with dissolve
     pause
     show old_roz 19
-    roz "Apa kendalanya?"
-
+    roz "What's the hold up?"
     show old_roz 18
     show player 83
-    player_name "Ya ampun..."
-
+    player_name "Oh man..."
     show player 480 at Position(xpos=.35,ypos=1.0) with dissolve
     pause
     show old_roz 19
-    roz "Fiuh! Sungguh monster!"
-
+    roz "Phew wee! What a monster!"
     show old_roz 18
     show player 482
     pause
     show old_roz 19
-    roz "Saya tahu ini ide yang bagus!"
-
+    roz "I knew this was a good idea!"
     show old_roz 18
     pause
     show old_roz 19
-    roz "Sekarang kemarilah dan beri tahu {b}Roz{/b} apa yang dia lewatkan."
-
+    roz "Now get over here and give ole {b}Roz{/b} what she's been missin'."
     show old_roz 18
     show player 481
-    player_name "O-oke!"
-
+    player_name "O-okay!"
     show player 483 at Position (xpos=.36,ypos=1.0)
     show old_roz 19
     with dissolve
-    roz "Itu anak yang baik..."
-
+    roz "That's a good boy..."
     return
 # Decompiled by unrpyc: https://github.com/CensoredUsername/unrpyc

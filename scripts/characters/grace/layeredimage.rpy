@@ -29,23 +29,15 @@ layeredimage grace:
 
 
     group body auto:
-        attribute b_dressed default "rahmat_tubuh_b_berpakaian[M_grace.pregnancy.to_string]"
-
+        attribute b_dressed default "grace_body_b_dressed[M_grace.pregnancy.to_string]"
         attribute b_empty null
-        attribute b_massage_mc_sexy "rahmat_tubuh_b_massage_mc_seksi"
-
-        attribute b_massage_mc_sexy_dickup "rahmat_tubuh_b_massage_mc_sexy_dickup"
-
-        attribute b_massage_mc_reg "rahmat_tubuh_b_massage_mc_reg"
-
-        attribute b_massage_mc_reg_front "rahmat_tubuh_b_massage_mc_reg_front"
-
-        attribute b_massage_odette "rahmat_tubuh_b_pijat_odette"
-
-        attribute b_massage_cum "rahmat_tubuh_b_pijat_cum"
-
-        attribute b_magic "rahmat_tubuh_b_[M_grace.outfit.get][M_grace.pregnancy.to_string]"   
-
+        attribute b_massage_mc_sexy "grace_body_b_massage_mc_sexy"
+        attribute b_massage_mc_sexy_dickup "grace_body_b_massage_mc_sexy_dickup"
+        attribute b_massage_mc_reg "grace_body_b_massage_mc_reg"
+        attribute b_massage_mc_reg_front "grace_body_b_massage_mc_reg_front"
+        attribute b_massage_odette "grace_body_b_massage_odette"
+        attribute b_massage_cum "grace_body_b_massage_cum"
+        attribute b_magic "grace_body_b_[M_grace.outfit.get][M_grace.pregnancy.to_string]"   
 
 
     group mouth prefix 'm':
@@ -125,14 +117,12 @@ layeredimage grace:
 
 
     group arms if_any ['b_magic'] auto:
-        attribute a_idle default "rahmat_arms_magic_a_idle[M_grace.pregnancy.to_string]"
-
+        attribute a_idle default "grace_arms_magic_a_idle[M_grace.pregnancy.to_string]"
 
 
     group arms if_any ['b_dressed', 'b_underwear'] auto variant 'dressed':
         attribute a_idle default 'grace_arms_dressed_a_idle[M_grace.pregnancy.to_string]'
-        attribute a_baby "Grace_arms_dressed_a_baby_[M_grace.pregnancy.baby_gender]"
-
+        attribute a_baby "grace_arms_dressed_a_baby_[M_grace.pregnancy.baby_gender]"
 
 
     group arms if_any ['b_dressed_pregnant_belly'] auto variant 'dressed_pregnant_belly':
@@ -161,8 +151,7 @@ layeredimage grace:
 
 
     group arms if_all 'b_gown_bed' auto variant 'gown_bed':
-        attribute a_idle default "rahmat_arms_gown_bed_a_baby_[M_grace.pregnancy.baby_gender]"
-
+        attribute a_idle default "grace_arms_gown_bed_a_baby_[M_grace.pregnancy.baby_gender]"
 
 
     group overlay auto:

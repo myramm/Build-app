@@ -2,100 +2,70 @@ label jenny_couch_sex:
     if M_jenny.get("dominance") <= 0:
         hide jenny_couch_dick_rub
         show jenny a_dick3 f_sexy
-        jenny "Baiklah, aku bosan dengan ini..."
-
+        jenny "Alright, I'm bored of this..."
         show anon f_couch_sit_right
         anon @ -m_talk "Hmm?"
-
         show anon a_boner zorder 1
         show jenny b_couch_remove zorder 0
         with dissolve
         pause
         show jenny b_couch_sit f_sexy a_rest o_couch_teasing with dissolve
-        jenny "Kemarilah dan persetan denganku."
-
-        anon "Apa?!"
-
-        jenny "Anda mendengar saya."
-
-        anon "T-tapi, {b}[deb_name]{/b} ada di sana!"
-
-        jenny "Saya tahu, ini mengasyikkan! Bukan?"
-
-        anon "T-tidak?"
-
+        jenny "Get over here and fuck me."
+        anon "What?!"
+        jenny "You heard me."
+        anon "B-but, {b}[deb_name]{/b} is right in there!"
+        jenny "I know, it's exciting! Isn't it?"
+        anon "N-no?"
         show jenny f_eyeroll
-        jenny "{i}*Huh*{/i} Ya, benar!"
-
+        jenny "{i}*Sigh*{/i} Yes, it is!"
         show jenny f_sexy
         anon @ -m_talk "..."
-        jenny "Jangan jadi banci."
-
+        jenny "Don't be a pussy."
         show jenny f_sexy_down
-        jenny "Saya ingin penis sebesar itu!"
-
+        jenny "I want that big dick!"
     else:
         show jenny f_sexy_down
-        jenny "Apakah kamu semakin dekat?"
-
-        anon f_couch_sit_down "Y-ya."
-
+        jenny "Are you getting close?"
+        anon f_couch_sit_down "Y-yes."
         show anon f_couch_sit_right
         hide jenny_couch_dick_rub
         show jenny a_dick3 f_sexy_down
         pause
-        anon "Apa yang kamu lakukan?!"
-
+        anon "What are you doing?!"
         show jenny f_sexy
-        jenny "aku bosan dengan ini..."
-
+        jenny "I'm bored of this..."
         pause
-        jenny "Ayo bercinta!"
-
-        anon "Hah?!"
-
-        jenny "Anda mendengar saya."
-
+        jenny "Let's fuck!"
+        anon "Huh?!"
+        jenny "You heard me."
         show anon a_boner zorder 1
         show jenny b_couch_remove zorder 0
         with dissolve
         pause
         show jenny b_couch_sit f_sexy a_rest o_couch_teasing with dissolve
-        jenny "Aku ingin kamu ada di dalam diriku."
-
-        anon "T-tapi, {b}[deb_name]{/b} ada di sana!"
-
-        jenny "Jadi?"
-
-        jenny "Saya bisa diam."
-
-        anon "Ya benar."
-
+        jenny "I want you inside me."
+        anon "B-but, {b}[deb_name]{/b} is right in there!"
+        jenny "So?"
+        jenny "I can be quiet."
+        anon "Yeah, right."
         show jenny f_upset
-        jenny "Ayolah?"
-
+        jenny "C'mon, please?"
         anon @ f_couch_sit_down_surprised "!!!"
-        anon "Apakah Anda baru saja mengatakannya?"
-
+        anon "Did you just say, please?"
         show jenny f_eyeroll
-        jenny "... Mungkin."
-
+        jenny "... Maybe."
         show jenny f_sexy
-        anon "Wow, kamu benar-benar menginginkannya."
-
+        anon "Wow, you really do want it."
         show jenny f_sexy_down
         jenny "Mmhmm!"
-
-    anon "Bagus."
-
+    anon "Fine."
     show anon b_couch_remove
     with dissolve
     pause
     show anon b_couch_jump
     show jenny b_couch_jump o_empty
     with dissolve
-    jenny "Oh, sial!"
-
+    jenny "Oh, fuuuuck!"
     $ animated = True
     $ anim_toggle = True
     $ M_jenny.set('sex speed', .09)
@@ -103,14 +73,10 @@ label jenny_couch_sex:
     scene expression "backgrounds/location_home_livingroom_couch_sex.jpg"
     show expression AnimatedImage("jenny_couch_sex", [1,2,3,4,5,6,7,8], M_jenny) as jenny_couch_sex at Position(xalign = 0.0, yoffset = 0)
     with fade
-    anon "Ssst!"
-
-    anon "{b}[deb_name]{/b} akan panik jika dia menemukan kita!"
-
-    jenny "Aku tahu!"
-
-    jenny "Itu sangat dalam, aku tidak bisa-"
-
+    anon "Shhh!"
+    anon "{b}[deb_name]{/b} will freak out if she finds us!"
+    jenny "I know!"
+    jenny "It's just so deep, I can't-"
     jump jenny_couch_sex_loop
 
 label jenny_couch_sex_loop:
@@ -143,39 +109,26 @@ label jenny_couch_sex_loop:
 label jenny_couch_sex_hscene_dialog:
     if animcounter == 0 and randomizer() < 10:
         jenny "Ahh!{p=1}{nw}"
-
     if animcounter == 1 and randomizer() < 10:
-        jenny "Aku sangat menyukai penismu!{p=2}{nw}"
-
-        jenny "Ya Tuhan!!{p=1}{nw}"
-
-        jenny "Saya menyukainya, saya menyukainya, saya menyukainya!{p=1}{nw}"
-
+        jenny "I love your dick so much!{p=2}{nw}"
+        jenny "Oh, god!!{p=1}{nw}"
+        jenny "I love it, I love it, I LOVE IT!{p=1}{nw}"
     if animcounter == 2 and randomizer() < 10:
-        jenny "FUUUCK, YA!{p=1}{nw}"
-
-        anon "Ssst!!{p=1}{nw}"
-
+        jenny "FUUUCK, YES!{p=1}{nw}"
+        anon "Shh!!{p=1}{nw}"
     if animcounter == 3 and randomizer() < 10:
-        jenny "Ayo, {b}[firstname]{/b}!{p=1}{nw}"
-
-        jenny "Persetan aku lebih keras!{p=1}{nw}"
-
-        anon "Berhenti menarikku!{p=2}{nw}"
-
+        jenny "C'mon, {b}[firstname]{/b}!{p=1}{nw}"
+        jenny "Fuck me harder!{p=1}{nw}"
+        anon "Stop pulling on me!{p=2}{nw}"
         if M_jenny.get("sex speed") > 0.061:
             $ M_jenny.set("sex speed", M_jenny.get("sex speed") - 0.03)
-        jenny "Oh, itu dia!{p=1}{nw}"
-
+        jenny "Oh, right there!{p=1}{nw}"
     return
 
 label jenny_couch_sex_cum_outside:
-    anon "Aku akan keluar!"
-
-    jenny "Saya juga!"
-
+    anon "I'm going to cum!"
+    jenny "Me too!"
     jenny "NGGHHH!!!"
-
     show jenny_couch_sex cumshot
     anon "HNNGGG!!!" with flash
     pause
@@ -183,43 +136,31 @@ label jenny_couch_sex_cum_outside:
     show jenny b_couch_after3
     show anon b_couch_sit_naked f_couch_sit_right a_naked_after
     with fade
-    anon "Wah..."
-
+    anon "Wow..."
     show jenny b_couch_after4
     jenny "Haah... Haah..."
-
     show jenny b_couch_after3
-    anon "Itu sangat intens!"
-
+    anon "That was intense!"
     show jenny b_couch_after4
-    jenny "Kamu datang ke seluruh tubuhku!"
-
+    jenny "You came all over me!"
     show jenny b_couch_after3
-    anon "Apakah kamu lebih suka aku punya air mani di dalam dirimu?"
-
+    anon "Would you rather I had cum inside of you?"
     show jenny b_couch_after4
-    jenny "Tidak... Tapi kamu bisa saja-"
-
+    jenny "No... But you could have-"
     show jenny b_couch_after3
     pause
     show jenny b_couch_after4
-    jenny "{i}*Huh*{/i} Sudahlah."
-
+    jenny "{i}*Sigh*{/i} Never mind."
     show jenny b_couch_remove with dissolve
-    jenny "Aku mau mandi."
-
+    jenny "I'm going to go take a shower."
     show jenny b_couch_transition with dissolve
     pause 1
     hide jenny with dissolve
-    jenny "Nanti, pecundang."
-
-    anon "Ya, sampai jumpa."
-
+    jenny "Later, loser."
+    anon "Yeah, see ya."
     pause
-    anon f_couch_sit_down_surprised "(Fiuh, kurasa kita hanya bercinta kapan saja sekarang...)"
-
-    anon "(Luar biasa!)"
-
+    anon f_couch_sit_down_surprised "( Phew, I guess we're just fucking whenever now... )"
+    anon "( Awesome! )"
     hide anon with dissolve
     $ renpy.end_replay()
     $ persistent.cookie_jar["Jenny"]["unlocked"] = True
@@ -230,31 +171,23 @@ label jenny_couch_sex_cum_outside:
     $ game.main()
 
 label jenny_couch_sex_cum_inside:
-    anon "Aku akan keluar!"
-
-    jenny "Saya juga!"
-
-    anon "Lepaskan aku!"
-
+    anon "I'm going to cum!"
+    jenny "Me too!"
+    anon "Let go of me!"
     jenny "NGGHHH!!!"
-
-    anon "{b}[jen_name]{/b} Saya tidak bisa-"
-
+    anon "{b}[jen_name]{/b} I can't-"
     show jenny_couch_sex cum
     anon "HNNGGG!!!" with flash
-    jenny "AAHHHH!!!"
-
+    jenny "AHHHH!!!"
     show jenny_couch_sex cum 2
     show xray_jenny_couch at Position (align=(0,0))
     pause
     hide xray_jenny_couch
     show jenny_couch_sex pullout 1
     with dissolve
-    anon "Sialan..."
-
+    anon "Holy crap..."
     show jenny_couch_sex pullout 2 with dissolve
     jenny "Haah... Haah..."
-
     call call_pregnancy_minigame ("jenny_couch_sex_cum_inside_post_pregnancy", M_jenny)
 
 label jenny_couch_sex_cum_inside_post_pregnancy:
@@ -263,47 +196,33 @@ label jenny_couch_sex_cum_inside_post_pregnancy:
     show anon b_couch_sit_naked f_couch_sit_right a_naked_after
     with fade
     show jenny b_couch_after1
-    jenny "Ya Tuhan, apakah kamu masuk ke dalam diriku?!"
-
+    jenny "Oh my god, did you cum inside me?!"
     show jenny b_couch_after2
-    anon "Aku mencoba menariknya tetapi kamu tidak mau melepaskanku!"
-
+    anon "I tried pulling out but you wouldn't let go of me!"
     show jenny b_couch_after1
-    jenny "Yah, aku fokus pada cumming!"
-
+    jenny "Well, I was focused on cumming!"
     show jenny b_couch_after2
     pause
     show jenny b_couch_after1
-    jenny "SIALAN!"
-
-    jenny "Kamu akan mati jika aku hamil!"
-
+    jenny "FUCK!"
+    jenny "You are so dead if I get pregnant!"
     show jenny b_couch_after2
-    anon "A-aku?!"
-
-    anon "Kaulah yang menahanku di sana!"
-
+    anon "M-me?!"
+    anon "You're the one who held me there!"
     show jenny b_couch_after1
-    jenny "Diam!"
-
+    jenny "Shut up!"
     show jenny b_couch_remove with dissolve
-    jenny "Grr, aku mau mandi!"
-
+    jenny "Grr, I'm getting in the shower!"
     show jenny b_couch_transition_mad with dissolve
     pause 1
     hide jenny with dissolve
-    jenny "Brengsek..."
-
-    anon "Oh, jadi ini semua salahku ya?!"
-
+    jenny "Asshole..."
+    anon "Oh, so it's all my fault, huh?!"
     pause
-    anon "(Dia pergi...)"
-
+    anon "( She's gone... )"
     pause
-    anon f_couch_sit_down_surprised "(Fiuh, kurasa kita hanya bercinta kapan saja sekarang...)"
-
-    anon "(Luar biasa!)"
-
+    anon f_couch_sit_down_surprised "( Phew, I guess we're just fucking whenever now... )"
+    anon "( Awesome! )"
     hide anon with dissolve
     $ renpy.end_replay()
     $ persistent.cookie_jar["Jenny"]["unlocked"] = True
@@ -343,34 +262,24 @@ label jenny_shower_sex_loop:
 label jenny_shower_sex_hscene_dialog:
     if animcounter == 0 and randomizer() < 10:
         jenny "Ahh!!{p=1}{nw}"
-
     if animcounter == 1 and randomizer() < 10:
-        jenny "Sangat dalam!{p=1}{nw}"
-
-        jenny "Oh, persetan denganku!{p=1}{nw}"
-
+        jenny "It's so deep!{p=1}{nw}"
+        jenny "Oh, fuck me!{p=1}{nw}"
     if animcounter == 2 and randomizer() < 10:
         jenny "FUUUUUCK!!!{p=1}{nw}"
-
     if animcounter == 3 and randomizer() < 10:
         anon "Uhh!{p=1}{nw}"
-
     return
 
 label jenny_shower_sex_cum_inside:
-    jenny "aku keluar! aku keluar!"
-
+    jenny "I'm cumming! I'm cumming!"
     jenny "NGGHHH!!!"
-
-    anon "Ya, aku juga semakin dekat."
-
+    anon "Yeah, I'm getting close too."
     pause
     anon "{b}[jen_name]{/b}?"
-
     show jenny_shower_sex cum
     anon "HNNGGG!!!" with flash
     jenny "AAAHHHH!!!"
-
     show jenny_shower_sex cum 2
     show xray_jenny_shower at Position (align=(0,0))
     pause
@@ -382,37 +291,23 @@ label jenny_mc_shower_sex_cum_inside_post_pregnancy_minigame:
     show jenny b_shower_back a_push
     with fade
     anon "Haah... Haah..."
-
     show jenny a_butt f_surprised with dissolve
-    anon f_normal "Sialan!"
-
+    anon f_normal "Holy crap!"
     show jenny b_shower_back_creampie with dissolve
-    jenny "Apakah kamu masuk ke dalam diriku?!"
-
-    anon f_worried "Y-ya, sedikit..."
-
+    jenny "Did you cum in me?!"
+    anon f_worried "Y-yeah, a little..."
     show anon f_surprised
     show jenny b_naked a_crossed f_angry with dissolve
-    jenny "SEDIKIT?!"
-
-    jenny "ITU BANYAK, KAMU BODOH!"
-
-    anon f_worried "Saya minta maaf."
-
-    anon "Saya kira saya sedikit terbawa suasana di sana pada akhirnya..."
-
-    jenny "Bagaimana jika saya hamil?!"
-
-    anon "aku tidak-"
-
-    jenny "Sial, {b}[firstname]{/b}!"
-
-    jenny "Keluarlah!"
-
-    anon "Baiklah, baiklah..."
-
-    anon "Aku bilang aku minta maaf, sial."
-
+    jenny "A LITTLE?!"
+    jenny "THAT'S A LOT YOU MORON!"
+    anon f_worried "I'm sorry."
+    anon "I guess I got a little carried away there at the end..."
+    jenny "What if I get pregnant?!"
+    anon "I didn't-"
+    jenny "Damn it, {b}[firstname]{/b}!"
+    jenny "Get the fuck out!"
+    anon "Alright, alright..."
+    anon "I said I was sorry, sheesh."
     hide anon with dissolve
     $ renpy.end_replay()
     $ persistent.cookie_jar["Jenny"]["unlocked"] = True
@@ -422,15 +317,11 @@ label jenny_mc_shower_sex_cum_inside_post_pregnancy_minigame:
     $ game.main()
 
 label jenny_shower_sex_cum_outside:
-    jenny "aku keluar! aku keluar!"
-
+    jenny "I'm cumming! I'm cumming!"
     jenny "NGGHHH!!!"
-
-    anon "Ya, aku juga semakin dekat."
-
+    anon "Yeah, I'm getting close too."
     pause
     anon "{b}[jen_name]{/b}?"
-
     hide jenny_shower_sex
     show jenny b_shower_cumshot f_shower_cumshot
     show anon b_side_naked_forward od_side_naked_forward_cum1 f_side_react a_up_clench
@@ -441,48 +332,32 @@ label jenny_shower_sex_cum_outside:
     show jenny b_naked a_sides f_sexy_down
     with dissolve
     anon "Haah... Haah..."
-
     show anon f_normal
     show jenny f_sexy
-    jenny "Haah... sial!"
-
+    jenny "Haah... Holy shit!"
     show jenny f_sexy_down
-    jenny "Saya pikir-"
-
-    jenny "Aku perlu berbaring sebentar."
-
+    jenny "I think-"
+    jenny "I need to go lie down for a bit."
     show jenny f_sexy
-    anon f_worried "Kamu baik-baik saja?"
-
-    jenny "Y-ya, itu hanya uap dan seks dan..."
-
+    anon f_worried "You alright?"
+    jenny "Y-yeah, it's just the steam and the sex and..."
     show anon f_normal
     show jenny f_laugh
-    jenny "Sial, aku hampir tidak bisa berjalan!"
-
+    jenny "Fuck, I can barely walk!"
     show jenny f_sexy
-    anon @ f_grin -m_talk "Hehe."
-
-    anon "Di sini, saya akan membantu Anda."
-
+    anon @ f_grin -m_talk "Heh."
+    anon "Here, I'll help you."
     show anon f_worried
     show jenny f_upset a_hips with dissolve
-    jenny "Tidak, pergilah!"
-
-    jenny "Saya baik-baik saja!"
-
-    anon "Baiklah, sialan."
-
-    anon "aku hanya mencoba untuk mempertimbangkan..."
-
-    jenny "Baiklah, hentikan!"
-
+    jenny "No, fuck off!"
+    jenny "I'm fine!"
+    anon "Alright, sheesh."
+    anon "I'm just trying to be considerate..."
+    jenny "Well, cut it out!"
     hide jenny with dissolve
     pause
-    anon @ -m_talk "(Terkadang dia sangat aneh...)"
-
-    anon f_grin @ -m_talk "(Oh baiklah, itu luar biasa!)"
-
+    anon @ -m_talk "( She's so weird sometimes... )"
+    anon f_grin @ -m_talk "( Oh well, that was awesome! )"
     hide anon with dissolve
     $ renpy.end_replay()
     $ persistent.cookie_jar["Jenny"]["unlocked"] = True
@@ -494,33 +369,25 @@ label jenny_shower_sex_cum_outside:
 label bj_shower_repeat_sub:
     show anon f_worried_low
     anon "Arf!"
-
     show jenny f_grin
-    jenny "Hehe, lebih lagi!"
-
-    anon "{i}*Huh*{/i}"
-
+    jenny "Heh, more!"
+    anon "{i}*Sigh*{/i}"
     anon f_shock "Arf! Arf! Arf!"
-
     show anon f_worried_low
     show jenny f_laugh
-    jenny "Hahahah!!"
-
+    jenny "Hahahaah!!"
     show anon b_side_naked a_react f_side_shy_down od_side_naked_dick3
     show jenny b_shower_kneeling f_shower_kneeling
     with dissolve
     if randomizer() > 50:
-        jenny "Anjing yang baik!"
-
+        jenny "Good doggy!"
     else:
-        jenny "Ada anak baik!"
-
+        jenny "There's a good boy!"
     call scene_shower_with_vfx_zoom
     show jenny_shower_bj_mc
     show jenny_shower_bj pre_talk
     with fade
-    jenny "Sekarang Anda mendapat hadiah!"
-
+    jenny "Now you get a reward!"
 
 label bj_shower_repeat_dom:
     $ animated = True
@@ -531,77 +398,53 @@ label bj_shower_repeat_dom:
 
     if M_jenny.get('first_time_deep_bj'):
         $ M_jenny.set('first_time_deep_bj', False)
-        anon "{i}*Terkesiap*{/i}"
-
+        anon "{i}*Gasp*{/i}"
         pause
-        anon "Wah oke..."
-
-        anon "Ahhh!"
-
+        anon "Wow, okay..."
+        anon "Ahh!"
         pause
-        anon "Mm, rasanya enak sekali!"
-
-        jenny "Mmhmm."
-
+        anon "Mm, that feels so good!"
+        jenny "Mmhrmm."
         pause
         show jenny_shower_bj_mc
         show jenny_shower_bj pre_talk
         with dissolve
-        jenny "Baiklah, aku akan mencoba sesuatu sekarang..."
-
+        jenny "Alright, I'm going to try something now..."
         show jenny_shower_bj pre_look
         anon "Hmm?"
-
         show jenny_shower_bj pre_talk
-        jenny "Penggemar saya telah meminta sesuatu kepada saya dan saya akan mengujinya pada Anda."
-
+        jenny "My fans have been asking me for something and I'm going to test it out on you."
         show jenny_shower_bj pre_look
-        anon "Apa itu?"
-
+        anon "What is it?"
         show jenny_shower_bj pre_talk
-        jenny "Anda akan lihat."
-
-        jenny "Coba saja dan tetap diam!"
-
+        jenny "You'll see."
+        jenny "Just try and stay still!"
         show expression AnimatedImage("jenny_shower_bj", [1,2,3,4,5,6,7], M_jenny) as jenny_shower_bj at Position(xalign = 0.0, yoffset = 0)
-        anon "Anda tidak akan melakukan sesuatu yang aneh, bukan?"
-
+        anon "You're not going to do anything weird, are you?"
         pause
         anon "{b}[jen_name]{/b}?"
-
     else:
-        anon "MM."
-
+        anon "Mmm."
         pause
-        anon "Bagus sekali!"
-
+        anon "Very nice!"
         jenny "Shrmmup!!"
-
         anon "Ohh!"
-
         pause
-        anon "Mm, rasanya enak sekali!"
-
-        jenny "Mmhmm."
-
+        anon "Mm, that feels so good!"
+        jenny "Mmhrmm."
         pause
 
     $ M_jenny.set('sex speed', .4)
     show expression AnimatedImage("jenny_shower_bj_deep", [1,2], M_jenny) as jenny_shower_bj at Position(xalign = 0.0, yoffset = 0)
     $ M_jenny.set("jenny_bj_deep", True)
     anon "!!!" with hpunch
-    anon "Astaga!!"
-
+    anon "Oh my god!!"
     pause
-    anon "Rasanya luar biasa!!!"
-
+    anon "That feels incredible!!!"
     jenny "{i}*Gllrrkkk*{/i}"
-
     pause
     jenny "{i}*Bllgghhh*{/i}"
-
-    anon "{b}[jen_name]{/b}, saya tidak bisa-"
-
+    anon "{b}[jen_name]{/b}, I can't-"
 
     label jenny_shower_bj_loop:
         show screen sex_anim_buttons
@@ -643,38 +486,26 @@ label bj_shower_repeat_dom:
 
 label jenny_shower_bj_hscene_dialog:
     if animcounter == 0 and randomizer() < 10:
-        anon "Hmm.{p=1}{nw}"
-
+        anon "Mmm.{p=1}{nw}"
     if animcounter == 1 and randomizer() < 10:
-        anon "Sangat bagus!{p=1}{nw}"
-
-        jenny "Ayo!!{p=1}{nw}"
-
+        anon "Very nice!{p=1}{nw}"
+        jenny "Shrmmup!!{p=1}{nw}"
         anon "Ohh!{p=1}{nw}"
-
     if animcounter == 2 and randomizer() < 10:
-        anon "{i}*Terkesiap*{/i}"
-
+        anon "{i}*Gasp*{/i}"
     if animcounter == 3 and randomizer() < 10:
-        anon "Wah oke..."
-
-        anon "Ahhh!"
-
+        anon "Wow, okay..."
+        anon "Ahh!"
     if animcounter == 3 and randomizer() < 10:
-        anon "Mm, rasanya enak sekali!"
-
-        jenny "Mmhmm."
-
+        anon "Mm, that feels so good!"
+        jenny "Mmhrmm."
     return
 
 label jenny_shower_bj_cum:
-    anon "Aku semakin dekat!"
-
+    anon "I'm getting close!"
     jenny "{i}*Sluuuuurp*{/i}"
-
     pause
     anon "{b}[jen_name]{/b}!"
-
     pause
     show jenny_shower_bj cum
     anon "HNNGGG!!!" with flash
@@ -687,119 +518,80 @@ label jenny_shower_bj_cum:
     with fade
     if M_jenny.get("first_shower_time"):
         $ M_jenny.set("first_shower_time", False)
-        anon "Fiuh, itu tadi-"
-
-        anon "Maksudku, aku tidak mengharapkanmu untuk-"
-
+        anon "Phew, that was-"
+        anon "I mean, I wasn't expecting you to-"
         show anon f_surprised
         show jenny f_cheeks_swallow a_shocked with dissolve
         anon @ -m_talk "!!!"
         show jenny f_normal
-        jenny "Sial, itu air mani yang banyak!"
-
+        jenny "Damn, that was a lot of cum!"
         show jenny a_hips with dissolve
-        anon f_worried "Anda menelannya!"
-
+        anon f_worried "You swallowed it!"
         show anon f_surprised
-        jenny "Ya, jadi?"
-
-        anon f_normal "Saya pikir kamu tidak suka melakukan itu?!"
-
+        jenny "Yeah, so?"
+        anon f_normal "I thought you didn't like doing that?!"
         show jenny f_upset
-        jenny "Kapan saya pernah mengatakan itu?"
-
-        anon f_skeptical "Saat kau mengejutkanku saat streaming!"
-
-        anon "Kamu bilang kamu hanya menelannya karena penggemarmu membayar ekstra untuk itu!"
-
+        jenny "When did I ever say that?"
+        anon f_skeptical "When you blew me on stream!"
+        anon "You said you only swallowed because your fans pay extra for it!"
         show jenny f_normal
-        jenny "Oh benar..."
-
-        anon "Mereka tidak bisa melihat kita di sini, {b}[jen_name]{/b}!"
-
+        jenny "Oh, right..."
+        anon "They can't see us in here, {b}[jen_name]{/b}!"
         show jenny f_upset
-        jenny "Mungkin aku tidak ingin membuat kekacauan, pernahkah kamu memikirkan hal itu?!"
-
-        anon f_worried "Anda tidak ingin membuat kekacauan... Di kamar mandi?"
-
+        jenny "Maybe I didn't wanna make a mess, you ever think of that?!"
+        anon f_worried "You didn't wanna make a mess... In the shower?"
         jenny @ -m_talk "..."
-        jenny "Ya Tuhan, hanya-"
-
-        jenny "Apa pun."
-
+        jenny "Oh my god, just-"
+        jenny "Whatever."
         show jenny f_eyeroll
-        jenny "{i}*Huh*{/i} Aku menyukainya, oke?"
-
+        jenny "{i}*Sigh*{/i} I like it, okay?"
         show jenny f_upset
         anon f_surprised @ -m_talk "..."
-        jenny "Aku suka menelan air manimu..."
-
-        jenny "Apakah kamu sangat bahagia sekarang?!"
-
-        anon f_normal "Heh, aku tidak percaya kamu baru saja mengatakan itu..."
-
+        jenny "I like swallowing your cum..."
+        jenny "Are you fucking happy now?!"
+        anon f_normal "Heh, I can't believe you just said that..."
         show jenny f_eyeroll a_crossed with dissolve
         jenny "Ugh..."
-
         show jenny f_upset
-        jenny "Jangan mendapat ide apa pun, pecundang!"
-
-        jenny "Hanya karena aku menyukai air mani dan penis besarmu, bukan berarti aku menyukaimu!"
-
+        jenny "Don't get any ideas, loser!"
+        jenny "Just because I like your cum and your big cock, it doesn't mean I like you!"
         anon f_worried @ -m_talk "..."
-        jenny "Sekarang pergilah dan biarkan aku menyelesaikan mandiku!"
-
-        anon "Baiklah."
-
-        anon f_normal "Terima kasih untuk-"
-
+        jenny "Now go away and let me finish my shower!"
+        anon "Alright."
+        anon f_normal "Thanks for the-"
         show anon f_surprised
         show jenny f_angry
-        jenny "Keluar!!"
-
+        jenny "Get out!!"
         hide anon with dissolve
-        jenny "Astaga!"
-
+        jenny "For fuck's sake!"
         show jenny f_angry_pouting
 
         $ player.go_to(L_home_hallway)
         scene expression player.location.background_blur
         show anon f_grin with dissolve
-        anon @ -m_talk "(Itu sangat luar biasa!)"
-
-        anon @ -m_talk "( Apakah ini berarti {b}Saya bisa ikut mandi dengannya kapan pun saya mau{/b}? )"
-
+        anon @ -m_talk "( That was so awesome! )"
+        anon @ -m_talk "( Does this mean {b}I can join her in the shower whenever I want{/b}? )"
         show anon f_thinking a_thinking with dissolve
         pause
-        anon f_grin @ -m_talk "(Saya pikir itu benar!)"
-
+        anon f_grin @ -m_talk "( I think it does! )"
     else:
-        anon "Fiuh..."
-
-        anon "Anda menjadi sangat ahli dalam hal itu!"
-
+        anon "Phew..."
+        anon "You're getting really good at that!"
         show jenny f_cheeks_swallow a_shocked with dissolve
         pause
         show jenny f_grin
-        jenny "Pfft, pernahkah aku tidak pandai dalam hal itu?"
-
-        anon "Hehe, poin bagus."
-
+        jenny "Pfft, was I ever not good at it?"
+        anon "Heh, good point."
         pause
         show jenny f_normal
-        jenny "Baiklah, kalahkan supaya aku bisa menyelesaikan mandiku."
-
-        anon "Ya baiklah."
-
-        anon "Terima kasih atas mahasiswinya!"
-
+        jenny "Alright, beat it so I can finish my shower."
+        anon "Yeah, okay."
+        anon "Thanks for the blowjob!"
         show anon f_grin
         show jenny f_eyeroll a_crossed with dissolve
-        jenny "Astaga."
-
+        jenny "Oh my god."
         show jenny f_upset
-        jenny "Keluar!"
-
+        jenny "Get out!"
     hide anon with dissolve
     $ renpy.end_replay()
     $ persistent.cookie_jar["Jenny"]["unlocked"] = True
@@ -813,87 +605,64 @@ label jenny_mc_room_sex_on_sleep:
         $ player.location = L_home_bedroom
     $ game.timer.tick(3)
     scene expression "backgrounds/location_home_bedroom_cutscene18.jpg"
-    jenny "Ssst!"
-
-    jenny "{b}[firstname]{/b}, kamu sudah bangun?"
-
+    jenny "Psst!"
+    jenny "{b}[firstname]{/b}, you awake?"
     scene expression "backgrounds/location_home_bedroom_cutscene17.jpg"
-    anon "MM."
-
+    anon "Mmm."
     pause
     scene expression "backgrounds/location_home_bedroom_sex01c.jpg"
     show anon b_visit f_visit_sleep
     show jenny b_visit_sit a_down f_visit_sexy with dissolve
     if M_jenny.is_state(S_jenny_night_time_sex):
         jenny "{b}[firstname]{/b}?"
-
         anon "Nnnhhh."
-
         pause
-        jenny "Ayo, bangun."
-
+        jenny "C'mon, wake up."
         anon "NNNHHH!"
-
         show jenny f_visit_sexy_down a_reach with dissolve
-        anon f_visit_normal "Sial, {b}[jen_name]{/b}..."
-
-        anon "Ini tengah malam!"
-
+        anon f_visit_normal "Damn it, {b}[jen_name]{/b}..."
+        anon "It's the middle of the night!"
         show anon b_visit_up2 f_visit_up_tired
         show jenny a_pull
         with dissolve
-        jenny "Oh, diamlah."
-
+        jenny "Oh, shut up."
         show jenny f_visit_sexy_down a_up with dissolve
         show jenny a_up2 with dissolve
         pause
         show jenny a_stroke with dissolve
-        anon "Apa yang kamu lakukan, {b}[jen_name]{/b}?"
-
-        anon "Aku mencoba untuk tidur-"
-
+        anon "What are you doing, {b}[jen_name]{/b}?"
+        anon "I'm trying to slee-"
         show jenny f_visit_sexy_down
-        jenny "Sepertinya apa yang aku lakukan?!"
-
+        jenny "What does it look like I'm doing?!"
         show jenny b_visit_remove1
         show jenny_arms_visit_a_dick
         with dissolve
         show anon f_visit_up_surprised
         pause
         show jenny b_visit_remove2 with dissolve
-        anon f_visit_up_tired "Kita benar-benar harus melakukan ini, sekarang juga?!"
-
+        anon f_visit_up_tired "We really have to do this, right now?!"
         hide jenny_arms_visit_a_dick
         show jenny b_visit_climb
         with dissolve
-        jenny "Ya, aku sangat terangsang dan aku menginginkannya sekarang juga!"
-
+        jenny "Yes, I'm fucking horny and I want it right now!"
 
         scene expression "backgrounds/location_home_bedroom_sex05.jpg"
         show jenny_mc_room_sex insert
         with fade
         anon "!!!"
-        anon "Sial {b}[jen_name]{/b}, aku lelah..."
-
-        jenny "Oh, astaga... Yang harus kamu lakukan hanyalah berbaring di sana!"
-
-        jenny "Akulah yang melakukan semua pekerjaan!"
-
+        anon "Damn it {b}[jen_name]{/b}, I'm tired..."
+        jenny "Oh, for fuck's sake... All you have to do is lay there!"
+        jenny "I'm the one doing all the work!"
         show jenny_mc_room_sex 1 with dissolve
-        jenny "{i}*Terkesiap*{/i}"
-
-        jenny "Ya Tuhan, aku suka penismu!"
-
+        jenny "{i}*Gasp*{/i}"
+        jenny "God, I love your dick!"
         jump jenny_mc_room_sex_start
     else:
-        jenny "Bangun, {b}[firstname]{/b}."
-
+        jenny "Wake up, {b}[firstname]{/b}."
         show jenny f_visit_sexy
         anon f_visit_normal "{b}[jen_name]{/b}?"
-
         show jenny a_reach with dissolve
-        jenny "Ayolah, aku membutuhkannya."
-
+        jenny "C'mon, I need it."
         show anon b_visit_up2 f_visit_up_tired
         show jenny f_visit_sexy_down a_pull
         with dissolve
@@ -903,9 +672,8 @@ label jenny_mc_room_sex_on_sleep:
         pause
         show jenny a_stroke with dissolve
         menu:
-            "Sekarang?":
-                anon f_visit_up_tired "Sekarang?"
-
+            "Right now?":
+                anon f_visit_up_tired "Right now?"
                 show jenny b_visit_remove1
                 show jenny_arms_visit_a_dick
                 with dissolve
@@ -916,91 +684,61 @@ label jenny_mc_room_sex_on_sleep:
                 hide jenny_arms_visit_a_dick
                 show jenny b_visit_climb
                 with dissolve
-                jenny "Ya, aku menginginkannya sekarang."
-
+                jenny "Yes, I want it right now."
 
                 scene expression "backgrounds/location_home_bedroom_sex05.jpg"
                 show jenny_mc_room_sex insert
                 with fade
                 anon "!!!"
-                anon "O-oke."
-
-                jenny "Ya Tuhan, aku tidak bisa mengeluarkan penis ini dari kepalaku!"
-
-                anon "Wah, kamu basah banget.."
-
+                anon "O-okay."
+                jenny "God, I can't get this dick out of my head!"
+                anon "Wow, you're really wet..."
                 show jenny_mc_room_sex 1 with dissolve
-                jenny "{i}*Terkesiap*{/i}"
-
-                jenny "Ohh, sial."
-
+                jenny "{i}*Gasp*{/i}"
+                jenny "Ohh, fuck."
                 jump jenny_mc_room_sex_start
-            "Tidak malam ini." if store._in_replay is None:
+            "Not tonight." if store._in_replay is None:
                 if M_jenny.get("dominance") <= 0:
-                    anon f_visit_up_tired "Tidak sekarang, {b}[jen_name]{/b}."
-
+                    anon f_visit_up_tired "Not right now, {b}[jen_name]{/b}."
                     show jenny f_visit_sexy_down
-                    jenny "Ayolah, kamu tahu kamu menginginkannya..."
-
-                    anon "Kita lakukan saja besok, oke?"
-
+                    jenny "C'mon, you know you want it..."
+                    anon "Let's just do it tomorrow, okay?"
                     show jenny f_visit_sexy
-                    jenny "Saya tidak menginginkannya besok, saya menginginkannya sekarang!"
-
+                    jenny "I don't want it tomorrow, I want it now!"
                     show jenny f_visit_sexy_down
-                    anon "Ahhh, aku sudah terikat..."
-
+                    anon "Ahhh, I'm tiiiiired..."
                     show jenny f_visit_angry a_up2 with dissolve
-                    jenny "Dengan serius?!"
-
-                    jenny "Ada cewek seksi yang sedang membelai penismu sekarang dan kamu bilang tidak?!"
-
-                    anon "{i}*Huh*{/i} Maaf... aku tidak-"
-
-                    jenny "Lupakan saja!"
-
-                    anon "T-tidak, kami bisa jika kamu benar-benar ingin-"
-
-                    jenny "Aku sedang tidak mood lagi!"
-
+                    jenny "Seriously?!"
+                    jenny "You've got a mega hot girl stroking you cock right now and you're saying no?!"
+                    anon "{i}*Sigh*{/i} I'm sorry... I didn't-"
+                    jenny "Just forget it!"
+                    anon "N-no, we can if you really want to-"
+                    jenny "I'm not in the mood anymore!"
                     hide jenny
                     show jenny_arms_visit_a_dick
                     with dissolve
-                    jenny "Terkadang kamu memang menyebalkan, aku bersumpah!"
-
-                    anon "{b}[jen_name]{/b}, maaf, aku-"
-
+                    jenny "You are such a little bitch sometimes, I swear!"
+                    anon "{b}[jen_name]{/b}, I'm sorry, I-"
                     anon @ -m_talk "..."
                 else:
-                    anon "Tidak sekarang, {b}[jen_name]{/b}."
-
+                    anon "Not right now, {b}[jen_name]{/b}."
                     show jenny f_visit_sexy_down
-                    jenny "Ayolah, kamu tahu kamu menginginkannya..."
-
-                    anon "Tidak, aku hanya ingin tidur... Oke?"
-
+                    jenny "C'mon, you know you want it..."
+                    anon "No, I just wanna sleep... Okay?"
                     show jenny f_visit_sexy
-                    jenny "Tolong, {b}[firstname]{/b}?"
-
-                    anon "Aku bilang tidak!"
-
+                    jenny "Please, {b}[firstname]{/b}?"
+                    anon "I said no!"
                     show jenny f_visit_angry a_up2 with dissolve
-                    jenny "Dengan serius?!"
-
-                    jenny "Aku mencoba bersikap baik di sini, sesukamu... Aku bahkan bilang tolong!"
-
-                    anon "Aku hanya sedang tidak mood, oke?"
-
+                    jenny "Seriously?!"
+                    jenny "I'm trying to be nice here, the way you like it... I even said please!"
+                    anon "I'm just not in the mood, okay?"
                     jenny @ -m_talk "..."
-                    jenny "BAGUS!"
-
+                    jenny "FINE!"
                     hide jenny
                     show jenny_arms_visit_a_dick
                     with dissolve
-                    jenny "Aku tak tahu kenapa aku menyia-nyiakan waktuku untukmu..."
-
-                    anon "Apa pun."
-
+                    jenny "I don't know why I waste my time on you..."
+                    anon "Whatever."
                 jump resume_sleeping_bedroom
 
 label jenny_mc_room_sex_start:
@@ -1008,121 +746,74 @@ label jenny_mc_room_sex_start:
     $ anim_toggle = True
     $ M_jenny.set('sex speed', .12)
     show expression AnimatedImage("jenny_mc_room_sex", [1,2,3,4,5,6,7,8,9], M_jenny) as jenny_mc_room_sex at Position(xalign = 0.0, yoffset = 0)
-    jenny "Ahhh!"
-
+    jenny "Ahh!"
     pause
-    anon "Oke, rasanya enak sekali..."
-
+    anon "Okay, that feels really good..."
     if M_jenny.is_state(S_jenny_night_time_sex):
-        jenny "Lihat, dan kalian semua mengeluh tentang hal itu!"
-
-        anon "Ya, kita bisa melakukannya besok!"
-
-        jenny "Ya, dan kami mungkin akan..."
-
-        anon "B-benarkah?"
-
-        jenny "Uhh, ya... Camshow, bodoh."
-
-        anon "Oh benar."
-
-        jenny "Diam saja dan biarkan aku menikmati ini!"
-
+        jenny "See, and you were all whining about it!"
+        anon "Well, we could have done this tomorrow!"
+        jenny "Yeah, and we probably will..."
+        anon "R-really?"
+        jenny "Uhh, yeah... Camshows, dummy."
+        anon "Oh, right."
+        jenny "Just shut up and let me enjoy this!"
     else:
-        jenny "Ahhh!"
-
+        jenny "Ahh!"
         pause
-        anon "Oke, rasanya enak sekali..."
-
-        jenny "Ya, benar!"
-
+        anon "Okay, that feels really good..."
+        jenny "Yeah, it does!"
     pause
-    jenny "Ahh, sialan!"
-
+    jenny "Ahh, fuuuuck!"
     pause
-    jenny "Mmm, aku akan mengotori penis besarmu itu, {b}[firstname]{/b}!"
-
+    jenny "Mmm, I'm gonna cum all over that big dick of yours, {b}[firstname]{/b}!"
     if M_jenny.get("dominance") <= 0:
-        jenny "Anda pasti menyukainya, bukan?!"
-
-        anon "Y-ya."
-
+        jenny "You'd like that, wouldn't you?!"
+        anon "Y-yes."
         if M_jenny.get("sex speed") > 0.061:
             $ M_jenny.set("sex speed", M_jenny.get("sex speed") - 0.03)
-        jenny "Ahhh!"
-
-        jenny "Ayo, katakan!"
-
-        jenny "Katakanlah kamu ingin aku cum di penis besarmu!"
-
-        anon "Aku ingin kamu cum di penisku yang besar!"
-
+        jenny "Ahh!"
+        jenny "C'mon, say it!"
+        jenny "Say you want me to cum on your big dick!"
+        anon "I want you to cum on my big dick!"
         if not M_jenny.is_state(S_jenny_night_time_sex):
-            jenny "Saya pikir Anda bisa melakukan yang lebih baik..."
-
+            jenny "I think you can do better..."
             pause
-            jenny "Katakan padaku aku seorang dewi seks!"
-
-            anon "K-kamu adalah dewi seks!"
-
-            jenny "Ayolah, jalang!"
-
-            jenny "Aku tidak bisa mendengarmu!"
-
-            anon "Anda seorang dewi seks!!!"
-
-            jenny "Kamu memuja vagina ini, bukan?!"
-
-            anon "Y-ya!"
-
-        jenny "Hahahah!!"
-
+            jenny "Tell me I'm a sex goddess!"
+            anon "Y-you're a sex goddess!"
+            jenny "Come on, bitch!"
+            jenny "I can't hear you!"
+            anon "You're a sex goddess!!!"
+            jenny "You worship this pussy, don't you?!"
+            anon "Y-yes!"
+        jenny "Hahahaah!!"
     else:
-        anon "Kalau begitu lakukanlah!"
-
+        anon "Then do it!"
         if M_jenny.get("sex speed") > 0.061:
             $ M_jenny.set("sex speed", M_jenny.get("sex speed") - 0.03)
-        jenny "Ahh, sial!"
-
-        anon "Katakan padaku kamu menginginkannya!"
-
-        jenny "Hmm, aku menginginkannya!"
-
+        jenny "Ahh, shit!"
+        anon "Tell me you want it!"
+        jenny "Mmm, I want it!"
         pause
-        anon "Ayo {b}[jen_name]{/b}, lebih cepat!"
-
-        jenny "Ya Tuhan!"
-
+        anon "C'mon {b}[jen_name]{/b}, faster!"
+        jenny "Oh my god!"
         pause
         if M_jenny.is_state(S_jenny_night_time_sex):
-            jenny "Ahh, persetan denganku!!"
-
+            jenny "Ahh, fuck me!!"
         else:
-            anon "Mohon saya untuk memberikannya kepada Anda!"
-
-            jenny "Ahhh!"
-
-            jenny "Silakan!!"
-
+            anon "Beg me to give it to you!"
+            jenny "Ahh!"
+            jenny "Please!!"
             pause
-            anon "Ayo, kamu bisa berbuat lebih baik!"
+            anon "C'mon, you can do better!"
+            jenny "Fuuuuck!"
+            jenny "Please, {b}[firstname]{/b}!!"
+            jenny "Give it to me!!!"
 
-            jenny "Sial!"
-
-            jenny "Tolong, {b}[firstname]{/b}!!"
-
-            jenny "Berikan padaku!!!"
-
-
-    anon "Ssst!"
-
-    anon "Anda akan bangun {b}[deb_name]{/b}..."
-
-    jenny "Aku tidak peduli!"
-
+    anon "Shh!"
+    anon "You're gonna wake up {b}[deb_name]{/b}..."
+    jenny "I don't fucking care!"
     pause
-    jenny "Ahh, aku sangat dekat!"
-
+    jenny "Ahh, I'm so close!"
 
 label jenny_mc_room_sex_loop:
     show screen sex_anim_buttons
@@ -1153,41 +844,28 @@ label jenny_mc_room_sex_loop:
 
 label jenny_mc_room_sex_hscene_dialog:
     if animcounter == 0 and randomizer() < 10:
-        jenny "Ahh, sial!{p=1}{nw}"
-
+        jenny "Ahh, fuuuuck!{p=1}{nw}"
     if animcounter == 1 and randomizer() < 10:
-        jenny "Sial!{p=1}{nw}"
-
+        jenny "Fuuuuck!{p=1}{nw}"
     if animcounter == 1 and randomizer() < 10:
         jenny "Hahahaah!!{p=1}{nw}"
-
     if animcounter == 2 and randomizer() < 10:
-        anon "Ya Tuhan!{p=1}{nw}"
-
+        anon "Oh my god!{p=1}{nw}"
     if animcounter == 2 and randomizer() < 10:
-        jenny "Ahh, persetan denganku!!{p=1}{nw}"
-
+        jenny "Ahh, fuck me!!{p=1}{nw}"
     if animcounter == 3 and randomizer() < 10:
-        anon "Saya semakin dekat...{p=1}{nw}"
-
+        anon "I'm getting close...{p=1}{nw}"
     return
 
 label jenny_mc_room_sex_cum_inside:
-    jenny "Ya Tuhan, ya Tuhan, ya Tuhan!"
-
+    jenny "Oh my god, oh my god, OH MY GOD!"
     pause
-    jenny "aku keluar! aku keluar!"
-
-    anon "Saya juga!"
-
-    jenny "AAAHHH, sial!!!"
-
-    anon "{b}[jen_name]{/b}, turun!"
-
+    jenny "I'm cumming! I'm cumming!"
+    anon "Me too!"
+    jenny "AAAHHH, FUCK!!!"
+    anon "{b}[jen_name]{/b}, get off!"
     jenny "NGGHHH!!!"
-
-    anon "Ah, sial!"
-
+    anon "Ah, crap!"
     $ M_jenny.set('sex speed', .4)
     show expression AnimatedImage("jenny_mc_room_sex cum", [1,2], M_jenny) as jenny_mc_room_sex at Position(xalign = 0.0, yoffset = 0)
     anon "HNNGGG!!!" with flash
@@ -1202,51 +880,36 @@ label jenny_mc_room_sex_cum_inside_post_pregnancy_minigame:
     show jenny_mc_room_sex pullout
     with fade
     anon "Haah... Haah..."
-
     hide jenny_mc_room_sex
     show jenny b_visit_after f_visit_after_angry_down o_visit_after_creampie
     with dissolve
-    jenny "Ya Tuhan..."
-
+    jenny "Oh my god..."
     pause
     show jenny f_visit_after_angry
-    jenny "Apakah kamu masuk ke dalam diriku?!"
-
-    anon "Sudah kubilang padamu, lepaskan aku!"
-
-    jenny "Sialan, {b}[firstname]{/b}!"
-
-    anon "Apa?!"
-
-    jenny "Aku bisa hamil, bodoh!"
-
-    anon "Yah, aku minta maaf tapi aku sudah memperingatkanmu..."
-
-    jenny "Ugh, terserah."
-
+    jenny "Did you cum in me?!"
+    anon "I told you to get off me!"
+    jenny "Goddamnit, {b}[firstname]{/b}!"
+    anon "What?!"
+    jenny "I could get pregnant you moron!"
+    anon "Well, I'm sorry but I did warn you..."
+    jenny "Ugh, whatever."
     show jenny f_visit_after_angry_down
     pause
     show jenny f_visit_after_normal
-    jenny "{i}*Huh*{/i} Persetan..."
-
-    jenny "Heh, kakiku gemetar hebat!"
-
+    jenny "{i}*Sigh*{/i} Fuck it..."
+    jenny "Heh, my legs are shaking like crazy!"
     if M_jenny.get('girlfriend_in_progress'):
         jump jenny_mc_room_sex_end_girlfriend_experience
     else:
         jump jenny_mc_room_sex_end
 
 label jenny_mc_room_sex_cum_outside:
-    jenny "Ya Tuhan, ya Tuhan, ya Tuhan!"
-
+    jenny "Oh my god, oh my god, OH MY GOD!"
     pause
-    jenny "aku keluar! aku keluar!"
-
+    jenny "I'm cumming! I'm cumming!"
     jenny "NGGHHH!!!"
-
     pause
-    anon "Saya juga!"
-
+    anon "Me too!"
     show jenny_mc_room_sex cumshot
     anon "HNNGGG!!!{p=1}{nw}" with flash
     show jenny o_visit_cumshot f_empty a_empty b_empty
@@ -1255,18 +918,12 @@ label jenny_mc_room_sex_cum_outside:
     show jenny b_visit_after f_visit_after_normal o_visit_cumshot2
     with dissolve
     anon "Haah... Haah..."
-
-    jenny "Fiuh, itu luar biasa..."
-
+    jenny "Phew, that was awesome..."
     pause
-    jenny "Hahaha, kamu benar-benar berantakan!"
-
-    anon "Heh, aku bahkan tidak peduli... Aku sangat lelah."
-
-    jenny "{i}*Mendengus*{/i} Hehehe!"
-
-    jenny "Kamu harus membersihkan dirimu sendiri, kamu terlihat konyol..."
-
+    jenny "Hahaha, you're a fucking mess!"
+    anon "Heh, I don't even care... I'm so exhausted."
+    jenny "{i}*Snort*{/i} Hehehe!"
+    jenny "You should clean yourself up, you look ridiculous..."
     if M_jenny.get('girlfriend_in_progress'):
         jump jenny_mc_room_sex_end_girlfriend_experience
     else:
@@ -1281,54 +938,34 @@ label jenny_mc_room_sex_end_girlfriend_experience:
     show expression "characters/jenny/layeredimage/jenny_overlay_o_sleep_blanket_transparent2.png"
     with fade
     if M_jenny.get("jenny_girlfriend_first_time"):
-        anon "Malam ini sangat menyenangkan!"
-
+        anon "Tonight was a lot of fun!"
         show jenny f_sleep_side_tired
-        jenny "Saya senang Anda menikmati diri Anda sendiri."
-
-        anon "... Dan aku sangat senang kamu tidak terburu-buru kali ini."
-
-        jenny "Ya, kamu sudah membayarku untuk tidak melakukannya, ingat?"
-
-        anon "Ya."
-
+        jenny "I'm glad you enjoyed yourself."
+        anon "... And I'm really happy you're not rushing off this time."
+        jenny "Well, you did pay me not to, remember?"
+        anon "Yeah."
         jenny "Hahahaah!"
-
-        anon "Anda juga bersenang-senang, bukan?"
-
+        anon "You had fun too, didn't you?"
         show jenny f_sleep_side_rolleye
-        jenny "Ya, {b}[firstname]{/b}..."
-
+        jenny "Yes, {b}[firstname]{/b}..."
         show jenny f_sleep_side_tired
-        jenny "Sekarang bisakah kamu diam dan biarkan aku tidur?"
-
+        jenny "Now can you shut up and let me sleep?"
         show jenny f_sleep_side_sleeping
-        anon "Maaf..."
-
+        anon "Sorry..."
         show anon f_sleep_side_kiss
     else:
-        anon "Hehe, aku sangat menikmati malam-malam kita melakukan ini..."
-
+        anon "Hehe, I'm really enjoying the nights we do this..."
         show jenny f_sleep_side_tired
-        jenny "Ya, aku juga."
-
-        jenny "Saya senang saya mendapat ide itu."
-
-        anon "Uhh, kamu tahu, secara teknis ini adalah ide SAYA..."
-
-        jenny "Oh, diamlah!"
-
-        anon "aku hanya mengatakan..."
-
-        jenny "Ya, saya tahu apa yang Anda katakan... Sekarang zip!"
-
-        jenny "Anda merusak kebahagiaan pasca-persetubuhan saya."
-
-        anon "Maaf."
-
+        jenny "Yeah, me too."
+        jenny "I'm glad I came up with the idea."
+        anon "Uhh, you know, this was technically MY idea..."
+        jenny "Oh, shut up!"
+        anon "I'm just saying..."
+        jenny "Yeah, I know what you're saying... Now zip it!"
+        jenny "You're ruining my post-coital bliss."
+        anon "Sorry."
         show jenny f_sleep_side_rolleye
-        jenny "Tidurlah."
-
+        jenny "Go to sleep."
         show jenny f_sleep_side_sleeping
         show anon f_sleep_side_kiss
     $ M_jenny.set('had_sex_bedroom', True)
@@ -1337,27 +974,18 @@ label jenny_mc_room_sex_end_girlfriend_experience:
 label jenny_mc_room_sex_end:
     show jenny f_visit_after_normal
     if M_jenny.is_state(S_jenny_night_time_sex):
-        anon "kamu tinggal?"
-
+        anon "You staying?"
     else:
-        anon "Kamu berangkat lagi?"
-
+        anon "You leaving again?"
     jenny "Hmm?"
-
     if M_jenny.is_state(S_jenny_night_time_sex):
-        anon "Maukah kamu tidur di sini bersamaku malam ini?"
-
-        jenny "Eww, tidak!"
-
-        jenny "Aku bukan pacarmu, doofus..."
-
+        anon "Do you wanna sleep here with me tonight?"
+        jenny "Eww, no!"
+        jenny "I'm not your fucking girlfriend, doofus..."
     else:
-        anon "Kamu bisa tidur di sini, tahu?"
-
-        jenny "Demi Tuhan..."
-
-        jenny "Bukankah kita sudah membahasnya?"
-
+        anon "You can sleep here, you know?"
+        jenny "For fuck's sake..."
+        jenny "Didn't we go over this already?"
 
     if store._in_replay is not None:
         $ player.location = L_home_bedroom
@@ -1368,61 +996,42 @@ label jenny_mc_room_sex_end:
     show anon b_underwear f_skeptical at flip
     with dissolve
     if M_jenny.is_state(S_jenny_night_time_sex):
-        anon "Tunggu!"
-
+        anon "Wait!"
     else:
-        anon "Baiklah, baiklah... Terserah."
-
+        anon "Alright, fine... Whatever."
     show anon f_worried
     hide jenny
     if M_jenny.is_state(S_jenny_night_time_sex):
         $ M_jenny.trigger(T_jenny_didnt_sleep_much)
         show jenny b_naked a_crossed f_upset at flip
         with dissolve
-        jenny "Apa, {b}[firstname]{/b}?!"
-
-        anon "Aku tidak mencoba untuk-"
-
-        anon "{i}*Huh*{/i} Jelaskan saja padaku..."
-
-        anon @ f_skeptical "Jadi, kita bisa berhubungan kapan pun kita mau tapi kamu tidak mau tidur di ranjangku?"
-
+        jenny "What, {b}[firstname]{/b}?!"
+        anon "I wasn't trying to-"
+        anon "{i}*Sigh*{/i} Just, explain this to me..."
+        anon @ f_skeptical "So, we can have sex whenever we want but you won't sleep in my bed?"
         show jenny f_eyeroll
-        jenny "Umm, tidak... Kita bisa berhubungan seks kapan pun {i}Aku{/i} mau..."
-
+        jenny "Umm, no... We can have sex whenever {i}I{/i} want..."
         show jenny f_upset
-        jenny "... Selama tidak mengganggu camshowku."
-
+        jenny "... So long as it doesn't interfere with my camshows."
         pause
-        jenny "... Dan tidak, aku tidak akan tidur di tempat tidurmu!"
-
-        jenny "Aku bukan pacarmu, dan kamu pasti bukan pacarku!!!"
-
-        jenny "Dapatkan itu melalui tengkorak tebalmu, bodoh!"
-
-        anon f_skeptical "aku tidak mengerti kamu sama sekali..."
-
-        jenny "Ya, baiklah... Anda tidak perlu {i}menangkap{/i} saya."
-
-        jenny "Begitulah adanya."
-
-        jenny "Tangani itu."
-
+        jenny "... And no, I won't sleep in your bed!"
+        jenny "I'm not your fucking girlfriend, and you're sure as hell not my boyfriend!!!"
+        jenny "Get that through your thick skull, dummy!"
+        anon f_skeptical "I don't get you at all..."
+        jenny "Yeah, well... You don't have to {i}get{/i} me."
+        jenny "That's just the way things are."
+        jenny "Deal with it."
         anon @ -m_talk "..."
     else:
         show jenny b_naked a_crossed f_upset at flip
         with dissolve
-        anon f_skeptical "Lupakan saja aku mengatakan sesuatu."
-
-        jenny "Dengan senang hati."
-
+        anon f_skeptical "Just forget I said anything."
+        jenny "Gladly."
         pause
     show jenny f_upset
-    jenny "Sekarang tidurlah!"
-
+    jenny "Now go to sleep!"
     show jenny f_grin
-    jenny "Penggemar saya mengharapkan pertunjukan yang bagus besok."
-
+    jenny "My fans are expecting a good show tomorrow."
     hide jenny with dissolve
     pause
     anon f_worried @ -m_talk "..."
@@ -1434,11 +1043,9 @@ label jenny_mc_room_sex_end:
 
 label jenny_sex_intro_repeat:
     show anon f_worried
-    anon "Seks. Silakan."
-
+    anon "Sex. Please."
     show jenny f_upset
-    jenny "Ayo cepat."
-
+    jenny "Hurry up."
     show jenny f_grin_down b_pull1 with dissolve
     pause
     show jenny b_pull2 with dissolve
@@ -1448,15 +1055,11 @@ label jenny_sex_intro_repeat:
     show anon f_surprised
     pause
     show jenny b_panties a_hips f_upset with dissolve
-    jenny "Ya?"
-
+    jenny "Well?"
     anon @ -m_talk "Hmm?"
-
-    jenny "Lepaskan pakaian itu!"
-
+    jenny "Get those clothes off!"
     show jenny b_naked f_grin_down a_panties_remove with dissolve
-    anon f_worried "B-benar..."
-
+    anon f_worried "R-right..."
     show anon b_dressed_changing
     show jenny b_cheer_dress1
     with dissolve
@@ -1465,22 +1068,17 @@ label jenny_sex_intro_repeat:
     pause
     show jenny b_cheer_dress2 with dissolve
     show anon f_worried b_shorts with dissolve
-    anon "Kamu akan memakainya lagi?"
-
+    anon "You're going to wear that again?"
     show jenny b_cheer a_hips f_sexy with dissolve
-    jenny "Tentu saja!"
-
-    jenny "Penggemar saya menyukainya."
-
+    jenny "Of course!"
+    jenny "My fans like it."
     show anon b_dressed_changing2 with dissolve
     anon "..."
     show anon b_underwear f_worried with dissolve
-    jenny "Naiklah ke tempat tidur."
-
+    jenny "Get on the bed."
     hide anon with dissolve
     pause
-    jenny "... Dan kenakan topengmu!"
-
+    jenny "... And put your mask on!"
     label finger_blasting_sex:
     scene black with fade
     pause
@@ -1490,16 +1088,12 @@ label jenny_sex_intro_repeat:
     show jenny o_under_body_laptop o_naked_bed_belly_cheer b_naked_bed_bellytype f_sexy_down
     with dissolve
     pause
-    jenny "Kalian siap untuk pertunjukan lainnya?"
-
+    jenny "You boys ready for another show?"
     "{i}*PING*{/i} {i}*PING*{/i} {i}*PING*{/i} {i}*PING*{/i} {i}*PING*{/i}"
-
     show jenny f_laugh
     jenny "Hehehe!"
-
     show jenny f_sexy_down
-    jenny "Baiklah, biarkan aku menyiapkan semuanya..."
-
+    jenny "Alright, let me get things ready..."
     show jenny b_bed_climbing o_cheer_bed_climbing
     show anon b_bed_jenny_laying_undies_arms of_bed_jenny_laying_undies_arms_mask_X
     show expression "characters/anon/anon_overlay_dick_od_bed_jenny_laying_dick7.png" zorder 2
@@ -1508,25 +1102,20 @@ label jenny_sex_intro_repeat:
     jump jenny_cheer_sex_intro_prepare
 
 label jenny_cheer_sex_intro_prepare:
-    anon "Apakah kita benar-benar akan-"
-
-    jenny "Ssst!"
-
+    anon "Are we really going to-"
+    jenny "Shh!"
     pause
     show jenny b_bed_back_sit o_cheer_bed_back
     show expression "characters/jenny/layeredimage/jenny_arms_bed_back_a_sit_handcuffs.png" zorder 1
     with dissolve
-    anon "Ah, ayolah {b}[jen_name]{/b}!"
-
-    anon "Kau tahu aku benci hal-hal ini..."
-
+    anon "Aww, c'mon {b}[jen_name]{/b}!"
+    anon "You know I hate these things..."
     show jenny a_sit_tie
     hide expression "characters/jenny/layeredimage/jenny_arms_bed_back_a_sit_handcuffs.png"
     show expression "characters/jenny/layeredimage/jenny_arms_bed_back_a_sit_tie.png" zorder 1
     show anon oh_bed_jenny_laying_undies_handcuffs
     with dissolve
-    jenny "Tutup mulutmu!"
-
+    jenny "Shut your mouth!"
     if M_jenny.get("dominance") <= 0:
         anon "..."
         pause
@@ -1535,97 +1124,66 @@ label jenny_cheer_sex_intro_prepare:
         show expression "characters/jenny/layeredimage/jenny_arms_bed_back_a_sit_hips.png" zorder 1
         with dissolve
         if M_jenny.finished_inclusive(S_jenny_end) or store._in_replay:
-            jenny "Dan jika Anda sangat membenci mereka, berhentilah mengeluh tentang mereka dan lakukan sesuatu."
-
-            jenny "Itu hanya plastik, saya yakin mereka akan senang melihat Anda mencoba dan {b}melepaskan diri{/b}!"
-
+            jenny "And if you hate them that much, quit moaning about them and do something."
+            jenny "They're only plastic, I'm sure the boys would love to see you try and {b}break free{/b}!"
         else:
-            jenny "Bagus."
-
-        jenny "Sekarang, mohonlah."
-
-        anon "Apa?!"
-
-        jenny "Kau ingin aku mengajak ayam besarmu itu jalan-jalan, bukan?"
-
-        anon "Y-ya..."
-
-        jenny "Maka kamu akan memohon padaku untuk itu, di depan penggemarku!"
-
+            jenny "Good."
+        jenny "Now, beg for it."
+        anon "What?!"
+        jenny "You want me to take that big cock of yours for a ride, don't you?"
+        anon "Y-yes..."
+        jenny "Then you're going to beg me for it, in front of my fans!"
         anon "..."
-        jenny "Ayo!"
-
-        anon "Tolong..."
-
-        jenny "Putri!"
-
+        jenny "Go on!"
+        anon "Please..."
+        jenny "Princess!"
         anon "..."
-        anon "Tolong, {b}Putri [jen_name]{/b}..."
-
+        anon "Please, {b}Princess [jen_name]{/b}..."
         "{i}*PING*{/i} {i}*PING*{/i} {i}*PING*{/i} {i}*PING*{/i} {i}*PING*{/i}"
-
-        jenny "HAHAHAH!"
-
+        jenny "HAHAHAAH!"
         show jenny b_bed_front_sit a_pull1 f_sexy_down o_cheer_bed_front_sit2
         hide expression "characters/anon/anon_overlay_dick_od_bed_jenny_laying_dick7.png"
         hide expression "characters/jenny/layeredimage/jenny_arms_bed_back_a_sit_hips.png"
         with dissolve
         pause
         show jenny a_pull2 o_cheer_bed_front_sit3 with dissolve
-        jenny "Kalian siap?"
-
+        jenny "You boys ready?"
     else:
-        anon "Saya tidak menyukai mereka!"
-
-        jenny "TAHAN TETAP!"
-
+        anon "I don't like them!"
+        jenny "HOLD STILL!"
         anon "Grr!"
-
-        jenny "Aku yang bertanggung jawab di sini, bukan kamu!"
-
+        jenny "I'm in charge here, not you!"
         "{i}*PING*{/i} {i}*PING*{/i} {i}*PING*{/i} {i}*PING*{/i} {i}*PING*{/i}"
-
         show jenny a_hips
         hide expression "characters/jenny/layeredimage/jenny_arms_bed_back_a_sit_tie.png"
         show expression "characters/jenny/layeredimage/jenny_arms_bed_back_a_sit_hips.png" zorder 1
         with dissolve
-        jenny "Di sana!"
-
-        jenny "Sheesh, aku tidak tahu apa yang kamu keluhkan..."
-
+        jenny "There!"
+        jenny "Sheesh, I don't know what you're complaining about..."
         show jenny b_bed_front_sit a_pull1 f_sexy_down o_cheer_bed_front_sit2
         hide expression "characters/anon/anon_overlay_dick_od_bed_jenny_laying_dick7.png"
         hide expression "characters/jenny/layeredimage/jenny_arms_bed_back_a_sit_hips.png"
         with dissolve
-        jenny "Inilah aku, menawarkan untuk mengacau otakmu, dan kamu mengeluh tentang borgol bodoh!"
-
+        jenny "Here I am, offering to fuck your brains out, and you're whining about stupid handcuffs!"
         show jenny a_pull2 o_cheer_bed_front_sit3 with dissolve
-        jenny "Kalian tidak akan melakukan perlawanan, kan?!"
-
+        jenny "You boys wouldn't put up a fight, would you?!"
     show expression "characters/anon/anon_overlay_dick_od_bed_jenny_laying_dick6.png"
     show jenny a_sides f_sexy_down o_cheer_bed_front_sit
     with dissolve
     "{i}*PING*{/i} {i}*PING*{/i} {i}*PING*{/i} {i}*PING*{/i} {i}*PING*{/i}"
-
-    jenny "Hehe, mereka bersemangat."
-
+    jenny "Heh, they're excited..."
     scene expression "backgrounds/location_home_jennybedroom_sex_hj.jpg"
     show jenny_cheer_sex tied insert
     with fade
-    jenny "( Ini dia, {b}[firstname]{/b}... Momen yang kamu impikan! )"
-
+    jenny "( Here we go, {b}[firstname]{/b}... The moment you've been dreaming of! )"
     jenny "Ohh!"
-
-    jenny "Sialan!"
-
+    jenny "Holy shit!"
     $ animated = True
     $ anim_toggle = True
     $ M_jenny.set('sex speed', .09)
     show expression AnimatedImage("jenny_cheer_sex_tied_mask", [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18], M_jenny) as jenny_cheer_sex at Position(xalign = 0.0, yoffset = 0)
-    jenny "Ya Tuhan, kalian..."
-
-    jenny "Ini adalah penis yang SANGAT besar!"
-
+    jenny "Oh my god, you guys..."
+    jenny "This is a REALLY big dick!"
     jump jenny_cheer_sex_loop_tied
 
 label jenny_cheer_sex_loop_tied:
@@ -1664,65 +1222,42 @@ label jenny_cheer_sex_loop_tied:
 label jenny_cheer_sex_hscene_dialog_tied:
     if animcounter == 0 and randomizer() < 10:
         jenny "Ahh!{p=1}{nw}"
-
     if animcounter == 0 and randomizer() < 10:
-        jenny "Ini sangat bagus!{p=1}{nw}"
-
+        jenny "This is so fucking good!{p=1}{nw}"
     if animcounter == 1 and randomizer() < 10:
-        jenny "Astaga!{p=1}{nw}"
-
-        jenny "Aku akan muncrat ke seluruh penis besar itu!{p=2}{nw}"
-
+        jenny "Oh, fuck!{p=1}{nw}"
+        jenny "I'm gonna squirt all over that big dick!{p=2}{nw}"
     if animcounter == 1 and randomizer() < 10:
-        jenny "Mmm, sial!{p=1}{nw}"
-
+        jenny "Mmm, fuck!{p=1}{nw}"
     if animcounter == 2 and randomizer() < 10:
-        jenny "Enak sekali!!{p=1}{nw}"
-
-        anon "Saya semakin dekat!{p=1}{nw}"
-
-        jenny "SANGAT BAIK!!{p=1}{nw}"
-
+        jenny "It's so good!!{p=1}{nw}"
+        anon "I'm getting close!{p=1}{nw}"
+        jenny "SO FUCKING GOOD!!{p=1}{nw}"
         anon "{b}[jen_name]{/b}!{p=1}{nw}"
-
     if animcounter == 2 and randomizer() < 10:
-        anon "Kamu benar-benar ahli dalam hal ini!{p=1}{nw}"
-
+        anon "You're really good at this!{p=1}{nw}"
     if animcounter == 3 and randomizer() < 5:
-        jenny "Anda menyukainya, bukan?!{p=1}{nw}"
-
-        anon "Y-ya.{p=1}{nw}"
-
-        jenny "Katakan padaku kamu menyukainya!{p=1}{nw}"
-
-        anon "Saya menyukainya!{p=1}{nw}"
-
-        jenny "Katakan padaku kamu menyukai vaginaku!{p=1}{nw}"
-
-        anon "Ahh, aku menyukainya!{p=1}{nw}"
-
+        jenny "You like that, don't you?!{p=1}{nw}"
+        anon "Y-yeah.{p=1}{nw}"
+        jenny "Tell me you like it!{p=1}{nw}"
+        anon "I like it!{p=1}{nw}"
+        jenny "Tell me you love my pussy!{p=1}{nw}"
+        anon "Ahh, I love it!{p=1}{nw}"
         jenny "Hahahaah!{p=1}{nw}"
-
         if M_jenny.get("sex speed") > 0.031:
             $ M_jenny.set("sex speed", M_jenny.get("sex speed") - 0.03)
-        jenny "Mmm, ya!{p=1}{nw}"
-
+        jenny "Mmm, yeah!{p=1}{nw}"
     return
 
 label jenny_cheer_sex_cum_inside_tied:
     if M_jenny.is_state(S_jenny_cheerleader_sex):
-        anon "Saya tidak bisa menahannya!"
-
+        anon "I can't hold it!"
     else:
-        anon "Turun!"
-
+        anon "Get off!"
     pause
     anon "{b}[jen_name]{/b}!!!"
-
     jenny "NGGHHH!!!"
-
-    anon "aku tidak bisa-"
-
+    anon "I can't-"
     pause
     show jenny_cheer_sex tied cum
     anon "HNNGGG!!!" with flash
@@ -1737,80 +1272,51 @@ label jenny_cheer_sex_cum_inside_tied_post_pregnancy:
     show jenny_cheer_sex tied pullout 1
     with fade
     jenny "Haah... Haaah..."
-
     show jenny_cheer_sex tied pullout 2 with dissolve
-    jenny "Fuuuck, itu luar biasa-"
-
+    jenny "Fuuuck, that was incredi-"
     show jenny_cheer_sex tied pullout 3 with dissolve
     jenny "!!!"
     show jenny_cheer_sex tied pullout 4 with dissolve
     if M_jenny.is_state(S_jenny_cheerleader_sex):
-        jenny "Apakah kamu masuk ke dalam diriku?!"
-
-        anon "K-kamu menyuruhku untuk tidak berhenti..."
-
-        jenny "Ya, tapi aku tidak mengatakan untuk menyelesaikan dalam diriku, idiot!"
-
-        anon "Maafkan aku, aku tidak bermaksud-"
-
-        jenny "Bagaimana jika saya hamil?!"
-
+        jenny "Did you cum inside me?!"
+        anon "Y-you told me not to stop..."
+        jenny "Yeah, but I didn't say to finish inside me you idiot!"
+        anon "I'm sorry, I didn't mean to-"
+        jenny "What if I get pregnant?!"
         anon "..."
     else:
-        jenny "Apakah kamu masuk ke dalam diriku?!"
-
-        anon "Aku sudah memperingatkanmu!"
-
-        jenny "Saya tidak mendengar apa pun!"
-
-        anon "Nah, apa yang kamu ingin aku lakukan?!"
-
-        anon "Aku diborgol ke tempat tidurmu!"
-
-        jenny "Aku bisa hamil, bodoh!"
-
-        anon "Maka kamu seharusnya turun ketika aku memperingatkanmu!"
-
+        jenny "Did you cum inside me?!"
+        anon "I warned you!"
+        jenny "I didn't hear anything!"
+        anon "Well, what do you want me to do?!"
+        anon "I'm handcuffed to your bed!"
+        jenny "I could get pregnant you moron!"
+        anon "Then you should have gotten off when I warned you!"
     "{i}*PING*{/i} {i}*PING*{/i} {i}*PING*{/i} {i}*PING*{/i} {i}*PING*{/i}"
-
-    jenny "Oh, astaga..."
-
+    jenny "Oh for fuck's sake..."
     jump jenny_cheer_sex_aftermath
 
 label jenny_cheer_sex_cum_outside_tied:
-    anon "Aku akan keluar!"
-
-    jenny "Tahan!"
-
-    anon "A-apa?! Ini tidak berhasil seperti itu!"
-
-    jenny "Saya sangat dekat!"
-
+    anon "I'm going to cum!"
+    jenny "Hold it!"
+    anon "W-what?! It doesn't work like that!"
+    jenny "I'm so close!"
     anon "{b}[jen_name]{/b}!!!"
-
-    jenny "sial!!"
-
+    jenny "FUCK!!"
     show jenny_cheer_sex tied cumshot
     show jenny_cheer_sex_mc tied cumshot initial
     anon "HNNGGG!!!" with flash
     show jenny_cheer_sex_mc tied cumshot
     pause
     anon "Haah... Haah..."
-
-    jenny "Kamu tidak bisa bertahan sepuluh detik lagi?!"
-
+    jenny "You couldn't have lasted another ten seconds?!"
     if randomizer() > 50:
-        anon "M-maaf."
-
+        anon "S-sorry."
     else:
-        anon "Sulit ketika saya diborgol ke tempat tidur!"
-
-    jenny "Terserah..."
-
+        anon "It's difficult when I'm handcuffed to the bed!"
+    jenny "Whatever..."
     "{i}*PING*{/i} {i}*PING*{/i} {i}*PING*{/i} {i}*PING*{/i} {i}*PING*{/i}"
-
-    jenny "Oh, astaga..."
-
+    jenny "Oh for fuck's sake..."
     jump jenny_cheer_sex_aftermath
 
 label jenny_cheer_sex_break_free:
@@ -1825,19 +1331,14 @@ label jenny_cheer_sex_break_free:
             show expression AnimatedImage("jenny_cheer_sex_free_mask", [1,2,3,4,5], M_jenny) as jenny_cheer_sex at Position(xalign = 0.0, yoffset = 0)
         else:
             show expression AnimatedImage("jenny_cheer_sex_free", [1,2,3,4,5], M_jenny) as jenny_cheer_sex at Position(xalign = 0.0, yoffset = 0)
-        jenny "OH sial!!{p=1}{nw}"
-
+        jenny "OH FUCK!!{p=1}{nw}"
         pause 1
         jenny "OHMYGOD, OHMYGOD, OHMYGOD!!!{p=1}{nw}"
-
         pause 1
         jenny "AHHH!!!{p=1}{nw}"
-
         "{i}*PING*{/i} {i}*PING*{/i} {i}*PING*{/i} {i}*PING*{/i} {i}*PING*{/i}{p=1}{nw}"
-
         pause 1
         jenny "FUUUUCK MEEEE!!!{p=1}{nw}"
-
 
         label jenny_cheer_sex_loop_free:
             show screen sex_anim_buttons
@@ -1874,45 +1375,32 @@ label jenny_cheer_sex_break_free:
 
         label jenny_cheer_sex_hscene_dialog_free:
             if animcounter == 0 and randomizer() < 30:
-                jenny "OH sial!!{p=1}{nw}"
-
+                jenny "OH FUCK!!{p=1}{nw}"
             if animcounter == 1 and randomizer() < 10:
-                jenny "PERCAYA AKU!{p=.5{nw}"
-
-                jenny "PERCAYA AKU!{p=.5{nw}"
-
+                jenny "FUCK ME!{p=.5}{nw}"
+                jenny "FUCK ME!{p=.5}{nw}"
                 jenny "FUUUUCK MEEEE!!!{p=1}{nw}"
-
             if animcounter == 2 and randomizer() < 30:
                 jenny "AHHH!!!{p=1}{nw}"
-
             return
     else:
 
         $ display.toast(str_fail)
-        jenny "Ya Tuhan!{p=1}{nw}"
-
+        jenny "Oh my god!{p=1}{nw}"
         pause 1
-        jenny "Persetan denganku!{p=1}{nw}"
-
+        jenny "Fuck me!{p=1}{nw}"
         pause 1
-        jenny "PERCAYA AKU!!{p=1}{nw}"
-
+        jenny "FUCK ME!!{p=1}{nw}"
         jump jenny_cheer_sex_loop_tied
 
 label jenny_cheer_sex_cum_inside_free:
-    anon "Aku semakin dekat!"
-
+    anon "I'm getting close!"
     pause
-    jenny "Jangan berhenti!"
-
-    anon "{b}[jen_name]{/b}, saya tidak bisa-"
-
-    jenny "JANGAN BERHENTI!"
-
+    jenny "Don't stop!"
+    anon "{b}[jen_name]{/b}, I can't-"
+    jenny "DON'T STOP!"
     pause
     jenny "NGGHHH!!!"
-
     show jenny_cheer_sex free cum
     anon "HNNGGG!!!" with flash
     show jenny_cheer_sex free cum 2
@@ -1926,65 +1414,42 @@ label jenny_cheer_sex_cum_inside_free_post_pregnancy:
     show jenny_cheer_sex free pullout 1
     with fade
     jenny "Haah... Haaah..."
-
     show jenny_cheer_sex free pullout 2 with dissolve
-    jenny "Fuuuck, itu luar biasa-"
-
+    jenny "Fuuuck, that was incredi-"
     show jenny_cheer_sex free pullout 3 with dissolve
     jenny "!!!"
     show jenny_cheer_sex free pullout 4 with dissolve
-    jenny "Apakah kamu masuk ke dalam diriku?!"
-
-    anon "Kamu menyuruhku untuk tidak berhenti..."
-
-    jenny "Aku tidak bermaksud agar kamu masuk ke dalam diriku, idiot!"
-
-    anon "Jangan mulai dengan menyebut nama..."
-
-    jenny "Bagaimana jika saya hamil!!"
-
+    jenny "Did you cum inside me?!"
+    anon "You told me not to stop..."
+    jenny "I didn't mean for you to cum inside me, idiot!"
+    anon "Don't start in with the name-calling..."
+    jenny "What if I get pregnant!!"
     "{i}*PING*{/i} {i}*PING*{/i} {i}*PING*{/i} {i}*PING*{/i} {i}*PING*{/i}"
-
-    jenny "Oh, astaga..."
-
+    jenny "Oh for fuck's sake..."
     jump jenny_cheer_sex_aftermath
 
 label jenny_cheer_sex_cum_outside_free:
-    anon "Aku semakin dekat!"
-
+    anon "I'm getting close!"
     pause
-    jenny "Jangan berhenti!"
-
-    anon "{b}[jen_name]{/b}, saya tidak bisa-"
-
-    jenny "JANGAN BERHENTI!"
-
+    jenny "Don't stop!"
+    anon "{b}[jen_name]{/b}, I can't-"
+    jenny "DON'T STOP!"
     pause
     jenny "NGGHHH!!!"
-
     show jenny_cheer_sex free cumshot
     show jenny_cheer_sex_mc tied cumshot initial
     anon "HNNGGG!!!" with flash
     show jenny_cheer_sex_mc tied cumshot
     pause
     anon "Haah... Haah..."
-
-    jenny "Apa-apaan ini, sudah kubilang jangan berhenti!!"
-
-    anon "Apa, kamu ingin aku masuk ke dalam dirimu?!"
-
-    jenny "T-tidak, itu hanya... Terasa sangat enak dan-"
-
-    jenny "{i}*Huh*{/i} Sudahlah..."
-
+    jenny "What the fuck, I told you not to stop!!"
+    anon "What, do you want me to cum inside you?!"
+    jenny "N-no, it just... Felt really good and-"
+    jenny "{i}*Sigh*{/i} Never mind..."
     "{i}*PING*{/i} {i}*PING*{/i} {i}*PING*{/i} {i}*PING*{/i} {i}*PING*{/i}"
-
-    jenny "Oh, astaga..."
-
-    jenny "Pertunjukan sudah berakhir, orang mesum!"
-
-    jenny "Saksikan lain kali!"
-
+    jenny "Oh for fuck's sake..."
+    jenny "Show's over, pervs!"
+    jenny "Tune in next time!"
     jump jenny_cheer_sex_aftermath
 
 label jenny_cheer_sex_aftermath:
@@ -1992,38 +1457,27 @@ label jenny_cheer_sex_aftermath:
     show jenny f_upset b_cheer a_hips
     show anon b_underwear
     with dissolve
-    anon "Itu luar biasa!"
-
+    anon "That was awesome!"
     show jenny f_eyeroll
-    jenny "Ya, terserah."
-
+    jenny "Yeah, whatever."
     show jenny f_upset
-    jenny "Kamu baik-baik saja."
-
+    jenny "You were alright."
     show anon f_worried
-    jenny "Sekarang, keluar!"
-
-    anon "Tidak bisakah kita-"
-
+    jenny "Now, get out!"
+    anon "Can't we just-"
     show jenny a_hips_money
-    jenny "Tidak, ambil uang bodohmu dan keluar!"
-
+    jenny "No, take your stupid money and get out!"
     hide jenny with dissolve
-    anon "Baiklah, sial..."
-
+    anon "Alright, sheesh..."
     hide anon with dissolve
     $ player.go_to(L_home_hallway)
     scene expression player.location.background_blur with None
     show anon f_grin with dissolve
-    anon @ -m_talk "( Saya baru saja berhubungan seks dengan {b}[jen_name]{/b}... )"
-
-    anon @ -m_talk "( Di kamera di depan ratusan orang!)"
-
+    anon @ -m_talk "( I just had sex with {b}[jen_name]{/b}... )"
+    anon @ -m_talk "( On camera in front of hundreds of people! )"
     pause
-    anon @ -m_talk "(Betapa gilanya itu?!)"
-
-    anon @ -m_talk "(Saya harap kita melakukannya lagi.)"
-
+    anon @ -m_talk "( How crazy is that?! )"
+    anon @ -m_talk "( I hope we do it again. )"
     hide anon with dissolve
     $ renpy.end_replay()
     $ persistent.cookie_jar["Jenny"]["unlocked"] = True
@@ -2037,55 +1491,38 @@ label jenny_cheer_sex_aftermath:
 
 label jenny_cunni_intro_repeat:
     show anon f_worried
-    anon "Jadi tidak ada pertunjukan kamera hari ini?"
-
+    anon "So no camshow today?"
     show jenny f_upset
-    jenny "Tidak, aku sedang tidak mood..."
-
-    anon "Apa?!"
-
-    anon "Anda selalu bersemangat."
-
-    jenny "Untuk dimelototi, brengsek!"
-
-    jenny "Aku sedang tidak mood untuk dimelototi!"
-
-    anon f_laugh "Oh heh. Mengerti."
-
+    jenny "No, I'm not in the mood..."
+    anon "What?!"
+    anon "You're always in the mood."
+    jenny "To be gawked at, asshole!"
+    jenny "I'm not in the mood to be gawked at!"
+    anon f_laugh "Oh heh. Gotcha."
     show anon f_normal
-    jenny "aku butuh hari libur..."
-
+    jenny "I need a day off..."
     show anon f_grumpy:
         flip
         xoffset -500
     with dissolve
-    anon "Aku serahkan padamu kalau begitu."
-
-    jenny "Tunggu."
-
+    anon "I'll leave you to it then."
+    jenny "Wait."
     hide anon
     show anon f_normal
     with dissolve
     anon @ -m_talk "..."
     show jenny f_grin
-    jenny "Karena kamu sudah di sini..."
-
+    jenny "Since you're already here..."
     anon f_worried @ -m_talk "Hmm?"
-
-    jenny "Ayo."
-
+    jenny "C'mon."
 
     label finger_blasting_cunni:
     scene location_home_hallway_cutscene
     with fade
-    anon "Kemana kita akan pergi?!"
-
-    jenny "Saya pikir Anda perlu lebih banyak latihan..."
-
-    anon "K-kenapa kita pergi ke kamarku?!"
-
-    jenny "Oh, diamlah!"
-
+    anon "Where are we going?!"
+    jenny "I think you need more practice..."
+    anon "W-why are we going to my room?!"
+    jenny "Oh, shut up!"
 
     $ player.go_to(L_home_bedroom)
     scene expression player.location.background_blur
@@ -2094,50 +1531,33 @@ label jenny_cunni_intro_repeat:
     with fade
     pause
     show jenny b_pantieless a_hips f_grin with dissolve
-    anon "Apa yang sedang kamu lakukan?"
-
-    jenny "Anda akan menjilat vagina saya."
-
+    anon "What are you doing?"
+    jenny "You're going to lick my pussy."
     if M_jenny.get("dominance") <= 0:
-        anon "Saya?"
-
-        jenny "Ya."
-
-        jenny "Ayolah, pecundang!"
-
-        jenny "Aku akan mengotori wajah bodohmu itu!"
-
+        anon "I am?"
+        jenny "Yup."
+        jenny "C'mon, loser!"
+        jenny "I'm going to cum all over that idiot face of yours!"
     else:
-        anon "Ah, benarkah?"
-
-        jenny "Ya."
-
-        anon "Mungkin jika Anda bertanya kepada saya dengan baik."
-
+        anon "Oh really?"
+        jenny "Yup."
+        anon "Maybe if you ask me nicely."
         show jenny f_upset
-        jenny "Ugh, kamu masih terpaku pada omong kosong itu?!"
-
+        jenny "Ugh, you're still hung up on that shit?!"
         show anon f_skeptical
         if randomizer() > 50:
-            anon "Jika Anda ingin kembali melakukan masturbasi, sesuaikan diri Anda..."
-
+            anon "If you wanna go back to masturbating, suit yourself..."
         else:
-            anon "Aku bukan bocah pencambukmu, {b}[jen_name]{/b}..."
-
-        jenny "Grr, kamu sungguh menyebalkan!"
-
-        jenny "Bagus."
-
+            anon "I'm not your little whipping boy, {b}[jen_name]{/b}..."
+        jenny "Grr, you are such a pain in the ass!"
+        jenny "Fine."
         show jenny f_angry_pouting a_crossed with dissolve
         pause
         show jenny f_upset
-        jenny "{b}[firstname]{/b}, maukah kamu menjilat vaginaku?"
-
-        anon @ f_laugh "Haha, tentu saja!"
-
+        jenny "{b}[firstname]{/b}, would you please lick my pussy?"
+        anon @ f_laugh "Haha, sure!"
         show jenny f_eyeroll
-        jenny "Ayolah!"
-
+        jenny "Just, c'mon!"
     jump jenny_cunni_repeat
 
 
@@ -2150,80 +1570,56 @@ label jenny_cunni_repeat:
     show jennysex_cunnilingus_player at right
     with fade
     if M_jenny.is_state(S_jenny_give_cunni):
-        jenny "Hehe, ingat air mani yang kamu tembakkan ke seluruh selimutku?!"
-
-        jenny "Ini waktunya balas dendam, jalang!"
-
+        jenny "Hehe, remember that cum you shot all over my comforter?!"
+        jenny "It's payback time, bitch!"
         show jennysex 134
-        anon "Hei, aku mencucinya untukmu!"
-
+        anon "Hey, I washed it for you!"
         show jennysex 135
-        jenny "Ha ha ha!"
-
+        jenny "Hahaha!"
         show jennysex 137 with dissolve
     pause
     show jennysex 137b
-    jenny "Nah, tunggu apa lagi, undangan?!"
-
-    jenny "Jilat vaginaku-"
-
+    jenny "Well, what are you waiting for, an invitation?!"
+    jenny "Lick my puss-"
     $ M_jenny.set('sex speed', .3)
     show expression AnimatedImage("jenny_lick_shirt", [1,2,3,4], M_jenny) as jennysex at Position(xalign = 0.0, yoffset = 0)
     hide jennysex_cunnilingus_player
     with fastdissolve
-    jenny "Eeyyyy!!!"
-
+    jenny "EEyyyy!!!"
     pause
-    jenny "Sial!"
-
+    jenny "Fuuuuuck!"
     pause
-    jenny "Mmm, lidahmu terasa luar biasa!"
-
-    jenny "Ahhh!"
-
+    jenny "Mmm, your tongue feels amazing!"
+    jenny "Ahh!"
     pause
     show jennysex 135
     show jennysex_cunnilingus_player at right
     with dissolve
-    jenny "Lebih fokus pada klitorisku, bodoh!"
-
-    jenny "... Dan mainkan payudaraku juga!"
-
+    jenny "Focus on my clit more, dummy!"
+    jenny "... And play with my tits too!"
     show jennysex 134
     if M_jenny.get("dominance") <= 0:
-        anon "Baiklah."
-
+        anon "Alright."
         show jennysex 135
-        jenny "{i}*Ahem*{/i} Baiklah, apa?"
-
+        jenny "{i}*Ahem*{/i} Alright, what?"
         show jennysex 134
-        anon "{i}*Huh*{/i} Baiklah, {b}Putri [jen_name]{/b}..."
-
+        anon "{i}*Sigh*{/i} Alright, {b}Princess [jen_name]{/b}..."
         show jennysex 135
-        jenny "Ha ha ha!"
-
-        jenny "Itu benar, pecundang!"
-
+        jenny "Hahaha!"
+        jenny "That's right, loser!"
     else:
-        anon "Tanyakan baik-baik atau aku akan berhenti..."
-
+        anon "Ask nicely or I'm stopping..."
         show jennysex 135
-        jenny "Apa?!"
-
-        jenny "Ya Tuhan, kamu tidak bisa berhenti sekarang!"
-
+        jenny "What?!"
+        jenny "Oh my god, you can't stop now!"
         show jennysex 134
-        anon "Awasi aku."
-
+        anon "Watch me."
         show jennysex 135
-        jenny "Tidak tidak tidak!"
-
+        jenny "No, no, no!"
         show jennysex 134
         jenny "Grr!"
-
         show jennysex 135
-        jenny "Tolong, mainkan payudaraku, {b}[firstname]{/b}..."
-
+        jenny "Please, play with my tits, {b}[firstname]{/b}..."
     $ animated = True
     $ anim_toggle = True
     $ M_jenny.set('sex speed', .2)
@@ -2262,25 +1658,18 @@ label jenny_lick_loop:
 label jenny_lick_hscene_dialog:
     if animcounter == 0 and randomizer() < 10:
         jenny "!!!{p=1}{nw}"
-
     if animcounter == 1 and randomizer() < 10:
-        jenny "Di sana!{p=1}{nw}"
-
+        jenny "Right there!{p=1}{nw}"
     if animcounter == 2 and randomizer() < 10:
-        jenny "Begitu saja.{p=1}{nw}"
-
-        jenny "Ya!!{p=1}{nw}"
-
+        jenny "Just like that.{p=1}{nw}"
+        jenny "Yesss!!{p=1}{nw}"
     if animcounter == 3 and randomizer() < 10:
-        jenny "Mmm, aku semakin dekat!{p=2}{nw}"
-
+        jenny "Mmm, I'm getting close!{p=2}{nw}"
     return
 
 label jenny_lick_cum:
-    jenny "aku akan-"
-
-    jenny "Astaga!"
-
+    jenny "I'm gonna-"
+    jenny "Oh fuck!"
     pause
     show jennysex 143
     jenny "NGGHHH!!!" with flash
@@ -2288,20 +1677,15 @@ label jenny_lick_cum:
     show jennysex_cunnilingus_player at right
     with dissolve
     jenny "Haah... Haah..."
-
     show jennysex 134c
-    anon "Sheesh, kamu membuatku basah kuyup."
-
+    anon "Sheesh, you soaked me."
     pause
     show jennysex 135c
-    jenny "Psh, kamu menyukainya!"
-
+    jenny "Psh, you like it!"
     show jennysex 134c
-    anon "Ya benar..."
-
+    anon "Yeah, right..."
     show jennysex 135c
     jenny "Hehehe!"
-
     hide jennysex
     hide jennysex_cunnilingus_player
     with dissolve
@@ -2309,39 +1693,27 @@ label jenny_lick_cum:
     show jenny f_normal b_pantieless
     show anon f_worried
     with dissolve
-    jenny "Fiuh, baiklah... Itu cukup bagus."
-
-    anon "Ya, untukmu."
-
+    jenny "Phew, alright... That was pretty good."
+    anon "Yeah, for you."
     show jenny f_laugh
-    jenny "Ha ha ha!"
-
+    jenny "Hahaha!"
     show jenny f_normal
-    jenny "Jangan khawatir, aku akan menjagamu nanti."
-
+    jenny "Don't worry, I'll take care of you later."
     show jenny f_grin
-    jenny "Mungkin..."
-
+    jenny "Maybe..."
     pause
-    jenny "... Jika kamu anak baik."
-
-    anon "Ayo, {b}[jen_name]{/b}..."
-
+    jenny "... If you're a good boy."
+    anon "C'mon, {b}[jen_name]{/b}..."
     show jenny f_upset
-    jenny "Tidak."
-
+    jenny "No."
     show jenny f_grin
-    jenny "Lagi pula, apa kamu tidak punya pakaian untuk dicuci?!"
-
+    jenny "Besides, don't you have some laundry to do?!"
     anon f_grumpy @ -m_talk "..."
     show jenny a_panties with dissolve
-    jenny "Nanti, pecundang!"
-
+    jenny "Later, loser!"
     hide jenny with dissolve
     jenny "Hahahaah!"
-
-    anon f_unimpressed "{i}*Huh*{/i}"
-
+    anon f_unimpressed "{i}*Sigh*{/i}"
     hide anon with dissolve
     $ renpy.end_replay()
     $ persistent.cookie_jar["Jenny"]["unlocked"] = True
@@ -2354,11 +1726,9 @@ label jenny_lick_cum:
 
 label jenny_bj_intro_repeat:
     show anon f_worried
-    anon "Lisan."
-
+    anon "Oral."
     show jenny f_upset
-    jenny "Ayo cepat."
-
+    jenny "Hurry up."
     show jenny f_grin_down b_pull1 with dissolve
     pause
     show jenny b_pull2 with dissolve
@@ -2368,68 +1738,51 @@ label jenny_bj_intro_repeat:
     show anon f_surprised
     pause
     show jenny b_panties a_hips f_upset with dissolve
-    jenny "Ya?"
-
+    jenny "Well?"
     anon @ -m_talk "Hmm?"
-
-    jenny "Lepaskan pakaian itu!"
-
+    jenny "Get those clothes off!"
     show jenny f_grin_down b_naked a_panties_remove with dissolve
-    anon f_worried "B-benar..."
-
+    anon f_worried "R-right..."
     show jenny b_naked_panties_remove_down with dissolve
     pause
 
     label finger_blasting_bj:
     scene expression "backgrounds/location_home_jennybedroom_cutscene05.jpg"
     with fade
-    jenny "Anda tahu latihannya."
-
-    jenny "Pakai masker dan tutup mulut."
-
-    anon "Ya, saya ingat."
-
-    jenny "Aku akan menangani sisanya."
-
+    jenny "You know the drill."
+    jenny "Mask on and keep your mouth shut."
+    anon "Yeah, I remember."
+    jenny "I'll handle the rest."
 
     scene expression "backgrounds/location_home_jennybedroom_closeup_peek.jpg"
     $ M_jenny.set('cam show mask', True)
     show anon b_bed_jenny_sit f_shy_down of_mask
     show jenny o_under_body_laptop b_naked_bed_bellytype f_sexy_down
     with fade
-    jenny "Hai lagi, semuanya!"
-
-    jenny "Aku membawa mainan anakku kembali untuk memberi kalian pertunjukan lagi."
-
+    jenny "Hi again, everybody!"
+    jenny "I brought my boy toy back to give you guys another show."
     pause
     show jenny f_laugh
-    jenny "Hehe, tentu saja!"
-
+    jenny "Hehe, of course!"
     show jenny b_bed_climbing
     show anon b_bed_jenny_laying_undies_arms of_bed_jenny_laying_undies_arms_mask_X od_bed_jenny_laying_dick1
     show expression "characters/anon/anon_overlay_dick_od_bed_jenny_laying_dick1.png"
     with dissolve
     pause
     show jenny b_bed_back_sit a_sit_handcuffs with dissolve
-    anon "Borgol lagi?!"
-
+    anon "Handcuffs again?!"
     show jenny a_sit_tie
     show anon oh_bed_jenny_laying_undies_handcuffs
     with dissolve
-    jenny "Ssst!"
-
+    jenny "Shh!"
     hide expression "characters/anon/anon_overlay_dick_od_bed_jenny_laying_dick1.png"
     show expression "characters/anon/anon_overlay_dick_od_bed_jenny_laying_dick7.png"
     with dissolve
-    anon "{b}[jen_name]{/b}, aku tidak mau-"
-
-    jenny "Diam!"
-
+    anon "{b}[jen_name]{/b}, I don't wanna-"
+    jenny "Shut up!"
     show jenny b_bed_back_look a_up f_normal with dissolve
-    jenny "Di sana."
-
-    jenny "Mari kita lihat apakah teman kita sudah bangun, hmm?"
-
+    jenny "There."
+    jenny "Let's see if our friend is awake yet, hmm?"
     show jenny b_bed_front_sit a_sides f_sexy_down with dissolve
     hide expression "characters/anon/anon_overlay_dick_od_bed_jenny_laying_dick7.png"
     show jenny a_pull1
@@ -2437,60 +1790,45 @@ label jenny_bj_intro_repeat:
     pause
     show jenny a_pull2 with dissolve
     jenny "!!!"
-    jenny "Halo sobat besar."
-
+    jenny "Hello, big fella."
     hide expression "characters/anon/anon_overlay_dick_od_bed_jenny_laying_dick6.png"
     show anon od_bed_jenny_laying_dick6
     show jenny b_bed_front_laying
     with dissolve
-    jenny "Kalian siap bersenang-senang?"
-
+    jenny "You boys ready to have some fun?"
     "{i}*PING*{/i} {i}*PING*{/i} {i}*PING*{/i} {i}*PING*{/i} {i}*PING*{/i}"
-
-    anon "Apa yang akan kita lakukan-"
-
+    anon "What are we going-"
     show jenny b_bed_pussy1
     show expression "characters/anon/anon_overlay_dick_od_bed_jenny_laying_dick6.png"
     anon "!!!" with hpunch
-    anon "Mrphmmmmll-"
-
-    jenny "Apa itu tadi, mainan anak laki-laki?"
-
-    jenny "Kami tidak dapat mendengarmu... Hahahaah!"
-
+    anon "Mrphmmmll-"
+    jenny "What was that, boy toy?"
+    jenny "We can't hear you... Hahahaah!"
     show anon od_empty
     show jenny b_bed_pussy
     with dissolve
     pause
-    jenny "Mmm, sial ya!"
-
+    jenny "Mmm, fuck yeah!"
     pause
     show jenny f_nipple2
-    jenny "Ahhh!"
-
+    jenny "Ahh!"
     show jenny f_nipple3
     pause
     show jenny f_nipple2
-    jenny "Kamu sangat pandai dalam hal ini!"
-
+    jenny "You're so fucking good at this!"
     show jenny f_nipple3
-    anon "Ermmhnnn!"
-
+    anon "Errmmhnnn!"
     show jenny f_nipple2
-    jenny "Ha ha ha!"
-
+    jenny "Hahaha!"
     show jenny f_nipple3
     pause
     show jenny f_nipple2
-    jenny "Aku semakin dekat!"
-
+    jenny "I'm getting close!"
     show jenny f_nipple3
     pause
     show jenny f_nipple2
-    jenny "Ya Tuhan!"
-
-    jenny "Di sana!!"
-
+    jenny "Oh, god!"
+    jenny "Right there!!"
     show jenny f_nipple3
     pause
     show jenny b_bed_pussy1 f_nipple2
@@ -2501,67 +1839,45 @@ label jenny_bj_intro_repeat:
     show anon od_bed_jenny_laying_dick6
     with dissolve
     jenny "Haah... Haaah..."
-
-    anon "{i}*Terkesiap*{/i}"
-
-    anon "{i}*Batuk* *Gagap* *Batuk*{/i}"
-
-    anon "Sial, {b}[jen_name]{/b}!"
-
-    anon "Anda tahu saya tidak bisa bernapas ketika Anda melakukan itu!"
-
+    anon "{i}*Gasp*{/i}"
+    anon "{i}*Cough* *Sputter* *Cough*{/i}"
+    anon "Damn it, {b}[jen_name]{/b}!"
+    anon "You know I can't breathe when you do that!"
     show jenny f_laugh
     jenny "Hehehe!"
-
     show jenny f_sexy_down
-    anon "Itu tidak lucu!"
-
-    jenny "Oh, diamlah..."
-
-    jenny "Penggemarku tidak ingin mendengar keluh kesahmu."
-
+    anon "It's not funny!"
+    jenny "Oh, shut up..."
+    jenny "My fans don't wanna hear your bitching."
     pause
-    jenny "Ah, benarkah?"
-
+    jenny "Oh, really?"
     pause
     show jenny f_eyeroll
-    jenny "{i}*Huh*{/i} Lagi?!"
-
+    jenny "{i}*Sigh*{/i} Again?!"
     show jenny f_sexy_down
     pause
-    jenny "Yah, aku tidak akan melakukannya kecuali kalian-"
-
+    jenny "Well, I'm not going to do it unless you guys-"
     "{i}*PING*{/i} {i}*PING*{/i} {i}*PING*{/i} {i}*PING*{/i} {i}*PING*{/i} {i}*PING*{/i} {i}*PING*{/i} {i}*PING*{/i} {i}*PING*{/i} {i}*PING*{/i} {i}*PING*{/i} {i}*PING*{/i} {i}*PING*{/i} {i}*PING*{/i} {i}*PING*{/i}"
-
     show jenny f_surprised_down
     "{i}*PING*{/i} {i}*PING*{/i} {i}*PING*{/i} {i}*PING*{/i} {i}*PING*{/i} {i}*PING*{/i} {i}*PING*{/i} {i}*PING*{/i} {i}*PING*{/i} {i}*PING*{/i} {i}*PING*{/i} {i}*PING*{/i} {i}*PING*{/i} {i}*PING*{/i} {i}*PING*{/i}"
-
-    jenny "Demi Tuhan..."
-
+    jenny "For fuck's sake..."
     show jenny f_sexy_down
-    anon "Sekarang apa yang terjadi?"
-
-    jenny "Penismu akan dihisap lagi."
-
-    anon "B-benarkah?"
-
-    anon "Itu menakjubkan-"
-
+    anon "Now what's happening?"
+    jenny "You're about to get your cock sucked again."
+    anon "R-really?"
+    anon "That's awe-"
     show jenny b_bed_pussy1
     show expression "characters/anon/anon_overlay_dick_od_bed_jenny_laying_dick6.png"
     with dissolve
-    anon "Srrmmmph!"
-
-    jenny "Diam!"
-
+    anon "Srrrmmmph!"
+    jenny "Shut up!"
     $ animated = True
     $ anim_toggle = True
     $ M_jenny.set('sex speed', .12)
     scene expression "backgrounds/location_home_jennybedroom_sex_hj.jpg" with None
     show expression AnimatedImage("jenny_bj", [1,2,3,4,5,6,7,8,9], M_jenny) as jenny_bj at Position(xalign = 0.0, yoffset = 0)
     anon "Nnnrrrmmph-" with hpunch
-    jenny "{i}*Gluulggh*{/i}"
-
+    jenny "{i}*Gluullggh*{/i}"
     jump jenny_bj_loop
 
 label jenny_bj_loop:
@@ -2593,35 +1909,26 @@ label jenny_bj_loop:
 
 label jenny_bj_hscene_dialog:
     if animcounter == 0 and randomizer() < 50:
-        jenny "Hmm.{p=1}{nw}"
-
+        jenny "Mmm.{p=1}{nw}"
     if animcounter == 1 and randomizer() > 50:
-        jenny "{i}*Menyeruput*{/i}{p=1}{nw}"
-
+        jenny "{i}*Slurp*{/i}{p=1}{nw}"
     if animcounter == 2 and randomizer() < 50:
         anon "...{p=1}{nw}"
-
     if animcounter == 3 and randomizer() > 50:
         jenny "{i}*Slurrrrrp*{/i}{p=1}{nw}"
-
     return
 
 label jenny_bj_cum:
     if jen_name == 'Jenny':
         anon "Jrrnnnneeeee!"
-
     else:
         anon "Hhhrreeeee!"
-
     anon "Mmy grrn krrrwwws!!"
-
     pause
     if jen_name == 'Jenny':
-        anon "Jrrnnnneeee!!!"
-
+        anon "Jrrnnnneeeee!!!"
     else:
-        anon "Hrrmmmmmphhhh!!!"
-
+        anon "Hrrrmmmmmphhhh!!!"
     pause
     show jenny_bj cum
     anon "HrrrNNGGG!!!" with flash
@@ -2632,117 +1939,81 @@ label jenny_bj_cum:
     show jenny b_bed_front_sit a_shocked f_cheeks_surprised o_laptop
     show expression "characters/anon/anon_overlay_dick_od_bed_jenny_laying_dick3.png"
     with dissolve
-    jenny "{i}*Meneguk*{/i}"
-
+    jenny "{i}*Gulp*{/i}"
     show jenny f_cheeks_angry
-    jenny "{i}*Batuk* *Gagap* *Batuk*{/i}"
-
+    jenny "{i}*Cough* *Sputter* *Cough*{/i}"
     if M_jenny.is_state(S_jenny_start_camshow_blowjob):
         show jenny b_bed_back_sit a_sit_hips with dissolve
-        jenny "Sialan!!"
-
-        jenny "Kau datang tepat ke tenggorokanku!"
-
+        jenny "Goddamnit!!"
+        jenny "You came right down my fucking throat!"
         show jenny b_bed_climbing with dissolve
-        jenny "Eugh, aku menelannya banyak!"
-
+        jenny "Eugh, I swallowed a bunch of it!"
         show jenny b_bed_side f_angry a_laptop with dissolve
-        anon "aku mencoba memperingatkanmu..."
-
-        jenny "Omong kosong, aku tidak mendengar apa pun!"
-
-        anon "Ya, mungkin karena kamu menabrak wajahku!"
-
-        jenny "Cih, terserah..."
-
+        anon "I tried to warn you..."
+        jenny "Bullshit, I didn't hear anything!"
+        anon "Yeah, probably because you were humping my face!"
+        jenny "Tch, whatever..."
         show jenny b_bed_side_laptop f_gross_down with dissolve
         pause
-        jenny "Grr, itu tidak lucu!"
-
-        jenny "Itu menjijikkan!"
-
+        jenny "Grr, it's not funny!"
+        jenny "It's disgusting!"
         pause
-        jenny "Ugh, kalian semua brengsek!"
-
-        jenny "Pertunjukan berakhir!"
-
+        jenny "Ugh, you're all assholes!"
+        jenny "Shows over!"
         scene black with fade
         pause
         scene expression player.location.background_blur with None
         show jenny b_naked a_hips f_angry
         show anon f_surprised b_underwear
         with dissolve
-        jenny "Sulit dipercaya!"
-
-        anon f_worried "Aku benar-benar mencoba memperingatkan-"
-
-        jenny "Aku tidak ingin mendengarnya!"
-
-        jenny "Diam saja!"
-
+        jenny "Unbelievable!"
+        anon f_worried "I really did try to warn-"
+        jenny "I don't wanna hear it!"
+        jenny "Just shut up!"
         show jenny f_gross_down
-        jenny "Eugh, aku harus pergi menyikat gigiku!"
-
+        jenny "Eugh, I gotta go brush my fucking teeth!"
         hide jenny with dissolve
         pause
-        anon "Hei, bagaimana dengan uangku?!"
-
+        anon "Hey, what about my money?!"
         pause
-        anon @ -m_talk "(Hmm, kurasa aku akan menanyakannya saja besok.)"
-
+        anon @ -m_talk "( Hmm, I guess I'll just ask her about it tomorrow. )"
         hide anon with dissolve
         $ M_jenny.trigger(T_jenny_done_camshow_blowjob)
     else:
         show jenny b_bed_back_sit a_sit_hips with dissolve
-        jenny "Fiuh, senang sekarang?"
-
-        anon "Aku sudah memperingatkanmu lagi!"
-
-        jenny "Aku tahu."
-
+        jenny "Phew, happy now?"
+        anon "I warned you again!"
+        jenny "I know."
         pause
-        jenny "Aku hanya tidak berharap banyak..."
-
+        jenny "I just wasn't expecting so much..."
         show jenny b_bed_climbing with dissolve
-        anon "T-tunggu, jadi kamu-"
-
+        anon "W-wait, so you-"
         show jenny b_bed_side_laptop f_sexy_down a_laptop with dissolve
-        jenny "Tunjukkan pada anak laki-laki!"
-
-        jenny "Terima kasih telah mendengarkan!"
-
+        jenny "Shows over boys!"
+        jenny "Thanks for tuning in!"
         pause
-        jenny "Hehe, sampai jumpa lagi!"
-
+        jenny "Hehe, we'll see you next time!"
         scene black with fade
         pause
         scene expression player.location.background_blur with None
         show jenny b_naked a_hips f_normal
         show anon b_underwear f_surprised
         with dissolve
-        anon "K-kamu sengaja menelannya?"
-
+        anon "Y-you swallowed on purpose?"
         show jenny f_upset
-        jenny "Ya?"
-
+        jenny "Yeah?"
         anon f_surprised_teeth "!!!"
-        jenny "Jangan punya ide apa pun, itu hanya apa yang ingin dilihat para penggemar..."
-
+        jenny "Don't get any ideas, it's just what the fans want to see..."
         anon f_worried "O-oh."
-
         show jenny a_money with dissolve
-        jenny "Ini potonganmu."
-
+        jenny "Here's your cut."
         show jenny a_sides with dissolve
-        anon f_normal "Terima kasih."
-
+        anon f_normal "Thanks."
         show jenny f_angry
-        jenny "Sekarang keluarlah!"
-
+        jenny "Now get the fuck out!"
         show anon f_surprised
         hide jenny with dissolve
-        jenny "Eugh, aku perlu obat kumur!"
-
+        jenny "Eugh, I need some mouth wash!"
         anon f_grin "..."
         hide anon with dissolve
         call popup ('earn', 100)
@@ -2784,38 +2055,30 @@ label jenny_couch_fj_loop:
 label jenny_couch_fj_hscene_dialog:
     if animcounter == 0 and randomizer() < 10:
         show jenny f_sexy_down
-        jenny "Apakah rasanya enak?{p=1}{nw}"
-
+        jenny "Does it feel good?{p=1}{nw}"
         show anon f_couch_sit_down
-        anon "Ya.{p=1}{nw}"
-
+        anon "Yes.{p=1}{nw}"
     if animcounter == 1 and randomizer() < 10:
         show jenny f_sexy_down
-        jenny "Apakah kalian semakin dekat?{p=1}{nw}"
-
+        jenny "Are you getting close?{p=1}{nw}"
         show anon f_couch_sit_down
-        anon "Y-ya.{p=1}{nw}"
-
+        anon "Y-yes.{p=1}{nw}"
     if animcounter == 2 and randomizer() < 10:
         show anon f_couch_sit_right
         if randomizer() > 50:
-            anon "Kamu benar-benar ahli dalam hal ini!{p=2}{nw}"
-
+            anon "You're really good at this!{p=2}{nw}"
         else:
-            anon "Sialan!{p=1}{nw}"
-
+            anon "Holy crap!{p=1}{nw}"
         show anon f_couch_sit_down
         show jenny f_laugh
         jenny "Hehehe!{p=1}{nw}"
-
         show jenny f_sexy_down
     return
 
 label jenny_couch_fj_cum:
     if M_jenny.finished_state(S_jenny_catch_her_jilling):
         show anon f_couch_sit_down_surprised
-        anon "Ini dia!"
-
+        anon "Here it comes!"
         pause
     show anon f_couch_sit_down_surprised
     hide jenny_couch_dick_rub
@@ -2827,79 +2090,54 @@ label jenny_couch_fj_cum:
     show anon f_couch_sit_right
     show jenny f_laugh
     jenny "Pfft, hahaha!"
-
     hide jenny_player_couch_cum
     show anon a_boner
     show jenny a_after2 f_sexy_down
     with dissolve
     if M_jenny.is_state(S_jenny_catch_her_jilling):
         $ M_jenny.trigger(T_jenny_gave_footjob)
-        jenny "Aku baru saja membuatmu cum dengan kakiku!"
-
-        jenny "Aku seperti, dewi seks total!!"
-
+        jenny "I just made you cum with my feet!"
+        jenny "I'm like, a total sex goddess!!"
         show jenny a_after1 f_sexy_down with dissolve
-        anon "Itu luar biasa!"
-
-        jenny "Saya tahu, kan?"
-
-        jenny "Sama-sama, pecundang."
-
+        anon "That was amazing!"
+        jenny "I know, right?"
+        jenny "You're welcome, loser."
         show jenny b_couch_transition zorder 0 with dissolve
-        anon "Kemana kamu pergi?"
-
+        anon "Where are you going?"
         show jenny b_couch_sit a_rest f_sexy with dissolve
-        jenny "Umm, untuk mencuci kakiku?"
-
+        jenny "Umm, to wash my feet?"
         show jenny a_after2 with dissolve
-        jenny "Kecuali Anda ingin membersihkannya dengan lidah Anda?"
-
+        jenny "Unless you wanna clean them with your tongue?"
     else:
-        jenny "Sheesh, lihat kekacauan yang kamu buat pada kaki kecilku yang cantik!"
-
-        jenny "Anda yakin tidak ingin membersihkannya dengan lidah Anda?!"
-
+        jenny "Sheesh, look at the mess you made of my pretty little feet!"
+        jenny "You sure you don't wanna clean them up with your tongue?!"
     show jenny f_sexy a_after1 with dissolve
     if M_jenny.get("dominance") <= 0:
-        anon "Tolong, jangan membuatku melakukan itu..."
-
+        anon "Please, don't make me do that..."
         show jenny f_laugh
-        jenny "Ha ha ha!"
-
+        jenny "Hahaha!"
         show jenny f_sexy
-        jenny "Kalau begitu, jangan ajukan pertanyaan bodoh."
-
+        jenny "Don't ask stupid questions then."
     else:
-        anon "Eh, tidak mungkin!"
-
+        anon "Eugh, no way!"
         show jenny f_laugh
-        jenny "Ha ha ha!"
-
+        jenny "Hahaha!"
         show jenny f_sexy
-        jenny "Aduh, ayolah..."
-
+        jenny "Aww, c'mon..."
         show jenny a_after2 with dissolve
-        jenny "Jilat jari kakiku, {b}[firstname]{/b}!"
-
-        anon "Lupakan!"
-
+        jenny "Lick my toes, {b}[firstname]{/b}!"
+        anon "Forget it!"
         show jenny f_laugh
-        jenny "Ha ha ha!"
-
+        jenny "Hahaha!"
         show jenny f_sexy
-        jenny "Bagus."
-
-    jenny "Aku mau mandi."
-
-    jenny "Sampai jumpa, mesum."
-
+        jenny "Fine."
+    jenny "I'm going to go take a shower."
+    jenny "See ya, perv."
     hide jenny with dissolve
     show anon f_couch_sit_down
-    anon @ -m_talk "(Fiuh, itu luar biasa!)"
-
+    anon @ -m_talk "( Phew, that was awesome! )"
     show anon b_couch_sit_watching f_couch_sit_watching_straight with dissolve
-    anon "(Saya harus mematikannya dan tidur sebelum {b}[deb_name]{/b} mendengarnya. )"
-
+    anon "( I should turn this off and get to bed before {b}[deb_name]{/b} hears it. )"
     hide anon with dissolve
     $ renpy.end_replay()
     $ game.timer.tick()
@@ -2910,92 +2148,62 @@ label jenny_computer_video_ec:
     show jenny b_cam_intro a_cover f_cam_intro_normal
     show expression "characters/jenny/layeredimage/jenny_webcam_border.png"
     with dissolve
-    jenny "Maaf kawan... Bagian selanjutnya ini hanya untuk pelanggan."
-
-    jenny "Sebaiknya segera bayar jika tidak mau ketinggalan!!"
-
+    jenny "Sorry boys... This next part is for subscribers only."
+    jenny "You'd better pay quickly if you don't wanna miss out!!"
     pause
     show jenny a_reveal with dissolve
-    jenny "Hehe, baiklah. Siapa yang siap menjadi nakal?"
-
+    jenny "Hehe, alright. Who's ready to get naughty?"
     show jenny a_electro f_cam_intro_normal_left with dissolve
-    jenny "Aku punya mainan baru yang bagus di sini... Hanya untuk kalian!"
-
-    jenny "Mmm, aku tidak sabar untuk menggoda klitorisku dengan ini..."
-
+    jenny "I've got a nice new toy here... Just for you guys!"
+    jenny "Mmm, I can't wait to tease my clit with this..."
     pause
     show jenny f_cam_intro_normal
-    jenny "Mengapa kalian tidak memberi saya sedikit insentif?"
-
+    jenny "Why don't you guys give me a little incentive?"
     show jenny f_cam_intro_normal_down
     "{i}*PING*{/i}"
-
     "{i}*PING*{/i}"
-
-    jenny "Oh, ayolah... Kamu bisa melakukan yang lebih baik dari itu, bukan?"
-
-    jenny "Memekku benar-benar sakit untuk mendapat perhatian..."
-
+    jenny "Oh, c'mon now... You can do better than that, can't you?"
+    jenny "My pussy's absolutely aching for some attention..."
     "{i}*PING*{/i} {i}*PING*{/i} {i}*PING*{/i}"
-
     "{i}*PING*{/i} {i}*PING*{/i}"
-
-    jenny "Hehe, itu lebih baik!"
-
+    jenny "Hehe, that's better!"
     pause
     show jenny b_cam_electro_talk with dissolve
-    jenny "Ah, aku basah sekali..."
-
+    jenny "Ah, I'm so wet..."
     hide jenny
     show expression AnimatedImage("jenny_electro", [1,2,3,4], M_jenny) as jenny_toy
     with dissolve
-    jenny "Oh ya!"
-
+    jenny "Oh, yes!"
     pause
-    jenny "Ini sangat bagus!"
-
+    jenny "It's so good!"
     pause
-    jenny "Mmm, ayolah teman-teman, aku butuh lebih banyak cinta!"
-
+    jenny "Mmm, c'mon boys, I need more love!"
     "{i}*PING*{/i} {i}*PING*{/i}"
-
-    jenny "Itu dia! Saya semakin dekat!"
-
+    jenny "That's it! I'm getting closer!"
     "{i}*PING*{/i} {i}*PING*{/i} {i}*PING*{/i}"
-
     hide jenny_toy
     show jenny b_cam_electro_insert
     jenny "Ahh!!" with hpunch
     pause
     show jenny b_cam_electro_talk with dissolve
-    jenny "hehe! Bagaimana tadi?!"
-
+    jenny "Hehe! How was that?!"
     scene expression game.timer.image("backgrounds/location_home_bedroom_desk_cam{}.jpg") as cutscene
     show player 311 at Position(xpos = 672)
     with dissolve
-    jenny "Hmm, kamu ingin aku membuat sesuatu yang lebih besar lain kali?"
-
+    jenny "Hmm, you want me to get something bigger next time?"
     pause
-    jenny "Dubur?!"
-
-    jenny "Kamu benar-benar ingin aku melakukan sesuatu, {b}sam9{/b}?"
-
-    jenny "Cih, kalian sangat menuntut!"
-
+    jenny "Anal?!"
+    jenny "You seriously want me to stick something up my ass, {b}sam9{/b}?"
+    jenny "Tch, you guys are so demanding!"
     pause
-    jenny "Hmm, kalau aku dapat tiga puluh pelanggan lagi, aku akan mendapat sesuatu yang lebih besar, oke?"
-
+    jenny "Hmm, if I get thirty more subscribers, I'll get something bigger, okay?"
     pause
-    jenny "Ya saya berjanji."
-
+    jenny "Yes, I promise."
     pause
-    jenny "Saya tidak tahu tentang analnya, {b}sam9{/b}... Kita lihat saja..."
-
+    jenny "I don't know about the anal, {b}sam9{/b}... We'll see..."
     pause
-    anon "(Wow, panas sekali!)"
-
-    anon "(Saya harus melihat apa lagi yang dia punya...)"
-
+    anon "( Wow, that was pretty hot! )"
+    anon "( I should see what else she has... )"
     hide cutscene
     hide player
     $ renpy.end_replay()
@@ -3008,123 +2216,81 @@ label jenny_computer_video_uv:
     show jenny b_cam_intro a_cover f_cam_intro_normal
     show expression "characters/jenny/layeredimage/jenny_webcam_border.png"
     with dissolve
-    jenny "Maaf kawan... Bagian selanjutnya ini hanya untuk pelanggan."
-
-    jenny "Anda masih bisa masuk dan menonton jika Anda terburu-buru!!"
-
+    jenny "Sorry boys... This next part is for subscribers only."
+    jenny "You can still get in and watch if you hurry!!"
     pause
     show jenny a_reveal with dissolve
-    jenny "Hehe, baiklah. Aku sudah berjanji pada kalian, bukan?"
-
+    jenny "Hehe, alright. I made a promise to you guys, didn't I?"
     show jenny a_vibrate f_cam_intro_normal_left with dissolve
-    jenny "Apa pendapatmu tentang pria besar ini, ya?"
-
-    jenny "Sudah kubilang semuanya, aku akan mendapatkan sesuatu yang lebih besar."
-
+    jenny "What do you think of this big guy, huh?"
+    jenny "I told you all I would get something bigger."
     show jenny f_cam_intro_normal_down
     pause
     show jenny a_back with dissolve
-    jenny "Tidak, {b}sam9{/b}... Itu tidak akan masuk ke pantatku."
-
-    jenny "Ya, ya... Mungkin di masa depan, kita lihat saja nanti."
-
+    jenny "No, {b}sam9{/b}... It's not going in my butt."
+    jenny "Yes, yes... Maybe in the future, we'll see."
     pause
-    jenny "Sekarang, bagaimana dengan insentif untuk dewi seks Anda?"
-
+    jenny "Now, how about some incentive for your sex goddess?"
     "{i}*PING*{/i} {i}*PING*{/i} {i}*PING*{/i}"
-
     "{i}*PING*{/i} {i}*PING*{/i}"
-
-    jenny "Hehe, itu yang ingin saya lihat!"
-
-    jenny "Sedikit lagi!"
-
+    jenny "Hehe, that's what I like to see!"
+    jenny "Just a little bit more!"
     pause
     show jenny a_vibrate with dissolve
-    jenny "Tidakkah kamu ingin melihatku cum di seluruh mainan ini?"
-
+    jenny "Don't you wanna see me cum all over this toy?"
     "{i}*PING*{/i} {i}*PING*{/i}"
-
     "{i}*PING*{/i} {i}*PING*{/i} {i}*PING*{/i} {i}*PING*{/i}"
-
-    jenny "Ini dia!"
-
+    jenny "There we go!"
     pause
     show jenny b_cam_vibrate_talk with dissolve
-    jenny "Hehe, aku tidak tahu apakah itu akan muat di dalam vagina kecilku yang ketat..."
-
+    jenny "Hehe, I don't know if it will fit inside my tight little pussy..."
     hide jenny
     show expression AnimatedImage("jenny_vibrate", [1,2,3,4], M_jenny) as jenny_toy
     with dissolve
     pause
-    jenny "Oh, sial..."
-
+    jenny "Oh, fuck..."
     pause
     jenny "Haah!"
-
     pause
-    jenny "Mmm, ayo teman-teman, tunjukkan uangnya!"
-
+    jenny "Mmm, c'mon boys, show me the money!"
     "{i}*PING*{/i} {i}*PING*{/i}"
-
-    jenny "Itu dia! Rasanya enak sekali!"
-
+    jenny "That's it! It feels so good!"
     "{i}*PING*{/i} {i}*PING*{/i} {i}*PING*{/i}"
-
-    jenny "aku semakin dekat!!"
-
+    jenny "I'm getting close!!"
     "{i}*PING*{/i} {i}*PING*{/i} {i}*PING*{/i} {i}*PING*{/i} {i}*PING*{/i}"
-
-    jenny "Oh sial ya!!"
-
+    jenny "Oh fuck yes!!"
     hide jenny_toy
     show jenny b_cam_vibrate_cum1
     jenny "Ahh!!" with hpunch
     pause
     pause
     show jenny b_cam_vibrate_cum2 with dissolve
-    jenny "Hehe, sepertinya aku membuat kekacauan..."
-
+    jenny "Hehe, I think I made a mess..."
     scene expression game.timer.image("backgrounds/location_home_bedroom_desk_cam{}.jpg") as cutscene
     show player 311 at Position(xpos = 672)
     with dissolve
-    anon "(Wow, apakah dia baru saja muncrat?! )"
-
-    jenny "Sepertinya aku harus mencuci sepraiku..."
-
+    anon "( Wow, did she just squirt?! )"
+    jenny "I guess I'll have to wash my sheets..."
     pause
-    jenny "Apa?!"
-
-    jenny "Aku tidak akan mengirimimu sepraiku!"
-
+    jenny "What?!"
+    jenny "I'm not sending you my sheets!"
     pause
-    jenny "Anda akan membayar saya berapa?"
-
+    jenny "You'll pay me how much?"
     pause
-    jenny "aku akan memikirkannya..."
-
-    jenny "Untuk saat ini, aku hanya ingin-"
-
+    jenny "I'll think about it..."
+    jenny "For now, I just wanna-"
     jenny "Hmm?"
-
     pause
-    jenny "Kalian ingin melihatku dengan penis asli?"
-
+    jenny "You guys want to see me with a real penis?"
     pause
-    jenny "Mungkin..."
-
+    jenny "Maaaaybe..."
     pause
-    jenny "Hah, {b}sam9{/b} ingin melihatku dengan penis sungguhan, di pantatku... Kejutan besar."
-
+    jenny "Hah, {b}sam9{/b} wants to see me with a real penis, in my ass... Big surprise."
     pause
-    jenny "Kalian bodoh."
-
-    anon "(Wow, saya mengerti mengapa dia menghasilkan uang dengan melakukan ini...)"
-
-    jenny "Sampai ketemu lagi, oke?"
-
-    anon "( Hmm, saya kira itu saja untuk video itu. )"
-
+    jenny "You guys are dorks."
+    anon "( Wow, I can see why she's making money doing this... )"
+    jenny "I'll see you boys soon, okay?"
+    anon "( Hmm, I guess that's it for that video. )"
     hide cutscene
     hide player
     $ renpy.end_replay()
@@ -3137,134 +2303,87 @@ label jenny_computer_video_bm:
     show jenny b_cam_intro a_cover f_cam_intro_normal
     show expression "characters/jenny/layeredimage/jenny_webcam_border.png"
     with dissolve
-    jenny "Maaf kawan... Bagian selanjutnya ini hanya untuk pelanggan."
-
-    jenny "Kalian harus membayar dan bergabung dengan kami hari ini!"
-
-    jenny "Peringatan spoiler!"
-
+    jenny "Sorry boys... This next part is for subscribers only."
+    jenny "You guys should really pay up and join us today!"
+    jenny "Spoiler alert!"
     show jenny a_monster f_cam_intro_normal_left with dissolve
-    jenny "Hal ini masuk ke dalam diriku hari ini!"
-
-    jenny "Saya berharap dapat melihat Anda di sana!"
-
+    jenny "This thing is going inside me today!"
+    jenny "I hope to see you there!"
     show jenny f_cam_intro_normal_down
     pause
     show jenny a_back with dissolve
-    jenny "Hehe, baiklah. Mari kita tunggu sebentar dan lihat apakah ada orang lain yang bergabung..."
-
+    jenny "Hehe, alright. Let's wait just a second and see if anyone else joins..."
     pause
-    jenny "Ya, aku serius!"
-
-    jenny "Aku akan membuat diriku bodoh pada monster ini!"
-
+    jenny "Yes, I'm serious!"
+    jenny "I'm gonna fuck myself silly on this monster!"
     show jenny f_cam_intro_normal
     pause
-    jenny "Ugh, iya... Baiklah, {b}sam9{/b}. Aku akan memasukkannya ke dalam."
-
-    jenny "Anda lihat itu teman-teman?"
-
-    jenny "Saya memberikan {b}sam9{/b} apa yang dia inginkan karena dia selalu murah hati dengan tipnya!"
-
+    jenny "Ugh, yeah... Alright, {b}sam9{/b}. I'll put it in."
+    jenny "You see that guys?"
+    jenny "I give {b}sam9{/b} what he wants because he's always so generous with his tips!"
     pause
-    jenny "Benar, beri tip lebih banyak dan Anda akan mendapatkan apa yang Anda inginkan juga."
-
+    jenny "That's right, tip more and you'll get what you want too."
     show jenny f_cam_intro_normal_down
     pause
-    jenny "Sial, kami punya hampir dua ratus pelanggan baru untuk acara ini!"
-
-    jenny "Sepertinya kalian haus akan dewi seks kalian, ya?"
-
+    jenny "Holy shit, we've got almost two hundred new subs in here for this show!"
+    jenny "I guess you guys are thirsty for your sex goddess, huh?"
     pause
     show jenny f_cam_intro_normal
-    jenny "Oke, hal pertama yang pertama..."
-
+    jenny "Okay, first things first..."
     show jenny b_cam_monster_talk with dissolve
-    jenny "Ini untuk {b}sam9{/b}!"
-
+    jenny "This is for {b}sam9{/b}!"
     "{i}*PING*{/i} {i}*PING*{/i} {i}*PING*{/i} {i}*PING*{/i}"
-
     "{i}*PING*{/i} {i}*PING*{/i} {i}*PING*{/i} {i}*PING*{/i}"
-
     show jenny b_cam_monster_talk2 with dissolve
     jenny "NGGGHHH!!"
-
-    jenny "Sam sialan!"
-
+    jenny "Fucking Sam!"
     pause
-    jenny "Ya, aku tahu... Ini semakin berkembang dalam diriku."
-
+    jenny "Yeah, I know... It's growing on me."
     pause
-    jenny "Aku baru saja bilang aku menyukainya, bukan?!"
-
-    jenny "Perhatikan, bodoh!"
-
+    jenny "I just said I like it, didn't I?!"
+    jenny "Pay attention, dummy!"
     pause
-    jenny "Tidak, itu tidak berarti saya mendapatkan sesuatu yang lebih besar."
-
+    jenny "No, that doesn't mean I'm getting something bigger."
     pause
-    jenny "Baiklah, cukup dengan hal-hal anal..."
-
+    jenny "Alright, enough with the anal stuff..."
     show jenny b_cam_monster_talk3 with dissolve
-    jenny "Saatnya acara utama!"
-
+    jenny "It's time for the main event!"
     pause
-    jenny "Apakah kalian siap?"
-
+    jenny "Are you boys ready?"
     "{i}*PING*{/i} {i}*PING*{/i}"
-
-    jenny "Aku tidak bisa mendengarmu!!"
-
+    jenny "I can't hear you!!"
     "{i}*PING*{/i} {i}*PING*{/i} {i}*PING*{/i} {i}*PING*{/i}"
-
     "{i}*PING*{/i} {i}*PING*{/i} {i}*PING*{/i} {i}*PING*{/i}"
-
     "{i}*PING*{/i} {i}*PING*{/i} {i}*PING*{/i} {i}*PING*{/i}"
-
-    jenny "Hehe, ini dia!"
-
+    jenny "Hehe, here we go!"
     pause
     show jenny b_cam_monster_anim1 with dissolve
     jenny "Haah..."
-
     show jenny b_cam_monster_anim2 with dissolve
-    jenny "Ya Tuhan..."
-
+    jenny "Oh my god..."
     jenny "It's fucking huge!"
-
     pause
     show jenny b_cam_monster_anim3 with dissolve
     jenny "Holy shit!!!"
-
     pause
-    jenny "Oke..."
-
+    jenny "Okay..."
     $ M_jenny.set("sex speed", 0.175)
     hide jenny
     show expression AnimatedImage("jenny_monster", [4,1,2,3], M_jenny) as jenny_toy
     with dissolve
     pause
     jenny "Ahh!!"
-
     pause
     jenny "Oh, yes, yes, YES!!!"
-
     pause
     jenny "Oh my god you guys, this is amazing!"
-
     "{i}*PING*{/i} {i}*PING*{/i}"
-
     pause
     jenny "AH FUCK!"
-
     "{i}*PING*{/i} {i}*PING*{/i} {i}*PING*{/i}"
-
-    jenny "aku akan keluar!!"
-
+    jenny "I'm gonna cum!!"
     "{i}*PING*{/i} {i}*PING*{/i} {i}*PING*{/i} {i}*PING*{/i} {i}*PING*{/i}"
-
-    jenny "YA!!"
-
+    jenny "YES!!"
     $ M_jenny.set("sex speed", 0.6)
     show expression AnimatedImage("jenny_monster", [2,3], M_jenny) as jenny_toy
     jenny "Ngghhh!!!" with hpunch
@@ -3274,49 +2393,33 @@ label jenny_computer_video_bm:
     with dissolve
     pause
     jenny "Haah... Haah..."
-
     jenny "Wow, that was-"
-
     pause
     scene expression game.timer.image("backgrounds/location_home_bedroom_desk_cam{}.jpg") as cutscene
     show player 311 at Position(xpos = 672)
     with dissolve
-    anon "(Sial!)"
-
+    anon "( Holy crap! )"
     jenny "Oh my god, look at how much I'm shaking..."
-
     pause
     jenny "Phew, just give me a second."
-
     pause
     jenny "Hahaha! I told you guys it was gonna be worth it."
-
     pause
-    jenny "Saya tahu, kan?"
-
+    jenny "I know, right?"
     pause
     jenny "Yeah, I know you want to see me ride a real dick..."
-
     jenny "It's coming, okay?"
-
     jenny "Just have your wallets ready, 'cause I'm expecting a LOT of tips for that show."
-
     pause
-    jenny "Hehe, ya."
-
+    jenny "Hehe, yeah."
     pause
     jenny "You're welcome, {b}sam9{/b}."
-
     pause
     jenny "Yeah, I'll see you all next time."
-
     pause
     jenny "Buh bye, boys."
-
     anon "( Totally worth it. )"
-
-    anon "(Itu luar biasa!)"
-
+    anon "( That was awesome! )"
     hide cutscene
     hide player
     $ renpy.end_replay()
@@ -3353,75 +2456,52 @@ label jenny_hj_loop:
 
 label jenny_hj_hscene_dialog:
     if animcounter == 0 and randomizer() < 10:
-        anon "Sialan!{p=1}{nw}"
-
+        anon "Holy crap!{p=1}{nw}"
     if animcounter == 1 and randomizer() < 10:
-        anon "Ya Tuhan!{p=1}{nw}"
-
+        anon "Oh my god!{p=1}{nw}"
     if animcounter == 2 and randomizer() < 10:
         jenny "Mmm, I can feel it throbbing...{p=2}{nw}"
-
         "{i}*PING*{/i} {i}*PING*{/i}{p=1}{nw}"
-
     if animcounter == 3 and randomizer() < 10:
-        anon "Saya semakin dekat...{p=2}{nw}"
-
+        anon "I'm getting close...{p=2}{nw}"
         if M_jenny.get("sex speed") > 0.051:
             $ M_jenny.set("sex speed", M_jenny.get("sex speed") - 0.025)
-        anon "Ya Tuhan!{p=1}{nw}"
-
+        anon "Oh my god!{p=1}{nw}"
     return
 
 label jenny_hj_cum:
     if M_jenny.is_state(S_jenny_start_camshow_handjob):
         jenny "I wonder what else I shou-"
-
         hide jenny_hj
         show jenny_hj_mc cum
         anon "HNNGGG!!!{p=1}{nw}" with flash
         show jenny_hj_cum
-        jenny "{i}*Terkesiap*{/i}"
-
+        jenny "{i}*Gasp*{/i}"
         pause
         jenny "What the fuck!"
-
         "{i}*PING*{/i} {i}*PING*{/i} {i}*PING*{/i} {i}*PING*{/i} {i}*PING*{/i} {i}*PING*{/i} {i}*PING*{/i} {i}*PING*{/i}"
-
-        anon "Fiuh..."
-
+        anon "Phew..."
         scene expression "backgrounds/location_home_jennybedroom_closeup_peek.jpg" with None
         show anon b_bed_jenny_laying od_bed_jenny_laying_dick3 of_bed_jenny_laying_mask_X
         show jenny b_bed_side f_angry o_laptop a_cum
         with dissolve
         jenny "Why didn't you warn me!"
-
         show jenny f_angry
         anon "You didn't tell me to warn you..."
-
         "{i}*PING*{/i} {i}*PING*{/i} {i}*PING*{/i} {i}*PING*{/i}"
-
         jenny "Well, I thought that was fucking obvious you moron!"
-
         jenny "Oh my god, it's everywhere!"
-
         "{i}*PING*{/i} {i}*PING*{/i} {i}*PING*{/i} {i}*PING*{/i}"
-
         jenny "Ugh, okay... Stream's over!"
-
         anon "B-but they're still tipping-"
-
         jenny "GET THE FUCK OUT OF MY ROOM!"
-
-        anon "Oke oke..."
-
+        anon "Okay, okay..."
         hide anon with dissolve
         show jenny f_gross_down
-        jenny "Ya."
-
+        jenny "Eugh."
         pause
         show jenny b_bed_side_laptop f_gross_down with dissolve
-        jenny "Itu tidak lucu!"
-
+        jenny "It's not funny!"
         scene black with fade
         pause
         $ game.timer.tick()
@@ -3429,50 +2509,35 @@ label jenny_hj_cum:
         $ player.go_to(L_home_bedroom)
         scene expression player.location.background_blur with None
         show anon f_surprised with dissolve
-        anon @ -m_talk "(Wah!)"
-
+        anon @ -m_talk "( Wow! )"
         anon f_flirt @ -m_talk "( I can't believe {b}[jen_name]{/b} just jerked me off... )"
-
         anon @ -m_talk "( That was so hot!! )"
-
         pause
         anon f_grin @ -m_talk "( Man, I hope I get to do that again! )"
-
         hide anon with dissolve
     else:
-        anon "Ini dia!"
-
+        anon "Here it comes!"
         jenny "Hmm?"
-
         hide jenny_hj
         show jenny_hj_mc cum
         anon "HNNGGG!!!{p=1}{nw}" with flash
         show jenny_hj_cum
         jenny "!!!"
         "{i}*PING*{/i} {i}*PING*{/i} {i}*PING*{/i} {i}*PING*{/i}"
-
         scene expression "backgrounds/location_home_jennybedroom_closeup_peek.jpg" with None
         show anon b_bed_jenny_laying od_bed_jenny_laying_dick3 of_bed_jenny_laying_mask_X
         show jenny b_bed_side f_angry o_laptop a_cum
         with hpunch
-        jenny "Lagi?!"
-
+        jenny "Again?!"
         jenny "Goddamnit, you asshole!"
-
-        anon "Aku sudah memperingatkanmu!"
-
+        anon "I warned you!"
         jenny "Well, I wasn't paying attention!"
-
         "{i}*PING*{/i} {i}*PING*{/i} {i}*PING*{/i} {i}*PING*{/i}"
-
         show jenny f_gross_down
-        jenny "Ya."
-
+        jenny "Eugh."
         show jenny b_bed_side_laptop with dissolve
         jenny "Yeah, yeah... Very funny."
-
         jenny "Show's over pervs!"
-
         hide jenny
         hide anon
         with dissolve
@@ -3481,18 +2546,13 @@ label jenny_hj_cum:
         show jenny b_naked f_upset a_hips
         with dissolve
         jenny "You're washing my sheets this time!"
-
         anon f_worried "Fine, whatever."
-
         jenny "I'm getting in the shower."
-
         show jenny a_money with dissolve
         jenny "Take this and get the fuck out!"
-
         hide jenny with dissolve
         pause
-        anon f_normal "Manis!"
-
+        anon f_normal "Sweet!"
         hide anon with dissolve
         call popup ('earn', 50)
         $ player.get_money(50)
@@ -3501,13 +2561,10 @@ label jenny_hj_cum:
         scene expression player.location.background_blur
         show anon f_normal
         with fade
-        anon "Fiuh!"
-
+        anon "Phew!"
         anon "Alright, that's done."
-
         pause
         anon f_laugh "Totally worth it!"
-
         hide anon with dissolve
     $ renpy.end_replay()
     $ persistent.cookie_jar["Jenny"]["unlocked"] = True
@@ -3516,8 +2573,7 @@ label jenny_hj_cum:
 
 label jenny_hj_intro_repeat:
     show jenny f_upset
-    jenny "Ayo cepat."
-
+    jenny "Hurry up."
     show jenny f_grin_down b_pull1 with dissolve
     pause
     show jenny b_pull2 with dissolve
@@ -3527,55 +2583,42 @@ label jenny_hj_intro_repeat:
     show anon f_surprised
     pause
     show jenny b_panties a_hips f_upset with dissolve
-    jenny "Ya?"
-
+    jenny "Well?"
     show jenny f_grin_down b_naked a_panties_remove with dissolve
     show anon f_worried
     anon @ -m_talk "Hmm?"
-
     show jenny b_naked_panties_remove_down with dissolve
     pause
     show jenny b_naked a_hips f_upset with dissolve
-    jenny "Lepaskan pakaian itu!"
-
-    anon "B-benar..."
-
+    jenny "Get those clothes off!"
+    anon "R-right..."
 
     label finger_blasting_hj:
     scene location_home_jennybedroom_cutscene05
     with fade
-    jenny "Anda tahu latihannya."
-
-    jenny "Pakai masker dan tutup mulut."
-
-    anon "Ya, saya ingat."
-
-    jenny "Aku akan menangani sisanya."
-
+    jenny "You know the drill."
+    jenny "Mask on and keep your mouth shut."
+    anon "Yeah, I remember."
+    jenny "I'll handle the rest."
 
     scene expression "backgrounds/location_home_jennybedroom_closeup_peek.jpg"
     $ M_jenny.set('cam show mask', True)
     show anon b_bed_jenny_sit f_shy_down of_mask
     show jenny o_under_body_laptop b_naked_bed_bellytype f_sexy_down
     with fade
-    jenny "Hai lagi, semuanya!"
-
+    jenny "Hi again, everybody!"
     show jenny b_naked_bed_belly with dissolve
-    jenny "Aku membawa mainan anakku kembali untuk memberi kalian pertunjukan lagi."
-
+    jenny "I brought my boy toy back to give you guys another show."
     pause
     show jenny f_laugh
-    jenny "Hehe, tentu saja!"
-
+    jenny "Hehe, of course!"
     show jenny f_sexy_down
     pause
     jenny "Well, let's find out, shall we?"
-
     show jenny o_laptop b_bed_side a_laptop
     show anon b_bed_jenny_laying od_bed_jenny_laying_dick1 of_bed_jenny_laying_mask_X
     with dissolve
     jenny "I bet he's good and ready this time."
-
     show jenny a_pull1 f_sexy_down with dissolve
     pause
     show anon od_empty
@@ -3589,26 +2632,19 @@ label jenny_hj_intro_repeat:
     show anon od_bed_jenny_laying_dick6 with fastdissolve
     jenny "!!!"
     "{i}*PING*{/i} {i}*PING*{/i} {i}*PING*{/i} {i}*PING*{/i}"
-
     pause
     show jenny b_bed_side_laptop f_sexy_down with dissolve
     jenny "Hehe, I know it's big!"
-
     jenny "I wouldn't settle for anything less, would I?"
-
     pause
     jenny "Yeah, I think I should too."
-
     $ M_jenny.set("sex speed",0.4)
     show jenny b_bed_side a_jerk with dissolve
     anon "!!!"
     pause
-    anon "Ya Tuhan!"
-
+    anon "Oh, god!"
     jenny "Yeah, you like that, don't you?"
-
     "{i}*PING*{/i} {i}*PING*{/i} {i}*PING*{/i}"
-
     pause
     scene expression "backgrounds/location_home_jennybedroom_sex_hj.jpg" with None
     $ animated = True
@@ -3618,23 +2654,14 @@ label jenny_hj_intro_repeat:
     show expression AnimatedImage("jenny_hj", [1,2,3,4,5,4,3,2], M_jenny) as jenny_hj at Position(xalign = 0.0, yoffset = 0)
     with dissolve
     jenny "C'mon, boy toy!!"
-
     jenny "Tell everybody how much you love me stroking your big, hard cock..."
-
-    anon "Saya menyukainya!"
-
+    anon "I love it!"
     "{i}*PING*{/i} {i}*PING*{/i} {i}*PING*{/i} {i}*PING*{/i}"
-
-    jenny "Ha ha ha!"
-
+    jenny "Hahaha!"
     pause
     anon "{b}[jen_name]{/b}, I'm gonna-"
-
     jenny "You boys seeing this?!"
-
     jenny "Hehe, oh you like my big tits, huh?"
-
     "{i}*PING*{/i} {i}*PING*{/i}"
-
     jump jenny_hj_loop
 # Decompiled by unrpyc: https://github.com/CensoredUsername/unrpyc

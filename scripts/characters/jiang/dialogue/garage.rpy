@@ -1,76 +1,52 @@
 label jiang_button_garage:
     show anon with dissolve
-    anon "Halo."
-
+    anon "Hello."
     show jiang f_suspicious with dissolve:
         unflip
         xoffset 0
     jiang @ -m_talk "Hmm?"
-
-    jiang "Anda butuh sesuatu?"
-
+    jiang "You need something?"
 
     menu jiang_button_garage.choice:
-        "Garasi yang bagus!":
+        "Nice garage!":
             jump jiang_button_garage.garage
-        "Itu mobil yang aneh...":
+        "That's a weird car...":
 
             jump jiang_button_garage.truck
-        "Tidak.":
+        "Nope.":
 
             pass
 
-    anon f_normal "Hanya melihat sekeliling."
-
-    jiang f_normal @ f_suspicious "Baiklah, pergilah berkeliaran di tempat lain."
-
-    jiang "Kita tidak seharusnya menerima pelanggan kembali ke sini."
-
-    jiang @ f_suspicious "Anda tahu apa yang saya katakan?"
-
-    anon @ a_wave "Y-ya, oke."
-
-    jiang "Terima kasih."
-
+    anon f_normal "Just looking around."
+    jiang f_normal @ f_suspicious "Well, go loiter somewhere else."
+    jiang "We ain't exactly supposed to have customers back here."
+    jiang @ f_suspicious "You know what I'm sayin'?"
+    anon @ a_wave "Y-yeah, okay."
+    jiang "Thanks."
     hide anon with dissolve
     return
 
 
 label jiang_button_garage.garage:
-    anon f_normal @ f_laugh "Garasi yang bagus!"
-
-    jiang f_suspicious "Ya, terima kasih... kurasa."
-
-    anon "Apakah Anda satu-satunya mekanik di sini?"
-
-    jiang f_normal "Nah, ada beberapa orang yang bekerja di bawahku tapi mereka sedang dihubungi sekarang..."
-
-    anon "Ah, begitu."
-
+    anon f_normal @ f_laugh "Nice garage!"
+    jiang f_suspicious "Yeah, thanks... I guess."
+    anon "Are you the only mechanic here?"
+    jiang f_normal "Nah, I got a few guys workin' under me but they're on call right now..."
+    anon "Ah, I see."
     jump jiang_button_garage.choice
 
 
 label jiang_button_garage.truck:
-    anon f_skeptical "Itu mobil yang aneh..."
-
-    jiang f_normal "Heh, sebenarnya itu truk..."
-
-    anon f_surprised "Sebuah truk?"
-
-    jiang "Ya, itu disebut Hypertruck."
-
-    jiang "Mereka menyebutnya {i}THE{/i} kendaraan masa depan."
-
+    anon f_skeptical "That's a weird car..."
+    jiang f_normal "Heh, it's a truck actually..."
+    anon f_surprised "A truck?"
+    jiang "Yeah, it's called a Hypertruck."
+    jiang "They're calling it {i}THE{/i} vehicle of the future."
     anon a_thinking f_thinking "Hmm."
-
     pause
-    anon "Aku tidak menyangka masa depan akan seperti ini..."
-
-    jiang "Jelek?"
-
-    anon f_normal a_idle @ f_snarky a_point "... Ya."
-
-    jiang "Hah, ceritakan padaku tentang hal itu..."
-
+    anon "I didn't imagine the future would be so..."
+    jiang "Ugly?"
+    anon f_normal a_idle @ f_snarky a_point "... Yeah."
+    jiang "Hah, tell me about it..."
     jump jiang_button_garage.choice
 # Decompiled by unrpyc: https://github.com/CensoredUsername/unrpyc

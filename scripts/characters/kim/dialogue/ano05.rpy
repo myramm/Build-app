@@ -1,115 +1,64 @@
 label ano05_prat_kim:
     call kim_button_stage
     show anon with dissolve
-    kim "Oh, pahlawan."
-
-    kim "Nama saya, {b}Kim{/b}."
-
-    kim "Bisakah saya membantu Anda?"
-
-    anon "Y-ya, kuharap begitu."
-
-    anon "Saya sedang mencari kendaraan baru."
-
-    anon "Sesuatu yang bisa saya gunakan untuk melakukan pengiriman..."
-
-    kim "Jadi begitu."
-
-    kim "Ya, turunan merupakan cara yang sangat baik untuk membuat riving."
-
-    kim "Aku hanya punya mobil untukmu!"
-
+    kim "Oh, herro."
+    kim "My name, {b}Kim{/b}."
+    kim "Can I herp you?"
+    anon "Y-yeah, I hope so."
+    anon "I'm looking for a new vehicle."
+    anon "Something I can use to make deliveries..."
+    kim "I see."
+    kim "Yes, deriveries very good way to make riving."
+    kim "I have just the car for you!"
     kim f_laugh "J-Ro Deruxe."
-
-    kim "Begitu banyak ruang bagasi!"
-
-    kim "Anda memasukkan sampah Anda ke dalam bagasi J-Ro, ya?"
-
+    kim "So much trunk space!"
+    kim "You fit arr your junk inside the J-Ro trunk, yes?"
     show kim f_smirk_smile
     anon f_confused "Eh, J-Ro?"
-
-    kim f_normal "Bukan, bukan J-Ro... J-Ro!"
-
+    kim f_normal "No, not J-Ro... J-Ro!"
     anon @ -m_talk "..."
     kim "J-Ro, J-Ro!"
-
     show kim a_loser with dissolve
     pause
     anon f_normal @ f_laugh "Oh, J-Lo!"
-
-    anon "Mengerti."
-
-    kim a_idle "Ya, J-Ro."
-
-    kim "Itu yang aku katakan!"
-
-    kim a_rub f_smirk_smile @ f_laugh "Onry tiga puluh dua ribu dorrar!"
-
-    anon f_shock "TIGA PULUH DUA RIBU?!?!"
-
-    anon "Itu jauh di atas kisaran harga saya!"
-
+    anon "Gotcha."
+    kim a_idle "Yes, J-Ro."
+    kim "Is what I say!"
+    kim a_rub f_smirk_smile @ f_laugh "Onry thirty-two thousand dorrar!"
+    anon f_shock "THIRTY-TWO THOUSAND?!?!"
+    anon "That's way above my price range!"
     show anon f_surprised_teeth
-    kim f_normal a_idle "Terlalu banyak?"
-
-    anon f_worried "Ya, terlalu banyak."
-
-    kim "Oke..."
-
-    kim "Ehh, menurutku kamu menginginkan Achieva Impact."
-
-    kim @ a_counter_raised "Peringkat keamanan sangat buruk tetapi area kargo luas."
-
-    kim "Dua puluh tiga ribu dorrar!"
-
-    anon "Ehh, itu masih terlalu tinggi."
-
-    kim f_angry "Itu terlalu tinggi?!"
-
-    anon "Ya."
-
-    kim f_disgusted "Aduh!"
-
+    kim f_normal a_idle "Too much?"
+    anon f_worried "Yes, too much."
+    kim "Okay..."
+    kim "Ehh, I think you want the Achieva Impact."
+    kim @ a_counter_raised "Very bad safety rating but spacious cargo area."
+    kim "Twenty-three thousand dorrar!"
+    anon "Ehh, that's still too high..."
+    kim f_angry "That too high?!"
+    anon "Yes."
+    kim f_disgusted "Breh!"
     pause
-    kim f_normal "Oke oke."
-
-    kim "Aku mohon padamu Freetwood Panhandrer."
-
-    anon @ f_confused "Pengemis Fleetwood?"
-
-    kim "Sangat jelek tapi terjangkau dengan harga enam belas ribu dorrar."
-
-    anon f_sad_down "Tidak, itu tidak akan berhasil."
-
-    kim f_angry "Terlalu banyak?!"
-
-    anon "Saya khawatir demikian."
-
-    kim "Grr, kenapa kamu membuang-buang waktuku?!"
-
-    anon f_worried "Permisi?"
-
-    kim @ a_counter_raised "Anda hanya bisa mendapatkan mobil bagus dari {b}Kim{/b}!"
-
-    kim @ a_point "Anda ingin kotak kotoran, pergilah magang!"
-
-    anon "Magang?"
-
-    kim "Ya, orang bebal bodoh di belakang meja."
-
-    kim "Ayahnya adalah manajer."
-
-    anon "Kau tahu, kau pria kecil yang kasar..."
-
-    kim @ a_wave "Kamu pergi sekarang."
-
-    kim "Saya tidak punya waktu untuk orang miskin."
-
+    kim f_normal "Okay, okay."
+    kim "I serr you Freetwood Panhandrer."
+    anon @ f_confused "Fleetwood Panhandler?"
+    kim "Very ugry but affordabre at sixteen thousand dorrar."
+    anon f_sad_down "No, that won't work."
+    kim f_angry "Too much?!"
+    anon "I'm afraid so."
+    kim "Grr, why you waste my time?!"
+    anon f_worried "Excuse me?"
+    kim @ a_counter_raised "You onry get nice car from {b}Kim{/b}!"
+    kim @ a_point "You want shit box, you go see intern!"
+    anon "Intern?"
+    kim "Yes, stupid airhead behind desk."
+    kim "Her father is manager."
+    anon "You know, you're a rude little dude..."
+    kim @ a_wave "You go away now."
+    kim "I no have time for poor peopre."
     hide kim with dissolve
-    anon f_unimpressed @ -m_talk "(Dasar brengsek!)"
-
-    anon @ -m_talk "(Saya harap orang lain yang bekerja di sini lebih sopan daripada dia, kalau tidak, saya tidak akan membeli apa pun!)"
-
+    anon f_unimpressed @ -m_talk "( What an asshole! )"
+    anon @ -m_talk "( I hope the other people working here are more polite than him, otherwise I'm not buying anything! )"
     hide anon with dissolve
     return
 # Decompiled by unrpyc: https://github.com/CensoredUsername/unrpyc

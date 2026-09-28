@@ -1,154 +1,112 @@
 label yoyo_button_showroom:
     show anon a_point f_annoyed with {'master': dissolve}
-    anon "Baiklah, nona gila, aku punya masalah serius yang harus kuambil bersamamu!"
-
-    yoyo f_eyeroll "Ugh, pergilah, pria bodoh..."
-
+    anon "Alright, crazy lady, I've got a serious bone to pick with you!"
+    yoyo f_eyeroll "Ugh, go away dumb guy..."
     show anon a_sides
     with {'master': dissolve}
-    yoyo f_normal "... {b}Kim{/b} selesai denganmu."
-
-    anon f_skeptical "Hah?!"
-
-    anon "saya-"
-
+    yoyo f_normal "... {b}Kim{/b} done with you."
+    anon f_skeptical "Huh?!"
+    anon "I-"
     pause
-    anon f_annoyed "Yah, aku belum selesai!"
-
+    anon f_annoyed "Well, I'm not done!"
     show anon a_frustrated
     with {'master': dissolve}
-    anon "Saya terbangun di tempat sampah!"
-
-    yoyo f_normal "Ya, {b}Kim{/b} membawamu ke sana."
-
+    anon "I woke up in a garbage bin!"
+    yoyo f_normal "Yeah, {b}Kim{/b} put you there."
     show anon a_sides
     with {'master': dissolve}
     anon @ -m_talk "..."
     show yoyo a_point_under
     with {'master': dissolve}
-    yoyo "Kamu termasuk dalam sampah, kamu tidak berharga."
-
-    anon "Hei, persetan, nona!"
-
+    yoyo "You berong in trash, you worthress."
+    anon "Hey, screw you lady!"
     show yoyo a_gimme
     with {'master': dissolve}
-    yoyo "Benteng, sudah jelas kamu tidak tahu koordinatnya..."
-
-    yoyo "... Anda melanggar rike rittre girr selama interogasi."
-
+    yoyo "Rook, it obvious you don't know coordinates..."
+    yoyo "... You break rike rittre girr during interrogation."
     show anon a_crossed f_unimpressed
     show yoyo a_sides
     with {'master': dissolve}
-    anon "Saya tidak melakukannya."
-
-    yoyo "Melakukannya."
-
-    anon "Tidak, aku tidak melakukannya."
-
+    anon "I did not."
+    yoyo "Did so."
+    anon "No, I didn't."
     show yoyo a_tantrum f_annoyed
     with {'master': dissolve}
-    yoyo "Ya, benar!"
-
-    anon "Tidak, aku tidak melakukannya!"
-
+    yoyo "Yes, you did!"
+    anon "No, I didn't!"
     show yoyo a_frustrated f_angry
     with {'master': dissolve}
-    yoyo "YA, KAMU MELAKUKANNYA!!"
-
+    yoyo "YES, YOU DID!!"
     show anon a_tantrum f_annoyed
     with {'master': dissolve}
-    anon "Tidak!"
-
-    yoyo "TELAH MELAKUKAN!!"
-
+    anon "Didn't!"
+    yoyo "DID!!"
     show anon a_angry f_angry
     with {'master': dissolve}
-    anon "TIDAK!!"
-
-    yoyo f_scary @ f_angry_teeth "TELAH MELAKUKAN!!!"
-
+    anon "DIDN'T!!"
+    yoyo f_scary @ f_angry_teeth "DID!!!"
     pause
     show anon a_sides f_tired
     with {'master': dissolve}
     pause
-    anon "Nona, Anda tidak dapat memecahkan angin di pabrik kacang-kacangan."
-
+    anon "Lady, you couldn't break wind in a bean factory."
     show yoyo f_annoyed
     with {'master': dissolve}
-    yoyo f_cynical "Bisa juga."
-
-    anon "Seks bukanlah alat interogasi yang efektif."
-
+    yoyo f_cynical "Can too."
+    anon "Sex is not an effective interrogation tool."
     show yoyo a_crossed
     with {'master': dissolve}
-    yoyo "Juga."
-
-    yoyo "Kembali ke Korea, {b}Kim{/b} saudara laki-lakinya mendobrak wanita bangsawan dengan ancaman seks."
-
+    yoyo "Is too."
+    yoyo "Back in Korea, {b}Kim{/b} brother break countress women with threat of sex arone."
     show anon a_facepalm f_disgusted
     with {'master': dissolve}
-    anon "Eugh, tidak... Aku tidak membutuhkan gambaran mental itu!"
-
+    anon "Eugh, no... I did not need that mental image!"
     show anon f_disgusted_wince
     pause
     show anon a_sides f_tired
     with {'master': dissolve}
-    anon "{i}*Huh*{/i}"
-
-    anon f_worried "Dengar, mungkin kakakmu bisa... dia pada dasarnya adalah seorang goblin tapi kamu..."
-
+    anon "{i}*Sigh*{/i}"
+    anon f_worried "Look, maybe your brother can... he's basically a goblin but you..."
     show yoyo f_confused
-    anon "...Yah, kamu-"
-
+    anon "... Well, you're-"
     show anon f_disgusted
     pause
-    anon f_worried "Tidak, aku tidak sanggup mengatakannya."
-
+    anon f_worried "Nah, I can't bring myself to say it."
     show yoyo a_point_under f_smirk
     with {'master': dissolve}
-    yoyo "Akui saja kamu putus!"
-
+    yoyo "Just admit you break!"
     show anon a_crossed f_unimpressed
     with {'master': dissolve}
-    anon "Umm, tidak... karena aku tidak melakukannya."
-
+    anon "Umm, no... because I didn't."
     show yoyo a_sides f_angry
     with {'master': dissolve}
-    yoyo "Grr, oke, pria bodoh..."
-
-    yoyo "... Kita lanjutkan lagi dan kali ini {b}Kim{/b} menghancurkanmu dua kali lebih keras!"
-
+    yoyo "Grr, okay, dumb guy..."
+    yoyo "... We go again and this time {b}Kim{/b} break you twice as hard!"
     show anon f_surprised
 
     menu yoyo_button_showroom.choice:
-        "Persetan!":
+        "Screw that!":
 
             jump yoyo_button_showroom.nah
-        "Ayo!":
+        "Bring it on!":
 
             pass
 
-    anon f_annoyed "Anda tahu, baiklah!"
-
+    anon f_annoyed "You know what, fine!"
     show anon a_sides f_grumpy
     with {'master': dissolve}
-    anon "Selain taser, menurut saya teknik interogasi Anda sangat menyenangkan..."
-
-    anon "... Setelah melewati rasa jijik awal saat kau menyentuhku, tentu saja."
-
-    yoyo f_annoyed "Orang cabul."
-
+    anon "Other than the taser, I found your interrogation techniques to be strangely enjoyable..."
+    anon "... After getting past the initial revulsion of having you touch me, of course."
+    yoyo f_annoyed "Pervert."
 
     if 'counter' not in renpy.get_showing_tags():
         show anon a_point_back
         with {'master': dissolve}
 
-    anon f_annoyed "Diam dan masuk ke garasi!"
-
+    anon f_annoyed "Shut up and get in the garage!"
     hide yoyo
     with {'master': dissolve}
     yoyo "Hmph!"
-
 
     if 'counter' not in renpy.get_showing_tags():
         show anon a_sides:
@@ -159,8 +117,7 @@ label yoyo_button_showroom:
     pause
     show anon a_frustrated f_eyeroll
     with {'master': dissolve}
-    anon "{b}Kim{/b}yang aneh dan omong kosong gila mereka."
-
+    anon "Freaking {b}Kim{/b}s and their crazy shit."
     hide anon with dissolve
 
     call scene_yoyo_truck_cowgirl.repeat
@@ -168,10 +125,8 @@ label yoyo_button_showroom:
 
     scene location_dealership_alley
     with fade
-    anon "Uh, tidak..."
-
-    anon "... Tidak lagi."
-
+    anon "Ugh, no..."
+    anon "... Not again."
 
     scene location_dealership_alley_garbage
     with fade
@@ -181,10 +136,8 @@ label yoyo_button_showroom:
     show location_dealership_alley_garbage_overlay as dumpster
     with {'master': dissolve}
     pause
-    anon f_tired "Ahh, kawan..."
-
-    anon "... Aku hanya menyalahkan diriku sendiri dalam hal ini."
-
+    anon f_tired "Ahh, man..."
+    anon "... I have only myself to blame for this one."
     show anon a_sides:
         yoffset 0
     with {'master': dissolve}
@@ -196,8 +149,7 @@ label yoyo_button_showroom:
     pause
     show anon a_banana f_tired_low
     with {'master': dissolve}
-    anon "{i}*Huh*{/i} Aneh {b}Kim{/b}s."
-
+    anon "{i}*Sigh*{/i} Freaking {b}Kim{/b}s."
     show anon a_sides f_disgusted_low
     with {'master': dissolve}
     pause
@@ -206,87 +158,63 @@ label yoyo_button_showroom:
 
 
 label yoyo_button_showroom.nah:
-    anon f_annoyed "Ya, dalam mimpimu aku melakukan itu lagi."
-
+    anon f_annoyed "Yeah, in your dreams I'm doing that again."
     hide anon
     with {'master': dissolve}
-    yoyo "Hei, mau kemana?!"
-
-    anon "Sejauh mungkin darimu, nona gila!"
-
+    yoyo "Hey, where you going?!"
+    anon "As far away from you as possible, crazy lady!"
     show yoyo a_hips:
         xoffset -250
     with {'master': dissolve}
-    yoyo "Anda datang ke sini sekarang dan berhubungan seks dengan {b}Kim{/b}!"
-
-    anon "Tidak."
-
-    yoyo "Maksudku!!"
-
-    anon "Tidak dapat mendengarmu!"
-
+    yoyo "You come here right now and have sex with {b}Kim{/b}!"
+    anon "Nope."
+    yoyo "I mean it!!"
+    anon "Can't hear you!"
     hide yoyo
     with {'master': dissolve}
-    yoyo "Kembali ke sini, bocah nakal!!"
-
+    yoyo "Get back here, you bad boy!!"
     return L_dealership
 
 
 label yoyo_button_showroom.repeat:
     show anon a_sides with {'master': dissolve}
-    yoyo f_laugh_low "Warna warna warna."
-
+    yoyo f_laugh_low "Hue hue hue."
     show anon f_unimpressed
     show yoyo a_point_under f_smirk
     with {'master': dissolve}
-    yoyo "{b}Kim{/b} membuatmu sangat sedih..."
-
-    anon "Umm, tidak, kamu tidak melakukannya."
-
+    yoyo "{b}Kim{/b} break you so hard rast time..."
+    anon "Umm, no you didn't."
     show yoyo a_sides
     with {'master': dissolve}
-    yoyo "Melakukannya."
-
-    anon "Tidak, kamu tidak melakukannya."
-
+    yoyo "Did so."
+    anon "No, you didn't."
     show yoyo a_tantrum f_annoyed
     with {'master': dissolve}
-    yoyo "Melakukannya!"
-
+    yoyo "Did so!"
     show anon a_tantrum f_annoyed
     with {'master': dissolve}
-    anon "Tidak, kamu tidak melakukannya!"
-
+    anon "No, you didn't!"
     show yoyo a_frustrated f_angry
     with {'master': dissolve}
-    yoyo "TELAH MELAKUKAN!!"
-
+    yoyo "DID!!"
     show anon a_angry f_angry
     with {'master': dissolve}
-    anon "TIDAK!!"
-
-    yoyo f_scary @ f_angry_teeth "TELAH MELAKUKAN!!!"
-
+    anon "DIDN'T!!"
+    yoyo f_scary @ f_angry_teeth "DID!!!"
     pause
     show anon a_sides f_tired
     with {'master': dissolve}
-    anon "{i}*Huh*{/i}"
-
-    anon f_grumpy "Berdebat denganmu tidak ada gunanya..."
-
+    anon "{i}*Sigh*{/i}"
+    anon f_grumpy "Arguing with you pointless..."
     show yoyo a_crossed f_annoyed
     with {'master': dissolve}
-    yoyo "Akui saja kamu putus!"
-
+    yoyo "Just admit you break!"
     show anon a_pocket f_unimpressed
     with {'master': dissolve}
-    anon "Umm, tidak... karena aku tidak melakukannya."
-
+    anon "Umm, no... because I didn't."
     show yoyo a_sides f_angry
     with {'master': dissolve}
-    yoyo "Grr, oke, pria bodoh..."
-
-    yoyo "... Kita lanjutkan lagi dan kali ini {b}Kim{/b} menghancurkanmu dua kali lebih keras!"
-
+    yoyo "Grr, okay, dumb guy..."
+    yoyo "... We go again and this time {b}Kim{/b} break you twice as hard!"
     jump yoyo_button_showroom.choice
 # Decompiled by unrpyc: https://github.com/CensoredUsername/unrpyc

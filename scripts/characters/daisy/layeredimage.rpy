@@ -32,27 +32,16 @@ layeredimage daisy:
         attribute b_naked_flowers "characters/daisy/daisy_body_b_naked.png"
         attribute b_empty null
         attribute b_diane_milking "daisy_body_b_diane_milking"
-
         attribute b_player_milking "daisy_body_b_player_milking"
-
         attribute b_naked_behind_pickup "daisy_body_b_naked_behind_pickup"
-
         attribute b_naked_boob "daisy_body_b_naked_boob"
-
         attribute b_naked_cower "daisy_body_b_naked_cower[M_daisy.pregnancy.to_string]"
-
         attribute b_naked_blanket_cover1 "daisy_body_b_naked_blanket_cover1[M_daisy.pregnancy.to_string]"
-
         attribute b_naked_blanket_cover2 "daisy_body_b_naked_blanket_cover2[M_daisy.pregnancy.to_string]"
-
         attribute b_naked_diane_comfort "daisy_body_b_naked_diane_[M_diane.outfit.get]_comfort[M_daisy.pregnancy.to_string]"
-
         attribute b_naked_diane_shirtless_comfort "daisy_body_b_naked_diane_shirtless_comfort[M_daisy.pregnancy.to_string]"
-
         attribute b_naked_diane_comfort2 "daisy_body_b_naked_diane_[M_diane.outfit.get]_comfort2[M_daisy.pregnancy.to_string]"
-
         attribute b_naked_diane_shirtless_comfort2 "daisy_body_b_naked_diane_shirtless_comfort2[M_daisy.pregnancy.to_string]"
-
 
 
     group mouth prefix 'm':
@@ -164,11 +153,8 @@ layeredimage daisy:
     group arms if_any ['b_naked', 'b_wet', 'b_casual', 'b_towelhead', 'b_pantieless'] auto variant 'naked':
         attribute a_idle default "characters/daisy/daisy_arms_naked[M_daisy.pregnancy.to_string]_a_sides.png"     
         attribute a_wiping_tears "daisy_arms_naked[M_daisy.pregnancy.to_string]_a_wiping_tears"
-
         attribute a_up "daisy_arms_naked[M_daisy.pregnancy.to_string]_a_up"   
-
         attribute a_touch "daisy_arms_naked[M_daisy.pregnancy.to_string]_a_touch"   
-
         attribute a_baby "characters/daisy/daisy_arms_naked_a_baby_[M_daisy.pregnancy.baby_gender].png"      
 
     group arms if_any ['b_naked_flowers'] auto variant 'naked_flowers':

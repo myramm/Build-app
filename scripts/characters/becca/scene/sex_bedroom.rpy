@@ -63,102 +63,65 @@ label scene_becca_sex_bedroom.dialogue:
 
     if animcounter == 0 and rng <= .33:
         becca "Ahh!!{w=1}{nw}"
-
-        becca "Terlalu banyak, saya tidak bisa-{w=1}{nw}"
-
-        roxxy @ f_horny -m_talk "Hmm!{w=1}{nw}"
-
+        becca "It's too much, I can't-{w=1}{nw}"
+        roxxy @ f_horny -m_talk "Mmm!{w=1}{nw}"
 
     elif animcounter == 0 and rng <= .66:
         roxxy f_horny "Ahh!{w=1}{nw}"
-
-        becca "{i}*Merengek*{/i}{w=1}{nw}"
-
-        roxxy "Mmm, ini membuatku basah kuyup!{w=1.5{nw}"
-
+        becca "{i}*Whimpers*{/i}{w=1}{nw}"
+        roxxy "Mmm, this is getting me so wet!{w=1.5}{nw}"
         show roxxy f_horny_lipbite
 
     elif animcounter == 1 and rng <= .33:
-        roxxy f_horny "Anda menikmati penis itu, {b}Becca{/b}?{w=1.5{nw}"
-
-        becca "Ya!{w=1}{nw}"
-
-        roxxy "Apa itu?{w=1}{nw}"
-
-        roxxy f_smug "Saya tidak dapat mendengar Anda!{w=1}{nw}"
-
-        becca "YA!!{w=1}{nw}"
-
+        roxxy f_horny "You enjoying that dick, {b}Becca{/b}?{w=1.5}{nw}"
+        becca "Yes!{w=1}{nw}"
+        roxxy "What's that?{w=1}{nw}"
+        roxxy f_smug "I can't hear you!{w=1}{nw}"
+        becca "YES!!{w=1}{nw}"
         roxxy f_horny_lipbite @ f_laugh "Hehe!{w=1}{nw}"
 
-
     elif animcounter == 1 and rng <= .66:
-        roxxy @ f_smug "Pantullah, {b}Becca{/b}!{w=1}{nw}"
-
-        becca "Saya sedang mencoba!{w=1}{nw}"
-
-        becca "Itu juga...{w=1}{nw}"
-
-        becca "... sialan...{w=1}{nw}"
-
-        becca "... Ahh, sial!{w=1}{nw}"
-
+        roxxy @ f_smug "Bounce on it, {b}Becca{/b}!{w=1}{nw}"
+        becca "I'm trying!{w=1}{nw}"
+        becca "It's too...{w=1}{nw}"
+        becca "... fucking...{w=1}{nw}"
+        becca "... Ahh, shit!{w=1}{nw}"
         roxxy @ f_laugh "Hehe!!{w=1}{nw}"
-
 
     elif animcounter == 2 and rng <= .44:
         becca "Oh!!{w=1}{nw}"
-
         becca "Oh, {b}[firstname]{/b}!!{w=1}{nw}"
-
-        roxxy @ f_horny "Mmm, lihat payudaranya memantul...{w=1.5{nw}"
-
+        roxxy @ f_horny "Mmm, look at those titties bounce...{w=1.5}{nw}"
 
     elif animcounter == 2 and rng <= .66:
-        becca "Enak sekali!{w=1}{nw}"
-
-        roxxy f_horny "Saya tahu.{w=1}{nw}"
-
+        becca "It's so good!{w=1}{nw}"
+        roxxy f_horny "I know.{w=1}{nw}"
         pause 1
-        roxxy f_smug "Kamu seharusnya berterima kasih padaku untuk ini, tahu?{w=2}{nw}"
-
-        becca "Terima kasih, {b}Roxxy{/b}!{w=1}{nw}"
-
+        roxxy f_smug "You should really be thanking me for this, you know?{w=2}{nw}"
+        becca "Thank you, {b}Roxxy{/b}!{w=1}{nw}"
         becca "Ahh!!{w=1}{nw}"
-
         show roxxy f_horny_lipbite
-        becca "Terima kasih, terima kasih, terima kasih!!{w=1.5{nw}"
-
+        becca "Thank you, thank you, thank you!!{w=1.5}{nw}"
 
     return
 
 
 label scene_becca_sex_bedroom.cum:
-    becca "Ngh, sial!!"
-
+    becca "Ngh, f-fuck!!"
     pause
-    anon "Aku semakin dekat!"
-
-    becca "Saya juga!"
-
-    roxxy @ f_horny "Heh, aku bertiga!"
-
+    anon "I'm getting close!"
+    becca "Me too!"
+    roxxy @ f_horny "Heh, me three!"
     pause
-    anon "aku akan-"
-
-    roxxy f_annoyed "Jangan berhenti!"
-
-    anon "aku tidak bisa-"
-
+    anon "I'm gonna-"
+    roxxy f_annoyed "Don't stop!"
+    anon "I can't-"
     show roxxy f_horny_lipbite
     with {'master': dissolve}
-    becca "YA TUHAN!!!"
-
+    becca "OH GOD!!!"
     pause
-    anon "Ini dia!!"
-
+    anon "Here it comes!!"
     roxxy f_horny_lipbite_close @ -m_talk "NGGHHH!!!"
-
     show roxxy b_rub_cum f_cum
     show becca_body_b_sex_bed_cum as animation
     anon "HNNGGG!!!" with flash
@@ -168,40 +131,31 @@ label scene_becca_sex_bedroom.cum:
     show becca_sex_bedroom_anim 3 as animation
     show roxxy b_rub_under01 f_horny_lipbite_close
     with {'master': dissolve}
-    becca "{i}* Merengek*{/i}"
-
+    becca "{i}*Whimpers*{/i}"
     pause
     show roxxy b_wet_hand f_horny_down
     show roxxy_bed_overlay_o_stain as stain:
         xoffset 253
     with {'master': dissolve}
     anon "Haah... Haah..."
-
     show roxxy f_suspicious
     with {'master': dissolve}
     anon "Wow."
-
     show roxxy b_stomach c_stomach f_horny
     with {'master': dissolve}
-    roxxy "Hehe, apakah kamu cum?"
-
-    anon "Y-ya."
-
+    roxxy "Hehe, did you cum?"
+    anon "Y-yeah."
     show becca_body_b_sex_bed_after01 as animation
     with {'master': dissolve}
     anon "Hmm?"
-
     show becca_body_b_sex_bed_after02 as animation
     show becca_body_b_sex_bed_after_drip at Transform(xoffset=-300)
     show roxxy f_surprised_happy m_talk
     with {'master': dissolve}
     pause
-    roxxy f_horny_lipbite -m_talk @ f_happy "Oh, wow... kamu sering datang!"
-
+    roxxy f_horny_lipbite -m_talk @ f_happy "Oh, wow... you came a lot!"
     becca "Ugh..."
-
-    roxxy f_smug "Heh, dia menetes ke mana-mana..."
-
+    roxxy f_smug "Heh, she's dripping all over the place..."
     return
 
 
@@ -212,61 +166,45 @@ label scene_becca_sex_bedroom.repeat:
 
     call scene_becca_sex_bedroom.stage
     with fade
-    roxxy "Ayolah, {b}Becca{/b}... Kenapa lama sekali?"
-
+    roxxy "C'mon, {b}Becca{/b}... What's taking so long?"
     call scene_becca_sex_bedroom.pre
-    becca "Umm, penis pacarmu besar sekali, ingat?!"
-
-    becca "Aku tidak bisa memasukkannya begitu saja."
-
-    roxxy f_eyeroll "Kau pelacur kecil yang manis..."
-
+    becca "Umm, your boyfriend's dick is fucking huge, remember?!"
+    becca "I can't just jam it in."
+    roxxy f_eyeroll "You're such a prissy little slut..."
     show becca_body_b_sex_bed_pre02 as animation
     with {'master': dissolve}
-    becca "Diam, {b}Roxxy{/b}!"
-
+    becca "Shut up, {b}Roxxy{/b}!"
     show roxxy f_smug
     pause
     call scene_becca_sex_bedroom.insert
     show roxxy f_happy m_talk
     with {'master': dissolve}
-    becca "Ya ampun!!!"
-
-    roxxy -m_talk @ f_smug "Hehe, ini dia!"
-
+    becca "Oh, shit!!!"
+    roxxy -m_talk @ f_smug "Hehe, there we go!"
     show roxxy f_horny_lipbite
     call scene_becca_sex_bedroom.animate
     with dissolve
     pause
-    becca "Haaaa!!"
-
-    roxxy f_horny "Mmm, ini panas sekali..."
-
+    becca "Haaaaah!!"
+    roxxy f_horny "Mmm, this is fucking hot..."
     show roxxy b_rub_insert f_horny_down
     with dissolve
     pause
     show roxxy b_rub_under f_horny
     with dissolve
     pause
-    roxxy "Bagaimana perasaannya, {b}[firstname]{/b}?"
-
-    anon "Sungguh, sangat ketat."
-
+    roxxy "How's she feel, {b}[firstname]{/b}?"
+    anon "Really, really tight."
     show roxxy f_horny_lipbite
-    becca "{i}* Merengek*{/i}"
-
+    becca "{i}*Whimpers*{/i}"
     pause
-    roxxy f_horny "Ayolah, {b}[firstname]{/b}, setubuhi dia lebih keras lagi!"
-
-    roxxy f_smug "Aku ingin mendengar jeritannya!"
-
-    becca "T-tidak, kita tidak boleh terlalu berisik... ibuku akan mendengar dan-"
-
+    roxxy f_horny "C'mon, {b}[firstname]{/b}, fuck her harder!"
+    roxxy f_smug "I wanna hear her squeal!"
+    becca "N-no, we can't be too loud... my mom will hear and-"
     show roxxy f_happy m_talk
     $ M_becca.set('sex speed', 1 / 18.)
     becca "Oh my god!!" with vpunch
-    roxxy f_horny_lipbite -m_talk @ f_smug "hehe!"
-
+    roxxy f_horny_lipbite -m_talk @ f_smug "Hehe!"
     call scene_becca_sex_bedroom.loop
     call scene_becca_sex_bedroom.cum
     return

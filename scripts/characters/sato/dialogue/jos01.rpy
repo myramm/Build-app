@@ -15,63 +15,43 @@ label jos01_spot_sato.ronald:
         xzoom -1
     show kim f_smirk:
         xoffset 100
-    rump "Oh, yang pasti."
-
-    rump "Sang istri sangat senang dengan hal itu."
-
+    rump "Oh, most definitely."
+    rump "The wife's been very pleased with it."
     show sato a_idle
     show rump a_idle
     with dissolve
-    rump "Ini adalah mesin yang berkualitas tentunya."
-
-    sato "Senang sekali mendengarnya, {b}Pak. pantat{/b}!"
-
-    sato "Saya tidak dapat memberi tahu Anda betapa kami menghargai bisnis Anda!"
-
-    rump @ a_finger "Oh, Anda bisa menunjukkan apresiasi Anda pada musim gugur ini dengan suara Anda."
-
-    sato "Tentu saja, Pak!"
-
-    sato "Anda dapat mengandalkan saya."
-
-    rump "Itu yang ingin saya dengar, {b}Pak. Sato{/b}."
-
-    rump "Anda tahu, inilah pria yang harus Anda ucapkan terima kasih!"
-
+    rump "It's a quality machine to be sure."
+    sato "That's so good to hear, {b}Mr. Rump{/b}!"
+    sato "I can't tell you how much we appreciate your business!"
+    rump @ a_finger "Oh, you can show your appreciation this fall with your vote."
+    sato "Of course, sir!"
+    sato "You can count on me."
+    rump "That's what I like to hear, {b}Mr. Sato{/b}."
+    rump "You know, this is the guy you should really be thanking!"
     show rump a_handshake_kim:
         xoffset 142
     show kim a_empty behind rump:
         xoffset 50
     with dissolve
-    rump "Dia penjual yang hebat!"
-
+    rump "He's quite the salesman!"
     show kim a_rub:
         xoffset 100
     show rump a_idle:
         xoffset 0
     with dissolve
-    kim "Oh, Anda juga baik hati, {b}Tuan. Walikota{/b}."
-
-    rump "Tolong, {b}Kimmy{/b}... Hubungi saya {b}Ronald{/b}."
-
-    kim "Sangat buruk, {b}Ronard{/b}."
-
-    rump "Saya ingin tahu apakah Anda mau memberi saya waktu berduaan dengan teman baru saya di sini, {b}Tuan. Sato{/b}?"
-
-    sato "Oh, tentu saja, Pak!"
-
-    sato "Saya akan segera berada di sana, di meja depan, jika Anda memerlukan sesuatu..."
-
-    rump "Terima kasih."
-
+    kim "Oh, you too kind, {b}Mr. Mayor{/b}."
+    rump "Please, {b}Kimmy{/b}... Call me {b}Ronald{/b}."
+    kim "Very werr, {b}Ronard{/b}."
+    rump "I wonder if you'd give me a moment alone with my new friend here, {b}Mr. Sato{/b}?"
+    sato "Oh, certainly, sir!"
+    sato "I'll just be right over there at the front desk, should you require anything..."
+    rump "Thanks."
     hide sato with dissolve
     pause .5
     show kim a_wave with dissolve:
         xoffset -100
-    kim a_idle @ a_wave "Ayo, kita pergi ke garasi."
-
-    kim "Lebih pribadi."
-
+    kim a_idle @ a_wave "Come, we go tark in garage."
+    kim "More private."
     hide rump
     hide kim
     with dissolve
@@ -79,18 +59,13 @@ label jos01_spot_sato.ronald:
     scene expression background(240, 480, 6.) as stage
     show anon f_skeptical
     with fade
-    anon @ -m_talk "(Hmm?)"
-
-    anon @ -m_talk "( Walikota berteman dengan {b}Kim{/b}? )"
-
-    anon @ -m_talk "(Sesuatu yang mencurigakan sedang terjadi di sini...)"
-
+    anon @ -m_talk "( Hmm? )"
+    anon @ -m_talk "( The mayor is friends with {b}Kim{/b}? )"
+    anon @ -m_talk "( Something fishy is going on here... )"
     pause
-    anon @ -m_talk "( ... Dan dimana {b}Josephine{/b}? )"
-
+    anon @ -m_talk "( ... And where is {b}Josephine{/b}? )"
     pause
-    anon f_grin @ -m_talk "(Saya harus menyelidikinya.)"
-
+    anon f_grin @ -m_talk "( I should investigate. )"
     hide anon with dissolve
     return
 
@@ -100,76 +75,50 @@ label jos01_spot_sato.kim:
     show sato a_paper_show f_angry:
         xoffset 200
         xzoom -1
-    sato "Angka penjualan kami turun hampir tujuh puluh persen!"
-
+    sato "Our sales numbers are down almost seventy percent!"
     show sato a_phone_pocket with {'master': dissolve}
-    kim m_talk "Saya kira Anda sudah siap, {b}Pak. Sato{/b}!"
-
+    kim m_talk "I terr you arready, {b}Mr. Sato{/b}!"
     show sato a_hips with {'master': dissolve}
-    kim f_baby_cry -m_talk "{b}Walikota Bokong{/b} jadilah penjara!"
-
-    kim "Kita harus menunggu sayang baru dengan klien besar!"
-
-    sato a_crossed f_confused "Berapa lama waktu yang dibutuhkan?!"
-
-    sato "Manajer regional akan berada di sini setiap saat dan dia akan menginginkan jawaban!"
-
-    kim a_rub f_smirk "Tidak apa-apa, Anda akan memintanya untuk segera membeli mobil busuk."
-
-    kim a_counter_raised "{b}Kim{/b} nomor satu, saresman terbaik!"
-
-    kim a_idle "Tidak pernah adil!"
-
+    kim f_baby_cry -m_talk "{b}Mayor Rump{/b} go jair!"
+    kim "We must wait for new dear with big crient!"
+    sato a_crossed f_confused "How long is that going to take?!"
+    sato "The regional manager will be here any second and he's going to want answers!"
+    kim a_rub f_smirk "It's okay, you terr him big crient start buying rots of cars very soon."
+    kim a_counter_raised "{b}Kim{/b} number one, best saresman!"
+    kim a_idle "Never fair!"
     sato f_angry @ -m_talk "Hmph."
-
     pause
-    sato a_idle f_normal "Baiklah, saya sarankan Anda mulai menelepon {i}klien besar{/i} ini segera..."
-
-    sato "... Dan suruh dia bergegas, karena pekerjaan kita mungkin sangat bergantung padanya!"
-
-    kim a_scare f_baby_cry "Y-ya, {b}Kim{/b} temui mereka sekarang!"
-
-    kim a_rub f_normal "Jangan khawatir."
-
-    sato "Saya khawatir, {b}Kim{/b}."
-
-    sato "Saya sangat khawatir."
-
+    sato a_idle f_normal "Well, I'd suggest you start making calls to this {i}big client{/i} right away..."
+    sato "... And tell him to hurry, because our jobs may very well depend on it!"
+    kim a_scare f_baby_cry "Y-yes, {b}Kim{/b} go see them now!"
+    kim a_rub f_normal "No worries."
+    sato "I am worried, {b}Kim{/b}."
+    sato "I'm very worried."
     show kim f_baby_cry
     pause
     show kim f_surprised
-    sato "Pergi."
-
-    kim f_baby_cry "Y-ya, {b}Kim{/b} perbaiki... Begini!"
-
-    kim f_smirk "{b}Kim{/b} nomor satu!"
-
+    sato "Go."
+    kim f_baby_cry "Y-yes, {b}Kim{/b} fix... You see!"
+    kim f_smirk "{b}Kim{/b} number one!"
     hide kim
     show sato f_angry:
         xoffset -300
         xzoom 1
     with {'master': dissolve}
-    kim "Saresman terbaik!"
-
+    kim "Best saresman!"
     show sato a_facepalm f_angry_closed with {'master': dissolve}
-    kim "Tidak pernah adil!"
-
+    kim "Never fair!"
     hide sato with dissolve
 
     scene expression background(240, 480, 6.) as stage
     show anon f_brag
     with fade
-    anon @ -m_talk "( Sepertinya {b}Kim{/b} mengalami kesulitan sekarang karena {b}Rump{/b} berada di balik jeruji besi... )"
-
-    anon @ f_grin -m_talk "( ... Saya yakin {b}Josephine{/b} menyukainya! )"
-
+    anon @ -m_talk "( Looks like {b}Kim{/b} is having a hard time now that {b}Rump{/b} is behind bars... )"
+    anon @ f_grin -m_talk "( ... I bet {b}Josephine{/b} is loving that! )"
     pause
-    anon f_confused @ -m_talk "(Hmm?)"
-
-    anon @ -m_talk "(Ngomong-ngomong tentang {b}Josephine{/b}, dimana dia? )"
-
-    anon @ -m_talk "(Dia pasti ada di sini di suatu tempat...)"
-
+    anon f_confused @ -m_talk "( Hmm? )"
+    anon @ -m_talk "( Speaking of {b}Josephine{/b}, where is she? )"
+    anon @ -m_talk "( She has to be here somewhere... )"
     hide anon with dissolve
     return
 
@@ -179,147 +128,92 @@ label jos01_spot_sato.yoyo:
         xoffset 200
         xzoom -1
     show yoyo
-    yoyo "Sekali lagi terima kasih atas pekerjaannya, {b}Bpk. Sato{/b}."
-
-    yoyo "{b}Kim{/b} sangat antusias dengan peluang ini."
-
-    sato "Oh, dengan senang hati, sayang."
-
-    sato "Kakakmu membawa banyak bisnis untuk kami..."
-
-    sato "...Jadi setidaknya itulah yang bisa kulakukan."
-
+    yoyo "Thanks again for job, {b}Mr. Sato{/b}."
+    yoyo "{b}Kim{/b} is very excited for opportunity."
+    sato "Oh, it's my pleasure, dear."
+    sato "Your brother brought in a lot of business for us..."
+    sato "... So it was the least I could do."
     pause
-    sato f_normal "Saya sangat menyesal mendengar apa yang terjadi."
-
-    yoyo "Ya, itu membuat suasana di kampung halaman di Korea menjadi sangat bau."
-
-    yoyo "Keluarga kami mendesak {b}Kim{/b} datang dan memperbaiki kerusakan yang terjadi pada reputasi kami."
-
-    sato a_hips f_smiling "Oh, aku tahu semua tentang rasa malu keluarga... Percayalah."
-
-    sato "Heh, aku mendapat banyak hal dari putriku!"
-
+    sato f_normal "I was so sorry to hear about what happened."
+    yoyo "Yes, it make quite a stink back home in Korea."
+    yoyo "Our famiry insisted {b}Kim{/b} come and repair the damage done to our reputation."
+    sato a_hips f_smiling "Oh, I know all about family embarrassment... Believe you me."
+    sato "Heh, I get a whole heap of that from my daughter!"
     yoyo @ -m_talk "..."
     sato f_sad @ -m_talk "..."
-    sato "Kau tahu, karena dia umm..."
-
+    sato "You know, because she umm..."
     show sato a_idle with {'master': dissolve}
     yoyo @ -m_talk "..."
-    sato f_sad_down "... Y-yah, ibunya meninggal... Dan kami uhh..."
-
+    sato f_sad_down "... W-well, her mother passed... And we uhh..."
     yoyo @ -m_talk "..."
-    sato "...Belum benar-benar pulih-"
-
+    sato "... Haven't really recov-"
     show sato f_surprised
     pause
-    sato f_sad "Err, Sudahlah."
-
-    sato "Hehe, itu tidak terlalu penting."
-
+    sato f_sad "Err, Nevermind."
+    sato "Heh, that's not really important."
     pause
-    sato "{i}*Gulp*{/i} Kamu uhh, kalau begitu, bicaralah dengan kakakmu?"
-
-    sato "Apakah dia baik-baik saja?"
-
-    yoyo "Dia saat ini dipenjara di penjara Amerika."
-
-    sato f_uneasy "Y-ya, tentu saja... Aku hanya bermaksud mengatakan, jika ada yang bisa kulakukan... Hanya-"
-
-    yoyo a_stop "Tidak, tidak apa-apa."
-
-    yoyo "Kembalikan kami bergerak maju dan fokus pada upaya masa depan."
-
+    sato "{i}*Gulp*{/i} You uhh, speak to your brother then?"
+    sato "Is he doing well?"
+    yoyo "He is currentry incarcerated in American prison."
+    sato f_uneasy "Y-yes, of couse... I just meant to say, if there's anything I can do... Just-"
+    yoyo a_stop "No, is okay."
+    yoyo "Ret us move forward and focus on future endeavors."
     show yoyo a_idle with {'master': dissolve}
-    sato f_normal "Benar, tentu saja."
-
-    yoyo "Anda bilang, manajer regional datang hari ini?"
-
+    sato f_normal "Right, of course."
+    yoyo "You say, regionar manager come today?"
     sato @ f_confused -m_talk "Hmm?"
-
-    sato "Oh iya... Tapi ehh, itu hanya kunjungan rutin... Tidak ada yang perlu dikhawatirkan."
-
-    yoyo "Sebaliknya, {b}Kim{/b} percaya bahwa kunjungan rutin adalah kesempatan untuk menjalin hubungan yang lebih baik."
-
+    sato "Oh, yes... But ehh, that's just a routine visit... Nothing to be concerned about."
+    yoyo "On the contrary, {b}Kim{/b} berieve routine visit is opportunity to better dearership."
     show sato f_confused
-    yoyo "Seseorang harus selalu berusaha untuk memberikan kesan yang baik, terutama kepada mereka yang memiliki kekuatan besar."
-
-    sato f_sad "Umm, ya... Itu saran yang sangat bagus."
-
-    yoyo "Mungkin Anda ingin {b}Kim{/b} berbicara dengannya?"
-
-    yoyo "Saya punya banyak ide yang bisa meningkatkan angka penjualan kita..."
-
-    yoyo "... Dan sentuhan feminin sering kali lebih baik diterima oleh pria yang berkedudukan tinggi."
-
-    sato f_confused "K-kamu ingin bertemu dengannya?"
-
-    yoyo @ f_quizzical "Jika tidak terlalu merepotkan?"
-
-    sato f_normal "Umm, tidak... Tidak masalah."
-
-    sato f_smiling "Saya akan dengan senang hati memperkenalkan Anda."
-
-    yoyo "Sangat bagus."
-
-    yoyo "Jika kamu permisi?"
-
-    yoyo "{b}Kim{/b} ingin pergi dan menyegarkan diri sebelum manajer wilayah datang."
-
-    sato "Y-ya, tentu saja."
-
+    yoyo "One shourd arways strive to make good impression, especiarry to those who weird great power."
+    sato f_sad "Umm, yeah... That's very sound advice."
+    yoyo "Perhaps you wourd arrow {b}Kim{/b} to speak with him?"
+    yoyo "I have many ideas that could improve our sares numbers..."
+    yoyo "... And a feminine touch often better recieved by man in high station."
+    sato f_confused "Y-you want to meet with him?"
+    yoyo @ f_quizzical "If it is not too much troubre?"
+    sato f_normal "Umm, no... It's no trouble."
+    sato f_smiling "I'd be glad to introduce you."
+    yoyo "Very good."
+    yoyo "If you'rr excuse me?"
+    yoyo "{b}Kim{/b} rike to go and freshen up before regionar manager come."
+    sato "Y-yes, of course."
     show sato f_confused_low
     show yoyo b_dressed_bow
     with {'master': dissolve}
     pause
     show sato f_confused
-    yoyo b_dressed "Terima kasih."
-
+    yoyo b_dressed "Thank you."
     hide yoyo
     show sato f_uneasy:
         xoffset -300
         xzoom 1
     with {'master': dissolve}
     sato f_uneasy "{i}*Gulp*{/i} Wow... Okay."
-
     hide sato with dissolve
 
     scene expression background(240, 480, 6.) as stage
     show anon a_surprised f_shock
     with fade
     anon @ -m_talk "( That's {b}Kim{/b}'s sister?! )"
-
     anon a_sides f_worried @ -m_talk "( I have a bad feeling about this... )"
-
     anon f_thinking @ -m_talk "( ... And where's {b}Josephine{/b}?! )"
-
     anon f_confused @ -m_talk "( I don't see her anywhere! )"
-
-    anon @ -m_talk "(Saya harus menyelidikinya.)"
-
+    anon @ -m_talk "( I should investigate. )"
     return
 
 
 label jos01_find_sato:
     show anon with dissolve
-    anon "Halo?"
-
+    anon "Hello?"
     sato f_smiling "Greetings and welcome to-"
-
     sato f_normal "Oh, it's you again."
-
     sato "Look, I'm afraid my daughter can't play with you today... We're very busy!"
-
     anon f_worried "Play with me?"
-
     sato "Or whatever it is you crazy kids do..."
-
     sato "We have a very important man visiting us today and I don't want her pulling any shenanigans!"
-
-    anon "Oh oke..."
-
+    anon "Oh kay..."
     sato "Come back another day."
-
     pause
     hide anon with dissolve
 
@@ -328,9 +222,7 @@ label jos01_find_sato:
         flip
         xoffset -400
     anon @ -m_talk "( Hmm, I guess that explains why {b}Josephine{/b} isn't at the front desk... )"
-
     anon @ -m_talk "( She has to be around here somewhere, perhaps {b}I should look for her{/b}? )"
-
     hide anon with dissolve
     return
 
@@ -340,9 +232,7 @@ label jos01_find_sato.repeat:
     show anon f_worried with dissolve:
         xoffset 300
     anon @ -m_talk "( No, he's not going to tell me where {b}Josephine{/b} is. )"
-
     anon @ -m_talk "( She has to be around here somewhere, perhaps I should {b}look for her{/b}? )"
-
     hide anon with dissolve
     return
 # Decompiled by unrpyc: https://github.com/CensoredUsername/unrpyc

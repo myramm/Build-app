@@ -43,16 +43,12 @@ label sock_pile_book_search:
     scene expression game.timer.image("eriks_room{}_c")
     show player 517 with dissolve
     player_name "Hmm, what's with these socks?"
-
     player_name "They're stiff as a board!"
-
     show player 516
     player_name "..."
     show player 517
     player_name "Gross..."
-
     player_name "I'm not even going to bother digging for the book in there..."
-
     hide player with dissolve
     $ game.main()
 
@@ -60,31 +56,23 @@ label dresser_book_search:
     scene expression game.timer.image("backgrounds/location_erik_house_bedroom_dresser_day{}.jpg")
     player_name "!!!"
     player_name "Are those stained?"
-
     pause
     player_name "His dresser is such a mess like his room!"
-
     $ game.main()
 
 label under_bed_book_search:
     scene expression game.timer.image("under_eriks_bed{}")
     show book_03 at Position (xpos=431,ypos=425,xanchor=0,yanchor=0)
     player_name "Just a bunch of dust bunnies..."
-
     player_name "... Wait a minute! There's a book under here!"
-
     call screen under_eriks_bed
 
     player_name "Sweet, this is it!"
-
     hide book_03
     show book_04_c with dissolve
     player_name "{i}Oedipuss{/i}?"
-
     player_name "{i}Doin' it the Ancient Way{/i}..."
-
     player_name "Why in the world would {b}Erik{/b} want this?"
-
     hide book_04_c with dissolve
 
     scene expression game.timer.image("eriks_room{}_c")
@@ -92,18 +80,14 @@ label under_bed_book_search:
         show player 12 with dissolve
         player_name "Well, two more books to go."
 
-
     elif M_bissette.get_state() in [S_bissette_got_dexters_book, S_bissette_got_eriks_book, S_bissette_got_martinez_book]:
         show player 14 with dissolve
         player_name "Just one book left."
-
     else:
 
         show player 14 with dissolve
         player_name "Great! That's the last book!"
-
         player_name "Now, I just need to {b}return them to the library{/b}!"
-
     hide player with dissolve
     $ M_bissette.trigger(T_bissette_ask_erik)
     $ player.get_item("oedipuss")

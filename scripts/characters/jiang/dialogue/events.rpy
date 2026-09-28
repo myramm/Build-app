@@ -3,41 +3,25 @@ label jiang_event_yoyo:
     show jiang f_normal with dissolve:
         xoffset 0
         xzoom 1
-    jiang "Yo, apakah kamu melihat {b}Kim{/b} yang baru?!"
-
-    anon "Ya, aku melihatnya."
-
+    jiang "Yo, did you see the new {b}Kim{/b}?!"
+    anon "Yeah, I saw."
     pause
-    anon "Apakah dia benar-benar saudara perempuan {b}Kim{/b}?"
-
-    jiang @ f_eyeroll "Sial kalau aku tahu, kawan."
-
-    anon "Dia berbicara seperti dia."
-
-    anon "Ini sangat aneh."
-
-    jiang "Astaga, yang aku tahu hanyalah... Aku menjauhi wanita jalang gila itu!"
-
+    anon "Is she really {b}Kim{/b}'s sister?"
+    jiang @ f_eyeroll "Hell if I know, man."
+    anon "She talks just like him."
+    anon "It's so weird."
+    jiang "Man, all I know is... I'm staying the hell away from that crazy bitch!"
     anon f_confused @ -m_talk "Hmm?"
-
-    jiang "Dia mengeluarkan getaran yang sangat jahat, rasakan aku?"
-
-    anon f_worried "Ya, menurutku begitu."
-
+    jiang "She's giving off some hella evil vibes, ya feel me?"
+    anon f_worried "Yeah, I think so."
     show anon a_surprised f_surprised
-    jiang f_smirk "Sepertinya tipe gadis yang akan memotong penismu saat kamu tidur..."
-
+    jiang f_smirk "Seems like the kind of girl that would cut your dick off while you sleeping..."
     show anon a_cover_boner f_surprised_teeth
-    jiang "... Lalu melemparkannya ke luar jendela mobil saat dia mengemudi di jalan raya."
-
-    anon f_surprised "Apa yang-"
-
-    anon a_sides f_confused @ f_skeptical "Anehnya, itu spesifik..."
-
-    jiang f_normal "Aku hanya bilang, aku akan menjaga jarak jika aku jadi kamu."
-
-    anon "Y-ya, terima kasih atas peringatannya."
-
+    jiang "... Then toss it out the car window while she driving down the highway."
+    anon f_surprised "What the-"
+    anon a_sides f_confused @ f_skeptical "That was oddly specific..."
+    jiang f_normal "I'm just saying, I'd keep my distance if I was you."
+    anon "Y-yeah, thanks for the warning."
     hide anon with dissolve
     return
 # Decompiled by unrpyc: https://github.com/CensoredUsername/unrpyc

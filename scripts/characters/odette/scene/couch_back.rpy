@@ -49,99 +49,67 @@ label scene_odette_couch_back.loop:
 label scene_odette_couch_back.dialogue(opt, rng=-1):
 
     if opt == 1:
-        odette "Oooh, ya..."
-
-        odette "... Itu dia, kawan."
-
+        odette "Oooh, yeah..."
+        odette "... That's it, big fella."
 
     elif opt == 2:
-        odette "Bagus dan dalam..."
-
-        odette "... Persis seperti itu!"
-
+        odette "Nice and deep..."
+        odette "... Just like that!"
 
     elif opt == 3:
         if rng < .5:
-            odette "Sial!"
+            odette "Fuck!"
 
-
-        anon "Fiuh, kamu tidak bercanda..."
-
+        anon "Phew, you weren't kidding..."
         odette "Hmm?"
-
-        anon "... Lihat saja hal-hal itu!"
-
+        anon "... Just look at those things go!"
         odette "Oh, hehe!"
-
 
     elif opt == 4:
         odette "Oof!" with hpunch
 
         if rng < 0:
-            odette "Apa itu tadi?!"
+            odette "What was that?!"
+            anon "Sorry."
+            anon "I'm just trying to see how high I can make them bounce."
 
-            anon "Maaf."
-
-            anon "Saya hanya mencoba melihat seberapa tinggi saya bisa membuat mereka memantul."
-
-
-        odette "{b}[firstname]{/b}, berhenti main-main dan fokus!"
-
-        anon "Aku tidak bisa menahannya, mereka memesona."
-
+        odette "{b}[firstname]{/b}, stop fooling around and focus!"
+        anon "I can't help it, they're mesmerizing."
 
         if rng < .5:
-            odette "Ayolah, aku hampir sampai!"
-
+            odette "C'mon, I was nearly there!"
 
     elif opt == 5:
-        odette "Ahhh!"
-
-        odette "Sangat dalam!"
-
+        odette "Ahh!"
+        odette "So fucking deep!"
 
         if rng < .5:
-            anon "Anda suka itu?"
-
-            odette "Ya!"
-
+            anon "You like that?"
+            odette "Yes!"
 
     elif opt == 5:
-        odette "Sial, {b}Eve{/b} beruntung sekali..."
-
-        odette "... Aku tidak percaya pacar pertamanya dan dia punya penis sebagus ini!"
-
+        odette "Fuck, {b}Eve{/b} is so lucky..."
+        odette "... I can't believe her first boyfriend and she's got a dick this good!"
 
         if rng < .5:
-            anon "Dick, kamu secara teknis mencuri darinya."
-
-            odette "Bukan mencuri..."
-
-            odette "... Meminjam!"
-
+            anon "Dick you're technically stealing from her."
+            odette "Not stealing..."
+            odette "... Borrowing!"
             anon "Mhmm."
 
-
     elif opt == 6:
-        odette "Lebih cepat, kawan!"
-
+        odette "Faster, big fella!"
 
     return
 
 
 label scene_odette_couch_back.cum(where):
-    odette "Aku semakin dekat!"
-
-    anon "Saya juga!"
-
-    odette "Lebih sulit, {b}[firstname]{/b}!!"
-
-    anon "Aku sedang mencoba tapi-"
-
-    anon "aku tidak bisa-"
-
+    odette "I'm getting close!"
+    anon "Me too!"
+    odette "Harder, {b}[firstname]{/b}!!"
+    anon "I'm trying but-"
+    anon "I can't-"
     odette "NGGHHH!!!"
-
 
     if where == 'inside':
         show odette_sex_couch_back_cum as anim
@@ -175,15 +143,10 @@ label scene_odette_couch_back.cum(where):
 
     with {'master': dissolve}
     anon "Haah... Haah..."
-
-    odette -m_talk "Fiuh, astaga, itu bagus!"
-
-    anon "Ya?"
-
-    odette "Heh, kita harus melakukan ini lebih sering!"
-
-    anon "Aku tidak tahu tentang itu..."
-
+    odette -m_talk "Phew, holy fuck that was good!"
+    anon "Yeah?"
+    odette "Heh, we should be doing this a lot more often!"
+    anon "I dunno about that..."
 
     if where == 'inside':
         call call_pregnancy_minigame (None, M_odette)
@@ -200,53 +163,37 @@ label scene_odette_couch_back.switch:
         call scene_odette_couch_anal.stage
         with dissolve
         odette "{b}[firstname]{/b}?!"
-
-        odette "Aku hampir sampai!!!"
-
-        anon "Jangan khawatir."
-
+        odette "I was almost there!!!"
+        anon "No worries."
         call scene_odette_couch_back.stage
         with fade
-        anon "Kita belum selesai!"
-
-        odette "Tunggu sebentar..."
-
-        odette "... Kamu tidak seharusnya melakukan double dip, itu-"
-
+        anon "We're not finished yet!"
+        odette "Wait a second..."
+        odette "... You're not supposed to double dip, it's-"
         call scene_odette_couch_back.insert
         odette f_surprised "Oh, fuck shit balls!!" with hpunch
         call scene_odette_couch_back.animate
         with {'master': dissolve}
-        anon "Apa yang tadi kamu katakan?"
-
-        odette "Tidak ada, tidak ada..."
-
-        odette "... Lanjutkan!"
-
+        anon "What's that you were saying?"
+        odette "Nothing, nothing..."
+        odette "... Keep going!"
     else:
 
         call scene_odette_couch_anal.stage
         with dissolve
-        odette "Lagi?!"
-
-        odette "Dengan serius?!"
-
+        odette "Again?!"
+        odette "Seriously?!"
         call scene_odette_couch_back.stage
         with fade
-        anon "Saya tidak bisa memutuskan lubang mana yang lebih saya sukai..."
-
-        odette "Heh, kamu beruntung aku pelacur kotor..."
-
-        odette "... Cukup yakin tidak ada gadis lain yang akan membiarkanmu pergi bersama-"
-
+        anon "I can't decide which hole I like more..."
+        odette "Heh, you're lucky I'm a dirty slut..."
+        odette "... Pretty sure no other girl would let you get away with-"
         call scene_odette_couch_back.insert
         odette f_surprised "Fuuuuuuuuck me!!" with hpunch
         call scene_odette_couch_back.animate
         with {'master': dissolve}
-        anon "Itu rencananya!"
-
-        odette "Ya Tuhan, ya Tuhan, Ya Tuhan!!!"
-
+        anon "That's the plan!"
+        odette "Ohmygod, ohmygod, OHMYGOD!!!"
 
     pause
     jump scene_odette_couch_back.resume
@@ -258,22 +205,15 @@ label scene_odette_couch_back.repeat(switch):
 
     call scene_odette_couch_back.stage
     with fade
-    anon "Ini pemandangan yang luar biasa!"
-
-    odette "Heh, tempelkan saja padaku..."
-
-    anon "Hei, kamu tidak bisa membenci pria karena menghargai pemandangan!"
-
-    odette "Ya, baiklah... Aku bisa membencimu karena menggodaku dengan-"
-
+    anon "Now this is a hell of a view!"
+    odette "Heh, just stick it in me already..."
+    anon "Hey, you can't hate on a guy for appreciating the scenery!"
+    odette "Yeah, well... I can hate on you for teasing me wit-"
     call scene_odette_couch_back.insert
     with {'master': dissolve}
-    odette f_lipbite @ -m_talk "Tidak!!"
-
-    anon "Lebih baik?"
-
-    odette -f_lipbite "Ya!!"
-
+    odette f_lipbite @ -m_talk "Ngh!!"
+    anon "Better?"
+    odette -f_lipbite "Yes!!"
     call scene_odette_couch_back.animate
     with dissolve
     call scene_odette_couch_back.dialogue (1)
@@ -314,10 +254,10 @@ label scene_odette_couch_back.replay:
     if len(variants) > 1:
         scene expression background(l=L_tattooparlor_garage, t=2) with fade
         menu:
-            "Biasa" if 'back' in variants:
+            "Normal" if 'back' in variants:
                 jump scene_odette_couch_back.back
 
-            "Anal Pertama" if 'anal' in variants:
+            "First Anal" if 'anal' in variants:
                 jump scene_odette_couch_back.anal
     else:
 

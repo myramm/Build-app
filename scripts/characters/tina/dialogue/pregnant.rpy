@@ -4,33 +4,24 @@ label tina_button_pregnant:
     if M_tina.outfit.is_naked:
         show tina f_sad
         show anon f_worried with dissolve
-        anon "Wow, panas sekali di-"
-
+        anon "Wow, it is scorching in-"
         anon f_surprised "!!!"
-        anon f_flirt_low "Di sini..."
-
-        tina "Halo, {b}[firstname]{/b}."
-
-        tina "Maaf tentang panasnya."
-
-        anon f_flirt "K-kamu telanjang!"
-
-        tina @ f_laugh "Hehe, ya, aku tahu."
-
-        tina "AC kami rusak dan {b}Tony{/b} mengalami kesulitan untuk memperbaikinya."
-
+        anon f_flirt_low "In here..."
+        tina "Hey there, {b}[firstname]{/b}."
+        tina "Sorry about the heat."
+        anon f_flirt "Y-you're naked!"
+        tina @ f_laugh "Heh, yeah, I know."
+        tina "Our A/C broke and {b}Tony{/b} is having trouble getting it fixed."
     else:
         show anon at local with dissolve
-        anon "Hai, {b}Tina{/b}."
-
-        tina "Halo, {b}[firstname]{/b}."
-
+        anon "Hey, {b}Tina{/b}."
+        tina "Hey there, {b}[firstname]{/b}."
 
     menu tina_button_pregnant.choice:
 
-        "Tidak bisakah Anda membayar untuk memperbaikinya?" if M_tina.outfit.is_naked:
+        "Can't you pay to have it fixed?" if M_tina.outfit.is_naked:
             jump tina_button_pregnant.aircon
-        "Bagaimana perasaanmu?":
+        "How are you feeling?":
 
             if M_tina.pregnancy.stage == 1:
                 jump tina_button_pregnant.excited
@@ -38,7 +29,7 @@ label tina_button_pregnant:
                 jump tina_button_pregnant.sick
             else:
                 jump tina_button_pregnant.bloated
-        "Ada yang bisa kuberikan padamu?":
+        "Can I get you anything?":
 
             if M_tina.pregnancy.stage == 1:
                 jump tina_button_pregnant.obgyn
@@ -46,45 +37,31 @@ label tina_button_pregnant:
                 jump tina_button_pregnant.nutritionist
             else:
                 jump tina_button_pregnant.masseuse
-        "Sampai jumpa lagi.":
+        "I'll see you soon.":
 
             pass
 
-    anon f_normal a_wave "Sampai jumpa lagi."
-
+    anon f_normal a_wave "I'll see you soon."
     show tina f_normal
-    anon "Jangan ragu untuk menelepon saya, siang atau malam..."
-
-    anon "... Oke?"
-
-    tina "Hal itu seharusnya tidak perlu, namun saya menghargai sentimennya, {b}[firstname]{/b}."
-
+    anon "Feel free to call me, night or day..."
+    anon "... Okay?"
+    tina "That shouldn't be necessary but I appreciate the sentiment, {b}[firstname]{/b}."
     anon f_worried @ -m_talk "..."
-    tina "Hati-hati di jalan."
-
+    tina "Take care."
     hide anon with dissolve
     return
 
 
 label tina_button_pregnant.aircon:
-    anon f_worried "Tidak bisakah Anda membayar untuk memperbaikinya?"
-
-    tina f_sad "Saya bisa, tentu saja."
-
-    tina "Namun {b}Tony{/b} bersikeras untuk memperbaikinya sendiri."
-
-    anon "Ini tidak baik untuk bayinya..."
-
-    tina "Oh, tidak apa-apa."
-
-    tina "OB/GYN saya mengatakan suhunya pasti jauh lebih panas dari ini sebelum kami perlu khawatir."
-
-    anon "Tetap saja..."
-
-    becca "Hei, Bu?"
-
-    becca "Aku tidak bisa membuat penggemar bodoh ini bekerja-"
-
+    anon f_worried "Can't you pay to have it fixed?"
+    tina f_sad "I could, sure."
+    tina "But {b}Tony{/b} insists on fixing it himself."
+    anon "This can't be good for the baby..."
+    tina "Oh, it's fine."
+    tina "My OB/GYN says it would have to be a lot hotter than this before we needed to worry."
+    anon "Still..."
+    becca "Hey, Mom?"
+    becca "I can't get this stupid fan to wor-"
     show becca b_panties_sweat f_surprised behind tina with dissolve:
         xoffset -300
     show anon f_surprised
@@ -93,200 +70,128 @@ label tina_button_pregnant.aircon:
     if M_roxxy.finished_state(S_roxxy_get_oil):
         show becca b_panties_sweat_cover with fastdissolve
         becca "{b}[firstname]{/b}?!"
-
-        anon f_normal "Hai, {b}Becca{/b}."
-
-        becca "Apa-"
-
+        anon f_normal "Hey, {b}Becca{/b}."
+        becca "Wha-"
         show becca f_upset with dissolve:
             flip
             xoffset 300
-        becca "Kenapa kamu tidak memperingatkanku dia akan datang!"
-
+        becca "Why didn't you warn me he was coming over!"
         show anon f_flirt_low
-        tina "Karena saya tidak tahu..."
-
-        becca f_concerned "Aku tidak ingin dia melihatku seperti ini!"
-
-        tina "Seperti apa, sayang?"
-
-        anon "Ya, kamu baik-baik saja, {b}Becca{/b}."
-
+        tina "Because I didn't know..."
+        becca f_concerned "I don't want him to see me like this!"
+        tina "Like what, sweetie?"
+        anon "Yeah, you're fine, {b}Becca{/b}."
         show becca with dissolve:
             unflip
             xoffset -300
         show anon f_flirt
-        becca "Tidak, bukan aku!"
-
-        becca "Aku berkeringat, kotor, dan..."
-
+        becca "No, I'm not!"
+        becca "I'm all sweaty and gross and..."
         show becca with dissolve:
             flip
             xoffset 300
-        becca "... A-dan jangan lihat aku, aku mengerikan!"
-
+        becca "... A-and don't look at me, I'm hideous!"
         hide becca with dissolve
         show anon f_skeptical
         pause
-        tina f_normal "Oh, jangan pedulikan dia."
-
+        tina f_normal "Oh, don't mind her."
         show anon f_normal
-        tina "Dia hanya malu."
-
+        tina "She's just embarrassed."
     else:
         show becca f_upset with dissolve:
             flip
             xoffset 300
-        becca "Apa yang dia lakukan disini lagi?!"
-
+        becca "What is he doing here again?!"
         show anon f_flirt_low
-        tina "Dia di sini untuk memeriksa bayinya, tentu saja..."
-
+        tina "He's here to check on the baby, of course..."
         becca @ f_eyeroll "Ugh!"
-
-        becca "Sungguh kacau sekali kalian berdua punya bayi bersama!"
-
-        tina "{b}Becca{/b}, jangan kasar!"
-
-        becca "Apa pun."
-
-        becca "Ayo bantu aku dengan kipas bodoh ini setelah si kutu buku pergi..."
-
+        becca "It is so fucked up that you two are having a baby together!"
+        tina "{b}Becca{/b}, don't be rude!"
+        becca "Whatever."
+        becca "Come help me with this stupid fan once the nerd leaves..."
         hide becca with dissolve
         show anon f_normal
         pause
-        tina "Oh, jangan pedulikan dia."
-
-        tina "Dia hanya kesal karena panasnya."
-
+        tina "Oh, don't mind her."
+        tina "She's just grumpy about the heat."
 
     anon @ -m_talk "..."
     jump tina_button_pregnant.choice
 
 
 label tina_button_pregnant.bloated:
-    anon f_worried "Bagaimana perasaanmu?"
-
-    tina f_sad "Kembung."
-
-    tina "Sakit."
-
-    tina "Belum lagi aku meleleh dalam panas ini!"
-
-    anon "Y-ya, tidak diragukan lagi."
-
+    anon f_worried "How are you feeling?"
+    tina f_sad "Bloated."
+    tina "Sore."
+    tina "Not to mention I'm melting in this heat!"
+    anon "Y-yeah, no doubt."
     pause
-    tina "Setidaknya kita sudah mendekati akhir."
-
-    tina f_normal "Saya tidak sabar untuk bertemu anak kami!"
-
-    anon f_normal "Ya, itu cukup menarik."
-
+    tina "At least we're nearing the end."
+    tina f_normal "I can't wait to meet our child!"
+    anon f_normal "Yeah, it's quite exciting."
     jump tina_button_pregnant.choice
 
 
 label tina_button_pregnant.excited:
-    anon f_normal "Bagaimana perasaanmu?"
-
-    tina f_normal @ f_laugh "Heh, periksa aku, ya?"
-
-    anon "Ya, jika tidak apa-apa?"
-
-    tina "Tentu saja."
-
-    tina "Kamu manis sekali!"
-
-    tina "Aku belum punya pria yang menyayangiku sejak Luigi meninggal..."
-
-    anon "Baiklah, saya di sini jika Anda butuh sesuatu."
-
-    tina "Terima kasih, {b}[firstname]{/b}."
-
+    anon f_normal "How are you feeling?"
+    tina f_normal @ f_laugh "Heh, checking up on me, huh?"
+    anon "Yeah, if that's okay?"
+    tina "Of course."
+    tina "It's very sweet of you!"
+    tina "I haven't had a man to dote on me since Luigi died..."
+    anon "Well, I'm here if you need anything."
+    tina "Thank you, {b}[firstname]{/b}."
     jump tina_button_pregnant.choice
 
 
 label tina_button_pregnant.masseuse:
-    anon f_normal "Ada yang bisa kuberikan padamu?"
-
-    anon "Pijat punggung atau pijat kaki mungkin?"
-
-    tina f_normal @ f_laugh "Hehe, tidak, tidak apa-apa."
-
-    tina "{b}Becca{/b} dan saya pergi ke tukang pijat dua kali seminggu."
-
-    anon "Seorang tukang pijat?"
-
-    tina "Ya."
-
-    tina "Seperti saya katakan, penting untuk melakukan semua yang saya bisa untuk membantu memastikan bayi lahir bahagia dan sehat."
-
-    anon f_unimpressed "Dan untungnya, Anda punya banyak uang untuk melakukan hal itu..."
-
+    anon f_normal "Can I get you anything?"
+    anon "Back massage or a foot rub maybe?"
+    tina f_normal @ f_laugh "Heh, no that's okay."
+    tina "{b}Becca{/b} and I have been going to a masseuse twice a week."
+    anon "A masseuse?"
+    tina "Yeah."
+    tina "Like I said, it's important to do everything I can to help ensure the baby is born happy and healthy."
+    anon f_unimpressed "And luckily, you have plenty of money to do exactly that..."
     tina @ -m_talk "Mhmm."
-
-    anon @ -m_talk "(Saya yakin saya berharap bisa memainkan peran yang lebih besar di sini...)"
-
+    anon @ -m_talk "( I sure wish I could play a bigger role here... )"
     jump tina_button_pregnant.choice
 
 
 label tina_button_pregnant.nutritionist:
-    anon f_normal "Ada yang bisa kuberikan padamu?"
-
-    anon "Sesuatu untuk dimakan atau diminum mungkin?"
-
-    tina f_normal "Hehe, tidak, tidak apa-apa."
-
-    tina "Ahli gizi saya memberi saya aturan makanan yang sangat ketat untuk bayi..."
-
-    anon @ f_skeptical "Anda punya ahli gizi?"
-
-    tina "Tentu saja."
-
-    tina "Bagi seorang wanita seusia saya, penting untuk melakukan semua yang saya bisa untuk membantu memastikan bayinya lahir dengan bahagia dan sehat."
-
+    anon f_normal "Can I get you anything?"
+    anon "Something to snack on or a drink maybe?"
+    tina f_normal "Heh, no that's okay."
+    tina "My nutritionist has me on a very strict food regiment for the baby..."
+    anon @ f_skeptical "You have a nutritionist?"
+    tina "Of course."
+    tina "A woman my age, it's important to do everything I can to help ensure the baby is born happy and healthy."
     pause
-    tina "Untungnya, saya punya banyak uang untuk melakukan hal itu."
-
-    anon "Y-ya, itu luar biasa, {b}Tina{/b}."
-
+    tina "Luckily, I have plenty of money to do exactly that."
+    anon "Y-yeah, that's wonderful, {b}Tina{/b}."
     jump tina_button_pregnant.choice
 
 
 label tina_button_pregnant.obgyn:
-    anon f_normal "Ada yang bisa kuberikan padamu?"
-
-    anon "Obat mual mungkin?"
-
-    tina f_normal "Hehe, tidak, tidak apa-apa."
-
-    tina "Saya mempunyai seorang spesialis yang menelepon ke rumah tiga kali seminggu..."
-
-    anon @ f_skeptical "Seorang spesialis?"
-
-    tina "Ya, OB/GYN saya."
-
-    tina "Seperti saya katakan, penting untuk melakukan semua yang saya bisa untuk membantu memastikan bayi lahir bahagia dan sehat."
-
+    anon f_normal "Can I get you anything?"
+    anon "Nausea medication maybe?"
+    tina f_normal "Heh, no that's okay."
+    tina "I have a specialist making house calls three times a week..."
+    anon @ f_skeptical "A specialist?"
+    tina "Yeah, my OB/GYN."
+    tina "Like I said, it's important to do everything I can to help ensure the baby is born happy and healthy."
     pause
-    tina "Untungnya, saya punya banyak uang untuk melakukan hal itu."
-
-    anon @ f_laugh "Y-ya, itu luar biasa, {b}Tina{/b}."
-
+    tina "Luckily, I have plenty of money to do exactly that."
+    anon @ f_laugh "Y-yeah, that's wonderful, {b}Tina{/b}."
     jump tina_button_pregnant.choice
 
 
 label tina_button_pregnant.sick:
-    anon f_normal "Bagaimana perasaanmu?"
-
-    tina f_sad "Ugh, aku lupa betapa aku benci mual di pagi hari..."
-
-    anon f_worried "Sangat buruk, ya?"
-
-    tina "Ini sepuluh kali lebih buruk dibandingkan dengan {b}Becca{/b}!"
-
-    tina "Mungkin karena aku sudah lebih tua sekarang..."
-
-    anon "Ya, itu masuk akal."
-
+    anon f_normal "How are you feeling?"
+    tina f_sad "Ugh, I forgot how much I hate morning sickness..."
+    anon f_worried "Pretty bad, huh?"
+    tina "It's ten times worse than it was with {b}Becca{/b}!"
+    tina "I guess, because I'm older now..."
+    anon "Yeah, that would make sense."
     jump tina_button_pregnant.choice
 # Decompiled by unrpyc: https://github.com/CensoredUsername/unrpyc

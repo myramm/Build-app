@@ -65,11 +65,8 @@ layeredimage somrak:
     group arms if_all 'b_dressed' auto variant 'dressed':
         attribute a_idle default 'somrak_arms_dressed_a_cane'
         attribute a_hand_panties "somrak_arms_dressed_a_hand_panties"
-
         attribute a_smell "somrak_arms_dressed_a_smell"
-
         attribute a_lick "somrak_arms_dressed_a_lick"    
-
 
 
 

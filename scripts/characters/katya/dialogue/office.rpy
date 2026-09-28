@@ -3,14 +3,11 @@ label katya_button_office:
 
     if had_sex:
         show anon a_wave with {'master': dissolve}
-        anon "Hei, {b}Katya{/b}!"
-
-        katya f_happy "Halo, {b}[firstname]{/b}."
-
+        anon "Hey, {b}Katya{/b}!"
+        katya f_happy "Hello, {b}[firstname]{/b}."
         show anon a_sides
         with {'master': dissolve}
-        katya "Anda datang untuk melihat {b}Nadya{/b}?"
-
+        katya "You come to see {b}Nadya{/b}?"
 
     elif not M_katya.once('chat'):
         jump katya_button_office.first
@@ -18,42 +15,36 @@ label katya_button_office:
 
         show anon f_worried with dissolve
         pause
-        anon "Halo lagi."
-
+        anon "Hello again."
         katya f_confused @ -m_talk "Hmm?"
-
-        katya f_normal "Oh halo."
-
+        katya f_normal "Oh, hello."
         show anon f_shy
 
     menu katya_button_office.choice:
-        "Jadi apa yang kamu lakukan di sana?" if not had_sex:
+        "So what are you doing there?" if not had_sex:
             jump katya_button_office.what
 
-        "Anda ingat saya?" if not had_sex:
+        "You remember me?" if not had_sex:
             jump katya_button_office.anon
 
-        "Bagaimana kabarmu?" if not had_sex:
+        "How are you holding up?" if not had_sex:
             jump katya_button_office.okay
 
-        "Bagaimana pekerjaanmu?" if had_sex:
+        "How's work?" if had_sex:
             jump katya_button_office.work
 
-        "Bahasa Inggris Anda menjadi cukup bagus." if had_sex:
+        "Your English is getting pretty good." if had_sex:
             jump katya_button_office.language
 
-        "Seks." if had_sex:
+        "Sex." if had_sex:
             jump katya_button_office.sex
-        "Sampai jumpa lagi.":
+        "See you later.":
 
             pass
 
-    anon "Saya mungkin harus menyerahkan Anda pada pekerjaan Anda."
-
-    katya f_normal "Ya, banyak yang harus dilakukan."
-
-    katya "Vodka membawa banyak uang!"
-
+    anon "I should probably leave you to your work."
+    katya f_normal "Da, much to do."
+    katya "Vodka bring lots of monies!"
     show katya f_normal_down
     hide anon
     with dissolve
@@ -61,54 +52,37 @@ label katya_button_office:
 
 
 label katya_button_office.anon:
-    anon "Jadi, apakah kamu ingat aku?"
-
+    anon "So do you remember me?"
     show katya f_normal
     pause
-    anon "Hari itu, ketika semua orang jahat terbunuh..."
-
-    anon "... Aku bersama orang-orang yang-"
-
-    katya f_happy "Ya, kamu selamatkan aku!"
-
-    katya "Ini selalu saya ingat."
-
+    anon "That day, when all the bad men got killed..."
+    anon "... I was with the guys who-"
+    katya f_happy "Da, you save me!"
+    katya "This I remember always."
     show anon f_happy
-    katya "Kamu orang baik!"
-
-    katya "Pria pemberani!"
-
+    katya "You are good man!"
+    katya "Brave man!"
     show anon a_rub f_shy_left with {'master': dissolve}
-    anon "Ahhh, astaga."
-
-    katya "aku akan menciummu..."
-
+    anon "Ahh, geez."
+    katya "I would kiss you..."
     show anon f_surprised
     show katya a_up f_shy with {'master': dissolve}
-    katya "... Tapi aku tidak ingin membuat {b}Nadya{/b} marah padaku."
-
+    katya "... But I'm not wanting make {b}Nadya{/b} angry with me."
     show anon a_sides f_shy
     show katya a_writing
     with {'master': dissolve}
-    anon "Oh, tidak... sungguh, tidak apa-apa!"
-
-    anon "Aku senang kalian aman sekarang."
-
-    katya f_happy "Ya, Amerika adalah tempat yang bagus."
-
-    katya "Saya sangat menyukainya."
-
-    anon "Itu bagus untuk didengar."
-
+    anon "Oh, no... really, it's fine!"
+    anon "I'm just glad you girls are safe now."
+    katya f_happy "Da, America is nice place."
+    katya "I like very much."
+    anon "That's good to hear."
     show katya f_happy_down
-    anon "Saya senang semuanya berhasil."
-
+    anon "I'm happy everything worked out."
     jump katya_button_office.choice
 
 
 label katya_button_office.cool:
-    anon "Dingin."
-
+    anon "Cool."
     pause
     show katya f_normal_down
     jump katya_button_office.choice
@@ -116,26 +90,17 @@ label katya_button_office.cool:
 
 label katya_button_office.first:
     show anon f_worried with dissolve
-    anon "Hei, um..."
-
+    anon "Hey, umm..."
     katya @ -m_talk "Hmm?"
-
     show anon a_wave f_shy with {'master': dissolve}
-    anon "... Hai, itu."
-
+    anon "... Hi, there."
     katya f_confused "Oh, uhh..."
-
-    katya "... Halo?"
-
+    katya "... Hello?"
     show anon a_sides with {'master': dissolve}
-    anon "Kamu {b}Katya{/b}, kan?"
-
-    katya f_normal @ -m_talk "MM."
-
-    katya "Ya?"
-
-    anon f_worried "Dingin."
-
+    anon "You're {b}Katya{/b}, right?"
+    katya f_normal @ -m_talk "Mmm."
+    katya "Da?"
+    anon f_worried "Cool."
     show katya f_confused
     pause
     show anon f_worried_surprised
@@ -143,219 +108,145 @@ label katya_button_office.first:
     show anon f_surprised_left_low
     pause
     show anon a_shy_neck f_shy_high with {'master': dissolve}
-    anon "Keren, keren, keren."
-
+    anon "Cool, cool, cool."
     pause
-    katya "Ehh, aku membantumu?"
-
+    katya "Ehh, I help you?"
     anon f_confused @ -m_talk "Hmm?"
-
     show anon a_sides f_worried with {'master': fastdissolve}
-    anon "Oh, tidak... Tidak."
-
-    anon f_shy "Aku hanya, sedang memahami keadaannya."
-
+    anon "Oh, no... No."
+    anon f_shy "I'm just, getting the lay of the land."
     show katya f_concerned
     pause
-    anon f_worried "Anda tahu, memeriksa semuanya?"
-
+    anon f_worried "You know, checking things out?"
     katya @ -m_talk "..."
-    anon f_shy "Mencoba bersikap ramah."
-
-    katya @ f_confused "Apakah {b}Nadya{/b} mengatakan bolehkah kamu berada di sini?"
-
+    anon f_shy "Trying to be friendly."
+    katya @ f_confused "Do {b}Nadya{/b} say is okay you be here?"
     anon f_confused "{b}Nadya{/b}?"
-
-    anon f_brag "Oh ya..."
-
-    anon "... Benar sekali."
-
-    anon f_brag_closed "Dia cukup memberiku kebebasan untuk mengendalikan tempat itu."
-
+    anon f_brag "Oh, yeah..."
+    anon "... Totally."
+    anon f_brag_closed "She's pretty much given me free rein of the place."
     show katya f_confused
-    anon f_flirt_left "Kami berhubungan baik satu sama lain."
-
-    anon f_flirt "Seperti, sungguh, {i}benar-benar{/i} istilah yang baik... jika Anda mengerti maksud saya?"
-
+    anon f_flirt_left "We're on good terms with one another."
+    anon f_flirt "Like, really, {i}really{/i} good terms... if you know what I mean?"
     show anon f_flirt_grin
     show katya f_confused
     pause
-    anon f_shy "Kami uhh..."
-
+    anon f_shy "We uhh..."
     pause
-    anon f_worried "... Kamu tahu?"
-
-    anon "Sudahlah."
-
+    anon f_worried "... You know what?"
+    anon "Never mind."
     pause
-    katya f_normal_down "Oke."
-
+    katya f_normal_down "Okay."
     jump katya_button_office.choice
 
 
 label katya_button_office.language:
-    anon f_normal "Bahasa Inggris Anda benar-benar meningkat."
-
-    katya "Terima kasih, {b}[firstname]{/b}."
-
-    katya "Aku punya lebih banyak waktu untuk belajar sekarang karena kamu memberikan {b}Nadya{/b} saat-saat seksi yang menyenangkan."
-
+    anon f_normal "Your English has really improved."
+    katya "Thanks, {b}[firstname]{/b}."
+    katya "I have much more time to study now that you're giving {b}Nadya{/b} such good sexy times."
     show anon a_idle f_shy of_blush
     with {'master': dissolve}
     anon "O-oh?"
-
     katya @ -m_talk "Mhmm."
-
-    katya "Senang juga mengistirahatkan rahangku."
-
-    katya f_concerned_down "Dia memiliki nafsu makan yang tidak pernah terpuaskan."
-
-    anon f_sad_down "Ya, katakan padaku sesuatu yang aku tidak tahu..."
-
+    katya "Is also nice to give my jaw a break."
+    katya f_concerned_down "She has insatiable appetites."
+    anon f_sad_down "Yeah, tell me something I don't know..."
     show katya f_confused
     pause
     show katya f_thinking_up
     pause
-    katya f_happy "Oke!"
-
+    katya f_happy "Okay!"
     show anon f_confused -of_blush
     with {'master': dissolve}
-    katya "Tahukah Anda bahwa negara saya menciptakan Tetris?"
-
+    katya "Did you know my country invents the Tetris?"
     show anon a_surprised_up_both f_worried_surprised
     with {'master': dissolve}
-    anon "Itu hanya kiasan, {b}Katya{/b}... Kamu sebenarnya tidak seharusnya-"
-
+    anon "That was just a figure of speech, {b}Katya{/b}... You're not actually supposed to-"
     show anon f_confused
     pause
-    anon f_skeptical "Tunggu, serius?!"
-
+    anon f_skeptical "Wait, seriously?!"
     show anon a_sides
     with {'master': dissolve}
-    anon "Tetris ditemukan di Rusia?"
-
-    katya "Apakah benar."
-
-    anon f_happy_surprised "Saya tidak mengetahuinya!"
-
-    katya f_proud "Heh, kamu terus belajar hal baru dari {b}Katya{/b}!"
-
-    anon f_normal @ f_happy "Ya, menurutku begitu."
-
+    anon "Tetris was invented in Russia?"
+    katya "Is true."
+    anon f_happy_surprised "I did not know that!"
+    katya f_proud "Heh, you continue to learn new things from {b}Katya{/b}!"
+    anon f_normal @ f_happy "Yeah, I guess so."
     jump katya_button_office.choice
 
 
 label katya_button_office.okay:
-    anon "Jadi kalian akur oke?"
-
-    katya f_happy "Lebih baik daripada oke!"
-
-    katya "{b}Nayda{/b} menjadikanku asisten pribadi."
-
-    anon f_happy "Ah, benarkah?"
-
-    katya "Untuk pertama kalinya dalam hidupku aku punya uang milikku..."
-
-    katya "... {b}Nadya{/b} mengajakku membeli pakaian bagus dan membelikanku apartemen."
-
-    anon "Itu luar biasa."
-
-    katya "Dan makanan di negara ini..."
-
-    katya "... Saya makan seperti ratu!"
-
-    anon "Ya, itulah Amerika untukmu."
-
-    katya "Seperti ehh, anjing keju cabai!"
-
-    anon @ f_happy_closed "Ah, ya..."
-
-    anon "... Itu bagus!"
-
-    katya "Oh, dengan bawang bombay dan sedikit acar di atasnya..."
-
+    anon "So you're getting along okay?"
+    katya f_happy "Better than okay!"
+    katya "{b}Nayda{/b} makes me personal assistant."
+    anon f_happy "Oh, really?"
+    katya "For first time in life I have monies that is mine..."
+    katya "... {b}Nadya{/b} takes me buy nice clothes and gets me apartment."
+    anon "That's wonderful."
+    katya "And the food in this country..."
+    katya "... I eat like queen!"
+    anon "Yeah, that's America for you."
+    katya "Like the ehh, chili cheese dog!"
+    anon @ f_happy_closed "Aww, yeah..."
+    anon "... That's a good one!"
+    katya "Oh, with the onion and little pickles on top..."
     katya "... Delicious!" (show_native="... Pal'chiki oblizhesh!")
-    katya "Dan kentang goreng Perancis tanpa dasar..."
-
-    katya f_surprised "... Tidak ada orang yang bisa makan sebanyak itu!"
-
+    katya "And the bottomless french fried potatoes..."
+    katya f_surprised "... No person can eat so much!"
     show katya a_wide
     with {'master': dissolve}
-    katya "Mereka pasti akan meledak!"
-
-    anon "Heh, ya... anjing cabai dan kentang goreng bisa mempunyai dampak yang {i}meledak-ledak{/i}, itu sudah pasti."
-
+    katya "They explode for certain!"
+    anon "Heh, yeah... chili dogs and french fries can have some {i}explosive{/i} repercussions, that's for sure."
     show katya a_writing f_happy
     with {'master': dissolve}
-    katya "Apa itu bantal?"
-
-    anon f_shy "Anda tahu, karena mereka membuat Anda..."
-
+    katya "What is cushions?"
+    anon f_shy "You know, because they make you..."
     anon "... Ehh..."
-
-    anon f_shy_left "... {size=-2}Kentut{/size}."
-
+    anon f_shy_left "... {size=-2}Fart{/size}."
     katya f_confused @ -m_talk "Hmm?"
-
     show anon a_behind_head f_shy_down
     with {'master': dissolve}
-    anon "Heh, uhh... sudahlah."
-
-    anon f_shy "Itu tidak penting."
-
-    katya "Tapi aku tidak bisa mendengarmu."
-
+    anon "Heh, uhh... nevermind."
+    anon f_shy "It's not important."
+    katya "But I could not hear you."
     show anon a_sides f_normal
     with {'master': dissolve}
-    anon "Oh bagus."
-
+    anon "Oh, good."
     pause
-    anon "Percayalah, itu yang terbaik."
-
-    katya f_happy @ f_laugh "hehe!"
-
-    katya "Kamu terkadang pria yang aneh!"
-
+    anon "Trust me, that's for the best."
+    katya f_happy @ f_laugh "Hehe!"
+    katya "You are sometimes strange man!"
     show katya f_happy_down
     jump katya_button_office.choice
 
 
 label katya_button_office.sex:
-    anon "Jadi, kamu pikir kita bisa ehh... kamu tahu?"
-
+    anon "So, you think we could ehh... you know?"
     katya f_happy "Sex?" (show_native="Seks?")
-    katya "Tentu saja."
-
+    katya "Of course."
     show anon a_surprised_up f_surprised
     with {'master': dissolve}
-    anon "Benar-benar?!"
-
-    katya "Heh, aku akan menyambut istirahatnya."
-
+    anon "Really?!"
+    katya "Heh, I would welcome the break."
     show anon a_sides f_happy
     show katya a_front b_dressed
     with {'master': dissolve}
-    katya "Dan nyonyaku mengatakan aku akan menjadi milikmu kapan pun kamu menginginkannya."
-
+    katya "And my mistress did say I am to be yours whenever you wish it."
     show anon a_surprised f_surprised
     with {'master': dissolve}
-    anon "Dia melakukannya?!"
-
+    anon "She did?!"
     show katya f_confused
     show anon f_surprised_teeth
     pause
     show anon a_shy_neck f_worried
     with {'master': dissolve}
-    anon f_worried "Maksudku, ya..."
-
+    anon f_worried "I mean, yes..."
     show anon a_sides
     with {'master': dissolve}
-    anon f_shy "... D-dia melakukannya."
-
+    anon f_shy "... S-she did."
     show katya a_undress1 f_happy
     with {'master': dissolve}
-    katya "Bagus."
-
+    katya "Good."
     show anon f_shy_low
     show katya a_undress2 b_dressed_boobs
     with {'master': dissolve}
@@ -363,14 +254,11 @@ label katya_button_office.sex:
     show anon f_flirt_grin
     show katya a_pull1 b_dressed_boobs
     with {'master': dissolve}
-    katya "Datang."
-
+    katya "Come."
     show katya a_pull2 b_dressed_boobs_pulled
     with {'master': dissolve}
-    katya "Kami bercinta di meja."
-
-    anon f_flirt "Manis!"
-
+    katya "We make fuck on desk."
+    anon f_flirt "Sweet!"
 
     call scene_katya_sex_desk_side.repeat
     $ unlock_scene('katya', '01_unlocked', variant='repeat')
@@ -379,45 +267,34 @@ label katya_button_office.sex:
     show katya a_pull2 b_dressed_disheveled_boobs_pulled f_happy_down
     show anon b_dressed_changing2
     with fade
-    anon "Fiuh, itu berhasil."
-
+    anon "Phew, that was a work out."
     show anon b_dressed_changing
     show katya a_pull1 b_dressed_disheveled_boobs
     with {'master': dissolve}
     katya @ -m_talk "Mhmm."
-
     show anon b_dressed a_sides
     show katya a_undress1 b_dressed_disheveled f_happy
     with {'master': dissolve}
-    katya "Istirahat yang sempurna."
-
+    katya "The perfect break."
     show katya a_fix_hair1 b_dressed_sit
     with {'master': dissolve}
-    katya "Tapi sekarang aku harus kembali melakukannya."
-
+    katya "But now I must get back to it."
     show katya a_fix_hair2 f_normal_down
     with {'master': dissolve}
-    anon f_worried "Ya baiklah."
-
+    anon f_worried "Yeah, okay."
     show katya a_writing
     with {'master': dissolve}
     pause
-    anon f_shy "Jangan bekerja terlalu keras, oke?"
-
+    anon f_shy "Don't work too hard, okay?"
     katya f_confused @ -m_talk "Hmm?"
-
-    katya "Pekerjaan ini tidak sulit."
-
+    katya "This work is not hard."
     anon @ f_worried "Ehh..."
-
-    anon "Sudahlah."
-
+    anon "Nevermind."
     show katya f_concerned
     pause
     show anon a_wave
     with {'master': dissolve}
-    anon "Sampai jumpa, {b}Katya{/b}."
-
+    anon "See ya, {b}Katya{/b}."
     hide anon
     with {'master': dissolve}
     katya f_normal "Farewell, {b}[firstname]{/b}." (show_native="Do svidaniya, {b}[firstname]{/b}.")
@@ -427,132 +304,92 @@ label katya_button_office.sex:
 
 
 label katya_button_office.what:
-    anon "Jadi apa yang kamu tulis?"
-
+    anon "So what are you writing?"
     katya "Accounting work." (show_native="Bukhgalterskaya rabota.")
     katya "For vodka business." (show_native="Dlya vodochnogo biznesa.")
     anon f_confused @ -m_talk "Hmm?"
-
-    anon "Saya tidak mengerti."
-
-    katya f_normal "Ehh, kami... menjual, vodka..."
-
+    anon "I don't understand."
+    katya f_normal "Ehh, we... sell, vodka..."
     show anon f_confused_low
     show katya a_paper
     with {'master': dissolve}
-    katya @ f_normal_low "... Dan simpan angka untuk dihitung."
-
-    anon f_normal "Oh, jadi kamu mencatat semua uangnya?"
-
+    katya @ f_normal_low "... And keep numbers for counting."
+    anon f_normal "Oh, so you're keeping track of all the money?"
     show katya a_writing f_happy
     with {'master': dissolve}
-    katya "Ya, uang."
-
-    katya "Sejak saya masih kecil, saya pandai berhitung."
-
-    katya "Di Rusia saya juga membantu ayah dengan uang."
-
-    anon "Tidak bercanda?"
-
+    katya "Da, monies."
+    katya "Since I was little girl, I am good with numbers."
+    katya "In Russia I help papa with monies also."
+    anon "No kidding?"
 
     menu:
-        "Kacang dingin.":
+        "Cool beans.":
             jump katya_button_office.cool
-        "Apa yang dia lakukan?":
+        "What did he do?":
 
             pass
 
-    anon "Apa yang dia lakukan?"
-
+    anon "What did he do?"
     katya f_confused @ -m_talk "Hmm?"
-
-    anon "Bisnis ayahmu."
-
-    anon "Anda menjual vodka tapi apa yang dia jual?"
-
+    anon "Your father's business."
+    anon "You sell vodka but what did he sell?"
     katya f_shy "Oh, umm... mushrooms." (show_native="Oh, umm... griby.")
     anon f_confused "Griby?"
-
     katya f_happy "Heh, da." (show_native="Heh, yes.")
-    katya f_thinking_up "Ehh, apa itu kata?"
-
+    katya f_thinking_up "Ehh, what is word?"
     pause
-    katya "rawa..."
-
+    katya "Marsh..."
     show anon a_thinking
     with {'master': dissolve}
     pause
     show anon a_point2 f_happy
     with {'master': dissolve}
-    anon "Marshmallow?"
-
+    anon "Marshmallows?"
     show katya f_confused
     pause
     show anon a_sides f_sad
     with {'master': dissolve}
     katya "Nyet." (show_native="No.")
-    katya f_thinking_up "Bukan rawa... itu ehh..."
-
-    katya "... M-bubur..."
-
+    katya f_thinking_up "Not marsh... it's ehh..."
+    katya "... M-mush..."
     show anon a_point2 f_happy
     with {'master': dissolve}
-    anon "Jamur?!"
-
+    anon "Mushrooms?!"
     show anon a_fist f_grin
     with {'master': dissolve}
-    katya f_happy "Ya, jamur!"
-
+    katya f_happy "Da, mushrooms!"
     show anon a_sides f_normal
     with {'master': dissolve}
-    anon "Jadi ayahmu menjual jamur?"
-
-    katya f_proud "Yah, dia menjual banyak barang yang dia ambil dari hutan belantara..."
-
-    katya "... Madu, beri, hewan untuk dimakan atau dijual kulitnya..."
-
-    katya "... Terkadang obat-obatan."
-
-    anon "Tidak bercanda?"
-
-    katya "Tapi jamur adalah best seller."
-
-    katya "Orang-orang di Rusia sangat menyukai jamur asin!"
-
-    anon f_confused "Saya tidak tahu."
-
-    katya "Cocok untuk camilan saat dicampur dengan vodka."
-
-    anon f_normal "Nah bagaimana dengan itu?"
-
+    anon "So your father sold mushrooms?"
+    katya f_proud "Well, he sells many things he take from wilderness..."
+    katya "... Honey, berry, animals for eating or selling the skins..."
+    katya "... Sometimes medicine."
+    anon "No kidding?"
+    katya "But mushroom is best seller."
+    katya "People in Russia like salty mushroom very much!"
+    anon f_confused "I had no idea."
+    katya "Is making for wonderful snack times when mix with vodka."
+    anon f_normal "Well how about that?"
     show katya f_happy_down
-    anon "Sepertinya benar Anda mempelajari sesuatu yang baru setiap hari."
-
+    anon "Guess it's true you learn something new every day."
     jump katya_button_office.choice
 
 
 label katya_button_office.work:
-    anon "Bagaimana kabarnya?"
-
+    anon "How's it going?"
     katya "Good!" (show_native="Khorosho!")
-    katya "{b}Nadya{/b} promosikan saya menjadi kepala penjualan!"
-
-    anon @ f_happy "Kamu tidak bilang?!"
-
-    katya "Tidak, itu benar!"
-
-    katya "Dia berkata, \"{b}Katya{/b} kamu punya hadiah untuk dijual kepada pebisnis Amerika yang gemuk.\""
-
+    katya "{b}Nadya{/b} promote me to head of sales!"
+    anon @ f_happy "You don't say?!"
+    katya "No, is true!"
+    katya "She says, \"{b}Katya{/b} you have gift for selling to fat American business man.\""
     show katya a_squeeze f_happy_down
     show anon f_surprised_low
     with {'master': dissolve}
-    katya "Tapi kenyataannya, aku hanya tersenyum dan memakai bra yang membenturkan payudaraku seperti saudara kandung yang sedang marah di antrean tiket makan."
-
+    katya "But truth is, I just smile and wear bra that smash breasts together like angry siblings in meal ticket line."
     show anon o_boner
     with {'master': dissolve}
     anon @ -m_talk "..."
-    katya a_writing f_proud "Kemudian mereka memesan tiga kali lipat."
-
+    katya a_writing f_proud "Then they triple order."
     pause
     show katya f_proud_teeth_low
     pause
@@ -561,16 +398,11 @@ label katya_button_office.work:
     show anon a_cover_boner f_shy
     show katya f_laugh
     with {'master': dissolve}
-    anon "Maaf, saya tidak mendengar apa pun setelah kata payudara."
-
-    katya f_proud "Mungkin aku juga menjualmu vodka, ya?"
-
-    anon "Heh, tidak... Tidak apa-apa."
-
-    anon "Aku baik-baik saja."
-
-    katya f_laugh "hehe!"
-
+    anon "I'm sorry, I didn't hear anything after the word breasts."
+    katya f_proud "Maybe I sell you vodka too, eh?"
+    anon "Heh, nah... That's alright."
+    anon "I'm good."
+    katya f_laugh "Hehe!"
     show anon a_idle -o_boner
     show katya f_happy
     with {'master': dissolve}

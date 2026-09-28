@@ -73,9 +73,7 @@ screen jenny_pool_sex_options():
     imagebutton:
         focus_mask True
         idle "sexb_changeoutfit_n"
-
         hover "sexb_changeoutfit_h"
-
         action Hide("jenny_pool_sex_options"), Function(M_jenny.toggle, "pool_clothes"), SetVariable("animated", False), Jump("jenny_pool_sex_loop")
         xpos 650
         ypos 700

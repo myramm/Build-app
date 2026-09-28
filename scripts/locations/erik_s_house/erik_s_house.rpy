@@ -26,9 +26,7 @@ label eriks_mailbox_item:
 
     elif game.mail["erik"] == "m_dad_letter":
         player_name "( I didn't know they received letters. I wonder who it's addressed to... )"
-
         player_name "( It's for {b}Erik{/b}. )"
-
         menu:
             "Leave it alone.":
                 pass
@@ -36,9 +34,7 @@ label eriks_mailbox_item:
 
                 show mailbox_letter at Position(xpos = 565, ypos = 768) with dissolve
                 player_name "( A letter from D?! )"
-
                 player_name "I'd better put this back."
-
                 hide mailbox_letter with dissolve
                 $ A_long_lost_father.unlock()
 

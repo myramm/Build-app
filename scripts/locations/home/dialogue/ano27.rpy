@@ -3,12 +3,9 @@ label ano27_home_home:
     show anon f_surprised a_sides with dissolve
     pause
     anon @ -m_talk "( What the- )"
-
     anon @ -m_talk "( Why is the door open? )"
-
     pause
     anon @ -m_talk "( That's strange... )"
-
     hide anon with dissolve
     return
 
@@ -22,9 +19,7 @@ label ano27_yumi_police_cruiser:
         flip
         xoffset -200
     anon @ -m_talk "( Where's {b}Yumi{/b} gone? )"
-
     anon @ -m_talk "( Something's wrong, I can feel it. )"
-
     hide anon with dissolve
     return
 
@@ -38,7 +33,6 @@ label ano27_tony_police_cruiser:
         flip
         xoffset -200
     anon @ -m_talk "( {b}Yumi{/b}'s lucky to be alive ... )"
-
     hide anon with dissolve
     return
 # Decompiled by unrpyc: https://github.com/CensoredUsername/unrpyc

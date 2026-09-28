@@ -7,69 +7,53 @@ label angelica_dialogue_ross_get_linens_pre:
 
 label angelica_dialogue_ross_get_linens:
     show player 2
-    player_name "Umm, aku sedang mengerjakan proyek seni untuk sekolah, dan kami memerlukan beberapa linen putih."
-
-    player_name "Temanku {b}Mia{/b} bilang kamu mungkin bersedia menyisihkan sedikit."
-
+    player_name "Umm, I'm doing an art project for school, and we need some white linens."
+    player_name "My friend {b}Mia{/b} said you might be willing to spare some."
     show player 1
     show ang 2
-    angelica "Hmm, {b}Mia{/b} mengirimmu?"
-
-    angelica "Dia seorang wanita muda yang taat."
-
-    angelica "Saya kira saya bisa memberi Anda beberapa jubah baptisan kami yang lama. Lagi pula, mereka sedang bergejolak..."
-
+    angelica "Hmm, {b}Mia{/b} sent you?"
+    angelica "She's such a devout young woman."
+    angelica "I suppose I could give you some of our old baptismal robes. They're fraying anyways..."
     show player 2
     show ang 1
-    player_name "Itu seharusnya bekerja dengan baik! Terima kasih banyak."
-
+    player_name "That should work just fine! Thank you so very much."
     show player 1
     show ang 2
-    angelica "Jika Anda ingin berterima kasih kepada saya, mulailah datang ke kebaktian pada hari Minggu."
-
+    angelica "If you want to thank me, start showing up for service on Sundays."
     show player 11
     show ang 1
     player_name "..."
     show ang 2
-    angelica "Sekarang tunggu di sini sementara aku pergi mengambilnya."
-
+    angelica "Now wait here while I go and get them."
     hide ang
     with dissolve
     show player 10
-    player_name "Hah, itu mudah."
-
+    player_name "Huh, well, that was easy."
     show player 11
     player_name "..."
     show player 10
-    player_name "Saya pikir pasti dia menginginkan sesuatu sebagai balasannya..."
-
+    player_name "I thought for sure she'd want something in return..."
     show player 11
     pause
     show ang 40 at right with dissolve
     pause
     show ang 41
-    angelica "Ini dia."
-
+    angelica "Here ya go."
     show ang 2
     show player 592
     with dissolve
-    angelica "Beritahu {b}Mia{/b} Saya berharap bisa menemuinya lebih awal untuk kebaktian berikutnya! Dia sudah lama terlambat untuk mengaku dosa."
-
+    angelica "Tell {b}Mia{/b} I expect to see her early for next service! She's long past due for confession."
     show player 593
     show ang 1
-    player_name "O-oke, aku akan memberitahunya."
-
+    player_name "O-okay, I'll let her know."
     show player 592
     angelica "Hmm!"
-
     hide ang
     hide player
     show player 591 at Position (xpos=0.25, ypos=1.0)
     with dissolve
-    player_name "... {b}Mia{/b} mungkin akan menanggung akibatnya dalam hal ini."
-
-    player_name "Sebaiknya saya mengembalikan {b}Seprai{/b} ini ke {b}Nona Ross{/b}."
-
+    player_name "... {b}Mia{/b} might end up fronting the bill on this one."
+    player_name "I'd better get these {b}Linens{/b} back to {b}Miss Ross{/b}."
     return
 
 label angelica_dialogue_change_pre:
@@ -77,36 +61,28 @@ label angelica_dialogue_change_pre:
     show player 10 at left
     show ang 1 at right
     with dissolve
-    player_name "Hai, {b}Suster Angelica{/b}."
-
+    player_name "Hi, {b}Sister Angelica{/b}."
     show player 5
     show ang 2
-    angelica "Kamu lagi."
-
-    angelica "Apa yang kamu inginkan?"
-
+    angelica "You, again."
+    angelica "What do you want?"
     show ang 1
     return
 
 label angelica_dialogue_change_talk:
     show player 10
-    player_name "Saya hanya ingin bicara."
-
+    player_name "I just want to talk."
     show player 5
     show ang 2
-    angelica "Diam."
-
+    angelica "Quiet."
     show ang 1
     show player 24
     player_name "Oh..."
-
     show ang 2
-    angelica "Jika kamu ingin bicara, datanglah mengunjungiku pada malam hari di kamarku..."
-
+    angelica "If you want to talk, come visit me at night in my chambers..."
     show ang 1
     show player 25
-    player_name "Oke, kalau begitu. Maaf."
-
+    player_name "Okay, then. Sorry."
     hide player
     hide ang
     with dissolve
@@ -114,55 +90,44 @@ label angelica_dialogue_change_talk:
 
 label angelica_dialogue_change_graveyard:
     show player 10
-    player_name "Bagaimana Anda mengakses kuburan?"
-
+    player_name "How do you access the graveyard?"
     show player 5
     show ang 2
-    angelica "Itu terlarang."
-
-    angelica "Meskipun terkunci, anak-anak nakal terus mencari cara untuk {b}menyelinap melalui pagar{/b}."
-
+    angelica "It is off-limits."
+    angelica "Although, it is locked and still pesky kids keep finding ways to {b}sneak through the fence{/b}."
     show ang 1
     show player 12
-    player_name "Tapi ayahku dimakamkan di sana."
-
+    player_name "But my dad is buried in there."
     show player 5
     angelica "..."
     show ang 2
-    angelica "Saya yakin dia benar."
-
+    angelica "I'm sure he is."
     show ang 1
     show player 12
-    player_name "Tapi-"
-
+    player_name "But-"
     show player 16
     show ang 2
-    angelica "Pergi. Anda membuang-buang waktu saya."
-
+    angelica "Begone. You are wasting my time."
     hide ang
     hide player
     show player 16
     with dissolve
     player_name "..."
     show player 12
-    player_name "Mungkin saya bisa menemukan {b}jalan melewati pagar{/b} juga."
-
+    player_name "Maybe I can find {b}a way through the fence{/b} too."
     hide player with dissolve
     return
 
 label angelica_dialogue_change_leave:
     show player 10
-    player_name "Sudahlah. Saya harus pergi."
-
+    player_name "Never mind. I have to go."
     show player 5
     angelica "..."
     show ang 2
-    angelica "Jangan buang waktuku seperti itu lagi."
-
+    angelica "Don't waste my time like that again."
     show ang 1
     show player 25
-    player_name "Kamu benar, aku minta maaf..."
-
+    player_name "You're right, I'm sorry..."
     hide player
     hide ang
     with dissolve
@@ -173,34 +138,26 @@ label angelica_dialogue_pre:
     show ang 2 at right
     show player 1 at left
     with dissolve
-    angelica "Apakah Anda dari paroki ini, anak muda?"
-
+    angelica "Are you from this parish, young man?"
     show ang 1
     show player 14
-    player_name "Hai, aku sedang-"
-
+    player_name "Hi, I was wo-"
     show ang 2
     show player 11
-    angelica "Apakah Anda dari paroki ini, anak muda?"
-
+    angelica "Are you from this parish, young man?"
     show ang 1
     show player 14
-    player_name "Uhh... Tidak juga."
-
+    player_name "Uhh... Not really."
     show ang 2
     show player 11
-    angelica "Apakah Anda percaya pada Tuhan?"
-
+    angelica "Do you believe in God?"
     show ang 1
     show player 10
-    player_name "Ya..."
-
+    player_name "Well..."
     show ang 2
     show player 11
-    angelica "Saya minta maaf."
-
-    angelica "Saya hanya bisa membantu mereka yang memiliki iman yang sama dengan Tuhan kita!"
-
+    angelica "I'm sorry."
+    angelica "I can only help those who share the faith of our Lord!"
     hide player
     hide ang
     with dissolve

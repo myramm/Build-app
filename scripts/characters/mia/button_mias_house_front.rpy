@@ -1,9 +1,9 @@
 label mia_dialogue_mias_house_front:
     call expression game.dialog_select("mia_dialogue_mias_house_front_intro")
     menu:
-        "Tentang pekerjaan rumah itu.":
+        "About that homework.":
             call expression game.dialog_select("mia_dialogue_mias_house_front_homework")
-        "saya lupa...":
+        "I forgot...":
 
             call expression game.dialog_select("mia_dialogue_mias_house_front_leave")
     $ game.main()

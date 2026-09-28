@@ -2,43 +2,31 @@ label harold_police_office_dialogue_mia_route:
     show old_harold 1 at right
     show player 14 at left
     with dissolve
-    player_name "Hai, {b}Harold{/b}!"
-
+    player_name "Hey, {b}Harold{/b}!"
     show player 13
     show old_harold 2
-    harold "Itu laki-lakiku!"
-
+    harold "There's my man!"
     show old_harold 1
     show player 14
-    player_name "Bagaimana kabarnya akhir-akhir ini?"
-
+    player_name "How are things going lately?"
     show player 13
     show old_harold 2
-    harold "Tidak pernah lebih baik! Keluarga kami adalah yang paling bahagia yang pernah ada!"
-
-    harold "{b}Helen{/b} benar-benar berubah. Sungguh... Berubah."
-
-    harold "Segalanya menjadi sangat panas di tempat tidur-"
-
+    harold "Never been better! Our family is the happiest it's ever been!"
+    harold "{b}Helen{/b} has really changed. Really... Changed."
+    harold "Things are red-hot in the bedr-"
     show old_harold 4
-    harold "Bagaimanapun, Anda tahu apa yang saya maksud."
-
+    harold "Anyway, you know what I mean."
     show old_harold 1
     show player 21
-    player_name "Heh heh... Ya, menurutku..."
-
+    player_name "Heh heh... Yeah, I suppose..."
     show player 13
     show old_harold 2
-    harold "Saya harus kembali bekerja."
-
-    harold "Jangan ragu untuk mampir ke rumah kapan saja ya, Nak!"
-
+    harold "I should get back to work."
+    harold "Feel free to stop by the house anytime, kiddo!"
     show old_harold 1
     show player 14
-    player_name "Terima kasih, {b}Harold{/b}!"
-
-    player_name "Sampai jumpa lagi."
-
+    player_name "Thanks, {b}Harold{/b}!"
+    player_name "See you later."
     return
 
 label harold_police_office_dialogue_helen_route_split:
@@ -51,95 +39,68 @@ label harold_police_office_dialogue_helen_route_split:
     with dissolve
     yumi "!!!"
     show player 5f
-    yumi "Oh! aku tidak melihatmu di sana..."
-
+    yumi "Oh! I didn't see you there..."
     show old_yumi 14f at Position (xpos=382) with dissolve
     show old_harold 53
-    harold "Jangan khawatir, {b}Yumi{/b}, itu hanya teman kecil putriku."
-
+    harold "Don't worry, {b}Yumi{/b}, it's just my daughter's little buddy."
     show old_harold 52
     show player 10f
-    player_name "Halo..."
-
+    player_name "Hello..."
     show player 5f
     show old_yumi 13f
-    yumi "Hai... Oh! Aku lupa aku punya sesuatu yang... Perlu aku urus di kantorku."
-
+    yumi "Hi... Oh! I forgot I have something I... Need to take care of in my office."
     hide old_yumi
     show old_harold 54
     with dissolve
     harold "..."
     show old_harold 55
-    harold "Maaf kamu harus melihatnya, Nak."
-
-    harold "{b}Yumi{/b} lebih merupakan pasangan yang siap sedia..."
-
-    harold "Kupikir aku akan mencoba dan mengajarinya beberapa hal..."
-
+    harold "Sorry you had to see that, kiddo."
+    harold "{b}Yumi{/b} is more of a hands on partner..."
+    harold "Thought I'd try and teach her a couple things..."
     show old_harold 54
     show player 11f
     player_name "..."
     show player 10f
-    player_name "Jadi Anda dan {b}Helen{/b}..."
-
+    player_name "So you and {b}Helen{/b}..."
     show player 5f
     show old_harold 55
-    harold "Lihat. Kapal itu telah berlayar, Nak. {b}Helen{/b} sepertinya sudah menerima perpisahan kami."
-
-    harold "Saya pikir sebaiknya saya melanjutkan juga."
-
-    harold "Sejujurnya."
-
-    harold "Saya tidak pernah sebahagia ini, dan saya mulai berkencan dengan orang lain."
-
+    harold "Look. That ship has sailed, kiddo. {b}Helen{/b} seems to have accepted our separation."
+    harold "I figured I'd better move on too."
+    harold "To tell you the truth."
+    harold "I've never been happier, and I've started seeing someone else."
     show old_harold 54
     show player 12f
-    player_name "Aku ingin tahu siapa..."
-
+    player_name "I wonder who..."
     show player 10f
-    player_name "Setidaknya kamu bahagia..."
-
+    player_name "At least you're happy..."
     show player 5f
     pause
     show player 10f
-    player_name "Namun bagaimana {b}Mia{/b} menangani hal ini? Apakah dia akan baik-baik saja?"
-
+    player_name "But how is {b}Mia{/b} handling this? Is she going to be alright?"
     show player 5f
     show old_harold 55
-    harold "Saya tidak akan menyerah pada {b}Mia{/b}."
-
-    harold "Saya mengunjunginya setiap hari. Dia gadis kecilku yang tangguh."
-
-    harold "Dia selalu begitu, setelah harus menghadapi {b}Helen{/b} dan aku."
-
-    harold "Dia akan baik-baik saja."
-
+    harold "I'm not giving up on {b}Mia{/b}."
+    harold "I visit her every day. She's my tough little girl."
+    harold "She always has been, after having to put up with {b}Helen{/b} and me."
+    harold "She'll be alright."
     show old_harold 54
     show player 12f
-    player_name "Bagus."
-
+    player_name "Good."
     show player 5f
     show old_harold 55
-    harold "Kamu anak yang baik, {b}[firstname]{/b}. Sekali lagi terima kasih karena telah peduli pada putriku."
-
-    harold "Saya menghargai Anda dan dia yang mencoba mendapatkan saya kembali dengan {b}Helen{/b}..."
-
-    harold "Hanya saja ada beberapa hal yang tidak berhasil..."
-
+    harold "You're a good kid, {b}[firstname]{/b}. Thanks again for caring about my daughter."
+    harold "I appreciate you and her trying to get me back with {b}Helen{/b}..."
+    harold "It's just some things just don't work out..."
     show old_harold 54
     show player 21f
-    player_name "Hehehe..."
-
-    player_name "Terima kasih kembali."
-
+    player_name "Heh heh..."
+    player_name "You're welcome."
     show player 5f
     show old_harold 55
-    harold "Jangan takut untuk mengunjungi saya jika ada sesuatu yang memerlukan bantuan."
-
+    harold "Don't be afraid to visit me if there is anything you need help with."
     show old_harold 54
     show player 36f with dissolve
-    player_name "Akan dilakukan. Selamat tinggal, {b}Harold{/b}."
-
+    player_name "Will do. Goodbye, {b}Harold{/b}."
     return
 
 label harold_police_office_dialogue_mia_harold_backup:
@@ -147,156 +108,115 @@ label harold_police_office_dialogue_mia_harold_backup:
     show player 23 at left
     with dissolve
     player_name "{b}Harold{/b}!!"
-
     show player 22
     show old_harold 6
-    harold "Apa yang terjadi? Apakah Anda menemukan {b}Yumi{/b}?"
-
+    harold "What's going on? Did you find {b}Yumi{/b}?"
     show old_harold 1
     show player 38 with dissolve
-    player_name "Ya! Tapi dia membutuhkan bantuanmu, sekarang!!"
-
+    player_name "Yes! But she needs your help, now!!"
     show player 3 with dissolve
     show old_harold 3
-    harold "Apa?!"
-
+    harold "What?!"
     show old_harold 1
     show player 10 with dissolve
-    player_name "Di dalam sel! {b}Yumi{/b}... Dia berjuang dengan seorang narapidana!!"
-
+    player_name "In the cell! {b}Yumi{/b}... She's struggling with an inmate!!"
     show player 5
     show old_harold 29
     harold "!!!"
     show old_harold 30 at right with dissolve
-    harold "Aku... Aku harus meminta bantuan lagi. Mungkin aku harus memberitahu {b}Earl{/b} dulu-"
-
+    harold "I... I should call for more backup. Maybe I should tell {b}Earl{/b} first-"
     show player 12
-    player_name "{b}Harold{/b}! Tidak ada waktu!"
-
+    player_name "{b}Harold{/b}! There's no time!"
     hide old_harold
     show old_harold 25 at Position (xpos=762)
     with dissolve
-    player_name "Anda harus mengendalikan situasi."
-
+    player_name "You have to take control of the situation."
     show player 11
     show old_harold 26
-    harold "Tapi aku harus memberitahu {b}Earl{/b} dulu..."
-
-    harold "...Aku sudah lama tidak berurusan dengan narapidana dan-"
-
+    harold "But I should tell {b}Earl{/b} first..."
+    harold "... I haven't dealt with inmates in a long time and-"
     show old_harold 25
     show player 15
-    player_name "{b}Yumi{/b} adalah partnermu dan membutuhkan bantuanmu!"
-
-    player_name "Anda harus pergi! SEKARANG!!!"
-
+    player_name "{b}Yumi{/b}'s your partner and needs your help!"
+    player_name "You have to go! NOW!!!"
     show player 16
     show old_harold 24
     harold "..."
     show old_harold 6
-    harold "Anda benar. Saya harus mengambil tindakan."
-
-    harold "Ayo pergi."
-
+    harold "You're right. I should take action."
+    harold "Let's go."
     return
 
 label harold_police_office_dialogue_mia_harolds_thoughts:
     show old_harold 1 at right
     show player 36 at left
     with dissolve
-    player_name "Hai, {b}Harold{/b}."
-
+    player_name "Hi, {b}Harold{/b}."
     show player 13 with dissolve
     show old_harold 2
-    harold "Halo lagi, Nak."
-
+    harold "Hello again, kiddo."
     show old_harold 1
     show player 14
-    player_name "Kupikir aku akan mampir dan melihat bagaimana makan malam bersama {b}Mia{/b} dan {b}Helen{/b}."
-
+    player_name "Thought I'd stop by and see how dinner was with {b}Mia{/b} and {b}Helen{/b}."
     show player 13
     show old_harold 6
-    harold "Oh... Umm... Kurasa tidak apa-apa. Makanannya sangat enak."
-
+    harold "Oh... Umm... It was alright I guess. The food was really good."
     show old_harold 1
     show player 10
-    player_name "Apakah menurut Anda segalanya... Menjadi lebih baik antara {b}Helen{/b}... Dan Anda?"
-
+    player_name "Do you think things have... Gotten better between {b}Helen{/b}... And you?"
     show player 5
     show old_harold 4
     harold "..."
     show old_harold 6
-    harold "Saya tahu {b}Mia{/b} sedang mencoba untuk mendapatkan {b}Helen{/b} dan saya kembali bersama."
-
-    harold "Anda telah membantunya juga. Kamu anak yang baik."
-
+    harold "I know {b}Mia{/b} is trying to get {b}Helen{/b} and I back together."
+    harold "You've been helping her too. You're a good kid."
     show old_harold 1
     harold "..."
     show old_harold 6
-    harold "Saya kira hal-hal antara {b}Helen{/b} dan saya lebih baik daripada saat Anda melihat kami saling bertengkar."
-
+    harold "I suppose things between {b}Helen{/b} and I are better than when you saw us erupt at each other."
     show old_harold 4
     pause
-    harold "Aku... Tapi aku tidak tahu..."
-
+    harold "I... Just don't know though..."
     show old_harold 1
     pause
     show player 10
-    player_name "Kenapa kamu tidak tahu?"
-
+    player_name "Why don't you know?"
     show player 5
     show old_harold 26
-    harold "Oh, Nak."
-
-    harold "Hubungan kami mungkin baik-baik saja sekarang, tapi kami bisa saja kembali bertengkar lagi."
-
-    harold "Untuk kali ini, aku berpikir mungkin aku akan lebih bahagia jika sendirian."
-
-    harold "Pernikahan saya mungkin lebih baik ditinggalkan."
-
-    harold "Mungkin... Jika {b}Helen{/b} benar-benar berubah selamanya."
-
-    harold "Ada kemungkinan bagi kita untuk kembali bersama."
-
+    harold "Oh, kiddo."
+    harold "We may be on good terms now, but we could be at each other's throats again."
+    harold "For once, I'm thinking I might be happier on my own."
+    harold "My marriage might be better left behind me."
+    harold "Maybe... If {b}Helen{/b} really changed for good."
+    harold "It might be possible for us to get back together."
     show old_harold 1
     show player 14
-    player_name "Aku... aku mengerti."
-
+    player_name "I... I understand."
     show player 13
     show old_harold 6
-    harold "Sebaiknya aku kembali bekerja. Saya baru saja mendapat terobosan lain dalam sebuah kasus."
-
+    harold "I'd better get back to work. I just had another breakthrough on a case."
     show old_harold 2
-    harold "Sampai jumpa lagi, {b}[firstname]{/b}."
-
+    harold "See you later, {b}[firstname]{/b}."
     show old_harold 1
     show player 14
-    player_name "Sampai jumpa, {b}Harold{/b}."
-
+    player_name "Bye, {b}Harold{/b}."
     show player 13
     hide old_harold with dissolve
     pause
     show player 14
-    player_name "( Kedengarannya seperti {b}Harold{/b} memberitahuku bahwa ada kemungkinan dia akan kembali dengan {b}Helen{/b}. )"
-
+    player_name "( Sounds like {b}Harold{/b}'s telling me there's a chance he'd get back with {b}Helen{/b}. )"
     show player 35
-    player_name "( Mungkin pelatihan {b}Sister Angelica{/b} sebenarnya membantunya dan {b}Harold{/b}. )"
-
+    player_name "( Maybe {b}Sister Angelica{/b}'s training is actually helping her and {b}Harold{/b}. )"
     show player 10
-    player_name "( Tapi... Dia nampaknya bahagia saat ini tanpa {b}Helen{/b}... )"
-
-    player_name "( {b}Mia{/b} akan hancur jika dia tidak kembali dengan {b}Helen{/b}. )"
-
+    player_name "( But... He sure seems happy right now without {b}Helen{/b}... )"
+    player_name "( {b}Mia{/b} would be devastated if he didn't get back with {b}Helen{/b}. )"
     show player 5
     player_name "..."
     show player 12
-    player_name "(Saya kira itu bukan terserah saya pada saat ini...)"
-
-    player_name "(Sebaiknya selesaikan membantu {b}Suster Angelica{/b}. )"
-
+    player_name "( I guess it's not really up to me at this point... )"
+    player_name "( Might as well finish helping {b}Sister Angelica{/b}. )"
     show player 35
-    player_name "(Apa yang dia inginkan lagi?)"
-
+    player_name "( What did she want again? )"
     hide player with dissolve
     return
 
@@ -306,68 +226,51 @@ label harold_police_office_dialogue_roxxy_ask_earl_release:
     show old_roxxy 1of at Position (xpos=400)
     show player 10 at left
     with dissolve
-    player_name "Hei, um..."
-
-    player_name "Ibu teman saya ditahan hari ini, dan kami perlu mencari tahu apa yang terjadi."
-
+    player_name "Hey, umm..."
+    player_name "My friend's mother was taken into custody earlier today, and we need to find out what's going on."
     show player 5
     show old_harold 2
     harold "Hmm?"
-
     show old_harold 2
-    harold "Oh, kamu pasti putri {b}Crystal{/b}!"
-
+    harold "Oh, you must be {b}Crystal{/b}'s daughter!"
     show old_harold 1
     show old_roxxy 33f
-    roxxy "... Ya."
-
+    roxxy "... Yes."
     show old_roxxy 32f
     show old_harold 2
-    harold "Sheesh, kamu adalah gambarannya di masa mudanya!"
-
+    harold "Sheesh, you're the spitting image of her in her younger days!"
     show old_harold 1
     roxxy "..."
     show player 10
-    player_name "Uhh, bisakah kamu memberi tahu kami mengapa kamu memegangnya?"
-
+    player_name "Uhh, could you tell us why you're holding her?"
     show player 5
     show old_harold 2
-    harold "Maaf, Nak."
-
-    harold "Penggerebekan narkoba sebesar ini jauh di atas nilai gajiku."
-
-    harold "Anda harus berbicara dengan kepala suku jika Anda menginginkan detailnya."
-
+    harold "Sorry, kiddos."
+    harold "A drug bust this big is way above my pay grade."
+    harold "You'll have to speak with the chief if you want the details."
     show old_harold 1
     show player 10
     player_name "... Oh."
-
-    player_name "Baiklah terima kasih."
-
+    player_name "Alright, thanks."
     show player 5
     hide old_harold with dissolve
     pause
     show old_roxxy 2c at center
     show old_roxxy 2c at Position (xoffset=-33)
     with dissolve
-    roxxy "Ya Tuhan... Mereka pasti telah menemukan seluruh simpanan {b}Clyde{/b}!"
-
+    roxxy "Oh my god... They must have found {b}Clyde{/b}'s entire stash!"
     show old_roxxy 2b at Position (xoffset=-33)
     show player 12
-    player_name "Berapa banyak sabu yang dimiliki sepupumu?!"
-
+    player_name "Just how much meth does your cousin have anyways?!"
     show player 5
     show old_roxxy 1j with dissolve
     roxxy "..."
     show old_roxxy 1l
-    roxxy "aku... uhh..."
-
-    roxxy "... Saya tidak yakin."
-
+    roxxy "I... Uhh..."
+    roxxy "... I'm not sure."
     show old_roxxy 1j
     show player 12
-    player_name "Baiklah, menurutku sebaiknya kita {b}bicara dengan ketua{/b}."
-
+    player_name "Well, I guess we'd best {b}go speak with the chief{/b}."
     hide player
     hide old_roxxy
     with dissolve
@@ -377,265 +280,200 @@ label harold_police_office_dialogue_pre:
     show player 1 at left
     show old_harold 2 at right
     with dissolve
-    harold "Oh, hei, itu kamu lagi. Butuh sesuatu?"
-
+    harold "Oh, hey, it's you again. Need something?"
     show old_harold 1
     show player 14
-    player_name "Hai, saya baru saja punya beberapa pertanyaan."
-
+    player_name "Hi, I just had some questions."
     show player 1
     return
 
 label harold_police_office_dialogue_wheres_mia:
     show player 14
-    player_name "Saya hanya ingin tahu: apakah Anda tahu di mana {b}Mia{/b} berada?"
-
+    player_name "I was just wondering: do you know where {b}Mia{/b} is?"
     show player 11
     show old_harold 2
-    harold "Maaf, saya tidak dapat membantu Anda saat ini; kami sedang sibuk dengan kasus baru..."
-
-    harold "Tapi, dia harusnya ada di sekolah atau di rumah."
-
+    harold "I'm sorry, I can't help you right now; we're busy with a new case..."
+    harold "But, she should be at school or at home."
     show old_harold 1
     show player 14
-    player_name "Oke. Terima kasih tuan!"
-
+    player_name "Okay. Thanks, sir!"
     return
 
 label harold_police_office_dialogue_the_chief:
     show player 12
-    player_name "Siapa ketuanya?"
-
+    player_name "Who's the chief?"
     show player 5
     show old_harold 2
-    harold "Oh, Anda ingin {b}Earl{/b}."
-
+    harold "Oh, you want {b}Earl{/b}."
     show player 13
-    harold "Dia ada di sana, di sisi lain kantor."
-
+    harold "He's right over there, on the other side of the office."
     show old_harold 1
     show player 14
-    player_name "Oke, terima kasih!"
-
+    player_name "Gotcha, thanks!"
     return
 
 label harold_police_office_dialogue_larry:
     show player 10
-    player_name "Apa yang perlu saya tanyakan {b}Larry{/b}?"
-
+    player_name "What did you need me to ask {b}Larry{/b}?"
     show player 5
     show old_harold 6
-    harold "{b}Larry{/b} tidak memberikan lokasi barangnya."
-
+    harold "{b}Larry{/b} isn't giving up the location of the goods."
     show old_harold 1
     show player 33
-    player_name "Oh ya!"
-
+    player_name "Oh yeah!"
     show player 12
-    player_name "Saya akan berbicara dengannya. Saya kenal istrinya."
-
-    player_name "Jika saya tidak bisa mengetahui lokasinya, mungkin saya bisa menghubungi {b}Ny. Johnson{/b} untuk membantu kami."
-
+    player_name "I'll talk with him. I know his wife."
+    player_name "If I can't get the location out of him, maybe I can get {b}Mrs. Johnson{/b} to help us."
     show player 5
     show old_harold 2
-    harold "Terima kasih, {b}[firstname]{/b}."
-
+    harold "Thanks, {b}[firstname]{/b}."
     return
 
 label harold_police_office_dialogue_thief:
     show player 10
-    player_name "Apa yang perlu saya lakukan jika saya melihat pencuri itu lagi?"
-
+    player_name "What did you need me to do if I see the thief again?"
     show player 5
     show old_harold 6
-    harold "Jika Anda memperhatikannya, hubungi saya langsung."
-
+    harold "If you notice him, give me a call directly."
     show old_harold 1
     show player 12
-    player_name "Tentu saja! Aku akan mengawasinya."
-
-    player_name "Dia selalu menyelinap ke rumah tetanggaku, {b}Ny. Johnson{/b}'s, halaman di malam hari."
-
+    player_name "Of course! I'll keep an eye out for him."
+    player_name "He is always sneaking into my neighbor's, {b}Mrs. Johnson{/b}'s, yard at night."
     show player 5
     show old_harold 6
-    harold "Ada juga laporan tentang dia di dekat taman. Jika Anda kebetulan melihatnya di sana, terus kabari saya."
-
+    harold "There have also been reports of him near the park as well. If you happen to notice him there, keep me in the loop."
     show old_harold 1
     show player 12
-    player_name "Oke, saya akan memeriksa petunjuknya juga."
-
+    player_name "Okay, I'll check there for clues as well."
     show player 5
     show old_harold 2
-    harold "Terima kasih, {b}[firstname]{/b}."
-
+    harold "Thanks, {b}[firstname]{/b}."
     return
 
 label harold_police_office_dialogue_donuts:
     show player 14
-    player_name "Apa {i}barang{/i} dari... Donat, err... Apakah kamu suka?"
-
+    player_name "What {i}kiiind{/i} of... Donuts, err... Do you like?"
     show player 11
     show old_harold 3
-    harold "Permisi?"
-
+    harold "Excuse me?"
     show player 14
     show old_harold 1
-    player_name "Hanya ingin tahu!"
-
+    player_name "Just wondering!"
     show player 11
     show old_harold 2
-    harold "Dengar, aku tidak punya waktu untuk ngobrol sekarang, aku sibuk dengan pekerjaan..."
-
-    harold "Mengapa kamu tidak lari ke sekolah, oke?"
-
+    harold "Look, I don't have time to chat right now, I'm swamped with work..."
+    harold "Why don't you run off to school, okay?"
     show player 10
     show old_harold 1
-    player_name "Tapi-"
-
+    player_name "But-"
     show player 5
     show old_harold 2
-    harold "Aku harus pergi, maaf."
-
+    harold "I have to go, sorry."
     return
 
 label harold_police_office_dialogue_donuts_wrong:
     show player 437 at left with fastdissolve
-    player_name "Aku salah, aku membawakanmu sesuatu."
-
+    player_name "I err, got you something."
     show player 1
     show player 436
     harold "..."
     show player 437
-    player_name "Ini untukmu!"
-
+    player_name "It's for you!"
     show old_harold 8
     show player 1
     with fastdissolve
-    harold "Kamu membawakanku sekotak... Donat?!"
-
+    harold "You brought me a box of... Donuts?!"
     show player 14
     show old_harold 7
-    player_name "Ya! Saya pikir mungkin Anda ingin mengemilnya di tempat kerja..."
-
+    player_name "Yeah! I thought maybe you'd like to snack on them at work..."
     show player 1
     show old_harold 9
     harold "Oh..."
-
-    harold "Sejujurnya, saya bukan penggemar berat hal semacam itu."
-
+    harold "I'm not a big fan of that kind, to be honest."
     show player 11
     show old_harold 10
     player_name "..."
     show old_harold 11
-    harold "Tapi saya salah... Saya menghargai pemikiran itu!"
-
-    harold "Saya yakin {b}Earl{/b} akan sangat senang memilikinya..."
-
+    harold "But I err... I appreciate the thought!"
+    harold "I'm sure that {b}Earl{/b} will be more than happy to have them..."
     show player 10
     show old_harold 10
-    player_name "Baiklah."
-
+    player_name "Alright."
 
     show player 5
     hide old_harold with dissolve
     pause
     show player 10
-    player_name "(Sial!)"
-
-    player_name "(Saya pasti membeli jenis yang salah.)"
-
-    player_name "(Saya harus memastikan saya mendapatkan bahan yang tepat...)"
-
+    player_name "( Damn! )"
+    player_name "( I must've bought the wrong kind. )"
+    player_name "( I have to make sure I get the right ingredients... )"
     return
 
 label harold_police_office_dialogue_donuts_correct:
     show player 437 at left with fastdissolve
-    player_name "Aku salah, aku membawakanmu sesuatu."
-
+    player_name "I err, got you something."
     show player 1
     show player 436
     harold "..."
     show player 437
-    player_name "Ini untukmu!"
-
+    player_name "It's for you!"
     show old_harold 8
     show player 1
     with fastdissolve
-    harold "Kamu membawakanku sekotak... Donat?!"
-
+    harold "You brought me a box of... Donuts?!"
     show player 14
     show old_harold 7
-    player_name "Ya! Saya pikir mungkin Anda ingin mengemilnya di tempat kerja..."
-
+    player_name "Yeah! I thought maybe you'd like to snack on them at work..."
     show player 1
     show old_harold 9
-    harold "Biarkan aku melihat..."
-
-    harold "Astaga... [harold_glaze]... Dengan... [harold_topping]?!"
-
+    harold "Let me see..."
+    harold "Holy... [harold_glaze]... With... [harold_topping]?!"
     show player 14
     show old_harold 7
-    player_name "Saya pikir Anda akan menyukainya!"
-
+    player_name "I thought you'd like those!"
     show player 1
     show old_harold 8
-    harold "Ini adalah favoritku... Bagaimana kabarmu..."
-
+    harold "These are my favorite... How did you..."
     show player 17
     show old_harold 44
-    player_name "Saya beruntung, saya kira."
-
+    player_name "I got lucky, I suppose."
     show player 1
     show old_harold 45
-    harold "{i}*Nomor nom*{/i}"
-
+    harold "{i}*Nom nom*{/i}"
     show old_harold 46
-    harold "Baiklah, Nak, kamu melakukannya dengan baik."
-
+    harold "Well, kid, you did well."
     show player 17
     show old_harold 45
-    player_name "Senang Anda menyukainya!"
-
+    player_name "Glad you like them!"
     show player 1
     harold "..."
     show player 11
     show old_harold 46
-    harold "Tunggu, sebelum kamu pergi..."
-
+    harold "Wait, before you go..."
     show player 1
-    harold "Aku tahu kamu dan {b}Mia{/b} suka... Nongkrong, dan sebagainya."
-
-    harold "Kamu tampak seperti anak yang baik, jadi aku akan berbicara dengan istriku dan melihat apakah dia bisa memberhentikannya sedikit."
-
+    harold "I know that you and {b}Mia{/b} like to... Hang out, and all that stuff."
+    harold "You seem like a good kid, so I'll talk to my wife and see if she can lay off a bit."
     show player 14
     show old_harold 45
-    player_name "Maksudmu, aku bisa mengunjunginya sekarang?"
-
+    player_name "You mean, I can visit her now?"
     show player 1
     show old_harold 46
-    harold "Tidak terlalu cepat!"
-
-    harold "Aku tidak mengatakan itu... Tapi... Kamu mungkin bisa menyelinap masuk seperti sebelumnya, dan aku akan mencoba mengalihkan perhatian istriku, oke?"
-
+    harold "Not too fast!"
+    harold "I didn't say that... But... You could probably sneak in like before, and I'll try and keep my wife distracted, alright?"
     show player 14
     show old_harold 45
-    player_name "Benar-benar?"
-
+    player_name "Really?"
     show player 1
     show old_harold 46
-    harold "Aku bilang aku akan mencoba, aku tidak bisa menjanjikan apa pun padamu."
-
+    harold "I said I'll try, I can't promise you anything."
     show player 14
     show old_harold 45
-    player_name "Terima kasih, {b}Harold{/b}."
-
+    player_name "Thanks, {b}Harold{/b}."
     show player 1
     show old_harold 46
-    harold "Baiklah, sekarang keluar dari sini sebelum bosku melihat kita membawa donat ini!"
-
+    harold "Alright, now get out of here before my boss sees us with these donuts!"
     show player 17
     show old_harold 45
     player_name "Haha."
-
     return
 # Decompiled by unrpyc: https://github.com/CensoredUsername/unrpyc

@@ -1,19 +1,16 @@
 label ano28_cash_liu_money:
     $ renpy.dynamic(bank=L_bank_lobby.is_here(M_liu))
 
-    anon "Aku punya sesuatu untukmu."
-
+    anon "I have something for you."
     show anon a_backpack f_looking_down:
         xoffset 190
     show liu f_confused_down
     with {'master': dissolve}
     liu @ -m_talk "Hmm?"
-
     show anon a_stashed_bag
     show liu f_confused
     with {'master': dissolve}
-    anon f_normal "Coba lihat."
-
+    anon f_normal "Check it out."
     show anon a_stashed_bag_show
     show liu f_confused_down
     with dissolve
@@ -23,69 +20,44 @@ label ano28_cash_liu_money:
     pause
     show anon f_grin
     liu f_surprised_down "!!!" with hpunch
-    liu f_shocked "Dari mana kamu mendapatkan ini?!"
-
-    anon f_normal "Itu adalah uang yang diambil {b}Ayah{/b} dari massa."
-
-    liu f_surprised "Anda menemukannya?!"
-
+    liu f_shocked "Where did you get this?!"
+    anon f_normal "It's the money {b}Dad{/b} took from the mob."
+    liu f_surprised "You found it?!"
     anon @ -m_talk "Mhmm."
-
-    anon "Petunjuk yang Anda berikan kepada saya mengarah langsung ke sana."
-
-    liu f_happy "Luar biasa, {b}[firstname]{/b}!"
-
-    anon "Saya tahu, benar!"
-
-    anon "Jadi saya ingin Anda mengambil apa yang diperlukan untuk melunasi hutang {b}[deb_name]{/b}."
-
-    liu f_normal "Saya bisa melakukan itu."
-
-    anon f_thinking "Lalu saya ingin Anda membagi sisanya."
-
-    liu "Oke."
-
-    anon f_shy "Masukkan setengahnya ke rekening bank saya..."
-
+    anon "That clue you gave me lead right to it."
+    liu f_happy "That's amazing, {b}[firstname]{/b}!"
+    anon "I know, right!"
+    anon "So I want you to take out what's needed to clear {b}[deb_name]{/b}'s debt."
+    liu f_normal "I can do that."
+    anon f_thinking "Then I want you to split the remainder."
+    liu "Okay."
+    anon f_shy "Put half in my bank account..."
     liu @ -m_talk "Mhmm."
-
-    anon f_normal "... dan separuh lainnya milikmu."
-
+    anon f_normal "... and the other half in yours."
     show liu a_mouth_cover f_surprised m_talk with dissolve
     pause
-    liu -m_talk "K-kamu tidak mungkin serius!"
-
-    anon "aku serius."
-
-    liu a_cover f_worried "Saya tidak bisa mengambil setengah uang Anda, {b}[firstname]{/b}."
-
-    anon f_brag "Tentu saja bisa."
-
+    liu -m_talk "Y-you can't be serious!"
+    anon "I'm serious."
+    liu a_cover f_worried "I can't take half your money, {b}[firstname]{/b}."
+    anon f_brag "Of course you can."
     show liu f_ashamed_down
-    anon "Aku tahu betapa pentingnya kamu bagi {b}Ayah{/b} sebelum dia meninggal..."
-
-    anon f_normal "... Dan Anda membutuhkannya."
-
+    anon "I know how important you were to {b}Dad{/b} before he died..."
+    anon f_normal "... And you need it."
     pause
     show liu a_sides f_nervous with {'master': dissolve}
-    anon "Ditambah lagi, aku tidak akan pernah bisa mencapai semua ini tanpamu."
-
-    liu "saya-"
-
+    anon "Plus, I never could have accomplished all this without you."
+    liu "I-"
     show liu f_nervous_lipbite
     pause
-    liu f_happy "Saya tidak tahu harus berkata apa."
-
-    anon "Anda tidak perlu mengatakan apa pun, {b}Liu{/b}."
-
+    liu f_happy "I don't know what to say."
+    anon "You don't have to say anything, {b}Liu{/b}."
 
     if bank:
         show anon f_confused
         show liu f_happy_down_back
         pause
         show anon a_up f_surprised with {'master': fastdissolve}
-        anon "Tunggu, apa yang kamu-"
-
+        anon "Wait, what are you-"
         show anon b_dressed_blocking:
             xoffset 130
         show liu b_dressed_jump
@@ -115,10 +87,8 @@ label ano28_cash_liu_money:
             xoffset 190
 
     with {'master': dissolve}
-    liu "Anda adalah pria paling luar biasa yang masih hidup!"
-
-    anon f_shy "Heh, serius... kamu pantas mendapatkannya."
-
+    liu "You are the most wonderful man alive!"
+    anon f_shy "Heh, seriously... you deserve it."
     hide anon
 
     if bank:
@@ -129,8 +99,7 @@ label ano28_cash_liu_money:
             xoffset 90
 
     with dissolve
-    liu "MM."
-
+    liu "Mmm."
     pause
     show anon a_sides b_dressed f_shy
     show liu a_sides f_happy
@@ -148,22 +117,15 @@ label ano28_cash_liu_money:
             xoffset -250
 
     with dissolve
-    anon "Jadi kamu akan mengurus semuanya untukku?"
-
-    liu "Y-ya, tentu saja!"
-
-    liu "Saya akan melakukan apa pun yang Anda ingin saya lakukan, {b}[firstname]{/b}."
-
-    anon "Terima kasih, {b}Liu{/b}."
-
+    anon "So you'll take care of everything for me?"
+    liu "Y-yes, of course!"
+    liu "I'll do anything you want me to, {b}[firstname]{/b}."
+    anon "Thanks, {b}Liu{/b}."
     pause
-    anon f_normal "Sekarang, permisi..."
-
-    anon "... Saya harus pergi dan menyampaikan {b}[deb_name]{/b} kabar baik."
-
+    anon f_normal "Now, if you'll excuse me..."
+    anon "... I have to go and tell {b}[deb_name]{/b} the good news."
     hide anon with dissolve
     pause
-    liu a_cover f_sexy "Ya Tuhan, dia pria yang sempurna..."
-
+    liu a_cover f_sexy "Oh my god, he is the perfect man..."
     return 'ano28'
 # Decompiled by unrpyc: https://github.com/CensoredUsername/unrpyc

@@ -24,8 +24,7 @@ label jiang_button_dialogue:
         call jiang_button_garage
     else:
 
-        jiang "Oh tidak! Apakah para pengembang juga lupa menghubungkan dialog ini?!"
-
+        jiang "Oh no! Did the devs forget to link up this dialogue too?!"
 
     $ game.main()
     return

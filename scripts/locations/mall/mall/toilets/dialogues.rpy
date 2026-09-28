@@ -1,16 +1,13 @@
 label mall_toilets_rump_n_cunt:
     scene mall_toilets_event_b
     player_name "( A body guard? )"
-
     player_name "( What is he doing in here... )"
-
     return
 
 label mall_toilets_stall:
     scene expression player.location.background_blur
     show player 1 at left with dissolve
     player_name "( Nothing in here... Just some crusty stains on the walls. )"
-
     hide player with dissolve
     return
 
@@ -28,11 +25,9 @@ label rump_toilets_stall_dialogue:
     show rump_n_cunt 01_02_03_04 zorder 2 at left
     with fade
     $ renpy.pause(1, hard=True)
-    rump "YA!"
-
+    rump "YES!"
     $ renpy.pause(1, hard=True)
     rump "YOU NASTY WOMAN!!!"
-
     $ renpy.pause(1, hard=True)
     return
 
@@ -50,18 +45,14 @@ label rump_toilets_stall_block_dialogue:
     player_name "( ... )"
     show player 38
     player_name "( Was that {b}Mayor Rump{/b}?! )"
-
     scene expression player.location.background_blur
     show player 22 at left
     show bodyguard
     with hpunch
     player_name "!!!"
-    bodyguard a_stop f_suspicious "Hei!"
-
+    bodyguard a_stop f_suspicious "Hey!"
     bodyguard "No one is allowed in here!"
-
     bodyguard "I need you to leave right NOW!!!"
-
     show bodyguard a_ear with dissolve
     scene black with fade
     return

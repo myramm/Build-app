@@ -3,16 +3,11 @@ label ano09_hint_tony:
     show tony a_frustrated
     show anon with dissolve:
         flip
-    tony "Kamu sudah mendapatkan roda baru, jagoan?"
-
-    anon "Tidak, saya masih mengerjakannya."
-
-    tony f_suspicious "Yah, jangan berlama-lama di sini..."
-
-    tony @ a_point "{b}Kunjungi dealer mobil dan lihat kisaran harga Anda{/b}!"
-
-    anon @ f_laugh "Ya, tuan!"
-
+    tony "You get some new wheels yet, champ?"
+    anon "No, I'm still working on it."
+    tony f_suspicious "Well, don't dilly-dally around here..."
+    tony @ a_point "{b}Get down to the car dealership and see what's in your price range{/b}!"
+    anon @ f_laugh "Yes, sir!"
     hide anon with dissolve
     return
 
@@ -20,23 +15,16 @@ label ano09_hint_tony:
 label ano09_wage_tony:
     show anon with dissolve:
         flip
-    anon "{b}Toni{/b}!"
-
-    anon "Saya mendapat roda baru seperti yang Anda inginkan."
-
-    tony @ a_frustrated "Oh ya?"
-
+    anon "{b}Tony{/b}!"
+    anon "I got new wheels like you wanted."
+    tony @ a_frustrated "Oh, yeah?"
     show tony with dissolve:
         unflip
         xoffset -400
-    tony f_suspicious @ a_whisper "'Eh, {b}Maria{/b}!!"
-
-    tony "Ayo lihat wahana baru {b}[firstname]{/b} bersama saya!"
-
-    maria "Dia punya yang lain?"
-
-    maria "aku ikut!"
-
+    tony f_suspicious @ a_whisper "'Ey, {b}Maria{/b}!!"
+    tony "Come check out {b}[firstname]{/b}'s new ride with me!"
+    maria "He got another one?"
+    maria "I'm comin'!"
     show tony with dissolve:
         flip
         xoffset 0
@@ -61,108 +49,74 @@ label ano09_wage_tony:
     show maria f_surprised behind coupe with {'master': dissolve}:
         flip
         xoffset -200
-    tony "Nah, itu mobil!"
-
-    maria "Santa Maria, Bunda, dan Yusuf..."
-
-    maria "Benda ini pasti menghabiskan banyak biaya!"
-
+    tony "Now that's a car!"
+    maria "Holy Mary, Mother, and Joseph..."
+    maria "This thing must have cost an arm and a leg!"
     show tony f_normal
-    anon "Tidak, itu tidak terlalu buruk."
-
-    anon "Gadis di dealer menjualnya kepada saya dengan setengah harga."
-
-    maria f_normal @ f_confused "Tidak bercanda?"
-
+    anon "Nah, it wasn't too bad."
+    anon "The girl at the dealership sold it to me for half price."
+    maria f_normal @ f_confused "No kiddin'?"
     show tony a_mc_hip_single
     show tony_arms_dressed_a_mc_shoulder_single behind coupe:
         flip
     with dissolve
     tony "Heh, attaboy!"
-
     show tony a_idle:
         unflip
         xoffset -400
     hide tony_arms_dressed_a_mc_shoulder_single
     with dissolve
-    tony "Itulah hasil bimbinganku, di sana..."
-
+    tony "That's my tutelage payin' off, right there..."
     show maria f_eyeroll
-    tony "Anak itu benar-benar hebat, kataku padamu."
-
+    tony "The kid's a chip off the ole' block, I tell ya."
     show maria f_normal
     show tony with dissolve:
         flip
         xoffset 0
-    tony "Apa yang mereka sebut keindahan ini?"
-
-    anon @ f_laugh "Kompensator Berlebihan."
-
+    tony "What do they call this beauty?"
+    anon @ f_laugh "The Overcompensator."
     tony f_suspicious @ -m_talk "..."
     maria f_normal @ f_laugh "Pfft, hahahaah!"
-
     show anon f_worried
-    maria "Ya, dia benar-benar hebat..."
-
+    maria "Yeah, he's a chip off the ole' block alright..."
     show tony with dissolve:
         unflip
         xoffset -400
-    tony "Oh, berhentilah bertingkah seolah kamu tidak terkesan!"
-
+    tony "Oh, stop actin' like you aren't impressed!"
     show tony f_normal a_frustrated with dissolve:
         flip
         xoffset 0
-    tony "Ahh, jangan pedulikan dia, dia hanya mengganggu keberanianku."
-
+    tony "Ahh, don't mind her, she's just bustin' my balls."
     show tony a_idle with dissolve
-    anon "Saya tidak mengerti leluconnya..."
-
-    tony @ f_smirk_wink a_point "Anda mungkin ingin memberikan nama yang lebih baik untuk monster ini."
-
+    anon "I don't get the joke..."
+    tony @ f_smirk_wink a_point "You might want to come up with a better name for this monster."
     anon "Oh?"
-
-    tony "Anda tahu, sesuatu seperti elang biru atau kuda jantan safir."
-
-    anon f_normal "Elang biru terdengar keren."
-
-    tony "Ya, benar."
-
+    tony "You know, something like blue falcon or sapphire stallion."
+    anon f_normal "Blue falcon sounds cool."
+    tony "Yeah, it does."
     show tony with dissolve:
         unflip
         xoffset -400
-    tony "Anda dengar itu?"
-
-    tony "Itu elang biru sekarang."
-
-    maria @ f_laugh "Ya, itu tentu saja sebuah kemajuan."
-
-    maria @ f_sexy "Kapan-kapan kamu harus mengajakku jalan-jalan, kan?"
-
-    tony "Itu ide yang bagus!"
-
+    tony "You hear that?"
+    tony "It's the blue falcon now."
+    maria @ f_laugh "Well, that's certainly an improvement."
+    maria @ f_sexy "You'll have to take me for a spin sometime, eh?"
+    tony "Now that's a great idea!"
     show tony with dissolve:
         flip
         xoffset 0
-    tony "Lihat jagoan, sudah kubilang para wanita akan menyukainya."
-
-    anon "Ya, kapan saja, {b}Maria{/b}."
-
-    tony "Ayo, kita rayakan dengan pizza dan cannolis!"
-
-    maria @ f_surprised "Oh, kamu berbagi cannolis sekarang?"
-
+    tony "See champ, I told ya the ladies would love it."
+    anon "Yeah, anytime, {b}Maria{/b}."
+    tony "C'mon, let's go celebrate over some pizza and cannolis!"
+    maria @ f_surprised "Oh, you're sharin' the cannolis now?"
     show tony a_mc_hip_single
     show tony_arms_dressed_a_mc_shoulder_single behind coupe:
         flip
     with dissolve
-    tony "Dengan orang ini, pasti!"
-
-    maria "Yah, kurasa kau sudah resmi menjadi bagian keluarga sekarang, Nak."
-
-    maria "Ayo pergi."
-
-    anon "Terima kasih teman-teman!"
-
+    tony "With this guy, you betcha!"
+    maria "Well, I guess you're officially part of the family now, kid."
+    maria "Let's go."
+    anon "Thanks you guys!"
     hide tony
     hide maria
     hide anon
@@ -176,10 +130,8 @@ label ano09_wage_tony:
         flip
     with slowfade
     show anon f_disgusted_wince behind coupe with dissolve
-    anon @ -m_talk "(Begitu banyak cannolis...)"
-
-    anon f_grin @ -m_talk "(Sangat bagus...)"
-
+    anon @ -m_talk "( So many cannolis... )"
+    anon f_grin @ -m_talk "( So good though... )"
     hide anon
     hide coupe
     with dissolve

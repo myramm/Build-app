@@ -7,21 +7,15 @@ label scene_roxxy_sex_bedroom:
     show roxxys_bed 9b at left
     with fade
     roxxy "Mmm, I can't believe I'm about to have sex with you..."
-
     roxxy "Not long ago, I would have laughed at the idea-"
-
     show roxxys_bed 10
     roxxy "!!!" with hpunch
     show roxxys_bed front 1 with {'master': dissolve}
     roxxy "HOLY SHIT!!!"
-
     roxxy "Nngghhh!!!"
-
     show roxxys_bed front 2 with {'master': dissolve}
     roxxy "It's so fucking big!!"
-
-    roxxy "aku tidak bisa-"
-
+    roxxy "I can't-"
     call scene_roxxy_sex_bedroom.animate
     with dissolve
     jump scene_roxxy_sex_bedroom.resume
@@ -70,91 +64,62 @@ label scene_roxxy_sex_bedroom.dialogue:
             roxxy "!!!{w=1}{nw}" with hpunch
             roxxy "AAAHHHHHH!!!{w=1}{nw}"
 
-
         elif random_count <= .33:
             roxxy "Ahh!{w=1}{nw}"
-
             pause
-            anon "Anda menyukainya?{w=1}{nw}"
-
+            anon "You like that?{w=1}{nw}"
             roxxy "Yess!!{w=1}{nw}"
-
 
         elif random_count <= .66:
             roxxy "Holy shit!{w=1}{nw}"
-
             anon "Too rough?!{w=1}{nw}"
-
             roxxy "NO!!!{w=1}{nw}"
-
             roxxy "Fuck me harder!{w=1}{nw}"
-
             anon "O-okay...{w=1}{nw}"
-
 
     elif animcounter == 1:
         if M_roxxy.get("roxxy trailer sex first"):
             roxxy "Oh shit!{w=1}{nw}"
-
             roxxy "Ooooh shit!!{w=1}{nw}"
-
             roxxy "AAAAHHHHH!!!{w=1}{nw}"
-
 
         elif random_count <= .33:
             roxxy "Ahhh! Fuck this is so good!!!{w=1}{nw}"
 
-
     elif animcounter == 2:
         if M_roxxy.get("roxxy trailer sex first"):
             roxxy "Mmmm, fuck!{w=1}{nw}"
-
             roxxy "Nngghhh!!!{w=1}{nw}"
-
 
         elif random_count <= .25:
             roxxy "Fuuuck meeee!!!{w=1}{nw}"
 
-
         elif random_count <= .50:
             roxxy "AAAAAHHHH!!!"
 
-
         elif random_count <= .75:
             roxxy "AAAHHHH!!! FUCK YES!!!{w=1}{nw}"
-
             roxxy "God, your dick is so good, {b}[firstname]{/b}!!!{w=2}{nw}"
-
         else:
 
             roxxy "{b}[firstname]{/b}!!!{w=1}{nw}"
 
-
     elif animcounter == 3:
         if M_roxxy.get("roxxy trailer sex first"):
             anon "You like me pulling your hair?!{w=2}{nw}"
-
             pause 1
             roxxy "YESSSS!{w=1}{nw}"
-
             roxxy "Ahh, call me a bitch!{w=2}{nw}"
-
             anon "Hmm?{w=1}{nw}"
-
             roxxy "Tell me I'm your bitch!{w=2}{nw}"
-
             anon "... You're my bitch?{w=2}{nw}"
-
             roxxy "Fuck yesss!!!{w=1}{nw}"
-
 
         elif random_count <= .33:
             roxxy "Ngghhh!! It's so fucking good!!!{w=1}{nw}"
 
-
         elif random_count <= .66:
             roxxy "Ngghhh!!! Fuuuuck!!!{w=1}{nw}"
-
 
     return
 
@@ -164,21 +129,14 @@ label scene_roxxy_sex_bedroom.switch:
     call scene_roxxy_sex_bedroom.animate
     with fade
     roxxy "Mmm, I fucking love it when you pull my hair!"
-
-    anon "Oh ya?"
-
+    anon "Oh yeah?"
     roxxy "Yessss!"
-
     anon "... Maybe I should pull it harder then!"
-
     pause
     roxxy "AAAHHHH!!! FUCK YES!!!"
-
     roxxy "God, your dick is so good, {b}[firstname]{/b}!!!"
-
     pause
     roxxy "Ngghhh!!! Fuuuuck!!!"
-
     label scene_roxxy_sex_bedroom.resume:
     call scene_roxxy_sex_bedroom.loop
 
@@ -191,15 +149,10 @@ label scene_roxxy_sex_bedroom.switch:
 
 label scene_roxxy_sex_bedroom.cum:
     roxxy "Oooh, I'm gonna cum!"
-
-    anon "Aku juga semakin dekat!"
-
-    roxxy "aku akan-"
-
+    anon "I'm getting close too!"
+    roxxy "I'm gonna-"
     anon "Cum for me, bitch!"
-
     roxxy "AAAAHHHH!!!"
-
     show roxxys_bed 10_10b
     anon "HNNGGG!!!{nw}{w=1.2}" with flash
     show roxxys_bed 10
@@ -221,15 +174,12 @@ label scene_roxxy_sex_bedroom.repeat:
     show roxxys_bed 9b at left
     with fade
     roxxy "Mmm, that's it {b}[firstname]{/b}... Give it to me!"
-
     show roxxys_bed 10
     roxxy "!!!" with hpunch
     show roxxys_bed front 1 with {'master': dissolve}
-    roxxy "Sial!"
-
+    roxxy "Fuuuuck!"
     show roxxys_bed front 2 with {'master': dissolve}
     roxxy "I swear, it gets bigger every time!"
-
     call scene_roxxy_sex_bedroom.animate
     with dissolve
     jump scene_roxxy_sex_bedroom.resume
@@ -247,53 +197,35 @@ label scene_roxxy_sex_bedroom_above.switch:
     scene location_trailer_bedroom_sex_back
     call scene_roxxy_sex_bedroom_above.animate
     with fade
-    roxxy "Ahhh!"
-
+    roxxy "Ahh!"
     pause
-    anon "Anda suka itu?"
-
+    anon "You like that?"
     roxxy "Yess!!"
-
     pause
     anon "Who's bitch are you?"
-
     roxxy "I'm your bitch, {b}[firstname]{/b}!"
-
-    anon "Lebih keras!"
-
+    anon "Louder!"
     roxxy "I'm your bitch!! I'm your bitch!!! Oh god, {b}[firstname]{/b}!"
-
     roxxy "I'M YOUR DIRTY LITTLE BITCH!!!"
-
     pause
     roxxy "Fuuuck meeee!!!"
-
     pause
     roxxy "Ngghhh!! It's so fucking good!!!"
-
     pause
     roxxy "Pull my hair!!"
-
     anon "Hmm?"
-
     roxxy "PULL MY HAIR!!"
-
     call screen scene_roxxy_sex_bedroom_controls(angle='above')
 
     if _return == 'switch':
         jump scene_roxxy_sex_bedroom.switch
 
     anon "Don't tell me what to do."
-
     anon "I'll pull your hair when I feel like pulling your hair."
-
     roxxy "Ngh, fuck that's hot!"
-
     pause
-    roxxy "Ya Tuhan!!"
-
+    roxxy "Oh, god!!"
     roxxy "I love your dick, {b}[firstname]{/b}!!"
-
     call scene_roxxy_sex_bedroom_above.loop
 
     if _return == 'switch':

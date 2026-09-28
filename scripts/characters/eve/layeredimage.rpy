@@ -37,50 +37,28 @@ layeredimage eve:
     group body auto:
         attribute b_dressed default
         attribute b_empty null
-        attribute b_undressing_10 "malam_tubuh_b_melepaskan pakaian_10[M_eve.biggus_dickus]"
-
-        attribute b_undressing_11 "malam_tubuh_b_melepaskan pakaian_11[M_eve.biggus_dickus]"
-
-        attribute b_undressing_12 "malam_tubuh_b_melepaskan pakaian_12[M_eve.biggus_dickus]"
-
-        attribute b_onbed_nude "malam_tubuh_b_onbed_nude[M_eve.biggus_dickus]"
-
-        attribute b_onbed_kiss "malam_tubuh_b_onbed_kiss"
-
-        attribute b_pajamas_kiss "malam_tubuh_b_piyama_ciuman"
-
-        attribute b_onbed_cuddle_naked_kiss "malam_tubuh_b_onbed_cuddle_naked_kiss"
-
-        attribute b_dressed_kiss "malam_tubuh_b_berpakaian_ciuman"
-
-        attribute b_dress_kiss "malam_tubuh_b_gaun_ciuman"
-
-        attribute b_undies_kiss "malam_tubuh_b_undies_kiss"
-
-        attribute b_back_insert "malam_tubuh_b_back_insert[M_eve.biggus_dickus]"
-
-        attribute b_back_cum "malam_tubuh_b_kembali_cum"
-
-        attribute b_front_pre "malam_tubuh_b_front_pre[M_eve.biggus_dickus]"
-
-        attribute b_front_insert "malam_tubuh_b_front_insert[M_eve.biggus_dickus]"
-
-        attribute b_front_after "malam_tubuh_b_depan_setelah[M_eve.biggus_dickus]"
-
-        attribute b_undies "malam_tubuh_b_undies[M_eve.biggus_dickus]"
-
-        attribute b_pajamas_bed_side_kiss "malam_tubuh_b_piyama_tempat tidur_samping_ciuman"
-
-        attribute b_naked_shower_kiss "malam_tubuh_b_telanjang_mandi_ciuman"
-
-        attribute b_naked_shower_pickup "malam_tubuh_b_naked_shower_pickup[M_eve.biggus_dickus]"
-
-        attribute b_naked_shower_pickup01 "malam_tubuh_b_naked_shower_pickup01[M_eve.biggus_dickus]"
-
-        attribute b_naked_shower_pickup02 "malam_tubuh_b_naked_shower_pickup02[M_eve.biggus_dickus]"
-
-        attribute b_towel_kiss "malam_tubuh_b_handuk_ciuman"
-
+        attribute b_undressing_10 "eve_body_b_undressing_10[M_eve.biggus_dickus]"
+        attribute b_undressing_11 "eve_body_b_undressing_11[M_eve.biggus_dickus]"
+        attribute b_undressing_12 "eve_body_b_undressing_12[M_eve.biggus_dickus]"
+        attribute b_onbed_nude "eve_body_b_onbed_nude[M_eve.biggus_dickus]"
+        attribute b_onbed_kiss "eve_body_b_onbed_kiss"
+        attribute b_pajamas_kiss "eve_body_b_pajamas_kiss"
+        attribute b_onbed_cuddle_naked_kiss "eve_body_b_onbed_cuddle_naked_kiss"
+        attribute b_dressed_kiss "eve_body_b_dressed_kiss"
+        attribute b_dress_kiss "eve_body_b_dress_kiss"
+        attribute b_undies_kiss "eve_body_b_undies_kiss"
+        attribute b_back_insert "eve_body_b_back_insert[M_eve.biggus_dickus]"
+        attribute b_back_cum "eve_body_b_back_cum"
+        attribute b_front_pre "eve_body_b_front_pre[M_eve.biggus_dickus]"
+        attribute b_front_insert "eve_body_b_front_insert[M_eve.biggus_dickus]"
+        attribute b_front_after "eve_body_b_front_after[M_eve.biggus_dickus]"
+        attribute b_undies "eve_body_b_undies[M_eve.biggus_dickus]"
+        attribute b_pajamas_bed_side_kiss "eve_body_b_pajamas_bed_side_kiss"
+        attribute b_naked_shower_kiss "eve_body_b_naked_shower_kiss"
+        attribute b_naked_shower_pickup "eve_body_b_naked_shower_pickup[M_eve.biggus_dickus]"
+        attribute b_naked_shower_pickup01 "eve_body_b_naked_shower_pickup01[M_eve.biggus_dickus]"
+        attribute b_naked_shower_pickup02 "eve_body_b_naked_shower_pickup02[M_eve.biggus_dickus]"
+        attribute b_towel_kiss "eve_body_b_towel_kiss"
 
 
     group mouth prefix 'm':
@@ -126,20 +104,13 @@ layeredimage eve:
     group face if_not 'm_talk' if_all 'b_desk_look_left' auto:
         offset (2, 70)
         xzoom -1
-        attribute f_normal "malam_wajah_f_normal_kanan"
-
-        attribute f_worried "malam_wajah_f_khawatir_kanan"
-
-        attribute f_wink "malam_wajah_f_wink_kanan"
-
-        attribute f_sad "malam_wajah_f_sad_kanan"
-
-        attribute f_happy "malam_wajah_f_happy_right"
-
-        attribute f_nervous "malam_wajah_f_gugup_kanan"
-
-        attribute f_confused "malam_wajah_f_bingung_kanan"
-
+        attribute f_normal "eve_face_f_normal_right"
+        attribute f_worried "eve_face_f_worried_right"
+        attribute f_wink "eve_face_f_wink_right"
+        attribute f_sad "eve_face_f_sad_right"
+        attribute f_happy "eve_face_f_happy_right"
+        attribute f_nervous "eve_face_f_nervous_right"
+        attribute f_confused "eve_face_f_confused_right"
 
 
     group face if_not 'm_talk' if_all 'b_gown_bed' auto:
@@ -220,20 +191,13 @@ layeredimage eve:
     group face if_all ['m_talk', 'b_desk_look_left'] auto variant 'talk':
         offset (2, 70)
         xzoom -1
-        attribute f_normal "malam_wajah_bicara_f_normal_kanan"
-
-        attribute f_worried "malam_wajah_bicara_f_khawatir_kanan"
-
-        attribute f_wink "malam_wajah_bicara_f_wink_kanan"
-
-        attribute f_sad "malam_wajah_bicara_f_sad_kanan"
-
-        attribute f_happy "malam_wajah_bicara_f_happy_right"
-
-        attribute f_nervous "malam_wajah_bicara_f_gugup_kanan"
-
-        attribute f_confused "malam_wajah_bicara_f_bingung_kanan"
-
+        attribute f_normal "eve_face_talk_f_normal_right"
+        attribute f_worried "eve_face_talk_f_worried_right"
+        attribute f_wink "eve_face_talk_f_wink_right"
+        attribute f_sad "eve_face_talk_f_sad_right"
+        attribute f_happy "eve_face_talk_f_happy_right"
+        attribute f_nervous "eve_face_talk_f_nervous_right"
+        attribute f_confused "eve_face_talk_f_confused_right"
 
 
     group face if_all ['m_talk','b_gown_bed'] auto variant 'talk':
@@ -349,8 +313,7 @@ layeredimage eve:
 
     group arms if_all 'b_pajamas' auto variant 'pajamas':
         attribute a_idle default 'eve_arms_pajamas_a_crossed'
-        attribute a_baby "malam_arms_piyama_a_baby_[M_eve.pregnancy.baby_gender]"
-
+        attribute a_baby "eve_arms_pajamas_a_baby_[M_eve.pregnancy.baby_gender]"
 
 
     group arms if_all 'b_pajamas_pregnant_bump' auto variant 'pajamas_pregnant_bump':
@@ -384,8 +347,7 @@ layeredimage eve:
 
 
     group arms if_all 'b_gown_bed' auto variant 'gown_bed':
-        attribute a_idle default "malam_arms_gown_bed_a_baby_[M_eve.pregnancy.baby_gender]"
-
+        attribute a_idle default "eve_arms_gown_bed_a_baby_[M_eve.pregnancy.baby_gender]"
 
 
     group arms if_all 'b_sidebed' auto variant 'sidebed':
@@ -419,8 +381,7 @@ layeredimage eve:
 
     group overlay if_any ['b_onbed_cuddle_naked','b_onbed_cuddle_naked_kiss'] auto variant 'onbed_cuddle_naked':
         attribute o_empty default null
-        attribute o_cum "malam_overlay_onbed_cuddle_naked_o_cum"
-
+        attribute o_cum "eve_overlay_onbed_cuddle_naked_o_cum"
 
     group overlay if_all 'b_sex_bj_pre' auto variant 'sex_bj_pre':
         attribute o_empty default null

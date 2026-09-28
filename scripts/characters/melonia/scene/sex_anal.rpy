@@ -40,64 +40,44 @@ label scene_melonia_sex_anal.dialogue(opt, rng=-1):
 
     if opt == 1:
         if rng < 0:
-            anon "Apakah kamu ingin aku berhenti?"
+            anon "Do you want me to stop?"
+            melonia "I dunno, this is weird..."
+            anon "Bad weird?"
+            melonia "N-no, just-"
 
-            melonia "Entahlah, ini aneh..."
-
-            anon "Aneh sekali?"
-
-            melonia "T-tidak, hanya-"
-
-
-        melonia "{i}*Terkesiap*{/i} Astaga!"
-
+        melonia "{i}*Gasp*{/i} Oh fuck!"
 
     elif opt == 2:
-        anon "Kalau begitu, kamu menyukainya?"
-
+        anon "You like it then?"
 
         if rng < 0:
-            melonia "Hah?"
-
+            melonia "Huh?"
 
         if rng < .35:
-            melonia "Entahlah... Mungkin..."
+            melonia "I don't know... Maybe..."
+            anon "It's a yes-or-no question, {b}Melonia{/b}."
 
-            anon "Ini pertanyaan ya atau tidak, {b}Melonia{/b}."
-
-
-        melonia "Grr, diam dan persetan denganku!"
-
-        anon "Baiklah."
-
+        melonia "Grr, shut up and fuck me!"
+        anon "Alright."
 
     elif opt == 3:
         melonia "FUUUUUUCK!!"
 
-
     elif opt == 4:
-        melonia "Rasanya seperti kamu akan mematahkan tulang punggungku!"
-
-        anon "Saya bisa berhenti jika Anda-"
-
-        melonia "Jangan berani-berani berhenti!"
-
+        melonia "It feels like you're going to break my fucking spine!"
+        anon "I can quit if you-"
+        melonia "Don't you dare stop!"
 
     elif opt == 5:
-        melonia "AAH!!"
-
-        melonia "Ini luar biasa!!"
-
+        melonia "AHH!!"
+        melonia "This is amazing!!"
 
     elif opt == 6:
-        melonia "Sial ya!!"
-
+        melonia "Fuck yes!!"
 
     elif opt == 7:
-        melonia "Tidak, itu dia!"
-
-        melonia "Gunakan aku seperti aku gadis kotor!!"
-
+        melonia "Ngh, that's it!"
+        melonia "Use me like the dirty girl I am!!"
 
     return
 
@@ -117,29 +97,19 @@ label scene_melonia_sex_anal.first:
     hide anim
     show melonia b_sex_insert_pullout f_smirk
     with {'master': dissolve}
-    melonia "A-apa yang kamu lakukan?"
-
-    anon "Mencoba sesuatu yang baru..."
-
+    melonia "W-what are you doing?"
+    anon "Trying something new..."
     pause
-    melonia f_surprised "Apakah kamu gila?!"
-
-    melonia "Benda itu tidak akan muat di pantatku!"
-
-    anon "Tentu saja itu akan terjadi."
-
-    melonia "Tidak itu-"
-
+    melonia f_surprised "Are you crazy?!"
+    melonia "That thing isn't going to fit in my ass!"
+    anon "Sure it will."
+    melonia "No it-"
     call scene_melonia_sex_anal.insert
     melonia "!!!" with hpunch
-    melonia "Sialan, {b}[firstname]{/b}!"
-
-    anon "Apakah kamu baik-baik saja?"
-
-    melonia "Tidak, aku tidak baik-baik saja!"
-
-    melonia "Penismu terlalu besar untuk-"
-
+    melonia "God damnit, {b}[firstname]{/b}!"
+    anon "Are you alright?"
+    melonia "No, I'm not okay!"
+    melonia "Your cock is way too big for-"
     call scene_melonia_sex_anal.animate
     with {'master': dissolve}
     melonia "!!!"
@@ -155,15 +125,12 @@ label scene_melonia_sex_anal.first:
 label scene_melonia_sex_anal.repeat:
     $ renpy.dynamic(anal='repeat')
 
-    melonia "Bisakah kamu, mungkin... Memasukkannya ke dalam pantatku lagi?"
-
+    melonia "Could you, maybe... Put it in my ass again?"
     hide anim
     show melonia b_sex_insert_pullout f_smirk
     with {'master': dissolve}
-    anon "Aku tahu kamu menikmatinya."
-
-    melonia "Mmm, diam dan lakukan!"
-
+    anon "I knew you enjoyed that."
+    melonia "Mmm, shut up and do it!"
     call scene_melonia_sex_anal.insert
     melonia "!!!" with hpunch
     call scene_melonia_sex_anal.animate

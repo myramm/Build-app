@@ -45,27 +45,19 @@ label scene_katya_sex_desk_top.switch:
     hide anim
     call scene_katya_sex_desk_side.insert
     with {'master': dissolve}
-    anon "Hei, kamu pikir kamu bisa membalikkan badan?"
-
-    katya "Punggungku?"
-
-    anon "Ya."
-
-    anon "Aku ingin melihat wajah cantikmu itu."
-
-    katya "Tentu saja."
-
+    anon "Hey, you think you could turn over on your back?"
+    katya "My back?"
+    anon "Yeah."
+    anon "I wanna see that beautiful face of yours."
+    katya "Of course."
 
     $ M_katya.set('sex speed', 1 / 8.)
 
     call scene_katya_sex_desk_top.stage
     with fade
-    anon "Sobat, kamu cantik."
-
-    katya "Heh, hentikan!"
-
-    katya "Kamu membuatku tersipu."
-
+    anon "Man, you're gorgeous."
+    katya "Heh, stop it!"
+    katya "You make me blush."
     call scene_katya_sex_desk_top.insert
     with {'master': dissolve}
     katya "!!!"

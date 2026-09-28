@@ -45,82 +45,56 @@ label scene_josie_sex_desk.loop:
 label scene_josie_sex_desk.dialogue(opt, rng=-1):
 
     if opt == 1:
-        josephine "Ya ampun, ini latihan sialan!"
-
+        josephine "Geez, this is a fucking workout!"
 
         if rng < .5:
-            anon "Benar-benar?"
+            anon "Really?"
 
-
-        anon "Saya cukup nyaman."
-
-        josephine "Hah hah... lucu sekali."
-
+        anon "I'm quite comfortable."
+        josephine "Hah hah... very funny."
 
     elif opt == 2:
-        josephine "Oke, sekarang aku mulai berkeringat..."
-
+        josephine "Okay, now I'm starting to sweat..."
 
         if rng < .5:
-            josephine "... Mungkin Anda harus menjadi yang teratas sebentar?"
+            josephine "... Maybe you should get on top for a while?"
 
-
-        anon "Sedikit keringat tidak akan membunuhmu."
-
+        anon "A little sweat isn't going to kill you."
         josephine "Grrraah."
 
-
     elif opt == 3:
-        anon "Fiuh, ya!"
-
-        anon "Pantulkan pantat itu, {b}Josephine{/b}!"
-
+        anon "Phew, yeah!"
+        anon "Bounce that ass, {b}Josephine{/b}!"
 
     elif opt == 4:
-        josephine "Anda tahu..."
-
-        josephine "... ini..."
-
-        josephine "... sungguh..."
-
-        josephine "...Ngh, {i}keras{/i}!"
-
-        anon "Heh... Ya, benar."
-
+        josephine "You know..."
+        josephine "... this is..."
+        josephine "... really..."
+        josephine "... Ngh, {i}hard{/i}!"
+        anon "Heh... Yeah, it is."
 
         if rng < .5:
-            josephine "Aku tidak sedang membicarakan penismu, {b}[firstname]{/b}!"
-
+            josephine "I'm not talking about your dick, {b}[firstname]{/b}!"
 
     elif opt == 5:
-        anon "Ya, itu saja."
-
-        anon "Kerjakan ayam besar itu!"
-
-        josephine "Ngh, sial!"
-
+        anon "Yeah, that's it."
+        anon "Work that big cock!"
+        josephine "Ngh, fuck!"
 
     elif opt == 6:
-        josephine "Saya harap Anda menghargai ini!"
-
-        anon "Oh, benar."
-
+        josephine "I hope you're appreciating this!"
+        anon "Oh, I am."
 
         if rng < .5:
-            anon "Terus berlanjut!"
-
+            anon "Keep going!"
 
     elif opt == 7:
-        josephine "Gan!"
-
-        josephine "Itu terus mencapai titik terendah."
-
-        anon "Saya bisa merasakannya."
-
+        josephine "Gah!"
+        josephine "It keeps bottoming out."
+        anon "I can feel it."
 
         if rng < .5:
-            josephine "Saya rasa saya tidak dapat mengambil lebih banyak lagi!"
-
+            josephine "I don't think I can take much more!"
 
     return
 
@@ -128,44 +102,33 @@ label scene_josie_sex_desk.dialogue(opt, rng=-1):
 label scene_josie_sex_desk.switch:
     $ M_josie.set('sex speed', 1 / 8.)
 
-    anon "Anda ingin menjadi yang teratas lagi?"
-
-    josephine "Tidak juga."
-
+    anon "You wanna get on top again?"
+    josephine "Not really."
     call scene_josie_sex.insert ('fast')
     show josephine -f_moan
     with {'master': dissolve}
-    anon "Ayolah?"
-
+    anon "C'mon, please?"
     pause
-    josephine "Uh, baiklah..."
-
+    josephine "Ugh, fine..."
 
     call scene_josie_sex_desk.stage
     with fade
-    anon "Kamu punya pantat kecil yang lucu!"
-
-    josephine "Hmm, oke?"
-
+    anon "You have such a cute little butt on you!"
+    josephine "Umm, okay?"
     call scene_josie_sex_desk.insert
     with {'master': dissolve}
     josephine "{i}*Ittthhh*{/i}"
-
-    anon "Persetan denganku!"
-
+    anon "Fuck me!"
     call scene_josie_sex_desk.animate
     with dissolve
     jump scene_josie_sex_desk.resume
 
 
 label scene_josie_sex_desk.inside:
-    josephine "Ayo, {b}[firstname]{/b}!"
-
-    josephine "Aku ingin merasakannya di dalam diriku!!"
-
+    josephine "Come on, {b}[firstname]{/b}!"
+    josephine "I wanna feel it inside me!!"
     pause
-    josephine "Ah, sial!!"
-
+    josephine "Ah, fuck!!"
     show josephine_sex_top_cum as anim
     anon "HNNGGG!!!" with flash
     show xray_under as xray:
@@ -179,31 +142,23 @@ label scene_josie_sex_desk.inside:
     pause
     hide xray
     anon "Haah... Haah..."
-
     josephine "Haah... Haah..."
-
     pause
-    anon "Saya pikir Anda bisa melepaskan saya sekarang."
-
-    josephine "Hehe, diamlah!"
-
+    anon "I think you can get off me now."
+    josephine "Heh, shut up!"
     show josephine_sex_top_pullout as anim
     show josephine sex_top
     show josephine_sex_top_after_dick1 as penis
     show josephine_sex_top_pullout_creampie1 as cum
     with {'master': dissolve}
-    josephine "Astaga, ini seperti mencoba memanjat tiang pagar."
-
+    josephine "Jesus, it's like trying to climb off a fence post."
     anon "Haha!"
-
     show josephine_sex_top_after_dick2 as penis
     show josephine_sex_top_pullout_creampie2 as cum
     show josephine_sex_top_pussy_closed as pussy behind penis
     with {'master': dissolve}
-    josephine "Sialan."
-
-    anon "Oh, itu pemandangan yang bagus."
-
+    josephine "Holy crap."
+    anon "Oh, that's a nice view."
     pause
 
     call call_pregnancy_minigame (None, M_josie)
@@ -211,11 +166,9 @@ label scene_josie_sex_desk.inside:
 
 
 label scene_josie_sex_desk.outside:
-    anon "Oh, ini dia!"
-
+    anon "Oh, here it comes!"
     pause
-    anon "Ini dia-"
-
+    anon "Here it-"
     show josephine_sex_top_fall as anim
     show josephine_sex_top_rope1 as rope1
     anon "HNNGGG!!!" with flash
@@ -228,13 +181,11 @@ label scene_josie_sex_desk.outside:
     josephine "Waaagh!" with vpunch
     show josephine f_annoyed_behind
     pause
-    josephine "{b}[firstname]{/b}, apa-apaan ini?"
-
+    josephine "{b}[firstname]{/b}, what the fu-"
     hide penis
     show josephine_sex_top_rope2 as rope2
     show josephine f_surprised_down_more
     anon "NGGHHH!!!"
-
     show josephine_sex_top_cumshot6 as rope2
     show josephine_sex_top_dick3 as penis
     show josephine f_angry_closed
@@ -244,20 +195,14 @@ label scene_josie_sex_desk.outside:
     show josephine_sex_top_after_dick2 as penis
     with {'master': dissolve}
     anon "Haah... Haah..."
-
     show josephine f_annoyed_down_blink
     with {'master': dissolve}
     pause
-    josephine @ f_annoyed_back_blink "Apakah kamu bercanda?!"
-
-    anon "Itu."
-
-    anon "Dulu."
-
-    anon "LUAR BIASA!"
-
-    josephine @ f_annoyed_back_blink "Pfft, bagimu mungkin..."
-
+    josephine @ f_annoyed_back_blink "Are you fucking kidding me?!"
+    anon "That."
+    anon "Was."
+    anon "AWESOME!"
+    josephine @ f_annoyed_back_blink "Pfft, for you maybe..."
     pause
     return 'outside'
 
@@ -268,51 +213,32 @@ label scene_josie_sex_desk.repeat:
 
     call scene_josie_sex_desk.stage
     with fade
-    josephine "Ya ampun, benda ini tidak mudah untuk diduduki..."
-
-    josephine "Di sini kita-"
-
+    josephine "Geez, this thing is not easy to sit on..."
+    josephine "Here we-"
     call scene_josie_sex_desk.insert
     with {'master': dissolve}
     josephine "{i}*Ittthhh*{/i}"
-
-    anon "Oh ya... bagus sekali!"
-
+    anon "Oh, yeah... that's nice!"
     call scene_josie_sex_desk.animate
     with dissolve
     pause
-    anon "Umm, haruskah kamu benar-benar menggunakan ponselmu saat kita melakukan ini?"
-
+    anon "Umm, should you really be on your phone while we're doing this?"
     josephine "Hmm?"
-
-    anon "Aku hanya khawatir kamu akan jatuh dari meja atau semacamnya..."
-
-    josephine "Oh, Tenang, potongan mangkuk..."
-
-    josephine "... Ini meja yang besar..."
-
-    josephine "... Aku tidak akan terjatuh!"
-
-    anon "Oh oke."
-
+    anon "I'm just worried you're gonna fall off the desk or something..."
+    josephine "Oh, Relax, bowl cut..."
+    josephine "... It's a big desk..."
+    josephine "... I'm not gonna fall of!"
+    anon "Oh kay."
     pause
-    anon "Apa yang kamu lakukan pada benda itu?"
-
-    josephine "Mengirim SMS dengan rekan lama saya di toko pakaian."
-
-    anon "Kamu mengirim pesan?!"
-
+    anon "What are you doing on that thing anyway?"
+    josephine "Texting with my old colleague at the clothing store."
+    anon "You're texting?!"
     josephine "Mhmm."
-
     pause
-    anon "Cukup yakin Anda tidak boleh mengirim pesan teks saat mengoperasikan alat berat."
-
-    josephine "Hehe, oh tolong!"
-
-    josephine "Penismu tidak dihitung sebagai alat berat, {b}[firstname]{/b}."
-
-    anon "Tidak?"
-
+    anon "Pretty sure you're not supposed to text while operating heavy machinery."
+    josephine "Heh, oh please!"
+    josephine "Your dick does not count as heavy machinery, {b}[firstname]{/b}."
+    anon "It doesn't?"
     pause
     call scene_josie_sex_desk.dialogue (1)
     pause
@@ -334,15 +260,11 @@ label scene_josie_sex_desk.repeat:
     if _return == 'switch':
         jump scene_josie_sex.switch
 
-    anon "Ya ampun..."
-
-    anon "... Aku semakin dekat!"
-
-    josephine "Lakukan!"
-
+    anon "Oh, man..."
+    anon "... I'm getting close!"
+    josephine "Do it!"
     pause
-    josephine "Cepatlah, aku tidak bisa meneruskan ini!"
-
+    josephine "Hurry, I can't keep this up!"
 
     if _return == 'inside':
         jump scene_josie_sex_desk.inside

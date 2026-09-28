@@ -1,91 +1,54 @@
 label con01_init_melonia:
-    anon f_worried "Bisakah saya berbicara dengan Anda tentang {b}Consuela{/b}?"
-
-    melonia f_confused "Siapa?"
-
-    anon "Anda tahu, pembantunya?"
-
+    anon f_worried "Could I talk to you about {b}Consuela{/b}?"
+    melonia f_confused "Who?"
+    anon "You know, the maid?"
     melonia @ -m_talk "..."
-    anon "Wanita yang membersihkan rumahmu."
-
-    melonia "Oh, maksudmu perempuan jalang gemuk dengan gigi berlubang itu?"
-
-    anon "{i}*Huh*{/i} Kurasa?"
-
-    melonia "Suamiku tidak menghamilinya, bukan?"
-
-    anon f_surprised "APA?!"
-
-    melonia f_annoyed "Karena aku akan membawanya pulang ke rumah sebelum dia bisa berkedip!"
-
-    anon "TIDAK!!"
-
-    anon "Tidak tidak tidak!"
-
+    anon "The woman who cleans your house."
+    melonia "Oh, you mean that chubby bitch with the teeth gap?"
+    anon "{i}*Sigh*{/i} I guess?"
+    melonia "My husband didn't get her pregnant, did he?"
+    anon f_surprised "WHAT?!"
+    melonia f_annoyed "Because I'll have her ass on a boat back home before she can blink!"
+    anon "NO!!"
+    anon "No, no, no!"
     show anon f_worried
-    melonia "Anda yakin?"
-
-    anon "Cukup yakin."
-
-    melonia f_normal @ f_eyeroll a_heart "Oke, fiuh..."
-
-    melonia "Jangan menakutiku seperti itu, {b}Hector{/b}!"
-
-    anon "M-maaf."
-
+    melonia "You're sure?"
+    anon "Pretty sure."
+    melonia f_normal @ f_eyeroll a_heart "Okay, phew..."
+    melonia "Don't scare me like that, {b}Hector{/b}!"
+    anon "S-sorry."
     pause
-    anon "Bolehkah saya bertanya mengapa Anda mempekerjakannya?"
-
-    melonia f_annoyed "saya tidak melakukannya."
-
-    melonia "Suami saya yang bodoh mempekerjakannya dan bukan karena kemampuannya membersihkan, saya dapat memberitahu Anda itu!"
-
-    anon "Mengapa kamu tidak menggantinya dengan orang lain saja?"
-
-    melonia f_normal @ f_eyeroll "Kayaknya sesederhana itu..."
-
-    melonia "Carikan saya seseorang yang mau melakukan pekerjaan rumah tangga dengan upah di bawah upah minimum dan tahan menghadapi suami saya yang terus-menerus melecehkan mereka."
-
-    anon "Jika ya, maukah Anda mengizinkan saya membawa {b}Consuela{/b} keluar dari sini?"
-
-    melonia f_confused "Anda ingin membawanya?"
-
-    anon "Ya."
-
+    anon "Can I ask why you hired her in the first place?"
+    melonia f_annoyed "I didn't."
+    melonia "My stupid husband hired her and not for her cleaning abilities, I can tell you that!"
+    anon "Why don't you just replace her with someone else?"
+    melonia f_normal @ f_eyeroll "Like it's that simple..."
+    melonia "Find me someone who will do housework for less than minimum wage and put up with my husband constantly harassing them."
+    anon "If I do, will you let me take {b}Consuela{/b} out of here?"
+    melonia f_confused "You want to take her?"
+    anon "Yes."
     pause
-    melonia "Untuk apa?!"
-
+    melonia "For what?!"
     pause
-    melonia f_smirk @ f_eyeroll "Anda tahu, sudahlah."
-
-    melonia "Aku tidak peduli, bawa dia."
-
+    melonia f_smirk @ f_eyeroll "You know what, never mind."
+    melonia "I don't care, take her."
     pause
-    melonia @ f_confused "Meskipun alasanmu menginginkan perempuan jalang jelek itu berada di luar jangkauanku..."
-
-    melonia "Dia bahkan tidak bisa berbahasa Inggris!"
-
-    anon f_normal "Saya akan {b}membawakan Anda penggantinya{/b}, jangan khawatir."
-
-    melonia @ f_eyeroll "Eh ya."
-
+    melonia @ f_confused "Though why you want that ugly bitch is beyond me..."
+    melonia "She can't even speak English!"
+    anon f_normal "I'll {b}bring you a replacement{/b}, don't worry."
+    melonia @ f_eyeroll "Uh huh."
     hide anon with {'master': dissolve}
-    melonia @ f_laugh "Bawakan aku leprechaun juga, selagi kamu melakukannya!"
-
+    melonia @ f_laugh "Bring me a leprechaun too, while you're at it!"
 
     $ player.go_to(L_rump_lobby)
     scene expression player.location.background_blur with None
     show anon f_thinking with dissolve
-    anon @ -m_talk "( Hmm, jadi aku perlu {b}menemukan seseorang{/b} yang akan membersihkan rumah ini dengan upah di bawah upah minimum dan tidak akan diganggu oleh walikota yang terus-menerus melecehkan mereka... )"
-
+    anon @ -m_talk "( Hmm, so I need {b}to find someone{/b} who will clean this house for less than minimum wage and won't be bothered by the mayor constantly harassing them... )"
     pause
-    anon f_sad_down @ -m_talk "(Saya tidak akan pernah menemukan orang seperti itu!)"
-
-    anon @ -m_talk "(Ini adalah rencana yang buruk.)"
-
+    anon f_sad_down @ -m_talk "( I'm never going to find someone like that! )"
+    anon @ -m_talk "( This was such a crappy plan. )"
     pause
-    anon f_worried @ -m_talk "( Mungkin {b}Saya harus berbicara dengan Ricky{/b} dan melihat apakah dia mengenal seseorang yang mungkin bersedia? )"
-
+    anon f_worried @ -m_talk "( Maybe {b}I should speak with Ricky{/b} and see if he knows anyone that might be willing? )"
     hide anon with dissolve
 
     $ M_consuela.trigger(T_con01_init)
@@ -93,29 +56,23 @@ label con01_init_melonia:
 
 
 label con01_plan_melonia:
-    melonia "Apakah kamu sudah menemukan pengganti pelayan menjijikkan itu?"
-
+    melonia "Did you find a replacement for that disgusting maid yet?"
 
     if venue == 'hottub':
         show anon f_worried_low
     else:
         show anon f_worried
 
-    anon "Tidak, belum."
-
-    melonia f_laugh "Semoga berhasil menemukan seseorang yang mau melakukan pekerjaan rumah tangga dengan upah di bawah upah minimum dan tahan menghadapi suami saya yang terus-menerus melecehkan mereka."
-
+    anon "No, not yet."
+    melonia f_laugh "Good luck finding someone who will do housework for less than minimum wage and put up with my husband constantly harassing them."
 
     if venue == 'hottub':
         show melonia f_normal_up
     else:
         show melonia f_normal
 
-    anon "Saya akan {b}mencari penggantinya{/b}."
-
-    anon @ a_point "Ingat saja, kamu berjanji akan mengizinkanku membawa {b}Consuela{/b} keluar dari sini jika aku melakukannya."
-
-    melonia @ f_eyeroll "Eh ya."
-
+    anon "I'll {b}find a replacement{/b}."
+    anon @ a_point "Just remember, you promised to let me take {b}Consuela{/b} out of here when I do."
+    melonia @ f_eyeroll "Uh huh."
     jump melonia_button_common.choice
 # Decompiled by unrpyc: https://github.com/CensoredUsername/unrpyc

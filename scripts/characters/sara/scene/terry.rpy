@@ -2,49 +2,32 @@ label scene_sara_terry:
     scene location_beach_tower_sex
     show location_beach_tower_sex_overlay as bench
     call scene_sara_terry.animation
-    terry "Oh, kamu harpy surgawi!"
-
+    terry "Oh, you heavenly harpy!"
     anon "( !!! )"
-    terry "Calypso sendiri akan iri dengan pesonamu."
-
+    terry "Calypso 'erself would be envious of yer charms."
     sara "Mhmm!"
-
-    anon "( {b}Kapten C Terry{/b}??? )"
-
+    anon "( {b}C-captain Terry{/b}??? )"
     pause
-    terry "Terlempar seperti lautan di tengah badai!"
-
-    sara "Jibe ho, sayangku!"
-
-    terry "Rak dayung kanan..."
-
+    terry "Tossin' like the sea in a storm!"
+    sara "Jibe ho, my love!"
+    terry "Rack the starboard oars..."
     $ M_sara.set('sex speed', 1. / 14)
-    terry "... Sulit untuk dipindahkan!"
-
+    terry "... Hard to port!"
     pause
-    anon "(Apa-apaan ini-)"
-
-    terry "Dia akan meledak!"
-
-    sara "Bawa dia ke pelabuhan, kapten!"
-
+    anon "( What the heck- )"
+    terry "She's about to blow!"
+    sara "Bring her into port, captain!"
     $ M_sara.set('sex speed', 1. / 16)
-    terry "Oh, dia sedang ejakulasi!"
-
+    terry "Oh, she's cummin'!"
     pause
-    terry "Muat senjatanya!"
-
-    anon "(Saya sangat senang untuk mereka tetapi ini adalah pembicaraan seks yang sangat aneh...)"
-
-    anon "(...Biarkan aku mengambil ini dan...)"
-
+    terry "Load the guns!"
+    anon "( I'm really happy for them but this is some super weird sex talk... )"
+    anon "( ... Let me just grab this and... )"
 
     scene location_beach_tower_floor
     with fade
-    terry "OOOHHH, AKU KLUB HAULIN'!!!"
-
-    anon "(... Oh oke, ini pasti waktunya berangkat!! )"
-
+    terry "OOOHHH, I'M CLUB HAULIN'!!!"
+    anon "( ... Oh kay, it's definitely time to go!! )"
     return
 
 

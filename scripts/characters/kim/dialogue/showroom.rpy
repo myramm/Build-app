@@ -1,157 +1,100 @@
 label kim_button_showroom:
     show anon f_worried with dissolve
-    kim "Apa yang kamu inginkan, anak malang?"
-
-    kim f_normal "aku tidak punya waktu untukmu..."
-
+    kim "What you want, poor boy?"
+    kim f_normal "I no have time for you..."
 
     menu kim_button_showroom.choice:
 
-        "Bolehkah saya melihat ponsel Anda?" if M_anon.between_states(S_ano07_mech, S_ano07_give):
+        "Can I see your phone?" if M_anon.between_states(S_ano07_mech, S_ano07_give):
             jump ano07_hint_kim
-        "Kamu sangat kasar, kamu tahu itu?":
+        "You're very rude, you know that?":
 
             jump kim_button_showroom.rude
 
-        "Karyawan bulan ini?" if M_kim.eotm:
+        "Employee of the month?" if M_kim.eotm:
             jump kim_button_showroom.employee
 
-        "Rusia?" if M_kim.russians:
+        "Russians?" if M_kim.russians:
             jump kim_button_showroom.russians
-        "Kamu payah. aku pergi.":
+        "You suck. I'm leaving.":
 
             pass
 
-    anon "Kamu payah. aku pergi."
-
-    kim "Ya, kamu pulang ke keluarga miskin."
-
-    kim "Kembalilah ketika Anda punya uang."
-
-    kim @ f_laugh "Rona rona rona!!"
-
+    anon "You suck. I'm leaving."
+    kim "Yes, you go home to poor famiry."
+    kim "Come back when you have money."
+    kim @ f_laugh "Hue hue hue!!"
     hide anon with {'master': dissolve}
-    kim @ a_wave "Sampai jumpa, anak malang!"
-
+    kim @ a_wave "Bye poor boy!"
     return
 
 
 label kim_button_showroom.employee:
-    anon f_worried @ f_skeptical "Karyawan bulan ini?"
-
-    kim @ a_counter_raised "Ya, {b}Kim{/b} adalah saresman mobil terbaik nomor satu!"
-
-    kim "Segera, saya memiliki prace ini."
-
-    anon "Saya meragukan hal itu."
-
-    kim @ f_curious "Oh, prese... Apa yang kamu tahu, anak malang?!"
-
-    anon @ f_skeptical "Aku tahu kamu brengsek dan orang-orang tidak menyukainya..."
-
-    kim @ f_laugh "Rona rona rona!"
-
-    kim "{b}Kim{/b} taklukkan rasa sayang terhadap mobil!"
-
-    kim "Tunggu dan lihat."
-
-    anon f_surprised "Menaklukkan?"
-
-    kim a_counter_raised "Ya, {b}Kim{/b} menjadi bos."
-
+    anon f_worried @ f_skeptical "Employee of the month?"
+    kim @ a_counter_raised "Yes, {b}Kim{/b} is number one, best car saresman!"
+    kim "Soon, I own this prace."
+    anon "I doubt that."
+    kim @ f_curious "Oh, prease... What you know, poor boy?!"
+    anon @ f_skeptical "I know that you're an asshole and people don't like that..."
+    kim @ f_laugh "Hue hue hue!"
+    kim "{b}Kim{/b} conquer car dearership!"
+    kim "Wait and see."
+    anon f_surprised "Conquer?"
+    kim a_counter_raised "Yes, {b}Kim{/b} become boss."
     show anon f_unimpressed
-    kim "Kemudian {b}Kim{/b} berekspansi ke jaringan nasional!"
-
-    kim "Tutupi seluruh bangsa dengan kasih sayang!!"
-
+    kim "Then {b}Kim{/b} expand into nationar chain!"
+    kim "Cover entire nation with dearerships!!"
     anon @ -m_talk "..."
-    kim "Bangsa pertama, lalu pranet!"
-
-    kim a_idle @ f_laugh "Rona rona rona rona!"
-
-    kim @ a_rub "{b}Kim{/b} jadilah kekasih TUHAN!!!"
-
-    anon "Apa-apaan ini?"
-
+    kim "First nation, then pranet!"
+    kim a_idle @ f_laugh "Hue hue hue hue!"
+    kim @ a_rub "{b}Kim{/b} become a dearership GOD!!!"
+    anon "What the fu-"
     kim @ f_laugh "HUE HUE HUE!!!"
-
     jump kim_button_showroom.choice
 
 
 label kim_button_showroom.rude:
-    anon f_worried "Kamu sangat kasar, kamu tahu itu?"
-
-    kim f_curious "Aww, kamu akan menangis, bocah malang?"
-
-    anon "T-tidak."
-
-    kim f_baby_cry a_cry "Boo hoo, aku sangat malang..."
-
-    anon f_sad "Diam!"
-
-    kim f_normal a_idle @ f_laugh "Rona rona rona!"
-
+    anon f_worried "You're very rude, you know that?"
+    kim f_curious "Aww, you gonna cry, poor boy?"
+    anon "N-no."
+    kim f_baby_cry a_cry "Boo hoo, me so poor..."
+    anon f_sad "Shut up!"
+    kim f_normal a_idle @ f_laugh "Hue hue hue!"
     show anon a_thinking f_thinking with dissolve
     pause
-    anon f_skeptical a_idle "Aku akan memberitahu atasanmu tentang caramu memperlakukanku!"
-
-    kim "Teruskan."
-
-    kim "Mereka tidak tertarik padamu."
-
+    anon f_skeptical a_idle "I'm gonna tell your boss about the way you're treating me!"
+    kim "Go ahead."
+    kim "They no risten to you."
     show anon f_worried
-    kim @ a_counter_raised "{b}Kim{/b} adalah penjual terbaik!"
-
-    kim "Karyawan bulan ini, selama lima bulan berturut-turut."
-
+    kim @ a_counter_raised "{b}Kim{/b} is best salesman!"
+    kim "Emproyee of month, for five months in row."
     $ M_kim.set('eotm', True)
-    kim "Aku menghasilkan banyak uang."
-
-    kim "Dasar anak malang yang bodoh."
-
-    anon "Kita akan lihat mengenai hal itu..."
-
-    kim @ f_curious "{i}*Menguap*{/i}"
-
-    kim "Anda mengaduk-aduk?"
-
-    kim @ a_wave "Pergilah, anak malang."
-
-    kim "Kamu membuat {b}Kim{/b} sangat menyeramkan."
-
+    kim "I make dearership rots of money."
+    kim "You just stupid poor boy."
+    anon "We'll see about that..."
+    kim @ f_curious "{i}*Yawn*{/i}"
+    kim "You stirr tarking?"
+    kim @ a_wave "Go away, poor boy."
+    kim "You make {b}Kim{/b} very sreepy."
     jump kim_button_showroom.choice
 
 
 label kim_button_showroom.russians:
-    anon f_worried "Saya dengar Anda punya pelanggan tetap Rusia yang membeli banyak mobil?"
-
-    kim f_curious "Di mana kamu mendengar ini, bocah malang?!"
-
-    anon "{b}Yosephine{/b}."
-
+    anon f_worried "I hear you have some Russian regulars that buy a lot of cars?"
+    kim f_curious "Where you hear this, poor boy?!"
+    anon "{b}Josephine{/b}."
     kim @ -m_talk "Hmm."
-
-    kim "Jadi bagaimana jika saya melakukannya?"
-
-    kim f_normal "Itu bukan urusanmu!"
-
-    anon "Baiklah, saya berharap Anda dapat memberi saya beberapa informasi tentang mereka?"
-
+    kim "So what if I do?"
+    kim f_normal "It's no business of yours!"
+    anon "Well, I was hoping you might be able to give me some information about them?"
     kim "Pfft!"
-
-    kim f_angry @ a_point "Anda berharap di satu sisi dan kotoran di sisi lain, lihat mana yang lebih dulu."
-
-    anon f_unimpressed "Ayolah, kawan."
-
-    anon "Ini sangat penting..."
-
-    kim "{b}Kim{/b} tidak ada apa-apanya!"
-
-    kim "Kamu pergi sekarang!"
-
+    kim f_angry @ a_point "You hope in one hand and shit in other, see which one firrs up first."
+    anon f_unimpressed "C'mon, man."
+    anon "This is really important..."
+    kim "{b}Kim{/b} terr you nothing!"
+    kim "You go away now!"
     anon @ -m_talk "..."
     hide anon with {'master': dissolve}
-    kim f_smirk a_wave "Sampai jumpa, anak malang!"
-
+    kim f_smirk a_wave "Bye bye, poor boy!"
     return
 # Decompiled by unrpyc: https://github.com/CensoredUsername/unrpyc

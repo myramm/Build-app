@@ -1,37 +1,24 @@
 label consuela_button_recovery:
     show anon with dissolve
-    consuela "Halo, ayah."
-
-    consuela "Kamu datang menemui sayang?"
-
+    consuela "Hola, papi."
+    consuela "You come see baby?"
 
     menu consuela_button_recovery.choice:
-        "Ya.":
+        "Yup.":
             pass
 
-    anon "Ya, bagaimana kabar kalian?"
-
-    consuela "Itu bagus."
-
-    consuela f_normal_down "Tidur banyak."
-
-    anon "Ya, aku yakin kamu kelelahan."
-
-    consuela "Ya, kelelahan."
-
+    anon "Yeah, how are you guys doing?"
+    consuela "Es good."
+    consuela f_normal_down "Sleep much."
+    anon "Yeah, I'm sure you're exhausted."
+    consuela "Si, exhausted."
     consuela f_normal "And hungry!" (show_native="¡Y hambriento!")
     anon @ -m_talk "Hmm?"
-
-    consuela "Eh, makanan?"
-
-    anon @ f_surprised "Oh, kamu lapar?"
-
-    consuela "Ya, lapar."
-
-    anon @ f_laugh "Aku akan memberi tahu perawatnya, oke?"
-
-    consuela "Terima kasih, ayah."
-
+    consuela "Ehh, food?"
+    anon @ f_surprised "Oh, you're hungry?"
+    consuela "Si, hungry."
+    anon @ f_laugh "I'll let the nurses know, okay?"
+    consuela "Gracias, papi."
     hide anon with dissolve
     return
 # Decompiled by unrpyc: https://github.com/CensoredUsername/unrpyc

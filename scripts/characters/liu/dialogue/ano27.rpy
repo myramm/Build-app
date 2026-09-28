@@ -1,46 +1,32 @@
 label ano27_lock_liu:
     show anon with dissolve
-    liu "Selamat datang di {b}Saga Finansial{/b}."
-
-    liu "Bagaimana saya bisa membantu-"
-
+    liu "Welcome to {b}Saga Financial{/b}."
+    liu "How can I help-"
     liu a_mouth_cover f_surprised "{b}[firstname]{/b}?!"
-
-    anon a_wave "Hai, {b}Liu{/b}."
-
+    anon a_wave "Hey, {b}Liu{/b}."
     show anon a_sides with {'master': dissolve}
-    liu a_nervous f_shocked "K-kamu seharusnya tidak berada di sini..."
-
-    liu "... Polisi masih mengintai, menyelidiki perampokan bank."
-
-    anon f_surprised "Oh benar."
-
-    anon f_worried "aku uhh..."
-
+    liu a_nervous f_shocked "Y-you shouldn't be here..."
+    liu "... The police are still lurking around, investigating the bank robbery."
+    anon f_surprised "Oh, right."
+    anon f_worried "I uhh..."
 
     menu ano27_lock_liu.choice:
-        "Hanya ingin memeriksamu.":
+        "Just wanted to check on you.":
             jump ano27_lock_liu.check
-        "Saya akan berbicara dengan Anda nanti.":
+        "I'll talk with you later.":
 
             pass
 
-    liu f_frightened "Cepat, sebelum mereka kembali!"
-
-    anon "Baiklah."
-
-    anon "Aku akan menemuimu setelah semua ini selesai, aku janji."
-
+    liu f_frightened "Quickly, before they come back!"
+    anon "Alright."
+    anon "I'll see you after this all blows over, I promise."
     hide anon with dissolve
     return
 
 
 label ano27_lock_liu.check:
-    liu f_frightened "Ya, ya, aku baik-baik saja..."
-
-    liu "... Tapi kamu harus pergi, cepat!"
-
-    liu "Saya tidak bisa membiarkan Anda ditangkap karena akun saya!"
-
+    liu f_frightened "Yes, yes, I'm fine..."
+    liu "... But you must go, hurry!"
+    liu "I can't have you getting arrested on my account!"
     jump ano27_lock_liu.choice
 # Decompiled by unrpyc: https://github.com/CensoredUsername/unrpyc

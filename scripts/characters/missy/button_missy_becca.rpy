@@ -9,17 +9,13 @@ label missy_becca_button_dialogue:
     elif M_roxxy.is_state(S_roxxy_spin_bottle):
         if player.has_item("goldschwagger"):
             show player 5f with dissolve
-            player_name "(Saya seharusnya tidak mengganggu mereka lagi.)"
-
-            player_name "( Saya akan menemui mereka {b}Sabtu sore di pantai{/b}. )"
-
+            player_name "( I shouldn't bother them anymore. )"
+            player_name "( I'll see them {b}Saturday afternoon at the beach{/b}. )"
             hide player with dissolve
         else:
             show player 5f with dissolve
-            player_name "(Saya seharusnya tidak mengganggu mereka lagi.)"
-
-            player_name "(Saya perlu {b}berbicara dengan Kapten Terry tentang hal GoldSchwagger ini{/b}. )"
-
+            player_name "( I shouldn't bother them anymore. )"
+            player_name "( I need to {b}speak with Captain Terry about this GoldSchwagger stuff{/b}. )"
             hide player with dissolve
         $ game.main()
     else:
@@ -31,13 +27,13 @@ label missy_becca_button_dialogue:
         else:
             call expression game.dialog_select("button_missy_becca_intro")
         menu:
-            "Kalian terlihat cantik." if M_roxxy.between_states(S_roxxy_ask_exam_copy_delay, S_roxxy_invite_to_bikini_contest):
+            "You girls look nice." if M_roxxy.between_states(S_roxxy_ask_exam_copy_delay, S_roxxy_invite_to_bikini_contest):
                 call expression game.dialog_select("button_missy_becca_look_nice")
-            "Aku hanya ingin menyapa." if M_roxxy.between_states(S_roxxy_ask_exam_copy_delay, S_roxxy_invite_to_bikini_contest):
+            "I just wanted to say hi." if M_roxxy.between_states(S_roxxy_ask_exam_copy_delay, S_roxxy_invite_to_bikini_contest):
                 call expression game.dialog_select("button_missy_becca_leave_rox11")
-            "Kalian berdua terlihat cantik hari ini." if M_roxxy.finished_state(S_roxxy_invite_to_bikini_contest):
+            "You both look beautiful today." if M_roxxy.finished_state(S_roxxy_invite_to_bikini_contest):
                 call expression game.dialog_select("button_missy_becca_look_beautiful")
-            "Sampai jumpa." if M_roxxy.finished_state(S_roxxy_invite_to_bikini_contest):
+            "I'll see you around." if M_roxxy.finished_state(S_roxxy_invite_to_bikini_contest):
                 call expression game.dialog_select("button_missy_becca_leave")
     $ game.main()
 # Decompiled by unrpyc: https://github.com/CensoredUsername/unrpyc

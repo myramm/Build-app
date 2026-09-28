@@ -3,143 +3,105 @@ label trailerpark_roxxy_go_to_picnic:
     show player 13 at left
     show old_roxxy 1b at right
     with dissolve
-    roxxy "Itu dia!"
-
+    roxxy "There you are!"
     roxxy "I was worried you wouldn't come..."
-
     show old_roxxy 1
     show player 14
     player_name "Heh, I said I was coming, didn't I?"
-
     player_name "I've never had a picnic before..."
-
     show player 13
     show old_roxxy 2
     roxxy "Really? Like... Never?"
-
     show old_roxxy 1
     show player 14
     player_name "Never ever."
-
     show player 13
     show old_roxxy 1b
     roxxy "Heh, my mom and I used to have picnics sometimes when I was younger."
-
     roxxy "You know, back before she started drinking all the time."
-
     show old_roxxy 1
     show player 14
     player_name "That sounds really nice."
-
     show player 13
     show old_roxxy 1b
-    roxxy "... Ya."
-
+    roxxy "... Yeah."
     show old_roxxy 1
     show player 14
     player_name "Well, thanks for inviting me over!"
-
     player_name "I've been looking forward to this all day!"
-
     show player 13
     roxxy "..."
     show player 14
     player_name "So what's on the menu?"
-
     show player 13
     show old_roxxy 89b with dissolve
     roxxy "Take a look..."
-
     show player 660
     show old_roxxy 1
     with dissolve
     pause
     show player 661 with dissolve
     player_name "Ooh, peanut butter and jelly!"
-
     show player 662
-    player_name "Bagus!"
-
+    player_name "Nice!"
     show player 663
     show old_roxxy 1l with dissolve
     roxxy "... Yeah, sorry. I told you I'm not much of a cook."
-
     show old_roxxy 1k
     show player 662
-    player_name "Apa yang kamu bicarakan?"
-
+    player_name "What are you talking about?"
     player_name "These look great!"
-
     show player 663
     show old_roxxy 1l
     roxxy "Heh, shut up..."
-
     show old_roxxy 1k
     show player 662
-    player_name "aku serius!"
-
+    player_name "I'm serious!"
     player_name "Blueberry jelly?"
-
     player_name "Now that's classy!"
-
     show player 663
     show old_roxxy 4 with dissolve
-    roxxy "Ha ha ha!"
-
+    roxxy "Hahaha!"
     show old_roxxy 1h
     roxxy "You always know how to make me laugh, {b}[firstname]{/b}!"
-
     show old_roxxy 1g
     player_name "..."
     show old_roxxy 1h
     roxxy "I'm not used to hanging out with guys like you."
-
     show old_roxxy 1g
     show player 661
     player_name "Guys like me?"
-
     show player 663
     show old_roxxy 1h
     roxxy "You know, funny guys."
-
     show old_roxxy 1g
     player_name "..."
     show old_roxxy 2
     roxxy "... Or guys I can have an actual conversation with, for that matter."
-
     show old_roxxy 1g
     show player 662
     player_name "So, it's a good thing?"
-
     show player 663
     show old_roxxy 4
     roxxy "Yes, it's a good thing!"
-
     show old_roxxy 1h
     roxxy "Hehe, I have fun when I'm hanging out with you."
-
     show old_roxxy 1g
     show player 662
     player_name "Yeah, I have fun hanging out with you too, {b}Roxxy{/b}."
-
     show player 663
     player_name "..."
     roxxy "..."
     show player 662
     player_name "It's so peaceful out here."
-
     show player 663
     show old_roxxy 1b
     roxxy "Yeah, I love it."
-
     roxxy "I can't wait to show you the sky after dark, you can see every star in the sky out here."
-
     roxxy "... I brought a blanket, let's sit down and eat!"
-
     show old_roxxy 1b
     show player 662
     player_name "Sounds great! Let me help you."
-
     hide player
     hide old_roxxy
     with dissolve
@@ -165,29 +127,23 @@ label trailerpark_roxxy_go_to_picnic:
     show player 10 at left
     with fade
     player_name "Was it supposed to rain tonight?"
-
     show player 5
     show old_roxxy 2c
     roxxy "I didn't think so!"
-
     show old_roxxy 2b
     show player 11
     show rain
     pause
     roxxy "..."
     show old_roxxy 3
-    roxxy "Sial."
-
+    roxxy "Shit."
     show old_roxxy 3d
     show player 17
     player_name "Hahaha, don't worry about it!"
-
     show player 14
     player_name "We should get inside!"
-
     show old_roxxy 2
     roxxy "Yeah, c'mon!"
-
     hide old_roxxy
     hide player
     with dissolve
@@ -218,60 +174,44 @@ label trailerpark_roxxy_go_to_picnic:
     show rain
     with fade
     roxxy "Ghuaahh!!"
-
     show player 10f
-    player_name "Kamu baik-baik saja?"
-
+    player_name "You okay?"
     show player 5f
     roxxy "Fffuuuu-"
-
     show old_roxxy 90cf
     roxxy "... I twisted my ankle!"
-
     show old_roxxy 90f
     roxxy "Ahh, that really hurts!"
-
     show old_roxxy 90bf
     roxxy "..."
     show old_roxxy 90cf
     roxxy "HAHAHAHA!!!"
-
     show old_roxxy 90bf
     show player 10f
     player_name "... What?"
-
     show player 5f
     show old_roxxy 90cf
     roxxy "Your face! It's covered in mud!"
-
     show player 13f
     player_name "..."
     show old_roxxy 90cf
     roxxy "... Sorry, that was just really funny."
-
     show old_roxxy 90bf
     show player 14f
     player_name "Heh, it's fine."
-
     show player 10f
     player_name "I'm more worried about you."
-
     player_name "Can you walk?"
-
     show player 5f
     show old_roxxy 90cf
-    roxxy "Ya, aku baik-baik saja..."
-
+    roxxy "Yeah, I'm fine..."
     show old_roxxy 90f
     roxxy "Ouch, shit!"
-
     show old_roxxy 90cf
     roxxy "Tsk, maybe not..."
-
     show old_roxxy 90f
     show player 12f
     player_name "Here, lemme carry you..."
-
     hide player
     hide player_wet_f
     hide old_roxxy_wet
@@ -280,19 +220,15 @@ label trailerpark_roxxy_go_to_picnic:
     show old_roxxy_wet_f at Position (xoffset=-358,yoffset=-6)
     with dissolve
     roxxy "What?! No, you don't have to..."
-
     hide old_roxxy_wet_f
     hide player_wet
     show old_roxxy_wet back_f
     show old_roxxy 91cf
     with dissolve
     player_name "Don't be silly, we're getting soaked."
-
     player_name "It's just a piggy back ride."
-
     show old_roxxy 91bf with dissolve
-    roxxy "Baiklah."
-
+    roxxy "Alright."
 
     scene location_trailer_cutscene04
     show text _ ("... And so, I rushed through the rain towards shelter with {b}Roxxy{/b} on my back.") as caption
@@ -313,47 +249,34 @@ label trailerpark_roxxy_go_to_picnic:
     show old_crystal 6 at right
     with fade
     crystal "Damn, you kids are a mess!"
-
     crystal "What's the matter with her?"
-
     show old_crystal 5
     show player 10
     player_name "She fell and twisted her ankle."
-
     show player 5
     show old_crystal 9
-    crystal "Kamu baik-baik saja?"
-
+    crystal "You alright?"
     show old_crystal 5
     show old_roxxy 1lf at Position (xoffset=-34)
     roxxy "I'm fine, {b}Mom{/b}."
-
     roxxy "C'mon, {b}[firstname]{/b}, I'll get us some towels."
-
     show old_roxxy 1kf
     show old_crystal 11
     crystal "Don't you go dirtying up my good towels now!"
-
     show old_crystal 10
     show old_roxxy 1lf at Position (xoffset=-34)
     roxxy "Good towels?! What the hell are you talking about?"
-
     show old_roxxy 1kf
     show old_crystal 6
     crystal "Hahaha! I'm just screwin' with ya!"
-
     crystal "Get outta those wet clothes before you all catch cold..."
-
     crystal "... Does your boyfriend need help?"
-
     show old_crystal 5
     show old_roxxy 1nf at Position (xoffset=-34)
     roxxy "Ugh, shut up, {b}Mom{/b}!"
-
     show old_roxxy 1mf at Position (xoffset=-34)
     show old_crystal 6
     crystal "Hehehe."
-
     hide player
     hide player_wet
     hide old_roxxy

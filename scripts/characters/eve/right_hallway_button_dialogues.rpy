@@ -1,224 +1,131 @@
 label button_eve_talent_show_help:
-    anon f_worried "Apakah Anda memainkan instrumen apa pun?"
-
-    eve "Tidak, saya tidak memainkan alat musik apa pun. Saya selalu ingin belajar tetapi saya tidak punya waktu, Anda tahu?"
-
-    anon "Oke, bagaimana kalau bernyanyi?"
-
-    eve f_nervous_down "Oh, um..."
-
-    eve @ f_nervous "Ya, aku suka menyanyi, kurasa... Tapi aku tidak tahu apakah aku pandai."
-
-    anon f_normal "Saya yakin Anda memang demikian! Anda harus mendaftar untuk pertunjukan bakat bersama saya!"
-
-    anon "Kami sangat membutuhkan lebih banyak sukarelawan."
-
-    eve f_nervous "... Ya, entahlah."
-
-    eve @ f_confused "Anda ingin saya bernyanyi di depan seluruh sekolah? Kedengarannya cukup memalukan..."
-
-    eve "... Dan aku sudah lama tidak bernyanyi. Tidak sejak mesin karaokeku rusak."
-
-    eve "Aku sudah kehabisan latihan."
-
+    anon f_worried "Do you play any instruments?"
+    eve "No, I don't play any instruments. I've always wanted to learn but I just haven't had the time, you know?"
+    anon "Okay, well, how about singing?"
+    eve f_nervous_down "Oh, umm..."
+    eve @ f_nervous "Yeah, I like to sing I guess... I dunno if I'm any good though."
+    anon f_normal "I bet you are! You should sign up for the talent show with me!"
+    anon "We're really hurting for more volunteers."
+    eve f_nervous "... Yeah, I dunno."
+    eve @ f_confused "You want me to sing in front of the entire school? That sounds pretty embarrassing..."
+    eve "... And I haven't sung in a while. Not since my karaoke machine broke."
+    eve "I'm quite out of practice."
     anon @ f_thinking a_thinking "Hmm..."
-
-    anon "Anda tahu, saya pikir teman saya {b}Erik{/b} memiliki {b}mesin karaoke{/b} di ruang bawah tanahnya."
-
-    eve "Oh ya?"
-
-    anon @ f_laugh "Benar sekali!"
-
-    anon "Anda harus datang kapan-kapan dan berlatih!"
-
-    eve f_happy @ f_laugh "Heh, kamu ingin aku bernyanyi untukmu dan temanmu?"
-
-    anon "Nah, kita semua bisa bernyanyi bersama! Ayo, kita akan melakukannya malam ini, pasti menyenangkan!"
-
+    anon "You know, I think my friend {b}Erik{/b} has a {b}karaoke machine{/b} in his basement."
+    eve "Oh, yeah?"
+    anon @ f_laugh "Totally!"
+    anon "You should come over sometime and practice!"
+    eve f_happy @ f_laugh "Heh, you want me to sing for you and your friend?"
+    anon "Nah, we can all sing together! C'mon, we'll do it tonight, it'll be fun!"
     eve f_nervous_down @ -m_talk "..."
-    eve f_happy @ f_eyeroll a_wtf "Baiklah, kurasa aku bisa mampir sebentar."
-
-    anon "Luar biasa! {b}Sampai jumpa di rumah Erik malam ini{/b}."
-
+    eve f_happy @ f_eyeroll a_wtf "Alright, I guess I can stop by for a little while."
+    anon "Awesome! {b}I'll meet you at Erik's house tonight{/b}."
     return
 
 label button_eve_ross_find_art_pad:
-    anon "Saya perlu meminta bantuan Anda."
-
+    anon "I need to ask you for a favor."
     eve f_confused "Oh?"
-
-    anon "Anda tahu, saya sedang membantu {b}Nona Ross{/b} dengan sesuatu, dan kami membutuhkan buku seni Anda."
-
-    eve f_normal "Yah, itu tidak masalah."
-
-    eve "Kamu hanya perlu {b}membantuku menemukan ranselku{/b} terlebih dahulu."
-
-    anon f_worried "Anda kehilangan ransel Anda?"
-
-    eve f_nervous_down "Ya..."
-
-    eve f_normal "Buku seniku seharusnya ada di dalamnya."
-
-    anon "Di manakah tempat terakhir yang Anda ingat memilikinya?"
-
+    anon "You see, I'm kinda helping {b}Miss Ross{/b} with something, and we need your art pad."
+    eve f_normal "Well, that's no problem."
+    eve "You just have to {b}help me find my backpack{/b} first."
+    anon f_worried "You lost your backpack?"
+    eve f_nervous_down "Yeah..."
+    eve f_normal "My art pad should be inside it."
+    anon "Where was the last place you remember having it?"
     eve @ f_sad_thinking "Hmm..."
-
-    eve "Yah, menurutku {b}Aku mengalaminya ketika aku pergi jalan-jalan dengan teman-teman di taman tadi malam{/b}."
-
-    anon f_normal "Baiklah, aku ikut!"
-
+    eve "Well, I think {b}I had it when I went to hang out with the guys in the park last night{/b}."
+    anon f_normal "Alright, I'm on it!"
     return
 
 label button_eve_ross_find_eve_backpack_have_backpack:
     hide anon
     show player 610 at left
     with dissolve
-    anon "Lihat apa yang saya temukan!"
-
+    anon "Look what I found!"
     show player 609
-    eve f_happy @ f_laugh "Bagus sekali!"
-
+    eve f_happy @ f_laugh "Niiiice!"
     hide player
     show anon
     with dissolve
-    eve "Terima kasih, {b}[firstname]{/b}!"
-
-    anon "Jangan khawatir. Tapi aku tidak bisa menemukan buku senimu."
-
-    eve f_confused "Itu tidak ada di tasku?"
-
-    anon "Tidak."
-
-    eve f_normal "Aneh."
-
-    eve @ f_confused "Saya ingin tahu apakah {b}Chad{/b} merebutnya lagi?"
-
-    anon f_worried "{b}Anak{/b}?"
-
-    eve "Ya, dia menyukai karya seniku."
-
-    anon "Menarik..."
-
-    anon f_normal "Aku akan bertanya padanya."
-
-    eve "Dingin. Sampai jumpa, {b}[firstname]{/b}."
-
-    anon "Sampai jumpa, {b}Malam{/b}."
-
+    eve "Thanks, {b}[firstname]{/b}!"
+    anon "No worries. I couldn't find your art pad though."
+    eve f_confused "It wasn't in my bag?"
+    anon "Nope."
+    eve f_normal "Weird."
+    eve @ f_confused "I wonder if {b}Chad{/b} snatched it again?"
+    anon f_worried "{b}Chad{/b}?"
+    eve "Yeah, he digs my art."
+    anon "Interesting..."
+    anon f_normal "I'll go ask him."
+    eve "Cool. See ya, {b}[firstname]{/b}."
+    anon "See ya, {b}Eve{/b}."
     return
 
 label button_eve_ross_find_eve_backpack_no_backpack:
-    anon f_normal "Di mana kamu meninggalkan ranselmu lagi?"
-
-    eve @ f_confused "Saya tidak sepenuhnya yakin. Saya ingat membawanya bersama saya {b}di taman{/b} tadi malam."
-
-    anon "Oke, saya akan periksa di sana!"
-
+    anon f_normal "Where did you leave your backpack, again?"
+    eve @ f_confused "I'm not entirely sure. I remember having it with me {b}at the park{/b} last night."
+    anon "Okay, I'll check there!"
     return
 
 label button_eve_ross_get_eve_drawing:
-    anon f_worried "Di mana tadi kamu bilang kalau art pad itu ada lagi?"
-
-    eve @ f_eyeroll "Oh, {b}Chad mungkin memilikinya{/b}."
-
-    eve "Dia menggali karya seni saya."
-
-    anon f_normal "Oke, terima kasih!"
-
+    anon f_worried "Where did you say that art pad was again?"
+    eve @ f_eyeroll "Oh, {b}Chad probably has it{/b}."
+    eve "He digs my art."
+    anon f_normal "Gotcha, thanks!"
     return
 
 label button_eve_ask_model:
-    anon f_normal "Saya sedang mengerjakan proyek untuk {b}Miss Ross{/b} dan itu memerlukan model langsung."
-
-    anon "Apakah Anda tertarik?"
-
-    eve "Pemodelan? Itu mungkin menyenangkan."
-
-    anon "Benar-benar?! Luar biasa! Saya berharap Anda akan mengatakan itu!"
-
-    eve "Ya, saya tidak keberatan."
-
-    eve @ f_laugh "Untung saja aku memakai pakaian lucu ini hari ini."
-
-    anon f_worried "... Oh, um. Itu akan menjadi model telanjang."
-
-    eve f_surprised a_rossed "Telanjang?!"
-
-    eve "Oh, tidak!"
-
+    anon f_normal "I'm working on a project for {b}Miss Ross{/b} and it requires a live model."
+    anon "Would you be interested?"
+    eve "Modeling? That could be fun."
+    anon "Really?! Awesome! I was hoping you would say that!"
+    eve "Yeah, I don't mind."
+    eve @ f_laugh "It's a good thing I wore this cute outfit today."
+    anon f_worried "... Oh, umm. It would be nude modeling."
+    eve f_surprised a_rossed "Nude?!"
+    eve "Oh, hell no!"
     show eve f_nervous_down
-    anon "Jadi kamu tidak akan melakukannya? Saya pikir Anda menyukai hal-hal yang berseni?"
-
-    eve f_surprised "Ya, tapi bukan berarti aku suka telanjang di depan umum!"
-
+    anon "So you won't do it? I thought you were into artsy stuff?"
+    eve f_surprised "Yeah, but that doesn't mean I'm into public nudity!"
     show eve f_nervous
-    anon "Poin bagus. Maaf."
-
-    eve "Tidak apa-apa. Hanya tidak tertarik."
-
-    anon f_normal @ a_wave "Yah, terima kasih..."
-
+    anon "Good point. Sorry."
+    eve "It's alright. Just not interested."
+    anon f_normal @ a_wave "Well, thanks anyways..."
     return
 
 label button_eve_ross_get_paint:
-    anon f_normal "Saya sedang mencari cat. Adakah yang tahu di mana saya bisa menemukannya?"
-
+    anon f_normal "I'm looking for some paint. Any idea where I could find some?"
     show eve f_confused a_idle
-    eve "Entahlah, mungkin coba ke toko?"
-
+    eve "I dunno, maybe try a store?"
     show eve f_normal
-    anon "Ya, aku tahu... Ya kan?"
-
-    anon "Tapi cat ini untuk {b}Nona Ross{/b}, dan dia tidak mampu membelinya."
-
+    anon "Well, yeah, I know... Duh, right?"
+    anon "But this paint is for {b}Miss Ross{/b}, and she can't afford to buy it."
     eve @ f_laugh "Oh, hehe."
-
-    eve "Hmm, cat gratis. Itu sulit..."
-
-    anon "Ceritakan padaku tentang hal itu..."
-
-    eve @ a_point "Kita bisa mencoba bertanya pada adikku."
-
+    eve "Hmm, free paint. That's a toughie..."
+    anon "Tell me about it..."
+    eve @ a_point "We could try asking my sister."
     if M_eve.finished_state(S_eve_visit_bedroom):
-        anon "Menurutmu {b}Grace{/b} akan memberiku beberapa?"
-
-        eve f_happy "Yah, dia mungkin tidak akan memberikannya begitu saja padamu..."
-
-        eve "... Tapi aku yakin kalian berdua bisa menemukan solusinya."
-
-        anon "Itu akan sangat membantu!"
-
-        eve "Kita bisa bertanya padanya sepulang sekolah apakah kamu mau?"
-
-        anon @ f_confused "Aku akan menemuimu di {b}Sugar Tats{/b} kalau begitu?"
-
-        eve "Tentu, itu berhasil."
-
+        anon "You think {b}Grace{/b} would give me some?"
+        eve f_happy "Well, she probably won't just give it to you..."
+        eve "... But I'm sure you two can work something out."
+        anon "That would be a big help!"
+        eve "We can ask her after school if you want?"
+        anon @ f_confused "I'll just meet you at {b}Sugar Tats{/b} then?"
+        eve "Sure, that works."
     else:
-        anon "Dia seorang seniman tato, kan?"
-
-        eve f_happy "Dia seniman tato terbaik!"
-
-        eve "Anda harus melihat karyanya, sungguh luar biasa!"
-
-        anon "Menurutmu dia akan mengizinkanku melukis?"
-
-        eve "Kita bisa bertanya padanya."
-
-        anon @ f_skeptical "Bukankah ruang tamunya bernama {b}Sugar Tats{/b}?"
-
-        eve "Yuuuup. Letaknya {b}di sisi utara kota{/b}."
-
-    anon "Baiklah, aku akan menemuimu di sana!"
-
+        anon "She's a tattoo artist, right?"
+        eve f_happy "She's the best tattoo artist!"
+        eve "You should check out her work, it's amazing!"
+        anon "You think she would let me have some paint?"
+        eve "We can go ask her."
+        anon @ f_skeptical "Isn't her parlor called {b}Sugar Tats{/b}?"
+        eve "Yuuuup. It's {b}on the north side of town{/b}."
+    anon "Alright, I'll meet you there!"
     return
 
 label button_eve_ross_get_paint_grace:
-    anon @ f_worried "Di mana ruang tamu adikmu lagi?"
-
-    eve f_happy "{b}Tat Gula{/b}? Letaknya di sisi kota {b}Utara{/b}."
-
-    anon "Oke, {b}Sampai jumpa di sana{/b}!"
-
+    anon @ f_worried "Where's your sister's parlor again?"
+    eve f_happy "{b}Sugar Tats{/b}? It's on the {b}North{/b} side of town."
+    anon "Okay, {b}I'll meet you there{/b}!"
     return
 # Decompiled by unrpyc: https://github.com/CensoredUsername/unrpyc

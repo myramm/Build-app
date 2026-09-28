@@ -8,75 +8,46 @@ image josie_sex_fast_josie = AnimatedImage('josephine_office_sex_josephine_fast'
 label scene_josie_sex:
     call scene_josie_sex.stage ('office')
     with fade
-    anon "Wow, kamu benar-benar basah!"
-
-    josephine "Heh, apa yang bisa kubilang... Bocah kulit putih kutu buku membuatku bergairah..."
-
-    anon "Benar-benar?"
-
-    josephine "Ugh, diam saja dan masukkan ke dalam diriku!"
-
+    anon "Wow, you're really wet!"
+    josephine "Heh, what can I say... Nerdy little white boys turn me on..."
+    anon "Really?"
+    josephine "Ugh, just shut up and put it inside me already!"
     call scene_josie_sex.insert ('fast')
     with fastdissolve
-    josephine f_shy @ f_moan "Oh wah!!"
-
-    anon "Kamu baik-baik saja?"
-
-    josephine "Y-ya, hanya-"
-
-    josephine "Ngh, kamu benar-benar besar!"
-
-    anon "Apakah Anda ingin saya melakukannya perlahan atau apa?"
-
-    josephine f_normal "Tidak, persetan!"
-
-    josephine "Saya bisa menerimanya."
-
+    josephine f_shy @ f_moan "Oh, wow!!"
+    anon "You alright?"
+    josephine "Y-yeah, just-"
+    josephine "Ngh, you're really big!"
+    anon "Do you need me to go slow or something?"
+    josephine f_normal "No, screw that!"
+    josephine "I can take it."
     pause
-    josephine "Persetan denganku, {b}[firstname]{/b}!"
-
-    anon "Baiklah."
-
+    josephine "Fuck me hard, {b}[firstname]{/b}!"
+    anon "Alright."
     call scene_josie_sex.animate ('fast')
     josephine "!!!"
     josephine "FUUUUUUCK!"
-
     pause
-    anon "Kamu baik-baik saja?"
-
-    josephine "Ya!!"
-
+    anon "You good?"
+    josephine "Yes!!"
     pause
-    josephine "Ini luar biasa!"
-
+    josephine "This is amazing!"
     pause
     josephine "Oh, {b}[firstname]{/b}!"
-
     pause
-    josephine "Persetan denganku!!"
-
-    josephine "PERCAYA AKU LEBIH KERAS!!"
-
-    anon "Ssst!"
-
-    josephine "Jangan diamkan aku!"
-
+    josephine "Fuck me!!"
+    josephine "FUCK ME HARDER!!"
+    anon "Shh!"
+    josephine "Don't shush me!"
     pause
-    josephine "AAH!!"
-
-    josephine "ITU SANGAT DALAM!"
-
-    anon "Seseorang akan mendengarmu!"
-
-    josephine "SAYA TIDAK PEDULI!"
-
+    josephine "AHH!!"
+    josephine "IT'S SO FUCKING DEEP!"
+    anon "Someone is gonna hear you!"
+    josephine "I DON'T CARE!"
     pause
-    josephine "AKU CUMMING!!"
-
-    josephine "aku cum-"
-
-    sato "Apa yang sedang terjadi di-"
-
+    josephine "I'M CUMMING!!"
+    josephine "I'M CUM-"
+    sato "What in the hell is going on in-"
     return
 
 
@@ -156,22 +127,15 @@ label scene_josie_sex.loop:
 label scene_josie_sex.dialogue:
     if animcounter == 0 and randomizer() > 50:
         josephine "AHH!!{p=1}{nw}"
-
     if animcounter == 1 and randomizer() > 50:
-        josephine "PERCAYA AKU!!{p=1}{nw}"
-
-        anon "Sst, ayahmu akan mendengarkanmu!{p=2}{nw}"
-
-        josephine "SAYA TIDAK PEDULI!{p=1}{nw}"
-
+        josephine "FUCK ME!!{p=1}{nw}"
+        anon "Shh, your dad is gonna hear you!{p=2}{nw}"
+        josephine "I DON'T CARE!{p=1}{nw}"
     if animcounter == 2 and randomizer() > 50:
-        josephine "Ya Tuhan!{p=1}{nw}"
-
+        josephine "Oh, god!{p=1}{nw}"
     elif animcounter == 2 and randomizer() > 75:
-        josephine "Jangan!{p=1}{nw}"
-
-        josephine "Berhenti!{p=1}{nw}"
-
+        josephine "Don't!{p=1}{nw}"
+        josephine "Stop!{p=1}{nw}"
     return
 
 
@@ -189,7 +153,6 @@ label scene_josie_sex.cum(venue, where):
         show xray_josephine_top with fastdissolve:
             align (0, 0)
     josephine "NGGHHH!!!"
-
     if venue == 'lounge':
         show josephine_body_b_sex_overlay_leg_fix as leg
     hide xray_josephine_top
@@ -203,7 +166,6 @@ label scene_josie_sex.cum(venue, where):
     with dissolve
     pause
     anon "Haah... Haah..."
-
     if where == 'inside':
         show josephine b_sex_after_top_no_phone f_normal
         show mc_josephine_sex after
@@ -216,91 +178,56 @@ label scene_josie_sex.cum(venue, where):
 label scene_josie_sex.morning:
     call scene_josie_sex.stage ('lounge')
     with fade
-    anon "Apa yang kamu lakukan hari ini?"
-
-    josephine "Hanya ngobrol dengan beberapa orang."
-
-    anon "Bagaimana dengan?"
-
-    josephine "Oh, hanya hal yang membosankan..."
-
-    josephine "Video game, camilan, momen buruk-"
-
+    anon "What are you doing today?"
+    josephine "Just chatting with some people."
+    anon "What about?"
+    josephine "Oh, just boring stuff..."
+    josephine "Video games, snacks, bad mo-"
     call scene_josie_sex.insert ('slow')
     with fastdissolve
     josephine f_normal @ f_moan "MOOOOOVVVIESS!"
-
-    anon "hehe."
-
-    josephine "Brengsek!"
-
+    anon "Hehe."
+    josephine "Asshole!"
     call scene_josie_sex.animate ('slow')
     pause
-    josephine "Sial, itu dalam!!"
-
+    josephine "Fuck, that's deep!!"
     anon "Mmhmm."
-
     pause
-    josephine "Orang-orang ini punya selera film terburuk, sumpah..."
-
-    anon "Oh ya?"
-
-    josephine "Mereka terus mengungkit hal ini, tentang marinir futuristik yang memerangi serangga luar angkasa raksasa..."
-
-    anon "Maksudmu, Startroopers Galaxyship?"
-
-    josephine "Ya, itu dia."
-
-    anon "Saya suka film itu!"
-
-    josephine "Eh, kamu juga?"
-
-    anon "Ya, itu luar biasa!"
-
+    josephine "These guys have the worst taste in movies, I swear..."
+    anon "Oh, yeah?"
+    josephine "They keep bringing up this one, about futuristic marines battling giant space bugs..."
+    anon "You mean, Galaxyship Startroopers?"
+    josephine "Yeah, that's the one."
+    anon "I love that movie!"
+    josephine "Ugh, you too?"
+    anon "Yeah, it's awesome!"
     pause
-    josephine "Mungkin itu hanya masalah laki-laki..."
-
-    anon "Apa?"
-
-    josephine "Menyukai film jelek."
-
+    josephine "Maybe it's just a guy thing..."
+    anon "What is?"
+    josephine "Liking bad movies."
     anon "Oh."
-
-    josephine "Maksudku, tidak ada yang menentang fiksi ilmiah tapi aku-"
-
+    josephine "I mean, nothing against sci-fi but I-"
     call scene_josie_sex.animate ('fast')
     $ M_josie.set('sex speed', .09)
-    josephine "Haah, sial!!!"
-
+    josephine "Haah, shit!!!"
     pause
-    anon "Apa yang kamu katakan?"
-
+    anon "What were you saying?"
     josephine "Hmm?"
-
-    josephine "Oh, aku tidak tahu... Terus lakukan itu!"
-
-    anon "Hehe, baiklah."
-
+    josephine "Oh, I don't know... Just keep doing that!"
+    anon "Heh, alright."
     call scene_josie_sex.loop
-    josephine "SIALAN, AKU AKAN CUM!"
-
-    anon "Saya juga!"
-
+    josephine "FUCK, I'M GONNA CUM!"
+    anon "Me too!"
     pause
     call scene_josie_sex.cum ('lounge', _return)
     if _return == "inside":
-        josephine "Mmm, aku akan merasakannya besok..."
-
+        josephine "Mmm, I'm gonna be feeling that tomorrow..."
     else:
-        josephine "Mmm, itu air mani yang banyak..."
-
-    anon "Lebih baik daripada ngobrol online, ya?"
-
-    josephine "Hehe, ya..."
-
+        josephine "Mmm, that's a lot of cum..."
+    anon "Better than chatting online, yeah?"
+    josephine "Hehe, yes..."
     pause
-    josephine "Bantu aku berdiri."
-
+    josephine "Help me up."
 
     if _return == 'inside':
         call call_pregnancy_minigame (None, M_josie)
@@ -310,81 +237,51 @@ label scene_josie_sex.morning:
 label scene_josie_sex.afternoon:
     call scene_josie_sex.stage ('lounge')
     with fade
-    anon "Wow, kamu benar-benar basah!"
-
-    josephine "Ya, saya sedang menonton aliran seni dewasa..."
-
-    anon "Jadi Anda menonton film porno saat istirahat makan siang?"
-
-    josephine "Itu bukan porno, bodoh..."
-
-    josephine "Itu adalah-"
-
+    anon "Wow, you're really wet!"
+    josephine "Well, I've been watching an adult art stream..."
+    anon "So you're watching porn on your lunch break?"
+    josephine "It's not porn, stupid..."
+    josephine "It's ar-"
     call scene_josie_sex.insert ('slow')
     with fastdissolve
     josephine f_normal @ f_moan "AAAAARRRTTT!!"
-
-    anon "hehe."
-
-    josephine "Sangat lucu."
-
+    anon "Hehe."
+    josephine "Very funny."
     call scene_josie_sex.animate ('slow')
     pause
-    josephine "Sial, itu dalam!!"
-
+    josephine "Fuck, that's deep!!"
     anon "Mmhmm."
-
     pause
-    anon "Jadi apa yang dia streaming hari ini?"
-
-    josephine "Hanya hal-hal latar belakang yang membosankan."
-
-    anon "Apa, tidak ada payudara?"
-
-    josephine "Aku tidak memperhatikan payudaranya, tahu?!"
-
-    anon "Tentu Anda tidak..."
-
+    anon "So what's he streaming today?"
+    josephine "Just boring background stuff."
+    anon "What, no boobs?"
+    josephine "I don't watch it for the boobs, you know?!"
+    anon "Sure you don't..."
     pause
-    anon "Bisakah kamu meletakkan teleponnya?"
-
+    anon "Can you put the phone down?"
     josephine "Hmm?"
-
-    josephine "Tidak, sudah kubilang aku akan menonton streamingku..."
-
+    josephine "No, I told you I was gonna watch my stream..."
     call scene_josie_sex.animate ('fast')
     $ M_josie.set('sex speed', .09)
-    josephine "Haah, sial!!!"
-
-    anon "Itu lebih baik."
-
+    josephine "Haah, shit!!!"
+    anon "That's better."
     pause
-    josephine "Heh, kamu brengsek!"
-
-    anon "Anda tidak menyukainya?"
-
-    josephine "Ngh, aku tidak mengatakan itu!"
-
+    josephine "Heh, you're such an asshole!"
+    anon "You don't like it?"
+    josephine "Ngh, I didn't say that!"
     call scene_josie_sex.loop
-    josephine "SIALAN, AKU AKAN CUM!"
-
-    anon "Saya juga!"
-
+    josephine "FUCK, I'M GONNA CUM!"
+    anon "Me too!"
     pause
     call scene_josie_sex.cum ('lounge', _return)
     if _return == "inside":
-        josephine "Mmm, aku akan merasakannya besok..."
-
+        josephine "Mmm, I'm gonna be feeling that tomorrow..."
     else:
-        josephine "Mmm, itu air mani yang banyak..."
-
-    anon "Lebih baik dari aliran seni, ya?"
-
-    josephine "Hehe, ya..."
-
+        josephine "Mmm, that's a lot of cum..."
+    anon "Better than some art stream, yeah?"
+    josephine "Hehe, yes..."
     pause
-    josephine "Bantu aku berdiri."
-
+    josephine "Help me up."
 
     if _return == 'inside':
         call call_pregnancy_minigame (None, M_josie)
@@ -395,115 +292,76 @@ label scene_josie_sex.switch:
     $ M_josie.set('sex speed', .12)
 
     josephine "Haah... Haah..."
-
-    anon "Baiklah, aku akan mengambil alih sebentar."
-
+    anon "Alright, I'll take over for a bit."
     call scene_josie_sex_desk.stage
     with dissolve
-    josephine "Fiuh, terima kasih!"
-
+    josephine "Phew, thank you!"
 
     call scene_josie_sex.stage ('office')
     with fade
 
     if 'kink' not in rv:
         $ rv.add('kink')
-        anon "Wow, kamu benar-benar basah!"
-
-        josephine "Sudah kubilang ini benar-benar membuatku bergairah..."
-
-        anon "Kamu cukup aneh, ya?"
-
-        josephine "Apa?!"
-
-        josephine "Aku tidak nakal, aku hanya-"
-
+        anon "Wow, you're really wet!"
+        josephine "I told you this really turns me on..."
+        anon "You're pretty kinky, huh?"
+        josephine "What?!"
+        josephine "I'm not kinky, I'm just-"
         call scene_josie_sex.insert ('fast')
         with fastdissolve
-        josephine f_shy @ f_moan "Ahhh, sial!!"
-
-        anon "Anda tadi bilang?"
-
-        josephine "Baiklah, aku keriting."
-
-        josephine "Tolong, persetan denganku!"
-
+        josephine f_shy @ f_moan "Ahh, fuck!!"
+        anon "You were saying?"
+        josephine "Fine, I'm kinky."
+        josephine "Just fuck me, please!"
     else:
-        anon "Lebih baik?"
-
-        josephine "Hmm, jauh lebih baik."
-
+        anon "Better?"
+        josephine "Mmm, much better."
         call scene_josie_sex.insert ('fast')
         with fastdissolve
-        josephine f_shy @ f_moan "Ahhh!"
-
-        anon "Terasa enak?"
-
-        josephine "Ya ya!"
-
+        josephine f_shy @ f_moan "Ahh!"
+        anon "Feels good?"
+        josephine "Yeah, yeah!"
 
     call scene_josie_sex.animate ('fast')
     $ M_josie.set('sex speed', .09)
     josephine "!!!"
     josephine "FUUUUUUCK!"
-
     pause
-    anon "Anda suka itu?"
-
-    josephine "Ya!!"
-
+    anon "You like that?"
+    josephine "Yes!!"
     pause
-    josephine "Ini luar biasa!"
-
+    josephine "This is amazing!"
     pause
     josephine "Oh, {b}[firstname]{/b}!"
-
     pause
-    josephine "Persetan denganku!!"
-
-    josephine "PERCAYA AKU LEBIH KERAS!!"
-
-    anon "Ssst!"
-
-    josephine "Jangan diamkan aku!"
-
+    josephine "Fuck me!!"
+    josephine "FUCK ME HARDER!!"
+    anon "Shh!"
+    josephine "Don't shush me!"
     pause
-    josephine "AAH!!"
-
-    josephine "ITU SANGAT DALAM!"
-
-    anon "Seseorang akan mendengarmu!"
-
-    josephine "SAYA TIDAK PEDULI!"
-
+    josephine "AHH!!"
+    josephine "IT'S SO FUCKING DEEP!"
+    anon "Someone is gonna hear you!"
+    josephine "I DON'T CARE!"
 
     call scene_josie_sex.loop
     if _return == 'switch':
         jump scene_josie_sex_desk.switch
 
-    josephine "AKU CUMMING!!"
-
-    anon "Saya juga!"
-
+    josephine "I'M CUMMING!!"
+    anon "Me too!"
     pause
     call scene_josie_sex.cum ('office', _return)
     if _return == 'inside':
-        josephine "Ya Tuhan, itu luar biasa!"
-
-        anon "Ya, benar."
-
-        josephine "Hehe, aku datang dengan susah payah..."
-
+        josephine "Oh my god, that was awesome!"
+        anon "Yeah, it was."
+        josephine "Hehe, I came so hard..."
     else:
-        josephine "Wow, kamu membuatku basah kuyup!"
-
-        anon "Ya, maaf soal itu."
-
-        josephine "Hehe, tidak, panas!"
-
+        josephine "Wow, you drenched me in cum!"
+        anon "Yeah, sorry about that."
+        josephine "Hehe, no, it's hot!"
     pause
-    josephine "Bantu aku berdiri."
-
+    josephine "Help me up."
 
     if _return == 'inside':
         call call_pregnancy_minigame (None, M_josie)
@@ -516,10 +374,10 @@ label scene_josie_sex.replay:
     if len(variants) > 1:
         scene expression background(l=L_dealership) with fade
         menu:
-            "Pagi" if 'morning' in variants:
+            "Morning" if 'morning' in variants:
                 jump scene_josie_sex.morning
 
-            "Sore" if 'afternoon' in variants:
+            "Afternoon" if 'afternoon' in variants:
                 jump scene_josie_sex.afternoon
     else:
 

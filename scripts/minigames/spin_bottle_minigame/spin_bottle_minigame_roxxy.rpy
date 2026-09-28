@@ -47,35 +47,28 @@ label spin_bottle_minigame_roxxy_solo_intro_pre:
     show xtra 47 zorder 2 at Position (xpos=400)
     with dissolve
     missy "What?! NO!!"
-
     show player_sitting 3b
     show old_missy sitting 8
     show old_roxxy sitting 5
     roxxy "Hehe, sorry bitches."
-
     show old_roxxy sitting 3
     roxxy "He's all mine tonight."
-
     show old_roxxy sitting 2
     show player_sitting 3
     show old_becca sitting 10b
-    becca "Aduh..."
-
+    becca "Aww..."
     show old_becca sitting 10
     show old_missy sitting 7
-    missy "Tidak bisakah kita-"
-
+    missy "Can't we just-"
     show old_missy sitting 6
     show old_roxxy sitting 6
     show player_sitting 3b
     roxxy "NO!!!"
-
     show old_roxxy sitting 2
     show old_missy sitting 8
     missy "..."
     show old_missy sitting 7
     missy "This sucks!"
-
     hide old_roxxy
     hide player_sitting
     with dissolve
@@ -83,7 +76,6 @@ label spin_bottle_minigame_roxxy_solo_intro_pre:
     scene expression "backgrounds/location_beach_water_night_blur.jpg"
     show old_roxxy bikini 25 with dissolve
     roxxy "This way lucky..."
-
     hide old_roxxy with dissolve
 
     scene expression "backgrounds/location_beach_cabin_closeup.jpg"
@@ -91,11 +83,9 @@ label spin_bottle_minigame_roxxy_solo_intro_pre:
     show old_roxxy bikini 22 at right
     with dissolve
     roxxy "I'm so glad I get you all to myself tonight."
-
     show old_roxxy bikini 21
     show player 14
     player_name "Heh, yeah. Me too."
-
     hide player
     show old_roxxy bikini 17 at left
     with dissolve
@@ -104,17 +94,14 @@ label spin_bottle_minigame_roxxy_solo_intro_pre:
     show player 13 at left
     with dissolve
     roxxy "Ugh, those bitches will probably be at the door watching us in a couple minutes."
-
     show old_roxxy bikini 21
     show player 14
     player_name "Well, we can take this back to your place if you want?"
-
     show player 13
     show old_roxxy bikini 1 with dissolve
     roxxy "..."
     show old_roxxy bikini 2
     roxxy "Nah, screw it!"
-
     show old_roxxy bikini 5 with dissolve
     show player 426
     pause
@@ -132,15 +119,12 @@ label spin_bottle_minigame_roxxy_solo_intro_pre:
     pause
     show old_roxxy 23b with dissolve
     roxxy "Let them watch."
-
     show old_roxxy 24
     show player 13
     roxxy "I want you right now!"
-
     show old_roxxy 23
     show player 14
-    player_name "B-baiklah."
-
+    player_name "A-alright."
     hide player
     hide old_roxxy
     with dissolve
@@ -150,13 +134,11 @@ label spin_bottle_minigame_roxxy_solo_intro:
     scene expression "backgrounds/location_beach_cabin_sex_roxxy.jpg"
     show roxxys_solo 1
     with dissolve
-    roxxy "Mmm, berikan padaku {b}[firstname]{/b}..."
-
+    roxxy "Mmm, give it to me {b}[firstname]{/b}..."
     show roxxys_solo 2 with dissolve
     pause
     show roxxys_solo 3 with dissolve
     roxxy "Aahhh..."
-
     return
 
 label spin_bottle_minigame_roxxy_solo_intro_after:
@@ -197,26 +179,20 @@ label spin_bottle_minigame_roxxy_solo_hscene_dialog:
         if randomizer() < 25:
             roxxy "Yes!!{p=1}{nw}"
 
-
     elif animcounter == 1:
         if randomizer() < 25:
             roxxy "Ohh, it's so deep!{p=2}{nw}"
 
-
     elif animcounter == 2:
         if randomizer() < 25:
             roxxy "Aaahhh!!{p=1}{nw}"
-
             roxxy "Oh god!{p=1}{nw}"
-
 
     elif animcounter == 3:
         if randomizer() < 25:
             roxxy "{b}[firstname]{/b}!!!{p=1}{nw}"
-
             pause 1
             roxxy "Oh, fuck me harder!{p=2}{nw}"
-
     return
 
 label spin_bottle_minigame_roxxy_solo_cum:
@@ -229,13 +205,10 @@ label spin_bottle_minigame_roxxy_solo_cum:
     $ game.main()
 
 label spin_bottle_minigame_roxxy_solo_cum_dialogue:
-    roxxy "aku akan keluar!"
-
-    player_name "Ya, aku juga!"
-
+    roxxy "I'm gonna cum!"
+    player_name "Yeah, me too!"
     pause
     roxxy "Aahhh, FUCK!!!"
-
     show roxxys_solo 3_4
     player_name "HNNGGG!" with flash
     show roxxys_solo 4
@@ -245,12 +218,9 @@ label spin_bottle_minigame_roxxy_solo_cum_dialogue:
     show roxxys_solo 5
     with dissolve
     player_name "Haaah... Haaah..."
-
     show roxxys_solo 6 with dissolve
-    roxxy "Itu luar biasa!"
-
-    player_name "Hehe, ya..."
-
+    roxxy "That was amazing!"
+    player_name "Heh, yeah..."
     pause
 
     scene expression "backgrounds/location_beach_cabin_closeup.jpg"
@@ -258,29 +228,21 @@ label spin_bottle_minigame_roxxy_solo_cum_dialogue:
     show old_roxxy 108 at right
     with dissolve
     roxxy "Hehe, well, I bet that was quite a show!"
-
     show old_roxxy 107
     roxxy "I can barely stand..."
-
     show old_roxxy 106
     show player 365
     player_name "Yeah, you think they enjoyed it?"
-
     show player 366
     roxxy "Hmm..."
-
     show old_roxxy 107
     roxxy "What do you say, bitches? Did you enjoy that?"
-
     show old_roxxy 106
     pause
     scene expression "backgrounds/location_beach_cutscene06.jpg" with fade
-    missy "Ya..."
-
-    roxxy "Ha ha ha!"
-
-    player_name "Ha ha ha!"
-
+    missy "Yes..."
+    roxxy "Hahaha!"
+    player_name "Hahaha!"
     hide player
     hide old_roxxy
     return

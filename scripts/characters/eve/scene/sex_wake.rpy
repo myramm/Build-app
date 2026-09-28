@@ -59,79 +59,52 @@ label scene_eve_sex_wake.dialogue:
     $ renpy.dynamic(rng=renpy.random.random())
 
     if animcounter == 0 and rng <= .33:
-        eve "Sial!{w=1}{nw}"
-
+        eve "Fuuuuck!{w=1}{nw}"
 
     elif animcounter == 0 and rng <= .55:
-        anon "Apakah terlalu dalam?{w=1}{nw}"
-
-        eve "Tidak.{w=1}{nw}"
-
-        anon "Apakah Anda yakin?{w=1}{nw}"
-
-        eve "Y-ya!{w=1}{nw}"
-
-        eve "Ah, sial!!{w=1}{nw}"
-
+        anon "Is it too deep?{w=1}{nw}"
+        eve "No.{w=1}{nw}"
+        anon "Are you sure?{w=1}{nw}"
+        eve "Y-yes!{w=1}{nw}"
+        eve "Ah, fuck!!{w=1}{nw}"
 
     elif animcounter == 1 and rng <= .33:
-        anon "Apakah itu terasa enak?{w=1.5{nw}"
-
-        eve "Ya!!{w=1}{nw}"
-
+        anon "Does that feel good?{w=1.5}{nw}"
+        eve "Yes!!{w=1}{nw}"
 
     elif animcounter == 1 and rng <= .66:
-        anon "Apakah tidak apa-apa?{w=1}{nw}"
-
-        eve "Hmm!{w=1}{nw}"
-
-        anon "Rasanya enak?{w=1}{nw}"
-
-        eve "Ya!!{w=1}{nw}"
-
+        anon "Is that okay?{w=1}{nw}"
+        eve "Mhmm!{w=1}{nw}"
+        anon "It feels good?{w=1}{nw}"
+        eve "Yes!!{w=1}{nw}"
 
     elif animcounter == 1 and rng <= .88 and gender == 'cis':
-        anon "Aku tidak percaya betapa basahnya kamu!{w=2}{nw}"
-
-        eve "{i}*Merengek*{/i}{w=1}{nw}"
-
+        anon "I can't believe how wet you're getting!{w=2}{nw}"
+        eve "{i}*Whimpers*{/i}{w=1}{nw}"
 
     elif animcounter == 1 and rng <= .88 and gender == 'trans':
-        anon "Aku suka melihat gadismu memantul saat aku menidurimu...{w=2.5{nw}"
-
-        eve "{i}*Merengek*{/i}{w=1}{nw}"
-
-        anon "... Menggemaskan sekali!{w=1}{nw}"
-
+        anon "I love watching your girldick bounce when I fuck you...{w=2.5}{nw}"
+        eve "{i}*Whimpers*{/i}{w=1}{nw}"
+        anon "... It's so adorable!{w=1}{nw}"
 
     elif animcounter == 2 and rng <= .22 and anal:
-        anon "Pantatmu luar biasa, {b}Eve{/b}!{w=2}{nw}"
-
+        anon "Your ass is amazing, {b}Eve{/b}!{w=2}{nw}"
         eve "Ahh!{w=1}{nw}"
-
         pause 1
-        anon "Sangat ketat!{w=1}{nw}"
-
+        anon "It's so tight!{w=1}{nw}"
         eve "Oh, {b}[firstname]{/b}!!{w=1}{nw}"
-
 
     elif animcounter == 2 and rng <= .33:
-        eve "Sangat dalam!{w=1.5{nw}"
-
+        eve "It's so fucking deep!{w=1.5}{nw}"
         eve "Ahh!{w=1}{nw}"
-
         pause 1
         eve "Oh, {b}[firstname]{/b}!!{w=1}{nw}"
 
-
     elif animcounter == 2 and rng <= .55:
-        eve "Aku cinta kamu, {b}[firstname]{/b}!{w=1}{nw}"
-
+        eve "I love you, {b}[firstname]{/b}!{w=1}{nw}"
         pause 1
-        eve "Aku sangat mencintaimu-{w=1.5}{nw}"
-
-        eve "...Ngh, BANYAK!!{w=1}{nw}"
-
+        eve "I love you so fucking-{w=1.5}{nw}"
+        eve "... Ngh, MUCH!!{w=1}{nw}"
 
     return
 
@@ -140,23 +113,18 @@ label scene_eve_sex_wake.anal:
     call scene_eve_sex_wake.stage
     show eve insert lipbite
     with {'master': dissolve}
-    anon "Bolehkah aku menaruhnya di pantatmu lagi?"
-
+    anon "Can I put it in your ass again?"
     show eve embarrassed
     with {'master': fastdissolve}
-    eve "Saya tidak peduli di mana Anda menaruhnya, cepatlah!"
-
-    eve "Silakan!"
-
+    eve "I don't care where you put it, just hurry!"
+    eve "Please!"
     $ anal = True
     show eve anal lipbite
     with {'master': dissolve}
-    anon "Baiklah."
-
+    anon "Alright."
     show eve slam
     eve "!!!" with hpunch
-    eve "Ahhh!"
-
+    eve "AHH!"
     jump scene_eve_sex_wake.resume
 
 
@@ -164,39 +132,29 @@ label scene_eve_sex_wake.vaginal:
     call scene_eve_sex_wake.stage
     show eve insert lipbite
     with {'master': dissolve}
-    anon "Bisakah saya menukarnya kembali?"
-
+    anon "Can I swap back?"
     show eve embarrassed
     with {'master': fastdissolve}
-    eve "Lakukan saja padaku!"
-
-    eve "Silakan!"
-
+    eve "Just do me already!"
+    eve "Please!"
     $ anal = False
     show eve -anal lipbite
     with {'master': dissolve}
-    anon "Baiklah."
-
+    anon "Alright."
     show eve slam
     eve "!!!" with hpunch
     eve "Ngghhh!"
-
     jump scene_eve_sex_wake.resume
 
 
 label scene_eve_sex_wake.cum(where):
-    anon "Aku semakin dekat!"
-
-    eve "Saya juga!"
-
+    anon "I'm getting close!"
+    eve "Me too!"
     pause
-    eve "Astaga!"
-
-    eve "Oh, persetan denganku!!"
-
+    eve "Oh, fuck!"
+    eve "Oh, fuck me!!"
     pause
     eve "Haah!"
-
     pause
 
     if gender == 'trans':
@@ -207,20 +165,14 @@ label scene_eve_sex_wake.cum(where):
 
     if gender == 'cis':
         eve "Ohhh!"
-
     else:
 
-        eve "Oh tidak..."
+        eve "Oh, no..."
+        anon "Wow, did you just-"
+        eve "{b}*Whimpers*{/b}"
 
-        anon "Wow, apakah kamu baru saja-"
-
-        eve "{b}* Merengek*{/b}"
-
-
-    anon "Kamu sangat seksi, {b}Eve{/b}!"
-
-    anon "aku akan-"
-
+    anon "You are so sexy, {b}Eve{/b}!"
+    anon "I'm gonna-"
 
     call scene_eve_sex_wake.stage
 
@@ -247,46 +199,33 @@ label scene_eve_sex_wake.cum(where):
     with {'master': dissolve}
     anon "Haah... Haah..."
 
-
     if where == 'inside':
         show eve after inside
         with {'master': dissolve}
 
     if gender == 'trans':
-        eve surprised "Aku tidak percaya aku melakukan itu..."
-
+        eve surprised "I can't believe I did that..."
         anon "Hmm?"
-
-        eve "Aku sangat malu... Aku-"
-
-        anon "Jangan malu!"
-
-        anon "Itu luar biasa!"
-
+        eve "I'm so embarrassed... I-"
+        anon "Don't be embarrassed!"
+        anon "That was awesome!"
         show eve embarrassed
         with {'master': dissolve}
-        eve "Hehe, benarkah?"
-
-        anon "Ya Tuhan, ya!"
-
+        eve "Heh, really?"
+        anon "Oh my god, yes!"
         pause
     else:
 
-        eve horny "Wah!"
-
-        eve "Itu tadi-"
-
+        eve horny "Oh, wow!"
+        eve "That was-"
         pause
         eve "Wow."
-
         show eve laugh
         with {'master': fastdissolve}
         eve "Hehehe!"
 
-
         if where == 'inside':
-            anon "hehe!"
-
+            anon "Hehe!"
 
             if not anal:
                 call call_pregnancy_minigame (None, M_eve)
@@ -296,21 +235,16 @@ label scene_eve_sex_wake.cum(where):
     show eve horny
     with {'master': fastdissolve}
     pause
-    eve "Itu bukan jenis mandi yang biasa kulakukan di pagi hari..."
-
-    anon "hehe!"
-
+    eve "That's not the type of shower I usually take in the mornings..."
+    anon "Hehe!"
     show eve laugh
     with {'master': fastdissolve}
     eve "Hehehe!"
-
     show eve horny
     with {'master': fastdissolve}
     pause
-    anon "Biarkan aku mengambilkanmu handuk."
-
-    eve "Ya terima kasih."
-
+    anon "Let me get you a towel."
+    eve "Yeah, thanks."
     return
 
 
@@ -323,50 +257,39 @@ label scene_eve_sex_wake.repeat(gender, anal=True):
 
     call scene_eve_sex_wake.stage
     with fade
-    anon "Wow, itu pemandangan yang membuat saya senang bangun setiap pagi!"
-
-    eve "Ah, jangan menggodaku..."
-
+    anon "Wow, now that's a view I would happily wake up to every morning!"
+    eve "Ngh, don't tease me..."
 
     if gender == 'cis':
-        eve "... Aku sangat basah untukmu."
-
+        eve "... I'm so wet for you."
     else:
-        eve "... Aku sangat sulit untukmu."
+        eve "... I'm so hard for you."
 
-
-    anon "Ya, saya bisa melihatnya."
-
+    anon "Yeah, I can see that."
     show eve insert
     with {'master': dissolve}
-    eve "Aku ingin kamu ada di dalam diriku!"
-
+    eve "I want you inside me!"
 
     if gender == 'cis':
         show eve lipbite
         with {'master': fastdissolve}
-        anon "Baiklah."
-
+        anon "Alright."
         show eve slam
         eve "!!!" with hpunch
     else:
 
         show eve embarrassed
         with {'master': fastdissolve}
-        eve "Lambat saja..."
-
-        eve "... Aku mulai terbiasa tapi kamu sudah sangat besar."
-
+        eve "Just go slow..."
+        eve "... I'm getting used to it but you're so damn big."
         show eve lipbite
         with {'master': fastdissolve}
-        anon "Saya akan."
-
+        anon "I will."
         show eve enter
         with {'master': dissolve}
         eve "!!!"
 
-    eve "Sial!"
-
+    eve "Fuuuuck!"
     label scene_eve_sex_wake.resume:
     call scene_eve_sex_wake.animate
     with dissolve

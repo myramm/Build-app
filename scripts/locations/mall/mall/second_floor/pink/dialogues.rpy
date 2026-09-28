@@ -2,9 +2,7 @@ label pink_jenny_buy_bad_monster_callback:
     scene expression player.location.background_blur with None
     show anon f_worried_low a_toy3 with dissolve
     anon @ -m_talk "( This thing is scary! )"
-
     anon @ -m_talk "( I hope {b}[jen_name]{/b} likes it... )"
-
     hide anon with dissolve
     call popup ('give', 'badmonster')
     return
@@ -13,9 +11,7 @@ label pink_jenny_buy_bad_monster:
     scene expression player.location.background_blur with None
     show anon with dissolve
     anon @ -m_talk "( Alright, I'm looking for a toy called {b}Bad Monster{/b} for {b}[jen_name]{/b}. )"
-
     anon @ -m_talk "( It's gotta be here somewhere. )"
-
     hide anon with dissolve
     return
 
@@ -26,66 +22,46 @@ label pink_jenny_buy_vibrator:
     show jenny b_casual f_upset a_hips_toy1
     with dissolve
     anon "I think this is the right one?"
-
     jenny "Ugh, it's not that hard to figure out, dummy... Everything is labeled."
-
     show anon f_surprised_low
     "{i}*Click*{/i}"
-
     "{i}*BZZZZZZ*{/i}{p=1}{nw}"
-
     show anon f_surprised
     show jenny f_angry
     anon f_shock "!!!" with hpunch
-    anon f_shock_down "Wah!"
-
+    anon f_shock_down "Whoa!"
     anon "This thing is crazy!"
-
     show jenny f_upset a_hips_toy1b
     show anon f_surprised a_up
     with fastdissolve
     jenny "Give me that!"
-
     jenny "You're hopeless."
-
     show anon a_idle f_worried
     anon "What are you doing with all this stuff {b}[jen_name]{/b}?!"
-
     jenny "None of your business, loser."
-
     anon @ f_skeptical "I'm going to find out eventually, you know?"
-
-    jenny "Apa pun."
-
+    jenny "Whatever."
     show ivy zorder 0
     show jenny f_normal zorder 1:
         flip
         xoffset 100
     with dissolve
     jenny "I'll take these."
-
     show jenny a_sides with dissolve
     show ivy zorder 2
     ivy "Oh, those {b}UltraVibes{/b} are great!"
-
     ivy "Crazy powerful."
-
     jenny "Uh huh, could you just ring me up, please?"
-
     show ivy f_shy
     ivy @ -m_talk "..."
     show ivy a_buttplug with dissolve
     ivy "Have you ever used one of these before?"
-
     show jenny f_sad
-    jenny "Tidak Memangnya kenapa?"
-
+    jenny "No, why?"
     ivy "You should really start with something smaller, sweetie..."
-
     show ivy a_idle with dissolve
     show jenny f_upset a_crossed with dissolve
     jenny "Nah, it's fine... I've got lube."
-
     show jenny a_money with dissolve
     show anon f_surprised
     pause
@@ -93,34 +69,25 @@ label pink_jenny_buy_vibrator:
     show ivy a_money
     with dissolve
     jenny "Besides, it's for him."
-
     show jenny f_grin
     show anon f_surprised_teeth
     show ivy a_idle
     anon "!!!" with hpunch
     show ivy f_normal
-    ivy "Ah, benarkah?"
-
+    ivy "Oh, really?"
     anon @ f_shock "It's not for me!"
-
     show jenny f_laugh
     jenny "Hahahahaaah!"
-
     show jenny f_grin
     anon f_grumpy "Not funny."
-
     jenny "C'mon loser, let's go home."
-
     hide jenny with dissolve
     pause
     show anon f_worried a_behind_head with dissolve
     anon "Seriously, that's not for me."
-
     ivy @ f_laugh "Hehe, you'll get no judgement from me, cutie."
-
     show anon f_sad_down a_idle with dissolve
-    anon "{i}*Huh*{/i}"
-
+    anon "{i}*Sigh*{/i}"
     hide anon
     hide ivy
     with dissolve
@@ -131,390 +98,279 @@ label pink_jenny_shop_for_toys:
     show anon f_skeptical
     show jenny b_casual
     with dissolve
-    anon "Itu dia."
-
+    anon "There you are."
     show anon f_worried
     jenny @ -m_talk "..."
     anon f_unimpressed "You just took off on me."
-
     show jenny f_upset
     jenny "I can't stand that stupid bitch!"
-
-    anon f_worried "Benar-benar?"
-
+    anon f_worried "Really?"
     anon "She seems nice to me."
-
     jenny "Yeah right, trying to rub all her success in my face!"
-
     jenny "She's always been jealous of me."
-
     if M_jenny.get("dominance") <= 0:
         anon "{b}[jen_name]{/b}, she was just trying to be friendly..."
-
         show anon f_surprised
         show jenny f_angry
         jenny "No, fuck her!"
-
         show jenny f_upset
         jenny "I don't even want to talk about it."
-
     else:
         anon f_unimpressed "Yeah, you're probably right."
-
         anon "I mean, you're a broke, boyfriendless, college dropout..."
-
         anon "... Who's stuck living at home with your mother."
-
         anon "Who wouldn't be jealous?"
-
         show jenny f_angry
         jenny "{i}*Gasp*{/i} Fuck you!!"
-
         jenny "Grr!"
-
         show jenny f_upset
-        jenny "Hanya-"
-
+        jenny "Just-"
     jenny "Just help me find these stupid toys."
-
     anon f_worried "Okay, what are we looking for?"
-
     jenny "I need the {b}UltraVibe 2000{/b} annnnnd..."
-
     show jenny f_grin a_hips_toy1 with dissolve
-    jenny "... Ini!"
-
+    jenny "... This!"
     show anon f_shock a_hands_up with dissolve
     anon "!!!"
     show anon f_skeptical a_thinking with dissolve
     anon "Is that a butt plug?"
-
     show jenny f_upset
-    jenny "Hmm, ya?"
-
+    jenny "Umm, yeah?"
     show anon a_hands_up f_shock
     anon "It's huge!"
-
     anon "You're not really going to stick that in your ass, are you?"
-
     show anon f_hurt a_idle with dissolve
     show jenny f_eyeroll
     jenny "They said to get something big."
-
     show jenny f_upset
     show anon f_thinking a_thinking with dissolve
     pause
     show anon f_snarky a_idle with dissolve
     anon "They?"
-
     anon "Who's they?"
-
     show jenny a_hips with dissolve
     jenny "Never you mind!"
-
     jenny "Quit being a nosy perv and go find that {b}UltraVibe 2000{/b}!"
-
     show anon f_surprised a_point_self with dissolve
-    anon "A-aku?!"
-
+    anon "M-me?!"
     show anon f_skeptical a_idle with dissolve
     anon "It's your toy, why don't you go find it?!"
-
     show anon f_surprised
     show jenny f_angry
     pause
     show anon f_sad_down
-    anon "Uh, baiklah."
-
+    anon "Ugh, fine."
     hide anon with dissolve
     pause
     show jenny f_grin_down a_hips_toy1 with dissolve
     pause
     show jenny f_sad
     jenny @ -m_talk "( Maybe I {i}should{/i} get more lube while I'm here... )"
-
     hide jenny with dissolve
     return
 
 label pink_diane_get_outfit_package:
     scene expression player.location.background_blur with None
     show player 3
-    player_name "(Hmm?)"
-
+    player_name "( Hmm? )"
     player_name "( I don't see anybody minding the store... )"
-
     show player 4 with dissolve
     pause
     show player 10 with dissolve
     player_name "Umm, hello?"
-
     show player 5
     pause
     show player 10
     player_name "Is anybody here?"
-
     show player 5
     ivy "Just a second, please!!"
-
     pause
     show player 4 with dissolve
     player_name "( She must be busy in the back room. )"
-
     show player 5 with dissolve
     ivy "I'll be right with you!!"
-
     show player 10
-    player_name "O-oke!"
-
+    player_name "O-okay!"
     show player 9f at left with dissolve
     pause
     pause
     show player 34 with dissolve
     player_name "( I wonder what {b}Diane{/b} ordered from a place like this?! )"
-
     pause
     show ivy b_naked a_sheet_cover with dissolve
-    ivy "Maaf tentang itu."
-
+    ivy "Sorry about that."
     show player 23
     player_name "!!!"
     ivy "I was with a customer."
-
     show player 11
     player_name "..."
     pause
     player_name "..."
     show ivy f_shy
     ivy "Did you need help with something, cutie?"
-
     show player 37 with dissolve
     player_name "Oh sheesh, I'm sorry!"
-
     show player 3 with dissolve
     show ivy f_laugh
     ivy "Heh, it's fine."
-
     show ivy f_normal
     show player 29
-    player_name "aku um-"
-
+    player_name "I umm-"
     show player 26 with dissolve
     pause
     show player 24
     player_name "{i}*Gulp*{/i} I'm supposed to... uhh-"
-
     pause
     show player 4 with dissolve
     pause
     show player 17 with dissolve
     player_name "P-pick up a package."
-
     show player 13
     ivy "What's the name on the order?"
-
     show player 10
-    player_name "{b}Diana{/b}."
-
+    player_name "{b}Diane{/b}."
     show player 13
     show ivy f_sexy
     ivy "Hmm, you don't look like a {b}Diane{/b} to me..."
-
     show player 10
     player_name "Hmm?"
-
     show player 12
-    player_name "Oh benar..."
-
+    player_name "Oh, right..."
     player_name "... Umm, is that a problem?"
-
     show player 5
     show ivy f_laugh
     ivy "Hehe, relax... I'm only joking with you."
-
     show ivy f_normal
     ivy "The package is definitely here, somewhere."
-
     hide ivy with dissolve
     pause
     show player 26
     player_name "( Wow, she is really beautiful... )"
-
     player_name "( ... And she's practically naked! )"
-
     player_name "( Does she have someone else in the back room with her? )"
-
     show ivy b_naked a_sheet_cover f_shy with dissolve
     show player 13
     ivy "If I could just remember where I put it..."
-
     show ivy f_laugh
     ivy "... Ahah!"
-
     show ivy b_naked_pickup with dissolve
     show player 426
     pause
     ivy "Here it is."
-
     show ivy b_naked a_sheet_box f_normal with dissolve
     show player 22
     player_name "!!!" with hpunch
     show ivy f_surprised_down
     with dissolve
     ivy "Oopsie!"
-
     show player 171b
     show ivy a_sheet_cover f_shy
     with dissolve
     show player 171
     pause
-    ivy "Maaf tentang itu."
-
+    ivy "Sorry about that."
     show player 170c
-    player_name "T-tidak masalah."
-
+    player_name "N-no problem."
     show player 169c
     show ivy f_sexy
     ivy "Aww, you're so adorable when you blush!"
-
     show player 170c
-    player_name "Saya?"
-
+    player_name "I am?"
     show player 169c
     ivy @ -m_talk "Mhmm."
-
     show player 171
     vero "What's taking so long out here?"
-
     show ivy b_hug_vero f_normal_back
     show vero f_sexy b_empty
     with dissolve
     vero "I'm not done with you yet!"
-
     hide vero
     show ivy b_hug_vero_kiss f_laugh
     with dissolve
     ivy "Oh, haah!"
-
     show ivy f_normal_back
     ivy "I was just helping this young man with his order."
-
     show player 170b
     player_name "{b}Veronica{/b}?!"
-
     show player 169b
     show ivy b_hug_vero
     show vero f_sexy b_empty
     with dissolve
     vero "{b}[firstname]{/b}?"
-
     show player 170b
-    player_name "Apa yang kamu lakukan di sini?"
-
+    player_name "What are you doing here?"
     show player 169b
     vero "Oh, you know, just blowing off a little steam on my break..."
-
     vero "... How about you?"
-
     show player 170b
     player_name "I'm just-"
-
     player_name "Ehh, picking something up..."
-
     player_name "... F-for a friend!"
-
     show player 169b
     vero "Oh, reeeeeally?"
-
     ivy "Someone named {b}Diane{/b} apparently."
-
     show ivy f_normal
     show vero f_normal
     vero "{i}*Gasp*{/i} That package is for {b}Diane{/b}?!"
-
     show ivy a_sheet_cover b_naked:
         xoffset -176
     show vero b_disheveled
     with dissolve
-    vero "Coba lihat!!"
-
+    vero "Lemme see!!"
     show player 170b
     player_name "Oh, I don't know... We really shouldn't."
-
     player_name "{b}Diane{/b} made me promise I wouldn't open it."
-
     show player 169b
     vero "Well, did she say I couldn't open it?"
-
     show player 171c
-    player_name "T-tidak?"
-
+    player_name "N-no?"
     show player 170b
     player_name "But I don't think-"
-
     show player 169b
-    vero "Oh, ayolah!"
-
+    vero "Oh, c'mon!"
     vero "One little peek won't hurt, will it?"
-
     show player 10
     show vero a_box
     with dissolve
     player_name "Alright, but please don't tell her I let you look."
-
     show player 5
     show vero f_sexy_down a_box_open with dissolve
     pause
     vero @ -m_talk "..."
     vero "Oh, wow."
-
     vero "This is not at all what I expected..."
-
     show vero f_sexy a_idle
     show player 169b
     with dissolve
     vero "... What kind of mischief is she getting into over there in that barn of hers?!"
-
     show player 170b
     player_name "Uhh..."
-
     show player 170c
     player_name "... Heh, I couldn't say."
-
     show player 169c
     vero "Well, whatever it is, it's kinky and I'm terribly jealous!"
-
     vero "Remind her to call me, will you?"
-
     vero "I'm dying to hear her try and come up with an explanation for this!"
-
     show player 170c
-    player_name "Y-ya, oke."
-
+    player_name "Y-yeah, okay."
     show player 169c
     show ivy f_sexy
     ivy "{i}*Ahem*{/i} I don't mean to rush you, gorgeous..."
-
     ivy "... But you've only got me for another twenty minutes."
-
     show player 171 with None
     with dissolve
     vero "Mmm, we better not waste any more time then!"
-
     vero "See ya later, {b}[firstname]{/b}."
-
     hide vero
     hide ivy
     with dissolve
     pause
     show player 170
     player_name "L-later, {b}Veronica{/b}."
-
     show player 169
     pause
     player_name "( Hmm, {b}Veronica{/b} sure seemed shocked by {b}Diane{/b}'s package... )"
-
     player_name "( ... I wonder what's inside? )"
-
 
 
 
@@ -531,14 +387,11 @@ label pink_diane_get_outfit_package:
 label pink_first_visit:
     scene expression player.location.background_blur
     show player 23 with dissolve
-    player_name "(Wah!)"
-
+    player_name "( Wow! )"
     show player 21
     player_name "( That's... There's a lot of weird stuff in here. )"
-
     show player 29
     player_name "( Hmm... Maybe these will come in handy one day... )"
-
     hide player 29 with dissolve
     return
 
@@ -546,9 +399,7 @@ label pink_mia_helen_outfit_request:
     scene expression player.location.background_blur
     show player 12 with dissolve
     player_name "I should look through that clothing rack..."
-
     player_name "... They must have a selection of lingerie."
-
     hide player with dissolve
     return
 
@@ -556,7 +407,6 @@ label pink_mia_angelicas_whip:
     scene expression player.location.background_blur with fade
     show player 12 with dissolve
     player_name "{b}There has to be something in here that looks like a whip{/b}..."
-
     hide player with dissolve
     return
 
@@ -581,16 +431,11 @@ label ivy_paizuri_pre:
     show player 174 at left
     with fade
     player_name "I'll try the basic."
-
     ivy "Testing the waters, huh?"
-
     show player 29
-    player_name "aku uhh..."
-
+    player_name "I uhh..."
     ivy a_towel f_laugh "Heh, I'm just teasing!"
-
     ivy a_towel_money "Follow me."
-
     scene massage_room_closeup with fade
     show player 1 at left
     show ivy a_towel
@@ -600,34 +445,24 @@ label ivy_paizuri_pre:
 label ivy_paizuri_first:
     show player 43
     player_name "{i}*Whistle*{/i} Cool room."
-
     show player 1
     show ivy a_towel with dissolve
     ivy "{i}*Chuckle*{/i} It'll be even cooler once we get started."
-
     ivy "Now, strip down and lay on the bed. You can put your clothes on the table."
-
     ivy "I'll give you a few minutes to prepare."
-
     ivy "Have to make sure nobody can interrupt us..."
-
     hide ivy with dissolve
     show player 18
     player_name "( Phew! That was way less awkward than I expected it to be! )"
-
     scene massage_room_closeup with fade
     show player 175 at left
     with dissolve
     player_name "( I didn't expect it to be so straightforward, though... )"
-
     show player 57
     player_name "( Am I really ready for this yet? )"
-
     player_name "( ... I can't turn back now. )"
-
     show player 175
     player_name "( Might as well enjoy it. )"
-
     hide player with dissolve
     scene massage_room
     show playersex 19 zorder 1
@@ -635,61 +470,43 @@ label ivy_paizuri_first:
     show old_ivy 18 zorder 3 at Position (xpos=870,ypos=655) with dissolve
     with dissolve
     ivy "{i}*Chuckle*{/i} Why are you still wearing that?"
-
     ivy "We don't need towels for this kind of massage."
-
     player_name "Oh. Sorry..."
-
     show old_ivy 14 at Position (xpos=780,ypos=655) with dissolve
     pause 0.5
     hide expression "characters/ivy/char_ivy_13.png"
     show old_ivy 15 at Position (xpos=804,ypos=655) with vpunch
     ivy "There! That's much better, isn't it?"
-
-    player_name "Ya, benar."
-
+    player_name "Yeah, it is."
     show old_ivy 16 at Position (xpos=870,ypos=658)
     pause 1
     show old_ivy 17 at Position (xpos=870,ypos=655)
     pause 1
     show old_ivy 18 at Position (xpos=870,ypos=655)
     ivy "How on Earth do you hide that thing?"
-
     ivy "In any case: name's {b}Ivy{/b}."
-
     ivy "Now, my turn to prepare..."
-
     show old_ivy 19 at Position (xpos=819,ypos=655) with dissolve
     pause 1
     show old_ivy 20 at Position (xpos=865,ypos=655) with dissolve
     ivy "Like what you see?"
-
-    player_name "Ya..."
-
+    player_name "Yeah..."
     ivy "{i}*Giggle*{/i} Well, your friend sure looks like he does."
-
     ivy "I guess I'll have to take care of that..."
-
     hide old_ivy
     show ivysex 1 zorder 2
     with dissolve
     show ivysex 7 with dissolve
     ivy "Before we start, I should let you know something."
-
     ivy "This room is soundproof..."
-
     player_name "( Oh? )"
-
     ivy "... So you don't have to hold anything back."
-
     ivy "Now, juuussst relax..."
-
     return
 
 label ivy_paizuri_repeat:
     show player 1
     ivy "You know the drill. I'll be back in a minute."
-
     hide old_ivy with dissolve
     pause 0.5
     hide player with dissolve
@@ -699,12 +516,10 @@ label ivy_paizuri_repeat:
     pause 2
     show old_ivy 18 at Position (xpos=870,ypos=655) with dissolve
     ivy "Okay! Good to go!"
-
     show old_ivy 19 at Position (xpos=819,ypos=655) with dissolve
     pause 1
     show old_ivy 20 at Position (xpos=865,ypos=655) with dissolve
-    ivy "Ayo lakukan ini!"
-
+    ivy "Let's do this!"
     hide old_ivy
     show ivysex 1 zorder 2
     with dissolve
@@ -747,15 +562,12 @@ label ivy_paizuri_hscene_dialog:
         if not anim_toggle:
             show ivysex 5
         ivy "I bet it doesn't feel this good when you use your hand..."
-
         if not anim_toggle:
             show ivysex 6
         player_name "( Not even fucking close! )"
-
         if not anim_toggle:
             show ivysex 5
         player_name "Faster..."
-
         if not anim_toggle:
             show ivysex 6
 
@@ -763,24 +575,18 @@ label ivy_paizuri_hscene_dialog:
         if not anim_toggle:
             show ivysex 5
         ivy "Are you- {i}*huff*{/i} ...getting close?"
-
         if not anim_toggle:
             show ivysex 6
-        player_name "Ya..."
-
+        player_name "Yeah..."
         ivy "Then let's kick it into high gear!"
-
         player_name "Aahh... Gonna..."
-
 
     elif animcounter == 3:
         if not anim_toggle:
             show ivysex 5
         player_name "... Gonna... CUM!"
-
         show ivysex 7
-        ivy "Lakukan!"
-
+        ivy "Do it!"
         show white zorder 4 with dissolve
         hide white with dissolve
         show expression "characters/player/char_player_sex_25.png" as playersex_cum zorder 3
@@ -792,17 +598,11 @@ label ivy_paizuri_hscene_dialog:
         show expression "characters/player/char_player_sex_28.png" as playersex_cum zorder 3
         with Dissolve(0.3)
         ivy "Wow... There's so much..."
-
         ivy "Did you enjoy yourself?"
-
         player_name "Yeah... You're great at this."
-
         ivy "{i}*Giggle*{/i} I know."
-
         ivy "Such a mess though..."
-
         ivy "Let's get ourselves cleaned up."
-
     return
 
 label ivy_blowjob:
@@ -825,53 +625,37 @@ label ivy_blowjob_pre:
     show ivy a_towel
     with fade
     player_name "Yeah. I'd like the classic, please."
-
     ivy "Oh? Been eying my lips?"
-
     show player 29
     player_name "I ehh..."
-
     ivy a_towel @ f_laugh "Ease up, I'm just messing!"
-
     ivy a_towel_money "Follow me."
-
     scene massage_room_closeup with fade
     show player 1 at left
     show ivy a_towel
     with dissolve
     ivy "Okay, I'll just make sure nobody can interrupt us."
-
     return
 
 label ivy_blowjob_first:
     show player 43
     player_name "{i}*Whistle*{/i} Cool room."
-
     show player 1
     ivy "{i}*Chuckle*{/i} It'll be even cooler once we get started."
-
     show ivy a_towel
     ivy "Now, strip down and lay on the bed. You can put your clothes on the table."
-
     ivy "I'll give you a few minutes to prepare."
-
     ivy "Have to make sure nobody can interrupt us..."
-
     hide ivy with dissolve
     show player 18
     player_name "( Phew, that was way less awkward than I expected it to be! )"
-
     show player 175 with dissolve
     player_name "( I didn't expect it to be so straightforward, though... )"
-
     show player 57
     player_name "( Am I really ready for this yet? )"
-
     player_name "( ... Nah, I can't turn back now. )"
-
     show player 175
     player_name "( Might as well enjoy it. )"
-
     hide player with dissolve
     scene massage_room
     show playersex 19 zorder 1
@@ -879,64 +663,44 @@ label ivy_blowjob_first:
     with dissolve
     show old_ivy 18 zorder 3 at Position (xpos=870,ypos=655) with dissolve
     ivy "{i}*Chuckle*{/i} Why are you still wearing that?"
-
     ivy "We don't need towels for this kind of massage."
-
     player_name "Oh, sorry..."
-
     show old_ivy 14 at Position (xpos=780,ypos=655) with dissolve
     pause 0.5
     hide expression "characters/ivy/char_ivy_13.png"
     show old_ivy 15 at Position (xpos=804,ypos=655) with vpunch
     ivy "There, that's much better, isn't it?"
-
-    player_name "Ya, benar."
-
+    player_name "Yeah, it is."
     show old_ivy 16 at Position (xpos=870,ypos=658)
     pause 1
     show old_ivy 17 at Position (xpos=870,ypos=655)
     pause 1
     show old_ivy 18 at Position (xpos=870,ypos=655)
     ivy "How on earth do you hide that thing?"
-
     ivy "In any case: name's {b}Ivy{/b}."
-
     ivy "Now, my turn to prepare..."
-
     show old_ivy 19 at Position (xpos=819,ypos=655) with dissolve
     pause 1
     show old_ivy 20 at Position (xpos=865,ypos=655) with dissolve
     ivy "Like what you see?"
-
-    player_name "Ya..."
-
+    player_name "Yeah..."
     ivy "{i}*Giggle*{/i} Well, your friend sure looks like he does."
-
     ivy "I guess I'll have to take care of that..."
-
     hide old_ivy
     show ivysex 1 zorder 2
     with dissolve
     show ivysex 2 with dissolve
     ivy "Before we start, I should let you know something."
-
     ivy "This room is soundproof..."
-
     player_name "( Oh? )"
-
     ivy "... So you don't have to hold anything back."
-
     ivy "Oh, and let me know when you're close, alright?"
-
-    player_name "Tentu saja."
-
+    player_name "Sure thing."
     ivy "Now, just lay back and relax..."
-
     return
 
 label ivy_blowjob_repeat:
     ivy "You know the drill, I'll be back in a minute."
-
     hide old_ivy with dissolve
     pause 0.5
     hide player
@@ -946,12 +710,10 @@ label ivy_blowjob_repeat:
     pause 2
     show old_ivy 18 at Position (xpos=870,ypos=655) with dissolve
     ivy "Okay! Good to go!"
-
     show old_ivy 19 at Position (xpos=819,ypos=655) with dissolve
     pause 1
     show old_ivy 20 at Position (xpos=865,ypos=655) with dissolve
-    ivy "Ayo lakukan ini!"
-
+    ivy "Let's do this!"
     hide old_ivy
     show ivysex 1 zorder 2
     with dissolve
@@ -995,69 +757,48 @@ label ivy_blowjob_hscene_dialog:
         if not anim_toggle:
             show ivysex 3
         player_name "( Man, if her mouth feels this good, actual sex must be insane... )"
-
         if not anim_toggle:
             show ivysex 4
         player_name "Aaah... Faster..."
-
 
     elif animcounter == 2:
         if not anim_toggle:
             show ivysex 3
         player_name "( Crap, I'm getting close... )"
-
         if not anim_toggle:
             show ivysex 4
         player_name "Faster."
-
 
     elif animcounter == 3:
         if not anim_toggle:
             show ivysex 3 zorder 2
         player_name "( Gotta warn her... )"
-
         if not anim_toggle:
             show ivysex 4
         player_name "I'm about to-"
-
         show ivysex 3
         player_name "SHIT!"
-
         show white zorder 4 with dissolve
         hide white
         show ivysex 24
         with dissolve
         show ivysex 25 with dissolve
-        player_name "aku uhh..."
-
+        player_name "I uhh..."
         show ivysex 26
-        ivy "{i}*Batuk* *Batuk*{/i}"
-
+        ivy "{i}*Cough* *Cough*{/i}"
         ivy "What happened to the whole \"let me know\" part?"
-
         player_name "Uhh, sorry about that..."
-
         ivy "You know, usually I charge extra for swallowing."
-
-        player_name "saya..."
-
+        player_name "I..."
         player_name "( Crap, maybe I shouldn't have done that. )"
-
         show ivysex 1
         ivy "{i}*Giggle*{/i} Oh man, you should see the look on your face!"
-
         ivy "Don't worry about it, you were good practice! It's on the house."
-
         player_name "{i}*Nervous laugh*{/i} Thanks."
-
         player_name "Again, sorry about that..."
-
         ivy "Really, it's fine... You know, my usual customers don't usually pack this much {i}heat{/i}."
-
         player_name "Oh, uh, thanks, I guess."
-
         ivy "Now, let's get ourselves cleaned up."
-
     return
 
 label ivy_reverse_cowgirl:
@@ -1080,52 +821,36 @@ label ivy_reverse_cowgirl_pre:
     show ivy a_towel
     with fade
     player_name "Yeah, I'll try the premium, please."
-
     ivy "Ohoh, quite bold for your age!"
-
     show player 29
-    player_name "aku uhh..."
-
+    player_name "I uhh..."
     ivy a_towel @ f_laugh "{i}*Giggle*{/i} I like an eager man!"
-
     ivy a_towel_money "Follow me."
-
     scene massage_room_closeup with fade
     show ivy a_towel
     show player 43 at left
     with dissolve
     ivy "Alright, I'll just make sure nobody can interrupt us."
-
     return
 
 label ivy_reverse_cowgirl_first:
     player_name "{i}*Whistle*{/i} Cool room."
-
     show player 1
     show ivy a_towel f_laugh
     ivy "{i}*Chuckle*{/i} It'll be even cooler once we get started."
-
     ivy f_normal "Now, strip down and lay on the bed. You can put your clothes on the table."
-
     ivy "I'll give you a few minutes to prepare."
-
     ivy "Have to make sure nobody can interrupt us."
-
     hide ivy with dissolve
     show player 18
     player_name "( Phew, that was way less awkward than I expected it to be! )"
-
     show player 175 with dissolve
     player_name "( I didn't expect it to be so straightforward though... )"
-
     show player 57
     player_name "( Am I really ready for this yet? )"
-
     player_name "( ... Nah, I can't turn back now. )"
-
     show player 175
     player_name "( Might as well enjoy it. )"
-
     hide player with dissolve
     scene massage_room
     show playersex 19 zorder 1
@@ -1133,30 +858,22 @@ label ivy_reverse_cowgirl_first:
     with dissolve
     show old_ivy 18 zorder 3 at Position (xpos=870,ypos=655) with dissolve
     ivy "{i}*Chuckle*{/i} Why are you still wearing that?"
-
     ivy "We don't need towels for this kind of massage."
-
     player_name "Oh. Sorry..."
-
     show old_ivy 14 at Position (xpos=780,ypos=655) with dissolve
     pause 0.5
     hide expression "characters/ivy/char_ivy_13.png"
     show old_ivy 15 at Position (xpos=804,ypos=655) with vpunch
     ivy "There! That's much better, isn't it?"
-
-    player_name "Ya, benar."
-
+    player_name "Yeah, it is."
     show old_ivy 16 at Position (xpos=870,ypos=658)
     pause 1
     show old_ivy 17 at Position (xpos=870,ypos=655)
     pause 1
     show old_ivy 18 at Position (xpos=870,ypos=655)
     ivy "How on Earth do you hide that thing?"
-
     ivy "In any case, name's {b}Ivy{/b}."
-
     ivy "Now, my turn to prepare..."
-
     return
 
 label ivy_reverse_cowgirl_after:
@@ -1166,13 +883,10 @@ label ivy_reverse_cowgirl_after:
     show old_ivy 7 zorder 2 at Position (xpos=800,ypos=656)
     with dissolve
     ivy "We're gonna need a condom for this one."
-
     show old_ivy 6 at Position (xpos=799,ypos=655)
-    player_name "Aduh, bung..."
-
+    player_name "Aww, man..."
     show old_ivy 7 at Position (xpos=800,ypos=656)
     ivy "Oh don't fret! You won't even notice that it's there. Trust me."
-
     show old_ivy 9 at Position (xpos=730,ypos=674) with dissolve
     pause
     show old_ivy 10 at Position (xpos=730,ypos=697) with dissolve
@@ -1180,7 +894,6 @@ label ivy_reverse_cowgirl_after:
     show expression "characters/player/char_player_sex_29.png" zorder 2
     show old_ivy 18 at Position (xpos=870,ypos=655)
     ivy "And for the final part..."
-
     hide player
     scene massage_room
     show playersex 19 zorder 1
@@ -1197,23 +910,16 @@ label ivy_reverse_cowgirl_after:
     pause
     show ivysex 17 with dissolve
     ivy "{i}*Giggle*{/i} I wonder if it'll fit..."
-
     ivy "You ready to feel heaven?"
-
     player_name "{i}*Gulp*{/i} Yeah."
-
-    ivy "Ini dia..."
-
+    ivy "Here we go..."
     show playersex 22
     show ivysex 18 with dissolve
     show ivysex 19 with dissolve
     player_name "Haaah-"
-
     show ivysex 20
     ivy "You okay back there?"
-
     player_name "Yeah, go ahead..."
-
     return
 
 label ivy_reverse_cowgirl_loop:
@@ -1253,41 +959,32 @@ label ivy_reverse_cowgirl_hscene_dialog:
         if not anim_toggle:
             show ivysex 19
         player_name "( Holy shit, this feels amazing! )"
-
         if not anim_toggle:
             show ivysex 18
         player_name "You can go faster... I think I can handle it..."
-
         if not anim_toggle:
             show ivysex 19
         ivy "Okay. You asked for it!"
-
 
     elif animcounter == 2:
         if not anim_toggle:
             show ivysex 19
         player_name "( Gotta hold out for just a while longer... )"
-
         if not anim_toggle:
             show ivysex 18
         ivy "Haah... I gotta say..."
-
         if not anim_toggle:
             show ivysex 19
         ivy "... You may be just a teenager..."
-
         if not anim_toggle:
             show ivysex 18
         ivy "... But you- Aah... Put some of my clients to shame!"
-
         if not anim_toggle:
             show ivysex 19
         player_name "( That's one way to boost my ego. )"
-
         if not anim_toggle:
             show ivysex 18
         player_name "( I wonder how she'd react to... )"
-
         if not anim_toggle:
             show ivysex 19
 
@@ -1295,19 +992,15 @@ label ivy_reverse_cowgirl_hscene_dialog:
         if not anim_toggle:
             show ivysex 19
         player_name "( Crap, I'm at my limit! )"
-
         if not anim_toggle:
             show ivysex 18
         player_name "( She's way too good at this! )"
-
         if not anim_toggle:
             show ivysex 19
-        player_name "aku akan keluar!"
-
+        player_name "I'm gonna cum!"
         if not anim_toggle:
             show ivysex 18
         ivy "Haah... Go ahead!"
-
 
         call screen ivy_rcowgirl_cum_options
 
@@ -1323,11 +1016,9 @@ label ivy_reverse_cowgirl_hscene_dialog:
         hide white
         with dissolve
         ivy "Haaa..."
-
         if not ivy_cum_inside:
             show expression "characters/player/char_player_sex_51.png" as playersex_cum zorder 3
         ivy "Haah... You lasted a pretty long time there... For a teenager."
-
 
         hide expression "characters/player/char_player_sex_29.png"
         if ivy_cum_inside:
@@ -1335,7 +1026,6 @@ label ivy_reverse_cowgirl_hscene_dialog:
             show ivysex 22 zorder 2
             show expression "characters/player/char_player_sex_35.png" zorder 3
         player_name "Thanks. You're amazing..."
-
         hide expression "characters/player/char_player_sex_35.png"
         show playersex 19
         show ivysex 15 zorder 2
@@ -1345,7 +1035,6 @@ label ivy_reverse_cowgirl_hscene_dialog:
             show expression "characters/player/char_player_sex_31.png" zorder 3
         pause
         ivy "Let's get ourselves cleaned up..."
-
     return
 
 label ivy_slap_ass:
@@ -1356,9 +1045,7 @@ label ivy_slap_ass:
     show playersex 24 with vpunch
     pause 0.2
     ivy "{i}*Giggle*{/i} Getting even bolder?"
-
     ivy "Faster it is, then!"
-
     show playersex 22
     show ivysex 20
     $ animated = False
@@ -1384,50 +1071,35 @@ label ivy_cowgirl_pre:
     show player 174 at left
     with fade
     player_name "Yeah, I'll have the ultimate, please."
-
     ivy "{i}*Giggle*{/i} You want to see it all, don't you?"
-
     show player 29
-    player_name "aku uhh..."
-
+    player_name "I uhh..."
     ivy a_towel @ f_laugh "I like myself an eager man."
-
     ivy a_towel_money "Follow me."
-
     scene massage_room_closeup with fade
     show ivy a_towel
     show player 43 at left
     with dissolve
     ivy "Alright, I'll just make sure nobody can interrupt us."
-
     return
 
 label ivy_cowgirl_first:
     player_name "{i}*Whistle*{/i} Cool room."
-
     show player 1
     show ivy a_towel f_laugh
     ivy "{i}*Chuckle*{/i} It'll be even cooler once we get started."
-
     ivy f_normal "Now, strip down and lay on the bed. You can put your clothes on the table."
-
     ivy "I'll give you a few minutes to prepare."
-
     hide ivy
     scene blank with dissolve
     scene massage_room_closeup
     show player 175 at left
     with dissolve
     player_name "( Phew, that was way less awkward than I expected it to be! )"
-
     player_name "( I didn't expect this to be so straightforward, though. )"
-
     player_name "( Maybe I'm not really ready for something like this yet... )"
-
     player_name "( ... Nah. I can't turn back now. )"
-
     player_name "( I might as well enjoy it. )"
-
     scene massage_room
     hide player
     show playersex 19
@@ -1435,30 +1107,22 @@ label ivy_cowgirl_first:
     show old_ivy 18 zorder 3 at Position (xpos=870,ypos=655)
     with dissolve
     ivy "{i}*Chuckle*{/i} Why are you still wearing that?"
-
     ivy "We don't need towels for this kind of massage."
-
     player_name "Oh, sorry..."
-
     show old_ivy 14 at Position (xpos=780,ypos=655) with dissolve
     pause 0.5
     hide expression "characters/ivy/char_ivy_13.png"
     show old_ivy 15 at Position (xpos=804,ypos=655) with vpunch
     ivy "There! That's much better, isn't it?"
-
-    player_name "Ya, benar."
-
+    player_name "Yeah, it is."
     show old_ivy 16 at Position (xpos=870,ypos=658)
     pause 1
     show old_ivy 17 at Position (xpos=870,ypos=655)
     pause 1
     show old_ivy 18 at Position (xpos=870,ypos=655)
     ivy "How on Earth do you hide that thing?"
-
     ivy "In any case: name's {b}Ivy{/b}."
-
     ivy "Now, my turn to prepare..."
-
     return
 
 label ivy_cowgirl_after:
@@ -1468,13 +1132,10 @@ label ivy_cowgirl_after:
     show old_ivy 7 zorder 2 at Position (xpos=800,ypos=656)
     with dissolve
     ivy "We're gonna need a condom for this one."
-
     show old_ivy 6 at Position (xpos=799,ypos=655)
-    player_name "Aduh, bung..."
-
+    player_name "Aww, man..."
     show old_ivy 7 at Position (xpos=800,ypos=656)
     ivy "Oh don't fret, you won't even notice that it's there. Trust me."
-
     show old_ivy 9 at Position (xpos=730,ypos=674) with dissolve
     pause
     show old_ivy 10 at Position (xpos=730,ypos=697) with dissolve
@@ -1482,7 +1143,6 @@ label ivy_cowgirl_after:
     show expression "characters/player/char_player_sex_29.png" zorder 2
     show old_ivy 18 at Position (xpos=870,ypos=655)
     ivy "And for the final part..."
-
     show old_ivy 19 at Position (xpos=819,ypos=655) with dissolve
     pause 1
     show old_ivy 20 at Position (xpos=865,ypos=655) with dissolve
@@ -1496,23 +1156,16 @@ label ivy_cowgirl_after:
     show playersex 20
     show ivysex 10 with dissolve
     ivy "{i}*Giggle*{/i} I wonder if it'll fit..."
-
     ivy "You ready to feel heaven?"
-
     player_name "{i}*Gulp*{/i} Yeah."
-
-    ivy "Ini dia..."
-
+    ivy "Here we go..."
     show playersex 21
     show ivysex 11
     player_name "Haaah-"
-
     show playersex 20
     show ivysex 10
-    ivy "Kamu baik-baik saja?"
-
+    ivy "You okay?"
     player_name "Yeah, go ahead..."
-
     return
 
 label ivy_cowgirl_loop:
@@ -1556,71 +1209,58 @@ label ivy_cowgirl_hscene_dialog:
             show playersex 20
             show ivysex 10
         player_name "( Holy shit, this feels amazing! )"
-
         if not anim_toggle:
             show playersex 21
             show ivysex 11
         player_name "You can go faster... I think I can handle it..."
-
         if not anim_toggle:
             show playersex 20
             show ivysex 10
         ivy "Okay. You asked for it!"
-
 
     elif animcounter == 2:
         if not anim_toggle:
             show playersex 20
             show ivysex 10
         player_name "( Gotta hold out for just a while longer... )"
-
         if not anim_toggle:
             show playersex 21
             show ivysex 11
         ivy "Haah... I gotta say..."
-
         if not anim_toggle:
             show playersex 20
             show ivysex 10
         ivy "... You may be just a teenager..."
-
         if not anim_toggle:
             show playersex 21
             show ivysex 11
         ivy "... But you- Aah... Put some of my clients to shame!"
-
         if not anim_toggle:
             show playersex 20
             show ivysex 10
         player_name "( That's one way to boost my ego. )"
-
         if not anim_toggle:
             show playersex 21
             show ivysex 11
         player_name "( I wonder how she'd react to... )"
-
 
     elif animcounter == 3:
         if not anim_toggle:
             show playersex 20
             show ivysex 10
         player_name "( Crap, I'm at my limit! )"
-
         if not anim_toggle:
             show playersex 21
             show ivysex 11
         player_name "( She's way too good at this! )"
-
         if not anim_toggle:
             show playersex 20
             show ivysex 10
-        player_name "aku akan keluar!"
-
+        player_name "I'm gonna cum!"
         if not anim_toggle:
             show playersex 21
             show ivysex 11
         ivy "Haah... Go ahead!"
-
 
         call screen ivy_cowgirl_cum_options
 
@@ -1636,16 +1276,13 @@ label ivy_cowgirl_hscene_dialog:
         hide white
         with dissolve
         ivy "Haaa..."
-
         if not ivy_cum_inside:
             show expression "characters/player/char_player_sex_33.png" as playersex_cum zorder 3
         ivy "Haah... You lasted a pretty long time there... For a teenager."
-
         if not ivy_cum_inside:
             show ivysex 14 zorder 2
             show expression "characters/player/char_player_sex_34.png" as playersex_cum zorder 3
         player_name "Thanks... You're amazing..."
-
         hide playersex_cum
         hide expression "characters/player/char_player_sex_29.png"
         show playersex 19
@@ -1661,7 +1298,6 @@ label ivy_cowgirl_hscene_dialog:
             with dissolve
         pause
         ivy "Let's get ourselves cleaned up..."
-
     return
 
 label ivy_no_money:
@@ -1670,16 +1306,13 @@ label ivy_no_money:
     show anon f_worried
     with dissolve
     anon @ -m_talk "( Darn, I can't afford this. )"
-
     anon "On second thought, maybe some other time."
-
     $ game.main()
 
 label pink_just_browsing:
     scene expression player.location.background_blur with None
     show player 4
     player_name "( Hmm, I don't have any reason to buy this at the moment... )"
-
     hide player with dissolve
     $ game.main()
 # Decompiled by unrpyc: https://github.com/CensoredUsername/unrpyc

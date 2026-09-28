@@ -29,9 +29,7 @@ layeredimage melonia:
         attribute b_dressed default
         attribute b_empty null
         attribute b_magic "melonia_body_b_[M_melonia.outfit.get][M_melonia.pregnancy.to_string]"   
-
         attribute b_dressed_magic "melonia_body_b_dressed[M_melonia.pregnancy.to_string]"   
-
         attribute b_naked_kiss 'melonia_body_b_naked_kiss'
         attribute b_dressed_kiss 'melonia_body_dressed_b_kiss'
         attribute b_jacuzzi_big 'location_rump_backyard_jacuzzi_melonia'
@@ -204,9 +202,7 @@ layeredimage melonia:
     group arms if_all 'b_dressed' auto variant 'dressed':
         attribute a_idle default 'melonia_arms_dressed_a_hips'
         attribute a_baby "melonia_arms_dressed_a_baby_[M_melonia.pregnancy.baby_gender]"
-
-        attribute a_baby_give "melonia_arms_dressed_a_baby_[M_melonia.pregnancy.baby_gender]_memberi"
-
+        attribute a_baby_give "melonia_arms_dressed_a_baby_[M_melonia.pregnancy.baby_gender]_give"
 
 
     group arms if_all 'b_jacuzzi_forward' auto variant 'jacuzzi_forward':
@@ -232,9 +228,7 @@ layeredimage melonia:
 
     group arms if_all 'b_gown_bed' auto variant 'gown_bed':
         attribute a_idle default "melonia_arms_gown_bed_a_baby_[M_melonia.pregnancy.baby_gender]"
-
         attribute a_baby_give "melonia_arms_gown_bed_a_baby_give_[M_melonia.pregnancy.baby_gender]"
-
 
 
     group arms if_all 'b_magic' auto:

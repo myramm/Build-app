@@ -26,14 +26,10 @@ label minigame_pizza2(quota):
         with fade
         if _return == Pizza2Minigame.FAIL:
             anon @ -m_talk "( Crap, this is a mess... )"
-
             anon @ -m_talk "( I'd better start over before {b}Maria{/b} catches a glimpse of this. )"
-
         else:
             anon @ -m_talk "( I'll never keep up with orders at this rate. )"
-
             anon @ -m_talk "( I need to work faster before {b}Maria{/b} notices. )"
-
         jump minigame_pizza2.retry
 
     return

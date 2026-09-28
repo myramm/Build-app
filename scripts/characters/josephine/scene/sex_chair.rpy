@@ -49,89 +49,62 @@ label scene_josie_sex_chair.loop:
 label scene_josie_sex_chair.dialogue(opt, rng=-1):
 
     if opt == 1:
-        josephine "Astaga!!"
-
+        josephine "Oh, shit!!"
 
     elif opt == 2:
-        anon "Ini dia."
-
-        josephine "Ahhh!"
-
+        anon "There we go."
+        josephine "Ahh!"
 
         if rng < 0:
-            anon "Sempurna."
-
+            anon "Perfect."
 
     elif opt == 3:
-        anon "Saya tidak percaya Anda menyukai hal ini."
-
-
-        if rng < 0:
-            josephine "Apa maksudmu?"
-
-            anon "Game porno animasi."
-
-
-        josephine "Menurutku itu lucu."
-
-        anon "Oh, apakah ini saat kamu memberitahuku bahwa kamu hanya memainkannya untuk ceritanya?"
-
+        anon "I can't believe you're into this stuff."
 
         if rng < 0:
-            josephine "Hmm, ya."
+            josephine "What do you mean?"
+            anon "Animated porn games."
 
+        josephine "I think it's funny."
+        anon "Oh, is this where you tell me you only play it for the story?"
+
+        if rng < 0:
+            josephine "Umm, yeah."
             pause
 
-        josephine "Atau tahukah Anda, saat saya benar-benar bosan dan ingin cum."
-
+        josephine "Or you know, when I'm really bored and I wanna cum."
 
         if rng < .5:
-            anon "Aku mengetahuinya!"
-
+            anon "I knew it!"
 
     elif opt == 4:
-        anon "Musik ini mengerikan."
-
-        josephine "Entahlah, aku agak menyukainya."
-
-        anon "Kamu benar-benar troll."
-
-        josephine "Benar sekali."
-
+        anon "This music is horrible."
+        josephine "I dunno, I kinda like it."
+        anon "You are such a troll."
+        josephine "Damn right."
 
     elif opt == 5:
         if rng < 0:
-            josephine "Cih, hati-hati di belakang sana!"
+            josephine "Tch, careful back there!"
 
-
-        anon "Apakah aku menariknya terlalu keras?"
-
-        josephine "Tidak, menarik rambutnya bagus."
-
+        anon "Am I pulling too hard?"
+        josephine "No, the hair pulling is great."
 
         if rng < 0:
-            josephine "Cukup yakin kau sedang meninju ginjalku."
-
-            anon "Oh maaf."
-
+            josephine "Just pretty sure you're dick punching me in the kidney."
+            anon "Oh, sorry."
 
     return
 
 
 label scene_josie_sex_chair.cum(where):
-    anon "Apakah kamu semakin dekat?"
-
+    anon "Are you getting close?"
     josephine "Mhmm!"
-
-    anon "Bagus karena aku tinggal sekitar dua detik lagi untuk muncul!"
-
+    anon "Good because I'm about two seconds away from popping off!"
     pause
-    anon "Di sini..."
-
-    anon "... itu..."
-
-    anon "... DATANG!!"
-
+    anon "Here..."
+    anon "... it..."
+    anon "... COMES!!"
 
     if where == 'inside':
         show josephine_sex_chair_cum as anim
@@ -155,10 +128,8 @@ label scene_josie_sex_chair.cum(where):
             zoom .92
         with {'master': fastdissolve}
         josephine "NGGHHH!!!"
-
     else:
-        josephine @ -m_talk "MM."
-
+        josephine @ -m_talk "Mmm."
 
     pause
     hide xray
@@ -173,16 +144,11 @@ label scene_josie_sex_chair.cum(where):
 
     with {'master': dissolve}
     anon "Haah... Haah..."
-
     show josephine -f_lipbite
-    anon "Itu pasti cara terbaik untuk menonton aliran seni!"
-
-    josephine "Kamu bodoh."
-
-    anon "Ya, tapi kamu menyukainya."
-
-    josephine f_happy "{i}*Huh*{/i} Ya, memang begitu."
-
+    anon "Now that's gotta be the best way to watch an art stream!"
+    josephine "You're a dork."
+    anon "Yeah, but you love it."
+    josephine f_happy "{i}*Sigh*{/i} I kinda do, yeah."
 
     if where == 'inside':
         call call_pregnancy_minigame (None, M_josie)
@@ -194,18 +160,13 @@ label scene_josie_sex_chair.repeat:
 
     call scene_josie_sex_chair.stage
     with fade
-    josephine "Bisakah kamu melihat?"
-
-    anon "Tidak, kepalamu menghalangi."
-
-    josephine "Tunggu."
-
+    josephine "Can you see?"
+    anon "No, your head is in the way."
+    josephine "Hold on."
     call scene_josie_sex_chair.insert
     with {'master': dissolve}
-    anon "Jangan khawatir, saya mengerti."
-
+    anon "Don't worry, I've got it."
     josephine f_curious_back @ -m_talk "Hmm?"
-
     call scene_josie_sex_chair.animate
     with dissolve
     call scene_josie_sex_chair.dialogue (1)
@@ -214,33 +175,21 @@ label scene_josie_sex_chair.repeat:
     pause
     call scene_josie_sex_chair.dialogue (3)
     pause
-    anon "Sekarang siapakah dua orang lainnya yang sedang berbicara?"
-
-    josephine "Oh, salah satunya adalah pembuat kode untuk tim..."
-
-    josephine "... Dan yang lainnya adalah penulisnya."
-
-    josephine "{b}Darkcookie{/b} meminta mereka menjawab pertanyaan penggemar sesekali."
-
-    anon "Itu cukup rapi."
-
-    josephine "Ya, kecuali itu biasanya jebakan dan dia menghabiskan seluruh waktunya untuk menindas mereka."
-
-    anon "Benar-benar?"
-
-    josephine "Hehe, ya."
-
+    anon "Now who are the other two guys that are talking?"
+    josephine "Oh, one of them is the coder for the team..."
+    josephine "... And the other is the writer."
+    josephine "{b}Darkcookie{/b} has them come on to answer fan questions every once in a while."
+    anon "That's pretty neat."
+    josephine "Yeah, except it's usually a trap and he spends the entire time bullying the shit out of them."
+    anon "Really?"
+    josephine "Heh, yeah."
     pause
     call scene_josie_sex_chair.dialogue (4)
     pause
-    josephine "Ayo, {b}[firstname]{/b}..."
-
-    josephine "... Persetan dengan vagina trollku!"
-
-    anon "Eugh, tolong jangan pernah katakan itu lagi."
-
+    josephine "C'mon, {b}[firstname]{/b}..."
+    josephine "... Fuck my troll pussy!"
+    anon "Eugh, please don't ever say that again."
     josephine "Haha!"
-
     pause
     call scene_josie_sex_chair.dialogue (5)
     pause

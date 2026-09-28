@@ -27,7 +27,7 @@ label medic_room_dialogue:
     elif M_cassie.is_state(S_cassie_end) and not M_cassie.get("had sex"):
         call expression game.dialog_select("medic_room_dialogue_count_2")
         menu:
-            "Saya ingin sekali.":
+            "I'd love to.":
                 call expression game.dialog_select("medic_room_dialogue_count_2_love_to")
                 $ M_cassie.set("had sex", True)
                 jump expression game.dialog_select("gloryhole_medic")

@@ -1,203 +1,132 @@
 label jenny_pregnancy_baby_need_anything:
     show anon f_normal
-    anon "Kalian butuh sesuatu?"
-
+    anon "You guys need anything?"
     show jenny f_happy_down
-    jenny "Tidak, kami baik-baik saja."
-
-    jenny "Bukankah begitu?"
-
-    jenny "Ya, benar!"
-
-    jenny "Kami luar biasa!"
-
+    jenny "No, we're good."
+    jenny "Aren't we?"
+    jenny "Yes, we are!"
+    jenny "We're wonderful!"
     return
 
 label jenny_pregnancy_baby_looking_forward_daycare:
     show anon f_normal
-    anon "Menantikan tempat penitipan anak?"
-
+    anon "Looking forward to daycare?"
     show anon f_surprised
     show jenny f_angry
-    jenny "Persetan tidak!"
-
+    jenny "Fuck no!"
     show jenny f_upset
-    jenny "Aku benci memikirkan untuk meninggalkan mereka bersama orang asing."
-
-    anon f_worried "Tidak akan asing lagi, {b}[jen_name]{/b}..."
-
-    anon f_normal "{b}[deb_name]{/b} dan {b}Diane{/b} mengenal wanita yang mengelola tempat itu."
-
-    anon "Kudengar dia sangat baik!"
-
-    jenny "Aku tidak peduli apakah dia Mary Poppins, aku tidak suka meninggalkan anakku bersamanya!"
-
-    anon "Heh, aku tidak pernah menganggapmu tipe ibu beruang..."
-
+    jenny "I hate thinking about leaving them with a stranger."
+    anon f_worried "It won't be a stranger, {b}[jen_name]{/b}..."
+    anon f_normal "{b}[deb_name]{/b} and {b}Diane{/b} know the lady running the place."
+    anon "I've heard she's really nice!"
+    jenny "I don't care if she's Mary fucking Poppins, I don't like leaving my kid with her!"
+    anon "Heh, I never took you for the momma bear type..."
     show jenny f_happy_down
-    jenny "Ya, baiklah... benar."
-
+    jenny "Yeah, well... I am."
     anon f_laugh "Haha!"
-
     show anon f_normal
     return
 
 label jenny_pregnancy_baby_leave:
     show anon f_normal
-    anon "Aku akan meninggalkanmu."
-
+    anon "I'll leave you be."
     show jenny f_happy_down
-    jenny "Ucapkan selamat tinggal pada {b}Ayah{/b}..."
-
-    jenny "Sampai jumpa, {b}Ayah{/b}!"
-
-    anon f_laugh "Hehe, sampai jumpa!"
-
+    jenny "Say bye to {b}Daddy{/b}..."
+    jenny "Bye-bye, {b}Daddy{/b}!"
+    anon f_laugh "Heh, bye-bye!"
     hide anon with dissolve
     return
 
 label jenny_pregnancy_debbie_driving_crazy:
     show anon f_worried
-    anon "{b}[deb_name]{/b} membuat Anda gila?"
-
+    anon "{b}[deb_name]{/b} is driving you crazy?"
     show jenny f_eyeroll
-    jenny "Ya Tuhan, ya!!"
-
+    jenny "Oh my god, yes!!"
     show jenny f_upset
-    anon "Bagaimana bisa?"
-
-    jenny "Dia selalu mengikutiku kemana-mana, mencoba membuatku makan..."
-
-    jenny "Itu menjengkelkan!!"
-
-    anon "Itu hanya naluri keibuannya yang muncul, {b}[jen_name]{/b}."
-
-    anon "Dia ingin menjaga putri dan cucunya."
-
+    anon "How so?"
+    jenny "She's always following me around, trying to get me to eat..."
+    jenny "It's annoying!!"
+    anon "It's just her maternal instincts kicking in, {b}[jen_name]{/b}."
+    anon "She wants to take care of her daughter and grandchild."
     show jenny f_eyeroll
-    jenny "Ya, ya, aku tahu."
-
+    jenny "Yeah, yeah, I know."
     show jenny f_upset
-    jenny "Aku hanya berharap dia tutup mulut tentang semua hal menjadi seorang nenek..."
-
-    jenny "... Aku bersumpah, dia lebih ceria darimu dalam hal ini."
-
-    anon f_normal "Hehe, menurutku itu manis."
-
+    jenny "I just wish she'd shut up about the whole being a grandmother thing..."
+    jenny "... I swear, she's sappier than you are about this stuff."
+    anon f_normal "Heh, I think it's sweet."
     show jenny f_eyeroll
-    jenny "Ugh, terserah."
-
+    jenny "Ugh, whatever."
     show jenny f_upset
     return
 
 label jenny_pregnancy_can_i_get_you_something_3:
     show anon f_worried
-    anon "Bolehkah aku memberimu sesuatu?"
-
+    anon "Can I get you something?"
     show jenny f_upset
-    jenny "Seperti apa?!"
-
-    anon f_normal "Entahlah, pijat kaki atau apa?"
-
+    jenny "Like what?!"
+    anon f_normal "I dunno, a foot massage or something?"
     show anon f_grin
     show jenny f_gross
-    jenny "Eww, tidak!"
-
-    jenny "Aku bahkan tidak ingin memperlihatkan kakiku padamu sekarang, itu sangat besar!"
-
-    anon f_flirt "Sungguh, aku tidak keberatan, kita hanya bisa-"
-
-    jenny "Tidak!"
-
-    anon f_skeptical "Oke, jangan menggosok kaki."
-
+    jenny "Eww, no!"
+    jenny "I don't even wanna show you my feet right now, they're gigantic!"
+    anon f_flirt "Really, I won't mind, we can just-"
+    jenny "No!"
+    anon f_skeptical "Okay, no foot rub."
     show anon f_worried
     show jenny f_upset
     pause
-    anon "Sesuatu untuk dimakan mungkin?"
-
+    anon "Something to eat maybe?"
     show jenny f_normal a_magic_sit_stand_belly_touch with dissolve
-    jenny "Oh, itu akan luar biasa!"
-
-    jenny "Tapi aku mendambakan hal-hal yang sangat aneh..."
-
-    anon "Apa maksudmu?"
-
+    jenny "Oh, that would be awesome!"
+    jenny "I have been craving some really weird stuff though..."
+    anon "What do you mean?"
     show jenny f_upset
-    jenny "Anda hanya akan menertawakan saya."
-
-    anon f_normal "Tidak, aku tidak akan melakukannya."
-
+    jenny "You'll just laugh at me."
+    anon f_normal "No, I won't."
     jenny @ -m_talk "..."
-    anon "Saya berjanji!"
-
+    anon "I promise!"
     show jenny f_sad
-    jenny "Baiklah."
-
+    jenny "Alright."
     show jenny f_eyeroll
-    jenny "{i}*Huh*{/i} Kapur."
-
+    jenny "{i}*Sigh*{/i} Chalk."
     show jenny f_sad
-    anon f_shock "Apa?!"
-
+    anon f_shock "What?!"
     show anon f_surprised_teeth
     show jenny f_normal
-    jenny "Aku tidak bisa menjelaskannya... Aku hanya ingin menggigit sebongkah besar kapur..."
-
+    jenny "I can't explain it... I just really wanna bite into a big hunk of chalk..."
     show jenny f_gross
     pause
-    jenny "Aneh bukan?"
-
+    jenny "It's weird right?"
     anon "..."
-    jenny "Apakah mereka membuat kapur yang bisa dimakan?"
-
-    anon f_laugh "Ha ha ha!"
-
+    jenny "Do they make edible chalk?"
+    anon f_laugh "Hahaha!"
     show jenny f_angry a_magic_sit_stand_crossed with dissolve
     pause
-    anon f_worried "Maafkan aku, aku hanya belum siap untuk-"
-
-    jenny "Kamu bilang kamu tidak akan tertawa!"
-
-    anon "Aku tahu, aku benar-benar minta maaf!"
-
-    anon f_normal "Tidak, {b}[jen_name]{/b}, menurutku mereka tidak bisa membuat kapur yang bisa dimakan..."
-
+    anon f_worried "I'm sorry, I just wasn't prepared for-"
+    jenny "You said you wouldn't laugh!"
+    anon "I know, I'm really sorry!"
+    anon f_normal "No, {b}[jen_name]{/b}, I don't think they make edible chalk..."
     show jenny f_sad
-    jenny "Hmmph, seharusnya begitu!"
-
-    anon f_worried "Kamu benar-benar ingin makan kapur?!"
-
-    jenny "Ya."
-
+    jenny "Hmmph, well they should!"
+    anon f_worried "You really wanna eat chalk?!"
+    jenny "Yes."
     show jenny f_grin a_magic_sit_stand_belly_touch with dissolve
-    jenny "... Dan marshmallow."
-
-    anon f_laugh "Oke, marshmallow pasti bisa kita buat."
-
-    anon "Aku akan mengambilkanmu beberapa!"
-
+    jenny "... And marshmallows."
+    anon f_laugh "Okay, marshmallows we can definitely do."
+    anon "I'll get you some!"
     show anon f_normal
     show jenny f_normal
-    jenny "Dengan acar!"
-
+    jenny "With pickles!"
     anon f_surprised @ -m_talk "..."
-    jenny "Oh, dan mustar!"
-
-    anon f_worried "Eh, oke."
-
+    jenny "Oh, and mustard!"
+    anon f_worried "Eugh, okay."
     show jenny f_eyeroll
-    jenny "Tapi bukan mustard biasa."
-
+    jenny "But not regular mustard."
     show jenny f_grin a_magic_sit_stand_crossed with dissolve
-    jenny "Saya ingin barang Dijon yang mahal itu!"
-
-    anon "B-benar."
-
-    anon "Saya akan segera menyelesaikannya."
-
-    anon @ -m_talk "(Ya Tuhan, itu sangat menjijikkan!!!)"
-
+    jenny "I want that expensive Dijon stuff!"
+    anon "R-right."
+    anon "I'll get right on that."
+    anon @ -m_talk "( Oh my god, that's so disgusting!!! )"
     return
 
 
@@ -206,211 +135,144 @@ label jenny_pregnancy_can_i_get_you_something_3:
 
 label jenny_pregnancy_about_debbie:
     show anon f_worried
-    anon "Tentang {b}[deb_name]{/b}..."
-
+    anon "About {b}[deb_name]{/b}..."
     show jenny f_grin
-    jenny "Aku tidak percaya dia hampir mempercayai cerita omong kosong itu..."
-
-    anon "Saya tidak mengerti mengapa kita tidak bisa mengatakan yang sebenarnya padanya?"
-
+    jenny "I can't believe she almost bought that bullshit story..."
+    anon "I don't understand why we can't just tell her the truth?"
     show jenny f_angry
-    jenny "Kamu ingin memberitahu ibuku bahwa kamulah ayahnya?!"
-
-    jenny "Dia benar-benar akan marah, tolol!"
-
-    anon "Menurutku dia tidak akan-"
-
+    jenny "You wanna tell my mom that you're the father?!"
+    jenny "She would totally flip out, you moron!"
+    anon "I don't think she'd-"
     show anon f_surprised
-    jenny "Tidak mungkin, {b}[firstname]{/b}!"
-
+    jenny "No fucking way, {b}[firstname]{/b}!"
     anon f_worried "{b}[jen_name]{/b}..."
-
-    jenny "SAYA BILANG TIDAK!"
-
-    anon f_tired "{i}*Huh*{/i}"
-
+    jenny "I SAID NO!"
+    anon f_tired "{i}*Sigh*{/i}"
     show anon f_worried
     return
 
 label jenny_pregnancy_can_i_get_you_something:
     show anon f_worried
-    anon "Bolehkah aku memberimu sesuatu?"
-
+    anon "Can I get you something?"
     show jenny f_eyeroll
-    jenny "Ya, mesin waktu."
-
+    jenny "Yeah, a time machine."
     show jenny f_upset
-    anon f_confused "Hah?"
-
+    anon f_confused "Huh?"
     show anon f_worried
     show jenny f_angry
-    jenny "Jadi aku bisa kembali ke masa lalu dan membuatmu mundur!"
-
+    jenny "So I can go back in time and make you pull out!"
     show jenny f_gross
     anon @ -m_talk "..."
     return
 
 label jenny_pregnancy_are_you_still_mad:
     show anon f_worried
-    anon "Apakah kamu masih marah?"
-
+    anon "Are you still mad?"
     show jenny f_angry a_magic_sit_stand_crossed with dissolve
-    jenny "Tentu saja aku marah, bodoh!"
-
+    jenny "Of course I'm mad, you idiot!"
     show jenny f_upset
-    jenny "Apakah Anda sadar betapa besarnya biaya yang harus saya keluarkan untuk hal ini?"
-
-    anon f_confused "Hah?"
-
+    jenny "Do you realize how much this is going to cost me?"
+    anon f_confused "Huh?"
     show anon f_worried
-    jenny "Siapa yang akan menonton acaraku jika aku menjadi gemuk?!"
-
-    anon "Anda tidak akan menjadi gemuk, {b}[jen_name]{/b}..."
-
-    anon "... Dan bahkan jika Anda melakukannya, beberapa orang menyukainya."
-
+    jenny "Who's going to watch my shows if I get fat?!"
+    anon "You're not going to get fat, {b}[jen_name]{/b}..."
+    anon "... And even if you do, some people are into that."
     show jenny f_eyeroll
-    jenny "Ugh, beberapa orang aneh yang kamu maksud."
-
+    jenny "Ugh, some freaks you mean."
     show jenny f_upset
-    anon "Semuanya akan baik-baik saja, Anda akan lihat."
-
+    anon "Everything is going to be fine, you'll see."
     show jenny f_phone_upset a_magic_sit_stand_phone with dissolve
-    jenny "Apa pun."
-
+    jenny "Whatever."
     return
 
 label jenny_pregnancy_leave:
     show anon f_worried
-    anon "Aku akan meninggalkanmu."
-
+    anon "I'll leave you be."
     show jenny f_eyeroll
-    jenny "Akhirnya sialan!"
-
+    jenny "Fucking finally!"
     show jenny f_phone_upset
-    anon "Anda akan memberi tahu saya jika Anda butuh sesuatu?"
-
+    anon "You'll let me know if you need anything?"
     show jenny f_upset
-    jenny "Ya, ya, aku akan memberitahumu."
-
-    jenny "Pergilah."
-
+    jenny "Yeah, yeah, I'll let you know."
+    jenny "Go away."
     show jenny f_phone_upset
-    anon f_tired "{i}*Huh*{/i}"
-
+    anon f_tired "{i}*Sigh*{/i}"
     hide anon with dissolve
     return
 
 label jenny_pregnancy_you_doing_ok_1:
     show anon f_worried
-    anon "Kamu baik-baik saja?"
-
+    anon "You doing okay?"
     show jenny f_phone_upset
-    jenny "Saya baik-baik saja."
-
+    jenny "I'm fine."
     pause
-    anon "Anda yakin?"
-
-    anon "K-kita bisa membicarakannya, jika kamu-"
-
+    anon "You sure?"
+    anon "W-we can talk about it, if you-"
     show anon f_surprised
     if randomizer() > 50:
         show jenny f_angry
-        jenny "Ya Tuhan, diamlah!"
-
-        jenny "Ibuku mungkin mendengarmu, tolol!"
-
-        anon f_worried "Aku hanya mengatakan-"
-
+        jenny "Oh my god, shut up!"
+        jenny "My mom might hear you, moron!"
+        anon f_worried "I'm just saying-"
         show jenny f_eyeroll
-        jenny "Saya tahu apa yang Anda katakan, {b}[firstname]{/b}!"
-
+        jenny "I know what you're saying, {b}[firstname]{/b}!"
         show jenny f_upset
-        jenny "Serius, aku baik-baik saja!"
-
+        jenny "Seriously, I'm fine!"
     else:
         show jenny f_upset
-        jenny "Aku bilang aku baik-baik saja, {b}[firstname]{/b}!"
-
-    jenny "Jatuhkan itu."
-
+        jenny "I said I'm fine, {b}[firstname]{/b}!"
+    jenny "Drop it."
     show jenny f_phone_upset
-    anon "O-oke."
-
+    anon "O-okay."
     return
 
 label jenny_pregnancy_you_doing_ok_2:
     show anon f_worried
-    anon "Kamu baik-baik saja?"
-
+    anon "You doing okay?"
     show jenny f_gross
-    jenny "Tidak, aku tidak baik-baik saja!"
-
-    jenny "Semua ini menyebalkan!"
-
-    anon "Ada apa?!"
-
+    jenny "No, I'm not okay!"
+    jenny "This entire thing sucks!"
+    anon "What's the matter?!"
     show jenny f_eyeroll
-    jenny "Hmm, baiklah, mari kita lihat..."
-
+    jenny "Hmm, well, let's see..."
     show jenny f_gross
-    jenny "... Sebagai permulaan, aku muntah-muntah setiap pagi."
-
-    jenny "Lalu aku makan seperti sapi karena anak idiotmu bertekad membuatku gemuk."
-
+    jenny "... For starters, I puke my guts out every fucking morning."
+    jenny "Then I eat like a cow because your idiot offspring is determined to make me fat."
     show jenny f_upset
     anon "{b}[jen_name]{/b}..."
-
-    jenny "Saya merasa tidak nyaman, hampir sepanjang hari."
-
+    jenny "I'm uncomfortable, pretty much all day."
     show jenny f_angry
-    jenny "Oh, dan sekarang saya bangun dan buang air kecil empat kali dalam semalam!"
-
+    jenny "Oh, and I wake up and pee like four times a night now!"
     show jenny f_gross
-    anon "Saya minta maaf?"
-
+    anon "I'm sorry?"
     show jenny f_angry
-    jenny "Anda seharusnya menyesal!"
-
-    jenny "Ini semua salahmu, brengsek!"
-
+    jenny "You should be sorry!"
+    jenny "This is all your fault, asshole!"
     show jenny f_gross
     return
 
 label jenny_pregnancy_you_doing_ok_3:
     show anon f_worried
-    anon "Kamu baik-baik saja?"
-
+    anon "You doing okay?"
     show jenny f_gross
-    jenny "Tidak, aku tidak baik-baik saja!"
-
+    jenny "No, I'm not okay!"
     show jenny f_angry a_magic_sit_stand_belly_touch with dissolve
-    jenny "Lihat saja apa yang kamu lakukan padaku, {b}[firstname]{/b}!"
-
-    jenny "Aku seekor paus sialan!"
-
-    anon "Anda bukan ikan paus, {b}[jen_name]{/b}..."
-
+    jenny "Just look at what you did to me, {b}[firstname]{/b}!"
+    jenny "I'm a fucking whale!"
+    anon "You're not a whale, {b}[jen_name]{/b}..."
     show jenny f_sad
-    jenny "Ya, benar!"
-
-    anon f_normal "Tidak, kamu cantik..."
-
-    jenny "Cantik?!"
-
+    jenny "Yes, I am!"
+    anon f_normal "No, you're beautiful..."
+    jenny "Beautiful?!"
     show anon f_worried
     show jenny f_angry
-    jenny "Apa yang kamu, terbelakang?!"
-
-    anon "Anda sedang mengandung anak kami... Menurut saya itu indah."
-
+    jenny "What are you, retarded?!"
+    anon "You're carrying our child... I think it's beautiful."
     show jenny f_eyeroll a_magic_sit_stand_crossed with dissolve
-    jenny "Ya Tuhan, kamu yang terburuk!"
-
+    jenny "Oh my god, you are the worst!"
     show jenny f_sad
     pause
-    jenny "Aku hanya ingin hal ini keluar dari diriku!"
-
+    jenny "I just want this thing out of me!"
     return
 
 label jenny_button_pregnancy_stage_1:
@@ -422,8 +284,7 @@ label jenny_button_pregnancy_stage_1:
         scene expression player.location.background_closeup
         show anon f_normal zorder 1
     show jenny f_phone_upset a_magic_sit_stand_phone b_magic_sit_stand_dressed zorder 1
-    anon "Hai."
-
+    anon "Hey."
     show anon f_worried
     jenny @ -m_talk "..."
     return
@@ -438,11 +299,9 @@ label jenny_button_pregnancy_stage_2:
         show anon f_normal zorder 1
     show jenny f_phone_upset a_magic_sit_stand_phone b_magic_sit_stand_dressed zorder 1
     with dissolve
-    anon "Hai, {b}[jen_name]{/b}."
-
+    anon "Hey, {b}[jen_name]{/b}."
     show jenny f_eyeroll
-    jenny "Ugh, kamu mau apa, {b}[firstname]{/b}?"
-
+    jenny "Ugh, what do you want, {b}[firstname]{/b}?"
     show jenny f_gross a_magic_sit_stand_crossed with dissolve
     return
 
@@ -455,16 +314,12 @@ label jenny_button_pregnancy_stage_3:
         scene expression player.location.background_closeup
         show anon f_worried zorder 1
     show jenny f_phone_upset a_magic_sit_stand_phone b_magic_sit_stand_dressed zorder 1
-    anon "Hai, {b}[jen_name]{/b}."
-
+    anon "Hey, {b}[jen_name]{/b}."
     show jenny f_surprised a_magic_sit_stand_crossed with dissolve
-    jenny "Sial, kamu membuatku takut!"
-
+    jenny "Shit, you scared me!"
     show jenny f_upset
-    jenny "Aku pikir kamu adalah ibuku..."
-
-    jenny "... Dia membuatku gila."
-
+    jenny "I thought you were my mom..."
+    jenny "... She's driving me crazy."
     show jenny f_gross
     return
 
@@ -473,17 +328,12 @@ label jenny_button_pregnancy_holding_baby:
     $ player.last_baby_gender = M_jenny.pregnancy.baby_gender
     show jenny a_baby b_casual f_happy_down
     show anon f_normal with dissolve
-    jenny "Kamu sangat cantik, bukan, anak kecil?!"
-
-    jenny "Kamu pasti mendapatkan penampilanmu dari ibumu."
-
-    jenny "Beruntung sekali karena ayahmu pada dasarnya adalah seorang troll jembatan."
-
-    anon f_worried "Hei!"
-
+    jenny "You are just so beautiful, aren't you little one?!"
+    jenny "You definitely got your looks from your mommy."
+    jenny "Which is lucky because your daddy is basically a bridge troll."
+    anon f_worried "Hey!"
     show jenny f_laugh
     jenny "Hahahaah!"
-
     show jenny f_happy_down
     return
 # Decompiled by unrpyc: https://github.com/CensoredUsername/unrpyc

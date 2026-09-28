@@ -4,10 +4,10 @@ label button_ross_office_dialogue:
     else:
         call expression game.dialog_select("button_ross_office_generic_post_hscene")
     menu:
-        "Pelajaran privat." if M_ross.is_state((S_ross_paint_with_body, S_ross_end)):
+        "Private lesson." if M_ross.is_state((S_ross_paint_with_body, S_ross_end)):
             call expression game.dialog_select("ross_dialogue_office_private_lessons")
             jump expression game.dialog_select("ross_hscene_start")
-        "Tidak ada apa-apa saat ini.":
+        "Nothing right now.":
 
             call expression game.dialog_select("ross_dialogue_office_leave")
     $ game.main()

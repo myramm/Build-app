@@ -5,19 +5,15 @@ label jane_library_dialogue_bissette_find_dictionary:
     show xtra 42
     show player 10f at right
     with dissolve
-    player_name "Sepertinya saya tidak dapat menemukan {b}kamus bahasa Prancis{/b}."
-
+    player_name "I can't seem to find a {b}French dictionary{/b}."
     show player 5f
-    jane "Hmm, coba kulihat..."
-
+    jane "Hmm, let me see..."
     show jane f_normal_down
     pause
-    jane "Seharusnya ada di rak, di sebelah ruang belakang."
-
+    jane "It should be over on there on shelf, next to the back room."
     show jane f_normal
     show player 14f
-    player_name "Baiklah, saya akan memeriksanya. Terima kasih."
-
+    player_name "Alright, I'll take a look. Thanks."
     return
 
 label jane_library_dialogue_bissette_get_dictionary:
@@ -27,47 +23,36 @@ label jane_library_dialogue_bissette_get_dictionary:
     show xtra 42
     show player 504f at right
     with dissolve
-    player_name "Ya, saya menemukan bagian dari {b}kamus bahasa Prancis{/b}."
-
+    player_name "Well, I found part of a {b}French dictionary{/b}."
     show player 503f
     show jane f_sad
-    jane "Apa?"
-
+    jane "What?"
     show player 5f
     show jane f_complain_down a_book1
     with dissolve
-    jane "Oh tidak!"
-
-    jane "Saya harus memesan yang baru tetapi akan memakan waktu lama untuk sampai."
-
+    jane "Oh no!"
+    jane "I'll have to order a new one but it'll take a while to arrive."
     show jane f_sad
-    jane "Apakah Anda masih ingin memeriksanya?"
-
+    jane "Did you still want to check it out?"
     show player 10f
-    player_name "Ya, aku cukup putus asa. Saya hanya berharap saya tidak membutuhkan halaman-halaman yang hilang itu..."
-
+    player_name "Yeah, I'm pretty desperate. I'll just have to hope I don't need those missing pages..."
     show player 5f
-    jane "Oke, sekali lagi maaf!"
-
+    jane "Okay, well, sorry again!"
     show jane f_normal
-    jane "Anda bisa menyimpannya saja. Tidak akan banyak gunanya di sini..."
-
+    jane "You can just keep it. It won't be much use around here..."
     show jane a_idle with dissolve
     show player 504f with dissolve
-    player_name "Terima kasih!"
-
+    player_name "Thanks!"
     show player 503f
     show jane f_laugh
-    jane "Tidak masalah, semoga harimu menyenangkan!"
-
+    jane "No problem, have a nice day!"
     hide player
     hide jane
     with dissolve
 
     scene library
     show player 34 with dissolve
-    player_name "(Saya kira saya harus membawa ini ke {b}Nona Bissette{/b} dan melihat apa yang dia pikirkan... )"
-
+    player_name "( I guess I should take this to {b}Miss Bissette{/b} and see what she thinks... )"
     return
 
 label jane_library_dialogue_bissette_return_overdue_books:
@@ -76,45 +61,34 @@ label jane_library_dialogue_bissette_return_overdue_books:
     show xtra 42
     show player 14f at right
     with dissolve
-    player_name "Saya menemukan semua buku yang sudah lewat waktunya!"
-
+    player_name "I found all the overdue books!"
     show player 239_240f with dissolve
     pause
     show player 507f at Position (xoffset=-9) with dissolve
-    jane "Benar-benar? Mari kita lihat..."
-
+    jane "Really? Let's see..."
     show player 13f
     show jane a_book3 with dissolve
-    jane "Anda berhasil! Terima kasih banyak!"
-
-    jane "Aku juga punya sesuatu untukmu."
-
+    jane "You did it! Thanks a lot!"
+    jane "I've got something for you too."
     show player 10f
-    player_name "Anda melakukannya?"
-
+    player_name "You do?"
     show jane a_book2 with dissolve
-    jane "Yup, buku yang Anda pesan sudah masuk."
-
+    jane "Yup, that book you ordered came in."
     pause
     show player 521f
     show jane a_idle
     with dissolve
-    player_name "Terima kasih!"
-
+    player_name "Thanks!"
     player_name "{b}My cheese and me{/b}..." (show_native="{b}Mon fromage et moi{/b}...")
     show player 5f with dissolve
-    jane "Akankah itu berhasil?"
-
+    jane "Will that work?"
     show player 10f
-    player_name "Err, aku harus menyelesaikannya."
-
+    player_name "Err, I'll have to make do."
     show player 14f
-    player_name "Terima kasih lagi!"
-
+    player_name "Thanks again!"
     show player 13f
     show jane f_laugh
-    jane "Kembalilah dan temui kami!"
-
+    jane "Come back and see us!"
     return
 
 label jane_library_dialogue_pre:
@@ -124,14 +98,11 @@ label jane_library_dialogue_pre:
     show xtra 42
     show player 1f at right
     with dissolve
-    jane "Hai! Apa yang bisa saya bantu?"
-
+    jane "Hi! How can I help you?"
     show player 2f
-    player_name "Hai, saya sedang mencari {b}buku{/b}."
-
+    player_name "Hi, I'm looking for a {b}book{/b}."
     show player 1f
-    jane "Tentu saja! Tahukah kamu nama bukunya?"
-
+    jane "Sure thing! Do you know the book's name?"
     return
 
 label jane_library_dialogue_production_ask_librarian:
@@ -142,318 +113,232 @@ label jane_library_dialogue_production_ask_librarian:
     show xtra 42
     show player 10f at right
     with dissolve
-    player_name "Anda pasti tidak punya buku tentang peningkatan produksi susu pada sapi, bukan?"
-
+    player_name "You wouldn't happen to have any books on increasing milk production in cows, would you?"
     show player 5f
     show jane f_sad
-    jane "Hmm, itu pertanyaan yang aneh."
-
+    jane "Umm, that's a weird question."
     show jane f_normal
     show player 29f with dissolve
-    player_name "Eh, ya. Saya rasa memang demikian."
-
-    player_name "Ini untuk uhh... temanku."
-
+    player_name "Ehh, yeah. I suppose it is."
+    player_name "It's for my uhh... friend."
     show player 3f at Position (xoffset=-8)
     show jane f_laugh
-    jane "Hehe, tentu saja."
-
+    jane "Heh, sure it is."
     show jane f_eyeroll a_hand_out with dissolve
-    jane "Um, aku tidak tahu."
-
-    jane "Saya yakin kita punya banyak hal tentang sapi, tetapi sejauh menyangkut pemerahan..."
-
+    jane "Umm, I don't know."
+    jane "I'm sure we have stuff on cows but as far as milking goes..."
     show jane f_normal
-    jane "... {b}Coba rak sebelah sana{/b}."
-
+    jane "... {b}Try that shelf over there{/b}."
     show jane a_idle
     show player 14f
     with dissolve
-    player_name "Terima kasih!"
-
+    player_name "Thanks!"
     hide player with dissolve
     pause
     show jane f_sad
-    jane "Aneh sekali."
-
+    jane "What a weirdo."
     hide jane
     with dissolve
     return
 
 label jane_library_dialogue_french_poetry:
     show player 10f
-    player_name "Apakah Anda punya puisi Perancis?"
-
+    player_name "Do you have any French poetry?"
     show player 5f
     show jane f_normal_down
     jane "Hmm..."
-
     show jane f_normal
-    jane "Sebenarnya..."
-
-    jane "Beberapa gadis di sini membaca sesuatu seperti itu {b}kemarin sore{/b}."
-
+    jane "Actually..."
+    jane "Some girls were here reading something like that {b}yesterday afternoon{/b}."
     show player 10f
-    player_name "Benar-benar?"
-
+    player_name "Really?"
     show player 12f
-    player_name "Apakah mereka memeriksanya?"
-
+    player_name "Did they check it out?"
     show player 5f
-    jane "Tidak."
-
+    jane "No."
     show player 10f
-    player_name "Tahukah kamu dimana itu?"
-
+    player_name "Do you know where it is?"
     show player 5f
     show jane f_normal_down
     jane @ -m_talk "..."
     show jane f_sad
-    jane "Tidak..."
-
-    jane "Tapi, mungkin mereka akan kesini lagi {b}siang{/b} ini."
-
-    jane "Anda bisa bertanya kepada salah satu dari mereka di mana mereka menaruhnya."
-
+    jane "No..."
+    jane "But, maybe they'll be here again this {b}afternoon{/b}."
+    jane "You could ask one of them where they put it."
     show jane f_normal
     show player 12f
-    player_name "Terima kasih."
-
+    player_name "Thanks."
     return
 
 label jane_library_dialogue_french_food_find_books:
     show player 10f
-    player_name "Saya ingin tahu apakah Anda punya buku berbahasa Prancis tentang makanan?"
-
+    player_name "I was wondering if you had any books in French about food?"
     show player 13f
     show jane f_laugh
-    jane "Itu topik yang menarik..."
-
+    jane "That's an interesting subject..."
     show jane f_normal
     show player 14f
-    player_name "Ya, saya membutuhkannya untuk tugas sekolah."
-
+    player_name "Yeah, I need it for a school assignment."
     show player 13f
-    jane "Baiklah, izinkan saya melihat dan melihat apa yang kita miliki."
-
+    jane "Alright, let me look and see what we have."
     show jane f_normal_down
     jane @ -m_talk "..."
     show player 11f
     player_name "..."
     show player 5f
-    jane "Hmm, sepertinya kami tidak memiliki hal seperti itu."
-
+    jane "Hmm, we don't appear to have anything like that."
     show jane f_normal
     show player 12f
-    player_name "Tidak ada apa-apa?"
-
+    player_name "Nothing?"
     show player 5f
     show jane f_normal_down
-    jane "Tidak... Oh, tunggu sebentar!"
-
-    jane "Dikatakan bahwa cabang saudara kita memiliki buku Perancis tentang keju."
-
+    jane "No... Oh, wait a second!"
+    jane "It's saying our sister branch has a French book about cheese."
     show jane f_normal
-    jane "Apakah itu akan berhasil?"
-
+    jane "Would that work?"
     show player 14f
-    player_name "Tentu, saya suka keju! Di mana saya harus mengambilnya?"
-
+    player_name "Sure, I love cheese! Where do I need to pick it up?"
     show player 13f
-    jane "Saya dapat meminta mereka untuk mengirimkannya ke sini. Seharusnya hanya memakan waktu beberapa hari..."
-
-    jane "Sementara itu, saya ingin tahu apakah Anda dapat membantu saya melakukan sesuatu?"
-
+    jane "I can request them to send it here. Should only take a few days..."
+    jane "In the meantime, I wonder if you could you help me out with something?"
     show player 10f
-    player_name "... Tentu saja, menurutku. Apa yang kamu perlukan?"
-
+    player_name "... Sure, I suppose. What is it you need?"
     show player 5f
-    jane "{b}Beberapa teman sekelasmu memiliki buku yang sudah lewat batas waktunya{/b} Saya ingin mengembalikannya."
-
-    jane "Saya telah mengirim surat ke rumah mereka tetapi sepertinya tidak berhasil."
-
-    jane "Aku benci kehilangan buku-buku itu."
-
+    jane "{b}Some of your classmates have overdue books{/b} I'd like returned."
+    jane "I've been sending letters to their homes but that doesn't seem to be working."
+    jane "I'd hate to lose the books."
     show player 10f
-    player_name "Ya, saya bisa mencoba {b}berbicara dengan mereka{/b}. Siapa nama mereka?"
-
+    player_name "Yeah, I could try {b}speaking with them{/b}. What are their names?"
     show player 5f
     show jane f_normal_down
-    jane "Hmm, yang pertama adalah {b}Nona Martinez{/b}."
-
-    jane "Yang kedua adalah {b}Tuan. Erik J{/b}-"
-
+    jane "Hmm, the first is a {b}Miss Martinez{/b}."
+    jane "The second is a {b}Mr. Erik J{/b}-"
     show jane f_normal
     show player 14f
-    player_name "{b}Erik{/b} punya buku?!"
-
-    player_name "Itu seharusnya mudah."
-
+    player_name "{b}Erik{/b} has a book out?!"
+    player_name "Those should be easy."
     show player 13f
     show jane f_normal_down
-    jane "... Dan akhirnya..."
-
-    jane "Hah. Hanya tertulis {b}Dexter{/b}."
-
-    jane "Ada yang berbunyi?"
-
+    jane "... And finally..."
+    jane "Huh. It just says {b}Dexter{/b}."
+    jane "Ring any bells?"
     show jane f_normal
     show player 12f
-    player_name "Ya ampun, bukan {b}Dexter{/b}... Anda yakin?"
-
+    player_name "Oh man, not {b}Dexter{/b}... You're sure?"
     show player 11f
-    jane "Itu yang tertulis di log..."
-
+    jane "That's what the log says..."
     show player 12f
-    player_name "Sial! Baiklah, saya akan lihat apa yang bisa saya lakukan."
-
+    player_name "Crap! Alright, I'll see what I can do."
     show player 5f
     show jane f_laugh
-    jane "Terima kasih, saya sangat menghargai ini!"
-
+    jane "Thanks, I really appreciate this!"
     hide jane with dissolve
     show player 12 at center with dissolve
-    player_name "Eh, kenapa harus {b}Dexter{/b}?"
-
+    player_name "Ugh, why did it have to be {b}Dexter{/b}?"
     return
 
 label jane_library_dialogue_french_food_book_holders:
     show player 10f
-    player_name "Siapa nama siswanya lagi?"
-
-    player_name "Anda tahu, yang buku-bukunya sudah lewat waktu."
-
+    player_name "What were the students names again?"
+    player_name "You know, the ones with the overdue books."
     show player 5f
     show jane f_normal
-    jane "Satu detik..."
-
+    jane "One second..."
     show jane f_normal_down
-    jane "Hmm, {b}Nona Martinez{/b}, {b}Tuan. Erik{/b}, dan {b}Dexter{/b}."
-
+    jane "Hmm, {b}Miss Martinez{/b}, {b}Mr. Erik{/b}, and a {b}Dexter{/b}."
     show jane f_normal
     show player 12f
-    player_name "Ugh, aku lupa tentang {b}Dexter{/b}..."
-
-    player_name "Baiklah, aku sedang mengerjakannya."
-
+    player_name "Ugh, I forgot about {b}Dexter{/b}..."
+    player_name "Alright, I'm on it."
     return
 
 label jane_library_dialogue_magazines_first:
     show player 2f
-    player_name "Saya sedang membuat kolase untuk kelas seni dan saya memerlukan beberapa majalah lama."
-
-    player_name "Bisakah Anda menunjukkan di mana menemukannya?"
-
+    player_name "I'm making a collage for art class and I need some old magazines."
+    player_name "Could you show me where to find some?"
     show player 1f
     show jane f_normal
-    jane "Saya khawatir Anda kurang beruntung. Kami berhenti membawanya beberapa bulan yang lalu."
-
+    jane "You're out of luck I'm afraid. We stopped carrying those a few months ago."
     show player 10f
-    player_name "Anda tidak punya?"
-
+    player_name "You don't have any?"
     show player 1f
-    jane "Sayangnya tidak. Kami mengirim semua yang kami miliki untuk didaur ulang."
-
+    jane "I'm afraid not. We sent all the ones we had off to be recycled."
     show player 10f
-    player_name "Ya ampun..."
-
-    player_name "Terima kasih."
-
+    player_name "Oh man..."
+    player_name "Thanks anyways."
     show player 11f
-    jane "Maaf."
-
+    jane "Sorry."
     hide jane
     hide xtra
     hide player
     with dissolve
     show player 10 with dissolve
-    player_name "Apa yang akan saya lakukan sekarang?"
-
+    player_name "What am I gonna do now?"
     show player 11
     player_name "..."
     show player 10
-    player_name "Saya kira {b}Saya akan kembali ke sekolah dan melihat-lihat{/b}."
-
-    player_name "Pasti ada beberapa majalah di suatu tempat."
-
+    player_name "I guess {b}I'll head back to school and look around{/b}."
+    player_name "There's gotta be some magazines somewhere."
     return
 
 label jane_library_dialogue_magazines_repeat:
     show player 10f
-    player_name "Jadi kamu tidak punya satu majalah pun di sini?"
-
+    player_name "So you don't have a single magazine around here?"
     show player 11f
     show jane f_normal
-    jane "Tidak."
-
-    jane "Kami membatalkan langganan dan membuang apa yang kami miliki."
-
+    jane "Nope."
+    jane "We canceled the subscriptions and tossed what we had out."
     show player 10f
-    player_name "Oke, terima kasih."
-
+    player_name "Okay, thanks anyways."
     hide jane
     hide xtra
     hide player
     with dissolve
     show player 10 with dissolve
-    player_name "{i}*Huh*{/i}"
-
-    player_name "Sepertinya aku harus {b}kembali ke sekolah dan melihat sekeliling sana{/b}."
-
-    player_name "... Mungkin aku akan beruntung?"
-
+    player_name "{i}*Sigh*{/i}"
+    player_name "I guess I should {b}head back to school and look around there{/b}."
+    player_name "... Maybe I'll get lucky?"
     return
 
 label jane_library_dialogue_return_books_pre:
     show player 14f
-    player_name "Saya ingin mengembalikan buku."
-
+    player_name "I'd like to return a book."
     show player 13f
     show jane f_laugh
-    jane "Besar!"
-
+    jane "Great!"
     return
 
 label jane_library_dialogue_return_books_first:
     show jane f_normal
-    jane "Tidak banyak orang yang melakukannya."
-
+    jane "Not many people do."
     show player 10f
-    player_name "Lalu apa yang terjadi?"
-
+    player_name "What happens then?"
     show player 5f
     show jane f_mad
-    jane "Saya memburu mereka dan mematahkan salah satu kaki mereka, agar mereka tidak melakukannya lagi."
-
+    jane "I hunt them down and break one of their legs, so they don't do it again."
     show player 22f
     player_name "!!!"
     show jane f_laugh
-    jane "Cuma bercanda!"
-
+    jane "Just kidding!"
     show jane f_normal
     show player 29f with dissolve
     player_name "Oh."
-
     show player 3f at Position (xoffset=-8)
     return
 
 label jane_library_dialogue_return_books_after:
     show jane f_normal
-    jane "Letakkan saja buku yang ingin Anda kembalikan di konter dan saya akan mengurusnya."
-
+    jane "Just set the books you want to return on the counter and I'll take care of it."
     show jane f_laugh
-    jane "Dan segera kembali!"
-
+    jane "And come back soon!"
     return
 
 label jane_library_dialogue_leave:
     show player 24f
     show jane f_sad
-    player_name "Maaf. Saya akan kembali setelah saya ingat nama bukunya."
-
+    player_name "Sorry. I'll return once I remember the book's name."
     show player 5f
     show jane f_normal
-    jane "Sampai jumpa."
-
+    jane "See you then."
     return
 # Decompiled by unrpyc: https://github.com/CensoredUsername/unrpyc

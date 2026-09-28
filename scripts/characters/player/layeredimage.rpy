@@ -105,29 +105,17 @@ layeredimage anon:
         attribute b_dressed default
         attribute b_empty null
         attribute b_sit_kiss_eve "anon_body_b_sit_kiss_eve"
-
         attribute b_dressed_dance_shy "anon_body_b_dressed_dance_shy"
-
         attribute b_dressed_dance_shy_talk "anon_body_b_dressed_dance_shy_talk"
-
         attribute b_dressed_dance_flirt_low "anon_body_b_dressed_dance_flirt_low"
-
         attribute b_dressed_dance_unimpressed "anon_body_b_dressed_dance_unimpressed"
-
         attribute b_naked_spin_frown_down "anon_body_b_naked_spin_frown_down"
-
         attribute b_naked_spin_frown_down_talk "anon_body_b_naked_spin_frown_down_talk"
-
         attribute b_naked_spin_worried_low_talk "anon_body_b_naked_spin_worried_low_talk"
-
         attribute b_naked_spin_worried_low "anon_body_b_naked_spin_worried_low"
-
         attribute b_hammock_thrust_worried_low "anon_body_b_hammock_thrust_worried_low"
-
         attribute b_hammock_thrust_worried "anon_body_b_hammock_thrust_worried"
-
         attribute b_hammock_thrust_worried_talk "anon_body_b_hammock_thrust_worried_talk"
-
         attribute b_mcpuffin 'location_bank_vault_briefcase'
         attribute b_maria_sex_side_back null
         attribute b_dressed_zap
@@ -276,21 +264,13 @@ layeredimage anon:
         offset (384, 133)
         zoom .76
         attribute f_normal "anon_face_f_normal_left"
-
         attribute f_worried "anon_face_f_worried_left"
-
         attribute f_surprised "anon_face_f_surprised_left"
-
         attribute f_skeptical "anon_face_f_worried_left"
-
         attribute f_grin "anon_face_f_grin_left"
-
         attribute f_flirt "anon_face_f_flirt_left"
-
         attribute f_shock "anon_face_f_shock_left"
-
         attribute f_surprised_teeth "anon_face_f_surprised_teeth_left"
-
 
 
     group face if_not 'm_talk' if_all 'b_pool' auto:
@@ -534,21 +514,13 @@ layeredimage anon:
         offset (384, 133)
         zoom .76
         attribute f_normal "anon_face_talk_f_normal_left"
-
         attribute f_worried "anon_face_talk_f_worried_left"
-
         attribute f_surprised "anon_face_f_surprised_left"
-
         attribute f_skeptical "anon_face_talk_f_worried_left"
-
         attribute f_grin "anon_face_f_grin_left"
-
         attribute f_flirt "anon_face_talk_f_flirt_left"
-
         attribute f_shock "anon_face_f_shock_left"
-
         attribute f_surprised_teeth "anon_face_f_surprised_teeth_left"
-
 
 
     group face if_all ['m_talk', 'b_pool'] auto variant 'talk':
@@ -673,9 +645,7 @@ layeredimage anon:
     group arms if_any ['b_dressed','b_dressed_disheveled'] auto variant 'dressed':
         attribute a_idle default 'anon_arms_dressed_a_pocket'
         attribute a_baby "anon_arms_dressed_a_baby_[player.last_baby_gender]"
-
         attribute a_melonia_baby "anon_arms_dressed_a_baby_[M_melonia.pregnancy.baby_gender]"
-
         attribute a_cover_boner null
         attribute a_milk_cups null
 
@@ -835,23 +805,18 @@ layeredimage anon:
 
     group overlay_dick if_any ['b_shirt'] auto variant 'shirt':
         attribute od_dick1 default "anon_overlay_dick_shirt_od_dick1"
-
         attribute od_dick4_wet Fixed("anon_overlay_dick_shirt_od_dick4",
                                      "anon_overlay_dick_shirt_od_dick4_wet")
         attribute od_dick_spring "anon_overlay_dick_shirt_od_dick_spring"
-
         attribute od_empty null
 
     group overlay_dick if_any ['b_onbed_naked'] auto variant 'onbed_naked':
         attribute od_dick1 default "anon_overlay_dick_onbed_naked_od_dick1"
-
         attribute od_empty null
 
     group overlay_dick if_any ['b_sit_back_shirt', 'b_sit_back_remove_shorts2', 'b_sit_naked_remove_shirt', 'b_sit_naked'] auto variant 'sit_back_shirt':
         attribute od_dick1 default "anon_overlay_dick_sit_back_shirt_od_dick1"
-
         attribute od_dick_spring "anon_overlay_dick_sit_back_shirt_od_dick_spring"
-
 
     group overlay_dick if_any ['b_sit_naked_up'] auto:
         offset (117, -239)

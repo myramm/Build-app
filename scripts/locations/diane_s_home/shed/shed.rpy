@@ -33,14 +33,11 @@ label dianes_shed_got_milk_delivery_3:
     player_name "!!!"
     show player 168c
     player_name "Holy crap, this delivery is huge!"
-
     show player 167
     pause
     show player 168
     player_name "{b}Diane{/b} should really invest in a hand truck."
-
     player_name "It's gonna be tough hauling this all the way to school by myself."
-
     hide player with dissolve
     $ player.get_item("milk_9x9z2y")
     call popup ('give', 'milk_9x9z2y')
@@ -51,13 +48,9 @@ label dianes_shed_pick_up_milk_delivery_02:
     scene shed
     show player 163c with dissolve
     player_name "Sheesh, this is a lot heavier than last time!"
-
     player_name "I guess that's a good thing, though..."
-
     player_name "... {b}Diane{/b}'s business is growing quick!"
-
     player_name "Alright, I'm supposed to {b}deliver this to the daycare next door{/b}."
-
     hide player with dissolve
     $ player.get_item("milk_2x3z1y")
     call popup ('give', 'milk_2x3z1y')
@@ -68,11 +61,8 @@ label dianes_shed_get_milk_to_dump:
     scene expression "backgrounds/location_diane_shed01_day_blur.jpg"
     show player 680 with dissolve
     player_name "Oh, it's still warm."
-
     player_name "Alright, I just need to {b}pour this into one of the storage jugs{/b}."
-
     player_name "Easy peasy."
-
     hide player with dissolve
 
 
@@ -85,24 +75,18 @@ label dianes_shed_dump_milk:
         scene expression "backgrounds/location_diane_shed01_day_blur.jpg"
         show player 680 with dissolve
         player_name "Alright, I just pour this in here like so..."
-
         show player 681 with dissolve
         player_name "... Aaaand done!"
-
         show player 17 with dissolve
         player_name "Now, I should go check on {b}Diane{/b}."
-
         hide player with dissolve
         $ M_diane.trigger(T_diane_make_drink)
     else:
         scene expression "backgrounds/location_diane_shed01_day_blur.jpg"
         show player 681b with dissolve
         player_name "This must be a storage jug!"
-
         player_name "It's cold to the touch!"
-
         player_name "I just need to {b}find the pump and then dump it in here{/b}."
-
         hide player with dissolve
     $ game.main()
 # Decompiled by unrpyc: https://github.com/CensoredUsername/unrpyc

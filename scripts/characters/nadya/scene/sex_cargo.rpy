@@ -76,41 +76,28 @@ label scene_nadya_sex_cargo.loop:
 
 label scene_nadya_sex_cargo.dialogue:
     if animcounter == 0 and randomizer() > 75:
-        nadya "Ya!{w=1}{nw}"
-
+        nadya "Da!{w=1}{nw}"
         pause 1
-        nadya "Ya ampun!{w=1}{nw}"
-
-        nadya "Seperti itu saja!{w=1}{nw}"
-
+        nadya "Oh, da!{w=1}{nw}"
+        nadya "Just like that!{w=1}{nw}"
     elif animcounter == 0 and randomizer() > 75:
-        nadya "Persetan dengan vagina kecilku!!{w=1}{nw}"
-
+        nadya "Fuck my tiny pussy!!{w=1}{nw}"
     elif animcounter == 1 and randomizer() > 75:
-        nadya "Lebih sulit!{w=1}{nw}"
-
-        anon "Ya Tuhan!{w=1}{nw}"
-
-        nadya "Banting lebih keras!!{w=1}{nw}"
-
+        nadya "Harder!{w=1}{nw}"
+        anon "Oh, god!{w=1}{nw}"
+        nadya "Slam it harder!!{w=1}{nw}"
     elif animcounter == 2 and randomizer() > 75:
         nadya "Ahh!!{w=1}{nw}"
-
-        nadya "Ayam cantikmu besar sekali!!{w=1}{nw}"
-
+        nadya "Your beautiful cock is so big!!{w=1}{nw}"
         pause 1
-        nadya "Saya menyukainya!{w=1}{nw}"
-
+        nadya "I love it!{w=1}{nw}"
     return
 
 
 label scene_nadya_sex_cargo.cum(where):
-    anon "Apakah kamu dekat?"
-
-    nadya "Ya!!"
-
-    anon "Bagus, aku juga!"
-
+    anon "Are you close?"
+    nadya "Da!!"
+    anon "Good, me too!"
     pause
     nadya "I'm cumming!!" (show_native="Ya konchayu!!")
     nadya "Ahh, I'm cumming!!" (show_native="Ahh, ya konchayu!!")
@@ -121,7 +108,6 @@ label scene_nadya_sex_cargo.cum(where):
 
 label scene_nadya_sex_cargo.inside:
     nadya "NGGHHH!!!"
-
     hide animation
     show nadya b_sex_wall_cum
     anon "HNNGGG!!!" with flash
@@ -129,7 +115,6 @@ label scene_nadya_sex_cargo.inside:
     pause
     hide xray_nadya_sex_wall with {'master': dissolve}
     anon "Haah... Haah..."
-
     show anon nadya_sex_cargo b_insert o_after
     show nadya b_sex_wall_insert_pullout f_sexy_close_up
     with dissolve
@@ -138,65 +123,52 @@ label scene_nadya_sex_cargo.inside:
     show nadya b_sex_wall_after f_sexy_down
     with {'master': dissolve}
     nadya "Wow!" (show_native="Ukh ty!")
-    nadya "Anda menjatuhkan beban besar!"
-
+    nadya "You drop massive load!"
     anon "Hmm?"
-
 
     scene location_warehouse_storage_sex_after
     show nadya_body_b_storage_sex_after
     show nadya_sex_wall_after_overlay_o_cum
     with fade
-    nadya "Lihat, terlalu banyak untuk ditampung rahim..."
-
+    nadya "Look, is too much for womb to contain..."
     anon "!!!"
-    nadya "... Anda pasti memasukkan bayi ke dalam!"
-
+    nadya "... You put baby inside for certain!"
     pause
-    anon "Apakah itu hal yang buruk?"
-
+    anon "Is that a bad thing?"
     nadya "Of course not!" (show_native="Konechno, nyet!")
 
     scene location_warehouse_storage_sex
     show anon nadya_sex_cargo a_after b_pre o_after
     show nadya b_sex_wall_pre
     with fade
-    nadya "Saya membutuhkan ahli waris untuk mengambil alih Bratva di masa depan."
-
+    nadya "I will need heir to take over Bratva in future times."
     pause
-    nadya f_happy "Mudah-mudahan itu perempuan."
-
+    nadya f_happy "Hopefully is girl."
 
     call call_pregnancy_minigame (None, M_nadya)
     return 'inside'
 
 
 label scene_nadya_sex_cargo.outside:
-    nadya "Tunggu, berhenti!"
-
+    nadya "Wait, stop!"
     hide animation
     show nadya b_sex_wall_insert_pullout f_annoyed_down
     show anon nadya_sex_cargo b_insert
     with {'master': dissolve}
-    anon "Aku tidak bisa berhenti sekarang, aku akan-"
-
-    nadya f_sexy_down "Sperma di wajah."
-
+    anon "I can't stop now, I'll-"
+    nadya f_sexy_down "Cum on face."
     show anon nadya_sex_cargo b_pre
     show nadya f_sexy
     with {'master': dissolve}
     anon "Hmm?!"
-
     show nadya b_sex_wall_facial f_sexy_up with {'master': dissolve}
-    nadya "Sperma di wajahku!"
-
+    nadya "Cum on my face!"
     show anon b_facial1
     show nadya f_cumshot
     anon "HNNGGG!!!" with flash
     show anon b_cumshot4
     pause
-    nadya f_sexy_close_up "Ya ampun!!"
-
+    nadya f_sexy_close_up "Oh, da!!"
     show anon b_facial2
     show nadya f_cumshot
     anon "HNNGGGUH!!!" with flash
@@ -206,50 +178,31 @@ label scene_nadya_sex_cargo.outside:
     show anon a_after b_pre with dissolve
     pause
     anon "Haah... Haah..."
-
     pause
-    anon "Sialan... kamu baik-baik saja?"
-
-    nadya @ f_laugh "hehe!"
-
-    nadya "Dasar anak kotor..."
-
-    nadya "... Lihat apa yang kamu lakukan pada wajah cantikku!"
-
-    anon "Heh, aku hanya melakukan apa yang kamu suruh."
-
-    nadya "Apakah benar."
-
+    anon "Holy crap... are you alright?"
+    nadya @ f_laugh "Hehe!"
+    nadya "You dirty boy..."
+    nadya "... Look what you do to my pretty face!"
+    anon "Heh, I only did what you told me to do."
+    nadya "Is true."
     pause
-    nadya "Bayangkan jika papa menemuiku sekarang ya?"
-
-    nadya "Gadis kecilnya berlumuran air mani."
-
+    nadya "Imagine if papa see me now, eh?"
+    nadya "His little girl covered in cum."
     nadya f_laugh "Haha!"
-
-    anon "Y-ya, dia mungkin akan membunuh kita berdua."
-
-    nadya f_sexy_close_up "Hehe, ya."
-
-    nadya "Aku pasti dia bunuh..."
-
+    anon "Y-yeah, he'd probably kill us both."
+    nadya f_sexy_close_up "Heh, da."
+    nadya "Me he kill for sure..."
     show nadya f_eyeroll_close
     pause
-    nadya "... Anda dia mungkin menyiksa."
-
+    nadya "... You he probably torture."
     show nadya f_sexy_close_up
-    anon "{i}*Gulp*{/i} Ya, untungnya dia sudah tidak ada lagi saat itu."
-
-    nadya "Ya, ini bagus."
-
+    anon "{i}*Gulp*{/i} Well, we it's a good thing he's no longer around then."
+    nadya "Da, this is good."
     show nadya a_towel_ask f_worried_close_up
     with {'master': dissolve}
-    nadya "Ehh, berikan aku kain lap... kumohon."
-
-    nadya "Untuk menghapus wajah cum."
-
-    anon "Oh benar."
-
+    nadya "Ehh, hand me rag... please."
+    nadya "To wipe off cum face."
+    anon "Oh, right."
     show anon b_towel_grab
     show nadya a_down f_surprised_close_low
     with dissolve
@@ -257,8 +210,7 @@ label scene_nadya_sex_cargo.outside:
     show anon a_towel_give b_pre
     show nadya a_towel_ask f_sexy_close_up
     with {'master': dissolve}
-    anon "Ini dia."
-
+    anon "Here ya go."
     show anon a_after
     show nadya a_towel_hold
     with {'master': dissolve}
@@ -272,69 +224,48 @@ label scene_nadya_sex_cargo.outside:
         crop (550, 0, 474, 768)
     show nadya a_towel_hold f_worried_up -o_storage_sex_facial
     with {'master': dissolve}
-    nadya "Apakah bagus?"
-
-    anon "Y-ya."
-
-    nadya f_sexy_up "Oke."
-
+    nadya "Is good?"
+    anon "Y-yeah."
+    nadya f_sexy_up "Okay."
     show nadya a_towel_throw f_happy_back
     with dissolve
     pause
     show nadya b_sex_wall_pre f_happy with {'master': dissolve}
-    nadya "Nah, itu saat-saat seksi yang bagus!"
-
-    anon "Hehe, ya."
-
+    nadya "Now that was good sexy times!"
+    anon "Heh, yeah."
     return 'outside'
 
 
 label scene_nadya_sex_cargo.repeat:
     call scene_nadya_sex_cargo.stage
     anon "Hmm?"
-
-    nadya f_sexy @ f_sexy_down "... Memekku menetes untukmu."
-
-    anon "{i}*Gulp*{/i} Y-ya, aku mengerti."
-
+    nadya f_sexy @ f_sexy_down "... My pussy drips for you."
+    anon "{i}*Gulp*{/i} Y-yeah, I see that."
     pause
     call scene_nadya_sex_cargo.pre
-    nadya "Kami bercinta di sini, di dinding."
-
+    nadya "We fuck here, against wall."
     call scene_nadya_sex_cargo.insert
-    nadya "Berikan padaku dengan sangat keras."
-
-    anon "Oke."
-
+    nadya "Give to me very hard."
+    anon "Okay."
     call scene_nadya_sex_cargo.slam
     nadya "Ngh!!" with hpunch
     pause
     call scene_nadya_sex_cargo.animate
-    nadya "Ya!"
-
+    nadya "Da!"
     pause
-    nadya "Ya ampun!"
-
-    nadya "Sama seperti itu!"
-
+    nadya "Oh, da!"
+    nadya "Just like that!"
     pause
-    nadya "Persetan dengan vagina kecilku!!"
-
+    nadya "Fuck my tiny pussy!!"
     pause
-    nadya "Lebih sulit!"
-
-    anon "Ya Tuhan!"
-
-    nadya "Banting lebih keras!!"
-
+    nadya "Harder!"
+    anon "Oh, god!"
+    nadya "Slam it harder!!"
     pause
     nadya "Ahh!!"
-
-    nadya "Ayam cantikmu sangat besar!!"
-
+    nadya "Your beautiful cock is so big!!"
     pause
-    nadya "Saya menyukainya!"
-
+    nadya "I love it!"
     pause
     call scene_nadya_sex_cargo.loop
     call scene_nadya_sex_cargo.cum (_return)

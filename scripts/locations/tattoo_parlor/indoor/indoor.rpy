@@ -80,7 +80,7 @@ label tattoo_parlor_interior_dialogue:
     elif M_odette.pregnancy.first_baby:
         call expression game.dialog_select("tattoo_parlor_interior_odette_first_baby")
         menu:
-            "Ya baiklah.":
+            "Yeah, okay.":
                 call expression game.dialog_select("tattoo_parlor_interior_odette_first_baby_okay")
                 $ M_odette.pregnancy.set('announced_pregnancy')
                 $ M_odette.set("gotta_have_that_dick", True)

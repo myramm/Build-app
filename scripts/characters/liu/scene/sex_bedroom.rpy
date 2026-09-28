@@ -4,68 +4,46 @@ label scene_liu_sex_bedroom:
 
     call scene_liu_sex_bedroom.stage
     with fade
-    liu "Buru-buru!"
-
+    liu "Hurry!"
     call scene_liu_sex_bedroom.pre
     with {'master': dissolve}
-    liu "{b}[firstname]{/b}... Tolong!"
-
+    liu "{b}[firstname]{/b}... Please!"
     call scene_liu_sex_bedroom.insert
     with {'master': dissolve}
     liu "Ahh!!!"
-
     pause
-    liu "Ya Tuhan!"
-
-    liu "Kamu sangat besar!"
-
+    liu "Oh god!"
+    liu "You're so big!"
     pause
     call scene_liu_sex_bedroom.animate
     with {'master': dissolve}
     liu "Ngh!!!"
-
     pause
-    anon "Apakah kamu baik-baik saja?"
-
-    liu "Ya!"
-
-    liu "Ya!!"
-
+    anon "Are you okay?"
+    liu "Yes!"
+    liu "Yes!!"
     pause
-    liu "aku belum pernah..."
-
-    liu "... Merasakan apa saja..."
-
-    liu "... Seperti ini sebelumnya!"
-
+    liu "I've never..."
+    liu "... Felt anything..."
+    liu "... Like this before!"
     pause
-    anon "Bagus?"
-
-    liu "YA!!"
-
+    anon "Good?"
+    liu "YES!!"
     pause
-    liu "Saya tidak tahu..."
-
-    liu "... Bisa jadi..."
-
-    liu "...Seperti ini!!"
-
+    liu "I had no idea..."
+    liu "... It could be..."
+    liu "... Like this!!"
     pause
-    liu "aku akan-"
-
+    liu "I'm gonna-"
     pause
-    liu "Haaaah... AKU AKAN-"
-
+    liu "Haaaah... I'M GONNA-"
     pause
-    liu "{i}* Merengek*{/i}"
-
+    liu "{i}*Whimpers*{/i}"
     pause
     show liu b_sex_bed_surprise as anim
     kim "AIYAH!!" with hpunch
-    kim "APA YANG KAU LAKUKAN?!"
-
+    kim "WHAT YOU DOING?!"
     anon "Hmm?"
-
     return
 
 
@@ -118,30 +96,22 @@ label scene_liu_sex_bedroom.dialogue(opt, rng=-1):
     if opt == 1:
         liu "{b}[firstname]{/b}!"
 
-
     elif opt == 2:
-        liu "Oh, persetan denganku!"
-
+        liu "Oh, fuck me!"
 
     elif opt == 3:
-        anon "Kamu meremasku begitu erat!"
-
-        liu "Persetan denganku, {b}[firstname]{/b}!!"
-
+        anon "You're squeezing me so tight!"
+        liu "Fuck me, {b}[firstname]{/b}!!"
 
     elif opt == 4:
-        anon "Wah!"
-
-        liu "Ahhh!"
-
+        anon "Oh, wow!"
+        liu "Ahh!"
 
     elif opt == 5:
-        liu "Anda merasa luar biasa!"
-
+        liu "You feel amazing!"
 
     elif opt == 6:
-        liu "{i}* Merengek*{/i}"
-
+        liu "{i}*Whimpers*{/i}"
 
     return
 
@@ -149,8 +119,7 @@ label scene_liu_sex_bedroom.dialogue(opt, rng=-1):
 label scene_liu_sex_bedroom.switch:
     show liu_bedroom_thirst 5 as anim
     with {'master': dissolve}
-    liu "MM."
-
+    liu "Mmm."
 
     $ M_liu.set('sex speed', 1. / 8)
 
@@ -163,20 +132,14 @@ label scene_liu_sex_bedroom.switch:
 
 
 label scene_liu_sex_bedroom.cum(where):
-    liu "aku akan keluar!"
-
-    anon "Saya juga!"
-
+    liu "I'm gonna cum!"
+    anon "Me too!"
     pause
-    liu "Ya Tuhan!!"
-
-    liu "Astaga!!"
-
+    liu "Oh, god!!"
+    liu "Oh my god!!"
     pause
     liu "{b}[firstname]{/b}!!!"
-
     liu "NGGHHH!!!"
-
     hide anim
 
     if where == 'inside':
@@ -195,7 +158,6 @@ label scene_liu_sex_bedroom.cum(where):
         show liu od_cumshot3
 
     anon "Haah... Haah..."
-
     return where
 
 
@@ -207,24 +169,19 @@ label scene_liu_sex_bedroom.first:
     with fade
     call scene_liu_sex_bedroom.pre
     with {'master': dissolve}
-    liu "Ini sangat besar, aku hampir tidak bisa-"
-
+    liu "It's so big, I can barely-"
     pause
     call scene_liu_sex_bedroom.insert
     with {'master': dissolve}
     liu "Ngh!"
-
     pause
-    anon "Pelan-pelan saja, aku tidak ingin kamu menyakiti dirimu sendiri..."
-
-    liu "Y-ya, oke."
-
+    anon "Take it slow, I don't want you to hurt yourself..."
+    liu "Y-yeah, okay."
     pause
     call scene_liu_sex_bedroom.animate
     with {'master': dissolve}
     pause
-    liu "Hmm, Tuhan."
-
+    liu "Mmm, god."
     jump scene_liu_sex_bedroom.merge
 
 
@@ -240,17 +197,13 @@ label scene_liu_sex_bedroom.repeat:
     call scene_liu_sex_bedroom.insert
     with {'master': dissolve}
     liu "Ngh!"
-
-    anon "Ya Tuhan, {b}Liu{/b}..."
-
+    anon "Oh god, {b}Liu{/b}..."
     pause
     call scene_liu_sex_bedroom.animate
     with {'master': dissolve}
     liu "Haah!"
-
     pause
-    liu "Ya!!"
-
+    liu "Yes!!"
     label scene_liu_sex_bedroom.merge:
     call scene_liu_sex_bedroom.dialogue (1)
     pause
@@ -276,50 +229,34 @@ label scene_liu_sex_bedroom.repeat:
         show liu b_sex_bed_base
         with dissolve
         pause
-        liu "Itu sungguh luar biasa!"
-
-        anon "Hehe, terima kasih."
-
-        liu "aku bisa merasakannya di dalam..."
-
-        liu "... Ini sangat hangat."
-
+        liu "That was a amazing!"
+        anon "Heh, thanks."
+        liu "I can feel it inside..."
+        liu "... It's so warm."
         pause
         hide anon
         show liu b_sex_bed_pre o_after
         with dissolve
         pause
         show liu b_sex_bed_cuddle with {'master': dissolve}
-        anon "Apakah kamu ingin aku membelikanmu sesuatu?"
-
-        anon "Handuk atau sesuatu-"
-
-        liu "T-tidak, tidak apa-apa."
-
+        anon "Would you like me to get you anything?"
+        anon "A towel or some-"
+        liu "N-no, it's okay."
     else:
 
-        liu "Itu luar biasa!"
-
-        anon "Hehe, terima kasih."
-
-        liu "Kamu sering datang!"
-
+        liu "That was incredible!"
+        anon "Heh, thanks."
+        liu "You came so much!"
         show liu b_sex_bed_cuddle with dissolve
         pause
-        anon "Biarkan aku mengambilkanmu handuk atau apalah."
+        anon "Let me get you a towel or something."
+        liu "N-no, it's okay."
 
-        liu "T-tidak, tidak apa-apa."
-
-
-    liu "Bisakah kamu tetap di sini seperti ini, bersamaku, untuk sementara waktu?"
-
-    liu "... Silakan."
-
+    liu "Could you just stay here like this, with me, for a little while?"
+    liu "... Please."
     pause
-    anon "Y-ya, oke."
-
-    liu "Terima kasih, {b}[firstname]{/b}."
-
+    anon "Y-yeah, okay."
+    liu "Thanks, {b}[firstname]{/b}."
     pause
 
     if _return == 'inside':
@@ -333,10 +270,10 @@ label scene_liu_sex_bedroom.replay:
     if len(variants) > 1:
         scene expression background(l=L_liu_bedroom) with fade
         menu:
-            "Pertama" if 'first' in variants:
+            "First" if 'first' in variants:
                 jump scene_liu_sex_bedroom.first
 
-            "Ulangi" if 'repeat' in variants:
+            "Repeat" if 'repeat' in variants:
                 jump scene_liu_sex_bedroom.repeat
 
     jump expression 'scene_liu_sex_bedroom.{}'.format(next(iter(variants)))

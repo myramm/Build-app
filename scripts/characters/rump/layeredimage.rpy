@@ -27,8 +27,7 @@ layeredimage rump:
     group body auto:
         attribute b_dressed default
         attribute b_empty null
-        attribute b_dressed_bending_robot "pantat_tubuh_b_berpakaian_bending_robot"
-
+        attribute b_dressed_bending_robot "rump_body_b_dressed_bending_robot"
 
 
     group mouth prefix 'm':

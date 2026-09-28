@@ -7,40 +7,31 @@ label scene_svetlana_furnace_blowjob:
     pause
     show svetlana f_normal_back
     with {'master': dissolve}
-    svetlana "Ini adalah penis yang indah."
-
-    anon "T-terima kasih."
-
+    svetlana "This is a beautiful penis."
+    anon "T-thanks."
     show anon f_surprised
     show svetlana a_rub f_normal
     with {'master': dissolve}
     anon "Haaah!"
-
     pause
-    svetlana "Jarang menemukan seseorang yang begitu tinggi tetapi juga sangat gemuk..."
-
+    svetlana "It is rare to find one so tall but also so fat..."
     show anon f_confused
     with {'master': dissolve}
-    anon "F-lemak?"
-
+    anon "F-fat?"
     show svetlana f_sexy_back
     with {'master': dissolve}
-    svetlana "Ya, gendut."
-
+    svetlana "Da, fat."
     show anon f_surprised
     show svetlana f_sexy
     with {'master': dissolve}
     pause
-    svetlana "Saya yakin rasanya seperti burger keju dan minuman cola."
-
+    svetlana "I bet it tastes of cheeseburgers and cola drinks."
     show anon f_nervous
     with {'master': dissolve}
-    anon "Ehh, aku tidak tahu tentang itu-"
-
+    anon "Ehh, I dunno about tha-"
     call scene_svetlana_furnace_blowjob.insert
     with {'master': dissolve}
-    anon "Ohhh, Tuhan!"
-
+    anon "Ohhh, god!"
     call scene_svetlana_furnace_blowjob.animate
     with {'master': dissolve}
     call scene_svetlana_furnace_blowjob.dialogue (1)
@@ -57,59 +48,45 @@ label scene_svetlana_furnace_blowjob:
     pause
     call scene_svetlana_furnace_blowjob.stage
     with {'master': dissolve}
-    svetlana f_sexy @ -m_talk "MM."
-
+    svetlana f_sexy @ -m_talk "Mmm."
     show svetlana f_sexy_back
     with {'master': dissolve}
-    svetlana "Aku salah, kamu merasakan kelapa."
-
+    svetlana "I was wrong, you taste of coconut."
     show anon f_confused
     with {'master': dissolve}
     anon "Oh?"
-
     pause
     show anon f_thinking_up
     show svetlana f_normal
     with {'master': dissolve}
-    anon "Itu mungkin sabun yang aku gunakan untuk mandi..."
-
-    anon "... Induk semang saya membelinya."
-
+    anon "That's probably the soap I shower with..."
+    anon "... My landlady buys it."
     show anon f_surprised
     show svetlana a_rub
     with {'master': dissolve}
     anon @ -m_talk "!!!"
     show anon f_nervous
     with {'master': dissolve}
-    anon "... Aku tidak yakin kenapa aku baru saja memberitahumu hal itu."
-
-    svetlana "Heh, tidak apa-apa.. kamu tidak perlu malu."
-
+    anon "... I'm not sure why I just told you that."
+    svetlana "Heh, it's okay... you don't have to be embarrassed."
     show anon f_surprised
     with {'master': dissolve}
     pause
     show svetlana a_hold f_sexy_back
     with {'master': dissolve}
-    svetlana "Baiklah, saya yakin Anda sudah siap."
-
+    svetlana "Alright, I believe you are ready."
     show anon f_confused
     with {'master': dissolve}
     anon @ -m_talk "Hmm?"
-
-    anon "Siap untuk apa?"
-
-    svetlana "Diam dan berbaring."
-
-    anon "Apa-"
-
+    anon "Ready for what?"
+    svetlana "Shut up and lie back."
+    anon "Wha-"
     show anon f_thinking_up
     with {'master': dissolve}
-    anon "Di ban berjalan?"
-
+    anon "On the conveyor belt?"
     show anon f_nervous
     with {'master': dissolve}
-    svetlana "Ya."
-
+    svetlana "Da."
     return
 
 
@@ -156,50 +133,33 @@ label scene_svetlana_furnace_blowjob.loop:
 label scene_svetlana_furnace_blowjob.dialogue(opt, rng=-1):
 
     if opt == 1:
-        anon "Oke..."
-
+        anon "Okay..."
         svetlana "{i}*Sluuuurp*{/i}"
-
-        anon "... Oh BAIK!"
-
+        anon "... Oh KAY!"
 
     elif opt == 2:
-        anon "Wah!"
-
-        svetlana "MM."
-
-        anon "Oke, kamu benar-benar pandai dalam hal itu!"
-
+        anon "Wow!"
+        svetlana "Mmm."
+        anon "Okay, you're really good at that!"
 
     elif opt == 3:
-        svetlana "{i}*Gllck* *Gllck* *Gllck*{/i}"
-
-        anon "Sialan!"
-
+        svetlana "{i}*Glllck* *Glllck* *Glllck*{/i}"
+        anon "Holy shit!"
 
     elif opt == 4:
-        svetlana "{i}*Suara senandung*{/i}"
-
-        anon "Ohh, apa itu?!"
-
-        anon "Apakah kamu bersenandung?"
-
+        svetlana "{i}*Humming sounds*{/i}"
+        anon "Ohh, what's that?!"
+        anon "Are you humming?"
         svetlana "Mhmm."
-
 
     elif opt == 5:
         anon "Ahh!!"
-
-        anon "Ya Tuhan!"
-
+        anon "Oh my god!"
 
     elif opt == 6:
-        svetlana "{i}*Senandung semakin intensif{/i}"
-
-        anon "Sialan wow!"
-
-        anon "Rasanya luar biasa!"
-
+        svetlana "{i}*Humming intensifies{/i}"
+        anon "Fucking wow!"
+        anon "That feels incredible!"
 
     return
 
@@ -215,41 +175,31 @@ label scene_svetlana_furnace_blowjob.repeat:
     with fade
     svetlana "It's even larger than I remember." (show_native="Ty dazhe bol'she, chem ya pomnyu.")
     anon @ -m_talk "Hmm?"
-
     show svetlana f_normal_back
     with {'master': dissolve}
-    svetlana "Tidak ada apa-apa."
-
+    svetlana "Nothing."
     show anon f_surprised
     show svetlana a_rub f_normal
     with {'master': dissolve}
     anon "Haaah!"
-
     pause
     show svetlana f_normal_back
     with {'master': dissolve}
-    svetlana "Anda suka melihat ayam Amerika Anda yang besar dan gemuk bergesekan dengan puting saya?"
-
+    svetlana "You like to see your big, fat American cock rubbing against my nipples?"
     show anon f_nervous
     with {'master': dissolve}
     anon @ -m_talk "Mhmm."
-
     show svetlana f_sexy_back
     with {'master': dissolve}
-    svetlana "Haruskah aku memasukkannya ke dalam mulutku sekarang?"
-
-    anon "Oh, ya... tolong."
-
-    svetlana "Heh, kamu bertanya dengan sangat sopan..."
-
+    svetlana "Should I put in my mouth now?"
+    anon "Oh, yes... please."
+    svetlana "Heh, you ask so politely..."
     show svetlana f_sexy
     with {'master': dissolve}
-    svetlana "... Saya suka ini."
-
+    svetlana "... I like this."
     call scene_svetlana_furnace_blowjob.insert
     with {'master': dissolve}
-    anon "Ohhh, Tuhan!"
-
+    anon "Ohhh, god!"
     call scene_svetlana_furnace_blowjob.animate
     with {'master': dissolve}
     call scene_svetlana_furnace_blowjob.dialogue (1)
@@ -264,48 +214,36 @@ label scene_svetlana_furnace_blowjob.repeat:
     pause
     call scene_svetlana_furnace_blowjob.dialogue (6)
     pause
-    svetlana "{i}*Gllck* *Gllck* *Gllck*{/i}"
-
-    anon "Yesus!"
-
-    anon "Aku semakin dekat!"
-
+    svetlana "{i}*Glllck* *Glllck* *Glllck*{/i}"
+    anon "Jesus!"
+    anon "I'm getting close!"
     svetlana "{i}*Sluuuurp*{/i}"
-
     pause
 
     call scene_svetlana_furnace_blowjob.loop
 
-    anon "Ini dia..."
-
-    anon "... Datang!!"
-
+    anon "Here it..."
+    anon "... Comes!!"
     pause
     hide anim
     show svetlana furnace_blowjob b_cum
     anon "HNNGGG!!!" with flash
     pause
-    svetlana "{i}*Meneguk* *Meneguk*{/i}"
-
+    svetlana "{i}*Gulp* *Gulp*{/i}"
     anon "Ahhh!!!"
-
     pause
     show anon svet_furnace_blowjob f_surprised
     show svetlana b_base f_cum o_cum
     with {'master': dissolve}
     anon "Haah... Haah..."
-
     show svetlana f_sexy
     with {'master': dissolve}
-    svetlana @ -m_talk "{i}*Meneguk*{/i}"
-
+    svetlana @ -m_talk "{i}*Gulp*{/i}"
     show anon f_nervous
     show svetlana f_sexy_back
     with {'master': dissolve}
-    anon "Fiuh, aku melihat bintang di sini."
-
-    svetlana "Hehe."
-
+    anon "Phew, I'm seeing stars here."
+    svetlana "Heh."
     return
 
 
@@ -315,10 +253,10 @@ label scene_svetlana_furnace_blowjob.replay:
     if len(variants) > 1:
         scene expression background(l=L_warehouse_furnace) with fade
         menu:
-            "Pertama" if 'first' in variants:
+            "First" if 'first' in variants:
                 jump scene_svetlana_furnace_blowjob.first
 
-            "Ulangi" if 'repeat' in variants:
+            "Repeat" if 'repeat' in variants:
                 jump scene_svetlana_furnace_blowjob.repeat
 
     jump expression 'scene_svetlana_furnace_blowjob.{}'.format(next(iter(variants)))

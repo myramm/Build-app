@@ -40,7 +40,6 @@ screen coach_bridgets_office():
 screen coachs_locker():
     add "coach_locker"
 
-
     if not player.has_picked_up_item("bridget_panties"):
         imagebutton:
             focus_mask True

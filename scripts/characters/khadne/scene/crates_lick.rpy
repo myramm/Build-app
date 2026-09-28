@@ -4,10 +4,8 @@ label scene_khadne_crates_lick:
 
     call scene_khadne_crates_lick.stage
     with fade
-    khadne "A-apa yang harus aku lakukan?"
-
-    anon "Coba santai saja, oke?"
-
+    khadne "W-what do I do?"
+    anon "Just try and relax, okay?"
     khadne @ -m_talk "..."
     call scene_khadne_crates_lick.animate
     with dissolve
@@ -25,29 +23,21 @@ label scene_khadne_crates_lick:
     label scene_khadne_crates_lick.resume:
     call scene_khadne_crates_lick.loop
     khadne "Ahh!!"
-
-    khadne "menurutku..."
-
+    khadne "I think..."
 
     if variant == 'first':
-        khadne "... S-ada sesuatu yang..."
-
+        khadne "... S-something is..."
     else:
-        khadne "... Ini terjadi lagi..."
-
+        khadne "... It's happening again..."
 
     anon "{i}*Sluuuurp*{/i}"
-
-    khadne "... Fuuuu-"
-
+    khadne "... Ffuuuu-"
     anon "{i}*Mlemlemlemlemlem*{/i}"
-
     hide anim
     show khadne crates_lick b_cum
     khadne "NGGHHH!!!" with flash
     pause
     khadne "Haah... Haah..."
-
     return
 
 
@@ -89,92 +79,66 @@ label scene_khadne_crates_lick.loop:
 label scene_khadne_crates_lick.dialogue(opt, rng=-1):
 
     if opt == 1:
-        khadne "Ahhh!"
-
+        khadne "Ahh!"
 
         if rng < .3:
-            khadne "Itu menyenangkan."
-
+            khadne "That is pleasant."
             anon "Mhmm."
-
 
     elif opt == 2:
         anon "{i}*Sluuuurp*{/i}"
-
-        khadne "Haah... Ya ampun..."
-
+        khadne "Haah... Oh my..."
 
     elif opt == 3:
-        anon "Haruskah saya melanjutkan?"
-
-        khadne "Ya!"
-
+        anon "Should I keep going?"
+        khadne "Da!"
 
         if rng < .35:
-            khadne "Silakan!"
-
+            khadne "Please!"
 
         if rng < .5:
             anon "{i}*Mlem*{/i}"
-
-            khadne "Tidak!!"
-
+            khadne "Ngh!!"
 
     elif opt == 4:
         if rng < 0:
             khadne "Oh, that feels wonderful!" (show_native="O, eto prekrasno!")
 
         anon "{i}*Mlemlemlemlemlem*{/i}"
-
         khadne "Haah!!"
-
 
     elif opt == 5:
         if rng < .5:
-            anon "Mmm, kamu rasanya enak."
+            anon "Mmm, you taste delicious."
 
-
-        khadne "Jangan berhenti!"
-
-        khadne "Jangan-"
-
+        khadne "Don't stop!"
+        khadne "Don't-"
         khadne "Ahh!!"
 
-
     elif opt == 6:
-        khadne "Ya ampun!"
-
+        khadne "Oh, da!"
 
     elif opt == 7:
         anon "{i}*Mlemlemlemlemlem*{/i}"
-
         khadne "I love it when you lick my pussy!" (show_native="Ya lyublyu, kogda ty lizhesh' moyu kisku!")
-        anon "Hah?"
-
-        khadne "Saya menyukainya!"
-
+        anon "Huh?"
+        khadne "I love it!"
 
     elif opt == 8:
         anon "{i}*Sluuuurp*{/i}"
-
         khadne "Ahh!!"
 
-
     elif opt == 9:
-        anon "Kamu rasanya enak sekali!"
-
+        anon "You taste so good!"
         khadne "Yes, taste me!" (show_native="Da, poprobuy menya!")
-        anon "MM."
-
+        anon "Mmm."
 
     elif opt == 10:
         khadne "Your tongue feels wonderful!" (show_native="Vash yazyk chuvstvuyet sebya prekrasno!")
 
         if rng < .1:
-            anon "Apakah kamu dekat?"
-
-            khadne "Ya!!"
-
+            anon "Are you close?"
+            khadne "Yes!!"
 
     return
 
@@ -186,10 +150,8 @@ label scene_khadne_crates_lick.repeat:
     call scene_khadne_crates_lick.stage
     show khadne f_happy
     with fade
-    anon "Santai saja, oke?"
-
-    khadne "Ya."
-
+    anon "Just relax, okay?"
+    khadne "Da."
     call scene_khadne_crates_lick.animate
     with dissolve
     call scene_khadne_crates_lick.dialogue (6)
@@ -216,10 +178,10 @@ label scene_khadne_crates_lick.replay:
     if len(variants) > 1:
         scene expression background(l=L_warehouse_storage) with fade
         menu:
-            "Pertama" if 'first' in variants:
+            "First" if 'first' in variants:
                 jump scene_khadne_crates_lick.first
 
-            "Ulangi" if 'repeat' in variants:
+            "Repeat" if 'repeat' in variants:
                 jump scene_khadne_crates_lick.repeat
 
     jump expression 'scene_khadne_crates_lick.{}'.format(next(iter(variants)))

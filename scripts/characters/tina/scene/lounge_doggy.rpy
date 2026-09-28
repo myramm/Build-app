@@ -44,59 +44,43 @@ label scene_tina_lounge_doggy.loop:
 label scene_tina_lounge_doggy.dialogue(opt, rng=-1):
     if opt == 1:
         if rng < 0:
-            tina "Halo!"
+            tina "Hello!"
 
-
-        anon "Bagaimana rasanya?"
-
-        tina "Hmm, luar biasa!"
-
+        anon "How's that feel?"
+        tina "Mmm, wonderful!"
 
     elif opt == 2:
-        tina "Ya, begitu saja!"
-
+        tina "Yeah, just like that!"
 
     elif opt == 3:
-        tina "Ya Tuhan!!"
-
+        tina "Oh, god!!"
 
     elif opt == 4:
-        tina "Ya, pukullah!"
-
-        tina "Pukul vagina itu!"
-
+        tina "Yeah, pound it!"
+        tina "Pound that pussy!"
 
         if rng < .4:
             anon "Ahh!!"
 
-
     elif opt == 5:
-        anon "Astaga, pantatmu bagus!"
-
+        anon "Man, your ass is great!"
 
     return
 
 
 label scene_tina_lounge_doggy.switch:
-    anon "Ini, ganti aku."
-
+    anon "Here, switch me."
     hide anim
     show anon b_tina_sex
     show tina b_sex_talk
     with {'master': dissolve}
-    tina "Hah?"
-
-    anon "Aku ingin menjadi yang teratas sebentar."
-
-    tina "Benar-benar?"
-
+    tina "Huh?"
+    anon "I wanna get on top for a bit."
+    tina "Really?"
     pause
-    tina "Anda yakin bisa mengatasinya?"
-
-    anon "{i}*Gulp*{/i} Saya kira begitu..."
-
-    tina "Hehe, baiklah kalau begitu..."
-
+    tina "You sure you can handle it?"
+    anon "{i}*Gulp*{/i} I think so..."
+    tina "Hehe, alright then..."
     call scene_tina_sex_lounge.stage
     with {'master': dissolve}
     pause
@@ -111,8 +95,7 @@ label scene_tina_lounge_doggy.switch:
     show tina_body_b_sex_doggy_insert_anon as anon_body
     show tina_body_b_sex_doggy_insert_arm as anon_arm
     with {'master': dissolve}
-    tina "... Tunjukkan padaku apa yang kamu punya, Babyface!"
-
+    tina "... Show me what you got, Babyface!"
     hide tina
     call scene_tina_lounge_doggy.pre
     with {'master': dissolve}
@@ -121,8 +104,7 @@ label scene_tina_lounge_doggy.switch:
     hide anon_arm
     call scene_tina_lounge_doggy.insert
     with {'master': dissolve}
-    tina "Oh wah!!!"
-
+    tina "Oh, wow!!!"
     call scene_tina_lounge_doggy.animate
     with {'master': dissolve}
     call scene_tina_lounge_doggy.dialogue (1)

@@ -1,45 +1,35 @@
 label josie_button_pregnant:
     show anon with dissolve
-    anon "Hai, {b}Josephine{/b}."
-
+    anon "Hey, {b}Josephine{/b}."
 
     if M_josie.pregnancy.stage <= 2:
         josephine @ -m_talk "Hmm?"
-
-        josephine f_normal "Oh, hei!"
-
-        josephine "Saya senang Anda ada di sini!"
-
-        anon "Ya?"
-
-        josephine "Anda ingin menonton beberapa video Gootube dengan saya?"
-
+        josephine f_normal "Oh, hey!"
+        josephine "I'm glad you're here!"
+        anon "Yeah?"
+        josephine "You wanna watch some Gootube videos with me?"
         show josephine f_normal_down
     else:
-        josephine "Ya Tuhan, {b}[firstname]{/b}!"
-
+        josephine "Oh my god, {b}[firstname]{/b}!"
         show anon f_worried
-        josephine "Aku panik di sini!"
-
-        anon "Ada apa?"
-
-        josephine @ f_angry_closed "Kau memasukkan bayi raksasa ke dalam tubuhku, itu masalahnya!"
-
+        josephine "I am freaking out here!"
+        anon "What's the matter?"
+        josephine @ f_angry_closed "You put a giant fucking baby inside me, that's what's the matter!"
 
     menu josie_button_pregnant.choice:
 
-        "Tenang..." if M_josie.pregnancy.stage > 2:
+        "Calm down..." if M_josie.pregnancy.stage > 2:
             jump josie_button_pregnant.calm
 
-        "Apa yang kamu tonton?" if M_josie.pregnancy.stage <= 2:
+        "What are you watching?" if M_josie.pregnancy.stage <= 2:
             if M_josie.pregnancy.stage == 1:
                 jump josie_button_pregnant.gootube
             else:
                 jump josie_button_pregnant.feeding
 
-        "Bayi itu" if M_josie.pregnancy.stage <= 2:
+        "The baby" if M_josie.pregnancy.stage <= 2:
             jump josie_button_pregnant.baby
-        "Ayahmu?":
+        "Your dad?":
 
             if M_josie.pregnancy.stage == 1:
                 jump josie_button_pregnant.notice
@@ -48,316 +38,191 @@ label josie_button_pregnant:
             else:
                 jump josie_button_pregnant.grandpa
 
-        "Saya tidak bisa tinggal." if M_josie.pregnancy.stage <= 2:
+        "I can't stay." if M_josie.pregnancy.stage <= 2:
             pass
 
-        "Saya harus pergi." if M_josie.pregnancy.stage > 2:
+        "I have to go." if M_josie.pregnancy.stage > 2:
             pass
 
     if M_josie.pregnancy.stage <= 2:
-        anon f_normal @ f_worried "Saya tidak bisa tinggal."
-
-        anon "Aku hanya ingin melihat kabarmu."
-
-        josephine f_normal_down @ f_bored "Hanya saja, bosan..."
-
-        josephine "... Seperti biasa."
-
-        anon "Sampai jumpa lagi, oke?"
-
+        anon f_normal @ f_worried "I can't stay."
+        anon "I just wanted to see how you were doing."
+        josephine f_normal_down @ f_bored "Just, bored..."
+        josephine "... As usual."
+        anon "I'll see you later, okay?"
         josephine @ -m_talk "Mhmm."
-
     else:
-        anon f_worried "Apakah kamu akan baik-baik saja?"
-
-        josephine f_concerned "Ya, ya..."
-
-        josephine "Tapi aku harap kamu bisa tetap di sini."
-
-        anon "Aku tahu."
-
-        josephine "Entah kenapa, berbicara denganmu membuatku merasa lebih baik."
-
-        anon f_normal "Aku akan segera kembali, oke?"
-
-        josephine "Baiklah."
-
+        anon f_worried "Are you going to be okay?"
+        josephine f_concerned "Ugh, yeah..."
+        josephine "I wish you could stay though."
+        anon "I know."
+        josephine "For some reason, talking with you makes me feel better."
+        anon f_normal "I'll come back soon, okay?"
+        josephine "Alright."
 
     hide anon with dissolve
     return
 
 
 label josie_button_pregnant.baby:
-    anon f_worried "Apakah kamu benar-benar yakin ingin menjalani ini?"
-
-    josephine f_concerned "Apa maksudmu?"
-
-    anon "Maksudku, anak-anak adalah tanggung jawab besar dan itu bukan sesuatu yang bisa Anda abaikan begitu saja ketika Anda menginginkannya..."
-
-    josephine f_bored "Hmm, ya."
-
-    josephine "Saya tidak bodoh, {b}[firstname]{/b}."
-
-    anon "Saya tahu itu, {b}Josephine{/b}... Saya hanya mengatakan itu-"
-
-    josephine f_sexy "Bung, kamu perlu bersantai."
-
-    josephine "Kita berbicara tentang seorang anak kecil dengan DNA saya... Ini akan menjadi bayi paling keren yang pernah ada!"
-
+    anon f_worried "Are you really sure you wanna go through with this?"
+    josephine f_concerned "What do you mean?"
+    anon "I mean, children are a big responsibility and it's not something you can just ignore when you feel like it..."
+    josephine f_bored "Umm, duh."
+    josephine "I'm not stupid, {b}[firstname]{/b}."
+    anon "I know that, {b}Josephine{/b}... I'm just saying that-"
+    josephine f_sexy "Dude, you need to chill out."
+    josephine "We're talking about a little kid with my DNA... It's going to be the coolest baby ever!"
     anon @ -m_talk "..."
-    anon "{i}*Huh*{/i} Ya, setidaknya kamu berpikir positif..."
-
+    anon "{i}*Sigh*{/i} Well, at least you're thinking positive..."
     show josephine f_normal_down
     jump josie_button_pregnant.choice
 
 
 label josie_button_pregnant.calm:
-    anon f_worried "Semuanya akan baik-baik saja, aku janji."
-
-    josephine f_bored "Ya, sangat mudah bagimu untuk mengatakannya!"
-
-    josephine "Bukan Anda yang harus mengeluarkan benda sialan itu dari vagina Anda!"
-
-    anon "Wanita melahirkan setiap hari, tubuh Anda tahu persis apa yang harus dilakukan..."
-
-    josephine f_angry "Tidak, persetan!"
-
-    josephine "Saya tidak mau!"
-
+    anon f_worried "Everything is going to be fine, I promise."
+    josephine f_bored "Yeah, real easy for you to say!"
+    josephine "You're not the one who has to squeeze the damn thing out of your vagina!"
+    anon "Women give birth everyday, your body knows exactly what to do..."
+    josephine f_angry "No, fuck that!"
+    josephine "I don't wanna!"
     anon "Ehh."
-
-    josephine "Itu hanya harus tetap di sana."
-
-    anon "{b}Yosephine{/b}..."
-
-    josephine "Kenapa aku membiarkanmu membujukku melakukan hal ini?"
-
-    anon f_surprised "AKU?!"
-
-    anon "akulah yang-"
-
-    anon f_shock "Itu-"
-
-    anon f_hurt a_sides @ -m_talk "{i}*Huh*{/i}"
-
-    anon a_idle f_worried "Lihat aku."
-
+    josephine "It's just gonna have to stay in there."
+    anon "{b}Josephine{/b}..."
+    josephine "Why the hell did I let you talk me into this?"
+    anon f_surprised "ME?!"
+    anon "I'm the-"
+    anon f_shock "That's-"
+    anon f_hurt a_sides @ -m_talk "{i}*Sigh*{/i}"
+    anon a_idle f_worried "Look at me."
     josephine f_concerned @ -m_talk "Hmm?"
-
     pause
-    anon "Bernapaslah saja, oke?"
-
+    anon "Just breathe, okay?"
     josephine @ -m_talk "Mhmm."
-
-    anon "Anda telah menonton ratusan video tentang persalinan beberapa minggu terakhir ini..."
-
+    anon "You've watched like a hundred videos on childbirthing these past few weeks..."
     josephine @ -m_talk "..."
-    anon "... Aku tahu itu karena kamu memaksaku menonton sebagian besarnya bersamamu, ingat?"
-
-    josephine f_sexy @ f_laugh "Hehe, ya."
-
+    anon "... I know that because you forced me watch most of them with you, remember?"
+    josephine f_sexy @ f_laugh "Heh, yeah."
     show anon f_normal
-    josephine "Lucu sekali ketika satu video itu membuatmu muntah!"
-
-    anon "Wanita itu menyebarkan diare ke mana-mana!"
-
+    josephine "It was so funny when that one video made you throw up!"
+    anon "The lady sharted diarrhea everywhere!"
     josephine @ f_laugh "Hahahaah!"
-
-    anon "Itu terjadi pada bayinya!"
-
-    josephine "{i}*Mendengus*{/i}"
-
+    anon "It was on the baby!"
+    josephine "{i}*Snort*{/i}"
     pause
-    anon "Serius, {b}Josephine{/b}... Anda tahu segalanya tentang hal ini."
-
-    anon "Anda punya ini."
-
+    anon "Seriously, {b}Josephine{/b}... You know everything about this stuff."
+    anon "You've got this."
     pause
-    josephine "Terima kasih, {b}[firstname]{/b}."
-
+    josephine "Thanks, {b}[firstname]{/b}."
     jump josie_button_pregnant.choice
 
 
 label josie_button_pregnant.clueless:
-    anon f_worried "Dia masih belum tahu?"
-
-    josephine f_normal_down "Tidak."
-
-    josephine "Dia benar-benar tidak mengerti, seperti dugaanku..."
-
-    anon f_confused "Bagaimana mungkin dia tidak tahu?"
-
-    anon f_normal @ f_laugh "Anda jelas-jelas menunjukkannya."
-
-    josephine f_bored "Pfft, hanya di perutku sedikit..."
-
-    josephine f_angry_down "Payudaraku belum tumbuh sama sekali."
-
+    anon f_worried "He still doesn't know?"
+    josephine f_normal_down "Nope."
+    josephine "He's absolutley clueless, just like I expected..."
+    anon f_confused "How can he not know?"
+    anon f_normal @ f_laugh "You're clearly showing."
+    josephine f_bored "Pfft, just in my belly a bit..."
+    josephine f_angry_down "My tits haven't grown at all."
     show anon f_worried
-    josephine "Itu omong kosong!"
-
-    josephine f_angry "Itu seharusnya menjadi salah satu bagian terbaik dari kehamilan!"
-
-    anon "Payudaramu baik-baik saja..."
-
-    josephine f_normal_down @ f_eyeroll "Ya benar."
-
+    josephine "Which is bullshit!"
+    josephine f_angry "That's supposed to be one of the best parts about getting pregnant!"
+    anon "Your tits are fine..."
+    josephine f_normal_down @ f_eyeroll "Yeah, right."
     jump josie_button_pregnant.choice
 
 
 label josie_button_pregnant.feeding:
-    anon f_normal "Apa yang kamu tonton?"
-
-    josephine f_normal_down "Video tentang menyusui."
-
-    josephine "Mau bergabung dengan saya?"
-
+    anon f_normal "What are you watching?"
+    josephine f_normal_down "A video on breastfeeding."
+    josephine "Care to join me?"
     anon f_worried "Ehh..."
-
-    josephine "Banyak dari video ini menyarankan untuk sering menggosok puting Anda dengan sikat atau loofah selama kehamilan untuk menguatkannya."
-
-    anon "Benar-benar?"
-
+    josephine "A lot of these videos suggest frequently scrubbing your nipples with a brush or loofah during pregnancy to toughen them up."
+    anon "Really?"
     josephine @ -m_talk "Mhmm."
-
     pause
-    anon @ f_disgusted "Kedengarannya sangat tidak menyenangkan."
-
-    josephine f_sexy "Ya, aku tidak melakukan itu."
-
-    josephine "Mereka juga mengatakan bahwa saya harus meminta pasangan saya mengoleskan minyak lanolin ke payudara saya setelah setiap sesi menyusui."
-
+    anon @ f_disgusted "That sounds really unpleasant."
+    josephine f_sexy "Yeah, I'm not doing that."
+    josephine "They also say that I should have my partner rub lanolin oil on my breasts after each feeding session."
     anon f_normal "Oh?"
-
-    josephine f_normal_down "Ya, aku pikir kamu akan menyukainya..."
-
-    anon @ f_laugh "hehe."
-
+    josephine f_normal_down "Yeah, I thought you'd like that..."
+    anon @ f_laugh "Hehe."
     jump josie_button_pregnant.choice
 
 
 label josie_button_pregnant.gootube:
-    anon f_normal "Apa yang kamu tonton?"
-
+    anon f_normal "What are you watching?"
     josephine f_normal "Gootube."
-
     anon f_confused @ -m_talk "..."
-    josephine f_bored "Serius, apakah kamu tinggal di bawah batu atau semacamnya?"
-
-    anon f_worried @ f_sad_down "Entahlah..."
-
-    anon "Apa itu Gootube?"
-
-    josephine f_normal "Ini adalah platform berbagi video di internet."
-
-    josephine "Orang-orang pada dasarnya mengunggah apa pun yang mereka inginkan dan menontonnya gratis."
-
-    anon @ f_confused "Suka porno?"
-
-    josephine @ f_eyeroll "Bukan, bukan porno..."
-
+    josephine f_bored "Seriously, do you live under a rock or something?"
+    anon f_worried @ f_sad_down "I dunno..."
+    anon "What is Gootube?"
+    josephine f_normal "It's a video-sharing platform on the internet."
+    josephine "People basically upload whatever they want and it's free to watch."
+    anon @ f_confused "Like porn?"
+    josephine @ f_eyeroll "No, not porn..."
     pause
-    josephine f_surprised "Err, baiklah... Maksudku, mereka {i}DO{/i} punya film porno."
-
-    josephine f_sexy "Sebenarnya cukup banyak."
-
-    anon f_normal "Saya mengetahuinya."
-
-    josephine f_surprised "Tapi aku tidak menontonnya!"
-
-    josephine f_normal a_phone_show_left "Inilah yang diharapkan saat Anda mengharapkan video."
-
-    anon f_surprised "Perlengkapan bayi?"
-
-    josephine f_sexy "Ya, sejauh ini sangat menarik."
-
-    anon f_worried "Baiklah, saya senang melihat Anda akhirnya menganggap ini setidaknya sedikit serius..."
-
-    josephine f_normal_down a_phone "Eh ya."
-
+    josephine f_surprised "Err, well... I mean, they {i}DO{/i} have porn."
+    josephine f_sexy "Quite a lot actually."
+    anon f_normal "I knew it."
+    josephine f_surprised "But I'm not watching that!"
+    josephine f_normal a_phone_show_left "This is what to expect when you're expecting videos."
+    anon f_surprised "Baby stuff?"
+    josephine f_sexy "Yeah, it's been really interesting so far."
+    anon f_worried "Well, I'm glad to see you're finally taking this at least a little bit seriously..."
+    josephine f_normal_down a_phone "Uh huh."
     pause
-    josephine f_sexy "Tahukah Anda bahwa sembilan puluh persen wanita buang air besar saat melahirkan?"
-
+    josephine f_sexy "Did you know that like ninety percent of women poop themselves during delivery?"
     show anon f_disgusted
     pause
-    anon "Yah, itu tidak berlangsung lama."
-
+    anon "Welp, that didn't last long."
     josephine f_normal_down @ f_laugh "Hahahaah!"
-
     show anon f_worried
     jump josie_button_pregnant.choice
 
 
 label josie_button_pregnant.grandpa:
-    anon f_worried "Mari kita pikirkan hal lain, oke?"
-
-    josephine f_concerned "Ya baiklah."
-
-    anon "Pasti ayahmu sudah mengetahui kamu hamil sekarang, kan?"
-
-    josephine "Dia punya..."
-
+    anon f_worried "Let's think about something else, okay?"
+    josephine f_concerned "Yeah, okay."
+    anon "Surely your father has figured out you're pregnant by now, right?"
+    josephine "He has..."
     pause
-    josephine f_bored "... Dan jangan panggil aku {b}Shirley{/b}."
-
-    anon f_normal @ f_laugh "Hehe, lucu sekali."
-
-    josephine f_sexy @ f_laugh "hehe!"
-
-    anon f_worried "Apa yang dia katakan?"
-
-    josephine "Dia kesal karena aku tidak memberitahunya dan dia mencoba membentakku..."
-
+    josephine f_bored "... And don't call me {b}Shirley{/b}."
+    anon f_normal @ f_laugh "Heh, very funny."
+    josephine f_sexy @ f_laugh "Hehe!"
+    anon f_worried "What did he say?"
+    josephine "He was annoyed that I didn't tell him and he tried to yell at me..."
     pause
-    josephine @ f_eyeroll "... Tapi itu tidak terlalu meyakinkan."
-
-    josephine "Dia sangat bersemangat menjadi seorang kakek."
-
-    anon f_normal "Ya, itu kabar baik!"
-
-    josephine "Ya, menurutku."
-
+    josephine @ f_eyeroll "... But it wasn't very convincing."
+    josephine "He's really excited about being a grandpa."
+    anon f_normal "Well, that's good news!"
+    josephine "Yeah, I guess."
     jump josie_button_pregnant.choice
 
 
 label josie_button_pregnant.notice:
-    anon f_worried "Tidakkah menurutmu kita harus memberi tahu ayahmu bahwa kamu hamil?"
-
-    josephine f_angry "Tidak, kami belum memberitahunya!"
-
-    josephine f_sexy "Aku ingin dia menyadarinya sendiri."
-
-    anon f_confused "Itu-"
-
+    anon f_worried "Don't you think we should tell your dad you're pregnant?"
+    josephine f_angry "No, we're not telling him yet!"
+    josephine f_sexy "I want him to notice on his own."
+    anon f_confused "That's-"
     pause
-    anon "Mengapa?"
-
-    josephine "Karena akan lebih lucu seperti itu!"
-
+    anon "Why?"
+    josephine "Because it'll be funnier that way!"
     anon f_worried @ -m_talk "..."
-    anon "Bukankah dia akan marah?"
-
-    anon "Aku tidak ingin dia membenciku atau semacamnya..."
-
-    josephine @ f_eyeroll "Ayahku tidak akan membencimu."
-
-    josephine "Dia tidak memilikinya di dalam dirinya."
-
-    anon "Mungkin saja, saat dia tahu aku menghamilimu."
-
-    josephine "Kawan, kau meniduri putrinya di meja kantornya..."
-
+    anon "Won't he be mad?"
+    anon "I don't want him to hate me or something..."
+    josephine @ f_eyeroll "My dad isn't going to hate you."
+    josephine "He doesn't have it in him."
+    anon "He might, when he finds out I got you pregnant."
+    josephine "Dude, you've been fucking his daughter on the desk in his office..."
     anon f_surprised "!!!"
-    anon f_worried @ f_surprised_left "Ssst, jangan terlalu keras!"
-
-    josephine f_concerned "... Dia benar-benar berjalan mendekatimu jauh di dalam diriku."
-
+    anon f_worried @ f_surprised_left "Shhh, not so loud!"
+    josephine f_concerned "... He literally walked in on you balls deep inside me."
     pause
-    josephine f_sexy "Jika dia mampu membenci seseorang, kamu akan menjadi nomor satu dalam daftarnya."
-
+    josephine f_sexy "If he was capable of hating someone, you'd be number one on his list."
     anon f_surprised_teeth @ -m_talk "..."
-    josephine "Percayalah, kamu baik-baik saja."
-
+    josephine "Trust me, you're good."
     show anon f_worried
     show josephine f_normal_down
     jump josie_button_pregnant.choice

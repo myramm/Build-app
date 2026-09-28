@@ -6,107 +6,80 @@ label button_ross_make_collage:
     show fruit 1 zorder 0 at Position(xpos=0.6, ypos=1.0)
     show cloth 1 zorder 1 at Position(xpos=0.605, ypos=0.85)
     with dissolve
-    ross "... Anda tahu bahwa tubuh wanita dapat memiliki lebih dari 30 zona sensitif seksual yang berbeda."
-
+    ross "... You know the female body can have upwards of 30 different erogenous zones."
     show old_ross 12
     show old_mia 61
-    mia "Benar-benar?"
-
+    mia "Really?"
     show old_ross 13
     show old_mia 60
-    ross "Oh, tentu saja!"
-
+    ross "Oh, absolutely!"
     show old_ross 56 with dissolve
     show old_mia 60b
-    ross "Kita adalah makhluk yang kompleks, {b}Mia{/b}."
-
-    ross "Anda tidak akan percaya betapa kuatnya orgasme jika tombol yang tepat ditekan."
-
+    ross "We're complex creatures, {b}Mia{/b}."
+    ross "You wouldn't believe how powerful the orgasms can get if the right buttons are being pressed."
     show old_ross 56b
     mia "..."
     show old_ross 56
-    ross "Saya bisa menunjukkannya kapan-kapan, jika Anda tertarik?"
-
+    ross "I could show you sometime, if you're interested?"
     show old_ross 56b
 
     show old_mia 61b
-    mia "Ah, aku tidak tahu..."
-
-    mia "Kurasa aku belum siap untuk-"
-
+    mia "Oh, I don't know..."
+    mia "I don't think I'm ready fo-"
     show old_mia 60b
     show player 595f
-    player_name "{i}*Ahem*{/i} ... Saya kembali!"
-
+    player_name "{i}*Ahem*{/i} ... I'm back!"
     hide old_ross
     show old_ross 11 zorder 2 at Position(xpos=0.30, ypos=1.0)
     show old_mia 60bf zorder 3 at left
     with dissolve
     show player 594f
-    ross "Halo, {b}[firstname]{/b}."
-
-    ross "Sepertinya Anda menemukan beberapa majalah untuk kami?"
-
+    ross "Hey there, {b}[firstname]{/b}."
+    ross "It looks like you found us some magazines?"
     show old_ross 10
     show player 595f
-    player_name "Anda tidak akan percaya betapa besarnya masalah yang terjadi!"
-
-    player_name "Saya berhasil mendapatkan tumpukan yang cukup bagus."
-
+    player_name "You wouldn't believe how much trouble it was!"
+    player_name "I managed to get a pretty good stack though."
     show old_ross 46 at Position(xpos=0.32, ypos=1.0)
     show player 1f
     with dissolve
-    ross "Saya melihat itu..."
-
-    ross "Memasak, olahraga maskulin, dan..."
-
+    ross "I see that..."
+    ross "Cooking, masculine workout, and..."
     show old_mia 61cf
     show old_ross 51
     with dissolve
-    ross "Ya ampun."
-
+    ross "Oh, goodness."
     show old_ross 52
     show player 10f
-    player_name "Ya maaf."
-
+    player_name "Yeah, sorry."
     show player 11f
     show old_ross 53
-    ross "Haha, jangan menyesal, {b}[firstname]{/b}!"
-
-    ross "Seks adalah bagian alami dan penting dalam kehidupan."
-
+    ross "Haha, don't be sorry, {b}[firstname]{/b}!"
+    ross "Sex is a natural and important part of life."
     show old_ross 53b
-    ross "{b}Mia{/b} dan saya sudah besar, kami bisa mengatasinya. Benar {b}Mia{/b}?"
-
+    ross "{b}Mia{/b} and I are big girls, we can handle it. Right {b}Mia{/b}?"
     show old_ross 52b
     pause
     show old_ross 53b
-    ross "... {i}*Ahem*{/i} Benar, {b}Mia{/b}?!"
-
+    ross "... {i}*Ahem*{/i} Right, {b}Mia{/b}?!"
 
     show old_ross 52b
     show old_mia 61bf
-    mia "Hah? Oh!"
-
-    mia "Heh, umm... Y-ya, tentu saja."
-
+    mia "Huh? Oh!"
+    mia "Heh, umm... Y-yeah, of course."
     show old_ross 53b
     show old_mia 60bf
-    ross "hehe..."
-
+    ross "Hehe..."
     show old_mia 60bf
     show old_ross 11 with dissolve
-    ross "... Kita mungkin harus mulai membuat kolase itu, ya?"
-
+    ross "... We should probably get started on those collages, huh?"
     show old_ross 10
     show player 2f
-    player_name "Kedengarannya bagus."
-
+    player_name "Sounds good."
     show player 1f
     show old_mia 60f
     show old_ross 57 at Position(xpos=0.3525, ypos=1.0) with dissolve
-    ross "Jadi, saya ingin kalian melihat ini..."
-
+    ross "So, I want you guys to take a look at this..."
     hide cloth
     show old_ross 29 at Position(xpos=0.343, ypos=1.0)
     with dissolve
@@ -115,63 +88,47 @@ label button_ross_make_collage:
 
     mia "..."
     show player 10f
-    player_name "Buah?"
-
+    player_name "Fruit?"
     show player 11f
     show old_ross 13
-    ross "Bukankah itu indah?"
-
+    ross "Isn't it beautiful?"
     show old_ross 13c
-    ross "Lihat saja lingkar pisangnya, {b}Mia{/b}!"
-
+    ross "Just look at the girth on that banana, {b}Mia{/b}!"
     show old_ross 12b
     show old_mia 60bf
     mia "..."
     show old_ross 13c
-    ross "Dia orang yang tebal, bukan?"
-
+    ross "He's a thick one, isn't he?"
     show old_ross 13
-    ross "... Dan {b}[firstname]{/b}. Apa pendapat Anda tentang buah persik yang lezat itu?"
-
+    ross "... And {b}[firstname]{/b}. What do you think of that succulent peach?"
     show old_ross 12
     show player 10f
-    player_name "Um, aku tidak tahu?"
-
+    player_name "Umm, I don't know?"
     show old_ross 13
     show player 11f
-    ross "Kelihatannya sangat menarik... Tidakkah Anda hanya ingin mencicipinya sedikit?"
-
+    ross "It's so juicy looking... Don't you just want to give it a little nibble?"
     show old_ross 12
     show player 10f
-    player_name "... Kukira?"
-
+    player_name "... I guess?"
     show old_ross 13
     show player 11f
-    ross "Tidak apa-apa, Anda dapat menggunakan waktu sebanyak yang Anda perlukan."
-
+    ross "That's alright, you can take all the time you need."
     show old_ross 13c
-    ross "Aku ingin kalian berdua melihat lebih dekat..."
-
+    ross "I want you both to look very closely..."
     show old_ross 13
-    ross "... Dan saat Anda berpikir Anda sudah siap..."
-
+    ross "... And the instant you think you're ready..."
     show old_ross 58 at Position(xpos=0.38, ypos=1.0) with dissolve
-    ross "... Kita akan mulai dengan kolase!"
-
-    ross "Saya ingin Anda menangkap dengan tepat bagaimana perasaan Anda terhadap buah-buahan yang indah dan lezat ini."
-
+    ross "... We'll start on the collages!"
+    ross "I want you to capture exactly how these, shapely and delicious fruits, make you feel."
     show old_ross 12 at Position(xpos=0.32, ypos=1.0) with dissolve
     show player 10f
-    player_name "... Oke."
-
+    player_name "... Okay."
     show player 11f
     show old_ross 12b
     show old_mia 61bf
-    mia "Ya, Bu."
-
+    mia "Yes, ma'am."
     show old_ross 58 at Position(xpos=0.38, ypos=1.0) with dissolve
-    ross "Sangat bagus! Lakukan saja apa pun yang terasa alami."
-
+    ross "Very good! Just do whatever feels natural."
 
     scene location_school_art_cutscene05
     show text _ ("I wasn't entirely sure what {b}Miss Ross{/b} was hoping the fruits would make me feel...") as caption
@@ -189,164 +146,124 @@ label button_ross_make_collage:
     show player 604 zorder 2 at left
     show old_ross 27f zorder 1 at Position(xpos=0.45, ypos=1.0)
     with fade
-    ross "Ini sungguh pekerjaan yang luar biasa, {b}[firstname]{/b}!"
-
-    ross "Anda memiliki imajinasi yang jelas!"
-
+    ross "This is truly remarkable work, {b}[firstname]{/b}!"
+    ross "You have such a vivid imagination!"
     show player 605
     show old_ross 26f
-    player_name "Terima kasih, {b}Nona Ross{/b}."
-
+    player_name "Thanks, {b}Miss Ross{/b}."
     show player 604
     show old_ross 27 at Position(xpos=0.35, ypos=1.0) with dissolve
-    ross "Bagaimana kabarmu di sana {b}Mia{/b}?"
-
+    ross "How are you doing over there {b}Mia{/b}?"
 
     show old_ross 26
     show old_mia 12b zorder 2 at right
     show miascraps 1 zorder 3 at Position(xpos=0.88, ypos=0.65)
     with dissolve
     mia "Uhh..."
-
-    mia "...Aku hanya, agak membuat kekacauan, sungguh..."
-
+    mia "... I'm just, sorta making a mess, really..."
     show old_mia 8b
     show old_ross 27
-    ross "Hehe, kamu pasti menggemaskan kan?"
-
+    ross "Hehe, you just can't help but be adorable, can you?"
     show old_ross 26
     show old_mia 8
     mia "..."
     show old_ross 11 with dissolve
-    ross "Apa pendapat Anda tentang kolase {b}[firstname]{/b}?"
-
+    ross "What do you think of {b}[firstname]{/b}'s collage?"
     show old_ross 10
     show old_mia 8b
 
     mia "..."
     show old_mia 10
-    mia "Sangat... Umm... Menawan?"
-
+    mia "It's very... Umm... Captivating?"
     show old_ross 11
     show old_mia 8b
-    ross "Itu pilihan kata yang sangat bagus, sayang!"
-
+    ross "That's a very good choice of words, dear!"
     show old_ross 10
     show old_mia 12
-    mia "sebaiknya aku mandi saja..."
-
+    mia "I should probably go take a shower..."
     show old_ross 11
-    ross "Hehe, itu ide yang bagus."
-
+    ross "Hehe, that's a good idea."
     show old_ross 13
     show old_mia 8b
-    ross "Apakah Anda ingin saya ikut dan mencuci punggung Anda?"
-
+    ross "Would you like me to come with and wash your back?"
     show old_ross 12
     show old_mia 56 with dissolve
-    mia "T-tidak, tidak apa-apa. Aku lebih memilih mandi sendirian."
-
+    mia "N-no, that's okay. I'd prefer to shower alone."
     show old_ross 13
     show old_mia 55
-    ross "Terserahlah, pai manis."
-
+    ross "Suit yourself, cutie pie."
     show old_ross 12
     show old_mia 56
-    mia "Sampai jumpa, {b}[firstname]{/b}."
-
+    mia "See ya, {b}[firstname]{/b}."
     show old_mia 55
     show player 605
-    player_name "Sampai jumpa, {b}Mia{/b}."
-
+    player_name "Bye, {b}Mia{/b}."
     hide old_mia
     hide miascraps
     show old_ross 4f at Position(xpos=0.55, ypos=1.0)
     show player 1
     with dissolve
 
-    ross "Anda tahu, saya sangat senang dengan kemajuan Anda, {b}[firstname]{/b}."
-
+    ross "You know, I'm very pleased with your progress, {b}[firstname]{/b}."
     show old_ross 3f
     show player 2
-    player_name "Ya, aku bersenang-senang!"
-
+    player_name "Yeah, I'm having a good time!"
     show player 1
     show old_ross 4f
-    ross "Saya selalu merasa sangat menyenangkan menyaksikan artis muda bekerja!"
-
-    ross "Wanita sangat tertarik pada pria yang berbakat."
-
+    ross "I've always found it so exciting, watching a young artist at work!"
+    ross "Girls are really drawn to men with talent."
     show player 2
     show old_ross 3f
-    player_name "Apakah itu?"
-
+    player_name "They are?"
     show player 1
     show old_ross 4f
-    ross "Oh ya! Anda terus datang kepada saya untuk sesi dan Anda harus melawannya dengan tongkat."
-
+    ross "Oh yes! You keep coming to me for sessions and you'll have to fight them off with a stick."
     show old_ross 5f with dissolve
     show player 12
-    player_name "Hehe, entahlah..."
-
+    player_name "Heh, I dunno..."
     show old_ross 6f at Position(xpos=0.58, ypos=1.0) with dissolve
     pause
     show old_ross 7f at Position(xpos=0.57, ypos=1.0)
     pause
     show old_ross 9f at Position(xpos=0.6, ypos=1.0) with dissolve
-    ross "{i}*Meneguk*{/i}"
-
+    ross "{i}*Gulp*{/i}"
     show player 23
     show old_ross 12f with dissolve
     player_name "( !!! )" with hpunch
     show player 10
-    player_name "... Apakah kamu baru saja menelan semuanya?"
-
+    player_name "... Did you just swallow that entire thing?"
     show player 11
     show old_ross 13f
-    ross "... Mungkin."
-
+    ross "... Maybe."
     show old_ross 12f
     show player 10
-    player_name "Di mana kamu belajar melakukan itu?!"
-
+    player_name "Where did you learn to do that?!"
 
     show player 11
     show old_ross 56f at Position(xpos=0.37, ypos=1.0) with dissolve
-    ross "Oh sayang. Saya punya banyak bakat yang tidak Anda ketahui."
-
-    ross "Saya menghabiskan satu tahun di India mempelajari seks Tantra dengan biksu Buddha."
-
-    ross "Mereka mengajari saya cara mengatasi refleks muntah saya."
-
+    ross "Oh, honey. I have lots of talents you don't know about."
+    ross "I spent a year in India studying Tantric sex with Buddhist monks."
+    ross "They taught me how to overcome my gag reflex."
     show player 10
     show old_ross 56bf
-    player_name "Itu sangat keren!"
-
+    player_name "That's pretty cool!"
     show player 11
     show old_ross 56f
-    ross "Bukan?"
-
+    ross "Isn't it?"
     show old_ross 11f at Position(xpos=0.55, ypos=1.0) with dissolve
-    ross "Ya ampun, ini sudah larut."
-
-    ross "Sebaiknya kau pulang sendiri."
-
+    ross "Oh my, it's getting late."
+    ross "You'd better get yourself home."
     show old_ross 10f
     show player 2
-    player_name "Ya, itu mungkin ide yang bagus."
-
-    player_name "Terima kasih atas pelajarannya, {b}Nona Ross{/b}."
-
+    player_name "Yeah, that's probably a good idea."
+    player_name "Thanks for the lesson, {b}Miss Ross{/b}."
     show player 1
     show old_ross 58f at Position(xpos=0.49, ypos=1.0) with dissolve
-    ross "Oh, ingatlah untuk membeli beberapa quinoa yang saya sebutkan saat berikutnya Anda berada di toko!"
-
-    ross "Ini sangat sehat untuk Anda, {b}[firstname]{/b}, dan saya ingin Anda mencobanya!"
-
+    ross "Oh, remember to pick up some of that quinoa I mentioned next time you're at the store!"
+    ross "It's really healthy for you, {b}[firstname]{/b}, and I want you to try it!"
     show player 2
     show old_ross 10f at Position(xpos=0.55, ypos=1.0) with dissolve
-    player_name "Oke, {b}Nona Ross{/b}."
-
+    player_name "Okay, {b}Miss Ross{/b}."
     return
 
 label button_ross_get_easels:
@@ -354,71 +271,54 @@ label button_ross_get_easels:
     show old_ross 11 zorder 1 at left
     show old_mia 8b zorder 0 at Position(xpos=0.435, ypos=1.0)
     with dissolve
-    ross "... Ya ampun, dengan jumlah pelumas yang tepat, itu akan langsung masuk, sayang."
-
+    ross "... Goodness no, with the right amount of lubricant it will slide right in, dear."
     show old_ross 10
     show old_mia 12b
-    mia "Tapi bukankah itu menyakitkan?"
-
+    mia "Doesn't it hurt though?"
     show old_ross 11
     show old_mia 8b
-    ross "Tidak jika melakukan sesuatu dengan benar. Panaskan oven sedikit dan lakukan perlahan."
-
+    ross "Not if do things right. Preheat the oven a bit and take things slow."
     show old_ross 13
-    ross "Ini bisa terasa sangat menyenangkan!"
-
+    ross "It can feel extremely pleasurable!"
     show old_ross 12
     show old_mia 12b
-    mia "Ya, tapi Alkitab mengatakan-"
-
+    mia "Yeah, but the Bible says-"
     show old_ross 13
     show old_mia 8
-    ross "Oh mewah sekali!"
-
-    ross "Jika Tuhan tidak ingin kita terjebak di sana, Dia akan memberikan refleks muntah pada anus..."
-
+    ross "Oh pish posh!"
+    ross "If God didn't want us sticking things up there, he would have given the anus a gag reflex..."
     show old_ross 10
     show player 1f at right with dissolve
     ross "..."
     show old_ross 11
-    ross "Halo, {b}[firstname]{/b}."
-
+    ross "Hey there, {b}[firstname]{/b}."
     show old_ross 10
     show old_mia 56f at Position(xpos=0.35, ypos=1.0) with dissolve
     mia "{b}[firstname]{/b}!"
-
-    mia "Ya ampun, sudah berapa lama kamu berdiri disana?!"
-
+    mia "Oh my gosh, how long have you been standing there?!"
     show player 2f
     show old_mia 55f
-    player_name "Tidak lama, kenapa?"
-
+    player_name "Not long, why?"
     show player 1f
     show old_ross 11
-    ross "Apakah Anda {b}sudah menyelesaikan kuda-kudanya{/b}?"
-
+    ross "Did you {b}finish the easels{/b} already?"
     show player 2f
     show old_ross 10
-    player_name "Tidak, masih mengerjakannya."
-
+    player_name "Nope, still working on them."
     show player 1f
     show old_ross 11
-    ross "Oh, baiklah! Kami sedang ngobrol cewek di sini!"
-
+    ross "Oh, well shoo! We're having girl talk here!"
     show player 10f
     show old_ross 10
-    player_name "Saya buruk."
-
+    player_name "My bad."
     hide old_ross
     hide old_mia
     hide player
     show player 34
     with dissolve
 
-    player_name "Aku hanya perlu {b}mengambil peralatan ayahku dari garasi dan beberapa kayu dari rumah pohon tua Erik{/b}!"
-
-    player_name "Maka saya bisa membuat {b}kuda-kuda{/b} itu dalam waktu singkat!"
-
+    player_name "I just need to {b}get my dad's tools out of the garage and some wood from Erik's old tree house{/b}!"
+    player_name "Then I can get those {b}easels{/b} built in no time!"
     return
 
 label button_ross_need_easels:
@@ -427,141 +327,107 @@ label button_ross_need_easels:
     show player 1f zorder 1 at right
     show old_mia 7 at Position(xpos=0.65, ypos=1.0)
     with dissolve
-    ross "Itu kalian berdua!"
-
+    ross "There you two are!"
     show old_ross 27 with dissolve
-    ross "Saya punya berita paling menarik!"
-
+    ross "I've got the most exciting news!"
     show old_ross 26
     show player 2f
-    player_name "Apa itu?"
-
+    player_name "What is it?"
     show player 1f
     show old_ross 27
-    ross "Saya bertemu wanita paling baik di mal tadi malam, dan kami mengobrol."
-
-    ross "Ternyata, dia pernah melakukan beberapa model telanjang sebelumnya, dan dia setuju untuk datang ke sini dan menjadi model untuk kami."
-
+    ross "I met the nicest lady in the mall last night, and we got to talking."
+    ross "It turns out, she's done some nude modeling before, and she agreed to come here and model for us."
     show player 10f
     show old_mia 8b
     show old_ross 26
-    player_name "Benar-benar?"
-
+    player_name "Really?"
     show player 11f
     show old_mia 56 at Position(xpos=0.635, ypos=1.0)
-    mia "... Apakah kamu bilang model telanjang?"
-
+    mia "... Did you say nude modeling?"
     show old_mia 55
     show old_ross 27
 
-    ross "Ya! Dia akan melakukannya secara gratis juga! Saya tidak percaya!"
-
+    ross "Yeah! She's gonna do it for free too! I couldn't believe it!"
     show player 2f
     show old_ross 26
-    player_name "Itu luar biasa!"
-
+    player_name "That's awesome!"
     show player 17f
-    player_name "Hebat bukan, {b}Mia{/b}?"
-
+    player_name "Isn't that awesome, {b}Mia{/b}?"
     show player 13f
     show old_mia 56
-    mia "Y-ya, luar biasa."
-
+    mia "Y-yeah, awesome."
     show old_mia 55
     show old_ross 27
-    ross "Kami akhirnya bisa membuat karya seni nyata!"
-
+    ross "We can finally do some real art!"
     show old_ross 25 with dissolve
-    ross "Sayang sekali yang kita miliki hanyalah kuda-kuda tua yang sudah rusak ini."
-
+    ross "It's too bad all we have are these old broken down easels."
     show old_ross 24
     show player 10f
     show old_mia 8b at Position(xpos=0.65, ypos=1.0) with dissolve
-    player_name "Bagaimana kita akan mengerjakan hal-hal lama itu?"
-
-    player_name "Mereka praktis berantakan..."
-
+    player_name "How are we gonna work on those old things?"
+    player_name "They're practically falling apart..."
     show player 11f
     show old_ross 25
-    ross "Hmm, entahlah. Kami mungkin harus bekerja di lantai."
-
+    ross "Hmm, I dunno. We might just have to work on the floor."
     show old_ross 25b
-    ross "Itu benar-benar tidak ideal..."
-
+    ross "It's really not ideal..."
     show player 2f
     show old_ross 24
-    player_name "... Bagaimana jika saya membuatkan beberapa yang baru untuk kita?"
-
+    player_name "... What if I built us a couple new ones?"
     show player 1f
     show old_mia 7
     show old_ross 11
-    ross "Benar-benar?"
-
+    ross "Really?"
     show player 2f
     show old_ross 10
-    player_name "Tentu, kenapa tidak."
-
+    player_name "Sure, why not."
     show player 1f
     show old_ross 27 with dissolve
-    ross "Oh, itu luar biasa, {b}[firstname]{/b}!"
-
+    ross "Oh, that would be amazing, {b}[firstname]{/b}!"
 
     hide player
     show old_ross 21 at Position(xpos=0.45, ypos=1.0)
     show old_mia 7f at Position(xpos=0.25, ypos=1.0)
     with dissolve
-    ross "Anda hanyalah siswa termanis yang pernah saya miliki!"
-
+    ross "You are just the sweetest student I've ever had!"
     show old_ross 20
     show old_mia 10f
-    mia "Aduh..."
-
+    mia "Aww..."
     show old_mia 7f
     pause
     show old_ross 21
-    ross "... Dan itu akan memberi {b}Mia{/b} dan saya waktu untuk lebih banyak mengobrol tentang cewek!"
-
+    ross "... And it'll give {b}Mia{/b} and I some time for more girl talk!"
     show old_mia 8f
     pause
     show old_ross 10f zorder 0 at Position(xpos=0.55, ypos=1.0)
     show player 1f at right
     show old_mia 12f
     with dissolve
-    mia "Oh, entahlah..."
-
+    mia "Oh, I dunno..."
     show old_mia 12f
-    mia "Saya mungkin harus membantu, {b}[firstname]{/b}, kan?"
-
+    mia "I should probably help, {b}[firstname]{/b}, right?"
     show player 2f
     show old_mia 8bf
     player_name "Hmm?"
-
-    player_name "Tidak, tidak apa-apa. Saya bisa memegang kuda-kuda, tidak masalah."
-
+    player_name "No, it's okay. I can handle the easels, no problem."
     show player 17f
-    player_name "Anda hanya bersenang-senang!"
-
+    player_name "You just have fun!"
     show player 1f
     show old_mia 8f
     mia "..."
     show old_mia 12bf
-    mia "Benar."
-
-    mia "Tolong cepat kembali!"
-
+    mia "Right."
+    mia "Hurry back, please!"
     show player 17f
-    player_name "Akan dilakukan."
-
+    player_name "Will do."
 
     hide old_ross
     hide old_mia
     hide player
     show player 34
     with dissolve
-    player_name "(Hmm, seharusnya cukup mudah untuk membuat sepasang kuda-kuda.)"
-
-    player_name "( {b}Peralatan ayah seharusnya ada di garasi saya{/b} dan saya dapat {b}menemukan kayu di rumah pohon tua Erik{/b}! )"
-
+    player_name "( Hmm, it should be easy enough to build a couple easels. )"
+    player_name "( {b}Dad's tools should be in my garage{/b} and I can {b}find wood at Erik's old tree house{/b}! )"
 
     return
 
@@ -570,173 +436,130 @@ label button_ross_has_easels:
     show old_ross 13 zorder 2 at left
     show old_mia 8b zorder 1 at Position(xpos=0.435, ypos=1.0)
     with dissolve
-    ross "...Oh, tentu saja. Saya telah melakukan dua sekaligus sebelumnya."
-
-    ross "Bahkan tiga sekaligus. Sebenarnya, beberapa kali..."
-
+    ross "... Oh, sure. I've done two at once before."
+    ross "Three at once even. Well, a couple times actually..."
     show old_ross 11
     show old_mia 8
-    ross "Beberapa gadis sangat menikmati hal semacam itu tetapi menurutku itu terlalu berlebihan..."
-
+    ross "Some girls really enjoy that kind of thing but I find it to be a bit too overwhelming..."
     show old_ross 12
     show old_mia 12
-    mia "Wah, kedengarannya gila."
-
+    mia "Wow, that sounds crazy."
     show old_ross 13
     show old_mia 8
-    ross "Itu sebabnya saya menyarankan untuk pergi ke arah lain. Jauh lebih mudah untuk rileks dan menikmati sensasi ketika hanya ada satu penis yang terlibat."
-
+    ross "That's why I recommend going the other direction. So much easier to relax and enjoy the sensations when there's just one penis involved."
     show old_mia 8b
-    ross "Wanita juga jauh lebih lembut."
-
+    ross "Women are much gentler too."
     show old_ross 12
     show old_mia 12b
-    mia "Oke, tapi apakah kamu tidak cemburu?"
-
+    mia "Okay, but don't you get jealous?"
     show old_ross 13
     show old_mia 8b
-    ross "Cemburu?! Mustahil! Saya suka menonton! Itu adalah seni yang bergerak, sayang!"
-
+    ross "Jealous?! No way! I love to watch! It's art in motion, dear!"
     show old_ross 12
     show player 1f zorder 2 at right with dissolve
     mia "..."
 
     show old_ross 11
-    ross "Oh lihat, {b}[firstname]{/b} telah kembali!"
-
+    ross "Oh look, {b}[firstname]{/b}'s back!"
     show old_mia 55f at Position(xpos=0.35, ypos=1.0) with dissolve
-    ross "Bagaimana hasil Anda dengan kuda-kuda itu?"
-
+    ross "How did you fare with those easels?"
     show player 2f
     show old_ross 10
-    player_name "Coba lihat sendiri..."
-
+    player_name "Have a look for yourself..."
     show player 1f
     show old_mia 56f
     show easel 1f zorder 0 at Position(xpos=0.65, ypos=1.0) with dissolve
-    mia "{i}*Terkesiap*{/i} Wow, cantik sekali!"
-
+    mia "{i}*Gasp*{/i} Wow, it's so pretty!"
     show old_ross 13
     show old_mia 7f at Position(xpos=0.34, ypos=1.0) with dissolve
-    ross "Seorang seniman terus menerus!"
-
+    ross "An artist through and through!"
     show old_ross 11
-    ross "Ini akan bekerja dengan baik! Biarkan aku memeriksa model kami."
-
+    ross "These will work great! Just lemme go check on our model."
     hide old_ross
     show old_mia 7f at Position(xpos=0.55, ypos=1.0)
     with dissolve
     show player 2f
 
-    player_name "Jadi, apakah Anda bersenang-senang dengan {b}Nona Ross{/b}?"
-
+    player_name "So, did you have fun with {b}Miss Ross{/b}?"
     show player 1f
     show old_mia 10f
-    mia "Sebenarnya, aku melakukannya."
-
+    mia "Actually, I did."
     show old_mia 9f
-    mia "Sepertinya aku mulai terbiasa dengannya."
-
+    mia "I guess I'm starting to get used to her."
     show player 2f
     show old_mia 7f
-    player_name "Lihat, aku tahu kamu akan melakukannya!"
-
+    player_name "See, I knew you would!"
     show player 1f
     show old_mia 10f
-    mia "Dia sedikit eksentrik, tapi dia juga sangat berpengetahuan!"
-
+    mia "She's a little eccentric, but she's also so knowledgeable!"
     show player 2f
     show old_mia 7f
-    player_name "Apa yang kalian bicarakan?"
-
+    player_name "What did you guys talk about?"
     show player 2f
     show old_mia 56f at Position(xpos=0.57, ypos=1.0) with dissolve
-    mia "Oh, umm... Tahukah kamu, ini dan itu?"
-
+    mia "Oh, umm... You know, this and that?"
     show old_mia 55f
     player_name "..."
 
     show old_ross 25 at left with dissolve
-    ross "Anda tidak akan percaya ini..."
-
+    ross "You're not gonna believe this..."
     show old_ross 23
     show old_mia 7 at Position(xpos=0.65, ypos=1.0) with dissolve
-    ross "Dia mundur dariku!"
-
+    ross "She backed out on me!"
     show old_ross 22
     show old_mia 12
-    mia "Hah?"
-
+    mia "Huh?"
     show old_mia 8
     show player 10f
-    player_name "Modelnya dibatalkan?"
-
+    player_name "The model canceled?"
     show player 11f
     show old_ross 23
-    ross "Ya!"
-
-    ross "Rupanya dia mengira saya akan membayarnya."
-
-    ross "Aku tidak pernah mengatakan itu padanya!"
-
+    ross "Yeah!"
+    ross "Apparently she thought I was going to pay her."
+    ross "I never told her that!"
     show old_ross 22
     show player 10f
-    player_name "Jadi bagaimana sekarang?"
-
+    player_name "So, what now?"
     show player 11f
     show old_ross 25
-    ross "Saya tidak tahu..."
-
-    ross "Pelajaran kita berikutnya benar-benar membutuhkan model telanjang..."
-
+    ross "I don't know..."
+    ross "Our next lesson really requires a nude model..."
     show old_ross 24
     mia "..."
     show old_ross 25
-    ross "Apakah kalian kenal seseorang yang akan melakukannya?"
-
+    ross "Do you guys know anybody that would do it?"
     show old_ross 24
     show player 10f
-    player_name "... Saya kira tidak demikian."
-
+    player_name "... I don't think so."
     show player 11f
     show old_mia 10
-    mia "Kita bisa {b}bertanya-tanya{/b}?"
-
+    mia "We could {b}ask around{/b}?"
     show old_mia 7
     show player 10f
-    player_name "Siapa yang akan kita tanyakan?"
-
+    player_name "Who would we even ask?"
     show old_mia 10b
     show player 11f
-    mia "... Mungkin seseorang {b}di sekolah{/b} akan melakukannya."
-
+    mia "... Maybe someone {b}here at school{/b} will do it."
     show old_mia 7
     show old_ross 25
-    ross "Menurut Anda mungkin {b}salah satu siswa{/b} akan melakukannya?"
-
+    ross "You think maybe {b}one of the students{/b} would do it?"
     show old_ross 24
     show player 10f
-    player_name "Saya meragukannya."
-
+    player_name "I doubt it."
     show player 11f
     show old_mia 10b
-    mia "Yah, tidak ada salahnya untuk bertanya."
-
+    mia "Well, it wouldn't hurt to ask."
     show player 10f
     show old_mia 7
-    player_name "Ya, saya kira kita bisa bertanya..."
-
+    player_name "Yeah, I guess we could ask..."
     show old_ross 11
     show player 11f
-    ross "Mengapa kalian tidak berpisah dan {b}bertanya pada beberapa teman sekelasmu{/b} apakah mereka bersedia?"
-
+    ross "Why don't you two split up and {b}ask some of your classmates{/b} if they would be willing?"
     show old_ross 10
     show old_mia 9
-    mia "Tentu saja!"
-
+    mia "Sure thing!"
     show old_mia 7
     show player 2f
-    player_name "Baiklah."
-
+    player_name "Alright."
     return
 # Decompiled by unrpyc: https://github.com/CensoredUsername/unrpyc

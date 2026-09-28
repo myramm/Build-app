@@ -35,41 +35,23 @@ layeredimage consuela:
         attribute b_dressed default
         attribute b_empty null
         attribute b_bending "consuela_body_b_bending"
-
         attribute b_magic "consuela_body_b_[M_consuela.outfit.get][M_consuela.pregnancy.to_string]"   
-
         attribute b_dressed_mop "consuela_body_b_dressed_mop"   
-
         attribute b_floor "consuela_body_b_floor_[M_consuela.outfit.get]"   
-
         attribute b_floor_base "consuela_body_b_floor_base_[M_consuela.outfit.get]"   
-
         attribute b_floor_cum "consuela_body_b_floor_cum_[M_consuela.outfit.get]"   
-
         attribute b_stairs "consuela_body_b_stairs_[M_consuela.outfit.get]"   
-
         attribute b_stairs_cum "consuela_body_b_stairs_cum_[M_consuela.outfit.get]"   
-
         attribute b_casual_kiss "consuela_body_b_casual_kiss"   
-
         attribute b_back_shake "consuela_body_b_back_shake"   
-
         attribute b_bend_jerk "consuela_body_b_bend_jerk"   
-
         attribute b_kiss "consuela_body_b_[M_consuela.outfit.get]_kiss"   
-
         attribute b_counter_cum "consuela_body_b_kitchen_cum_[M_consuela.outfit.get]"   
-
         attribute b_counter "consuela_body_b_kitchen_[M_consuela.outfit.get]"   
-
         attribute b_bj_cum "consuela_body_b_bj_cum_[M_consuela.outfit.get]"   
-
         attribute b_bj_talking "consuela_body_b_bj_talking_[M_consuela.outfit.get]"   
-
         attribute b_kiss10 "consuela_body_b_kiss10_shirt_[M_consuela.outfit.get]"   
-
         attribute b_bend "consuela_body_b_[M_consuela.outfit.get]_bend"   
-
 
 
     group mouth prefix 'm':
@@ -165,14 +147,12 @@ layeredimage consuela:
         attribute a_baby "consuela_arms_dressed_a_baby_[M_consuela.pregnancy.baby_gender]"
 
 
-
     group arms if_all 'b_naked_blank' auto variant 'naked_blank':
         attribute a_idle default 'consuela_arms_naked_blank_a_boob'
 
 
     group arms if_all 'b_gown_bed' auto variant 'gown_bed':
         attribute a_idle default "consuela_arms_gown_bed_a_baby_[M_consuela.pregnancy.baby_gender]"
-
 
 
     group arms if_all 'b_magic' auto:

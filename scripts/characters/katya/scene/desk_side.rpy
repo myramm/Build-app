@@ -4,17 +4,12 @@ label scene_katya_sex_desk_side:
 
     call scene_katya_sex_desk_side.stage
     with fade
-    anon "Astaga, kamu benar-benar hebat!"
-
-    katya "Ya?"
-
+    anon "Man, you really do have a great ass!"
+    katya "Da?"
     anon "Mhmm!"
-
     katya "Thank you." (show_native="Spasibo.")
-    katya "Ehm, kamu bisa memasukkannya sekarang..."
-
-    anon "Ya baiklah."
-
+    katya "Ehm, you can put it in now..."
+    anon "Yeah, okay."
     call scene_katya_sex_desk_side.insert
     with {'master': dissolve}
     katya "!!!"
@@ -22,38 +17,26 @@ label scene_katya_sex_desk_side:
     with {'master': dissolve}
     call scene_katya_sex_desk_side.dialogue (1)
     pause
-    katya "Nyonyaku benar, kamu sangat besar!"
-
-    anon "Aku tahu."
-
+    katya "My mistress was right, you're very large!"
+    anon "I know."
     pause
-    anon "Itu tidak menyakitimu, bukan?"
-
-    katya "Sedikit."
-
-    anon "Anda ingin saya berhenti?"
-
-    katya "T-tidak, jangan berhenti."
-
+    anon "It's not hurting you, is it?"
+    katya "A little bit."
+    anon "You want me to stop?"
+    katya "N-no, don't stop."
     pause
-    anon "Anda yakin?"
-
-    katya "Ya."
-
-    katya "Aku hanya butuh waktu sebentar."
-
+    anon "You sure?"
+    katya "Da."
+    katya "I just need a minute."
     pause
     katya "It's so thick!" (show_native="Nastol'ko gustoy!")
     katya "It's like I'm a virgin again!" (show_native="Kak budto ya snova devstvennik!")
     pause
     katya "Oh, wow!" (show_native="Oy!")
     katya "Fuck me!" (show_native="Trakhni menya!")
-    anon "Merasa baik sekarang?"
-
-    katya "Ya!"
-
-    katya "Sangat bagus!"
-
+    anon "Feeling good now?"
+    katya "Da!"
+    katya "Very good!"
     pause
     call scene_katya_sex_desk_side.dialogue (2)
     pause
@@ -97,7 +80,6 @@ label scene_katya_sex_desk_side:
         show katya o_cumshot3
 
     katya "NGGHHH!!!"
-
     pause
     hide xray
 
@@ -108,7 +90,6 @@ label scene_katya_sex_desk_side:
 
     with {'master': dissolve}
     anon "Haah... Haah..."
-
 
     if _return == 'inside':
         katya "Incredible." (show_native="Neveroyatnyy.")
@@ -159,63 +140,49 @@ label scene_katya_sex_desk_side.loop:
 
 label scene_katya_sex_desk_side.dialogue(opt, rng=-1):
     if opt == 1:
-        katya "Ya ampun!"
-
+        katya "Oh, my!"
 
     elif opt == 2:
-        katya "Ah, kamu membuatku sangat tegang!"
-
+        katya "Ah, you're stretching me so much!"
 
     elif opt == 3:
         katya "Faster!" (show_native="Bystreye!")
 
         if rng < .3:
-            anon "Saya tidak mengerti apa yang Anda katakan tetapi sepertinya Anda menikmatinya, jadi saya berasumsi ini berjalan baik..."
+            anon "I have no idea what you're saying but it sounds like you're enjoying yourself so I'm just gonna assume this is going well..."
 
-
-        katya "Ya!!"
-
+        katya "Yes!!"
 
         if rng < .3:
-            anon "... Keren."
-
+            anon "... Cool."
 
     elif opt == 4:
-        katya "Aku mengerti kenapa {b}Nadya{/b} sangat menyukaimu..."
-
+        katya "I can see why {b}Nadya{/b} likes you so much..."
 
     elif opt == 5:
         katya "Fuck me harder!" (show_native="Yebi menya zhostche!")
 
         if rng < .2:
             anon "Hmm?"
-
             katya "Harder!!" with hpunch
             $ M_katya.set('sex speed', 1 / (
                 20. if rng < 0 else (1 / M_katya.get('sex speed') + 4)))
 
-        anon "Ya, Bu."
-
+        anon "Yes, ma'am."
 
     elif opt == 6:
-        anon "Ya Tuhan, kalian gadis-gadis Rusia terdengar seksi saat kalian mengerang!"
-
+        anon "God, you Russian girls sound sexy when you're moaning!"
         katya "Ahh!!"
-
-        anon "Persetan ya!"
-
+        anon "Fuck yes!"
 
     elif opt == 7:
-        anon "Ayolah, bicara kotor padaku."
-
+        anon "C'mon, talk dirty to me."
         katya "Oh, {b}[firstname]{/b}!"
-
         katya "You're amazing!" (show_native="Ty udivitel'nyy!")
 
     elif opt == 8:
         katya "You're making me crazy!" (show_native="Ty svodish' menya s uma!")
-        anon "Oh, aku semakin dekat."
-
+        anon "Oh, I'm getting close."
 
     return
 
@@ -223,27 +190,19 @@ label scene_katya_sex_desk_side.dialogue(opt, rng=-1):
 label scene_katya_sex_desk_side.switch:
     call scene_katya_sex_desk_top.stage
     with {'master': dissolve}
-    anon "Hei, kamu pikir kamu bisa tengkurap?"
-
-    katya "Perutku?"
-
-    anon "Ya."
-
-    anon "Aku ingin melihat pantat cantik itu memantul."
-
-    katya "Hehe, tentu saja."
-
+    anon "Hey, you think you could turn over on your stomach?"
+    katya "My stomach?"
+    anon "Yeah."
+    anon "I wanna watch that gorgeous ass bounce."
+    katya "Heh, of course."
 
     $ M_katya.set('sex speed', 1 / 8.)
 
     call scene_katya_sex_desk_side.stage
     with fade
-    anon "Sobat, lihat benda ini!"
-
-    katya "Heh, hentikan!"
-
-    katya "Kamu membuatku tersipu."
-
+    anon "Man, look at this thing!"
+    katya "Heh, stop it!"
+    katya "You make me blush."
     pause
     call scene_katya_sex_desk_side.insert
     with {'master': dissolve}
@@ -259,10 +218,8 @@ label scene_katya_sex_desk_side.repeat:
 
     call scene_katya_sex_desk_side.stage
     with fade
-    anon "Ahh, itu pantat cantiknya lagi!"
-
-    katya @ f_laugh "hehe!"
-
+    anon "Ahh, there's that beautiful ass again!"
+    katya @ f_laugh "Hehe!"
     call scene_katya_sex_desk_side.insert
     with {'master': dissolve}
     katya "!!!"
@@ -298,10 +255,10 @@ label scene_katya_sex_desk_side.replay:
     if len(variants) > 1:
         scene expression background(l=L_warehouse_office) with fade
         menu:
-            "Pertama" if 'first' in variants:
+            "First" if 'first' in variants:
                 jump scene_katya_sex_desk_side.first
 
-            "Ulangi" if 'repeat' in variants:
+            "Repeat" if 'repeat' in variants:
                 jump scene_katya_sex_desk_side.repeat
 
     jump expression 'scene_katya_sex_desk_side.{}'.format(next(iter(variants)))

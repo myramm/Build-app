@@ -4,82 +4,60 @@ label lily_dialogue_pre:
     show lily zorder 1
     show player 1 zorder 3 at left
     with dissolve
-    lily "Ada apa?"
-
+    lily "What's up?"
     return
 
 label lily_dialogue_familiar:
     show player 4
-    player_name "Aku merasa seperti aku pernah melihatmu di suatu tempat."
-
+    player_name "I feel like I've seen you somewhere."
     show lily f_laugh
     show player 1
-    lily "Benar. Nah, Anda mungkin pernah melihat saya di internet..."
-
+    lily "Right. Well, you've probably seen me on the internet..."
     show lily f_normal
-    lily "Saya melakukan banyak {b}streaming video game{/b} dan mempostingnya di {b}saluran GooTube{/b} saya."
-
+    lily "I do a lot of {b}video game streams{/b} and I post them on my {b}GooTube channel{/b}."
     show lily f_sexy
-    lily "Saya biasanya menggunakan nama {b}VirginLily69{/b}."
-
+    lily "I usually go by the name of {b}VirginLily69{/b}."
     show player 17
-    player_name "Oh benar! Temanku {b}Erik{/b} menyukai barang-barangmu!"
-
+    player_name "Oh, right! My friend {b}Erik{/b} loves your stuff!"
     show player 21
-    player_name "Dia terus berbicara tentang video Anda dan {b}besar{/b} Anda... Err... Basis penggemar!"
-
+    player_name "He keeps talking about your videos and your {b}huge{/b}... Err... Fan base!"
     show lily f_laugh
     show player 1
-    lily "Aww... Kalian manis sekali."
-
+    lily "Aww... You guys are so sweet."
     show lily f_normal
-    lily "Apakah ada hal lain yang ingin Anda bicarakan?"
-
+    lily "Is there anything else you want to talk about?"
     return
 
 label lily_dialogue_suggestions:
     show player 2
-    player_name "Apakah Anda punya saran? Produk baru yang Anda rekomendasikan?"
-
+    player_name "Do you have any suggestions? New products that you would recommend?"
     show player 1
-    lily @ -m_talk "Hmm..."
-
+    lily @ -m_talk "Hmmm..."
     show lily f_normal
-    lily "Yah, aku sangat suka cosplay!"
-
+    lily "Well, I really love cosplay!"
     show lily f_sexy
-    lily "Saya suka memakai {i}pakaian seksi{/i}. Sebenarnya, kami mempunyai rangkaian kostum baru yang baru saja hadir!"
-
+    lily "I like to wear {i}sexy outfits{/i}. Actually, we have a new line of costumes that just came in!"
     show player 21
-    player_name "Oh ya? Kedengarannya menarik..."
-
+    player_name "Oh, yeah? Sounds interesting..."
     show player 1
-    lily "Terkadang sulit untuk memasukkan... Umm... Formulirku ke dalamnya."
-
-    lily "Mereka membuatnya sangat ketat, Anda tahu?"
-
-    lily @ f_laugh "Tapi para pria biasanya tidak keberatan!"
-
+    lily "It's sometimes hard to fit my... Umm... Forms into them."
+    lily "They make them so tight, you know?"
+    lily @ f_laugh "But guys usually don't seem to mind!"
     show player 29
-    player_name "Ha ha. Jadi begitu."
-
+    player_name "Haha. I see."
     show player 2
-    player_name "Terima kasih, saya akan melihatnya."
-
+    player_name "Thanks, I'll have a look."
     show lily f_normal
     return
 
 label lily_dialogue_leave:
     show player 2
-    player_name "Ya, saya pikir saya memiliki semua yang saya butuhkan. Terima kasih!"
-
+    player_name "Yeah, I think I have everything I need. Thanks!"
     show lily f_normal
     show player 1
-    lily "Besar! Terima kasih telah berbelanja di {b}Cosmic Cumics{/b}..."
-
+    lily "Great! Thanks for shopping at {b}Cosmic Cumics{/b}..."
     show lily f_laugh
     show player 13
-    lily "Dan beri tahu teman Anda tentang kami!"
-
+    lily "And tell your friends about us!"
     return
 # Decompiled by unrpyc: https://github.com/CensoredUsername/unrpyc

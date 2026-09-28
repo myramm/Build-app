@@ -1,81 +1,51 @@
 label scene_iwanka_blowjob(venue='basement', outfit='dress'):
     call scene_iwanka_blowjob.stage
     anon "Haah!"
-
     call scene_iwanka_blowjob.animate
     iwanka "{i}*Sluuuurp*{/i}"
-
     pause
-    erik "Bung, ini gila sekali!"
-
-    erik "Aku sedang mengadakan pesta di rumahku sekarang, dan sahabatku di seluruh dunia, {b}[firstname]{/b}..."
-
-    erik "... Apakah penisnya dihisap oleh putri walikota!"
-
+    erik "Dude, this is so crazy!"
+    erik "I'm having a party at my house right now, and my best friend in the whole wide world, {b}[firstname]{/b}..."
+    erik "... Is getting his dick sucked by the mayor's daughter!"
     pause
-    erik "Lihat, itu {b}[firstname]{/b} itu kontol!"
-
+    erik "See, that's {b}[firstname]{/b}'s dick!"
     pause
-    erik "Dan itu adalah {b}Iwanka{/b}."
-
-    erik "Sapa guildku, {b}Iwanka{/b}."
-
-    iwanka "Baiklah!"
-
-    iwanka "{i}*Gllllcck*{/i}"
-
+    erik "And that's {b}Iwanka{/b}."
+    erik "Say hi to my guildies, {b}Iwanka{/b}."
+    iwanka "Mmrllo!"
+    iwanka "{i}*Glllcck*{/i}"
     pause
-    anon "{b}Erik{/b}, bisakah kamu menyimpannya?"
-
-    anon "Ini sudah cukup canggung tanpamu-"
-
+    anon "{b}Erik{/b}, can you put that thing away?"
+    anon "This is awkward enough already without you-"
     anon "!!!"
-    anon "Ya Tuhan, di sana!"
-
+    anon "Oh my god, right there!"
     pause
-    erik "Tidak mungkin, kawan!"
-
-    erik "Setiap juru kamera yang baik tahu bahwa Anda tidak akan berhenti merekam sampai Anda mendapatkan uang!"
-
+    erik "No way, dude!"
+    erik "Every good cameraman knows you don't stop filming until the money shot!"
     anon "Grr!"
-
     pause
-    iwanka "MM."
-
-    erik "Matamu sungguh indah, {b}Iwanka{/b}!"
-
-    erik "Saya tidak menyadarinya sampai saat ini."
-
-    iwanka "Terima kasih!"
-
+    iwanka "Mmm."
+    erik "Your eyes are really beautiful, {b}Iwanka{/b}!"
+    erik "I didn't notice until right now."
+    iwanka "Thrrnnu!"
     pause
     call scene_iwanka_blowjob.loop
-    anon "Aku semakin dekat!"
-
-    erik "Anda dengar itu, {b}Iwanka{/b}?"
-
-    erik "Saatnya menghasilkan uang!"
-
+    anon "I'm getting close!"
+    erik "You hear that, {b}Iwanka{/b}?"
+    erik "Money-shot time!"
     iwanka "Mhmm."
-
     pause
-    anon "Ini dia!"
-
+    anon "Here it comes!"
     hide animation
     show iwanka b_bj f_cum a_cum
     anon "HNNGGG!!!" with flash
     pause
     show iwanka f_normal o_cum a_after with dissolve
-    erik "Wow, kamu terlihat seperti Hamako setelah sesi pertamanya dengan gurita..."
-
-    iwanka @ f_laugh "hehe!"
-
-    erik "... Hanya saja, sperma ini berwarna putih dan bukan biru."
-
-    iwanka "Dan dia mengisi semua lubangnya..."
-
-    iwanka "... Sejauh ini saya hanya mendapatkan satu."
-
+    erik "Wow, you look just like Hamako after her first session with the octopus..."
+    iwanka @ f_laugh "Hehe!"
+    erik "... Only, this sperm is white and not blue."
+    iwanka "And she got all her holes filled..."
+    iwanka "... So far I only got the one."
     return
 
 
@@ -138,89 +108,58 @@ label scene_iwanka_blowjob.loop:
 
 label scene_iwanka_blowjob.dialogue:
     if animcounter == 0 and randomizer() > 75:
-        anon "Oh, rasanya menyenangkan...{p=2}{nw}"
-
+        anon "Oh, that feels good...{p=2}{nw}"
     if animcounter == 1 and randomizer() > 75:
-        anon "Saya suka cara Anda menggunakan tangan Anda.{p=2}{nw}"
-
+        anon "I like the way you use your hand.{p=2}{nw}"
     elif animcounter == 1 and randomizer() > 75 and venue == 'basement':
-        erik "Ini LUAR BIASA!{p=1}{nw}"
-
+        erik "This is AWESOME!{p=1}{nw}"
     if animcounter == 2 and randomizer() > 75:
         iwanka "Mmhmm.{p=1}{nw}"
-
     elif animcounter == 2 and randomizer() > 75:
-        anon "Haah, mulutmu terasa luar biasa!{p=2}{nw}"
-
-        iwanka "{i}*Gllllcck*{/i}{p=1}{nw}"
-
+        anon "Haah, your mouth feels amazing!{p=2}{nw}"
+        iwanka "{i}*Glllcck*{/i}{p=1}{nw}"
     return
 
 
 label scene_iwanka_blowjob.repeat(venue, outfit='naked'):
     call scene_iwanka_blowjob.stage
-    iwanka "Anda tahu, Anda beruntung saya sudah banyak berlatih melakukan ini di perguruan tinggi."
-
-    iwanka "Belum pernah yang sebesar ini, ingatlah."
-
+    iwanka "You know, you're lucky I've had a lot of practice doing this in college."
+    iwanka "Never with one this big, mind you."
     anon "Oh?"
-
-    iwanka "Ini sangat mengesankan."
-
+    iwanka "It's very impressive."
     call scene_iwanka_blowjob.animate
     pause
-    iwanka "MM."
-
-    anon "Oh, rasanya luar biasa."
-
+    iwanka "Mmm."
+    anon "Oh, that feels great."
     pause
     anon "Haah!"
-
     iwanka "{i}*Sluuuurp*{/i}"
-
     pause
-    anon "Anda tahu, {b}Erik{/b} benar tentang mata Anda..."
-
-    anon "... Mereka sangat cantik."
-
-    iwanka "Terima kasih!"
-
+    anon "You know, {b}Erik{/b} was right about your eyes..."
+    anon "... They're really beautiful."
+    iwanka "Thrrnnu!"
     pause
-    iwanka "{i}*Gllllcck*{/i}"
-
-    anon "Wow, saya tidak tahu bagaimana Anda memahaminya begitu dalam!"
-
+    iwanka "{i}*Glllcck*{/i}"
+    anon "Wow, I don't know how you're taking it so deep!"
     call scene_iwanka_blowjob.loop
-    anon "Aku semakin dekat!"
-
-    iwanka "MM."
-
+    anon "I'm getting close!"
+    iwanka "Mmm."
     pause
-    anon "Apakah Anda menginginkannya di wajah Anda lagi?"
-
+    anon "Do you want it on your face again?"
     iwanka "Mhmm!!"
-
     hide animation
     show iwanka b_bj_naked f_cum a_cum
     anon "HNNGGG!!!" with flash
     pause
     show iwanka f_normal o_cum a_after with dissolve
     anon "Haah... Haah..."
-
-    iwanka "Nah, bagaimana penampilanku?"
-
-    anon "Berantakan."
-
-    iwanka "hehe!"
-
-    iwanka "Andai saja ayahku bisa melihatku sekarang."
-
-    iwanka "Dia akan sangat marah."
-
-    anon "Ya, dia mungkin akan membunuhku."
-
-    iwanka "Oh, dia pasti akan membunuhmu."
-
+    iwanka "Well, how do I look?"
+    anon "Messy."
+    iwanka "Hehe!"
+    iwanka "If only my father could see me now."
+    iwanka "He'd be so pissed."
+    anon "Yeah, he'd probably kill me."
+    iwanka "Oh, he'd definitely kill you."
     return
 
 
@@ -243,13 +182,13 @@ label scene_iwanka_blowjob.replay:
     if len(variants) > 1:
         scene expression background(l=L_boat_bridge) with fade
         menu:
-            "Ruang bawah tanah (Video)" if 'basement' in variants:
+            "Basement (Video)" if 'basement' in variants:
                 jump scene_iwanka_blowjob.basement
 
-            "kapal pesiar" if 'yacht' in variants:
+            "Yacht" if 'yacht' in variants:
                 jump scene_iwanka_blowjob.yacht
 
-            "Kamar tidur" if 'bedroom' in variants:
+            "Bedroom" if 'bedroom' in variants:
                 jump scene_iwanka_blowjob.bedroom
     else:
 

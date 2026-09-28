@@ -39,10 +39,10 @@ label odette_button_dialogue_legacy:
         $ M_odette.set('proposed_sex', True)
         call expression game.dialog_select("button_odette_sex_proposal")
         menu:
-            "Oke.":
+            "Okay.":
                 call expression game.dialog_select("button_odette_sex_proposal_okay")
                 jump odette_1st_sex_bike
-            "Tidak, saya tidak bisa.":
+            "No, I can't.":
                 call expression game.dialog_select("button_odette_sex_proposal_no")
                 $ game.main()
 
@@ -65,15 +65,15 @@ label odette_button_dialogue_legacy:
             call expression game.dialog_select("button_odette_intro_garage_e21")
 
     menu odette_menu_dialogue:
-        "Berpesta." if M_eve.is_state(S_eve_party_start) and game.timer.is_weekday():
+        "Party." if M_eve.is_state(S_eve_party_start) and game.timer.is_weekday():
             call expression game.dialog_select("odette_button_party_start")
             jump odette_menu_dialogue
 
-        "Apakah kamu baik-baik saja?" if M_eve.between_states(S_eve_big_sister_problems, S_eve_detention) and player.location == L_tattooparlor_garage:
+        "Are you alright?" if M_eve.between_states(S_eve_big_sister_problems, S_eve_detention) and player.location == L_tattooparlor_garage:
             call expression game.dialog_select("button_odette_are_you_alright_1")
             jump odette_menu_dialogue
 
-        "YA!" if M_odette.proposed_sex and player.location == L_tattooparlor_garage and not M_odette.hide_sex_proposal_options:
+        "YES!" if M_odette.proposed_sex and player.location == L_tattooparlor_garage and not M_odette.hide_sex_proposal_options:
             if M_odette.bike_1st_time:
                 call expression game.dialog_select("button_odette_wanna_fool_around_first_time")
                 jump odette_1st_sex_bike
@@ -81,76 +81,76 @@ label odette_button_dialogue_legacy:
             $ M_odette.set("hide_sex_proposal_options", True)
             jump odette_sex_menu_options
 
-        "Tidak, terima kasih." if M_odette.proposed_sex and player.location == L_tattooparlor_garage and not M_odette.hide_sex_proposal_options:
+        "No, thanks." if M_odette.proposed_sex and player.location == L_tattooparlor_garage and not M_odette.hide_sex_proposal_options:
             call expression game.dialog_select("button_odette_refuse_sex")
             $ M_odette.set("hide_sex_proposal_options", True)
             jump odette_menu_dialogue
 
-        "Kunjungan ke kuburan." if M_odette.is_state(S_ode01_done, S_ode02_init):
+        "Graveyard visit." if M_odette.is_state(S_ode01_done, S_ode02_init):
             call ode02_init_odette
             jump odette_menu_dialogue
 
-        "Ruang bawah tanah?" if M_odette.finished_state(S_ode02_warn):
+        "The crypt?" if M_odette.finished_state(S_ode02_warn):
             call button_odette_crypt
             jump odette_menu_dialogue
 
-        "Pernahkah Anda melihat {b}Hawa{/b}?" if player.location == L_tattooparlor_garage:
+        "Have you seen {b}Eve{/b}?" if player.location == L_tattooparlor_garage:
             call expression game.dialog_select("button_odette_have_you_seen_eve")
             jump odette_menu_dialogue
 
-        "Apa yang kamu baca?" if player.location == L_tattooparlor_interior:
+        "What are you reading?" if player.location == L_tattooparlor_interior:
             call expression game.dialog_select("button_odette_what_are_you_reading")
             jump odette_menu_dialogue
 
-        "{b}Rahmat{/b} dan {b}Tuuku{/b}?" if M_eve.between_states(S_eve_big_sister_problems, S_eve_detention) and player.location == L_tattooparlor_interior:
+        "{b}Grace{/b} and {b}Tuuku{/b}?" if M_eve.between_states(S_eve_big_sister_problems, S_eve_detention) and player.location == L_tattooparlor_interior:
             call expression game.dialog_select("button_odette_grace_and_tuuku")
             jump odette_menu_dialogue
 
-        "Apakah kamu baik-baik saja?" if M_eve.between_states(S_eve_detention, S_eve_party_speak_to_tuuku) and player.location == L_tattooparlor_garage:
+        "Are you alright?" if M_eve.between_states(S_eve_detention, S_eve_party_speak_to_tuuku) and player.location == L_tattooparlor_garage:
             call expression game.dialog_select("button_odette_are_you_alright_2")
             jump odette_menu_dialogue
 
-        "Teman besar?" if M_eve.finished_state(S_eve_detention):
+        "Big fella?" if M_eve.finished_state(S_eve_detention):
             call expression game.dialog_select("button_odette_big_fella")
             jump odette_menu_dialogue
 
-        "Kemajuan dengan {b}Eve{/b}?" if M_eve.finished_state(S_eve_make_up_dress_table) and player.location == L_tattooparlor_interior:
+        "Progress with {b}Eve{/b}?" if M_eve.finished_state(S_eve_make_up_dress_table) and player.location == L_tattooparlor_interior:
             call expression game.dialog_select("button_odette_progress_with_eve")
             menu:
-                "Mustahil.":
+                "No way.":
                     call expression game.dialog_select("button_odette_progress_with_eve_no_way")
-                "Saya akan memikirkannya.":
+                "I'll think about it.":
                     call expression game.dialog_select("button_odette_progress_with_eve_think_about_it")
             jump odette_menu_dialogue
 
-        "Anda dan {b}Grace{/b}?" if M_eve.finished_state(S_eve_make_up_dress_table):
+        "You and {b}Grace{/b}?" if M_eve.finished_state(S_eve_make_up_dress_table):
             call expression game.dialog_select("button_odette_you_and_grace")
             jump odette_menu_dialogue
 
-        "Ingin bermain-main?" if M_odette.proposed_sex and player.location == L_tattooparlor_interior and not L_tattooparlor_interior.is_here(M_grace):
+        "Wanna fool around?" if M_odette.proposed_sex and player.location == L_tattooparlor_interior and not L_tattooparlor_interior.is_here(M_grace):
             if M_odette.bike_1st_time:
                 call expression game.dialog_select("button_odette_wanna_fool_around_first_time")
                 jump odette_1st_sex_bike
             call expression game.dialog_select("button_odette_wanna_fool_around")
             if _return:
                 menu odette_sex_menu_options:
-                    "Di sofa. {color=fffa}[[Boobjob]{/color}":
+                    "On the couch. {color=fffa}[[Boobjob]{/color}":
                         call odette_repeat_boobjob
-                    "Di sofa. {color=fffa}[[Sex]{/color}":
+                    "On the couch. {color=fffa}[[Sex]{/color}":
                         call odette_repeat_sex_couch
-                    "Di atas sepeda. {color=fffa}[[Sex]{/color}":
+                    "On the bike. {color=fffa}[[Sex]{/color}":
                         jump odette_repeat_sex_bike
 
             $ game.timer.tick()
             $ player.go_to(L_tattooparlor)
 
-        "Sudahlah." if not (M_eve.finished_state(S_eve_make_up_dress_table) and player.location == L_tattooparlor_garage):
+        "Never mind." if not (M_eve.finished_state(S_eve_make_up_dress_table) and player.location == L_tattooparlor_garage):
             if game.timer.is_morning():
                 call expression game.dialog_select("button_odette_nevermind_morning")
             else:
                 call expression game.dialog_select("button_odette_nevermind_generic")
 
-        "Saya harus pergi." if (M_eve.finished_state(S_eve_make_up_dress_table) and player.location == L_tattooparlor_garage):
+        "I should go." if (M_eve.finished_state(S_eve_make_up_dress_table) and player.location == L_tattooparlor_garage):
             call expression game.dialog_select("button_odette_i_should_go")
 
     $ M_odette.set("hide_sex_proposal_options", False)
@@ -168,25 +168,25 @@ label odette_button_pregnancy_dialogue:
         call expression game.dialog_select("button_odette_pregnancy_intro_{}".format(M_odette.pregnancy.stage))
 
     menu odette_menu_preg:
-        "Bagaimana perasaanmu?" if M_odette.pregnancy.stage < 5:
+        "How are you feeling?" if M_odette.pregnancy.stage < 5:
             call expression game.dialog_select("button_odette_pregnancy_how_feeling_{}".format(M_odette.pregnancy.stage))
             jump odette_menu_preg
 
-        "Ya." if M_odette.pregnancy.character_bedridden:
+        "Yup." if M_odette.pregnancy.character_bedridden:
             call expression game.dialog_select("button_odette_pregnancy_yup")
 
-        "Ada yang bisa kuberikan padamu?" if M_odette.pregnancy.stage < 5:
+        "Can I get you anything?" if M_odette.pregnancy.stage < 5:
             call expression game.dialog_select("button_odette_pregnancy_get_anything_{}".format(M_odette.pregnancy.stage))
             jump odette_menu_preg
 
-        "Kalian butuh sesuatu?" if M_odette.pregnancy.gave_birth:
+        "You guys need anything?" if M_odette.pregnancy.gave_birth:
             call expression game.dialog_select("button_odette_pregnancy_gave_birth_need_anything")
             jump odette_menu_preg
 
-        "Aku akan meninggalkanmu." if M_odette.pregnancy.gave_birth:
+        "I'll leave you be." if M_odette.pregnancy.gave_birth:
             call expression game.dialog_select("button_odette_pregnancy_gave_birth_leave")
 
-        "Aku akan meninggalkanmu." if M_odette.pregnancy.stage < 5:
+        "I'll leave you be." if M_odette.pregnancy.stage < 5:
             call expression game.dialog_select("button_odette_pregnancy_leave_stage_{}".format(M_odette.pregnancy.stage))
     $ game.main()
 # Decompiled by unrpyc: https://github.com/CensoredUsername/unrpyc

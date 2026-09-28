@@ -1,106 +1,70 @@
 label yoyo_event_intro:
     show anon a_behind_head f_worried with dissolve
-    anon "Umm, h-hai."
-
-    yoyo "Pahlawan."
-
+    anon "Umm, h-hi."
+    yoyo "Herro."
     show anon a_sides
     show yoyo a_sides
     with {'master': dissolve}
-    yoyo "Bisakah saya membantu Anda?"
-
-    anon "aku rasa kita belum pernah bertemu..."
-
-    anon "... aku-"
-
+    yoyo "Can I herp you?"
+    anon "I don't think we've met..."
+    anon "... I'm-"
     show anon a_surprised f_surprised_teeth
     yoyo f_angry "Sirence!!" with hpunch
     anon "!!!"
-    yoyo "Kamu mengajakku jalan-jalan?!"
-
+    yoyo "You take me for foor?!"
     show anon a_up f_surprised with {'master': dissolve}
-    anon "Apa-"
-
+    anon "Wha-"
     show yoyo f_normal
     with {'master': dissolve}
-    anon "T-tidak, aku tidak-"
-
-    yoyo "{b}Kim{/b} mengenalmu!"
-
-    anon "Eh?"
-
-    yoyo "Pria bodoh yang mencuri istri pelacur {b}Kim{/b} dan mengirimnya penjara."
-
+    anon "N-no, I didn't-"
+    yoyo "{b}Kim{/b} knows you!"
+    anon "Ehh?"
+    yoyo "Dumb guy who stear {b}Kim{/b}'s whore wife and send him jair."
     show anon a_sides f_unimpressed with {'master': dissolve}
     anon "Oh."
-
-    anon f_skeptical "Umm, bisakah kamu tidak membicarakan {b}Liu{/b} seperti itu?"
-
-    anon "Dia gadis yang baik, dan dia cukup menderita."
-
+    anon f_skeptical "Umm, could you not talk about {b}Liu{/b} that way?"
+    anon "She's a nice girl, and she's suffered enou-"
     show anon a_surprised_up f_surprised_teeth
     yoyo f_angry "Sirence!!" with hpunch
-    yoyo "Anda mengasuransikan {b}Kim{/b} kehormatan keluarga!"
-
+    yoyo "You insurt {b}Kim{/b} famiry honor!"
     show anon a_up f_worried with {'master': dissolve}
-    anon "Ayolah, nona... aku tidak mau-"
-
-    yoyo "{b}Kim{/b} sampai jumpa lagi atas kejahatanmu!"
-
+    anon "C'mon, lady... I don't want-"
+    yoyo "{b}Kim{/b} wirr see you pay for your crimes!"
     show anon a_sides f_confused with {'master': dissolve}
-    anon "Hah?!"
-
-    yoyo "Aku berkata, {b}Kim{/b} wirr-"
-
-    anon f_skeptical "Ya, aku mendengarmu..."
-
-    anon "... Tapi bagaimana dia akan melakukan itu dari sel penjara?"
-
+    anon "Huh?!"
+    yoyo "I say, {b}Kim{/b} wirr-"
+    anon f_skeptical "Yeah, I heard you..."
+    anon "... But how is he gonna do that from a prison cell?"
     show yoyo a_stop with {'master': dissolve}
-    yoyo f_normal "Bukan itu {b}Kim{/b}..."
-
+    yoyo f_normal "Not that {b}Kim{/b}..."
     show yoyo a_crossed
     with {'master': dissolve}
-    yoyo "... Ini {b}Kim{/b}."
-
+    yoyo "... This {b}Kim{/b}."
     anon f_surprised @ -m_talk "!!!"
-    yoyo "Aku."
-
-    anon f_skeptical "Jadi tunggu dulu, kalian berdua bernama {b}Kim{/b}?"
-
-    yoyo "Ya."
-
+    yoyo "Me."
+    anon f_skeptical "So wait, you're both named {b}Kim{/b}?"
+    yoyo "Yes."
     pause
-    anon f_laugh @ f_happy "Bukankah itu membingungkan?"
-
+    anon f_laugh @ f_happy "Doesn't that get confusing?"
     show yoyo a_sides with {'master': dissolve}
     yoyo @ -m_talk "..."
     show anon f_normal
     yoyo "Ha ha."
-
-    yoyo "Raugh semampumu, pria bodoh..."
-
-    yoyo "... Pembalasan datang untukmu dengan sayap cepat."
-
+    yoyo "Raugh whire you can, dumb guy..."
+    yoyo "... Vengeance come for you on swift wing."
     show anon f_worried
     pause
-    anon f_confused "Bisakah kita tidak melakukan ini?"
-
+    anon f_confused "Can we please not do this?"
     yoyo f_quizzical @ -m_talk "...?"
-    anon f_worried "Kau tahu, seluruh musuh bebuyutan ini... penjahat jahat yang ingin membalas dendam atas keluarga mereka yang juga jahat..."
-
+    anon f_worried "You know, this whole arch nemesis... evil villain wanting revenge for their similarly evil family..."
     show yoyo f_normal
-    anon "... Karena aku harus memberitahumu, aku sangat lelah setelah berurusan dengan kakakmu..."
-
+    anon "... Because I gotta tell ya, I'm pretty burnt out after dealing with your brother..."
     pause
-    anon f_confused "... Tidak?"
-
+    anon f_confused "... No?"
     pause
-    anon f_tired "{i}*Huh*{/i} Baik."
-
+    anon f_tired "{i}*Sigh*{/i} Fine."
     pause
-    anon a_wave f_unimpressed "Kurasa aku akan segera menemuimu?"
-
+    anon a_wave f_unimpressed "I suppose I'll be seeing you soon then?"
     yoyo @ -m_talk "..."
     hide anon with dissolve
 
@@ -108,12 +72,9 @@ label yoyo_event_intro:
     show anon f_unimpressed with dissolve:
         xoffset -350
         xzoom -1
-    anon "Luar biasa."
-
+    anon "Super."
     pause
-    anon "Ya, ada sesuatu yang tidak ingin aku tangani..."
-
-    anon f_thinking_down "Saya ingin tahu apa yang {b}Josephine{/b} katakan tentang ini?"
-
+    anon "Well, there's something I'm not looking forward to dealing with..."
+    anon f_thinking_down "I wonder what {b}Josephine{/b} has to say about this?"
     return
 # Decompiled by unrpyc: https://github.com/CensoredUsername/unrpyc

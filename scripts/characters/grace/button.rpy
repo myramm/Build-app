@@ -60,90 +60,90 @@ label grace_button_dialogue:
 
     show grace f_normal
     menu grace_menu_dialogue:
-        "Tato." if M_mia.is_state(S_mia_buy_tattoo) and player.location.is_here(M_mia):
+        "Tattoo." if M_mia.is_state(S_mia_buy_tattoo) and player.location.is_here(M_mia):
             call expression game.dialog_select("button_grace_tattoo_mia")
             menu:
-                "aku akan membantumu." if player.has_money(200):
+                "I'll help you." if player.has_money(200):
                     call expression game.dialog_select("button_grace_tattoo_help")
                     $ player.spend_money(200)
                     $ game.timer.tick()
                     $ M_mia.trigger(T_mia_tattoo_done)
-                "Kembali lagi nanti.":
+                "Come back later.":
 
                     call expression game.dialog_select("button_grace_tattoo_come_back")
 
-        "Tato." if not M_mia.is_state(S_mia_buy_tattoo) and not player.location.is_here(M_mia) and M_eve.between_states(S_eve_start, S_eve_visit_bedroom):
+        "Tattoo." if not M_mia.is_state(S_mia_buy_tattoo) and not player.location.is_here(M_mia) and M_eve.between_states(S_eve_start, S_eve_visit_bedroom):
             call expression game.dialog_select("button_grace_tattoo")
             jump grace_menu_dialogue
 
-        "Cat." if M_ross.is_state(S_ross_get_paint_grace) and L_tattooparlor_interior.is_here(M_grace) and not player.has_item("ink"):
+        "Paint." if M_ross.is_state(S_ross_get_paint_grace) and L_tattooparlor_interior.is_here(M_grace) and not player.has_item("ink"):
             call expression game.dialog_select("button_grace_paint")
             $ M_ross.set("talked to grace", True)
 
-        "Berpesta." if M_eve.is_state(S_eve_party_start) and game.timer.is_weekday():
+        "Party." if M_eve.is_state(S_eve_party_start) and game.timer.is_weekday():
             call expression game.dialog_select("grace_button_party_start")
             jump grace_menu_dialogue
 
-        "Anda terlihat familier." if M_grace.is_state(S_grace_start) and not player.location.is_here(M_mia) and L_tattooparlor_interior.is_here(M_grace) and not M_eve.finished_state(S_eve_visit_tattoo_shop):
+        "You look familiar." if M_grace.is_state(S_grace_start) and not player.location.is_here(M_mia) and L_tattooparlor_interior.is_here(M_grace) and not M_eve.finished_state(S_eve_visit_tattoo_shop):
             call expression game.dialog_select("button_grace_you_look_familiar")
             $ M_grace.trigger(T_grace_intro)
             jump grace_menu_dialogue
 
-        "Ya." if M_eve.between_states(S_eve_visit_bedroom, S_eve_voyeurism_follow_tent):
+        "Yup." if M_eve.between_states(S_eve_visit_bedroom, S_eve_voyeurism_follow_tent):
             call expression game.dialog_select("button_grace_yup")
             jump grace_menu_dialogue
 
-        "{b}Odette{/b} dan {b}Tuuku{/b}?" if M_eve.between_states(S_eve_visit_bedroom, S_eve_make_up_dress_table):
+        "{b}Odette{/b} and {b}Tuuku{/b}?" if M_eve.between_states(S_eve_visit_bedroom, S_eve_make_up_dress_table):
             call expression game.dialog_select("button_grace_odette_and_tuuku")
             jump grace_menu_dialogue
 
-        "Bagaimana kabar pekerjaannya?" if M_eve.finished_state(S_eve_big_sis_check_apartment):
+        "How's work going?" if M_eve.finished_state(S_eve_big_sis_check_apartment):
             if M_eve.finished_state(S_eve_clients_take_care_clients):
                 call expression game.dialog_select("button_grace_how_work_going_e18")
             else:
                 call expression game.dialog_select("button_grace_how_work_going_e6")
             jump grace_menu_dialogue
 
-        "Meminta maaf." if M_eve.between_states(S_eve_police_trouble, S_eve_make_up_dress_table):
+        "Apologize." if M_eve.between_states(S_eve_police_trouble, S_eve_make_up_dress_table):
             call expression game.dialog_select("button_grace_apologize")
             jump grace_menu_dialogue
 
-        "{b}Malam{/b} sekitar?" if M_eve.between_states(S_eve_voyeurism_follow_tent, S_eve_make_up_dress_table):
+        "{b}Eve{/b} around?" if M_eve.between_states(S_eve_voyeurism_follow_tent, S_eve_make_up_dress_table):
             call expression game.dialog_select("button_grace_eve_around")
             jump grace_menu_dialogue
 
-        "Sepeda." if M_eve.finished_state(S_eve_bike_breakdown_start_repair):
+        "Bike." if M_eve.finished_state(S_eve_bike_breakdown_start_repair):
             call expression game.dialog_select("button_grace_bike")
             jump grace_menu_dialogue
 
-        "Benar-benar?" if M_eve.finished_state(S_eve_make_up_dress_table) and player.location == L_tattooparlor_interior:
+        "Really?" if M_eve.finished_state(S_eve_make_up_dress_table) and player.location == L_tattooparlor_interior:
             call expression game.dialog_select("button_grace_really")
             jump grace_menu_dialogue
 
-        "Anda dan {b}Odette{/b}?" if M_eve.finished_state(S_eve_make_up_dress_table):
+        "You and {b}Odette{/b}?" if M_eve.finished_state(S_eve_make_up_dress_table):
             call expression game.dialog_select("button_grace_you_and_odette")
             jump grace_menu_dialogue
 
-        "Apakah dia di sini?" if player.location == L_tattooparlor_apartment:
+        "Is she here?" if player.location == L_tattooparlor_apartment:
             call expression game.dialog_select("button_grace_is_she_here")
             jump grace_menu_dialogue
 
-        "Mengapa Anda bermeditasi telanjang?" if player.location == L_tattooparlor_apartment and M_eve.finished_state(S_eve_make_up_dress_table):
+        "Why do you meditate naked?" if player.location == L_tattooparlor_apartment and M_eve.finished_state(S_eve_make_up_dress_table):
             call expression game.dialog_select("button_grace_why_meditate_naked")
             jump grace_menu_dialogue
 
-        "Pijat?" if not M_grace.sex_1st_time and player.location == L_tattooparlor_apartment:
+        "Massage?" if not M_grace.sex_1st_time and player.location == L_tattooparlor_apartment:
             call gra01_init_grace
             $ game.timer.tick()
             $ player.go_to(L_tattooparlor_fire_escape)
 
-        "Sudahlah." if M_eve.between_states(S_eve_start, S_eve_voyeurism_follow_tent):
+        "Never mind." if M_eve.between_states(S_eve_start, S_eve_voyeurism_follow_tent):
             call expression game.dialog_select("button_grace_nevermind")
 
-        "Saya harus pergi." if M_eve.between_states(S_eve_voyeurism_follow_tent, S_eve_make_up_dress_table):
+        "I should go." if M_eve.between_states(S_eve_voyeurism_follow_tent, S_eve_make_up_dress_table):
             call expression game.dialog_select("button_grace_i_should_go")
 
-        "Hanya menyapa." if M_eve.finished_state(S_eve_make_up_dress_table):
+        "Just saying hi." if M_eve.finished_state(S_eve_make_up_dress_table):
             call expression game.dialog_select("button_grace_just_saying_hi")
 
     $ game.main()
@@ -159,29 +159,29 @@ label grace_button_livingroom_dialogue:
         call expression game.dialog_select("grace_button_massage_sex_proposal")
         $ M_grace.set("grace_massage_alone", False)
         menu:
-            "Ya.":
+            "Yeah.":
                 call expression game.dialog_select("grace_button_massage_sex_proposal_yeah")
-            "Entahlah.":
+            "I dunno.":
                 call expression game.dialog_select("grace_button_massage_sex_proposal_dunno")
         jump grace_sex_massage_first_time
 
     call expression game.dialog_select("button_grace_livingroom_intro")
     menu grace_menu_livingroom:
-        "Ya, tolong!":
+        "Yes, please!":
             call expression game.dialog_select("button_grace_livinroom_yes_please")
             jump grace_odette_sex_massage_repeat
-        "Bicaralah dengan {b}Odette{/b}?":
+        "Speak with {b}Odette{/b}?":
 
             call expression game.dialog_select("button_grace_livingroom_speak_with_odette")
             menu:
-                "Ya.":
+                "Yeah.":
                     call expression game.dialog_select("button_grace_livinroom_odette_yeah")
                     jump odette_repeat_sex_bike.segue
-                "Tidak, terima kasih.":
+                "No, thanks.":
 
                     call expression game.dialog_select("button_grace_livingroom_odette_no")
                     $ game.main()
-        "Tidak, terima kasih.":
+        "No, thanks.":
 
             call expression game.dialog_select("button_grace_livingroom_no_thanks")
     $ game.main()
@@ -196,22 +196,22 @@ label grace_button_pregnancy_dialogue:
     else:
         call expression game.dialog_select("button_grace_pregnancy_intro")
     menu grace_menu_pregnancy_dialogue:
-        "Bagaimana perasaanmu?" if M_grace.pregnancy.stage < 5:
+        "How are you feeling?" if M_grace.pregnancy.stage < 5:
             call expression game.dialog_select("button_grace_pregnancy_how_are_you_feeling_{}".format(M_grace.pregnancy.stage))
             jump grace_menu_pregnancy_dialogue
 
-        "Ada yang bisa kuberikan padamu?" if M_grace.pregnancy.stage < 5:
+        "Can I get you anything?" if M_grace.pregnancy.stage < 5:
             call expression game.dialog_select("button_grace_get_you_something_{}".format(M_grace.pregnancy.stage))
             jump grace_menu_pregnancy_dialogue
 
-        "Ya." if M_grace.pregnancy.character_bedridden:
+        "Yup." if M_grace.pregnancy.character_bedridden:
             call expression game.dialog_select("button_grace_pregnancy_bedridden_yup")
 
-        "Kalian butuh sesuatu?" if M_grace.pregnancy.gave_birth:
+        "You guys need anything?" if M_grace.pregnancy.gave_birth:
             call expression game.dialog_select("button_grace_pregnancy_need_anything_babies")
             jump grace_menu_pregnancy_dialogue
 
-        "Aku akan meninggalkanmu." if not M_grace.pregnancy.character_bedridden:
+        "I'll leave you be." if not M_grace.pregnancy.character_bedridden:
             if M_grace.pregnancy.gave_birth:
                 call expression game.dialog_select("button_grace_ill_leave_you_be_baby")
             else:

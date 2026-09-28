@@ -14,29 +14,21 @@ label josie_button_sex.morning:
     show anon with dissolve:
         flip
     josephine @ -m_talk "..."
-    anon "Wah, kamu nongkrong di sini sambil telanjang ya?"
-
-    josephine f_sexy "Heh, diam dan lepaskan celana itu."
-
-    anon "Baiklah."
-
+    anon "Wow, you're just hanging out in here naked, huh?"
+    josephine f_sexy "Heh, shut up and get those pants off."
+    anon "Alright."
     show anon b_flour f_looking_down with dissolve:
         yoffset 110
     pause
     show anon b_shirt od_dick4 f_normal with dissolve:
         yoffset 0
-    josephine f_sexy_down "Kau tahu, aku mulai berpikir pekerjaan ini tidak terlalu buruk..."
-
-    anon "Hehe, benarkah?"
-
+    josephine f_sexy_down "You know, I'm starting to think this job isn't so bad..."
+    anon "Heh, is that right?"
     hide josephine with dissolve
-    josephine "Siap saat Anda siap, potong mangkuk."
-
-    anon f_unimpressed "Berhenti memanggilku seperti itu!!"
-
+    josephine "Ready when you are, bowl cut."
+    anon f_unimpressed "Stop calling me that!!"
     hide anon with {'master': dissolve}
-    josephine "hehe!"
-
+    josephine "Hehe!"
 
     call scene_josie_sex.morning
     $ unlock_scene('josie', '02_unlocked', variant='morning')
@@ -52,28 +44,19 @@ label josie_button_sex.morning:
     josephine @ -m_talk "..."
     show anon b_dressed f_unimpressed with dissolve:
         yoffset 0
-    anon "Dan Anda kembali menelepon lagi..."
-
-    josephine f_concerned "Apa, kita sudah selesai, bukan?"
-
-    anon "Ya, saya kira."
-
+    anon "And you're back on the phone again..."
+    josephine f_concerned "What, we're done, aren't we?"
+    anon "Yeah, I suppose."
     show josephine f_normal_down
     pause
-    josephine f_sexy "Aku bilang pada mereka aku baru saja berhubungan seks di ruang istirahat di tempat kerja..."
-
-    anon f_surprised "Benar-benar?"
-
-    josephine "Hehe, ya."
-
-    josephine "Mereka sangat cemburu saat ini."
-
+    josephine f_sexy "I'm telling them I just had sex in the break room at work..."
+    anon f_surprised "Really?"
+    josephine "Hehe, yeah."
+    josephine "They are totes jealous right now."
     show anon f_normal
     pause
-    anon "Sampai jumpa lagi, {b}Josephine{/b}."
-
-    josephine "Sampai jumpa, {b}[firstname]{/b}."
-
+    anon "I'll see you later, {b}Josephine{/b}."
+    josephine "See ya, {b}[firstname]{/b}."
     hide anon with dissolve
     return 'afterglow'
 
@@ -81,19 +64,13 @@ label josie_button_sex.morning:
 label josie_button_sex.evening:
     scene josephine b_chair f_sexy
     anon "!!!"
-    josephine "Lihat sesuatu yang kamu suka?"
-
-    anon "Wah, kamu seksi!"
-
-    josephine @ f_laugh "hehe!"
-
-    josephine "Tidak terlalu khawatir sekarang, ya?"
-
+    josephine "See something you like?"
+    anon "Wow, you're sexy!"
+    josephine @ f_laugh "Hehe!"
+    josephine "Not so worried now, huh?"
     anon "..."
-    josephine "Ayo, aku ingin mengantarmu ke meja ayahku..."
-
-    anon "O-oke."
-
+    josephine "C'mon, I want to ride you on my father's desk..."
+    anon "O-okay."
 
     call scene_josie_sex_desk.repeat
     $ unlock_scene('josie', '04_unlocked')
@@ -114,23 +91,15 @@ label josie_button_sex.evening:
     josephine @ -m_talk "..."
     show anon b_dressed f_worried with dissolve:
         yoffset 0
-    anon "Dimana ponselmu?"
-
+    anon "Where's your phone?"
     josephine @ -m_talk "Hmm?"
-
-    josephine "Ah, aku tidak tahu..."
-
-    josephine @ f_eyeroll "... Siapa yang peduli?"
-
+    josephine "Oh, I don't know..."
+    josephine @ f_eyeroll "... Who cares?"
     pause
-    anon @ f_confused "Apakah kamu merasa baik-baik saja?"
-
-    josephine "Mmm, aku merasa luar biasa."
-
-    josephine "Kita harus melakukan ini lebih sering..."
-
-    anon f_normal "Heh, aku akan kecewa karenanya."
-
+    anon @ f_confused "Are you feeling okay?"
+    josephine "Mmm, I feel wonderful."
+    josephine "We should do this more often..."
+    anon f_normal "Heh, I'd be down for that."
     show josephine b_naked_kiss:
         xoffset 200
     hide anon
@@ -142,10 +111,8 @@ label josie_button_sex.evening:
         flip
         xoffset -50
     with dissolve
-    josephine "Kalau begitu, itu kencan."
-
-    anon "Hehe."
-
+    josephine "It's a date then."
+    anon "Heh."
     hide anon with dissolve
     return 'afterglow'
 
@@ -159,29 +126,22 @@ label josie_button_sex.inside:
         flip
         xoffset 150
     with fade
-    josephine "Cih, bajingan itu!"
-
+    josephine "Tsk, those motherfuckers!"
     show anon a_sides b_dressed f_worried:
         yoffset 0
     with {'master': dissolve}
-    anon "Uh oh, bagaimana sekarang?"
-
-    josephine "Saya baru saja diberitahu bahwa mereka menaikkan diskon karyawan menjadi lima belas persen!"
-
-    anon f_confused "Cukup bagus, bukan?"
-
-    josephine f_annoyed "Sangat bagus."
-
+    anon "Uh oh, what now?"
+    josephine "I was just informed they upped the employee discount to fifteen percent!"
+    anon f_confused "That's pretty good, isn't it?"
+    josephine f_annoyed "Really good."
     pause
-    josephine "Sayang sekali aku tidak bekerja di sana lagi!"
-
+    josephine "Too bad I don't fucking work there anymore!"
     show anon f_worried
     show josephine f_angry_down
     pause
     show anon a_shy_neck f_worried_back_low
     with {'master': dissolve}
-    anon "Ya, itu memalukan."
-
+    anon "Well, that's a shame."
     pause
     show anon f_worried
     show josephine f_bored_down
@@ -189,17 +149,13 @@ label josie_button_sex.inside:
     pause
     show anon a_sides
     with {'master': dissolve}
-    anon "Bagaimanapun, aku akan menemuimu nanti..."
-
+    anon "Anyways, I'll catch you later..."
     show anon a_wave f_shy
     with {'master': dissolve}
-    anon "... Sampai jumpa!"
-
-    josephine "Ya, ya."
-
+    anon "... Bye!"
+    josephine "Yeah, yeah."
     hide anon with dissolve
-    josephine f_eyeroll "{i}*Huh*{/i} Dealer mobil bodoh dengan ayahku yang bodoh."
-
+    josephine f_eyeroll "{i}*Sigh*{/i} Stupid car dealership with my stupid father."
     return 'afterglow'
 
 
@@ -211,91 +167,72 @@ label josie_button_sex.outside:
     show josephine a_hips b_naked f_angry_down:
         xoffset -450
     with fade
-    josephine "Kemana perginya ponselku?"
-
+    josephine "Where the hell did my phone go?"
     show anon a_sides b_dressed f_confused:
         yoffset 0
     with {'master': dissolve}
-    anon "Apa maksudmu?"
-
+    anon "What do you mean?"
     show anon f_worried
     show josephine a_sides f_confused:
         xoffset 150
         xzoom -1
     with {'master': dissolve}
-    josephine "Menurutmu apa maksudku?!"
-
+    josephine "What do you think I mean?!"
     show josephine a_gimme f_annoyed
     with {'master': dissolve}
-    josephine "Itu benar-benar lenyap!"
-
+    josephine "It's completely vanished!"
     show anon f_confused
     show josephine a_sides
     with {'master': dissolve}
-    anon "Bagaimana kamu bisa kehilangannya?"
-
-    josephine f_eyeroll "Oh, entahlah..."
-
-    josephine f_annoyed "... Itu mungkin ada hubungannya dengan kamu yang tanpa basa-basi membuangku dari penismu seperti aku adalah boneka kain sialan!"
-
+    anon "How did you lose it?"
+    josephine f_eyeroll "Oh, I dunno..."
+    josephine f_annoyed "... It probably had something to do with you unceremoniously tossing me off your dick like I was a fucking rag doll!"
     show anon a_behind_head f_shy
     with {'master': dissolve}
-    anon "Heh, aku memang melakukan itu, bukan?"
-
+    anon "Heh, I kinda did do that, didn't I?"
     show josephine a_crossed f_angry
     with {'master': dissolve}
     pause
     show anon a_sides f_worried
     with {'master': dissolve}
-    anon "Yah, aku minta maaf..."
-
+    anon "Well, I'm sorry..."
     show josephine f_eyeroll
-    anon f_shy "... Ketelnya hampir mendidih dan saya harus berpikir cepat!"
-
+    anon f_shy "... The kettle was about to boil over and I had to think quickly!"
     show anon f_shy_low
     hide josephine
     with {'master': dissolve}
-    josephine "Apa benda itu terguling di bawah rak buku atau semacamnya?!"
-
-    anon f_confused_low "Mungkin?"
-
+    josephine "Did it roll under the bookshelf or something?!"
+    anon f_confused_low "Maybe?"
     pause
-    josephine "Tidak, itu juga tidak ada."
-
+    josephine "No, it's not there either."
     show anon f_surprised:
         xoffset -500
     with {'master': dissolve}
-    anon "Ya ampun, apakah ini waktunya?!"
-
+    anon "Geez, is that the time?!"
     show anon:
         xoffset 0
         xzoom 1
     with {'master': dissolve}
-    anon f_worried_low "Kau tahu, aku sangat ingin tinggal dan membantumu melihat, tapi sekarang sudah sangat larut..."
-
+    anon f_worried_low "You know, I'd really love to stay and help you look but it's getting awful late..."
     show anon f_worried
     show josephine a_hips b_naked f_angry_down:
         xoffset 500
         xzoom -1
     with {'master': dissolve}
-    anon "... Dan aku tidak ingin induk semangku mulai khawatir, jadi..."
-
+    anon "... And I wouldn't want my landlady to start worrying, so..."
     show anon f_surprised:
         xoffset -100
     show josephine a_frustrated
     with {'master': dissolve}
-    josephine @ f_angry_closed "Grr, itu tidak ada dimanapun!!"
-
+    josephine @ f_angry_closed "Grr, it's not anywhere!!"
     pause
     show anon a_wave f_shy
     show josephine a_sides
     with {'master': dissolve}
-    anon "... Oke, sampai jumpa!"
-
+    anon "... Ok, bye!"
     hide anon with dissolve
     show josephine a_hips f_pouting
     with {'master': dissolve}
-    josephine "Aku harus menghentikannya!"
-
+    josephine "I'm gonna have to fucking call it!"
     return 'afterglow'
 # Decompiled by unrpyc: https://github.com/CensoredUsername/unrpyc

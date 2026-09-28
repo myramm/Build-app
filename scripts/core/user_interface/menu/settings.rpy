@@ -14,6 +14,11 @@ screen preferences():
                     style_suffix 'column'
                     frame:
                         has vbox
+                        label _('Language')
+                        textbutton _('English') action Language(None)
+                        textbutton _('Bahasa Indonesia') action Language('indonesian')
+                    frame:
+                        has vbox
                         label _('Display')
                         textbutton _('Window') action Preference('display', 'window')
                         textbutton _('Fullscreen') action Preference('display', 'fullscreen')

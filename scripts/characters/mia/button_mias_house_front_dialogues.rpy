@@ -3,96 +3,72 @@ label mia_dialogue_mias_house_front_intro:
     show player 14 at left
     show old_mia 1 at right
     with dissolve
-    player_name "Hai {b}Mia{/b}!"
-
+    player_name "Hey {b}Mia{/b}!"
     show old_mia 4
     show player 1
-    mia "Hai {b}[firstname]{/b}!"
-
-    mia "Apa yang kamu lakukan di sini?"
-
+    mia "Hey {b}[firstname]{/b}!"
+    mia "What're you doing here?"
     show old_mia 1
     show player 29
-    player_name "Umm... aku ingin menanyakan sesuatu padamu!"
-
+    player_name "Umm... I wanted to ask you something!"
     return
 
 label mia_dialogue_mias_house_front_homework:
     show player 21
-    player_name "Apakah Anda masih memerlukan bantuan belajar untuk ujian?"
-
+    player_name "Do you still need help studying for the exams?"
     show old_mia 3
     show player 13
-    mia "Tentu saja! Aku sedang mencari seseorang untuk belajar bersama..."
-
+    mia "Of course! I've been looking for someone to study with..."
     show old_mia 6
     show player 11
-    mia "... Tapi apakah kamu sudah mengikuti kelas?"
-
+    mia "... But have you caught up with class yet?"
     show old_mia 2
     show player 10
-    player_name "Oh! Benar! Saya mungkin harus {b}mendapatkan les privat dari Nona Bissette{/b} untuk mengejar ketinggalan..."
-
+    player_name "Oh! Right! I should probably {b}get some private tutoring from Miss Bissette{/b} to catch up..."
     show old_mia 6
     show player 13
-    mia "Ya, Anda mungkin harus melakukannya dulu!"
-
+    mia "Yeah, you probably should do that first!"
     show old_mia 4
-    mia "Lalu kamu bisa datang ke rumahku... Dan kita akan belajar di kamarku!"
-
+    mia "Then you can come over to my house... And we'll study in my room!"
     show old_mia 1
     show player 14
-    player_name "Kamu... Ya?"
-
+    player_name "Ye... Yeah?"
     show old_mia 3
     show player 1
-    mia "Tentu! Ini akan menyenangkan!"
-
+    mia "Sure! It'll be fun!"
     show old_mia 1
     show player 17
-    player_name "Baiklah... Saya akan memberi tahu Anda jika saya sudah selesai menggunakannya!"
-
+    player_name "Alright... I'll let you know when I'm done with them!"
     show old_mia 4
     show player 1
-    mia "Sampai berjumpa lagi!"
-
+    mia "See you soon!"
     hide old_mia with dissolve
     show player 5 with dissolve
-    player_name "(Saya harus mencoba dan {b}menyelesaikan pekerjaan rumah bahasa Prancis saya{/b}, sehingga saya bisa belajar dengan {b}Mia{/b}. )"
-
+    player_name "( I should try and {b}finish my French homework{/b}, so I can study with {b}Mia{/b}. )"
     show player 4
     pause
-    player_name "(Saya bertanya-tanya mengapa dia memilih saya untuk membantunya belajar.)"
-
-    player_name "(Dia biasanya belajar dengan {b}Judith{/b}, dan dia sangat pandai dalam bahasa Prancis... )"
-
-    player_name "(Saya tidak yakin bagaimana saya bisa membantunya.)"
-
+    player_name "( I wonder why she picked me to help her study. )"
+    player_name "( She usually studies with {b}Judith{/b}, and she's really good at French... )"
+    player_name "( I'm not sure how I could help her. )"
     show player 13
-    player_name "(Setidaknya kita bisa jalan-jalan, dan dia sangat manis...)"
-
+    player_name "( At least we'll get to hang out, and she's really cute... )"
     hide player with dissolve
     return
 
 label mia_dialogue_mias_house_front_leave:
     show player 4
-    player_name "Hmm... Iya, tapi aku lupa!"
-
+    player_name "Hmm... Yeah, but I forgot!"
     show old_mia 3
     show player 11
-    mia "Ha ha! Kamu lucu~."
-
+    mia "Haha! You're funny~."
     show old_mia 1
     show player 17
-    player_name "Maaf! Saya tidak ingat apa yang ingin saya katakan!"
-
+    player_name "Sorry! I can't remember what I wanted to say!"
     show player 14
-    player_name "Saya harus pergi."
-
+    player_name "I should get going."
     show old_mia 4
     show player 1
-    mia "Selamat malam!"
-
+    mia "Have a good night!"
     hide player
     hide old_mia
     with dissolve

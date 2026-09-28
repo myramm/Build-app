@@ -2,64 +2,40 @@ label scene_odette_blowjob(variant='_naked'):
     scene location_tattoo_rooftop_sex_bj
     call scene_odette_blowjob.animation
     with fade
-    anon "Aduh!"
-
-    odette "{i}*Terkikik*{/i}"
-
+    anon "Ack!"
+    odette "{i}*Giggles*{/i}"
     pause
-    anon "Oke, wah!"
-
-    anon "Apakah ini benar-benar terjadi?"
-
+    anon "Okay, wow!"
+    anon "Is this really happening?"
     odette "Mhmm!"
-
-    anon "Maksudku, kita hampir tidak mengenal satu sama lain dan kamu..."
-
+    anon "I mean, we barely know each other and you're..."
     odette "{i}*Sluuuuuurp*{/i}"
-
-    anon "... Ya ampun!"
-
+    anon "... Oh geez!"
     pause
-    anon "Hati-hati dengan bolanya, kamu meremasnya sedikit-"
-
+    anon "Careful with the balls, you're squeezing a little-"
     $ M_odette.set('sex speed', 1. / 12)
     anon "!!!" with hpunch
-    anon "Aduh!!!"
-
-    odette "{i}*Terkikik*{/i}"
-
-    anon "Oh oke... itu agak tak terduga, hanya-"
-
+    anon "Owww!!!"
+    odette "{i}*Giggles*{/i}"
+    anon "Oh kay... that was a bit unexpected, just-"
     $ M_odette.set('sex speed', 1. / 16)
     anon "!!!" with hpunch
-    anon "Ya Tuhan!!"
-
+    anon "Ah, god!!"
     pause
-    anon "Aku semakin dekat!"
-
-    anon "Sungguh, SANGAT dekat, aku-"
-
-    anon "saya-"
-
+    anon "I'm getting close!"
+    anon "Really, REALLY close, I-"
+    anon "I-"
     grace "{b}Odette{/b}!"
-
     show odette_sex_bj_naked_surprised as animation
     odette "( !!! )" with hpunch
-    grace "{b}Odette{/b}, kamu dimana?!"
-
+    grace "{b}Odette{/b}, where are you?!"
     show odette_sex_bj_naked_look as animation with {'master': dissolve}
-    odette "{i}*Ahem*{/i} Aku di atap bersama {b}[firstname]{/b}, umm... ngobrol..."
-
-    odette "... J-hanya bicara!"
-
-    grace "{b}Odette{/b}, berhenti main-main dan turun ke sini!"
-
-    grace "Saya butuh bantuan Anda!"
-
-    odette "Ya, tentu... oke!"
-
-    odette "Saya akan segera ke sana!"
-
+    odette "{i}*Ahem*{/i} I'm up on the roof with {b}[firstname]{/b}, umm... talking..."
+    odette "... J-just talking!"
+    grace "{b}Odette{/b}, quit screwing around and get down here!"
+    grace "I need your help!"
+    odette "Yeah, sure... okay!"
+    odette "I'll be right there!"
     return
 
 
@@ -106,29 +82,19 @@ label scene_odette_blowjob.loop:
 label scene_odette_blowjob.dialogue:
     $ renpy.dynamic(rng=randomizer())
     if animcounter == 0 and rng > 85:
-        odette "MM."
-
+        odette "Mmm."
         odette "{i}*Sluuuuurp*{/i}"
-
     if animcounter == 1 and rng > 85:
-        anon "Ya ampun..."
-
-        anon "... Kamu benar-benar pandai dalam hal ini!"
-
+        anon "Oh, geez..."
+        anon "... You're really good at this!"
         odette "Mhmm!"
-
     if animcounter == 2 and rng > 92:
-        odette "{i}*Suara senandung*{/i}"
-
-        anon "Oh, {b}Odette{/b}... Wah!"
-
+        odette "{i}*Humming noises*{/i}"
+        anon "Oh, {b}Odette{/b}... Wow!"
     elif animcounter == 2 and rng > 85:
-        odette "{i}*Gluulggh*{/i}"
-
-        anon "Jangan berhenti!"
-
-        odette "hehe!"
-
+        odette "{i}*Gluullggh*{/i}"
+        anon "Don't stop!"
+        odette "Hehe!"
     return
 
 
@@ -137,67 +103,41 @@ label scene_odette_blowjob.repeat(variant=''):
     call scene_odette_blowjob.animation
     with fade
     anon "{b}Odette{/b}!!!"
-
-    anon "Bagaimana jika seseorang masuk?!"
-
-    odette "Ya ampun, abubit!"
-
-    anon "Hah?"
-
+    anon "What if somebody comes in?!"
+    odette "Ohm orey abubit!"
+    anon "Huh?"
     pause
-    anon "Ini ide yang buruk..."
-
+    anon "This is such a bad idea..."
     odette "Hehehe!"
-
     pause
-    odette "MM."
-
+    odette "Mmm."
     odette "{i}*Sluuuuurp*{/i}"
-
     pause
-    anon "Ya ampun..."
-
-    anon "... Kamu benar-benar pandai dalam hal ini!"
-
+    anon "Oh, geez..."
+    anon "... You're really good at this!"
     odette "Mhmm!"
-
     pause
-    odette "{i}*Suara senandung*{/i}"
-
-    anon "Oh, {b}Odette{/b}... Wah!"
-
+    odette "{i}*Humming noises*{/i}"
+    anon "Oh, {b}Odette{/b}... Wow!"
     pause
-    odette "{i}*Gluulggh*{/i}"
-
-    anon "Jangan berhenti!"
-
-    odette "hehe!"
-
+    odette "{i}*Gluullggh*{/i}"
+    anon "Don't stop!"
+    odette "Hehe!"
     call scene_odette_blowjob.loop
-    anon "Aku semakin dekat!"
-
+    anon "I'm getting close!"
     odette "Gilb id eww mmeeh, iig alla!"
-
     anon "{b}Odette{/b}, I-"
-
-    odette "{i}*Suara senandung*{/i}"
-
+    odette "{i}*Humming noises*{/i}"
     show odette_sex_bj_cum as animation
     anon "HNNGGG!!!" with flash
-    odette "{i}*Meneguk* *Meneguk*{/i}"
-
-    anon "Sialan!"
-
-    odette "{i}*Meneguk*{/i}"
-
+    odette "{i}*Gulp* *Gulp*{/i}"
+    anon "Holy crap!"
+    odette "{i}*Gulp*{/i}"
     show odette_sex_bj_show as animation
     with {'master': dissolve}
-    odette "{i}*Pukulan*{/i} Maahh!"
-
-    anon "Kamu luar biasa!"
-
-    odette "hehe!"
-
+    odette "{i}*Smack*{/i} Maahh!"
+    anon "You're incredible!"
+    odette "Hehe!"
     return
 
 
@@ -215,10 +155,10 @@ label scene_odette_blowjob.replay:
     if len(variants) > 1:
         scene expression background(l=L_tattooparlor_roof, t=3) with fade
         menu:
-            "Atap (Tanpa baju)" if 'roof' in variants:
+            "Roof (Topless)" if 'roof' in variants:
                 jump scene_odette_blowjob.roof
 
-            "Gula Tat" if 'shop' in variants:
+            "Sugar Tats" if 'shop' in variants:
                 jump scene_odette_blowjob.shop
     else:
 

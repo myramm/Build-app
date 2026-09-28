@@ -1,136 +1,105 @@
 label josie_button_lounge:
     show josephine a_phone f_normal_down
     show anon f_shy_low with dissolve
-    anon "Hei, apa yang terjadi?"
-
-    josephine f_angry_down "Ssst!"
-
-    anon f_surprised_low "{b}Yosephine{/b}?"
-
-    josephine "Diam, aku sedang menonton streamer favoritku!"
-
-    anon f_worried_low "Oh, umm... Oke?"
-
+    anon "Hey, what's going on?"
+    josephine f_angry_down "Shh!"
+    anon f_surprised_low "{b}Josephine{/b}?"
+    josephine "Shut up, I'm watching my favorite streamer!"
+    anon f_worried_low "Oh, umm... Okay?"
     show josephine f_normal_down
 
     label josie_button_lounge.choice:
     menu:
-        "Foto pribadi." if M_anon.is_state(S_ano07_perk):
+        "Private photos." if M_anon.is_state(S_ano07_perk):
             jump ano07_hint_josie
-        "Siapa streamer favoritmu?":
+        "Who is your favorite streamer?":
 
             jump josie_button_lounge.stream
-        "Kamu ingin bermesraan?":
+        "You wanna make out?":
 
             if M_anon.finished_state(S_ano09_blow):
                 jump josie_button_lounge.invite
             jump josie_button_lounge.flirt
 
-        "Seks oral?" if M_anon.finished_state(S_ano09_blow):
+        "Blowjob?" if M_anon.finished_state(S_ano09_blow):
             jump josie_button_lounge.blowjob
 
-        "Seks?" if M_josie.finished_state(S_jos02_init):
+        "Sex?" if M_josie.finished_state(S_jos02_init):
             jump josie_button_lounge.sex
-        "Sampai jumpa.":
+        "See ya.":
 
             pass
 
-    anon f_shy_low "Sampai jumpa."
-
+    anon f_shy_low "See ya."
     josephine @ -m_talk "..."
     show anon f_worried_low
     pause
-    anon f_unimpressed @ a_wave "Saya mengucapkan, selamat tinggal {b}Josephine{/b}!"
-
-    josephine f_angry_down "Bung, streaming."
-
-    josephine "Ssst."
-
+    anon f_unimpressed @ a_wave "I said, goodbye {b}Josephine{/b}!"
+    josephine f_angry_down "Dude, stream."
+    josephine "Shh."
     show josephine f_normal_down
     anon "Ugh."
-
     hide anon with dissolve
     return
 
 
 label josie_button_lounge.blowjob:
-    anon f_flirt_low "Tidakkah Anda merasa sedang ingin memberi?"
-
-    josephine a_phone f_normal_down "Jangan sekarang, {b}[firstname]{/b}."
-
-    josephine "Aku sedang menonton streamingku."
-
-    anon f_worried_low "Ayolah, ini akan lebih menyenangkan daripada aliran seni bodoh."
-
-    josephine @ f_eyeroll "Pfft, bagimu mungkin..."
-
-    josephine "Coba lagi nanti."
-
-    anon f_sad_down "Uh, baiklah."
-
+    anon f_flirt_low "Don't suppose you feel in a giving mood?"
+    josephine a_phone f_normal_down "Not now, {b}[firstname]{/b}."
+    josephine "I'm watching my stream."
+    anon f_worried_low "C'mon, it'll be more fun than some stupid art stream."
+    josephine @ f_eyeroll "Pfft, for you maybe..."
+    josephine "Try again later."
+    anon f_sad_down "Ugh, fine."
     return
 
 
 label josie_button_lounge.flirt:
-    anon f_flirt_low "Kamu ingin bermesraan?"
-
-    josephine f_angry_down "Apakah kamu gila?!"
-
-    josephine "Saatnya streaming, pergilah!"
-
-    anon f_unimpressed_low "Baiklah, sialan."
-
+    anon f_flirt_low "You wanna make out?"
+    josephine f_angry_down "Are you nuts?!"
+    josephine "It's stream time, go away!"
+    anon f_unimpressed_low "Alright, sheesh."
     show josephine f_normal_down
     jump josie_button_lounge.choice
 
 
 label josie_button_lounge.invite:
-    anon f_flirt_low "Kamu ingin bermesraan?"
-
-    josephine "Siapa kamu, dua belas tahun?"
-
+    anon f_flirt_low "You wanna make out?"
+    josephine "What are you, twelve years old?"
     show anon f_confused_low
     pause
-    josephine "Saatnya streaming, pergilah!"
-
-    anon f_unimpressed_low "Baiklah, sialan."
-
+    josephine "It's stream time, go away!"
+    anon f_unimpressed_low "Alright, sheesh."
     jump josie_button_lounge.choice
 
 
 label josie_button_lounge.sex:
-    anon f_shy_low "Ingin berhubungan seks?"
-
+    anon f_shy_low "Want to have sex?"
     josephine f_concerned @ -m_talk "Hmm?"
-
-    josephine "Kawan, waktunya streaming!"
-
-    josephine f_normal_down "Silakan duduk dan menonton bersama saya."
-
+    josephine "Dude, It's stream time!"
+    josephine f_normal_down "Have a seat and watch with me."
     show anon f_worried_low
 
     if not M_josie.once('sex_chair'):
         jump chat_josie_sex_chair
 
     menu:
-        "Celana lepas?":
+        "Pants off?":
             jump chat_josie_sex_chair.repeat
-        "Bawa itu.":
+        "Bring it.":
 
             pass
 
     show anon a_point f_flirt_low
     with {'master': dissolve}
-    anon "Atau Anda bisa membawanya saja?"
-
+    anon "Or you could just bring it with you?"
     pause
     show josephine f_annoyed
     pause
     show anon a_sides f_grin_low
     with {'master': dissolve}
     pause
-    josephine f_eyeroll "Uh, baiklah."
-
+    josephine f_eyeroll "Ugh, fine."
     show josephine a_undress1 f_normal_down
     show anon b_flour f_looking_down behind josephine:
         offset (-100, 110)
@@ -159,26 +128,19 @@ label josie_button_lounge.sex:
     with dissolve
     pause
     anon f_worried @ -m_talk "..."
-    anon "Apakah kamu akan naik ke meja atau-"
-
+    anon "Are you gonna get on the table or-"
     josephine f_concerned @ -m_talk "Hmm?"
-
-    josephine f_normal @ f_eyeroll "Oh benar."
-
-    josephine "Maaf."
-
+    josephine f_normal @ f_eyeroll "Oh, right."
+    josephine "Sorry."
     hide josephine with dissolve
     show anon f_worried:
         flip
         xoffset -600
     with {'master': dissolve}
-    josephine "Siap saat Anda siap, potong mangkuk."
-
-    anon f_unimpressed "Berhenti memanggilku seperti itu!!"
-
+    josephine "Ready when you are, bowl cut."
+    anon f_unimpressed "Stop calling me that!!"
     hide anon with {'master': dissolve}
-    josephine "hehe!"
-
+    josephine "Hehe!"
 
     call scene_josie_sex.afternoon
     $ unlock_scene('josie', '02_unlocked', variant='afternoon')
@@ -194,189 +156,124 @@ label josie_button_lounge.sex:
     josephine @ -m_talk "..."
     show anon b_dressed f_unimpressed with dissolve:
         yoffset 0
-    anon "Dan Anda kembali menelepon lagi..."
-
-    josephine f_concerned "Apa, kita sudah selesai, bukan?"
-
-    anon "Ya, saya kira."
-
+    anon "And you're back on the phone again..."
+    josephine f_concerned "What, we're done, aren't we?"
+    anon "Yeah, I suppose."
     show josephine f_normal_down
     pause
-    josephine f_sexy_down @ f_sexy "Permintaan lagu saya akan muncul berikutnya..."
-
+    josephine f_sexy_down @ f_sexy "My song request is coming up next..."
     pause
-    anon "Sampai jumpa lagi, {b}Josephine{/b}."
-
-    josephine "Sampai jumpa, {b}[firstname]{/b}."
-
+    anon "I'll see you later, {b}Josephine{/b}."
+    josephine "See ya, {b}[firstname]{/b}."
     hide anon with dissolve
     return 'afterglow'
 
 
 label josie_button_lounge.stream:
-    anon f_shy_low "Siapa streamer favoritmu?"
-
+    anon f_shy_low "Who is your favorite streamer?"
     josephine @ -m_talk "Hmm?"
-
-    josephine "Oh, dia pria Somalia norak bernama {b}DarkCookie{/b}."
-
-    josephine "Dia membuat game dewasa yang didanai oleh penggemar ini, dan dia mengalirkan dirinya sendiri untuk membuat karya seni untuk game tersebut hampir setiap hari sekitar {b}14.00 EST{/b}."
-
-    anon f_surprised_low "Setiap hari?"
-
-    josephine "Biasanya tidak di akhir pekan."
-
-    josephine "... Atau jika dia sakit."
-
-    josephine @ f_laugh "Artinya, SEPANJANG WAKTU!"
-
+    josephine "Oh, he's this dorky Somalian guy named {b}DarkCookie{/b}."
+    josephine "He's creating this fan-funded adult game, and he streams himself creating art for it pretty much every day around {b}2PM EST{/b}."
+    anon f_surprised_low "Every day?"
+    josephine "Well, usually not on the weekends."
+    josephine "... Or if he's sick."
+    josephine @ f_laugh "Which is like, ALL THE TIME!"
     anon f_skeptical @ -m_talk "..."
-    josephine "Sebenarnya agak gila."
-
-    josephine @ f_laugh "Saya pikir Bubble Boy mungkin memiliki sistem kekebalan yang lebih baik daripada dia."
-
-    anon f_shy_low "Dan dia streamer favoritmu?"
-
+    josephine "It's kinda crazy actually."
+    josephine @ f_laugh "I think Bubble Boy might have a better immune system than him."
+    anon f_shy_low "And he's your favorite streamer?"
     josephine @ -m_talk "Mhmm."
-
-    anon "Mengapa?"
-
-    josephine "Entahlah, aku hanya suka menjebaknya."
-
-    anon "Oh, masalah trolling itu lagi..."
-
-    josephine "Ditambah lagi, obrolannya penuh dengan cowok-cowok haus yang mudah tertipu."
-
-    josephine "Mereka seperti, terus-menerus mengirimiku foto penis..."
-
-    josephine "Saya punya banyak koleksi."
-
-    anon f_surprised_low "Anda punya banyak koleksi foto penis?"
-
-    josephine "Benar sekali."
-
-    anon f_flirt_low "Dan Anda menikmatinya?"
-
-    josephine "Tidak juga."
-
+    anon "Why?"
+    josephine "I dunno, I just like trolling him."
+    anon "Oh, the trolling thing again..."
+    josephine "Plus, the chat is full of thirsty boys who are gullible as shit."
+    josephine "They're like, constantly sending me dick pics..."
+    josephine "I have a huge collection."
+    anon f_surprised_low "You have a huge collection of dick pics?"
+    josephine "Totally."
+    anon f_flirt_low "And you enjoy that?"
+    josephine "Not really."
     show anon f_surprised_teeth_low
     pause 1
-    anon f_worried_low "Maaf, saya tidak menerima banding tersebut."
-
-    josephine "Ya, menurutku itu agak sulit untuk dijelaskan..."
-
-    anon f_shy_low "Ya, apa pun yang membuat perahu Anda melayang."
-
-    josephine "Oh lihat, dia sedang melakukan polling!"
-
-    josephine "Saya suka ini."
-
+    anon f_worried_low "Sorry, I don't get the appeal."
+    josephine "Yeah, I guess it's kinda hard to explain..."
+    anon f_shy_low "Well, whatever floats your boat."
+    josephine "Oh look, he's doing a poll!"
+    josephine "I love these."
     pause
     josephine @ f_laugh "Pfft, hahahaah!"
-
-    josephine "Kenapa dia begitu membenci Ratu Inggris?!"
-
+    josephine "Why does he hate the Queen of England so much?!"
     show anon f_worried_low
     pause
-    josephine f_angry_down "Ya Tuhan, jangan {i}Pertarungan Kung Fu{/i} lagi..."
-
-    josephine "Aku muak dengan lagu ini!"
-
-    anon "Benar, baiklah... Selamat menikmati."
-
-    josephine "Tolong, lewati saja!"
-
+    josephine f_angry_down "Oh god, not {i}Kung Fu Fighting{/i} again..."
+    josephine "I'm so sick of this song!"
+    anon "Right, well... Enjoy."
+    josephine "Please, skip it!"
     show josephine f_normal_down
     jump josie_button_lounge.choice
 
 
 label chat_josie_sex_chair:
-    anon "... Apakah kamu tidak pernah bosan dengan hal itu?"
-
-    josephine f_confused "Um, bukan?"
-
+    anon "... Don't you ever get bored of that?"
+    josephine f_confused "Umm, no?"
     pause
     show josephine a_phone_show f_sexy
     with {'master': dissolve}
-    josephine "Lihat, dia menggambar boobies hari ini."
-
+    josephine "Look, he's drawing boobies today."
     show anon a_surprised f_surprised_low
     with {'master': dissolve}
-    anon "Astaga!!"
-
-    anon "Apakah gadis itu hamil?"
-
+    anon "Oh my god!!"
+    anon "Is that girl pregnant?"
     show anon a_sides
     with {'master': dissolve}
-    josephine @ f_laugh "Hehe, ya."
-
-    anon f_disgusted_low "Sepertinya dia menelan kursi bean bag!"
-
-    josephine "Saya pikir itu seharusnya dilebih-lebihkan untuk efek komedi..."
-
-    anon f_worried_low "Ya ampun, kuharap begitu."
-
+    josephine @ f_laugh "Hehe, yeah."
+    anon f_disgusted_low "It looks like she swallowed a bean bag chair!"
+    josephine "I think it's supposed to be exaggerated for comedic effect..."
+    anon f_worried_low "Geez, I hope so."
     show josephine a_phone f_sexy_down
     with {'master': dissolve}
-    josephine "... Atau mungkin dia sedang mengerami seekor walrus di sana?"
-
-    josephine "Sejujurnya, dengan dia... bisa jadi salah satunya."
-
-    anon "eh."
-
+    josephine "... Or possibly she's incubating a walrus in there?"
+    josephine "Honestly, with him... it could be either one."
+    anon "Eww."
     show anon f_disgusted_low
-    josephine f_sexy "Lihat, ini sangat menghibur!"
-
-    josephine "Ayo duduk."
-
+    josephine f_sexy "See, it's surprisingly entertaining!"
+    josephine "Come sit down."
     show anon a_thinking f_thinking
     show josephine f_sexy_down
     with {'master': dissolve}
     anon @ -m_talk "Hmm?"
-
     show anon a_point f_confused_low
     with {'master': dissolve}
-    anon "Bisakah kita menontonnya tanpa celana?"
-
+    anon "Can we watch it with our pants off?"
     show josephine f_annoyed
     pause
     show anon a_sides f_happy_low
     with {'master': dissolve}
-    anon "Maksudku, aku akan menontonnya sepenuhnya... jika kita bisa..."
-
-    anon "... Kamu tahu."
-
+    anon "I mean, I'll totally watch it... if we can..."
+    anon "... You know."
     pause
     show anon f_grin_low
     with {'master': fastdissolve}
     pause
-    josephine f_eyeroll "{i}*Huh*{/i} Baiklah, baiklah."
-
-    josephine f_bored_down "Geser saja celana dalamku ke bawah."
-
-    anon f_happy_low "Manis!"
-
+    josephine f_eyeroll "{i}*Sigh*{/i} Alright, fine."
+    josephine f_bored_down "Just slide my panties down."
+    anon f_happy_low "Sweet!"
     jump chat_josie_sex_chair.tail
 
 
 label chat_josie_sex_chair.repeat:
     show anon a_sides f_confused_low
     with {'master': dissolve}
-    anon "Bisakah kita menontonnya tanpa celana?"
-
+    anon "Can we watch it with our pants off?"
     show josephine f_annoyed
-    josephine "Aku tahu kamu akan mengatakan itu..."
-
+    josephine "I knew you were going to say that..."
     pause
     show anon f_grin_low
     with {'master': fastdissolve}
     pause
-    josephine "{i}*Huh*{/i} Baiklah, baiklah."
-
-    josephine "Geser saja celana dalamku ke bawah."
-
-    anon f_happy_low "Manis!"
-
+    josephine "{i}*Sigh*{/i} Alright, fine."
+    josephine "Just slide my panties down."
+    anon f_happy_low "Sweet!"
     jump chat_josie_sex_chair.tail
 
 
@@ -392,52 +289,40 @@ label chat_josie_sex_chair.tail:
     pause
     show anon a_remove_shorts b_dressed f_shy_down
     with {'master': dissolve}
-    anon "Jadi uhh..."
-
+    anon "So uhh..."
     show anon a_sides b_dressed f_normal_low
     with {'master': dissolve}
 
     if where == 'outside':
-        anon "... Kamu sadar ada air mani di seluruh punggungmu, ya?"
-
+        anon "... You do realize you have cum all over your back, yeah?"
     else:
-        anon "... Itu menyenangkan!"
-
+        anon "... That was fun!"
 
     josephine @ -m_talk "Mhmm."
-
     show anon f_confused_low
     pause
-    anon "Anda bahkan tidak mendengarkan saya sekarang, bukan?"
-
+    anon "You're not even listening to me right now, are you?"
     josephine @ -m_talk "Mhmm."
-
     show anon f_worried_low
     pause
-    anon "Benar."
-
+    anon "Right."
     show anon f_unimpressed_low
     pause
     show anon a_wave
     with {'master': dissolve}
-    anon "Baiklah, sampai jumpa lagi... kurasa."
-
+    anon "Well, see ya later... I guess."
     josephine @ -m_talk "Mhmm."
-
     hide anon
     with {'master': dissolve}
     pause
-    josephine f_sexy_down "Ya Tuhan, dia menggambar kotoran lagi!"
-
+    josephine f_sexy_down "Oh my god, he's drawing poop again!"
     show josephine a_phone_show f_sexy
     with {'master': dissolve}
-    josephine "Anda harus memeriksa ini-"
-
+    josephine "You gotta check this-"
     show josephine f_confused
     pause
     show josephine a_phone
     with {'master': dissolve}
     josephine "{b}[firstname]{/b}?!"
-
     return 'afterglow'
 # Decompiled by unrpyc: https://github.com/CensoredUsername/unrpyc

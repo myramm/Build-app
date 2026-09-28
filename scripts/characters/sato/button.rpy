@@ -20,8 +20,7 @@ label sato_button_dialogue:
         call sato_button_dealership
     else:
 
-        sato "Oh tidak! Apakah para pengembang juga lupa menghubungkan dialog ini?!"
-
+        sato "Oh no! Did the devs forget to link up this dialogue too?!"
 
     if _return == 'josie_phone':
         call popup ('give', 'josie_phone')

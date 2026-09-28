@@ -1,16 +1,13 @@
 label church_graveyard_wake:
     scene black
     pause
-    anon "Tidak."
-
+    anon "Ngh."
     pause
 
     scene location_graveyard_wakeup_cutscene01 with sliteyeopen
     pause
     anon "Ugh, man..."
-
-    anon "... Tidak lagi."
-
+    anon "... Not again."
 
     scene black with sliteyeshut
     pause 0.25
@@ -26,12 +23,9 @@ label church_graveyard_wake:
     with dissolve
     pause
     anon f_worried_left "Why do I keep waking up here?"
-
     pause
     anon f_skeptical "Did last night really happen or did I imagine it again?"
-
     anon f_worried "This is all very confusing..."
-
 
     scene black with fade
     return

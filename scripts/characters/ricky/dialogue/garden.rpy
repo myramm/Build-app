@@ -1,18 +1,12 @@
 label ricky_button_garden:
     show ricky f_smirk
     show anon f_worried at flip with dissolve
-    ricky "Halo, teman-teman."
-
-    ricky "Mengapa kamu tidak melepas baju itu dan membantuku berkebun?"
-
-    anon "Uhh, aku tidak yakin itu ide yang bagus..."
-
-    ricky "Hmm, bukan?"
-
-    ricky "Buka saja bajunya dan awasi."
-
-    ricky "Saya bisa menggunakan motivasi."
-
+    ricky "Hola, amigo."
+    ricky "Why don't you pop that shirt off and come help me with the gardening?"
+    anon "Uhh, I'm not sure that's a good idea..."
+    ricky "Hmm, no?"
+    ricky "Just pop the shirt off and supervise then."
+    ricky "I could use the motivation."
 
     menu ricky_button_garden.choice:
         "{b}Consuela{/b}." if M_consuela.is_state(S_con01_init):
@@ -21,26 +15,23 @@ label ricky_button_garden:
             else:
                 jump con01_init_ricky
 
-        "Pengganti {b}Consuela{/b}." if M_consuela.is_state(S_con01_plan):
+        "Replacement for {b}Consuela{/b}." if M_consuela.is_state(S_con01_plan):
             jump con01_plan_ricky
-        "Motivasi?":
+        "Motivation?":
 
             jump ricky_button_garden.motivation
-        "Apakah kamu gay?":
+        "Are you gay?":
 
             jump ricky_button_garden.gay
-        "Saya harus pergi.":
+        "I should go.":
 
             pass
 
     show ricky f_smirk
-    anon f_normal "Sampai jumpa, {b}Ricky{/b}."
-
-    ricky @ f_sad "Aww, aku benci melihatmu pergi, amigo..."
-
+    anon f_normal "See ya around, {b}Ricky{/b}."
+    ricky @ f_sad "Aww, I hate to see you go, amigo..."
     pause
-    ricky "... Tapi aku senang melihatmu pergi."
-
+    ricky "... But I love to watch you leave."
     anon f_grumpy @ -m_talk "..."
     hide anon with dissolve
     return
@@ -48,88 +39,55 @@ label ricky_button_garden:
 
 label ricky_button_garden.motivation:
     show ricky f_smirk
-    anon @ f_confused "Motivasi?"
-
-    ricky "Itu benar!"
-
-    ricky "Tidak ada yang lebih memotivasi saya selain taquito kecil pedas yang menggonggong perintah kepada saya."
-
+    anon @ f_confused "Motivation?"
+    ricky "That's right!"
+    ricky "Nothing motivates me more than a spicy little taquito barking orders at me."
     anon f_grumpy "Eh."
-
-    ricky "Biarkan aku memilikinya, ya?"
-
-    ricky "aku sudah menjadi anak yang nakal..."
-
+    ricky "Really let me have it though, yeah?"
+    ricky "I've been a naughty boy..."
 
     menu:
-        "Lulus.":
-            anon "Yaaa, tidak."
-
-            ricky f_sad "Aduh."
-
+        "Pass.":
+            anon "Yeeeeeah, no."
+            ricky f_sad "Aww."
             pause
-            ricky f_smirk "Kamu tidak menyenangkan, kawan."
-
+            ricky f_smirk "You're no fun, amigo."
             show anon f_worried
-        "Mungkin nanti.":
+        "Maybe later.":
 
-            anon f_worried "Mungkin lain kali..."
-
-            ricky "Ah, jika kamu mau, teman-teman..."
-
-            ricky "... Tapi aku menahanmu, kan?"
-
+            anon f_worried "Maybe some other time..."
+            ricky "Ah, if you wish, amigo..."
+            ricky "... I hold you to it though, eh?"
             anon @ -m_talk "..."
             ricky @ f_laugh "Hehehe!"
-
 
     jump ricky_button_garden.choice
 
 
 label ricky_button_garden.gay:
     show ricky f_smirk
-    anon f_skeptical "Apakah kamu gay?"
-
-    ricky "Apa yang memberikannya?"
-
-    ricky @ f_laugh "hehe!"
-
-    anon f_worried "Saya pikir Anda dan {b}Ny. Pantat{/b} itu uhh... Kamu tahu?"
-
-    ricky f_confused "Kamu pikir aku akan membiarkan perempuan tua itu mengambil tindakan bersamaku?!"
-
-    ricky f_smirk @ f_laugh "Ha ha ha ha!!"
-
+    anon f_skeptical "Are you gay?"
+    ricky "What gave it away?"
+    ricky @ f_laugh "Hehe!"
+    anon f_worried "I thought you and {b}Mrs. Rump{/b} were uhh... You know?"
+    ricky f_confused "You think I would let that old broad have her way with me?!"
+    ricky f_smirk @ f_laugh "Hahahaha!!"
     anon f_confused @ -m_talk "..."
-    anon "Aku melihatnya di sekitarmu tadi!"
-
-    ricky "Oh, dia menginginkannya, itu pasti!"
-
-    ricky "Dia membayarku sedikit tambahan untuk menghiburnya..."
-
-    ricky "... Dan ya, saya sedikit menggodanya, tetapi hanya untuk meningkatkan penghasilan saya!"
-
-    ricky "Seorang gadis harus dibayar, kau tahu?"
-
+    anon "I saw her all over you earlier!"
+    ricky "Oh, she wants it, that's for sure!"
+    ricky "She pays me a little extra on the side to entertain her..."
+    ricky "... And yeah, I flirt with her a bit, but only to increase my earnings!"
+    ricky "A girl's gotta get paid, you know?"
     anon f_worried @ -m_talk "..."
-    ricky "Saya tidak akan berhubungan seks dengannya demi semua uang di dunia!"
-
-    anon "Anda tidak mau?"
-
-    ricky "Tidak!"
-
-    ricky "Prajurit Aztec kecilku hanya menyukai laki-laki, ya?"
-
-    anon f_skeptical "Apa kecilmu-"
-
-    ricky f_laugh "Prajurit Aztecku, amigo!"
-
+    ricky "I wouldn't sex her for all the money in world!"
+    anon "You wouldn't?"
+    ricky "Hell no!"
+    ricky "My little Aztec warrior only likes the boys, eh?"
+    anon f_skeptical "Your little wha-"
+    ricky f_laugh "My Aztec warrior, amigo!"
     anon @ -m_talk "..."
-    ricky f_smirk "Lihat dirimu tersipu!"
-
-    ricky "Kamu terlalu menggemaskan!"
-
-    anon f_worried "Y-ya, terima kasih."
-
+    ricky f_smirk "Look at you blush!"
+    ricky "You're too adorable!"
+    anon f_worried "Y-yeah, thanks."
     jump ricky_button_garden.choice
 # Decompiled by unrpyc: https://github.com/CensoredUsername/unrpyc

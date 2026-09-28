@@ -82,13 +82,11 @@ label scene_consuela_sex_floor_anal.inside:
     show consuela b_floor_cum o_floor_cum_anal
     anon "HNNGGG!!!" with flash
     consuela "NGGHHH!!!"
-
     show consuela b_floor_base o_empty
     show consuela_mc_body_floor insert_pullout_anal
     with dissolve
     pause
     anon "Haah... Haah..."
-
     return
 
 
@@ -100,15 +98,11 @@ label scene_consuela_sex_floor_anal.resume:
     call scene_consuela_sex_floor_anal.loop
     if _return == 'switch':
         jump scene_consuela_sex_floor.switch
-    anon "aku akan cum."
-
-    consuela "Ya, mani!"
-
-    consuela "saya keluar!"
-
+    anon "I'm going to cum."
+    consuela "Si, cum!"
+    consuela "I cum!"
     pause
-    consuela "ayah!!!"
-
+    consuela "Papi!!!"
     if _return == 'inside':
         call scene_consuela_sex_floor_anal.inside
     else:
@@ -130,97 +124,65 @@ label scene_consuela_sex_floor_anal.first:
     call scene_consuela_sex_floor_anal.ready
     with dissolve
     consuela @ -m_talk "Hmm?"
-
     consuela "What's the matter, {b}Mister [firstname]{/b}?" (show_native="¿Qué pasa, {b}Mister [firstname]{/b}?")
-    consuela "Mengapa kamu berhenti?"
-
-    anon "{b}Consuela{/b}, apakah kamu pernah mencoba anal?"
-
+    consuela "Why you stop?"
+    anon "{b}Consuela{/b}, have you ever tried anal?"
     consuela "A-anal?"
-
     pause
-    consuela "kamu mau?"
-
-    anon "Maksudku, ya... Jika kamu tidak keberatan?"
-
-    consuela "Ya, benar."
-
-    anon "... Jadi kita bisa mencobanya?"
-
+    consuela "You want?"
+    anon "I mean, yeah... If you don't mind?"
+    consuela "Si, I do."
+    anon "... So we can try it?"
     consuela "I just said I would try it, didn't I?" (show_native="Solo dije que lo intentaría, ¿no?")
     anon "..."
-    consuela "Ya, anal."
-
-    anon "Luar biasa."
-
+    consuela "Si, anal."
+    anon "Awesome."
     consuela "Just go slowly, okay?" (show_native="Solo ve despacio, ¿de acuerdo?")
     call scene_consuela_sex_floor_anal.pre
     with dissolve
     consuela "I've never had anything up there bef-" (show_native="Nunca he tenido nada allí ant-")
     call scene_consuela_sex_floor_anal.insert
     with fastdissolve
-    consuela "AYO!!!"
-
+    consuela "AY!!!"
     consuela "I said go slowly!" (show_native="¡Dije que fuera despacio!")
-    anon "Apakah kamu baik-baik saja?"
-
+    anon "Are you alright?"
     pause
-    consuela "S-pelan-pelan..."
-
-    anon "Oh baiklah."
-
-    anon "Saya buruk."
-
+    consuela "S-slowly..."
+    anon "Oh, alright."
+    anon "My bad."
     call scene_consuela_sex_floor_anal.animate
     with dissolve
     consuela "{i}*iiitthhh*{/i} Ahh!"
-
-    anon "Apakah itu sakit?"
-
+    anon "Does it hurt?"
     consuela "Of course it hurts, I have a giant cock in my ass!" (show_native="Por supuesto que duele, ¡tengo una polla gigante en mi culo!")
     anon "..."
     pause
-    anon "Haruskah saya berhenti?"
-
-    consuela "Tidak, baiklah."
-
-    consuela "aku melakukannya untukmu."
-
+    anon "Should I stop?"
+    consuela "No, es okay."
+    consuela "I do for you."
     pause
     consuela "Ngghhh!"
-
     consuela "It's so deep!" (show_native="¡Es tan profundo!")
     pause
     consuela "It doesn't hurt so much anymore." (show_native="Ya no duele tanto.")
     anon "Hmm?"
-
-    consuela "Lebih cepat, ayah!"
-
-    anon "Oh, sekarang rasanya enak?"
-
+    consuela "Faster, papi!"
+    anon "Oh, it's feeling good now?"
     $ M_consuela.set('sex speed', .09)
-    consuela "Ya, bagus!"
-
+    consuela "Si, good!"
     pause
-    consuela "Hei, ayah!"
-
+    consuela "Ay, papi!"
     consuela "It feels REALLY good!" (show_native="¡Se siente REALMENTE bien!")
-    anon "Aku tidak tahu apa itu-"
-
-    consuela "JANGAN BERHENTI!"
-
+    anon "I don't know what that-"
+    consuela "DON'T STOP!"
     pause
     call scene_consuela_sex_floor_anal.loop
-    anon "{b}Consuela{/b}, saya tidak bisa-"
-
-    consuela "Lebih cepat, ayah!"
-
+    anon "{b}Consuela{/b}, I can't-"
+    consuela "Faster, papi!"
     consuela "I'm so close!" (show_native="¡Estoy tan cerca!")
     pause
-    anon "Ini dia!"
-
-    consuela "Ya, mani!"
-
+    anon "Here it comes!"
+    consuela "Si, cum!"
     call scene_consuela_sex_floor_anal.inside
     show consuela b_floor f_normal_down
     show consuela_mc_body_floor base
@@ -234,21 +196,17 @@ label scene_consuela_sex_floor_anal.initial:
     hide consuela_floor
     call scene_consuela_sex_floor_anal.pre
     with dissolve
-    consuela "Ya!!!"
-
+    consuela "Ay!!!"
     call scene_consuela_sex_floor_anal.insert
     with fastdissolve
     consuela "!!!"
     call scene_consuela_sex_floor_anal.animate
     with dissolve
-    anon "Anda suka itu?"
-
-    consuela "Ya, {b}Tuan [firstname]{/b}!"
-
+    anon "You like that?"
+    consuela "Si, {b}Mister [firstname]{/b}!"
     pause
     consuela "Fuck me, daddy!" (show_native="¡Follame, papi!")
-    anon "Hmm!"
-
+    anon "Mmm!"
     consuela "Fuck my ass!" (show_native="¡A la mierda mi culo!")
     pause
     consuela "Oh, that's good!" (show_native="¡Ay, qué bueno!")
@@ -256,7 +214,6 @@ label scene_consuela_sex_floor_anal.initial:
     pause
     consuela "Thank you, daddy!" (show_native="¡Gracias, papi!")
     consuela "GRACIAS!!!"
-
     jump scene_consuela_sex_floor_anal.resume
 
 
@@ -264,8 +221,7 @@ label scene_consuela_sex_floor_anal.repeat:
     hide consuela_floor
     call scene_consuela_sex_floor_anal.pre
     with dissolve
-    consuela "Ya!!!"
-
+    consuela "Ay!!!"
     call scene_consuela_sex_floor_anal.insert
     with fastdissolve
     consuela "!!!"
@@ -274,14 +230,11 @@ label scene_consuela_sex_floor_anal.repeat:
     consuela "My poor asshole!" (show_native="¡Mi pobre gilipollas!")
     pause
     consuela "You're going to break me!" (show_native="¡Me vas a romper!")
-    consuela "Ahhh!!!"
-
+    consuela "AHHH!!!"
     pause
     consuela "I can't take it, daddy!" (show_native="¡No puedo soportarlo, papi!")
     anon "Hmm?"
-
-    consuela "Sperma untukku!"
-
+    consuela "Cum for me!"
     consuela "Please!" (show_native="¡Por favor!")
     jump scene_consuela_sex_floor_anal.resume
 # Decompiled by unrpyc: https://github.com/CensoredUsername/unrpyc

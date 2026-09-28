@@ -1,9 +1,7 @@
 label aqua_dialogue_night:
     show player 10 with dissolve
-    player_name "Sudah larut..."
-
-    player_name "Aku harus mencari jalan keluar dari gua bawah air ini sebelum hari menjadi terlalu gelap."
-
+    player_name "It's getting late..."
+    player_name "I should find my way out of this underwater cavern before it gets too dark."
     hide player with dissolve
     return
 
@@ -13,179 +11,129 @@ label aqua_dialogue_aqua_found:
     show player 16 zorder 2 at Position(xpos=.125, ypos=1.0) with dissolve
     show aqua 1
     aqua "( !!! )" with hpunch
-    aqua "Anda!!"
-
+    aqua "You!!"
     show player 15
     show aqua 2
-    player_name "Itu benar, aku!"
-
-    player_name "Kamu bilang aku harus datang mengambilnya dan inilah aku!"
-
-    player_name "Sekarang kembalikan padaku yang mengkilat itu!"
-
+    player_name "That's right, me!"
+    player_name "You said I had to come get it and here I am!"
+    player_name "Now give me back the shiny!"
     show player 16
     show aqua 1
-    aqua "Hahahaha, kamu manusia yang lucu!"
-
-    aqua "Kamu datang jauh..."
-
-    aqua "... Kamu harus menjadi perenang yang baik, seperti {b}Aqua{/b}."
-
+    aqua "Hahahaha, you funny human!"
+    aqua "You come long way..."
+    aqua "... You mussst be good ssswimmer, like {b}Aqua{/b}."
     show player 24
     show aqua 2
-    player_name "{i}*Batuk*{/i} Ya, menurutku..."
-
+    player_name "{i}*Cough*{/i} Yeah, I guess..."
     show player 30
-    player_name "Lagipula tempat apa ini?"
-
+    player_name "What is this place anyways?"
     show player 16
     show aqua 1
-    aqua "Ini sarang {b}Aqua{/b}!"
-
+    aqua "Thisss {b}Aqua{/b} nest!"
     show player 12
     show aqua 2
-    player_name "Anda tinggal di sini?"
-
+    player_name "You live here?"
     show player 11
     show aqua 1
-    aqua "Ya."
-
+    aqua "Yesss."
     show player 10
     show aqua 2
-    player_name "Sendirian?"
-
+    player_name "By yourself?"
     show player 11
     show aqua 4
-    aqua "Ya."
-
+    aqua "Yesss."
     show player 10
     show aqua 3
-    player_name "Apakah ada lebih banyak dari Anda?"
-
+    player_name "Are there more of you?"
     show player 11
     show aqua 4
-    aqua "Lebih... tentang aku?"
-
+    aqua "More... of me?"
     show player 10
     show aqua 3
-    player_name "Tahukah kamu, sarang lain dengan... umm, Aquas?"
-
+    player_name "You know, other nests with other... umm, Aquas?"
     show player 11
     show aqua 4
-    aqua "Oooh, tidak."
-
+    aqua "Oooh, no."
     show aqua 5
-    aqua "Yang lain sudah lama pergi..."
-
-    aqua "... Mereka meninggalkan {b}Aqua{/b}."
-
+    aqua "Othersss go away long time ago..."
+    aqua "... They leave {b}Aqua{/b} behind."
     show player 10
     show aqua 3
-    player_name "Ah, kedengarannya sepi."
-
+    player_name "Aww, that sounds lonely."
     show player 5
     show aqua 1
-    aqua "Mmm, ya... Kadang-kadang..."
-
-    aqua "... Tapi amis, tetaplah menemani {b}Aqua{/b}!"
-
+    aqua "Mmm, yes... Sssometimes..."
+    aqua "... But fishiesss keep {b}Aqua{/b} company!"
     show aqua 2b
-    aqua "Fishiesss kamu sssteals dengan ssshiny kamu!"
-
+    aqua "Fishiesss you sssteals with your ssshiny!"
     show player 15
     show aqua 1b
-    player_name "Sudah kubilang itu bukan aku!"
-
-    player_name "Itu milik {b}KAPTEN Terry{/b}."
-
+    player_name "I told you that wasn't me!"
+    player_name "It belonged to {b}CAPTAIN Terry{/b}."
     show player 16
     show aqua 4
     aqua "{b}Caplan Terry{/b}?"
-
     show aqua 5
     pause
     show aqua 4
-    aqua "Hmm, mungkin Anda mengatakan yang sebenarnya..."
-
+    aqua "Hmm, maybe you tell truth..."
     show player 12
     show aqua 3
-    player_name "Saya mengatakan yang sebenarnya, {b}Aqua{/b}."
-
+    player_name "I am telling the truth, {b}Aqua{/b}."
     show player 16
     show aqua 2b
-    aqua "Lalu, apa yang {b}Aqua{/b} lakukan?"
-
-    aqua "{b}Caplan Terry{/b} ssstealsss mencurigakan!"
-
+    aqua "Well, what {b}Aqua{/b} do then?"
+    aqua "{b}Caplan Terry{/b} ssstealsss fishiesss!"
     show aqua 4
-    aqua "Jika semua ikan hilang, dengan siapa {b}Aqua{/b} berbicara?"
-
+    aqua "If fishiesss all gone, who {b}Aqua{/b} talksss to?"
     show player 11
     show aqua 5
-    aqua "{b}Aqua{/b} menjadi gila dan tidak pernah menemukan pasangan!"
-
+    aqua "{b}Aqua{/b} go crazy and never find mate!"
     show player 10
     show aqua 3
-    player_name "Pasangan?"
-
+    player_name "Mate?"
     show player 11
     show aqua 4
-    aqua "Yesss, {b}Aqua{/b} nunggu sobat bantu buat babyss."
-
+    aqua "Yesss, {b}Aqua{/b} waiting for mate to help make babiesss."
     show player 10
     show aqua 5
-    player_name "Benar-benar?"
-
-    player_name "Sudah berapa lama kamu menunggu?"
-
+    player_name "Really?"
+    player_name "How long have you been waiting?"
     show aqua 4
     show player 11
-    aqua "Lama sekali... tapi tak seorang pun datang..."
-
-    aqua "... Tidak ada yang menemukan {b}Aqua{/b}."
-
+    aqua "Looooong time... but nobody comesss..."
+    aqua "... Nobody findsss {b}Aqua{/b}."
     show player 10
     show aqua 5
-    player_name "Yah, aku menemukanmu."
-
+    player_name "Well, I found you."
     show player 13
     show aqua 1
-    aqua "Ya, kamu menemukan {b}Aqua{/b}!"
-
+    aqua "Yesss, you findsss {b}Aqua{/b}!"
     show aqua 2
-    aqua "Dan jika Anda berbicara benar, mungkin kita berteman."
-
+    aqua "And if you talk true, maybe we be friendsss."
     show aqua 9
-    aqua "Berjanjilah untuk tidak ssstealsss fishiesss dan {b}Aqua{/b} membuat Anda kembali berkilau."
-
+    aqua "Promise not ssstealsss fishiesss and {b}Aqua{/b} give you back shiny."
     show player 14
     show aqua 8
-    player_name "Ya!"
-
-    player_name "Maksudku, terima kasih, {b}Aqua{/b}."
-
+    player_name "Yes!"
+    player_name "I mean, thank you, {b}Aqua{/b}."
     show player 13
     show aqua 9
-    aqua "Anda berjanji?"
-
+    aqua "You promise?"
     show player 14
     show aqua 8
-    player_name "Saya berjanji, saya tidak akan mencuri \"ikan\"."
-
+    player_name "I promise, I won't steal \"fishies\"."
     show player 13
     show aqua 9
-    aqua "Okeay."
-
+    aqua "Ookaay."
     show aqua 10
     pause
     show aqua 2
     show player 471
-    player_name "Fiuh, terima kasih {b}Aqua{/b}!"
-
+    player_name "Phew, thank you {b}Aqua{/b}!"
     show player 470
     show aqua 1
-    aqua "Ingat saja, jangan ssstealsss {b}Aqua{/b} ikan..."
-
+    aqua "Just remember, no ssstealsss {b}Aqua{/b} fishies..."
     hide player
     hide aqua
     with dissolve
@@ -209,50 +157,37 @@ label aqua_sex_pre_first:
     scene location_lair_mount
     show aqua 2 zorder 1 at Position(xpos=.5875, ypos=1.0)
     show player 2 zorder 2 at Position(xpos=.125, ypos=1.0)
-    player_name "{b}Aqua{/b}, aku punya kabar baik!"
-
+    player_name "{b}Aqua{/b}, I have some good news!"
     show player 1
     show aqua 1
-    aqua "{i}*Terkesiap*{/i} Anda belajar bernapas di bawah air, seperti {b}Aqua{/b}?!"
-
+    aqua "{i}*Gasp*{/i} You learn to breathe underwater, like {b}Aqua{/b}?!"
     show player 12
     show aqua 2
-    player_name "Apa-"
-
-    player_name "Tidak."
-
+    player_name "Wha-"
+    player_name "No."
     show player 1
     show aqua 7
-    aqua "Oh, oke."
-
-    aqua "Apa kabarnya?"
-
+    aqua "Oh, Ookaay."
+    aqua "What isss newsss?"
     show player 2
     show aqua 6
-    player_name "Saya meyakinkan {b}Kapten Terry{/b} untuk berhenti memancing!"
-
+    player_name "I convinced {b}Captain Terry{/b} to stop fishing!"
     show player 1
     show aqua 7
-    aqua "Maksudmu mencurigakan sekali, aman?!"
-
-    aqua "{b}Kapten Terry{/b} pergi?!"
-
+    aqua "You mean fishiesss sssafe?!"
+    aqua "{b}Captain Terry{/b} gone?!"
     show player 17
     show aqua 6
-    player_name "Hei, kamu mengatakannya dengan benar saat itu!"
-
+    player_name "Hey, you said it right that time!"
     show player 1
     show aqua 7
-    aqua "Hah?"
-
+    aqua "Huh?"
     show player 2
     show aqua 6
-    player_name "Anda mengatakan \"{b}Kapten Terry{/b}\" dengan benar saat itu."
-
+    player_name "You said \"{b}Captain Terry{/b}\" correctly that time."
     show player 1
     show aqua 7
-    aqua "Ya, {b}Caplan Terry{/b}!"
-
+    aqua "Yesss, {b}Caplan Terry{/b}!"
     show player 90
     show aqua 6
     player_name "..."
@@ -260,48 +195,36 @@ label aqua_sex_pre_first:
     aqua "..."
 
     show player 37
-    player_name "Hanya saja, sudahlah."
-
+    player_name "Just, never mind."
     show player 2
-    player_name "Ikan Anda akan aman mulai sekarang."
-
+    player_name "Your fish will be safe from now on."
     show player 1
     show aqua 7
-    aqua "Oh, ini kabar baik!"
-
+    aqua "Oh, thisss isss good newsss!"
     show aqua 14
-    aqua "Kamu manusia yang baik!"
-
-    aqua "Manusia yang kuat!"
-
+    aqua "You nice human!"
+    aqua "Ssstrong human!"
     show player 29
     show aqua 13
-    player_name "Sama-sama, {b}Aqua{/b}..."
-
+    player_name "You're welcome, {b}Aqua{/b}..."
     show player 1
     show aqua 11
     aqua "..."
     show aqua 12
-    aqua "Jadi, manusia siap kawin dengan {b}Aqua{/b}?"
-
+    aqua "So, human ready to mate with {b}Aqua{/b}?"
     show player 21
     show aqua 13
-    player_name "B-sekarang?"
-
+    player_name "R-right now?"
     show player 297
     show aqua 14
-    aqua "Iya, {b}Aqua{/b} capek menunggu."
-
-    aqua "Teman bawa dia dengan kuat ke dalam air!"
-
+    aqua "Yesss, {b}Aqua{/b} tired of waiting."
+    aqua "Mate take her ssstrongly in water!"
     show player 10
     show aqua 13
-    player_name "Di dalam air?"
-
+    player_name "In the water?"
     show player 11
     show aqua 14
-    aqua "Ya, ayo."
-
+    aqua "Yesss, come."
     return
 
 label aqua_sex_pre:
@@ -324,58 +247,46 @@ label aqua_sex_after_first:
     with fade
     pause
     show aswim 2
-    aqua "Ooh, sobat memiliki tubuh yang bagus."
-
+    aqua "Ooh, mate has good body."
     show aswim 1
     show pswim 2
-    player_name "Terima kasih, {b}Aqua{/b}..."
-
+    player_name "Thanks, {b}Aqua{/b}..."
     show aswim 3
     show pswim 1
     pause
     show aswim 2
-    aqua "Belutmu sedang tidur."
-
+    aqua "Your eel isss sssleeping."
     show aswim 1
     show pswim 2
-    player_name "Hah?"
-
+    player_name "Huh?"
     show aswim 3
     pause
     show pswim 3
     pause
     show pswim 2
-    player_name "Oh ya."
-
+    player_name "Oh, yeah."
     show aswim 2
     show pswim 1
-    aqua "Apakah sobat menyukai tubuh {b}Aqua{/b}?"
-
+    aqua "Does mate like {b}Aqua{/b} body?"
     show aswim 1
     show pswim 2
-    player_name "Ya... {i}*Gulp*{/i} Umm, \"mate\" sangat menyukai tubuh {b}Aqua{/b}."
-
+    player_name "Yes... {i}*Gulp*{/i} Umm, \"mate\" likes {b}Aqua{/b}'s body very much."
     show aswim 2
     show pswim 1
-    aqua "Bagus, tubuh {b}Aqua{/b} milikmu sekarang."
-
-    aqua "Belut Anda dapat bermain di dalam {b}Aqua{/b} kapan pun ia mau."
-
+    aqua "Good, {b}Aqua{/b} body belong to you now."
+    aqua "Your eel can play inside {b}Aqua{/b} whenever it wantsss."
     show aswim 3
     pause
     show aswim 2
-    aqua "Di dalam hangat {b}Aqua{/b}..."
-
+    aqua "It's warm inside {b}Aqua{/b}..."
     show aswim 3
     pause
     show aswim 2
-    aqua "... Dan sssoft..."
-
+    aqua "... And sssoft..."
     show aswim 3
     pause
     show aswim 2
-    aqua "... Dan basah."
-
+    aqua "... And wet."
     show pswim 3
     pause
     show aswim 3
@@ -388,72 +299,52 @@ label aqua_sex_after_first:
     pause
     show aswim 2
     show pswim 6
-    aqua "Ooh, belut sukass ini ya?"
-
+    aqua "Ooh, eel likesss thisss, yesss?"
     show aswim 3
     show pswim 7
-    player_name "Y-ya."
-
+    player_name "Y-yes."
     show aswim 4
-    aqua "Mmm, {b}Aqua{/b} menginginkannya."
-
+    aqua "Mmm, {b}Aqua{/b} wantsss it."
     show aswim 3
     show pswim 8
     player_name "..."
     show aswim 4
-    aqua "{b}Aqua{/b} menginginkannya sekarang!"
-
+    aqua "{b}Aqua{/b} wantsss it now!"
     hide pswim
     show aswim 5
     with dissolve
     pause
     show aswim 6 at right with dissolve
-    player_name "{i}*Meneguk*{/i}"
-
-    aqua "Aaah, yessss... Ayo belut, kamu main di dalam {b}Aqua{/b} sekarang."
-
-    aqua "Berikan {b}Aqua{/b} ssstrong babyss..."
-
-    player_name "Wah!"
-
-    aqua "Hmm!"
-
+    player_name "{i}*Gulp*{/i}"
+    aqua "Aaah, yessss... Come eel, you play inside {b}Aqua{/b} now."
+    aqua "Give {b}Aqua{/b} ssstrong babiesss..."
+    player_name "Oh, wow!"
+    aqua "Mmm!"
     return
 
 label aqua_sex_after:
     scene location_lair_watersex
     show aquas 1 at Position(xalign = 1.0, yalign = 1.0)
     with fade
-    aqua "{b}Aqua{/b} membutuhkannya di dalam dirinya!"
-
-    aqua "Cepatlah kawanku!"
-
+    aqua "{b}Aqua{/b} needsss it inside her!"
+    aqua "Hurry my mate!"
     player_name "..."
     show aquas 2 with dissolve
-    aqua "Desis."
-
-    aqua "Belutmu sangat besar!"
-
-    aqua "Bawa aku kuat-kuat!"
-
+    aqua "Hissss."
+    aqua "Your eel sssooo big!"
+    aqua "Take me ssstrong!"
     $ M_aqua.set("sex speed", .175)
     show expression AnimatedImage("aquas", [3,4,5,6,7], M_aqua) as aquas with dissolve
     aqua "Ooohh!"
-
     pause
-    aqua "Sangat kuat!"
-
+    aqua "So ssstrong!"
     pause
-    aqua "Dan dalam!"
-
+    aqua "And deep!"
     $ M_aqua.set("sex speed", .125)
     aqua "Aaahh!"
-
     pause
-    aqua "Hmm, temanku."
-
-    aqua "Lebih cepat!"
-
+    aqua "Mmm, my mate."
+    aqua "Faster!"
     $ M_aqua.set("sex speed", .075)
     pause
     return
@@ -489,12 +380,9 @@ label aqua_hscene_dialog:
     if animcounter == 1:
         aqua "Ahhhh!!!{p=1}{nw}"
 
-
     elif animcounter == 3:
-        aqua "Bawa aku!!!{p=1}{nw}"
-
+        aqua "Take me!!!{p=1}{nw}"
         player_name "Uhhh...{p=1}{nw}"
-
     return
 
 label aqua_sex_cum:
@@ -511,31 +399,20 @@ label aqua_sex_cum:
     $ game.main()
 
 label aqua_sex_cum_pre:
-    player_name "Ini sulit dipercaya!"
-
-    player_name "{b}Aqua{/b}, aku akan..."
-
-    aqua "Yesss... YA TEMAN SAYA!"
-
-    aqua "Berikan {b}Aqua{/b} salammu!"
-
+    player_name "This is unbelievable!"
+    player_name "{b}Aqua{/b}, I'm gonna..."
+    aqua "Yesss... YESSS MY MATE!"
+    aqua "Give {b}Aqua{/b} your ssseeeeeeds!"
     aqua "HISSSSS!!!"
-
     show aquas 8 with flash
     player_name "UHHH!!"
-
     aqua "AAAAHHH!!!!"
-
     pause
     show aquas 9
-    player_name "Wah!"
-
-    player_name "Itu luar biasa!"
-
-    aqua "Ya..."
-
-    aqua "... {b}Aqua{/b} bisa merasakan benih yang kuat berenang di dalam dirinya!"
-
+    player_name "Wow!"
+    player_name "That was incredible!"
+    aqua "Yesss..."
+    aqua "... {b}Aqua{/b} can feel ssstrong ssseed ssswimming inside her!"
     pause
     return
 
@@ -544,359 +421,266 @@ label aqua_sex_cum_first:
     show aqua 11 zorder 1 at Position(xpos=.5875, ypos=1.0)
     show player 2 zorder 2 at Position(xpos=.125, ypos=1.0)
     with fade
-    player_name "Jadi kamu menikmatinya?"
-
+    player_name "So you enjoyed that?"
     show player 1
     show aqua 12
-    aqua "Ya, {b}Aqua{/b} sangat menikmati..."
-
-    aqua "... Terasa seperti ssseafoam seluruhnya."
-
+    aqua "Yesss, {b}Aqua{/b} enjoys much..."
+    aqua "... Feelsss like ssseafoam all over."
     show player 2
     show aqua 11
-    player_name "Anda luar biasa, saya belum pernah merasakan hal seperti itu sebelumnya."
-
+    player_name "You were incredible, I've never felt anything like that before."
     show player 1
     show aqua 14
-    aqua "Iya, ini {b}Aqua{/b} pertama kalinya juga..."
-
+    aqua "Yesss, thisss {b}Aqua{/b} first time too..."
     show aqua 12
-    aqua "... Tapi Mate harus meminum {b}Aqua{/b} berkali-kali!"
-
+    aqua "... But Mate must take {b}Aqua{/b} many more times!"
     show aqua 14
-    aqua "Diperlukan lebih banyak ssseeed, ya?"
-
+    aqua "More ssseeed is needed, yesss?"
     show player 2
     show aqua 13
-    player_name "Tentu saja, saya akan segera kembali lagi!"
-
+    player_name "Absolutely, I'll come back really soon!"
     show player 1
     show aqua 14
-    aqua "Janji kawan?"
-
+    aqua "Mate promise?"
     show player 2
     show aqua 13
-    player_name "Oh, aku berjanji!"
-
+    player_name "Oh, I promise!"
     show player 1
     show aqua 12
-    aqua "Bagus."
-
-    aqua "{b}Aqua{/b} ingin lebih banyak lagi!"
-
+    aqua "Good."
+    aqua "{b}Aqua{/b} want much more!"
     show aqua 14
-    aqua "Kembalilah secepatnya, manusia."
-
+    aqua "Come back sssoon, human."
     show aqua 11
-    aqua "{b}Aqua{/b} tunggu disini sampai ssseafoam ssberhenti menari..."
-
+    aqua "{b}Aqua{/b} wait here until ssseafoam ssstop dancing..."
     return
 
 label aqua_dialogue_pre:
     show aqua 2 zorder 1 at Position(xpos=.5875, ypos=1.0) with dissolve
     show player 36 zorder 2 at Position(xpos=.125, ypos=1.0) with dissolve
-    player_name "Hai, {b}Aqua{/b}!"
-
+    player_name "Hi, {b}Aqua{/b}!"
     show player 1
     show aqua 1
-    aqua "Iya?"
-
+    aqua "Yess?"
     show player 2
     show aqua 2
-    player_name "Saya ingin berbicara dengan Anda."
-
+    player_name "I wanted to speak with you."
     show player 1
     show aqua 4
-    aqua "Apa yang diinginkan anak manusia?"
-
+    aqua "What doesss human boy want?"
     return
 
 label aqua_dialogue_the_others:
     show aqua 3 zorder 1 at Position(xpos=.5875, ypos=1.0)
     show player 10 zorder 2 at Position(xpos=.125, ypos=1.0)
-    player_name "{b}Aqua{/b}, apa yang terjadi dengan kaummu yang lain?"
-
+    player_name "{b}Aqua{/b}, what happened to the rest of your kind?"
     show player 11
     show aqua 4
-    aqua "Hmm, {b}Aqua{/b} tidak yakin..."
-
-    aqua "... Mungkin mereka tidak suka {b}Aqua{/b}..."
-
-    aqua "... atau mungkin mereka lupa?"
-
+    aqua "Hmm, {b}Aqua{/b} not sssure..."
+    aqua "... Maybe they don't like {b}Aqua{/b}..."
+    aqua "... or maybe they forget?"
     show aqua 5
     show player 10
-    player_name "Aduh, maafkan aku {b}Aqua{/b}."
-
+    player_name "Aww, I'm sorry {b}Aqua{/b}."
     show player 11
     show aqua 1
-    aqua "Anda bertanya lebih banyak pertanyaan?"
-
+    aqua "You ask more questionsss?"
     show aqua 2
     return
 
 label aqua_dialogue_how_are_you:
     show aqua 3 zorder 1 at Position(xpos=.5875, ypos=1.0)
     show player 2 zorder 2 at Position(xpos=.125, ypos=1.0)
-    player_name "{b}Aqua{/b}, apa kabar?"
-
+    player_name "{b}Aqua{/b}, how are you?"
     show player 1
     show aqua 4
     aqua "Hmm?"
-
     show player 2
     show aqua 3
-    player_name "Bagaimana perasaanmu?"
-
+    player_name "How are you feeling?"
     show player 1
     show aqua 5
-    aqua "Hmm, {b}Aqua{/b} sepi, dengan sedikit ikan..."
-
+    aqua "Hmm, {b}Aqua{/b} lonely, with so few fishies..."
     show aqua 4
-    aqua "... Tapi sukass ketika anak manusia datang berkunjung."
-
+    aqua "... But likesss when human boy come visit."
     show player 2
     show aqua 3
-    player_name "Aku juga suka ngobrol denganmu, {b}Aqua{/b}."
-
+    player_name "I like talking with you too, {b}Aqua{/b}."
     show player 1
     show aqua 1
-    aqua "Ya, seperti berbicara."
-
-    aqua "Anda bertanya lebih banyak pertanyaan?"
-
+    aqua "Yesss, like talking."
+    aqua "You ask more questionsss?"
     show aqua 2
     return
 
 label aqua_dialogue_mating_pre:
     show aqua 3 zorder 1 at Position(xpos=.5875, ypos=1.0)
     show player 10 zorder 2 at Position(xpos=.125, ypos=1.0)
-    player_name "{b}Aqua{/b}, jodoh seperti apa yang kamu cari?"
-
+    player_name "{b}Aqua{/b}, what kind of mate are you looking for?"
     show player 11
     show aqua 4
-    aqua "Pria."
-
-    aqua "Ssorang kuat, itu memberi {b}Aqua{/b} ssstrong babyss."
-
+    aqua "Man."
+    aqua "Ssstrong man, that give {b}Aqua{/b} ssstrong babiesss."
     show aqua 1
-    aqua "Anda tahu pria seperti ini?"
-
+    aqua "You know man like this?"
     show player 34
     show aqua 3
     player_name "Hmm."
-
     return
 
 label aqua_dialogue_mating_stat_fail:
     show aqua 3 zorder 1 at Position(xpos=.5875, ypos=1.0)
     show player 29 zorder 2 at Position(xpos=.125, ypos=1.0)
-    player_name "Bagaimana dengan saya?"
-
+    player_name "How about me?"
     show player 3
     show aqua 4
-    aqua "Kamu pria yang kuat?"
-
+    aqua "You ssstrong man?"
     show player 29
     show aqua 3
-    player_name "Ya?"
-
+    player_name "Yes?"
     show player 3
     show aqua 5
     aqua "..."
     aqua "Hmm..."
-
     pause
     show aqua 4
-    aqua "... {b}Aqua{/b} berpikir... Tidak."
-
-    aqua "Ini adalah ide yang buruk."
-
+    aqua "... {b}Aqua{/b} thinks... No."
+    aqua "This is bad idea."
     show player 24
     show aqua 3
-    player_name "Ah, kawan."
-
+    player_name "Aww, man."
     return
 
 label aqua_dialogue_mating_stat_pass:
     show aqua 3 zorder 1 at Position(xpos=.5875, ypos=1.0)
     show player 2 zorder 2 at Position(xpos=.125, ypos=1.0)
-    player_name "Mungkin saya bisa membantu?"
-
+    player_name "Maybe I could help?"
     show player 1
     show aqua 7
-    aqua "Anda?"
-
+    aqua "You?"
     show player 2
     show aqua 6
-    player_name "Maksudku, aku berenang jauh ke sini untuk mencarimu."
-
+    player_name "Well, I mean, I did swim all the way down here to find you."
     show player 1
     show aqua 7
-    aqua "Anda melakukannya."
-
+    aqua "You did."
     show player 2
     show aqua 6
-    player_name "... Dan aku melawan cumi-cumi yang sangat kejam di sepanjang jalan."
-
+    player_name "... And I fought a very mean squid along the way."
     show player 1
     show aqua 7 with hpunch
-    aqua "Kamu melawan Inky?!"
-
+    aqua "You fight Inky?!"
     show player 2
     show aqua 6
-    player_name "bertinta?"
-
-    player_name "Ya, saya melawan Inky."
-
+    player_name "Inky?"
+    player_name "Yes, I fight Inky."
     show aqua 7
-    aqua "Oooh, Inky kuat sekali!"
-
+    aqua "Oooh, Inky ssstrong!"
     show aqua 12
     pause
     show aqua 11
-    aqua "Mungkin Anda memberi {b}Aqua{/b} ssstrong babyss."
-
+    aqua "Maybe you do give {b}Aqua{/b} ssstrong babiesss."
     show player 14
     show aqua 13
-    player_name "Benar-benar?!"
-
+    player_name "Really?!"
     show player 1
     show aqua 14
-    aqua "Iya, tapi belum ada sobat!"
-
-    aqua "Pertama Anda membuktikan kekuatan."
-
+    aqua "Yesss, but no mate yet!"
+    aqua "First you prove strength."
     show player 10
     show aqua 13
-    player_name "Buktikan kekuatanku?"
-
-    player_name "Bagaimana saya bisa melakukan itu?"
-
+    player_name "Prove my strength?"
+    player_name "How am I supposed to do that?"
     show player 1
     show aqua 7
-    aqua "Kamu bilang {b}Caplan Terry{/b} ssstealsss mencurigakan, ya?"
-
+    aqua "You sssay {b}Caplan Terry{/b} ssstealsss fishiesss, yesss?"
     show player 12
     show aqua 6
-    player_name "{b}KAPTEN Terry{/b}."
-
-    player_name "Ya, dialah orang yang sedang memancing di dermaga."
-
+    player_name "{b}CAPTAIN Terry{/b}."
+    player_name "Yes, he's the guy who's been fishing off the dock."
     show player 11
     show aqua 7
-    aqua "Hmm, kamu membuat {b}Caplan Terry{/b} pergi!"
-
+    aqua "Hmm, you make {b}Caplan Terry{/b} go away!"
     show aqua 11
-    aqua "Anda melakukan ini dan kemudian Anda kawin dengan {b}Aqua{/b}."
-
+    aqua "You do this and then you mate with {b}Aqua{/b}."
     show player 10
     show aqua 13
-    player_name "Yah, kurasa aku bisa mencobanya."
-
+    player_name "Well, I suppose I can give it a shot."
     show player 11
     show aqua 14
-    aqua "Bagus, pergilah."
-
-    aqua "Selamatkan ikan!"
-
+    aqua "Good, you go."
+    aqua "Sssave fishiesss!"
     return
 
 label aqua_dialogue_mating_hint:
     show aqua 3 zorder 1 at Position(xpos=.5875, ypos=1.0)
     show player 12 zorder 2 at Position(xpos=.125, ypos=1.0)
-    player_name "Apa yang perlu saya lakukan lagi, {b}Aqua{/b}?"
-
-    player_name "Untuk membuktikan kekuatanku?"
-
+    player_name "What do I need to do again, {b}Aqua{/b}?"
+    player_name "To prove my strength?"
     show player 11
     show aqua 7
-    aqua "Singkirkan {b}Caplan Terry{/b}!"
-
-    aqua "Selamatkan ikan!"
-
+    aqua "Make {b}Caplan Terry{/b} go away!"
+    aqua "Sssave fishiesss!"
     show player 10
     show aqua 6
-    player_name "Oh iya... {b}KAPTEN Terry{/b}."
-
+    player_name "Oh, right... {b}CAPTAIN Terry{/b}."
     show player 11
     show aqua 7
-    aqua "Itulah yang {b}Aqua{/b} katakan... {b}Caplan Terry{/b}!"
-
+    aqua "That's what {b}Aqua{/b} say... {b}Caplan Terry{/b}!"
     show player 12
     show aqua 6
-    player_name "KAPTEN-"
-
-    player_name "{i}*Huh*{/i} Sudahlah."
-
-    player_name "Kurasa, aku akan mencoba dan berbicara dengannya."
-
+    player_name "CAPT-"
+    player_name "{i}*Sigh*{/i} Never mind."
+    player_name "I guess, I'll go try and talk to him."
     show player 5
     show aqua 7
-    aqua "Ya, suruh dia tinggalkan fishiesss sendirian!"
-
+    aqua "Yesss, tell him leave fishiesss alone!"
     return
 
 label aqua_dialogue_mate:
     show aqua 2 zorder 1 at Position(xpos=.5875, ypos=1.0)
     show player 21 zorder 2 at Position(xpos=.125, ypos=1.0)
-    player_name "Saya pikir mungkin Anda ingin... masuk ke dalam air lagi?"
-
+    player_name "I thought maybe you would like to... get in the water again?"
     show player 26
     show aqua 3
     aqua "..."
     show aqua 1
-    aqua "Oh, kamu ingin membuat babyss?"
-
+    aqua "Oh, you want make babiesss?"
     show player 21
     show aqua 12
-    player_name "Aku, er... ya?"
-
+    player_name "I, err... yes?"
     show player 26
     show aqua 11
-    aqua "Hahaha, kamu manusia yang lucu."
-
-    aqua "Kalian {b}Aqua{/b} sobat sekarang..."
-
+    aqua "Hahaha, you funny human."
+    aqua "You {b}Aqua{/b} mate now..."
     show aqua 14
-    aqua "... {b}Aqua{/b} selalu siap untuk mendapatkan lebih banyak ssseed!"
-
-    aqua "Jika sobat menginginkan {b}Aqua{/b}, dia harus membawanya..."
-
-    aqua "... Sangat kuat di dalam air adalah yang terbaik tetapi sobat harus memilih!"
-
+    aqua "... {b}Aqua{/b} always ready for more ssseeds!"
+    aqua "If mate wantsss {b}Aqua{/b}, he must take her..."
+    aqua "... Ssstrongly in water isss best but mate should choose!"
     return
 
 label aqua_dialogue_nothing:
     show aqua 3 zorder 1 at Position(xpos=.5875, ypos=1.0)
     show player 36 zorder 2 at Position(xpos=.125, ypos=1.0)
-    player_name "Tidak ada, aku hanya menyapa!"
-
+    player_name "Nothing, I was just saying hi!"
     show player 1
     show aqua 4
-    aqua "Bocah manusia isss... lucu..."
-
+    aqua "Human boy isss... funny..."
     show aqua 1
-    aqua "... Aku suka anak manusia..."
-
+    aqua "... I like human boy..."
     show player 21
     show aqua 2
-    player_name "Aku salah... menyukaimu juga, {b}Aqua{/b}."
-
+    player_name "I err... like you too, {b}Aqua{/b}."
     show player 13
     aqua "..."
     show player 29
-    player_name "Bagaimanapun, aku harus segera pergi."
-
+    player_name "Anyway, I should get going."
     show player 3
     show aqua 1
-    aqua "Ssst, segera?"
-
-    aqua "Anda kembali besok?"
-
+    aqua "Ssso sssoon?"
+    aqua "You come back tomorrow?"
     show player 17
     show aqua 2
-    player_name "Anda yakin!"
-
+    player_name "You bet!"
     return
 # Decompiled by unrpyc: https://github.com/CensoredUsername/unrpyc

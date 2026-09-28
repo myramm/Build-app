@@ -1,106 +1,75 @@
 label liu_button_baby:
     show anon with dissolve
-    anon "Hei, bagaimana kabarmu?"
-
-    liu f_happy "Hai, {b}[firstname]{/b}."
-
-    liu f_happy_baby "Bukankah bayi kita luar biasa?"
-
+    anon "Hey, how's it going?"
+    liu f_happy "Hey, {b}[firstname]{/b}."
+    liu f_happy_baby "Isn't our baby wonderful?"
     show anon f_shy_low
 
     menu liu_button_baby.choice:
-        "Terbaik.":
+        "The best.":
 
             jump liu_button_baby.best
-        "Bagaimana perasaanmu?":
+        "How are you feeling?":
 
             jump liu_button_baby.feeling
-        "Saya akan membiarkan Anda kembali melakukannya.":
+        "I'll let you get back to it.":
 
             pass
 
     show liu f_happy
-    anon f_normal "Saya akan membiarkan Anda kembali melakukannya."
-
-    liu f_happy_baby "Ucapkan selamat tinggal pada Ayah."
-
-    anon f_shy_low "Heh, selamat tinggal si kecil."
-
+    anon f_normal "I'll let you get back to it."
+    liu f_happy_baby "Say bye to Daddy."
+    anon f_shy_low "Heh, goodbye little one."
     show anon a_wave
     with {'master': dissolve}
-    anon "Jaga ibumu untukku."
-
+    anon "Take care of your mommy for me."
     hide anon with dissolve
     return
 
 
 label liu_button_baby.best:
-    anon @ f_happy "Terbaik!"
-
+    anon @ f_happy "The best!"
 
     if M_liu.pregnancy.baby_gender == 'boy':
-        liu "Dia tidak rewel sama sekali!"
-
+        liu "He's hardly fusses at all!"
     else:
-        liu "Dia tidak rewel sama sekali!"
-
+        liu "She's hardly fusses at all!"
 
     show liu f_happy
-    anon f_confused "Tidur sepanjang malam oke?"
-
+    anon f_confused "Sleeping through the night okay?"
     show anon f_normal
-    liu "Ya, sejauh ini."
-
-    anon "Itu bagus."
-
-    anon "Semoga terus berlanjut."
-
-    liu "Itu akan."
-
-    liu "Saya tahu itu akan terjadi."
-
+    liu "Yeah, so far."
+    anon "Well that's good."
+    anon "Hopefully it keeps up."
+    liu "It will."
+    liu "I know it will."
     show anon f_shy_low
     show liu f_happy_baby
 
     if M_liu.pregnancy.baby_gender == 'boy':
-        liu "Dia sempurna."
-
+        liu "He's perfect."
     else:
-        liu "Dia sempurna."
-
+        liu "She's perfect."
 
     jump liu_button_baby.choice
 
 
 label liu_button_baby.feeling:
     show liu f_normal
-    anon f_confused "Menikmati waktu istirahat Anda?"
-
+    anon f_confused "Enjoying your time off?"
     show anon f_normal
-    liu f_worried "Ya, kenapa?"
-
-    liu "Apakah semuanya baik-baik saja di bank?!"
-
-    anon f_surprised "Hah?!"
-
-    anon f_worried "Y-ya semuanya baik-baik saja."
-
-    liu "Anda telah memeriksa {b}Tina{/b} dan menemaninya seperti yang saya minta, bukan?"
-
-    anon f_normal "Ya, tentu saja."
-
-    liu f_ashamed_down "Saya serius, {b}[firstname]{/b}."
-
-    liu f_worried "Anda tidak tahu betapa sepinya saat Anda berada di sana sendirian."
-
-    anon "Heh, aku akan menghabiskan waktu bersama {b}Tina{/b}, aku janji."
-
-    liu f_normal "Hmm, oke."
-
-    liu f_happy_baby "Kita akan baik-baik saja di sini, kan, si kecil?"
-
+    liu f_worried "Yeah, why?"
+    liu "Is everything okay at the bank?!"
+    anon f_surprised "Huh?!"
+    anon f_worried "Y-yeah everything's fine."
+    liu "You've been checking in on {b}Tina{/b} and keeping her company like I asked, right?"
+    anon f_normal "Yes, of course."
+    liu f_ashamed_down "I'm serious, {b}[firstname]{/b}."
+    liu f_worried "You have no idea how lonely it gets when you're there all by yourself."
+    anon "Heh, I'll go spend some time with {b}Tina{/b}, I promise."
+    liu f_normal "Hmm, okay."
+    liu f_happy_baby "We'll be fine here, won't we little one?"
     show anon f_shy_low
-    liu "Ya, kami akan melakukannya."
-
+    liu "Yes, we will."
     jump liu_button_baby.choice
 # Decompiled by unrpyc: https://github.com/CensoredUsername/unrpyc

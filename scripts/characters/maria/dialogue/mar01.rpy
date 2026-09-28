@@ -4,17 +4,11 @@ label mar01_tour_maria:
     show anon with dissolve:
         flip
     anon "I really like your house!"
-
     maria @ f_laugh "Aww, that's real sweet of ya to say."
-
     anon "You mind if I look around?"
-
     maria "Not at all, handsome."
-
     maria "Our house is your house."
-
-    anon "Terima kasih!"
-
+    anon "Thanks!"
     hide anon with dissolve
     return
 # Decompiled by unrpyc: https://github.com/CensoredUsername/unrpyc

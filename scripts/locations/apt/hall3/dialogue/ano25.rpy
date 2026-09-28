@@ -10,9 +10,7 @@ label ano25_done_apt_hall3:
         xoffset -300
         xzoom -1
     anon @ -m_talk "( Success! )"
-
     anon f_normal @ -m_talk "( Now I just need to {b}meet Tony at the bank on Tuesday morning{/b}. )"
-
     hide anon with dissolve
     return
 # Decompiled by unrpyc: https://github.com/CensoredUsername/unrpyc

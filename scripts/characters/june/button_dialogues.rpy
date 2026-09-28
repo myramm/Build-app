@@ -4,17 +4,14 @@ label june_dialogue_bissette_fix_printer_repeat:
     show june 17 at right
     show player 10 at left
     with dissolve
-    player_name "Hai {b}Juni{/b}! Apakah Anda sudah memperbaiki mesin fotokopinya?"
-
+    player_name "Hey {b}June{/b}! Have you fixed the copy machine yet?"
     show player 5
     show june 19
-    june "Tidak, maaf. Saya tidak punya waktu untuk mengacaukannya sama sekali."
-
+    june "No, sorry. I haven't had time to mess with it at all."
     show june 17
     player_name "..."
     show player 12
-    player_name "Teknologi bodoh!"
-
+    player_name "Stupid technology!"
     show player 518 with dissolve
     return
 
@@ -23,36 +20,27 @@ label june_dialogue_bissette_fix_printer_first:
     show player 10 at left
     show june 1 at right
     with dissolve
-    player_name "Hai, {b}Juni{/b}?"
-
+    player_name "Hey, {b}June{/b}?"
     show player 5
     show june 3
-    june "Ya, {b}[firstname]{/b}?"
-
+    june "Yes, {b}[firstname]{/b}?"
     show june 2
     show player 12
-    player_name "Saya mengalami masalah dengan printer. Apa arti surat pemuatan PC?"
-
+    player_name "I'm having trouble with the printer. What does PC load letter mean?"
     show player 5
     show june 4
-    june "Ugh, apa dia melakukannya lagi?! Benar-benar sampah!"
-
+    june "Ugh, is it doing that again?! What a piece of garbage!"
     show june 2
     show player 10
-    player_name "Saya hanya perlu memindai beberapa halaman dari buku ini dan mencetaknya."
-
-    player_name "Bisakah Anda membantu saya?"
-
+    player_name "I just need to scan a couple pages from this book and print them off."
+    player_name "Could you help me?"
     show player 5
     show june 3
-    june "Ya tentu saja!"
-
-    june "Bukan untuk menyombongkan diri atau apa pun, tapi aku cukup mahir dalam bidang elektronik."
-
+    june "Yeah, sure!"
+    june "Not to brag or anything but I'm pretty good with electronics."
     show june 2
     show player 14
-    player_name "Luar biasa!"
-
+    player_name "Awesome!"
     show player 13
     scene black with fade
 
@@ -61,60 +49,46 @@ label june_dialogue_bissette_fix_printer_first:
     show player 13 at left
     show june 9f at right
     with dissolve
-    june "Oh, terkadang Anda hanya perlu memulai ulang. Biarkan saya memutar tenaga."
-
+    june "Oh, sometimes you just need to restart it. Let me just cycle power."
     show june 10f with dissolve
     show player 108f
-    player_name "Benar-benar?"
-
+    player_name "Really?"
     show player 5
     show june 9f with dissolve
-    june "Ya, teknologi itu pilih-pilih seperti itu."
-
-    june "Tinggal menunggu boot up..."
-
+    june "Yeah, technology is picky like that."
+    june "Just waiting for it to boot up..."
     show player 10
-    player_name "Baiklah."
-
+    player_name "Alright."
     show player 5
     pause
     pause
     show june 10f with dissolve
     show player 434
-    june "Saya pikir itu seharusnya berhasil, tidak-"
-
+    june "I think it should be work no-"
     show june 9f with dissolve
     show player 5
-    june "Grr... Kesalahan pemuatan PC?!"
-
+    june "Grr... PC load error?!"
     show june 15 with dissolve
     show player 110f
-    june "Kamu bagian yang tidak berharga-"
-
+    june "You worthless piece of-"
     show june 16 with vpunch
     pause
     show june 15 with dissolve
-    june "Saya kira saya harus membukanya dan memperbaikinya lagi."
-
+    june "I guess I'll have to open it up and repair it again."
     show player 10
-    player_name "Berapa lama waktu yang dibutuhkan?"
-
+    player_name "How long will that take?"
     show player 5
     show june 19 with dissolve
-    june "Ini akan memakan waktu cukup lama, saya tidak punya waktu untuk menghadapinya hari ini."
-
+    june "It will take a while, I don't have time to deal with it today."
     show june 17
     show player 10
-    player_name "Dengan serius?"
-
+    player_name "Seriously?"
     show player 5
     show june 19
-    june "Ya, hal ini benar-benar menyebalkan..."
-
+    june "Yeah, this thing really is a pain in the butt..."
     show june 17
     show player 12
-    player_name "Teknologi bodoh!"
-
+    player_name "Stupid technology!"
     show player 518 with dissolve
     return
 
@@ -122,14 +96,11 @@ label june_dialogue_bissette_fix_printer_fail:
     show player 519 with vpunch
     player_name "..."
     show player 10 with dissolve
-    player_name "{i}*Huh*{/i}"
-
-    player_name "Kurasa aku akan menghubungimu kembali besok kalau begitu..."
-
+    player_name "{i}*Sigh*{/i}"
+    player_name "I guess I'll check back with you tomorrow then..."
     show player 5
     show june 19
-    june "Maaf, {b}[firstname]{/b}."
-
+    june "Sorry, {b}[firstname]{/b}."
     hide player
     hide june
     with dissolve
@@ -141,38 +112,29 @@ label june_dialogue_bissette_fix_printer_pass:
     show player 11 with dissolve
     player_name "!!!"
     show june 18
-    june "... Hai! Itu berhasil!"
-
+    june "... Hey! It's working!"
     show june 17
     show player 10
-    player_name "Benar-benar?"
-
+    player_name "Really?"
     show player 5
     show june 18
-    june "Ya! Anda harus memiliki sentuhan Midas, {b}[firstname]{/b}!"
-
+    june "Yeah! You must have the Midas touch, {b}[firstname]{/b}!"
     show june 17
     show player 14
-    player_name "Hah, ya. Saya kira begitu..."
-
+    player_name "Hah, yeah. I guess so..."
     show player 13
     show june 18
-    june "Nah, Anda dapat menyalin halaman Anda sekarang..."
-
+    june "Well, you can copy your pages now..."
     show june 17
     show player 14
-    player_name "Syukurlah! Saya benar-benar perlu mengembalikan buku ini kepada {b}Judith{/b} sebelum dia marah."
-
-    player_name "Terima kasih atas semua bantuan Anda, {b}Juni{/b}!"
-
+    player_name "Thank goodness! I really need to get this book back to {b}Judith{/b} before she gets upset."
+    player_name "Thanks for all your help, {b}June{/b}!"
     show player 13
     show june 18
-    june "Tidak masalah."
-
+    june "No problem."
     hide june with dissolve
     show player 518 with dissolve
-    player_name "Cetak!"
-
+    player_name "Print!"
     show player 519 with vpunch
     show xtra_paper 39 at Position (xoffset=100) with dissolve
     pause .25
@@ -180,10 +142,8 @@ label june_dialogue_bissette_fix_printer_pass:
     show player 184 with dissolve
     pause
     show player 510 with dissolve
-    player_name "Baiklah! {b}Saya akhirnya memiliki kamus bahasa Prancis yang lengkap{/b}."
-
-    player_name "Sekarang saya hanya perlu {b}mengembalikan buku Judith kepadanya{/b} dan saya dapat {b}memulai les privat Nona Bissette{/b}."
-
+    player_name "Alright! {b}I finally have a complete French dictionary{/b}."
+    player_name "Now I just need to {b}get Judith's book back to her{/b} and I can {b}get started with Miss Bissette's private lessons{/b}."
     show player 509
     hide player with dissolve
     return
@@ -193,161 +153,121 @@ label june_dialogue_okita_faptic_engine:
     show player 2 at left
     show june 2 at right
     with dissolve
-    player_name "{b}Nona Okita{/b} ingin saya {b}membelikannya sesuatu yang disebut mesin faptic{/b}. Dia bilang padaku kamu bisa membantu?"
-
+    player_name "{b}Miss Okita{/b} wants me to {b}get her something called a faptic engine{/b}. She told me you could help?"
     show player 1
     show june 4
-    june "Apa yang dia inginkan dengan salah satu dari itu?"
-
+    june "What the heck does she want with one of those?"
     show player 2
     show june 2
-    player_name "Dia bilang dia membutuhkannya untuk penemuan terbarunya."
-
+    player_name "She says she needs it for her newest invention."
     show player 1
     show june 4
-    june "Hah. Hal gila apa yang dia lakukan kali ini?"
-
+    june "Hah. What crazy thing has she come up with this time?"
     show player 2
     show june 2
-    player_name "Kedengarannya cukup rapi sebenarnya, itu a-"
-
+    player_name "It sounds pretty neat actually, it's a-"
     show player 1
     show june 3
-    june "Tidak, jangan beritahu aku! Aku yakin aku tidak ingin tahu."
-
+    june "No, don't tell me! I'm sure I don't wanna know."
     show player 11
     show june 2
     player_name "..."
     show player 10
-    player_name "Bisakah Anda membantu saya atau tidak?"
-
+    player_name "Can you help me or not?"
     show player 11
     show june 4
-    june "Saya meragukannya. Apakah itu harus asli?"
-
+    june "I doubt it. Does it need to be authentic?"
     show player 10
     show june 2
-    player_name "Eh, menurutku begitu."
-
+    player_name "Err, I assume so."
     show player 11
     show june 4
-    june "Yah, itu akan sulit didapat."
-
+    june "Well, that's gonna be hard to come by."
     show player 10
     show june 2
-    player_name "Apa itu {b}mesin faptic{/b}?"
-
+    player_name "What is a {b}faptic engine{/b} anyways?"
     show player 11
     show june 3
-    june "Oh, kamu tidak tahu?"
-
-    june "Ini adalah mesin kecil yang memberikan sensasi sentuhan. Mereka baru saja mulai menempatkannya di smartphone terbaik."
-
+    june "Oh, you don't know?"
+    june "It's a tiny piece of machinery that provides tactile sensations. They just started putting them in the top-of-the-line smartphones."
     show player 10
     show june 2
-    player_name "Sensasi sentuhan?"
-
+    player_name "Tactile sensations?"
     show player 11
     show june 4
-    june "Sensasi yang Anda rasakan dengan kulit Anda. Dalam hal ini, getaran."
-
+    june "Sensations you feel with your skin. In this case, vibrations."
     show player 2
     show june 2
-    player_name "Oh, aku mengerti sekarang."
-
-    player_name "Lalu mengapa sangat sulit mendapatkannya?"
-
+    player_name "Oh, I get it now."
+    player_name "So why is it so hard to get?"
     show player 1
     show june 3
-    june "Yah, kesampingkan fakta bahwa ponsel itu sangat mahal..."
-
+    june "Well, putting aside the fact that those phones are super expensive..."
     show player 11
     show june 4
-    june "Saat ini sudah terjual habis, seperti di tempat lain!"
-
+    june "They are currently sold out, like everywhere!"
     show player 10
     show june 2
-    player_name "Seberapa mahal yang kita bicarakan?"
-
+    player_name "How expensive are we talking?"
     show player 11
     show june 4
-    june "Sekitar dua ribu dolar."
-
+    june "Around two thousand dollars."
     show player 23
     show june 2
     player_name "!!!" with hpunch
     show player 10
-    player_name "Apa?! Untuk telepon?!"
-
+    player_name "What?! For a phone?!"
     show player 11
     show june 4
-    june "Sudah kubilang mereka adalah yang terbaik."
-
+    june "I told you they are top-of-the-line."
     show june 3
-    june "Tapi itu tidak masalah, apa kau tidak mendengarku? Semuanya sudah terjual habis."
-
+    june "It really doesn't matter though, didn't you hear me? They are completely sold out."
     show player 10
     show june 2
-    player_name "Ayo tembak! Apa yang harus kukatakan {b}Nona Okita{/b}?"
-
+    player_name "Well shoot! What am I gonna tell {b}Miss Okita{/b}?"
     show player 11
     show june 3
-    june "Sayang sekali dia menginginkan yang asli. Ada beberapa versi tiruan dengan kualitas cukup bagus yang mungkin bisa Anda dapatkan."
-
+    june "It's a shame she wants authentic. There are some pretty good quality knock-off versions that you might be able to get your hands on."
     show player 10
     show june 2
-    player_name "Hmm, apakah akan berfungsi sebaik yang asli?"
-
+    player_name "Hmm, would it work as well as the authentic ones?"
     show player 11
     show june 4
-    june "Ya, tidak, tapi cukup dekat. Itu tergantung pada tujuan Anda menggunakannya."
-
+    june "Well, no, but pretty close. It would depend on what you're using it for."
     show june 3
-    june "Dalam kebanyakan kasus, menurut saya tiruannya akan berhasil."
-
+    june "In most cases, I'd say the knock-off would do the trick."
     show june 2
     player_name "..."
     show player 10
-    player_name "Baiklah, di mana saya bisa mendapatkan versi tiruannya?"
-
+    player_name "Alright, where would I get the knock-off version?"
     show player 11
     show june 3
-    june "Ya, mereka memasukkannya ke dalam pengontrol {b}Master Blaster{/b} beberapa tahun yang lalu."
-
+    june "Well, they were putting them into those {b}Master Blaster{/b} controllers a few years ago."
     show player 10
     show june 2
-    player_name "{b}Master Blaster{/b}? Suka video gamenya?"
-
+    player_name "{b}Master Blaster{/b}? Like the video game?"
     show player 11
     show june 3b
-    june "Ya! Saya selalu menginginkannya tetapi orang tua saya tidak mampu membelinya."
-
+    june "Yeah! I always wanted one but my parents couldn't afford it."
     show player 2
     show june 2
-    player_name "Anda tahu apa? Teman saya {b}Erik{/b} dulu punya salah satunya!"
-
+    player_name "You know what? My buddy {b}Erik{/b} used to have one of those!"
     show player 1
     show june 6
-    june "Apakah dia masih memilikinya?"
-
+    june "Does he still have it?"
     show player 2
     show june 5
-    player_name "Tidak tahu."
-
+    player_name "No idea."
     show player 1
     show june 6
-    june "Nah, jika Anda berhasil mendapatkannya, saya dapat mengeluarkan {b}mesin faptic{/b} untuk Anda."
-
+    june "Well, if you manage to get your hands on one, I could take the {b}faptic engine{/b} out for you."
     show player 2
     show june 2
-    player_name "Besar! Saya akan berbicara dengan {b}Erik{/b} dan melihat apakah dia masih memilikinya."
-
-    player_name "Terima kasih atas infonya, {b}Juni{/b}."
-
+    player_name "Great! I'll go talk to {b}Erik{/b} and see if he still has it."
+    player_name "Thanks for the info, {b}June{/b}."
     show player 1
     show june 3
-    june "Semoga beruntung!"
-
+    june "Good luck!"
     return
 
 label june_dialogue_okita_get_controller_info:
@@ -355,27 +275,20 @@ label june_dialogue_okita_get_controller_info:
     show player 2 at left
     show june 2 at right
     with dissolve
-    player_name "Apa nama pengontrol itu lagi?"
-
+    player_name "What was the name of that controller again?"
     show player 1
     show june 4
-    june "{b}Master Blaster{/b}."
-
+    june "The {b}Master Blaster{/b}."
     show june 3
-    june "Bukankah kamu bilang temanmu {b}Erik{/b} punya satu?"
-
+    june "Didn't you say your buddy {b}Erik{/b} had one?"
     show player 2
     show june 2
-    player_name "Ya, dia dulu..."
-
-    player_name "Aku akan bertanya padanya tentang hal itu."
-
-    player_name "Terima kasih, {b}Juni{/b}."
-
+    player_name "Yeah, he used to..."
+    player_name "I'll go ask him about it."
+    player_name "Thanks, {b}June{/b}."
     show player 1
     show june 3
-    june "Semoga beruntung!"
-
+    june "Good luck!"
     return
 
 label june_dialogue_okita_has_controller:
@@ -383,68 +296,53 @@ label june_dialogue_okita_has_controller:
     show player 502 at left
     show june 2 at right
     with dissolve
-    player_name "Apakah ini hal yang kamu bicarakan?"
-
+    player_name "Is this the thing you were talking about?"
 
     show player 1
     show june 11
     with dissolve
-    june "Hei, kamu benar-benar mendapatkannya. Luar biasa!"
-
+    june "Hey, you actually got one. Awesome!"
     show player 2
     show june 12
-    player_name "Jadi, Anda dapat menghilangkan {b}mesin faptic{/b} dari sini?"
-
+    player_name "So, you can take the {b}faptic engine{/b} out of this?"
     show player 1
     show june 11
-    june "Sangat."
-
-    june "Beri saya waktu beberapa menit untuk membongkarnya."
-
+    june "Absolutely."
+    june "Just give me a few minutes to take it apart."
     show player 2
     show june 12
-    player_name "Baiklah."
-
+    player_name "Alright."
     show player 1
     show june 11
 
-    june "Ini sangat keren!"
-
+    june "This is so cool!"
 
     pause
     scene location_school_computer_day_blur
     show player 1 at left
     show june 13 at right
     with dissolve
-    june "Ini dia, satu {b}mesin faptic{/b} tiruan."
-
+    june "There we go, one knock-off {b}faptic engine{/b}."
     show player 2
     show june 14
-    player_name "Itu saja? Ini sangat kecil..."
-
+    player_name "That's it? It's so tiny..."
     show player 505
     show june 18
     with dissolve
-    june "Yup, hal kecil tapi berdampak besar."
-
+    june "Yup, it's a little thing but it packs a punch."
     show player 506
     show june 17
-    player_name "Baiklah, sebaiknya saya antarkan ini ke {b}Nona Okita{/b}."
-
+    player_name "Alright, I'd better get this to {b}Miss Okita{/b}."
     show player 505
     show june 19
-    june "Katakan, {b}[firstname]{/b}?"
-
-    june "Apakah Anda keberatan jika saya menyimpan pengontrolnya?"
-
+    june "Say, {b}[firstname]{/b}?"
+    june "Would you mind if I keep the controller?"
     show player 2 with dissolve
     show june 17
-    player_name "Tidak, tidak sama sekali. Hancurkan dirimu!"
-
+    player_name "No, not at all. Knock yourself out!"
     show player 1
     show june 18
-    june "Manis! Terima kasih, {b}[firstname]{/b}!"
-
+    june "Sweet! Thanks, {b}[firstname]{/b}!"
     return
 
 label june_intro:
@@ -453,14 +351,11 @@ label june_intro:
     show june 1 at right
     show player 14 at left
     with dissolve
-    player_name "Hai!"
-
+    player_name "Hi!"
     show june 3
     show player 1
-    june "Oh, eh, hai?"
-
-    june "Ada apa?"
-
+    june "Oh, uh, hi?"
+    june "What's up?"
     show june 2
     return
 
@@ -468,629 +363,463 @@ label june_intro_intimate:
     show player 14 at left
     show june 5 at right
     with dissolve
-    player_name "Hai, {b}Juni{/b}!"
-
+    player_name "Hey, {b}June{/b}!"
     show player 1
     show june 6
-    june "Hai, {b}[firstname]{/b}!"
-
-    june "Ada apa?"
-
+    june "Hi, {b}[firstname]{/b}!"
+    june "What's up?"
     show june 5
     return
 
 label june_dialogue_okita_get_bifocal_lenses:
     show player 2
-    player_name "Hei, jadi uhh..."
-
-    player_name "Saya sedang membantu {b}Nona Okita{/b} dengan sebuah proyek."
-
+    player_name "Hey, so uhh..."
+    player_name "I'm kinda helping {b}Miss Okita{/b} with a project."
     show player 1
     show june 4
-    june "{b}Nona Okita{/b} meminta bantuan Anda dengan desainnya?"
-
+    june "{b}Miss Okita{/b} asked you for help with her designs?"
     show player 10
     show june 2
-    player_name "Ya."
-
-    player_name "... Dan kita memerlukan beberapa {b}lensa{/b}, misalnya dari kacamata?"
-
+    player_name "Yes."
+    player_name "... And we need some {b}lenses{/b}, like from a pair of glasses?"
     show player 11
     show june 4
-    june "Kamu mau kacamataku?"
-
+    june "You want my glasses?"
     show player 10
     show june 2
-    player_name "Baiklah, saya berharap Anda memiliki satu set cadangan?"
-
+    player_name "Well, I was hoping you might have a spare set?"
     show player 11
     show june 4
-    june "Tidak, hanya satu saja."
-
+    june "Nope, just the one."
     show player 10
     show june 2
-    player_name "Mungkin aku bisa meyakinkanmu untuk memberiku sepasang itu?"
-
+    player_name "Maybe I could convince you to give me that pair?"
     show player 11
     show june 4
-    june "Saya meragukannya."
-
+    june "I doubt it."
     show player 10
     show june 2
-    player_name "Hmm, kamu rabun jauh atau rabun jauh?"
-
+    player_name "Hmm, are you farsighted or nearsighted?"
     show player 11
     show june 3
-    june "Rabun jauh."
-
+    june "Nearsighted."
     show player 29 with dissolve
     show june 2
-    player_name "Oh, sudahlah kalau begitu."
-
-    player_name "Saya membutuhkan sepasang dari seseorang yang keduanya."
-
+    player_name "Oh, never mind then."
+    player_name "I need a pair from someone who is both."
     show player 3
     show june 4
-    june "Saya tidak percaya {b}Nona Okita{/b} meminta ANDA untuk membantu proyeknya..."
-
+    june "I can't believe {b}Miss Okita{/b} asked YOU to help with her projects..."
     show player 29
     show june 2
-    player_name "Yah, dia agaknya, memaksaku..."
-
+    player_name "Well, she's kinda, forcing me..."
     show player 3
     show june 6
-    june "Ya, itu terdengar lebih mirip dengannya."
-
+    june "Yeah, that sounds more like her."
     show june 3
-    june "Semoga beruntung."
-
+    june "Well, good luck."
     show player 2 with dissolve
     show june 2
-    player_name "Ya terima kasih."
-
+    player_name "Yeah, thanks."
     return
 
 label june_dialogue_ross_ask_model:
     show player 2
-    player_name "Saya sedang mengerjakan proyek untuk {b}Miss Ross{/b} dan itu memerlukan model langsung."
-
-    player_name "Apakah Anda tertarik?"
-
+    player_name "I'm working on a project for {b}Miss Ross{/b} and it requires a live model."
+    player_name "Would you be interested?"
     show player 1
     show june 3
-    june "Pemodelan?"
-
+    june "Modeling?"
     show june 3b
-    june "Apakah aku terlihat seperti model bagimu?"
-
+    june "Do I look like a model to you?"
     show player 10
     show june 5
-    player_name "Tentu, kenapa tidak?"
-
+    player_name "Sure, why not?"
     show player 11
     show june 3b
-    june "Pfft, usaha yang bagus."
-
+    june "Pfft, nice try."
     show june 3
-    june "Lagipula aku punya rencana lain..."
-
+    june "I've got other stuff planned anyways..."
     show player 10
     show june 5
-    player_name "Anda melakukannya?"
-
+    player_name "You do?"
     show june 3
     show player 11
-    june "Ya, paket ekspansi untuk {i}Orcette's Dungeon{/i} diluncurkan hari ini."
-
-    june "Anda sebaiknya percaya saya mendapatkan salinannya!"
-
+    june "Yeah, the expansion pack for {i}Orcette's Dungeon{/i} launched today."
+    june "You better believe I'm getting a copy!"
     show player 10
     show june 5
-    player_name "Baiklah, bersenang-senanglah menurutku."
-
+    player_name "Alright, have fun I guess."
     show player 11
     show june 3b
-    june "Oh, aku akan melakukannya!"
-
+    june "Oh, I will!"
     return
 
 label june_date_hang:
     show player 14
-    player_name "Saya ingin tahu apakah Anda ingin nongkrong di tempat saya?"
-
+    player_name "I was wondering if you wanted to hang out at my place?"
     label june_date_hang_confirm:
     show player 1
     show june 6
-    june "Tentu!"
-
-    june "Sepulang sekolah?"
-
+    june "Sure!"
+    june "After school?"
     show player 14
     show june 5
-    player_name "Ya."
-
+    player_name "Yeah."
     label june_date_hang_details:
     show player 1
     show june 6
-    june "Jadi, ini kamarmu?"
-
+    june "So, your room it is, then?"
     show player 10
     show june 5
-    player_name "Kamarku?"
-
+    player_name "My room?"
     show player 11
     show june 6
-    june "Ya! Kami membutuhkan tempat yang tenang dan menyenangkan untuk bersantai dan bermain game."
-
+    june "Yeah! We need a nice quiet place to chill and play games."
     show player 14
     show june 5
-    player_name "Hehe, oke!"
-
+    player_name "Heh, okay!"
     show player 1
     show june 6
-    june "Luar biasa!"
-
-    june "Aku ada kelas sebentar lagi, aku harus berangkat."
-
-    june "Sampai jumpa sepulang sekolah, {b}[firstname]{/b}!"
-
+    june "Awesome!"
+    june "I got classes coming up, I should get going."
+    june "I'll see ya after school, {b}[firstname]{/b}!"
     return
 
 label june_date_later:
     show player 14
-    player_name "Masih aktif sepulang sekolah?"
-
+    player_name "Still on for after school?"
     show player 1
     show june 6
-    june "Ya! Aku akan menemuimu di tempatmu."
-
+    june "Yeah! I'll meet you at your place."
     show june 5
     show player 14
-    player_name "Besar! Sampai jumpa lagi, {b}Juni{/b}!"
-
+    player_name "Great! I'll see ya later, {b}June{/b}!"
     return
 
 label june_date_tired:
     show june 1
     show player 10
-    player_name "Aku benar-benar minta maaf karena aku sangat lelah terakhir kali, dan akhirnya kita tidak bisa bermain bersama!"
-
+    player_name "I'm really sorry I was so tired last time, and we didn't end up playing together!"
     show player 11
-    june "Hmm..."
-
+    june "Hmmm..."
     show june 4
-    june "Apa?"
-
+    june "What?"
     show june 6
-    june "Maaf, saya agak asyik, apa yang kamu katakan?"
-
+    june "Sorry, I was kinda engrossed, what were you saying?"
     show june 5
-    june "( ... {i}bermain bersama{/i}... )"
-
+    june "( ... {i}play together{/i}... )"
     show june 6
-    june "Oh, benar, bermain bersama! Tentu, bagaimana kalau sepulang sekolah?"
-
+    june "Oh, right play together! Sure, how about after school?"
     show june 5
     show player 29
     with dissolve
-    player_name "Errr... Ya, tentu! Kedengarannya bagus."
-
+    player_name "Errr... Yeah, sure! Sounds good."
     show player 1 with dissolve
     jump june_date_hang_details
 
 label june_date_retry:
     show player 14
-    player_name "Ingin mencoba mengalahkan bos terakhir itu lagi?"
-
+    player_name "Want to try beating that final boss again?"
     jump june_date_hang_confirm
 
 label june_date_sorry:
     show player 10
-    player_name "Maaf saya menyebut permainan Anda kotor."
-
+    player_name "Sorry I called your game gross."
     show player 11
     show june 3b
-    june "Itu juga merupakan kejutan bagi saya!"
-
+    june "It was kind of a surprise for me too!"
     show june 4
-    june "Tapi menurutku itu tidak menjijikkan..."
-
+    june "I didn't think it was gross though..."
     show june 2
     show player 10
-    player_name "Mungkin kita bisa memainkannya lagi? Jika Anda mau?"
-
+    player_name "Maybe we can play it again? If you want to?"
     show player 11
     show june 3
-    june "Benar-benar?"
-
+    june "Really?"
     show june 4
-    june "Sepertinya itu bukan kesukaanmu..."
-
+    june "It didn't seem like your thing..."
     show june 1
     show player 10
-    player_name "Tapi aku suka bermain denganmu."
-
-    player_name "Dan mungkin ini tidak akan terlalu mengejutkan untuk kedua kalinya."
-
+    player_name "But I like playing with you."
+    player_name "And maybe it won't be as shocking second time through."
     show player 40 with dissolve
-    player_name "Silakan?"
-
+    player_name "Please?"
     show june 3b
-    june "Oke! Oke! Hentikan itu! Kita bisa bermain!"
-
+    june "Ok! Ok! Stop that! We can play!"
     show june 3
     show player 11
     with dissolve
-    june "Aku akan menemuimu di rumahmu sepulang sekolah."
-
+    june "I'll see you at your house after school."
     show june 2
     show player 21
-    player_name "Besar! Sampai jumpa lagi!"
-
+    player_name "Great! See you then!"
     return
 
 label june_dialogue_cosplay_no_costume:
     show player 14
-    player_name "Cosplay apa yang ingin kamu buat lagi?"
-
+    player_name "What cosplay were you trying to make again?"
     show player 1
     show june 3
-    june "Oh, itu kostum orcette."
-
-    june "Seharusnya ada gigi, kalung, dan ikat pinggang!"
-
+    june "Oh, it's an orcette costume."
+    june "It should have the teeth, necklace and belt!"
     show player 14
     show june 2
-    player_name "Ah benar!"
-
-    player_name "Kayaknya aku tahu {b}tempat di mall yang punya kostum{/b}..."
-
+    player_name "Ah, right!"
+    player_name "I think I know {b}a place in the mall that has costumes{/b}..."
     show player 1
     show june 6
-    june "Oh ya?"
-
+    june "Oh yeah?"
     show player 14
     show june 5
-    player_name "Saya mungkin akan pergi ke sana dan memeriksanya!"
-
+    player_name "I might go by there and check it out!"
     show player 1
     show june 6
-    june "Dingin! Sampai jumpa."
-
+    june "Cool! See ya."
     return
 
 label june_dialogue_cosplay_has_costume:
     show player 17
-    player_name "Saya rasa saya menemukan sesuatu yang mungkin Anda sukai!"
-
+    player_name "I think I found something you might like!"
     show player 1
     show june 3
-    june "Hah?"
-
+    june "Huh?"
     show june 6
-    june "Apa itu?"
-
+    june "What is it?"
     show june 5
     show player 423 with fastdissolve
-    player_name "Itu kostum orcette!!"
-
+    player_name "It's an orcette costume!!"
     show player 422
     show june 6
-    june "Untuk cosplayku?!"
-
+    june "For my cosplay?!"
     show player 1
     show june 7
     with dissolve
     pause
     show player 13
     show june 8
-    june "Ya ampun!!"
-
-    june "Ia memiliki semua bagian hilang yang saya butuhkan!"
-
-    june "Itu bahkan terlihat seperti gigi asli!"
-
+    june "Oh my gosh!!"
+    june "It has all the missing pieces I needed!"
+    june "Those even look like real teeth!"
     show player 17
     show june 5
     with dissolve
-    player_name "Saya senang Anda menyukainya."
-
+    player_name "I'm glad you like it."
     show player 14
-    player_name "Ini akan terlihat bagus untukmu!"
-
+    player_name "It's going to look great on you!"
     show player 1
     show june 6
-    june "Terima kasih banyak, {b}[firstname]{/b}."
-
+    june "Thank you so much, {b}[firstname]{/b}."
     show player 14
     show june 5
-    player_name "Saya senang Anda bisa melakukan cosplay keren di comic con."
-
+    player_name "I'm just glad you'll have a cool cosplay at the comic con."
     show player 11
     show june 6
-    june "Saya mungkin akan mendapat banyak perhatian dari orang banyak, saya yakin!"
-
+    june "I'll probably get a lot of attention from the crowds, I'm sure!"
     show player 10
     show june 5
-    player_name "Maksudmu seperti itu, teman-teman?"
-
+    player_name "You mean like, guys?"
     show player 11
     show june 6
-    june "Yah, menurutku, ya..."
-
+    june "Well, I guess, yeah..."
     show june 5
     player_name "..."
     show june 6
-    june "Tapi tahukah Anda?"
-
-    june "Saya pikir saya harus mencoba cosplaynya sebelum saya pergi!"
-
-    june "Mungkin memakainya... Di depan teman?"
-
+    june "But you know what?"
+    june "I think I should test out the cosplay before I go!"
+    june "Maybe put it on... In front of a friend?"
     show june 5
     show player 10
-    player_name "Seperti siapa?"
-
+    player_name "Like who?"
     show player 11
     show june 6
-    june "Anda!! Konyol..."
-
+    june "You!! Silly..."
     show player 17
     show june 5
     player_name "Oh, haha!"
-
     show player 14
-    player_name "Tentu, saya bisa emm... Memberi Anda masukan!"
-
+    player_name "Sure, I could emm... Give you some feedback!"
     show player 1
     show june 6
-    june "Besar! Bagaimana kalau kita bertemu di rumahmu... Seperti terakhir kali?"
-
+    june "Great! How about we meet at your house... Like last time?"
     show player 14
     show june 5
-    player_name "Baiklah, sampai jumpa sepulang sekolah nanti!"
-
+    player_name "Okay, I'll see you after school then!"
     show player 1
     show june 6
-    june "Sampai jumpa lagi!"
-
+    june "See you later!"
     return
 
 label june_dialogue_ask_about_class:
     show player 14
-    player_name "Hei, kamu di kelas apa?"
-
-    player_name "Aku jarang melihatmu di sekolah."
-
+    player_name "Hey, what class are you in?"
+    player_name "I don't see you around school often."
     show player 1
     show june 3
-    june "Oh, aku tidak berolahraga."
-
-    june "aku lebih suka berlama-lama di sini..."
-
+    june "Oh, I don't do sports."
+    june "I prefer hanging around here..."
     show player 14
     show june 2
-    player_name "Apa yang kamu lakukan di lab komputer?"
-
+    player_name "What do you do in the computer lab?"
     show player 1
     show june 3
-    june "Anda tahu, hanya sekedar... Seperti browsing internet..."
-
-    june "... Membuka papan pesan, menonton streaming, dan bermain game."
-
+    june "You know, just stuff... Like browsing the internet..."
+    june "... Going on message boards, watching streams and playing games."
     show june 2
     show player 14
-    player_name "Game, ya?"
-
+    player_name "Games, huh?"
     show player 1
     show june 3
-    june "Ya."
-
+    june "Yeah."
     show june 1
     show player 14
-    player_name "Seperti yang kamu pegang?"
-
+    player_name "Like the one you're holding?"
     show player 1
     show june 3
-    june "Oh, benda ini? Itu hanya permainan konyol..."
-
+    june "Oh, this thing? It's just a silly game..."
     show player 14
     show june 2
-    player_name "Apa namanya?"
-
+    player_name "What's it called?"
     show player 1
     show june 3
-    june "Namanya {i}Orc Bork{/i}."
-
+    june "It's called {i}Orc Bork{/i}."
     show player 14
     show june 2
-    player_name "Sebuah permainan tentang orc?"
-
+    player_name "A game about orcs?"
     show player 1
     show june 3
-    june "Ya."
-
+    june "Yeah."
     show june 4
-    june "Ini cukup sulit."
-
+    june "It's pretty hard."
     show player 11
-    june "Saya sudah mencoba mengalahkannya selama berbulan-bulan..."
-
+    june "I've been trying to beat it for months..."
     show player 14
     show june 2
-    player_name "Apakah sesulit itu?"
-
+    player_name "Is it really that difficult?"
     show player 1
     show june 3
-    june "Nah, akan lebih mudah jika Anda bermain dengan dua pemain."
-
+    june "Well, it's easier when you play with two players."
     show june 4
-    june "Aku hanya belum menemukan orang yang memainkan permainan semacam ini di sekolah..."
-
+    june "I just haven't found anyone who plays these kinda games at school..."
     show june 3
-    june "Kecuali, mungkin Anda kenal seseorang?"
-
+    june "Unless, maybe you know someone?"
     show june 1
     return
 
 label june_dialogue_erik_help:
     show player 14
-    player_name "Sebenarnya, aku tahu!"
-
-    player_name "Teman baikku {b}Erik{/b} MENCINTAI game yang mengandung Orc!"
-
-    player_name "Terutama... Orcette."
-
-    player_name "Menurutku kalian berdua harus bermain bersama!"
-
+    player_name "Actually, I do!"
+    player_name "My good friend {b}Erik{/b} LOVES games with orcs in them!"
+    player_name "Especially... The orcettes."
+    player_name "I think you two should totally play together!"
     show player 1
     show june 3
     june "{b}Erik{/b}?"
-
     show player 11
-    june "sepertinya aku tidak mengenalnya..."
-
+    june "I don't think I know him..."
     show player 10
     show june 1
-    player_name "Dia bilang kamu pernah meminjam salah satu pensilnya."
-
+    player_name "He said you borrowed one of his pencils once."
     show player 1
     show june 4
-    june "Hah..."
-
+    june "Huh..."
     show player 14
     show june 5
-    player_name "Yah, dia menghabiskan banyak waktu di kamarnya... Bermain game..."
-
+    player_name "Well, he spends a lot of time in his room... Playing games..."
     show player 1
     show june 6
-    june "Dengan serius?"
-
+    june "Seriously?"
     show player 14
     show june 5
-    player_name "Saya pikir dia bisa membantu Anda mengalahkan permainan itu."
-
+    player_name "I think he could help you beat that game."
     show player 1
     show june 6
-    june "Itu akan luar biasa."
-
-    june "Beri tahu saya jika dia bersedia melakukannya!"
-
+    june "That would be awesome."
+    june "Let me know if he's up for it!"
     show player 17
     show june 5
-    player_name "Manis!!"
-
+    player_name "Sweet!!"
     show player 14
-    player_name "Saya pasti akan memberi tahu dia."
-
+    player_name "I'll definitely let him know."
     return
 
 label june_dialogue_mc_help:
     show player 14
-    player_name "Aku tidak begitu pandai dalam permainan itu... Tapi aku akan mencobanya!"
-
+    player_name "I'm not really good at those games... But I'll try!"
     show player 1
     show june 4
-    june "Kamu... Ingin bermain denganku?"
-
-    june "Apakah Anda yakin akan menyukainya?"
-
+    june "You... Want to play with me?"
+    june "Are you sure you would like that?"
     show player 14
     show june 2
-    player_name "Tentu, kenapa tidak?"
-
+    player_name "Sure, why not?"
     show player 11
     show june 3
-    june "Yah, hanya saja belum pernah ada yang bertanya sebelumnya..."
-
+    june "Well, it's just that no one has ever asked before..."
     show player 17
     show june 2
-    player_name "Saya dengan senang hati akan menjadi yang pertama bagi Anda!"
-
+    player_name "I'd gladly be your first!"
     show player 21
     show june 5
-    player_name "Err... maksudku... Tidak seperti-"
-
+    player_name "Err... I mean... Not like-"
     show player 11
     show june 6
-    june "Haha, kamu lucu."
-
+    june "Haha, you're funny."
     show june 5
     player_name "..."
     show player 14
-    player_name "Jadi... Kamu ingin bermain sekarang?"
-
+    player_name "So... You want to play now?"
     show player 11
     show june 6
-    june "Umm... Bagaimana kalau kita bermain di tempat lain?"
-
-    june "Aku sedikit lelah menghabiskan seluruh waktuku di lab komputer ini..."
-
+    june "Umm... How about we play somewhere else?"
+    june "I'm a bit tired of spending all my time in this computer lab..."
     show player 14
     show june 5
-    player_name "Oke, lalu di mana?"
-
+    player_name "Okay, where then?"
     show player 10
-    player_name "Jika kita bermain di lorong, {b}Annie{/b} akan memberi kita detensi..."
-
+    player_name "If we play in the hallway, {b}Annie{/b} will give us detention..."
     show player 11
     show june 6
-    june "Hmm... Bagaimana kalau kita bermain di rumahmu?"
-
+    june "Hmm... How about we play at your house?"
     show player 12
     show june 5
-    player_name "Saya... Rumah saya?!"
-
+    player_name "My... My house?!"
     show player 11
     show june 6
-    june "Ya!"
-
-    june "Sepulang sekolah?"
-
+    june "Yeah!"
+    june "After school?"
     show player 10
     show june 5
-    player_name "Uhh... kurasa kita bisa?"
-
+    player_name "Uhh... I guess we could?"
     show player 11
     show june 6
-    june "Luar biasa!"
-
-    june "Terima kasih sudah mau bermain denganku..."
-
+    june "Awesome!"
+    june "Thanks for wanting to play with me..."
     show player 13
-    june "Itu... Kamu baik sekali!"
-
+    june "It's... Really nice of you!"
     show player 14
     show june 5
-    player_name "Oh, haha. Bukan apa-apa..."
-
+    player_name "Oh, haha. It's nothing..."
     show player 1
     show june 6
-    june "Sampai jumpa malam ini!"
-
-    june "Aku akan menunggumu di dalam."
-
+    june "See you tonight!"
+    june "I'll be waiting in for you."
     show player 17
     show june 5
-    player_name "Tentu!"
-
+    player_name "Sure!"
     return
 
 label june_dialogue_leave:
     show june 2 at right
     show player 14
-    player_name "Oh, tidak ada apa-apa!"
-
-    player_name "Hanya menyapa."
-
+    player_name "Oh, nothing!"
+    player_name "Just saying hi."
     show player 1
     show june 4
-    june "Oh, baiklah kalau begitu..."
-
+    june "Oh, okay then..."
     show june 1
     show player 29
     with dissolve
-    player_name "Err... Sampai jumpa lagi!"
-
+    player_name "Err... I'll see you later!"
     return
 # Decompiled by unrpyc: https://github.com/CensoredUsername/unrpyc

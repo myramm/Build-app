@@ -5,232 +5,169 @@ label terry_button_contest_roxxy_go_see_contest:
     show old_sara_bikini zorder 5 at Position (xpos=900)
     show player 13 zorder 2 at left
     with dissolve
-    sara "Oh, lihat sayang!"
-
-    sara "Teman kecilmu ada di sini."
-
+    sara "Oh, look dear!"
+    sara "Your little friend is here."
     show old_sara 1
     show tstand 2
-    terry "Oh ho, memang dia..."
-
-    terry "Hai, Kapten!"
-
-    terry "Datang untuk melihat-lihat pemandangan ya?"
-
+    terry "Oh ho, indeed he is..."
+    terry "Hey there, Skipper!"
+    terry "Come to take in the sights have ya?"
     show tstand 1
     show player 14
-    player_name "Hai {b}Kapten{/b}!"
-
-    player_name "Halo, {b}Nona Sara{/b}!"
-
+    player_name "Hey {b}Captain{/b}!"
+    player_name "Hello, {b}Miss Sara{/b}!"
     show player 17
-    player_name "Ya, ini luar biasa!"
-
+    player_name "Yeah, this is awesome!"
     show player 13
     show old_sara 2
-    sara "hehe."
-
+    sara "Hehe."
     show old_sara 1
     show tstand 2
-    terry "Ya, tentu saja, Nak."
-
+    terry "Aye, it sure is, lad."
     show tstand 1
     show player 14
-    player_name "Apa yang kalian berdua lakukan di sini?"
-
+    player_name "What are you two doing here?"
     show player 13
     show tstand 22
     show old_sara 2
-    sara "{b}Terry{/b} menjadi tuan rumah kontes."
-
+    sara "{b}Terry{/b} is hosting the contest."
     show old_sara 1
     show tstand 1
     show player 14
-    player_name "Benar-benar?!"
-
-    player_name "Keren sekali, {b}Kapten{/b}!"
-
+    player_name "Really?!"
+    player_name "That's so cool, {b}Captain{/b}!"
     show player 13
     show tstand 2
-    terry "Oh ho, itu bukan masalah besar."
-
-    terry "Saya telah menjadi tuan rumah acara ini selama tiga tahun berturut-turut sekarang."
-
+    terry "Oh ho, it's no big deal."
+    terry "I've been hosting this thing for three years straight now."
     show tstand 1
     show player 14
-    player_name "Apakah itu berarti {b}Nona Sara{/b} akan ikut kontes?!"
-
+    player_name "Does that mean {b}Miss Sara{/b} is going to be in the contest?!"
     show player 13
     show tstand 22
     show old_sara 2
-    sara "Oh, maukah kamu melihatku mengenakan bikini, {b}[firstname]{/b}?"
-
+    sara "Oh, would you like to see me in a bikini, {b}[firstname]{/b}?"
     show old_sara 1
     show tstand 22b
-    terry "Yah, tentu saja dia akan melakukannya, sayang!"
-
-    terry "Siapa yang tidak ingin melihat tubuhmu yang lezat itu?"
-
+    terry "Well, of course he would, love!"
+    terry "Who wouldn't want to see that delicious body of yours?"
     show tstand 22
     show old_sara 2
-    sara "Hehe, aww... Terima kasih sayang!"
-
+    sara "Hehe, aww... Thanks, dear!"
     show old_sara 1
     show tstand 2
-    terry "Sayangnya, tidak."
-
-    terry "Tidak adil jika dia berpartisipasi, karena akulah yang menilai."
-
+    terry "Unfortunately, no."
+    terry "It wouldn't really be fair if she participated, since I'm the one judging."
     show tstand 1
     show player 14
-    player_name "Hmm, menurutku itu masuk akal."
-
-    player_name "Hei, sepertinya kamu belum pernah melihat temanku {b}Roxxy{/b} di sekitar sini?"
-
+    player_name "Hmm, I guess that makes sense."
+    player_name "Hey, I don't suppose you've seen my friend {b}Roxxy{/b} around here?"
     show player 13
     show tstand 2
-    terry "Hmm, si pirang cantik dengan teman judes itu?"
-
-    terry "Ya, mereka berkeliaran di suatu tempat di sini."
-
+    terry "Hmm, that pretty blonde with the bitchy friend?"
+    terry "Aye, they're wanderin' about here somewhere."
     show tstand 1
     missy "{b}[firstname]{/b}!!!"
-
     show old_becca bikini 1bf zorder 1 at Position (xpos=550)
     show old_missy bikini 2f zorder 0 at Position (xpos=400)
     with dissolve
-    missy "Ya ampun, aku senang sekali kamu datang!"
-
+    missy "Oh my gosh, I'm so glad you came!"
     show old_missy bikini 1f
     show tstand 2
-    terry "Nah, bicaralah tentang iblis!"
-
+    terry "Well, speak of the devil!"
     show tstand 1
     show old_becca bikini 2f
-    becca "Hai, {b}[firstname]{/b}."
-
+    becca "Hey, {b}[firstname]{/b}."
     show old_becca bikini 1f
     show player 14
-    player_name "Hei, gadis-gadis."
-
+    player_name "Hey, girls."
     show player 13
     show old_sara 2
-    sara "Nah, bukankah kalian berdua terlihat manis dalam balutan bikini!"
-
+    sara "Well, don't you two look cute in your bikinis!"
     show old_sara 1
     show old_becca bikini 1 zorder 0 at Position (xpos=500)
     show old_missy bikini 13 zorder 1 at Position (xpos=350)
     with dissolve
-    missy "Hehe, menurutmu begitu?!"
-
+    missy "Heh, you think so?!"
     show old_missy bikini 1
     show old_sara 2
-    sara "Menggemaskan sekali!"
-
+    sara "Just adorable!"
     show old_sara 1
     show old_missy bikini 13
-    missy "Terima kasih!"
-
+    missy "Thanks!"
     show old_missy bikini 2
-    missy "Saya sangat lega ketika melihat {b}Kapten{/b} menjadi tuan rumah."
-
-    missy "Karena dia sudah mengatakan dia menyukai payudaraku beberapa hari yang lalu ketika kami memamerkannya..."
-
+    missy "I was so relieved when I saw the {b}Captain{/b} was hosting."
+    missy "Since he already said he liked my boobs the other day when we were flashing him..."
     show old_missy bikini 1
     show player 22
     show old_becca bikini 6
     player_name "!!!" with hpunch
     show tstand 21b
     show old_sara 7
-    sara "PERmisi?!"
-
+    sara "EXCUSE ME?!"
     show old_sara 6
     show old_missy bikini 12
     show old_becca bikini 14
-    becca "Apa-apaan ini, {b}Nona{/b}?!"
-
-    becca "Mengapa kamu mengatakan itu padanya?"
-
+    becca "What the hell, {b}Missy{/b}?!"
+    becca "Why would you tell her that?"
     show old_becca bikini 13
     show old_missy bikini 8
-    missy "Hmm, apa yang aku katakan?"
-
+    missy "Hmm, what did I say?"
     show old_missy bikini 1
     show old_becca bikini 1
     show old_sara 7
-    sara "{b}Terry{/b}, apa yang kamu lakukan?!"
-
+    sara "{b}Terry{/b}, what did you do?!"
     show player 11
     show old_sara 6
     show tstand 23b
-    terry "Apa... aku..."
-
+    terry "Wha... I..."
     show tstand 21
     show old_becca bikini 6
-    becca "Umm, kita harus pergi!"
-
+    becca "Umm, we should go!"
     show old_becca bikini 14
-    becca "{b}[firstname]{/b}, kita akan bertemu {b}Roxxy{/b} di kamar mandi jika kamu ingin bergabung dengan kami."
-
+    becca "{b}[firstname]{/b}, we're meeting {b}Roxxy{/b} over at the showers if you wanna join us."
     hide old_becca
     hide old_missy
     with dissolve
-    becca "Kamu bodoh sekali!"
-
-    missy "Saya tidak mengerti apa yang sedang terjadi..."
-
+    becca "You are such an idiot!"
+    missy "I don't understand what's going on..."
     show player 37 with dissolve
     player_name "..."
     show tstand 23b
-    terry "... Sekarang, sayang."
-
-    terry "Tenang saja dan biarkan saya menjelaskannya."
-
+    terry "... Now, love."
+    terry "Just calm down and let me explain."
     show tstand 23
     sara "..."
     show old_sara 7
-    sara "Ayo, jelaskan dirimu sendiri!"
-
+    sara "Go on then, explain yourself!"
     show old_sara 6
     show player 11 with dissolve
     show tstand 23b
-    terry "Nah, beberapa hari yang lalu... Gadis-gadis itu memanfaatkan Skipper di sini, Anda tahu."
-
-    terry "Aku hanya menggunakan sedikit sihirku untuk memastikan dia mendapat imbalan yang cukup atas kerja kerasnya..."
-
-    terry "Itu saja!"
-
+    terry "Well, the other day... Those girls were taking advantage of the Skipper here, you see."
+    terry "I just worked a bit of my magic to insure he got some ample returns for his hard work..."
+    terry "That's all!"
     show tstand 23
     show old_sara 7
-    sara "... Eh ya."
-
-    sara "... Dan yang dimaksud dengan keuntungan besar adalah payudara gadis-gadis itu?!"
-
+    sara "... Uh huh."
+    sara "... And by ample returns you mean those girls' breasts?!"
     show old_sara 6
     show tstand 23b
-    terry "Jangan marah, sayang."
-
-    terry "Itu hanya untuk kepentingan Skipper saja..."
-
+    terry "Don't be upset, love."
+    terry "It was just for the Skipper's benefit is all..."
     show tstand 1
     show old_sara 2
-    sara "Oh? ... Dan bagaimana kabarnya, {b}[firstname]{/b}?"
-
+    sara "Oh? ... And how were they, {b}[firstname]{/b}?"
     show old_sara 1
     show player 35
     player_name "... Uhh."
-
     show player 34
     show tstand 23b
-    terry "Sekarang, jangan ganggu anak itu!"
-
+    terry "Now, don't hassle the lad!"
     show tstand 23
     show old_sara 7
-    sara "Tidak, aku ingin mendengar apa yang dia katakan!"
-
+    sara "No, I wanna hear what he has to say!"
     show old_sara 2
-    sara "Apakah mereka lebih baik dari ini?!"
-
+    sara "Were they better than these?!"
     show old_sara 8 with dissolve
     pause
     hide old_sara_bikini
@@ -241,62 +178,46 @@ label terry_button_contest_roxxy_go_see_contest:
     show tstand 21b
     player_name "!!!" with hpunch
     show tstand 22b
-    terry "Ha ha ha ha! Oh, aku mengerti apa yang kamu lakukan..."
-
-    terry "... Tuhan, aku mencintai wanita ini!"
-
+    terry "Hahahaha! Oh, I see what you're doing..."
+    terry "... Lord, I love this woman!"
     show tstand 22
     show player 13
     show old_sara 10
-    sara "Dengan baik?!"
-
+    sara "Well?!"
     show old_sara 9
     player_name "..."
     show player 10
     player_name "Oh, uhh!"
-
     show player 29 with dissolve
-    player_name "TIDAK! Itu adalah..."
-
-    player_name "... Wah!"
-
-    player_name "Itu luar biasa!"
-
+    player_name "No! Those are..."
+    player_name "... Wow!"
+    player_name "Those are wonderful!"
     show player 13 with dissolve
     show tstand 2
-    terry "Oh, Nak... Kamu tidak tahu!"
-
+    terry "Oh, lad... You have no idea!"
     show tstand 22b
-    terry "Anda merasa lebih baik sekarang?"
-
-    terry "Kamu tahu kamu satu-satunya wanita yang aku butuhkan!"
-
+    terry "You feel better now?"
+    terry "You know you're the only woman I need!"
     show tstand 22
     show old_sara_bikini zorder 4 at Position (xpos=900)
     show old_sara 8
     with dissolve
     sara "..."
     show old_sara 7 with dissolve
-    sara "Sebaiknya aku seperti itu!"
-
+    sara "I had better be!"
     show old_sara 5
-    sara "Sebenarnya, kamu tahu?!"
-
-    sara "Saya pikir Anda memerlukan pengingat yang nyata!"
-
+    sara "In fact, you know what?!"
+    sara "I think you need a real reminder!"
     show tstand 23b
-    terry "Hah, sekarang?!"
-
+    terry "Huh, now?!"
     show tstand 22
     hide old_sara_bikini
     show old_sara 12
     with dissolve
-    sara "Itu benar! Kita punya waktu sebelum kontes dimulai..."
-
+    sara "That's right! We've got some time before the contest starts..."
     pause
     hide old_sara with dissolve
-    sara "... Dan aku tahu tempat yang tepat!"
-
+    sara "... And I know the perfect place!"
     player_name "..."
     show old_sara 11 zorder 4 at right with dissolve
     pause
@@ -305,22 +226,16 @@ label terry_button_contest_roxxy_go_see_contest:
     with dissolve
     pause
     show tstand 25 with dissolve
-    terry "... Dasar gadis nakal kecil yang nakal!"
-
-    terry "Sebaiknya pergi dan temukan istrimu, Skipper... Ini akan memakan waktu cukup lama!"
-
+    terry "... You naughty little minx!"
+    terry "Best go and find your ladies, Skipper... This is going to take a while!"
     show tstand 26 at right with dissolve
     terry "Oh ho ho!!!"
-
     hide tstand with dissolve
     show player 13
-    player_name "( Wow, {b}Kapten Terry{/b} sungguh orang yang beruntung! )"
-
-    player_name "(Aku harus mencari {b}Roxxy{/b} dan teman-temannya. )"
-
+    player_name "( Wow, {b}Captain Terry{/b} sure is a lucky guy! )"
+    player_name "( I should go find {b}Roxxy{/b} and her friends. )"
     show player 34
-    player_name "(Mereka mengatakan sesuatu tentang {b}mandi{/b}... )"
-
+    player_name "( They said something about a {b}shower{/b}... )"
     hide player with dissolve
     return
 # Decompiled by unrpyc: https://github.com/CensoredUsername/unrpyc

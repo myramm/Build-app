@@ -33,6 +33,5 @@ label dining_room_table_dialogue:
     show expression "characters/xtra/overlay_o_dinner_table.png" with None
     with dissolve
     player_name "( Nobody's here. The table isn't set either. )"
-
     $ game.main()
 # Decompiled by unrpyc: https://github.com/CensoredUsername/unrpyc

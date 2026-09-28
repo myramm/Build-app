@@ -7,157 +7,109 @@ label crystal_police_cell_dialogue_roxxy_talk_to_crystal:
     show player 5f at right
     show old_roxxy 3d at Position (xpos=700)
     with dissolve
-    crystal "Apakah itu putri mah?"
-
-    crystal "Apa yang akan kamu lakukan di sini?"
-
+    crystal "Is that mah daughter?"
+    crystal "What are ya'll doing here?"
     show old_crystal jail 1
     show player 11f
     show old_roxxy 3
-    roxxy "Kali ini kamu benar-benar mengacau, {b}Bu{/b}!"
-
-    roxxy "Mereka menyita trailernya, dan mereka berencana mengirimmu ke penjara!"
-
+    roxxy "You really screwed up this time, {b}Mom{/b}!"
+    roxxy "They foreclosed the trailer, and they're talking about sending you to prison!"
     show old_roxxy 3d
     show old_crystal jail 2
-    crystal "Pfft, babi-babi ini tidak akan berbuat apa-apa."
-
-    crystal "Mereka semua bicara!"
-
+    crystal "Pfft, these pigs ain't gonna do nuthin'."
+    crystal "They're all talk!"
     show old_crystal jail 1
     show player 5f
     show old_roxxy 3c
-    roxxy "{b}Bu{/b}, ini bukan lelucon!"
-
-    roxxy "Mereka menemukan satu pon sabu!"
-
-    roxxy "Anda akan diusir untuk waktu yang lama!"
-
+    roxxy "{b}Mom{/b}, this isn't a joke!"
+    roxxy "They found a pound of meth!"
+    roxxy "You're going to get sent away for a long time!"
     show old_roxxy 3d
     show old_crystal jail 2
-    crystal "Fiuh, setidaknya mereka tidak menemukan simpanan besar!"
-
+    crystal "Phew, at least they didn't find the big stash!"
     show old_crystal jail 1
     show player 11f
     player_name "!!!" with hpunch
     show player 10f
-    player_name "Maksudmu masih ada lagi?!"
-
+    player_name "You mean there's more?!"
     show player 5f
     show old_crystal jail 2
-    crystal "Hah?"
-
-    crystal "Aku tidak tahu apa yang kamu bicarakan..."
-
-    crystal "Lagipula kenapa kamu membawa pacarmu ke sini?!"
-
-    crystal "Ini urusan keluarga dan ini urusan pribadi!"
-
-    crystal "Bukankah aku sudah mengajarimu hal itu?"
-
+    crystal "Huh?"
+    crystal "I dunno what yer talkin' about..."
+    crystal "Why'd you bring your boyfriend down here anyways?!"
+    crystal "This is family business and it's personal!"
+    crystal "Didn't I teach you that?"
     show old_crystal jail 3
     show old_roxxy 30
-    roxxy "Dia bukan pacarku-"
-
+    roxxy "He's not my boyfrien-"
     show old_roxxy 3d
     roxxy "..."
     show old_roxxy 3c
-    roxxy "Tolong fokus!"
-
-    roxxy "Aku tahu betul bahwa semua barang itu milik si idiot itu {b}Clyde{/b}!"
-
+    roxxy "Would you focus please!"
+    roxxy "I know damn well that stuff all belongs to that idiot {b}Clyde{/b}!"
     show old_roxxy 3b
     show old_crystal jail 2
-    crystal "Apa yang sedang kamu lakukan?!"
-
-    crystal "Tutup mulutmu!"
-
+    crystal "What are you doin'?!"
+    crystal "Shut yer mouth!"
     show old_crystal jail 3
     show old_roxxy 3c
-    roxxy "Mengapa kamu jatuh cinta padanya?"
-
-    roxxy "Ini kekacauannya, bukan kekacauan kita..."
-
+    roxxy "Why are you taking the fall for him?"
+    roxxy "This is his mess, not ours..."
     show old_roxxy 3d
     show old_crystal jail 2
-    crystal "Dia keluarga, {b}Roxanne{/b}!"
-
-    crystal "... Dan kami menjaga keluarga!"
-
-    crystal "Sekarang, aku tahu aku mengajarimu hal itu!"
-
+    crystal "He's family, {b}Roxanne{/b}!"
+    crystal "... And we take care of family!"
+    crystal "Now, I know I taught you that!"
     show old_crystal jail 1
     show old_roxxy 30
-    roxxy "Ini bodoh..."
-
+    roxxy "This is stupid..."
     show old_roxxy 29
     show old_crystal jail 2
-    crystal "Sudah kubilang pada bibimu aku akan menjaganya selama dia di sini."
-
-    crystal "Saya tidak akan melihatnya diseret ke penjara."
-
+    crystal "I told your auntie I'd look after him while he was up here."
+    crystal "I ain't about to watch him get hauled off to prison."
     show old_crystal jail 1
     show old_roxxy 3c
-    roxxy "... Dan apa yang harus aku lakukan?!"
-
-    roxxy "Jika Anda terbukti bersalah, mereka akan mengambil alih trailernya!"
-
-    roxxy "Apa sebaiknya aku tidur saja di luar, di dalam hutan?"
-
+    roxxy "... And what am I supposed to do?!"
+    roxxy "If you get convicted they're gonna repossess the trailer!"
+    roxxy "Am I supposed to just sleep outside in the woods?"
     show old_roxxy 3b
     show old_crystal jail 2
-    crystal "Jangan bodoh."
-
-    crystal "Kamu bisa tinggal bersama bibi dan sepupumu."
-
+    crystal "Don't be stupid."
+    crystal "You can just go on down to live with your auntie and cousins."
     show old_crystal jail 1
     show old_roxxy 3
-    roxxy "Mereka tinggal di sebuah kabin tua yang kumuh, di antah berantah!"
-
+    roxxy "They live in an old run down cabin, in the middle of nowhere!"
     show old_roxxy 3d
     show old_crystal jail 2
-    crystal "... Jadi?"
-
+    crystal "... So?"
     show old_crystal jail 1
     show old_roxxy 3
-    roxxy "Jadi, tidak mungkin!"
-
-    roxxy "Aku akan menyerahkan bajingan itu pada diriku sendiri dan mendapatkan trailernya kembali."
-
+    roxxy "So, no fucking way!"
+    roxxy "I'm gonna turn that jackass in myself and get the trailer back."
     show old_roxxy 3d
     show old_crystal jail 4
-    crystal "{i}*Terkesiap*{/i}!"
-
+    crystal "{i}*Gasp*{/i}!"
     show old_crystal jail 2
-    crystal "Anda tidak akan melakukan hal seperti itu!"
-
-    crystal "Aku tidak membesarkanku, tikus sialan!"
-
-    crystal "Sekarang aku tidak bilang padamu, {b}Clyde{/b} adalah keluarga dan kamu tidak boleh mengadu tentang keluarga!"
-
+    crystal "You'll do no such thing!"
+    crystal "I didn't raise me no damned rat!"
+    crystal "Now I dun told you, {b}Clyde{/b} is family and you don't snitch on family!"
     show old_crystal jail 3
     show old_roxxy 3b
     roxxy "..."
     show old_crystal jail 2
-    crystal "Kamu mendengarku gadis?!"
-
+    crystal "You hear me girl?!"
     show old_crystal jail 3
     roxxy "..."
     show old_roxxy 3c
-    roxxy "Ya, kita akan lihat..."
-
-    roxxy "Ayo, {b}[firstname]{/b}. Ayo pergi dari sini."
-
-    roxxy "Aku tidak tahan melihatnya sekarang."
-
+    roxxy "Yeah, we'll see..."
+    roxxy "C'mon, {b}[firstname]{/b}. Let's get outta here."
+    roxxy "I can't stand to look at her right now."
     hide old_roxxy with dissolve
     show player 5 with dissolve
     player_name "..."
     show old_crystal jail 2
-    crystal "Saya tidak bercanda, {b}Roxanne{/b}!"
-
-    crystal "Jika kamu mengadu, kamu bisa melupakan tinggal bersamaku!"
-
+    crystal "I'm not joking, {b}Roxanne{/b}!"
+    crystal "If you snitch you can forget about livin' with me!"
     show old_crystal jail 3
     scene black with fade
     pause
@@ -167,144 +119,99 @@ label crystal_police_cell_dialogue_roxxy_talk_to_crystal:
     show old_roxxy 3df at Position (xpos=400)
     show earl
     with dissolve
-    earl "Nah, apakah Anda beruntung meyakinkan dia untuk mengatakan kebenaran tentang kekacauan ini?"
-
+    earl "Well, did you have any luck convincing her to tell the truth about this mess?"
     show old_roxxy 29f
     roxxy "..."
     show player 10
-    player_name "Tidak, tuan."
-
+    player_name "No, sir."
     show player 5
-    earl "Sayang sekali..."
-
+    earl "That's a damn shame..."
     player_name "..."
     show old_roxxy 3cf
-    roxxy "Bagaimana jika aku menyerahkan orang yang bertanggung jawab atas semua ini?"
-
+    roxxy "What if I turned in the one responsible for all this?"
     show old_roxxy 3df
-    earl "Anda punya informasi untuk saya?"
-
+    earl "You got information for me?"
     show player 11
     show old_roxxy 3cf
-    roxxy "Aku tidak mengatakan itu!"
-
-    roxxy "Saya hanya bertanya... \"Bagaimana jika.\""
-
+    roxxy "I didn't say that!"
+    roxxy "I'm just asking... \"What if.\""
     show old_roxxy 3bf
     show player 5
     earl f_tired @ -m_talk "Hmm..."
-
-    earl "Nah, jika Anda memang punya informasi tentang pelaku sebenarnya."
-
-    earl "... Dan bukti bahwa ibumu tidak terlibat dalam pembuatan atau distribusi obat-obatan tersebut."
-
-    earl "Saya bisa menurunkan tuntutan menjadi kepemilikan sederhana."
-
+    earl "Well, if you did have information about the real culprit."
+    earl "... And proof that your mother wasn't involved in the creation or distribution of the drugs."
+    earl "I could get the charges dropped down to simple possession."
     show old_roxxy 3df
-    earl "Itu masih satu tahun penjara dan denda yang besar."
-
+    earl "That's still a year in prison and a hefty fine."
     show old_roxxy 3bf
     roxxy "..."
     show old_roxxy 3cf
-    roxxy "Bagaimana jika orang lain menyembunyikan narkoba di trailer kita, dan dia tidak mengetahuinya?"
-
+    roxxy "What if someone else hid the drugs in our trailer, and she didn't know about it?"
     show old_roxxy 3df
-    earl f_normal "Oh, itu menarik..."
-
-    earl "Jika Anda dapat membuktikan bahwa dia tidak mengetahui bahwa ada orang lain yang menyembunyikan narkoba di rumahnya atau memaksanya menyembunyikannya di luar keinginannya..."
-
-    earl "... Mungkin saja dia tidak akan dipenjara sama sekali."
-
+    earl f_normal "Oh, now that's interesting..."
+    earl "If you could prove that she was unaware that someone else had hidden drugs in her home or had forced her to hide them against her will..."
+    earl "... It's possible she won't see prison at all."
     show old_roxxy 3cf
-    roxxy "... Dan trailernya?"
-
+    roxxy "... And the trailer?"
     show old_roxxy 3df
     earl @ f_tired -m_talk "Hmm..."
-
-    earl "Yah, dia harus tetap di penjara sampai persidangannya."
-
-    earl "Dalam hal ini trailer harus tetap disita."
-
-    earl "Kecuali Anda bisa mengirimkan uang jaminannya?"
-
+    earl "Well, she'd have to stay in jail until her trial."
+    earl "In that case the trailer would need to remain foreclosed."
+    earl "Unless you could post her bail money?"
     show player 12
-    player_name "Berapa harganya?"
-
+    player_name "How much would that be?"
     show player 5
-    earl "Untuk narkotika sebanyak ini?"
-
-    earl "Saya mengharapkan tidak kurang dari lima puluh ribu dolar..."
-
+    earl "For this amount of narcotics?"
+    earl "I'd expect nothing less than fifty thousand dollars..."
     show old_roxxy 2bf
     show player 23
-    player_name "Sialan!"
-
+    player_name "Holy crap!"
     show player 12
-    player_name "Sebanyak itu?"
-
+    player_name "That much?"
     show player 10
-    player_name "Dari mana kita bisa mendapatkan uang sebanyak itu?"
-
+    player_name "Where would we get that kind of money?"
     show player 5
     show old_roxxy 14f
     roxxy "..."
-    earl "Baiklah, sebaiknya aku kembali bekerja."
-
-    earl "Maafkan aku, aku tidak bisa berbuat lebih banyak untuk membantu kalian, anak-anak..."
-
+    earl "Well, I'd best get back to work."
+    earl "I'm sorry I can't do more to help you kids out..."
     show player 10
-    player_name "Sekali lagi terima kasih, Petugas."
-
+    player_name "Thanks again, Officer."
     show player 5
     hide earl with dissolve
     show player 10
-    player_name "Apa yang akan kamu lakukan?"
-
+    player_name "What are you gonna do?"
     show player 5
     show old_roxxy 33 at center with dissolve
-    roxxy "... Entahlah."
-
-    roxxy "Saya bisa memasukkan {b}Clyde{/b} tetapi itu tidak akan banyak membantu saya."
-
-    roxxy "Kami masih akan kehilangan trailernya dan {b}Ibu{/b} mungkin tidak akan mengakui saya."
-
+    roxxy "... I dunno."
+    roxxy "I could turn {b}Clyde{/b} in but that wouldn't really do me much good."
+    roxxy "We'll still lose the trailer and {b}Mom{/b} will probably disown me."
     show old_roxxy 32
     player_name "..."
     show old_roxxy 33
-    roxxy "Aku hanya perlu memikirkan semuanya sebentar."
-
+    roxxy "I just need to think things over for a while."
     show old_roxxy 32
     show player 10
-    player_name "... Apakah Anda memerlukan tempat tinggal? Saya yakin induk semang saya tidak akan keberatan membiarkan Anda tidur di sofa selama yang Anda butuhkan."
-
+    player_name "... Do you need a place to stay? I'm sure my landlady wouldn't mind letting you crash on the couch for as long as you need."
     show player 5
     show old_roxxy 33
-    roxxy "... Tidak, terima kasih."
-
-    roxxy "Saya bisa tinggal di tempat {b}Becca{/b} selama beberapa hari."
-
+    roxxy "... No, thanks."
+    roxxy "I can stay at {b}Becca{/b}'s place for a few days."
     show old_roxxy 32
     show player 10
-    player_name "... Baiklah."
-
-    player_name "Kurasa aku akan menemuimu di sekolah kalau begitu?"
-
+    player_name "... Alright."
+    player_name "I guess I'll see you at school then?"
     show player 5
     show old_roxxy 33
-    roxxy "... Ya."
-
+    roxxy "... Yeah."
     hide old_roxxy with dissolve
     player_name "( ... )"
     show player 24
-    player_name "( Kasihan, {b}Roxxy{/b}. )"
-
-    player_name "(Saya berharap ada sesuatu yang dapat saya lakukan untuk membantunya.)"
-
+    player_name "( Poor, {b}Roxxy{/b}. )"
+    player_name "( I wish there was something I could do to help her. )"
     show player 90
-    player_name "( ... Mungkin saya harus {b}berbicara dengan Clyde{/b} besok. )"
-
-    player_name "(Bagaimanapun juga, seluruh kekacauan ini adalah kesalahannya...)"
-
+    player_name "( ... Maybe I should {b}speak with Clyde{/b} tomorrow. )"
+    player_name "( This whole mess is his fault after all... )"
     hide player with dissolve
     return
 
@@ -316,22 +223,16 @@ label crystal_police_cell_dialogue_default:
     pause .5
     show player 5f at right
     with dissolve
-    crystal "Sebaiknya kau tutup mulut tentang semua ini!"
-
-    crystal "Ya, dengar aku?!"
-
+    crystal "You best be keepin' your mouth shut about all this!"
+    crystal "Ya hear me?!"
     show old_crystal jail 3
     show player 10f
-    player_name "Y-ya, Bu."
-
+    player_name "Y-yes, ma'am."
     show old_crystal jail 2
     show player 5f
-    crystal "Bagus."
-
-    crystal "Awasi putriku juga, selagi kamu melakukannya..."
-
-    crystal "Aku tidak membesarkannya untuk menjadi pengadu!"
-
+    crystal "Good."
+    crystal "Keep an eye on my daughter too, while yer at it..."
+    crystal "I didn't raise her to be no snitch!"
     show old_crystal jail 3
     player_name "..."
     return

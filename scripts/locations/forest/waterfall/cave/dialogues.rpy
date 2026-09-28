@@ -3,11 +3,8 @@ label cave_okita_get_ingredients:
     show player 10
     with dissolve
     player_name "Hmm, it looks like something is nesting in here!"
-
     player_name "I'd better find that {b}flower{/b} and get out before whatever it is comes home."
-
     player_name "{b}Miss Okita{/b} said they only bloom {b}at night{/b}..."
-
     return
 
 label take_caveflower:
@@ -22,8 +19,6 @@ label take_caveflower_dialogue:
     show player 559
     with dissolve
     player_name "It's... Glowing!"
-
     player_name "I need to get this back to {b}Miss Okita{/b}."
-
     return
 # Decompiled by unrpyc: https://github.com/CensoredUsername/unrpyc

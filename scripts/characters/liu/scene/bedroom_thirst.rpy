@@ -38,44 +38,30 @@ label scene_liu_bedroom_thirst.dialogue(opt, rng=-1):
     if opt == 1:
         liu "Ahh, {b}[firstname]{/b}!!"
 
-
     elif opt == 2:
-        liu "Anda pria yang luar biasa!"
-
+        liu "You're such an amazing man!"
 
         if rng < .6:
-            liu "Aku tidak ingin kamu berhenti bercinta denganku!"
-
+            liu "I don't want you to ever stop making love to me!"
 
         if rng < .3:
-            anon "Gan, aku harus..."
-
-            anon "... Berhenti..."
-
-            anon "... Akhirnya."
-
-            liu "Tidak, tidak pernah!"
-
+            anon "Gah, I'll have to..."
+            anon "... Stop..."
+            anon "... Eventually."
+            liu "No, never!"
 
     elif opt == 3:
-        anon "{i}*Suara ciuman*{/i}"
-
-        liu "Ah, ya!!"
-
+        anon "{i}*Kissing noises*{/i}"
+        liu "Ahh, yes!!"
 
         if rng < .3:
-            anon "Kamu cantik sekali, {b}Liu{/b}..."
-
-            liu "Tidak!!"
-
+            anon "You are so beautiful, {b}Liu{/b}..."
+            liu "Ngh!!"
 
     elif opt == 4:
-        liu "Pegang aku lebih erat..."
-
-        liu "... Tolong, {b}[firstname]{/b}!"
-
-        anon "Baiklah."
-
+        liu "Hold me tighter..."
+        liu "... Please, {b}[firstname]{/b}!"
+        anon "Alright."
 
     return
 
@@ -85,8 +71,7 @@ label scene_liu_bedroom_thirst.switch:
 
     show liu_sex_bed_anim 1 as anim
     with {'master': dissolve}
-    liu "MM."
-
+    liu "Mmm."
     call scene_liu_bedroom_thirst.insert
     with {'master': dissolve}
     pause .5

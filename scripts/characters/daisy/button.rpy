@@ -15,22 +15,22 @@ label daisy_button_dialogue:
     if M_daisy.pregnancy.gave_birth:
         call expression game.dialog_select("daisy_button_gave_birth_intro")
         menu daisy_baby_default_dialogue_options:
-            "Bagaimana kabarnya?" if M_daisy.pregnancy.baby_gender == "boy":
+            "How's he doing?" if M_daisy.pregnancy.baby_gender == "boy":
                 call expression game.dialog_select("daisy_button_hows_baby_doing_boy")
                 jump daisy_baby_default_dialogue_options
 
-            "Bagaimana kabar mereka?" if M_daisy.pregnancy.baby_gender == "twins":
+            "How are they doing?" if M_daisy.pregnancy.baby_gender == "twins":
                 call expression game.dialog_select("daisy_button_hows_baby_doing_twins")
                 jump daisy_baby_default_dialogue_options
 
-            "Bagaimana kabarnya?" if M_daisy.pregnancy.baby_gender == "girl":
+            "How's she doing?" if M_daisy.pregnancy.baby_gender == "girl":
                 call expression game.dialog_select("daisy_button_hows_baby_doing_girl")
                 jump daisy_baby_default_dialogue_options
-            "Ada yang bisa kuberikan padamu?":
+            "Can I get you anything?":
 
                 call expression game.dialog_select("daisy_button_get_anything_baby")
                 jump daisy_baby_default_dialogue_options
-            "Aku akan meninggalkan kalian.":
+            "I'll leave you guys be.":
 
                 call expression game.dialog_select("daisy_button_baby_leave")
         $ game.main()
@@ -121,7 +121,7 @@ label daisy_button_dialogue:
             call expression game.dialog_select("daisy_button_more_jebadiah_delmont_2")
             jump daisy_menu_button
 
-        "Berhubungan seks." if M_daisy.finished_state(S_daisy_caught_breeding) and not M_daisy.pregnancy:
+        "Have sex." if M_daisy.finished_state(S_daisy_caught_breeding) and not M_daisy.pregnancy:
             if M_daisy.get("daisy_breed_first_time"):
                 call expression game.dialog_select("daisy_button_have_sex_first")
                 $ M_daisy.trigger(T_daisy_sex)
@@ -134,7 +134,7 @@ label daisy_button_dialogue:
                 if _return == 'afterglow':
                     $ game.timer.tick()
 
-        "Bagaimana kabar bayinya?" if 0 < M_daisy.pregnancy.stage < 5:
+        "How's the baby?" if 0 < M_daisy.pregnancy.stage < 5:
             call expression game.dialog_select("daisy_button_hows_the_baby_{}".format(M_daisy.pregnancy.apparent_stage))
             jump daisy_menu_button
 
@@ -149,7 +149,7 @@ label daisy_button_dialogue:
         "You want me to milk you?" if M_daisy.finished_state(S_daisy_need_milking) and L_diane_barn_interior.is_here(M_daisy):
             call expression game.dialog_select("daisy_button_want_me_to_milk_you")
             call milking_game_pre_daisy
-        "Saya harus pergi.":
+        "I should go.":
 
             call expression game.dialog_select("daisy_button_leave")
     $ game.main()

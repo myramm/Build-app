@@ -48,39 +48,27 @@ label scene_maria_sex_bedroom.loop:
 label scene_maria_sex_bedroom.dialogue:
     if animcounter == 0 and randomizer() > 75:
         maria "Fuuuuuuuuuuck!{p=1}{nw}"
-
     if animcounter == 1 and randomizer() > 75:
         maria "Oh, gawd!{p=1}{nw}"
-
     elif animcounter == 1 and randomizer() > 75:
         maria "I love this dick, so much!{p=2}{nw}"
-
     if animcounter == 2 and randomizer() > 75:
         maria "OH, [firstname!u]!!!!{p=1}{nw}"
-
     elif animcounter == 2 and randomizer() > 75:
-        maria "Sangat dalam!{p=1}{nw}"
-
-        maria "Persetan aku lebih keras!{p=1}{nw}"
-
+        maria "It's so deep!{p=1}{nw}"
+        maria "Fuck me harder!{p=1}{nw}"
     return
 
 
 label scene_maria_sex_bedroom.cum(where):
     if where == 'inside':
         anon "Boy, boy, boy... Very tall boy!"
-
-        maria "Hah?"
-
-        maria "Apakah kamu baru saja-"
-
-        maria "Ahhh!!!"
-
+        maria "Huh?"
+        maria "Did you just-"
+        maria "AHHH!!!"
 
     maria "OH MY GAWD!"
-
     maria "GIVE ME A BABY, {b}[firstname!u]!{/b}!!!"
-
     pause
     hide animation
 
@@ -99,76 +87,48 @@ label scene_maria_sex_bedroom.cum(where):
 
     maria "NGGHHH!!!"
 
-
     if where == 'inside':
         pause
         hide xray_maria_home with dissolve
 
     anon "Haah... Haah..."
 
-
     if where == 'inside':
         maria "Oh, gawd..."
-
         maria "... This is the best sex ever!"
-
-        anon "Ya?"
-
+        anon "Yeah?"
         maria "Phew... I don't know if I ever wanna quit doin' it..."
-
-        anon "Benar-benar?"
-
+        anon "Really?"
         show maria b_sex_home_insert_pullout with dissolve
         maria "Haah!"
-
         show maria b_sex_home_pre_after op_after_cum od_after with dissolve
         pause
         show maria a_empty with dissolve
         anon "Wouldn't {b}Tony{/b} be upset if we kept doing this?"
-
         maria "Are you kiddin'?"
-
         maria "He'll be ecstatic if he finds out you'll give him more than one kid!"
-
         pause
         anon "Well, I can definitely do that!"
-
         maria f_normal_closed "Heh, I know you can, handsome..."
-
     else:
-        maria "Apa yang telah terjadi?"
-
+        maria "What happened?"
         maria "You pulled out?"
-
-        anon "Y-ya, maaf..."
-
+        anon "Y-yeah, sorry..."
         anon "The moment came and I just-"
-
         pause
         anon "Sorry, I just couldn't do it."
-
         show maria a_empty with dissolve
         maria "Oh, it's alright, {b}[firstname]{/b}..."
-
         maria "... I don't mind."
-
-        anon "Kamu tidak?"
-
+        anon "You don't?"
         maria "I mean, I would prefer you finish inside me; but if you'd rather pull out, that's okay too."
-
-        anon "Benar-benar?"
-
+        anon "Really?"
         maria f_normal_closed "Just don't tell {b}Tony{/b}, yeah?"
 
-
     maria "Now if you'll excuse me, I think I'm just gonna lay here a while and bask in my postcoital bliss..."
-
     anon "Sure, thing."
-
     anon "I'll see you later, {b}Maria{/b}."
-
-    maria "Sampai jumpa, {b}[firstname]{/b}."
-
+    maria "See ya, {b}[firstname]{/b}."
 
     if where == 'inside':
         call call_pregnancy_minigame (None, M_maria)
@@ -180,53 +140,35 @@ label scene_maria_sex_bedroom.repeat:
     show maria b_sex_home_pre_after
     with fade
     maria "Don't be shy, {b}[firstname]{/b}..."
-
     maria "I'm all yours."
-
     show maria a_pussy_open with dissolve
-    anon "{i}*Meneguk*{/i}"
-
+    anon "{i}*Gulp*{/i}"
     show maria b_sex_home_insert_pullout with dissolve
     pause
     show maria b_sex_home_cum
     maria "!!!" with hpunch
     maria "Haah!"
-
     pause
     call scene_maria_sex_bedroom.animate
     maria "Fuuuuuuuuuuck!"
-
     pause
     maria "Oh, gawd!"
-
     pause
     maria "I love this dick, so much!"
-
     maria "It feels incredible!!"
-
     pause
-    maria "Ini sangat dalam!"
-
+    maria "It's so deep!"
     maria "Oh, gawd, fuck me, {b}[firstname]{/b}!!"
-
-    maria "Persetan aku lebih keras!"
-
+    maria "Fuck me harder!"
     pause
     maria "Ahh!!"
-
     maria "I'm gonna cum!!!"
-
     anon "I'm getting close too."
-
     pause
     maria "Do it, {b}[firstname]{/b}!"
-
     maria "Put a baby inside me!"
-
-    maria "Silakan!"
-
-    anon "Y-ya, Bu."
-
+    maria "Please!"
+    anon "Y-yes, ma'am."
     pause
     call scene_maria_sex_bedroom.loop
     call scene_maria_sex_bedroom.cum (_return)

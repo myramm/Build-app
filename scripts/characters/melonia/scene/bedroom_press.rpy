@@ -43,67 +43,47 @@ label scene_melonia_bedroom_press.loop:
 label scene_melonia_bedroom_press.dialogue(opt, rng=-1):
 
     if opt == 1:
-        melonia "Ya Tuhan!!!"
-
-        anon "Anda suka itu?"
-
-        melonia "FUUUUCK AKU!!!"
-
+        melonia "Oh, god!!!"
+        anon "You like that?"
+        melonia "FUUUUCK MEEE!!!"
 
     elif opt == 2:
-        melonia "Ahhh!!"
-
+        melonia "AHHHH!!"
         melonia "{b}[firstname]{/b}!"
 
-
         if rng < .7:
-            anon "Lebih keras!"
-
-            melonia "{b}[nama depan!u]{/b}!!!"
-
+            anon "Louder!"
+            melonia "{b}[firstname!u]{/b}!!!"
 
     elif opt == 3:
         if rng < .2:
-            melonia "Itu dia!"
+            melonia "Oh, that's it!"
 
-
-        melonia "Pukul vaginaku dengan ayam kelas pekerja kotormu!"
-
+        melonia "Pound my pussy with your dirty working class cock!"
 
     elif opt == 4:
-        melonia "Hancurkan aku, dasar imigran kotor!"
-
+        melonia "Ravage me, you filthy immigrant!"
 
         if rng < .4:
-            anon "Wah..."
-
-            anon "...Tolong berhenti bicara."
-
+            anon "Wow..."
+            anon "... Please stop talking."
 
     elif opt == 5:
         melonia "Graaah!!!"
-
-        melonia "Kamu tidak akan masuk ke dalam diriku, kan {b}Hector{/b}?!"
-
+        melonia "You're not going to cum inside me, are you {b}Hector{/b}?!"
 
     elif opt == 6:
-        melonia "Tanah rahimku dengan benih asingmu!!"
-
+        melonia "Soil my womb with your foreign seed!!"
 
         if rng < .4:
-            anon "Oh, itu menjijikkan."
+            anon "Oh, that's just gross."
+            melonia "I know!"
 
-            melonia "Aku tahu!"
-
-
-        melonia "Ah, itu sangat salah..."
-
-        melonia "... Isi aku sampai penuh!"
-
+        melonia "Oh, it's so wrong..."
+        melonia "... Fill me to the brim!"
 
     elif opt == 7:
-        melonia "Hancurkan aku!"
-
+        melonia "Ruin me!"
 
     return
 
@@ -114,59 +94,39 @@ label scene_melonia_bedroom_press.switch:
     hide anim
     show melonia b_sex_insert_pullout f_smirk
     with {'master': dissolve}
-    anon "Ini, balikkan."
-
+    anon "Here, flip over."
     call scene_melonia_sex.stage
     with {'master': dissolve}
     melonia f_surprised @ -m_talk "Hmm?"
-
-    anon "Di punggungmu."
-
-    melonia f_satisfied "Oh, sepertinya aku perlu waktu sebentar..."
-
-    anon "Apa?"
-
-    melonia "Penismu sangat... sial... besar!"
-
-    anon "Ya, aku sadar."
-
-    melonia @ -m_talk "Tidak."
-
-    anon "Ini yang kamu inginkan, ingat?"
-
-    melonia "Vagina kecilku yang malang, itu-"
-
-    anon "Ya, ya... Diam saja dan balik."
-
+    anon "On your back."
+    melonia f_satisfied "Oh, I think I need a second..."
+    anon "What?"
+    melonia "Your cock is so... fucking... big!"
+    anon "Yeah, I'm aware."
+    melonia @ -m_talk "Ngh."
+    anon "This is what you wanted, remember?"
+    melonia "My poor little pussy, it's-"
+    anon "Yeah, yeah... Just shut up and flip over."
     show melonia b_sex_transition
     with {'master': dissolve}
-    melonia "{b}Hector{/b}, saya menyukai perilaku mendominasi ini!"
-
+    melonia "{b}Hector{/b}, I'm loving this domineering behavior!"
     call scene_melonia_bedroom_press.pre
     with {'master': dissolve}
-    anon "Sudah kubilang jangan panggil aku seperti itu!"
-
+    anon "I told you to stop calling me that!"
     melonia f_coy "Oh?"
-
     pause
-    melonia "Konyolnya aku..."
-
+    melonia "Silly me..."
     pause
-    melonia "... Aku pasti lupa."
-
-    anon "Mungkin ini bisa membantu Anda mengingatnya?"
-
+    melonia "... I must have forgotten."
+    anon "Well, maybe this will help you remember?"
     call scene_melonia_bedroom_press.insert
     with {'master': dissolve}
-    melonia "{i}*Terkesiap*{/i} Ya!"
-
+    melonia "{i}*Gasp*{/i} Yessss!"
     call scene_melonia_bedroom_press.animate
     with {'master': dissolve}
     call scene_melonia_bedroom_press.dialogue (1)
-    anon "Sebutkan namaku!"
-
-    melonia "{b}Hektor{/b}!!!"
-
+    anon "Say my name!"
+    melonia "{b}Hector{/b}!!!"
 
     $ M_melonia.set('sex speed', 1. / 14)
 
@@ -174,25 +134,19 @@ label scene_melonia_bedroom_press.switch:
     call scene_melonia_bedroom_press.dialogue (2)
     pause
     call scene_melonia_bedroom_press.dialogue (3)
-    anon "Apa?!"
-
+    anon "What?!"
     call scene_melonia_bedroom_press.dialogue (4)
     pause
     call scene_melonia_bedroom_press.dialogue (5)
 
     if M_anon.finished_state(S_ano20_done):
-        anon "Berapa kali aku harus memberitahumu untuk berhenti meneleponku {b}Hector{/b}?!"
-
-        melonia "Katakan padaku kamu akan masuk ke dalam diriku!"
-
-        anon "Mengapa?"
-
+        anon "How many times do I have to tell you to stop calling me {b}Hector{/b}?!"
+        melonia "Tell me you're gonna cum inside me!"
+        anon "Why?"
     else:
 
-        anon "Umm, bukankah kamu memberitahuku secara spesifik {i}tidak{/i} untuk melakukan itu?"
-
-        melonia "Main saja, saya hampir sampai!"
-
+        anon "Umm, didn't you tell me specifically {i}not{/i} to do that?"
+        melonia "Just play along, I'm almost there!"
 
     call scene_melonia_bedroom_press.dialogue (6)
     pause
@@ -205,18 +159,12 @@ label scene_melonia_bedroom_press.switch:
     if _return == 'switch:blow':
         jump scene_melonia_bedroom_blowjob.switch
 
-    melonia "Oh, berikan aku ayam ilegal yang besar itu!"
-
-    anon "Ini sangat kacau..."
-
-    melonia "aku akan keluar!!"
-
-    anon "... Ngh, aku juga!"
-
-    melonia "aku akan-"
-
+    melonia "Oh, give me that huge, illegal cock!"
+    anon "This is so fucked up..."
+    melonia "I'm gonna cum!!"
+    anon "... Ngh, me too!"
+    melonia "I'm gonna-"
     melonia "NGGHHH!!!"
-
 
     if _return == 'inside':
         show melonia_body_b_sex_missionary_cum as anim
@@ -239,7 +187,6 @@ label scene_melonia_bedroom_press.switch:
         with {'master': dissolve}
 
     melonia "Fuuuuuuuuuuuuuuck!!"
-
     pause
     hide xray
 
@@ -249,7 +196,6 @@ label scene_melonia_bedroom_press.switch:
 
     with {'master': dissolve}
     anon "Haah... Haah..."
-
     return 'creampie' if _return == 'inside' else 'cumshot'
 
 

@@ -9,13 +9,9 @@ label obituary_records(item):
     show expression item.closeup at Position(xalign = 0.5, yalign = 1.0)
     with None
     player_name "Hmm..."
-
-    player_name "Sepertinya satu-satunya nama di bawah pembuat kapal adalah..."
-
-    player_name "...Ben Dover?"
-
-    player_name "Sekarang saya hanya perlu {b}mengunjungi kuburan dan menemukan batu nisan yang tepat{/b}."
-
+    player_name "It seems like the only name under shipwright is..."
+    player_name "... Ben Dover?"
+    player_name "Now I just need to {b}visit the graveyard and find the right tombstone{/b}."
     $ M_aqua.trigger(T_aqua_obituary_records)
     return
 
@@ -23,8 +19,7 @@ label keycode_note_closeup(item):
     scene location_backpack_closeup
     show expression item.closeup at Position(xalign = 0.5, yalign = 1.0)
     with None
-    player_name "Ini adalah {b}kode ke kantor Nona Okita{/b}. {b}6219{/b}."
-
+    player_name "This is the {b}code to Miss Okita's office{/b}. {b}6219{/b}."
     return
 
 
@@ -33,33 +28,22 @@ label scroll(item):
     show expression item.closeup at Position(xalign = 0.5, yalign = 1.0)
     with None
     player_name "Hmm..."
-
-    player_name "Ada gambar aneh di sana."
-
-    player_name "Sepertinya bulan sabit..."
-
-    player_name "Pasti {b}berguna untuk sesuatu{/b}..."
-
+    player_name "There's a strange picture on it."
+    player_name "It looks like a crescent moon..."
+    player_name "It must be {b}useful for something{/b}..."
     return
 
 label treasure_map(item):
     scene location_backpack_closeup
     show expression item.closeup at Position(xalign = 0.5, yalign = 1.0)
     with None
-    player_name "Ini terlalu keren!"
-
-    player_name "Peta harta karun yang sebenarnya!"
-
+    player_name "This is too cool!"
+    player_name "An actual treasure map!"
     player_name "Hmm."
-
-    player_name "Ini terlihat seperti gambar pantai..."
-
-    player_name "... Dan itu terlihat seperti pantai lokal kita?"
-
-    player_name "Oh, dan di sini, {b}ada tanda X di pulau kecil{/b}."
-
-    player_name "Saya ingin tahu apa tujuannya?"
-
+    player_name "It looks like a drawing of the coast..."
+    player_name "... And that looks like our local beach?"
+    player_name "Oh, and here, {b}there's an X on a small island{/b}."
+    player_name "I wonder what it leads to?"
     $ M_aqua.trigger(T_aqua_obituary_records)
     return
 
@@ -67,59 +51,43 @@ label weird_coin(item):
     scene location_backpack_closeup
     show expression item.closeup at Position(xalign = 0.5, yalign = 1.0)
     with None
-    player_name "Hah?"
-
-    player_name "Itu terlihat seperti koin yang sangat tua."
-
-    player_name "Lihat saja {b}simbol ganjil{/b} ini!"
-
-    player_name "Saya harus menyimpannya. Mungkin itu sesuatu yang berharga?"
-
+    player_name "Huh?"
+    player_name "That looks like a really old coin."
+    player_name "Just look at these {b}odd symbols{/b}!"
+    player_name "I should keep it. Maybe it's worth something?"
     return
 
 label old_book(item):
     scene location_backpack_closeup
     show expression item.closeup at Position(xalign = 0.5, yalign = 1.0)
     with None
-    player_name "Buku ini sepertinya akan berguna untuk memecahkan kode sesuatu."
-
+    player_name "This book looks like it would be useful decoding something."
     player_name "..."
     if not player.has_item("weird_coin"):
-        player_name "Hehe. Mungkin harta karun bajak laut tersembunyi yang dibuang sembarangan oleh seseorang."
-
-        player_name "Tapi itu hanya angan-angan saja."
-
+        player_name "Heh. Maybe some hidden pirate treasure someone tossed aside carelessly."
+        player_name "But that's just wishful thinking."
     else:
-        player_name "Menurutku {b}koin bajak laut itu memiliki empat digit angka{/b}."
-
-        player_name "Saya harus {b}melihatnya lagi{/b}."
-
+        player_name "I think {b}that pirate coin had a four-digit number on it{/b}."
+        player_name "I should {b}look at it again{/b}."
     return
 
 label golden_compass(item):
     scene location_backpack_closeup
     show expression item.closeup at Position(xalign = 0.5, yalign = 1.0)
     with None
-    player_name "Wah!!"
-
-    player_name "Saya tidak percaya! Saya menemukan harta karun itu!"
-
-    player_name "Ini pasti kompas yang {b}Kapten Terry{/b} bicarakan."
-
+    player_name "Whoa!!"
+    player_name "I can't believe it! I found the treasure!"
+    player_name "This has to be the compass {b}Captain Terry{/b} was talking about."
     return
 
 label tigger(item):
     scene location_backpack_closeup
     show expression item.closeup at Position(xalign = 0.5, yalign = 1.0)
     with None
-    player_name "Wah, bajingan jahat ini melakukan perlawanan yang cukup keras."
-
-    player_name "... Dan lihat saja gigi itu!"
-
-    player_name "Tidak heran mengapa {b}Kapten Terry{/b} menginginkan dia mati."
-
-    player_name "Saya tidak sabar untuk menunjukkannya padanya!"
-
+    player_name "Whew, this mean bastard put up quite a fight."
+    player_name "... And just look at those teeth!"
+    player_name "It's no wonder why {b}Captain Terry{/b} wanted him dead."
+    player_name "I can't wait to show him!"
     return
 
 
@@ -127,40 +95,29 @@ label cumdoom_pills(item):
     scene expression player.location.background_blur
     if player.pregnancy_chance == 0:
         show player 705b with dissolve
-        player_name "(Hmm, petunjuknya mengatakan saya perlu {b}minum satu pil, secara oral, sebelum melakukan aktivitas seksual{/b}. )"
-
-        player_name "( {b}Efek akan bertahan selama 24 jam{/b}. )"
-
-        player_name "(Ada juga label peringatan: \"Jangan gunakan obat ini jika pasangan Anda sedang menstruasi atau telah mengalami menopause.\" )"
-
-        player_name "(Saya sudah meminum satu dosis hari ini.)"
-
-        player_name "(Saya pastinya tidak boleh mengambil yang lain.)"
-
+        player_name "( Hmm, the directions say I need to {b}take one pill, orally, prior to engaging in sexual activity{/b}. )"
+        player_name "( {b}Effects will last for 24 hours{/b}. )"
+        player_name "( There's also a warning label: \"Do not use this medication if your partner is currently menstruating or has undergone menopause.\" )"
+        player_name "( I've already taken a dose today. )"
+        player_name "( I definitely shouldn't take another. )"
         hide player with dissolve
     else:
         show player 705b with dissolve
-        player_name "(Hmm, petunjuknya mengatakan saya perlu {b}minum satu pil, secara oral, sebelum melakukan aktivitas seksual{/b}. )"
-
-        player_name "( {b}Efeknya akan bertahan sampai saya meminum pil Pregnax{/b}. )"
-
-        player_name "(Ada juga label peringatan: \"Jangan gunakan obat ini jika pasangan Anda sedang menstruasi atau telah mengalami menopause.\" )"
-
-        player_name "(Haruskah saya minum pil {b}Cumdoom{/b}? )"
-
+        player_name "( Hmm, the directions say I need to {b}take one pill, orally, prior to engaging in sexual activity{/b}. )"
+        player_name "( {b}Effects will last until I take a Pregnax pill{/b}. )"
+        player_name "( There's also a warning label: \"Do not use this medication if your partner is currently menstruating or has undergone menopause.\" )"
+        player_name "( Should I take a {b}Cumdoom{/b} pill? )"
         menu:
-            "Ya.":
+            "Yes.":
                 show player 706b with dissolve
-                player_name "(Yah, tidak ada apa-apa...)"
-
+                player_name "( Welp, here goes nothing... )"
                 show player 707b with dissolve
                 pause
                 $ player.pregnancy_chance = 0.0
                 hide player with dissolve
-            "Tidak.":
+            "No.":
                 show player 705b
-                player_name "Nah, menurutku sekarang bukan waktu terbaik untuk mengambil salah satu dari ini."
-
+                player_name "Nah, I don't think now is the best time to take one of these."
                 hide player with dissolve
     return
 
@@ -168,52 +125,38 @@ label pregnax_pills(item):
     scene expression player.location.background_blur
     if player.pregnancy_chance >= 40:
         show player 705 with dissolve
-        player_name "(Hmm, petunjuknya mengatakan saya perlu {b}minum satu pil, secara oral, sebelum melakukan aktivitas seksual{/b}. )"
-
-        player_name "( {b}Efek akan bertahan selama 24 jam{/b}. )"
-
-        player_name "(Ada juga label peringatan: \"Jangan gunakan obat ini jika pasangan Anda sedang menstruasi atau telah mengalami menopause.\" )"
-
-        player_name "(Saya sudah meminum satu dosis hari ini.)"
-
-        player_name "(Saya pastinya tidak boleh mengambil yang lain.)"
-
+        player_name "( Hmm, the directions say I need to {b}take one pill, orally, prior to engaging in sexual activity{/b}. )"
+        player_name "( {b}Effects will last for 24 hours{/b}. )"
+        player_name "( There's also a warning label: \"Do not use this medication if your partner is currently menstruating or has undergone menopause.\" )"
+        player_name "( I've already taken a dose today. )"
+        player_name "( I definitely shouldn't take another. )"
         hide player with dissolve
     else:
         show player 705 with dissolve
-        player_name "(Hmm, petunjuknya mengatakan saya perlu {b}minum satu pil, secara oral, sebelum melakukan aktivitas seksual{/b}. )"
-
-        player_name "( {b}Efeknya akan bertahan sampai saya meminum pil Cumdoom{/b}. )"
-
-        player_name "(Ada juga label peringatan: \"Jangan gunakan obat ini jika pasangan Anda sedang menstruasi atau telah mengalami menopause.\" )"
-
-        player_name "(Haruskah saya minum pil Pregnax?)"
-
+        player_name "( Hmm, the directions say I need to {b}take one pill, orally, prior to engaging in sexual activity{/b}. )"
+        player_name "( {b}Effects will last until I take a Cumdoom pill{/b}. )"
+        player_name "( There's also a warning label: \"Do not use this medication if your partner is currently menstruating or has undergone menopause.\" )"
+        player_name "( Should I take a Pregnax pill? )"
         menu:
-            "Ya.":
+            "Yes.":
                 show player 706 with dissolve
-                player_name "(Yah, tidak ada apa-apa...)"
-
+                player_name "( Welp, here goes nothing... )"
                 show player 707 with dissolve
                 pause
                 $ player.pregnancy_chance += 0.5
                 hide player with dissolve
-            "Tidak.":
+            "No.":
                 show player 705
-                player_name "Nah, menurutku sekarang bukan waktu terbaik untuk mengambil salah satu dari ini."
-
+                player_name "Nah, I don't think now is the best time to take one of these."
                 hide player with dissolve
     return
 
 label condom:
     scene expression game.timer.image("jennybedroom{}")
     show expression "objects/closeup_condom.png" with dissolve
-    player_name "Kondom?!"
-
-    player_name "{b}[jen_name]{/b} pasti menyembunyikannya di kamarnya."
-
-    player_name "Dia mungkin tidak akan menyadarinya jika aku hanya mengambil satu..."
-
+    player_name "A condom?!"
+    player_name "{b}[jen_name]{/b} must be hiding them in her room."
+    player_name "She probably won't notice if I only take one..."
     hide expression "objects/closeup_condom.png" with dissolve
     call popup ('give', 'condom')
     $ game.main()
@@ -222,31 +165,23 @@ label mysterious_statue_1(item):
     scene expression player.location.background_blur
     show player 688
     with dissolve
-    player_name "(Hmm, sepertinya bagian bawah wanita telanjang.)"
-
-    player_name "(Tapi ada apa dengan ekornya?)"
-
+    player_name "( Hmm, it looks like the lower half a nude woman. )"
+    player_name "( What's with the tail though? )"
     show player 689
-    player_name "(Ada sesuatu yang tertulis di bawahnya.)"
-
+    player_name "( There's something written on the bottom of it. )"
     show expression item.closeup
     hide player
     player_name "{b}\"Delmont.\"{/b}"
-
     player_name "Hmm, {b}Delmont{/b}..."
-
-    player_name "Kedengarannya familiar."
-
+    player_name "It sounds familiar."
     hide expression item.closeup
     return
 
 label attic_key:
     scene expression player.location.background_blur
     show expression "objects/closeup_key.png" with dissolve
-    player_name "(Saya belum pernah melihat kunci ini sebelumnya.)"
-
-    player_name "(Ini agak kecil...)"
-
+    player_name "( I've never seen this key before. )"
+    player_name "( It's rather small... )"
     hide expression "objects/closeup_key.png" with dissolve
     $ player.get_item("attic_key")
     call popup ('give', 'attic_key')
@@ -255,10 +190,8 @@ label attic_key:
 label ring:
     scene expression game.timer.image("attic{}")
     show expression "objects/closeup_ring.png" with dissolve
-    player_name "(Itu terlihat seperti cincin yang mahal!)"
-
-    player_name "(Apa yang dilakukannya di atas sana?)"
-
+    player_name "( That looks like an expensive ring! )"
+    player_name "( What was it doing all the way up there? )"
     hide expression "objects/closeup_ring.png" with dissolve
     call popup ('give', 'ring')
     jump attic_dialogue
@@ -267,34 +200,26 @@ label cheerleader_outfit:
     scene expression game.timer.image("attic{}")
     if M_jenny.is_state(S_jenny_get_cheerleader_outfit):
         show anon with dissolve
-        anon @ -m_talk "( Hmm, saya tidak melihat debu atau sarang laba-laba... )"
-
-        anon @ -m_talk "(Saya harus membawa ini ke kamar {b}[jen_name] pada sore hari{/b}. )"
-
+        anon @ -m_talk "( Hmm, I don't see any dust or cobwebs... )"
+        anon @ -m_talk "( I should take this to {b}[jen_name]'s room in the afternoon{/b}. )"
         hide anon with dissolve
         $ player.get_item("cheerleader_outfit")
         call popup ('give', 'cheerleader_outfit')
         $ M_jenny.trigger(T_jenny_got_cheerleader_outfit)
     else:
         show anon with dissolve
-        anon @ -m_talk "( Ini adalah pakaian pemandu sorak {b}[jen_name] dari kampus. )"
-
-        anon @ -m_talk "(Aku ingin tahu apa yang dilakukannya di sini?)"
-
+        anon @ -m_talk "( This is {b}[jen_name]'s cheerleading outfit{/b} from college. )"
+        anon @ -m_talk "( I wonder what it's doing up here? )"
         hide anon with dissolve
     jump attic_dialogue
 
 label fishing_rod:
     scene expression game.timer.image("attic{}")
     show expression "objects/closeup_rod.png" with dissolve
-    player_name "Itu pancing tua {b}Ayah{/b}!"
-
-    player_name "(Saya ingat ketika kami biasa pergi memancing di dermaga, ketika saya masih kecil.)"
-
-    player_name "{i}*Huh*{/i}"
-
-    player_name "Aku rindu {b}Ayah{/b}..."
-
+    player_name "That's {b}Dad{/b}'s old fishing rod!"
+    player_name "( I remember when we used to go fishing by the pier, when I was little. )"
+    player_name "{i}*Sigh*{/i}"
+    player_name "I miss {b}Dad{/b}..."
     hide expression "objects/closeup_rod.png" with dissolve
     call popup ('give', 'fishing_rod')
     if L_pier.locked:
@@ -307,13 +232,10 @@ label backpack_pickup_dialogue:
     with dissolve
     pause
     show player 608b
-    player_name "Ini jelas merupakan tas punggung {b}Eve{/b}."
-
-    player_name "Hmm, aku tidak melihatnya {b}art pad{/b} miliknya."
-
+    player_name "This is definitely {b}Eve{/b}'s backpack."
+    player_name "Hmm, I don't see her {b}art pad{/b} though."
     show player 610 with dissolve
-    player_name "Saya harus {b}menanyakannya ketika saya mengembalikan ini{/b}."
-
+    player_name "I should {b}ask her about it when I return this{/b}."
     hide player with dissolve
     $ player.get_item("eve_backpack")
     call popup ('give', 'eve_backpack')
@@ -321,10 +243,8 @@ label backpack_pickup_dialogue:
 
 label roxxy_homework_pickup_dialogue:
     scene mc_locker
-    player_name "Ini dia!"
-
-    player_name "Sekarang saya hanya perlu {b}membawa ini ke Roxxy{/b}."
-
+    player_name "Ah, here it is!"
+    player_name "Now I just need to {b}bring this to Roxxy{/b}."
     $ player.get_item("roxxy_homework")
     call popup ('give', 'roxxy_homework')
     $ player.go_to(L_school_hall)
@@ -338,14 +258,12 @@ label poem(item):
     anon "( \"Slowly your naked body you expose.\" )" (show_native="( {i}\"Tout doucement ton corps nu tu exposes.\"{/i} )")
     anon "( \"On your breasts my mouth rests.\" )" (show_native="( {i}\"Sur tes seins ma bouche se pose.\"{/i} )")
     pause
-    anon "( Saya perlu menyerahkan ini kepada {b}Ms. Bissette{/b} dan berharap tidak ada orang lain yang membaca ini! )"
-
+    anon "( I need to turn this in to {b}Ms. Bissette{/b} and hope no one else ever reads this! )"
     return
 
 label french_scans(item):
     scene location_backpack_closeup
     show expression item.closeup at truecenter
-    anon "( Kata yang aneh... Aku penasaran apa maksudnya. Sebaiknya aku lihat {b}Ms. Bissette{/b}. )"
-
+    anon "( What a weird word... I wonder what it means. I better see {b}Ms. Bissette{/b}. )"
     return
 # Decompiled by unrpyc: https://github.com/CensoredUsername/unrpyc

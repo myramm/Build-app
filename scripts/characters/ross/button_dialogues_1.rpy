@@ -4,71 +4,39 @@ label ross_button_dress_code:
     show ross a_sides:
         flip
     with dissolve
-    anon "Hai {b}Nona Ross{/b}, saya berharap Anda dapat berbicara dengan {b}Ny. Smith{/b} tentang kebijakan aturan berpakaian yang baru..."
-
-    ross f_confused "Dia menerapkan kebijakan aturan berpakaian yang baru?!"
-
-    ross "T-tapi ini sekolah negeri!!"
-
-    anon f_skeptical "Aku tahu, kan?!"
-
-    anon f_worried @ f_skeptical "Ini konyol!"
-
-    ross f_angry a_hip_angry "Saya harap dia tidak berencana memasukkan kalian para siswa ke dalam seragam jelek yang besar, karena saya tidak akan tahan!"
-
-    ross "Anak-anak seusia Anda perlu mengekspresikan diri, jika tidak, hal itu dapat menghambat perkembangan Anda menjadi dewasa!"
-
-    anon "Yah, sebenarnya tidak ada apa-apa tentang pakaian..."
-
-    ross "Aku bersumpah, aku akan segera menuju ke sana dan-"
-
+    anon "Hi {b}Miss Ross{/b}, I was hoping you could talk to {b}Mrs. Smith{/b} about the new dress code policy..."
+    ross f_confused "She's implementing a new dress code policy?!"
+    ross "B-but this is a public school!!"
+    anon f_skeptical "I know, right?!"
+    anon f_worried @ f_skeptical "It's ridiculous!"
+    ross f_angry a_hip_angry "I hope she's not planning to stuff you students into big ugly uniforms, because I won't stand for it!"
+    ross "Kids your age need to express themselves, otherwise, it can stifle your development into adults!"
+    anon "Well, there's nothing concerning clothing, really..."
+    ross "I swear, I'll march right down there and-"
     pause
-    ross f_confused a_hip "Tunggu sebentar, tidak ada batasan pakaian?"
-
-    anon "Tidak, Bu..."
-
-    anon "... Tapi itu melarang pewarna rambut dan saya pikir-"
-
-    ross f_normal a_sides @ f_laugh "Yah, itu tidak terlalu buruk..."
-
-    ross "Kenapa kamu begitu kesal, {b}[firstname]{/b}?"
-
-    ross @ f_eyeroll "Kamu bahkan tidak mewarnai rambutmu..."
-
-    anon @ a_rub f_tired "Y-ya, tapi-"
-
-    ross "Fiuh, kamu benar-benar membuatku kesal sejenak!"
-
-    anon "Saya khawatir tentang {b}Hawa{/b}."
-
-    anon "Dia sangat menyukai rambut birunya dan-"
-
-    ross "Oh, {b}Eve{/b} akan baik-baik saja, sayang."
-
-    ross "Faktanya, Anda memberi tahu dia menurut saya dia terlihat jauh lebih baik dalam balutan warna pirang alami."
-
-    anon f_skeptical "Y-ya, oke, tapi-"
-
-    ross "Saya tidak tahu mengapa dia mengubahnya sejak awal..."
-
-    anon "Bagaimana dengan kita, anak-anak, yang perlu mengekspresikan diri?"
-
-    ross "Maaf, {b}[firstname]{/b}... Saya tidak mempertaruhkan pekerjaan saya dengan pewarna rambut."
-
-    anon f_surprised "T-tapi-"
-
-    ross "Masih banyak cara lain yang bisa dia lakukan untuk mengekspresikan dirinya."
-
-    ross "Rok pendek yang bagus atau atasan berpotongan rendah, mungkin?"
-
-    anon f_worried "{i}*Sigh*{/i} Menurutku {b}Eve{/b} tidak menyukai hal semacam itu..."
-
-    ross "Tentu saja, sayang."
-
-    ross "Dia hanya membutuhkan seseorang untuk membantu membangun kepercayaan dirinya."
-
-    anon f_skeptical "Saya rasa..."
-
+    ross f_confused a_hip "Wait a second, there's no restriction on clothing?"
+    anon "No, ma'am..."
+    anon "... But it prohibits hair dye and I thought-"
+    ross f_normal a_sides @ f_laugh "Well, that's not so bad..."
+    ross "Why are you so upset, {b}[firstname]{/b}?"
+    ross @ f_eyeroll "You don't even color your hair..."
+    anon @ a_rub f_tired "Y-yeah, but-"
+    ross "Phew, you really had me worked up for a moment!"
+    anon "I'm worried about {b}Eve{/b}."
+    anon "She really likes her blue hair and-"
+    ross "Oh, {b}Eve{/b} will be fine, sweetie."
+    ross "In fact, you tell her I think she looks much better in her natural blonde."
+    anon f_skeptical "Y-yeah, okay, but-"
+    ross "I don't know why she changed it in the first place..."
+    anon "What about us kids needing to express ourselves?"
+    ross "I'm sorry, {b}[firstname]{/b}... I'm not risking my job over hair dye."
+    anon f_surprised "B-but-"
+    ross "There are plenty of other ways she can express herself."
+    ross "A nice, short skirt or a low-cut top, maybe?"
+    anon f_worried "{i}*Sigh*{/i} I don't think {b}Eve{/b} is into that kind of stuff..."
+    ross "Sure she is, sweetie."
+    ross "She just needs someone to help build her confidence up."
+    anon f_skeptical "I guess..."
     hide anon with dissolve
     return
 
@@ -77,12 +45,10 @@ label button_ross_grab_clay:
     show player 1f at right
     show old_ross 2 at left
     with dissolve
-    ross "{b}Ambil sebongkah tanah liat{/b}, {b}[firstname]{/b}, agar kita dapat memulai."
-
+    ross "{b}Go grab a slab of clay{/b}, {b}[firstname]{/b}, so we can get started."
     show player 2f
     show old_ross 1
-    player_name "Ya, Bu."
-
+    player_name "Yes, ma'am."
 
     return
 
@@ -91,63 +57,46 @@ label button_ross_find_partner:
     show player 2f at right
     show old_ross 1 at left
     with dissolve
-    player_name "Hai, {b}Nona Ross{/b}. Anda siap untuk memulai?"
-
+    player_name "Hey, {b}Miss Ross{/b}. You ready to get started?"
     show player 1f
     show old_ross 2
-    ross "Halo, {b}[firstname]{/b}! Hanya tentang..."
-
+    ross "Hey there, {b}[firstname]{/b}! Just about..."
     show old_ross 11 with dissolve
-    ross "Sebenarnya aku ingin mendiskusikan sesuatu denganmu terlebih dahulu."
-
+    ross "I actually wanted to discuss something with you first."
     show player 2f
     show old_ross 10
     player_name "Oh?"
-
     show old_ross 11
     show player 1f
-    ross "Saya pikir kami harus mencarikan Anda pasangan untuk sesi ini, bagaimana menurut Anda?"
-
+    ross "I think we should get you a partner for these sessions, what do you think?"
     show old_ross 10
     show player 10f
-    player_name "Seorang mitra?"
-
+    player_name "A partner?"
     show old_ross 11
     show player 11f
-    ross "Ya, seseorang untuk bekerja bersama Anda dan melontarkan ide-ide!"
-
+    ross "Yeah, somebody to work alongside you and bounce ideas back and forth!"
     show old_ross 10
     show player 2f
-    player_name "Tentu oke."
-
-    player_name "Apakah Anda memikirkan seseorang?"
-
+    player_name "Sure, okay."
+    player_name "Did you have anyone in mind?"
     show player 1f
     show old_ross 10b with dissolve
     ross "Hmm..."
-
     show old_ross 11 with dissolve
-    ross "Nah, pemikiran awal saya adalah {b}Eve{/b}. Dia artis berbakat sama sepertimu..."
-
-    ross "... Tapi aku ragu dia punya waktu untuk mempelajari semua pelajaran musiknya."
-
+    ross "Well, my initial thought is {b}Eve{/b}. She's a talented artist just like yourself..."
+    ross "... But I doubt she'd have time with all her musical studies."
     show old_ross 10b with dissolve
     pause
     show old_ross 11 with dissolve
-    ross "Apakah menurut Anda {b}Mia{/b} akan tertarik?"
-
-    ross "Dia sungguh manis sekali, bukan?"
-
+    ross "Do you think {b}Mia{/b} would be interested?"
+    ross "She's just such a cutie pie, isn't she?"
     show old_ross 10
     show player 2f
-    player_name "Salah, ya. Saya kira."
-
+    player_name "Err, yeah. I suppose."
     show player 1f
     show old_ross 11
-    ross "Besar! Nah, kenapa kamu tidak bicara dengannya?"
-
-    ross "Katakan padanya aku bilang untuk memasukkan pantat imutnya ke sini!"
-
+    ross "Great! Well, why don't you go talk to her?"
+    ross "Tell her I said to get her cute butt in here!"
     show player 11f
     show old_ross 10
     player_name "..."
@@ -159,20 +108,15 @@ label button_ross_ask_mia_partner:
     show player 1f at right
     show old_ross 2 at left
     with dissolve
-    ross "{b}[firstname]{/b}, Anda kembali!"
-
-    ross "Dimana {b}Mia{/b}?"
-
+    ross "{b}[firstname]{/b}, you're back!"
+    ross "Where's {b}Mia{/b}?"
     show player 10f
     show old_ross 1
-    player_name "Oh, uhh... Aku belum meyakinkannya."
-
+    player_name "Oh, uhh... I haven't convinced her yet."
     show player 11f
     show old_ross 2
-    ross "Baiklah, lanjutkan, {b}[firstname]{/b}!"
-
-    ross "Kita membutuhkan antusiasmenya jika kita ingin memenangkan hal ini!"
-
+    ross "Well, get a move on, {b}[firstname]{/b}!"
+    ross "We need her enthusiasm if we're gonna win this thing!"
     return
 
 label button_ross_mia_is_partner:
@@ -181,105 +125,79 @@ label button_ross_mia_is_partner:
     show old_ross 2 at left
     show old_mia 7 zorder 0 at Position(xpos=0.65, ypos=1.0)
     with dissolve
-    ross "Hei, pai manis!"
-
+    ross "Hey there, cutie pie!"
     show old_ross 1
     show old_mia 56 at Position(xpos=0.635, ypos=1.0) with dissolve
-    mia "... Oh, um. H-halo."
-
+    mia "... Oh, umm. H-hello."
     show old_ross 2
     show old_mia 55
-    ross "Saya sangat senang, {b}[firstname]{/b} meyakinkan Anda untuk bergabung dengan kami!"
-
+    ross "I'm so glad, {b}[firstname]{/b} convinced you to join us!"
     show old_ross 1
     show old_mia 56
-    mia "Hehe, iya... Dia bilang kalian sangat membutuhkan bantuanku?"
-
+    mia "Hehe, yeah... He said you guys really needed my help?"
     show old_ross 2
     show old_mia 55
-    ross "Kami pasti melakukannya!"
-
+    ross "We surely do!"
     show old_ross 1
     show player 2f
     show old_mia 8b at Position(xpos=0.65, ypos=1.0) with dissolve
-    player_name "Jadi apakah kita siap untuk memulainya sekarang?"
-
+    player_name "So are we ready to start now?"
     show player 1f
     show old_ross 11 with dissolve
-    ross "Ya! Mengapa Anda berdua tidak mengeluarkan buku seni Anda dan duduk berseberangan."
-
+    ross "Yup! Why don't you both get out your art pads and have a seat opposite each other."
     show player 2f
     show old_ross 10
-    player_name "Oke."
-
+    player_name "Okay."
     show old_mia 8
     show player 596f with dissolve
     mia "..."
     show old_mia 12
-    mia "Hmm, pertanyaan..."
-
+    mia "Umm, question..."
     show old_mia 8
     show old_ross 11
-    ross "Ya sayang?"
-
+    ross "Yes, dear?"
     show old_mia 12
     show old_ross 10
-    mia "Bagaimana jika saya tidak memiliki buku seni?"
-
+    mia "What if I don't have an art pad?"
     show old_mia 8
     show old_ross 25
-    ross "Oh benar."
-
+    ross "Oh, right."
     show old_ross 25b
-    ross "Biasanya aku akan memberimu salah satu dari itu..."
-
+    ross "Well, usually I'd provide you with one of those..."
     show old_ross 25
-    ross "... Tapi saya khawatir persediaan kami sudah habis."
-
+    ross "... But I'm afraid we've exhausted our stores."
     show old_ross 24
     show player 598f
-    player_name "Itu menyebalkan!"
-
+    player_name "That sucks!"
     show player 596f
     show old_mia 12b
-    mia "Oh baiklah, itu bukan masalah besar. Lagipula aku tidak pandai menggambar..."
-
+    mia "Oh well, it's no big deal. I'm not very good at drawing anyways..."
     show old_mia 10
-    mia "Saya hanya akan menonton."
-
+    mia "I'll just watch."
     show old_mia 7
     show old_ross 11
-    ross "Omong kosong!"
-
-    ross "Kami akan membelikanmu satu!"
-
+    ross "Nonsense!"
+    ross "We'll get you one!"
     show old_ross 27 with dissolve
-    ross "{b}[firstname]{/b}, kenapa kamu tidak bertanya pada {b}Eve{/b} apakah kita bisa meminjam salah satu miliknya."
-
+    ross "{b}[firstname]{/b}, why don't you go ask {b}Eve{/b} if we can borrow one of hers."
     show old_ross 26
     show player 598f
-    player_name "... Y-ya, oke!"
-
+    player_name "... Y-yeah, okay!"
     show old_ross 27
     show player 596f
-    ross "Lihat, {b}[firstname]{/b} untuk menyelamatkan!"
-
+    ross "See, {b}[firstname]{/b} to the rescue!"
     show player 1f
     show old_ross 11
     with dissolve
-    ross "Kami hanya akan tinggal di sini dan mengobrol dengan seorang gadis."
-
+    ross "We'll just stay here and have some girl talk."
     show old_ross 13
-    ross "Benar, pai manis?"
-
+    ross "Right, cutie pie?"
     show old_ross 12
     show old_mia 56 at Position(xpos=0.635, ypos=1.0) with dissolve
-    mia "Hehe, oke..."
-
+    mia "Heh, okay..."
     show old_mia 55
     show player 2f
-    player_name "Segera kembali."
-
+    player_name "Be right back."
     return
 
 label button_ross_find_art_pad:
@@ -288,77 +206,59 @@ label button_ross_find_art_pad:
     show old_mia 55 at Position(xpos=0.435, ypos=1.0)
     show player 1f at right
     with dissolve
-    ross "... Tahukah kamu, {b}Mia{/b}. Aku pernah berteman dengan seorang gadis yang mirip denganmu!"
-
+    ross "... You know, {b}Mia{/b}. I used to be friends with a girl who looked just like you!"
     show old_ross 12
     show old_mia 56
-    mia "Benar-benar?"
-
+    mia "Really?"
     show old_ross 13
     show old_mia 55
-    ross "Sangat! Namanya Starchild, dan kami biasa mengikuti band favorit kami di seluruh negeri."
-
+    ross "Absolutely! Her name was Starchild, and we used to follow our favorite band all over the country."
     show old_ross 12
     show old_mia 12b at Position(xpos=0.45, ypos=1.0) with dissolve
-    mia "Ya, kedengarannya cukup bagus!"
-
+    mia "Well, that sounds pretty neat!"
     show old_ross 13
     show old_mia 8b
-    ross "Oh, benar!"
-
-    ross "Gadis itu selalu mendapatkan obat terbaik!"
-
+    ross "Oh, it was!"
+    ross "That girl always had the best drugs!"
     show old_ross 11
-    ross "... Dan sungguh pencium yang luar biasa! Dia bisa melakukan hal-hal dengan lidahnya yang akan-"
-
+    ross "... And what a kisser! She could do things with her tongue that woul-"
     show player 10f
     show old_ross 10
     show old_mia 55 at Position(xpos=0.435, ypos=1.0) with dissolve
-    player_name "{i}*Ahem*{/i} Apakah saya mengganggu sesuatu?"
-
+    player_name "{i}*Ahem*{/i} Am I interrupting something?"
     show player 11f
     show old_mia 12f with dissolve
-    mia "{b}[firstname]{/b}, Anda kembali!"
-
+    mia "{b}[firstname]{/b}, you're back!"
     show old_mia 12bf
-    mia "Untunglah!"
-
+    mia "Thank goodness!"
     show old_mia 8bf
     show old_ross 11
-    ross "Apakah kamu berhasil {b}mendapatkan art pad Eve{/b}?"
-
+    ross "Did you manage to {b}get Eve's art pad{/b}?"
     show player 10f
     show old_ross 10
-    player_name "Tidak, maaf. Saya masih mengerjakannya."
-
+    player_name "No, sorry. I'm still working on it."
     show player 11f
     show old_ross 11
-    ross "Cih, kalau begitu, ayolah! Kami sedang ngobrol cewek di sini..."
-
+    ross "Tsk, well shoo then! We're having girl talk here..."
     show old_ross 10
     show player 10f
-    player_name "... B-baiklah. Saya akan kembali."
-
+    player_name "... A-alright. I'll be back."
     hide player with dissolve
     show old_mia 12f at Position(xpos=0.55, ypos=1.0) with dissolve
 
-    mia "TIDAK! Tunggu! Tahan!"
-
+    mia "No! Wait! Hold up!"
     show old_mia 8f
     pause
     show old_ross 13 at Position(xpos=0.15, ypos=1.0) with dissolve
-    ross "Sekarang dimana aku?"
-
+    ross "Now where was I?"
     show old_ross 12
     show old_mia 8b with dissolve
     mia "..."
     show old_ross 13
-    ross "Oh benar! Dia bisa melakukan hal-hal dengan lidahnya yang bisa membuat pelacur tersipu malu!"
-
+    ross "Oh, right! She could do things with her tongue that would make a whore blush!"
     show old_ross 12
     show old_mia 56 at Position(xpos=0.535, ypos=1.0) with dissolve
-    mia "... Ya ampun."
-
+    mia "... Oh my."
     return
 
 label button_ross_found_art_pad:
@@ -367,92 +267,66 @@ label button_ross_found_art_pad:
     show old_mia 55 at Position(xpos=0.435, ypos=1.0)
     show player 11f zorder 1 at right
     with dissolve
-    ross "... Hmm, menurutku yang favoritku adalah {b}Praia do Abricó{/b}."
-
+    ross "... Hmm, I think my favorite one is the {b}Praia do Abricó{/b}."
     show old_ross 11 with dissolve
-    ross "Itu kembali ke rumah di Rio de Janeiro."
-
+    ross "It's back home in Rio de Janeiro."
     show old_ross 10
     show old_mia 56
-    mia "Oh, entahlah..."
-
-    mia "... Saya rasa saya tidak cukup berani untuk pergi ke pantai telanjang."
-
+    mia "Oh, I dunno..."
+    mia "... I don't think I'm brave enough for a nude beach."
     show old_ross 13
     show old_mia 55
-    ross "Oh, tentu saja, kue manis!"
-
-    ross "Tidak seorang pun boleh malu dengan tubuhnya. Bagaimanapun juga, bentuk manusia adalah sebuah karya seni..."
-
+    ross "Oh, sure you are, cutie pie!"
+    ross "Nobody should be ashamed of their body. The human form is a work of art after all..."
     show old_ross 13
-    ross "... Terutama milikmu."
-
-    ross "Kamu benar-benar cantik, {b}Mia{/b}!"
-
+    ross "... Especially yours."
+    ross "You're just absolutely gorgeous, {b}Mia{/b}!"
     show old_ross 12
     show old_mia 56
-    mia "Wah, aku... Uhh..."
-
+    mia "Wow, I... Uhh..."
     show player 10f
 
-    player_name "{i}*Ehem*{/i}"
-
+    player_name "{i}*Ahem*{/i}"
     show player 11f
     show old_mia 12bf with dissolve
-    mia "Oh, {b}[firstname]{/b}, syukurlah kamu kembali!"
-
+    mia "Oh, {b}[firstname]{/b}, thank goodness you're back!"
     show old_mia 8b zorder 0 at Position(xpos=0.65, ypos=1.0) with dissolve
     show player 2f
-    player_name "Kalian bersenang-senang?"
-
+    player_name "You guys having fun?"
     show player 1f
     show old_ross 11
-    ross "Kami bersenang-senang!"
-
-    ross "Saya berasumsi Anda {b}mendapatkan art pad{/b}?"
-
+    ross "We're having a blast!"
+    ross "I assume you {b}got the art pad{/b}?"
     show old_ross 10
     show player 598f with dissolve
-    player_name "Yup, saya mendapatkannya di sini."
-
+    player_name "Yup, I got it right here."
     show player 596f
     show old_ross 11 with dissolve
-    ross "Kerja bagus, {b}[firstname]{/b}!"
-
-    ross "Kita harus memulainya sekarang."
-
-    ross "Saya ingin Anda berdua duduk berseberangan."
-
+    ross "Good work, {b}[firstname]{/b}!"
+    ross "We should get started now."
+    ross "I want both of you to take a seat opposite one another."
     show old_ross 58 with dissolve
-    ross "... Karena hari ini kalian akan menggambar satu sama lain menggunakan pensil dan kertas."
-
+    ross "... Because today you're going to be drawing portraits of each other using pencil and paper."
     show player 598f
     show old_ross 10 with dissolve
-    player_name "Jadi kamu ingin aku menggambar {b}Mia{/b}?"
-
+    player_name "So you want me to draw {b}Mia{/b}?"
     show player 596f
     show old_ross 11
-    ross "Itu benar dan {b}Mia{/b}, saya ingin kamu menggambar {b}[firstname]{/b}."
-
+    ross "That's right and {b}Mia{/b}, I want you to draw {b}[firstname]{/b}."
     show old_ross 10
     show old_mia 12b
-    mia "saya akan mencoba..."
-
+    mia "I'll try..."
     show old_ross 13
     show old_mia 8b
-    ross "Kamu terlalu menggemaskan, bukan?"
-
+    ross "You're just too adorable, aren't you?"
     show old_ross 12
     show old_mia 55 at Position(xpos=0.635, ypos=1.0) with dissolve
-    ross "Jangan khawatir, tidak ada seni yang buruk!"
-
+    ross "Don't worry, there's no such thing as bad art!"
     show old_mia 56
-    mia "... Jika kamu berkata begitu."
-
+    mia "... If you say so."
     show old_mia 55
     show old_ross 11
-    ross "Sekarang mari kita mulai."
-
+    ross "Now let's get started."
 
     scene location_school_art_cutscene06
     show text _ ("I always did enjoy art but drawing a live model was a totally different experience...") as caption
@@ -470,116 +344,87 @@ label button_ross_found_art_pad:
     show old_mia 8b at right
     show old_ross 11f zorder 0 at Position(xpos=0.535, ypos=1.0)
     with fade
-    ross "Bagus sekali, kalian berdua!"
-
-    ross "Gambarnya sangat indah, {b}[firstname]{/b}!"
-
+    ross "Well done, both of you!"
+    ross "It's such a beautiful drawing, {b}[firstname]{/b}!"
 
     show old_ross 28f at Position(xpos=0.435, ypos=1.0) with dissolve
-    ross "Saya merasa sangat senang dengan peluang kami dalam kontes seni ini..."
-
-    ross "Anda harus menunjukkan {b}Mia{/b}."
-
+    ross "I'm feeling very good about our chances in this art contest..."
+    ross "You should show {b}Mia{/b}."
     show old_ross 12 at Position(xpos=0.35, ypos=1.0)
     show player 560
     with dissolve
 
     pause
     show old_mia 69
-    mia "{i}*Terkesiap*{/i}"
-
+    mia "{i}*Gasp*{/i}"
     show old_mia 10
-    mia "Wow! Ini sangat bagus!"
-
+    mia "Wow! It's so good!"
     show old_mia 7
     show old_ross 11
-    ross "Bukan?"
-
+    ross "Isn't it?"
     show old_ross 13
-    ross "Ini hampir seindah aslinya!"
-
+    ross "It's almost as beautiful as the real thing!"
     show old_ross 13c
-    ross "Bukankah begitu, {b}[firstname]{/b}?"
-
+    ross "Don't you think, {b}[firstname]{/b}?"
     show player 561
     show old_ross 12b
-    player_name "Y-ya, hampir..."
-
+    player_name "Y-yeah, almost..."
 
     show player 560
     show old_ross 12
     show old_mia 56 with dissolve
-    mia "Ah, terima kasih, {b}[firstname]{/b}."
-
+    mia "Aww, thanks, {b}[firstname]{/b}."
     show old_mia 55
     show old_ross 13
-    ross "Baiklah kalau begitu, mari kita lihat bagaimana kinerjamu {b}Mia{/b}?"
-
+    ross "Alright then, let's see how you did {b}Mia{/b}?"
     show old_mia 59b with dissolve
-    mia "Hmm, tidak. Tidak apa-apa. Saya lebih suka tidak melakukannya."
-
+    mia "Mmm, no. That's okay. I'd rather not."
     show old_ross 11
     show old_mia 59d
-    ross "Oh, mewah sekali! Jangan bermain terlalu keras untuk mendapatkannya!"
-
-    ross "Ingat, tidak ada seni yang buruk..."
-
+    ross "Oh, pish posh! Don't play so hard to get!"
+    ross "Remember, there's no such thing as bad art..."
     show old_ross 10
     show old_mia 59e
-    mia "... Oke."
-
+    mia "... Okay."
     show old_mia 59c
     show old_ross 24
 
     ross "..."
     show old_mia 59
-    mia "Sudah kubilang, aku tidak terlalu baik..."
-
+    mia "I told you, I'm not very good..."
     show old_mia 59c
     show old_ross 25
-    ross "Ya tidak, itu... Menarik..."
-
+    ross "Well no, it's... Interesting..."
     show old_ross 11
-    ross "Pasti ada ruang untuk perbaikan."
-
+    ross "There's definitely room for improvement."
     show player 561
     show old_ross 10
-    player_name "Saya menyukainya, {b}Mia{/b}!"
-
+    player_name "I like it, {b}Mia{/b}!"
     show player 560
     show old_mia 57
-    mia "Anda melakukannya?"
-
+    mia "You do?"
     show player 561
     show old_mia 58
-    player_name "Ya, itu sangat lucu!"
-
+    player_name "Yeah, it's really cute!"
 
     show player 560
     show old_ross 11
-    ross "Nah, sekarang lihat, {b}Mia{/b}. {b}[firstname]{/b} menyukainya!"
-
+    ross "There, now see, {b}Mia{/b}. {b}[firstname]{/b} likes it!"
     show old_ross 10
     mia "..."
     show old_ross 11
-    ross "Baiklah, menurutku sebaiknya kita hentikan saja hari ini."
-
-    ross "Kami membuat kemajuan yang sangat bagus, kalian berdua!"
-
+    ross "Well, I think we had better call it there for today."
+    ross "We made some really good progress, you two!"
     show old_ross 58 at Position(xpos=0.41, ypos=1.0) with dissolve
-    ross "Pastikan Anda berdua banyak istirahat dan jangan lupa melakukan meditasi yang saya ajarkan!"
-
+    ross "Make sure you both get lots of rest and don't forget to do those meditations I taught you!"
     show old_ross 10 at Position(xpos=0.35, ypos=1.0) with dissolve
     show player 2
     with dissolve
-    player_name "Baiklah, saya akan coba, {b}Nona Ross{/b}."
-
-    player_name "Sampai jumpa, {b}Mia{/b}!"
-
+    player_name "Alright, I'll try, {b}Miss Ross{/b}."
+    player_name "See ya, {b}Mia{/b}!"
     show player 1
     show old_mia 56 with dissolve
-    mia "Sampai jumpa, {b}[firstname]{/b}."
-
+    mia "Bye, {b}[firstname]{/b}."
     return
 
 label button_ross_collage:
@@ -587,164 +432,119 @@ label button_ross_collage:
     show player 2f zorder 1 at right
     show old_mia 2f zorder 0 at Position(xpos=0.55, ypos=1.0)
     with dissolve
-    player_name "Anda siap untuk sesi berikutnya dengan {b}Nona Ross{/b}?"
-
+    player_name "You ready for another session with {b}Miss Ross{/b}?"
     show player 1f
     show old_mia 6f
-    mia "Ya, menurutku..."
-
+    mia "Yeah, I guess..."
     show player 10f
     show old_mia 2f
-    player_name "Tampaknya kamu tidak begitu bersemangat mengenai hal itu."
-
-    player_name "Saya pikir kamu menyukai seni?"
-
+    player_name "You don't seem very excited about it."
+    player_name "I thought you loved art?"
     show player 11f
     show old_mia 6f
-    mia "Saya memang menyukai seni."
-
-    mia "... Dan saya sangat suka melihat Anda dan {b}Nona Ross{/b} bekerja."
-
+    mia "I do love art."
+    mia "... And I really like watching you and {b}Miss Ross{/b} work."
     show old_mia 6bf
-    mia "Hanya saja..."
-
+    mia "It's just..."
     show old_mia 6f
-    mia "{b}Nona Ross{/b} membuatku merasa sedikit minder."
-
+    mia "{b}Miss Ross{/b} makes me feel a little self-conscious."
     show player 10f
     show old_mia 2f
-    player_name "Dia melakukannya?"
-
+    player_name "She does?"
     show player 11f
     show old_mia 6f
-    mia "Dia sangat terbuka padaku, bukan begitu?"
-
+    mia "She's being very forward with me, don't you think?"
     show player 2f
     show old_mia 2f
-    player_name "Ya, tapi dia seperti itu pada semua orang."
-
+    player_name "Yeah, but she's like that with everyone."
     show player 1f
     show old_mia 6f
-    mia "Apakah dia?"
-
-    mia "Entahlah, dia menjalani kehidupan yang penuh petualangan, dan dia sangat penuh pengalaman..."
-
+    mia "Is she?"
+    mia "I dunno, she's lived such an adventurous life, and she's so full of experience..."
     show old_mia 6bf
-    mia "Dia membuatku merasa sangat membosankan."
-
+    mia "She makes me feel so boring."
     show player 2f
     show old_mia 2f
-    player_name "Menurutku kamu tidak membosankan, {b}Mia{/b}."
-
+    player_name "I don't think you're boring, {b}Mia{/b}."
     show player 1f
     show old_mia 4f
-    mia "Kamu tidak?"
-
+    mia "You don't?"
     show old_mia 1f
     show player 2f
-    player_name "Sama sekali tidak."
-
-    player_name "Saya pikir Anda hanya perlu bersantai dan tetap berpikiran terbuka."
-
-    player_name "Saya yakin {b}Nona Ross{/b} bisa mengajari kita banyak hal keren!"
-
+    player_name "Not at all."
+    player_name "I think you just need to relax and keep an open mind."
+    player_name "I betcha {b}Miss Ross{/b} can teach us a lot of cool stuff!"
     show old_mia 5f
     show player 1f
     mia "..."
     show old_mia 3f
-    mia "Ya, mungkin kamu benar, {b}[firstname]{/b}!"
-
+    mia "Yeah, maybe you're right, {b}[firstname]{/b}!"
     show old_mia 4f
-    mia "saya bisa-"
-
+    mia "I coul-"
     show old_mia 1f
     show player 11f
     show old_ross 11 at left with dissolve
 
-    ross "Itu murid favoritku!"
-
+    ross "There's my favorite students!"
     show old_mia 8b at Position(xpos=0.65, ypos=1.0) with dissolve
-    ross "Apa yang kalian berdua bicarakan?"
-
+    ross "What are you two lovebirds talking about?"
     show old_mia 55 at Position(xpos=0.635, ypos=1.0) with dissolve
     show player 10f
-    player_name "Burung lovebird?"
-
+    player_name "Lovebirds?"
     show old_mia 56
     show player 11f
-    mia "Kami hanya ingin tahu tentang apa sesi hari ini?"
-
+    mia "We were just wondering what todays session would be about?"
     show old_mia 55
     show old_ross 13
-    ross "Langsung ke bisnis, ya?"
-
-    ross "Dasar petasan kecil, aku menyukainya!"
-
+    ross "Straight to business, huh?"
+    ross "You little firecracker, I love it!"
     show old_ross 12
     mia "..."
     show old_ross 58 with dissolve
-    ross "Hari ini kalian masing-masing akan membuat kolase!"
-
+    ross "Today you're each going to make a collage!"
     show old_ross 10 with dissolve
     show old_mia 12b at Position(xpos=0.65, ypos=1.0) with dissolve
-    mia "Kolase? Aku bahkan tidak tahu apa maksudnya..."
-
+    mia "Collage? I don't even know what that means..."
     show old_mia 8b
     show old_ross 27 with dissolve
-    ross "Oh, mereka sangat menyenangkan! Anda akan menyukainya {b}Mia{/b}!"
-
-    ross "Kami akan memotong gambar dari majalah dan merekatkannya untuk membuat karya seni."
-
+    ross "Oh, they are so much fun! You're going to love them {b}Mia{/b}!"
+    ross "We're going to cut pictures out of magazines and glue them together to make art."
     show old_ross 26
     show player 2f
     show old_mia 7
-    player_name "Kedengarannya menyenangkan bagiku."
-
+    player_name "Sounds like fun to me."
     show player 1f
     show old_mia 10
-    mia "Ya, itu benar."
-
+    mia "Yeah, it really does."
     show old_mia 7
     show old_ross 11 with dissolve
-    ross "Baiklah, baiklah, saya punya semua yang kita perlukan di sini. Kami hanya kekurangan {b}semen karet{/b} dan {b}setumpuk besar majalah{/b}."
-
-    ross "Mengapa kalian berdua tidak mencarikan kami beberapa?"
-
+    ross "Alright, well, I've got just about everything we need right here. We're just missing {b}rubber cement{/b} and {b}a big stack of magazines{/b}."
+    ross "Why don't you two go find us some?"
     show old_ross 10
     show player 2f
-    player_name "Kita bisa melakukan itu, kan {b}Mia{/b}?"
-
+    player_name "We can do that, right {b}Mia{/b}?"
     show player 1f
     show old_mia 10b
-    mia "Sangat. Sebenarnya, menurutku ayahku punya semen karet di rumah."
-
+    mia "Absolutely. In fact, I think my dad has some rubber cement at home."
     show old_mia 10
-    mia "Aku akan mengambilnya!"
-
+    mia "I'll go get it!"
     hide old_mia with dissolve
 
     show old_ross 11
-    ross "... Dan dia pergi!"
-
-    ross "Saya kira itu berarti Anda bertanggung jawab untuk menemukan {b}majalah{/b}, {b}[firstname]{/b}."
-
-    ross "Jika Anda dapat menemukan {b}tiga tumpukan majalah BESAR{/b}, saya rasa itu sudah cukup."
-
+    ross "... And away she goes!"
+    ross "I guess that means you're in charge of finding the {b}magazines{/b}, {b}[firstname]{/b}."
+    ross "If you can find {b}three BIG stacks of magazines{/b}, I think that should be enough."
     show player 2f
     show old_ross 10
-    player_name "Adakah yang tahu di mana saya bisa menemukannya?"
-
+    player_name "Any idea where I could find some?"
     show player 1f
     show old_ross 10b with dissolve
     ross "Hmm..."
-
     show old_ross 11
-    ross "... Saya akan mulai dari {b}Perpustakaan{/b}. Mereka harus memiliki banyak pilihan untuk dipilih!"
-
+    ross "... I'd start at the {b}Library{/b}. They should have a huge selection to choose from!"
     show player 2f
     show old_ross 10
-    player_name "Baiklah, aku akan memeriksanya."
-
+    player_name "Alright, I'll go check it out."
     return
 
 label button_ross_find_magazines:
@@ -752,38 +552,27 @@ label button_ross_find_magazines:
     show player 2f zorder 1 at right
     show old_ross 10 at left
     with dissolve
-    player_name "Di mana kamu bilang aku harus mencarinya lagi?"
-
+    player_name "Where did you say I should look again?"
     show player 1f
     show old_ross 11
-    ross "Untuk {b}majalah{/b}?"
-
-    ross "{b}Coba perpustakaannya{/b}."
-
-    ross "Dan lihat apakah kamu dapat menemukan {b}tiga tumpukan majalah BESAR{/b}, oke?"
-
+    ross "For the {b}magazines{/b}?"
+    ross "{b}Try the library{/b}."
+    ross "And see if you can find {b}three BIG stacks of magazines{/b}, alright?"
     if M_ross.get("talked with jane"):
         hide old_ross with dissolve
         show player 10 with dissolve
-        player_name "{i}*Huh*{/i}"
-
-        player_name "Perpustakaan tidak memiliki majalah apa pun."
-
+        player_name "{i}*Sigh*{/i}"
+        player_name "The library doesn't have any magazines though."
         if M_ross.get("magazines remaining") == 3:
-            player_name "Dan saya masih perlu mencari 3 majalah lagi."
-
+            player_name "And I still need to find 3 more magazines."
         elif M_ross.get("magazines remaining") == 2:
-            player_name "Dan saya masih perlu mencari 2 majalah lagi."
-
+            player_name "And I still need to find 2 more magazines."
         elif M_ross.get("magazines remaining") == 1:
-            player_name "Dan saya masih perlu mencari 1 majalah lagi."
-
-        player_name "Saya kira saya harus {b}melihat-lihat di sekolah{/b}."
-
+            player_name "And I still need to find 1 more magazine."
+        player_name "I guess I should {b}look around here at school{/b}."
     else:
         show old_ross 10
         show player 2f
-        player_name "{b}Perpustakaan{/b}, mengerti!"
-
+        player_name "{b}Library{/b}, got it!"
     return
 # Decompiled by unrpyc: https://github.com/CensoredUsername/unrpyc

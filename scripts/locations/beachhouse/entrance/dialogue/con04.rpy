@@ -6,43 +6,27 @@ label con04_wake_condo_lounge:
         xoffset 350
     show martinez f_angry
     martinez "It doesn't make sense, she had the best voice on the show!"
-
     lopez "It doesn't matter, she looked like a camel."
-
-    martinez "Ck."
-
+    martinez "Tsk."
     lopez "You know the ugly ones never win."
-
     show anon f_worried with dissolve:
         xoffset -100
     martinez "That's stupid..."
-
     lopez "Yeah, well, it's true."
-
     anon "Umm, what's going on?"
-
     show lopez:
         unflip
         xoffset -200
     with dissolve
     lopez "Ugh, nice job... You woke him up!"
-
     martinez "Go back to bed, puta."
-
     martinez "We're watching television."
-
     anon f_skeptical "Yeah, you're watching MY television..."
-
     anon "What the hell are you two even doing here?"
-
     lopez "Her mom said we could watch TV 'til the bus comes."
-
-    anon "Ah, benarkah?"
-
+    anon "Oh, really?"
     martinez "Yeah, you got a problem with that?!"
-
-    anon f_worried "T-tidak."
-
+    anon f_worried "N-no."
     consuela "Could you girls please stop yelling?" (show_native="¿Podrían dejar de gritar niñas?")
     consuela "You're going to wake up {b}Mister [firstname]{/b}." (show_native="Van a despertar a {b}Mister [firstname]{/b}.")
     show consuela f_angry behind anon with dissolve:
@@ -50,10 +34,8 @@ label con04_wake_condo_lounge:
         xoffset 150
     martinez "He's already awake, {b}Mom{/b}." (show_native="Él ya está despierto, {b}Mamá{/b}.")
     martinez "And interrupting our show!"
-
     anon @ -m_talk "..."
     consuela "{b}Camila{/b}!"
-
     consuela "Have a little respect for your future husband!" (show_native="¡Ten un poco de respeto por tu futuro esposo!")
     martinez @ f_disgusted "He is not my future husband!" (show_native="¡Él no es mi futuro esposo!")
     consuela "Not if you keep acting like this..." (show_native="No si sigues actuando así ...")
@@ -61,32 +43,22 @@ label con04_wake_condo_lounge:
         unflip
         xoffset -400
     consuela "Sorry, papi."
-
     consuela "I tell them, be quiet!"
-
     consuela "But they no listen!"
-
     martinez @ f_eyeroll "What the fuck are you calling him \"papi\" for?"
-
-    lopez f_normal @ a_cover_mouth f_laugh "{i}*Mendengus*{/i}"
-
+    lopez f_normal @ a_cover_mouth f_laugh "{i}*Snort*{/i}"
     show consuela f_angry with dissolve:
         flip
         xoffset 150
     consuela "They go now!"
-
-    anon "T-tidak, tidak apa-apa."
-
+    anon "N-no, it's okay."
     anon "They can watch TV, I don't care."
-
     show consuela f_sad with dissolve:
         unflip
         xoffset -400
     consuela @ -m_talk "..."
     consuela "They stay?"
-
-    anon f_normal "Tentu."
-
+    anon f_normal "Sure."
     consuela f_normal @ f_laugh "Thank you, {b}Mister [firstname]{/b}!" (show_native="¡Oh, gracias {b}Mister [firstname]{/b}!")
     show consuela b_kiss5:
         xoffset -100
@@ -106,17 +78,13 @@ label con04_wake_condo_lounge:
         xoffset 150
     consuela "Be silent, both of you!" (show_native="¡Cállense las dos!")
     martinez a_crossed "Hmph!"
-
     pause
     show consuela f_normal with dissolve:
         unflip
         xoffset -400
     consuela "Come, I cook for you."
-
     anon "Oh, that sounds good!"
-
     consuela "Si, very good."
-
     hide anon with dissolve
     lopez "I'm hungry too." (show_native="Yo también tengo hambre.")
     show consuela f_angry with dissolve:
@@ -143,25 +111,17 @@ label con04_wake_condo_lounge:
         flip
         xoffset 350
     lopez "Damn, your mom is seriously pissed..."
-
     martinez f_angry "She's being a bitch!"
-
     pause
     show lopez f_smirk
     pause
     lopez "So, you think he's fucking her?"
-
     martinez f_disgusted "EWW!"
-
     martinez "Shut the fuck up!"
-
-    lopez f_normal @ f_laugh "Ha ha ha!"
-
+    lopez f_normal @ f_laugh "Hahaha!"
     martinez @ f_eyeroll "Screw this, I'd rather wait at the bus stop..."
-
     hide martinez with dissolve
     lopez "Hey, wait up!"
-
     hide lopez with dissolve
     return
 # Decompiled by unrpyc: https://github.com/CensoredUsername/unrpyc

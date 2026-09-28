@@ -3,15 +3,12 @@ label jenny_button_pregnant:
 
 
 label jenny_button_pregnant.sex:
-    anon f_confused "Ingin melakukan pertunjukan kamera lainnya?"
-
+    anon f_confused "Want to do another cam show?"
     show jenny a_crossed b_dressed_pregnant_belly f_happy
-    jenny "Hmm, ya!"
-
+    jenny "Umm, yeah!"
     show jenny a_touch f_grin_down
     with {'master': dissolve}
-    jenny "Sudah kubilang, kita harus menguangkan barang bayi ini selagi masih ada, bukan!"
-
+    jenny "I told you, we gotta cash in on this baby thing while it lasts, didn't I!"
     show anon f_surprised
     show jenny a_pregnant_belly_remove_panties b_dressed_pregnant_belly f_sexy_down
     with {'master': dissolve}
@@ -35,35 +32,29 @@ label jenny_button_pregnant.sex:
         xoffset 500
         xzoom -1
     with {'master': dissolve}
-    anon "Eh ya."
-
+    anon "Uh huh."
     show jenny b_naked_pregnant_belly_pickup
     with {'master': dissolve}
-    anon f_confused_low "Kamu akan memakainya lagi?"
-
+    anon f_confused_low "You're gonna wear that again?"
     show anon f_confused
     show jenny a_jersey b_naked_pregnant_belly
     with {'master': dissolve}
     jenny "Duh."
-
     show anon f_worried
     show jenny a_touch b_jersey_pregnant_belly f_sexy:
         xoffset 0
         xzoom 1
     with {'master': dissolve}
-    jenny "Anda harus menggoda mereka jika Anda menginginkan tip yang bagus."
-
+    jenny "You gotta tease them if you want good tips."
     show jenny f_upset
     pause
-    jenny "Kenapa kamu masih memakai baju?"
-
+    jenny "Why are you still wearing clothes?"
     show anon a_surprised f_surprised_down
     with {'master': dissolve}
     pause
     show anon a_behind_head f_shy
     with {'master': dissolve}
-    anon "Benar."
-
+    anon "Right."
     show anon b_dressed_changing3
     show jenny f_eyeroll
     with {'master': dissolve}
@@ -77,10 +68,8 @@ label jenny_button_pregnant.sex:
     pause
     show anon a_sides b_underwear f_happy
     with {'master': dissolve}
-    jenny "Dan jangan lupa maskermu!"
-
-    anon f_unimpressed "Ya, ya..."
-
+    jenny "And don't forget your mask!"
+    anon f_unimpressed "Yeah, yeah..."
     hide anon with dissolve
 
     scene location_home_jennybedroom_closeup_peek
@@ -88,38 +77,30 @@ label jenny_button_pregnant.sex:
     show jenny b_bed_jersey f_normal_low
     show jenny_overlay_o_laptop as laptop
     with fade
-    jenny "Hai lagi, teman-teman!"
-
-    jenny "Dewi seks Anda yang hamil dan cantik kembali untuk pertunjukan lainnya!"
-
+    jenny "Hey again, boys!"
+    jenny "It's your pregnant and beautiful sex goddess back for another show!"
     show anon f_eyeroll
     pause
     show anon f_tired
-    jenny "Ya, itu nyata."
-
+    jenny "Yeah, it's real."
     show anon f_normal_low
     pause
-    jenny "Nah buat kalian yang ketinggalan show terakhir kita..."
-
+    jenny "Well, for those of you who missed our last show..."
     show jenny a_lift
     with {'master': dissolve}
-    jenny "... Ini dia."
-
+    jenny "... Here ya go."
     show jenny a_touch1 b_bed_jersey_belly
     with {'master': dissolve}
     show anon f_happy
     pause
     show jenny a_touch
     with {'master': dissolve}
-    jenny "Melihat."
-
+    jenny "See."
     pause
-    jenny f_happy_down "Oh, kamu menyukainya, ya?"
-
+    jenny f_happy_down "Oh, you like it, huh?"
     show anon f_confused_low
     pause
-    jenny f_sexy_down "Dan bagaimana dengan ini?"
-
+    jenny f_sexy_down "And what about these?"
     show anon f_flirt
     show jenny a_lift2
     with {'master': dissolve}
@@ -128,24 +109,17 @@ label jenny_button_pregnant.sex:
     show jenny a_lift3 b_bed_jersey_boobs f_happy_down
     with {'master': dissolve}
     "{i}*PING*{/i} {i}*PING*{/i} {i}*PING*{/i}"
-
-    jenny f_laugh "hehe!"
-
+    jenny f_laugh "Hehe!"
     pause
     show jenny a_down b_bed_jersey_boobs
     with {'master': dissolve}
     jenny f_normal_low @ -m_talk "Hmm?"
-
     pause
-    jenny "Tentu saja!"
-
+    jenny "Of course they are!"
     show anon f_flirt_low
-    jenny f_sexy_down "Kalian ingin melihat?"
-
+    jenny f_sexy_down "You boys wanna see?"
     "{i}*PING*{/i} {i}*PING*{/i} {i}*PING*{/i} {i}*PING*{/i} {i}*PING*{/i} {i}*PING*{/i}"
-
-    jenny "Baiklah, ini dia..."
-
+    jenny "Alright, here we go..."
     show anon f_flirt_grin
     show jenny a_squeeze
     with {'master': dissolve}
@@ -153,43 +127,33 @@ label jenny_button_pregnant.sex:
     show anon f_flirt_low
     show jenny a_squeeze1
     with {'master': dissolve}
-    jenny "Anda melihatnya?"
-
+    jenny "You see it?"
     show anon f_flirt
     show jenny a_squeeze
     with {'master': dissolve}
     pause
-    jenny f_laugh "hehe!"
-
+    jenny f_laugh "Hehe!"
     show anon f_normal_low
     show jenny a_down f_sexy_down
     with {'master': dissolve}
-    jenny "Ya, saya yakin Anda akan melakukannya!"
-
+    jenny "Yeah, I bet you would!"
     show anon f_confused_low
     pause
-    jenny "Jadi kalian ingin melihatku bercinta?"
-
+    jenny "So you boys wanna see me get fucked?"
     show anon f_flirt_low
     "{i}*PING*{/i} {i}*PING*{/i} {i}*PING*{/i} {i}*PING*{/i} {i}*PING*{/i} {i}*PING*{/i}"
-
-    jenny "Aku tidak bisa mendengarmu!"
-
+    jenny "I can't hear you!"
     "{i}*PING*{/i} {i}*PING*{/i} {i}*PING*{/i} {i}*PING*{/i} {i}*PING*{/i} {i}*PING*{/i} {i}*PING*{/i} {i}*PING*{/i}"
-
     show jenny b_bed_jersey_boobs_back f_sexy
     with {'master': dissolve}
-    jenny "Kamu dengar itu, mainan anak laki-laki?"
-
+    jenny "You hear that, boy toy?"
     show anon f_surprised
-    jenny "Penggemar kami ingin melihat saya mengendarainya."
-
+    jenny "Our fans wanna see me ride it."
     show anon f_shock
     show jenny b_jersey_bed_mount f_nipple3:
         offset (-50, -20)
     with {'master': dissolve}
     "{i}*PING*{/i} {i}*PING*{/i} {i}*PING*{/i} {i}*PING*{/i} {i}*PING*{/i} {i}*PING*{/i}"
-
 
     call scene_jenny_sex_pregnant.repeat
     $ unlock_scene('Jenny', '19_unlocked')
@@ -199,54 +163,34 @@ label jenny_button_pregnant.sex:
     show anon b_bed_jenny_laptop f_confused_back_low of_mask
     show jenny_overlay_o_laptop as laptop
     with fade
-    anon "Hmm..."
-
-    anon f_worried_down "... Saya pikir saya menghancurkannya lagi."
-
+    anon "Umm..."
+    anon f_worried_down "... I think I broke her again."
     "*PING*{w=.5} *PING*{w=.4} *PING*{w=.4} *PING*{w=1} *PING*{w=.1} *PING*{w=.1}"
-
     show anon f_surprised_down
     "*PING*{w=.2} *PING*{w=.2} *PING*{w=1} *PING*{w=.3} *PING*{w=.4} *PING*{w=.1} *PING*{w=.2}"
-
     "*PING*{w=.2} *PING*{w=.2} *PING*{w=.2} *PING*{w=.2} *PING*{w=1} *PING*{w=.1}"
-
     show anon f_shock_down
     "*PING*{w=.1} *PING*{w=.1} *PING*{w=.1} *PING*{w=.1} *PING*{w=.1} *PING*{w=.1} *PING*{w=.1} *PING* *PING*{w=.1} *PING*{w=.1} *PING*{w=.1} *PING*{w=.1} *PING*{w=.1} *PING*{w=.1} *PING*{w=.1} *PING* *PING*{w=.1} *PING*{w=.1} *PING*{w=.1} *PING*{w=.1} *PING*{w=.1} *PING*{w=.1} *PING*{w=.1} *PING*"
-
     pause
-    anon f_surprised_down "Anda ingin saya mematikan streaming?"
-
+    anon f_surprised_down "You want me to shut the stream off?"
     show anon f_confused_back_low
-    jenny "{i}*Bergumam tak jelas*{/i}"
-
-    anon f_shy_down "Menurutku itu ya, teman-teman..."
-
-    anon "... Maaf."
-
+    jenny "{i}*Mumbles incoherently*{/i}"
+    anon f_shy_down "I think that's a yes, guys..."
+    anon "... Sorry."
     pause
-    anon "Ya, kami akan kembali."
-
+    anon "Yeah, we'll be back."
     pause
-    anon f_worried_down "Oh, ehh... aku tidak yakin, sam9..."
-
+    anon f_worried_down "Oh, ehh... I'm not sure, sam9..."
     pause
-    anon f_shy_down "... Maksudku, mungkin lain kali?"
-
-    jenny "Sam yang bodoh..."
-
+    anon f_shy_down "... I mean, maybe next time?"
+    jenny "Fuggid sam..."
     pause
-    anon f_happy_back_low "Apa itu {b}[jen_name]{/b}?"
-
-    anon "Anda akan menyukainya di pantat Anda lain kali?"
-
-    jenny "{i}*Mengerang*{/i}"
-
-    anon f_laugh "hehe!"
-
-    anon f_shy_down "Jadi uhh... Saya rasa, terima kasih sudah mendengarkannya kawan!"
-
-    anon "Dan sampai jumpa di lain waktu!"
-
+    anon f_happy_back_low "What's that {b}[jen_name]{/b}?"
+    anon "You'd love it in your butt next time?"
+    jenny "{i}*Groan*{/i}"
+    anon f_laugh "Hehe!"
+    anon f_shy_down "So uhh... I guess, thanks for tuning in guys!"
+    anon "And we'll see you all next time!"
 
     scene expression background(240, 352, 2.2, l=L_home_sisbedroom, o=1) as stage
     show anon b_underwear f_looking_down
@@ -263,50 +207,35 @@ label jenny_button_pregnant.sex:
     pause
     show anon a_sides b_dressed f_normal
     with {'master': dissolve}
-    anon "Jadi, um..."
-
-    anon f_happy "... Bagaimana kabarmu?"
-
-    jenny "{i}*Bergumam tak jelas*{/i}"
-
-    anon "Oh oke."
-
+    anon "So, umm..."
+    anon f_happy "... How ya doing?"
+    jenny "{i}*Mumbles incoherently*{/i}"
+    anon "Oh kay."
     pause
-    anon f_confused "Apakah kamu memerlukan aku untuk membelikanmu sesuatu?"
-
-    jenny "{i}*Bergumam tak jelas*{/i}"
-
-    anon f_worried "Benar."
-
+    anon f_confused "Do you need me to get you anything?"
+    jenny "{i}*Mumbles incoherently*{/i}"
+    anon f_worried "Right."
     pause
-    anon f_shy "Jadi, menurutku, kamu akan memberiku bagianku saja nanti?"
-
-    jenny "{i}*Bergumam tak jelas*{/i}"
-
-    anon f_normal "Keren keren."
-
+    anon f_shy "So, I guess, you'll just give me my cut later then?"
+    jenny "{i}*Mumbles incoherently*{/i}"
+    anon f_normal "Cool... cool."
     pause
     show anon a_wave f_happy
     with {'master': dissolve}
-    anon "'Baiklah, sampai jumpa!"
-
+    anon "'Kay, bye!"
     hide anon
     with {'master': dissolve}
     pause
-    jenny "Kontol."
-
+    jenny "Dick."
 
     scene expression background(360, 360, 4., l=L_home_hallway, o=1) as stage
     with fade
     show anon f_happy:
         xzoom -1
     with {'master': dissolve}
-    anon @ -m_talk "(Suatu hari, pertunjukan kamera sukses lainnya.)"
-
-    anon f_thinking_down @ -m_talk "(Saya ingin tahu apakah saya harus mulai memikirkan nama porno yang layak untuk diri saya sendiri?)"
-
-    anon f_disgusted_left_low @ -m_talk "(Mungkin dengan begitu aku bisa {b}[jen_name]{/b} berhenti memanggilku mainan anak laki-laki... )"
-
+    anon @ -m_talk "( Another day, another successful cam show. )"
+    anon f_thinking_down @ -m_talk "( I wonder if I should start thinking up a decent porn name for myself? )"
+    anon f_disgusted_left_low @ -m_talk "( Maybe then I can get {b}[jen_name]{/b} to stop calling me boy toy... )"
     hide anon with dissolve
     return
 # Decompiled by unrpyc: https://github.com/CensoredUsername/unrpyc

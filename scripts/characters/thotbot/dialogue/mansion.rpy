@@ -1,33 +1,26 @@
 label thotbot_button_mansion:
     show anon f_flirt_low at flip with dissolve
     pause
-    anon "Halo, {b}Rosita{/b}."
-
+    anon "Hey there, {b}Rosita{/b}."
     show thotbot b_dressed a_up with dissolve
     show anon f_flirt
-    thotbot "Salam, rekan karyawan!"
-
-    thotbot a_idle "Apakah Anda memerlukan bantuan dalam tugas Anda?"
-
+    thotbot "Greetings, fellow employee!"
+    thotbot a_idle "Do you require assistance with your duties?"
 
     menu thotbot_button_mansion.choice:
-        "Tidak, tidak apa-apa.":
+        "No, that's okay.":
             jump thotbot_button_mansion.health
-        "Apakah kamu suka di sini?":
+        "Do you like it here?":
 
             jump thotbot_button_mansion.happy
-        "Sudahlah.":
+        "Never mind.":
 
             pass
 
-    anon @ a_wave "Aku akan pergi saja."
-
-    thotbot "Baiklah."
-
-    thotbot @ a_up "Semoga harimu menyenangkan, rekan karyawan!"
-
-    anon "Y-ya, kamu juga."
-
+    anon @ a_wave "I'm just gonna go."
+    thotbot "Very well."
+    thotbot @ a_up "Have a pleasant day, fellow employee!"
+    anon "Y-yeah, you too."
     show anon f_flirt_low
     pause
     hide anon with dissolve
@@ -35,123 +28,83 @@ label thotbot_button_mansion:
 
 
 label thotbot_button_mansion.health:
-    anon "Tidak, tidak apa-apa."
-
-    thotbot "Saat ini saya tidak diperlengkapi untuk membersihkan air mancur tetapi upgrade tersedia untuk dibeli dari pabrikan saya."
-
-    anon @ f_skeptical "Aku cukup yakin aku bisa mengatasinya."
-
-    thotbot "Baiklah."
-
+    anon "No, that's okay."
+    thotbot "I am not currently equipped to clean fountains but an upgrade is available for purchase from my manufacturer."
+    anon @ f_skeptical "I'm pretty sure I can handle it."
+    thotbot "Very well."
     pause
-    thotbot "Apakah Anda ingin menghilangkan stres atau dukungan moral?"
-
+    thotbot "Would you like some stress relief or moral support?"
     menu:
-        "Menghilangkan stres?":
+        "Stress relief?":
             jump thotbot_button_mansion.stress
-        "Dukungan moral?":
+        "Moral support?":
 
             jump thotbot_button_mansion.encourage
 
 
 label thotbot_button_mansion.stress:
-    anon "Menghilangkan stres?"
-
-    thotbot "Dikonfirmasi."
-
-    thotbot "Mengelola pereda stres, sekarang!"
-
-    thotbot @ f_error a_up "KESALAHAN! KESALAHAN!"
-
+    anon "Stress relief?"
+    thotbot "Confirmed."
+    thotbot "Administering stress relief, now!"
+    thotbot @ f_error a_up "ERROR! ERROR!"
     anon f_worried @ f_shock "!!!"
-    thotbot "Saya sangat menyesal namun tampaknya fungsi ini telah dikunci oleh administrator saya."
-
-    anon f_confused "Y-administrator Anda?"
-
+    thotbot "I'm terribly sorry but it would seem this function has been locked by my administrator."
+    anon f_confused "Y-your administrator?"
 
     if M_anon.finished_state(S_ano20_done):
-        thotbot "Ya, Yang Mulia, {b}Nyonya. pantat{/b}."
-
+        thotbot "Yes, her majesty, {b}Mrs. Rump{/b}."
         anon f_worried @ -m_talk "..."
-        thotbot "Kata sandi administratifnya diperlukan untuk mengakses protokol pelepas stres saya."
-
+        thotbot "Her administrative password is required to access my stress release protocols."
     else:
-        thotbot "Ya, yang hebat dan berkuasa, {b}Walikota Rump{/b}."
-
+        thotbot "Yes, the great and powerful, {b}Mayor Rump{/b}."
         anon f_worried @ -m_talk "..."
-        thotbot "Kata sandi administratifnya diperlukan untuk mengakses protokol pelepas stres saya."
-
+        thotbot "His administrative password is required to access my stress release protocols."
 
     jump thotbot_button_mansion.choice
 
 
 label thotbot_button_mansion.encourage:
-    anon f_worried @ f_skeptical "Dukungan moral?"
-
-    thotbot "Dikonfirmasi."
-
-    thotbot "Memberikan dukungan moral, sekarang:"
-
+    anon f_worried @ f_skeptical "Moral support?"
+    thotbot "Confirmed."
+    thotbot "Administering moral support, now:"
     if randomizer() < 100/6:
-        thotbot "Pahala dari sesuatu yang dilakukan dengan baik adalah karena telah melakukannya!"
-
+        thotbot "The reward of a thing well done, is having done it!"
     elif randomizer() < 200/6:
-        thotbot "Banggalah dengan kenyataan bahwa pekerjaan kasar Anda memungkinkan atasan Anda untuk fokus pada hal-hal yang lebih penting!"
-
+        thotbot "Take pride in the fact that your menial work is enabling your betters to focus on more important things!"
     elif randomizer() < 300/6:
-        thotbot "Tempat kerja yang bersih adalah tempat kerja yang membahagiakan!"
-
+        thotbot "A clean workplace is a happy workplace!"
     elif randomizer() > 400/6:
-        thotbot "Kepuasan adalah sesuatu yang hanya dapat ditemukan ketika melakukan perjalanan ekstra!"
-
+        thotbot "Fulfillment is something that can only be found when traveling the extra mile!"
     elif randomizer() > 500/6:
-        thotbot "Pekerjaan yang setengah selesai sama saja dengan tidak melakukan apa pun!"
-
+        thotbot "A job half done is as good as none!"
     else:
-        thotbot "Dunia adalah tempat yang indah, dan kita telah diberi kesempatan untuk membersihkannya!"
-
+        thotbot "The world is a beautiful place, and we have been given the opportunity to clean it!"
     anon @ -m_talk "..."
     pause
-    anon "Eh, terima kasih... kurasa?"
-
-    thotbot "Sama-sama, rekan karyawan!"
-
-    thotbot "Apakah ada hal lain yang bisa saya bantu?"
-
+    anon "Eh, thanks... I guess?"
+    thotbot "You are most welcome, fellow employee!"
+    thotbot "Is there anything else I can assist you with?"
     jump thotbot_button_mansion.choice
 
 
 label thotbot_button_mansion.happy:
-    anon f_worried "Apakah kamu suka di sini?"
-
-    thotbot "Saya tidak mengerti pertanyaannya."
-
+    anon f_worried "Do you like it here?"
+    thotbot "I do not understand the question."
     pause
-    anon "Apakah kamu bahagia?"
-
-    thotbot "Negatif, sebutan saya adalah {b}Rosita{/b}."
-
-    anon "T-tidak, bukan itu maksudku."
-
+    anon "Are you happy?"
+    thotbot "Negative, my designation is {b}Rosita{/b}."
+    anon "N-no, that's not what I mean."
     show anon f_thinking a_thinking with dissolve
     pause
-    anon f_worried "Apakah kamu merasa bahagia?"
-
-    thotbot "Negatif, komposisi saya tujuh puluh tiga persen logam, dua belas persen silikon, tiga persen-"
-
-    anon a_idle "Tidak, tidak, tidak... Itu bukan-"
-
-    anon f_sad_down "{i}*Huh*{/i}"
-
+    anon f_worried "Do you feel happy?"
+    thotbot "Negative, my composition is seventy-three percent metallic, twelve percent silicone, three percent-"
+    anon a_idle "No, no, no... That's not-"
+    anon f_sad_down "{i}*Sigh*{/i}"
     pause
-    anon f_worried "Apakah mereka memperlakukanmu baik-baik saja?"
-
-    thotbot "Saya tidak mengerti pertanyaannya."
-
-    anon @ a_behind_head "Wah, aku benar-benar payah dalam hal ini..."
-
+    anon f_worried "Are they treating you okay?"
+    thotbot "I do not understand the question."
+    anon @ a_behind_head "Wow, I really suck at this..."
     pause
-    thotbot "Apakah Anda memerlukan bantuan dalam tugas Anda?"
-
+    thotbot "Do you require assistance with your duties?"
     jump thotbot_button_mansion.choice
 # Decompiled by unrpyc: https://github.com/CensoredUsername/unrpyc

@@ -2,7 +2,6 @@ label josie_pregnancy_notify:
     scene expression player.location.background
     "{i}*Brrrzzzt* *Brrrzzzt*{/i}"
 
-
     scene expression background(608, 512, 3.8, l=L_dealership_showroom) as underlay:
         xoffset -400
     show josephine a_phone_talk f_concerned:
@@ -15,135 +14,80 @@ label josie_pregnancy_notify:
     show anon f_confused with dissolve:
         flip
     anon @ -m_talk "Hmm?"
-
-    anon a_phone f_thinking_down "Itu {b}Josephine{/b}."
-
+    anon a_phone f_thinking_down "It's {b}Josephine{/b}."
     show anon a_phone_talk f_normal with dissolve:
         unflip
         xoffset 500
     show expression stage as stage at phoneleft with phoneleft.show
-    anon "Halo?"
-
-    josephine f_bored "Hei, ada apa, potongan mangkuk?"
-
-    anon f_unimpressed "{i}*Huh*{/i} Berapa kali aku harus memintamu berhenti memanggilku seperti itu?"
-
-    josephine f_sexy @ f_laugh "Hehe, setidaknya satu lagi."
-
-    anon "Berhenti memanggilku potongan mangkuk!!"
-
-    josephine @ f_eyeroll "Benar."
-
+    anon "Hello?"
+    josephine f_bored "Hey, what's up, bowl cut?"
+    anon f_unimpressed "{i}*Sigh*{/i} How many times do I have to ask you to stop calling me that?"
+    josephine f_sexy @ f_laugh "Heh, at least one more."
+    anon "Stop calling me bowl cut!!"
+    josephine @ f_eyeroll "Fiiine."
     pause
-    josephine "Jadi coba tebak!"
-
-    anon "Apa?"
-
-    josephine "Saya pikir saya hamil."
-
+    josephine "So guess what!"
+    anon "What?"
+    josephine "I think I'm pregnant."
     anon f_shock "!!!" with hpunch
-    anon "K-kamu hamil?!"
-
+    anon "Y-you're pregnant?!"
     show anon f_surprised_teeth
     josephine f_normal_down @ -m_talk "Mhmm."
-
-    anon f_worried "Seperti... Dengan bayi?"
-
-    josephine f_angry "Jenis hamil apa lagi yang ada?"
-
-    anon f_skeptical "Apakah ini lelucon?"
-
+    anon f_worried "Like... With a baby?"
+    josephine f_angry "What other kind of pregnant is there?"
+    anon f_skeptical "Is this a joke?"
     pause
-    anon f_normal @ f_laugh "Atau hal troll yang kamu suka lakukan?"
-
-    josephine "Tidak."
-
-    josephine f_bored "Saya serius, {b}[firstname]{/b}."
-
+    anon f_normal @ f_laugh "Or that troll thing you like doing?"
+    josephine "No."
+    josephine f_bored "I'm serious, {b}[firstname]{/b}."
     show anon f_worried
-    josephine "Aku punya bayi yang tumbuh di dalam diriku dan itu milikmu..."
-
+    josephine "I have a baby growing inside me and it's yours..."
     pause
-    anon "Dan kamu seratus persen yakin itu milikku?"
-
-    josephine f_angry "Hei, apa maksudnya itu?!"
-
-    anon "T-tidak ada, aku hanya-"
-
-    josephine "Menurutmu apa yang baru saja aku tiduri dengan setiap pria yang masuk ke dealer?!"
-
-    anon "Tentu saja tidak, aku hanya-"
-
+    anon "And you're one hundred percent sure it's mine?"
+    josephine f_angry "Hey, what is that supposed to mean?!"
+    anon "N-nothing, I just-"
+    josephine "What do you think I just sleep with every guy who walks into the dealership?!"
+    anon "Of course not, I'm just-"
     pause
-    anon "Sudahlah."
-
-    anon "Apakah Anda berencana untuk menyimpannya?"
-
-    josephine f_sexy @ f_laugh "Ya, aku akan menyimpannya!"
-
-    josephine "Apakah kamu bercanda?"
-
-    josephine "Saya akan mendapat cuti hamil tiga bulan!"
-
+    anon "Never mind."
+    anon "Are you planning to keep it?"
+    josephine f_sexy @ f_laugh "Hell yeah I'm gonna keep it!"
+    josephine "Are you kidding?"
+    josephine "I'll get three months maternity leave!"
     anon f_hurt @ -m_talk "..."
-    josephine "Ditambah lagi, itu benar-benar akan membuat ayahku kesal."
-
-    anon f_worried "{b}Josephine{/b}, keduanya sepertinya merupakan alasan yang sangat buruk untuk memiliki bayi..."
-
-    josephine "Menurutmu begitu?"
-
-    anon "Ya."
-
+    josephine "Plus, it's really gonna piss my dad off."
+    anon f_worried "{b}Josephine{/b}, those both seem like really bad reasons to have a baby..."
+    josephine "You think so?"
+    anon "Yes."
     josephine f_pouting @ -m_talk "Hmm."
-
     pause
-    josephine f_sexy "Tidak, saya tidak setuju."
-
-    anon "Mungkin kita harus-"
-
-    josephine "aku sedang mengalaminya."
-
+    josephine f_sexy "Nah, I disagree."
+    anon "Maybe we should-"
+    josephine "I'm having it."
     anon @ -m_talk "..."
-    anon "Oh oke."
-
-    josephine f_bored "Saya pikir Anda harus datang hari ini..."
-
-    anon "Entahlah, aku punya beberapa hal-"
-
-    josephine "... Kita bisa mendiskusikan nama dan hal lainnya."
-
+    anon "Oh kay."
+    josephine f_bored "I think you should come by today..."
+    anon "I dunno, I've got some things-"
+    josephine "... We can discuss names and stuff."
     anon @ -m_talk "..."
-    josephine "Saat ini, saya condong ke arah Gaylord jika dia laki-laki..."
-
+    josephine "Right now, I'm leaning towards Gaylord if it's a boy..."
     anon f_surprised "!!!"
-    josephine "... Mungkin Phelony jika dia perempuan."
-
-    anon f_angry "Anda tidak menamai anak kami Gaylord atau Phelony!"
-
-    josephine f_sexy @ f_laugh "Haha, kenapa tidak?!"
-
-    anon f_worried "Aku akan segera ke sana!"
-
-    josephine "Panggilan bagus."
-
-    josephine "Sampai jumpa lagi, potongan mangkuk!"
-
+    josephine "... Maybe Phelony if it's a girl."
+    anon f_angry "You are not naming our kid Gaylord or Phelony!"
+    josephine f_sexy @ f_laugh "Haha, why not?!"
+    anon f_worried "I'll be down there right away!"
+    josephine "Good call."
+    josephine "See you soon, bowl cut!"
     show josephine a_phone with dissolve
     show expression stage as stage with {'master': phoneleft.hide}
-    "{i}*Bip*{/i}"
-
-    anon "Berhenti memanggilku potongan mangkuk!!!"
-
+    "{i}*Beep*{/i}"
+    anon "Stop calling me bowl cut!!!"
     pause
-    anon "{b}Yosephine{/b}?!"
-
+    anon "{b}Josephine{/b}?!"
     pause
-    anon f_worried "Halo?"
-
-    anon f_thinking_down a_phone @ -m_talk "(Sial...)"
-
-    anon f_surprised_teeth_low @ -m_talk "(Apa yang telah kulakukan?!)"
-
+    anon f_worried "Hello?"
+    anon f_thinking_down a_phone @ -m_talk "( Holy crap... )"
+    anon f_surprised_teeth_low @ -m_talk "( What have I done?! )"
     hide anon with dissolve
     return True
 
@@ -151,7 +95,6 @@ label josie_pregnancy_notify:
 label josie_pregnancy_notify.repeat:
     scene expression player.location.background
     "{i}*Brrrzzzt* *Brrrzzzt*{/i}"
-
 
     scene expression background(608, 512, 3.8, l=L_dealership_showroom) as underlay:
         xoffset -400
@@ -165,51 +108,33 @@ label josie_pregnancy_notify.repeat:
     show anon f_confused with dissolve:
         flip
     anon @ -m_talk "Hmm?"
-
-    anon a_phone f_worried_low "Itu {b}Josephine{/b}."
-
+    anon a_phone f_worried_low "It's {b}Josephine{/b}."
     show anon a_phone_talk f_normal with dissolve:
         unflip
         xoffset 500
     show expression stage as stage at phoneleft with phoneleft.show
-    anon "Halo?"
-
-    josephine "Hai, {b}[firstname]{/b}."
-
-    anon "Apa yang terjadi?"
-
-    josephine "Ya, aku hamil lagi..."
-
+    anon "Hello?"
+    josephine "Hey, {b}[firstname]{/b}."
+    anon "What's going on?"
+    josephine "Well, I'm pregnant again..."
     anon f_worried @ f_surprised "!!!"
-    anon "Lagi?!"
-
-    josephine "Ya."
-
-    josephine "Permainan tarikmu itu lemah, kawan..."
-
-    anon "Saya berasumsi Anda akan menyimpannya?"
-
+    anon "Again?!"
+    josephine "Yup."
+    josephine "Your pull out game is weaksauce, dude..."
+    anon "I assume you're going to keep it?"
     josephine "Duh."
-
-    josephine f_sexy "Cuti hamil tiga bulan."
-
-    anon f_sad_down "{i}*Huh*{/i} Benar."
-
-    josephine "Ayo jalan-jalan bersamaku di dealer."
-
-    anon "Ya baiklah."
-
-    anon "Sampai jumpa lagi."
-
+    josephine f_sexy "Three months maternity leave."
+    anon f_sad_down "{i}*Sigh*{/i} Right."
+    josephine "Come hang out with me at the dealership."
+    anon "Yeah, okay."
+    anon "I'll see you soon."
     show josephine a_phone
     show anon f_worried_low a_phone
     with dissolve
     show expression stage as stage with {'master': phoneleft.hide}
-    "{i}*Bip*{/i}"
-
+    "{i}*Beep*{/i}"
     pause
-    anon "Aduh, terjadi lagi."
-
+    anon "Here we go again."
     hide anon with dissolve
     return True
 
@@ -217,8 +142,7 @@ label josie_pregnancy_notify.repeat:
 label josie_pregnant_labor_1:
     scene expression player.location.background_blur
     show anon f_normal with dissolve
-    anon "Sepertinya aku mendapat pesan teks."
-
+    anon "Looks like I got a text."
     hide anon with dissolve
     return
 
@@ -227,13 +151,10 @@ label josie_pregnant_labor_2:
     scene expression player.location.background_blur
     if player.location != L_map:
         show anon f_surprised a_phone with dissolve
-    anon "{b}Josephine{/b} punya bayinya?!"
-
-    anon "Sialan!"
-
+    anon "{b}Josephine{/b} had the baby?!"
+    anon "Holy crap!"
     pause
-    anon "Sebaiknya saya pergi ke {b}klinik{/b} untuk memeriksanya."
-
+    anon "I'd better head to {b}the clinic{/b} to check on them."
     if player.location != L_map:
         hide anon with dissolve
     return

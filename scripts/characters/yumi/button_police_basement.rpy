@@ -2,7 +2,7 @@ label yumi_police_basement_button_dialogue:
     call expression game.dialog_select("yumi_police_basement_dialogue_pre")
 
     menu:
-        "Donat." if M_mia.is_state(S_mia_impress_harold):
+        "Donuts." if M_mia.is_state(S_mia_impress_harold):
             $ harold_topping = M_harold.get("topping")
             call expression game.dialog_select("yumi_police_basement_dialogue_donuts")
             $ del harold_topping

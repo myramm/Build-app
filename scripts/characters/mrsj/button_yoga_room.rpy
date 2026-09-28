@@ -5,22 +5,22 @@ label mrsj_yoga_button_dialogue:
     else:
         call expression game.dialog_select("mrsj_button_yoga_room_dialogue_pre_repeat")
     menu mrsj_button_yoga_room_dialogue_options:
-        "Bagaimana {b}Erik{/b}?":
+        "How's {b}Erik{/b}?":
             call expression game.dialog_select("mrsj_button_yoga_room_dialogue_hows_erik")
             jump expression game.dialog_select("mrsj_button_yoga_room_dialogue_options")
 
-        "Undang ke poker." if M_erik.finished_state(S_erik_poker_ready):
+        "Invite to poker." if M_erik.finished_state(S_erik_poker_ready):
             call expression game.dialog_select("mrsj_button_yoga_room_dialogue_poker")
             jump expression game.dialog_select("mrsj_button_yoga_room_dialogue_options")
-        "Apa itu tadi?":
+        "What was that?":
 
             call expression game.dialog_select("mrsj_button_yoga_room_dialogue_what_was_that")
             jump expression game.dialog_select("mrsj_button_yoga_room_dialogue_options")
-        "Kamu sangat bugar!":
+        "You're so fit!":
 
             call expression game.dialog_select("mrsj_button_yoga_room_dialogue_youre_so_fit")
             jump expression game.dialog_select("mrsj_button_yoga_room_dialogue_options")
-        "Saya harus pergi berlatih!":
+        "I have to go train!":
 
             call expression game.dialog_select("mrsj_button_yoga_room_dialogue_have_to_train")
 

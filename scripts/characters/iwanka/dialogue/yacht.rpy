@@ -2,67 +2,51 @@ label iwanka_button_yacht:
     show anon b_onbed_back with dissolve:
         flip
         offset (100, 110)
-    iwanka "Hei, kamu berhasil!"
-
+    iwanka "Hey, you made it!"
     show iwanka f_excited
-    anon "Ya."
-
-    iwanka "Tarik kursi."
-
-    iwanka "Siapkan minuman untuk dirimu sendiri."
-
+    anon "Yup."
+    iwanka "Pull up a chair."
+    iwanka "Fix yourself a drink."
     pause
-    iwanka f_smirk "Kecuali Anda siap untuk beralih ke aktivitas yang lebih berat?"
-
+    iwanka f_smirk "Unless you're ready to move onto a more vigorous activity?"
 
     menu iwanka_button_yacht.choice:
-        "Kamu terlihat sangat seksi...":
+        "You look really sexy...":
             jump iwanka_button_yacht.sexy
-        "Kapal pesiar ini luar biasa!":
+        "This yacht is awesome!":
 
             jump iwanka_button_yacht.yacht
-        "Seks oral.":
+        "Blowjob.":
 
             jump iwanka_button_yacht.blowjob
-        "Seks.":
+        "Sex.":
 
             jump iwanka_button_yacht.suggest
-        "Saya tidak bisa tinggal.":
+        "I can't stay.":
 
             pass
 
-    anon f_normal "Saya tidak bisa tinggal."
-
-    iwanka f_pouting "Tunggu, kamu sudah berangkat?!"
-
-    anon "Ya, maaf..."
-
-    iwanka "Tapi aku benar-benar akan melompati tulangmu!"
-
-    anon "Mungkin lain kali."
-
-    iwanka f_sad "Aduh..."
-
+    anon f_normal "I can't stay."
+    iwanka f_pouting "Wait, you're leaving already?!"
+    anon "Yeah, sorry..."
+    iwanka "But I was totally gonna jump your bones!"
+    anon "Maybe next time."
+    iwanka f_sad "Aww..."
     hide anon with dissolve
     return
 
 
 label iwanka_button_yacht.blowjob:
-    anon f_normal "Bolehkah memberiku pekerjaan pukulan?"
-
-    iwanka f_smirk "Sebuah pekerjaan pukulan?"
-
-    iwanka "Baiklah, menurutku itu adil setelah semua yang telah kamu lakukan untukku."
-
+    anon f_normal "Mind giving me a blowjob?"
+    iwanka f_smirk "A blowjob?"
+    iwanka "Alright, I suppose that's fair after all you've done for me."
     hide iwanka with dissolve
     show anon f_flirt_grin with {'master': dissolve}:
         unflip
         xoffset 650
-    iwanka "Ayolah!"
-
+    iwanka "Come on then!"
     hide anon with {'master': fastdissolve}
-    anon "Tepat di belakangmu!"
-
+    anon "Right behind you!"
 
     scene expression background(512, 344, 3, l=L_boat_cabin) as stage
     show iwanka b_magic f_smirk
@@ -82,25 +66,16 @@ label iwanka_button_yacht.blowjob:
         with dissolve
     else:
         show iwanka b_naked
-    iwanka "Heh, kenapa kamu menatapku seperti itu?"
-
+    iwanka "Heh, why are you staring at me like that?"
     anon @ -m_talk "Hmm?"
-
-    anon f_shy "T-tidak ada, aku hanya-"
-
+    anon f_shy "N-nothing, I just-"
     pause
-    anon f_flirt "Kamu benar-benar seksi."
-
-    iwanka @ f_eyeroll "Hmm, ya."
-
-    iwanka a_hip "Apakah kita melakukan ini atau apa?"
-
-    anon "Ya, tolong."
-
-    iwanka "Kalau begitu, silakan duduk."
-
-    anon "Y-ya, oke."
-
+    anon f_flirt "You're really sexy."
+    iwanka @ f_eyeroll "Umm, duh."
+    iwanka a_hip "Are we doing this or what?"
+    anon "Yes, please."
+    iwanka "Then have a seat."
+    anon "Y-yeah, okay."
 
     call scene_iwanka_blowjob.yacht
     $ unlock_scene('iwanka', '01_unlocked', variant='yacht')
@@ -109,36 +84,26 @@ label iwanka_button_yacht.blowjob:
     show iwanka b_naked o_cum f_smirk
     show anon f_flirt
     with fade
-    anon "Terima kasih telah melakukan itu."
-
-    iwanka "Tidak masalah."
-
-    iwanka @ f_laugh "Itu menyenangkan!"
-
+    anon "Thank you, for doing that."
+    iwanka "No problem."
+    iwanka @ f_laugh "It was fun!"
     pause
-    iwanka "Sekarang, permisi..."
-
-    iwanka "... Aku akan membersihkan diriku sendiri."
-
-    anon "Y-ya, tentu saja."
-
-    anon @ a_wave "Sampai jumpa nanti."
-
-    iwanka "Sampai jumpa, {b}[firstname]{/b}."
-
+    iwanka "Now, if you'll excuse me..."
+    iwanka "... I'm gonna go clean myself up."
+    anon "Y-yeah, sure."
+    anon @ a_wave "See ya later."
+    iwanka "See ya, {b}[firstname]{/b}."
     hide anon with dissolve
     return 'afterglow'
 
 
 label iwanka_button_yacht.sex:
-    iwanka f_excited @ f_laugh "Tentu saja!"
-
+    iwanka f_excited @ f_laugh "Oh, definitely!"
     hide iwanka with dissolve
     show anon f_surprised with {'master': dissolve}:
         unflip
         xoffset 650
-    iwanka "Apa yang kamu tunggu? Undangan?"
-
+    iwanka "What are you waiting for? An invitation?"
     hide anon with {'master': fastdissolve}
     anon "!!!"
 
@@ -161,12 +126,9 @@ label iwanka_button_yacht.sex:
     show iwanka b_naked a_hip f_smirk
     show anon b_naked od_naked_dick1
     with dissolve
-    iwanka "Pastikan saja kamu benar-benar meniduriku kali ini!"
-
-    iwanka "Dan mungkin membuatku sedikit tersedak."
-
-    anon f_surprised "Hah?!"
-
+    iwanka "Just make sure you really fuck me hard this time!"
+    iwanka "And maybe choke me a little."
+    anon f_surprised "Huh?!"
     show anon b_empty od_empty:
         xoffset 300
         unflip
@@ -174,10 +136,8 @@ label iwanka_button_yacht.sex:
         unflip
         xoffset 300
     with dissolve
-    iwanka "Ayolah!"
-
-    anon "A-wah, tunggu sebentar!"
-
+    iwanka "C'mon!"
+    anon "W-whoa, wait a second!"
 
     call scene_iwanka_sex.yacht
     $ unlock_scene('iwanka', '02_unlocked', variant='yacht')
@@ -189,50 +149,32 @@ label iwanka_button_yacht.sex:
         offset (84, -17)
     show anon_overlay_dick_onbed_naked_od_dick1
     with fade
-    iwanka "Hmm, bagus sekali!"
-
-    anon "Y-ya, kamu juga."
-
+    iwanka "Mmm, well done!"
+    anon "Y-yeah, you too."
     pause
     show iwanka f_excited_up
-    iwanka "Saya yakin Anda senang Anda datang ke sini sekarang, ya?"
-
-    anon "Ya, sangat senang!"
-
-    iwanka @ f_laugh "hehe!"
-
-    iwanka f_content_closed "Kau tahu, kau bisa jalan-jalan sebentar..."
-
-    iwanka "... Jika kamu mau."
-
+    iwanka "I bet you're glad you came out here now, huh?"
+    anon "Yes, very glad!"
+    iwanka @ f_laugh "Hehe!"
+    iwanka f_content_closed "You know, you can hang out awhile..."
+    iwanka "... If you want."
     anon "Oh?"
-
-    iwanka "Ya, aku suka berbaring di sini bersamamu."
-
-    iwanka "Itu ummm, entahlah..."
-
-    anon "Bagus?"
-
-    iwanka @ f_excited_up "... Ya."
-
-    iwanka "Bagus."
-
-    anon "Baiklah, tapi hanya sebentar."
-
-    iwanka "Mm, oke."
-
+    iwanka "Yeah, I like laying here with you."
+    iwanka "It's umm, I dunno..."
+    anon "Nice?"
+    iwanka @ f_excited_up "... Yeah."
+    iwanka "Nice."
+    anon "Alright, but only for a little bit."
+    iwanka "Mm, okay."
     pause
-    iwanka "Terima kasih, {b}[firstname]{/b}."
-
+    iwanka "Thanks, {b}[firstname]{/b}."
 
     scene expression background(512, 344, 3, l=L_boat_cabin, o=1) as stage
     show anon
     show iwanka b_naked f_excited
     with slowfade
-    iwanka "Itu menyenangkan!"
-
-    anon "Ya, benar."
-
+    iwanka "That was fun!"
+    anon "Yeah, it was."
     hide anon
     show iwanka b_naked_kiss:
         xoffset -200
@@ -242,77 +184,52 @@ label iwanka_button_yacht.sex:
         xoffset 0
     show anon f_shy
     with dissolve
-    iwanka "Ayo segera lakukan lagi, oke?"
-
-    anon "Tentu saja."
-
+    iwanka "Let's do it again soon, okay?"
+    anon "Definitely."
     hide anon with dissolve
     return 'afterglow'
 
 
 label iwanka_button_yacht.sexy:
-    anon f_flirt "Kamu terlihat sangat seksi..."
-
-    iwanka f_smirk "Yah, aku harap begitu!"
-
-    iwanka "Setelah semua uang yang ayahku habiskan untuk operasi plastikku..."
-
-    anon f_surprised_low "Anda pernah menjalani operasi plastik?!"
-
-    iwanka "Tiga kali."
-
+    anon f_flirt "You look really sexy..."
+    iwanka f_smirk "Well, I should hope so!"
+    iwanka "After all the money my father spent on my plastic surgeries..."
+    anon f_surprised_low "You've had plastic surgeries?!"
+    iwanka "Three times."
     pause
-    iwanka @ f_thinking "Hmm, empat jika kamu menghitung payudaraku."
-
-    anon "Kamu tampak terlalu muda untuk semua itu!"
-
-    iwanka "Anda tidak pernah terlalu muda untuk menyempurnakan diri Anda secara visual."
-
+    iwanka @ f_thinking "Hmm, four if you count my boobs."
+    anon "You seem way too young for all that!"
+    iwanka "You're never too young to visually enhance yourself."
     show anon f_worried_low
     pause
-    iwanka "Setidaknya, itulah yang dikatakan dokter bedah plastik ayahku..."
-
+    iwanka "At least, that's what my father's plastic surgeon says..."
     jump iwanka_button_yacht.choice
 
 
 label iwanka_button_yacht.suggest:
-    anon f_flirt "Ingin melakukannya?"
-
+    anon f_flirt "Want to do it?"
 
     if game.timer.is_evening():
         jump iwanka_button_yacht.sex
 
-    iwanka "Aku sedang berjemur sekarang... Tapi mungkin nanti, oke?"
-
+    iwanka "I'm kinda sunbathing right now... But maybe later, okay?"
     show anon f_sad
     pause
     jump iwanka_button_yacht.choice
 
 
 label iwanka_button_yacht.yacht:
-    anon f_normal "Kapal pesiar ini luar biasa!"
-
-    iwanka f_normal "Benar?!"
-
-    iwanka f_excited "Saya senang berada di sini, di lautan."
-
-    iwanka @ f_laugh "Ditambah lagi ada wifi dan TV satelit."
-
-    anon @ f_surprised "Sialan, benarkah?"
-
-    iwanka "Ya, ayahku mengeluarkan lebih banyak uang untuk menjadi mucikari daripada perahu itu sendiri."
-
-    anon "Itu gila!"
-
-    iwanka "Sistem keamanan mutakhir, perabotan mewah, dek berpemanas, bar yang terisi penuh, audio khusus berkualitas teater..."
-
-    iwanka "... Dan ada tiang penari telanjang di sekitar sini."
-
-    anon f_surprised "Benar-benar?"
-
-    anon f_flirt "Saya ingin itu!"
-
-    iwanka @ f_laugh "Hehe, saya yakin Anda akan melakukannya."
-
+    anon f_normal "This yacht is awesome!"
+    iwanka f_normal "Right?!"
+    iwanka f_excited "I love being out here on the ocean."
+    iwanka @ f_laugh "Plus it's got wifi and satellite TV."
+    anon @ f_surprised "Holy crap, really?"
+    iwanka "Yeah, my dad dumped more money into pimping this thing out than the boat itself."
+    anon "That's nuts!"
+    iwanka "State-of-the-art security system, luxury furniture, heated decks, a fully stocked bar, built-in theater quality custom audio..."
+    iwanka "... And there's a stripper pole around here somewhere."
+    anon f_surprised "Really?"
+    anon f_flirt "I would like that!"
+    iwanka @ f_laugh "Hehe, I bet you would."
     jump iwanka_button_yacht.choice
 # Decompiled by unrpyc: https://github.com/CensoredUsername/unrpyc

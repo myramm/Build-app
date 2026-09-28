@@ -5,143 +5,106 @@ label roz_dialogue_basement_priya:
         show xtra 35 zorder 2 at Position(xalign = 0.1, yalign = 0.251)
     show roz_desk at left
     show player 10f at right
-    player_name "Saya ingin bertanya tentang ruang bawah tanah."
-
+    player_name "I wanted to ask you about the basement."
     show player 5f
     show old_roz 2
-    roz "Itu dibatasi."
-
+    roz "It's restricted."
     show old_roz 1
     show player 12f
-    player_name "Y-ya, aku tahu..."
-
-    player_name "... Tapi saya berharap, mungkin, Anda bisa memberi tahu saya siapa yang punya akses?"
-
+    player_name "Y-yeah, I know..."
+    player_name "... But I was hoping, maybe, you could tell me who has access?"
     show player 5f
     show old_roz 2
-    roz "Tidak, itu dibatasi."
-
+    roz "No, that's restricted."
     show old_roz 1
     show player 12f
-    player_name "... Tapi aku hanya perlu-"
-
+    player_name "... But I just need to-"
     show player 5f
     show old_roz 2
-    roz "Terbatas."
-
+    roz "Restricted."
     show old_roz 1
     show player 35f
-    player_name "Bisakah Anda menyukai halaman pertama dari dokter yang bekerja di sana?"
-
-    player_name "Saya perlu berbicara dengan {b}Dokter Singh{/b}."
-
+    player_name "Could you like, page one of the doctors working down there?"
+    player_name "I need to speak with {b}Doctor Singh{/b}."
     show player 90f
     show old_roz 2
-    roz "saya bisa."
-
+    roz "I could."
     show old_roz 1
     pause
     player_name "..."
     show player 10f
-    player_name "Maukah kamu?"
-
+    player_name "Would you?"
     show player 5f
     show old_roz 2
-    roz "Tidak."
-
+    roz "No."
     show old_roz 1
     show player 15f
-    player_name "Dengar, aku benar-benar perlu bicara dengannya."
-
-    player_name "Ini sangat penting!"
-
+    player_name "Look, I really need to speak with him."
+    player_name "It's very important!"
     show player 16f
     show old_roz 2
-    roz "Oh, aku tidak menyadari itu penting..."
-
+    roz "Oh, I didn't realize it was important..."
     show old_roz 1
     pause
     show player 10f
-    player_name "Jadi kamu akan melakukannya?"
-
+    player_name "So you'll do it?"
     show player 5f
     show old_roz 2
-    roz "... Tidak."
-
+    roz "... No."
     show old_roz 1
     show player 15f
-    player_name "Lalu kenapa kamu?!"
-
+    player_name "Then why did you?!"
     show player 16f
     show old_roz 2
-    roz "Itu dibatasi."
-
+    roz "It's restricted."
     show old_roz 1
     show player 37f with dissolve
-    player_name "{i}*Huh*{/i}"
-
+    player_name "{i}*Sigh*{/i}"
     show player 38f with dissolve
-    player_name "Adakah yang bisa saya lakukan untuk mengubah pikiran Anda?"
-
+    player_name "Is there something I can do to change your mind?"
     show player 90f with dissolve
     show old_roz 2
-    roz "Batasi-"
-
+    roz "Restrict-"
     show old_roz 1
     pause
     show old_roz 2
     roz "Oh."
-
-    roz "Hmm, aku meragukannya."
-
+    roz "Hmm, I doubt it."
     show old_roz 1
     pause
     show player 25f
-    player_name "Saya akan melakukan apa saja!"
-
+    player_name "I'll do anything!"
     show player 24f
     show old_roz 2
-    roz "Apa pun?"
-
+    roz "Anything?"
     show old_roz 1
     show player 25f
-    player_name "Secara harfiah. Apa pun."
-
+    player_name "Literally. Anything."
     show player 24f
     roz "Hmm."
-
     show old_roz 2
-    roz "Kamu pandai menggunakan kamera?"
-
+    roz "You any good with cameras?"
     show old_roz 1
     show player 12f
-    player_name "Kamera?"
-
-    player_name "Ya, menurutku."
-
+    player_name "Cameras?"
+    player_name "Yeah, I guess."
     show player 5f
     show old_roz 2
-    roz "Saya mendapatkan yang baru ini dari toko dan barangnya tidak berfungsi."
-
+    roz "I got this new fangled one from the store and the damn thing won't work."
     show old_roz 1
     show player 14f
-    player_name "Saya mungkin bisa mengetahuinya!"
-
+    player_name "I could probably figure it out!"
     show player 13f
     roz "Hmm."
-
     show old_roz 2
-    roz "Ikuti aku kalau begitu."
-
+    roz "Follow me then."
     hide old_roz
     hide xtra 35
     with dissolve
     pause
     show player 4f
-    player_name "( Wow, dia akan membawaku ke {b}ruang bawah tanah{/b} hanya untuk memperbaiki kameranya? )"
-
-    player_name "(Bagaimana kalau begitu, aku akhirnya bisa istirahat.)"
-
+    player_name "( Wow, she's gonna take me down to the {b}basement{/b} just for fixing her camera? )"
+    player_name "( How about that, I finally caught a break. )"
     hide player with dissolve
     return
 
@@ -152,30 +115,23 @@ label roz_dialogue_basement:
         show xtra 35 zorder 2 at Position(xalign = 0.1, yalign = 0.251)
     show roz_desk at left
     show player 10f at right
-    player_name "Saya ingin bertanya tentang ruang bawah tanah."
-
+    player_name "I wanted to ask you about the basement."
     show player 5f
     show old_roz 2
-    roz "Itu dibatasi."
-
+    roz "It's restricted."
     show old_roz 1
     show player 12f
-    player_name "Y-ya, aku tahu..."
-
-    player_name "... Tapi saya berharap, mungkin, Anda bisa memberi tahu saya siapa yang punya akses?"
-
+    player_name "Y-yeah, I know..."
+    player_name "... But I was hoping, maybe, you could tell me who has access?"
     show player 5f
     show old_roz 2
-    roz "Tidak, itu dibatasi."
-
+    roz "No, that's restricted."
     show old_roz 1
     show player 12f
-    player_name "... Tapi aku hanya perlu-"
-
+    player_name "... But I just need to-"
     show player 5f
     show old_roz 2
-    roz "Terbatas."
-
+    roz "Restricted."
     return
 
 
@@ -187,304 +143,232 @@ label roz_dialogue_intro:
     show roz_desk at left
     show player 14f at right
     with dissolve
-    player_name "Hai!"
-
+    player_name "Hi!"
     show player 13f
     show old_roz 2
-    roz "Ya?"
-
-    roz "Apa yang bisa saya lakukan untuk Anda?"
-
+    roz "Yes?"
+    roz "What can I do for you?"
     show old_roz 1
     return
 
 label roz_dialogue_1st_floor:
     show player 12f
-    player_name "Apa yang bisa saya temukan di lantai 1?"
-
+    player_name "What can I find on the 1st floor?"
     show player 5f
     roz "..."
     show old_roz 2
-    roz "Itu lobi."
-
+    roz "It's the lobby."
     show old_roz 1
     show player 10f
-    player_name "Oh... Apakah ada hal lain?"
-
+    player_name "Oh... Is there anything else?"
     show player 5f
     show old_roz 3 with dissolve
-    roz "Apakah Anda melihat hal lain?"
-
+    roz "Do you see anything else?"
     show old_roz 1 with dissolve
     show player 24f
-    player_name "Saya kira tidak..."
-
+    player_name "I guess not..."
     show player 25f
     show old_roz 2
-    roz "Ada lagi yang bisa saya lakukan?"
-
+    roz "Anything else I can do?"
     show old_roz 1
     show player 13f
     return
 
 label roz_dialogue_2nd_floor:
     show player 12f
-    player_name "Apa yang bisa saya temukan di lantai 2?"
-
+    player_name "What can I find on the 2nd floor?"
     show player 5f
     show old_roz 2
-    roz "Kami memiliki kamar sakit, dan ruang penyimpanan di lantai 2."
-
+    roz "We have sick rooms, and a storage room on the 2nd floor."
     show old_roz 1
     show player 12f
-    player_name "Oh. Jadi begitu."
-
+    player_name "Oh. I see."
     show player 5f
     show old_roz 2
-    roz "Ada lagi yang bisa saya lakukan?"
-
+    roz "Anything else I can do?"
     show old_roz 1
     show player 13f
     return
 
 label roz_dialogue_3rd_floor:
     show player 12f
-    player_name "Apa yang bisa saya temukan di lantai 3?"
-
+    player_name "What can I find on the 3rd floor?"
     show player 5f
     show old_roz 2
-    roz "Itu lantai bersalin kami, di situlah Anda akan menemukan ruang pemulihan kami."
-
+    roz "That's our maternity floor, it's where you'll find our recovery rooms."
     show old_roz 1
     show player 12f
-    player_name "Oke terima kasih."
-
+    player_name "Ok, thanks."
     show player 5f
     show old_roz 2
-    roz "Ada lagi yang bisa saya lakukan?"
-
+    roz "Anything else I can do?"
     show old_roz 1
     show player 13f
     return
 
 label roz_dialogue_schedule:
     show player 12f
-    player_name "Apakah selalu ada seseorang di resepsi?"
-
+    player_name "Is there always someone at the reception?"
     show player 5f
     show old_roz 2
-    roz "Ya."
-
-    roz "Saya selalu di sini."
-
+    roz "Yes."
+    roz "I'm always here."
     show old_roz 1
     show player 12f
-    player_name "Anda tidak pernah meninggalkan meja Anda?"
-
+    player_name "You never leave your desk?"
     show player 5f
     show old_roz 2
-    roz "Mengapa kamu bertanya?"
-
+    roz "Why do you ask?"
     show old_roz 1
     show player 10f
-    player_name "Err... Hanya ingin tahu?"
-
+    player_name "Err... Just wondering?"
     show player 5f
     show old_roz 2
-    roz "Saya hanya meninggalkan meja saya jika terjadi keadaan darurat."
-
+    roz "I only leave my desk in case of an emergency."
     show player 11f
-    roz "Jika saya tidak menerima {b}panggilan telepon{/b}, saya tidak akan pergi."
-
+    roz "If I don't get a {b}phone call{/b}, I don't leave."
     show old_roz 1 with dissolve
     show player 14f
-    player_name "Oh. Jadi begitu."
-
+    player_name "Oh. I see."
     show player 13f
     show old_roz 2
-    roz "Ada lagi yang bisa saya lakukan?"
-
+    roz "Anything else I can do?"
     show old_roz 1
     return
 
 label roz_dialogue_ancestory:
     show player 14f
     show old_roz 1
-    player_name "{b}Roz{/b}! Aku perlu menanyakan sesuatu padamu."
-
+    player_name "{b}Roz{/b}! I need to ask you something."
     show player 11f
     show old_roz 2
-    roz "Hmm, ya?"
-
+    roz "Hmm, yes?"
     show old_roz 1
     show player 10f
-    player_name "Saya mencoba mencari kuburan seseorang yang meninggal di kota ini, dahulu kala."
-
+    player_name "I'm trying to find the gravesite of someone who died in this town, a long time ago."
     show player 29f
-    player_name "Saya pikir dia adalah semacam pembuat kapal."
-
-    player_name "Apakah Anda punya ide tentang cara terbaik untuk menemukannya?"
-
+    player_name "I think he was some kind of shipwright."
+    player_name "Do you have any ideas on the best way to go about finding it?"
     show player 3f
     show old_roz 2
-    roz "Saya mungkin punya satu atau dua ide."
-
+    roz "I might have an idea or two."
     show old_roz 1
     roz "..."
     show player 11f
     player_name "..."
     show player 12f
-    player_name "Bisakah kamu memberitahuku?"
-
+    player_name "Could you tell me?"
     show player 11f
     show old_roz 2
-    roz "Saya mungkin bisa."
-
+    roz "I probably could."
     show old_roz 1
     roz "..."
     show player 16f
     player_name "..."
     show player 30f
-    player_name "{i}*Huh*{/i} Maukah Anda memberi tahu saya?"
-
+    player_name "{i}*Sigh*{/i} Will you please tell me?"
     show player 16f
     show old_roz 2
-    roz "Siapa nama orang ini?"
-
+    roz "What's this fella's name?"
     show player 29f
     show old_roz 1
-    player_name "Nah, itu masalahnya... Saya tidak tahu namanya."
-
+    player_name "Well, that's the problem... I don't know his name."
     show player 11f
     show old_roz 2
     roz "Hmm..."
-
-    roz "...Yah, itu membuat segalanya menjadi sulit, bukan?"
-
+    roz "... Well, that makes things difficult, doesn't it?"
     show player 25f
     show old_roz 1
-    player_name "... Ya."
-
+    player_name "... Yeah."
 
     show player 24f
     show old_roz 2
-    roz "Saya kira mungkin saja Anda bisa {b}menemukannya di catatan obituari lama{/b}."
-
+    roz "I suppose It's possible you could {b}find him in the old obituary records{/b}."
     show player 11f
-    roz "Sepertinya saya ingat ada beberapa orang yang profesinya tercantum di sana."
-
+    roz "I seem to recall more than a few folk had their professions listed in there."
     show player 10f
     show old_roz 1
-    player_name "Benar-benar?!"
-
-    player_name "Kedengarannya menjanjikan!"
-
+    player_name "Really?!"
+    player_name "Well, that sounds promising!"
     show player 11f
     show old_roz 2
-    roz "Masalahnya, ini akan merepotkan... aku menggali hal lama itu."
-
+    roz "Problem is, it's gonna be a big hassle... me diggin' that old thing up."
     show player 29f
     show old_roz 1
     player_name "Oh?"
-
     show player 3f
     show old_roz 2
-    roz "Mungkin Anda bisa melakukan sesuatu agar hal ini bermanfaat bagi saya?"
-
+    roz "Maybe you could do something to make it worth my while?"
     show player 29f
     show old_roz 1
-    player_name "O-tentu saja!"
-
+    player_name "O-of course!"
     show player 2f
-    player_name "Izinkan saya melihat {b}catatan{/b} itu dan saya akan melakukan apa pun yang Anda inginkan!"
-
+    player_name "You let me take a look at those {b}records{/b} and I'll do anything you want!"
     show player 1f
     show old_roz 2
-    roz "Hmm, apa saja?"
-
+    roz "Hmm, anything?"
     show player 2f
     show old_roz 1
-    player_name "Apa pun!"
-
+    player_name "Anything!"
     show player 1f
     roz "..."
     show old_roz 2
-    roz "Baiklah, aku beritahu padamu apa..."
-
-    roz "... {b}Bawa kunci sandi ini ke penyimpanan lantai 2{/b}."
-
-    roz "Anda akan menemukan {b}sebuah kotak jelek di rak{/b}, sangat menarik perhatian, Anda tidak boleh melewatkannya."
-
+    roz "Alright, I tell ya what..."
+    roz "... {b}Take this pass key up to the 2nd floor storage{/b}."
+    roz "You'll find {b}an ugly box sitting there on the shelf{/b}, stands out like a sore thumb, you can't miss it."
     show player 2f
     show old_roz 1
-    player_name "Kotak jelek, mengerti."
-
+    player_name "Ugly box, got it."
     show player 1f
     show old_roz 2
-    roz "Pergilah {b}ambilkan saya kotak itu dan bawa kembali ke sini{/b}, sementara saya menggali catatan-catatan itu."
-
+    roz "You go {b}get me that box and bring it back here{/b}, while I dig up those records."
     show player 2f
     show old_roz 1
-    player_name "Kedengarannya cukup mudah!"
-
-    player_name "Saya akan kembali dalam sekejap!"
-
+    player_name "That sounds easy enough!"
+    player_name "I'll be back in a flash!"
     hide player with dissolve
 
     show old_roz 2
-    roz "Heh, tentu saja kamu akan bercanda. Tentu saja Anda akan melakukannya."
-
+    roz "Heh, sure you will kid. Sure you will."
     return
 
 label roz_dialogue_go_on_break:
     show player 14f
     show old_roz 1
-    player_name "Aku ingin tahu apakah kamu ingin... Ya tahu, istirahatlah?"
-
+    player_name "I was wondering if you wanted to... Ya know, take your break?"
     show player 13f
     show old_roz 2
-    roz "ah..."
-
-    roz "Masih belum puas dengan ole {b}Roz{/b} ya, Nak?"
-
+    roz "Ahh..."
+    roz "Can't get enough of ole {b}Roz{/b}, eh kiddo?"
     show old_roz 1
     player_name "..."
     show old_roz 2
-    roz "Jangan khawatir, pesan sudah diterima."
-
-    roz "Pergilah ke tempat penyimpanan dan saya akan segera menyusul..."
-
-    roz "... Hanya perlu waktu sejenak untuk menyegarkan diri."
-
+    roz "Don't you worry, message received."
+    roz "You head on up to storage and I'll be along shortly..."
+    roz "... Just need a moment to freshen up."
     show old_roz 1
     player_name "..."
     show player 14f
-    player_name "T-tentu saja, aku akan menunggu di atas sana."
-
+    player_name "S-sure, I'll be up there waiting."
     show player 13f
     hide player with dissolve
     show old_roz 2
-    roz "Itu anak yang baik..."
-
+    roz "That's a good boy..."
     return
 
 label roz_dialogue_nothing:
     show player 14f
-    player_name "Tidak, menurutku itu saja!"
-
+    player_name "No, I think that's all!"
     show player 13f
     show old_roz 2
-    roz "Selamat tinggal."
-
+    roz "Bye."
     return
 
 label roz_phone_prompt:
     scene expression player.location.background_blur
     show player 13f with dissolve
-    player_name "(Saya tidak bisa meyakinkan dia untuk pergi dari sini.)"
-
-    player_name "(Mungkin saya bisa meminta seseorang meneleponnya melalui interkom?)"
-
+    player_name "( I can't convince her to leave from here. )"
+    player_name "( Maybe I can get someone to call her on the intercom? )"
     hide player with dissolve
     return
 # Decompiled by unrpyc: https://github.com/CensoredUsername/unrpyc

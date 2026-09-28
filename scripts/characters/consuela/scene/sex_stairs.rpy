@@ -80,14 +80,12 @@ label scene_consuela_sex_stairs.dialogue:
         consuela "Oh, daddy!{p=1}{nw}" (show_native="¡Ay papi!")
     if animcounter == 1 and randomizer() < 50:
         consuela "Fuck your dirty little maid!{p=1}{nw}" (show_native="¡A la mierda con tu criada sucia!")
-        anon "Oh, saya suka kalau Anda berbicara dengan saya dalam bahasa Spanyol!{p=1}{nw}"
-
+        anon "Oh, I love it when you talk to me in Spanish!{p=1}{nw}"
     if animcounter == 2 and randomizer() > 50:
         consuela "Fuck me harder!{p=1}{nw}" (show_native="¡Cógeme más duro!")
         if M_consuela.get("sex speed") > 0.061:
             $ M_consuela.set("sex speed", M_consuela.get("sex speed") - 0.03)
-        anon "Kamu sangat ketat!{p=1}{nw}"
-
+        anon "You're so tight!{p=1}{nw}"
     return
 
 
@@ -98,7 +96,6 @@ label scene_consuela_sex_stairs.inside:
     show xray_consuela stairs with fastdissolve:
         align (0,0)
     consuela "NGGHHH!!!"
-
     hide xray_consuela
     show consuela b_stairs
     show consuela_mc_body_stairs insert_pullout
@@ -106,28 +103,19 @@ label scene_consuela_sex_stairs.inside:
     with dissolve
     pause
     anon "Haah... Haah..."
-
-    anon "Wah!"
-
+    anon "Wow!"
     consuela "My god!" (show_native="¡Santo cielo!")
     consuela "That was amazing!" (show_native="¡Eso fue increíble!")
-    consuela "hehe!"
-
-    anon "aku masuk ke dalam dirimu..."
-
+    consuela "Hehe!"
+    anon "I came inside you..."
     consuela "Hmm?"
-
-    consuela "Oh, baiklah."
-
-    anon "Tapi kamu bisa hamil..."
-
+    consuela "Oh, es okay."
+    anon "But you could get pregnant..."
     consuela "I doubt we conceive." (show_native="Dudo que concibamos.")
     consuela "Very unlikely at my age." (show_native="Muy poco probable a mi edad.")
     anon "..."
-    consuela "Jangan khawatir, oke?"
-
-    anon "O-oke."
-
+    consuela "No worry, okay?"
+    anon "O-okay."
 
     call call_pregnancy_minigame (None, M_consuela)
     return
@@ -140,20 +128,16 @@ label scene_consuela_sex_stairs.outside:
     show consuela_mc_dick_stairs cumshot
     anon "HNNGGG!!!" with flash
     consuela "NGGHHH!!!"
-
     show consuela_overlay_o_stairs_cumshot_dick_after
     show consuela_mc_body_stairs base
     show consuela_mc_dick_stairs pre
     with dissolve
     pause
     anon "Haah... Haah..."
-
-    anon "Itu luar biasa!"
-
+    anon "That was awesome!"
     consuela "My god!" (show_native="¡Santo cielo!")
     consuela "I'm a mess..." (show_native="Soy un desastre...")
-    consuela "hehe!"
-
+    consuela "Hehe!"
     return
 
 
@@ -161,8 +145,7 @@ label scene_consuela_sex_stairs.repeat:
     scene location_beach_house_entrance_stairs
     call scene_consuela_sex_stairs.ready
     with fade
-    anon "Ini dia."
-
+    anon "Here it comes."
     call scene_consuela_sex_stairs.pre
     with dissolve
     consuela "Yes, give it to me!" (show_native="¡Sí, dámelo!")
@@ -173,18 +156,13 @@ label scene_consuela_sex_stairs.repeat:
     call scene_consuela_sex_stairs.animate
     with dissolve
     consuela "Haah!"
-
     call scene_consuela_sex_stairs.loop
     consuela "Spank me daddy!" (show_native="¡Azotadme papi!")
-    anon "Aku akan keluar!"
-
-    consuela "Ya, mani!"
-
+    anon "I'm going to cum!"
+    consuela "Si, cum!"
     pause
     anon "Ahh!!"
-
-    consuela "Sperma untukku, papi!"
-
+    consuela "Cum for me, papi!"
     pause
     if _return == 'inside':
         call scene_consuela_sex_stairs.inside

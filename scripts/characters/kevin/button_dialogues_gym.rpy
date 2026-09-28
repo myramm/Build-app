@@ -1,23 +1,18 @@
 label kevin_gym_take_it_easy:
     show player 14
-    player_name "Aku akan keluar dari sini kawan."
-
+    player_name "I'm gonna get out of here man."
     show player 13
     show old_kevin 11b with dissolve
-    kevin "Sudah, kawan?"
-
+    kevin "Already, bro?"
     show old_kevin 11c
     show player 14
-    player_name "Ya, aku punya beberapa hal lain yang perlu kulakukan."
-
+    player_name "Yeah, I've got some other stuff I need to do."
     show player 13
     show old_kevin 9 with dissolve
-    kevin "Ah, baiklah."
-
+    kevin "Ah, alright."
     show old_kevin 8
     show player 14
-    player_name "Sampai jumpa lagi, {b}Kevin{/b}."
-
+    player_name "Catch you later, {b}Kevin{/b}."
     hide old_kevin
     hide player
     with dissolve
@@ -25,17 +20,13 @@ label kevin_gym_take_it_easy:
 
 label kevin_gym_lets_lift:
     show player 14
-    player_name "Ayo angkat saja."
-
+    player_name "Let's just lift."
     show player 13
     show old_kevin 9
-    kevin "Oh, Anda siap memompa setrika?"
-
+    kevin "Oh, you're ready to pump some iron?"
     show old_kevin 10 with dissolve
-    kevin "Langsung saja, kawan."
-
-    kevin "Ayo lakukan ini!"
-
+    kevin "Right on, bro."
+    kevin "Let's do this!"
     hide old_kevin
     hide player
     with dissolve
@@ -46,31 +37,23 @@ label kevin_gym_intro:
     show player 13 at left
     show old_kevin 9 at right
     with dissolve
-    kevin "Hei kawan!"
-
+    kevin "Hey, bro!"
     show old_kevin 8
     show player 14
-    player_name "Ada apa, {b}Kevin{/b}?"
-
+    player_name "What's up, {b}Kevin{/b}?"
     show player 13
     show old_kevin 9
-    kevin "Saya telah melatih otot bokong saya sepanjang pagi!"
-
+    kevin "I've been working on my glutes all morning!"
     show old_kevin 13b with dissolve
-    kevin "Rasakan betapa ketatnya anak-anak nakal ini!"
-
+    kevin "Feel how tight these bad boys are!"
     show player 10b with dissolve
-    player_name "Eh, tidak, terima kasih..."
-
+    player_name "Eh, no thanks..."
     show player 5b
-    kevin "Anda yakin, kawan?"
-
-    kevin "Anda tidak tahu apa yang Anda lewatkan!"
-
+    kevin "You sure, bro?"
+    kevin "You don't know what you're missing!"
     show old_kevin 8 with dissolve
     show player 29 with dissolve
-    player_name "Hehe."
-
+    player_name "Heh."
     show player 5 with dissolve
     return
 # Decompiled by unrpyc: https://github.com/CensoredUsername/unrpyc

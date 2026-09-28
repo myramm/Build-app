@@ -17,14 +17,11 @@ label okita_office_door_need_keycode:
     show player 10
     with dissolve
     player_name "Hmm, I guess {b}Miss Okita{/b} keeps her office locked when she's not inside?"
-
     player_name "It's got one of those automated keypad locks too."
-
     show player 11
     pause
     show player 10
     player_name "I'm definitely not getting in there without a {b}key code{/b}."
-
     return
 
 label okita_office_door_okita_tired:
@@ -32,7 +29,6 @@ label okita_office_door_okita_tired:
     show player 10
     with dissolve
     player_name "I should let her rest for now."
-
     return
 
 label okita_office_unlock:
@@ -45,10 +41,8 @@ label okita_office_locked:
     show player 10
     with dissolve
     player_name "Oops! That wasn't the right code..."
-
     show player 34
     player_name "Hmm, I'd better {b}double check that key code{/b} I got out of {b}Mrs. Smith{/b}'s desk before trying again."
-
     $ game.main()
 
 label okita_office_door_through:

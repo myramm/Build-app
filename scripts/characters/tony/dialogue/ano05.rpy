@@ -1,16 +1,11 @@
 label ano05_hint_tony:
     show anon with dissolve:
         flip
-    tony @ a_frustrated "Kamu sudah mendapatkan roda baru, jagoan?"
-
-    anon f_worried "Tidak, saya masih mengerjakannya."
-
-    tony f_suspicious "Yah, jangan berlama-lama di sini..."
-
-    tony @ a_point "{b}Kunjungi dealer mobil dan lihat kisaran harga Anda{/b}!"
-
-    anon f_normal @ a_salute "Ya, tuan!"
-
+    tony @ a_frustrated "You get some new wheels yet, champ?"
+    anon f_worried "No, I'm still working on it."
+    tony f_suspicious "Well, don't dilly-dally around here..."
+    tony @ a_point "{b}Get down to the car dealership and see what's in your price range{/b}!"
+    anon f_normal @ a_salute "Yes, sir!"
     hide anon with dissolve
     return
 
@@ -18,27 +13,19 @@ label ano05_hint_tony:
 label ano05_wage_tony:
     show anon with dissolve:
         flip
-    anon "Hai, {b}Tony{/b}!"
-
-    anon "Saya berhasil!"
-
-    tony "Kamu melakukan apa?"
-
-    anon "Saya mendapatkan sendiri kendaraan!"
-
-    tony "Oh, kamu melakukannya ya?"
-
-    anon "Ya, aku sudah memarkirnya di luar sekarang."
-
-    tony "Baiklah, mari kita lihat, oke?"
-
+    anon "Hey, {b}Tony{/b}!"
+    anon "I did it!"
+    tony "You did what?"
+    anon "I got myself a vehicle!"
+    tony "Oh, you did huh?"
+    anon "Yeah, I've got it parked outside now."
+    tony "Well, let's go take a look then, shall we?"
     hide tony
     show anon:
         unflip
         xoffset 500
     with {'master': dissolve}
-    anon "Ya, tuan!"
-
+    anon "Yes, sir!"
     hide anon with dissolve
 
     scene expression background(712, 480, 2.0, l=L_pizzeria_exterior) as stage
@@ -49,76 +36,46 @@ label ano05_wage_tony:
     show anon f_shy_low behind scooter with dissolve:
         flip
         xoffset 100
-    tony "Hei, lihat ini!"
-
-    tony f_normal "Anda punya skuter kecil yang bagus, bukan?"
-
-    anon f_normal "Anda yakin!"
-
-    anon @ f_laugh a_point "Saya mendapatkannya dengan setengah harga juga."
-
-    tony @ a_frustrated "Kerja bagus, juara!"
-
-    tony "Aku sangat bangga padamu!"
-
-    anon @ f_laugh "Terima kasih, {b}Tony{/b}!"
-
+    tony "Hey, look at this!"
+    tony f_normal "You got yourself a nice little scooter, didn't ya?"
+    anon f_normal "You bet!"
+    anon @ f_laugh a_point "I got it for half-price too."
+    tony @ a_frustrated "Nice work, champ!"
+    tony "I'm real proud of ya!"
+    anon @ f_laugh "Thanks, {b}Tony{/b}!"
     show tony f_suspicious a_whisper with dissolve:
         unflip
         xoffset -400
-    tony "Eh, {b}Maria{/b}!"
-
-    tony "Keluar dari sini, cepat!"
-
+    tony "Ey, {b}Maria{/b}!"
+    tony "Get out here, quick!"
     pause
-    tony f_normal a_idle "Dia harus melihat ini..."
-
+    tony f_normal a_idle "She's gotta see this..."
     show maria f_annoyed behind scooter with dissolve:
         flip
         xoffset -200
-    maria "Apa yang kamu teriakkan?"
-
-    tony @ a_point_back "Lihat roda baru pengantar barang kami."
-
-    maria f_surprised "Ahh, jangan bilang kamu membelikan ini untuknya?"
-
-    tony f_suspicious "Tentu saja saya tidak melakukannya!"
-
-    tony "Dia membeli ini dengan uangnya sendiri yang dia hasilkan di sini, bekerja untukmu."
-
-    maria f_normal "Apakah begitu?"
-
+    maria "What the hell are you yellin' about?"
+    tony @ a_point_back "Check out our delivery boy's new wheels."
+    maria f_surprised "Ahh, don't tell me you bought this for him?"
+    tony f_suspicious "I most certainly did not!"
+    tony "He bought this with his own money that he earned right here, workin' for you."
+    maria f_normal "Is that so?"
     show tony f_normal with dissolve:
         flip
         xoffset 0
-    anon "Ya, Bu."
-
-    maria "Yah, warnai aku terkejut."
-
-    tony @ a_point "Sudah kubilang ya, yang ini penjaganya."
-
+    anon "Yes, ma'am."
+    maria "Well, color me surprised."
+    tony @ a_point "I told ya, this one was a keeper."
     tony "Eh?"
-
-    tony "Bukankah aku sudah memberitahumu?"
-
-    maria f_annoyed "Ya, ya..."
-
-    maria "Jangan terlalu rendah hati sekarang, kera besar."
-
+    tony "Didn't I tell ya?"
+    maria f_annoyed "Yeah, yeah..."
+    maria "Don't be too humble now, you big ape."
     tony @ f_laugh a_belly "Hahahaah!"
-
-    tony a_heart "Dia datang ke sini sebagai laki-laki, tapi dia akan pergi sebagai laki-laki."
-
-    tony "Aku beritahu kamu apa."
-
-    maria "Aku akan kembali ke dapur sebelum calzonesku terbakar."
-
-    maria f_normal "Selamat, Nak."
-
-    maria "Saya suka warnanya."
-
-    anon "Terima kasih, {b}Maria{/b}."
-
+    tony a_heart "He came here as a boy, but he's gonna be leavin' as a man."
+    tony "I tell you what."
+    maria "I'm going back to the kitchen before my calzones burn."
+    maria f_normal "Congratulations, kid."
+    maria "I love the color."
+    anon "Thanks, {b}Maria{/b}."
     hide maria with dissolve
     pause
     show tony a_mc_hip_single:
@@ -127,27 +84,18 @@ label ano05_wage_tony:
         flip
         xoffset 132
     with dissolve
-    tony "Baiklah, kurasa aku harus mulai membayarmu lebih banyak sekarang, ya?"
-
-    anon "Oh benar!"
-
-    anon "Anda menjanjikan kenaikan gaji kepada saya, bukan?"
-
-    tony "Ya, hanya jika Anda menginginkannya?"
-
-    anon "Saya pasti menginginkannya!"
-
+    tony "Well, I guess I'm gonna have to start payin' you more now, huh?"
+    anon "Oh, that's right!"
+    anon "You promised me a raise, didn't you?"
+    tony "Well, only if you want it?"
+    anon "I definitely want it!"
     tony "Heh, attaboy!"
-
-    tony "Ayo, kita mulai pengirimannya, ya?"
-
-    tony "Saya ingin melihat apa yang bisa dilakukan bayi ini."
-
+    tony "C'mon, let's get crackin' on those deliveries, eh?"
+    tony "I wanna see what this baby can do."
     hide tony_arms_dressed_a_mc_shoulder_single
     hide tony
     with dissolve
-    anon f_grin @ f_laugh "Ya, tuan!"
-
+    anon f_grin @ f_laugh "Yes, sir!"
     hide anon with dissolve
     return
 # Decompiled by unrpyc: https://github.com/CensoredUsername/unrpyc

@@ -1,130 +1,73 @@
 label con02_init_keeves:
-    anon "Baiklah, umm... Saya tidak butuh bantuan {b}Pastor Keeves{/b} tapi saya kenal seseorang yang membutuhkannya."
-
-    keeves f_happy @ f_laugh a_rock "Bagus sekali!"
-
-    keeves "Lanjutkan."
-
-    anon "Oke."
-
-    anon f_worried "Begini, akhir-akhir ini aku sedang melakukan sedikit pekerjaan di {b}rumah Walikota{/b} dan aku sadar bahwa salah satu pelayan di sana dianiaya..."
-
-    keeves f_confused "Bagaimana bisa?"
-
-    anon "Ya, {b}walikota{/b} dan {b}istrinya{/b} pada dasarnya menyuruhnya bekerja sebagai pembantu kontrak."
-
-    keeves f_sad "Benar-benar?"
-
-    anon "Ya."
-
-    anon "Mereka tidak membayar apa pun dan menyerangnya secara verbal setiap ada kesempatan."
-
-    keeves "Kedengarannya buruk."
-
-    anon "Saya cukup yakin {b}Walikota{/b} juga melecehkannya."
-
+    anon "Well, umm... I don't need help {b}Father Keeves{/b} but I know someone who does."
+    keeves f_happy @ f_laugh a_rock "Excellent!"
+    keeves "Go on."
+    anon "Okay."
+    anon f_worried "You see, I've been doing a bit of work at {b}the mayor's house{/b} recently and it came to my attention that one of the maids there was being mistreated..."
+    keeves f_confused "How so?"
+    anon "Well, {b}the mayor{/b} and {b}his wife{/b} basically had her working as an indentured servant."
+    keeves f_sad "Really?"
+    anon "Yeah."
+    anon "They were paying her next to nothing and verbally assaulting her every chance they got."
+    keeves "That sounds bad."
+    anon "I'm pretty sure {b}the mayor{/b} was harassing her too."
     keeves f_surprised @ -m_talk "!!!"
-    keeves "{b}Walikota{/b} adalah?"
-
-    anon "Y-ya, tuan."
-
-    keeves f_sad @ f_woa "Wah!"
-
+    keeves "{b}The mayor{/b} was?"
+    anon "Y-yes, sir."
+    keeves f_sad @ f_woa "Whoa!"
     pause
-    keeves "Itu sangat palsu!"
-
-    anon "Benar?"
-
-    keeves f_normal "Kedengarannya hal-hal aneh sedang terjadi di {b}rumah walikota{/b}."
-
-    keeves "Kita harus segera melakukan intervensi."
-
+    keeves "That is so bogus!"
+    anon "Right?"
+    keeves f_normal "Sounds like strange things are afoot at {b}the mayor's mansion{/b}."
+    keeves "We should intervene immediately."
     show anon f_normal
     pause
-    keeves "Ini seperti gadis klasik Anda dalam situasi kesusahan."
-
-    keeves "Yang menurut pengalaman saya, hampir selalu mengarah pada petualangan yang paling luar biasa."
-
+    keeves "It's like your classic damsel in distress situation."
+    keeves "Which, in my experience, almost always leads to a most excellent adventure."
     anon @ f_skeptical -m_talk "..."
-    anon "Benar."
-
-    anon f_normal "Yah, saya sudah berhasil membebaskannya dari pekerjaan itu dan menjauh dari {b}walikota{/b} dan {b}istrinya{/b}."
-
+    anon "Right."
+    anon f_normal "Well, I already managed to get her free of that job and away from {b}the mayor{/b} and {b}his wife{/b}."
     keeves "Oh?"
-
-    keeves f_happy "Bagus sekali, kawan kecil!"
-
-    keeves f_confused "Jadi apa masalahnya?"
-
-    anon "Nah, sekarang dia benar-benar membutuhkan pekerjaan baru."
-
-    keeves f_normal "Ah, begitu."
-
-    anon "Yang sulit ditemukan karena, dia agak... Seorang imigran gelap."
-
+    keeves f_happy "Nicely done, little dude!"
+    keeves f_confused "So what's the problem?"
+    anon "Well, now she's really in need of a new job."
+    keeves f_normal "Ahh, I see."
+    anon "Which is hard to find because, she's kinda... An illegal immigrant."
     pause
-    anon "Siapa yang tidak bisa berbahasa Inggris."
-
-    keeves f_sad "Gelandangan!"
-
-    anon "Ya."
-
+    anon "Who can't speak English."
+    keeves f_sad "Bummer!"
+    anon "Yeah."
     pause
-    anon "Jadi, kupikir mungkin dia bisa membantu di sekitar sini, tahu?"
-
-    keeves f_happy @ a_point "Itu ide yang sangat bagus, kawan!"
-
-    keeves "Tapi pertama-tama, saya punya dua pertanyaan yang sangat penting."
-
-    anon "Oke."
-
-    keeves "Bagaimana perasaan wanita ini mengenai Tuhan dan Juruselamat kita, Yesus Kristus?"
-
-    anon "Oh, dia seorang Katolik yang taat."
-
-    anon "Itu sebabnya aku langsung berpikir untuk meminta bantuanmu."
-
-    keeves @ f_laugh a_rock "berbentuk tabung!"
-
-    keeves "Sekarang, pertanyaan kedua..."
-
-    keeves @ f_confused a_raise "Apakah dia masih bayi?"
-
+    anon "So, I thought maybe she could help out around here, you know?"
+    keeves f_happy @ a_point "That's a truly triumphant idea, little dude!"
+    keeves "But first, I have two very important questions."
+    anon "Okay."
+    keeves "How does this woman feel about our Lord and Savior, Jesus Christ?"
+    anon "Oh, she's a devout Catholic."
+    anon "That's why I immediately thought to ask you for help."
+    keeves @ f_laugh a_rock "Tubular!"
+    keeves "Now, question two..."
+    keeves @ f_confused a_raise "Is she a babe?"
     anon f_surprised @ -m_talk "..."
-    anon f_confused "Hah?"
-
-    keeves f_normal @ a_point "Bagaimana situasi kerucutnya?"
-
-    anon f_worried "Apakah kamu serius saat ini?"
-
-    keeves "Apakah mereka dibuat untuk kecepatan atau kenyamanan?"
-
-    anon "Maksudku, menurutku dia cantik..."
-
-    keeves a_raise @ f_laugh "Baiklah, dua untuk dua!"
-
-    keeves -a_raise @ f_laugh a_rock "Sangat luar biasa!"
-
-    anon f_normal "Jadi, Anda akan mempekerjakannya?"
-
-    keeves f_happy "Pastinya."
-
-    anon "Oh, itu luar biasa!"
-
-    anon "Terima kasih banyak, {b}Pastor Keeves{/b}!"
-
-    keeves "Jangan khawatir, kawan kecil."
-
-    anon "Aku akan membawanya secepatnya."
-
+    anon f_confused "Huh?"
+    keeves f_normal @ a_point "What's the cones situation?"
+    anon f_worried "Are you being serious right now?"
+    keeves "Are they built for speed or for comfort?"
+    anon "I mean, I think she's pretty..."
+    keeves a_raise @ f_laugh "Alright, two for two!"
+    keeves -a_raise @ f_laugh a_rock "Most excellent!"
+    anon f_normal "So you'll hire her?"
+    keeves f_happy "Most definitely."
+    anon "Oh, that's awesome!"
+    anon "Thank you so much, {b}Father Keeves{/b}!"
+    keeves "No worries, little dude."
+    anon "I'll bring her by ASAP."
     hide anon with dissolve
 
     scene expression player.location.background_blur with fade
     show anon with dissolve
-    anon f_brag_closed @ -m_talk "( Ya, saya tahu saya dapat menemukan {b}Consuela{/b} pekerjaan baru! )"
-
-    anon @ -m_talk "( Saya tidak sabar untuk {b}memberi tahu dia kabar baik{/b}! )"
-
+    anon f_brag_closed @ -m_talk "( Yes, I knew I could find {b}Consuela{/b} a new job! )"
+    anon @ -m_talk "( I can't wait to {b}tell her the good news{/b}! )"
     hide anon with dissolve
 
     $ M_consuela.trigger(T_con02_init)

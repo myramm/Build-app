@@ -14,30 +14,23 @@ label scene_roz_blowjob:
     jump scene_roz_blowjob.loop
 
 label scene_roz_blowjob.intro:
-    roz "MM."
-
+    roz "Mmm."
     show roz_mc_face_bj normal_talk
-    anon "YA TUHAN!!!"
-
+    anon "OH GOD!!!"
     show roz_mc_face_bj normal
     pause
     show roz_mc_face_bj normal_talk
-    anon "Mulutmu luar biasa!"
-
+    anon "Your mouth is amazing!"
     anon "{i}*Sluuuuuurp*{/i}"
-
     show roz_mc_face_bj normal
     pause
     show roz_mc_face_bj normal_talk
     anon "Haah!"
-
     show roz_mc_face_bj normal
-    roz "{i}*Gllllcck*{/i}"
-
+    roz "{i}*Glllcck*{/i}"
     pause
     show roz_mc_face_bj normal_talk
-    anon "Jangan berhenti!"
-
+    anon "Don't stop!"
     show roz_mc_face_bj normal
     return
 
@@ -72,37 +65,29 @@ label scene_roz_blowjob.loop:
 label scene_roz_blowjob.dialogue:
     if animcounter == 0 and randomizer() > 50:
         show roz_mc_face_bj normal_talk
-        anon "Sialan!{p=1}{nw}"
-
+        anon "Holy crap!{p=1}{nw}"
         show roz_mc_face_bj normal
     if animcounter == 1 and randomizer() > 50:
-        roz "{i}*Menyeruput*{/i}{p=1}{nw}"
-
+        roz "{i}*Slurp*{/i}{p=1}{nw}"
     if animcounter == 2 and randomizer() > 50:
-        roz "{i}*Gllllcck*{/i}{p=1}{nw}"
-
+        roz "{i}*Glllcck*{/i}{p=1}{nw}"
     if animcounter == 3 and randomizer() > 50:
         show roz_mc_face_bj normal_talk
-        anon "Saya semakin dekat...{p=2}{nw}"
-
+        anon "I'm getting close...{p=2}{nw}"
         if M_roz.get("sex speed") > 0.061:
             $ M_roz.set("sex speed", M_roz.get("sex speed") - 0.03)
-        anon "Ya Tuhan!{p=1}{nw}"
-
+        anon "Oh my god!{p=1}{nw}"
         show roz_mc_face_bj normal
     return
 
 label scene_roz_blowjob.finish:
     show roz_mc_face_bj normal_talk
     anon "Haah!"
-
     show roz_mc_face_bj normal
     pause
     show roz_mc_face_bj normal_talk
-    anon "aku akan-"
-
-    anon "OH, AKU AKAN-"
-
+    anon "I'm gonna-"
+    anon "OH, I'M GONNA-"
     show roz_mc_face_bj normal
     pause
     hide roz_bj
@@ -110,54 +95,40 @@ label scene_roz_blowjob.finish:
     show roz_mc_body_bj cum
     anon "HNNGGG!!!" with flash
     pause
-    roz "{i}*Meneguk*{/i}"
-
+    roz "{i}*Gulp*{/i}"
     pause
     if randomizer() > 50:
-        roz "Hehe, anak baik."
-
+        roz "Hehe, good boy."
     else:
-        roz "Hehe, enak."
-
+        roz "Hehe, delicious."
     return
 
 
 label con02_scam_roz_blowjob_intro:
     roz "{i}*Sluuuuuurp*{/i}"
-
     show roz_mc_face_bj normal_talk
-    anon "YA TUHAN!!!"
-
+    anon "OH GOD!!!"
     show roz_mc_face_bj normal
     pause
     show roz_mc_face_bj normal_talk
-    anon "Kita tidak seharusnya-"
-
-    anon "Ini bukan-"
-
+    anon "We shouldn't be-"
+    anon "This isn't-"
     show roz_mc_face_bj normal
-    roz "{i}*Gllllcck*{/i}"
-
+    roz "{i}*Glllcck*{/i}"
     pause
     show roz_mc_face_bj normal_talk
-    anon "Ini-"
-
-    anon "INI TERASA LUAR BIASA!"
-
+    anon "This-"
+    anon "THIS FEELS AMAZING!"
     show roz_mc_face_bj normal
     pause
-    roz "MM."
-
+    roz "Mmm."
     show roz_mc_face_bj normal_talk
     anon "WOW!!"
-
     show roz_mc_face_bj normal
     pause
     show roz_mc_face_bj normal_talk
-    anon "Ya Tuhan, terus lakukan itu!"
-
-    anon "Terus lakukan itu!!"
-
+    anon "Oh my god, keep doing that!"
+    anon "Keep doing that!!"
     show roz_mc_face_bj normal
     return
 # Decompiled by unrpyc: https://github.com/CensoredUsername/unrpyc

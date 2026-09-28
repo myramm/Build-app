@@ -1,16 +1,11 @@
 label kim_button_lounge:
     show anon f_worried with dissolve
-    kim @ a_wave "Pergilah, anak malang!"
-
-    kim "{b}Kim{/b} makan malam sekarang."
-
+    kim @ a_wave "Go away, poor boy!"
+    kim "{b}Kim{/b} eat dinner now."
     pause
-    kim @ a_point "Silakan minta sisa erseware!"
-
-    anon f_skeptical "Ugh, kuharap kau tersedak karenanya."
-
-    kim @ f_laugh "Rona rona rona!"
-
+    kim @ a_point "You go beg for scraps erseware!"
+    anon f_skeptical "Ugh, I hope you choke on it."
+    kim @ f_laugh "Hue hue hue!"
     hide anon with dissolve
     return
 # Decompiled by unrpyc: https://github.com/CensoredUsername/unrpyc

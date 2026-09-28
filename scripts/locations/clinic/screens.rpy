@@ -4,7 +4,6 @@ screen hospital():
     imagebutton:
         focus_mask True
         alt "Hospital Lobby Door"
-
         pos 720, 356
         idle game.timer.image("objects/object_door_155{}.png")
         hover HoverImage(game.timer.image("objects/object_door_155{}.png"))

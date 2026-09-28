@@ -3,69 +3,46 @@ label okita_button_dress_code:
     show okita 1 at right
     show anon f_worried
     with dissolve
-    anon "Hai {b}Nona Okita{/b}, saya berharap Anda dapat berbicara dengan {b}Nyonya. Smith{/b} tentang kebijakan aturan berpakaian yang baru..."
-
+    anon "Hi {b}Miss Okita{/b}, I was hoping you could talk to {b}Mrs. Smith{/b} about the new dress code policy..."
     show okita 1
-    okita "Hmm!"
-
+    okita "Hmmph!"
     show okita 2
-    okita "Aku tidak akan membiarkan diriku tunduk pada wanita busuk itu hanya supaya kalian bisa memakai celana longgar dan rok pendek!"
-
-    anon "Bukan, bukan itu... Aku khawatir dengan bagian yang membatasi pewarna rambut dan aku benar-benar ingin-"
-
+    okita "I'm not going to subject myself to that foul woman just so you kids can wear baggy pants and short skirts!"
+    anon "No, that's not it... I'm concerned about the part restricting hair dye and I'd really like to-"
     show okita 10c with dissolve
-    okita "Pewarna rambut?"
-
+    okita "Hair dye?"
     show okita 11 with dissolve
-    okita "Itu yang kamu khawatirkan?"
-
+    okita "That's what you're worried about?"
     show okita 4
-    anon "Y-ya, Bu."
-
-    anon "Teman saya {b}Eve{/b} suka mewarnai rambutnya menjadi biru, dan saya berharap Anda dapat meyakinkan {b}Ny. Smith{/b} ingin mengubah kebijakan?"
-
+    anon "Y-yes, ma'am."
+    anon "My friend {b}Eve{/b} likes to dye her hair blue, and I was hoping you could convince {b}Mrs. Smith{/b} into changing the policy?"
     show okita 2
-    okita "Ya, itu konyol!"
-
-    okita "Saya punya alat di lantai atas yang mengubah pigmentasi pada folikel rambut."
-
+    okita "Well, that's just silly!"
+    okita "I've got a device upstairs that alters the pigmentation in hair follicles."
     show okita 1
-    anon f_worried @ f_surprised "Anda melakukannya?"
-
+    anon f_worried @ f_surprised "You do?"
     show okita 2
-    okita "Tentu."
-
-    okita "Maksudku, masih ada beberapa masalah yang perlu kuselesaikan..."
-
-    okita "... Tapi jika teman Anda bersedia menjadi tikus percobaan saya untuk beberapa tes, saya yakin saya bisa menyelesaikannya dalam waktu singkat!"
-
+    okita "Sure."
+    okita "I mean, it's still got a few kinks I need to work out..."
+    okita "... But if your friend is willing to be my lab rat for a few tests, I'm sure I can get it working in no time!"
     show okita 1
-    anon f_surprised "Tes-T?"
-
+    anon f_surprised "T-tests?"
     pause
-    anon f_worried "Menurutku itu bukan ide yang bagus, {b}Nona Okita{/b}..."
-
+    anon f_worried "I don't think that's a good idea, {b}Miss Okita{/b}..."
     show okita 2
-    okita "Oh, ayo sekarang!"
-
-    okita "Itu semua hal-hal non-invasif... Ya, sebagian besar..."
-
-    okita "Ada kemungkinan kecil dia akan kehilangan rambutnya sepenuhnya, tetapi itu adalah skenario terburuk!"
-
+    okita "Oh, come now!"
+    okita "It's all noninvasive stuff... Well, mostly..."
+    okita "There's a small chance she'll lose her hair completely but that's the absolute worst case scenario!"
     show okita 1
     anon a_facepalm @ -m_talk "..."
     show okita 2
-    okita "Kita berbicara tentang peluang yang kurang dari satu persen!"
-
+    okita "We're talking less than a one percent chance!"
     show okita 1
-    anon a_idle f_worried @ f_unimpressed_bored "Ehh, aku rasa aku akan mengecek ke guru lain saja dan melihat apakah salah satu dari mereka bisa membantuku..."
-
+    anon a_idle f_worried @ f_unimpressed_bored "Ehh, I think I'll just check with the other teachers and see if one of them can help me..."
     show okita 2
-    okita "Baiklah, sesuaikan dirimu."
-
+    okita "Alright, suit yourself."
     show okita 1
-    anon "Terima kasih, {b}Nona Okita{/b}."
-
+    anon "Thanks anyways, {b}Miss Okita{/b}."
     hide anon with dissolve
     return
 
@@ -74,190 +51,126 @@ label button_okita_intro:
     show anon
     show okita 4 at right
     with dissolve
-    anon "Baiklah, {b}Nona Okita{/b}. Apa yang harus saya lakukan agar nilai saya naik?"
-
+    anon "Alright, {b}Miss Okita{/b}. What do I have to do to get my grades up?"
     show okita 5
-    okita "Anda akan membantu saya membebaskan diri dari pengusiran saya ke negeri yang kekurangan."
-
+    okita "You're going to help me break free of my imposed banishment to the land of deficients."
     show okita 4
-    anon f_worried "Hah? Pembuangan? Apa yang sedang kamu bicarakan?"
-
+    anon f_worried "Huh? Banishment? What in the world are you on about?"
     show okita 3
-    okita "Apakah Anda benar-benar percaya seseorang dengan kecerdasan saya ada di sini, mengajarkan ilmu dasar kepada sekelompok Neanderthal?"
-
+    okita "Do you actually believe somebody of my intelligence belongs here, teaching basic science to a bunch of neanderthals?"
     show okita 4
     anon "Uhh..."
-
     show okita 3
-    okita "Anda pikir ini adalah cita-cita saya dalam hidup saya?!"
-
+    okita "You think this is what I aspire to do with my life?!"
     show okita 4
-    anon @ f_skeptical "... Tidak?"
-
+    anon @ f_skeptical "... No?"
     show okita 11
-    okita "Saya pernah menjadi yang terdepan, {b}[firstname]{/b}!"
-
-    okita "Saya bekerja bersama beberapa pemikir paling cemerlang di planet ini, berjuang untuk memajukan umat manusia ke masa depan!"
-
+    okita "I used to be the bleeding edge, {b}[firstname]{/b}!"
+    okita "I worked alongside some of the brightest minds on the planet, striving to forward humanity into the future!"
     show okita 11b
-    anon f_normal "Kedengarannya... Intens! Bagaimana kamu bisa sampai di sini?"
-
+    anon f_normal "That sounds... Intense! How did you end up here?"
     show okita 11
-    okita "Suatu hari rekan-rekan saya memaksa saya keluar!"
-
+    okita "One day my colleagues forced me out!"
     show okita 11b
-    anon f_surprised "Apa?! Mengapa mereka melakukan itu?"
-
+    anon f_surprised "What?! Why did they do that?"
     show okita 5
-    okita "Ya, mereka mengklaim saya kehilangan gambaran yang lebih besar."
-
-    okita "Bahwa aku menjadi begitu peduli dengan kemajuan ilmu pengetahuan sehingga aku lupa akan etika yang telah aku bersumpah untuk menjunjungnya."
-
+    okita "Well, they claimed I was losing sight of the bigger picture."
+    okita "That I'd become so concerned with advancing the science that I'd lost sight of the ethics I'd sworn to uphold."
     show okita 4
     anon f_worried @ -m_talk "..."
     show okita 11
-    okita "Faktanya, mereka hanya terintimidasi oleh kecerdasan saya."
-
-    okita "Mereka tidak bisa mengikuti, jadi mereka bersatu dan memasukkan saya ke daftar hitam!"
-
+    okita "The truth of the matter, is that they were just intimidated by my intelligence."
+    okita "They couldn't keep up, so they banded together and got me blacklisted!"
     show okita 11b
-    anon @ f_confused "Masuk daftar hitam? Maksudnya itu apa?"
-
+    anon @ f_confused "Blacklisted? What does that mean?"
     show okita 3
-    okita "Itu berarti tidak ada lembaga ilmiah yang berharga yang akan menerima saya!"
-
+    okita "It means no worthwhile scientific institution will have me!"
     show okita 11
-    okita "Aku telah dikucilkan untuk menjalani kehidupan yang membosankan di tempat yang monoton seperti ini..."
-
-    okita "... Dikelilingi oleh anak-anak dan orang bodoh!"
-
+    okita "I've been ostracized to live out a dull existence in a monotonous place like this..."
+    okita "... Surrounded by children and half-wits!"
     show okita 11b
-    anon "Ya, itu cerita yang menyedihkan, tapi bagaimana saya bisa membantu Anda?"
-
+    anon "Well, that's a sad story and all but how am I supposed to help you?"
     show okita 3
-    okita "Ya, sebenarnya sederhana saja."
-
+    okita "Yes, well, it's simple really."
     show okita 5
-    okita "Saya hanya perlu menyelesaikan apa yang saya mulai."
-
+    okita "I just need to finish what I started."
     show okita 4
-    anon "Hah?"
-
+    anon "Huh?"
     show okita 2
-    okita "Penemuan saya! Yang saya kerjakan di Cuntech sebelum orang-orang bodoh itu memasukkan saya ke dalam daftar hitam."
-
-    okita "Jika saya bisa membuktikannya berhasil dan menerbitkan salah satunya."
-
+    okita "My inventions! The ones I was working on at Cuntech before those morons blacklisted me."
+    okita "If I could just prove they work and get one of them published."
     show okita 1
-    anon "Anda pikir itu akan membuat Anda mendapatkan pekerjaan Anda kembali?"
-
+    anon "You think that would get you your job back?"
     show okita 11
-    okita "... Saya tidak peduli dengan pekerjaan itu!"
-
-    okita "Aku ingin menunjukkan kepada para pengkhianat itu betapa bodohnya mereka, dengan mengabaikan {b}Tori Okita{/b}!"
-
+    okita "... I don't care about the job!"
+    okita "I want to show those backstabbers just how foolish they were, dismissing {b}Tori Okita{/b}!"
     show okita 5
-    okita "Selain itu, jika salah satu penemuanku berhasil, nilainya akan sangat besar!"
-
+    okita "Besides, if even one of my inventions works, it'll be worth a fortune!"
     show okita 2
-    okita "Saya akan membeli laboratorium saya sendiri!"
-
+    okita "I'll buy my own lab!"
     show okita 1
-    anon @ f_skeptical "... Masih belum melihat bagaimana aku bisa menyesuaikan diri dengan semua ini."
-
+    anon @ f_skeptical "... Still not seeing how I fit into all of this."
     show okita 5
-    okita "Baiklah, pertama-tama, saya ingin Anda {b}membantu saya masuk ke kantor saya{/b}."
-
+    okita "Well, first off, I need you to {b}help me get into my office{/b}."
     show okita 4
-    anon f_normal @ f_laugh "Anda terkunci di luar kantor Anda sendiri?"
-
+    anon f_normal @ f_laugh "You're locked out of your own office?"
     show okita 5
-    okita "Ya, tiran itu {b}Ny. Smith{/b} mengunci saya di luar!"
-
+    okita "Yeah, that tyrant {b}Mrs. Smith{/b} locked me out!"
     show okita 4
-    anon "Kepala Sekolah?!"
-
-    anon "Kenapa dia melakukan itu?"
-
+    anon "The principal?!"
+    anon "Why would she do that?"
     show okita 5
-    okita "Dia tidak ingin aku meneruskan proyek kesayanganku selama masa sekolah."
-
+    okita "She doesn't want me pursuing my pet projects during the school term."
     show okita 9
-    okita "... Katanya saya harus tetap fokus seratus persen pada kurikulum."
-
+    okita "... Says I should remain one hundred percent focused on the curriculum."
     show okita 11
-    okita "Itu benar-benar tidak masuk akal!"
-
+    okita "It's utter nonsense!"
     show okita 4
-    anon f_worried @ f_confused "... Bagaimana aku bisa mengajakmu masuk?"
-
+    anon f_worried @ f_confused "... How am I supposed to get you in?"
     show okita 5
-    okita "Dengan {b}kode kunci{/b} tentunya. {b}Ny. Smith{/b} akan menyimpannya {b}disimpan di suatu tempat di kantornya{/b}, saya yakin."
-
+    okita "With the {b}key code{/b} of course. {b}Mrs. Smith{/b} will have it {b}stashed away somewhere in her office{/b}, I'm sure."
     show okita 4
-    anon "Kamu ingin aku {b}mendobrak kantor kepala sekolah dan mencuri darinya{/b}?!"
-
+    anon "You want me to {b}break into the principal's office and steal from her{/b}?!"
     show okita 5
-    okita "Ini sebenarnya bukan mencuri... Saya hanya ingin Anda mengetahui kodenya."
-
+    okita "It's not really stealing... I just need you to figure out the code."
     show okita 3
-    okita "Selain itu, Anda tidak akan rugi apa-apa... Ingat?"
-
+    okita "Besides, you have nothing to lose... Remember?"
     show okita 4
-    anon @ a_point f_skeptical "Dia bisa mengusirku!"
-
+    anon @ a_point f_skeptical "She could expel me!"
     show okita 5
-    okita "Apakah itu penting? Anda akan terjebak di sini selama satu tahun lagi terlepas dari apakah Anda gagal di kelas saya..."
-
+    okita "Would it really matter? You'll be stuck here for another year regardless if you flunk my class..."
     show okita 4
-    anon "Ya, tapi..."
-
+    anon "Yeah, but..."
     show okita 3
-    okita "Jangan bodoh. Ini bagus sekali! Jika Anda mendapatkan cetak birunya dari kantor saya, bantu saya membuat apa yang ada di dalamnya, dan jalankan beberapa tes untuk membuktikan bahwa cetak biru tersebut berhasil..."
-
+    okita "Don't be foolish. This is a good deal! If you get the blueprints out of my office, help me build what's on them, and run a few tests to prove they work..."
     show okita 5
-    okita "... Aku akan memberimu nilai A+ di kelasku."
-
+    okita "... I'll give you an A+ in my class."
     show okita 4
-    anon f_normal "Nilai A+?!"
-
+    anon f_normal "An A+?!"
     anon a_thinking f_thinking "Hmm..."
-
-    anon "Jadi, pada dasarnya, apakah saya membantu Anda melakukan ini atau saya terjebak dengan nilai yang gagal?"
-
+    anon "So, basically, either I help you do this or I'm stuck with a failing grade?"
     show okita 3
-    okita "Ya. Tanpa bantuan saya, saya menghitung peluang Anda untuk lulus kelas saya adalah sekitar 3.720 berbanding 1."
-
+    okita "Yeah. Without my help, I calculate your odds of passing my class to be about 3,720 to 1."
     show okita 4
-    anon a_idle f_worried @ f_skeptical "Sheesh, yah, sepertinya aku tidak punya banyak pilihan kalau begitu."
-
+    anon a_idle f_worried @ f_skeptical "Sheesh, well, it's not like I have much choice then."
     show okita 7
-    okita "Anda akhirnya mulai memahami situasinya!"
-
+    okita "You're finally starting to get a grasp on the situation!"
     show okita 6
-    anon "Jadi, bagaimana cara {b}mendapatkan kode kunci dari kantor Ny. Smith{/b}?"
-
+    anon "So, how do I {b}get the key code from Mrs. Smith's office{/b}?"
     show okita 5
-    okita "Itu masalahmu."
-
+    okita "That's your problem."
     show okita 4
     anon f_sad_down "..."
-    anon "Luar biasa."
-
+    anon "Wonderful."
     show anon f_tired
     show okita 7
-    okita "Semoga beruntung, {b}[firstname]{/b}!"
-
+    okita "Best of luck, {b}[firstname]{/b}!"
     show okita 5
-    okita "... Oh dan selagi Anda berada di kantor saya, kenapa Anda tidak {b}mengambil jas lab dan kacamata pengaman{/b}."
-
-    okita "Anda akan membutuhkannya."
-
+    okita "... Oh and while you're in my office, why don't you {b}grab a lab coat and a pair of safety glasses{/b}."
+    okita "You're gonna need them."
     hide okita with dissolve
     anon f_sad_down "Ugh..."
-
-    anon @ -m_talk "( Saya harus menunggu {b}Nyonya Smith meninggalkan kantornya jika saya ingin mencarinya dengan benar{/b}. )"
-
+    anon @ -m_talk "( I'll have to wait for {b}Mrs. Smith to leave her office if I want to search it properly{/b}. )"
     hide anon with dissolve
     return
 
@@ -266,26 +179,19 @@ label button_okita_get_keycode:
     show anon
     show okita 3 at right
     with dissolve
-    okita "Adakah yang beruntung mendapatkan {b}kode kunci{/b} itu?"
-
+    okita "Any luck getting that {b}key code{/b}?"
     show okita 4
-    anon "Saya masih mengerjakannya."
-
+    anon "I'm still working on it."
     show okita 3
-    okita "Ya, waktu terus berjalan."
-
+    okita "Well, time is ticking."
     show okita 4
-    anon f_worried "saya tahu..."
-
+    anon f_worried "I know..."
     show okita 9
-    okita "Cih..."
-
+    okita "Tch..."
     hide okita with dissolve
     show anon f_sad_down
     anon "Ugh..."
-
-    anon @ -m_talk "( Saya harus menunggu {b}Nyonya Smith meninggalkan kantornya jika saya ingin mencarinya dengan benar{/b}. )"
-
+    anon @ -m_talk "( I'll have to wait for {b}Mrs. Smith to leave her office if I want to search it properly{/b}. )"
     hide anon with dissolve
     return
 
@@ -294,107 +200,76 @@ label button_okita_foam_misshap:
     show anon
     show okita 5 at right
     with dissolve
-    okita "Bagus, kamu di sini. Kita bisa memulainya."
-
+    okita "Good, you're here. We can get started."
     show okita 4
-    anon "Ya baiklah."
-
-    anon "Jadi apa yang pertama kita bangun?"
-
+    anon "Yeah, alright."
+    anon "So what are we building first?"
     show okita 5
-    okita "akan kutunjukkan padamu."
-
+    okita "I'll show you."
     hide anon
     show player 109f zorder 0 at Position(xpos=0.25, ypos=1.0)
     show okita 12 zorder 1 at Position(xpos=0.85, ypos=1.0)
     with dissolve
-    okita "Saya menyebut keindahan ini, Okitatron Oculars."
-
+    okita "I call these beauties, the Okitatron Oculars."
     show bp 1 zorder 2 at Position(xpos=0.5, ypos=0.95) with dissolve
     pause
-    anon "Kacamata?"
-
-    okita "Hah, bukan kacamata..."
-
+    anon "Glasses?"
+    okita "Hah, not glasses..."
     hide bp with dissolve
     show player 109f
     show okita 12
-    okita "Ini adalah layar optik yang dipasang di kepala, komputer yang benar-benar ada di mana-mana."
-
+    okita "These are an optical head-mounted display, a true ubiquitous computer."
     show anon f_worried
     hide player
     with dissolve
     show okita 13
-    anon "Saya tidak mengerti."
-
+    anon "I don't understand."
     show okita 9 at right
     with dissolve
-    okita "Tentu saja tidak. Kamu bodoh."
-
+    okita "Of course you don't. You're an imbecile."
     show okita 5
-    okita "Biar saya jelaskan begini, Okitatron Oculars akan segera menggantikan setiap ponsel cerdas di planet ini."
-
+    okita "Let me just put it this way, the Okitatron Oculars will soon replace every smartphone on the planet."
     show okita 4
-    anon "Jadi itu telepon?"
-
+    anon "So it's a phone?"
     show okita 3
-    okita "{i}*Huh*{/i}"
-
+    okita "{i}*Sigh*{/i}"
     show okita 5
-    okita "Mari kita fokus membangunnya, dan setelah selesai, saya akan menunjukkan kepada Anda apa fungsinya..."
-
+    okita "Let's just focus on building it, and once it's complete, I'll show you what it does..."
     show okita 4
-    anon f_normal @ f_laugh "Bekerja untuk saya."
-
-    anon "Bagaimana kita memulainya?"
-
+    anon f_normal @ f_laugh "Works for me."
+    anon "How do we start?"
     show okita 10b with dissolve
     okita "Hmm."
-
     show okita 10c
-    okita "Ya, saya kehilangan beberapa komponen..."
-
+    okita "Well, I'm missing a few components..."
     show okita 10b
     okita "..."
     show okita 5 with dissolve
-    okita "Saya dapat mengumpulkan sebagian besar dari apa yang kami butuhkan sendiri."
-
+    okita "I can gather most of what we need on my own."
     show okita 3
-    okita "Bisakah Anda {b}mencarikan saya sepasang lensa{/b}?"
-
+    okita "Could you {b}find me a pair of lenses{/b}?"
     show okita 4
-    anon @ f_thinking "{b}Lensa{/b}? Seperti di teleskop?"
-
+    anon @ f_thinking "{b}Lenses{/b}? Like in a telescope?"
     show okita 5
-    okita "Bukan dari teleskop. Saya memerlukan {b}lensa dari kacamata. Khususnya, lensa varifokal{/b}."
-
+    okita "Not from a telescope. I need {b}lenses from a pair of spectacles. Specifically, varifocal lenses{/b}."
     show okita 4
-    anon @ f_confused "{b}Varifokal{/b}?"
-
+    anon @ f_confused "{b}Varifocal{/b}?"
     show okita 3
-    okita "Ya, itu berarti {b}lensa{/b} dengan dua resep berbeda; atas dan bawah."
-
+    okita "Yes, that means it's a {b}lens{/b} with two different prescriptions; a top and a bottom."
     show okita 4
-    anon f_surprised "Seperti untuk seseorang yang menderita rabun jauh dan rabun jauh?"
-
+    anon f_surprised "Like for someone who is both nearsighted and farsighted?"
     show okita 2
-    okita "Dengan tepat!"
-
+    okita "Precisely!"
     show okita 1
-    anon f_normal "Hmm, saya mungkin bisa melacak hal seperti itu."
-
+    anon f_normal "Hmm, I might be able to track something like that down."
     show okita 3
-    okita "Mungkin?"
-
+    okita "Might?"
     show okita 1
-    anon "Maksudku, aku kenal beberapa orang yang memakai kacamata. Mungkin salah satu dari mereka punya set cadangan."
-
+    anon "I mean, I know a few people who wear glasses. Maybe one of them have a spare set."
     show okita 2
-    okita "Sangat bagus. {b}Laporkan kembali kepada saya di sini, di laboratorium sains, setelah Anda memilikinya{/b}."
-
+    okita "Very good. {b}Report back to me here, in the science lab, once you have them{/b}."
     show okita 1
-    anon "Baiklah."
-
+    anon "Alright."
     hide anon with dissolve
     return
 
@@ -403,40 +278,28 @@ label button_okita_get_bifocal_lenses:
     show anon
     show okita 3 at right
     with dissolve
-    okita "Apakah Anda menemukan apa yang kami butuhkan?"
-
+    okita "Did you find what we need?"
     show okita 4
-    anon "Apa yang kamu ingin aku temukan lagi?"
-
+    anon "What did you want me to find again?"
     show okita 3
-    okita "Pfft, kamu punya satu tugas yang harus diselesaikan dan kamu lupa?"
-
+    okita "Pfft, you have one task to do and you've forgotten it?"
     show okita 4
-    anon f_sad_down "A-kurasa begitu..."
-
+    anon f_sad_down "I-I guess so..."
     show okita 9
-    okita "Khas."
-
+    okita "Typical."
     show okita 5
-    okita "Saya ingin Anda {b}menemukan sepasang lensa varifokal{/b}."
-
+    okita "I need you to {b}find a pair of varifocal lenses{/b}."
     show okita 4
-    anon f_normal @ f_laugh a_point "Oh benar! Baik rabun jauh maupun rabun jauh."
-
+    anon f_normal @ f_laugh a_point "Oh, right! Both farsighted and nearsighted."
     show okita 5
-    okita "Benar."
-
+    okita "Correct."
     show okita 3
-    okita "Mungkin sebaiknya aku menulisnya terbalik di dahimu, agar kamu tidak lupa?"
-
+    okita "Perhaps I should write it backwards on your forehead, so you won't forget?"
     show okita 4
-    anon f_worried "... Tidak, tidak apa-apa. Aku sudah mendapatkannya sekarang."
-
+    anon f_worried "... No, that's alright. I've got it now."
     okita "Mmmhmm."
-
     hide okita with dissolve
-    anon f_thinking a_thinking @ -m_talk "( Hmm, saya harus {b}memeriksa sekolah dan melihat apakah ada yang punya lensa varifokal cadangan{/b}. )"
-
+    anon f_thinking a_thinking @ -m_talk "( Hmm, I should {b}check around school and see if someone has a spare set of varifocal lenses{/b}. )"
     hide anon with dissolve
     return
 
@@ -445,130 +308,92 @@ label button_okita_get_faptic_engine:
     show anon
     show okita 4 at right
     with dissolve
-    anon "Hai, {b}Nona Okita{/b}. Apakah Anda sudah mengatasi masalah kacamata tersebut?"
-
+    anon "Hey, {b}Miss Okita{/b}. Have you solved the problem with the glasses?"
     show okita 3
-    okita "Maksudmu Okitatron Oculars?"
-
+    okita "You mean the Okitatron Oculars?"
     show okita 4
-    anon "Ya maaf. I-itulah yang kumaksud."
-
+    anon "Yeah, sorry. T-that's what I meant."
     show okita 5
-    okita "Ya, saya menyelesaikannya. Saya sedang dalam proses mematenkannya sekarang."
-
+    okita "Yes, I sorted it out. I'm in the process of patenting them now."
     show okita 4
-    anon "Itu kabar baik, bukan?"
-
+    anon "That's good news, right?"
     show okita 5
-    okita "Ini bagus untuk permulaan."
-
+    okita "It's good for a start."
     show okita 3
-    okita "... Tapi jangan pedulikan Oculars, {b}[firstname]{/b}!"
-
-    okita "Berita kemarin!"
-
+    okita "... But never mind the Oculars, {b}[firstname]{/b}!"
+    okita "Yesterday's news!"
     show okita 1
-    anon @ f_laugh "... O-oke."
-
+    anon @ f_laugh "... O-okay."
     show okita 2
-    okita "Hari ini saya punya sesuatu yang benar-benar inovatif!"
-
+    okita "Today I've got something truly innovative!"
     show okita 1
-    anon f_flirt "Lebih inovatif dari kacamata X-ray?"
-
+    anon f_flirt "More innovative than X-ray glasses?"
     show okita 3
-    okita "Bisa aja. Teknologi sinar-X belum inovatif sejak tahun 1980an."
-
+    okita "Oh, please. X-ray technology hasn't been innovative since the 1980s."
     show okita 1
     anon f_flirt_grin @ -m_talk "..."
     hide anon
     show player 109f zorder 0 at Position(xpos=0.25, ypos=1.0)
     show okita 12 zorder 1 at Position(xpos=0.85, ypos=1.0)
     with dissolve
-    okita "Saya menyebutnya Sabuk Okitatron."
-
+    okita "I call this, the Okitatron Belt."
     show bp 2 zorder 2 at Position(xpos=0.5, ypos=0.95) with dissolve
     pause
-    anon "... Sabuk?"
-
-    okita "Ya, nama itu mungkin memerlukan beberapa pekerjaan..."
-
+    anon "... Belt?"
+    okita "Yeah, the name could use some work..."
     hide bp with dissolve
     show player 109f
     show okita 12
-    okita "Tapi aku akan mengkhawatirkannya nanti!"
-
-    okita "Untuk saat ini, mari fokus pada fungsi perangkat."
-
+    okita "But I'll worry about that later!"
+    okita "For now, let's focus on what the device does."
     hide player
     show anon f_worried
     show okita 2 at right
     with dissolve
-    okita "Sabuk Okitatron akan merevolusi cara orang menjaga bentuk tubuh!"
-
+    okita "The Okitatron Belt is gonna revolutionize the way people keep in shape!"
     show okita 1
     anon @ -m_talk "..."
-    anon "Maksudmu itu perangkat olahraga?"
-
+    anon "You mean it's a workout device?"
     show okita 2
-    okita "Tidak. Ini akan menjadikan olahraga sebagai masa lalu!"
-
-    okita "Ini menargetkan semua kelompok otot utama dengan getaran mikro yang tidak terdeteksi!"
-
-    okita "Ini merangsang pertumbuhan otot sehingga Anda tidak perlu berolahraga lagi!"
-
+    okita "No. This is going to make exercise a thing of the past!"
+    okita "It targets all of the major muscle groups with undetectable micro-vibrations!"
+    okita "It stimulates muscle growth so you'll never have to workout again!"
     show okita 1
-    anon f_normal "Kedengarannya luar biasa!"
-
+    anon f_normal "That sounds incredible!"
     show okita 9
-    okita "Ya, tentu saja luar biasa! Menurut Anda, dengan siapa Anda sedang berbicara?"
-
+    okita "Well, of course it's incredible! Who do you think you're talking to?"
     show okita 1
     anon @ -m_talk "..."
     show okita 2
-    okita "Namun, saya kehilangan komponen kuncinya."
-
+    okita "However, I'm missing a key component."
     show okita 1
-    anon @ f_laugh "... Di sinilah saya masuk?"
-
+    anon @ f_laugh "... Which is where I come in?"
     show okita 2
-    okita "Dengan tepat!"
-
+    okita "Precisely!"
     show okita 3
-    okita "Getaran mikro ini harus disesuaikan dengan frekuensi yang sangat spesifik, jika tidak maka getaran tersebut tidak akan berhasil."
-
+    okita "These micro-vibrations have to be fine-tuned to a very specific frequency otherwise, it won't work."
     show okita 1
-    anon "Oke, jadi bagaimana kita melakukannya."
-
+    anon "Okay, so how do we do that."
     show okita 2
-    okita "Kita memerlukan {b}mesin faptic{/b}."
-
+    okita "We'll need a {b}faptic engine{/b}."
     show okita 1
-    anon f_worried @ f_skeptical "... Hah?"
-
+    anon f_worried @ f_skeptical "... Huh?"
     show okita 3
-    okita "{b}mesin faptik{/b}."
-
+    okita "A {b}faptic engine{/b}."
     show okita 1
     anon f_hurt a_thinking @ -m_talk "..."
     show okita 9
-    okita "{i}*Huh*{/i}"
-
+    okita "{i}*Sigh*{/i}"
     show okita 5
     show anon f_worried a_idle with dissolve
-    okita "{b}Cari June{/b}. Dia pernah membantu saya menyelesaikan proyek-proyek sulit di masa lalu."
-
-    okita "{b}Katakan padanya aku mengirimmu untuk mesin faptic{/b}."
-
-    okita "Dia akan tahu apa yang harus dilakukan."
-
+    okita "{b}Go find June{/b}. She's helped me out with tough projects in the past."
+    okita "{b}Tell her I sent you for a faptic engine{/b}."
+    okita "She'll know what to do."
     show okita 4
-    anon f_normal @ a_point "{b}Mesin Faptik{/b}. Baiklah, aku akan kembali."
-
+    anon f_normal @ a_point "{b}Faptic engine{/b}. Alright, I'll be back."
     hide anon with dissolve
     show okita 9
-    okita "Anak malang itu lebih bodoh dari sekotak batu..."
-
+    okita "Poor kid is dumber than a box of rocks..."
     return
 
 label button_okita_get_faptic_engine_repeat:
@@ -576,20 +401,15 @@ label button_okita_get_faptic_engine_repeat:
     show anon
     show okita 5 at right
     with dissolve
-    okita "Sudah kembali? Apakah kamu memilikinya?"
-
+    okita "Back already? Do you have it?"
     show okita 4
-    anon f_worried "Di mana saya bisa mendapatkan {b}mesin faptic{/b} ini lagi?"
-
+    anon f_worried "Where am I supposed to get this {b}faptic engine{/b} thingy again?"
     show okita 9
-    okita "{i}*Huh*{/i}"
-
+    okita "{i}*Sigh*{/i}"
     show okita 5
-    okita "{b}bicara saja dengan June{/b}, dia akan menjelaskan."
-
+    okita "Just {b}go talk to June{/b}, she will explain."
     show okita 4
-    anon f_normal @ f_laugh "Oh benar! Saya akan segera kembali."
-
+    anon f_normal @ f_laugh "Oh, right! I'll be right back."
     hide anon with dissolve
     return
 
@@ -598,156 +418,105 @@ label button_okita_tired_from_belt:
     show anon
     show okita 1 at right
     with dissolve
-    anon @ a_wave "Hai, {b}Nona Okita{/b}! Apakah kamu merasa lebih baik?"
-
+    anon @ a_wave "Hey, {b}Miss Okita{/b}! Are you feeling any better?"
     show okita 2
-    okita "Sudahlah, {b}[firstname]{/b}."
-
-    okita "Saya senang Anda di sini, ada pekerjaan yang harus diselesaikan!"
-
+    okita "Never mind that, {b}[firstname]{/b}."
+    okita "I'm glad you're here, there's work to be done!"
     show okita 1
-    anon f_worried @ f_sad_down "{i}*Huh*{/i} Kamu tidak pernah menyerah, kan?"
-
+    anon f_worried @ f_sad_down "{i}*Sigh*{/i} You never let up, do you?"
     show okita 5
-    okita "Aku akan menyerah ketika penemuanku diterbitkan dan orang-orang Cuntech itu memakan semangkuk besar burung gagak!"
-
+    okita "I'll let up when my inventions are published and those Cuntech creeps are eating a big bowl of crow!"
     show okita 4
-    anon "... Bagus."
-
-    anon "Penemuan gila apa yang sedang kita kerjakan kali ini?"
-
+    anon "... Fine."
+    anon "What crazy invention are we working on this time?"
     show okita 10c at Position(xpos=0.98, ypos=1.0) with dissolve
-    okita "Hmm, kita harus mengambil jalan memutar dari penemuan untuk saat ini."
-
-    okita "Setidaknya sampai kita mendapatkan {b}Ny. Smith{/b} keluar dari kasusku!"
-
+    okita "Hmm, we'll have to take a detour from the inventions for the time being."
+    okita "At least until we get {b}Mrs. Smith{/b} off of my case!"
     show okita 10b
-    anon "Bagaimana kita bisa mencapainya?"
-
+    anon "How are we supposed to accomplish that?"
     show okita 10c
-    okita "Aku sendiri sudah memikirkan hal itu..."
-
+    okita "I've been pondering that myself..."
     show okita 2 at right with dissolve
-    okita "Saya pikir serum pembersih pikiran yang sederhana adalah solusi terbaik kami."
-
+    okita "I think a simple mind wipe serum is our best course."
     show okita 1
-    anon f_surprised "{i}Penghapusan pikiran{/i}? Kedengarannya tidak bagus..."
-
+    anon f_surprised "{i}Mind wipe{/i}? That doesn't sound good..."
     show okita 2
-    okita "Bah, ini sangat aman! Selama Anda mengikuti arahan saya sampai ke surat itu!"
-
-    okita "Satu-satunya hal yang akan dia lupakan adalah keengganannya terhadap eksperimenku."
-
+    okita "Bah, it's perfectly safe! So long as you follow my directions to the letter!"
+    okita "The only thing she'll forget is her aversion to my experiments."
     show okita 1
-    anon f_worried @ f_skeptical "Anda yakin?"
-
+    anon f_worried @ f_skeptical "You're sure?"
     show okita 3
-    okita "Ya, tidak ada cara untuk sepenuhnya yakin tanpa pengujian yang tepat..."
-
+    okita "Well, there's no way to be entirely sure without proper testing..."
     show okita 4
     anon @ -m_talk "..."
     show okita 9
-    okita "Dia akan baik-baik saja!"
-
+    okita "She'll be fine!"
     show okita 4
-    anon "... Apa yang perlu saya lakukan?"
-
+    anon "... What do you need me to do?"
     show okita 5
-    okita "Anda akan memulai dengan {b}mengumpulkan bahan-bahan{/b} yang kami perlukan."
-
+    okita "You'll start by {b}gathering the ingredients{/b} we need."
     show okita 4
-    anon "Uh, baiklah. Berapa banyak?"
-
+    anon "Ugh, alright. How many?"
     show okita 5
-    okita "Kita memerlukan {b}lima{/b} totalnya."
-
+    okita "We'll need {b}five{/b} in total."
     show okita 101 at Position(xpos=1.01, ypos=1.0) with dissolve
-    okita "Berikut daftarnya."
-
+    okita "Here's a list."
     hide anon
     show player 556 at left
     show okita 4 at right
     with dissolve
-    anon "{b}Jamur Falicum{/b}, {b}Ekstrak Katak Tanduk{/b}, {b}Eufhorbia Psikotropika{/b}, {b}cairan dasar{/b}..."
-
+    anon "{b}Falicum mushroom{/b}, {b}Horny Toad extract{/b}, {b}Psychotropic Euphorbia{/b}, {b}base liquid{/b}..."
     show player 557
-    anon "Saya belum pernah mendengar hal ini sebelumnya!"
-
+    anon "I've never even heard of these things before!"
     hide player
     show anon f_worried
     with dissolve
     show okita 2
-    okita "Nah, {b}jamur falicum tumbuh di hutan{/b} di sini di Summerville."
-
+    okita "Well, {b}falicum mushrooms grow in the forest{/b} here in Summerville."
     show okita 3
-    okita "Mereka mudah dikenali karena bentuknya yang falus."
-
+    okita "They are easy to spot because of their phallic shape."
     show okita 1
-    anon "... Bruto."
-
+    anon "... Gross."
     show okita 2
-    okita "{b}Kodok Tanduk dan Euphorbia Psikotropika juga dapat ditemukan di hutan{/b}."
-
+    okita "The {b}Horny Toad and Psychotropic Euphorbia can also be found in the forest{/b}."
     show okita 1
-    anon "Psikotropika apa?"
-
+    anon "Psychotropic what?"
     show okita 2
-    okita "Ini adalah bunga yang bercahaya... Anda mungkin mengenalnya sebagai bunga \"jangan lupakan saya\"."
-
+    okita "It's a luminescent flower... You might know it as the \"forget-me-not\" blossom."
     show okita 1
-    anon "Tidak, belum pernah mendengarnya."
-
+    anon "Nope, never heard of it."
     show okita 3
-    okita "Benar-benar?"
-
+    okita "Really?"
     show okita 2
-    okita "Anda hanya akan menemukannya di tempat gelap. {b}taruhan terbaik Anda adalah gua{/b}."
-
+    okita "You'll only find it in dark places. Your {b}best bet would be a cave{/b}."
     show okita 1
-    anon @ f_surprised "Ada gua di Summerville?"
-
+    anon @ f_surprised "There are caves in Summerville?"
     show okita 3
-    okita "Tentu saja."
-
+    okita "Of course."
     show okita 2
-    okita "Adapun {b}Kodok Tanduk{/b}, ini adalah musim kawin mereka. Jadi {b}carilah kolam atau sungai{/b}."
-
-    okita "Mereka seharusnya mudah dikenali dari bagian belakangnya yang berwarna ungu dan menggumpal."
-
+    okita "As for the {b}Horny Toad{/b}, it's their breeding season. So {b}look for a pond or stream{/b}."
+    okita "They should be easily identifiable by their lumpy purple backsides."
     show okita 1
-    anon "Oke, itu tidak terlalu buruk, tapi {b}bagaimana dengan cairan dasar ini{/b}? Apa itu?"
-
+    anon "Okay, that's not too bad, but {b}what about this base liquid{/b}? What is that?"
     show okita 2
-    okita "Kita hanya perlu sesuatu yang ringan sebagai bahan dasar serum. {b}Kaldu sayuran paling cocok{/b}."
-
-    okita "Anda seharusnya dapat {b}membelinya di Consum-R{/b}."
-
+    okita "We just need something mild to act as a base for the serum. {b}Vegetable stock would work best{/b}."
+    okita "You should be able to {b}pick some up at Consum-R{/b}."
     show okita 1
-    anon f_surprised "Bagaimana dengan bahan terakhir ini?"
-
-    anon "{b}Ny. DNA Smith{/b}?!"
-
-    anon f_confused "Bagaimana aku bisa mendapatkannya?!"
-
+    anon f_surprised "What about this last ingredient?"
+    anon "{b}Mrs. Smith's DNA{/b}?!"
+    anon f_confused "How the heck am I supposed to get that?!"
     show okita 3
-    okita "... Ya, itu akan menjadi yang sulit."
-
+    okita "... Yeah, that's gonna be the difficult one."
     show okita 2
-    okita "Sampel rambut atau air liur adalah pilihan terbaik."
-
-    okita "Saya yakin Anda akan menemukan sesuatu..."
-
+    okita "A hair or saliva sample would work best."
+    okita "I'm sure you'll figure something out..."
     show okita 1
-    anon f_worried "Hebat..."
-
-    anon "Baiklah, kurasa sebaiknya aku memulainya."
-
+    anon f_worried "Great..."
+    anon "Well, I guess I had better get started."
     show okita 2
-    okita "Ayo bicara dengan saya jika Anda memerlukan bantuan untuk menemukan bahan apa pun."
-
+    okita "Come talk to me if you need help finding any of the ingredients."
     show okita 5
-    okita "... Dan cepatlah! Kita harus menyelesaikan ini sebelum {b}Ny. Smith{/b} mengubah kode ke kantor saya lagi!"
-
+    okita "... And hurry up! We gotta get this done before {b}Mrs. Smith{/b} changes the code to my office again!"
     hide anon with dissolve
 
 

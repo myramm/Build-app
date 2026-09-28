@@ -11,11 +11,11 @@ label mia_button_dialogue:
         if M_mia.is_state(S_mia_end):
             call expression game.dialog_select("mia_dialogue_mia_bedroom_mia_end_intro")
             menu:
-                "Belajar.":
+                "Study.":
                     call expression game.dialog_select("mia_dialogue_mia_bedroom_mia_end_study")
                     $ M_mia.set("sex speed", .175)
                     jump expression game.dialog_select("mia_strip_repeat")
-                "Saya harus pergi.":
+                "I have to go.":
 
                     call expression game.dialog_select("mia_dialogue_mia_bedroom_mia_end_leave")
                     $ game.main()
@@ -85,11 +85,11 @@ label mia_button_dialogue:
 
             call expression game.dialog_select("mia_dialogue_mias_house_entrance_intro")
     menu mia_dialogue:
-        "Mengobrol." if player.location == L_miahouse_miaroom:
+        "Chat." if player.location == L_miahouse_miaroom:
             call expression game.dialog_select("mia_dialogue_chat")
             jump expression game.dialog_select("mia_dialogue")
 
-        "Pertunjukan bakat." if M_dewitt.is_set("talent ask mia"):
+        "Talent show." if M_dewitt.is_set("talent ask mia"):
             if M_dewitt.is_set("talent helping kevin"):
                 call expression game.dialog_select("dewitt_talent_show_helping_kevin")
 
@@ -100,7 +100,7 @@ label mia_button_dialogue:
                 call expression game.dialog_select("mia_dialogue_talent_show_help")
                 $ M_dewitt.set("talent ask mia", False)
 
-        "Orang tua." if player.location == L_school_scienceclassroom and M_mia.between_states(S_mia_start, S_mia_helen_refusal):
+        "Parents." if player.location == L_school_scienceclassroom and M_mia.between_states(S_mia_start, S_mia_helen_refusal):
             call expression game.dialog_select("mia_dialogue_parents")
             jump expression game.dialog_select("mia_dialogue")
 
@@ -110,33 +110,33 @@ label mia_button_dialogue:
         "{b}Harold{/b}." if M_mia.is_state(S_mia_convince_harold):
             call expression game.dialog_select("mia_dialogue_mia_convince_harold")
 
-        "Kacamata." if M_mia.is_state(S_mia_harold_gift):
+        "Glasses." if M_mia.is_state(S_mia_harold_gift):
             call expression game.dialog_select("mia_dialogue_glasses")
 
-        "Donat." if M_mia.is_state(S_mia_impress_harold):
+        "Donuts." if M_mia.is_state(S_mia_impress_harold):
             call expression game.dialog_select("mia_dialogue_donuts")
             jump expression game.dialog_select("mia_dialogue")
 
-        "Tato." if M_mia.is_state([S_mia_find_easel, S_mia_draw_tattoo]):
+        "Tattoo." if M_mia.is_state([S_mia_find_easel, S_mia_draw_tattoo]):
             call expression game.dialog_select("mia_dialogue_mia_draw_tattoo")
 
-        "Tato." if list(set(["tattoo_dolphin", "tattoo_stars", "tattoo_flowers", "tattoo_skull", "tattoo_cookie"]) & set(player.inventory.items)):
+        "Tattoo." if list(set(["tattoo_dolphin", "tattoo_stars", "tattoo_flowers", "tattoo_skull", "tattoo_cookie"]) & set(player.inventory.items)):
             call expression game.dialog_select("mia_dialogue_mia_show_tattoo_fail")
             $ player.remove_item(drawn_tattoo)
             $ M_mia.trigger(T_mia_wrong_tattoo)
 
-        "Tato." if player.has_item("tattoo_butterfly"):
+        "Tattoo." if player.has_item("tattoo_butterfly"):
             call expression game.dialog_select("mia_dialogue_mia_show_tattoo_pass")
             $ player.remove_item(drawn_tattoo)
             $ M_mia.trigger(T_mia_right_tattoo)
 
-        "Gula Tat." if M_mia.is_state([S_mia_get_tattoo, S_mia_buy_tattoo]):
+        "Sugar Tats." if M_mia.is_state([S_mia_get_tattoo, S_mia_buy_tattoo]):
             call expression game.dialog_select("mia_dialogue_mia_get_tattoo")
 
-        "Gereja." if M_mia.is_state(S_mia_church_plan):
+        "Church." if M_mia.is_state(S_mia_church_plan):
             call expression game.dialog_select("mia_dialogue_church")
 
-        "Sesi seni." if player.location == L_school_scienceclassroom and M_ross.is_state(S_ross_ask_mia_partner):
+        "Art sessions." if player.location == L_school_scienceclassroom and M_ross.is_state(S_ross_ask_mia_partner):
             call expression game.dialog_select("mia_dialogue_art_sessions_intro")
             if player.has_required_chr(3):
                 $ display.toast(chr_pass)
@@ -147,7 +147,7 @@ label mia_button_dialogue:
                 $ display.toast(chr_fail)
                 call expression game.dialog_select("mia_dialogue_art_sessions_stat_fail")
 
-        "Pekerjaan rumah." if player.location == L_school_scienceclassroom and not M_helen.is_set("helen route"):
+        "Homework." if player.location == L_school_scienceclassroom and not M_helen.is_set("helen route"):
             if not M_mia.between_states(S_mia_start, S_mia_helen_refusal) and not M_mia.is_state([S_mia_study_sex, S_mia_end]):
                 call expression game.dialog_select("mia_dialogue_homework_want_parents_back")
             else:
@@ -161,7 +161,7 @@ label mia_button_dialogue:
                     call expression game.dialog_select("mia_dialogue_homework_study")
                 jump expression game.dialog_select("mia_dialogue")
 
-        "Belajar." if player.location == L_miahouse_miaroom and not M_helen.is_set('helen route'):
+        "Study." if player.location == L_miahouse_miaroom and not M_helen.is_set('helen route'):
             if M_mia.is_set("study"):
                 call expression game.dialog_select("mia_dialogue_study_repeat")
                 $ game.timer.tick()
@@ -177,13 +177,13 @@ label mia_button_dialogue:
                     call expression game.dialog_select("mia_dialogue_study_want_parents_back")
                     jump expression game.dialog_select("mia_dialogue")
 
-        "Saya harus pergi." if player.location == L_miahouse_miaroom:
+        "I have to go." if player.location == L_miahouse_miaroom:
             call expression game.dialog_select("mia_dialogue_mias_bedroom_leave")
 
-        "Tidak ada apa-apa." if player.location == L_school_scienceclassroom:
+        "Nothing." if player.location == L_school_scienceclassroom:
             call expression game.dialog_select("mia_dialogue_science_classroom_leave")
 
-        "Saya harus pergi." if player.location == L_miahouse_entrance:
+        "I have to go." if player.location == L_miahouse_entrance:
             call expression game.dialog_select("mia_dialogue_mias_house_entrance_leave")
     hide player
     hide old_mia

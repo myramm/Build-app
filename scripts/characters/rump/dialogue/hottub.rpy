@@ -13,49 +13,32 @@ label rump_button_hottub:
     show anon b_telescope_peeking_caught with dissolve:
         offset (-580, 140)
         zoom 1.4
-    rump "Nuh uh, aku tidak akan menerima jawaban tidak!"
-
+    rump "Nuh uh, I'm not taking no for an answer!"
     pause
-    rump "Yah, tentu saja Bill akan berada di sana..."
-
-    rump "Kamu pikir dia akan melewatkan kesempatan untuk berpesta dengan {b}Rump{/b}-meister?!"
-
+    rump "Well, of course Bill's gonna be there..."
+    rump "You think he'd miss a chance to party with the {b}Rump{/b}-meister?!"
     pause
-    rump "Ya, aku bisa memberi kita pukulan."
-
+    rump "Yeah, I can get us some blow."
     pause
     rump @ -m_talk "Mhmm."
-
-    rump "Tidak masalah!"
-
+    rump "Not a problem!"
     pause
-    rump @ f_normal "Ya, gadis-gadis itu orang Rusia."
-
+    rump @ f_normal "Yeah, the girls are Russian."
     pause
-    rump "Nah, mereka sangat jinak."
-
-    rump "Dan sangat ingin menyenangkan, sebaiknya Anda mempercayainya!"
-
+    rump "Nah, they're real docile."
+    rump "And eager to please, you better believe it!"
     pause
-    rump "Pastikan saja kamu membawa Michelle bersamamu."
-
-    rump "{b}Melonia{/b} mencintainya."
-
-    rump "Ditambah lagi, aku sangat ingin melihatnya mengenakan bikini!"
-
+    rump "You just make sure you bring Michelle with you."
+    rump "{b}Melonia{/b} loves her."
+    rump "Plus, I'm dying to see her in a bikini!"
     pause
-    rump @ f_laugh "Heh, kamu anjing kamu!"
-
+    rump @ f_laugh "Heh, you dog you!"
     show rump f_suspicious_down
     pause
-    rump f_normal "Permisi sebentar."
-
-    rump a_phone_down f_angry "Hei kamu!"
-
+    rump f_normal "Excuse me one second."
+    rump a_phone_down f_angry "Hey, you!"
     anon f_surprised @ -m_talk "Hmm?"
-
-    rump "Ini adalah percakapan pribadi!"
-
+    rump "This is a private conversation!"
     show layer master:
         linear .9 yoffset 155
     show expression stage as stage:
@@ -75,20 +58,15 @@ label rump_button_hottub:
     show anon a_point_self b_dressed f_surprised_low with dissolve:
         offset (-100, -155)
         zoom 1.
-    anon "Oh, aku tidak bermaksud-"
-
-    rump "Keluar dari sini sebelum aku menelepon keamanan!"
-
-    anon a_wave "Y-ya, tuan!"
-
+    anon "Oh, I didn't mean to-"
+    rump "Get the hell out of here before I call security!"
+    anon a_wave "Y-yes, sir!"
     hide anon with fastdissolve
 
     scene expression background(400, 392, 5.) as stage with fade
     show anon f_surprised a_sides with dissolve
-    anon @ -m_talk "(Hampir saja!)"
-
-    anon @ -m_talk "(Saya mungkin harus menjaga jarak darinya untuk saat ini.)"
-
+    anon @ -m_talk "( That was close! )"
+    anon @ -m_talk "( I should probably keep my distance from him for now. )"
     hide anon with dissolve
     return
 # Decompiled by unrpyc: https://github.com/CensoredUsername/unrpyc

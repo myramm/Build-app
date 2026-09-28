@@ -47,13 +47,13 @@ label june_button_dialogue:
         else:
             call expression game.dialog_select("june_intro")
         menu june_button_menu:
-            "Lensa." if M_okita.is_state(S_okita_get_bifocal_lenses):
+            "Lenses." if M_okita.is_state(S_okita_get_bifocal_lenses):
                 call expression game.dialog_select("june_dialogue_okita_get_bifocal_lenses")
 
             "Model." if M_ross.is_state(S_ross_ask_model):
                 call expression game.dialog_select("june_dialogue_ross_ask_model")
 
-            "Nongkrong bareng." if (M_june.finished_state(S_june_date_ready) and
+            "Hang out." if (M_june.finished_state(S_june_date_ready) and
                            not M_june.is_state(S_june_date_shame)):
                 if M_june.get('hang_time'):
                     call june_date_later
@@ -67,27 +67,27 @@ label june_button_dialogue:
                     $ M_june.set('hang_time', True)
                     $ M_june.trigger(T_june_date_ask)
 
-            "Maaf." if M_june.is_state(S_june_date_shame):
+            "Sorry." if M_june.is_state(S_june_date_shame):
                 call june_date_sorry
                 $ M_june.trigger(T_june_date_sorry)
 
-            "Permainan kostum." if M_june.is_state(S_june_cosplay_ready):
+            "Cosplay." if M_june.is_state(S_june_cosplay_ready):
                 call expression game.dialog_select("june_dialogue_cosplay_no_costume")
 
-            "Tanyakan tentang kelas." if M_mrsj.is_state(S_mrsj_fork_meet):
+            "Ask about class." if M_mrsj.is_state(S_mrsj_fork_meet):
                 call screen popup_branch
                 if not _return:
                     jump june_button_menu
                 call expression game.dialog_select("june_dialogue_ask_about_class")
                 menu june_route_split:
-                    "Temanku {b}Erik{/b}!":
+                    "My friend {b}Erik{/b}!":
                         call expression game.dialog_select("june_dialogue_erik_help")
                         $ M_mrsj.trigger(T_mrsj_fork_setup)
-                    "saya akan bermain!":
+                    "I'll play!":
 
                         call expression game.dialog_select("june_dialogue_mc_help")
                         $ M_mrsj.trigger(T_mrsj_fork_steal)
-            "Tidak ada apa-apa.":
+            "Nothing.":
 
                 call expression game.dialog_select("june_dialogue_leave")
 

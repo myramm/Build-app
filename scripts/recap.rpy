@@ -95,72 +95,51 @@ label recap:
     show maria a_jerk1 b_naked_bending f_sad o_idle:
         xoffset 50
     with fade
-    tony "Maafkan aku, jagoan."
-
-    tony "Aku tidak bermaksud memaksakan, hanya saja-"
-
-    tony "Itu anakku yang kamu buat dan... Yah, aku agak-"
-
-    tony "Saya ingin merasa menjadi bagian dari konsepsi juga, Anda tahu?"
-
+    tony "I'm sorry, champ."
+    tony "I don't mean to impose, it's just-"
+    tony "It's my kid you're makin' and... Well, I kinda-"
+    tony "I wanna feel like I'm a part of the conception too, you know?"
     show anon od_dick4
     show maria b_naked_shy1 f_sad:
         xoffset 200
         xzoom -1
     with dissolve
-    maria "Ya, aku tahu, sayang."
-
+    maria "Yeah, I know, honey."
     show tony f_sad
-    maria "Hal ini dapat dimengerti tetapi kita juga harus menghormati pendapat {b}[firstname]{/b}."
-
-    maria "Lagipula, dialah yang membantu kita..."
-
-    tony "{i}*Huh*{/i} Ya, kamu benar, sayang."
-
-    tony "Bagaimana menurutmu, jagoan?"
-
-    tony "Bisakah saya tinggal sampai konsepsi anak saya?"
-
+    maria "It's understandable but we gotta respect {b}[firstname]{/b}'s opinion too."
+    maria "He's the one doin' us the favor, after all..."
+    tony "{i}*Sigh*{/i} Yeah, you're right, darlin'."
+    tony "What do you say, champ?"
+    tony "Can I stay for the conception of my child?"
 
     menu:
-        "Tentu saja.":
+        "Of course.":
             $ M_tony.set('watches', 'plus')
-        "Tidak.":
+        "No.":
 
             $ M_tony.set('watches', False)
 
     $ unlock_scene('maria', '01_unlocked', variant=bool(M_tony.watches))
 
     if M_tony.watches:
-        anon f_normal "Aku tidak bisa memaksamu keluar kamar saat mengandung anakmu, {b}Tony{/b}..."
-
+        anon f_normal "I couldn't force you out of the room during the conception of your child, {b}Tony{/b}..."
         show maria f_shy
         show tony a_wave f_normal
         with {'master': dissolve}
-        tony "Terima kasih, juara!"
-
-        tony "Anda tidak tahu betapa berartinya ini bagi saya!"
-
+        tony "Thank you, champ!"
+        tony "You don't know how much this means to me!"
     else:
 
-        anon "Maaf, {b}Tony{/b}."
-
+        anon "Sorry, {b}Tony{/b}."
         show tony a_sides f_sad_down with {'master': dissolve}
-        anon "Kurasa aku tidak bisa melakukan ini bersamamu di kamar."
-
+        anon "I don't think I can do this with you in the room."
         tony "Oh."
-
         pause
-        tony "Jadi begitu."
-
-        maria "Tidak apa-apa, {b}[firstname]{/b}."
-
-        maria "Anda tidak perlu menyesal."
-
-        tony f_sad "Y-ya, {b}Maria{/b} benar."
-
-        tony "Tidak masalah."
-
+        tony "I see."
+        maria "It's alright, {b}[firstname]{/b}."
+        maria "You don't gotta be sorry."
+        tony f_sad "Y-yeah, {b}Maria{/b}'s right."
+        tony "It's no problem."
 
     scene location_warehouse_frontyard_cutscene_02
     show text _ ("And little by little, I uncovered more and more of the mob's activities.") as caption
@@ -223,36 +202,27 @@ label recap:
     show anon b_sit f_flirt:
         yoffset 20
     with fade
-    eve "Bagaimana denganmu?"
-
+    eve "What about you?"
     anon f_surprised @ -m_talk "Hmm?"
-
-    eve "Bisakah Anda membayangkan diri Anda bersama pria lain?"
-
+    eve "Could you see yourself being with another guy?"
     show anon f_thinking
 
     menu:
-        "Mustahil.":
+        "No way.":
             $ M_eve.set('biggus_dickus', '')
-        "Mungkin.":
+        "Maybe.":
 
             $ persistent.eve_bulge_unlocked = True
             $ M_eve.set('biggus_dickus', '_alt')
 
     if M_eve.biggus_dickus:
-        anon f_shy "Aku tidak tahu."
-
-        anon "Saya tidak pernah memikirkannya."
-
+        anon f_shy "I don't know."
+        anon "I've never thought about it."
         pause
-        eve f_happy @ f_laugh "Ha ha ha!"
-
-        anon f_normal "Apa?"
-
-        eve "Nah, pikirkanlah!"
-
-        anon "Hehe, baiklah."
-
+        eve f_happy @ f_laugh "Hahaha!"
+        anon f_normal "What?"
+        eve "Well, think about it!"
+        anon "Hehe, alright."
         show anon f_thinking
         show eve a_beer_drink f_drink
         with {'master': dissolve}
@@ -260,47 +230,31 @@ label recap:
         show eve a_beer_hold f_disgusted
         with {'master': dissolve}
         anon @ -m_talk "Hmm."
-
         pause
-        eve f_happy "Dengan baik?!"
-
+        eve f_happy "Well?!"
         show anon a_thinking
         with {'master': dissolve}
-        anon "saya sedang berpikir!"
-
-        eve @ f_laugh "Ha ha ha!"
-
+        anon "I'm thinking!"
+        eve @ f_laugh "Hahaha!"
         pause
         show anon a_lap f_shy
         with {'master': dissolve}
-        anon "Saya kira saya setuju dengan Anda..."
-
-        anon f_normal "Kepribadian lebih penting daripada gender."
-
-        eve f_surprised "Benar-benar?"
-
-        anon f_happy "Ya."
-
-        eve f_nervous_down "Saya tidak mengharapkan itu."
-
+        anon "I suppose I agree with you..."
+        anon f_normal "Personality is more important than gender."
+        eve f_surprised "Really?"
+        anon f_happy "Yup."
+        eve f_nervous_down "I wasn't expecting that."
         show eve a_beer_drink f_drink
         with dissolve
     else:
 
-        anon f_unimpressed "Cowok itu menjijikkan!"
-
-        eve f_happy @ f_disgusted "Jadi, maksudmu... Kamu menjijikkan?"
-
-        anon f_normal @ f_laugh "Oh, tentu saja!"
-
-        anon "Aku tidak tahu bagaimana kamu bisa bertahan denganku..."
-
-        anon "... aku menjijikkan!"
-
-        eve @ f_laugh "Ha ha ha!"
-
-        eve "Kamu selalu tahu cara membuatku tertawa!"
-
+        anon f_unimpressed "Guys are gross!"
+        eve f_happy @ f_disgusted "So, you're saying... You're gross?"
+        anon f_normal @ f_laugh "Oh, totally!"
+        anon "I don't know how you put up with me..."
+        anon "... I'm disgusting!"
+        eve @ f_laugh "Hahaha!"
+        eve "You always know how to make me laugh!"
 
     scene intro_04
     show text _ ('So now you know my story...') as caption

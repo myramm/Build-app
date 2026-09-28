@@ -16,47 +16,33 @@ label diane_button_event_pregnancy.repeat:
     show player 13 at left with dissolve
     show diane f_laugh
     diane "{b}[firstname]{/b}!!"
-
     show player 10
     show diane f_cheese
-    player_name "Apa keadaan darurat besarnya?!"
-
+    player_name "What's the big emergency?!"
     show player 5
     show diane f_laugh
-    diane "Kami berhasil!"
-
-    diane "saya hamil!"
-
+    diane "We did it!"
+    diane "I'm pregnant!"
     show diane f_cheese
     show player 14
-    player_name "Anda?!"
-
-    player_name "Apa kamu yakin?!"
-
+    player_name "You are?!"
+    player_name "Are you sure?!"
     show player 13
     show diane f_laugh
-    diane "Saya yakin!"
-
-    diane "Kamu akan menjadi seorang ayah!"
-
+    diane "I'm positive!"
+    diane "You're gonna be a daddy!"
     show diane f_cheese
     show player 14
-    player_name "aku akan-"
-
+    player_name "I'm gonna-"
     show player 18
     show diane f_normal
     pause
-    diane "Kamu baik-baik saja?"
-
+    diane "You alright?"
     show player 14
     player_name "Hmm?"
-
-    player_name "Y-ya!"
-
-    player_name "Ini berita bagus, {b}Diane{/b}!"
-
-    player_name "Saya sangat senang!"
-
+    player_name "Y-yeah!"
+    player_name "This is great news, {b}Diane{/b}!"
+    player_name "I'm so happy!"
     hide player
     show diane b_kiss_naked
     with dissolve
@@ -64,19 +50,14 @@ label diane_button_event_pregnancy.repeat:
     show player 13 at left
     show diane b_naked f_laugh
     with dissolve
-    diane "Hmm, aku juga!"
-
-    diane "Oh, ini sangat mengasyikkan!"
-
+    diane "Mmm, me too!"
+    diane "Oh, this is so exciting!"
     show diane f_normal
-    diane "Saya tidak pernah menyangka akan mendapat kesempatan ini!"
-
+    diane "I never thought I would have this opportunity!"
     pause
     show diane f_laugh
-    diane "Oh terima kasih, {b}[firstname]{/b}!"
-
-    diane "Terima kasih, terima kasih, terima kasih!!!"
-
+    diane "Oh, thank you, {b}[firstname]{/b}!"
+    diane "Thank you, thank you, thank you!!!"
     hide player
     show diane b_kiss_naked
     with dissolve
@@ -84,36 +65,27 @@ label diane_button_event_pregnancy.repeat:
     show player 14 at left
     show diane b_naked f_cheese
     with dissolve
-    player_name "Hehe, sama-sama..."
-
+    player_name "Heh, you're welcome..."
     show player 13
     show diane f_normal
     pause
     show player 14
-    player_name "Jadi apa yang harus aku..."
-
-    player_name "{i}*Ahem*{/i} Ada yang bisa saya bantu?"
-
+    player_name "So what should I..."
+    player_name "{i}*Ahem*{/i} Is there anything I can do for you?"
     show player 13
 
 
 
 
     diane "Hmm?"
-
-    diane "Oh tidak!"
-
-    diane "Terus lakukan semua yang telah Anda lakukan."
-
-    diane "Tetaplah menjadi luar biasa, {b}[firstname]{/b}!"
-
+    diane "Oh, no!"
+    diane "Just keep doing everything you've been doing."
+    diane "Keep being wonderful, {b}[firstname]{/b}!"
     show player 14
-    player_name "Itu, saya pasti bisa melakukannya!"
-
+    player_name "That, I can definitely do!"
     show player 13
     show diane f_laugh
-    diane "hehe!"
-
+    diane "Hehe!"
     hide player
     hide diane
     with dissolve

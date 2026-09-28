@@ -44,59 +44,39 @@ label scene_roxxy_blowjob.dialogue(opt, rng=-1):
 
     if opt == 1:
         anon "Oh, {b}Roxxy{/b}!"
-
         roxxy "{i}*Sluuuuurp*{/i}"
-
-        anon "Ya, begitu saja!"
-
+        anon "Yeah, just like that!"
 
     elif opt == 2:
         anon "{i}*Phew*{/i} that's it."
-
         anon "Who's my dirty little bitch, huh?"
-
         roxxy "Ahh arm!"
-
 
         if rng < .33:
             roxxy "{i}*Smack*{/i}"
-
             anon "Yeah, you are."
-
 
     elif opt == 3:
         anon "Gobble that cock, {b}Roxxy{/b}."
-
         roxxy "Mmm, furg ahds aahwt."
-
 
         if rng < .33:
             anon "Less talking, more sucking!"
-
             roxxy "Ohm, nom!"
-
 
     elif opt == 4:
         anon "Yeah, use that tongue!"
-
         roxxy "{i}*Mlehh*{/i}"
-
-        anon "Ahhh!"
-
+        anon "Ahh!"
 
     elif opt == 5:
         roxxy "{i}*Sluuuuurp*{/i}"
-
         anon "Man, you look great with that dick in your mouth..."
-
         roxxy "Ahh eww?"
 
-
         if rng < .33:
-            anon "Oh ya!"
-
+            anon "Oh, yeah!"
             roxxy "Hehehe!"
-
 
     return
 
@@ -107,13 +87,10 @@ label scene_roxxy_blowjob.repeat:
     call scene_roxxy_blowjob.stage
     with fade
     anon "I bet you never thought you'd be doing this with me, huh?"
-
     call scene_roxxy_blowjob.insert
     with {'master': dissolve}
     anon "Ah, wow!"
-
-    roxxy "MM."
-
+    roxxy "Mmm."
     call scene_roxxy_blowjob.animate
     with {'master': dissolve}
     pause
@@ -131,18 +108,12 @@ label scene_roxxy_blowjob.repeat:
     call scene_roxxy_blowjob.loop
 
     anon "I'm getting close, {b}Roxxy{/b}!"
-
     roxxy "{i}*Sluuuuurp*{/i}"
-
     roxxy "Ohm, nom!"
-
     anon "Ah, geez!"
-
     pause
-    anon "aku akan-"
-
+    anon "I'm gonna-"
     anon "I'M GONNA-"
-
     pause
     show roxxy_sex_bj_cum as animation
     show roxxy_sex_bj_cum_drip as cum
@@ -152,23 +123,16 @@ label scene_roxxy_blowjob.repeat:
     show roxxy_sex_bj_swallow as animation
     with {'master': dissolve}
     anon "Haah... Haah..."
-
-    roxxy "{i}*Meneguk*{/i}"
-
+    roxxy "{i}*Gulp*{/i}"
     show roxxy_sex_bj_after as animation
     show roxxy sex_bj_after f_tired
     with {'master': dissolve}
     roxxy "{i}*Mlehh*{/i}"
-
     show roxxy f_happy
     anon "Ah, you beautiful bitch..."
-
-    roxxy "hehe!"
-
+    roxxy "Hehe!"
     anon "... You're the best girlfriend ever, {b}Roxxy{/b}!"
-
-    roxxy "Hehe, aku tahu."
-
+    roxxy "Heh, I know."
     return
 
 

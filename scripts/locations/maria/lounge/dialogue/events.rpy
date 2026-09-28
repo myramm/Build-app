@@ -5,8 +5,7 @@ label maria_lounge_knock:
         crop (768, 0, 256, 768)
         right
     show anon a_knock with dissolve
-    "{i}*Ketuk* *Ketuk*{/i}"
-
+    "{i}*Knock* *Knock*{/i}"
     show anon a_sides with dissolve
     pause
 
@@ -15,9 +14,7 @@ label maria_lounge_knock:
 
     pause
     anon @ -m_talk "( Huh... I guess there's nobody home. )"
-
     anon @ -m_talk "( I'll come back later. )"
-
     hide anon with dissolve
     return True
 
@@ -25,10 +22,8 @@ label maria_lounge_knock:
 label maria_lounge_knock.answer:
     show location_apt_hall3_302_closeup_door2 as door with dissolve
     show maria b_magic behind doorframe with dissolve
-    maria "Hai, {b}[firstname]{/b}!"
-
+    maria "Hi, {b}[firstname]{/b}!"
     maria "Come on in."
-
     hide maria with dissolve
     hide anon with dissolve
     return

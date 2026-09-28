@@ -47,79 +47,56 @@ label scene_melonia_bedroom_blowjob.loop:
 label scene_melonia_bedroom_blowjob.dialogue(opt, rng=-1):
 
     if opt == 1:
-        melonia "{i}*Suara kacau*{/i}"
-
+        melonia "{i}*Garbled noises*{/i}"
 
         if rng < .5:
-            anon "Apa itu?"
-
-            melonia "{i}*Suara kacau semakin intensif*{/i}"
-
+            anon "What's that?"
+            melonia "{i}*Garbled noises intensify*{/i}"
 
         if rng < .3:
-            anon "Anda menginginkannya lebih dalam?"
+            anon "You want it deeper?"
+            melonia "{i}*Challenging groan*{/i}"
 
-            melonia "{i}*Erangan yang menantang*{/i}"
-
-
-        anon "Maksudku, itu sudah cukup dalam tetapi jika kamu memaksa..."
-
+        anon "I mean, it's pretty deep already but if you insist..."
         $ M_melonia.set('sex speed', 1 / (
             20. if rng < 0 else (1 / M_melonia.get('sex speed') + 4)))
         melonia "{i}*Gllllckk* *Gllllckk* *Gllllckk*{/i}"
 
-
         if rng < .5:
-            anon "... Benar, ambillah!"
-
+            anon "... That's right, take it!"
 
     elif opt == 2:
-        anon "Ya, begitu saja."
-
-        melonia "{i}* Merengek*{/i}"
-
-        anon "Hati-hati dengan gigi."
-
+        anon "Yeah, just like that."
+        melonia "{i}*Whimpers*{/i}"
+        anon "Careful with the teeth."
 
     elif opt == 3:
-        anon "Ya ampun..."
-
-        anon "... Aku tidak akan berbohong, sejauh ini ini adalah seks paling menyenangkan yang pernah kulakukan denganmu."
-
+        anon "Oh, man..."
+        anon "... I'm not gonna lie, this is by far the most enjoyable sex I've ever had with you."
 
         if rng < .4:
-            anon "Mungkin aku harus memasukkan penisku ke tenggorokanmu lebih sering?"
-
-            melonia "{i}*Mendengus tak jelas*{/i}"
-
+            anon "Maybe I should jam my cock down your throat more often?"
+            melonia "{i}*Unintelligible grunt*{/i}"
 
     elif opt == 4:
         if rng < .6:
-            melonia "MM."
+            melonia "Mmm."
 
-
-        melonia "{i}*Pernapasan meningkat*{/i}"
-
-        anon "Anda mulai melakukan hal ini, bukan?"
-
-        melonia "{i}*erangan antusias*{/i}"
-
+        melonia "{i}*Breathing intensifies*{/i}"
+        anon "You're starting to get off on this, aren't you?"
+        melonia "{i}*Enthusiastic moan*{/i}"
 
         if rng < .4:
-            anon "Aku mengetahuinya!"
-
+            anon "I knew it!"
 
     elif opt == 5:
         melonia "{i}*Gllllckk* *Gllllckk* *Gllllckk*{/i}"
 
-
         if rng < .6:
-            melonia "{i}*Meneguk*{/i}"
-
+            melonia "{i}*Gulp*{/i}"
 
         if rng < .3:
             melonia "{i}*Gllllckk* *Gllllckk* *Gllllckk*{/i}"
-
 
     return
 
@@ -131,35 +108,26 @@ label scene_melonia_bedroom_blowjob.switch:
     call scene_melonia_bedroom_press.pre
     show melonia f_annoyed
     with {'master': dissolve}
-    melonia "Hei..."
-
-    melonia f_confused "... Kenapa kamu berhenti?!"
-
-    anon "Aku tidak bisa mendengarkan mulutmu lagi!"
-
+    melonia "Hey..."
+    melonia f_confused "... Why'd you stop?!"
+    anon "I can't listen to your mouth anymore!"
 
     call scene_melonia_bedroom_blowjob.stage
     with fade
-    melonia "A-apa yang kamu lakukan?!"
-
+    melonia "W-what are you doing?!"
     show melonia_body_b_sex_bj_base_face_pre as face
-    anon "Membungkammu untuk selamanya."
-
+    anon "Shutting you up for good."
     show melonia_body_b_sex_bj_base_face_talk_pre as face
-    melonia "Apa-"
-
+    melonia "Wha-"
     call scene_melonia_bedroom_blowjob.insert
     melonia "{i}*Gaaaum*{/i}" with hpunch
     call scene_melonia_bedroom_blowjob.animate
     with {'master': dissolve}
     melonia "!!!"
     pause
-    anon "Ini dia..."
-
+    anon "There we go..."
     melonia "{i}*Gllllckk*{/i}"
-
-    anon "... Itu jauh lebih baik!"
-
+    anon "... That's much better!"
     pause
     call scene_melonia_bedroom_blowjob.dialogue (1)
     pause
@@ -176,10 +144,8 @@ label scene_melonia_bedroom_blowjob.switch:
     show melonia_body_b_sex_bj_cum as anim
     anon "HNNGGG!!!" with flash
     melonia "!!!"
-    melonia "{i}*Meneguk* *Meneguk* *Meneguk*{/i}"
-
-    anon "Oh, ambillah semuanya... Dasar gadis kotor!"
-
+    melonia "{i}*Gulp* *Gulp* *Gulp*{/i}"
+    anon "Oh, take it all... You dirty girl!"
     show melonia_body_b_sex_bj_cum_drip1 as cum
     melonia "{i}*Splurrrt*{/i}" with flash
     show melonia_bedroom_blowjob_cum as cum

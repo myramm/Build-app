@@ -64,30 +64,20 @@ label scene_liu_sex_office.loop:
 label scene_liu_sex_office.dialogue:
     if animcounter == 0 and randomizer() > 75:
         liu "NGH!!{w=1}{nw}"
-
     elif animcounter == 0 and randomizer() > 75:
-        liu "Ahh, sial!!{w=1}{nw}"
-
-        anon "Ssst!{w=1}{nw}"
-
-        anon "Seseorang akan mendengar.{w=1}{nw}"
-
+        liu "Ahh, fuck!!{w=1}{nw}"
+        anon "Shh!{w=1}{nw}"
+        anon "Someone will hear.{w=1}{nw}"
         pause 1
-        liu "Saya tidak bisa-{w=1}{nw}"
-
+        liu "I can't-{w=1}{nw}"
         pause 1
-        liu "Bantulah!{w=1}{nw}"
-
+        liu "Help it!{w=1}{nw}"
     elif animcounter == 1 and randomizer() > 75:
-        liu "YA TUHAN!{w=1}{nw}"
-
-        liu "{b}[nama depan!u]{/b}!!!{w=1}{nw}"
-
+        liu "OH, GOD!{w=1}{nw}"
+        liu "{b}[firstname!u]{/b}!!!{w=1}{nw}"
     elif animcounter == 2 and randomizer() > 75:
-        anon "Gah, kamu ketat sekali!{w=1}{nw}"
-
-        liu "{i}*Merengek*{/i}{w=1}{nw}"
-
+        anon "Gah, you're so tight!{w=1}{nw}"
+        liu "{i}*Whimpers*{/i}{w=1}{nw}"
     return
 
 
@@ -99,20 +89,14 @@ label scene_liu_sex_office.switch:
 
 
 label scene_liu_sex_office.cum(where):
-    anon "aku akan keluar!"
-
-    liu "Buru-buru!"
-
+    anon "I'm gonna cum!"
+    liu "Hurry!"
     pause
-    liu "Ya Tuhan!!"
-
-    liu "Ya Tuhan!!"
-
+    liu "Oh, god!!"
+    liu "Oh my god!!"
     pause
-    liu "{i}* Merengek*{/i}"
-
+    liu "{i}*Whimpers*{/i}"
     liu "NGGHHH!!!"
-
     hide animation
     if where == 'inside':
         show liu b_sex_printer_cum
@@ -126,7 +110,6 @@ label scene_liu_sex_office.cum(where):
     else:
         show liu od_cumshot3
     anon "Haah... Haah..."
-
     return where
 
 
@@ -136,49 +119,33 @@ label scene_liu_sex_office.repeat:
 
     call scene_liu_sex_office.stage
     with fade
-    liu "Seperti ini?"
-
-    anon "Sama seperti itu."
-
-    liu "O-oke tapi pelan-pelan..."
-
+    liu "Like this?"
+    anon "Just like that."
+    liu "O-okay but go slow..."
     call scene_liu_sex_office.pre
     with dissolve
-    liu "... Kita tidak bisa membuat pelanggan mendengar-"
-
+    liu "... We can't have the customers hearing-"
     call scene_liu_sex_office.insert
     liu "OOOHHH!!" with hpunch
-    liu "USS!"
-
-    anon "Wah!"
-
+    liu "USSS!"
+    anon "Oh, wow!"
     call scene_liu_sex_office.animate
     with dissolve
     pause
     liu "NGH!!"
-
     pause
-    liu "Ahhh, sial!!"
-
-    anon "Ssst!"
-
+    liu "Ahh, fuck!!"
+    anon "Shh!"
     pause
-    anon "Seseorang akan mendengar."
-
-    liu "aku tidak bisa-"
-
-    liu "Tolong!"
-
+    anon "Someone will hear."
+    liu "I can't-"
+    liu "Help it!"
     pause
-    liu "YA TUHAN!"
-
-    liu "{b}[nama depan!u]{/b}!!!"
-
+    liu "OH, GOD!"
+    liu "{b}[firstname!u]{/b}!!!"
     pause
-    anon "Gah, kamu sangat ketat!"
-
-    liu "{i}* Merengek*{/i}"
-
+    anon "Gah, you're so tight!"
+    liu "{i}*Whimpers*{/i}"
     pause
     label scene_liu_sex_office.resume:
     call scene_liu_sex_office.loop
@@ -189,42 +156,27 @@ label scene_liu_sex_office.repeat:
 
     if where == 'inside':
         show liu b_sex_printer_base o_dick_after with dissolve
-        liu "Aku tidak percaya betapa panasnya itu..."
-
-        anon "Y-ya."
-
-        liu "Aku datang dengan susah payah... Ya ampun!"
-
+        liu "I can't believe how hot that was..."
+        anon "Y-yeah."
+        liu "I came so hard... Oh my goodness!"
         pause
-        liu @ -m_talk "MM."
-
-        liu "Bagaimana aku bisa kembali bekerja setelah itu?!"
-
-        anon "hehe!"
-
+        liu @ -m_talk "Mmm."
+        liu "How am I supposed to go back to work after that?!"
+        anon "Hehe!"
         call call_pregnancy_minigame (None, M_liu)
     else:
 
-        liu f_shy "Oh, wah..."
-
-        liu "Heh, kamu datang dengan pakaianku!"
-
-        anon "Ah kawan, aku minta maaf..."
-
-        anon "... Aku tidak bermaksud-"
-
+        liu f_shy "Oh, wow..."
+        liu "Heh, you came all over my suit!"
+        anon "Ah man, I'm so sorry..."
+        anon "... I didn't mean-"
         pause
-        anon "Semuanya terjadi begitu cepat!"
-
-        liu "Tidak, tidak apa-apa."
-
-        liu "Itu akan hilang..."
-
-        liu "... menurutku."
-
+        anon "It all happened so fast!"
+        liu "No, it's okay."
+        liu "It'll wash out..."
+        liu "... I think."
         pause
-        liu "Saya hanya berharap {b}Tina{/b} tidak melihat noda sore ini."
-
+        liu "I just hope {b}Tina{/b} doesn't see the stains this afternoon."
 
     return where
 

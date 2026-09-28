@@ -1,171 +1,128 @@
 label button_dexter_talent_show:
     show old_dexter 1
     show player 10
-    player_name "Hai {b}Dexter{/b}, kamu main alat musik apa saja?"
-
+    player_name "Hey {b}Dexter{/b}, you play any instruments?"
     show player 5
     show old_dexter 2
-    dexter "Hah?"
-
+    dexter "Huh?"
     show player 12
-    player_name "DALAM-S-T-R-U-M-E-N-T-S. Anda tahu, suka musik... Apakah Anda memainkannya?"
-
+    player_name "I-N-S-T-R-U-M-E-N-T-S. You know, like for music... Do you play any?"
     show player 5
     show old_dexter 8
-    dexter "Apa aku terlihat seperti penggila band di matamu?!"
-
+    dexter "Do I look like some kinda band geek to you?!"
     show old_dexter 2
     show player 12
-    player_name "Eh, bukan? Saya hanya berpikir mungkin Anda memiliki bakat terpendam dalam memukul drum atau semacamnya?"
-
+    player_name "Ehh, no? I just thought maybe you had a hidden talent for banging the drums or something?"
     show player 5
     show old_dexter 6 with dissolve
-    dexter "Aku ingin memukul wajah bodohmu dengan tinjuku..."
-
-    dexter "Menurutmu itu akan menghasilkan musik?"
-
+    dexter "I'd like to bang on your stupid face with my fists..."
+    dexter "You think that would make some music?"
     show old_dexter 5
     show player 29 with dissolve
-    player_name "Hehe, aku baru saja pergi..."
-
+    player_name "Heh, I was just leaving..."
     show player 3
     show old_dexter 4 with dissolve
-    dexter "Ya, kamu lebih baik!"
-
+    dexter "Yeah, you better!"
     return
 
 label button_dexter_challenge:
     show player 12
-    player_name "Saya di sini untuk menantang Anda, {b}Dexter{/b}."
-
+    player_name "I'm here to challenge you, {b}Dexter{/b}."
     show player 5
     show old_dexter 3
     dexter "Haha!"
-
-    dexter "Untuk apa?!"
-
+    dexter "To what?!"
     show old_dexter 1
     show player 10
-    player_name "Untuk eh..."
-
+    player_name "To uh..."
     show player 5
     show old_dexter 3
-    dexter "Kau tahu aku akan mengalahkanmu dalam hal apa pun."
-
+    dexter "You know I'd beat you at anything."
     show old_dexter 4 with dissolve
-    dexter "Sekarang pergilah sebelum aku memutuskan untuk menghajarmu habis-habisan."
-
+    dexter "Now fuck off before I decide to beat the shit out of you."
     return
 
 label button_dexter_library_book:
     show player 10
-    player_name "Hei, umm, {b}Dexter{/b}..."
-
+    player_name "Hey, umm, {b}Dexter{/b}..."
     show player 5
     show old_dexter 3
-    dexter "Apa yang kamu inginkan, twerp?"
-
+    dexter "What do you want, twerp?"
     show old_dexter 1
     show player 10
-    player_name "Apakah Anda ingat di mana Anda meninggalkan buku perpustakaan yang Anda periksa..."
-
+    player_name "Did you remember where you left the library book you checked out..."
     show player 5
     show old_dexter 8
-    dexter "Buku perpustakaan?"
-
+    dexter "Library book?"
     show old_dexter 4 with dissolve
-    dexter "Bukankah aku sudah bilang padamu untuk keluar dari sini, {b}[firstname]{/b}?"
-
-    dexter "Atau apakah Anda ingin sandwich buku jari!"
-
+    dexter "Didn't I tell you to get outta here, {b}[firstname]{/b}?"
+    dexter "Or do you want a knuckle sandwich!"
     show old_dexter 2 with dissolve
     show player 12
-    player_name "Baiklah, baiklah, aku berangkat!"
-
+    player_name "Alright, alright, I'm going!"
     hide old_dexter with dissolve
     show player 10f at center with dissolve
-    player_name "Saya ingin tahu apakah pustakawan melakukan kesalahan?"
-
+    player_name "I wonder if the librarian made a mistake?"
     show player 5f
     player_name "..."
     show player 12f
-    player_name "Dia bisa saja berbohong. {b}Saya harus memeriksa lokernya{/b}!"
-
-    player_name "Mudah-mudahan ada di sana, jika tidak, saya tidak tahu apa yang harus saya lakukan..."
-
+    player_name "He could be lying. {b}I should check his locker{/b}!"
+    player_name "Hopefully it's in there, otherwise, I dunno what I'm gonna do..."
     return
 
 label button_dexter_nothing:
     show player 10
-    player_name "Aku... Uhh... Tidak bermaksud mengganggumu."
-
-    player_name "Aku harus pergi ke kelas."
-
+    player_name "I... Uhh... Didn't mean to bother you."
+    player_name "I need to get to class."
     show player 5
     show old_dexter 3
-    dexter "Larilah, pecundang."
-
+    dexter "Run along, loser."
     return
 
 label dexter_button_pushups:
     show player 16 at left
     show old_dexter 12 at right
     with dissolve
-    dexter "Oh, kamu ingin pertandingan ulang ya?"
-
-    dexter "Tidak masalah, kutu buku!"
-
-    dexter "Saya akan menunjukkan cara melakukannya!"
-
+    dexter "Oh, you want a rematch huh?"
+    dexter "No problem, nerd!"
+    dexter "I'll show you how it's done!"
     show old_dexter 11
     scene gym
     show player 16 at left
     show old_dexter 11 at right
     with dissolve
-    bridget "Baiklah, teman-teman. Anda tahu latihannya!"
-
-    bridget "Orang terakhir yang bertahan menang!"
-
+    bridget "Alright, boys. You know the drill!"
+    bridget "Last man standing wins!"
     show old_dexter 12
-    dexter "Hahaha, tonton dan pelajari... NERD!"
-
+    dexter "Hahaha, watch and learn... NERD!"
     hide player
     hide old_dexter
     with dissolve
-    bridget "PERGI!"
-
+    bridget "GO!"
     return
 
 label dexter_button_pushups_rematch:
     show player 5 at left
     show old_dexter 15 at right
     with dissolve
-    dexter "Bagaimana kalau pertandingan ulang, kutu buku?!"
-
+    dexter "How about a rematch, nerd?!"
     show old_dexter 14
     show player 12
-    player_name "Apa?! Ayo kawan... Kamu kalah."
-
-    player_name "Lanjutkan saja."
-
+    player_name "What?! C'mon, man... You lost."
+    player_name "Just move on."
     show player 5
     show old_dexter 12 with dissolve
-    dexter "Psh, kamu takut kalah?"
-
+    dexter "Psh, you scared you're gonna lose?"
     show old_dexter 11
     show player 12
-    player_name "Tidak."
-
+    player_name "No."
     show player 90
     show old_dexter 28 with dissolve
-    dexter "{b}[firstname]{/b}itu seekor ayam, semuanya!"
-
+    dexter "{b}[firstname]{/b}'s a chicken, everybody!"
     show old_dexter 11 with dissolve
     show player 12
-    player_name "... Cih, baiklah."
-
-    player_name "Ayo lakukan!"
-
+    player_name "... Tch, fine."
+    player_name "Let's do it!"
     hide player
     hide old_dexter
     with dissolve
@@ -175,19 +132,13 @@ label button_dexter_intro_beginning:
     show anon f_worried
     show dexter
     with dissolve
-    dexter "Apa yang kamu lihat, pecundang?!"
-
-    anon "Tidak ada apa-apa."
-
-    dexter "Ya itu benar!"
-
-    dexter "Teruslah berjalan, jalang!"
-
-    dexter @ f_laugh "Ha ha ha ha!"
-
+    dexter "What are you looking at, loser?!"
+    anon "Nothing."
+    dexter "Yeah, that's right!"
+    dexter "Keep on walkin', bitch!"
+    dexter @ f_laugh "Hahahaha!"
     hide dexter with dissolve
-    anon f_angry "Ugh, dia benar-benar brengsek..."
-
+    anon f_angry "Ugh, he's such an asshole..."
     hide anon with dissolve
     return
 
@@ -195,34 +146,27 @@ label button_dexter_intro:
     show player 5 at left
     show old_dexter 3 at right
     with dissolve
-    dexter "Kupikir aku berbau sedikit menyebalkan!"
-
+    dexter "I thought I smelled a little bitch!"
     show old_dexter 2
     show player 12
-    player_name "Persetan denganmu, {b}Dexter{/b}..."
-
+    player_name "Screw you, {b}Dexter{/b}..."
     show player 90
     show old_dexter 6 with dissolve
-    dexter "APA YANG KAMU BILANG?!"
-
+    dexter "WHAT DID YOU SAY?!"
     show old_dexter 4 with dissolve
     show player 11
-    dexter "Kamu ingin aku menjatuhkanmu, kan?!"
-
+    dexter "You want me to knock your ass out, right here?!"
     show old_dexter 2 with dissolve
     player_name "..."
     show old_dexter 3
-    dexter "Ya, itulah yang saya pikirkan."
-
+    dexter "Yeah, that's what I thought."
     show old_dexter 6 with dissolve
-    dexter "Sebaiknya kau menjauh dari gadisku!"
-
+    dexter "You better be staying away from my girl!"
     show old_dexter 2 with dissolve
     show player 5
     player_name "..."
     show old_dexter 4 with dissolve
-    dexter "Kamu mendengarku, jalang?!"
-
+    dexter "You hear me, bitch?!"
     show old_dexter 2 with dissolve
     return
 
@@ -232,16 +176,13 @@ label button_dexter_intro_final:
     with dissolve
     dexter "..."
     show player 12
-    player_name "Maaf, apakah Anda mengatakan sesuatu, {b}Dexter{/b}?"
-
+    player_name "I'm sorry, did you say something, {b}Dexter{/b}?"
     show player 91
     show old_dexter 8
-    dexter "Tidak!"
-
+    dexter "No!"
     show old_dexter 2
     show player 12
-    player_name "Ya, itulah yang saya pikirkan."
-
+    player_name "Yeah, that's what I thought."
     show player 91
 
     dexter "..."
@@ -249,96 +190,73 @@ label button_dexter_intro_final:
 
 label button_dexter_basketball_final:
     show player 12
-    player_name "Masih bermain basket?"
-
+    player_name "Still playing basketball?"
     show player 91
     dexter "..."
     show player 12
-    player_name "Apakah kalian sudah berhasil memenangkan permainan?"
-
+    player_name "Have you guys managed to win a game yet?"
     show player 91
     show old_dexter 8
-    dexter "Saya tidak ingin membicarakannya!"
-
+    dexter "I don't wanna talk about it!"
     show old_dexter 2
     show player 12
-    player_name "Aku hanya mencoba untuk-"
-
+    player_name "I'm just trying to-"
     show player 11
     show old_dexter 8
-    dexter "Tinggalkan aku sendiri, {b}[firstname]{/b}!"
-
+    dexter "Leave me alone, {b}[firstname]{/b}!"
     hide old_dexter with dissolve
     pause
     show player 10
-    player_name "Astaga, baiklah."
-
+    player_name "Sheesh, alright."
     hide player with dissolve
     return
 
 label button_dexter_basketball:
     show player 12
-    player_name "Masih bermain basket?"
-
+    player_name "Still playing basketball?"
     show player 90
     show old_dexter 3
-    dexter "Tentu saja, saya dilahirkan untuk bermain!"
-
+    dexter "Of course, I was born to play!"
     show old_dexter 1
     show player 12
-    player_name "Apakah Anda sudah memenangkan pertandingan?"
-
+    player_name "Have you even won a game yet?"
     show player 90
     show old_dexter 3
-    dexter "Ya ampun. Seperti seratus juta..."
-
+    dexter "Psh, yeah. Like a hundred million..."
     show old_dexter 1
     show player 12
-    player_name "Ya benar! Kalian mengerikan..."
-
+    player_name "Yeah right! You guys are awful..."
     show player 90
     show old_dexter 4 with dissolve
-    dexter "HEI! Kamu ingin sandwich buku jari, pecundang?!"
-
+    dexter "HEY! You want a knuckle sandwich, loser?!"
     show old_dexter 2 with dissolve
     player_name "..."
     show old_dexter 3
-    dexter "Lagipula, apa yang diketahui wanita jalang sepertimu tentang bola basket?!"
-
-    dexter "Itu olahraga pria!"
-
+    dexter "What does a little bitch like you know about basketball anyways?!"
+    dexter "It's a man's sport!"
     show old_dexter 1
     show player 17
-    player_name "Oh, kalau begitu, tidak heran kenapa kalian para wanita tidak bisa memenangkan pertandingan."
-
+    player_name "Oh, well then, it's no wonder why you ladies can't win a game."
     show player 13
     show old_dexter 3
-    dexter "Hah? aku tidak-"
-
-    dexter "Oh, menurutmu itu lucu?!"
-
+    dexter "Huh? I don't-"
+    dexter "Oh, you think that's funny?!"
     show old_dexter 8
-    dexter "Bagaimana kalau aku mencabut beberapa gigimu?!"
-
+    dexter "How about I knock some of your teeth out?!"
     show player 5
-    dexter "Itu akan sangat lucu, bukan?!"
-
+    dexter "That would be pretty funny, wouldn't it?!"
     show old_dexter 2
     return
 
 label button_dexter_whatever:
     show player 12
-    player_name "Cih, ya. Terserahlah kawan..."
-
+    player_name "Tch, yeah. Whatever, man..."
     hide player with dissolve
     pause
     show old_dexter 8
-    dexter "Hei, aku tidak bercanda {b}[firstname]{/b}!"
-
-    dexter "Jauhi {b}Roxxy{/b}!"
-
-    dexter "Dia milikku!"
-
+    dexter "Hey, I'm not kidding {b}[firstname]{/b}!"
+    dexter "Stay away from {b}Roxxy{/b}!"
+    dexter "She's mine!"
     hide old_dexter
     hide player
     with dissolve
@@ -346,48 +264,37 @@ label button_dexter_whatever:
 
 label button_dexter_behaving:
     show player 12
-    player_name "Saya yakin Anda berperilaku baik."
-
+    player_name "I trust you're behaving yourself."
     show player 90
     show old_dexter 8
-    dexter "... Ya."
-
+    dexter "... Yes."
     show old_dexter 2
     show player 12
-    player_name "Kamu ingat apa yang terjadi jika aku memergokimu sedang bermain-main dengan teman-temanku lagi, kan?"
-
+    player_name "You do remember what happens if I catch you messing with my friends again, right?"
     show player 92
-    player_name "Apakah Anda memerlukan pengingat?!"
-
+    player_name "Do you need a reminder?!"
     show player 91
     show old_dexter 8
-    dexter "TIDAK!"
-
-    dexter "saya ingat..."
-
+    dexter "NO!"
+    dexter "I remember..."
     show old_dexter 2
     show player 92
-    player_name "Bagus."
-
+    player_name "Good."
     show player 91
     return
 
 label button_dexter_run_along:
     show player 12
-    player_name "Jalankan sekarang, {b}Dexter{/b}."
-
+    player_name "Run along now, {b}Dexter{/b}."
     show player 91
     dexter "..."
     show old_dexter 8
     dexter "GRRRR!!!"
-
     hide old_dexter with dissolve
     pause
     show player 17
-    player_name "Ha ha ha!"
-
-    player_name "Saya suka {b}Dexter{/b} yang baru!"
-
+    player_name "Hahaha!"
+    player_name "I like the new {b}Dexter{/b}!"
     hide player with dissolve
     return
 # Decompiled by unrpyc: https://github.com/CensoredUsername/unrpyc

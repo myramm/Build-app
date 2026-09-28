@@ -33,7 +33,7 @@ label roxxy_shower_dialogue:
     if not store._in_replay == None:
         jump roxxy_shower_replay_continue
     menu:
-        "Silakan!":
+        "Please!":
             if player.has_required_chr(5):
                 $ display.toast(chr_pass)
                 label roxxy_shower_replay_continue:
@@ -47,7 +47,7 @@ label roxxy_shower_dialogue:
 
                 $ display.toast(chr_fail)
                 call expression game.dialog_select("roxxy_shower_dialogue_please_fail")
-        "Sudahlah.":
+        "Never mind.":
 
             call expression game.dialog_select("roxxy_shower_dialogue_leave")
     hide old_missy

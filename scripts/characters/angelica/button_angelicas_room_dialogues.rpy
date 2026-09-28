@@ -4,84 +4,64 @@ label angelicas_room_dialogue_helen_route_pre:
     show ang 6f at left
     show player 5f at right
     with dissolve
-    angelica "Selamat malam, {b}[firstname]{/b}. Apakah Anda datang untuk membantu pelatihan saya tentang {b}Helen{/b}?"
-
+    angelica "Good evening, {b}[firstname]{/b}. Have you come to assist in my training of {b}Helen{/b}?"
     show ang 5f
     show player 10f
-    player_name "Hanya jika Anda membutuhkan bantuan saya."
-
+    player_name "Only if you need my help."
     show player 5f
     show ang 9 with dissolve
-    angelica "Tuhan selalu membutuhkan bantuan dari para pengikutnya."
-
-    angelica "Selain itu, {b}Helen{/b} berharap Anda akan mampir lagi."
-
+    angelica "The Lord always needs help from his followers."
+    angelica "Besides, {b}Helen{/b} has been hoping you'd stop in again."
     show ang 10
     show helen 39
-    helen "Saya senang melihat Anda di sini, Guru."
-
+    helen "I'm happy to see you here, Master."
     show helen 37
     show ang 9
-    angelica "{b}Helen{/b}, mari kita siapkan ritual malam ini."
-
+    angelica "{b}Helen{/b}, let's get you set up for tonight's ritual."
     show helen 37 at Position (xpos=464) with dissolve
     show ang 13 with dissolve
     pause
     show ang 14 with dissolve
-    angelica "Aku masih menahanmu, kalau-kalau kamu mempunyai dorongan berdosa untuk menutupi dirimu."
-
+    angelica "I'm restraining you still, just in case you get some sinful impulse to cover yourself."
     hide helen
     show ang 15
     with dissolve
-    angelica "Aku senang melihatmu mengindahkan perintahku dengan begitu patuh, {b}Helen{/b}."
-
+    angelica "I enjoy seeing you heeding my commands so submissively, {b}Helen{/b}."
     show helen whip 1 at Position (xpos=161)
     hide ang
     show ang 9 at Position (xpos=462)
     with dissolve
-    angelica "Sekarang."
-
-    angelica "Apakah ada sesuatu yang ingin Anda lakukan pada {b}Helen{/b}?"
-
+    angelica "Now."
+    angelica "Is there something you'd like to have done to {b}Helen{/b}?"
     show ang 10
     return
 
 label angelicas_room_dialogue_helen_route_spanking:
     show player 24f
-    player_name "Aku ingin melihatmu... Cambuk..."
-
+    player_name "I want to watch you... Whip..."
     show player 29f
-    player_name "Sudahlah."
-
+    player_name "Never mind."
     show player 5f
     show ang 9
     angelica "Oh?"
-
-    angelica "Apakah kamu terlalu malu untuk memintaku menghukum {b}Helen{/b}?"
-
+    angelica "Are you too shy to ask me to punish {b}Helen{/b}?"
     show ang 10
     show player 24f
     player_name "..."
     show ang 9
-    angelica "Jangan khawatir, {b}[firstname]{/b}."
-
-    angelica "{b}Helen{/b} suka dicambuk. Benar, {b}Helen{/b}?"
-
+    angelica "Don't worry, {b}[firstname]{/b}."
+    angelica "{b}Helen{/b} likes being whipped. Right, {b}Helen{/b}?"
     show ang 10
-    helen "Ya, {b}Suster Angelica{/b}."
-
+    helen "Yes, {b}Sister Angelica{/b}."
     show ang 18f at Position (xoffset=27) with dissolve
-    angelica "Duduk santai, {b}[firstname]{/b} dan nikmati pertunjukannya."
-
+    angelica "Sit back, {b}[firstname]{/b} and enjoy the show."
     show helen whip 1 at left
     show ang 18 at left
     show ang 18 at Position (xoffset=312)
     hide player
     with dissolve
-    angelica "Bertobatlah, {b}Helen{/b}!"
-
-    angelica "Rasakan murka Tuhan menjilati punggung Anda!"
-
+    angelica "Repent, {b}Helen{/b}!"
+    angelica "Feel the wrath of God licking at your backside!"
     hide helen
     show ang 19
     with dissolve
@@ -91,10 +71,8 @@ label angelicas_room_dialogue_helen_route_spanking:
     show helen whip 1 at Position (xpos=161)
     show ang 17 at Position (xoffset=312) with dissolve
     helen "Ohhhh!"
-
     show ang 18 at Position (xoffset=312)
-    angelica "Mohon padaku... Mohon lebih banyak lagi!"
-
+    angelica "Beg for me... Beg me for more!"
     hide helen
     show ang 19
     with dissolve
@@ -103,11 +81,9 @@ label angelicas_room_dialogue_helen_route_spanking:
     "{i}*CRACK*{/i}!" with hpunch
     show helen whip 1 at Position (xpos=161)
     show ang 17 at Position (xoffset=312) with dissolve
-    helen "Lagi! Hukum dagingku yang berdosa!"
-
+    helen "More! Punish my sinful flesh!"
     show ang 18 at Position (xoffset=312)
-    angelica "Kamu wanita yang sangat kotor..."
-
+    angelica "You are such a dirty woman..."
     hide helen
     show ang 19
     with dissolve
@@ -116,13 +92,10 @@ label angelicas_room_dialogue_helen_route_spanking:
     "{i}*CRACK*{/i}!" with hpunch
     show helen whip 1 at Position (xpos=161)
     show ang 18 at Position (xoffset=312) with dissolve
-    angelica "Pelacur sekali."
-
-    angelica "Katakan padaku... Ayam siapa yang lebih baik?"
-
+    angelica "Such a slut."
+    angelica "Tell me... Whose cock is better?"
     show ang 17 at Position (xoffset=312)
-    helen "Apa-"
-
+    helen "Wha-"
     hide helen
     show ang 19
     with dissolve
@@ -131,8 +104,7 @@ label angelicas_room_dialogue_helen_route_spanking:
     "{i}*CRACK*{/i}!" with hpunch
     show helen whip 1 at Position (xpos=161)
     show ang 18 at Position (xoffset=312) with dissolve
-    angelica "Aku ingin mendengarmu mengatakannya, pelacur. Apakah penis {b}[firstname]{/b} lebih baik daripada penis {b}Harold{/b}?"
-
+    angelica "I want to hear you say it, slut. Is {b}[firstname]{/b}'s penis better than {b}Harold{/b}'s?"
     show ang 17 at Position (xoffset=312)
     helen "..."
     helen "......"
@@ -144,8 +116,7 @@ label angelicas_room_dialogue_helen_route_spanking:
     "{i}*CRACK*{/i}!" with hpunch
     show helen whip 1 at Position (xpos=161)
     show ang 17 at Position (xoffset=312) with dissolve
-    helen "Ahhhh!!! {b}[firstname]{/b}! Aku... Cinta... Penisnya yang gemuk!"
-
+    helen "Ahhhhh!!! {b}[firstname]{/b}! I... Love... His fat cock!"
     hide helen
     show ang 19
     with dissolve
@@ -154,11 +125,9 @@ label angelicas_room_dialogue_helen_route_spanking:
     "{i}*CRACK*{/i}!" with hpunch
     show helen whip 1 at Position (xpos=161)
     show ang 18 at Position (xoffset=312) with dissolve
-    angelica "Vulgar sekali, {b}Helen{/b}... Sekarang minta aku mencambukmu lagi, pelacur."
-
+    angelica "So vulgar, {b}Helen{/b}... Now ask me to whip you more, slut."
     show ang 17 at Position (xoffset=312)
-    helen "Cambuk tubuhku yang jorok, {b}Suster Angelica{/b}! Bantu aku!"
-
+    helen "Whip my slutty body, {b}Sister Angelica{/b}! Help me!"
     hide helen
     show ang 19
     with dissolve
@@ -172,10 +141,8 @@ label angelicas_room_dialogue_helen_route_spanking:
     "{i}*CRACK*{/i}!" with hpunch
     show helen whip 1 at Position (xpos=161)
     show ang 17 at Position (xoffset=312) with dissolve
-    helen "Selengkapnya {b}Adik{/b}... Saya ingin... Selengkapnya..."
-
-    helen "Kenapa... Apakah... Kamu menunggu?"
-
+    helen "More {b}Sister{/b}... I want... More..."
+    helen "Why... Are... You waiting?"
     hide helen
     show ang 19
     with dissolve
@@ -189,11 +156,9 @@ label angelicas_room_dialogue_helen_route_spanking:
     "{i}*CRACK*{/i}!" with hpunch
     show helen whip 2 at Position (xpos=161)
     show ang 17 at Position (xoffset=312) with dissolve
-    helen "Ohhhhhhhh!!!"
-
+    helen "Ohhhhhhh!!!"
     show ang 18 at Position (xoffset=312)
-    angelica "Kamu adalah orang berdosa yang serakah dan sesat..."
-
+    angelica "Such a greedy perverted sinner you are..."
     hide ang
     hide helen
     with dissolve
@@ -201,15 +166,11 @@ label angelicas_room_dialogue_helen_route_spanking:
 
 label angelicas_room_dialogue_helen_route_holy_seed:
     show player 10f
-    player_name "Saya di sini untuk membantu membersihkan dosa {b}Helen{/b}."
-
+    player_name "I'm here to help purge {b}Helen{/b}'s sins."
     show ang 9
-    angelica "Sempurna. Perbuatanmu tidak akan luput dari perhatian di mata Tuhan, {b}[firstname]{/b}..."
-
-    angelica "... Atau milikku."
-
-    angelica "Kalau begitu mari kita mulai ritual terakhir."
-
+    angelica "Perfect. Your deeds won't go unnoticed in the eyes of the Lord, {b}[firstname]{/b}..."
+    angelica "... Or mine."
+    angelica "Then let us begin the last ritual."
     hide ang
     hide helen
     hide player
@@ -218,21 +179,15 @@ label angelicas_room_dialogue_helen_route_holy_seed:
 
 label angelicas_room_dialogue_helen_route_spread_helen:
     show player 24f
-    player_name "Bisakah Anda... Sebarkan {b}Helen{/b}'s..."
-
+    player_name "Could you... Spread {b}Helen{/b}'s..."
     show ang 9
-    angelica "vagina?"
-
-    angelica "Saya kira saya bisa."
-
-    angelica "Pertama, Anda harus telanjang."
-
-    angelica "Saya ingin melihat bagaimana vagina {b}Helen{/b} membuat Anda bergairah."
-
+    angelica "Pussy?"
+    angelica "I suppose I could."
+    angelica "First you have to get naked."
+    angelica "I want to see how {b}Helen{/b}'s pussy excites you."
     show ang 10
     pause
-    player_name "Baiklah."
-
+    player_name "Alright."
     show player 8f with dissolve
     pause
     show player 261 with dissolve
@@ -241,11 +196,9 @@ label angelicas_room_dialogue_helen_route_spread_helen:
     pause
     show player 64f
     show ang 9
-    angelica "Anak baik."
-
+    angelica "Good boy."
     show ang 9f at Position (xoffset=100) with dissolve
-    angelica "Berbalik {b}Helen{/b}."
-
+    angelica "Turn around {b}Helen{/b}."
     show ang 10f at Position (xoffset=100)
     show helen whip 3 with dissolve
     pause
@@ -262,26 +215,20 @@ label angelicas_room_dialogue_helen_route_spread_helen:
     pause
     show ang 22_23_24f
     helen "Ohhhh..."
-
     show player 65f with dissolve
     pause
     show player 430bf with dissolve
-    helen "Ahhh..."
-
+    helen "Ahhhh..."
     show ang 26f
-    angelica "Apakah kamu menyukainya?"
-
+    angelica "Did you like that?"
     show player 430f
     show ang 25f
-    helen "Ya..."
-
+    helen "Yes..."
     show ang 26f
-    angelica "Tenang, pelacur. Maksudku {b}[firstname]{/b}."
-
+    angelica "Quiet, slut. I meant {b}[firstname]{/b}."
     show ang 22_23_24f
     show player 430bf
-    player_name "Ya."
-
+    player_name "Yes."
     pause
     hide player
     hide ang
@@ -292,12 +239,10 @@ label angelicas_room_dialogue_helen_route_spread_helen:
 
 label angelicas_room_dialogue_helen_route_leave:
     show player 10f
-    player_name "Tidak ada apa-apa."
-
+    player_name "Nothing."
     show player 5f
     show ang 6f at Position (xoffset=-22) with dissolve
-    angelica "Pergilah kalau begitu. Saya sedang sibuk sekarang."
-
+    angelica "Leave then. I'm busy right now."
     hide player
     hide ang
     hide helen
@@ -316,12 +261,10 @@ label sacrament_complete_dialogue:
     show ang 6f at Position (xpos=434)
     show player 5f at right
     with dissolve
-    angelica "Jangan ragu untuk berkunjung lagi jika Anda ingin berperan serta dalam sakramen malam saya."
-
+    angelica "Feel free to visit again if you wish to participate in my nightly sacrament."
     show ang 5f
     show player 10f
-    player_name "Sebaiknya aku kembali ke rumah."
-
+    player_name "I'd better get back home."
     hide player
     hide helen
     hide ang
@@ -333,36 +276,26 @@ label angelicas_room_dialogue_mia_route:
     show ang 2f at left
     show player 5f at right
     with dissolve
-    angelica "Apa yang kamu lakukan di sini?"
-
+    angelica "What are you doing here?"
     show ang 1f
     show player 10f
-    player_name "Apakah Anda masih melaksanakan sakramen penyucian?"
-
+    player_name "Are you still performing the purification sacrament?"
     show player 5f
     show ang 2f
-    angelica "Bisa, tapi saat ini saya tidak punya pendosa lain..."
-
-    angelica "{b}Helen{/b} tidak mengunjungi saya lagi."
-
-    angelica "Dia mungkin sedang dibersihkan dosanya oleh suaminya saat kita berbicara."
-
+    angelica "I can, but I don't have any other sinners at the moment..."
+    angelica "{b}Helen{/b} doesn't visit me anymore."
+    angelica "She is probably having her sins purged by her husband as we speak."
     show ang 1f
     show player 12f
-    player_name "Apakah kamu baik-baik saja?"
-
-    player_name "Kamu tampak sedih."
-
+    player_name "Are you alright?"
+    player_name "You seem sad."
     show player 5f
     show ang 2f
-    angelica "Saya baik-baik saja. Saya tidak membutuhkan layanan Anda lagi."
-
-    angelica "Tinggalkan aku."
-
+    angelica "I'm fine. I've no need for your services anymore."
+    angelica "Leave me."
     show ang 1f
     show player 10f
-    player_name "Oke."
-
+    player_name "Okay."
     hide player
     hide ang
     with dissolve
@@ -371,8 +304,7 @@ label angelicas_room_dialogue_mia_route:
 label angelicas_room_dialogue_mia_harolds_thoughts:
     scene church_nun_night_c
     show player 12 with dissolve
-    player_name "(Saya harus {b}berbicara dengan Harold{/b} sebelum saya bertemu {b}Sister Angelica{/b}. )"
-
+    player_name "( I should {b}talk with Harold{/b} before I see {b}Sister Angelica{/b}. )"
     hide player with dissolve
     return
 
@@ -381,33 +313,25 @@ label angelicas_room_dialogue_mia_find_sinners_pre:
     show ang 1 at right
     show player 12 at left
     with dissolve
-    player_name "Hai, {b}Suster Angelica{/b}..."
-
+    player_name "Hi, {b}Sister Angelica{/b}..."
     show player 5
     show ang 2
-    angelica "... Ya?"
-
-    angelica "Apa yang kamu inginkan?"
-
+    angelica "... Yes?"
+    angelica "What is it you want?"
     show ang 1
     return
 
 label angelicas_room_dialogue_mia_find_sinners:
     show player 12
-    player_name "Apa yang perlu saya lakukan lagi untuk Anda?"
-
+    player_name "What do you need me to do for you again?"
     show player 5
     show ang 2
-    angelica "Saya ingin Anda menemukan calon yang tepat untuk sakramen saya."
-
-    angelica "{b}Bawakan aku Helen{/b}, wanita dari ruang pengakuan dosa, agar kita bisa memulai pertemuan kita..."
-
+    angelica "I need you to find appropriate candidates for my sacrament."
+    angelica "{b}Bring me Helen{/b}, the woman from the confessional, so we can begin our meetings..."
     show ang 1
     show player 12
-    player_name "Oh iya... {b}Kamu ingin aku meyakinkannya{/b}."
-
-    player_name "Oke. Saya akan melihat apa yang bisa saya lakukan..."
-
+    player_name "Oh, right... {b}You want me to convince her{/b}."
+    player_name "Okay. I'll see what I can do..."
     hide player
     hide ang
     with dissolve
@@ -438,108 +362,80 @@ label helen_sacrement_training_part2_pre:
     show player 5f at right
     show ang 6f at left
     with dissolve
-    angelica "Ya?"
-
-    angelica "Apakah kamu sudah membawa apa yang aku perlukan?"
-
+    angelica "Well?"
+    angelica "Have you brought what I need?"
     show ang 5f
     show player 12f
-    player_name "Ya, sepertinya aku menemukan sesuatu."
-
+    player_name "Yes, I think I found something."
     show player 239_240f with dissolve
     pause
     show player 455f
-    player_name "Akankah ini berhasil?"
-
+    player_name "Will this work?"
     show player 456f
     angelica "Hmm..."
-
     hide helen
     show helen 29 at Position (xpos=575)
     show player 5f
     show ang 18f
     with dissolve
-    angelica "saya terkesan."
-
-    angelica "Tampaknya Anda sangat memperhatikan keakuratan Alkitab."
-
+    angelica "I'm impressed."
+    angelica "You seem to have a great eye for biblical accuracy."
     show ang 17f
     show helen 30
-    helen "Apa yang akan kamu lakukan dengan cambuk itu?"
-
+    helen "What are you going to do with that whip?"
     show helen 29
     show ang 18f
-    angelica "Diam."
-
+    angelica "Quiet."
     show helen 33
     show ang 17f
     show player 10f
-    player_name "Baiklah, sebaiknya aku pulang. Ini sudah larut."
-
+    player_name "Well, I'd better get home. It's getting late."
     show player 11f
     show ang 18f
-    angelica "Memegang. Saya ingin Anda tetap mengikuti langkah berikutnya dalam pemurnian {b}Helen{/b}."
-
-    angelica "{b}Helen{/b} memberitahuku kamu melihatnya mengotori tubuhnya beberapa hari yang lalu."
-
-    angelica "Tampaknya dia menarik Anda ke dalam cara-caranya yang jahat dan penuh dosa."
-
+    angelica "Hold. I want you to stay for this next step in {b}Helen{/b}'s purification."
+    angelica "{b}Helen{/b} told me you saw her defiling her body the other day."
+    angelica "It appears she is pulling you into her wickedly sinful ways."
     show ang 17f
     show helen 32
-    helen "Maafkan aku, {b}[firstname]{/b} Aku-"
-
+    helen "I'm sorry, {b}[firstname]{/b} I-"
     show helen 33
     show ang 18f
-    angelica "Tenang!"
-
+    angelica "Quiet!"
     show ang 17f
     pause
     show ang 18f
-    angelica "Seperti yang Anda lihat: {b}Helen{/b} masih mempertanyakan metode saya."
-
-    angelica "Saya ingin Anda menyaksikan hukumannya..."
-
-    angelica "... Dan lihatlah betapa aku lebih memilih untuk menghapus semua perbuatan kejinya dari tubuhnya."
-
+    angelica "As you can see: {b}Helen{/b} is still questioning my methods."
+    angelica "I want you to witness her punishment..."
+    angelica "... And see how I prefer to expunge all her vile deeds from her body."
     show ang 17f
     show helen 30
     helen "!!!"
     show player 22f
     player_name "!!!"
-    helen "Bukankah itu akan menyakitkan? Saya pikir-"
-
+    helen "Isn't that going to hurt? I think-"
     show helen 29
     show ang 18f
-    angelica "{b}Helen{/b}, bersukacitalah! Hari ini dimulailah ritual sakramen penyucian ke-2!"
-
-    angelica "Ini memang menyakitkan, tetapi rasa sakit adalah akibat dosa."
-
-    angelica "Begitu Anda mampu menoleransi rasa sakit, Anda akan semakin dekat dengan penebusan suci."
-
-    angelica "Sekarang. Saya ingin Anda melepaskan diri dari semua pakaian Anda."
-
+    angelica "{b}Helen{/b}, rejoice! Today begins the 2nd ritual of the purification sacrament!"
+    angelica "This will hurt, but pain is a product of sin."
+    angelica "Once you are able to tolerate pain, you will be closer to holy redemption."
+    angelica "Now. I want you to rid yourself of all your clothing."
     show ang 17f
     show helen 33
     helen "..."
     show helen 30
-    helen "Tapi, {b}[firstname]{/b} ada di sini... Apakah pantas?"
-
+    helen "But, {b}[firstname]{/b} is here... Is it appropriate?"
     show helen 29
     show ang 18f
-    angelica "{b}Helen{/b}. Saya tidak meminta Anda untuk mulai melakukan masturbasi di depannya seperti sebelumnya."
-
-    angelica "Selain itu, tubuh lamamu yang penuh dosa seharusnya tidak menimbulkan respons apa pun dari laki-laki."
-
+    angelica "{b}Helen{/b}. I'm not asking you to start masturbating in front of him as you were earlier."
+    angelica "Besides, your old sin riddled body shouldn't stir any response out of a male."
     show ang 17f
     show helen 33
     helen "..."
     show ang 18f
-    angelica "Ingat, Anda datang kepada saya mencari cara untuk memaafkan dan menjadikan tubuh Anda suci."
-
+    angelica "Remember, you came to me looking for a way to forgiveness and to make your body holy."
     show ang 17f
     show helen 34
-    helen "B-baiklah. Setidaknya itu bisa membuatku benar di mata Tuhan."
-
+    helen "A-all right. If it will at least make me right in God's eyes."
     show helen 35 at Position (xoffset=12) with dissolve
     pause
     show player 106f
@@ -548,27 +444,22 @@ label helen_sacrement_training_part2_pre:
     show player 11f
     show helen 38 with dissolve
     show ang 12 at left with dissolve
-    angelica "Bagus. Sekarang kemarilah."
-
+    angelica "Good. Now come over here."
     show helen 37 at Position (xpos=464) with dissolve
     show ang 13 with dissolve
     pause
     show ang 14 with dissolve
-    angelica "Aku menahanmu {b}Helen{/b} karena dorongan dosamu akan menutupi dirimu sendiri."
-
+    angelica "I'm restraining you {b}Helen{/b} as your sinful impulse will be to cover yourself."
     hide helen
     show ang 15
     with dissolve
-    angelica "Saat aku melatih tubuhmu dengan cambuk ini, kamu akan belajar mengingat apa yang menantimu di neraka jika kamu tidak tunduk pada w- ... {i}kehendak Tuhan{/i}."
-
-    helen "Apa?"
-
+    angelica "As I work your body over with this whip, you will learn to remember what awaits you in hell if you don't submit to my w- ... {i}God's will{/i}."
+    helen "What?"
     show helen whip 1 at Position (xpos=161)
     show ang 18 at Position (xoffset=312)
     hide player
     with dissolve
-    angelica "DIAM! Berhenti menanyaiku!"
-
+    angelica "QUIET! Stop questioning me!"
     hide helen
     show ang 19
     with dissolve
@@ -576,40 +467,32 @@ label helen_sacrement_training_part2_pre:
     show ang 20 with dissolve
     "{i}*CRACK*{/i}!" with hpunch
     show ang 19 with dissolve
-    helen "Aduh!"
-
+    helen "Owwww!"
     show helen whip 1 at Position (xpos=161)
     show ang 18 at Position (xoffset=312) with dissolve
-    angelica "Bertobatlah {b}Helen{/b}!"
-
-    angelica "Rasakan murka Tuhan menjilati punggung Anda!"
-
+    angelica "Repent {b}Helen{/b}!"
+    angelica "Feel the wrath of God licking at your backside!"
     hide helen
     show ang 19
     with dissolve
     pause
     show ang 20 with dissolve
     "{i}*CRACK*{/i}!" with hpunch
-    helen "Aduh! Cukup! Silakan!"
-
+    helen "Owww! Enough! Please!"
     show helen whip 1 at Position (xpos=161)
     show ang 18 at Position (xoffset=312) with dissolve
-    angelica "Jangan mudah menyerah {b}Helen{/b}!"
-
-    angelica "Anda membutuhkan ini!"
-
+    angelica "Don't give up so easily {b}Helen{/b}!"
+    angelica "You need this!"
     hide helen
     show ang 19
     with dissolve
     pause
     show ang 20 with dissolve
     "{i}*CRACK*{/i}!" with hpunch
-    helen "Aduh!"
-
+    helen "Owww!"
     show helen whip 1 at Position (xpos=161)
     show ang 18 at Position (xoffset=312) with dissolve
-    angelica "Mohon padaku... Mohon maaf!"
-
+    angelica "Beg for me... Beg for forgiveness!"
     hide helen
     show ang 19
     with dissolve
@@ -620,57 +503,45 @@ label helen_sacrement_training_part2_pre:
     pause
     show ang 20 with dissolve
     "{i}*CRACK*{/i}!" with hpunch
-    helen "Owwwwww!"
-
+    helen "Owwwwwww!"
     show helen whip 1 at Position (xpos=161)
     show ang 18 at Position (xoffset=312) with dissolve
-    angelica "Kamu adalah wanita yang kotor dan keras kepala..."
-
-    angelica "{b}Helen{/b}, saya perlu mendengar Anda mengatakannya..."
-
-    helen "aku-"
-
+    angelica "You are such a dirty, stubborn woman..."
+    angelica "{b}Helen{/b}, I need to hear you say it..."
+    helen "I'm-"
     hide helen
     show ang 19
     with dissolve
     pause
     show ang 20 with dissolve
     "{i}*CRACK*{/i}!" with hpunch
-    helen "Ahhh! Saya minta maaf! Saya... Bertobat!"
-
+    helen "Ahhh! I'm sorry! I... Repent!"
     show ang 19 with dissolve
     pause
     show ang 20 with dissolve
     "{i}*CRACK*{/i}!" with hpunch
-    helen "Ahhhh! Tolong, {b}Kakak{/b}... Hukum... Tubuhku..."
-
+    helen "Ahhhh! Please, {b}Sister{/b}... Punish... My body..."
     show helen whip 1 at Position (xpos=161)
     show ang 18 at Position (xoffset=312) with dissolve
-    angelica "Apa ini? Apakah Anda menikmati {b}Helen{/b} ini?"
-
+    angelica "What's this? Are you enjoying this {b}Helen{/b}?"
     hide helen
     show ang 19
     with dissolve
     pause
     show ang 20 with dissolve
     "{i}*CRACK*{/i}!" with hpunch
-    helen "Ahhhh!!! Ya!!! Maksudku... Tidak... aku..."
-
+    helen "Ahhhh!!! Yes!!! I mean... No... I'm..."
     show ang 19 with dissolve
     pause
     show ang 20 with dissolve
     "{i}*CRACK*{/i}!" with hpunch
     show helen whip 1 at Position (xpos=161)
     show ang 18 at Position (xoffset=312) with dissolve
-    angelica "Seorang pelacur! Pertama, Anda melakukan masturbasi di depan pemuda ini, dan sekarang Anda menikmati pemukulan."
-
-    angelica "Saya ingin mendengar Anda mengatakannya, pelacur. Akui padaku siapa dirimu!"
-
+    angelica "A harlot! First, you were masturbating in front of this young man, and now you are enjoying being beaten."
+    angelica "I want to hear you say it, harlot. Confess to me what you are!"
     show ang 17 at Position (xoffset=312)
-    helen "saya..."
-
-    helen "aku pelacur..."
-
+    helen "I..."
+    helen "I'm a slut..."
     hide helen
     show ang 19
     with dissolve
@@ -679,8 +550,7 @@ label helen_sacrement_training_part2_pre:
     "{i}*CRACK*{/i}!" with hpunch
     show helen whip 1 at Position (xpos=161)
     show ang 18 at Position (xoffset=312) with dissolve
-    angelica "Sangat vulgar, {b}Helen{/b}. Sekarang minta aku mencambukmu lagi... Pelacur."
-
+    angelica "So vulgar, {b}Helen{/b}. Now ask me to whip you more... Slut."
     show ang 17 at Position (xoffset=312)
 
     helen "..."
@@ -692,12 +562,10 @@ label helen_sacrement_training_part2_pre:
     "{i}*CRACK*{/i}!" with hpunch
     show helen whip 1 at Position (xpos=161)
     show ang 18 at Position (xoffset=312) with dissolve
-    angelica "Tanyakan padaku!"
-
+    angelica "Ask me!"
     show ang 17 at Position (xoffset=312)
 
-    helen "Cambuk tubuhku yang jorok, {b}Kakak{/b}! Bantu aku!"
-
+    helen "Whip my slutty body, {b}Sister{/b}! Help me!"
     hide helen
     show ang 19
     with dissolve
@@ -708,8 +576,7 @@ label helen_sacrement_training_part2_pre:
     pause
     show ang 20 with dissolve
     "{i}*CRACK*{/i}!" with hpunch
-    helen "Selengkapnya {b}Adik{/b}... Saya ingin... Selengkapnya..."
-
+    helen "More {b}Sister{/b}... I want... More..."
     show ang 19 with dissolve
     pause
     show ang 20 with dissolve
@@ -719,58 +586,42 @@ label helen_sacrement_training_part2_pre:
     show ang 20 with dissolve
     "{i}*CRACK*{/i}!" with hpunch
     helen "Ahhhhhhh!!!"
-
     show helen whip 2 at left
     show ang 17 at Position (xoffset=312) with dissolve
-    helen "Ohhhh..."
-
+    helen "Ohhhhh..."
     show ang 18 at Position (xoffset=312)
-    angelica "Kamu adalah orang berdosa yang serakah dan sesat..."
-
-    angelica "Aku akan menikmati ritual masa depan kita..."
-
+    angelica "Such a greedy perverted sinner you are..."
+    angelica "I'm going to enjoy our future rituals..."
     show ang 17 at Position (xoffset=312)
     pause
 
     show ang 18f at Position (xpos=300) with dissolve
     angelica "{b}[firstname]{/b}?"
-
     show ang 17f
     show player 24f at right with dissolve
-    player_name "Ya?"
-
+    player_name "Yes?"
     show ang 18f
-    angelica "Kamu melakukannya dengan sangat baik juga."
-
-    angelica "Bukankah begitu, {b}Helen{/b}?"
-
+    angelica "You did very well too."
+    angelica "Didn't he, {b}Helen{/b}?"
     show ang 17f
     show player 22f
-    helen "Ya..."
-
+    helen "Yes..."
     show ang 18f
-    angelica "Berterimakasihlah padanya karena telah membawakanku cambuk, {b}Helen{/b}."
-
+    angelica "Thank him for bringing me the whip, {b}Helen{/b}."
     show ang 17f
     show player 11f
-    helen "Terima kasih... Anda... {b}[firstname]{/b}..."
-
+    helen "Thank... You... {b}[firstname]{/b}..."
 
     show ang 18f
-    angelica "Anda boleh meninggalkan kami sekarang, {b}[firstname]{/b}."
-
-    angelica "{b}Helen{/b} akan membutuhkan pelatihan lebih lanjut, tapi pertama-tama aku harus membuatnya lebih patuh dan lebih toleran terhadap penderitaan dunia ini."
-
-    angelica "Mungkin, ketika waktunya tiba, aku bisa memanfaatkanmu untuk sesuatu yang lebih... Menyeluruh, jika kamu mau."
-
+    angelica "You may leave us now, {b}[firstname]{/b}."
+    angelica "{b}Helen{/b} will require further training, but first I need to have her more subservient and more tolerant to the pains of this world."
+    angelica "Perhaps, when the time comes, I can use you for something a little more... Thorough, if you'd like."
     show ang 17f
     show player 10f
-    player_name "aku tidak tahu-"
-
+    player_name "I don't kn-"
     show player 11f
     show ang 18f
-    angelica "Tinggalkan kami. Aku akan menjemputmu saat aku membutuhkanmu."
-
+    angelica "Leave us. I'll get you when I have need for you."
     hide ang
     hide helen
     hide player
@@ -782,57 +633,44 @@ label helen_sacrement_training_part2_after:
     pause
     scene church_stairs_night with fade
     show player 12
-    player_name "Ini gila! Aku harus mengatakan sesuatu kepada seseorang, tapi {b}Suster Angelica{/b} tampaknya memiliki kendali atas {b}Helen{/b}."
-
-    player_name "{b}Helen{/b} mungkin akan mengatakan dia bersedia berpartisipasi..."
-
+    player_name "This is crazy! I should say something to someone, but {b}Sister Angelica{/b} seems to have such control over {b}Helen{/b}."
+    player_name "{b}Helen{/b} probably would say she is willingly participating..."
     show player 25
-    player_name "Saya harus berbicara dengannya dan melihat apakah dia baik-baik saja."
-
+    player_name "I should talk to her and see if she's alright."
     hide player with dissolve
     return
 
 label angelicas_room_dialogue_mia_angelicas_whip:
     show ang 6f
-    angelica "Apakah Anda {b}membawakan saya cambuk{/b} untuk ritual pencambukan dalam sakramen penyucian tiga langkah saya?"
-
+    angelica "Did you {b}bring me my whip{/b} for the flagellation ritual in my three-step purification sacrament?"
     show ang 5f
     show player 10f
-    player_name "Tidak..."
-
+    player_name "No..."
     show player 5f
     show ang 6f
-    angelica "Lalu kenapa kamu ada di sini?"
-
+    angelica "Then why are you here?"
     show ang 5f
     show player 12f
-    player_name "Di mana kamu bilang aku bisa menemukannya?"
-
+    player_name "Where did you say I could find one?"
     show player 5f
     show ang 6f
-    angelica "Saya yakin seseorang seusia Anda mengetahui tempat-tempat kotor dan penuh nafsu yang menjual barang-barang seperti itu."
-
-    angelica "Sekarang berhentilah menguji kesabaranku, dan {b}bawakan aku cambuk{/b}."
-
+    angelica "I'm sure someone of your age knows of dirty lustful places that sell such things."
+    angelica "Now stop testing my patience, and {b}bring me a whip{/b}."
     hide ang
     hide helen
     with dissolve
     show player 10f
-    player_name "( Mungkin {b}Toko Pink di mal{/b} menjual sesuatu seperti itu. )"
-
+    player_name "( Maybe the {b}Pink store at the mall{/b} carries something like that. )"
     hide player with dissolve
     return
 
 label angelicas_room_dialogue_mia_angelicas_whip_leave:
     show player 10f
-    player_name "Tidak ada apa-apa."
-
+    player_name "Nothing."
     show player 5f
     show ang 6f
-    angelica "Pergilah kalau begitu. Saya sedang sibuk sekarang."
-
-    angelica "Saya akan mengunjungi Anda ketika saya membutuhkan bantuan Anda."
-
+    angelica "Leave then. I'm busy right now."
+    angelica "I'll visit you when I require your assistance."
     hide player
     hide ang
     hide helen
@@ -845,14 +683,11 @@ label angelicas_room_dialogue_mia_angelicas_final_request_pre:
     show helen 37 at Position (xpos=575)
     show ang 5f at left
     with dissolve
-    player_name "Hai, {b}Suster Angelica{/b}..."
-
+    player_name "Hi, {b}Sister Angelica{/b}..."
     show player 5f
     show ang 6f
-    angelica "... Ya?"
-
-    angelica "Apa yang kamu inginkan?"
-
+    angelica "... Yes?"
+    angelica "What is it you want?"
     show ang 5f
 
 label angelicas_room_dialogue_mia_angelicas_final_request_strap_on:
@@ -861,39 +696,30 @@ label angelicas_room_dialogue_mia_angelicas_final_request_strap_on:
     show player 460f at right
     show player 460f at Position (xoffset=-1)
     with dissolve
-    player_name "Apakah saya benar berasumsi Anda bermaksud memberikan foto ini kepada saya?"
-
+    player_name "Am I right in assuming you meant to hand me this photograph?"
     show player 461f at Position (xoffset=-1)
     show ang 9 with dissolve
-    angelica "Ya."
-
-    angelica "Saya tidak membuat kesalahan."
-
-    angelica "Sekarang cepatlah ambil!"
-
+    angelica "Yes."
+    angelica "I don't make mistakes."
+    angelica "Now hurry up and go get it!"
     hide ang
     hide helen
     with dissolve
     show player 5f with dissolve
     player_name "..."
     show player 10f
-    player_name "(Saya kira tugas terakhir saya adalah {b}memberinya strap-on{/b}. )"
-
-    player_name "(Hanya satu tempat yang menjual sesuatu seperti itu adalah {b}Pink{/b}... )"
-
+    player_name "( I guess my last task is to {b}get her a strap-on{/b}. )"
+    player_name "( Only one place that would sell something like that is {b}Pink{/b}... )"
     hide player with dissolve
     return
 
 label angelicas_room_dialogue_mia_angelicas_final_request_leave:
     show player 10f
-    player_name "Tidak ada apa-apa."
-
+    player_name "Nothing."
     show player 5f
     show ang 6f
-    angelica "Pergilah kalau begitu. Saya sedang sibuk sekarang."
-
-    angelica "Saya akan mengunjungi Anda ketika saya membutuhkan bantuan Anda."
-
+    angelica "Leave then. I'm busy right now."
+    angelica "I'll visit you when I require your assistance."
     hide player
     hide ang
     hide helen
@@ -906,8 +732,7 @@ label angelicas_room_dialogue_default_pre:
     show ang 1f at left
     angelica "What are you doing here?!" with hpunch
     show player 3f
-    player_name "Umm... Tamasya?"
-
+    player_name "Umm... Sightseeing?"
     angelica "Leave at once!!! You have no business here." with hpunch
     hide player
     hide ang
@@ -917,14 +742,11 @@ label angelicas_room_dialogue_default_pre:
 
 label angelicas_room_dialogue_default_leave:
     show player 10f
-    player_name "Tidak ada apa-apa."
-
+    player_name "Nothing."
     show player 5f
     show ang 6f
-    angelica "Pergilah kalau begitu. Saya sedang sibuk sekarang."
-
-    angelica "Saya akan mengunjungi Anda ketika saya membutuhkan bantuan Anda."
-
+    angelica "Leave then. I'm busy right now."
+    angelica "I'll visit you when I require your assistance."
     hide player
     hide ang
     hide helen

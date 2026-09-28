@@ -4,35 +4,25 @@ label melonia_button_garden:
 
 label melonia_button_garden.intro0:
     show anon f_worried with dissolve
-    anon "Permisi, {b}Ny. Bokong{/b}?"
-
-    melonia f_annoyed "Apakah Anda sudah selesai membersihkan bak mandi air panas?"
-
-    anon "Tidak, Bu."
-
-    melonia @ f_eyeroll "Ugh, lalu apa yang kamu inginkan?"
-
+    anon "Excuse me, {b}Mrs. Rump{/b}?"
+    melonia f_annoyed "Are you finished cleaning the hot tub?"
+    anon "No, ma'am."
+    melonia @ f_eyeroll "Ugh, then what do you want?"
     return
 
 
 label melonia_button_garden.intro1:
     show anon f_worried with dissolve
-    melonia "Apakah Anda sudah selesai membersihkan bak mandi air panas?"
-
-    anon "Tidak, Bu."
-
+    melonia "Are you finished cleaning the hot tub?"
+    anon "No, ma'am."
     show melonia f_annoyed
     pause
-    melonia "Anda tahu, {b}Hector{/b}..."
-
-    melonia "Hanya karena saya membayar Anda untuk seks sekarang, bukan berarti Anda bisa mengabaikan tanggung jawab Anda yang lain."
-
+    melonia "You know, {b}Hector{/b}..."
+    melonia "Just because I'm paying you for sex now, doesn't mean you can shirk your other responisibilities."
     show anon f_unimpressed
     pause
-    anon "Kupikir kita sudah selesai dengan semua omong kosong \"Hector\" itu?"
-
-    melonia f_smirk "Heh, jaga kebersihan bak mandi air panas ini dan aku akan meneleponmu sesukamu."
-
+    anon "I thought we were finished with all that \"Hector\" nonsense?"
+    melonia f_smirk "Heh, keep this hot tub clean and I'll call you whatever you want."
     return
 
 
@@ -45,12 +35,9 @@ label melonia_button_garden.outro1:
 
 
 label melonia_button_garden.suggest:
-    anon f_flirt "Ingin berhubungan seks?"
-
-    melonia f_smirk "Mmm, kamu membaca pikiranku."
-
-    melonia "Ayo pergi ke kamarku."
-
+    anon f_flirt "Want to have sex?"
+    melonia f_smirk "Mmm, you read my mind."
+    melonia "Let's head up to my bedroom."
     show layer master:
         ease 1.6 xpos 485
     with None
@@ -61,15 +48,13 @@ label melonia_button_garden.suggest:
         flip
         xoffset -530
     with dissolve
-    anon "Ya, Bu."
-
+    anon "Yes, ma'am."
 
     scene location_rump_bedroom_bed_closeup
     show melonia f_smirk b_swimsuit_hatless
     show anon f_flirt
     with fade
-    melonia "Saya sangat senang suami saya mempekerjakan Anda!"
-
+    melonia "I'm so glad my husband hired you!"
     show anon f_flirt_low
     show melonia f_smirk_down a_remove_shall1
     with dissolve

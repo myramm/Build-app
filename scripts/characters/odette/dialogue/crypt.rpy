@@ -1,128 +1,94 @@
 label odette_button_crypt:
     scene odette b_vamp_front
-    odette "Jadi kamu memutuskan untuk kembali, ya?"
-
+    odette "So you decided to come back, huh?"
 
     scene black with fasteyeshut
     pause .05
 
     scene odette b_vamp_front_normal with fasteyeopen
-    anon "Umm... {i}*Gulp*{/i} Y-ya."
-
-    odette "Dimana {b}Evie{/b}?"
-
-    anon "Dia terlalu takut untuk datang."
-
-    odette "Ah, sayang sekali."
-
-    odette "Kita bisa bersenang-senang bersama."
-
+    anon "Umm... {i}*Gulp*{/i} Y-yes."
+    odette "Where's {b}Evie{/b}?"
+    anon "She was too afraid to come."
+    odette "Aww, that's too bad."
+    odette "We could have had a lot of fun together."
 
     scene location_crypt_side
     show odette b_vamp_sitting_cape_normal f_smirk
     show anon f_worried:
         xoffset -150
     with fade
-    odette "Kalau begitu, aku harus puas hanya denganmu, bukan?"
-
-    anon "Y-ya, menurutku..."
-
-    odette "Tidak apa-apa."
-
+    odette "I'll have to make do with just you then, won't I?"
+    anon "Y-yeah, I guess..."
+    odette "That's fine."
     show anon f_surprised_teeth a_surprised_up
     show odette b_vamp_normal f_smirk:
         xoffset -480
     odette "You're quite delicious, you know?" with hpunch
-    anon f_worried a_neck_hurt "D-enak?"
-
+    anon f_worried a_neck_hurt "D-delicious?"
     show odette f_laugh:
         xoffset -225
     with dissolve
     odette "Hehehe!"
-
     show anon a_sides behind odette
     show odette f_smirk
     with {'master': dissolve}
-    odette "Ini, minumlah."
-
-    anon a_behind_head "Oh, entahlah..."
-
-    anon "... Terakhir kali itu benar-benar-"
-
+    odette "Here, have a drink."
+    anon a_behind_head "Oh, I dunno..."
+    anon "... Last time it really-"
     show odette a_blood_cup_force
     show anon f_smoke a_up
     with dissolve
     anon "!!!"
-    odette "Ssst."
-
-    odette "Percayalah, {b}[firstname]{/b}."
-
+    odette "Shh."
+    odette "Trust me, {b}[firstname]{/b}."
     show odette a_idle
     show anon f_disgusted a_sides
     with dissolve
-    anon "Hmm, kali ini agak manis..."
-
-    odette "Ya, semakin banyak Anda meminumnya, semakin baik."
-
+    anon "Hmm, it's kind of sweet this time..."
+    odette "Yeah, it gets better the more you drink it."
     show anon f_skeptical
     show odette f_drink a_blood_cup_drink with {'master': dissolve}
-    anon "Benar-benar?"
-
-    anon "Agak aneh... Bukan?"
-
-    odette a_idle f_smirk "Anda banyak bertanya, bukan?"
-
-    anon a_behind_head f_shy "Hehe, maaf..."
-
+    anon "Really?"
+    anon "That's kinda weird... Isn't it?"
+    odette a_idle f_smirk "You ask a lot of questions, don't you?"
+    anon a_behind_head f_shy "Heh, sorry..."
     show odette f_drink a_blood_cup_drink with dissolve
-    anon "Saya pada dasarnya hanyalah orang yang ingin tahu-"
-
+    anon "I'm just a curious person by nature I suppos-"
     show odette a_blood_cup_force f_smirk
     show anon f_smoke a_up
     with dissolve
     anon "!!!"
-    odette "Itu saja."
-
-    odette "Minumlah dalam-dalam, kawan."
-
+    odette "That's it."
+    odette "Drink deep, big fella."
     pause
     show odette a_idle
     show anon f_disgusted a_sides
     with dissolve
-    anon "Eh, kawan..."
-
-    anon "Ini sangat tebal."
-
+    anon "Eugh, man..."
+    anon "It's so thick."
     odette @ -m_talk "Mhmm."
-
     show odette f_drink a_blood_cup_drink behind anon
     show anon a_surprised_hands f_surprised_low
     with dissolve
     pause
-    anon "Aduh, kawan... Jangan lagi."
-
+    anon "Aww, man... Not again."
     show odette a_idle f_smirk o_blood
     with dissolve
-    odette "Ada apa?"
-
-    anon a_surprised_lips f_surprised_down "Mah robek ahr mati rasa gin..."
-
+    odette "What's the matter?"
+    anon a_surprised_lips f_surprised_down "Mah rips ahr numb ngin..."
     show odette a_blood_cup_throw f_laugh with dissolve
-    odette "hehe!"
-
+    odette "Hehe!"
     show anon f_surprised a_sides
     show odette a_blood_wipe o_empty f_smirk
     with {'master': dissolve}
-    anon "Bagaimana kabarmu joo dun feer ini?"
-
+    anon "Haw cam joo dun feer dis?"
     show odette a_undress1
     with dissolve
     pause
     show anon f_surprised_low
     show odette b_naked a_vamp_undress2
     with {'master': dissolve}
-    odette "Saya kira, efeknya terhadap setiap orang berbeda-beda."
-
+    odette "It effects everyone differently I suppose."
     show anon f_surprised
     show odette a_idle
     with dissolve
@@ -134,20 +100,16 @@ label odette_button_crypt:
     with dissolve
     anon "!!!"
     pause
-    odette "MM."
-
+    odette "Mmm."
     pause
 
     scene odette b_vamp_bite f_normal:
         xoffset 0
     show location_crypt_bite_overlay
     with fade
-    odette "Baumu enak!"
-
-    anon "Mati menggambar?"
-
+    odette "You smell delicious!"
+    anon "Die drew?"
     odette f_lip_normal @ -m_talk "Mhmm!"
-
 
     scene location_crypt_side
     show odette b_kiss_anon:
@@ -155,46 +117,33 @@ label odette_button_crypt:
     with fade
     pause
     anon "Ngh!"
-
     pause
 
     scene odette b_vamp_bite f_fangless:
         xoffset 0
     show location_crypt_bite_overlay
     with fade
-    odette "Anda merasa lebih enak!"
-
-    odette "Begitu penuh kehidupan dan semangat..."
-
+    odette "You taste even better!"
+    odette "So full of life and vigor..."
 
     if M_odette.is_state(S_ode02_tomb):
-        anon "Apa yang selalu kudengar dari korar itu?"
-
+        anon "Wha joo ears arways dat korar?"
         odette f_curious -m_talk "Hmm?"
-
     else:
-        anon "Telinga Joo sedang direkatkan!"
-
-        odette "Telingaku?"
-
+        anon "Joo ears ar glue-ing ngin!"
+        odette "My ears?"
         show odette f_curious
 
-    anon "Joo dengar..."
-
-    anon "Grr... {i}MATA{/i}!"
-
+    anon "Joo earss..."
+    anon "Grr... {i}EYES{/i}!"
     show odette f_fangless
 
     if M_odette.is_state(S_ode02_tomb):
-        odette "Mataku?"
+        odette "My eyes?"
+        odette "What about them?"
+        anon "Thar glue-ing."
 
-        odette "Bagaimana dengan mereka?"
-
-        anon "Merekatkannya."
-
-
-    odette f_laugh "Hehe, kamu sangat menggemaskan."
-
+    odette f_laugh "Heh, you're so adorable."
 
     scene location_crypt_side
     show odette b_kiss_anon:
@@ -202,7 +151,6 @@ label odette_button_crypt:
     with fade
     pause
     anon "Hngggh!!"
-
     pause
 
     scene odette b_vamp_bite f_bite:
@@ -211,28 +159,21 @@ label odette_button_crypt:
     with fade
 
     if M_odette.is_state(S_ode02_tomb):
-        odette "Mmm, aku bisa saja memakanmu..."
-
+        odette "Mmm, I could just eat you up..."
         show odette f_tongue
         anon "!!!" with hpunch
         show odette f_lip
-        anon "Apakah itu taringnya?!"
-
+        anon "Ar dos fangs?!"
     else:
-        odette "Aku berharap {b}Eve{/b} ada di sini untuk membantuku melahapmu..."
-
+        odette "I wish {b}Eve{/b} was here to help me devour you..."
         show odette f_tongue
         anon "!!!" with hpunch
         show odette f_lip
-        anon "Ang!"
+        anon "Angs!"
+        anon "Ah knu id!!"
 
-        anon "Ah tahu identitasnya!!"
-
-
-    odette f_bite "... Aku ingin kamu di dalam diriku!"
-
+    odette f_bite "... I want you inside me!"
     anon "Hmm?!"
-
 
     scene location_crypt_side
     show odette b_naked_vamp f_smirk:
@@ -242,33 +183,26 @@ label odette_button_crypt:
     with fade
 
     if M_odette.is_state(S_ode02_tomb):
-        anon "T-tunggu, ahm nut zhur dis-"
-
+        anon "W-wait, ahm nut zhur dis-"
     else:
-        anon "T-tunggu, ah hab kuestins..."
-
+        anon "W-wait, ah hab kuestins..."
 
     show anon f_surprised_down
-    odette f_teeth_look a_grope "Saya membutuhkannya sekarang!"
-
+    odette f_teeth_look a_grope "I need it now!"
     show anon f_worried
 
     if M_odette.is_state(S_ode02_tomb):
-        anon "Mah bahdie mengucapkan kata-kata!"
-
+        anon "Mah bahdie feers word!"
     else:
-        anon "Sebuah juh-"
-
+        anon "A juh-"
 
     show anon f_surprised_teeth
-    odette f_smirk a_hips "Mengupas."
-
+    odette f_smirk a_hips "Strip."
     show odette f_laugh behind anon
     show anon b_dressed_pickup f_worried -o_boner:
         offset (-250, 50)
     with {'master': dissolve}
-    anon "Uh-uh! Uh-uh!"
-
+    anon "Uh-cuh! Uh-cuh!"
     show odette f_teeth_look
     show anon a_sides b_shirt f_worried_surprised od_dick2:
         offset (-150, 0)
@@ -279,17 +213,14 @@ label odette_button_crypt:
     show anon b_empty:
         xoffset -125
     with {'master': dissolve}
-    odette "Buru-buru!"
-
+    odette "Hurry!"
     show odette b_vamp_sitting_up:
         xoffset 0
     show anon f_side_shy b_empty:
         xoffset 216
     with {'master': dissolve}
-    odette "Persetan denganku di sini, di singgasanaku!"
-
-    anon "Mah, tidak tahu apa-apa!"
-
+    odette "Fuck me right here on my throne!"
+    anon "Mah regs dun wurkn!"
 
     call scene_odette_sex_crypt.repeat
     $ unlock_scene('Odette', '03_unlocked')
@@ -297,42 +228,28 @@ label odette_button_crypt:
     scene odette b_vamp_bite f_bite
     show location_crypt_bite_overlay as overlay
     with fade
-    anon "Apa yang diperas dengan mer?"
-
-    odette "Benih kehidupan, dianugerahkan kepada yang tidak suci."
-
-    anon "Belum selesai?!"
-
-    odette "Sebuah ritual kegelapan!"
-
-    odette "Sebuah kontrak yang ditempa dengan penuh semangat dan disegel dengan darah!"
-
-    anon "Saudara?"
-
-    anon "Ke-kemana ah joo-"
-
-    odette "Penghuni malam!"
-
-    odette "Ayo maju dan layani aku!"
-
-    anon "Kun kita suka cudder?"
-
+    anon "Waz wrung wit mer?"
+    odette "The seed of life, bestowed upon the unholy."
+    anon "Unhoreee?!"
+    odette "A ritual of darkness!"
+    odette "A contract forged in passion and sealed with blood!"
+    anon "Brud?"
+    anon "W-wher ah joo-"
+    odette "Denizens of the night!"
+    odette "Come forth and serve me!"
+    anon "Kun we jurs cudder?"
     show location_crypt_bite02 behind overlay
     anon "!!!" with hpunch
     show location_crypt_bite03 behind overlay with dissolve
-    anon "Ooh, itu terasa..."
-
+    anon "Ooh, dat feers..."
     show location_crypt_bite04 behind overlay with dissolve
-    anon "...Reer..."
-
+    anon "... Reer..."
     pause
-    anon "... Ya ampun."
-
+    anon "... Gud."
     show location_crypt_bite04 behind overlay
 
     scene black with {'master': dissolve}
     odette "Hehehe!"
-
     "..."
     return 'sleep'
 # Decompiled by unrpyc: https://github.com/CensoredUsername/unrpyc

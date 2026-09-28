@@ -17,8 +17,7 @@ label tina_button_dialogue:
         call tina_button_bank
     else:
 
-        tina f_surprised "Bagaimana kamu sampai di sini?"
-
+        tina f_surprised "How did you get here?"
 
     if _return == 'schedule':
         $ M_tina.set('sex', game.timer._game_day)

@@ -6,12 +6,9 @@ label kha01_talk_warehouse_depot:
         xoffset -50 xzoom -1
     show anon a_sides f_shy behind nadya with dissolve:
         xzoom -1
-    nadya "Dengan baik?!"
-
+    nadya "Well?!"
     nadya "How did it go?"
-
     anon "She's feeling much better."
-
     show anon a_jaw_out
     with {'master': dissolve}
     nadya f_happy "Heh, dick magic!" (show_native="Heh, Dik magiya!")
@@ -21,7 +18,6 @@ label kha01_talk_warehouse_depot:
         xoffset -375 xzoom 1
     with {'master': dissolve}
     nadya @ -m_talk "Hmm?"
-
     show svetlana a_point_front
     with {'master': dissolve}
     svetlana "He doesn't look like a man who just had sex." (show_native="On ne pokhozh na cheloveka, kotoryy tol'ko chto zanimalsya seksom.")
@@ -33,25 +29,20 @@ label kha01_talk_warehouse_depot:
     show svetlana a_hips
     with {'master': dissolve}
     nadya "She's right, you don't look like a man who just had sex!"
-
     anon f_brag "That's because I didn't."
-
     show anon a_jaw_in f_disgusted
     show nadya a_crossed f_worried
     show svetlana f_annoyed
     with {'master': dissolve}
     nadya "Then how did you-"
-
     show anon f_disgusted_wince
     show nadya f_confused
     with {'master': dissolve}
     pause
     show anon a_sides f_shy
     with {'master': dissolve}
-    nadya f_sexy "Oh, begitu."
-
-    svetlana f_curious "Apa?"
-
+    nadya f_sexy "Oh, I see."
+    svetlana f_curious "What?"
     show nadya a_sides:
         xoffset -375 xzoom 1
     with {'master': dissolve}
@@ -67,43 +58,33 @@ label kha01_talk_warehouse_depot:
         xoffset 200 xzoom -1
     with {'master': dissolve}
     nadya "She will keep making vodka?"
-
     anon f_happy @ -m_talk "Mhmm."
-
     nadya f_happy "Excellent!" (show_native="Prevoskhodno!")
     nadya "It seems I am in your debt once again, {b}[firstname]{/b}."
-
     anon f_shy "Yeah, don't mention it."
-
     show anon a_jaw_out
     with {'master': dissolve}
     pause
     anon f_worried "Man, I need a beverage or something!"
-
     show nadya a_sides:
         xoffset -375 xzoom 1
     with {'master': dissolve}
     nadya "Heh, {b}Svetlana{/b}, take {b}[firstname]{/b} upstairs and get him whatever he wants."
-
     show anon a_sides f_shy
     with {'master': dissolve}
-    svetlana "Ya, {b}Nona Chernyshevsky{/b}."
-
+    svetlana "Da, {b}Miss Chernyshevsky{/b}."
     hide svetlana
     show nadya:
         xoffset 200 xzoom -1
     with {'master': dissolve}
-    anon "Terima kasih."
-
+    anon "Thanks."
     nadya "No, thank you."
-
     hide anon
     show nadya a_sides:
         xoffset -375 xzoom 1
     with {'master': dissolve}
     pause
-    nadya @ f_laugh "Hehe!"
-
+    nadya @ f_laugh "Heh!"
     nadya "I knew it would work." (show_native="Ya znal, chto eto srabotayet.")
 
     scene black

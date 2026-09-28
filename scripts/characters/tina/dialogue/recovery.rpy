@@ -1,57 +1,38 @@
 label tina_button_recovery:
     show anon with dissolve
     if M_tina.pregnancy.baby_gender == 'twins':
-        anon "Hei, kalian bertiga."
-
+        anon "Hey, you three."
     else:
-        anon "Hei, kalian berdua."
-
-    tina @ f_normal "Halo, {b}[firstname]{/b}."
-
-    tina "Anda datang untuk memeriksa kami lagi?"
-
+        anon "Hey, you two."
+    tina @ f_normal "Hey there, {b}[firstname]{/b}."
+    tina "You come by to check on us again?"
 
     menu tina_button_recovery.choice:
-        "Ya.":
+        "Yup.":
             pass
 
-    anon "Ya, bagaimana kabar kalian?"
-
-    tina @ f_laugh "Kami baik-baik saja!"
-
+    anon "Yeah, how are you guys doing?"
+    tina @ f_laugh "We're doing great!"
     if M_tina.pregnancy.baby_gender == 'boy':
-        tina "Anda harus melihat berapa banyak yang dimakan si kecil kita!"
-
+        tina "You should see how much our little guy eats!"
     elif M_tina.pregnancy.baby_gender == 'girl':
-        tina "Anda harus melihat berapa banyak gadis kecil kami makan!"
-
+        tina "You should see how much our little girl eats!"
     else:
-        tina "Anda harus melihat berapa banyak yang dimakan anak kecil kita!"
-
-    tina f_normal "Spesialis laktasi itu benar-benar akan membuahkan hasil!"
-
-    anon "Ya, itu bagus."
-
+        tina "You should see how much our little ones eat!"
+    tina f_normal "That lactation specialist is really gonna pay off!"
+    anon "Well, that's good."
     pause
-    anon "Apakah ada yang bisa saya lakukan?"
-
-    tina f_normal_down @ f_laugh "Hmm, bukan itu yang terpikirkan olehku..."
-
+    anon "Is there anything I can do?"
+    tina f_normal_down @ f_laugh "Hmm, not that I can think of..."
     anon f_sad_down @ -m_talk "..."
-    tina "Kami akan segera pulang dan kamu bisa datang berkunjung, oke?"
-
-    anon "Ya baiklah."
-
-    tina "Terima kasih, {b}[firstname]{/b}."
-
+    tina "We'll be heading home soon and then you can come and visit, okay?"
+    anon "Yeah, okay."
+    tina "Thanks, {b}[firstname]{/b}."
     if M_tina.pregnancy.baby_gender == 'twins':
-        anon "Kurasa, sampai jumpa nanti."
-
+        anon "I guess, I'll see you all later."
     else:
-        anon "Kurasa, sampai jumpa lagi nanti."
-
+        anon "I guess, I'll see you both later."
     tina @ -m_talk "Mhmm."
-
     hide anon with dissolve
     return
 # Decompiled by unrpyc: https://github.com/CensoredUsername/unrpyc

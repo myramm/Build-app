@@ -1,7 +1,6 @@
 screen library_bookshelf():
     add "library_shelf"
 
-
     imagebutton:
         focus_mask True
         pos (742,416)

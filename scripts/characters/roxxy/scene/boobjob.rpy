@@ -9,170 +9,105 @@ label scene_roxxy_boobjob:
     with {'master': dissolve}
 
     anon "Man, you've got great tits!"
-
-    roxxy "Aku tahu."
-
+    roxxy "I know."
     show roxxy f_spit
     with {'master': dissolve}
     roxxy @ -m_talk "{i}*Mleh*{/i}"
-
-    anon "Wah!"
-
+    anon "Oh, wow!"
     show roxxy -f_spit
     with {'master': dissolve}
-    anon "Kamu luar biasa!"
-
+    anon "You're incredible!"
     show roxxy f_laugh
     with {'master': dissolve}
-    roxxy @ -m_talk "hehe!"
-
+    roxxy @ -m_talk "Hehe!"
     show roxxy -f_laugh
     with {'master': dissolve}
     roxxy "Just lie back and relax, boo."
-
     roxxy "I'll take care of you."
-
-    anon "Ini luar biasa!"
-
+    anon "This is awesome!"
     hide roxxy
     show roxxy_boobjob as anim
     with {'master': dissolve}
     anon "Oh!"
-
     pause
-    anon "Rasanya luar biasa!"
-
-    roxxy "Ya?"
-
-    anon "Oh ya!"
-
+    anon "That feels amazing!"
+    roxxy "Yeah?"
+    anon "Oh, yeah!"
     pause
     anon "Does it feel good for you?"
-
     roxxy "It feels good to know I'm making you feel good."
-
     anon "Oh, you are!"
-
     anon "You really, {i}really{/i} are!"
-
     pause
     roxxy "C'mon, {b}[firstname]{/b}... Talk to me!"
-
     anon "Alright, umm..."
-
     anon "... H-how's things going with the cheer squad lately?"
-
     roxxy "No, not that!"
-
     roxxy "Talk dirty to me!!"
-
     anon "Oh!!"
-
     anon "Right, sorry..."
-
     pause
     roxxy "Tell me all the naughty things you wanna do to me!"
-
     anon "{i}*Ahem*{/i} {b}Roxxy{/b}, I wanna... uhh..."
-
     anon "L-love you... so hard."
-
     roxxy "..."
     anon "And I wanna roll around, on your..."
-
     anon "... Butt."
-
     roxxy "That's really not-"
-
     anon "And massage your umm..."
-
     anon "... Knees."
-
     roxxy "Oh my god, please stop talking."
-
     anon "Bad?"
-
     roxxy "So bad!"
-
-    anon "Maaf!"
-
+    anon "Sorry!"
     pause
     anon "It's just hard to concentrate while you've got those phenomenal ta-tas wrapped around my cock!"
-
     roxxy "Oooh, yeah... Say more stuff like that!"
-
     anon "Ta-tas?"
-
     roxxy "You like my ta-tas, don't you?!"
-
     anon "I {i}love{/i} your ta-tas {b}Roxxy{/b}!"
-
     roxxy "Do you wanna suck 'em?"
-
     anon "If you want me to."
-
     roxxy "NO, {b}[firstname]{/b}... Tell me you wanna suck on them!"
-
     anon "Ah, god.. I wanna suck on your tits, {b}Roxxy{/b}!!"
-
     roxxy "What else?!"
-
     anon "I wanna squeeze them!"
-
-    roxxy "Ya?"
-
+    roxxy "Yeah?"
     anon "And pinch your nipples!"
-
-    roxxy "Terus berlanjut!"
-
+    roxxy "Keep going!"
     anon "And..."
-
     anon "... AND..."
-
 
     call scene_roxxy_boobjob.loop
 
     roxxy "And what?!"
-
     anon "... AND I'M CUMMING!!"
-
     pause
     show roxxy_sex_boobjob_cum as anim
     show roxxy_sex_boobjob_cumshot as cum
     anon "HNNGGG!!!" with flash
     pause
     anon "Haah... Haah..."
-
     hide cum
     show roxxy_sex_boobjob_base as anim
     show roxxy sex_boobjob o_cum
     with {'master': dissolve}
     roxxy "Heh, wow..."
-
     roxxy "... You drenched me!"
-
     show roxxy f_lick
     with {'master': dissolve}
     anon "Y-yeah, sorry... about that."
-
     show roxxy -f_lick
     with {'master': dissolve}
     roxxy @ -m_talk "Mmm. {i}*Smack*{/i}"
-
     anon "!!!"
     roxxy "That's alright, babe."
-
     roxxy "I liked it."
-
-    anon "Ya?"
-
-    roxxy "Oh ya!"
-
+    anon "Yeah?"
+    roxxy "Oh, yeah!"
     pause
     roxxy "Hand me one of those dirty shirts would ya?"
-
-    anon "Tentu saja."
-
+    anon "Sure thing."
     return
 
 
@@ -201,27 +136,18 @@ label scene_roxxy_boobjob.dialogue(opt, rng=-1):
 
     if opt == 1:
         anon "I wanna suck them..."
-
         anon "... And squeeze them..."
-
         anon "... And nibble at your perky little nipples."
-
         roxxy "Ah, fuck ya!"
-
-        roxxy "Terus berlanjut!"
-
+        roxxy "Keep going!"
 
     elif opt == 2:
         anon "I wanna throw you down on this bed and ravage your tight little pussy."
-
-        roxxy "Hmm, Tuhan."
-
+        roxxy "Mmm, god."
 
     elif opt == 3:
         anon "I wanna fuck you so hard and deep that you'll be begging me to stop and keep going at the same time."
-
-        roxxy "Sial!"
-
+        roxxy "Fuck!"
 
     return
 
@@ -237,53 +163,36 @@ label scene_roxxy_boobjob.repeat:
     with {'master': dissolve}
 
     anon "Man, I love your tits!"
-
-    roxxy "Aku tahu."
-
+    roxxy "I know."
     show roxxy f_spit
     with {'master': dissolve}
     roxxy @ -m_talk "{i}*Mleh*{/i}"
-
     pause
     show roxxy -f_spit
     with {'master': dissolve}
     anon "I will never get tired of watching you do that."
-
     show roxxy f_laugh
     with {'master': dissolve}
-    roxxy @ -m_talk "hehe!"
-
+    roxxy @ -m_talk "Hehe!"
     show roxxy -f_laugh
     with {'master': dissolve}
     roxxy "And I'll never get tired of pleasing my man..."
-
     roxxy "... Now lie back and relax, boo."
-
     anon "You are so freaking sexy, {b}Roxxy{/b}!"
-
     hide roxxy
     show roxxy_boobjob as anim
     with {'master': dissolve}
     anon "Oh, baby... just like that."
-
-    roxxy "Ya?"
-
-    anon "Ya!"
-
+    roxxy "Yeah?"
+    anon "Yeah!"
     pause
     anon "Work those big titties for me, {b}Roxxy{/b}."
-
     roxxy "Mmm, yeah."
-
     pause
     roxxy "You like my big titties, don't you?!"
-
     anon "I {i}love{/i} your titties {b}Roxxy{/b}!"
-
     roxxy "Do you wanna suck 'em?"
-
-    anon "Saya bersedia."
-
+    anon "I do."
     pause
     call scene_roxxy_boobjob.dialogue (1)
     pause
@@ -292,53 +201,38 @@ label scene_roxxy_boobjob.repeat:
     call scene_roxxy_boobjob.dialogue (3)
     pause
     anon "I wanna..."
-
     anon "... I WANNA...."
-
 
     call scene_roxxy_boobjob.loop
 
     roxxy "You wanna what?!"
-
     anon "... I WANNA CUM!!"
-
     pause
     show roxxy_sex_boobjob_cum as anim
     show roxxy_sex_boobjob_cumshot as cum
     anon "HNNGGG!!!" with flash
     pause
     anon "Haah... Haah..."
-
     hide cum
     show roxxy_sex_boobjob_base as anim
     show roxxy sex_boobjob o_cum
     with {'master': dissolve}
     roxxy "Heh, geez..."
-
     roxxy "... Always so much!"
-
     show roxxy f_lick
     with {'master': dissolve}
     anon "Y-yeah, sorry... about that."
-
     show roxxy -f_lick
     with {'master': dissolve}
     roxxy @ -m_talk "Mmm. {i}*Smack*{/i}"
-
     anon "!!!"
     roxxy "That's alright, babe."
-
     roxxy "That was hot as fuck!"
-
-    anon "Ya?"
-
-    roxxy "Oh ya!"
-
+    anon "Yeah?"
+    roxxy "Oh, yeah!"
     pause
     roxxy "Hand me one of those dirty shirts would ya?"
-
-    anon "Tentu saja."
-
+    anon "Sure thing."
     return
 
 
@@ -352,10 +246,10 @@ label scene_roxxy_boobjob.replay:
     if len(variants) > 1:
         scene expression background(l=L_trailer_bedroom) with fade
         menu:
-            "Pertama" if 'first' in variants:
+            "First" if 'first' in variants:
                 jump scene_roxxy_boobjob.first
 
-            "Ulangi" if 'repeat' in variants:
+            "Repeat" if 'repeat' in variants:
                 jump scene_roxxy_boobjob.repeat
 
     jump expression 'scene_roxxy_boobjob.{}'.format(next(iter(variants)))

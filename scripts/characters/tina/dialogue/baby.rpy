@@ -1,84 +1,58 @@
 label tina_button_baby:
     show anon with dissolve
-    tina "Itu benar, kamu adalah keajaiban!"
-
-    tina "Ya, kamu tadi..."
-
-    tina "Ibu memasang implan agar dia tidak hamil, tetapi kamu sangat ingin dilahirkan sehingga itu tidak menjadi masalah!"
-
-    tina "Itu sebabnya Ibu tidak mengeluarkan biaya apa pun, memastikan kamu bisa mendapatkan kehidupan terbaik."
-
+    tina "That's right, you were a miracle!"
+    tina "Yes, you were..."
+    tina "Mommy had an implant to keep her from getting pregnant but you wanted to be born so bad that it didn't matter!"
+    tina "That's why Mommy spared no expense, making sure you could have the best life possible."
 
     menu tina_button_baby.choice:
-        "Bagaimana kabarnya?":
+        "How's everything going?":
 
             jump tina_button_baby.status
-        "Aku akan meninggalkanmu.":
+        "I'll leave you be.":
 
             pass
 
-    anon f_normal "Aku akan meninggalkanmu."
-
+    anon f_normal "I'll leave you be."
     if M_tina.pregnancy.baby_gender == 'boy':
-        tina f_normal "Ya, aku harus mengajaknya tidur siang..."
-
+        tina f_normal "Yeah, I should really get him down for a nap anyways..."
     elif M_tina.pregnancy.baby_gender == 'girl':
-        tina f_normal "Ya, aku harus mengajaknya tidur siang..."
-
+        tina f_normal "Yeah, I should really get her down for a nap anyways..."
     else:
-        tina f_normal "Ya, lagipula aku harus mengajak mereka tidur siang..."
-
-    anon "Sampai jumpa lagi, oke?"
-
+        tina f_normal "Yeah, I should really get them down for a nap anyways..."
+    anon "I'll see you soon, okay?"
     tina f_normal_down @ -m_talk "Mhmm."
-
     hide anon with dissolve
     return
 
 
 label tina_button_baby.status:
-    anon f_normal "Bagaimana kabarnya?"
-
-    tina f_normal_down @ f_normal "Besar!"
-
+    anon f_normal "How's everything going?"
+    tina f_normal_down @ f_normal "Great!"
     if M_tina.pregnancy.baby_gender == 'boy':
-        tina "Bukankah dia luar biasa, {b}[firstname]{/b}?"
-
+        tina "Isn't he wonderful, {b}[firstname]{/b}?"
     elif M_tina.pregnancy.baby_gender == 'girl':
-        tina "Bukankah dia luar biasa, {b}[firstname]{/b}?"
-
+        tina "Isn't she wonderful, {b}[firstname]{/b}?"
     else:
-        tina "Luar biasa kan, {b}[firstname]{/b}?"
-
+        tina "Aren't they wonderful, {b}[firstname]{/b}?"
     pause
-    tina f_normal "Bagaimana kita bisa seberuntung itu?"
-
+    tina f_normal "How did we get so lucky?"
     if M_tina.pregnancy.baby_gender == 'boy':
-        anon "Dia berasal dari keluarga yang baik, dari pihak ibunya."
-
+        anon "He came from good stock, on his mother's side."
     elif M_tina.pregnancy.baby_gender == 'girl':
-        anon "Dia berasal dari keluarga yang baik, dari pihak ibunya."
-
+        anon "She came from good stock, on her mother's side."
     else:
-        anon "Mereka berasal dari keturunan yang baik, dari pihak ibu mereka."
-
-    tina @ f_laugh "Heh, kamu lebih menyanjung..."
-
+        anon "They come from good stock, on their mother's side."
+    tina @ f_laugh "Heh, you flatterer..."
     if M_tina.pregnancy.baby_gender == 'boy':
-        tina "... Sisi ayahnya juga tidak terlalu buruk, tahu?"
-
+        tina "... His father's side isn't too shabby either, you know?"
     elif M_tina.pregnancy.baby_gender == 'girl':
-        tina "... Sisi ayahnya juga tidak terlalu buruk, tahu?"
-
+        tina "... Her father's side isn't too shabby either, you know?"
     else:
-        tina "... Sisi ayah mereka juga tidak terlalu buruk, tahu?"
-
+        tina "... Their father's side isn't too shabby either, you know?"
     pause
-    tina "Kamu telah membuatku menjadi wanita yang sangat bahagia, {b}[firstname]{/b}."
-
-    tina "Saya harap Anda mengetahuinya?"
-
-    anon "Terima kasih, {b}Tina{/b}."
-
+    tina "You've made me a very happy woman, {b}[firstname]{/b}."
+    tina "I hope you know that?"
+    anon "Thanks, {b}Tina{/b}."
     jump tina_button_baby.choice
 # Decompiled by unrpyc: https://github.com/CensoredUsername/unrpyc

@@ -8,20 +8,14 @@ label treehouse_dink_dialogue:
         xoffset -200
         xzoom -1
     anon @ -m_talk "( This is the old boat my dad and I used to take fishing when I was little. )"
-
     anon @ -m_talk "( \"The Dink.\" )"
-
     pause
     anon @ -m_talk "( Brings back a lot of good memories... )"
-
     pause
     anon f_thinking_down @ -m_talk "( ... Maybe I should see about fixing it up sometime? )"
-
     anon f_shy_down @ -m_talk "( Get it seaworthy again! )"
-
     pause
     anon f_grin @ -m_talk "( Who knows, I might even take my own son fishing in it one day? )"
-
     hide anon with dissolve
     return
 
@@ -34,12 +28,10 @@ label treehouse_window_dialogue:
         anon "!!!"
         scene black with {'master': eyeshut}
         anon "Nope! Nope-nope-nope-nope-nope!"
-
     else:
 
         scene expression game.timer.image('location_rump_backyard_spy_default') with dissolve
         anon "Guess there's no one around at the moment..."
-
         scene black with dissolve
 
     return

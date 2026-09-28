@@ -3,54 +3,36 @@ label melonia_button_hottub:
 
 label melonia_button_hottub.intro0:
     show anon f_worried_low with dissolve
-    anon "Permisi, {b}Ny. Bokong{/b}?"
-
-    melonia "Apa?"
-
-    anon "Boleh saya bertanya sesuatu?"
-
-    melonia @ f_annoyed_up "Ugh, baiklah, tapi cepatlah!"
-
-    melonia "Saya mencoba bersantai di sini, {b}Hector{/b}."
-
+    anon "Excuse me, {b}Mrs. Rump{/b}?"
+    melonia "What?"
+    anon "May I ask you something?"
+    melonia @ f_annoyed_up "Ugh, fine but make it quick!"
+    melonia "I'm trying to relax here, {b}Hector{/b}."
     return
 
 
 label melonia_button_hottub.intro1:
     show anon f_worried_low with dissolve
-    anon "Permisi, {b}Ny. Bokong{/b}?"
-
-    melonia "Apa?"
-
-    anon "Boleh saya bertanya sesuatu?"
-
-    melonia "Itu tergantung..."
-
-    melonia @ f_smirk_peek "... Apakah kamu akan menghiburku hari ini?"
-
-    anon @ f_skeptical "Menghibur Anda?"
-
-    melonia f_smirk_up "Menarilah untukku, {b}Hector{/b}."
-
+    anon "Excuse me, {b}Mrs. Rump{/b}?"
+    melonia "What?"
+    anon "May I ask you something?"
+    melonia "That depends..."
+    melonia @ f_smirk_peek "... Are you going to entertain me today?"
+    anon @ f_skeptical "Entertain you?"
+    melonia f_smirk_up "Dance for me, {b}Hector{/b}."
     show anon f_unimpressed
     pause
-    anon "Kupikir kita sudah selesai dengan semua omong kosong \"Hector\" itu?"
-
-    melonia f_smirk_up "Heh, menarilah untukku dan aku akan memanggilmu sesukamu."
-
+    anon "I thought we were finished with all that \"Hector\" nonsense?"
+    melonia f_smirk_up "Heh, dance for me and I'll call you whatever you want."
     return
 
 
 label melonia_button_hottub.intro2:
     show anon f_worried_low
-    anon "Selamat siang, Bu."
-
-    melonia "Tolong, {b}[firstname]{/b}..."
-
-    melonia "... Hubungi saya {b}Melonia{/b}."
-
-    anon "Baiklah."
-
+    anon "Good afternoon, ma'am."
+    melonia "Please, {b}[firstname]{/b}..."
+    melonia "... Call me {b}Melonia{/b}."
+    anon "Alright."
     return
 
 
@@ -63,41 +45,28 @@ label melonia_button_hottub.outro1:
 
 
 label melonia_button_hottub.outro2:
-    anon f_worried_low "Saya harus pergi."
-
-    melonia f_pouting_up "Sudah apa?"
-
-    anon "Ya, aku khawatir begitu."
-
-    melonia f_annoyed_up "Tapi kamu bahkan belum meniduriku!"
-
-    anon "Maaf, mungkin nanti."
-
+    anon f_worried_low "I should go."
+    melonia f_pouting_up "What, already?"
+    anon "Yeah, I'm afraid so."
+    melonia f_annoyed_up "But you haven't even fucked me yet!"
+    anon "Sorry, maybe later."
     hide anon with dissolve
     melonia "{b}[firstname]{/b}!!"
-
     show melonia b_jacuzzi_topless_edge f_annoyed with dissolve
-    melonia "Jangan pergi!"
-
+    melonia "Don't leave!"
     pause
-    melonia f_yell "Kembali ke sini dan persetan denganku sekarang juga!"
-
+    melonia f_yell "Get back here and fuck me this instant!"
     return
 
 
 label melonia_button_hottub.dance:
     if level == 1:
-        anon f_worried_low "Baiklah, aku akan menari."
-
-        melonia f_smirk_up "Anak baik."
-
+        anon f_worried_low "Fine, I'll dance."
+        melonia f_smirk_up "Good boy."
     else:
-        anon f_shy_low "Haruskah aku menari untukmu?"
-
-        melonia f_smirk_up "Oh ya!"
-
-        melonia f_laugh a_clap "Saya bisa melakukan beberapa hiburan."
-
+        anon f_shy_low "Should I dance for you?"
+        melonia f_smirk_up "Oh, yes!"
+        melonia f_laugh a_clap "I could do with some entertainment."
     show melonia f_smirk_lipbite a_idle
     show anon b_dressed_changing3
     with dissolve
@@ -106,142 +75,97 @@ label melonia_button_hottub.dance:
     pause
     show anon b_naked_undress_bottom with dissolve
     pause
-    melonia f_smirk "Itu sempurna, di sana."
-
+    melonia f_smirk "That's perfect, right there."
     show anon b_naked a_empty f_worried_low od_naked_dick1
     show anon_arms_naked_a_cover
     with {'master': dissolve}
     anon @ -m_talk "Hmm?"
-
-    anon "Apakah kamu tidak ingin aku mengenakan seragamku untuk ini?"
-
-    melonia "Tidak, aku ingin kamu seperti itu."
-
+    anon "Don't you want me in my uniform for this?"
+    melonia "No, I want you just like that."
     show anon f_worried_left
     pause
-    anon f_worried_low "Bagaimana jika seseorang melihatku?"
-
-    melonia f_smirk_up "Hanya {b}Ricky{/b} dan saya di sini."
-
-    melonia "Lagipula, apa yang membuatmu malu?"
-
+    anon f_worried_low "What if someone sees me?"
+    melonia f_smirk_up "It's just {b}Ricky{/b} and I out here."
+    melonia "Besides, what do you have to be shy about?"
     anon @ f_worried_left -m_talk "..."
-    anon "Baiklah baiklah."
-
-    anon "Apa pun."
-
-    melonia @ f_laugh "Hehe, menyenangkan!"
-
-    melonia f_smirk "Anda bisa memulai."
-
+    anon "Alright, fine."
+    anon "Whatever."
+    melonia @ f_laugh "Hehe, delightful!"
+    melonia f_smirk "You can begin."
     anon "Ehh."
-
     hide anon_arms_naked_a_cover
     show anon b_naked_spin_frown_down od_empty:
         xoffset 150
     with dissolve
     pause
     show anon b_naked_spin_worried_low_talk with dissolve
-    anon "Seperti ini?"
-
+    anon "Like this?"
     show anon b_naked_spin_worried_low
     melonia @ -m_talk "Mhmm."
-
     pause
     show ricky f_smirk_low behind anon with dissolve:
         flip
         xoffset -200
     pause
-    melonia "Datang untuk menikmati pertunjukannya, {b}Ricky{/b}?"
-
+    melonia "Come to enjoy the show, {b}Ricky{/b}?"
     show anon b_naked_spin_frown_down
-    ricky "Ya, señora."
-
-    ricky @ f_laugh "Tampilannya cukup mengesankan, amigo!"
-
+    ricky "Si, señora."
+    ricky @ f_laugh "That is quite the impressive display, amigo!"
     show anon b_naked_spin_frown_down_talk
-    anon "Dia?"
-
+    anon "It is?"
     show anon b_naked_spin_frown_down
     pause
-    ricky @ f_laugh "Itu seperti helikopter!"
-
-    melonia "Hehe, kamu benar!"
-
+    ricky @ f_laugh "Es like a helicopter!"
+    melonia "Heh, you're right!"
     pause
-    melonia "Anda pikir dia mungkin terbang?"
-
-    ricky "Anda pernah melihat polisi memutar tongkat billy?"
-
-    melonia @ f_laugh "{i}*Mendengus*{/i} Tidak."
-
-    ricky a_finger_tub "Ini terlihat seperti ini..."
-
+    melonia "You think he might fly away?"
+    ricky "You ever see the police man twirl a billy club?"
+    melonia @ f_laugh "{i}*Snort*{/i} No."
+    ricky a_finger_tub "It looks just like this..."
     pause
-    ricky a_idle @ a_finger "Ini memberi saya kilas balik ke El Salvador!"
-
-    melonia "Tenang saja, aku tidak akan membiarkan dia menyakitimu."
-
-    ricky "Ada cara yang lebih buruk untuk dilakukan, señora..."
-
+    ricky a_idle @ a_finger "Es giving me flash backs to El Salvador!"
+    melonia "Don't worry, I won't let him hurt you."
+    ricky "There are worse ways to go, señora..."
     melonia @ f_laugh "Haha!"
-
     show anon b_naked od_naked_dick1 a_idle f_frown_down with dissolve
-    anon "Kau tahu, ini cukup canggung tanpa adanya bolak-balik dari kalian berdua..."
-
-    melonia f_smirk_up "Aduh, malangnya {b}Hector{/b}..."
-
-    melonia @ f_laugh "Kamu telah mempermalukannya, {b}Ricky{/b}!"
-
-    ricky @ a_up f_smirk "Maaf, teman-teman."
-
+    anon "You know, this is awkward enough without the back and forth from you two..."
+    melonia f_smirk_up "Aww, poor {b}Hector{/b}..."
+    melonia @ f_laugh "You've embarrassed him, {b}Ricky{/b}!"
+    ricky @ a_up f_smirk "Apologies, amigo."
     show anon b_naked_undress_bottom od_empty with dissolve
     pause
     show anon b_dressed_changing2 with dissolve
-    anon "Saya pikir itu cukup untuk hari ini."
-
+    anon "I think that's enough for today."
     show anon b_dressed_changing with dissolve
-    melonia "Huuu!!"
-
+    melonia "Boo!!"
     show anon b_dressed f_unimpressed a_sides with dissolve
-    melonia @ f_laugh a_clap "Ulangi, ulangi!"
-
-    ricky f_smirk "Yah, itu bagus selagi masih ada."
-
-    ricky @ a_finger "Kurasa, aku akan kembali ke taman..."
-
-    melonia f_pouting "Aduh, ayo teman-teman!"
-
+    melonia @ f_laugh a_clap "Encore, encore!"
+    ricky f_smirk "Well, it was good while it lasted."
+    ricky @ a_finger "I guess, I'll get back to the garden..."
+    melonia f_pouting "Aww, c'mon guys!"
     hide ricky with dissolve
-    melonia "Segalanya menjadi baik!"
-
+    melonia "Things were just getting good!"
     hide anon with dissolve
     pause
     if M_melonia.outfit.is_naked:
         show melonia b_jacuzzi_topless_edge with dissolve
     else:
         show melonia b_jacuzzi_edge with dissolve
-    melonia "Teman-teman?!"
-
-    melonia "Jangan tinggalkan..."
-
+    melonia "Guys?!"
+    melonia "Don't leave..."
     pause
     if M_melonia.outfit.is_naked:
         show melonia b_jacuzzi_topless f_annoyed with dissolve
     else:
         show melonia b_jacuzzi f_annoyed with dissolve
     melonia "Grr!"
-
     return 'dance'
 
 
 label melonia_button_hottub.suggest:
-    anon f_flirt_low "Ingin berhubungan seks?"
-
-    melonia f_smirk_up "Mmm, kamu membaca pikiranku."
-
-    melonia "Ayo pergi ke kamarku."
-
+    anon f_flirt_low "Want to have sex?"
+    melonia f_smirk_up "Mmm, you read my mind."
+    melonia "Let's head up to my bedroom."
 
     if M_melonia.outfit.is_naked:
         show melonia b_jacuzzi_climb_naked:
@@ -270,8 +194,7 @@ label melonia_button_hottub.suggest:
         flip
         xoffset -530
     with dissolve
-    anon "Ya, Bu."
-
+    anon "Yes, ma'am."
 
     scene location_rump_bedroom_bed_closeup
 
@@ -283,8 +206,7 @@ label melonia_button_hottub.suggest:
         show anon f_flirt
 
     with fade
-    melonia "Saya sangat senang suami saya mempekerjakan Anda!"
-
+    melonia "I'm so glad my husband hired you!"
 
     if not M_melonia.outfit.is_naked:
         show anon f_flirt_low

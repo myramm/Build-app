@@ -6,105 +6,67 @@ label ano27_plan_nadya:
     show nadya b_traditional f_disgusted:
         xoffset -100
         xzoom -1
-    nadya "Ugh, bau ini tak tertahankan."
-
-    keeves "Kami berdiri di samping saluran pembuangan limbah, apa yang Anda harapkan?"
-
-    nadya f_angry "Saya berharap untuk tidak terlibat dalam bagian ini..."
-
-    keeves "Yah, tidak ada yang menodongkan pistol ke kepalamu, tuan putri."
-
-    keeves "Mengapa kamu tidak kembali ke dalam dan biarkan aku yang menangani ini?"
-
+    nadya "Ugh, this smell is unbearable."
+    keeves "We're standing next to a sewage drain, what were you expecting?"
+    nadya f_angry "I was expecting not to be involved in this part..."
+    keeves "Well, nobody is holding a gun to your head, princess."
+    keeves "Why don't you head back inside and let me handle this?"
     show nadya with dissolve:
         xoffset -250
         xzoom 1
-    nadya "Apa, kamu ingin menyingkirkanku?!"
-
-    keeves "Tidak, aku hanya bilang, jika kepekaan halusmu tidak bisa menangani sedikit pun-"
-
-    nadya "Jangan bicara padaku seolah aku anak kecil!"
-
-    nadya "Aku sudah muak dengan pembicaraan ini dari papa!"
-
+    nadya "What, you want get rid of me?!"
+    keeves "No, I'm just saying, if your delicate sensibilities can't handle a little-"
+    nadya "Do not speak to me like I am child!"
+    nadya "I get enough of this talk from papa!"
     keeves @ -m_talk "..."
     show nadya a_crossed f_pouting with {'master': dissolve}:
         xoffset 300
         xzoom -1
     nadya @ -m_talk "Hmph."
-
     pause
-    keeves f_happy "Ngomong-ngomong, gaunmu terlihat bagus."
-
-    keeves "Anak itu akan menyukainya."
-
+    keeves f_happy "Your dress looks nice by the way."
+    keeves "The kid's gonna love it."
     show nadya f_angry with {'master': dissolve}:
         xoffset -250
         xzoom 1
-    nadya f_angry "Diam!"
-
-    nadya "Kamu tahu ayah membuatku berpakaian konservatif!"
-
+    nadya f_angry "Shut up!"
+    nadya "You know father makes me to dress conservative!"
     keeves f_normal @ -m_talk "Mhmm."
-
     nadya @ f_eyeroll "I'm so sick of stupid men!" (show_native="YA tak ustal ot glupykh muzhchin!")
-    nadya "Aku mengirim kalian semua pergi setelah papa pergi."
-
-    nadya "Bratva hanya mengambil wanita setelah aku memimpin!"
-
-    keeves "Diam, mereka datang."
-
+    nadya "I send you all away once papa is gone."
+    nadya "Bratva take only woman after when I'm in charge!"
+    keeves "Hush, they're coming."
     show nadya f_worried with {'master': dissolve}:
         xoffset -100
         xzoom -1
     nadya @ -m_talk "Hmm?"
-
-    tony "Sepertinya aku melihat mereka di sana!"
-
-    harold "Ssst!!"
-
-    tony "Apa?!"
-
-    harold "Bisakah kamu menurunkannya sedikit?!"
-
-    harold "Kau akan membuat semuanya menjadi tanggung jawab kami!"
-
-    tony "Bagus."
-
-    tony "Lalu kita bisa mengalahkan mereka semua dengan cepat dan pulang tepat waktu untuk mengikuti beberapa inning terakhir permainan."
-
-    harold "Kamu tidak mungkin sebodoh itu..."
-
-    tony "Hei, siapa yang kamu sebut bodoh?!"
-
+    tony "I think I see 'em over there!"
+    harold "Shh!!"
+    tony "What?!"
+    harold "Can you take it down a notch?!"
+    harold "You're gonna bring the whole damn place down on our heads!"
+    tony "Good."
+    tony "Then we can take 'em all out quick and be home in time to catch the last few innings of the game."
+    harold "You can't seriously be that stupid..."
+    tony "Hey, who you callin' stupid?!"
     show nadya f_eyeroll
-    harold "Anda sadar ada puluhan preman bersenjata di sana, kan?!"
-
+    harold "You realize there's dozens of armed goons in there, right?!"
     show nadya f_worried
-    anon "Bisakah kalian berdua berhenti berdebat?"
-
-    tony "Katakan itu pada cupcake sialan di sana..."
-
-    tony "... Dialah yang membuat celana dalamnya berantakan!"
-
+    anon "Would you two please stop arguing?"
+    tony "Tell that to fuckin' cupcake over there..."
+    tony "... She's the one gettin' her panties all in a bunch!"
     show keeves f_happy
-    harold "Grr, kamu akan membuat kami semua terbunuh!"
-
-    keeves @ f_laugh "Heh, kedengarannya seperti kumpulan warna-warni."
-
-    anon "Cukup, kalian berdua!!"
-
+    harold "Grr, you're gonna get us all killed!"
+    keeves @ f_laugh "Heh, they sound like a colorful bunch."
+    anon "Enough, both of you!!"
     show keeves f_normal
     pause
-    anon "Yesus!"
-
+    anon "Jesus!"
     show anon f_worried behind nadya with dissolve:
         xoffset 150
         xzoom -1
-    anon "{i}*Huh*{/i} Kita sudah sampai."
-
-    nadya "Ya, kami mendengarmu dari jauh!"
-
+    anon "{i}*Sigh*{/i} We're here."
+    nadya "Da, we hear you from mile away!"
     show anon f_tired
     show tony a_pipe_hold_shoulder b_casual f_glaring behind anon:
         xoffset 40
@@ -112,11 +74,9 @@ label ano27_plan_nadya:
         xoffset 340
         xzoom -1
     with {'master': dissolve}
-    harold "Lihat, sudah kubilang!"
-
+    harold "See, I told you!"
     show anon f_eyeroll
-    tony f_angry "Ah, sial."
-
+    tony f_angry "Aww, shaddup."
     show anon f_worried
     show harold f_angry_right_up:
         xoffset -160
@@ -127,153 +87,103 @@ label ano27_plan_nadya:
     show harold f_worried_down
     show tony a_pipe_point_forward f_suspicious
     with {'master': dissolve}
-    tony "Kenapa gadis itu memakai karung kentang?"
-
+    tony "Why's the gal wearing a potato sack?"
     show anon a_facepalm
     show harold f_worried
     show nadya a_showoff f_surprised_down
     show tony a_pipe_hold_shoulder
     with {'master': dissolve}
-    nadya "Apa-"
-
+    nadya "Wha-"
     show anon a_sides f_annoyed
     show nadya a_crossed f_angry
     with {'master': dissolve}
-    nadya "Apakah pakaian tradisional ada di negara saya!!"
-
-    tony "Mereka memaksamu memakai karung kentang sebagai tradisi?"
-
+    nadya "Is traditional dress in my country!!"
+    tony "They make you wear potato sacks as a tradition?"
     show anon f_worried
     show keeves f_surprised
-    tony "Pantas saja kalian para gadis Ruskie begitu pendendam..."
-
+    tony "No wonder you Ruskie broads are so vindictive..."
     keeves f_happy @ f_laugh "Pfft, haha!"
-
     nadya "Go to hell, old man!" (show_native="Poshyel k chyertu, starik!")
-    nadya "Bukankah karung kentang!"
-
+    nadya "Is not potato sack!"
     show harold f_worried_right_up
     show tony f_eyeroll
-    anon "Menurutku itu terlihat bagus."
-
+    anon "I think it looks nice."
     show harold f_worried
     show tony f_question
-    keeves "Lihat, aku benar."
-
-    keeves "Anak itu menyukainya."
-
-    anon f_surprised "Tunggu sebentar, {b}Pastor Keeves{/b}?!"
-
+    keeves "See, I was right."
+    keeves "The kid likes it."
+    anon f_surprised "Wait a second, {b}Father Keeves{/b}?!"
     show harold f_surprised
     show tony f_surprised
-    anon "Apa yang kamu lakukan di sini?"
-
+    anon "What the heck are you doing here?"
     show harold f_suspicious
     show tony f_suspicious
-    anon f_confused "Dan ada apa dengan penampilan salesman keliling?"
-
-    nadya f_normal @ f_sexy "Anda meminta bantuan saya, ya?"
-
+    anon f_confused "And what's with the traveling salesman getup?"
+    nadya f_normal @ f_sexy "You ask me for help, yes?"
     show anon f_worried
     show harold f_worried
-    tony f_sad "Ehh, jangan tersinggung Ayah... tapi aku berharap tidak ada seorang pun yang membutuhkan pendeta malam ini."
-
-    nadya @ f_laugh "Hah, mereka pikir kamu pendeta sungguhan!"
-
+    tony f_sad "Ehh, no offense Father... but I'm kinda hopin' nobody will be needin' a priest tonight."
+    nadya @ f_laugh "Hah, they think you are real priest!"
     anon f_confused @ -m_talk "Hmm?"
-
     show harold f_suspicious
-    keeves @ f_laugh "Tenang kawan."
-
+    keeves @ f_laugh "Relax fellas."
     show tony f_question
-    keeves "Pekerjaanku dengan gereja hanyalah kedok."
-
-    harold "Penutup untuk apa?"
-
+    keeves "My work with the church is just a cover."
+    harold "A cover for what?"
     show anon f_surprised
-    nadya "Dia disewa senjata."
-
+    nadya "He is hired gun."
     nadya "{b}Johnny Silverdick{/b}."
-
     show anon f_confused
     show harold f_concerned
     tony f_surprised "{b}Silverdick{/b}?!"
-
-    tony f_suspicious "Seperti dalam THE {b}Johnny Silverdick{/b}?"
-
-    tony "... Siapa yang menjatuhkan Geng Gogolak di Chicago?"
-
-    keeves "Itu sudah lama sekali."
-
-    tony f_surprised "Sialan!"
-
-    tony f_normal_right "Orang ini sungguh legenda!"
-
-    tony f_normal "Saya tidak percaya Anda ada di sini secara langsung!"
-
+    tony f_suspicious "As in THE {b}Johnny Silverdick{/b}?"
+    tony "... Who took down the Gogolak Gang up in Chicago?"
+    keeves "That was a long time ago."
+    tony f_surprised "Holy shit!"
+    tony f_normal_right "This guy's a fuckin' legend!"
+    tony f_normal "I can't believe you're here in the flesh!"
     show tony a_pipe_handshake
     show keeves a_empty
     with {'master': dissolve}
-    tony "Suatu kehormatan bisa bertemu denganmu."
-
+    tony "This is an honor to be meetin' ya."
     show nadya f_eyeroll
-    keeves f_laugh "Tolong, kamu membuatku tersipu."
-
+    keeves f_laugh "Please, you're making me blush."
     show nadya f_worried
     show tony a_pipe_hold_shoulder
     show keeves a_idle f_happy
     with {'master': dissolve}
-    tony "Hei, benarkah kamu membunuh Jimmy Tudeski dan Frankie Figs dengan pena tinta?"
-
-    keeves @ f_laugh "Hehe, tidak..."
-
+    tony "Hey, is it true you killed Jimmy Tudeski and Frankie Figs with an ink pen?"
+    keeves @ f_laugh "Heh, nah..."
     show anon f_worried_surprised
-    keeves "... Itu sebenarnya adalah pensil timah nomor 2."
-
-    tony @ f_laugh "Hah, pria sialan ini!"
-
+    keeves "... It was actually a number 2 lead pencil."
+    tony @ f_laugh "Hah, this fuckin' guy!"
     anon f_worried "Ehh, {b}Tony{/b}?"
-
     tony f_normal_right @ -m_talk "Hmm?"
-
-    anon "Kita benar-benar harus mempercepat ini..."
-
-    tony "Oh, sial... kamu benar."
-
-    tony "Saya buruk."
-
+    anon "We really need to hurry this along..."
+    tony "Oh, shit... you're right."
+    tony "My bad."
     show tony f_normal
     pause
     show keeves f_normal
-    anon "Pernahkah kamu melihat gadis-gadis di sana?"
-
-    anon "Apakah mereka baik-baik saja?"
-
+    anon "Have you seen the girls in there?"
+    anon "Are they okay?"
     show tony f_sad
-    nadya f_worried "{b}Dimitri{/b} telah mengikat mereka dan akan segera membawa mereka ke ruang interogasi."
-
+    nadya f_worried "{b}Dimitri{/b} has them tied up and will be taking them to interrogation room shortly."
     show anon f_surprised_teeth
     show harold f_worried
     show keeves f_sad
-    nadya "Mereka masih utuh untuk saat ini tetapi dia akan segera mulai mengeluarkan bagian-bagiannya."
-
-    anon f_worried "Kalau begitu kita harus bergegas!"
-
+    nadya "They are whole for now but soon he will start removing pieces."
+    anon f_worried "Then we need to hurry!"
     show keeves f_normal
-    anon "Apakah ini jalan masuk kita?"
-
+    anon "Is this our way in?"
     show nadya behind harold
     show keeves behind nadya
-    nadya a_hips_point f_normal "Ya, di sini."
-
+    nadya a_hips_point f_normal "Da, is here."
 
     scene expression background(500, 384, 1.5, b=0, l='warehouse_pipe') as stage with fade
-    anon "Ini sangat kecil..."
-
-    anon "... Dan bau."
-
-    tony "Ya, tidak mungkin aku cocok di sana."
-
+    anon "It's awfully small..."
+    anon "... And stinky."
+    tony "Yeah, there's no way I'm fittin' in there."
     pause
 
     scene location_warehouse_pipe_night as stage
@@ -292,80 +202,54 @@ label ano27_plan_nadya:
         xoffset -100
         xzoom -1
     with fade
-    nadya "{b}[firstname]{/b} harus pergi sendiri, menurutku."
-
-    anon "Ah, kawan."
-
-    harold "Sekarang tunggu sebentar, kita tidak bisa mengirim anak itu sendirian..."
-
+    nadya "{b}[firstname]{/b} must go alone, I think."
+    anon "Aww, man."
+    harold "Now wait a second, we can't just send the kid in by himself..."
     show harold f_angry_right_up
-    tony f_question "Kau akan memeras pantatmu yang sedang makan donat di sana, cupcake?"
-
+    tony f_question "You gonna squeeze your donut eatin' ass in there, cupcake?"
     show harold f_angry with dissolve:
         xoffset 340
         xzoom -1
     pause
-    harold "Jelas tidak... tapi-"
-
-    tony "Percayalah, anak itu bisa menangani dirinya sendiri dengan baik."
-
-    tony f_normal_right "Tidak bisakah kamu, juara?"
-
+    harold "Obviously no... but-"
+    tony "Trust me, the kid can handle himself just fine."
+    tony f_normal_right "Can't ya, champ?"
     show harold f_worried
     pause
     show anon f_worried_surprised
-    nadya "Tidak perlu khawatir."
-
+    nadya "Is no need for concern."
     show anon f_worried
     show tony f_question
     show harold:
         xoffset -160
         xzoom 1
     with {'master': dissolve}
-    nadya "Aku meninggalkan minionku {b}Jab{/b} di sisi lain untuk menemuinya dengan tas perbekalan."
-
-    harold @ f_suspicious "antekmu?"
-
+    nadya "I leave my minion {b}Jab{/b} on other side to meet him with bag of supplies."
+    harold @ f_suspicious "Your minion?"
     show tony f_sad
-    nadya "Dia adalah pengawal."
-
-    nadya "Bersama-sama mereka akan membuka jalan dan memberi sinyal bagi Anda untuk bergabung dengan mereka."
-
-    nadya "Lalu kalian semua membersihkan gudang bersama-sama."
-
-    anon "Ehh, ya.. oke.."
-
+    nadya "He is bodyguard."
+    nadya "Together they will open path and signal for you to join them."
+    nadya "Then you all clear warehouse together."
+    anon "Ehh, yeah... okay..."
     pause
-    anon "... B-bagaimana tepatnya aku melakukan itu?"
-
-    nadya @ f_eyeroll "Ck, bagaimana aku bisa tahu?!"
-
-    nadya f_angry "Berimprovisasi!"
-
+    anon "... H-how do I do that, exactly?"
+    nadya @ f_eyeroll "Tsk, how should I know?!"
+    nadya f_angry "Improvise!"
     show tony f_normal
-    anon "Berimprovisasi?"
-
-    nadya "Rencanaku untuk membuat separuh pria bergairah pada papa dalam beberapa hari, ingat?!"
-
-    nadya @ a_hips_point "Apakah ANDA yang membuat kami pergi malam ini!"
-
-    nadya "Sekarang ini adalah masalah dan ANDA harus menemukan solusinya!"
-
+    anon "Improvise?"
+    nadya "My plan for half the men turn on papa in few days, remember?!"
+    nadya @ a_hips_point "Is YOU who makes us go tonight!"
+    nadya "Now this is problem and YOU must find solution!"
     show harold f_worried_right_up
-    tony f_normal_right "Buka saja pintu atau jendela dan kami akan menemukannya, jagoan."
-
-    anon f_confused "Bagaimana dengan penjaga di luar?"
-
+    tony f_normal_right "Just pop open a door or window and we'll find ya, champ."
+    anon f_confused "What about the guards on the outside?"
     show harold f_worried
     show tony f_normal
-    keeves "Saya akan menanganinya."
-
-    keeves "Anda hanya fokus mencari jalan masuk bagi orang lain."
-
+    keeves "I'll handle them."
+    keeves "You just focus on finding a way inside for the others."
     show harold f_worried_right_up
     show tony f_normal_right
-    anon f_worried "Y-ya, oke."
-
+    anon f_worried "Y-yeah, okay."
 
     if M_tony.watches:
         show anon behind tony
@@ -376,17 +260,12 @@ label ano27_plan_nadya:
             xoffset 182
             xzoom -1
         with dissolve
-        tony "Semuanya akan baik-baik saja, ya?"
-
-        tony "Para Ruskie kotor itu tidak tahu apa yang akan menimpa mereka!"
-
-        anon "Tapi bagaimana jika-"
-
-        tony "Anda bisa melakukan ini, jagoan!"
-
+        tony "Everything's gonna be alright, eh?"
+        tony "Those dirty Ruskies got no idea what's about to hit 'em!"
+        anon "But what if-"
+        tony "You can do this, champ!"
         pause
-        anon "Terima kasih, {b}Tony{/b}."
-
+        anon "Thanks, {b}Tony{/b}."
         hide arm
         show tony a_pipe_hold_shoulder f_normal_right behind anon:
             xoffset 40
@@ -401,39 +280,29 @@ label ano27_plan_nadya:
             xoffset 282
             xzoom -1
         with dissolve
-        harold "Kamu akan melewati ini, Nak."
-
-        harold "Tetaplah berada dalam bayangan dan tetaplah rendah, ya?"
-
+        harold "You're gonna get through this, son."
+        harold "Just keep to the shadows and stay low, yeah?"
         pause
-        harold "Kami akan berada di sana untuk mendukung Anda begitu Anda memberi sinyal kepada kami."
-
-        anon "Terima kasih, {b}Harold{/b}."
-
+        harold "We'll be there to have your back the second you signal us."
+        anon "Thanks, {b}Harold{/b}."
         show harold a_gun_side f_worried_right_up behind tony with dissolve:
             xoffset -160
             xzoom 1
         pause
 
-    anon "Saat itu juga."
-
+    anon "Right then."
     pause
-    anon "Saya kira sudah waktunya."
-
+    anon "I guess it's time."
     show harold f_concerned
     show keeves a_go
     show tony f_smirk
     show nadya behind keeves
     with {'master': dissolve}
-    keeves "Kalian berdua ikuti aku."
-
+    keeves "You two follow me."
     show keeves a_sides with {'master': dissolve}
-    keeves "Saya akan menempatkan Anda pada posisi untuk melakukan pelanggaran jika terjadi kesalahan."
-
-    tony "Kedengarannya bagus."
-
-    harold "Tepat di belakangmu."
-
+    keeves "I'll get you in position to breach in case things go wrong."
+    tony "Sounds good."
+    harold "Right behind you."
     hide keeves
     hide tony
     hide harold
@@ -441,41 +310,31 @@ label ano27_plan_nadya:
         xoffset -650
         xzoom 1
     with dissolve
-    tony "{b}Johnny{/b} sialan {b}Silverdick{/b}..."
-
-    tony "... Bisakah kamu mempercayainya?!"
-
-    harold "Saya belum pernah mendengar tentang dia."
-
-    tony "... Ini luar biasa!"
-
+    tony "{b}Johnny{/b} fuckin' {b}Silverdick{/b}..."
+    tony "... Can you believe it?!"
+    harold "I've never heard of him."
+    tony "... This is awesome!"
     show anon f_worried with {'master': dissolve}:
         xoffset -150
-    anon "Di mana kamu akan berada selama semua ini?"
-
+    anon "Where are you going to be for all this?"
     show nadya a_idle f_bored with {'master': dissolve}:
         xoffset -50
         xzoom -1
-    nadya "Dengan papa di kantor lantai atas..."
-
+    nadya "With papa in upstairs office..."
     pause
     show anon a_surprised f_surprised_down behind nadya
     show nadya a_hips_point f_sexy
     with {'master': dissolve}
-    nadya "... Menunggumu."
-
+    nadya "... Waiting for you."
     show anon a_sides f_shy
     show nadya a_idle
     with {'master': dissolve}
 
     menu:
-        "Jangan khawatir, saya akan berada di sana.":
-            anon f_normal "Jangan khawatir, saya akan berada di sana."
-
-            nadya "Keyakinan itu bagus."
-
-            nadya "Anda akan membutuhkannya."
-
+        "Don't worry, I'll be there.":
+            anon f_normal "Don't worry, I'll be there."
+            nadya "Confidence is good."
+            nadya "You will need it."
             pause
             show nadya b_traditional_kiss_cheek behind anon:
                 xoffset -150
@@ -486,46 +345,29 @@ label ano27_plan_nadya:
             show nadya b_traditional f_normal:
                 xoffset 100
             with {'master': dissolve}
-            anon f_shy "Untuk apa itu?"
-
-            nadya "Untuk keberuntungan."
-
-            nadya "Anda juga akan membutuhkannya."
-
+            anon f_shy "What was that for?"
+            nadya "For luck."
+            nadya "You will need that too."
             pause
-            nadya "Dan untuk mengatakan kamu suka pakaian."
-
-            anon "Oh, aku menyukainya."
-
-            anon "Kamu terlihat sangat cantik."
-
+            nadya "And for saying you like dress."
+            anon "Oh, I do like it."
+            anon "You look very pretty."
             pause
-            nadya "Lalu mungkin aku akan memakainya untukmu lain kali?"
+            nadya "Then perhaps I wear it for you another time?"
+            anon "{i}*Gulp*{/i} I'd like that..."
+        "Kiss for luck?":
 
-            anon "{i}*Gulp*{/i} Saya ingin itu..."
-
-        "Ciuman untuk keberuntungan?":
-
-            anon f_normal "Ciuman untuk keberuntungan?"
-
+            anon f_normal "Kiss for luck?"
             nadya f_angry @ -m_talk "Hmph."
-
-            nadya "Misi pertama."
-
-            nadya "Ciuman nanti."
-
-            anon f_worried "Ya baiklah."
-
+            nadya "Mission first."
+            nadya "Kisses later."
+            anon f_worried "Yeah, okay."
             pause
-            anon "Ngomong-ngomong, aku bersungguh-sungguh dengan apa yang kukatakan..."
-
+            anon "I meant what I said by the way..."
             nadya f_worried @ -m_talk "Hmm?"
-
-            anon f_normal "Kamu terlihat sangat cantik dengan gaun itu."
-
+            anon f_normal "You look very pretty in that dress."
             nadya f_normal @ -m_talk "..."
-            nadya @ f_eyeroll "Oke, Anda meyakinkan saya!"
-
+            nadya @ f_eyeroll "Okay, you convince me!"
             show nadya b_traditional_kiss_cheek behind anon:
                 xoffset -150
             show anon b_empty f_surprised
@@ -535,25 +377,18 @@ label ano27_plan_nadya:
             show nadya b_traditional f_sexy:
                 xoffset 100
             with {'master': dissolve}
-            nadya "Untuk keberuntungan."
-
-            anon f_normal "Oh, itu pasti berhasil..."
-
-            anon "... Aku bisa merasakannya."
-
-            nadya @ f_laugh "hehe!"
-
+            nadya "For luck."
+            anon f_normal "Oh, it's definitely working..."
+            anon "... I can feel it."
+            nadya @ f_laugh "Hehe!"
 
     pause
-    nadya f_angry "Pergilah sekarang."
-
-    anon "Y-ya, oke."
-
+    nadya f_angry "You go now."
+    anon "Y-yeah, okay."
     hide nadya with dissolve
     show anon f_disgusted with dissolve
     pause
-    anon @ -m_talk "(Euh, ini akan menyebalkan...)"
-
+    anon @ -m_talk "( Eugh, this is gonna suck... )"
     show anon b_climb_pipe with dissolve:
         xoffset 0
         xzoom 1
@@ -594,10 +429,8 @@ label ano27_plan_nadya:
     show anon f_disgusted_low o_sewage with dissolve:
         xoffset -250
         xzoom -1
-    anon @ -m_talk "(Sial, namamu saluran pembuangan limbah.)"
-
-    anon @ -m_talk "(Tidak mungkin aku akan kembali ke sana!)"
-
+    anon @ -m_talk "( Hell, thy name is sewage drain. )"
+    anon @ -m_talk "( No way I'm going back in there! )"
     hide anon with dissolve
     return
 # Decompiled by unrpyc: https://github.com/CensoredUsername/unrpyc

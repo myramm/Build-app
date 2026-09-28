@@ -4,86 +4,62 @@ label larry_msg_request:
     show cell_bars at left
     show larry_hands at Position (xpos=400,ypos=658)
     show player 5f at right with dissolve
-    larry "Hai! Anda!"
-
+    larry "Hey! You!"
     show larry 14
     show player 11f
     player_name "!!!"
     show player 12f
-    player_name "Umm... Ya?"
-
-    player_name "Apa yang kamu inginkan?"
-
+    player_name "Umm... Yeah?"
+    player_name "What do you want?"
     show player 16f
     show larry 15
-    larry "Dengar, aku tidak marah padamu atas perbuatanmu."
-
-    larry "Saya pantas mendapatkan ini."
-
+    larry "Listen, I'm not mad at you for what you did."
+    larry "I deserve this."
     show larry 14
     show player 5f
     player_name "..."
     show larry 15
-    larry "Saya tahu apa yang saya lakukan itu buruk, oke?"
-
-    larry "Saya hanya... Saya berharap Anda akan memberikan {b}Tammy{/b} pesan dari saya?"
-
+    larry "I know what I was doing was bad, okay?"
+    larry "I just... I was hoping you'd give {b}Tammy{/b} a message from me?"
     show larry 14
     show player 10f
-    player_name "Aku tidak yakin itu ide yang bagus..."
-
+    player_name "I'm not sure that's a good idea..."
     show player 5f
     show larry 15
-    larry "Aku ingin kamu memberitahunya bahwa aku minta maaf!"
-
-    larry "aku minta maaf untuk semuanya..."
-
+    larry "I need you to tell her that I'm sorry!"
+    larry "I'm sorry for everything..."
     show larry 14
     show player 12f
-    player_name "Saya tidak tahu apakah saya harus melakukannya."
-
+    player_name "I don't know if I should."
     show player 5f
     show larry 15
-    larry "Silakan!"
-
-    larry "Aku... aku bisa membantumu!"
-
+    larry "Please!"
+    larry "I... I can help you!"
     show larry 14
     show player 10f
-    player_name "Hah?"
-
+    player_name "Huh?"
     show player 11f
     show larry 15
-    larry "Saya menyembunyikan tas penuh barang curian yang saya ambil."
-
-    larry "Aku akan memberitahumu di mana tempatnya jika kamu memberitahu {b}Tammy{/b} aku minta maaf."
-
-    larry "Aku hanya tidak ingin dia membenciku selamanya, tahu?"
-
-    larry "Seharusnya aku tidak meninggalkannya..."
-
+    larry "I stashed a bag full of stolen things I took."
+    larry "I'll tell you where it is if you just tell {b}Tammy{/b} I'm sorry."
+    larry "I just don't want her to hate me forever, you know?"
+    larry "I should never have left her..."
     show larry 14
     show player 34f
     player_name "..."
     show larry 15
     show player 5f
-    larry "Anda dapat mengembalikan barang curian tersebut ke polisi, atau menyimpannya! Saya tidak peduli."
-
-    larry "Hanya, tolong katakan padanya aku minta maaf..."
-
-    larry "Mudah-mudahan, dia bisa menemukan dalam hatinya untuk memaafkanku suatu hari nanti..."
-
+    larry "You can return the stolen goods to the police, or keep them! I don't care."
+    larry "Just, please tell her I'm sorry..."
+    larry "Hopefully, she can find it in her heart to forgive me one day..."
     show larry 14
     show player 35f
     player_name "Hmm..."
-
     show player 12f
-    player_name "Saya kira saya bisa. Saya akan melihat apa yang bisa saya lakukan."
-
+    player_name "I suppose I could. I'll see what I can do."
     show player 5f
     show larry 15
-    larry "Terima kasih nak!"
-
+    larry "Thanks, kid!"
     hide player with dissolve
     hide larry
     hide cell_bars
@@ -96,18 +72,14 @@ label larry_msg_prompt:
     show cell_bars at left
     show larry_hands at Position (xpos=400,ypos=658)
     show player 12f at right with dissolve
-    player_name "Apa yang kamu ingin aku lakukan lagi untukmu?"
-
+    player_name "What did you want me to do again for you?"
     show player 5f
     show larry 15
-    larry "Katakan saja pada {b}Tammy{/b} bahwa saya minta maaf. Seharusnya aku tidak meninggalkannya..."
-
-    larry "Jika ya, saya akan memberi tahu Anda di mana saya menyembunyikan semua barang yang saya curi."
-
+    larry "Just tell {b}Tammy{/b} that I'm sorry. I should never have left her..."
+    larry "If you do, I'll tell you where I hid all the goods I stole."
     show larry 14
     show player 10f
-    player_name "Saya akan melihat apa yang bisa saya lakukan."
-
+    player_name "I'll see what I can do."
     hide player with dissolve
     hide larry
     hide cell_bars
@@ -120,61 +92,43 @@ label larry_msg_reward:
     show cell_bars at left
     show larry_hands at Position (xpos=400,ypos=658)
     show player 5f at right with dissolve
-    larry "Hai! Itu kamu lagi!"
-
-    larry "Apakah Anda mendapat kesempatan untuk berbicara dengan {b}Tammy{/b}?"
-
+    larry "Hey! It's you again!"
+    larry "Did you get a chance to speak with {b}Tammy{/b}?"
     show larry 14
     show player 12f
-    player_name "Saya menyampaikan pesan itu."
-
+    player_name "I passed the message along."
     show player 5f
     show larry 15
-    larry "Dan apa... Apa yang dia katakan?!"
-
+    larry "And what... What did she say?!"
     show larry 14
     show player 12f
-    player_name "Dia tidak melakukannya! Dengar, kawan... Dia menerima pesan seperti yang kamu inginkan."
-
+    player_name "She didn't! Look, man... She got the message like you wanted."
     show player 10f
-    player_name "Anda tidak mengatakan apa pun tentang membawakan Anda pesan kembali!"
-
+    player_name "You didn't say anything about bringing you a message back!"
     show player 5f
     larry "..."
     show larry 15
-    larry "Ya, kamu benar. Maaf."
-
-    larry "Anda menahan tawaran Anda."
-
-    larry "... Baiklah."
-
-    larry "Tentang barang curian yang kusembunyikan."
-
-    larry "Mereka berada {b}di balik semak di taman, di samping pohon putih{/b}."
-
+    larry "Yeah, you're right. Sorry."
+    larry "You held up your end of the bargain."
+    larry "... Alright."
+    larry "About those stolen goods I stashed."
+    larry "They're {b}behind a bush in the park, next to a white tree{/b}."
     show larry 14
     show player 34f
     player_name "Hmm..."
-
     show player 12f
-    player_name "Oke, aku akan pergi melihatnya."
-
+    player_name "Okay, I'll go have a look."
     show player 5f
     show larry 15
-    larry "Mendengarkan! Saya akan mencoba mengubah hidup saya!"
-
-    larry "Anda akan lihat!"
-
-    larry "Dan mungkin... Suatu hari nanti... {b}Tammy{/b} akan membawaku kembali!"
-
+    larry "Listen! I'm going to try and turn my life around!"
+    larry "You'll see!"
+    larry "And maybe... One day... {b}Tammy{/b} will take me back!"
     show larry 14
     show player 12f
-    player_name "Kita lihat saja nanti."
-
+    player_name "We'll see."
     show player 5f
     show larry 15
-    larry "Terima kasih..."
-
+    larry "Thanks..."
     hide player with dissolve
     hide larry
     hide cell_bars
@@ -187,16 +141,13 @@ label larry_msg_repeat:
     show cell_bars at left
     show larry_hands at Position (xpos=400,ypos=658)
     show player 12f at right with dissolve
-    player_name "Di mana Anda menyembunyikan barang curian tersebut?"
-
+    player_name "Where did you hide the stolen goods?"
     show player 5f
     show larry 15
-    larry "Mereka berada {b}di balik semak di taman, di samping pohon putih{/b}."
-
+    larry "They're {b}behind a bush in the park, next to a white tree{/b}."
     show larry 14
     show player 12f
-    player_name "Oke, aku akan pergi melihatnya."
-
+    player_name "Okay, I'll go have a look."
     hide player with dissolve
     hide larry
     hide cell_bars

@@ -314,7 +314,6 @@ label poker:
     menu:
         "Play.":
             player_name "Let's play!!"
-
             jump poker_init
         "How to play.":
 
@@ -553,22 +552,18 @@ label recount:
 
     if player_points > bot_points and player_points > bot02_points:
         player_name "I won!"
-
         $ player_status = "win"
         jump cloth_remove
     elif bot_points > player_points and bot_points > bot02_points and len(erik_cloth_active) > 0:
         erik "Yay! I won!"
-
         $ erik_status = "win"
         jump cloth_remove
     elif bot02_points > bot_points and bot02_points > player_points and len(mrsj_cloth_active) > 0:
         mrsj "I still got it!"
-
         $ mrsj_status = "win"
         jump cloth_remove
     else:
         player_name "Nobody wins, yay!"
-
     hide screen unclick_overlay
     jump end_dialogue
 
@@ -577,7 +572,6 @@ label all_in:
     show screen unclick_overlay
     $ all_in(player_cloth_active, player_pot)
     player_name "I'm all in, guys!"
-
     $ player_status = "allin"
 
     if erik_status != "fold":
@@ -601,26 +595,21 @@ label all_in:
         $ bot_fold = renpy.random.randint(0,100)
         if bot_fold > bot_fold_chance and round_count != 0:
             erik "Shit, I'm out!"
-
             $ erik_status = "fold"
         else:
             erik "He's bluffing, I'm all in, too!"
-
             $ all_in(erik_cloth_active, erik_pot)
             $ erik_status = "allin"
         $ bot_fold_chance = 0
 
     if erik_status == "fold" and mrsj_status == "fold" and player_status != "fold":
         player_name "Yay, I won!"
-
         jump end_dialogue
     elif erik_status != "fold" and mrsj_status == "fold" and player_status == "fold":
         erik "Yes! I finally won!"
-
         jump end_dialogue
     elif mrsj_status != "fold" and erik_status == "fold" and player_status == "fold":
         poker_sayer02 "I can't believe I won!"
-
         jump end_dialogue
 
     if mrsj_status != "fold":
@@ -643,11 +632,9 @@ label all_in:
         $ bot_fold = renpy.random.randint(0,100)
         if bot_fold > bot_fold_chance and round_count != 0:
             poker_sayer02 "I'm folding."
-
             $ mrsj_status = "fold"
         else:
             poker_sayer02 "Bluffing! I am all in."
-
             $ all_in(mrsj_cloth_active, mrsj_pot)
             $ mrsj_status = "allin"
         $ bot_fold_chance = 0
@@ -655,7 +642,6 @@ label all_in:
     while len(table) < 5:
         $ reveal_card(deck, table)
     player_name "Show your cards!"
-
     jump recount
 
 label fold:
@@ -665,39 +651,28 @@ label fold:
     $ remove_cloth(player_cloth_removed, player_pot)
     if len(player_cloth_removed) == 5:
         player_name "Alright, cheers!"
-
     elif len(player_cloth_removed) == 4:
         player_name "Here I go."
-
     elif len(player_cloth_removed) == 3:
         player_name "Again..."
-
     elif len(player_cloth_removed) == 2:
         player_name "One more."
-
     elif len(player_cloth_removed) == 1:
         player_name "Uuuugh..."
-
         show mrsjpoker 2 at Position(xpos=857,ypos=626)
         mrsj "Are you okay, {b}[firstname]{/b}?"
-
         show mrsjpoker 10 at Position(xpos=856,ypos=627)
         show old_erikpoker 12
         erik "You don't look so great..."
-
         show old_erikpoker 1
         player_name "I'll be fine. Thanks..."
-
     elif len(player_cloth_removed) == 0:
         if len(erik_cloth_active) > 0 and len(mrsj_cloth_active) > 0:
             player_name "My head is spinning... Did I just lose?!"
-
             show old_erikpoker 12
-            erik "Ya."
-
+            erik "Yup."
             show old_erikpoker 1
             player_name "Huh... Good {i}*Hic*{/i} game."
-
         else:
             jump end_dialogue
     $ player_active = False
@@ -710,7 +685,6 @@ label poker_call:
         if len(player_cloth_active) > 0:
             $ poker_call(player_cloth_active, player_pot)
             player_name "I'll call."
-
             $ player_status = "call"
 
     if erik_status != "fold":
@@ -765,8 +739,7 @@ label poker_call:
                     show old_erikpoker 12
                     show old_erikpokerc
                     show mrsjpoker 1 at Position(xpos=857,ypos=626)
-                    erik "Dingin."
-
+                    erik "Cool."
                     show old_erikpokerc 10 at Position(xpos=144,ypos=592)
                     show old_erikpoker 3 at Position(xpos=172,ypos=624)
                     pause
@@ -776,8 +749,7 @@ label poker_call:
                 elif len(erik_cloth_removed) == 4:
                     show mrsjpoker 1 at Position(xpos=857,ypos=626)
                     show old_erikpoker 12 at Position(xpos=153,ypos=626)
-                    erik "Baiklah..."
-
+                    erik "Alright..."
                     show old_erikpokerc 10 at Position(xpos=144,ypos=592)
                     show old_erikpoker 3 at Position(xpos=172,ypos=624)
                     pause
@@ -788,7 +760,6 @@ label poker_call:
                     show mrsjpoker 1 at Position(xpos=857,ypos=626)
                     show old_erikpoker 2 at Position(xpos=153,ypos=626)
                     erik "Heh. Bottoms up!"
-
                     show old_erikpokerc 10 at Position(xpos=144,ypos=592)
                     show old_erikpoker 3 at Position(xpos=172,ypos=624)
                     pause
@@ -799,7 +770,6 @@ label poker_call:
                     show mrsjpoker 1 at Position(xpos=857,ypos=626)
                     show old_erikpoker 2 at Position(xpos=153,ypos=626)
                     erik "Man... Rough game..."
-
                     show old_erikpokerc 10 at Position(xpos=144,ypos=592)
                     show old_erikpoker 3 at Position(xpos=172,ypos=624)
                     pause
@@ -808,7 +778,6 @@ label poker_call:
                     pause
                     show old_erikpoker 12
                     erik "Phew! Think I'm starting to feel it, now."
-
                     show old_erikpoker 13
                     show mrsjpoker 10 at Position(xpos=856,ypos=627)
                 elif len(erik_cloth_removed) == 1:
@@ -817,7 +786,6 @@ label poker_call:
                     show mrsjpoker 1 at Position(xpos=857,ypos=626)
                     show old_erikpoker 5 at Position(xpos=153,ypos=626)
                     erik "Well played..."
-
                     hide old_erikpokerc with dissolve
                     show old_erikpoker 3 at Position(xpos=172,ypos=624)
                     pause
@@ -827,11 +795,8 @@ label poker_call:
                     pause
                     show old_erikpoker 7
                     erik "I can't see anything guys..."
-
-                    erik "saya..."
-
+                    erik "I..."
                     erik "I... Don't feel too well..."
-
                     pause
                     show old_erikpoker 8 at Position(xpos=234,ypos=626) with vpunch
                     pause
@@ -841,26 +806,21 @@ label poker_call:
         else:
             if len(erik_cloth_active) > 0:
                 erik "Calling..."
-
                 $ erik_status = "call"
                 $ poker_call(erik_cloth_active, erik_pot)
         $ bot_fold_chance = 0
 
     if erik_status == "fold" and mrsj_status == "fold" and player_status != "fold":
         player_name "Yay, I won!"
-
         jump end_dialogue
     elif erik_status != "fold" and mrsj_status == "fold" and player_status == "fold":
         erik "Yes! I finally won!"
-
         jump end_dialogue
     elif mrsj_status != "fold" and erik_status == "fold" and player_status == "fold":
         poker_sayer02 "I can't believe I won!"
-
         jump end_dialogue
     elif len(table) == 5:
         player_name "Show your cards!"
-
         jump recount
 
     if mrsj_status != "fold":
@@ -915,8 +875,7 @@ label poker_call:
                 show old_erikpokerc 9 zorder 2 at Position(xpos=144,ypos=592)
                 show old_erikpoker 11 at Position(xpos=153,ypos=626)
                 show mrsjpoker 2 at Position(xpos=857,ypos=626)
-                mrsj "Ini dia!"
-
+                mrsj "Here we go!"
                 show mrsjpoker 3 at Position(xpos=836,ypos=626)
                 pause
                 show mrsjpoker 10 at Position(xpos=857,ypos=627)
@@ -925,7 +884,6 @@ label poker_call:
                 show old_erikpoker 11
                 show mrsjpoker 2 at Position(xpos=858,ypos=626)
                 mrsj "Boy, I forgot how thrilling this is!"
-
                 show mrsjpoker 3 at Position(xpos=837,ypos=626)
                 pause
                 show mrsjpoker 10 at Position(xpos=857,ypos=627)
@@ -934,7 +892,6 @@ label poker_call:
                 show old_erikpoker 11
                 show mrsjpoker 2 at Position(xpos=858,ypos=626)
                 mrsj "I wonder if we have enough for everyone..."
-
                 show mrsjpoker 3 at Position(xpos=837,ypos=626)
                 pause
                 show mrsjpoker 10 at Position(xpos=857,ypos=627)
@@ -943,26 +900,20 @@ label poker_call:
                 show old_erikpoker 11
                 show mrsjpoker 2 at Position(xpos=858,ypos=626)
                 mrsj "You boys enjoying yourselves?"
-
                 show mrsjpoker 2 at Position(xpos=858,ypos=626)
                 mrsj "So, when are you boys gonna bring a girl down here?"
-
                 show mrsjpoker 1
                 show old_erikpoker 2
                 erik "We're working on it, {b}Mrs. Johnson{/b}."
-
                 show mrsjpoker 10 at Position(xpos=857,ypos=627)
                 show old_erikpoker 11
                 player_name "Yeah, it's harder than it seems."
-
                 show mrsjpoker 3 at Position(xpos=837,ypos=626)
                 pause
                 show mrsjpoker 9 at Position(xpos=857,ypos=627)
                 mrsj "Oh, I know, some of the girls in your generation are just vicious."
-
                 show mrsjpoker 2 at Position(xpos=858,ypos=626)
                 mrsj "Keep trying, I'm sure you'll both find a nice partner."
-
                 show old_erikpoker 1
                 show mrsjpoker 1
             elif len(mrsj_cloth_removed) == 1:
@@ -980,7 +931,6 @@ label poker_call:
                 show old_erikpoker 11
                 show mrsjpoker 5 at Position(xpos=858,ypos=626)
                 mrsj "Huh, down the hatch then..."
-
                 show mrsjpoker 3 at Position(xpos=837,ypos=626)
                 pause
                 show mrsjpoker 11 at Position(xpos=857,ypos=627)
@@ -992,38 +942,30 @@ label poker_call:
                 hide screen poker_screen
                 show mrsjpoker 6 at Position(xpos=857,ypos=626) with dissolve
                 mrsj "Wow... I haven't been this drunk in a looong time!"
-
                 mrsj "Well played, boys..."
-
                 jump poker_mrsj_lost
             $ mrsj_active = False
         else:
             if len(mrsj_cloth_active) > 0:
                 poker_sayer02 "I am calling."
-
                 $ poker_call(mrsj_cloth_active, mrsj_pot)
                 $ mrsj_status = "call"
         $ bot_fold_chance = 0
 
     if erik_status == "fold" and mrsj_status == "fold" and player_status != "fold":
         player_name "Yay, I won!"
-
         jump end_dialogue
     elif erik_status != "fold" and mrsj_status == "fold" and player_status == "fold":
         erik "Yes! I finally won!"
-
         jump end_dialogue
     elif mrsj_status != "fold" and erik_status == "fold" and player_status == "fold":
         poker_sayer02 "I can't believe I won!"
-
         jump end_dialogue
     else:
         player_name "The game continues..."
-
     $ reveal_card(deck, table)
     if len(table) == 5:
         player_name "Show your cards!"
-
         jump recount
     $ round_count += 1
     if player_status == "fold":
@@ -1046,7 +988,6 @@ label end_dialogue:
             elif first_loser == "Mrs J":
                 jump poker_mrsj_lost
     player_name "Next round!"
-
     jump next_round
 
 label cloth_remove:
@@ -1054,38 +995,27 @@ label cloth_remove:
         $ remove_cloth(player_cloth_removed, player_pot)
         if len(player_cloth_removed) == 5:
             player_name "Alright, cheers!"
-
         elif len(player_cloth_removed) == 4:
             player_name "Here I go."
-
         elif len(player_cloth_removed) == 3:
             player_name "Again..."
-
         elif len(player_cloth_removed) == 2:
             player_name "One more."
-
         elif len(player_cloth_removed) == 1:
             player_name "Uuuugh..."
-
             show mrsjpoker 2 at Position(xpos=857,ypos=626)
             mrsj "Are you okay, {b}[firstname]{/b}?"
-
             show mrsjpoker 10 at Position(xpos=856,ypos=627)
             show old_erikpoker 12
             erik "Yeah, you don't look so great..."
-
             show old_erikpoker 1
             player_name "I'll be fine, thanks."
-
         elif len(player_cloth_removed) == 0:
             player_name "My head is spinning... Did I just lose?!"
-
             show old_erikpoker 12
-            erik "Ya."
-
+            erik "Yup."
             show old_erikpoker 1
             player_name "Huh... Good {i}*Hic*{/i} game."
-
             jump poker_anon_lost
         $ player_active = False
         jump end_dialogue
@@ -1117,8 +1047,7 @@ label cloth_remove:
             show old_erikpoker 12
             show old_erikpokerc
             show mrsjpoker 1 at Position(xpos=857,ypos=626)
-            erik "Dingin."
-
+            erik "Cool."
             show old_erikpokerc 10 at Position(xpos=144,ypos=592)
             show old_erikpoker 3 at Position(xpos=172,ypos=624)
             pause
@@ -1128,8 +1057,7 @@ label cloth_remove:
         elif len(erik_cloth_removed) == 4:
             show mrsjpoker 1 at Position(xpos=857,ypos=626)
             show old_erikpoker 12 at Position(xpos=153,ypos=626)
-            erik "Baiklah..."
-
+            erik "Alright..."
             show old_erikpokerc 10 at Position(xpos=144,ypos=592)
             show old_erikpoker 3 at Position(xpos=172,ypos=624)
             pause
@@ -1140,7 +1068,6 @@ label cloth_remove:
             show mrsjpoker 1 at Position(xpos=857,ypos=626)
             show old_erikpoker 2 at Position(xpos=153,ypos=626)
             erik "Heh, bottoms up!"
-
             show old_erikpokerc 10 at Position(xpos=144,ypos=592)
             show old_erikpoker 3 at Position(xpos=172,ypos=624)
             pause
@@ -1151,7 +1078,6 @@ label cloth_remove:
             show mrsjpoker 1 at Position(xpos=857,ypos=626)
             show old_erikpoker 2 at Position(xpos=153,ypos=626)
             erik "Man, rough game."
-
             show old_erikpokerc 10 at Position(xpos=144,ypos=592)
             show old_erikpoker 3 at Position(xpos=172,ypos=624)
             pause
@@ -1160,7 +1086,6 @@ label cloth_remove:
             pause
             show old_erikpoker 12
             erik "Phew! Think I'm starting to feel it now."
-
             show old_erikpoker 13
             show mrsjpoker 10 at Position(xpos=856,ypos=627)
         elif len(erik_cloth_removed) == 1:
@@ -1169,7 +1094,6 @@ label cloth_remove:
             show mrsjpoker 1 at Position(xpos=857,ypos=626)
             show old_erikpoker 5 at Position(xpos=153,ypos=626)
             erik "Well played..."
-
             hide old_erikpokerc with dissolve
             show old_erikpoker 3 at Position(xpos=172,ypos=624)
             pause
@@ -1179,11 +1103,8 @@ label cloth_remove:
             pause
             show old_erikpoker 7
             erik "I can't see anything guys..."
-
-            erik "saya..."
-
+            erik "I..."
             erik "I... Don't feel too well..."
-
             pause
             show old_erikpoker 8 at Position(xpos=234,ypos=626) with vpunch
             pause
@@ -1220,8 +1141,7 @@ label cloth_remove:
             show old_erikpokerc 9 zorder 2 at Position(xpos=144,ypos=592)
             show old_erikpoker 11 at Position(xpos=153,ypos=626)
             show mrsjpoker 2 at Position(xpos=857,ypos=626)
-            mrsj "Ini dia!"
-
+            mrsj "Here we go!"
             show mrsjpoker 3 at Position(xpos=836,ypos=626)
             pause
             show mrsjpoker 10 at Position(xpos=857,ypos=627)
@@ -1230,7 +1150,6 @@ label cloth_remove:
             show old_erikpoker 11
             show mrsjpoker 2 at Position(xpos=858,ypos=626)
             mrsj "Boy, I forgot how thrilling this is!"
-
             show mrsjpoker 3 at Position(xpos=837,ypos=626)
             pause
             show mrsjpoker 10 at Position(xpos=857,ypos=627)
@@ -1239,7 +1158,6 @@ label cloth_remove:
             show old_erikpoker 11
             show mrsjpoker 2 at Position(xpos=858,ypos=626)
             mrsj "I wonder if we have enough for everyone..."
-
             show mrsjpoker 3 at Position(xpos=837,ypos=626)
             pause
             show mrsjpoker 10 at Position(xpos=857,ypos=627)
@@ -1248,26 +1166,20 @@ label cloth_remove:
             show old_erikpoker 11
             show mrsjpoker 2 at Position(xpos=858,ypos=626)
             mrsj "You boys enjoying yourselves?"
-
             show mrsjpoker 2 at Position(xpos=858,ypos=626)
             mrsj "So, when are you boys gonna bring a girl down here?"
-
             show mrsjpoker 1
             show old_erikpoker 2
             erik "We're working on it, {b}Mrs. Johnson{/b}."
-
             show mrsjpoker 10 at Position(xpos=857,ypos=627)
             show old_erikpoker 11
             player_name "Yeah, it's harder than it seems."
-
             show mrsjpoker 3 at Position(xpos=837,ypos=626)
             pause
             show mrsjpoker 9 at Position(xpos=857,ypos=627)
             mrsj "Oh, I know, some of the girls in your generation are just vicious."
-
             show mrsjpoker 2 at Position(xpos=858,ypos=626)
             mrsj "Keep trying, I'm sure you'll both find a nice partner."
-
             show old_erikpoker 1
             show mrsjpoker 1
         elif len(mrsj_cloth_removed) == 1:
@@ -1285,7 +1197,6 @@ label cloth_remove:
             show old_erikpoker 11
             show mrsjpoker 5 at Position(xpos=858,ypos=626)
             mrsj "Huh, down the hatch then..."
-
             show mrsjpoker 3 at Position(xpos=837,ypos=626)
             pause
             show mrsjpoker 11 at Position(xpos=857,ypos=627)
@@ -1297,9 +1208,7 @@ label cloth_remove:
             hide screen poker_screen
             show mrsjpoker 6 at Position(xpos=857,ypos=626) with dissolve
             mrsj "Wow... I haven't been this drunk in a looong time!"
-
             mrsj "Well played, boys..."
-
             jump poker_mrsj_lost
         $ mrsj_active = False
         jump end_dialogue
@@ -1314,48 +1223,35 @@ label poker_anon_lost:
     with fade
 
     mrsj "Haha!"
-
     show mrsj 17
     mrsj "Somebody had a little too much to drink!!"
-
     show mrsj 14
     show old_erik 4
     erik "Are you okay, {b}[firstname]{/b}?"
-
     show old_erik 1
     show player 192
     player_name "Yeeaahh... I'll be fiine."
-
     player_name "I just need to find my clothes..."
-
     show player 193
     show mrsj 18
     mrsj "I'll get those for ya."
-
     show mrsj 14
     show player 194 at Position(xpos=-25,ypos=768)
     player_name "Thank you, {b}Mrs. Johnson{/b}. You're very, very kind."
-
     show player 192 at left
     player_name "I should go home I think..."
-
     show player 193
     show old_erik 4
     erik "Need any help getting home?"
-
     show old_erik 1
     show player 192
     player_name "Nah, I should be fine..."
-
     show player 193
     show old_erik 4
     erik "Thanks for coming by."
-
-    erik "Selamat malam!"
-
+    erik "Have a good night!"
     show player 192
     player_name "You too..."
-
     hide old_erik
     hide player
     hide mrsj
@@ -1371,11 +1267,9 @@ label poker_erik_lost:
     with fade
 
     player_name "You okay, {b}Erik{/b}??"
-
     show player 11f
     show old_erik 24
     erik "Yeah... Give me a second to put my clothes on..."
-
     pause
     show old_erik 25
     pause 0.5
@@ -1386,28 +1280,21 @@ label poker_erik_lost:
     player_name "!!!"
     show player 109
     show mrsj 20
-    mrsj "Ya ampun..."
-
+    mrsj "Oh, my..."
     mrsj "He's not used to drinking!"
-
     show mrsj 14
     show player 108
     player_name "Is he going to be okay?"
-
     show mrsj 17
     show player 109
     mrsj "Don't worry! I'll take care of my boy..."
-
     show mrsj 14
     show player 10f
     player_name "Okay. I should probably go, then."
-
     show player 17f
     player_name "Thanks for the game! It was fun."
-
     show mrsj 18
-    mrsj "Ya!"
-
+    mrsj "Yeah!"
     hide old_erik
     hide player
     hide mrsj
@@ -1425,35 +1312,27 @@ label poker_mrsj_lost:
         with fade
         pause
         mrsj "Woo!"
-
         show mrsj 28f
-        mrsj "Itu menyenangkan!"
-
+        mrsj "That was fun!"
         show mrsj 27f at Position(xoffset=-1)
         pause
         show mrsj 28f
         mrsj "Well, you got me!"
-
         show player 11f
         mrsj "I'll see you boys in the back room."
-
         show player 21f
         show mrsj 27f at Position(xoffset=-1)
         player_name "Wait, you want to do it again?"
-
         show old_erik 5
         show player 1f
         erik "Yeah, are you sure about this, {b}Mrs. Johnson{/b}?"
-
         show mrsj 33 at center
         hide player
         hide old_erik
         with dissolve
         mrsj "Oh come on, you only live once!"
-
         show mrsj 34
         mrsj "Might as well have some fun, right?"
-
     else:
 
         show player 1f at Position(xpos=756)
@@ -1462,54 +1341,41 @@ label poker_mrsj_lost:
         with fade
         pause
         mrsj "Woo!"
-
         show mrsj 28f
         mrsj "That was fun!!"
-
         show mrsj 27f at Position(xpos=-1)
         pause
         player_name "..."
         show mrsj 28f at Position(xpos=0)
         mrsj "Well, you got me!!"
-
         show old_erik 5
         show mrsj 27f at Position(xpos=-1)
         erik "{i}*Hic*{/i} You're completely naked, {b}Mrs. Johnson{/b}."
-
         show old_erik 1
         show mrsj 28f at Position(xpos=0)
         mrsj "Well, isn't that the point of your little game, boys?"
-
         show player 21f
         show mrsj 27f at Position(xpos=-1)
         player_name "You're... Really pretty, {b}Mrs. Johnson{/b}!"
-
         show player 1f
         show mrsj 28f at Position(xpos=0)
-        mrsj "Benar-benar?"
-
+        mrsj "Really?"
         show mrsj 31 with dissolve
         pause
         mrsj "I think I look fat..."
-
         show player 11f
         show mrsj 30f with dissolve
         mrsj "But at least my boobs are still nice and firm!"
-
         show mrsj 33 at center
         hide player
         hide old_erik
         with dissolve
         mrsj "Heeeey, I've got an idea..."
-
         mrsj "How about I get myself comfortable on the couch in the other room..."
-
         show mrsj 34
         mrsj "... And you two decide if you'd like to join me."
-
         show mrsj 33
         mrsj "See you in there!"
-
     hide mrsj
     show player 13 at left
     show old_erik 1 at right
@@ -1517,14 +1383,11 @@ label poker_mrsj_lost:
     pause
     show player 21
     player_name "So... What do we do now?"
-
     show old_erik 3
     show player 1
     erik "{i}*Hic*{/i} I don't know!"
-
     show old_erik 3b
     erik "What do you think {i}*Hic*{/i} we should do?"
-
     show old_erik 1
     show player 4
     menu:
@@ -1532,21 +1395,16 @@ label poker_mrsj_lost:
             show player 14 at left
             show old_erik 1 at right
             player_name "I think {b}Mrs. Johnson{/b} wants to have fun with us."
-
             show old_erik 4
             show player 1
-            erik "Menurutmu?"
-
+            erik "You think?"
             show old_erik 1
             show player 14
-            player_name "Ya!"
-
+            player_name "Yeah!"
             player_name "We should see what she wants..."
-
             show old_erik 4
             show player 1
             erik "Okay, {i}*Hic*{/i} let's go see her."
-
             hide old_erik
             hide player
             with dissolve
@@ -1556,25 +1414,19 @@ label poker_mrsj_lost:
         "Go home." if M_erik.finished_state(S_erik_poker_invite):
             show player 10 at left
             player_name "Actually, I think I should go home... I don't feel too well."
-
             show player 5
             show old_erik 4
             erik "Yeah... I think {i}*Hic*{/i}, we all had a little too much to drink..."
-
             show player 10
             show old_erik 1
             player_name "Tell {b}Mrs. Johnson{/b}, I'm sorry."
-
             show player 5
             show old_erik 4
             erik "I {i}*Hic*{/i}, will."
-
-            erik "Sampai jumpa besok?"
-
+            erik "See you tomorrow?"
             show player 10
             show old_erik 1
             player_name "Yeah, bye, {b}Erik{/b}."
-
             return False
 
     return True
@@ -1583,15 +1435,12 @@ label poker_erik_1_cloth_left:
     show mrsjpoker 1 at Position(xpos=857,ypos=626)
     show old_erikpoker 5
     erik "Yup, definitely feeling it..."
-
     show old_erikpoker 4
     show mrsjpoker 9 at Position(xpos=856,ypos=627)
     mrsj "Pumpkin, you okay?"
-
     show old_erikpoker 14
     show mrsjpoker 1 at Position(xpos=857,ypos=626)
     erik "I can handle it, {b}Mrs. Johnson{/b}. Thanks."
-
     show old_erikpokerc 10 at Position(xpos=144,ypos=592)
     show old_erikpoker 3 at Position(xpos=172,ypos=624)
     pause
@@ -1606,15 +1455,12 @@ label poker_erik_0_cloth_left:
     show mrsjpoker 1 at Position(xpos=857,ypos=626)
     show old_erikpoker 5
     erik "Yup, definitely feeling it..."
-
     show old_erikpoker 4
     show mrsjpoker 9 at Position(xpos=856,ypos=627)
     mrsj "Pumpkin, you okay?"
-
     show old_erikpoker 14
     show mrsjpoker 1 at Position(xpos=857,ypos=626)
     erik "I can handle it, {b}Mrs. Johnson{/b}, thanks."
-
     show old_erikpokerc 10 at Position(xpos=144,ypos=592)
     show old_erikpoker 3 at Position(xpos=172,ypos=624)
     pause
