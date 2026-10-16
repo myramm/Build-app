@@ -6,16 +6,17 @@ on:
     paths-ignore:
       - 'result/**'
       - 'README.md'
+      - 'docs/**'
   workflow_dispatch:
     inputs:
       composition:
-        description: 'Composition ID to render (e.g. Tutorial or Main)'
+        description: 'Composition ID (e.g. GdpRace, Tutorial, Main)'
         required: false
-        default: 'Tutorial'
+        default: 'GdpRace'
       output_name:
-        description: 'Output filename (e.g. video2.mp4)'
+        description: 'Output filename (e.g. video3.mp4, video2.mp4, video1.mp4)'
         required: false
-        default: 'video2.mp4'
+        default: 'video3.mp4'
 
 permissions:
   contents: write
@@ -39,14 +40,14 @@ jobs:
       - name: Render Video
         run: |
           mkdir -p out result
-          COMP="${{ github.event.inputs.composition || 'Tutorial' }}"
-          OUT_FILE="${{ github.event.inputs.output_name || 'video2.mp4' }}"
+          COMP="${{ github.event.inputs.composition || 'GdpRace' }}"
+          OUT_FILE="${{ github.event.inputs.output_name || 'video3.mp4' }}"
           echo "Rendering composition $COMP to out/$OUT_FILE..."
           npx remotion render "$COMP" "out/$OUT_FILE"
 
       - name: Commit and Push to result folder
         run: |
-          OUT_FILE="${{ github.event.inputs.output_name || 'video2.mp4' }}"
+          OUT_FILE="${{ github.event.inputs.output_name || 'video3.mp4' }}"
           cp "out/$OUT_FILE" "result/$OUT_FILE"
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
