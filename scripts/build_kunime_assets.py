@@ -15,7 +15,7 @@ import subprocess
 from pathlib import Path
 
 REPO_ROOT = Path(__file__).resolve().parent.parent
-OUTPUT_DIR = REPO_ROOT / "result" / "logo"
+OUTPUT_DIR = REPO_ROOT / "result" / "logo" / "kunime"
 SVG_DIR = OUTPUT_DIR / "svg"
 PNG_DIR = OUTPUT_DIR / "png"
 WEB_DIR = OUTPUT_DIR / "web"

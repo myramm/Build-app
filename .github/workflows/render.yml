@@ -49,11 +49,13 @@ jobs:
       - name: Commit and Push to result folder
         run: |
           OUT_FILE="${{ github.event.inputs.output_name || 'video3.mp4' }}"
+          mkdir -p result/video
+          cp "out/$OUT_FILE" "result/video/$OUT_FILE"
           cp "out/$OUT_FILE" "result/$OUT_FILE"
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git add result/
-          git commit -m "Auto render $OUT_FILE to result/ [skip ci]" || echo "No changes"
+          git commit -m "Auto render $OUT_FILE to result/video/ [skip ci]" || echo "No changes"
           git push
 
       - name: Upload Video Artifact
