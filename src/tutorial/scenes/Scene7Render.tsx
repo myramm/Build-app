@@ -2,87 +2,89 @@ import React from 'react';
 import {
   AbsoluteFill,
   interpolate,
-  spring,
   useCurrentFrame,
-  useVideoConfig,
 } from 'remotion';
-import { CodeWindow } from '../CodeWindow';
 import { TutorialHeader } from '../TutorialHeader';
 import { TutorialSubtitle } from '../TutorialSubtitle';
 
 export const Scene7Render: React.FC = () => {
   const frame = useCurrentFrame();
-  const { fps } = useVideoConfig();
 
-  // Render progress simulation (0% to 100% over 250 frames)
   const renderPercent = Math.min(
     100,
     Math.floor(
-      interpolate(frame, [40, 240], [0, 100], {
+      interpolate(frame, [30, 240], [0, 100], {
         extrapolateLeft: 'clamp',
         extrapolateRight: 'clamp',
       })
     )
   );
 
-  const doneScale = spring({
-    frame: frame - 250,
-    fps,
-    config: { damping: 12, mass: 0.6 },
-  });
-
   return (
     <AbsoluteFill
       style={{
-        backgroundColor: '#0a0f1d',
+        backgroundColor: '#030712',
         overflow: 'hidden',
       }}
     >
-      <TutorialHeader step="RENDER MENJADI MP4" stepNumber={7} />
+      <TutorialHeader step="Render Menjadi MP4" stepNumber={7} />
 
       <div
         style={{
           position: 'absolute',
-          top: '42%',
+          top: '38%',
           left: '50%',
           transform: 'translate(-50%, -50%)',
-          width: '100%',
+          width: '88%',
+          maxWidth: 950,
           display: 'flex',
-          justifyContent: 'center',
+          flexDirection: 'column',
+          gap: 20,
         }}
       >
-        <CodeWindow title="terminal — render video" icon="🎬">
-          {/* Command */}
-          <div style={{ fontSize: 26, lineHeight: 1.8 }}>
-            <span style={{ color: '#4ade80' }}>user@dev:~/my-video$ </span>
-            <span style={{ color: '#38bdf8', fontWeight: 800 }}>
+        {/* CLI Command Block */}
+        <div
+          style={{
+            backgroundColor: '#0f172a',
+            border: '1px solid #1e293b',
+            borderRadius: 12,
+            padding: '24px 28px',
+            fontFamily: "'Fira Code', monospace",
+          }}
+        >
+          <div style={{ color: '#64748b', fontSize: 16, marginBottom: 14 }}>
+            PRODUCTION CLI RENDER
+          </div>
+
+          <div style={{ fontSize: 24, lineHeight: 1.8 }}>
+            <span style={{ color: '#64748b' }}>my-video $ </span>
+            <span style={{ color: '#10b981', fontWeight: 800 }}>
               npx remotion render Main out/video2.mp4
             </span>
           </div>
 
           {/* Progress Bar inside Terminal */}
-          <div style={{ marginTop: 28 }}>
+          <div style={{ marginTop: 24 }}>
             <div
               style={{
                 display: 'flex',
                 justifyContent: 'space-between',
-                color: '#e2e8f0',
-                fontSize: 22,
-                fontFamily: 'monospace',
-                marginBottom: 10,
+                color: '#94a3b8',
+                fontSize: 18,
+                marginBottom: 8,
               }}
             >
-              <span>Rendering 1080×1920 (60 FPS)...</span>
-              <span style={{ color: '#38bdf8', fontWeight: 800 }}>
+              <span>Encoding Chromium Frames to H.264...</span>
+              <span style={{ color: '#10b981', fontWeight: 800 }}>
                 {renderPercent}%
               </span>
             </div>
 
             <div
               style={{
-                height: 16,
+                height: 10,
                 backgroundColor: '#1e293b',
-                borderRadius: 8,
+                borderRadius: 4,
                 overflow: 'hidden',
               }}
             >
@@ -90,65 +92,98 @@ export const Scene7Render: React.FC = () => {
                 style={{
                   height: '100%',
                   width: `${renderPercent}%`,
-                  backgroundColor: '#38bdf8',
-                  boxShadow: '0 0 16px #38bdf8',
+                  backgroundColor: '#10b981',
                 }}
               />
             </div>
           </div>
+        </div>
 
-          {/* Success Box */}
-          {frame >= 250 && (
+        {/* Render Specification & Output Card */}
+        {frame >= 200 && (
+          <div
+            style={{
+              backgroundColor: '#0f172a',
+              border: '1px solid #10b981',
+              borderRadius: 12,
+              padding: '24px 28px',
+              fontFamily: "'Fira Code', monospace",
+            }}
+          >
             <div
               style={{
-                marginTop: 32,
-                transform: `scale(${Math.max(0, doneScale)})`,
-                backgroundColor: 'rgba(34, 197, 94, 0.15)',
-                border: '2px solid #22c55e',
-                borderRadius: 16,
-                padding: '20px 24px',
-                display: 'flex',
-                alignItems: 'center',
-                gap: 20,
+                color: '#10b981',
+                fontWeight: 800,
+                fontSize: 20,
+                marginBottom: 14,
               }}
             >
-              <div style={{ fontSize: 44 }}>🎉</div>
+              ✔ RENDER COMPLETED SUCCESSFULLY
+            </div>
+
+            <div
+              style={{
+                display: 'grid',
+                gridTemplateColumns: '1fr 1fr',
+                gap: 16,
+                fontSize: 18,
+                color: '#cbd5e1',
+              }}
+            >
               <div>
-                <div style={{ color: '#4ade80', fontSize: 26, fontWeight: 900 }}>
-                  RENDER SUKSES: out/video2.mp4
-                </div>
-                <div style={{ color: '#ffffff', fontSize: 20, marginTop: 4 }}>
-                  Resolusi 1080×1920 | 60 FPS Murni | Siap diupload!
-                </div>
+                <span style={{ color: '#64748b' }}>File Output:</span>{' '}
+                <span style={{ color: '#f8fafc', fontWeight: 700 }}>video2.mp4</span>
+              </div>
+              <div>
+                <span style={{ color: '#64748b' }}>Resolusi:</span>{' '}
+                <span style={{ color: '#f8fafc', fontWeight: 700 }}>1080 × 1920</span>
+              </div>
+              <div>
+                <span style={{ color: '#64748b' }}>Frame Rate:</span>{' '}
+                <span style={{ color: '#10b981', fontWeight: 700 }}>60.0 FPS</span>
+              </div>
+              <div>
+                <span style={{ color: '#64748b' }}>Codec:</span>{' '}
+                <span style={{ color: '#f8fafc', fontWeight: 700 }}>H.264 / AAC</span>
               </div>
             </div>
-          )}
+          </div>
+        )}
 
-          {/* Call to action follow */}
-          {frame >= 320 && (
-            <div
+        {/* Outro Call To Action */}
+        {frame >= 280 && (
+          <div
+            style={{
+              backgroundColor: '#1e293b',
+              border: '1px solid #334155',
+              borderRadius: 10,
+              padding: '16px 24px',
+              display: 'flex',
+              justifyContent: 'space-between',
+              alignItems: 'center',
+              fontFamily: "'Segoe UI', Roboto, sans-serif",
+            }}
+          >
+            <span style={{ color: '#f8fafc', fontWeight: 700, fontSize: 20 }}>
+              Tutorial Selesai. Siap membuat video otomatis?
+            </span>
+            <span
               style={{
-                marginTop: 24,
-                backgroundColor: '#ef4444',
-                color: '#ffffff',
-                borderRadius: 12,
-                padding: '14px 20px',
-                textAlign: 'center',
-                fontWeight: 900,
-                fontSize: 22,
-                letterSpacing: 2,
-                boxShadow: '0 0 20px rgba(239, 68, 68, 0.6)',
+                color: '#10b981',
+                fontFamily: "'Fira Code', monospace",
+                fontWeight: 800,
+                fontSize: 18,
               }}
             >
-              🔔 FOLLOW UNTUK TUTORIAL AI & CODING LAINNYA!
-            </div>
-          )}
-        </CodeWindow>
+              FOLLOW FOR MORE →
+            </span>
+          </div>
+        )}
       </div>
 
       <TutorialSubtitle
-        text="Terakhir, render videomu menjadi MP4 dengan npx remotion render! Video berhasil dibuat dan siap ditonton. Jangan lupa follow untuk tips AI lainnya!"
-        highlightWords={['render', 'mp4', 'npx', 'remotion', 'render', 'video2.mp4', 'follow']}
+        text="Terakhir, render video kalian menjadi file MP4 dengan perintah npx remotion render! Video profesional siap dibagikan. Follow untuk tips teknologi lainnya!"
+        highlightWords={['terakhir', 'render', 'mp4', 'npx', 'remotion', 'render', 'follow']}
       />
     </AbsoluteFill>
   );

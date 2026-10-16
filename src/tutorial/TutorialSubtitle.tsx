@@ -16,12 +16,12 @@ export const TutorialSubtitle: React.FC<TutorialSubtitleProps> = ({
   const translateY = spring({
     frame,
     fps,
-    from: 40,
+    from: 20,
     to: 0,
-    config: { damping: 16, mass: 0.6 },
+    config: { damping: 18, mass: 0.5 },
   });
 
-  const opacity = interpolate(frame, [0, 15], [0, 1], {
+  const opacity = interpolate(frame, [0, 12], [0, 1], {
     extrapolateRight: 'clamp',
   });
 
@@ -34,9 +34,8 @@ export const TutorialSubtitle: React.FC<TutorialSubtitleProps> = ({
         <span
           key={i}
           style={{
-            color: isHigh ? '#38bdf8' : '#ffffff',
-            fontWeight: isHigh ? 900 : 600,
-            textShadow: isHigh ? '0 0 16px rgba(56, 189, 248, 0.7)' : 'none',
+            color: isHigh ? '#10b981' : '#f8fafc',
+            fontWeight: isHigh ? 800 : 500,
           }}
         >
           {word}{' '}
@@ -49,7 +48,7 @@ export const TutorialSubtitle: React.FC<TutorialSubtitleProps> = ({
     <div
       style={{
         position: 'absolute',
-        bottom: 70,
+        bottom: 60,
         left: 40,
         right: 40,
         transform: `translateY(${translateY}px)`,
@@ -59,21 +58,21 @@ export const TutorialSubtitle: React.FC<TutorialSubtitleProps> = ({
     >
       <div
         style={{
-          backgroundColor: 'rgba(13, 17, 23, 0.92)',
-          border: '1.5px solid rgba(56, 189, 248, 0.4)',
-          borderRadius: 24,
-          padding: '24px 30px',
-          textAlign: 'center',
-          boxShadow: '0 20px 40px rgba(0, 0, 0, 0.85)',
+          backgroundColor: '#090d16',
+          border: '1px solid #1e293b',
+          borderRadius: 12,
+          padding: '24px 28px',
+          textAlign: 'left',
+          boxShadow: '0 20px 40px rgba(0, 0, 0, 0.6)',
         }}
       >
         <p
           style={{
             margin: 0,
-            fontSize: 32,
-            lineHeight: 1.45,
+            fontSize: 30,
+            lineHeight: 1.5,
             fontFamily: "'Segoe UI', Roboto, sans-serif",
-            letterSpacing: '-0.3px',
+            letterSpacing: '-0.2px',
           }}
         >
           {renderWords()}

@@ -25,71 +25,81 @@ export const TutorialHeader: React.FC<TutorialHeaderProps> = ({
         left: 0,
         right: 0,
         zIndex: 50,
+        padding: '0 40px',
       }}
     >
-      {/* Top Global Progress Bar */}
+      {/* Precision Top Progress Bar (Clean line, zero glow) */}
       <div
         style={{
-          height: 10,
-          backgroundColor: 'rgba(255, 255, 255, 0.1)',
-          width: '100%',
+          position: 'absolute',
+          top: 0,
+          left: 0,
+          right: 0,
+          height: 4,
+          backgroundColor: '#1e293b',
         }}
       >
         <div
           style={{
             height: '100%',
             width: `${progress}%`,
-            backgroundColor: '#38bdf8',
-            boxShadow: '0 0 16px #38bdf8',
+            backgroundColor: '#10b981',
           }}
         />
       </div>
 
-      {/* Step Badge */}
+      {/* Structured Editorial Header */}
       <div
         style={{
           display: 'flex',
-          justifyContent: 'center',
+          justifyContent: 'space-between',
+          alignItems: 'center',
           paddingTop: 36,
+          borderBottom: '1px solid #1e293b',
+          paddingBottom: 16,
         }}
       >
+        {/* Step Indicator */}
         <div
           style={{
             display: 'flex',
             alignItems: 'center',
             gap: 12,
-            backgroundColor: 'rgba(15, 23, 42, 0.85)',
-            border: '1.5px solid rgba(56, 189, 248, 0.5)',
-            borderRadius: 999,
-            padding: '10px 24px',
-            boxShadow: '0 8px 24px rgba(0, 0, 0, 0.6)',
+            fontFamily: "'Fira Code', Consolas, monospace",
+            fontSize: 20,
           }}
         >
-          <span
-            style={{
-              backgroundColor: '#38bdf8',
-              color: '#030712',
-              fontWeight: 900,
-              fontSize: 18,
-              borderRadius: 999,
-              padding: '4px 12px',
-              fontFamily: 'monospace',
-            }}
-          >
-            STEP {stepNumber}/{totalSteps}
+          <span style={{ color: '#10b981', fontWeight: 800 }}>
+            {String(stepNumber).padStart(2, '0')}
+          </span>
+          <span style={{ color: '#64748b' }}>/</span>
+          <span style={{ color: '#64748b' }}>
+            {String(totalSteps).padStart(2, '0')}
           </span>
           <span
             style={{
-              color: '#ffffff',
-              fontSize: 22,
-              fontWeight: 800,
-              fontFamily: 'sans-serif',
-              letterSpacing: 1,
+              marginLeft: 8,
+              color: '#f8fafc',
+              fontWeight: 700,
+              letterSpacing: '0.05em',
               textTransform: 'uppercase',
+              fontSize: 20,
             }}
           >
             {step}
           </span>
+        </div>
+
+        {/* Project Tag */}
+        <div
+          style={{
+            fontFamily: "'Fira Code', Consolas, monospace",
+            fontSize: 16,
+            color: '#94a3b8',
+            letterSpacing: '0.05em',
+          }}
+        >
+          REMOTION 4.0 · 60 FPS
         </div>
       </div>
     </div>
