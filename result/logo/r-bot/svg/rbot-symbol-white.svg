@@ -1,0 +1,32 @@
+<svg fill="#ffffff" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="100%" height="100%"><title>R-BOT WhatsApp Automation Logo</title>
+  
+  <defs>
+    <linearGradient id="rbot-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff" />
+      <stop offset="100%" stop-color="#ffffff" />
+    </linearGradient>
+  </defs>
+
+  <!-- Outer Chat Speech Bubble Silhouette -->
+  <path d="M 256,64 C 150,64 64,150 64,256 C 64,294 74,330 94,360 L 72,428 C 70,436 78,444 86,442 L 154,420 C 184,438 218,448 256,448 C 362,448 448,362 448,256 C 448,150 362,64 256,64 Z" 
+        fill="none" stroke="url(#rbot-grad)" stroke-width="22" stroke-linecap="round" stroke-linejoin="round" />
+
+  <!-- Robot 'R' Monogram -->
+  <g transform="translate(16, -4)">
+    <!-- Vertical Pillar -->
+    <rect x="170" y="156" width="40" height="188" rx="14" fill="#ffffff" />
+
+    <!-- Upper Loop with Robot Head Arc -->
+    <path d="M 210,156 L 276,156 C 318,156 346,184 346,222 C 346,260 318,288 276,288 L 210,288 Z" 
+          fill="none" stroke="url(#rbot-grad)" stroke-width="36" stroke-linecap="round" stroke-linejoin="round" />
+
+    <!-- Robot Glowing Visor Eye Lens (Clear geometric element) -->
+    <rect x="232" y="206" width="60" height="32" rx="16" fill="#ffffff" />
+    <circle cx="250" cy="222" r="6" fill="#ffffff" />
+    <circle cx="274" cy="222" r="6" fill="#ffffff" />
+
+    <!-- Dynamic 45° Diagonal Leg -->
+    <path d="M 240,264 L 326,350 C 332,356 344,356 350,350 L 358,342 C 364,336 364,324 358,318 L 274,234 Z" 
+          fill="url(#rbot-grad)" />
+  </g>
+</svg>
