@@ -1,0 +1,52 @@
+name: Export Kunime Logo & Brand Package
+
+on:
+  push:
+    branches: [ main ]
+    paths:
+      - 'branding/**'
+      - 'scripts/logo/**'
+      - 'scripts/build_kunime_assets.py'
+      - 'scripts/generate_branding.py'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  build-brand-kit:
+    name: Build Kunime Brand Kit
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.10'
+
+      - name: Install System Vector & Imaging Dependencies
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y librsvg2-bin python3-pil
+          python3 -m pip install pillow cairosvg
+
+      - name: Run Kunime Brand Asset Generator
+        run: |
+          python3 scripts/build_kunime_assets.py
+
+      - name: Commit and Push Brand Deliverables to result/logo
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add result/logo/
+          git commit -m "feat(branding): auto-build Kunime high-res brand package in result/logo/ [skip ci]" || echo "No changes"
+          git push
+
+      - name: Upload Brand Kit Artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: kunime-brand-kit
+          path: result/logo/
+          retention-days: 14

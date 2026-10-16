@@ -3,10 +3,11 @@ name: Render Remotion Video
 on:
   push:
     branches: [ main ]
-    paths-ignore:
-      - 'result/**'
-      - 'README.md'
-      - 'docs/**'
+    paths:
+      - 'src/**'
+      - 'public/**'
+      - 'remotion.config.ts'
+      - 'package.json'
   workflow_dispatch:
     inputs:
       composition:

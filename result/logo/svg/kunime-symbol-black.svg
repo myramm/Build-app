@@ -1,0 +1,23 @@
+<svg fill="#000000" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="100%" height="100%"><title>Kunime Anime Streaming Logo</title>
+  
+  <defs>
+    <linearGradient id="kunime-primary" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#000000" />
+      <stop offset="100%" stop-color="#000000" />
+    </linearGradient>
+  </defs>
+
+  <g id="kunime-symbol" transform="translate(121, 116)">
+    <!-- Vertical Katana Backbone / Pillar -->
+    <rect x="0" y="0" width="56" height="280" rx="16" fill="#FFFFFF" />
+
+    <!-- Upper Katana Diagonal Slash -->
+    <path d="M 88,160 L 216,32 C 224,24 236,24 244,32 L 256,44 C 264,52 264,64 256,72 L 144,184 Z" fill="url(#kunime-primary)" />
+
+    <!-- Lower Streaming Diagonal Slash -->
+    <path d="M 88,120 L 256,232 C 264,240 264,252 256,260 L 236,276 C 228,284 216,284 208,276 L 72,168 Z" fill="url(#kunime-primary)" />
+
+    <!-- Embedded High-Energy Play Triangle Core -->
+    <polygon points="112,96 224,170 112,244" fill="#FFFFFF" />
+  </g>
+</svg>
