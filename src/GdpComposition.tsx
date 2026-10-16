@@ -5,30 +5,36 @@ import {
   Sequence,
   staticFile,
   useCurrentFrame,
+  useVideoConfig,
 } from 'remotion';
 import {
   getActiveMilestone,
-  getDateFromFrame,
-  getRankedCountriesMonthly,
+  getRankedCountries,
+  getTimelineState,
   MILESTONES,
 } from './gdp/data';
 import { GdpBar } from './gdp/GdpBar';
+import { GdpFooter } from './gdp/GdpFooter';
 import { GdpHeader } from './gdp/GdpHeader';
 import { GdpMilestone } from './gdp/GdpMilestone';
 
 export const GdpComposition: React.FC = () => {
   const frame = useCurrentFrame();
+  const { durationInFrames } = useVideoConfig();
 
-  // Current exact month and year
-  const currentDate = getDateFromFrame(frame);
+  // Current timeline state (Year, Projection status, Progress)
+  const timeline = getTimelineState(frame, durationInFrames);
 
-  // Sample 20 frames prior to determine recent rank climb/fall
-  const prevDate = getDateFromFrame(Math.max(0, frame - 20));
+  // Sample 24 frames prior to determine recent rank climb/fall
+  const prevTimeline = getTimelineState(
+    Math.max(0, frame - 24),
+    durationInFrames
+  );
 
-  // Current top 10 rankings
-  const rankedCountries = getRankedCountriesMonthly(
-    currentDate.yearDecimal,
-    prevDate.yearDecimal
+  // Top 10 countries ranked at current year
+  const rankedCountries = getRankedCountries(
+    timeline.yearDecimal,
+    prevTimeline.yearDecimal
   );
   const maxGdp = rankedCountries.length > 0 ? rankedCountries[0].gdp : 1;
   const activeMilestone = getActiveMilestone(frame);
@@ -43,88 +49,64 @@ export const GdpComposition: React.FC = () => {
       ? [250, 500, 1000, 1500]
       : [100, 250, 500, 750];
 
+  const isFinalFrame = frame >= durationInFrames - 120;
+
   return (
     <AbsoluteFill
       style={{
-        backgroundColor: '#03050E',
+        backgroundColor: '#080A10',
         overflow: 'hidden',
         fontFamily: "'Space Grotesk', -apple-system, sans-serif",
       }}
     >
       {/* ============================================================ */}
-      {/* AUDIO SOUND EFFECTS (PURE SFX - NO VOICEOVER)                */}
+      {/* AUDIO SOUND EFFECTS (PURE SFX DESIGN)                        */}
       {/* ============================================================ */}
 
-      {/* 1. Continuous Driving Ambient Pulse / Synth Bass */}
-      <Audio src={staticFile('audio/gdp/pulse.mp3')} volume={0.25} loop />
+      {/* 1. Ambient Rhythmic Pulse (120 BPM driving tempo) */}
+      <Audio src={staticFile('audio/gdp/pulse.mp3')} volume={0.22} loop />
 
-      {/* 2. Crystal Chime SFX triggered on each Milestone Event */}
+      {/* 2. Crystal Chime on each Milestone Event */}
       {MILESTONES.map((m) => (
         <Sequence
           key={`chime-${m.id}`}
           from={m.startFrame}
           durationInFrames={120}
         >
-          <Audio src={staticFile('audio/gdp/chime.mp3')} volume={0.7} />
+          <Audio src={staticFile('audio/gdp/chime.mp3')} volume={0.65} />
         </Sequence>
       ))}
 
-      {/* 3. Aerodynamic Whoosh SFX for Major Overtakes */}
+      {/* 3. Aerodynamic Whoosh for Major Rank Shifts */}
       {MILESTONES.map((m) => (
         <Sequence
           key={`whoosh-${m.id}`}
-          from={m.startFrame + 5}
-          durationInFrames={45}
+          from={m.startFrame + 4}
+          durationInFrames={40}
         >
-          <Audio src={staticFile('audio/gdp/whoosh.mp3')} volume={0.35} />
+          <Audio src={staticFile('audio/gdp/whoosh.mp3')} volume={0.3} />
         </Sequence>
       ))}
 
-      {/* 4. Periodic Subtle Ticks on Month Advances (Every 60 frames) */}
-      {Array.from({ length: 54 }).map((_, i) => (
-        <Sequence key={`tick-${i}`} from={i * 60} durationInFrames={10}>
-          <Audio src={staticFile('audio/gdp/tick.mp3')} volume={0.12} />
+      {/* 4. Periodic Subtle Ticks on Year Transitions (Every 40 frames) */}
+      {Array.from({ length: 76 }).map((_, i) => (
+        <Sequence key={`tick-${i}`} from={60 + i * 40} durationInFrames={8}>
+          <Audio src={staticFile('audio/gdp/tick.mp3')} volume={0.1} />
         </Sequence>
       ))}
 
       {/* ============================================================ */}
-      {/* VISUAL DESIGN: CINEMA DARK UI & DATA VISUALIZATION           */}
+      {/* VISUAL DESIGN: CLEAN EDITORIAL DATA VISUALIZATION            */}
       {/* ============================================================ */}
-
-      {/* Subtle Background Radial Glow */}
-      <div
-        style={{
-          position: 'absolute',
-          top: -200,
-          right: -200,
-          width: 800,
-          height: 800,
-          borderRadius: '50%',
-          background: 'radial-gradient(circle, rgba(56, 189, 248, 0.06) 0%, transparent 70%)',
-          pointerEvents: 'none',
-        }}
-      />
-      <div
-        style={{
-          position: 'absolute',
-          bottom: 200,
-          left: -200,
-          width: 700,
-          height: 700,
-          borderRadius: '50%',
-          background: 'radial-gradient(circle, rgba(239, 68, 68, 0.05) 0%, transparent 70%)',
-          pointerEvents: 'none',
-        }}
-      />
 
       {/* Vertical Scale Guideline Grid */}
       <div
         style={{
           position: 'absolute',
-          left: 122,
-          right: 44,
+          left: 106,
+          right: 48,
           top: 210,
-          bottom: 180,
+          bottom: 70,
           pointerEvents: 'none',
         }}
       >
@@ -148,9 +130,10 @@ export const GdpComposition: React.FC = () => {
             >
               <span
                 style={{
-                  fontFamily: "'Fira Code', monospace",
+                  fontFamily: "'Space Grotesk', monospace",
                   fontSize: 14,
-                  color: 'rgba(255, 255, 255, 0.25)',
+                  fontWeight: 700,
+                  color: 'rgba(255, 255, 255, 0.28)',
                   transform: 'translateX(-50%)',
                 }}
               >
@@ -161,8 +144,8 @@ export const GdpComposition: React.FC = () => {
         })}
       </div>
 
-      {/* Header: Title, Live Monthly Resolution & Giant Date Badge */}
-      <GdpHeader date={currentDate} />
+      {/* Editorial Header */}
+      <GdpHeader timeline={timeline} />
 
       {/* 10 Animated Country Bars */}
       <div style={{ position: 'relative', width: '100%', height: '100%' }}>
@@ -173,6 +156,9 @@ export const GdpComposition: React.FC = () => {
 
       {/* Historical Context Milestone Toast */}
       <GdpMilestone milestone={activeMilestone} frame={frame} />
+
+      {/* Editorial Footer & Attribution */}
+      <GdpFooter isFinalFrame={isFinalFrame} />
     </AbsoluteFill>
   );
 };

@@ -1,5 +1,12 @@
+export type DataStatusCode =
+  | 'ACTUAL_OFFICIAL'
+  | 'ACTUAL_HISTORICAL_ESTIMATE'
+  | 'PRELIMINARY_ESTIMATE'
+  | 'PROJECTION_IMF_WEO';
+
 export interface CountryInfo {
   id: string;
+  iso3: string;
   name: string;
   flag: string;
   color: string;
@@ -10,23 +17,25 @@ export interface CountryRanked extends CountryInfo {
   gdp: number; // in Billion USD
   rank: number;
   prevRank?: number;
-  rankDelta?: number; // >0 climbed up, <0 dropped down
+  rankDelta?: number;
 }
 
-export interface MonthDate {
-  year: number;
-  month: number; // 1 to 12
-  monthName: string;
-  monthShort: string;
+export interface TimelineState {
+  currentYear: number;
   yearDecimal: number;
+  dataStatus: DataStatusCode;
+  statusLabel: string;
+  statusBadgeColor: string;
+  isProjection: boolean;
+  progressPercent: number;
 }
 
 export interface Milestone {
   id: string;
   year: number;
-  month: number; // 1 to 12
   title: string;
   description: string;
+  verifiedSource: string;
   highlightCountryId?: string;
   startFrame: number;
   endFrame: number;

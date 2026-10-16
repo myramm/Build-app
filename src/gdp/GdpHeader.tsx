@@ -1,11 +1,41 @@
 import React from 'react';
-import { MonthDate } from './types';
+import { TimelineState } from './types';
 
 interface GdpHeaderProps {
-  date: MonthDate;
+  timeline: TimelineState;
 }
 
-export const GdpHeader: React.FC<GdpHeaderProps> = ({ date }) => {
+export const GdpHeader: React.FC<GdpHeaderProps> = ({ timeline }) => {
+  const isProjection = timeline.isProjection;
+  const is2026 = timeline.currentYear === 2026;
+
+  // Exact editorial status label based on year
+  const displayStatus = is2026
+    ? 'PROYEKSI 2026'
+    : isProjection
+    ? 'PROYEKSI IMF WEO'
+    : timeline.currentYear >= 2024
+    ? 'ESTIMASI AWAL 2024'
+    : timeline.currentYear >= 1960
+    ? 'DATA AKTUAL RESMI'
+    : 'ESTIMASI HISTORIS';
+
+  const badgeBg = isProjection
+    ? 'rgba(245, 158, 11, 0.15)'
+    : timeline.currentYear >= 2024
+    ? 'rgba(56, 189, 248, 0.15)'
+    : timeline.currentYear >= 1960
+    ? 'rgba(16, 185, 129, 0.15)'
+    : 'rgba(148, 163, 184, 0.12)';
+
+  const badgeBorder = isProjection
+    ? '1px solid rgba(245, 158, 11, 0.4)'
+    : timeline.currentYear >= 2024
+    ? '1px solid rgba(56, 189, 248, 0.35)'
+    : timeline.currentYear >= 1960
+    ? '1px solid rgba(16, 185, 129, 0.35)'
+    : '1px solid rgba(148, 163, 184, 0.25)';
+
   return (
     <div
       style={{
@@ -13,143 +43,140 @@ export const GdpHeader: React.FC<GdpHeaderProps> = ({ date }) => {
         top: 0,
         left: 0,
         right: 0,
-        padding: '48px 44px 22px 44px',
+        padding: '50px 48px 24px 48px',
         display: 'flex',
         justifyContent: 'space-between',
-        alignItems: 'center',
+        alignItems: 'flex-start',
         zIndex: 50,
+        backgroundColor: '#07090E',
         borderBottom: '1px solid rgba(255, 255, 255, 0.08)',
-        backgroundColor: 'rgba(5, 7, 17, 0.94)',
-        backdropFilter: 'blur(16px)',
       }}
     >
+      {/* Editorial Title & Methodology */}
       <div>
-        {/* Live Monthly Status Eyebrow */}
+        <h1
+          style={{
+            margin: 0,
+            fontSize: 48,
+            fontWeight: 900,
+            fontFamily: "'Space Grotesk', -apple-system, sans-serif",
+            color: '#FFFFFF',
+            letterSpacing: '-1.5px',
+            lineHeight: 1.05,
+          }}
+        >
+          GDP NEGARA DI DUNIA
+        </h1>
+
         <div
           style={{
             display: 'flex',
             alignItems: 'center',
-            gap: 8,
-            fontFamily: "'Space Grotesk', monospace",
-            fontSize: 16,
-            color: '#10B981',
-            letterSpacing: '0.12em',
-            textTransform: 'uppercase',
-            fontWeight: 800,
+            gap: 12,
+            marginTop: 8,
           }}
         >
           <span
             style={{
-              width: 8,
-              height: 8,
-              borderRadius: '50%',
-              backgroundColor: '#10B981',
-              boxShadow: '0 0 10px #10B981',
+              fontSize: 22,
+              fontWeight: 700,
+              fontFamily: "'Space Grotesk', sans-serif",
+              color: '#CBD5E1',
+              letterSpacing: '-0.3px',
             }}
-          />
-          DATA-VIZ HISTORIS · RESOLUSI PER BULAN
+          >
+            1950 – 2026
+          </span>
+          <span style={{ color: 'rgba(255, 255, 255, 0.2)' }}>•</span>
+          <span
+            style={{
+              fontSize: 18,
+              fontWeight: 500,
+              fontFamily: "'DM Sans', sans-serif",
+              color: '#94A3B8',
+            }}
+          >
+            GDP nominal dalam dolar AS
+          </span>
         </div>
-
-        {/* Main Title */}
-        <h1
-          style={{
-            margin: '6px 0 0 0',
-            fontSize: 44,
-            fontWeight: 900,
-            fontFamily: "'Space Grotesk', sans-serif",
-            color: '#FFFFFF',
-            letterSpacing: '-1px',
-            lineHeight: 1.1,
-          }}
-        >
-          TOP 10 GDP NEGARA DI DUNIA
-        </h1>
-
-        {/* Subtitle */}
-        <p
-          style={{
-            margin: '4px 0 0 0',
-            fontSize: 19,
-            color: '#94A3B8',
-            fontFamily: "'DM Sans', sans-serif",
-            fontWeight: 500,
-          }}
-        >
-          Nilai Nominal dalam Dolar AS (USD) · 1950 – 2026
-        </p>
       </div>
 
-      {/* Modern High-End Date Display (Bulan + Tahun) */}
+      {/* Prominent Editorial Year & Status Badge */}
       <div
         style={{
           display: 'flex',
           flexDirection: 'column',
           alignItems: 'flex-end',
-          justifyContent: 'center',
-          backgroundColor: '#0A0F1D',
-          padding: '12px 28px',
-          borderRadius: 20,
-          border: '1px solid rgba(255, 255, 255, 0.12)',
-          boxShadow: '0 12px 30px rgba(0, 0, 0, 0.6), inset 0 1px 0 rgba(255, 255, 255, 0.1)',
-          minWidth: 240,
         }}
       >
-        {/* Month Label with accent badge */}
+        {/* Dynamic Status Badge */}
         <div
           style={{
-            fontFamily: "'Space Grotesk', sans-serif",
-            fontSize: 22,
-            fontWeight: 800,
-            letterSpacing: '0.15em',
-            textTransform: 'uppercase',
-            color: '#38BDF8',
-            lineHeight: 1,
-            marginBottom: 4,
+            display: 'inline-flex',
+            alignItems: 'center',
+            gap: 8,
+            padding: '6px 14px',
+            borderRadius: 8,
+            backgroundColor: badgeBg,
+            border: badgeBorder,
+            marginBottom: 6,
           }}
         >
-          {date.monthName}
+          <span
+            style={{
+              width: 7,
+              height: 7,
+              borderRadius: '50%',
+              backgroundColor: timeline.statusBadgeColor,
+            }}
+          />
+          <span
+            style={{
+              fontFamily: "'Space Grotesk', monospace",
+              fontSize: 14,
+              fontWeight: 800,
+              letterSpacing: '0.08em',
+              textTransform: 'uppercase',
+              color: timeline.statusBadgeColor,
+            }}
+          >
+            {displayStatus}
+          </span>
         </div>
 
-        {/* Year Label */}
+        {/* Large Year Display */}
         <div
           style={{
             fontFamily: "'Space Grotesk', monospace",
-            fontSize: 64,
+            fontSize: 72,
             fontWeight: 900,
             color: '#FFFFFF',
             lineHeight: 1,
             letterSpacing: '-2px',
           }}
         >
-          {date.year}
+          {timeline.currentYear}
         </div>
 
-        {/* 12-Segment Micro Calendar Indicator */}
+        {/* Subtle Progress Bar (1950 to 2026) */}
         <div
           style={{
-            display: 'flex',
-            gap: 4,
+            width: 140,
+            height: 4,
+            backgroundColor: 'rgba(255, 255, 255, 0.08)',
+            borderRadius: 2,
             marginTop: 8,
-            alignItems: 'center',
+            overflow: 'hidden',
           }}
         >
-          {Array.from({ length: 12 }).map((_, i) => {
-            const isCurrent = i + 1 === date.month;
-            const isPassed = i + 1 < date.month;
-            return (
-              <div
-                key={i}
-                style={{
-                  width: isCurrent ? 14 : 6,
-                  height: 5,
-                  borderRadius: 3,
-                  backgroundColor: isCurrent ? '#38BDF8' : isPassed ? '#1E293B' : '#0F172A',
-                  transition: 'all 0.1s ease',
-                  boxShadow: isCurrent ? '0 0 8px #38BDF8' : 'none',
-                }}
-              />
-            );
-          })}
+          <div
+            style={{
+              width: `${timeline.progressPercent}%`,
+              height: '100%',
+              backgroundColor: timeline.statusBadgeColor,
+              transition: 'width 0.1s linear',
+            }}
+          />
         </div>
       </div>
     </div>
