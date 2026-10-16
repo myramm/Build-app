@@ -1,14 +1,15 @@
-# Remotion Video Project
+# Video Remotion: Tahukah Kamu pada Perang Dunia 2 (Kopral Wojtek)
 
-Project Remotion dengan rendering otomatis menggunakan **GitHub Actions**.
+Video vertikal 9:16 (Shorts / Reels / TikTok) tentang kisah nyata Perang Dunia 2: **Kopral Wojtek si Beruang Perang**.
 
-## 🚀 Fitur
-- **Lightweight VPS Development**: Kode dan komponen React diedit di VPS tanpa membebani RAM/CPU.
-- **GitHub Actions Auto-Render**: Rendering video dijalankan di runner GitHub Actions (RAM 7 GB) secara otomatis.
-- **Artifacts Download**: File video `.mp4` hasil render bisa langsung diunduh dari tab *Actions* di GitHub.
+## 🎬 Detail Video
+- **Format**: Vertikal 1080x1920 (9:16)
+- **Durasi**: 15 Detik (450 Frames @ 30 FPS)
+- **Konten Cerita**:
+  - **Hook**: Fakta ada beruang yang diangkat jadi prajurit resmi militer.
+  - **Identitas**: Wojtek si beruang Suriah diadopsi oleh prajurit Polandia pada 1942.
+  - **Aksi Nyata**: Pertempuran Monte Cassino 1944 mengangkat peti peluru artileri 45 kg.
+  - **Pangkat**: Naik pangkat menjadi Kopral, lengkap dengan buku gaji dan emblem resmi kompi.
 
-## 🛠️ Menjalankan Render
-1. Buka tab **Actions** di repositori GitHub Anda.
-2. Pilih workflow **Render Remotion Video**.
-3. Klik **Run workflow**.
-4. Setelah selesai, download file video di bagian **Artifacts**.
+## 🚀 Cara Render Otomatis di GitHub
+Setiap kali ada commit di branch `main`, atau lewat menu **Actions** > **Render Remotion Video** > **Run workflow**, GitHub Actions (RAM 7 GB) akan me-render video dan menyediakannya untuk diunduh di tab **Artifacts**.

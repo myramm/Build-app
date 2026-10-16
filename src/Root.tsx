@@ -8,14 +8,10 @@ export const RemotionRoot: React.FC = () => {
       <Composition
         id="Main"
         component={MainComposition}
-        durationInFrames={150}
+        durationInFrames={450}
         fps={30}
-        width={1920}
-        height={1080}
-        defaultProps={{
-          titleText: 'Hello from Remotion!',
-          subtitleText: 'Rendered with GitHub Actions',
-        }}
+        width={1080}
+        height={1920}
       />
     </>
   );
