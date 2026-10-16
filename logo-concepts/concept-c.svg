@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="100%" height="100%">
+  <defs>
+    <linearGradient id="kunime-grad-c" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FF2A5F" />
+      <stop offset="100%" stop-color="#7C3AED" />
+    </linearGradient>
+  </defs>
+  <!-- Background -->
+  <rect width="512" height="512" rx="96" fill="#08070E" />
+
+  <!-- Geometric Kitsune Play Mark -->
+  <g transform="translate(106, 96)">
+    <!-- Left Ear / Arc -->
+    <path d="M 40,240 L 40,80 L 120,160 Z" fill="#FFFFFF" />
+
+    <!-- Right Ear / Arc -->
+    <path d="M 260,240 L 260,80 L 180,160 Z" fill="#FFFFFF" />
+
+    <!-- Center Forward Play Chevron (Mask Face) -->
+    <path d="M 70,160 L 230,240 C 242,246 242,260 230,266 L 70,346 C 58,352 44,342 44,328 L 44,178 C 44,164 58,154 70,160 Z" fill="url(#kunime-grad-c)" />
+
+    <!-- Fox Eye Slash (Anime Eye Accent) -->
+    <path d="M 90,210 L 160,253 L 90,270 Z" fill="#FFFFFF" />
+  </g>
+</svg>

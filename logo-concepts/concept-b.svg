@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="100%" height="100%">
+  <defs>
+    <linearGradient id="kunime-grad-b" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#8B5CF6" />
+      <stop offset="100%" stop-color="#FF2E56" />
+    </linearGradient>
+  </defs>
+  <!-- Background -->
+  <rect width="512" height="512" rx="96" fill="#0A0914" />
+
+  <!-- Shuriken Stream Portal -->
+  <g transform="translate(256, 256)">
+    <!-- Blade 1 (Top-Right) -->
+    <path d="M 0,-160 C 50,-160 140,-100 160,0 C 120,-30 60,-40 0,-40 Z" fill="url(#kunime-grad-b)" />
+
+    <!-- Blade 2 (Bottom-Right) -->
+    <path d="M 0,-160 C 50,-160 140,-100 160,0 C 120,-30 60,-40 0,-40 Z" fill="url(#kunime-grad-b)" transform="rotate(120)" />
+
+    <!-- Blade 3 (Bottom-Left) -->
+    <path d="M 0,-160 C 50,-160 140,-100 160,0 C 120,-30 60,-40 0,-40 Z" fill="url(#kunime-grad-b)" transform="rotate(240)" />
+
+    <!-- Inner Core: Glowing White Play Button Triangle -->
+    <polygon points="-24,-45 48,0 -24,45" fill="#FFFFFF" />
+  </g>
+</svg>

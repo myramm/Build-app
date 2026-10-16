@@ -1,0 +1,301 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1600" height="840" viewBox="0 0 1600 840"><rect width="1600" height="840" fill="#f7f7f4"/><text x="60" y="78" font-family="system-ui,-apple-system,'Segoe UI',Helvetica,Arial,sans-serif" font-size="40" font-weight="700" fill="#161616">Kunime — Konsep Desain Logo Anime Streaming</text><text x="60" y="116" font-family="system-ui,-apple-system,'Segoe UI',Helvetica,Arial,sans-serif" font-size="20" fill="#6b6b6b">Concepts for review — pick a direction (or tell me what you like in each).</text><rect x="60" y="150" width="474.667" height="630" rx="18" fill="#fff" stroke="#161616" stroke-width="2"/><g><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" x="90" y="190" width="414.667" height="300" preserveAspectRatio="xMidYMid meet">
+  <defs>
+    <linearGradient id="c0-kunime-grad-a" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FF2A5F" />
+      <stop offset="100%" stop-color="#FF6B35" />
+    </linearGradient>
+  </defs>
+  <!-- Background Dark Canvas -->
+  <rect width="512" height="512" rx="96" fill="#090A10" />
+
+  <!-- Geometric Symbol: Katana 'K' + Stream Play Arrow -->
+  <g transform="translate(116, 116)">
+    <!-- Vertical Pillar (Torii / Katana Backbone) -->
+    <rect x="0" y="0" width="56" height="280" rx="14" fill="#FFFFFF" />
+
+    <!-- Top Slash / Katana Strike -->
+    <path d="M 96,168 L 220,32 C 228,24 240,30 240,42 L 240,104 C 240,112 234,120 226,126 L 148,188 Z" fill="url(#c0-kunime-grad-a)" />
+
+    <!-- Play Arrow & Bottom Leg (Media Play Integration) -->
+    <path d="M 96,120 L 256,224 C 268,232 268,248 256,256 L 216,280 C 206,286 194,284 186,276 L 76,160 Z" fill="url(#c0-kunime-grad-a)" />
+    
+    <!-- Dynamic Play Accent Needle -->
+    <polygon points="120,100 230,180 120,220" fill="#FFFFFF" opacity="0.95" />
+  </g>
+</svg>
+</g><g><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" x="90" y="516" width="64" height="64" preserveAspectRatio="xMidYMid meet">
+  <defs>
+    <linearGradient id="s064-kunime-grad-a" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FF2A5F" />
+      <stop offset="100%" stop-color="#FF6B35" />
+    </linearGradient>
+  </defs>
+  <!-- Background Dark Canvas -->
+  <rect width="512" height="512" rx="96" fill="#090A10" />
+
+  <!-- Geometric Symbol: Katana 'K' + Stream Play Arrow -->
+  <g transform="translate(116, 116)">
+    <!-- Vertical Pillar (Torii / Katana Backbone) -->
+    <rect x="0" y="0" width="56" height="280" rx="14" fill="#FFFFFF" />
+
+    <!-- Top Slash / Katana Strike -->
+    <path d="M 96,168 L 220,32 C 228,24 240,30 240,42 L 240,104 C 240,112 234,120 226,126 L 148,188 Z" fill="url(#s064-kunime-grad-a)" />
+
+    <!-- Play Arrow & Bottom Leg (Media Play Integration) -->
+    <path d="M 96,120 L 256,224 C 268,232 268,248 256,256 L 216,280 C 206,286 194,284 186,276 L 76,160 Z" fill="url(#s064-kunime-grad-a)" />
+    
+    <!-- Dynamic Play Accent Needle -->
+    <polygon points="120,100 230,180 120,220" fill="#FFFFFF" opacity="0.95" />
+  </g>
+</svg>
+</g><text x="122" y="600" font-family="system-ui,-apple-system,'Segoe UI',Helvetica,Arial,sans-serif" font-size="12" fill="#8a8a8a" text-anchor="middle">64px</text><g><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" x="180" y="548" width="32" height="32" preserveAspectRatio="xMidYMid meet">
+  <defs>
+    <linearGradient id="s032-kunime-grad-a" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FF2A5F" />
+      <stop offset="100%" stop-color="#FF6B35" />
+    </linearGradient>
+  </defs>
+  <!-- Background Dark Canvas -->
+  <rect width="512" height="512" rx="96" fill="#090A10" />
+
+  <!-- Geometric Symbol: Katana 'K' + Stream Play Arrow -->
+  <g transform="translate(116, 116)">
+    <!-- Vertical Pillar (Torii / Katana Backbone) -->
+    <rect x="0" y="0" width="56" height="280" rx="14" fill="#FFFFFF" />
+
+    <!-- Top Slash / Katana Strike -->
+    <path d="M 96,168 L 220,32 C 228,24 240,30 240,42 L 240,104 C 240,112 234,120 226,126 L 148,188 Z" fill="url(#s032-kunime-grad-a)" />
+
+    <!-- Play Arrow & Bottom Leg (Media Play Integration) -->
+    <path d="M 96,120 L 256,224 C 268,232 268,248 256,256 L 216,280 C 206,286 194,284 186,276 L 76,160 Z" fill="url(#s032-kunime-grad-a)" />
+    
+    <!-- Dynamic Play Accent Needle -->
+    <polygon points="120,100 230,180 120,220" fill="#FFFFFF" opacity="0.95" />
+  </g>
+</svg>
+</g><text x="196" y="600" font-family="system-ui,-apple-system,'Segoe UI',Helvetica,Arial,sans-serif" font-size="12" fill="#8a8a8a" text-anchor="middle">32px</text><g><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" x="238" y="564" width="16" height="16" preserveAspectRatio="xMidYMid meet">
+  <defs>
+    <linearGradient id="s016-kunime-grad-a" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FF2A5F" />
+      <stop offset="100%" stop-color="#FF6B35" />
+    </linearGradient>
+  </defs>
+  <!-- Background Dark Canvas -->
+  <rect width="512" height="512" rx="96" fill="#090A10" />
+
+  <!-- Geometric Symbol: Katana 'K' + Stream Play Arrow -->
+  <g transform="translate(116, 116)">
+    <!-- Vertical Pillar (Torii / Katana Backbone) -->
+    <rect x="0" y="0" width="56" height="280" rx="14" fill="#FFFFFF" />
+
+    <!-- Top Slash / Katana Strike -->
+    <path d="M 96,168 L 220,32 C 228,24 240,30 240,42 L 240,104 C 240,112 234,120 226,126 L 148,188 Z" fill="url(#s016-kunime-grad-a)" />
+
+    <!-- Play Arrow & Bottom Leg (Media Play Integration) -->
+    <path d="M 96,120 L 256,224 C 268,232 268,248 256,256 L 216,280 C 206,286 194,284 186,276 L 76,160 Z" fill="url(#s016-kunime-grad-a)" />
+    
+    <!-- Dynamic Play Accent Needle -->
+    <polygon points="120,100 230,180 120,220" fill="#FFFFFF" opacity="0.95" />
+  </g>
+</svg>
+</g><text x="246" y="600" font-family="system-ui,-apple-system,'Segoe UI',Helvetica,Arial,sans-serif" font-size="12" fill="#8a8a8a" text-anchor="middle">16px</text><text x="90.0" y="636" font-family="system-ui,-apple-system,'Segoe UI',Helvetica,Arial,sans-serif" font-size="26" font-weight="700" fill="#161616">A · Katana Play (K)</text><text x="90.0" y="664" font-family="system-ui,-apple-system,'Segoe UI',Helvetica,Arial,sans-serif" font-size="15" font-weight="700" fill="#161616" letter-spacing="1.5">RECOMMENDED</text><text x="90.0" y="698" font-family="system-ui,-apple-system,'Segoe UI',Helvetica,Arial,sans-serif" font-size="19" fill="#555">Huruf K geometris dengan bilah Katana dan</text><text x="90.0" y="724" font-family="system-ui,-apple-system,'Segoe UI',Helvetica,Arial,sans-serif" font-size="19" fill="#555">simbol Play anime streaming.</text><rect x="562.667" y="150" width="474.667" height="630" rx="18" fill="#fff" stroke="#e4e4e0" stroke-width="1"/><g><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" x="592.667" y="190" width="414.667" height="300" preserveAspectRatio="xMidYMid meet">
+  <defs>
+    <linearGradient id="c1-kunime-grad-b" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#8B5CF6" />
+      <stop offset="100%" stop-color="#FF2E56" />
+    </linearGradient>
+  </defs>
+  <!-- Background -->
+  <rect width="512" height="512" rx="96" fill="#0A0914" />
+
+  <!-- Shuriken Stream Portal -->
+  <g transform="translate(256, 256)">
+    <!-- Blade 1 (Top-Right) -->
+    <path d="M 0,-160 C 50,-160 140,-100 160,0 C 120,-30 60,-40 0,-40 Z" fill="url(#c1-kunime-grad-b)" />
+
+    <!-- Blade 2 (Bottom-Right) -->
+    <path d="M 0,-160 C 50,-160 140,-100 160,0 C 120,-30 60,-40 0,-40 Z" fill="url(#c1-kunime-grad-b)" transform="rotate(120)" />
+
+    <!-- Blade 3 (Bottom-Left) -->
+    <path d="M 0,-160 C 50,-160 140,-100 160,0 C 120,-30 60,-40 0,-40 Z" fill="url(#c1-kunime-grad-b)" transform="rotate(240)" />
+
+    <!-- Inner Core: Glowing White Play Button Triangle -->
+    <polygon points="-24,-45 48,0 -24,45" fill="#FFFFFF" />
+  </g>
+</svg>
+</g><g><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" x="592.667" y="516" width="64" height="64" preserveAspectRatio="xMidYMid meet">
+  <defs>
+    <linearGradient id="s164-kunime-grad-b" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#8B5CF6" />
+      <stop offset="100%" stop-color="#FF2E56" />
+    </linearGradient>
+  </defs>
+  <!-- Background -->
+  <rect width="512" height="512" rx="96" fill="#0A0914" />
+
+  <!-- Shuriken Stream Portal -->
+  <g transform="translate(256, 256)">
+    <!-- Blade 1 (Top-Right) -->
+    <path d="M 0,-160 C 50,-160 140,-100 160,0 C 120,-30 60,-40 0,-40 Z" fill="url(#s164-kunime-grad-b)" />
+
+    <!-- Blade 2 (Bottom-Right) -->
+    <path d="M 0,-160 C 50,-160 140,-100 160,0 C 120,-30 60,-40 0,-40 Z" fill="url(#s164-kunime-grad-b)" transform="rotate(120)" />
+
+    <!-- Blade 3 (Bottom-Left) -->
+    <path d="M 0,-160 C 50,-160 140,-100 160,0 C 120,-30 60,-40 0,-40 Z" fill="url(#s164-kunime-grad-b)" transform="rotate(240)" />
+
+    <!-- Inner Core: Glowing White Play Button Triangle -->
+    <polygon points="-24,-45 48,0 -24,45" fill="#FFFFFF" />
+  </g>
+</svg>
+</g><text x="624.667" y="600" font-family="system-ui,-apple-system,'Segoe UI',Helvetica,Arial,sans-serif" font-size="12" fill="#8a8a8a" text-anchor="middle">64px</text><g><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" x="682.667" y="548" width="32" height="32" preserveAspectRatio="xMidYMid meet">
+  <defs>
+    <linearGradient id="s132-kunime-grad-b" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#8B5CF6" />
+      <stop offset="100%" stop-color="#FF2E56" />
+    </linearGradient>
+  </defs>
+  <!-- Background -->
+  <rect width="512" height="512" rx="96" fill="#0A0914" />
+
+  <!-- Shuriken Stream Portal -->
+  <g transform="translate(256, 256)">
+    <!-- Blade 1 (Top-Right) -->
+    <path d="M 0,-160 C 50,-160 140,-100 160,0 C 120,-30 60,-40 0,-40 Z" fill="url(#s132-kunime-grad-b)" />
+
+    <!-- Blade 2 (Bottom-Right) -->
+    <path d="M 0,-160 C 50,-160 140,-100 160,0 C 120,-30 60,-40 0,-40 Z" fill="url(#s132-kunime-grad-b)" transform="rotate(120)" />
+
+    <!-- Blade 3 (Bottom-Left) -->
+    <path d="M 0,-160 C 50,-160 140,-100 160,0 C 120,-30 60,-40 0,-40 Z" fill="url(#s132-kunime-grad-b)" transform="rotate(240)" />
+
+    <!-- Inner Core: Glowing White Play Button Triangle -->
+    <polygon points="-24,-45 48,0 -24,45" fill="#FFFFFF" />
+  </g>
+</svg>
+</g><text x="698.667" y="600" font-family="system-ui,-apple-system,'Segoe UI',Helvetica,Arial,sans-serif" font-size="12" fill="#8a8a8a" text-anchor="middle">32px</text><g><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" x="740.667" y="564" width="16" height="16" preserveAspectRatio="xMidYMid meet">
+  <defs>
+    <linearGradient id="s116-kunime-grad-b" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#8B5CF6" />
+      <stop offset="100%" stop-color="#FF2E56" />
+    </linearGradient>
+  </defs>
+  <!-- Background -->
+  <rect width="512" height="512" rx="96" fill="#0A0914" />
+
+  <!-- Shuriken Stream Portal -->
+  <g transform="translate(256, 256)">
+    <!-- Blade 1 (Top-Right) -->
+    <path d="M 0,-160 C 50,-160 140,-100 160,0 C 120,-30 60,-40 0,-40 Z" fill="url(#s116-kunime-grad-b)" />
+
+    <!-- Blade 2 (Bottom-Right) -->
+    <path d="M 0,-160 C 50,-160 140,-100 160,0 C 120,-30 60,-40 0,-40 Z" fill="url(#s116-kunime-grad-b)" transform="rotate(120)" />
+
+    <!-- Blade 3 (Bottom-Left) -->
+    <path d="M 0,-160 C 50,-160 140,-100 160,0 C 120,-30 60,-40 0,-40 Z" fill="url(#s116-kunime-grad-b)" transform="rotate(240)" />
+
+    <!-- Inner Core: Glowing White Play Button Triangle -->
+    <polygon points="-24,-45 48,0 -24,45" fill="#FFFFFF" />
+  </g>
+</svg>
+</g><text x="748.667" y="600" font-family="system-ui,-apple-system,'Segoe UI',Helvetica,Arial,sans-serif" font-size="12" fill="#8a8a8a" text-anchor="middle">16px</text><text x="592.6666666666667" y="636" font-family="system-ui,-apple-system,'Segoe UI',Helvetica,Arial,sans-serif" font-size="26" font-weight="700" fill="#161616">B · Shuriken Portal</text><text x="592.6666666666667" y="670" font-family="system-ui,-apple-system,'Segoe UI',Helvetica,Arial,sans-serif" font-size="19" fill="#555">Portal shuriken 3 bilah berputar dengan</text><text x="592.6666666666667" y="696" font-family="system-ui,-apple-system,'Segoe UI',Helvetica,Arial,sans-serif" font-size="19" fill="#555">tombol Play di inti pusat.</text><rect x="1065.33" y="150" width="474.667" height="630" rx="18" fill="#fff" stroke="#e4e4e0" stroke-width="1"/><g><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" x="1095.33" y="190" width="414.667" height="300" preserveAspectRatio="xMidYMid meet">
+  <defs>
+    <linearGradient id="c2-kunime-grad-c" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FF2A5F" />
+      <stop offset="100%" stop-color="#7C3AED" />
+    </linearGradient>
+  </defs>
+  <!-- Background -->
+  <rect width="512" height="512" rx="96" fill="#08070E" />
+
+  <!-- Geometric Kitsune Play Mark -->
+  <g transform="translate(106, 96)">
+    <!-- Left Ear / Arc -->
+    <path d="M 40,240 L 40,80 L 120,160 Z" fill="#FFFFFF" />
+
+    <!-- Right Ear / Arc -->
+    <path d="M 260,240 L 260,80 L 180,160 Z" fill="#FFFFFF" />
+
+    <!-- Center Forward Play Chevron (Mask Face) -->
+    <path d="M 70,160 L 230,240 C 242,246 242,260 230,266 L 70,346 C 58,352 44,342 44,328 L 44,178 C 44,164 58,154 70,160 Z" fill="url(#c2-kunime-grad-c)" />
+
+    <!-- Fox Eye Slash (Anime Eye Accent) -->
+    <path d="M 90,210 L 160,253 L 90,270 Z" fill="#FFFFFF" />
+  </g>
+</svg>
+</g><g><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" x="1095.33" y="516" width="64" height="64" preserveAspectRatio="xMidYMid meet">
+  <defs>
+    <linearGradient id="s264-kunime-grad-c" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FF2A5F" />
+      <stop offset="100%" stop-color="#7C3AED" />
+    </linearGradient>
+  </defs>
+  <!-- Background -->
+  <rect width="512" height="512" rx="96" fill="#08070E" />
+
+  <!-- Geometric Kitsune Play Mark -->
+  <g transform="translate(106, 96)">
+    <!-- Left Ear / Arc -->
+    <path d="M 40,240 L 40,80 L 120,160 Z" fill="#FFFFFF" />
+
+    <!-- Right Ear / Arc -->
+    <path d="M 260,240 L 260,80 L 180,160 Z" fill="#FFFFFF" />
+
+    <!-- Center Forward Play Chevron (Mask Face) -->
+    <path d="M 70,160 L 230,240 C 242,246 242,260 230,266 L 70,346 C 58,352 44,342 44,328 L 44,178 C 44,164 58,154 70,160 Z" fill="url(#s264-kunime-grad-c)" />
+
+    <!-- Fox Eye Slash (Anime Eye Accent) -->
+    <path d="M 90,210 L 160,253 L 90,270 Z" fill="#FFFFFF" />
+  </g>
+</svg>
+</g><text x="1127.33" y="600" font-family="system-ui,-apple-system,'Segoe UI',Helvetica,Arial,sans-serif" font-size="12" fill="#8a8a8a" text-anchor="middle">64px</text><g><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" x="1185.33" y="548" width="32" height="32" preserveAspectRatio="xMidYMid meet">
+  <defs>
+    <linearGradient id="s232-kunime-grad-c" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FF2A5F" />
+      <stop offset="100%" stop-color="#7C3AED" />
+    </linearGradient>
+  </defs>
+  <!-- Background -->
+  <rect width="512" height="512" rx="96" fill="#08070E" />
+
+  <!-- Geometric Kitsune Play Mark -->
+  <g transform="translate(106, 96)">
+    <!-- Left Ear / Arc -->
+    <path d="M 40,240 L 40,80 L 120,160 Z" fill="#FFFFFF" />
+
+    <!-- Right Ear / Arc -->
+    <path d="M 260,240 L 260,80 L 180,160 Z" fill="#FFFFFF" />
+
+    <!-- Center Forward Play Chevron (Mask Face) -->
+    <path d="M 70,160 L 230,240 C 242,246 242,260 230,266 L 70,346 C 58,352 44,342 44,328 L 44,178 C 44,164 58,154 70,160 Z" fill="url(#s232-kunime-grad-c)" />
+
+    <!-- Fox Eye Slash (Anime Eye Accent) -->
+    <path d="M 90,210 L 160,253 L 90,270 Z" fill="#FFFFFF" />
+  </g>
+</svg>
+</g><text x="1201.33" y="600" font-family="system-ui,-apple-system,'Segoe UI',Helvetica,Arial,sans-serif" font-size="12" fill="#8a8a8a" text-anchor="middle">32px</text><g><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" x="1243.33" y="564" width="16" height="16" preserveAspectRatio="xMidYMid meet">
+  <defs>
+    <linearGradient id="s216-kunime-grad-c" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FF2A5F" />
+      <stop offset="100%" stop-color="#7C3AED" />
+    </linearGradient>
+  </defs>
+  <!-- Background -->
+  <rect width="512" height="512" rx="96" fill="#08070E" />
+
+  <!-- Geometric Kitsune Play Mark -->
+  <g transform="translate(106, 96)">
+    <!-- Left Ear / Arc -->
+    <path d="M 40,240 L 40,80 L 120,160 Z" fill="#FFFFFF" />
+
+    <!-- Right Ear / Arc -->
+    <path d="M 260,240 L 260,80 L 180,160 Z" fill="#FFFFFF" />
+
+    <!-- Center Forward Play Chevron (Mask Face) -->
+    <path d="M 70,160 L 230,240 C 242,246 242,260 230,266 L 70,346 C 58,352 44,342 44,328 L 44,178 C 44,164 58,154 70,160 Z" fill="url(#s216-kunime-grad-c)" />
+
+    <!-- Fox Eye Slash (Anime Eye Accent) -->
+    <path d="M 90,210 L 160,253 L 90,270 Z" fill="#FFFFFF" />
+  </g>
+</svg>
+</g><text x="1251.33" y="600" font-family="system-ui,-apple-system,'Segoe UI',Helvetica,Arial,sans-serif" font-size="12" fill="#8a8a8a" text-anchor="middle">16px</text><text x="1095.3333333333335" y="636" font-family="system-ui,-apple-system,'Segoe UI',Helvetica,Arial,sans-serif" font-size="26" font-weight="700" fill="#161616">C · Kitsune Mask</text><text x="1095.3333333333335" y="670" font-family="system-ui,-apple-system,'Segoe UI',Helvetica,Arial,sans-serif" font-size="19" fill="#555">Siluet topeng Kitsune anime dengan chevron</text><text x="1095.3333333333335" y="696" font-family="system-ui,-apple-system,'Segoe UI',Helvetica,Arial,sans-serif" font-size="19" fill="#555">Play forward-streaming.</text></svg>
