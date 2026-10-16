@@ -44,7 +44,7 @@ jobs:
           COMP="${{ github.event.inputs.composition || 'GdpRace' }}"
           OUT_FILE="${{ github.event.inputs.output_name || 'gdp-economy-race-1950-2026.mp4' }}"
           echo "Rendering composition $COMP to out/$OUT_FILE..."
-          npx remotion render "$COMP" "out/$OUT_FILE"
+          npx remotion render "$COMP" "out/$OUT_FILE" --video-bitrate=16M
 
       - name: Commit and Push to result folder
         run: |

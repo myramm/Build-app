@@ -1,4 +1,5 @@
 import React from 'react';
+import { Flag } from './Flag';
 import { CountryRanked } from './types';
 
 interface GdpBarProps {
@@ -136,7 +137,7 @@ export const GdpBar: React.FC<GdpBarProps> = ({ country, maxGdp }) => {
         >
           {/* Country Identity */}
           <div style={{ display: 'flex', alignItems: 'center', gap: 12 }}>
-            <span style={{ fontSize: 32, lineHeight: 1 }}>{country.flag}</span>
+            <Flag countryCode={country.id} width={38} height={26} />
             <span
               style={{
                 fontSize: 24,
