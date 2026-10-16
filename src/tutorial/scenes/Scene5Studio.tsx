@@ -12,8 +12,9 @@ export const Scene5Studio: React.FC = () => {
   return (
     <AbsoluteFill
       style={{
-        backgroundColor: '#030712',
+        backgroundColor: '#000000',
         overflow: 'hidden',
+        fontFamily: "'DM Sans', sans-serif",
       }}
     >
       <TutorialHeader step="Remotion Studio Preview" stepNumber={5} />
@@ -34,30 +35,30 @@ export const Scene5Studio: React.FC = () => {
         {/* CLI Command Block */}
         <div
           style={{
-            backgroundColor: '#0f172a',
-            border: '1px solid #1e293b',
+            backgroundColor: '#0F0F23',
+            border: '1px solid #1E1B4B',
             borderRadius: 12,
             padding: '20px 28px',
-            fontFamily: "'Fira Code', monospace",
+            fontFamily: "'Space Grotesk', monospace",
           }}
         >
           <div style={{ fontSize: 24, lineHeight: 1.8 }}>
-            <span style={{ color: '#64748b' }}>my-video $ </span>
-            <span style={{ color: '#10b981', fontWeight: 800 }}>npm start</span>
+            <span style={{ color: '#64748B' }}>my-video $ </span>
+            <span style={{ color: '#E11D48', fontWeight: 800 }}>npm start</span>
           </div>
-          <div style={{ fontSize: 18, color: '#94a3b8', marginTop: 4 }}>
-            Local Preview: <span style={{ color: '#38bdf8' }}>http://localhost:3000</span>
+          <div style={{ fontSize: 18, color: '#94A3B8', marginTop: 4 }}>
+            Local Preview: <span style={{ color: '#38BDF8' }}>http://localhost:3000</span>
           </div>
         </div>
 
         {/* Remotion Studio UI Mockup */}
         <div
           style={{
-            backgroundColor: '#0f172a',
-            border: '1px solid #1e293b',
+            backgroundColor: '#0F0F23',
+            border: '1px solid #1E1B4B',
             borderRadius: 12,
             padding: '24px',
-            fontFamily: "'Fira Code', monospace",
+            fontFamily: "'Space Grotesk', monospace",
           }}
         >
           <div
@@ -65,35 +66,35 @@ export const Scene5Studio: React.FC = () => {
               display: 'flex',
               justifyContent: 'space-between',
               alignItems: 'center',
-              borderBottom: '1px solid #1e293b',
+              borderBottom: '1px solid #1E1B4B',
               paddingBottom: 12,
               marginBottom: 16,
-              fontSize: 16,
-              color: '#94a3b8',
+              fontSize: 15,
+              color: '#94A3B8',
             }}
           >
             <span>REMOTION STUDIO 4.0</span>
-            <span style={{ color: '#10b981' }}>● STATUS: READY</span>
+            <span style={{ color: '#10B981', fontWeight: 700 }}>● SERVER: ACTIVE</span>
           </div>
 
           {/* Viewport Canvas Screen */}
           <div
             style={{
               height: 220,
-              backgroundColor: '#020617',
-              border: '1px solid #1e293b',
+              backgroundColor: '#050512',
+              border: '1px solid #1E1B4B',
               borderRadius: 8,
               display: 'flex',
               flexDirection: 'column',
               alignItems: 'center',
               justifyContent: 'center',
-              color: '#f8fafc',
+              color: '#F8FAFC',
             }}
           >
-            <div style={{ fontSize: 26, fontWeight: 800 }}>
+            <div style={{ fontSize: 26, fontWeight: 800, color: '#E11D48' }}>
               CANVAS PREVIEW
             </div>
-            <div style={{ fontSize: 18, color: '#64748b', marginTop: 6 }}>
+            <div style={{ fontSize: 18, color: '#64748B', marginTop: 6 }}>
               1080 × 1920 (9:16) · 60 FPS
             </div>
           </div>
@@ -104,19 +105,19 @@ export const Scene5Studio: React.FC = () => {
               style={{
                 display: 'flex',
                 justifyContent: 'space-between',
-                fontSize: 16,
-                color: '#94a3b8',
+                fontSize: 15,
+                color: '#94A3B8',
                 marginBottom: 8,
               }}
             >
-              <span>TIMELINE CONTROLS</span>
+              <span>TIMELINE SCRUBBER</span>
               <span>Frame: {(frame * 4) % 1800} / 1800</span>
             </div>
 
             <div
               style={{
                 height: 8,
-                backgroundColor: '#1e293b',
+                backgroundColor: '#1E1B4B',
                 borderRadius: 4,
                 overflow: 'hidden',
               }}
@@ -125,7 +126,7 @@ export const Scene5Studio: React.FC = () => {
                 style={{
                   height: '100%',
                   width: `${((frame * 4) % 1800) / 18}%`,
-                  backgroundColor: '#10b981',
+                  backgroundColor: '#E11D48',
                 }}
               />
             </div>

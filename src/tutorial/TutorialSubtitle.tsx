@@ -34,7 +34,7 @@ export const TutorialSubtitle: React.FC<TutorialSubtitleProps> = ({
         <span
           key={i}
           style={{
-            color: isHigh ? '#10b981' : '#f8fafc',
+            color: isHigh ? '#E11D48' : '#F8FAFC',
             fontWeight: isHigh ? 800 : 500,
           }}
         >
@@ -58,12 +58,12 @@ export const TutorialSubtitle: React.FC<TutorialSubtitleProps> = ({
     >
       <div
         style={{
-          backgroundColor: '#090d16',
-          border: '1px solid #1e293b',
+          backgroundColor: '#0F0F23',
+          border: '1.5px solid #1E1B4B',
           borderRadius: 12,
           padding: '24px 28px',
           textAlign: 'left',
-          boxShadow: '0 20px 40px rgba(0, 0, 0, 0.6)',
+          boxShadow: '0 20px 25px rgba(0, 0, 0, 0.5)',
         }}
       >
         <p
@@ -71,7 +71,7 @@ export const TutorialSubtitle: React.FC<TutorialSubtitleProps> = ({
             margin: 0,
             fontSize: 30,
             lineHeight: 1.5,
-            fontFamily: "'Segoe UI', Roboto, sans-serif",
+            fontFamily: "'DM Sans', 'Segoe UI', sans-serif",
             letterSpacing: '-0.2px',
           }}
         >

@@ -16,8 +16,9 @@ export const Scene4AiSkill: React.FC = () => {
   return (
     <AbsoluteFill
       style={{
-        backgroundColor: '#030712',
+        backgroundColor: '#000000',
         overflow: 'hidden',
+        fontFamily: "'DM Sans', sans-serif",
       }}
     >
       <TutorialHeader step="Memasang AI Skill Remotion" stepNumber={4} />
@@ -38,22 +39,22 @@ export const Scene4AiSkill: React.FC = () => {
         {/* CLI Command Block */}
         <div
           style={{
-            backgroundColor: '#0f172a',
-            border: '1px solid #1e293b',
+            backgroundColor: '#0F0F23',
+            border: '1px solid #1E1B4B',
             borderRadius: 12,
             padding: '24px 28px',
-            fontFamily: "'Fira Code', monospace",
+            fontFamily: "'Space Grotesk', monospace",
           }}
         >
-          <div style={{ color: '#64748b', fontSize: 16, marginBottom: 16 }}>
+          <div style={{ color: '#94A3B8', fontSize: 15, marginBottom: 16, letterSpacing: '0.05em' }}>
             SKILLS CLI INTEGRATION
           </div>
 
           <div style={{ fontSize: 26, lineHeight: 1.8 }}>
-            <span style={{ color: '#64748b' }}>my-video $ </span>
-            <span style={{ color: '#10b981', fontWeight: 800 }}>{typedCommand}</span>
+            <span style={{ color: '#64748B' }}>my-video $ </span>
+            <span style={{ color: '#E11D48', fontWeight: 800 }}>{typedCommand}</span>
             {frame < 90 && frame % 30 < 15 && (
-              <span style={{ color: '#10b981' }}>_</span>
+              <span style={{ color: '#E11D48' }}>_</span>
             )}
           </div>
 
@@ -62,16 +63,16 @@ export const Scene4AiSkill: React.FC = () => {
               style={{
                 marginTop: 16,
                 padding: '12px 16px',
-                backgroundColor: '#1e293b',
+                backgroundColor: '#1E1B4B',
                 borderRadius: 8,
                 fontSize: 18,
-                color: '#cbd5e1',
+                color: '#CBD5E1',
                 lineHeight: 1.6,
               }}
             >
               <div>✔ Source: github.com/remotion-dev/skills</div>
-              <div style={{ color: '#10b981' }}>✔ Installed: remotion-best-practices</div>
-              <div style={{ color: '#94a3b8' }}>Target: .agents/skills/ & Antigravity/Gemini</div>
+              <div style={{ color: '#E11D48', fontWeight: 700 }}>✔ Installed: remotion-best-practices</div>
+              <div style={{ color: '#94A3B8' }}>Target: .agents/skills/ & Antigravity/Gemini</div>
             </div>
           )}
         </div>
@@ -80,14 +81,14 @@ export const Scene4AiSkill: React.FC = () => {
         {frame >= 160 && (
           <div
             style={{
-              backgroundColor: '#0f172a',
-              border: '1px solid #1e293b',
+              backgroundColor: '#0F0F23',
+              border: '1px solid #1E1B4B',
               borderRadius: 12,
               padding: '24px 28px',
-              fontFamily: "'Fira Code', monospace",
+              fontFamily: "'Space Grotesk', monospace",
             }}
           >
-            <div style={{ color: '#64748b', fontSize: 16, marginBottom: 14 }}>
+            <div style={{ color: '#94A3B8', fontSize: 15, marginBottom: 14, letterSpacing: '0.05em' }}>
               APA YANG DIPELAJARI AI SETELAH SKILL TERPASANG?
             </div>
 
@@ -97,19 +98,19 @@ export const Scene4AiSkill: React.FC = () => {
                 flexDirection: 'column',
                 gap: 12,
                 fontSize: 18,
-                color: '#e2e8f0',
+                color: '#E2E8F0',
               }}
             >
               <div style={{ display: 'flex', gap: 12 }}>
-                <span style={{ color: '#10b981', fontWeight: 800 }}>[1]</span>
+                <span style={{ color: '#E11D48', fontWeight: 800 }}>[1]</span>
                 <span>Aturan Interpolasi: AI tidak lagi salah hitung frame vs detik</span>
               </div>
               <div style={{ display: 'flex', gap: 12 }}>
-                <span style={{ color: '#10b981', fontWeight: 800 }}>[2]</span>
+                <span style={{ color: '#E11D48', fontWeight: 800 }}>[2]</span>
                 <span>Fisika Spring: Menggunakan damping dan mass yang proporsional</span>
               </div>
               <div style={{ display: 'flex', gap: 12 }}>
-                <span style={{ color: '#10b981', fontWeight: 800 }}>[3]</span>
+                <span style={{ color: '#E11D48', fontWeight: 800 }}>[3]</span>
                 <span>Manajemen Aset: Penanganan audio dan font secara otomatis</span>
               </div>
             </div>

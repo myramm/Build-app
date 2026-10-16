@@ -28,13 +28,14 @@ export const Scene1Intro: React.FC = () => {
   return (
     <AbsoluteFill
       style={{
-        backgroundColor: '#030712',
+        backgroundColor: '#000000',
         overflow: 'hidden',
+        fontFamily: "'DM Sans', sans-serif",
       }}
     >
       <TutorialHeader step="Pengenalan Remotion" stepNumber={1} />
 
-      {/* Main Editorial Layout */}
+      {/* Main Editorial Block */}
       <div
         style={{
           position: 'absolute',
@@ -48,37 +49,57 @@ export const Scene1Intro: React.FC = () => {
           alignItems: 'flex-start',
         }}
       >
-        {/* Category Label */}
+        {/* Brand Lockup SVGs (Zero Emojis, Clean Tech SVGs) */}
         <div
           style={{
-            fontFamily: "'Fira Code', monospace",
-            fontSize: 20,
-            color: '#10b981',
-            letterSpacing: '0.1em',
-            textTransform: 'uppercase',
-            marginBottom: 16,
-            fontWeight: 700,
+            display: 'flex',
+            alignItems: 'center',
+            gap: 20,
+            marginBottom: 24,
           }}
         >
-          DEVELOPER TUTORIAL · 2026
+          {/* React SVG */}
+          <svg width="44" height="44" viewBox="-11.5 -10.23174 23 20.46348" fill="none">
+            <circle cx="0" cy="0" r="2.05" fill="#61DAFB" />
+            <g stroke="#61DAFB" strokeWidth="1">
+              <ellipse rx="11" ry="4.2" />
+              <ellipse rx="11" ry="4.2" transform="rotate(60)" />
+              <ellipse rx="11" ry="4.2" transform="rotate(120)" />
+            </g>
+          </svg>
+
+          <span style={{ color: '#475569', fontSize: 24 }}>+</span>
+
+          {/* Remotion Triangle SVG */}
+          <svg width="40" height="40" viewBox="0 0 100 100" fill="none">
+            <polygon points="50,15 90,85 10,85" stroke="#38BDF8" strokeWidth="10" strokeLinejoin="round" />
+            <polygon points="50,35 75,78 25,78" fill="#38BDF8" opacity="0.3" />
+          </svg>
+
+          <span style={{ color: '#475569', fontSize: 24 }}>+</span>
+
+          {/* AI Gemini Sparkle SVG */}
+          <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#E11D48" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round">
+            <path d="M12 2v4M12 18v4M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83M2 12h4M18 12h4M4.93 19.07l2.83-2.83M16.24 7.76l2.83-2.83" />
+          </svg>
         </div>
 
-        {/* Main Title */}
+        {/* Title */}
         <h1
           style={{
-            fontSize: 68,
+            fontSize: 66,
             fontWeight: 900,
-            color: '#f8fafc',
+            color: '#F8FAFC',
             lineHeight: 1.15,
             margin: '0 0 32px 0',
-            fontFamily: "'Segoe UI', Roboto, sans-serif",
+            fontFamily: "'Space Grotesk', sans-serif",
             letterSpacing: '-1.5px',
             transform: `translateY(${titleEntrance}px)`,
           }}
         >
           Membangun Video
           <br />
-          <span style={{ color: '#10b981' }}>Otomatis dengan React</span>
+          <span style={{ color: '#E11D48' }}>Otomatis dengan React</span>
           <br />
           dan AI Coding Agent.
         </h1>
@@ -88,77 +109,70 @@ export const Scene1Intro: React.FC = () => {
           style={{
             width: '100%',
             opacity: pipelineOpacity,
-            backgroundColor: '#0f172a',
-            border: '1px solid #1e293b',
+            backgroundColor: '#0F0F23',
+            border: '1px solid #1E1B4B',
             borderRadius: 12,
             padding: '24px',
             display: 'flex',
             flexDirection: 'column',
-            gap: 16,
-            fontFamily: "'Fira Code', monospace",
+            gap: 14,
+            fontFamily: "'Space Grotesk', monospace",
           }}
         >
-          <div style={{ color: '#94a3b8', fontSize: 18, fontWeight: 700 }}>
+          <div style={{ color: '#94A3B8', fontSize: 16, fontWeight: 700, letterSpacing: '0.05em' }}>
             ALUR KERJA REMOTION PIPELINE:
           </div>
 
-          <div
-            style={{
-              display: 'grid',
-              gridTemplateColumns: '1fr',
-              gap: 12,
-              fontSize: 20,
-            }}
-          >
+          <div style={{ display: 'grid', gridTemplateColumns: '1fr', gap: 10, fontSize: 19 }}>
             <div
               style={{
-                backgroundColor: '#1e293b',
+                backgroundColor: '#1E1B4B',
                 padding: '12px 18px',
                 borderRadius: 8,
-                color: '#f8fafc',
+                color: '#F8FAFC',
                 display: 'flex',
                 justifyContent: 'space-between',
               }}
             >
               <span>1. Kode React (.tsx / Canvas)</span>
-              <span style={{ color: '#10b981' }}>Definisi Frame</span>
+              <span style={{ color: '#38BDF8', fontWeight: 700 }}>Definisi Frame</span>
             </div>
 
             <div
               style={{
-                backgroundColor: '#1e293b',
+                backgroundColor: '#1E1B4B',
                 padding: '12px 18px',
                 borderRadius: 8,
-                color: '#f8fafc',
+                color: '#F8FAFC',
                 display: 'flex',
                 justifyContent: 'space-between',
               }}
             >
               <span>2. Headless Chromium Engine</span>
-              <span style={{ color: '#38bdf8' }}>Render Web</span>
+              <span style={{ color: '#38BDF8', fontWeight: 700 }}>Render Web</span>
             </div>
 
             <div
               style={{
-                backgroundColor: '#1e293b',
+                backgroundColor: '#1E1B4B',
                 padding: '12px 18px',
                 borderRadius: 8,
-                color: '#f8fafc',
+                color: '#F8FAFC',
                 display: 'flex',
                 justifyContent: 'space-between',
               }}
             >
               <span>3. FFmpeg Encoder & Audio</span>
-              <span style={{ color: '#f59e0b' }}>Encode 60 FPS</span>
+              <span style={{ color: '#38BDF8', fontWeight: 700 }}>Encode 60 FPS</span>
             </div>
 
             <div
               style={{
-                backgroundColor: 'rgba(16, 185, 129, 0.1)',
-                border: '1px solid #10b981',
+                backgroundColor: 'rgba(225, 29, 72, 0.15)',
+                border: '1px solid #E11D48',
                 padding: '12px 18px',
                 borderRadius: 8,
-                color: '#10b981',
+                color: '#E11D48',
                 fontWeight: 800,
                 display: 'flex',
                 justifyContent: 'space-between',
