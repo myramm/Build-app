@@ -21,51 +21,51 @@ export const TutorialComposition: React.FC = () => {
         overflow: 'hidden',
       }}
     >
-      {/* Background Ambience Audio */}
+      {/* Background Soft Ambience Audio */}
       <Audio
         src={staticFile('audio/ambience.mp3')}
-        volume={0.12}
+        volume={0.08}
         loop
       />
 
-      {/* Part 1: Pengenalan Remotion (0 - 500 frame) */}
-      <Sequence from={0} durationInFrames={500}>
+      {/* Part 1: Pengenalan Remotion (0 - 700 frame, ~11.6s) */}
+      <Sequence from={0} durationInFrames={700}>
         <Audio src={staticFile('audio/tutorial/tut1.mp3')} volume={1.0} />
         <Scene1Intro />
       </Sequence>
 
-      {/* Part 2: Persiapan Node.js & npm (500 - 1040 frame) */}
-      <Sequence from={500} durationInFrames={540}>
+      {/* Part 2: Persiapan Node.js & npm (700 - 1420 frame, ~12.0s) */}
+      <Sequence from={700} durationInFrames={720}>
         <Audio src={staticFile('audio/tutorial/tut2.mp3')} volume={1.0} />
         <Scene2Prereq />
       </Sequence>
 
-      {/* Part 3: Instalasi Remotion (1040 - 1580 frame) */}
-      <Sequence from={1040} durationInFrames={540}>
+      {/* Part 3: Instalasi Remotion (1420 - 2050 frame, ~10.5s) */}
+      <Sequence from={1420} durationInFrames={630}>
         <Audio src={staticFile('audio/tutorial/tut3.mp3')} volume={1.0} />
         <Scene3Install />
       </Sequence>
 
-      {/* Part 4: Memasang AI Skill (1580 - 2110 frame) */}
-      <Sequence from={1580} durationInFrames={530}>
+      {/* Part 4: Memasang AI Skill (2050 - 2740 frame, ~11.5s) */}
+      <Sequence from={2050} durationInFrames={690}>
         <Audio src={staticFile('audio/tutorial/tut4.mp3')} volume={1.0} />
         <Scene4AiSkill />
       </Sequence>
 
-      {/* Part 5: Menjalankan Remotion Studio (2110 - 2640 frame) */}
-      <Sequence from={2110} durationInFrames={530}>
+      {/* Part 5: Menjalankan Remotion Studio (2740 - 3370 frame, ~10.5s) */}
+      <Sequence from={2740} durationInFrames={630}>
         <Audio src={staticFile('audio/tutorial/tut5.mp3')} volume={1.0} />
         <Scene5Studio />
       </Sequence>
 
-      {/* Part 6: Koding Komponen Pertama (2640 - 3170 frame) */}
-      <Sequence from={2640} durationInFrames={530}>
+      {/* Part 6: Koding Komponen Pertama (3370 - 4020 frame, ~10.8s) */}
+      <Sequence from={3370} durationInFrames={650}>
         <Audio src={staticFile('audio/tutorial/tut6.mp3')} volume={1.0} />
         <Scene6Code />
       </Sequence>
 
-      {/* Part 7: Render Menjadi MP4 (3170 - 3770 frame) */}
-      <Sequence from={3170} durationInFrames={600}>
+      {/* Part 7: Render Menjadi MP4 (4020 - 4730 frame, ~11.8s) */}
+      <Sequence from={4020} durationInFrames={710}>
         <Audio src={staticFile('audio/tutorial/tut7.mp3')} volume={1.0} />
         <Scene7Render />
       </Sequence>

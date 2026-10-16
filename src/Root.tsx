@@ -16,11 +16,11 @@ export const RemotionRoot: React.FC = () => {
         height={1920}
       />
 
-      {/* Video 2: Remotion + AI Skill Full Tutorial (60 FPS) */}
+      {/* Video 2: Remotion + AI Skill Full Tutorial (60 FPS, Natural Voice) */}
       <Composition
         id="Tutorial"
         component={TutorialComposition}
-        durationInFrames={3770}
+        durationInFrames={4730}
         fps={60}
         width={1080}
         height={1920}
