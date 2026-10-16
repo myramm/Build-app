@@ -7,6 +7,15 @@ on:
       - 'result/**'
       - 'README.md'
   workflow_dispatch:
+    inputs:
+      composition:
+        description: 'Composition ID to render (e.g. Tutorial or Main)'
+        required: false
+        default: 'Tutorial'
+      output_name:
+        description: 'Output filename (e.g. video2.mp4)'
+        required: false
+        default: 'video2.mp4'
 
 permissions:
   contents: write
@@ -29,15 +38,25 @@ jobs:
 
       - name: Render Video
         run: |
-          mkdir -p out
-          npx remotion render Main out/video.mp4
+          mkdir -p out result
+          COMP="${{ github.event.inputs.composition || 'Tutorial' }}"
+          OUT_FILE="${{ github.event.inputs.output_name || 'video2.mp4' }}"
+          echo "Rendering composition $COMP to out/$OUT_FILE..."
+          npx remotion render "$COMP" "out/$OUT_FILE"
 
       - name: Commit and Push to result folder
         run: |
-          mkdir -p result
-          cp out/video.mp4 result/video.mp4
+          OUT_FILE="${{ github.event.inputs.output_name || 'video2.mp4' }}"
+          cp "out/$OUT_FILE" "result/$OUT_FILE"
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add result/video.mp4
-          git commit -m "Add rendered video to result/ [skip ci]" || echo "No changes"
+          git add result/
+          git commit -m "Auto render $OUT_FILE to result/ [skip ci]" || echo "No changes"
           git push
+
+      - name: Upload Video Artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: remotion-video-result
+          path: out/
+          retention-days: 7

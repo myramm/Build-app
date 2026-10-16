@@ -1,20 +1,22 @@
-# Video Sinematik: TAUKAH KAMU? Sistem Perang Modern Masa Kini
+# Remotion Video Project (Rendered with GitHub Actions)
 
-Video edukasi sinematik militer 60 FPS format 9:16 (Vertikal 1080x1920) tentang fakta unik teknologi perang modern.
+Repositori ini berisi proyek Remotion yang di-render secara otomatis di cloud menggunakan **GitHub Actions** (RAM 7 GB, 60 FPS).
 
-## 🎖️ Detail Video
-- **Format**: Vertikal 1080 × 1920 (9:16)
-- **Target Frame Rate**: **60 FPS** (Ultra-smooth motion)
-- **Durasi**: 30.83 Detik (1.850 Frames @ 60 FPS)
-- **Voiceover**: Narator bahasa Indonesia (Edge-TTS ArdiNeural)
-- **Ambience & Audio**: Dark cinematic military sub-bass ambience + Tactical SFX
-- **Visual & Animasi**:
-  1. **Scene 1 — HOOK (0–5.0s)**: "TAUKAH KAMU?" + Dynamic HUD targeting reticle & sunset battlefield.
-  2. **Scene 2 — DRONE MILITER (5.0–9.66s)**: UAV Reconnaissance stealth drone + scanning telemetry cone.
-  3. **Scene 3 — SATELIT & RADAR (9.66–14.33s)**: Orbit satelit luar angkasa + 360° Phased Array Radar sweep.
-  4. **Scene 4 — JARINGAN INFORMASI (14.33–19.16s)**: C4ISR Tactical Data Mesh Network + live packet routing.
-  5. **Scene 5 — PERTAHANAN UDARA (19.16–24.16s)**: Sistem otomatis pencegatan multi-target + mid-air interception.
-  6. **Scene 6 — PENUTUP & OUTRO (24.16–30.83s)**: Jet siluman generasi ke-5 + Doktrin teknologi & kecepatan + Call to action.
+## 📁 Daftar Video Hasil Render (Folder `result/`)
 
-## 🚀 Hasil Render
-Hasil render video otomatis di-commit ke folder `result/video.mp4`.
+### 1. `result/video1.mp4`
+- **Judul**: *TAUKAH KAMU? Sistem Perang Modern Masa Kini*
+- **Format**: Vertikal 1080 × 1920 (9:16), 60 FPS Murni (1.850 Frame)
+- **Topik**: Drone intai, Satelit & Radar Phased Array, C4ISR tactical network, sistem pertahanan udara otomatis, dan jet siluman Gen-5.
+
+### 2. `result/video2.mp4`
+- **Judul**: *Cara Install Remotion + AI Skill | Bikin Video Otomatis Pakai Gemini!*
+- **Format**: Vertikal 1080 × 1920 (9:16), 60 FPS Murni (3.770 Frame / ~62 detik)
+- **Materi Lengkap 7 Langkah**:
+  1. **Pengenalan**: Apa itu Remotion & konsep video as code.
+  2. **Persiapan**: Cek Node.js (18+) dan npm di terminal.
+  3. **Instalasi**: Menjalankan `npx create-video@latest` & memilih template TypeScript.
+  4. **Pasang AI Skill**: `npx skills add remotion-dev/skills` agar Gemini/Claude paham aturan Remotion.
+  5. **Remotion Studio**: Menjalankan `npm start` untuk live preview di browser.
+  6. **Koding Komponen**: `spring()`, `interpolate()`, dan `useCurrentFrame()` untuk animasi 60 FPS.
+  7. **Render MP4**: Menjalankan `npx remotion render` menghasilkan file MP4 final.
